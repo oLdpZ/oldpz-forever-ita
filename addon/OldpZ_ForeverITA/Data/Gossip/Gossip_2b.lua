@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["2b1c9dbac010e437"] = { "Che cos'è questa storia? Vuoi rovinarmi la reputazione? Io non insegno ai novellini, <bello/bella>. Va' a parlare con Milla Fairancora alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus.", "." },
   ["2b1d341d2e1e1202"] = { "<Demitrian ride.>\n\nLa tua ricompensa è una morte rapida e dolorosa, folle!", "." },
   ["2b2297e7493f82cb"] = { "Arrrgh! Non è giusto!", "." },
+  ["2b2c91f69bbd5fef"] = { "Che cos'abbiamo qui?", "." },
   ["2b3b2ba5cfbbb50e"] = { "La Madre Terra provvede, ma a volte <un/una> {class} ha bisogno di un piccolo aiuto in più per sopravvivere. Per questo raccolgo tutte le bende di telarunica possibili in preparazione dell'imminente guerra ad ⟦Ahn'Qiraj=Ahn'qiraj⟧. Finora ne abbiamo raccolte $2089w, su un totale di $2090w.", "." },
   ["2b409aa9c32305ed"] = { "Quasi tutta la mia compagnia sì. Sfollati quando il terreno ci è crollato sotto i piedi. Alcuni venivano da tutt'altre isole. Io vengo dalla città di Shen'dramar, sulla grande isola. Be', quella che era la grande isola, immagino.\r\n\nLa mia famiglia e io siamo riusciti a salire su uno degli ultimi skycutter prima che l'intera isola andasse in pezzi. Pensavamo che Zephras ci avrebbe salvati. Be', non è stato così. Sono tutti morti da tempo, e ora sono qui, in attesa dell'esecuzione.", "." },
   ["2b47a038c5c0303a"] = { "La ⟦Thorium Brotherhood=Fratellanza del Torio⟧ non perde tempo con le formiche. Vattene!", "." },

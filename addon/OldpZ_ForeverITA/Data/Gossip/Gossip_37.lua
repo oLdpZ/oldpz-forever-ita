@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["373c11fe7bd9a723"] = { "Scendi subito da lì! Non voglio che ti arrampichi su quel coso. Non è sicuro.", "." },
   ["373ee341c4e64826"] = { "Venite a prendere il pane fresco!", "." },
   ["37403fa69a78325e"] = { "⟦Warsong Gulch=Forra dei Cantaguerra⟧", "." },
+  ["37424fd51ea941e6"] = { "Ecco qua, ora tu sai creare una Incense Candle tutta tua. Alla gente non piace tanto che si piantano accampamenti in mezzo al paese, quindi tu devi andare nelle terre selvagge se vuoi provarla.\n\nNessun accampamento è completo senza un fuoco, amico. Te ne serve uno prima di allestire il tuo accampamento. Quasi tutti i cuochi ti insegnano ad accendere un fuoco. Passa da qualcuno che ti istruisce nell'arte culinaria, se le basi ancora non le hai imparate.", "." },
   ["3743095dd5fd0cb0"] = { "Non riesco a gestire questo {name} senza aiuto! Aiuto!", "." },
   ["37455bce1587b1c1"] = { "Non affannarti con le faccende del passato, {name}!", "." },
   ["3748421288575130"] = { "Oh, vuoi imparare a raccogliere margheritine, eh? Ah! Ti sto solo prendendo in giro, <ragazzo/ragazza>.\n\nÈ una bella professione, e Reyna Stonebranch può mostrarti come si fa. Lavora all'Ironforge Physician, sul lato sud della ⟦Great Forge=Grande Forgia⟧, qui a ⟦Ironforge=Forgiardente⟧.", "." },

@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["92c7f50aaf839f91"] = { "Quanto altro sangue serve, comandante?", "." },
   ["92c9231fcc00784c"] = { "%s tira fuori un telecomando e lancia a terra un modellino di macchina d'assedio!", "." },
   ["92d6269361475632"] = { "%s carica!", "." },
+  ["92d9ddcece73f9ea"] = { "Per i crimini di Othmar contro la Dama Oscura, metterlo sotto quell'esemplare gocciolante è il minimo che si meriti.\n\nE poi è divertente...", "." },
   ["92deb8fae1cff139"] = { "È... È tutto annebbiato, {name}. Non vedo niente! Aspetta... Aspetta un attimo. Vedo... vedo il nascondiglio del dottor Weavil. È... SÌ! Credo che abbia un capitolo del libro!\n\nVediamo se riesco ad allargare l'inquadratura di questo affare per avere una visuale migliore.\n\n<Narain sembra diventare strabico.>\n\nL'⟦Alcaz Island=Isola di Alcaz⟧! Quel bastardo subdolo è sull'⟦Alcaz Island=Isola di Alcaz⟧!", "." },
   ["92eef97cf56fe1ed"] = { "Che nessuno con la sozza impronta della peste resti in vita!", "." },
   ["92ef8a2fa66a4ea0"] = { "Zum, zing e BAM! Avrà anche avuto un'enorme mannaia a due mani ricavata da un'ancora, ma dopo qualche fendente ben assestato col mio coltello da tavola, quello che è andato giù è stato lui!", "." },

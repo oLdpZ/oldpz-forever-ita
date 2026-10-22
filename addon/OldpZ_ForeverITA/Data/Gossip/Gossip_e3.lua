@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["e3490fa6ccf4be47"] = { "La raccolta è finita e le merci vengono spedite a ⟦Silithus=Silitus⟧ man mano che sono pronte. Sembra che manchi meno di un giorno perché arrivi tutto. Dopodiché basta che qualcuno suoni quel gong e apra i cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Allora sì che comincia il bello.", "." },
   ["e34ba743d74b79bf"] = { "L'anziano Hammershout si trova entro le mura di ⟦Stormwind=Roccavento⟧.", "." },
   ["e34d4aeed10d1530"] = { "Non posso immagazzinare altre scorte. Ne ho più di quante ne possa gestire!", "." },
+  ["e35d5b4a5270fed5"] = { "Sarà così bello riavere all'ovile la nostra pecorella smarrita, non trovi?", "." },
   ["e3600d39873bbe59"] = { "Ho sentito che a ⟦Ironforge=Forgiardente⟧ c'è una bottega gestita dagli gnomi specializzata in alchimia. Dovresti darci un'occhiata.", "." },
   ["e361f26e724ee82d"] = { "Noi ha casa d'aste in anello centrale.", "." },
   ["e3639023aafa084a"] = { "Vedo il tuo impegno, e vedo che hai compreso ciò che ti ho insegnato, {name}.", "." },

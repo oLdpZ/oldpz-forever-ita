@@ -39,6 +39,7 @@ WFJ.Data.add("gossip", {
   ["62a5c01dc1ed1301"] = { "Cerchi Uthan Stillwater. Lo troverai a ovest del villaggio, a pescare al ⟦Stonebull Lake=Lago Toro di Pietra⟧.", "." },
   ["62a9bed80ca53671"] = { "Psssst. Ci è appena arrivato un po' di Torcibudella. . . .", "." },
   ["62b260d33f05f42d"] = { "Come il vento delle pianure, qui sei sempre <il/la> <benvenuto/benvenuta>.", "." },
+  ["62dcf008dc4e8c75"] = { "Va', {name}, e addomestica la più robusta delle bestie di Elwynn.", "." },
   ["62e6d0f6a45b128e"] = { "<Benvenuto/Benvenuta> alla Banca di Darnassus. Offriamo conti e cassette di sicurezza per gli oggetti di valore. Hai già un conto presso di noi, <signore/signora>?", "." },
   ["62eb639f9efa4d80"] = { "Ti condanno a morte!", "." },
   ["62f32f9e676f8b58"] = { "Il titolo di questo libro è scritto a mano con uno svolazzo: Diario di Maureen Dalson.", "." },

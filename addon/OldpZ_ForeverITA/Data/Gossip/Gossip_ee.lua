@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["ee526cc3155172f1"] = { "Sciocco ingenuo. Le ⟦Burning Blade=Lame Ardenti⟧ SONO il ⟦Shadow Council=Concilio dell'Ombra⟧! Ci sono molti culti e organizzazioni sotto il dominio del Concilio, ma sono tutti solo estensioni della sua volontà. Sarò anche a capo delle ⟦Burning Blade=Lame Ardenti⟧, ma resto una pedina del Concilio quanto tu lo sei per me!\n\nGuarda la ⟦Searing Blade=Lama Rovente⟧: quasi tutti i suoi membri credono di stare diventando il prossimo gruppo emergente di potenti stregoni, destinato a sostituire il ⟦Shadow Council=Concilio dell'Ombra⟧.", "." },
   ["ee54c12e38d98b51"] = { "Ma salve, <cittadino/cittadina>. Mi chiamo Bluntnose, magistrato Bluntnose, per la precisione. Il mio compito è vegliare sul benessere di Thelsamar e, credimi, qui un altro paio di braccia forti fa sempre comodo!", "." },
   ["ee568d25b696f683"] = { "Controlla sempre due volte le misure prima di cominciare a tagliare il cuoio. Non possiamo permetterci di sprecare materiali.", "." },
+  ["ee58c591a405a499"] = { "Ben fatto, {name}! Sei proprio in sintonia con la bestia.", "." },
   ["ee65043d955ed290"] = { "Parlami del ⟦Elementals Deck=Mazzo degli Elementali⟧.", "." },
   ["ee6a6b3d4033712c"] = { "Le tue abilità non bastano per imparare ciò che insegno. Prova piuttosto a parlare con Mak, laggiù. Lui può aiutarti finché non sarai <pronto/pronta> per lezioni più avanzate.", "." },
   ["ee6b9df4384ff2f8"] = { "No, davvero, continuo a non capire...", "." },

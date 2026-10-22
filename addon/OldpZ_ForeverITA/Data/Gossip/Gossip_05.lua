@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["058db46af9f3c19e"] = { "Mia arma avere sete!", "." },
   ["059016173c5e548a"] = { "La vostra base è perduta, miseri mortali!", "." },
   ["059880d0c7a604bc"] = { "Il clan dei Piccatonante non si inchina a nessuno, men che meno all'Orda!", "." },
+  ["059931e76084837b"] = { "Che cos'hai lì, {class}? Un bocconcino gustoso?", "." },
   ["059d1ee446e3bef0"] = { "Poiché la lama non è mai abbastanza affilata né l'armatura abbastanza robusta, ci sarà sempre bisogno di un incantatore di talento. Un incantatore così è Taladan, che può mostrarti come intessere a dovere gli incantamenti per migliorare armi e armature. Cercalo nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧.", "." },
   ["059da8ba7eca6811"] = { "Cani del ⟦Cenarion Circle=Circolo Cenariano⟧. Uccideteli tutti!", "." },
   ["05a582cde9aa5c98"] = { "Continua la tua storia.", "." },

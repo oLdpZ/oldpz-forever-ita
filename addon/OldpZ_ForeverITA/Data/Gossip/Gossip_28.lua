@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["287e2a94cbdb1a3f"] = { "No uccidere me! No uccidere me!", "." },
   ["287f1b3c3c42fa79"] = { "Che bella giornata! Mi ispira a creare un nuovo modello.", "." },
   ["2886b5292add5ad5"] = { "Senti la furia delle sabbie!", "." },
+  ["28899f23f278ee89"] = { "<Il nano impallidisce quando vede il barile vuoto.>\n\n...Dove l'hai trovato?", "." },
   ["28a6c6bfe0c56b13"] = { "Avvio rappresentazione visiva numero due.\n\nLa seconda varianza risultante della matrice dei Terrigeni conserva molti elementi desiderati rispetto alla matrice sotterranea standard. La nomenclatura comune per questa variante è \"Nano\".\n\nQuesta variante conserva la forza e il vigore propri dei Terrigeni. In alcuni casi, il nano supera perfino le capacità cognitive della matrice dei Terrigeni. Il nano, tuttavia, non conserva nulla della composizione fisica dei vari composti del nucleo di pietra di Azeroth.", "." },
   ["28a75f2116480794"] = { "ORA è il tempo dei Reietti! Potere ai Reietti, ORA E PER SEMPRE!!!", "." },
   ["28a7e5d5d24e3f07"] = { "Oh cielo! Che cos'è? Aiuto!", "." },

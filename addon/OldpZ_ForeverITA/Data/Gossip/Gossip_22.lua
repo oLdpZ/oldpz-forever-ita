@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["2295bc9de950873f"] = { "Lasciami andare e basta! Ne ho abbastanza!", "." },
   ["229748cadbd561d4"] = { "La tua anima ora è legata a me!", "." },
   ["22a16fd9f19b7368"] = { "Maraudon si trova a metà della costa occidentale di ⟦Desolace=Desolanda⟧, nella ⟦Valley of Spears=Valle delle Lance⟧.", "." },
+  ["22a61e0cc8912901"] = { "Uno degli alti elfi che parla con me... a ⟦Thunder Bluff=Picco del Tuono⟧. Le meraviglie non finiranno mai?\n\nEbbene, <plasmatore/plasmatrice> del vento, lascia che mi unisca ai fratelli e alle sorelle dell'Earthen Ring nel darti il benvenuto su Azeroth. I miei compagni druidi del ⟦Cenarion Circle=Circolo Cenariano⟧ hanno molta saggezza da trasmetterti, <figlio/figlia> della natura.", "." },
   ["22aee4c24720b7f6"] = { "Shì, è vero, non ci vedo, proprio come una talpa! E ho bevuto come una... ehm, come una cosha che beve un shacco.\n\nTi dico una cosha, {race}. È il bere che mi tiene i shenshi affilati. Lo shanno tutti che quando perdi un shenso, gli altri shenshi diventano più attenti. Il mio shenso della shbornia di queshti tempi è incredibile.", "." },
   ["22b0be5f0ebc5b24"] = { "Non dimenticare di fare scorta di carta da regalo per queste feste! Niente dice \"meraviglioso Grande Inverno\" come armature e armi incartate per i tuoi amici e la tua famiglia.", "." },
   ["22b18bf91b57c0ec"] = { "Io Grimlok, re!", "." },

@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["599379901fa08888"] = { "Ringrazio la Luce per questa benedizione. Che sia usata per la giustizia e per difendere tutte le creature buone.", "." },
   ["59962272ec22cd17"] = { "Temo che la lama che tieni in mano non si possa più salvare. L'odio è troppo radicato. Ma non perdere la speranza, {class}. Dove un capitolo finisce, un altro comincia.\n\nTrova suo figlio: forse non incontrerai mai un uomo più devoto e pio. Si dice che sia in grado di forgiare di nuovo il Brandicenere, senza bisogno della vecchia lama corrotta.", "." },
   ["599bcfdc037e4c94"] = { "Ehi Fizzer, ti ho mai raccontato di quella volta che cavalcavo lungo i canali e certi goblin dentro i loro trituratori hanno cercato di tendermi un'imboscata?", "." },
+  ["599c5b8f86fc3cc7"] = { "Sei già di ritorno! Che rapidità, {name}!", "." },
   ["599e15672f0676fa"] = { "%s studia la pergamena del Twilight Tome...", "." },
   ["599f5f16a2679a9e"] = { "Il Re dei Lich sta cercando di far sentire la sua presenza nel nostro mondo. Non dobbiamo permetterlo.", "." },
   ["59a25643480f0dc8"] = { "%s comincia ad allontanarsi.", "." },

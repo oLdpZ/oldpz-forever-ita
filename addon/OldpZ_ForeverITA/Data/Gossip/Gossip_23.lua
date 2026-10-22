@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["2366a96e95fa5ed1"] = { "Non vediamo di buon occhio i malfattori, {race}.", "." },
   ["236cf5391ec0ce33"] = { "Oh, eccoti qui, Rockbiter! Scusa, lo so che non dovrei allontanarmi.", "." },
   ["236db6eabe942c2f"] = { "Ora dobbiamo proseguire.", "." },
+  ["23710c4e3f89e6ea"] = { "Ottimo addomesticamento, {name}! Stai già diventando <esperto/esperta>.", "." },
   ["2371df0931c01c0b"] = { "Certo, ti dirò la frase. Basta che non debba avvicinarmi a Tirth!", "." },
   ["2372708eafcd7f7b"] = { "Non puoi cavalcare in questa forma.", "." },
   ["23730424ca48ac17"] = { "Mmh, curioso... Si interrompe di colpo. A Tanaris i Qiraji documentano lo scontro con un drago di bronzo. Manca molto... Bisogna trovare altre informazioni! Di certo stanno progettando di invadere di nuovo Kalimdor!", "." },

@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["099573ea33ea20af"] = { "Posso insegnarti i segreti di ⟦Wolf Riding=Cavalca-Lupo⟧, se hai abbastanza oro per pagare la lezione!", "." },
   ["09a9fd5d45f9cf6a"] = { "Paval Reethe! Finalmente ti ho trovato. E adesso te la fai pure con gli ogre? Non temere, persino ai disertori e ai traditori si concede un po' di pietà.", "." },
   ["09ac3b2ccd14b9dc"] = { "Non è il momento, {name}.\n\nTi ha dato di volta il cervello?!", "." },
+  ["09afdccfde65e14a"] = { "<L'abominio resta senza vita, privo di una testa che lo controlli.>", "." },
   ["09d50c398109bc27"] = { "Grazie per avermi salvato! La tua impresa non passerà inosservata.", "." },
   ["09dba50c81659f47"] = { "L'equilibrio è stato ristabilito!", "." },
   ["09e5cfbc3192caa8"] = { "Flagello nel ⟦Trade Quarter=Quartiere del Commercio⟧! Distruggere!", "." },
