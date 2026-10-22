@@ -11,6 +11,7 @@ WFJ.Data.add("spell", {
   [1263473] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [1263629] = { "Aumenta la potenza d'attacco in mischia dei membri del gruppo vicini di $N1 per $D1.", "Potenza d'attacco in mischia aumentata di $N1.", 0xcaa6b105, 0xa50b6fd4, "uu" },
   [1263640] = { nil, "Immobilizzato.\nDanni da natura inflitti ogni $D1.", nil, 0xe6768e6a, "mu" },
+  [1263807] = { nil, "La fine di un'epoca è vicina!", nil, 0xa1468809, "mu" },
   [1263985] = { "Infligge $N1 danni da natura ogni $D1.", "Infligge $N1 danni da natura ogni $D1.", 0x9d4ac814, 0x9d4ac814, "uu" },
   [1263989] = { nil, "Danni da natura inflitti ogni $D1.", nil, 0xaf62b13e, "mu" },
 })

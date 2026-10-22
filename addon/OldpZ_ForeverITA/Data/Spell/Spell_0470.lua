@@ -10,6 +10,8 @@ WFJ.Data.add("spell", {
   [470345] = { "Cura $N1 danni in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0xcb31688f, 0x4b6eb5c1, "uu" },
   [470362] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [470369] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
+  [470459] = { "Teletrasporta il giocatore in un luogo relativamente sicuro.", "Teletrasporta il giocatore in un luogo relativamente sicuro.", 0x2b174d0f, 0x2b174d0f, "uu" },
+  [470460] = { "Teletrasporta il giocatore in un luogo relativamente sicuro.", "Teletrasporta il giocatore in un luogo relativamente sicuro.", 0x2b174d0f, 0x2b174d0f, "uu" },
   [470535] = { "Infligge il $N1% dei danni dell'arma e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", "Cure ricevute ridotte del $N1%.", 0x9ac32304, 0x25749c0a, "uu" },
   [470613] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [470743] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },

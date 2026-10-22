@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [1214029] = { "Investe un nemico con la magia arcana, infliggendo danni normali e $N1 danni aggiuntivi e respingendolo indietro.", nil, 0x26533b34, nil, "um" },
   [1214157] = { "Cura il bersaglio di $N1.", nil, 0xbdf1d263, nil, "um" },
   [1214166] = { nil, "Aumenta del $N1% tutti i danni inflitti.", nil, 0xbb0dd240, "mu" },
+  [1214170] = { nil, "Il bersaglio subisce $N1 danni da natura ogni $N2 s e il $N3% di danni da arcano, da fuoco, da gelo, da natura e da ombra in più.", nil, 0x4290b92c, "mu" },
   [1214204] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [1214205] = { nil, "Disorientato.", nil, 0x6b902ba7, "mu" },
   [1214208] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },

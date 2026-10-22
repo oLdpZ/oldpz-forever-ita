@@ -13,6 +13,7 @@ WFJ.Data.add("spell", {
   [1293306] = { nil, "Terrorizzato.\nI danni possono interrompere questo effetto.", nil, 0x2f4c15ea, "mu" },
   [1293308] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
   [1293345] = { "Aumenta l'Armatura di $N1 per $D1.", "Armatura aumentata di $N1.", 0x92291afa, 0x97d97089, "uu" },
+  [1293361] = { "Vittoria!", nil, 0x84cae012, nil, "um" },
   [1293407] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [1293421] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [1293455] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },

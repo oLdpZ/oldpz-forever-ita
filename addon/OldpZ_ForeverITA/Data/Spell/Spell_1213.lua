@@ -39,6 +39,7 @@ WFJ.Data.add("spell", {
   [1213479] = { "Circonda l'incantatore con $N1 sfere di fulmini che hanno una probabilità del $N2% di colpire attaccanti in mischia o a distanza e infliggere $N3 danni. Ogni volta che lo scudo di fulmini colpisce, una sfera di fulmini scompare. Lo scudo si esaurisce dopo $D1 o dopo aver colpito per $N5 volte.", "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", 0x994de1bb, 0x87c6dd5a, "uu" },
   [1213480] = { "Evoca un ⟦Earthbind Totem=Totem del Vincolo Terrestre⟧ che dura $D1 e riduce periodicamente la velocità di movimento dei nemici vicini al $N2% del normale.", nil, 0x2a141c72, nil, "um" },
   [1213482] = { nil, "Danni da fuoco ogni $D1.", nil, 0xfd7a76cf, "mu" },
+  [1213761] = { nil, "Assorbe $N1 danni.", nil, 0xbd35a1c1, "mu" },
   [1213830] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1213864] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [1213873] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },

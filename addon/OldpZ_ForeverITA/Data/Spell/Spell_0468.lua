@@ -49,7 +49,7 @@ WFJ.Data.add("spell", {
   [468763] = { "Incidi sul tuo anello la runa Meditation Specialization:\n\n$I1\nRigenera $N1 mana ogni $D1. Questo effetto non è cumulabile con le altre rune dell'anello.", nil, 0x3c76bbe3, nil, "um" },
   [468764] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [468767] = { "Rigenera $N1 mana in $D1. Devi sederti per bere.", "$N1 mana rigenerato ogni secondo.", 0x792a9d04, 0x338019ff, "uu" },
-  [468768] = { nil, "Forza aumentata di $N1.", nil, 0xb2147e94, "mu" },
+  [468768] = { "Aumenta la Forza di $N1. L'effetto dura $D1.", "Forza aumentata di $N1.", 0xe46f7830, 0xb2147e94, "uu" },
   [468782] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [468879] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
   [468971] = { "Tutti gli attacchi vanno sicuramente a segno e sono colpi critici per $D1.", nil, 0x14cb9ba5, nil, "um" },

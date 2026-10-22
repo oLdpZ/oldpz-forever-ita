@@ -34,6 +34,7 @@ WFJ.Data.add("spell", {
   [1310318] = { "Genera $N1 rabbia quando blocchi.", "Genera $N1 rabbia.", 0x1b01e7d2, 0x8bb1a759, "uu" },
   [1310329] = { "Clicca col pulsante destro per evocare e congedare Diablo.", nil, 0xf1cae78a, nil, "um" },
   [1310330] = { "Clicca col pulsante destro per evocare e congedare il tuo zergling.", nil, 0x300edf29, nil, "um" },
+  [1310387] = { "Ops!", nil, 0x79b87837, nil, "um" },
   [1310438] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1310496] = { "Riduce del $N1% il tempo di recupero delle tue trappole e di Prevenzione.", nil, 0x795736e0, nil, "um" },
   [1310503] = { "Aumenta l'Armatura del bersaglio alleato di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3 per $D1.", "Armatura aumentata di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3.", 0x48c4c0cd, 0x4ce7615d, "uu" },

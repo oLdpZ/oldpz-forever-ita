@@ -20,6 +20,7 @@ WFJ.Data.add("spell", {
   [1294149] = { "Competenza nelle spade aumentata di $N1.", nil, 0x445b9a87, nil, "um" },
   [1294150] = { "Competenza nelle spade aumentata di $N1.", nil, 0x445b9a87, nil, "um" },
   [1294157] = { "Competenza nelle spade aumentata di $N1.", nil, 0x445b9a87, nil, "um" },
+  [1294189] = { "Scaglia una lancia fiammeggiante, infliggendo $N1 danni da fuoco a un nemico e bruciando i nemici vicini al bersaglio.", nil, 0x3b2dd8e6, nil, "um" },
   [1294226] = { "Ferisce il bersaglio, infliggendo $N1 danni.", nil, 0xdaa3fed4, nil, "um" },
   [1294260] = { "Infligge $N1 danni da fuoco a tutti i nemici in un'area bersaglio.", nil, 0xee6c0689, nil, "um" },
   [1294340] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

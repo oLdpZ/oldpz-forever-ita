@@ -7,5 +7,6 @@ WFJ.Data.add("spell", {
   [1233551] = { "Riduce del $N1% il tempo di recupero di Pioggia di Stelle.", nil, 0xc4f5e8d6, nil, "um" },
   [1233832] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },
   [1233834] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1233840] = { "Teletrasporta il giocatore in un luogo relativamente sicuro.", "Teletrasporta il giocatore in un luogo relativamente sicuro.", 0x2b174d0f, 0x2b174d0f, "uu" },
   [1233842] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },
 })

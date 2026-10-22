@@ -6,6 +6,8 @@ WFJ.Data.add("spell", {
   [1219267] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1219269] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1219270] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
+  [1219274] = { "Impara un incantesimo da Sacerdote di un'altra razza per attivare un'abilità in questo spazio.", nil, 0x50ae5b37, nil, "um" },
+  [1219275] = { "Ottieni l'abilità Piaga Divoratrice:\n\n$I1\nAffligge il bersaglio con una malattia che infligge $N1 danni da ombra in $D1. I danni causati da Piaga Divoratrice curano l'incantatore.", nil, 0x36ead55a, nil, "um" },
   [1219355] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
   [1219379] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
   [1219388] = { "Infligge $N1 danni da fuoco.", nil, 0xa92ff3e1, nil, "um" },
