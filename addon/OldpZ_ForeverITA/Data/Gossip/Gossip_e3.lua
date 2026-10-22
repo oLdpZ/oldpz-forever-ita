@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["e376e6df7c2df30c"] = { "Bene bene, niente male. Forse POSSO insegnarti qualcosa...", "." },
   ["e377a84ee7944a78"] = { "Ho perso l'⟦Lord Valthalak's Amulet=Amuleto di Sire Valthalak⟧!", "." },
   ["e3788fe11bfcea8b"] = { "$966w, giovane {class}.", "." },
+  ["e389e6732ee520a1"] = { "Le voci si sono rivelate vere, {name}?", "." },
   ["e3902c53c7fd596d"] = { "Bende, antiveleni e cose simili sono necessità inevitabili della vita nelle pianure. Vira Younghoof può insegnarti queste conoscenze. La trovi nella casa lunga sul lato ovest del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧.", "." },
   ["e3a25f09cbc6cef0"] = { "La sala degli ufficiali", "." },
   ["e3bd20624a960bd6"] = { "Non disturbarmi mentre faccio festa...", "." },

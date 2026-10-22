@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["953e6ce354a923c1"] = { "Tenermi qui non è la decisione giusta, Marcus.", "." },
   ["9540e9b4afe0f727"] = { "E lo trovò davvero. Dopo una rapida ascesa nei ranghi del Culto, il Re dei Lich in persona concesse a Ras l'immortalità. Così nacque Ras Frostwhisper, il lich.\n\nOra capisci?", "." },
   ["95436ddf36b44d0a"] = { "Arrivo, Lupi Bianchi, e stavolta assaggerete le fiamme!", "." },
+  ["9545778d1e33ac73"] = { "Non è molto sicuro andarsene in giro per i boschi, {name}. Sta' attent<o/a>, e se vedi qualcosa di sospetto o pericoloso, avverti subito i Guardiani. Non provare ad affrontare niente da sol<o/a>. Non siamo responsabili di qualunque cosa terribile possa capitarti.\n\nMa sappiamo entrambi che mi ignorerai e combatterai comunque qualunque cosa esca dall'oscurità, vero? Ah ah, già, voi avventurieri... tutti uguali.", "." },
   ["95465e3244aae924"] = { "Giornataccia? Una bella birra ti scioglierà subito le preoccupazioni.", "." },
   ["954731e03afd7456"] = { "%s beve un lungo sorso di birra.", "." },
   ["95478347908da4b4"] = { "Il palo è coperto dei resti di chi è stato tanto sciocco da far infuriare il Capoguerra.", "." },

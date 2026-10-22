@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["20a08b1568cc989d"] = { "Ah, la dolce Seriadne. Tutti gli animali sono al sicuro quando sono affidati a lei. La trovi proprio fuori dalla locanda di Dolanaar.", "." },
   ["20a4cd1f248a7b54"] = { "Yip! Io ammazza!", "." },
   ["20a76327a32406f5"] = { "Jin'rokh, mi mancano i miei ⟦Zandalar Freethinker's Armguards=Bracciali Foderati del Libero Pensatore degli Zandalari⟧. Puoi sostituirmeli?", "." },
+  ["20b24ea6d81ca82e"] = { "Cos'hai lì? Non ci vedo. La mia vista è pessima. Mettimelo in mano.", "." },
   ["20b363beba335df4"] = { "Anche il mio talento ha un limite, e tu l'hai raggiunto. Congratulazioni, {name}. La tua prossima tappa dovrebbe essere l'⟦Camp Mojache=Accampamento Mojache⟧, a Feralas. Lì vive la tauren Hahrana Ironhide, famosa per la sua abilità.", "." },
   ["20b911201703cd07"] = { "Oh sì, la muta: non perderla. Alcuni della mia stirpe nelle ⟦Burning Steppes=Steppe Ardenti⟧ saprebbero forgiare oggetti che solo la muta dello Stormo dei Draghi Neri può rinforzare.", "." },
   ["20bd221469986c91"] = { "Intorno a Dolanaar troverai numerosi istruttori con secoli di esperienza da trasmetterti. Da chi vuoi che ti indirizzi?", "." },

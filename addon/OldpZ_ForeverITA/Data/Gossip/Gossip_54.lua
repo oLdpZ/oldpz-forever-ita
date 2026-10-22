@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["546dd6cb0dae420d"] = { "L'orso ti guarda con calma e pazienza, ma non dice nulla.", "." },
   ["547414273202a272"] = { "Vogliamo affrontare il Profanatore.", "." },
   ["5475eaabd126ccac"] = { "Davvero? Chiamali, servitore.", "." },
+  ["5476cf471d3f99fe"] = { "È da un po' che non ti si vede da queste parti. Hai trovato il tomo e le verghe?", "." },
   ["547ad6651b4db0be"] = { "Le tue capacità superano le mie competenze. Georgio Bolero, il maestro di Duncan's Textiles qui dietro l'angolo, potrebbe aiutarti a migliorare le tue abilità.", "." },
   ["54805afa085bc7f7"] = { "Ci siamo, {name}. La mia roba dovrebbe essere in quella stanza. Coprimi, entro!", "." },
   ["5486f890fa35a178"] = { "<Lady Sylvanas Windrunner ti osserva in silenzio.>", "." },

@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["a48bcd2b37db8ce7"] = { "Sono un orco della medicina, {race}. Se sei qui per imparare, farò del mio meglio per insegnarti.", "." },
   ["a48f50df5aefdf40"] = { "%s ti sorprende a manomettere le scorte di frutta dell'accampamento e ti attacca!", "." },
   ["a4904eb18c5bd00f"] = { "Se stai cercando di fare amicizia, risparmia il fiato. Anzi, meglio ancora: smetti proprio di respirare.", "." },
+  ["a493f15ebd9b35b1"] = { "C'è una sola regola che secondo me devi conoscere, se vuoi sopravvivere in questo mondo: più sai, più vedrai.\n\nSe studi, se osservi, comincerai a vedere nel mondo cose che nessun altro {race} vedrà.", "." },
   ["a49dc7ac23d7b94b"] = { "Che affari hai con me? Sono un uomo molto impegnato...", "." },
   ["a4a5680b352c5bc3"] = { "Neanche una parola....", "." },
   ["a4a7dc5fc1f51173"] = { "Mia signora, non merito la tua preghiera. Sei davvero un angelo di luce. Ti prego, aiutami a tornare alla tana dei tumuli, così che io possa tornare nel Sogno. Anch'io, come Malfurion, ho un amore che mi aspetta... devo tornare da lei... per proteggerla...", "." },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["7800151ae469873d"] = { "Onore e lodi saranno tuoi, se saprai prenderli, {class}! Cerca Kurden Bloodclaw nel Royal Quarter di questa città.", "." },
   ["7803a292e7f48651"] = { "Salute, soldato. Sei qui per aiutare la causa?", "." },
+  ["78055707c5addf73"] = { "Ah, mi ricordo di te. Sei quell<o/a> che chiedeva di quel tale Stalvan. Hai poi trovato quello che cercavi?", "." },
   ["78087075043b67de"] = { "Cosa? Una cosina così piccola e fragile mi chiama? Aggiungerò le tue ossa al mio trono, {race}!!", "." },
   ["7809246c1d5c082f"] = { "The Vault, a ⟦Ironforge=Forgiardente⟧, è la banca più vicina che troverai da queste parti.", "." },
   ["78197a05136b2a3e"] = { "Gubber, non so pescare.", "." },

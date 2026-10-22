@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["5155db4ac9a06adf"] = { "Se ti interessa cucire il cuoio, sei proprio nel posto giusto. Faldron e Telonis sono veri artisti, e spero di imparare molto da loro.", "." },
   ["5162b0bf49dfc611"] = { "Se usiamo la sequenza giusta dovremmo cavarcela. Ci vorrà solo un bel po' di studio prima di cominciare.", "." },
   ["516abc04a994efc5"] = { "Mi dispiace davvero, {class}, ma il tuo spirito non ha mai conosciuto gli orrori che attendono fra le rovine in fiamme di Stratholme, quindi la nostra magia non può portarti in città.", "." },
+  ["516e97bd98ad8d1f"] = { "La vita è piena di domande, {class}. Non riuscirai mai a rispondere a tutte, ma con un po' di tempo e di studio forse diventerai un po' più sapiente.", "." },
   ["517acf1646a46428"] = { "Non avvicinarlo oltre, mortale. Sento il male che scorre nel sigillo da dove mi trovo.\n\nDammi un momento per esaminare l'oggetto: tienilo saldo.", "." },
   ["517bb8508978af3e"] = { "La ⟦Cache of Mau'ari=Cassa di Mau'ari⟧ custodisce grandi segreti... Le schegge usate per crearla sono riflettenti, e puoi usare la sua superficie lucente per assorbire potere da altre cose e poi rifletterlo su di te.\n\nSe tieni il talismano nell'inventario raccogli e'ko, il potere spirituale delle bestie che combatti. Quando trovi e'ko, portalo a Mau'ari.", "." },
   ["517cba8286657f4d"] = { "Qualcosa si muove vicino a ⟦Southwind Village=Vento del Sud⟧! È... è una di quelle creature vermisabbio! Attenzione!", "." },

@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["45188c2a052bcf6c"] = { "Ti prego, dimmi di più su Zaetar.", "." },
   ["4518accefc3a2fe2"] = { "Subito, signore.", "." },
   ["451b59393c68e9f4"] = { "Messaggio di debug: Thelrin è stato evocato.", "." },
+  ["451e93114391235b"] = { "Per ora ti darò ciò che ti serve per concentrare i tuoi incantesimi e invocare gli spiriti dell'aria. Prendi questo totem e, quando sarai pront<o/a>, torna ad addestrarti con me.", "." },
   ["452047fe0c449e1d"] = { "Solo per i membri, pivello!", "." },
   ["45289c55e39e21fe"] = { "Sono <pronto/pronta>, Anachronos. Ti prego, concedimi lo Scettro delle Sabbie Mutevoli.", "." },
   ["4534fadfe674fb7e"] = { "Ti ringrazio, {name}. E anche mio fratello ti ringrazia.", "." },

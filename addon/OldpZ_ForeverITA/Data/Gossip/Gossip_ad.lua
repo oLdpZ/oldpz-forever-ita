@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["ad23de3ae0e85669"] = { "Un po' di questo unguento dovrebbe aiutare.", "." },
   ["ad27884eaee63868"] = { "Abbiamo abbastanza rifornimenti per lanciare un assalto di terra. Se vuoi consegnare gli ordini, e pensi di averne i requisiti, parla con il caporale Noreg Stormpike.", "." },
   ["ad2c0b7559c888c9"] = { "I segreti nascosti nei piloni del ⟦Un'Goro Crater=Cratere di Un'Goro⟧ ora sono tuoi. Visita i piloni quando vuoi per accedere al loro potere e ottenere risorse utili.", "." },
+  ["ad2d267589334d3d"] = { "Cos'hai lì? Fammi dare un'occhiata...", "." },
   ["ad38c4126310d77b"] = { "Se il dovere non mi legasse a mastro Ravenholdt, ti seguirei fino ai confini del mondo, <signore/signora> {name}. Sei la grazia e l'astuzia fatte persona.", "." },
   ["ad3da6eabea486f3"] = { "Salve, <cittadino/cittadina>. Hai l'aria di <un/una> <uomo/donna> con uno scopo: hai affari con l'esercito di ⟦Stormwind=Roccavento⟧?", "." },
   ["ad3e07dc3b83c840"] = { "Be', <ragazzo/ragazza>, trovi Shelby Stoneflint proprio fuori dalla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, a Kharanos. Si prenderà cura di qualsiasi famiglio tu abbia.", "." },

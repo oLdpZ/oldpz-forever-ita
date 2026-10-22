@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["ac5e6ae1533fd966"] = { "Il drago si nasconde dietro una facciata regale. Le tavolette mostreranno ciò che è davvero... Se ciò che ho visto è vero, non sopravvivrò a questa battaglia, amico. Sei tu che devi finire ciò che ho iniziato. Le tue forze sono pronte? Tu sei <pronto/pronta>? Cominceremo al tuo comando.", "." },
   ["ac6b95958208758a"] = { "Dov'è l'istruttore di Erbalismo?", "." },
   ["ac76e7594cc2dbfa"] = { "Forse vorrai raccontarmi le tue gesta, {name}. Sarebbe un onore conoscerle.", "." },
+  ["ac774803dcfa7833"] = { "Spero sia qualcosa di serio, {class}. Fammi vedere cos'hai e raccontami la tua storia. Ma, per la Luce, sbrigati. La difesa di Borgoscuro è la mia priorità assoluta. Non ho tempo da sprecare dietro a piste senza uscita.", "." },
   ["ac8c7d3ad7a11a44"] = { "Spero un giorno di forgiare armi e armature con le ossa dei miei nemici.", "." },
   ["ac93a81c421407e5"] = { "<L'uomo disteso davanti a te si muove a disagio. Si sta riprendendo da ferite molto brutte.>", "." },
   ["ac99a1c7297d682e"] = { "Tu non prendere candela!", "." },

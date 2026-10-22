@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["33581f36d40ee504"] = { "Presto conoscerete il prezzo della vostra intromissione, mortali... Il padrone è quasi integro... E quando si leverà, il vostro mondo cesserà di esistere.", "." },
   ["335c73259bc8ea63"] = { "Sarà rapido, ma non indolore!", "." },
   ["3360566d1f7995c8"] = { "Fai di questa locanda la tua casa.", "." },
+  ["3360f67b812efa74"] = { "Mph, faresti meglio ad avere un buon motivo per disturbare un uomo che pesca. Non sopporto i venditori ambulanti, figuriamoci i mendicanti.", "." },
   ["3361360585d2b02b"] = { "Al maniero non si parla d'altro che del tuo arrivo, <padrone/padrona> {name}. Siamo tutti onorati e lusingati dalla tua presenza.", "." },
   ["336169b2ca175577"] = { "Lo senti, <straniero/straniera>? Il ronzio si fa più forte ogni giorno che passa. Devono essere questi cristalli a far impazzire questi insetti.", "." },
   ["3367483eb768708e"] = { "Sì, ti prego.", "." },

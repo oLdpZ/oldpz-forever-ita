@@ -38,6 +38,7 @@ WFJ.Data.add("gossip", {
   ["ce9a71447751afb3"] = { "Sono stati rubati, {race}! Tre dei nostri volumi più preziosi. Se riporterai i tomi, una ricompensa sarà di certo tua.", "." },
   ["ce9c961cc8713051"] = { "Oddio, credevo proprio che fosse finita. Uff... mi gira ancora la testa...", "." },
   ["ce9e39dc13501ee2"] = { "Le fatiche dei vivi non smettono mai di stupirmi. Siete in numero limitato, e a ogni battaglia diminuite ancora. Non vivrete abbastanza per vederne la fine!", "." },
+  ["cea0ed6342370ba2"] = { "Fa' attenzione là fuori, {name}. So che è stato Trias a mandarti qui, ma questo non significa che nei boschi non si nasconda qualcosa che potrebbe crearti dei guai... soprattutto ora che indaghi sui Defias.", "." },
   ["cea9c8e4e3ca5240"] = { "Ah, che splendida giornata per far saltare in aria qualcosa!", "." },
   ["ceb3c1e3b25cdf6f"] = { "Ce l'hai fatta! Straordinario! Il maresciallo Windsor ti aspettava. Vuoi che gli mandi il segnale ora?", "." },
   ["ceb7e05cf0e14c30"] = { "Clyde Kellen, il re della pesca al persico della zona, ha il suo posto preferito appena a est di Brill, al ⟦Brightwater Lake=Lago di Acqualucente⟧.", "." },

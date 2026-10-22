@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["64c0422be6fcf7ff"] = { "Muori, {name}, nullità!", "." },
   ["64c47477b636e4a1"] = { "Perché le guardie di ⟦Stormwind=Roccavento⟧ non sono arrivate?", "." },
   ["64c61187823e8f71"] = { "Si è passato il limite. Come osa il Flagello attaccare ⟦Undercity=Sepulcra⟧! Distruggetelo prima che ne arrivino altri!", "." },
+  ["64c961c6752f9992"] = { "C'è molto lavoro da fare prima che la ⟦Charred Vale=Valle Bruciata⟧ possa tornare la foresta rigogliosa di un tempo.\n\nLibera la zona da quelle turpi minacce, {name}! Solo allora potremo cominciare a reclamare ciò che appartiene alla natura.", "." },
   ["64ca7febb8b4da53"] = { "Di tutti i luoghi meravigliosi di Darnassus, verso quale vuoi che ti indirizzi?", "." },
   ["64cdd9b121561453"] = { "Abbiamo molte provviste per la ricostruzione. Ancora un po' e ne avremo abbastanza per riparare Dun Baldar e tornare in battaglia!", "." },
   ["64d480a1c5171d95"] = { "La ⟦Crystal Restore=Guarigione del Cristallo⟧ è un oggetto difficile da procurarsi.\n\nCredo che provenga dal ⟦Un'Goro Crater=Cratere di Un'Goro⟧, quindi ti conviene andare là.", "." },

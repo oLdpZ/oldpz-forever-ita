@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["be68c450d73b441a"] = { "Voglio approfondire l'addestramento nelle vie dei sacerdoti.", "." },
   ["be6d62ee937edaf1"] = { "NON ABBIATE PAURA, SOLDATI! OGGI MORIAMO PER KALIMDOR!", "." },
   ["be6e6f9c8742686c"] = { "Vuoi attirare il generale della legione dei Lupi Bianchi fuori dalla sua fortezza? ASSURDO!", "." },
+  ["be73198de0eafc0a"] = { "Guarda dove metti i piedi! Guarda guarda guarda!! Questa è roba delicata, sai, e se vogliamo vincere deve funzionare tutto alla perfezione!", "." },
   ["be75ed09b7b88b08"] = { "Mmm, ti ha mandato Swart da me, vero?\n\nBe', di Swart ci si è sempre potuti fidare, quindi vuol dire che sei pront<o/a> a prendere parte alla prossima sapta: la sapta del fuoco.\n\nLo vedo già nei tuoi occhi, l'ardore, il desiderio. Hai assaggiato il potere e ora ne vuoi ancora. Pazienza, {name}. Ricorda ciò che ti ha insegnato la terra. Potere e distruzione arriveranno facilmente, ma devi comunque sapere quando trattenere la mano.", "." },
   ["be78092f11a43928"] = { "Salute. Insegno ai maghi tra gli gnomi, e tu sei <un/una> <mago/maga>.", "." },
   ["be7cd833904df3eb"] = { "Qui, <buono/buona> a nulla...! Se vuoi renderti utile, ascolta in fretta!", "." },

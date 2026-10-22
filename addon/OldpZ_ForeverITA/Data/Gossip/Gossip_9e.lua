@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["9e9352181da027cd"] = { "Come Teldrassil stessa, Dolanaar accoglie chi accoglie la terra.", "." },
   ["9e94da1a58d080a3"] = { "È stata una partenza bella movimentata, te lo dico io, {class}. Afferravamo tutto ciò che non era inchiodato o che si poteva portare via in fretta. Per questo siamo un po' a corto di scorte.", "." },
   ["9e9724bf4acb1424"] = { "Sì, corri! Così il sangue pompa più in fretta!", "." },
+  ["9e98b22deb98ff64"] = { "Sei riuscit<o/a> a convincere Zzarc'Vul a prestarci il suo monocolo per il nostro esperimento?", "." },
   ["9e99adcf662d3e62"] = { "Ah, l'occasione di usare questa lama appena affilata.", "." },
   ["9e9d1c0c62a88cff"] = { "Quel Granis Swiftaxe saprebbe bere più di un pesce, eppure la sua ascia colpisce ancora dritta. Comunque, se cerchi addestramento, faresti meglio a trovarlo finché riesci ancora a capire quello che dice.", "." },
   ["9ea30f0100610d14"] = { "Non ci posso credere, quel maledetto carro si è rotto. In questa terra non c'è un briciolo di fortuna. . . .", "." },

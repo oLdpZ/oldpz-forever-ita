@@ -50,6 +50,7 @@ WFJ.Data.add("gossip", {
   ["24e02f01b9e3061e"] = { "Lunga vita a {name}!", "." },
   ["24e16ad94ff16e57"] = { "La battaglia per la ⟦Warsong Gulch=Forra dei Cantaguerra⟧ comincia tra 1 minuto.", "." },
   ["24e4cb62b0cad57e"] = { "Ehm... credo che tu sia un po' troppo <grosso/grossa> per cavalcare un tecnostruzzo, <signore/signora>. Finiresti per schiacciare i servobilanciatori finemente regolati!", "." },
+  ["24e86e52c2594b4f"] = { "Vedo che sei tornat<o/a>, e tutto in un pezzo. Sappiamo entrambi che non sei qui per il formaggio, quindi lasciamo perdere i convenevoli. Backus ti è stato d'aiuto, o non sei nemmeno ancora partit<o/a> per ⟦Duskwood=Boscovespro⟧?", "." },
   ["24ea2ed589d0430e"] = { "Per Lothar, feccia dei Defias, la pagherete!", "." },
   ["24f250a9e060a99c"] = { "Intrusi al Service Gate! Bisogna avvertire il barone Rivendare!", "." },
   ["24f27c6f8ca14a2c"] = { "I silitidi non possono nulla contro i figli e le figlie di Orgrimmar. Presto di loro non resteranno che arti e ali schiacciati sotto i nostri piedi, {name}.", "." },

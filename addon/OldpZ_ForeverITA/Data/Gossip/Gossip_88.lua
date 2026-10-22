@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["88ada396c3268b70"] = { "Ih! {name} viene dritto verso di noi!", "." },
   ["88adff1ebf6b56cf"] = { "Le mie viverne sono addestrate a volare veloci nell'aria calda delle ⟦Barrens=Savane⟧.", "." },
   ["88afd52c86805c48"] = { "Kodo, <amico/amica> <mio/mia>! Addestrati fin da giovani e cresciuti nella Piana Dorata di Mulgore, questi splendidi animali diventeranno destrieri ancora più splendidi! Prego, dai un'occhiata alla mia selezione, e vedi da te perché noi tauren abbiamo imparato a fare affidamento su queste magnifiche creature!", "." },
+  ["88bc1a022ac36a2b"] = { "Sì, {name}? In cosa posso esserti utile?", "." },
   ["88d4aed9e81555e1"] = { "Ehi, {name}.\n\nLotwil non è il capo più perspicace che abbia avuto. Si fa davvero prendere dal suo lavoro. Così tanto che a volte i suoi servitori non mangiano, o non vengono pagati.\n\n<Lucien guarda Lotwil accigliato.>\n\nMa questo non vuol dire che debba soffrire tu.", "." },
   ["88e0c485f95125db"] = { "Parlami della ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
   ["88e6ea0c1bd6d4df"] = { "Cerchi questo: [⟦Red Scepter Shard=Frammento di Scettro Rosso⟧]? Vieni a prenderlo...", "." },

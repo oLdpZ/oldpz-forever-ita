@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["ef05c1887e5ad95f"] = { "Persino i Windshaper ti direbbero che gli spiriti non hanno mai parlato bene di un essere supremo tra loro. Riconoscevano l'esistenza di un essere chiamato Al'Akir, ma evitavano di invocarne il nome, quasi come se lo temessero.\r\n\nAnche se questo Al'Akir fosse un onnipotente «Signore del Vento», o sovrano degli elementali dell'aria, è affidarsi agli elementali che ci ha cacciati in questo guaio. Ora dobbiamo tirarcene fuori da soli.", "." },
   ["ef0709d61e45b47a"] = { "La terra ti chiama, {name}. Va' da lei, e sappi che i tuoi fratelli sono fieri di te e di tutto ciò che compirai.", "." },
+  ["ef15ae231f4d555a"] = { "Portami il libro dopo averlo studiato. Non ti farò la mia domanda finché non mi avrai dato il libro.", "." },
   ["ef1c528be4762235"] = { "Grazie ancora, {name}. Ora mi avvierò verso la strada. Quando puoi, trova Terenthis e digli che siamo riusciti a fuggire.", "." },
   ["ef1f1d75ac197c46"] = { "Il siero richiederà solo pochi minuti di preparazione, {name}.", "." },
   ["ef1f6a60fe2b64cc"] = { "Ancora nessuna traccia dell'ultimo carico di esplosivi.", "." },

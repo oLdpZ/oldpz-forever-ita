@@ -91,6 +91,7 @@ gossip	ffaca6741b285d92	text	ffaca6741b285d92	Feralas - Screecher Spirit - On Qu
 quest	19	title	22ab2f517c3706f2	Tharil'zun
 quest	87	title	e78fd7d989b60387	Goldtooth
 quest	117	title	06ba24f24f6beb60	Thunderbrew
+quest	172	title	70336621d7910786	Children's Week
 quest	249	title	64aa5799b5a78290	Morganth
 quest	318	title	ab586d5c375ca252	Evershine
 quest	389	title	49a42307a15b56d4	Bazil Thredd
@@ -129,7 +130,13 @@ quest	1001	title	ed386236e54d6130	Buzzbox 411
 quest	1002	title	ed381fb2e1553d52	Buzzbox 323
 quest	1003	title	ed38a5c6e945c4d6	Buzzbox 525
 quest	1009	title	a5f22a9f842421e2	Ruuzel
+quest	1037	title	f7ead98e1493d3a6	Velinde Starsong
+quest	1088	title	ac86867a157eb4ff	Ordanus
+quest	1089	title	69a60aaae2d7679c	The Den
+quest	1096	title	896fbf9bd6d55105	Gerenzo Wrenchwhistle
+quest	1131	title	308aefcaf5cf7747	Steelsnap
 quest	1132	title	30729feb7fc0bfc4	Fiora Longears
+quest	1468	title	70336621d7910786	Children's Week
 quest	1483	title	6cf0b9999a7e24a0	Ziz Fizziks
 quest	1489	title	034c803e1d5e2251	Hamuul Runetotem
 quest	1490	title	a9a75b816d8ebbbc	Nara Wildmane
@@ -144,6 +151,9 @@ quest	1684	title	521e2628c7c074f7	Elanaria
 quest	1686	title	8040e914a3fdfada	The Shade of Elura
 quest	1688	title	9384a1d7d4fd764f	Surena Caledon
 quest	1698	title	cd09cdbf0b2c778e	Yorus Barleybrew
+quest	1700	title	32eacdf38774b740	Grimand Elmore
+quest	1703	title	a9224821b8d19265	Mathiel
+quest	1704	title	e7370e5cbbc9f939	Klockmort Spannerspan
 quest	1715	title	0d4e536f49df7b89	The Slaughtered Lamb
 quest	1819	title	bc5fb5c05807ad2a	Ulag the Cleaver
 quest	1859	title	74b10f5104831be6	Therzok
@@ -156,6 +166,7 @@ quest	2379	title	b5f8d527207a3b52	Zando'zan
 quest	2459	title	236ef724fe8a8fa6	Ferocitas the Dream Eater
 quest	2499	title	a9dba359f59ddca3	Oakenscowl
 quest	2561	title	dcee0406ba871b99	Druid of the Claw
+quest	2926	title	f0c05f189723b975	Gnogaine
 quest	3115	title	8ca3cdd0a8470088	Tainted Memorandum
 quest	3261	title	4d1b9bdc7c17663f	Jorn Skyseer
 quest	3301	title	6ec1c3d12eb8306b	Mura Runetotem
@@ -163,8 +174,10 @@ quest	3903	title	e1f36bcd30122caf	Milly Osworth
 quest	3921	title	60e1e274ce40d0cf	Wenikee Boltbucket
 quest	3922	title	048fd5a7df4046f9	Nugget Slugs
 quest	3923	title	4f8af447c1e0ab7a	Rilli Greasygob
+quest	4581	title	9dc5369f03f2531e	Kayneth Stillwind
 quest	4761	title	a1402122011b4583	Thundris Windweaver
 quest	5046	title	41b394c09ce6d37e	Razorhide
+quest	5088	title	23d8ed72144ac1f0	Arikara
 quest	5261	title	798f9e22deee0162	Eagan Peltskinner
 quest	5641	title	eabe51393c268b76	Chastise
 quest	5642	title	cf44b409d1d1665d	Shadowguard
