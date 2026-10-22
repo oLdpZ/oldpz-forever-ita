@@ -17,7 +17,7 @@ WFJ.Data.add("spell", {
   [1315557] = { "Ammalia il bersaglio, impedendogli qualsiasi azione per un massimo di $D1. Eventuali danni inflitti annullano l'effetto. Funziona solo sugli umanoidi.", "Ammaliato.", 0xaea65fef, 0xd83f67a3, "uu" },
   [1315767] = { "Riduce la potenza d'attacco del bersaglio nemico di $N1 per $D1.", "Potenza d'attacco ridotta di $N1.", 0x68d8d99c, 0x3ac72513, "uu" },
   [1315778] = { "Aumenta la velocità su cavalcatura del $N1% a ⟦Winterspring=Fontefredda⟧.", "Velocità di movimento aumentata del $N1% in sella.", 0x46e8d69f, 0x939516e9, "uu" },
-  [1315844] = { nil, "Probabilità di schivata aumentata del $N1%.", nil, 0x13f65298, "mu" },
+  [1315844] = { "Aumenta la probabilità di schivata del $N1% per $D1.", "Probabilità di schivata aumentata del $N1%.", 0xa3828625, 0x13f65298, "uu" },
   [1315849] = { "Spezza l'osso, curandoti di $N1 e curando di $N2 l'alleato più vicino.", nil, 0x02d768f2, nil, "um" },
   [1315854] = { "Cura di $N1.", nil, 0x5b61ddb0, nil, "um" },
   [1315878] = { "Aumenta la tua Agilità di $N1 per $D1. Se c'è un elementale nelle vicinanze, ottieni altri $N3.", "Agilità aumentata di $N1.", 0xc56ec730, 0xa84d6207, "uu" },

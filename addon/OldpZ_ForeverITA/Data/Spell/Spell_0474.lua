@@ -8,4 +8,5 @@ WFJ.Data.add("spell", {
   [474402] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
   [474500] = { "Seleziona poteri casuali per l'Anibusath Guardian.", nil, 0xfe66bd23, nil, "um" },
   [474553] = { "Lancia un incantesimo su un singolo bersaglio.", nil, 0x3a0676a2, nil, "um" },
+  [474727] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
 })

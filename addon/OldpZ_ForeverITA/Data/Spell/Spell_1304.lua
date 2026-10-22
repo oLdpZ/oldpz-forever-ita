@@ -2,4 +2,14 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1304401] = { "Silenzia i nemici vicini, impedendo loro di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x2d8a29ef, 0x6d133d61, "uu" },
+  [1304767] = { nil, "Resistenze aumentate di $N1.", nil, 0xa7ceccf2, "mu" },
+  [1304771] = { nil, "Armatura aumentata del $N1%.", nil, 0xb444932f, "mu" },
+  [1304772] = { nil, "Intelletto aumentato del $N1%.", nil, 0x121a08b7, "mu" },
+  [1304775] = { nil, "Spirito aumentato del $N1%.", nil, 0x92bf71a8, "mu" },
+  [1304780] = { nil, "Agilità aumentata del $N1%.", nil, 0x41f6cfd1, "mu" },
+  [1304782] = { nil, "Forza aumentata del $N1%.", nil, 0x1edb61ed, "mu" },
+  [1304982] = { nil, "Impossibile da uccidere senza una Stone of Binding.", nil, 0xf2d6e0a6, "mu" },
+  [1304986] = { nil, "Impossibile da uccidere senza una Stone of Binding.", nil, 0xf2d6e0a6, "mu" },
+  [1304989] = { nil, "Impossibile da uccidere senza una Stone of Binding.", nil, 0xf2d6e0a6, "mu" },
+  [1304998] = { nil, "Impossibile da uccidere senza una Stone of Binding.", nil, 0xf2d6e0a6, "mu" },
 })

@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [1310077] = { "Aumenta fino a $N1 i danni da sacro degli incantesimi per $D1.", nil, 0xc4a3d79d, nil, "um" },
   [1310087] = { "Prosciuga $N1 salute a un nemico in $D1, trasferendola a te.", nil, 0x51c71b9c, nil, "um" },
   [1310133] = { "Spargi l'incenso cerimoniale.", nil, 0xb388b7b9, nil, "um" },
+  [1310155] = { nil, "Trasporti una pozione instabile. Si destabilizzerà e diventerà inerte tra $N1 min.", nil, 0x86717193, "mu" },
   [1310167] = { "Scaglia una lama circolare contro il bersaglio, infliggendo $N1 danni e facendolo sanguinare per $N2 danni in $D1.", "$N1 danni da sanguinamento subiti ogni $D1.", 0x84089429, 0x84eecd00, "uu" },
   [1310168] = { "Scaglia una lama circolare contro il bersaglio, infliggendo $N1 danni e facendolo sanguinare per $N2 danni in $D1.", nil, 0xad6f6653, nil, "um" },
   [1310180] = { "Infligge $N1 danni e riduce la velocità di movimento del nemico bersaglio del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x6615693d, 0x08fe36e7, "uu" },

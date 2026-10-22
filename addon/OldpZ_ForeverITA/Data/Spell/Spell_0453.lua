@@ -2,4 +2,10 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [453053] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [453696] = { "Incidi sul tuo anello la runa Fire Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x8e19242b, nil, "um" },
+  [453697] = { "Incidi sul tuo anello la runa ⟦Frost Specialization=Specializzazione del Gelo⟧:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x7c83ee46, nil, "um" },
+  [453698] = { "Incidi sul tuo anello la runa Nature Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x916cd76f, nil, "um" },
+  [453700] = { "Incidi sul tuo anello la runa Shadow Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x54313767, nil, "um" },
+  [453702] = { "Incidi sul tuo anello la runa Holy Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x363fe6df, nil, "um" },
+  [453703] = { "Incidi sul tuo anello la runa Feral Combat Specialization:\n\n$I1\nAbilità in Feral Combat aumentata di $N1. Non cumulabile con le altre rune dell'anello.", nil, 0x7e65f7a7, nil, "um" },
 })
