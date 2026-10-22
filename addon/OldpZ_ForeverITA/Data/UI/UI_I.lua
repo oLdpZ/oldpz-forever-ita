@@ -490,7 +490,7 @@ WFJ.Data.add("ui", {
   ["ItemSubClassMask:5"] = { "Arma a distanza", 0x59e91513, "." },
   ["ItemSubClassName:0:0"] = { "Esplosivi", 0xa523f6b2, "." },
   ["ItemSubClassName:0:1"] = { "Pozioni", 0x889a67d1, "." },
-  ["ItemSubClassName:0:13"] = { "Infusi", 0x92880995, "." },
+  ["ItemSubClassName:0:13"] = { "Fiasche", 0x92880995, "." },
   ["ItemSubClassName:0:14"] = { "Dispositivi", 0x60275538, "." },
   ["ItemSubClassName:0:15"] = { "Temporaneo", 0xf8c27c84, "." },
   ["ItemSubClassName:0:2"] = { "Elisir", 0x1349fc3e, "." },
