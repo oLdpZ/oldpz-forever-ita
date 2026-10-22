@@ -16,6 +16,7 @@ WFJ.Data.add("spell", {
   [1321936] = { "Una nube putrida di malattia circonda l'incantatore, infliggendo danni da natura ai nemici vicini.", "Danneggia i nemici vicini ogni $D1.", 0x009cc269, 0x727f1b3c, "uu" },
   [1321937] = { "Una nube putrida di malattia circonda l'incantatore, infliggendo danni da natura ai nemici vicini.", nil, 0x009cc269, nil, "um" },
   [1321938] = { "Infligge $N1 danni a un nemico, stordendolo per $D1.", "Stordito.", 0x9f56403f, 0x27f95286, "uu" },
+  [1321952] = { "Infligge danni da natura a un nemico.", nil, 0x6878f321, nil, "um" },
   [1321998] = { "Brucia i nemici vicini infliggendo $N1 danni da fuoco ogni $N2 s.", "Brucia i nemici vicini infliggendo $N1 danni da fuoco ogni $N2 s.", 0xeb96a68b, 0xeb96a68b, "uu" },
   [1321999] = { "Brucia periodicamente i nemici vicini infliggendo $N1 danni da fuoco.", nil, 0xc01d7a20, nil, "um" },
 })

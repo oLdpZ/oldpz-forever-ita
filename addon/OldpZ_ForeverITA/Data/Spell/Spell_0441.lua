@@ -3,9 +3,10 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [441448] = { nil, "Sotto carica elettrica!", nil, 0xe6d88bd0, "mu" },
   [441449] = { "Infligge $N1 danni da fuoco ai nemici in un cono davanti all'incantatore.", nil, 0xad2ec576, nil, "um" },
-  [441453] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
+  [441450] = { "Colpisce un nemico con un dardo antimana che danneggia anche altri bersagli vicini. Per ogni punto di mana consumato dal dardo, il bersaglio subisce $N1 danni. L'incantesimo colpisce fino a un massimo di $N2 bersagli.", nil, 0xc4e5d106, nil, "um" },
+  [441453] = { "Immobilizza un nemico per $D1 e lo folgora con l'elettricità, infliggendo danni da natura.", "Immobilizzato.", 0x0d2f2b19, 0x18deeb81, "uu" },
   [441454] = { "Emette un'onda d'urto magica, infliggendo danni da arcano ai nemici vicini.", nil, 0xb94462fd, nil, "um" },
   [441739] = { nil, "Ti senti spettrale.", nil, 0xfcf0fb0b, "mu" },
-  [441785] = { nil, "Ora sei un tributo.", nil, 0x93f5f924, "mu" },
+  [441785] = { "Ora sei un tributo.", "Ora sei un tributo.", 0x93f5f924, 0x93f5f924, "uu" },
   [441927] = { nil, "Ti senti spettrale.", nil, 0xfcf0fb0b, "mu" },
 })

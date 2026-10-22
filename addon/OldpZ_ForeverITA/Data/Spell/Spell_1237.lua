@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1237045] = { "Il portatore di luce canalizza la sua speranza, rendendo immuni al silenzio i bersagli amici entro $N1 m.\n\nFa infuriare gli Screeching Terrors.", "Immune al silenzio.", 0x9546e0e2, 0x8470fca9, "uu" },
   [1237064] = { "Applica in modo permanente a un arco o a un'arma da fuoco un mirino che ne aumenta la probabilità d'impatto del $N1%.", nil, 0xb1a50f38, nil, "um" },
-  [1237155] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1237155] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", "Stordito.", 0xd27b3641, 0x27f95286, "uu" },
   [1237312] = { "Scaglia un dardo di fuocogelo contro il nemico, infliggendo $N1 danni da fuocogelo, rallentandone la velocità di movimento del $N2% e infliggendo altri $N3 danni da fuocogelo in $D1. Per questo incantesimo vale la più bassa tra le resistenze al gelo e al fuoco del bersaglio, e conta sia come danni da gelo sia come danni da fuoco.", "Velocità di movimento ridotta del $N1%. $N2 danni da fuocogelo ogni $D1.", 0xff979685, 0x3991e2af, "uu" },
   [1237313] = { "Scaglia un dardo di fuocogelo contro il nemico, infliggendo $N1 danni da fuocogelo, rallentandone la velocità di movimento del $N2% e infliggendo altri $N3 danni da fuocogelo in $D1. Per questo incantesimo vale la più bassa tra le resistenze al gelo e al fuoco del bersaglio, e conta sia come danni da gelo sia come danni da fuoco.", "Velocità di movimento ridotta del $N1%. $N2 danni da fuocogelo ogni $D1.", 0xff979685, 0x3991e2af, "uu" },
   [1237632] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },

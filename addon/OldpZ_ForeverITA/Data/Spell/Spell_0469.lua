@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [469010] = { nil, "Offriti come vittima sacrificale volontaria alle Ombre.", nil, 0xb1e42a42, "mu" },
+  [469020] = { "Chiudi il portale vile selezionato. Potrebbe attirare attenzioni indesiderate dall'altra parte.", nil, 0x22b41ad4, nil, "um" },
   [469065] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [469122] = { "Fornisce all'incantatore $N1 attacchi aggiuntivi.", nil, 0x2dd42c6d, nil, "um" },
   [469123] = { "Fornisce all'incantatore $N1 attacchi aggiuntivi.", nil, 0x2dd42c6d, nil, "um" },
@@ -17,10 +18,12 @@ WFJ.Data.add("spell", {
   [469156] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
   [469160] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469161] = { "Scatena un'ondata di fiamme che infligge danni da fuoco ai nemici vicini e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x7ebaea70, 0xeadcb05a, "uu" },
+  [469183] = { "I totem evocati conferiscono un beneficio del loro elemento.", nil, 0x5d8a8187, nil, "um" },
   [469209] = { nil, "Danni magici aumentati fino a $N1.", nil, 0x9d292bc3, "mu" },
   [469223] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [469227] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
   [469228] = { "Silenzia il nemico per $D1. Se usato su un bersaglio che sta lanciando un incantesimo, ne interrompe il lancio e gli impedisce di lanciare incantesimi di quella scuola di magia per $D2.", nil, 0x516ee526, nil, "um" },
+  [469271] = { "Entra in sintonia con i cieli e sostituisci la tua Forma di Lunagufo con un aspetto più celestiale.", nil, 0x7d88df02, nil, "um" },
   [469277] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },
   [469301] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },
   [469306] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },

@@ -287,6 +287,7 @@ Data\Spell\Spell_0450.lua
 Data\Spell\Spell_0451.lua
 Data\Spell\Spell_0452.lua
 Data\Spell\Spell_0453.lua
+Data\Spell\Spell_0454.lua
 Data\Spell\Spell_0455.lua
 Data\Spell\Spell_0456.lua
 Data\Spell\Spell_0457.lua

@@ -75,7 +75,7 @@ WFJ.Data.add("spell", {
   [1302661] = { "Evoca e congeda un orso spettrale cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x6e2fcaae, 0x2195529a, "uu" },
   [1302698] = { "Quando subisci un attacco, hai una probabilità del $N1% di rimuovere da te un effetto di rallentamento. Può verificarsi solo una volta ogni $N2 s.", nil, 0x1e4f0b2d, nil, "um" },
   [1302700] = { "Sfuggi a un effetto di rallentamento.", "Sfuggi a un effetto di rallentamento.", 0xb646b187, 0xb646b187, "uu" },
-  [1302707] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
+  [1302707] = { "Velocità di movimento aumentata del $N1%.", "Velocità di movimento aumentata del $N1%.", 0xd5c3ac7c, 0xd5c3ac7c, "uu" },
   [1302708] = { "Quando subisci un attacco, hai una probabilità del $N1% di aumentare la tua velocità di movimento del $N2% per $D1. Può verificarsi solo una volta ogni $N4 s.", nil, 0x67cc98ac, nil, "um" },
   [1302711] = { "Sfuggi a un effetto di immobilizzazione.", "Sfuggi a un effetto di immobilizzazione.", 0x6e1fd3ca, 0x6e1fd3ca, "uu" },
   [1302712] = { "Quando subisci un attacco, hai una probabilità del $N1% di rimuovere da te un effetto di immobilizzazione. Può verificarsi solo una volta ogni $N2 s.", nil, 0x3e3c7608, nil, "um" },

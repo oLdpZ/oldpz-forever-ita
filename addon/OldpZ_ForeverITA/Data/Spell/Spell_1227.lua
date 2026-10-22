@@ -3,6 +3,10 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1227200] = { nil, "Celerità nel lancio degli incantesimi aumentata del $N1%.", nil, 0x0f60ce95, "mu" },
   [1227421] = { "Infligge $N1 danni da gelo ai nemici vicini, riducendo la loro velocità di movimento del $N2% per $D1.", nil, 0xe513fa92, nil, "um" },
-  [1227739] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1227571] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", nil, 0xb3676a6c, nil, "um" },
+  [1227574] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", nil, 0xd27b3641, nil, "um" },
+  [1227736] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", nil, 0xb3676a6c, nil, "um" },
+  [1227739] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", "Stordito.", 0xd27b3641, 0x27f95286, "uu" },
+  [1227807] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", nil, 0xd27b3641, nil, "um" },
   [1227820] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
 })
