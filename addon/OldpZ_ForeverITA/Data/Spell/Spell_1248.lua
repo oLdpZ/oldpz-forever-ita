@@ -7,6 +7,7 @@ WFJ.Data.add("spell", {
   [1248148] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
   [1248152] = { "Travolge il nemico con la potenza del fulmine, infliggendo danni da natura.", nil, 0x86118ec0, nil, "um" },
   [1248606] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
+  [1248637] = { "Aumenta fino a $N1 le cure prodotte da incantesimi ed effetti e fino a $N2 i danni inflitti.", nil, 0xae344efa, nil, "um" },
   [1248647] = { "Aumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N1.", nil, 0x679f95b3, nil, "um" },
   [1248756] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
 })

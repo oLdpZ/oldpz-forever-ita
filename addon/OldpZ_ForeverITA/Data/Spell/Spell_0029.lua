@@ -73,7 +73,7 @@ WFJ.Data.add("spell", {
   [29201] = { nil, "Costringe a lanciare solo un incantesimo di cura ogni 60 s.", nil, 0xe6584e20, "mu" },
   [29204] = { "Infligge $N1 danni da ombra ai nemici vicini dopo $N2 s.", "$N1 danni da ombra subiti dopo $N2 s.", 0x0a28521b, 0x7fe6a36d, "uu" },
   [29206] = { "Aumenta del $N1% la quantità di salute ripristinata da ⟦Healing Wave=Ondata di Cura⟧.", nil, 0xa294b034, nil, "um" },
-  [29207] = { nil, "In traslazione...", nil, 0xe8b15d2f, "mu" },
+  [29207] = { "Ti teletrasporta in avanti di $N1 m se non ci sono ostacoli di mezzo. Libera da qualsiasi impedimento.", "In traslazione...", 0xa02ec6f5, 0xe8b15d2f, "uu" },
   [29208] = { "Ti teletrasporta in avanti di 20 m se non ci sono ostacoli di mezzo. Libera da qualsiasi impedimento.", "In traslazione...", 0xa02ec6f5, 0xe8b15d2f, "uu" },
   [29209] = { "Ti teletrasporta in avanti di 20 m se non ci sono ostacoli di mezzo. Libera da qualsiasi impedimento.", "In traslazione...", 0xa02ec6f5, 0xe8b15d2f, "uu" },
   [29210] = { "Ti teletrasporta in avanti di 20 m se non ci sono ostacoli di mezzo. Libera da qualsiasi impedimento.", "In traslazione...", 0xa02ec6f5, 0xe8b15d2f, "uu" },
@@ -124,6 +124,7 @@ WFJ.Data.add("spell", {
   [29502] = { "La ⟦Frost Arrow=Freccia del Gelo⟧ infligge $N1 danni da gelo.", nil, 0xa5580161, nil, "um" },
   [29506] = { "Assorbe $N1 danni. Dura $D1.", "$N1 danni subiti assorbiti.", 0xf34dd2e9, 0xada2a54d, "uu" },
   [29520] = { nil, "Danni in mischia, a distanza e con gli incantesimi inflitti ai non morti aumentati del $N1%.", nil, 0x8656e3f0, "mu" },
+  [29534] = { nil, "Danni inflitti in mischia e con gli incantesimi aumentati del $N1%.", nil, 0x6c7d1b07, "mu" },
   [29544] = { nil, "In preda alla paura.", nil, 0xc957ad86, "mu" },
   [29602] = { "Aumenta la potenza d'attacco di $N1, e di $N2 in più ogni $N3 s. Dura $D2.", "Potenza d'attacco aumentata di $N1 ogni $N2 s.", 0x621677b5, 0x29b71c72, "uu" },
   [29604] = { nil, "Potenza d'attacco aumentata di $N1.", nil, 0x2905f15b, "mu" },
@@ -146,4 +147,5 @@ WFJ.Data.add("spell", {
   [29865] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0xf6322bec, "mu" },
   [29915] = { "Infligge $N1 danni a un nemico ogni $D1 per $D2.", "Danni fisici inflitti ogni $D1.", 0x4de84947, 0xc481aa93, "uu" },
   [29943] = { "Silenzia i nemici vicini, impedendo loro di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x2d8a29ef, 0x6d133d61, "uu" },
+  [29998] = { nil, "Salute massima ridotta del $N1%\nInfligge $N2 danni da natura ogni $N3 s.", nil, 0x8611aea9, "mu" },
 })

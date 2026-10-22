@@ -42,6 +42,7 @@ WFJ.Data.add("spell", {
   [1218509] = { "Quando subisci danni da un nemico Non Morto, la durata residua della tua ⟦Frenzied Regeneration=Rigenerazione Furiosa⟧ attiva viene riportata a $D1. Inoltre, ⟦Frenzied Regeneration=Rigenerazione Furiosa⟧ non consuma mai gli ultimi $N2 punti di rabbia per generare cure.", nil, 0x4f329ae2, nil, "um" },
   [1218514] = { "Il tuo Morso del Serpente infligge il $N1% di danni in più.", nil, 0xfa192432, nil, "um" },
   [1218515] = { "Riduce di $D1 il tempo di recupero di Tiro della Chimera, ⟦Explosive Shot=Tiro Esplosivo⟧ e ⟦Aimed Shot=Tiro Mirato⟧, di $D2 quello di Tiro Mortale e di $D3 quello di Tiro Multiplo.", nil, 0xc2378285, nil, "um" },
+  [1218574] = { nil, "Probabilità di critico aumentata del $N1%.", nil, 0xc6163180, "mu" },
   [1218575] = { "Ogni volta che colpisci un nemico Non Morto con un attacco a distanza, i tuoi danni e i tuoi danni critici inflitti ai Non Morti aumentano del $N1% per $D1, fino a un massimo di $N3 accumuli.", nil, 0x12458615, nil, "um" },
   [1218582] = { "Wyvern Strike e Morso della Mangusta infliggono il $N1% di danni iniziali in più.", nil, 0x164f838f, nil, "um" },
   [1218583] = { "Riduce di $D1 il tempo di recupero della tua abilità Wyvern Strike, di $D2 quello della tua abilità Assalto del Raptor e di $D3 quello della tua abilità Assalto Fiancheggiato.", nil, 0xe343e3b8, nil, "um" },
@@ -53,4 +54,6 @@ WFJ.Data.add("spell", {
   [1218697] = { "I danni che infliggi ai Non Morti generano il $N1% di cure cronomantiche in più, e ottieni mana pari al $N2% delle cure cronomantiche che generi danneggiando i Non Morti.", nil, 0x326c1470, nil, "um" },
   [1218700] = { { "La tua Evocazione ti conferisce un aumento del $N1% dei danni inflitti per ogni secondo di canalizzazione, accumulabile fino a $N2 volte e con una durata di $D1.", shape = { "3/1" } }, nil, 0xe9850268, nil, "um" },
   [1218701] = { nil, "Tutti i danni inflitti aumentati del $N1%.", nil, 0x87211d4f, "mu" },
+  [1218993] = { "Riduce del $N1% il tempo di recupero di Evocazione.", nil, 0xcaf8b47b, nil, "um" },
+  [1218995] = { "I danni di Incendio non diminuiscono sui bersagli Non Morti sotto il $N1% della salute, e i bersagli Non Morti sotto il $N2% della salute subiscono danni come se fossero congelati.", nil, 0xef47dea2, nil, "um" },
 })

@@ -31,6 +31,7 @@ WFJ.Data.add("spell", {
   [25058] = { "Cura un alleato ogni $N1 s per $D2.", "Danni curati ogni $N1 s.", 0x61f0e6eb, 0x7668097c, "uu" },
   [25059] = { "Delle spine fuoriescono dal bersaglio alleato, infliggendo $N1 danni da natura agli attaccanti quando colpiscono. Dura $D1.", "$N1 danni da natura inflitti agli attaccanti.", 0x0eddc25a, 0x7724a9e2, "uu" },
   [25060] = { "Colpisce i nemici in un cono frontale, respingendoli indietro.", nil, 0x61a1859e, nil, "um" },
+  [25067] = { "Aumenta fino a $N1 le cure prodotte da incantesimi ed effetti e fino a $N2 i danni inflitti.", nil, 0xae344efa, nil, "um" },
   [25072] = { "Incanta in modo permanente dei guanti per aumentare del $N1% la minaccia generata da tutti gli attacchi e incantesimi.", nil, 0x06646253, nil, "um" },
   [25073] = { "Incanta in modo permanente dei guanti per aumentare fino a $N1 i danni da ombra.", nil, 0x262fd13f, nil, "um" },
   [25074] = { "Incanta in modo permanente dei guanti per aumentare fino a $N1 i danni da gelo.", nil, 0x4d5872f2, nil, "um" },

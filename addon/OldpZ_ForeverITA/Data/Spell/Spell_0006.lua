@@ -75,7 +75,7 @@ WFJ.Data.add("spell", {
   [6391] = { "Evoca per $D1 ai piedi dell'incantatore uno Stoneclaw Totem con $N1 salute, che provoca le creature entro $N3 m costringendole ad attaccarlo.", nil, 0x1176da68, nil, "um" },
   [6392] = { "Evoca per $D1 ai piedi dell'incantatore uno Stoneclaw Totem con $N1 salute, che provoca le creature entro $N3 m costringendole ad attaccarlo.", nil, 0x02e108d7, nil, "um" },
   [6405] = { "Ti trasformi in un Mezzorso per $D1.", "Trasformato in un Mezzorso.", 0x9565f3ee, 0x105a6e3d, "uu" },
-  [6408] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
+  [6408] = { "Permette di entrare in modalità furtiva. Dura fino all'annullamento.", "Furtivo.", 0x9eb5d12b, 0x150ed465, "uu" },
   [6409] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [6410] = { "Cura $N1 danni in $D1, sempre che tu non morda una sacca di veleno.", "$N1 salute rigenerata ogni secondo.", 0x3fdf8080, 0xfde4540f, "uu" },
   [6411] = { "Sorpresa!", nil, 0x0bbb55fa, nil, "um" },

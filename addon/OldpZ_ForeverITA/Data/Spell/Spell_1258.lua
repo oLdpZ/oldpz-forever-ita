@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1258478] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1258496] = { "+$N1 Spirito.", nil, 0xce2f9b3c, nil, "um" },
   [1258510] = { "Aumenta la velocità di movimento del $N1% per $D1.", nil, 0x61fe647b, nil, "um" },
   [1258518] = { "Attraversa le protezioni druidiche per accedere al ⟦Mount Hyjal=Monte Hyjal⟧.", nil, 0xf9ad16b6, nil, "um" },
   [1258520] = { "Balza sul bersaglio, stordendolo per $D1 e infliggendo $N2 danni in $D2. Bisogna essere in Movimento Furtivo e alle spalle del bersaglio. Fornisce $N4 punti combo.", "Stordito.", 0x97420bb2, 0x27f95286, "uu" },

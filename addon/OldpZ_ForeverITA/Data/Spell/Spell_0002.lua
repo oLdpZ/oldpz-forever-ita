@@ -103,6 +103,7 @@ WFJ.Data.add("spell", {
   [2833] = { "Aumenta in modo permanente di $N1 la Tempra e di $N2 l'Armatura di un oggetto indossato su torso, gambe, mani o piedi. Utilizzabile solo su oggetti di livello $N3 o superiore.", nil, 0x4484080b, nil, "um" },
   [2834] = { "Lancia periodicamente Schianto del Tuono.", "Lancia periodicamente Schianto del Tuono.", 0x4e50a8c6, 0x4e50a8c6, "uu" },
   [2836] = { "Aumenta significativamente la probabilità di rivelare trappole.", "Trappole rivelate.", 0xaf39679d, 0x61482710, "uu" },
+  [2842] = { "Puoi creare e mescolare veleni, con ingredienti sia trovati sia acquistati dai mercanti.", nil, 0x7af047c0, nil, "um" },
   [2860] = { "Scaglia un fulmine contro il nemico, infliggendo $N1 danni da natura e colpendo poi altri nemici vicini. Ogni passaggio riduce i danni del $N2%. Colpisce $N3 bersagli in totale.", nil, 0x17000523, nil, "um" },
   [2870] = { "Rimuove $N1 malattie dal bersaglio.", nil, 0xc25d1459, nil, "um" },
   [2871] = { "Il bersaglio è immune alla malattia per $D1 e vengono dissolte le malattie esistenti.", "Immune a effetti di malattia.", 0x781ea60b, 0x757e4c3b, "uu" },

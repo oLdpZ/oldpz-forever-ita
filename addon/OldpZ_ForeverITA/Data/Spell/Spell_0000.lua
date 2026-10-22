@@ -223,6 +223,7 @@ WFJ.Data.add("spell", {
   [806] = { "Aumenta la Forza di $N1 e ti infligge $N2 danni ogni $N3 s per $D2.", "Forza e danni periodici aumentati.", 0x64c15adc, 0x9c65d114, "uu" },
   [812] = { "Lancia periodicamente Combustione del Mana.", "Lancia periodicamente Combustione del Mana.", 0x68c9795c, 0x68c9795c, "uu" },
   [818] = { "Accende un fuoco da campo che aumenta lo Spirito dei compagni vicini di $N1 e permette di cucinare.", nil, 0x0e71d154, nil, "um" },
+  [819] = { "Aumenta la tua Armatura di $N1.", nil, 0xe13ee3bd, nil, "um" },
   [827] = { "Aumenta la velocità di movimento con le cavalcature di $N1.", nil, 0x2fc156ce, nil, "um" },
   [833] = { "Cura istantaneamente $N1 danni. Rigenera $N2 mana in $D1. Devi sederti per bere.", "$N1 mana rigenerato ogni secondo.", 0xfd4248b6, 0x66fae081, "uu" },
   [834] = { "Aumenta l'Armatura di $N1 per $D1.", "Armatura aumentata di $N1.", 0x92291afa, 0x97d97089, "uu" },

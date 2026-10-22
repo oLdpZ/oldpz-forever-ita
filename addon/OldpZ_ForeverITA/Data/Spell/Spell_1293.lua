@@ -17,6 +17,7 @@ WFJ.Data.add("spell", {
   [1293407] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [1293421] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [1293455] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
+  [1293653] = { "Colpisce un bersaglio con un'esplosione che infligge $N1 danni da gelo.", nil, 0x963d3bbc, nil, "um" },
   [1293654] = { "Silenzia un nemico, impedendogli di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x92e27777, 0x6d133d61, "uu" },
   [1293693] = { "Invia un'anima spettrale ad assalire il tuo bersaglio attuale, infliggendo $N1 danni e aumentando del $N2% tutti i danni da ombra periodici che infliggi a quel bersaglio per $D1. Quando Tormento termina per qualsiasi motivo, vieni curato del $N4% dei danni che ha inflitto al bersaglio.", "Danni subiti dagli effetti periodici di danni da ombra dell'incantatore aumentati del $N1%.", 0x203fa01a, 0xe0d6f2ae, "uu" },
   [1293694] = { "Invia un'anima spettrale ad assalire il tuo bersaglio attuale, infliggendo $N1 danni e aumentando del $N2% tutti i danni da ombra periodici che infliggi a quel bersaglio per $D1. Quando Tormento termina per qualsiasi motivo, vieni curato del $N4% dei danni che ha inflitto al bersaglio.", "Danni subiti dagli effetti periodici di danni da ombra dell'incantatore aumentati del $N1%.", 0x203fa01a, 0xe0d6f2ae, "uu" },
@@ -31,4 +32,6 @@ WFJ.Data.add("spell", {
   [1293818] = { "Incendia un bersaglio già afflitto dalla tua Immolazione, infliggendo $N1 danni da fuoco e consumando il tuo effetto di Immolazione.", nil, 0xd77f3b34, nil, "um" },
   [1293885] = { nil, "Velocità d'attacco in mischia aumentata del $N1%.", nil, 0xd471470c, "mu" },
   [1293940] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0xcfea6646, nil, "um" },
+  [1293966] = { "Lancia una torcia nel punto bersaglio, appiccando un incendio.", nil, 0x069f4ed7, nil, "um" },
+  [1293973] = { "Ti cura di $N1.", nil, 0x017adfca, nil, "um" },
 })

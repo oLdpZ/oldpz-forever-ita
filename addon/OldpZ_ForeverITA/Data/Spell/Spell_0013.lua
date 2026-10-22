@@ -37,6 +37,7 @@ WFJ.Data.add("spell", {
   [13180] = { "Ingaggia un combattimento mentale con un bersaglio umanoide per tentare di controllarne la mente. Se tutto va bene, controllerai la mente del bersaglio per $D1.....", nil, 0x8964d02e, nil, "um" },
   [13181] = { nil, "Ammaliato.", nil, 0xd83f67a3, "mu" },
   [13183] = { "Infligge $N1 danni da fuoco per $D1 a tutti i bersagli in un cono davanti all'Ingegnere. Infligge danni $N3 volte superiori alle bestie. A meno che non esploda.....", "$N1 danni da fuoco inflitti ogni $D1.", 0xb737bbc4, 0xf508ca3e, "uu" },
+  [13198] = { "+$N1 Forza.", nil, 0x7dbddd01, nil, "um" },
   [13219] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha una probabilità del $N2% di avvelenare il nemico, riducendo di $N3 tutte le cure ricevute per $D1. Si accumula fino a $N5 volte su un singolo bersaglio. $N6 cariche.", nil, 0x37eb2cbc, nil, "um" },
   [13225] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha una probabilità del $N2% di avvelenare il nemico, riducendo di $N3 tutte le cure ricevute per $D1. Si accumula fino a $N5 volte su un singolo bersaglio. $N6 cariche.", nil, 0x528522b0, nil, "um" },
   [13226] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha una probabilità del $N2% di avvelenare il nemico, riducendo di $N3 tutte le cure ricevute per $D1. Si accumula fino a $N5 volte su un singolo bersaglio. $N6 cariche.", nil, 0x6111a195, nil, "um" },

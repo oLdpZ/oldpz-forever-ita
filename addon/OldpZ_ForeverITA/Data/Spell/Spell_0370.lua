@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [370156] = { "Travolge il nemico con la potenza del fulmine, infliggendo danni da natura.", nil, 0x86118ec0, nil, "um" },
   [370417] = { nil, "Immune a tutti i danni.", nil, 0xec662d6c, "mu" },
   [370490] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xf152500f, "mu" },
+  [370538] = { "Teletrasporta il giocatore ad ⟦Ahn'Qiraj=Ahn'qiraj⟧.", nil, 0xebae91fd, nil, "um" },
   [370550] = { "Potenza d'attacco aumentata di $N1.", "Potenza d'attacco aumentata di $N1.", 0x564bbf31, 0x564bbf31, "uu" },
   [370637] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [370877] = { nil, "Tempra aumentata di $N1.", nil, 0x4e3c4e5f, "mu" },

@@ -13,5 +13,6 @@ WFJ.Data.add("spell", {
   [1256147] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla destra dell'incantatore.", "Ferito.", 0x2cade6c5, 0x7cead755, "uu" },
   [1256148] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla destra dell'incantatore.", "Ferito.", 0x2cade6c5, 0x7cead755, "uu" },
   [1256158] = { "Ti permette di camminare sull'acqua per $D1.", "A galla.", 0x42a8b6d3, 0xdd2d4197, "uu" },
+  [1256161] = { "Attira tutti verso di te.", nil, 0x11d4571f, nil, "um" },
   [1256867] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
 })

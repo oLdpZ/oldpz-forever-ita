@@ -259,6 +259,7 @@ WFJ.Data.add("spell", {
   [16627] = { "Cattura lo spirito di un Vilsegugio da usare per la creazione di un globo dello stregone.", nil, 0x6416cf25, nil, "um" },
   [16628] = { "Cattura lo spirito di un Infernale da usare per la creazione di un globo dello stregone.", nil, 0x05bbb5f1, nil, "um" },
   [16629] = { "Infligge $N1 danni da arcano al bersaglio sintonizzato e riduce i danni che infligge del $N2%.", "Danni inflitti da Araj l'Evocatore ridotti del $N1%.", 0x08db179e, 0x6c912f01, "uu" },
+  [16633] = { "Effetto visivo dell'evocazione di un oggetto per una missione.", nil, 0x27a4924d, nil, "um" },
   [16635] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [16636] = { "Carica un nemico, respingendolo indietro e infliggendo danni normali e $N1 danni aggiuntivi.", nil, 0xa2823b6b, nil, "um" },
   [16637] = { "Cura i draghi cromatici nelle vicinanze di $N1 danni ogni $N2 s per $D2.", "$N1 danni curati ogni $N2 s.", 0xc217fa4f, 0x8d136749, "uu" },

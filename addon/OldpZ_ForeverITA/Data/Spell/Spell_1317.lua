@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1317006] = { "Quando lanci un incantesimo di cura, ottieni mana pari al $N1% del costo base dell'incantesimo se la tua cura precedente era un incantesimo diverso.", nil, 0x30029238, nil, "um" },
   [1317007] = { "Quando lanci un incantesimo di cura, recuperi una parte del suo costo base se la tua cura precedente era un incantesimo diverso.", nil, 0x8405912d, nil, "um" },
+  [1317038] = { "+$N1 Forza.", nil, 0x7dbddd01, nil, "um" },
   [1317039] = { "Probabilità, con un colpo in mischia, di ottenere Arrabbiato, che aumenta la Forza di $N1 per $D1.", nil, 0xe78aa887, nil, "um" },
   [1317040] = { "Aumenta la Forza di $N1.", "Forza aumentata di $N1.", 0x58a414be, 0x90d8a2f8, "uu" },
   [1317170] = { "Evoca un elementale del fuoco che ti aiuta in battaglia per $D1.", nil, 0x609f10d2, nil, "um" },

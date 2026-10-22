@@ -4,7 +4,7 @@ WFJ.Data.add("spell", {
   [1294021] = { "+$N1 alla potenza d'attacco contro gli elementali.", nil, 0x9ad47681, nil, "um" },
   [1294032] = { "Estrazione +$N1.", nil, 0x9486815c, nil, "um" },
   [1294034] = { "Estrazione +$N1.", nil, 0x9486815c, nil, "um" },
-  [1294065] = { nil, "Armatura aumentata di $N1.", nil, 0x97d97089, "mu" },
+  [1294065] = { "Armatura aumentata di $N1.", "Armatura aumentata di $N1.", 0xa12a98e7, 0x97d97089, "uu" },
   [1294071] = { nil, "Potenza d'attacco aumentata di $N1.", nil, 0x2906fd7f, "mu" },
   [1294072] = { "Aumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N1.", nil, 0x679f95b3, nil, "um" },
   [1294077] = { "Competenza nelle asce aumentata di $N1.", nil, 0x36fd3d3d, nil, "um" },
@@ -33,5 +33,6 @@ WFJ.Data.add("spell", {
   [1294617] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1294626] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1294666] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
+  [1294769] = { "Aumenta del $N1% la probabilità di colpire con le armi a distanza.", nil, 0x24c1db5c, nil, "um" },
   [1294897] = { "Evoca e congeda una Pantera Maculata cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0xc76b7a9d, 0x2195529a, "uu" },
 })

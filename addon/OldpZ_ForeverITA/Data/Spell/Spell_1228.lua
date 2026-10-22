@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1228049] = { "Brucia il nemico infliggendo $N1 danni da ombrofuoco e poi altri $N2 danni da ombrofuoco in $D1.\n\nOmbrofuoco attiva e beneficia di tutti gli effetti che modificano Immolazione o interagiscono con essa, o con gli incantesimi di Afflizione, Distruzione, fuoco od ombra, ma su un bersaglio può essere attivo un solo Immolazione od Ombrofuoco per Stregone. Inoltre, Ombrofuoco può attivare il tuo talento ⟦Shadow Bolt=Dardo d'Ombra⟧ Migliorato e gli fa ottenere $N4 cariche aggiuntive.", "$N1 danni da ombrofuoco ogni $N2 s.", 0xae243044, 0xaa8a9cd1, "uu" },
   [1228058] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", nil, 0xd27b3641, nil, "um" },
   [1228237] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
+  [1228267] = { nil, "$N1 danni da fuoco inflitti in $D1.", nil, 0x884f4005, "mu" },
   [1228295] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1228332] = { "Ottieni gli aspetti di questo arsenale di armi.", nil, 0xda02ac39, nil, "um" },
   [1228366] = { "Fornisce all'incantatore $N1 attacchi aggiuntivi.", nil, 0x2dd42c6d, nil, "um" },
