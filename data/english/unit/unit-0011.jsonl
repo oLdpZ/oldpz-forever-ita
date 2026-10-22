@@ -1,1 +1,757 @@
+{"id": 11016, "field": "name", "en": "Captured Arko'narin", "hash": "db31d83063d7440a", "src": "vmangos@4641790"}
+{"id": 11017, "field": "name", "en": "Roxxik", "hash": "3d064983eaecf920", "src": "vmangos@4641790"}
+{"id": 11017, "field": "subname", "en": "Artisan Engineer", "hash": "a06ab6768c860f64", "src": "vmangos@4641790"}
+{"id": 11018, "field": "name", "en": "Arko'narin", "hash": "fc9af7e433972696", "src": "vmangos@4641790"}
+{"id": 11019, "field": "name", "en": "Jessir Moonbow", "hash": "97800edf7225e1cd", "src": "vmangos@4641790"}
+{"id": 11020, "field": "name", "en": "Remains of Trey Lightforge", "hash": "93cf453e981923fd", "src": "vmangos@4641790"}
+{"id": 11021, "field": "name", "en": "Riding Tiger (Winterspring)", "hash": "ed83a9d0d7b45e4b", "src": "vmangos@4641790"}
+{"id": 11022, "field": "name", "en": "Alexi Barov", "hash": "1bd70404a05c21ce", "src": "vmangos@4641790"}
+{"id": 11022, "field": "subname", "en": "House of Barov", "hash": "6e916cfb08ae9485", "src": "vmangos@4641790"}
+{"id": 11023, "field": "name", "en": "Weldon Barov", "hash": "582698b4fb11a709", "src": "vmangos@4641790"}
+{"id": 11023, "field": "subname", "en": "House of Barov", "hash": "6e916cfb08ae9485", "src": "vmangos@4641790"}
+{"id": 11024, "field": "name", "en": "Della", "hash": "b7498b30ad172c30", "src": "vmangos@4641790"}
+{"id": 11024, "field": "subname", "en": "Jessir's Pet", "hash": "38d1e773ceaecb05", "src": "vmangos@4641790"}
+{"id": 11025, "field": "name", "en": "Mukdrak", "hash": "b0f5ea9b2f6e72b0", "src": "vmangos@4641790"}
+{"id": 11025, "field": "subname", "en": "Journeyman Engineer", "hash": "7077fbfa798eb7ed", "src": "vmangos@4641790"}
+{"id": 11026, "field": "name", "en": "Sprite Jumpsprocket", "hash": "34cf4cbb110186e5", "src": "vmangos@4641790"}
+{"id": 11026, "field": "subname", "en": "Journeyman Engineer", "hash": "7077fbfa798eb7ed", "src": "vmangos@4641790"}
+{"id": 11027, "field": "name", "en": "Illusory Wraith", "hash": "07dfcd1ab0390b50", "src": "vmangos@4641790"}
+{"id": 11028, "field": "name", "en": "Jemma Quikswitch", "hash": "33aac8869ea3fb6f", "src": "vmangos@4641790"}
+{"id": 11028, "field": "subname", "en": "Journeyman Engineer", "hash": "7077fbfa798eb7ed", "src": "vmangos@4641790"}
+{"id": 11029, "field": "name", "en": "Trixie Quikswitch", "hash": "a75f13211f045f2a", "src": "vmangos@4641790"}
+{"id": 11029, "field": "subname", "en": "Expert Engineer", "hash": "776f97491b858058", "src": "vmangos@4641790"}
+{"id": 11030, "field": "name", "en": "Mindless Undead", "hash": "f1d1b6498248d827", "src": "vmangos@4641790"}
+{"id": 11031, "field": "name", "en": "Franklin Lloyd", "hash": "9f3890d0d58744b1", "src": "vmangos@4641790"}
+{"id": 11031, "field": "subname", "en": "Expert Engineer", "hash": "776f97491b858058", "src": "vmangos@4641790"}
+{"id": 11032, "field": "name", "en": "Malor the Zealous", "hash": "ebb2a9925b4e61ce", "src": "vmangos@4641790"}
+{"id": 11033, "field": "name", "en": "Smokey LaRue", "hash": "eced339dc61433ea", "src": "vmangos@4641790"}
+{"id": 11034, "field": "name", "en": "Lord Maxwell Tyrosus", "hash": "1364f0fb0ed23542", "src": "vmangos@4641790"}
+{"id": 11034, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11035, "field": "name", "en": "Betina Bigglezink", "hash": "30d1cbfe98f9cea7", "src": "vmangos@4641790"}
+{"id": 11035, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11036, "field": "name", "en": "Leonid Barthalomew the Revered", "hash": "411f7a320d2e363f", "src": "vmangos@4641790"}
+{"id": 11036, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11037, "field": "name", "en": "Jenna Lemkenilli", "hash": "0ffe5ff0f2d3802f", "src": "vmangos@4641790"}
+{"id": 11037, "field": "subname", "en": "Journeyman Engineer", "hash": "7077fbfa798eb7ed", "src": "vmangos@4641790"}
+{"id": 11038, "field": "name", "en": "Caretaker Alen", "hash": "c348bc2d388984be", "src": "vmangos@4641790"}
+{"id": 11038, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11039, "field": "name", "en": "Duke Nicholas Zverenhoff", "hash": "5cc330305380b1e4", "src": "vmangos@4641790"}
+{"id": 11039, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11040, "field": "name", "en": "Watcher Brownell", "hash": "f58a41dc14c80986", "src": "vmangos@4641790"}
+{"id": 11040, "field": "subname", "en": "The Night Watch", "hash": "50990c24136d99d1", "src": "vmangos@4641790"}
+{"id": 11041, "field": "name", "en": "Milla Fairancora", "hash": "1dfcf01c62d92aa7", "src": "vmangos@4641790"}
+{"id": 11041, "field": "subname", "en": "Journeyman Alchemist", "hash": "b6f442f28cc820fb", "src": "vmangos@4641790"}
+{"id": 11042, "field": "name", "en": "Sylvanna Forestmoon", "hash": "95ed2c35076ad010", "src": "vmangos@4641790"}
+{"id": 11042, "field": "subname", "en": "Expert Alchemist", "hash": "47a8bc73c8f274f0", "src": "vmangos@4641790"}
+{"id": 11043, "field": "name", "en": "Crimson Monk", "hash": "60be4f4b7d0c52a0", "src": "vmangos@4641790"}
+{"id": 11044, "field": "name", "en": "Doctor Martin Felben", "hash": "5cfde14417a27b44", "src": "vmangos@4641790"}
+{"id": 11044, "field": "subname", "en": "Journeyman Alchemist Trainer", "hash": "9d4d5a8ac83a04c8", "src": "vmangos@4641790"}
+{"id": 11045, "field": "name", "en": "Burns", "hash": "96548b8cdd93441d", "src": "vmangos@4641790"}
+{"id": 11046, "field": "name", "en": "Whuut", "hash": "05375c0d0471ff13", "src": "vmangos@4641790"}
+{"id": 11046, "field": "subname", "en": "Journeyman Alchemist", "hash": "b6f442f28cc820fb", "src": "vmangos@4641790"}
+{"id": 11047, "field": "name", "en": "Kray", "hash": "0a2ac887320ebf3c", "src": "vmangos@4641790"}
+{"id": 11047, "field": "subname", "en": "Journeyman Alchemist", "hash": "b6f442f28cc820fb", "src": "vmangos@4641790"}
+{"id": 11048, "field": "name", "en": "Victor Ward", "hash": "1c09aa73e3bcc6a0", "src": "vmangos@4641790"}
+{"id": 11048, "field": "subname", "en": "Journeyman Tailor", "hash": "1088fc7259413895", "src": "vmangos@4641790"}
+{"id": 11049, "field": "name", "en": "Rhiannon Davis", "hash": "dad6c8ccdf83b159", "src": "vmangos@4641790"}
+{"id": 11049, "field": "subname", "en": "Expert Tailor", "hash": "d74c00ad84791b73", "src": "vmangos@4641790"}
+{"id": 11050, "field": "name", "en": "Trianna", "hash": "8bc890911c033ced", "src": "vmangos@4641790"}
+{"id": 11050, "field": "subname", "en": "Journeyman Tailor", "hash": "1088fc7259413895", "src": "vmangos@4641790"}
+{"id": 11051, "field": "name", "en": "Vhan", "hash": "0ba17fcb1dd39602", "src": "vmangos@4641790"}
+{"id": 11051, "field": "subname", "en": "Journeyman Tailor", "hash": "1088fc7259413895", "src": "vmangos@4641790"}
+{"id": 11052, "field": "name", "en": "Timothy Worthington", "hash": "357fbdde1ed71ce1", "src": "vmangos@4641790"}
+{"id": 11052, "field": "subname", "en": "Master Tailor", "hash": "d5778478082ac1bd", "src": "vmangos@4641790"}
+{"id": 11053, "field": "name", "en": "High Priestess MacDonnell", "hash": "8c7c8e71db273962", "src": "vmangos@4641790"}
+{"id": 11054, "field": "name", "en": "Crimson Rifleman", "hash": "0d286ed07c55874c", "src": "vmangos@4641790"}
+{"id": 11055, "field": "name", "en": "Shadow Priestess Vandis", "hash": "dd3e0b10f52ea615", "src": "vmangos@4641790"}
+{"id": 11056, "field": "name", "en": "Alchemist Arbington", "hash": "e797048113132879", "src": "vmangos@4641790"}
+{"id": 11057, "field": "name", "en": "Apothecary Dithers", "hash": "87c59906c4575752", "src": "vmangos@4641790"}
+{"id": 11058, "field": "name", "en": "Fras Siabi", "hash": "f4834bda6bc62ad8", "src": "vmangos@4641790"}
+{"id": 11063, "field": "name", "en": "Carlin Redpath", "hash": "a9e44676ca058e8b", "src": "vmangos@4641790"}
+{"id": 11063, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11064, "field": "name", "en": "Darrowshire Spirit", "hash": "7542262526c04c2d", "src": "vmangos@4641790"}
+{"id": 11065, "field": "name", "en": "Thonys Pillarstone", "hash": "8a784a667eb3bbeb", "src": "vmangos@4641790"}
+{"id": 11065, "field": "subname", "en": "Journeyman Enchanter", "hash": "dc1d3abb591bd269", "src": "vmangos@4641790"}
+{"id": 11066, "field": "name", "en": "Jhag", "hash": "0a05dc807cf42590", "src": "vmangos@4641790"}
+{"id": 11066, "field": "subname", "en": "Journeyman Enchanter", "hash": "dc1d3abb591bd269", "src": "vmangos@4641790"}
+{"id": 11067, "field": "name", "en": "Malcomb Wynn", "hash": "3d371410a4d5f57e", "src": "vmangos@4641790"}
+{"id": 11067, "field": "subname", "en": "Journeyman Enchanter", "hash": "dc1d3abb591bd269", "src": "vmangos@4641790"}
+{"id": 11068, "field": "name", "en": "Betty Quin", "hash": "403e08b12f47d267", "src": "vmangos@4641790"}
+{"id": 11068, "field": "subname", "en": "Journeyman Enchanter", "hash": "dc1d3abb591bd269", "src": "vmangos@4641790"}
+{"id": 11069, "field": "name", "en": "Jenova Stoneshield", "hash": "8a9b87122b865b6f", "src": "vmangos@4641790"}
+{"id": 11069, "field": "subname", "en": "Stable Master", "hash": "73010bae05a9562e", "src": "vmangos@4641790"}
+{"id": 11070, "field": "name", "en": "Lalina Summermoon", "hash": "b995dfbcb467cc88", "src": "vmangos@4641790"}
+{"id": 11070, "field": "subname", "en": "Journeyman Enchanter", "hash": "dc1d3abb591bd269", "src": "vmangos@4641790"}
+{"id": 11071, "field": "name", "en": "Mot Dawnstrider", "hash": "20accf07104c69b3", "src": "vmangos@4641790"}
+{"id": 11071, "field": "subname", "en": "Journeyman Enchanter", "hash": "dc1d3abb591bd269", "src": "vmangos@4641790"}
+{"id": 11072, "field": "name", "en": "Kitta Firewind", "hash": "d0309d54ca0b9b7d", "src": "vmangos@4641790"}
+{"id": 11072, "field": "subname", "en": "Artisan Enchanter", "hash": "6552a8acf817431c", "src": "vmangos@4641790"}
+{"id": 11073, "field": "name", "en": "Annora", "hash": "76562ec4f815633e", "src": "vmangos@4641790"}
+{"id": 11073, "field": "subname", "en": "Master Enchanter", "hash": "e8c355427e954fc6", "src": "vmangos@4641790"}
+{"id": 11074, "field": "name", "en": "Hgarth", "hash": "da571d31f811340a", "src": "vmangos@4641790"}
+{"id": 11074, "field": "subname", "en": "Artisan Enchanter", "hash": "6552a8acf817431c", "src": "vmangos@4641790"}
+{"id": 11075, "field": "name", "en": "Cauldron Lord Bilemaw", "hash": "d4bdb7dad86664bb", "src": "vmangos@4641790"}
+{"id": 11076, "field": "name", "en": "Cauldron Lord Razarch", "hash": "38fe9a51b48f21b0", "src": "vmangos@4641790"}
+{"id": 11077, "field": "name", "en": "Cauldron Lord Malvinious", "hash": "408e4d905d23c765", "src": "vmangos@4641790"}
+{"id": 11078, "field": "name", "en": "Cauldron Lord Soulwrath", "hash": "eb993dde2981763d", "src": "vmangos@4641790"}
+{"id": 11079, "field": "name", "en": "Wynd Nightchaser", "hash": "b94123577204a770", "src": "vmangos@4641790"}
+{"id": 11080, "field": "name", "en": "[PH[ Combat Tester", "hash": "e0631554ac70110d", "src": "vmangos@4641790"}
+{"id": 11081, "field": "name", "en": "Faldron", "hash": "2b4adbce587b52fe", "src": "vmangos@4641790"}
+{"id": 11081, "field": "subname", "en": "Expert Leatherworker", "hash": "a8eb6ff560a29dc3", "src": "vmangos@4641790"}
+{"id": 11082, "field": "name", "en": "Stratholme Courier", "hash": "898084aadbacce7a", "src": "vmangos@4641790"}
+{"id": 11083, "field": "name", "en": "Darianna", "hash": "730260b7a48e6473", "src": "vmangos@4641790"}
+{"id": 11083, "field": "subname", "en": "Journeyman Leatherworker", "hash": "3a8a671bc8e2668c", "src": "vmangos@4641790"}
+{"id": 11084, "field": "name", "en": "Tarn", "hash": "0b5b1809e73bf18c", "src": "vmangos@4641790"}
+{"id": 11084, "field": "subname", "en": "Expert Leatherworker", "hash": "a8eb6ff560a29dc3", "src": "vmangos@4641790"}
+{"id": 11096, "field": "name", "en": "Randal Worth", "hash": "9d73e1358f4f3fb3", "src": "vmangos@4641790"}
+{"id": 11096, "field": "subname", "en": "Journeyman Leatherworker", "hash": "3a8a671bc8e2668c", "src": "vmangos@4641790"}
+{"id": 11097, "field": "name", "en": "Drakk Stonehand", "hash": "9e61774bb083b737", "src": "vmangos@4641790"}
+{"id": 11097, "field": "subname", "en": "Master Leatherworking Trainer", "hash": "1c5c6a46191d6958", "src": "vmangos@4641790"}
+{"id": 11098, "field": "name", "en": "Hahrana Ironhide", "hash": "2f99021aa9e9d252", "src": "vmangos@4641790"}
+{"id": 11098, "field": "subname", "en": "Master Leatherworker", "hash": "e9a5ef17fa20073a", "src": "vmangos@4641790"}
+{"id": 11099, "field": "name", "en": "Argent Guard", "hash": "277fe3e5f3013f05", "src": "vmangos@4641790"}
+{"id": 11099, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11100, "field": "name", "en": "Mana Tide Totem II", "hash": "e7efa87470333bcc", "src": "vmangos@4641790"}
+{"id": 11101, "field": "name", "en": "Mana Tide Totem III", "hash": "afa335f3d146300d", "src": "vmangos@4641790"}
+{"id": 11102, "field": "name", "en": "Argent Rider", "hash": "e6fbd89ef21c75b6", "src": "vmangos@4641790"}
+{"id": 11102, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11103, "field": "name", "en": "Innkeeper Lyshaerya", "hash": "42e878f8b537ca5a", "src": "vmangos@4641790"}
+{"id": 11103, "field": "subname", "en": "Innkeeper", "hash": "efa922913a7475ca", "src": "vmangos@4641790"}
+{"id": 11104, "field": "name", "en": "Shelgrayn", "hash": "1feca7b99411f147", "src": "vmangos@4641790"}
+{"id": 11104, "field": "subname", "en": "Stable Master", "hash": "73010bae05a9562e", "src": "vmangos@4641790"}
+{"id": 11105, "field": "name", "en": "Aboda", "hash": "823a446f74079dec", "src": "vmangos@4641790"}
+{"id": 11105, "field": "subname", "en": "Stable Master", "hash": "73010bae05a9562e", "src": "vmangos@4641790"}
+{"id": 11106, "field": "name", "en": "Innkeeper Sikewa", "hash": "eea4a23a94e934b0", "src": "vmangos@4641790"}
+{"id": 11106, "field": "subname", "en": "Innkeeper", "hash": "efa922913a7475ca", "src": "vmangos@4641790"}
+{"id": 11116, "field": "name", "en": "Innkeeper Abeqwa", "hash": "c3aca78da0053805", "src": "vmangos@4641790"}
+{"id": 11116, "field": "subname", "en": "Innkeeper", "hash": "efa922913a7475ca", "src": "vmangos@4641790"}
+{"id": 11117, "field": "name", "en": "Awenasa", "hash": "c79e779dd8891251", "src": "vmangos@4641790"}
+{"id": 11117, "field": "subname", "en": "Stable Master", "hash": "73010bae05a9562e", "src": "vmangos@4641790"}
+{"id": 11118, "field": "name", "en": "Innkeeper Vizzie", "hash": "e33989c625f94ffa", "src": "vmangos@4641790"}
+{"id": 11118, "field": "subname", "en": "Innkeeper", "hash": "efa922913a7475ca", "src": "vmangos@4641790"}
+{"id": 11119, "field": "name", "en": "Azzleby", "hash": "2a87b77f0b718e97", "src": "vmangos@4641790"}
+{"id": 11119, "field": "subname", "en": "Stable Master", "hash": "73010bae05a9562e", "src": "vmangos@4641790"}
+{"id": 11120, "field": "name", "en": "Crimson Hammersmith", "hash": "c80323398c6064a4", "src": "vmangos@4641790"}
+{"id": 11121, "field": "name", "en": "Black Guard Swordsmith", "hash": "0150626eee84ad81", "src": "vmangos@4641790"}
+{"id": 11122, "field": "name", "en": "Restless Soul", "hash": "57c616156eaf6f75", "src": "vmangos@4641790"}
+{"id": 11136, "field": "name", "en": "Freed Soul", "hash": "3d7d5c71e3aefb80", "src": "vmangos@4641790"}
+{"id": 11137, "field": "name", "en": "Xai'ander", "hash": "15874ce0e45aebc7", "src": "vmangos@4641790"}
+{"id": 11137, "field": "subname", "en": "Weaponsmith", "hash": "f8d05abbd4920cb6", "src": "vmangos@4641790"}
+{"id": 11138, "field": "name", "en": "Maethrya", "hash": "a25028e4230f8b3e", "src": "vmangos@4641790"}
+{"id": 11138, "field": "subname", "en": "Hippogryph Master", "hash": "6d993a94f3d5da4f", "src": "vmangos@4641790"}
+{"id": 11139, "field": "name", "en": "Yugrek", "hash": "84ade53ce37651d5", "src": "vmangos@4641790"}
+{"id": 11139, "field": "subname", "en": "Wind Rider Master", "hash": "86a2dc958bbc2f1f", "src": "vmangos@4641790"}
+{"id": 11140, "field": "name", "en": "Egan", "hash": "095a1577b5f41da8", "src": "vmangos@4641790"}
+{"id": 11141, "field": "name", "en": "Spirit of Trey Lightforge", "hash": "758ef7e95c1117e1", "src": "vmangos@4641790"}
+{"id": 11142, "field": "name", "en": "Undead Postman", "hash": "6bed21aae4c97ff6", "src": "vmangos@4641790"}
+{"id": 11143, "field": "name", "en": "Postmaster Malown", "hash": "6d1d58857e74b78d", "src": "vmangos@4641790"}
+{"id": 11144, "field": "name", "en": "Oracle Sphere", "hash": "5effb379e210ed95", "src": "vmangos@4641790"}
+{"id": 11145, "field": "name", "en": "Myolor Sunderfury", "hash": "3413ceb0c2beb7fa", "src": "vmangos@4641790"}
+{"id": 11146, "field": "name", "en": "Ironus Coldsteel", "hash": "577f4aead405abd7", "src": "vmangos@4641790"}
+{"id": 11146, "field": "subname", "en": "Special Weapon Crafter", "hash": "4e6b311a1c311d76", "src": "vmangos@4641790"}
+{"id": 11147, "field": "name", "en": "Riding MechaStrider (Green/Gray)", "hash": "14ed9a4b86a15949", "src": "vmangos@4641790"}
+{"id": 11148, "field": "name", "en": "Riding MechaStrider (Purple)", "hash": "7f205b5731755f39", "src": "vmangos@4641790"}
+{"id": 11149, "field": "name", "en": "Riding MechaStrider (Red/Blue)", "hash": "18869c778b167a7e", "src": "vmangos@4641790"}
+{"id": 11150, "field": "name", "en": "Riding MechaStrider (Icy Blue)", "hash": "27c6a3a1ad520a0b", "src": "vmangos@4641790"}
+{"id": 11151, "field": "name", "en": "Riding MechaStrider (Yellow/Green)", "hash": "27e351bb1990b355", "src": "vmangos@4641790"}
+{"id": 11152, "field": "name", "en": "The Scourge Cauldron", "hash": "3dd340525446f4ee", "src": "vmangos@4641790"}
+{"id": 11153, "field": "name", "en": "Riding Skeletal Horse (Red)", "hash": "30b08137b9572521", "src": "vmangos@4641790"}
+{"id": 11154, "field": "name", "en": "Riding Skeletal Horse (Blue)", "hash": "d26b6c3ba5cbd6ba", "src": "vmangos@4641790"}
+{"id": 11155, "field": "name", "en": "Riding Skeletal Horse (Brown)", "hash": "1581b2ab97b63e73", "src": "vmangos@4641790"}
+{"id": 11156, "field": "name", "en": "Green Skeletal Warhorse", "hash": "bc88263c85ae06d0", "src": "vmangos@4641790"}
+{"id": 11176, "field": "name", "en": "Krathok Moltenfist", "hash": "188478b0c6bfd7b8", "src": "vmangos@4641790"}
+{"id": 11177, "field": "name", "en": "Okothos Ironrager", "hash": "f218b2a147f3b56e", "src": "vmangos@4641790"}
+{"id": 11177, "field": "subname", "en": "Armorsmith", "hash": "f49e0265d978f025", "src": "vmangos@4641790"}
+{"id": 11178, "field": "name", "en": "Borgosh Corebender", "hash": "36c48186778b4d93", "src": "vmangos@4641790"}
+{"id": 11178, "field": "subname", "en": "Weaponsmith", "hash": "f8d05abbd4920cb6", "src": "vmangos@4641790"}
+{"id": 11179, "field": "name", "en": "Crystal Trigger", "hash": "b19ec90d2e6348cb", "src": "vmangos@4641790"}
+{"id": 11180, "field": "name", "en": "Bloodvenom Post Brave", "hash": "b2b77c86a53bb3f8", "src": "vmangos@4641790"}
+{"id": 11181, "field": "name", "en": "Shi'alune", "hash": "bdf4306eb5c6a694", "src": "vmangos@4641790"}
+{"id": 11181, "field": "subname", "en": "Kaerbrus' Pet", "hash": "6969ca67ed601741", "src": "vmangos@4641790"}
+{"id": 11182, "field": "name", "en": "Nixxrak", "hash": "8255642f109898d4", "src": "vmangos@4641790"}
+{"id": 11182, "field": "subname", "en": "Heavy Armor Merchant", "hash": "9e3743204fa41b25", "src": "vmangos@4641790"}
+{"id": 11183, "field": "name", "en": "Blixxrak", "hash": "7a8a0eef5d519c2c", "src": "vmangos@4641790"}
+{"id": 11183, "field": "subname", "en": "Light Armor Merchant", "hash": "1b6f90e52bd1de89", "src": "vmangos@4641790"}
+{"id": 11184, "field": "name", "en": "Wixxrak", "hash": "dc9dada612e3d742", "src": "vmangos@4641790"}
+{"id": 11184, "field": "subname", "en": "Weaponsmith & Gunsmith", "hash": "29e18786f3e67752", "src": "vmangos@4641790"}
+{"id": 11185, "field": "name", "en": "Xizzer Fizzbolt", "hash": "a0f51287b50b4cc0", "src": "vmangos@4641790"}
+{"id": 11185, "field": "subname", "en": "Engineering Supplies", "hash": "c3fc9d13fc7c9c9a", "src": "vmangos@4641790"}
+{"id": 11186, "field": "name", "en": "Lunnix Sprocketslip", "hash": "cf59c914cb066340", "src": "vmangos@4641790"}
+{"id": 11186, "field": "subname", "en": "Mining Supplies", "hash": "cef8fe18ca006954", "src": "vmangos@4641790"}
+{"id": 11187, "field": "name", "en": "Himmik", "hash": "ff0cd84c42eaf1fe", "src": "vmangos@4641790"}
+{"id": 11187, "field": "subname", "en": "Food & Drink", "hash": "e3e8923828f2b8c1", "src": "vmangos@4641790"}
+{"id": 11188, "field": "name", "en": "Evie Whirlbrew", "hash": "0d12b4fcc8c76ee2", "src": "vmangos@4641790"}
+{"id": 11188, "field": "subname", "en": "Alchemy Supplies", "hash": "dd4dd68dcf3ddcb2", "src": "vmangos@4641790"}
+{"id": 11189, "field": "name", "en": "Qia", "hash": "00156bf5419a83cc", "src": "vmangos@4641790"}
+{"id": 11189, "field": "subname", "en": "Trade Goods Supplies", "hash": "5a234dd0ecc7477d", "src": "vmangos@4641790"}
+{"id": 11190, "field": "name", "en": "Everlook Bruiser", "hash": "403683441ae42691", "src": "vmangos@4641790"}
+{"id": 11191, "field": "name", "en": "Lilith the Lithe", "hash": "92860e7a00cc04e1", "src": "vmangos@4641790"}
+{"id": 11192, "field": "name", "en": "Kilram", "hash": "f178b8a8bdf84fe2", "src": "vmangos@4641790"}
+{"id": 11193, "field": "name", "en": "Seril Scourgebane", "hash": "e29e3fd6846061a7", "src": "vmangos@4641790"}
+{"id": 11194, "field": "name", "en": "Argent Defender", "hash": "fbd44193e22cb856", "src": "vmangos@4641790"}
+{"id": 11194, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11195, "field": "name", "en": "Skeletal Black Warhorse", "hash": "d0e13c320783caa4", "src": "vmangos@4641790"}
+{"id": 11196, "field": "name", "en": "Shatterspear Drummer", "hash": "1f649d3ce8629327", "src": "vmangos@4641790"}
+{"id": 11197, "field": "name", "en": "Mindless Skeleton", "hash": "cd0c8a393a2cd17f", "src": "vmangos@4641790"}
+{"id": 11198, "field": "name", "en": "Draenei Exile", "hash": "d685b5f2c77ab917", "src": "vmangos@4641790"}
+{"id": 11199, "field": "name", "en": "Crimson Cannon", "hash": "6c87feef37a4359d", "src": "vmangos@4641790"}
+{"id": 11200, "field": "name", "en": "Summoned Skeleton", "hash": "da8c43f8d7829ac6", "src": "vmangos@4641790"}
+{"id": 11216, "field": "name", "en": "Eva Sarkhoff", "hash": "0caac2501c80d941", "src": "vmangos@4641790"}
+{"id": 11217, "field": "name", "en": "Lucien Sarkhoff", "hash": "50c15cfd0b392905", "src": "vmangos@4641790"}
+{"id": 11218, "field": "name", "en": "Kerlonian Evershade", "hash": "a88f290111cb9f71", "src": "vmangos@4641790"}
+{"id": 11218, "field": "subname", "en": "Druid of the Claw", "hash": "dcee0406ba871b99", "src": "vmangos@4641790"}
+{"id": 11219, "field": "name", "en": "Liladris Moonriver", "hash": "fe59d6dcec5c1d5b", "src": "vmangos@4641790"}
+{"id": 11236, "field": "name", "en": "Blood Parrot", "hash": "fe699fa1edd192ed", "src": "vmangos@4641790"}
+{"id": 11256, "field": "name", "en": "Manifestation of Water", "hash": "03650764d8cb4268", "src": "vmangos@4641790"}
+{"id": 11257, "field": "name", "en": "Scholomance Handler", "hash": "119ea16362cf5a81", "src": "vmangos@4641790"}
+{"id": 11258, "field": "name", "en": "Frail Skeleton", "hash": "c3da6ec3690fcd66", "src": "vmangos@4641790"}
+{"id": 11259, "field": "name", "en": "Nataka Longhorn", "hash": "54c286f6e581397c", "src": "vmangos@4641790"}
+{"id": 11260, "field": "name", "en": "Northshire Peasant", "hash": "701a72239a51478f", "src": "vmangos@4641790"}
+{"id": 11261, "field": "name", "en": "Doctor Theolen Krastinov", "hash": "155a8e76c680b336", "src": "vmangos@4641790"}
+{"id": 11261, "field": "subname", "en": "The Butcher", "hash": "8c89d4c1d72728ed", "src": "vmangos@4641790"}
+{"id": 11262, "field": "name", "en": "Onyxian Whelp", "hash": "e2302733b2ec1d88", "src": "vmangos@4641790"}
+{"id": 11263, "field": "name", "en": "Spectral Projection", "hash": "7fa1864d05dc5b7a", "src": "vmangos@4641790"}
+{"id": 11276, "field": "name", "en": "Azshara Sentinel", "hash": "59e5452fdb16137b", "src": "vmangos@4641790"}
+{"id": 11277, "field": "name", "en": "Caer Darrow Citizen", "hash": "c0103d070ba83c74", "src": "vmangos@4641790"}
+{"id": 11278, "field": "name", "en": "Magnus Frostwake", "hash": "0c92c75d21641ad7", "src": "vmangos@4641790"}
+{"id": 11279, "field": "name", "en": "Caer Darrow Guardsman", "hash": "044b9fdef9678be2", "src": "vmangos@4641790"}
+{"id": 11280, "field": "name", "en": "Caer Darrow Cannoneer", "hash": "3280e693ece192d9", "src": "vmangos@4641790"}
+{"id": 11281, "field": "name", "en": "Caer Darrow Horseman", "hash": "8f6937858313053b", "src": "vmangos@4641790"}
+{"id": 11282, "field": "name", "en": "Melia", "hash": "5544f285835547cf", "src": "vmangos@4641790"}
+{"id": 11283, "field": "name", "en": "Sammy", "hash": "be0e472c8b2d37df", "src": "vmangos@4641790"}
+{"id": 11284, "field": "name", "en": "Dark Shade", "hash": "5c743b6b4b87655b", "src": "vmangos@4641790"}
+{"id": 11285, "field": "name", "en": "Rory", "hash": "0b1a275c03ffbe27", "src": "vmangos@4641790"}
+{"id": 11286, "field": "name", "en": "Magistrate Marduke", "hash": "d76cfaa3f7202e72", "src": "vmangos@4641790"}
+{"id": 11287, "field": "name", "en": "Baker Masterson", "hash": "4e8be983f436a264", "src": "vmangos@4641790"}
+{"id": 11288, "field": "name", "en": "Spectral Betrayer", "hash": "fee858ffa06ad277", "src": "vmangos@4641790"}
+{"id": 11289, "field": "name", "en": "Spectral Defender", "hash": "4a156ac79eb6edd9", "src": "vmangos@4641790"}
+{"id": 11290, "field": "name", "en": "Mossflayer Zombie", "hash": "3454fe8bf7110e08", "src": "vmangos@4641790"}
+{"id": 11291, "field": "name", "en": "Unliving Mossflayer", "hash": "9adf617809800000", "src": "vmangos@4641790"}
+{"id": 11292, "field": "name", "en": "Mossflayer Berserker", "hash": "710bdf416a54f777", "src": "vmangos@4641790"}
+{"id": 11296, "field": "name", "en": "Darrowshire Poltergeist", "hash": "cee5296e3801fe54", "src": "vmangos@4641790"}
+{"id": 11316, "field": "name", "en": "Joseph Dirte", "hash": "f041a5bf4109f156", "src": "vmangos@4641790"}
+{"id": 11316, "field": "subname", "en": "Waste Management", "hash": "b3c932c09e1a6eed", "src": "vmangos@4641790"}
+{"id": 11317, "field": "name", "en": "Jinar'Zillen", "hash": "87d29da06c92443b", "src": "vmangos@4641790"}
+{"id": 11318, "field": "name", "en": "Ragefire Trogg", "hash": "e4dec333e6a900c5", "src": "vmangos@4641790"}
+{"id": 11319, "field": "name", "en": "Ragefire Shaman", "hash": "7111cbab87124ad9", "src": "vmangos@4641790"}
+{"id": 11320, "field": "name", "en": "Earthborer", "hash": "646a3e2109f1c9fd", "src": "vmangos@4641790"}
+{"id": 11321, "field": "name", "en": "Molten Elemental", "hash": "082c73df9b16a0b7", "src": "vmangos@4641790"}
+{"id": 11322, "field": "name", "en": "Searing Blade Cultist", "hash": "956b75acd2989d63", "src": "vmangos@4641790"}
+{"id": 11323, "field": "name", "en": "Searing Blade Enforcer", "hash": "384f87869c3a074a", "src": "vmangos@4641790"}
+{"id": 11324, "field": "name", "en": "Searing Blade Warlock", "hash": "754ce8d609a9f042", "src": "vmangos@4641790"}
+{"id": 11325, "field": "name", "en": "Panda Cub", "hash": "885f47671d393a8a", "src": "vmangos@4641790"}
+{"id": 11326, "field": "name", "en": "Mini Diablo", "hash": "ec56d1b70891da62", "src": "vmangos@4641790"}
+{"id": 11326, "field": "subname", "en": "Lord of Terror", "hash": "0c12d20445d3feda", "src": "vmangos@4641790"}
+{"id": 11327, "field": "name", "en": "Zergling", "hash": "67eb028653b866a3", "src": "vmangos@4641790"}
+{"id": 11328, "field": "name", "en": "Eastvale Peasant", "hash": "6c09b67b05c6b21f", "src": "vmangos@4641790"}
+{"id": 11337, "field": "name", "en": "[UNUSED] Hakkar Axe Thrower", "hash": "81229d62bb4b379e", "src": "vmangos@4641790"}
+{"id": 11338, "field": "name", "en": "Hakkari Shadowcaster", "hash": "0d48dc890c796915", "src": "vmangos@4641790"}
+{"id": 11339, "field": "name", "en": "Hakkari Shadow Hunter", "hash": "13ea2c52f683fc8b", "src": "vmangos@4641790"}
+{"id": 11340, "field": "name", "en": "Hakkari Blood Priest", "hash": "6f74c5f88e61c3d6", "src": "vmangos@4641790"}
+{"id": 11341, "field": "name", "en": "[UNUSED] Hakkar Berserker", "hash": "fab34d6f82387fb7", "src": "vmangos@4641790"}
+{"id": 11342, "field": "name", "en": "[UNUSED] Hakkar Warrior", "hash": "2fb4a30e81055ee4", "src": "vmangos@4641790"}
+{"id": 11343, "field": "name", "en": "[UNUSED] Hakkar Warlord", "hash": "2ee8651d48679cd2", "src": "vmangos@4641790"}
+{"id": 11344, "field": "name", "en": "[UNUSED] Hakkar Blood Drinker", "hash": "c7dd389d46dcca3f", "src": "vmangos@4641790"}
+{"id": 11345, "field": "name", "en": "[UNUSED] Hakkar Headhunter", "hash": "5da47b929a745c53", "src": "vmangos@4641790"}
+{"id": 11346, "field": "name", "en": "Hakkari Oracle", "hash": "332ed72ff2d1d681", "src": "vmangos@4641790"}
+{"id": 11347, "field": "name", "en": "Zealot Lor'Khan", "hash": "09a4835ee3660c05", "src": "vmangos@4641790"}
+{"id": 11348, "field": "name", "en": "Zealot Zath", "hash": "c7d707814d87da0b", "src": "vmangos@4641790"}
+{"id": 11349, "field": "name", "en": "[UNUSED] Gurubashi Hideskinner", "hash": "c1edcc664102059e", "src": "vmangos@4641790"}
+{"id": 11350, "field": "name", "en": "Gurubashi Axe Thrower", "hash": "2ec08e995be682cf", "src": "vmangos@4641790"}
+{"id": 11351, "field": "name", "en": "Gurubashi Headhunter", "hash": "b2ff94dbe21ece47", "src": "vmangos@4641790"}
+{"id": 11352, "field": "name", "en": "Gurubashi Berserker", "hash": "6abdc4d89d2cd9c0", "src": "vmangos@4641790"}
+{"id": 11353, "field": "name", "en": "Gurubashi Blood Drinker", "hash": "388bacb251f08d73", "src": "vmangos@4641790"}
+{"id": 11354, "field": "name", "en": "[UNUSED] Gurubashi Warlord", "hash": "2ff693753e4d4096", "src": "vmangos@4641790"}
+{"id": 11355, "field": "name", "en": "Gurubashi Warrior", "hash": "c7df00da58a7a77c", "src": "vmangos@4641790"}
+{"id": 11356, "field": "name", "en": "Gurubashi Champion", "hash": "d88314f564d97ec2", "src": "vmangos@4641790"}
+{"id": 11357, "field": "name", "en": "Son of Hakkar", "hash": "8282295826f68cdf", "src": "vmangos@4641790"}
+{"id": 11358, "field": "name", "en": "[UNUSED] Daughter of Hakkar", "hash": "40c2d1eed8a4612e", "src": "vmangos@4641790"}
+{"id": 11359, "field": "name", "en": "Soulflayer", "hash": "41f4c8e67ab2e34f", "src": "vmangos@4641790"}
+{"id": 11360, "field": "name", "en": "Zulian Cub", "hash": "35a00e497e1ffb17", "src": "vmangos@4641790"}
+{"id": 11361, "field": "name", "en": "Zulian Tiger", "hash": "ef2cdd3359f3f41f", "src": "vmangos@4641790"}
+{"id": 11364, "field": "name", "en": "[UNUSED] Zulian Tigress", "hash": "b01dbaa505ad1555", "src": "vmangos@4641790"}
+{"id": 11365, "field": "name", "en": "Zulian Panther", "hash": "f46c4eb0f3c0d290", "src": "vmangos@4641790"}
+{"id": 11366, "field": "name", "en": "[UNUSED] Zulian Matriarch", "hash": "d4a09a001387451a", "src": "vmangos@4641790"}
+{"id": 11367, "field": "name", "en": "[UNUSED] Zulian Patriarch", "hash": "31e254cfce9b2857", "src": "vmangos@4641790"}
+{"id": 11368, "field": "name", "en": "Bloodseeker Bat", "hash": "2a0657af9641a913", "src": "vmangos@4641790"}
+{"id": 11369, "field": "name", "en": "[UNUSED] Hidden Bloodseeker", "hash": "fa4d48e2fe4ca498", "src": "vmangos@4641790"}
+{"id": 11370, "field": "name", "en": "Razzashi Broodwidow", "hash": "0500f1eba11d205a", "src": "vmangos@4641790"}
+{"id": 11371, "field": "name", "en": "Razzashi Serpent", "hash": "2d4d1bfabf496353", "src": "vmangos@4641790"}
+{"id": 11372, "field": "name", "en": "Razzashi Adder", "hash": "6557baeda6acea25", "src": "vmangos@4641790"}
+{"id": 11373, "field": "name", "en": "Razzashi Cobra", "hash": "89ebfdbc700a7c50", "src": "vmangos@4641790"}
+{"id": 11374, "field": "name", "en": "Hooktooth Frenzy", "hash": "181b4d7af77d0b19", "src": "vmangos@4641790"}
+{"id": 11375, "field": "name", "en": "[UNUSED] Zath", "hash": "45b35448c49967bc", "src": "vmangos@4641790"}
+{"id": 11376, "field": "name", "en": "[UNUSED] Lor'khan", "hash": "d334ed757750f4e6", "src": "vmangos@4641790"}
+{"id": 11377, "field": "name", "en": "[UNUSED] Hak'tharr the Mindhunter", "hash": "8f49963e444fd1f5", "src": "vmangos@4641790"}
 {"id": 11378, "field": "name", "en": "Foreman Thazz'ril", "hash": "d466e581849b776c", "src": "collector@1.60.1.70205"}
+{"id": 11379, "field": "name", "en": "[UNUSED] Nik'reesh", "hash": "0f2f8504e65c6e17", "src": "vmangos@4641790"}
+{"id": 11380, "field": "name", "en": "Jin'do the Hexxer", "hash": "3c7ad0ef255704c7", "src": "vmangos@4641790"}
+{"id": 11381, "field": "name", "en": "Jin", "hash": "001396c325d0a992", "src": "vmangos@4641790"}
+{"id": 11382, "field": "name", "en": "Bloodlord Mandokir", "hash": "afc44a0b66828335", "src": "vmangos@4641790"}
+{"id": 11383, "field": "name", "en": "High Priestess Hai'watna", "hash": "e1591aa441c40967", "src": "vmangos@4641790"}
+{"id": 11384, "field": "name", "en": "[UNUSED] Elder T'kashra", "hash": "7c6e440d61c64ca2", "src": "vmangos@4641790"}
+{"id": 11385, "field": "name", "en": "[UNUSED] Mogwhi the Ruthless", "hash": "328285faccbbd949", "src": "vmangos@4641790"}
+{"id": 11386, "field": "name", "en": "[UNUSED] Janook the Bladefury", "hash": "a6fb9113d8a6d188", "src": "vmangos@4641790"}
+{"id": 11387, "field": "name", "en": "Sandfury Speaker", "hash": "e3d0f11adc0e486f", "src": "vmangos@4641790"}
+{"id": 11387, "field": "subname", "en": "Sandfury Troll Ambassador", "hash": "df5179352386ec8a", "src": "vmangos@4641790"}
+{"id": 11388, "field": "name", "en": "Witherbark Speaker", "hash": "7744d7974870b033", "src": "vmangos@4641790"}
+{"id": 11388, "field": "subname", "en": "Witherbark Troll Ambassador", "hash": "94e811e44b92e818", "src": "vmangos@4641790"}
+{"id": 11389, "field": "name", "en": "Bloodscalp Speaker", "hash": "6f8b4b36e7498f3b", "src": "vmangos@4641790"}
+{"id": 11389, "field": "subname", "en": "Bloodscalp Troll Ambassador", "hash": "0dc5aa9909469abb", "src": "vmangos@4641790"}
+{"id": 11390, "field": "name", "en": "Skullsplitter Speaker", "hash": "28b54a475cd90f96", "src": "vmangos@4641790"}
+{"id": 11390, "field": "subname", "en": "Skullsplitter Troll Ambassador", "hash": "665a39bc32316029", "src": "vmangos@4641790"}
+{"id": 11391, "field": "name", "en": "Vilebranch Speaker", "hash": "60505b4ea44580c9", "src": "vmangos@4641790"}
+{"id": 11391, "field": "subname", "en": "Vilebranch Troll Ambassador", "hash": "2b117e6d0a0686b3", "src": "vmangos@4641790"}
+{"id": 11392, "field": "name", "en": "Audrey Vergara", "hash": "b21980ea1a02894c", "src": "vmangos@4641790"}
+{"id": 11393, "field": "name", "en": "Josh Miller", "hash": "df87b815996b0f0b", "src": "vmangos@4641790"}
+{"id": 11394, "field": "name", "en": "Lauren Preston", "hash": "1b2d1625dadc7986", "src": "vmangos@4641790"}
+{"id": 11395, "field": "name", "en": "Kevin Faulder", "hash": "6cfa59354b658280", "src": "vmangos@4641790"}
+{"id": 11396, "field": "name", "en": "Joelle McCarthy", "hash": "662b37d23060877f", "src": "vmangos@4641790"}
+{"id": 11397, "field": "name", "en": "Nara Meideros", "hash": "38d2991664ba2ceb", "src": "vmangos@4641790"}
+{"id": 11397, "field": "subname", "en": "Priest Trainer", "hash": "b489a6cd21cb58ad", "src": "vmangos@4641790"}
+{"id": 11398, "field": "name", "en": "Charisse Moonrunner", "hash": "e54e187295c1ccf4", "src": "vmangos@4641790"}
+{"id": 11399, "field": "name", "en": "Ashlyn Vor'lair", "hash": "e98517985a840a96", "src": "vmangos@4641790"}
+{"id": 11400, "field": "name", "en": "Ann'rimor Falchi", "hash": "feb6ff4efb0d7a07", "src": "vmangos@4641790"}
+{"id": 11401, "field": "name", "en": "Priestess Alathea", "hash": "60d1ffedc7012956", "src": "vmangos@4641790"}
+{"id": 11401, "field": "subname", "en": "Priest Trainer", "hash": "b489a6cd21cb58ad", "src": "vmangos@4641790"}
+{"id": 11402, "field": "name", "en": "Jarvis Greenhammer", "hash": "2b4c9bf5623eaab7", "src": "vmangos@4641790"}
+{"id": 11403, "field": "name", "en": "Russle Hochstein", "hash": "3e5ac5dc698fda9c", "src": "vmangos@4641790"}
+{"id": 11404, "field": "name", "en": "Dillon Gregor", "hash": "578be445d2144f35", "src": "vmangos@4641790"}
+{"id": 11405, "field": "name", "en": "Diana Battleheart", "hash": "8d7750c7afc48cbb", "src": "vmangos@4641790"}
+{"id": 11406, "field": "name", "en": "High Priest Rohan", "hash": "bacc2e441750f888", "src": "vmangos@4641790"}
+{"id": 11406, "field": "subname", "en": "Priest Trainer", "hash": "b489a6cd21cb58ad", "src": "vmangos@4641790"}
+{"id": 11407, "field": "name", "en": "Var'jun", "hash": "d799bbd619dd1d9e", "src": "vmangos@4641790"}
+{"id": 11408, "field": "name", "en": "Watna", "hash": "0446f61f22a12fdb", "src": "vmangos@4641790"}
+{"id": 11409, "field": "name", "en": "Jo'bu", "hash": "21e0c2b25aba2f91", "src": "vmangos@4641790"}
+{"id": 11410, "field": "name", "en": "Shal'vol", "hash": "dca88ee625a3f924", "src": "vmangos@4641790"}
+{"id": 11411, "field": "name", "en": "Priestess Kara'van", "hash": "cfcaa0e72f7e95eb", "src": "vmangos@4641790"}
+{"id": 11412, "field": "name", "en": "Danielle Koppen", "hash": "aca525584a87dad8", "src": "vmangos@4641790"}
+{"id": 11413, "field": "name", "en": "Vincent Wilfork", "hash": "cc1dcb8133bebcac", "src": "vmangos@4641790"}
+{"id": 11414, "field": "name", "en": "Nicole Tarlow", "hash": "302293e909b02593", "src": "vmangos@4641790"}
+{"id": 11415, "field": "name", "en": "Amber Provost", "hash": "5c01853a9523f1df", "src": "vmangos@4641790"}
+{"id": 11416, "field": "name", "en": "Thomas Brady", "hash": "9a3ef8f08f087888", "src": "vmangos@4641790"}
+{"id": 11437, "field": "name", "en": "Minor Infernal", "hash": "bbd651563be6f1b1", "src": "vmangos@4641790"}
+{"id": 11438, "field": "name", "en": "Bibbly F'utzbuckle", "hash": "211ca17b3d283bec", "src": "vmangos@4641790"}
+{"id": 11439, "field": "name", "en": "Illusion of Jandice Barov", "hash": "ab54dac51ffcfca7", "src": "vmangos@4641790"}
+{"id": 11440, "field": "name", "en": "Gordok Enforcer", "hash": "0fe582a92716d4a3", "src": "vmangos@4641790"}
+{"id": 11441, "field": "name", "en": "Gordok Brute", "hash": "62a8e2137101f905", "src": "vmangos@4641790"}
+{"id": 11442, "field": "name", "en": "Gordok Mauler", "hash": "20afbd57237a21c0", "src": "vmangos@4641790"}
+{"id": 11443, "field": "name", "en": "Gordok Ogre-Mage", "hash": "fc41efc08adcabf2", "src": "vmangos@4641790"}
+{"id": 11444, "field": "name", "en": "Gordok Mage-Lord", "hash": "2da0c0c0f50dfc7d", "src": "vmangos@4641790"}
+{"id": 11445, "field": "name", "en": "Gordok Captain", "hash": "543fb47aa15556a0", "src": "vmangos@4641790"}
+{"id": 11446, "field": "name", "en": "Gordok Spirit", "hash": "0b7d22db93643bde", "src": "vmangos@4641790"}
+{"id": 11447, "field": "name", "en": "Mushgog", "hash": "3de9f95730b91394", "src": "vmangos@4641790"}
+{"id": 11448, "field": "name", "en": "Gordok Warlock", "hash": "94425447db4151c1", "src": "vmangos@4641790"}
+{"id": 11449, "field": "name", "en": "[UNUSED] Gordok Battle Mage", "hash": "6c94cabb8d16d6f8", "src": "vmangos@4641790"}
+{"id": 11450, "field": "name", "en": "Gordok Reaver", "hash": "4dd09ef9526806dc", "src": "vmangos@4641790"}
+{"id": 11451, "field": "name", "en": "Wildspawn Satyr", "hash": "dc15f04e21ca9eb4", "src": "vmangos@4641790"}
+{"id": 11452, "field": "name", "en": "Wildspawn Rogue", "hash": "cc650ee9caf38744", "src": "vmangos@4641790"}
+{"id": 11453, "field": "name", "en": "Wildspawn Trickster", "hash": "516dcb17dee7b1e6", "src": "vmangos@4641790"}
+{"id": 11454, "field": "name", "en": "Wildspawn Betrayer", "hash": "2cb945bb27a93ef9", "src": "vmangos@4641790"}
+{"id": 11455, "field": "name", "en": "Wildspawn Felsworn", "hash": "42dabdad4f287744", "src": "vmangos@4641790"}
+{"id": 11456, "field": "name", "en": "Wildspawn Shadowstalker", "hash": "d9f32763d68a06a4", "src": "vmangos@4641790"}
+{"id": 11457, "field": "name", "en": "Wildspawn Hellcaller", "hash": "dbfac578a91be56d", "src": "vmangos@4641790"}
+{"id": 11458, "field": "name", "en": "Petrified Treant", "hash": "c008acc7aa4c7d82", "src": "vmangos@4641790"}
+{"id": 11459, "field": "name", "en": "Ironbark Protector", "hash": "2439273e4e74d2a7", "src": "vmangos@4641790"}
+{"id": 11460, "field": "name", "en": "Alzzin's Minion", "hash": "397463dcbdac145d", "src": "vmangos@4641790"}
+{"id": 11461, "field": "name", "en": "Warpwood Guardian", "hash": "6c2f5f37ecec5933", "src": "vmangos@4641790"}
+{"id": 11462, "field": "name", "en": "Warpwood Treant", "hash": "661535eeb57d1a07", "src": "vmangos@4641790"}
+{"id": 11463, "field": "name", "en": "[UNUSED] Warpwood Scrabbler", "hash": "3fe955ca1b8d1c66", "src": "vmangos@4641790"}
+{"id": 11464, "field": "name", "en": "Warpwood Tangler", "hash": "27da41615db3bc5f", "src": "vmangos@4641790"}
+{"id": 11465, "field": "name", "en": "Warpwood Stomper", "hash": "3055bf8254900d32", "src": "vmangos@4641790"}
+{"id": 11466, "field": "name", "en": "Highborne Summoner", "hash": "108800a413607033", "src": "vmangos@4641790"}
+{"id": 11467, "field": "name", "en": "Tsu'zee", "hash": "522ef2b9069fa4ed", "src": "vmangos@4641790"}
+{"id": 11468, "field": "name", "en": "[UNUSED] Eldreth Lichling", "hash": "1d020ed20e4c10a4", "src": "vmangos@4641790"}
+{"id": 11469, "field": "name", "en": "Eldreth Seether", "hash": "4921846ebe898ba5", "src": "vmangos@4641790"}
+{"id": 11470, "field": "name", "en": "Eldreth Sorcerer", "hash": "160cf579587d408b", "src": "vmangos@4641790"}
+{"id": 11471, "field": "name", "en": "Eldreth Apparition", "hash": "c76e3955857b3cd1", "src": "vmangos@4641790"}
+{"id": 11472, "field": "name", "en": "Eldreth Spirit", "hash": "f3094ebc4590863e", "src": "vmangos@4641790"}
+{"id": 11473, "field": "name", "en": "Eldreth Spectre", "hash": "158cc8090b317151", "src": "vmangos@4641790"}
+{"id": 11474, "field": "name", "en": "Eldreth Wraith", "hash": "0321274fba9389fe", "src": "vmangos@4641790"}
+{"id": 11475, "field": "name", "en": "Eldreth Phantasm", "hash": "ce2178e3d0afd488", "src": "vmangos@4641790"}
+{"id": 11476, "field": "name", "en": "Skeletal Highborne", "hash": "1eceb0ee97e0e4f7", "src": "vmangos@4641790"}
+{"id": 11477, "field": "name", "en": "Rotting Highborne", "hash": "786bef91a349100d", "src": "vmangos@4641790"}
+{"id": 11478, "field": "name", "en": "[UNUSED] Mana Beast", "hash": "4477cd29a8c66e5b", "src": "vmangos@4641790"}
+{"id": 11479, "field": "name", "en": "Arcane Horror", "hash": "db7cd3a7d7066992", "src": "vmangos@4641790"}
+{"id": 11480, "field": "name", "en": "Arcane Aberration", "hash": "ffa1776d8a8472b9", "src": "vmangos@4641790"}
+{"id": 11481, "field": "name", "en": "[UNUSED] Arcane Terror", "hash": "4b38aab50f8f3ec9", "src": "vmangos@4641790"}
+{"id": 11483, "field": "name", "en": "Mana Remnant", "hash": "21d2d9c51f5f24c0", "src": "vmangos@4641790"}
+{"id": 11484, "field": "name", "en": "Residual Monstrosity", "hash": "05db7e6ec5e49768", "src": "vmangos@4641790"}
+{"id": 11486, "field": "name", "en": "Prince Tortheldrin", "hash": "b9fcc6c73a8ba475", "src": "vmangos@4641790"}
+{"id": 11487, "field": "name", "en": "Magister Kalendris", "hash": "e4f65526bc8b766f", "src": "vmangos@4641790"}
+{"id": 11488, "field": "name", "en": "Illyanna Ravenoak", "hash": "af108be01278785b", "src": "vmangos@4641790"}
+{"id": 11489, "field": "name", "en": "Tendris Warpwood", "hash": "f06c0d905479190d", "src": "vmangos@4641790"}
+{"id": 11490, "field": "name", "en": "Zevrim Thornhoof", "hash": "30cb0cb4b439add8", "src": "vmangos@4641790"}
+{"id": 11491, "field": "name", "en": "Old Ironbark", "hash": "90defa4b9421d3da", "src": "vmangos@4641790"}
+{"id": 11492, "field": "name", "en": "Alzzin the Wildshaper", "hash": "2e7146bfc9608157", "src": "vmangos@4641790"}
+{"id": 11493, "field": "name", "en": "[UNUSED] Sentius", "hash": "eb3fc55ee852b3fd", "src": "vmangos@4641790"}
+{"id": 11494, "field": "name", "en": "Alzinn Trigger", "hash": "81b9ec05aceccacc", "src": "vmangos@4641790"}
+{"id": 11495, "field": "name", "en": "[UNUSED] Avidus", "hash": "4197965c73420b71", "src": "vmangos@4641790"}
+{"id": 11496, "field": "name", "en": "Immol'thar", "hash": "80a5f32af2096aef", "src": "vmangos@4641790"}
+{"id": 11497, "field": "name", "en": "The Razza", "hash": "20db8d8efe552969", "src": "vmangos@4641790"}
+{"id": 11498, "field": "name", "en": "Skarr the Unbreakable", "hash": "c65da7c82f24e19a", "src": "vmangos@4641790"}
+{"id": 11499, "field": "name", "en": "[UNUSED] Commander Gormaul", "hash": "2eecdb11a2a85b8f", "src": "vmangos@4641790"}
+{"id": 11500, "field": "name", "en": "[UNUSED] Majordomo Bagrosh", "hash": "723e63057734aba7", "src": "vmangos@4641790"}
+{"id": 11501, "field": "name", "en": "King Gordok", "hash": "b4235dbd311e4031", "src": "vmangos@4641790"}
+{"id": 11502, "field": "name", "en": "Ragnaros", "hash": "844de3baf9d81549", "src": "vmangos@4641790"}
+{"id": 11516, "field": "name", "en": "Timbermaw Warder", "hash": "c8a49a480e4135c6", "src": "vmangos@4641790"}
+{"id": 11517, "field": "name", "en": "Oggleflint", "hash": "bcd62aa49e550ab1", "src": "vmangos@4641790"}
+{"id": 11517, "field": "subname", "en": "Ragefire Chieftain", "hash": "0dcb29423b0e77a5", "src": "vmangos@4641790"}
+{"id": 11518, "field": "name", "en": "Jergosh the Invoker", "hash": "ea34bab7f287b038", "src": "vmangos@4641790"}
+{"id": 11519, "field": "name", "en": "Bazzalan", "hash": "8aaa46ee0ba9fa46", "src": "vmangos@4641790"}
+{"id": 11520, "field": "name", "en": "Taragaman the Hungerer", "hash": "15999fa9199b9fb0", "src": "vmangos@4641790"}
+{"id": 11521, "field": "name", "en": "Kodo Apparition", "hash": "149aa45365e165fd", "src": "vmangos@4641790"}
+{"id": 11536, "field": "name", "en": "Quartermaster Miranda Breechlock", "hash": "29afe57036ec19f6", "src": "vmangos@4641790"}
+{"id": 11536, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11537, "field": "name", "en": "TEST GEAR PALADIN", "hash": "23a8d6d8c09f686f", "src": "vmangos@4641790"}
+{"id": 11538, "field": "name", "en": "TEST GEAR WARRIOR", "hash": "80267a1cc8fdbfff", "src": "vmangos@4641790"}
+{"id": 11539, "field": "name", "en": "TEST GEAR HUNTER", "hash": "7f9699a27cd68959", "src": "vmangos@4641790"}
+{"id": 11540, "field": "name", "en": "TEST GEAR MAGE", "hash": "857b94407f44f689", "src": "vmangos@4641790"}
+{"id": 11541, "field": "name", "en": "TEST GEAR WARLOCK", "hash": "7f5a3485905e1fc5", "src": "vmangos@4641790"}
+{"id": 11542, "field": "name", "en": "TEST GEAR DRUID", "hash": "b28c494ffab5406e", "src": "vmangos@4641790"}
+{"id": 11543, "field": "name", "en": "TEST GEAR SHAMAN", "hash": "6853cf3261c6a0ba", "src": "vmangos@4641790"}
+{"id": 11544, "field": "name", "en": "TEST GEAR PRIEST", "hash": "2660694d6dd25d4e", "src": "vmangos@4641790"}
+{"id": 11545, "field": "name", "en": "TEST GEAR ROGUE", "hash": "a7e1b4984bbe26f7", "src": "vmangos@4641790"}
+{"id": 11546, "field": "name", "en": "Jack Sterling", "hash": "199739ae765f6643", "src": "vmangos@4641790"}
+{"id": 11547, "field": "name", "en": "Skeletal Scholomance Student", "hash": "fc40f2619d7af9ab", "src": "vmangos@4641790"}
+{"id": 11548, "field": "name", "en": "Loh'atu", "hash": "da4f674d5e9f1a99", "src": "vmangos@4641790"}
+{"id": 11549, "field": "name", "en": "Austin Burwell", "hash": "782fdbebeda575f8", "src": "vmangos@4641790"}
+{"id": 11550, "field": "name", "en": "Taylor Burwell", "hash": "64413381a8687cd0", "src": "vmangos@4641790"}
+{"id": 11551, "field": "name", "en": "Necrofiend", "hash": "c7a14bddd31d5bee", "src": "vmangos@4641790"}
+{"id": 11552, "field": "name", "en": "Timbermaw Mystic", "hash": "9ae93dd291c933f4", "src": "vmangos@4641790"}
+{"id": 11553, "field": "name", "en": "Timbermaw Woodbender", "hash": "0d2ccbcd55fafc23", "src": "vmangos@4641790"}
+{"id": 11554, "field": "name", "en": "Grazle", "hash": "9febbb3e5a5c2333", "src": "vmangos@4641790"}
+{"id": 11555, "field": "name", "en": "Gorn One Eye", "hash": "f7969f8b3b8c1ce8", "src": "vmangos@4641790"}
+{"id": 11556, "field": "name", "en": "Salfa", "hash": "be0e0076873414df", "src": "vmangos@4641790"}
+{"id": 11557, "field": "name", "en": "Meilosh", "hash": "d6a770e9b857e56d", "src": "vmangos@4641790"}
+{"id": 11558, "field": "name", "en": "Kernda", "hash": "ac0ea65f82dd5ac7", "src": "vmangos@4641790"}
+{"id": 11559, "field": "name", "en": "Outcast Necromancer", "hash": "3a9616361e29928f", "src": "vmangos@4641790"}
+{"id": 11560, "field": "name", "en": "Magrami Spectre", "hash": "bc1d691f2e7c73e7", "src": "vmangos@4641790"}
+{"id": 11561, "field": "name", "en": "Undead Ravager", "hash": "463234e220a6a82c", "src": "vmangos@4641790"}
+{"id": 11562, "field": "name", "en": "Drysnap Crawler", "hash": "05755c8bbf16664f", "src": "vmangos@4641790"}
+{"id": 11563, "field": "name", "en": "Drysnap Pincer", "hash": "42e75c2d65ad9f5d", "src": "vmangos@4641790"}
+{"id": 11564, "field": "name", "en": "Gizelton Caravan Kodo", "hash": "4fddd233fa52817f", "src": "vmangos@4641790"}
+{"id": 11576, "field": "name", "en": "Whirlwind Ripper", "hash": "8b18ce507e6ed6a7", "src": "vmangos@4641790"}
+{"id": 11577, "field": "name", "en": "Whirlwind Stormwalker", "hash": "db5361da7360693f", "src": "vmangos@4641790"}
+{"id": 11578, "field": "name", "en": "Whirlwind Shredder", "hash": "5a69b4a2c5bd3e33", "src": "vmangos@4641790"}
+{"id": 11579, "field": "name", "en": "Tempest", "hash": "0e47c620990d2210", "src": "vmangos@4641790"}
+{"id": 11580, "field": "name", "en": "Kelemis the Lifeless", "hash": "3644bf99472d398f", "src": "vmangos@4641790"}
+{"id": 11581, "field": "name", "en": "Scarlet Assassin", "hash": "0688a74acd9c1f33", "src": "vmangos@4641790"}
+{"id": 11582, "field": "name", "en": "Scholomance Dark Summoner", "hash": "50520e7aca0075d5", "src": "vmangos@4641790"}
+{"id": 11583, "field": "name", "en": "Nefarian", "hash": "9be0db101747436c", "src": "vmangos@4641790"}
+{"id": 11596, "field": "name", "en": "Smeed Scrabblescrew", "hash": "5f218caeb5057a9e", "src": "vmangos@4641790"}
+{"id": 11597, "field": "name", "en": "Cheveyo", "hash": "7556eb0537c6b444", "src": "vmangos@4641790"}
+{"id": 11598, "field": "name", "en": "Risen Guardian", "hash": "0422eecf6cf0708e", "src": "vmangos@4641790"}
+{"id": 11599, "field": "name", "en": "Irondeep Geomancer UNUSED", "hash": "873d296aea5add59", "src": "vmangos@4641790"}
+{"id": 11600, "field": "name", "en": "Irondeep Shaman", "hash": "235a0d05c428e51d", "src": "vmangos@4641790"}
+{"id": 11601, "field": "name", "en": "Irondeep Cave Lurker UNUSED", "hash": "84481638a92f8c0a", "src": "vmangos@4641790"}
+{"id": 11602, "field": "name", "en": "Irondeep Skullthumper", "hash": "a8756c24716da842", "src": "vmangos@4641790"}
+{"id": 11603, "field": "name", "en": "Whitewhisker Digger", "hash": "00966d74384001ba", "src": "vmangos@4641790"}
+{"id": 11604, "field": "name", "en": "Whitewhisker Geomancer", "hash": "e6edab1550924edf", "src": "vmangos@4641790"}
+{"id": 11605, "field": "name", "en": "Whitewhisker Overseer", "hash": "7ece3255ef028d1f", "src": "vmangos@4641790"}
+{"id": 11606, "field": "name", "en": "Whitewhisker Tunnel Rat", "hash": "e6f548b423c27068", "src": "vmangos@4641790"}
+{"id": 11608, "field": "name", "en": "Bardu Sharpeye", "hash": "859e547075480fa8", "src": "vmangos@4641790"}
+{"id": 11609, "field": "name", "en": "Alexia Ironknife", "hash": "ea856b065990d4a6", "src": "vmangos@4641790"}
+{"id": 11610, "field": "name", "en": "Kirsta Deepshadow", "hash": "94a63551fafbf989", "src": "vmangos@4641790"}
+{"id": 11611, "field": "name", "en": "Cavalier Durgen", "hash": "c848c18a7df575f2", "src": "vmangos@4641790"}
+{"id": 11613, "field": "name", "en": "Huntsman Radley", "hash": "fd67a1cb57dcbc26", "src": "vmangos@4641790"}
+{"id": 11614, "field": "name", "en": "Bloodshot", "hash": "ba4114de49353965", "src": "vmangos@4641790"}
+{"id": 11615, "field": "name", "en": "Mickey Levine", "hash": "e7e555693e1afdf6", "src": "vmangos@4641790"}
+{"id": 11616, "field": "name", "en": "Nathaniel Dumah", "hash": "ab9952a0e066db41", "src": "vmangos@4641790"}
+{"id": 11617, "field": "name", "en": "Digger \"The Wrench\" Veriatus", "hash": "3c0639f1ffc4260d", "src": "vmangos@4641790"}
+{"id": 11618, "field": "name", "en": "Archmage Antonio", "hash": "a5a8267152a97622", "src": "vmangos@4641790"}
+{"id": 11619, "field": "name", "en": "Merchant Bolden", "hash": "f637145f52edd750", "src": "vmangos@4641790"}
+{"id": 11620, "field": "name", "en": "Spectral Marauder", "hash": "2f3509b89daf75e8", "src": "vmangos@4641790"}
+{"id": 11621, "field": "name", "en": "Spectral Corpse", "hash": "173402e068858805", "src": "vmangos@4641790"}
+{"id": 11622, "field": "name", "en": "Rattlegore", "hash": "3fb4f10b50db5b37", "src": "vmangos@4641790"}
+{"id": 11623, "field": "name", "en": "Scourge Summoning Crystal", "hash": "913c320658e86b92", "src": "vmangos@4641790"}
+{"id": 11624, "field": "name", "en": "Taiga Wisemane", "hash": "5d5df7621bafd2e0", "src": "vmangos@4641790"}
+{"id": 11625, "field": "name", "en": "Cork Gizelton", "hash": "e3937e6c5c875472", "src": "vmangos@4641790"}
+{"id": 11626, "field": "name", "en": "Rigger Gizelton", "hash": "81575e44e9c50a7b", "src": "vmangos@4641790"}
+{"id": 11627, "field": "name", "en": "Tamed Kodo", "hash": "9a79427f36f27358", "src": "vmangos@4641790"}
+{"id": 11628, "field": "name", "en": "Decaying Corpse", "hash": "216e6c28bc2dad56", "src": "vmangos@4641790"}
+{"id": 11629, "field": "name", "en": "Jessica Redpath", "hash": "d7e11412355c8ec0", "src": "vmangos@4641790"}
+{"id": 11636, "field": "name", "en": "Servant of Weldon Barov", "hash": "c925e0237b30aab3", "src": "vmangos@4641790"}
+{"id": 11637, "field": "name", "en": "Servant of Alexi Barov", "hash": "1cb3d5a98b0374e0", "src": "vmangos@4641790"}
+{"id": 11656, "field": "name", "en": "Horde Peon", "hash": "07d3b83b83a353ff", "src": "vmangos@4641790"}
+{"id": 11657, "field": "name", "en": "Morloch", "hash": "47cdc5d7bdf5074a", "src": "vmangos@4641790"}
+{"id": 11658, "field": "name", "en": "Molten Giant", "hash": "c310815b0e1ee64b", "src": "vmangos@4641790"}
+{"id": 11659, "field": "name", "en": "Molten Destroyer", "hash": "4bb5b1a0585ae42e", "src": "vmangos@4641790"}
+{"id": 11660, "field": "name", "en": "[UNUSED] Molten Colossus", "hash": "0bade17aebaa23b8", "src": "vmangos@4641790"}
+{"id": 11661, "field": "name", "en": "Flamewaker", "hash": "3f55dde9039f0dfc", "src": "vmangos@4641790"}
+{"id": 11662, "field": "name", "en": "Flamewaker Priest", "hash": "c1508f0a75c87ef4", "src": "vmangos@4641790"}
+{"id": 11663, "field": "name", "en": "Flamewaker Healer", "hash": "ffeb5123481b30ff", "src": "vmangos@4641790"}
+{"id": 11664, "field": "name", "en": "Flamewaker Elite", "hash": "a33f2ada93466372", "src": "vmangos@4641790"}
+{"id": 11665, "field": "name", "en": "Lava Annihilator", "hash": "633006655848d101", "src": "vmangos@4641790"}
+{"id": 11666, "field": "name", "en": "Firewalker", "hash": "59a137390ece63c0", "src": "vmangos@4641790"}
+{"id": 11667, "field": "name", "en": "Flameguard", "hash": "2925f12ff9651fd9", "src": "vmangos@4641790"}
+{"id": 11668, "field": "name", "en": "Firelord", "hash": "c2bdbe58d7db5b5c", "src": "vmangos@4641790"}
+{"id": 11669, "field": "name", "en": "Flame Imp", "hash": "6430c7aa27262e00", "src": "vmangos@4641790"}
+{"id": 11670, "field": "name", "en": "[UNUSED] Flame Shrieker", "hash": "6486268e7ef49468", "src": "vmangos@4641790"}
+{"id": 11671, "field": "name", "en": "Core Hound", "hash": "2b1f20f30531e477", "src": "vmangos@4641790"}
+{"id": 11672, "field": "name", "en": "Core Rager", "hash": "d8c45298c716b340", "src": "vmangos@4641790"}
+{"id": 11673, "field": "name", "en": "Ancient Core Hound", "hash": "d2f1edeaf0fd0b4d", "src": "vmangos@4641790"}
+{"id": 11675, "field": "name", "en": "Snowblind Windcaller", "hash": "d1c4d8bf95b8e579", "src": "vmangos@4641790"}
+{"id": 11676, "field": "name", "en": "Fjordune the Greater", "hash": "02ecf4e4e8a92052", "src": "vmangos@4641790"}
+{"id": 11677, "field": "name", "en": "Taskmaster Snivvle", "hash": "bfbd4e85d3762c41", "src": "vmangos@4641790"}
+{"id": 11678, "field": "name", "en": "Snowblind Ambusher", "hash": "a3da801931827c70", "src": "vmangos@4641790"}
+{"id": 11679, "field": "name", "en": "Winterax Witch Doctor", "hash": "b410f3e380b18236", "src": "vmangos@4641790"}
+{"id": 11680, "field": "name", "en": "Horde Scout", "hash": "35bbd20bfbaa40af", "src": "vmangos@4641790"}
+{"id": 11681, "field": "name", "en": "Horde Deforester", "hash": "e71ce03552c1d3bf", "src": "vmangos@4641790"}
+{"id": 11682, "field": "name", "en": "Horde Grunt", "hash": "651b60f0e9944ae5", "src": "vmangos@4641790"}
+{"id": 11683, "field": "name", "en": "Horde Shaman", "hash": "d4feabb04d9ac925", "src": "vmangos@4641790"}
+{"id": 11684, "field": "name", "en": "Warsong Shredder", "hash": "af41e7c8d09a13c7", "src": "vmangos@4641790"}
+{"id": 11685, "field": "name", "en": "Maraudine Priest", "hash": "6729b2818f98c750", "src": "vmangos@4641790"}
+{"id": 11686, "field": "name", "en": "Ghostly Raider", "hash": "88eba15069cb2a55", "src": "vmangos@4641790"}
+{"id": 11687, "field": "name", "en": "Ghostly Marauder", "hash": "cb68aa48a07d46fb", "src": "vmangos@4641790"}
+{"id": 11688, "field": "name", "en": "Cursed Centaur", "hash": "bf680f67835a9388", "src": "vmangos@4641790"}
+{"id": 11689, "field": "name", "en": "Riding Kodo (Brown)", "hash": "fb45f367cf28b255", "src": "vmangos@4641790"}
+{"id": 11690, "field": "name", "en": "Gnarlpine Instigator", "hash": "fb8c22937e2116d9", "src": "vmangos@4641790"}
+{"id": 11696, "field": "name", "en": "Chal Fairwind", "hash": "620d56dac0936f51", "src": "vmangos@4641790"}
+{"id": 11696, "field": "subname", "en": "Wintersaber Trainers", "hash": "b52cb17670bce4ff", "src": "vmangos@4641790"}
+{"id": 11697, "field": "name", "en": "Mannoroc Lasher", "hash": "ad384df7b3226c50", "src": "vmangos@4641790"}
+{"id": 11698, "field": "name", "en": "Hive'Ashi Stinger", "hash": "264a6a3ee3f50f94", "src": "vmangos@4641790"}
+{"id": 11699, "field": "name", "en": "Varian Wrynn", "hash": "a79a1e04cdf740fe", "src": "vmangos@4641790"}
+{"id": 11699, "field": "subname", "en": "King of Stormwind", "hash": "ecd0f77241c179eb", "src": "vmangos@4641790"}
+{"id": 11700, "field": "name", "en": "Sarin Starlight", "hash": "7f46aea2f1838cad", "src": "vmangos@4641790"}
+{"id": 11701, "field": "name", "en": "Mor'vek", "hash": "3e90b158bcba5b15", "src": "vmangos@4641790"}
+{"id": 11701, "field": "subname", "en": "Ravasaur Trainers", "hash": "8b1f4bd671dec298", "src": "vmangos@4641790"}
+{"id": 11702, "field": "name", "en": "Arin'sor", "hash": "84e55a2a7a5ce5e2", "src": "vmangos@4641790"}
+{"id": 11702, "field": "subname", "en": "Ravasaur Trainers", "hash": "8b1f4bd671dec298", "src": "vmangos@4641790"}
+{"id": 11703, "field": "name", "en": "Graw Cornerstone", "hash": "9084aa33f01447ed", "src": "vmangos@4641790"}
+{"id": 11703, "field": "subname", "en": "Mail Armor Merchant", "hash": "03125818a912ff45", "src": "vmangos@4641790"}
+{"id": 11704, "field": "name", "en": "Kriss Goldenlight", "hash": "0a9af1792464dd77", "src": "vmangos@4641790"}
+{"id": 11705, "field": "name", "en": "Rayan Dawnrisen", "hash": "8eeeb878f552c955", "src": "vmangos@4641790"}
+{"id": 11706, "field": "name", "en": "Adon", "hash": "08d01d1a746d4095", "src": "vmangos@4641790"}
+{"id": 11707, "field": "name", "en": "Joy Ar'nareth", "hash": "eef1307221617ccf", "src": "vmangos@4641790"}
+{"id": 11708, "field": "name", "en": "Coral Moongale", "hash": "835280b401082eb6", "src": "vmangos@4641790"}
+{"id": 11709, "field": "name", "en": "Jareth Wildwoods", "hash": "e9e10166ef65a329", "src": "vmangos@4641790"}
+{"id": 11710, "field": "name", "en": "Mirador", "hash": "6137cf39959a23d0", "src": "vmangos@4641790"}
+{"id": 11711, "field": "name", "en": "Sentinel Aynasha", "hash": "bb7f3464a2342dcd", "src": "vmangos@4641790"}
+{"id": 11712, "field": "name", "en": "Lilyn Darkriver", "hash": "87f5daced6bbd0a0", "src": "vmangos@4641790"}
+{"id": 11713, "field": "name", "en": "Blackwood Tracker", "hash": "e088a11c4e974957", "src": "vmangos@4641790"}
+{"id": 11714, "field": "name", "en": "Marosh the Devious", "hash": "0540c72e8208dcfe", "src": "vmangos@4641790"}
+{"id": 11715, "field": "name", "en": "Talendria", "hash": "8430f8e803c87bf9", "src": "vmangos@4641790"}
+{"id": 11716, "field": "name", "en": "Celes Earthborne", "hash": "62ee97c500029091", "src": "vmangos@4641790"}
+{"id": 11717, "field": "name", "en": "Bethan Bluewater", "hash": "a69ce145ecd81586", "src": "vmangos@4641790"}
+{"id": 11718, "field": "name", "en": "Sar Browneye", "hash": "ea55058fdebbb6fc", "src": "vmangos@4641790"}
+{"id": 11719, "field": "name", "en": "Navi Quickdraw", "hash": "7511826731434a15", "src": "vmangos@4641790"}
+{"id": 11720, "field": "name", "en": "Loruk Foreststrider", "hash": "26d33a9596e6b758", "src": "vmangos@4641790"}
+{"id": 11721, "field": "name", "en": "Hive'Ashi Worker", "hash": "16d13ff79d66c137", "src": "vmangos@4641790"}
+{"id": 11722, "field": "name", "en": "Hive'Ashi Defender", "hash": "725cc495314fba13", "src": "vmangos@4641790"}
+{"id": 11723, "field": "name", "en": "Hive'Ashi Sandstalker", "hash": "829fc69763d628e4", "src": "vmangos@4641790"}
+{"id": 11724, "field": "name", "en": "Hive'Ashi Swarmer", "hash": "8cf463332eaf78b7", "src": "vmangos@4641790"}
+{"id": 11725, "field": "name", "en": "Hive'Zora Waywatcher", "hash": "1b1d558c73876cd1", "src": "vmangos@4641790"}
+{"id": 11726, "field": "name", "en": "Hive'Zora Tunneler", "hash": "18f7b850a0d38671", "src": "vmangos@4641790"}
+{"id": 11727, "field": "name", "en": "Hive'Zora Wasp", "hash": "b04e2ec4cddf3ac7", "src": "vmangos@4641790"}
+{"id": 11728, "field": "name", "en": "Hive'Zora Reaver", "hash": "0337885028439e08", "src": "vmangos@4641790"}
+{"id": 11729, "field": "name", "en": "Hive'Zora Hive Sister", "hash": "13db38a0af8eb4fe", "src": "vmangos@4641790"}
+{"id": 11730, "field": "name", "en": "Hive'Regal Ambusher", "hash": "0edb5e7d618e16ed", "src": "vmangos@4641790"}
+{"id": 11731, "field": "name", "en": "Hive'Regal Burrower", "hash": "aef8c60505731109", "src": "vmangos@4641790"}
+{"id": 11732, "field": "name", "en": "Hive'Regal Spitfire", "hash": "60415c63d53fe627", "src": "vmangos@4641790"}
+{"id": 11733, "field": "name", "en": "Hive'Regal Slavemaker", "hash": "f7697f125b49e768", "src": "vmangos@4641790"}
+{"id": 11734, "field": "name", "en": "Hive'Regal Hive Lord", "hash": "4715f1a37da99e9c", "src": "vmangos@4641790"}
+{"id": 11735, "field": "name", "en": "Stonelash Scorpid", "hash": "1efb0f85b2fbe50d", "src": "vmangos@4641790"}
+{"id": 11736, "field": "name", "en": "Stonelash Pincer", "hash": "bb414b72096b5e37", "src": "vmangos@4641790"}
+{"id": 11737, "field": "name", "en": "Stonelash Flayer", "hash": "1b074c119fd8a618", "src": "vmangos@4641790"}
+{"id": 11738, "field": "name", "en": "Sand Skitterer", "hash": "e68fac5b2f93a546", "src": "vmangos@4641790"}
+{"id": 11739, "field": "name", "en": "Rock Stalker", "hash": "4e3f83af6bda3956", "src": "vmangos@4641790"}
+{"id": 11740, "field": "name", "en": "Dredge Striker", "hash": "b17993594384f0e9", "src": "vmangos@4641790"}
+{"id": 11741, "field": "name", "en": "Dredge Crusher", "hash": "a54530b85dee85b4", "src": "vmangos@4641790"}
+{"id": 11742, "field": "name", "en": "Silt Grub", "hash": "805743309ce3043d", "src": "vmangos@4641790"}
+{"id": 11743, "field": "name", "en": "Silt Devourer", "hash": "5eeb0b7cbcf092c1", "src": "vmangos@4641790"}
+{"id": 11744, "field": "name", "en": "Dust Stormer", "hash": "f81dbf73a3da0aad", "src": "vmangos@4641790"}
+{"id": 11745, "field": "name", "en": "Cyclone Warrior", "hash": "033dabaff8a923d0", "src": "vmangos@4641790"}
+{"id": 11746, "field": "name", "en": "Desert Rumbler", "hash": "f19c957ac468bfc0", "src": "vmangos@4641790"}
+{"id": 11747, "field": "name", "en": "Desert Rager", "hash": "f0c0a688ee618ab1", "src": "vmangos@4641790"}
+{"id": 11748, "field": "name", "en": "Samantha Swifthoof", "hash": "b167046b8f9e6309", "src": "vmangos@4641790"}
+{"id": 11749, "field": "name", "en": "Feran Strongwind", "hash": "11fbd68dc619508c", "src": "vmangos@4641790"}
+{"id": 11750, "field": "name", "en": "Ganoosh", "hash": "049189da737617ad", "src": "vmangos@4641790"}
+{"id": 11751, "field": "name", "en": "Rilan Howard", "hash": "6c5c484b0ec941ff", "src": "vmangos@4641790"}
+{"id": 11752, "field": "name", "en": "Blaise Montgomery", "hash": "152abe43e67d2ca0", "src": "vmangos@4641790"}
+{"id": 11753, "field": "name", "en": "Gogo", "hash": "09a0cc08f086e306", "src": "vmangos@4641790"}
+{"id": 11754, "field": "name", "en": "Meggi Peppinrocker", "hash": "f13ea70d84132962", "src": "vmangos@4641790"}
+{"id": 11755, "field": "name", "en": "Harlo Wigglesworth", "hash": "057125eba08a5a7c", "src": "vmangos@4641790"}
+{"id": 11756, "field": "name", "en": "Quinn", "hash": "9d9fdefac9965a62", "src": "vmangos@4641790"}
+{"id": 11757, "field": "name", "en": "Umaron Stragarelm", "hash": "a042232f2a99cf96", "src": "vmangos@4641790"}
+{"id": 11758, "field": "name", "en": "Andi Lynn", "hash": "326cef6b36aa959c", "src": "vmangos@4641790"}
+{"id": 11776, "field": "name", "en": "Salome", "hash": "412ca021470a57ef", "src": "vmangos@4641790"}
+{"id": 11777, "field": "name", "en": "Shadowshard Rumbler", "hash": "b225aad4bc4b4968", "src": "vmangos@4641790"}
+{"id": 11778, "field": "name", "en": "Shadowshard Smasher", "hash": "ba579000669cb9eb", "src": "vmangos@4641790"}
+{"id": 11779, "field": "name", "en": "Shadowshard Thunderer", "hash": "2fcd387792f50576", "src": "vmangos@4641790"}
+{"id": 11780, "field": "name", "en": "Ambershard Rager", "hash": "04a1626c5992e34e", "src": "vmangos@4641790"}
+{"id": 11781, "field": "name", "en": "Ambershard Crusher", "hash": "7b5d17b8599596a7", "src": "vmangos@4641790"}
+{"id": 11782, "field": "name", "en": "Ambershard Destroyer", "hash": "04cefaac9eb6c58b", "src": "vmangos@4641790"}
+{"id": 11783, "field": "name", "en": "Theradrim Shardling", "hash": "4ff229f9f8a10548", "src": "vmangos@4641790"}
+{"id": 11784, "field": "name", "en": "Theradrim Guardian", "hash": "c342f9e382400361", "src": "vmangos@4641790"}
+{"id": 11785, "field": "name", "en": "Ambereye Basilisk", "hash": "39153232dd8ba9fe", "src": "vmangos@4641790"}
+{"id": 11786, "field": "name", "en": "Ambereye Reaver", "hash": "4e94d4d3ec3a3c2d", "src": "vmangos@4641790"}
+{"id": 11787, "field": "name", "en": "Rock Borer", "hash": "99828487092c697c", "src": "vmangos@4641790"}
+{"id": 11788, "field": "name", "en": "Rock Worm", "hash": "fe1f87c65ec66379", "src": "vmangos@4641790"}
+{"id": 11789, "field": "name", "en": "Deep Borer", "hash": "2611317bf8ff5b21", "src": "vmangos@4641790"}
+{"id": 11790, "field": "name", "en": "Putridus Satyr", "hash": "efbb0518976b2ac1", "src": "vmangos@4641790"}
+{"id": 11791, "field": "name", "en": "Putridus Trickster", "hash": "c96f2a784ffaa76e", "src": "vmangos@4641790"}
+{"id": 11792, "field": "name", "en": "Putridus Shadowstalker", "hash": "eec2e6da2ac5ff6a", "src": "vmangos@4641790"}
+{"id": 11793, "field": "name", "en": "Celebrian Dryad", "hash": "997453d9da0e4201", "src": "vmangos@4641790"}
+{"id": 11794, "field": "name", "en": "Sister of Celebrian", "hash": "e8abad2770c4c151", "src": "vmangos@4641790"}
+{"id": 11795, "field": "name", "en": "Mylentha Riverbend", "hash": "626dcde980042e00", "src": "vmangos@4641790"}
+{"id": 11796, "field": "name", "en": "Bessany Plainswind", "hash": "f2a8159b10700ee5", "src": "vmangos@4641790"}
+{"id": 11797, "field": "name", "en": "Moren Riverbend", "hash": "585eac3ce46686d9", "src": "vmangos@4641790"}
+{"id": 11798, "field": "name", "en": "Bunthen Plainswind", "hash": "684552b35c182287", "src": "vmangos@4641790"}
+{"id": 11798, "field": "subname", "en": "Thunder Bluff Flight Master", "hash": "ad57ce6f77bd504a", "src": "vmangos@4641790"}
+{"id": 11799, "field": "name", "en": "Tajarri", "hash": "e98e4f7aa0aaffc6", "src": "vmangos@4641790"}
+{"id": 11800, "field": "name", "en": "Silva Fil'naveth", "hash": "44ae2ea9715d4a16", "src": "vmangos@4641790"}
+{"id": 11800, "field": "subname", "en": "Darnassus Flight Master", "hash": "55612c4d15dd1acb", "src": "vmangos@4641790"}
+{"id": 11801, "field": "name", "en": "Rabine Saturna", "hash": "53da4216524e48a9", "src": "vmangos@4641790"}
+{"id": 11802, "field": "name", "en": "Dendrite Starblaze", "hash": "e1a93d32ee5c9e01", "src": "vmangos@4641790"}
+{"id": 11803, "field": "name", "en": "Twilight Keeper Exeter", "hash": "d14b2a343d648afd", "src": "vmangos@4641790"}
+{"id": 11803, "field": "subname", "en": "Twilight's Hammer", "hash": "e4f7fd8fb8ed3c3a", "src": "vmangos@4641790"}
+{"id": 11804, "field": "name", "en": "Twilight Keeper Havunth", "hash": "c939ad904e4dd23c", "src": "vmangos@4641790"}
+{"id": 11804, "field": "subname", "en": "Twilight's Hammer", "hash": "e4f7fd8fb8ed3c3a", "src": "vmangos@4641790"}
+{"id": 11805, "field": "name", "en": "Jarund Stoutstrider", "hash": "d8c5607adcfb8d16", "src": "vmangos@4641790"}
+{"id": 11805, "field": "subname", "en": "The Cenarion Circle", "hash": "e8b7aa517581daa4", "src": "vmangos@4641790"}
+{"id": 11806, "field": "name", "en": "Sentinel Onaeya", "hash": "3882cbb6c088dcfa", "src": "vmangos@4641790"}
+{"id": 11807, "field": "name", "en": "Tristane Shadowstone", "hash": "8335c6b27c1b10e6", "src": "vmangos@4641790"}
+{"id": 11808, "field": "name", "en": "Grum Redbeard", "hash": "eb7218b5ea879893", "src": "vmangos@4641790"}
+{"id": 11809, "field": "name", "en": "Danni Palewing", "hash": "ae6a4510e62e180a", "src": "vmangos@4641790"}
+{"id": 11810, "field": "name", "en": "Howin Kindfeather", "hash": "f78c77766e41943f", "src": "vmangos@4641790"}
+{"id": 11811, "field": "name", "en": "Narain Soothfancy", "hash": "fc8028954151ac83", "src": "vmangos@4641790"}
+{"id": 11812, "field": "name", "en": "Claira Kindfeather", "hash": "9ffbd92119872a0b", "src": "vmangos@4641790"}
+{"id": 11813, "field": "name", "en": "Kerr Ironsight", "hash": "0fd7d74fd0898a3e", "src": "vmangos@4641790"}
+{"id": 11814, "field": "name", "en": "Kali Remik", "hash": "6defabcbcebc64bc", "src": "vmangos@4641790"}
+{"id": 11815, "field": "name", "en": "Voriya", "hash": "2a45c100a519eeeb", "src": "vmangos@4641790"}
+{"id": 11816, "field": "name", "en": "Una Ji'ro", "hash": "ae5eb6087be44772", "src": "vmangos@4641790"}
+{"id": 11817, "field": "name", "en": "Krah'ranik", "hash": "b99cbaa6cd7f49f8", "src": "vmangos@4641790"}
+{"id": 11818, "field": "name", "en": "Orik'ando", "hash": "bf9940519ff4138c", "src": "vmangos@4641790"}
+{"id": 11819, "field": "name", "en": "Jory Zaga", "hash": "5d88162d008e2de2", "src": "vmangos@4641790"}
+{"id": 11820, "field": "name", "en": "Locke Okarr", "hash": "b15433254f52d21c", "src": "vmangos@4641790"}
+{"id": 11821, "field": "name", "en": "Darn Talongrip", "hash": "6c183c2309abdb06", "src": "vmangos@4641790"}
+{"id": 11822, "field": "name", "en": "Moonglade Warden", "hash": "81f91123ed0b9727", "src": "vmangos@4641790"}
+{"id": 11823, "field": "name", "en": "Vark Battlescar", "hash": "4b47475adea7f968", "src": "vmangos@4641790"}
+{"id": 11824, "field": "name", "en": "Erik Felixe", "hash": "7e23e3ec219a4f1d", "src": "vmangos@4641790"}
+{"id": 11825, "field": "name", "en": "Paige Felixe", "hash": "4350a1fdc07666a7", "src": "vmangos@4641790"}
+{"id": 11826, "field": "name", "en": "Kristy Grant", "hash": "790b1ab4b8be2887", "src": "vmangos@4641790"}
+{"id": 11827, "field": "name", "en": "Kimberly Grant", "hash": "7a18d18fdd1d1c2d", "src": "vmangos@4641790"}
+{"id": 11828, "field": "name", "en": "Kelly Grant", "hash": "ed29b17bad9c035a", "src": "vmangos@4641790"}
+{"id": 11829, "field": "name", "en": "Fahrak", "hash": "7aec5592f954319d", "src": "vmangos@4641790"}
+{"id": 11830, "field": "name", "en": "Hakkari Priest", "hash": "2fc6195db78c8792", "src": "vmangos@4641790"}
+{"id": 11831, "field": "name", "en": "Hakkari Witch Doctor", "hash": "33c6b7a380b71f62", "src": "vmangos@4641790"}
+{"id": 11832, "field": "name", "en": "Keeper Remulos", "hash": "7a4e7cc3e77b6da5", "src": "vmangos@4641790"}
+{"id": 11833, "field": "name", "en": "Rahauro", "hash": "5d0e46524391a1d3", "src": "vmangos@4641790"}
+{"id": 11833, "field": "subname", "en": "Magatha's Servant", "hash": "7f9ddcc0c6320d53", "src": "vmangos@4641790"}
+{"id": 11834, "field": "name", "en": "Maur Grimtotem", "hash": "1827e819b95ee20e", "src": "vmangos@4641790"}
+{"id": 11835, "field": "name", "en": "Theodore Griffs", "hash": "3d7fa80cd5d45bb2", "src": "vmangos@4641790"}
+{"id": 11836, "field": "name", "en": "Captured Rabid Thistle Bear", "hash": "7abccc1a66dd2526", "src": "vmangos@4641790"}
+{"id": 11837, "field": "name", "en": "Wildpaw Shaman", "hash": "e1b5303c5bf2fa6b", "src": "vmangos@4641790"}
+{"id": 11838, "field": "name", "en": "Wildpaw Mystic", "hash": "296fd4194d6576e6", "src": "vmangos@4641790"}
+{"id": 11839, "field": "name", "en": "Wildpaw Brute", "hash": "6f2569e4ecc3d4af", "src": "vmangos@4641790"}
+{"id": 11840, "field": "name", "en": "Wildpaw Alpha", "hash": "5cc88c9ca98ecbb2", "src": "vmangos@4641790"}
+{"id": 11856, "field": "name", "en": "Kaya Flathoof", "hash": "4508dfcd1aa4d3d8", "src": "vmangos@4641790"}
+{"id": 11857, "field": "name", "en": "Makaba Flathoof", "hash": "c760eac1f51e5758", "src": "vmangos@4641790"}
+{"id": 11858, "field": "name", "en": "Grundig Darkcloud", "hash": "f2125061436a5eb7", "src": "vmangos@4641790"}
+{"id": 11859, "field": "name", "en": "Doomguard", "hash": "9ca4c2247430250e", "src": "vmangos@4641790"}
+{"id": 11860, "field": "name", "en": "Maggran Earthbinder", "hash": "a1d8a298035cab99", "src": "vmangos@4641790"}
+{"id": 11861, "field": "name", "en": "Mor'rogal", "hash": "cc9feab2b5fe483a", "src": "vmangos@4641790"}
+{"id": 11862, "field": "name", "en": "Tsunaman", "hash": "e8fc488f4aecd9f1", "src": "vmangos@4641790"}
+{"id": 11863, "field": "name", "en": "Azore Aldamort", "hash": "40ecce28fd983de9", "src": "vmangos@4641790"}
+{"id": 11863, "field": "subname", "en": "The Argent Dawn", "hash": "d583b8f0d2798b6f", "src": "vmangos@4641790"}
+{"id": 11864, "field": "name", "en": "Tammra Windfield", "hash": "2378b00530c212b2", "src": "vmangos@4641790"}
+{"id": 11865, "field": "name", "en": "Buliwyf Stonehand", "hash": "a0db06517d6d2882", "src": "vmangos@4641790"}
+{"id": 11865, "field": "subname", "en": "Weapon Master", "hash": "b40d50d6dfb50478", "src": "vmangos@4641790"}
+{"id": 11866, "field": "name", "en": "Ilyenia Moonfire", "hash": "f47bd8671f8034d2", "src": "vmangos@4641790"}
+{"id": 11866, "field": "subname", "en": "Weapon Master", "hash": "b40d50d6dfb50478", "src": "vmangos@4641790"}
+{"id": 11867, "field": "name", "en": "Woo Ping", "hash": "3bf6862d0c5a1ec6", "src": "vmangos@4641790"}
+{"id": 11867, "field": "subname", "en": "Weapon Master", "hash": "b40d50d6dfb50478", "src": "vmangos@4641790"}
+{"id": 11868, "field": "name", "en": "Sayoc", "hash": "be116c88bad0a497", "src": "vmangos@4641790"}
+{"id": 11868, "field": "subname", "en": "Weapon Master", "hash": "b40d50d6dfb50478", "src": "vmangos@4641790"}
+{"id": 11869, "field": "name", "en": "Ansekhwa", "hash": "f063da09e117a28b", "src": "vmangos@4641790"}
+{"id": 11869, "field": "subname", "en": "Weapon Master", "hash": "b40d50d6dfb50478", "src": "vmangos@4641790"}
+{"id": 11870, "field": "name", "en": "Archibald", "hash": "64515a97bdb52665", "src": "vmangos@4641790"}
+{"id": 11870, "field": "subname", "en": "Weapon Master", "hash": "b40d50d6dfb50478", "src": "vmangos@4641790"}
+{"id": 11871, "field": "name", "en": "Grinning Dog", "hash": "2ab8ead837910ffd", "src": "vmangos@4641790"}
+{"id": 11872, "field": "name", "en": "Myranda the Hag", "hash": "ef031149a441ebbe", "src": "vmangos@4641790"}
+{"id": 11873, "field": "name", "en": "Spectral Attendant", "hash": "6d1f4cfc6a03b2c5", "src": "vmangos@4641790"}
+{"id": 11874, "field": "name", "en": "Masat T'andr", "hash": "0ef65fcca3275fec", "src": "vmangos@4641790"}
+{"id": 11874, "field": "subname", "en": "Superior Leatherworker", "hash": "0a3054822d0ba7d5", "src": "vmangos@4641790"}
+{"id": 11875, "field": "name", "en": "Mortar Team Target Dummy", "hash": "720a404022dcaefc", "src": "vmangos@4641790"}
+{"id": 11876, "field": "name", "en": "Demon Spirit", "hash": "b8f9992d686857f5", "src": "vmangos@4641790"}
+{"id": 11877, "field": "name", "en": "Roon Wildmane", "hash": "0c8c1512f0f1947b", "src": "vmangos@4641790"}
+{"id": 11878, "field": "name", "en": "Nathanos Blightcaller", "hash": "3db34bc607f9f480", "src": "vmangos@4641790"}
+{"id": 11878, "field": "subname", "en": "Champion of the Banshee Queen", "hash": "03c6d5474ff2bcdf", "src": "vmangos@4641790"}
+{"id": 11880, "field": "name", "en": "Twilight Avenger", "hash": "70f37f33bd1179f4", "src": "vmangos@4641790"}
+{"id": 11880, "field": "subname", "en": "Twilight's Hammer", "hash": "e4f7fd8fb8ed3c3a", "src": "vmangos@4641790"}
+{"id": 11881, "field": "name", "en": "Twilight Geolord", "hash": "a8a14d670e917cdc", "src": "vmangos@4641790"}
+{"id": 11881, "field": "subname", "en": "Twilight's Hammer", "hash": "e4f7fd8fb8ed3c3a", "src": "vmangos@4641790"}
+{"id": 11882, "field": "name", "en": "Twilight Stonecaller", "hash": "3fa84879ca378641", "src": "vmangos@4641790"}
+{"id": 11882, "field": "subname", "en": "Twilight's Hammer", "hash": "e4f7fd8fb8ed3c3a", "src": "vmangos@4641790"}
+{"id": 11883, "field": "name", "en": "Twilight Master", "hash": "3154156d7d95f285", "src": "vmangos@4641790"}
+{"id": 11883, "field": "subname", "en": "Twilight's Hammer", "hash": "e4f7fd8fb8ed3c3a", "src": "vmangos@4641790"}
+{"id": 11884, "field": "name", "en": "Obi", "hash": "0014e25639a91d2b", "src": "vmangos@4641790"}
+{"id": 11885, "field": "name", "en": "Blighthound", "hash": "ed00d0ac85c43bd6", "src": "vmangos@4641790"}
+{"id": 11886, "field": "name", "en": "Mercutio Filthgorger", "hash": "cf44cb818f2890c7", "src": "vmangos@4641790"}
+{"id": 11887, "field": "name", "en": "Crypt Robber", "hash": "e0bf6e234ea33925", "src": "vmangos@4641790"}
+{"id": 11896, "field": "name", "en": "Borelgore", "hash": "f656a75fed122b3d", "src": "vmangos@4641790"}
+{"id": 11897, "field": "name", "en": "Duskwing", "hash": "b2896dbe76c65a9f", "src": "vmangos@4641790"}
+{"id": 11898, "field": "name", "en": "Crusader Lord Valdelmar", "hash": "1039f73aed35c4ad", "src": "vmangos@4641790"}
+{"id": 11899, "field": "name", "en": "Shardi", "hash": "ba940b3357e4043e", "src": "vmangos@4641790"}
+{"id": 11899, "field": "subname", "en": "Wind Rider Master", "hash": "86a2dc958bbc2f1f", "src": "vmangos@4641790"}
+{"id": 11900, "field": "name", "en": "Brakkar", "hash": "4c2083739a3de2f6", "src": "vmangos@4641790"}
+{"id": 11900, "field": "subname", "en": "Wind Rider Master", "hash": "86a2dc958bbc2f1f", "src": "vmangos@4641790"}
+{"id": 11901, "field": "name", "en": "Andruk", "hash": "74fff1647def05e3", "src": "vmangos@4641790"}
+{"id": 11901, "field": "subname", "en": "Wind Rider Master", "hash": "86a2dc958bbc2f1f", "src": "vmangos@4641790"}
+{"id": 11902, "field": "name", "en": "Aiden", "hash": "832782d9263480cc", "src": "vmangos@4641790"}
+{"id": 11903, "field": "name", "en": "Alexander", "hash": "2e812005767a2eea", "src": "vmangos@4641790"}
+{"id": 11904, "field": "name", "en": "Noah", "hash": "0a90e82cce5dcff6", "src": "vmangos@4641790"}
+{"id": 11905, "field": "name", "en": "Jordan", "hash": "6010da18bec9a647", "src": "vmangos@4641790"}
+{"id": 11906, "field": "name", "en": "Sophia", "hash": "3773f7b191b2c6d6", "src": "vmangos@4641790"}
+{"id": 11907, "field": "name", "en": "Alanna", "hash": "517c8c2e08003caa", "src": "vmangos@4641790"}
+{"id": 11908, "field": "name", "en": "Mirah", "hash": "55cfb716d0c5af72", "src": "vmangos@4641790"}
+{"id": 11909, "field": "name", "en": "Penelope", "hash": "ac50df0fd1745a2f", "src": "vmangos@4641790"}
+{"id": 11910, "field": "name", "en": "Grimtotem Ruffian", "hash": "dfa91b87a7f89016", "src": "vmangos@4641790"}
+{"id": 11911, "field": "name", "en": "Grimtotem Mercenary", "hash": "4df922df5d82c3fd", "src": "vmangos@4641790"}
+{"id": 11912, "field": "name", "en": "Grimtotem Brute", "hash": "6e81154eedcab48a", "src": "vmangos@4641790"}
+{"id": 11913, "field": "name", "en": "Grimtotem Sorcerer", "hash": "43d00ba5725c4387", "src": "vmangos@4641790"}
+{"id": 11914, "field": "name", "en": "Gorehoof the Black", "hash": "8dba36a0603876d4", "src": "vmangos@4641790"}
+{"id": 11915, "field": "name", "en": "Gogger Rock Keeper", "hash": "5fa84c0031b32893", "src": "vmangos@4641790"}
+{"id": 11916, "field": "name", "en": "Imelda", "hash": "3fb54abba0e61679", "src": "vmangos@4641790"}
+{"id": 11917, "field": "name", "en": "Gogger Geomancer", "hash": "2777bd4564fd0295", "src": "vmangos@4641790"}
+{"id": 11918, "field": "name", "en": "Gogger Stonepounder", "hash": "e9c725bdf77f1ae1", "src": "vmangos@4641790"}
+{"id": 11919, "field": "name", "en": "Claudia", "hash": "1d0ea75f70e128bb", "src": "vmangos@4641790"}
+{"id": 11920, "field": "name", "en": "Goggeroc", "hash": "c9dc472cb9c74fdc", "src": "vmangos@4641790"}
+{"id": 11921, "field": "name", "en": "Besseleth", "hash": "479f4be5a501b3f7", "src": "vmangos@4641790"}
+{"id": 11926, "field": "name", "en": "[PH] Northshire Gift Dispenser", "hash": "bda8172be5e5c544", "src": "vmangos@4641790"}
+{"id": 11936, "field": "name", "en": "Artist Renfray", "hash": "275ee420a2fc2ae3", "src": "vmangos@4641790"}
+{"id": 11937, "field": "name", "en": "Demon Portal Guardian", "hash": "865848bf16b258d5", "src": "vmangos@4641790"}
+{"id": 11938, "field": "name", "en": "Young Tirion", "hash": "ac031325a4768c72", "src": "vmangos@4641790"}
+{"id": 11939, "field": "name", "en": "Umber", "hash": "e2c27190be35bed5", "src": "vmangos@4641790"}
+{"id": 11940, "field": "name", "en": "Merissa Stilwell", "hash": "3a3c145ef687fd28", "src": "vmangos@4641790"}
+{"id": 11941, "field": "name", "en": "Yori Crackhelm", "hash": "447f22d331bc0bff", "src": "vmangos@4641790"}
+{"id": 11942, "field": "name", "en": "Orenthil Whisperwind", "hash": "3fb11480c144e404", "src": "vmangos@4641790"}
+{"id": 11943, "field": "name", "en": "Magga", "hash": "54ba6be639dbe52a", "src": "vmangos@4641790"}
+{"id": 11944, "field": "name", "en": "Vorn Skyseer", "hash": "7950f114ef1ef6c3", "src": "vmangos@4641790"}
+{"id": 11945, "field": "name", "en": "Claire Willower", "hash": "c2d847c1c6aefca1", "src": "vmangos@4641790"}
+{"id": 11946, "field": "name", "en": "Drek'Thar", "hash": "951dee2400377852", "src": "vmangos@4641790"}
+{"id": 11946, "field": "subname", "en": "Frostwolf General", "hash": "2557fb08d776a19e", "src": "vmangos@4641790"}
+{"id": 11947, "field": "name", "en": "Captain Galvangar", "hash": "02c186c01293822c", "src": "vmangos@4641790"}
+{"id": 11947, "field": "subname", "en": "Frostwolf Captain", "hash": "89958a6dfe666f57", "src": "vmangos@4641790"}
+{"id": 11948, "field": "name", "en": "Vanndar Stormpike", "hash": "786876ade20fd87b", "src": "vmangos@4641790"}
+{"id": 11948, "field": "subname", "en": "Stormpike General", "hash": "833f66a6bd591d40", "src": "vmangos@4641790"}
+{"id": 11949, "field": "name", "en": "Captain Balinda Stonehearth", "hash": "2948772544d5dc4a", "src": "vmangos@4641790"}
+{"id": 11949, "field": "subname", "en": "Stormpike Captain", "hash": "e77cf60be448eaf9", "src": "vmangos@4641790"}
+{"id": 11956, "field": "name", "en": "Great Bear Spirit", "hash": "f41bfb43391bb31b", "src": "vmangos@4641790"}
+{"id": 11957, "field": "name", "en": "Great Cat Spirit", "hash": "4e96ced4cc7014c2", "src": "vmangos@4641790"}
+{"id": 11958, "field": "name", "en": "Gracchus Spiritlight", "hash": "eec31693d0cb064c", "src": "vmangos@4641790"}
+{"id": 11958, "field": "subname", "en": "Argent Dawn", "hash": "a4082bd8ef54e5ef", "src": "vmangos@4641790"}
+{"id": 11959, "field": "name", "en": "[UNUSED] Obsidian Watcher", "hash": "e89ba71ee69ba391", "src": "vmangos@4641790"}
+{"id": 11978, "field": "name", "en": "[NOT USED] Neltharion", "hash": "792c421f907d86d7", "src": "vmangos@4641790"}
+{"id": 11979, "field": "name", "en": "Kim Bridenbecker", "hash": "31dbef7d0b2567fd", "src": "vmangos@4641790"}
+{"id": 11980, "field": "name", "en": "[NOT USED] Zuluhed the Whacked", "hash": "65d6b4a190cb2521", "src": "vmangos@4641790"}
+{"id": 11980, "field": "subname", "en": "Dragonmaw Chieftain", "hash": "c82ffab73b9bc96e", "src": "vmangos@4641790"}
+{"id": 11981, "field": "name", "en": "Flamegor", "hash": "b8884ac26834a1a2", "src": "vmangos@4641790"}
+{"id": 11982, "field": "name", "en": "Magmadar", "hash": "1d84edfb984b0538", "src": "vmangos@4641790"}
+{"id": 11983, "field": "name", "en": "Firemaw", "hash": "70e0760197d48357", "src": "vmangos@4641790"}
+{"id": 11988, "field": "name", "en": "Golemagg the Incinerator", "hash": "e0cde81af80a7a83", "src": "vmangos@4641790"}
+{"id": 11994, "field": "name", "en": "Rob Bridenbecker", "hash": "6648fc8d78a03b43", "src": "vmangos@4641790"}
+{"id": 11996, "field": "name", "en": "Ashley Bridenbecker", "hash": "36d1312c82becd6b", "src": "vmangos@4641790"}
+{"id": 11997, "field": "name", "en": "Stormpike Herald", "hash": "c849833f19f32cd7", "src": "vmangos@4641790"}
+{"id": 11998, "field": "name", "en": "Frostwolf Herald", "hash": "3ade382d48d96cce", "src": "vmangos@4641790"}

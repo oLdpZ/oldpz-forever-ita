@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
+.PHONY: unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -135,6 +135,7 @@ FAMILY_CSVS         = $(if $(filter $(CLIENT),$(FAMILY_CLIENTS)),$(foreach t,$(F
 # snapshot of vmangos/core release `db_latest`, asset db-sqlite-<sha>.zip (ADR-019).
 VMANGOS_DB   ?= $(INPUTS)/vmangos/mangos.sqlite
 VMANGOS_SHA  ?= 13b49dc
+VMANGOS_UNIT_SHA ?= 4641790
 # Quest progress / turn-in English Forever players recorded with forever-vo's addon (MIT; ADR-055): a clone of
 # github.com/quinn-dougherty/forever-vo checked out at FOREVER_VO_SHA (`git -C $(FOREVER_VO) checkout <sha>`).
 FOREVER_VO     ?= $(INPUTS)/forever-vo
@@ -352,6 +353,9 @@ quest-levels: ## regenerate pipeline/quest_levels.tsv (id, min, lvl, fonte; `ass
 
 # Dialogue priority (tier 1-4 per gossip hash) from the VMaNGOS database: who speaks a line decides when it is translated.
 VMANGOS_PRIORITY_DB ?= $(INPUTS)/vmangos-priority/mangos.sqlite
+unit-english: ## write the English NPC names and titles (data/english/unit) from the VMaNGOS database: [VMANGOS_DB=<mangos.sqlite>] [VMANGOS_UNIT_SHA=4641790]
+	cd pipeline && $(PY) -m wfj.dev.unit_english --db "$(VMANGOS_DB)" --commit $(VMANGOS_UNIT_SHA)
+
 gossip-priority: ## regenerate pipeline/gossip_priority.tsv (gossip hash, tier 1-4) from the VMaNGOS database + quest_levels.tsv (commit the result): [VMANGOS_PRIORITY_DB=<mangos.sqlite>]
 	cd pipeline && $(PY) -m wfj.dev.gossip_priority --db "$(VMANGOS_PRIORITY_DB)" --levels quest_levels.tsv --out gossip_priority.tsv
 
