@@ -41,4 +41,5 @@ WFJ.Data.add("item", {
   [277910] = { "Ti stordisce e ti cura di $N1 in $D1. Nelle zone di foresta e prateria ottieni $N3 Tempra per $D2.", 0xe3067100, "u" },
   [277950] = { "I tuoi effetti di ⟦Well Fed=Ben Nutrito⟧ si consumano del $N1% più lentamente. L'effetto aumenta di un ulteriore $N2% nelle terre desolate.", 0xe014f147, "u" },
   [277960] = { "Ti insegna a evocare questa cavalcatura.", 0x720161a4, "u" },
+  [277974] = { "Per Powderfuse Port. Spedito dalla ⟦Booty Bay=Baia del Bottino⟧.", 0x892783a9, "u" },
 })

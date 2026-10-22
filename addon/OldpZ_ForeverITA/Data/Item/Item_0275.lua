@@ -50,6 +50,7 @@ WFJ.Data.add("item", {
   [275688] = { "Converte il $N1% della tua salute massima nel $N2% del tuo mana, della tua energia o della tua rabbia massimi.", 0x966cc7f8, "u" },
   [275706] = { "Travestiti da membro della ⟦Syndicate=Lega dei Tagliagole⟧. Le attività sospette faranno cadere il travestimento.", 0xd22bf96d, "u" },
   [275709] = { "Sembra che qualcuno abbia fatto un po' la cresta.", 0x812e2d5c, "u" },
+  [275724] = { "La debole magia al suo interno può essere estratta con il Disincantamento.", 0xffee115d, "u" },
   [275729] = { "Esegui un Propellerstorm, riducendo la velocità di caduta per $D1 e infliggendo il $N2% dei danni dell'arma ai nemici vicini quando atterri.", 0x4a646b85, "u" },
   [275730] = { "Ti pervade di energia magica, permettendoti di individuare e ottenere Motes of Unstable Magic da alcuni incantatori e nemici potenti.", 0xebca25f0, "u" },
   [275833] = { "Quando vieni colpito in combattimento, infligge $N1 danni da natura all'attaccante.", 0xa5e49310, "u" },
