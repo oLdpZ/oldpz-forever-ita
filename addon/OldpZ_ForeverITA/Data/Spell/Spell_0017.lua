@@ -365,6 +365,7 @@ WFJ.Data.add("spell", {
   [17959] = { "Aumenta il bonus ai danni dei colpi critici dei tuoi incantesimi di Distruzione del $N1%.", nil, 0x34a8b98a, nil, "um" },
   [17961] = { "Camuffato da membro della ⟦Scarlet Crusade=Crociata Scarlatta⟧.", "Camuffato da membro della ⟦Scarlet Crusade=Crociata Scarlatta⟧.", 0x1cc66ac8, 0x1cc66ac8, "uu" },
   [17962] = { "Incendia un bersaglio già afflitto dalla tua Immolazione, infliggendo $N1 danni da fuoco e consumando il tuo effetto di Immolazione.", nil, 0xd77f3b34, nil, "um" },
+  [17963] = { nil, "Armatura ridotta.", nil, 0xc3d1fc4c, "mu" },
   [17987] = { "Aumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N1.", nil, 0x679f95b3, nil, "um" },
   [17988] = { "Aumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N1.", nil, 0x679f95b3, nil, "um" },
   [17989] = { "Aumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N1.", nil, 0x679f95b3, nil, "um" },

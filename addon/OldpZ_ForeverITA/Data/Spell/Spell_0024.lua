@@ -288,7 +288,7 @@ WFJ.Data.add("spell", {
   [24836] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [24837] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [24838] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
-  [24839] = { nil, "$N1 danni da natura inflitti ogni $N2 s.", nil, 0xd8c7b0a1, "mu" },
+  [24839] = { "Infligge $N1 danni da natura e altri $N2 danni ogni $D1 ai nemici in un cono frontale. Dura $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0x92ab8a0f, 0xd8c7b0a1, "uu" },
   [24840] = { "Infligge $N1 danni da natura ai nemici vicini ogni $N2 s per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0xa5f95a74, 0xf6322bec, "uu" },
   [24852] = { "Aumenta la probabilità di critico magico del $N1%.", nil, 0x0b08362e, nil, "um" },
   [24854] = { "Evoca un ⟦Mana Spring Totem=Totem del Flusso di Mana⟧ per $D1, che rigenera $N2 mana ogni $D2 ai membri del gruppo entro $N4 m.", nil, 0x72a4b677, nil, "um" },

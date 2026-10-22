@@ -92,6 +92,7 @@ WFJ.Data.add("spell", {
   [23192] = { "Forma ⟦Rhok'delar, Longbow of the Ancient Keepers=Rhok'delar, Arco Lungo degli Antichi Protettori⟧, in combinazione con Tendini di Drago Nero Incantati.", nil, 0x714db84b, nil, "um" },
   [23193] = { "Trasforma in ⟦Lok'delar, Stave of the Ancient Keepers=Lok'delar, Bastone degli Antichi Protettori⟧.", nil, 0x6b195e7b, nil, "um" },
   [23194] = { "Trasforma in ⟦Rhok'delar, Longbow of the Ancient Keepers=Rhok'delar, Arco Lungo degli Antichi Protettori⟧ e ⟦Lok'delar, Stave of the Ancient Keepers=Lok'delar, Bastone degli Antichi Protettori⟧.", nil, 0x8ae6aeb9, nil, "um" },
+  [23202] = { "Brucia tutti i nemici in un'area bersaglio, infliggendo danni da fuoco aggiuntivi ogni $D1 per $D2.", nil, 0xc1f8ec02, nil, "um" },
   [23203] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
   [23204] = { "Piazza lo Scrutatore della Divinazione nel cuore del seminterrato del Grande Ossario.", nil, 0xf320d7a1, nil, "um" },
   [23206] = { "Colpisce un nemico con un fulmine che danneggia nemici aggiuntivi vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura a ogni bersaglio.", nil, 0x91b98b1a, nil, "um" },

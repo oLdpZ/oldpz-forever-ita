@@ -6,4 +6,5 @@ WFJ.Data.add("spell", {
   [1221416] = { nil, "Le unità nascoste e invisibili sono rivelate.", nil, 0xe485f4e9, "mu" },
   [1221421] = { "Permette all'incantatore di vedere attraverso gli occhi del bersaglio per $D1. Non funziona se il bersaglio si trova in un'altra istanza o su un altro continente.", "È possibile vedere attraverso gli occhi del bersaglio.", 0xba19a819, 0x87c06723, "uu" },
   [1221422] = { "Permette all'incantatore di vedere attraverso gli occhi del bersaglio per $D1. Non funziona se il bersaglio si trova in un'altra istanza o su un altro continente.", "È possibile vedere attraverso gli occhi del bersaglio.", 0xba19a819, 0x87c06723, "uu" },
+  [1221571] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", nil, 0x790d3c30, nil, "um" },
 })

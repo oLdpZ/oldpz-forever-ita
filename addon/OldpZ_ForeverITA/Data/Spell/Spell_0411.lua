@@ -4,4 +4,5 @@ WFJ.Data.add("spell", {
   [411624] = { nil, "Addomesticamento del famiglio.", nil, 0xc7d3fce8, "mu" },
   [411631] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },
   [411688] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [411959] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", nil, 0x790d3c30, nil, "um" },
 })

@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [470345] = { "Cura $N1 danni in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0xcb31688f, 0x4b6eb5c1, "uu" },
   [470362] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [470369] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
+  [470535] = { "Infligge il $N1% dei danni dell'arma e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", nil, 0x9ac32304, nil, "um" },
   [470743] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470744] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470745] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },

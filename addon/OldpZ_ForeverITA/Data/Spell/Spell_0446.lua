@@ -17,6 +17,7 @@ WFJ.Data.add("spell", {
   [446450] = { "+$N1 potenza d'attacco.", nil, 0xff5c97b2, nil, "um" },
   [446458] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [446470] = { "Aumenta le cure prodotte da incantesimi ed effetti fino a un massimo di $N1.", nil, 0x28fa3697, nil, "um" },
+  [446487] = { "Infligge $N1 danni da natura e altri $N2 danni ogni $D1 ai nemici in un cono frontale. Dura $D2.", nil, 0x92ab8a0f, nil, "um" },
   [446504] = { "Fa saltare le porte con serrature difficili.", nil, 0x6d6139f0, nil, "um" },
   [446685] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [446707] = { nil, "Disorientato.", nil, 0x6b902ba7, "mu" },

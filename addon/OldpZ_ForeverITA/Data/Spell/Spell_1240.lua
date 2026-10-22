@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1240193] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
+  [1240682] = { "Lancia un dardo magico contro il nemico, infliggendo danni da arcano.", nil, 0x1414a65f, nil, "um" },
   [1240687] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini.", nil, 0x301ad2a4, nil, "um" },
   [1240943] = { "Permette a un alchimista di preparare pozioni di base. Puoi salire di competenza fino a un massimo di $N1. Richiede erbe trovate con l'Erbalismo.", nil, 0xe28084c1, nil, "um" },
   [1240944] = { "Permette a un fabbro di creare armi e armature di base. Puoi salire di competenza fino a un massimo di $N1. Richiede pietre e metalli ottenuti con l'Estrazione.", nil, 0xe27ffca2, nil, "um" },
@@ -23,4 +24,6 @@ WFJ.Data.add("spell", {
   [1240969] = { "Permette a un ingegnere di creare bombe e marchingegni meravigliosi. Puoi salire di competenza fino a un massimo di $N1.", nil, 0xe2c498de, nil, "um" },
   [1240972] = { "Permette a un conciatore di creare armature di cuoio di alta qualità. Puoi salire di competenza fino a un massimo di $N1.", nil, 0xe2a4627e, nil, "um" },
   [1240976] = { "Permette a un sarto di creare camicie e armature all'ultima moda. Puoi salire di competenza fino a un massimo di $N1.", nil, 0xe2a4a586, nil, "um" },
+  [1240981] = { "Permette a un incantatore di applicare incantamenti magistrali ad armi e armature, fino a una competenza massima di $N1.", nil, 0xd659910b, nil, "um" },
+  [1240982] = { "Permette a un ingegnere di creare bombe e congegni davvero sorprendenti, fino a una competenza massima di $N1.", nil, 0xd6367be4, nil, "um" },
 })

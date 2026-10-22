@@ -301,7 +301,7 @@ WFJ.Data.add("spell", {
   [18797] = { "Fornisce $N1 attacco aggiuntivo al colpo successivo.", nil, 0x6d2e683c, nil, "um" },
   [18798] = { nil, "Congelato.", nil, 0x16ac477b, "mu" },
   [18799] = { "Quando subisci un attacco, hai una probabilità dell'1% di infliggere $N2 danni da gelo all'attaccante e di congelarlo per $D1.", nil, 0x99ab7e67, nil, "um" },
-  [18802] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x08fe79f0, "mu" },
+  [18802] = { "Tira contro un nemico, infliggendo $N1 danni da gelo aggiuntivi e riducendone la velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xcdb9dee3, 0x08fe79f0, "uu" },
   [18803] = { "Il prossimo incantesimo lanciato entro $D1 sarà istantaneo.", "Il prossimo incantesimo sarà istantaneo.", 0x0b45c4ad, 0x71a46f0d, "uu" },
   [18805] = { "Dissolve gli effetti di Metamorfosi su un bersaglio alleato. Inoltre, rigenera $N1 salute e $N2 mana.", nil, 0x55cf2407, nil, "um" },
   [18807] = { "Assale la mente del bersaglio con energia d'ombra, infliggendo $N1 danni da ombra in $D1 e rallentando la sua velocità di movimento del $N3%.", "$N1 danni da ombra ogni $D1. Velocità di movimento rallentata del $N3%.", 0x9e03c1dc, 0xd3057df8, "uu" },

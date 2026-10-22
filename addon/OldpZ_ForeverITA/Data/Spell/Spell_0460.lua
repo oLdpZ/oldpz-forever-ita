@@ -11,6 +11,7 @@ WFJ.Data.add("spell", {
   [460698] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460699] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460700] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
+  [460749] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
   [460755] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
   [460756] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [460767] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

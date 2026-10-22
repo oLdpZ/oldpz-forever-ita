@@ -211,7 +211,7 @@ WFJ.Data.add("spell", {
   [26580] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },
   [26587] = { "Apre un Forziere dello Scarabeo.", nil, 0x7abe9266, nil, "um" },
   [26588] = { "Apre un Forziere dello Scarabeo Superiore.", nil, 0xb1ca821b, nil, "um" },
-  [26590] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0xf6322bec, "mu" },
+  [26590] = { "Infligge $N1 danni da natura ai nemici vicini ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0xa5f95a74, 0xf6322bec, "uu" },
   [26601] = { "Lancia veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $N1 s per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0x2c66ca3a, 0xaee3cc02, "uu" },
   [26607] = { "Frammenti di ghiaccio ricoprono l'area bersaglio, infliggendo $N1 danni da gelo in $D1.", "$N1 danni da gelo inflitti ogni $N2 s.\nVelocità di movimento ridotta del $N3%.", 0x9b941c1f, 0x6facc73b, "uu" },
   [26615] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },

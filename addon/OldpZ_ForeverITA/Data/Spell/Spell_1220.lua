@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [1220180] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xc5176c4d, nil, "um" },
   [1220295] = { "Aumenta la probabilità di bloccare gli attacchi con lo scudo del $N1%.", nil, 0xd6e97b49, nil, "um" },
   [1220418] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [1220519] = { "Evoca $N1 Skeletal Servant al fianco dell'incantatore fino al congedo.", nil, 0x2e4fdb3c, nil, "um" },
   [1220520] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1220546] = { "Aumenta l'Armatura del bersaglio alleato di $N1 per $D1.", "Armatura aumentata di $N1.", 0xfb7f6b76, 0xa12a98e7, "uu" },
   [1220565] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },

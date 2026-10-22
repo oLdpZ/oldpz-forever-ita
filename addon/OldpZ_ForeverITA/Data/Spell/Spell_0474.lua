@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [474146] = { "Riduce le resistenze magiche dei bersagli dei tuoi incantesimi di $N1.", nil, 0xd2e75829, nil, "um" },
   [474236] = { "Il prossimo incantesimo lanciato entro $D1 sarà istantaneo.", "Il prossimo incantesimo sarà istantaneo.", 0x0b45c4ad, 0x71a46f0d, "uu" },
+  [474402] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
 })

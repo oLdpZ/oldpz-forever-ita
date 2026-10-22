@@ -25,4 +25,5 @@ WFJ.Data.add("spell", {
   [1214387] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1214388] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1214955] = { "Aumenta fino a $N1 i danni inflitti da incantesimi ed effetti sacri.", nil, 0x6e3351e7, nil, "um" },
+  [1214956] = { nil, "Danni da ombra inflitti ogni $D1.", nil, 0x1bf49534, "mu" },
 })

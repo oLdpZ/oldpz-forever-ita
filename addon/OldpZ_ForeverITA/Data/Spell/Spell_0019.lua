@@ -133,7 +133,7 @@ WFJ.Data.add("spell", {
   [19507] = { "Aumenta i danni inflitti con le armi a distanza del $N1%.", nil, 0x65efc226, nil, "um" },
   [19512] = { "Cura un animale avvelenato.", nil, 0xa0a23715, nil, "um" },
   [19513] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $N4 s.", nil, 0x9a2f7afe, nil, "um" },
-  [19514] = { nil, "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", nil, 0x87c6dd5a, "mu" },
+  [19514] = { "Circonda l'incantatore con $N1 sfere di fulmini che hanno una probabilità del $N2% di colpire attaccanti in mischia o a distanza e infliggere $N3 danni. Ogni volta che lo scudo di fulmini colpisce, una sfera di fulmini scompare. Lo scudo si esaurisce dopo $D1 o dopo aver colpito per $N5 volte.", "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", 0x994de1bb, 0x87c6dd5a, "uu" },
   [19516] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [19548] = { "Inizia ad addomesticare un Ice Claw Bear che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", "Addomesticamento di Orso dalle Zampe di Ghiaccio.", 0x3bf2ac26, 0x28712492, "uu" },
   [19549] = { "Aumenta il bonus alla schivata di Aspetto della Scimmia del $N1%. Inoltre, il tuo famiglio ottiene il $N2% dell'effetto della tua abilità Aspetto della Scimmia.", nil, 0x54846319, nil, "um" },

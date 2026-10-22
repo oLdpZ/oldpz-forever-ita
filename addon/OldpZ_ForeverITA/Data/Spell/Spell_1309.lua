@@ -25,4 +25,5 @@ WFJ.Data.add("spell", {
   [1309725] = { "Rigenera $N1 salute.", nil, 0x4d16029e, nil, "um" },
   [1309726] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1309761] = { "Aumenta la velocità d'attacco a distanza del $N1%.", nil, 0x3009bf39, nil, "um" },
+  [1309763] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici in un cono frontale, respingendoli indietro.", nil, 0xb5e00217, nil, "um" },
 })
