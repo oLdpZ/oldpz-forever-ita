@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["55c6356f338b54d6"] = { "%s comincia a eseguire il rituale del risveglio su Naralex.", "." },
   ["55cdb46f1b816b0a"] = { "Aiuto! Ci attaccano! I Ferroscuro!", "." },
   ["55d62041953d5d38"] = { "Be', salve. Hai l'aria di chi non disdegnerebbe guadagnare qualche moneta, eh? Lo leggo nei tuoi occhi. Sono il magnate Kebok, sovrintendente delle operazioni su Azeroth, e se cerchi ricchezze, forse posso organizzare qualcosa.", "." },
+  ["55d7f2aa5901700c"] = { "Come va quel talismano, mon? Sembra proprio ora di mettere un altro po' di magia e di mojo nelle sue foglie. Gli serve un po' di fiore nel suo appassire. Dammelo qua e Maywiki lo sistema per bene.", "." },
   ["55d9160c543e62b9"] = { "La Torre di Brinarossa è stata presa dall'⟦Horde=Orda⟧!", "." },
   ["55dcea8a67db5aed"] = { "Timer di inizio partita disattivato.", "." },
   ["55e4741fb343991e"] = { "Questa volta abbiamo perso, ma non lasciarti abbattere. Concentrati sui tuoi attacchi speciali. Tieni lo scudo alto e vicino. Fallo, e la prossima volta la vittoria sarà nostra!", "." },

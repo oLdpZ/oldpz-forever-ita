@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["f8c188a1259de17e"] = { "<Benvenuto/Benvenuta> alla ⟦Great Forge=Grande Forgia⟧, <ragazzo/ragazza>. Fuori farà anche freddo, ma qui sotto lo teniamo bello caldo. Prendi un martello, colpisci quell'incudine e mostrami che hai la stoffa per essere un Fabbro della ⟦Great Forge=Grande Forgia⟧!", "." },
   ["f8c7831d83541096"] = { "Non merito questa conversazione, <padrone/padrona>.", "." },
   ["f8c995c722778d86"] = { "Ahh... I miei esperimenti non riescono mai bene. Forse dovrei tornare a valle.", "." },
+  ["f8cada86748ecd3b"] = { "Notevole, {name}. Hai un talento per uccidere che non percepivo in nessun altro da molti anni. Persino Molthor sa del lavoro che hai svolto per Zandalar. È tempo di potenziare ancora il tuo talismano. Dammelo.", "." },
   ["f8d71922439ee5af"] = { "Le tue abilità in alchimia non sono ancora abbastanza elevate per trarre beneficio dai miei insegnamenti. Forse, se mi parli più avanti...", "." },
   ["f8d918a57a3c2f01"] = { "Accesso: ⟦Discombobulator Ray=Raggio Ricombinante⟧", "." },
   ["f8da48f2caad2e06"] = { "Sei fuori di testa.", "." },

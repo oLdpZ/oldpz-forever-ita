@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["3d8aaec7e8ebb391"] = { "Earthen Templar! Possiedo il tuo stemma di richiamo. Rispondi alla mia chiamata!", "." },
   ["3d96988b3a0f12b9"] = { "Confessa e ti lasceremo andare.", "." },
   ["3d98ecf32f7174bd"] = { "Con l'approvazione di lord Varimathras, gli ⟦Deathstalkers=Inseguitori della Morte⟧ crescono di numero. Più lame per colpire i nostri nemici quando meno se lo aspettano.", "." },
+  ["3dabce995e68b107"] = { "Ehi, mon! È bello rivederti. La tribù parla delle tue uccisioni di Hakkari e tutto il resto. Molthor mi ha dato il via per mettere altro mojo nel tuo talismano. Dammelo qua e Maywiki lo fa più bello.", "." },
   ["3db750c4c4cd346d"] = { "Mi dicono che un tempo le fattorie delle ⟦Westfall=Marche Occidentali⟧ fornissero a ⟦Stormwind=Roccavento⟧ raccolti abbondanti. Ma ora il suolo è sterile e la maggior parte dei contadini è fuggita.\r\n\nA nome di Darnassus vorrei offrire il mio aiuto per far rifiorire questa terra. Mi darai una mano?", "." },
   ["3dbdb4902e01c32d"] = { "Miei cari... miei cari...", "." },
   ["3dc0dff54b79e582"] = { "Ora nessuno ti salverà, umano!", "." },

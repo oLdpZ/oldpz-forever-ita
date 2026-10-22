@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["a02d7676c1bb4550"] = { "Venite, eroi... Per volere del Re dei Lich, sarete distrutti.", "." },
   ["a038b4254dc16ee2"] = { "Finitelo...", "." },
   ["a038e3d4f6f79f4e"] = { "%s si gratta la gola.", "." },
+  ["a03b334a3a149b46"] = { "Ce l'hai fatta! Urrà!\n\nMetzen è tornato in volo nelle stalle di Babbo Inverno (sì, Metzen sa volare davvero) poco fa! La polvere ha funzionato a meraviglia; lo sapevo. Hai salvato dal disastro la Festa del Grande Inverno e la Masseria Buongusto. Grazie, {name}.\n\nSenti... per quello che hai fatto, voglio che tu abbia questo. È una cosa MOLTO speciale; se hai una cavalcatura, credo che ti divertirà un sacco. Buon Grande Inverno!", "." },
   ["a04184dd5d7b3ebb"] = { "Mmh... be', sembri abbastanza capace. Se desideri davvero imparare, niente ti sbarrerà la strada! Ti guiderò nei primi passi di quello che spero sarà un cammino lungo e appagante.", "." },
   ["a044fb85be44cb8e"] = { "Ecco la mia lista, Keldric. La solita roba.", "." },
   ["a04ece07b5a68841"] = { "Dove vagano trogg e Leper Gnome sorge la nostra casa: Gnomeregan.\n\nLe nostre famiglie perdute, le nostre case perdute. Dispersi.\n\nOh, quanto rimpiango i giorni della vita spensierata a Gnomeregan, ma quei giorni non ci sono più. Dobbiamo resistere! Dobbiamo salvare Gnomeregan!", "." },

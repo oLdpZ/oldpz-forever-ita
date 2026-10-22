@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["d75478c2b1ba6b56"] = { "Inviare assalti di terra richiede enormi quantità di rifornimenti!", "." },
   ["d75d730365052449"] = { "Uccidete le guardie, prendete vivo il guardiano!", "." },
   ["d761fe09ee37b5c8"] = { "Grazie, <ragazzo/ragazza>. Grazie infinite.", "." },
+  ["d7681ef3ef3178b0"] = { "Ah, {name}, che piacere sentire di nuovo il tuo odore.\n\n<Falthir sogghigna.>\n\nDovrai perdonare il mio senso dell'umorismo. A volte sa essere davvero fetido.\n\nSento che hai causato grande angoscia ai nostri nemici. Le forze di Hakkar gridano il tuo nome con rabbia. Questo è eccellente.\n\nTi sei guadagnat<o/a> un'altra trama sul tuo talismano. Consegnamelo.", "." },
   ["d7688b2be7a8638b"] = { "Larion, voglio aiutarti a combattere questi parassiti!", "." },
   ["d76b36a49002f59b"] = { "Ce l'hai fatta... hai ucciso il barone Rivendare! L'⟦Argent Dawn=Alba d'Argento⟧ saprà delle tue valorose imprese!", "." },
   ["d76c05a3f73c8fdc"] = { "Preparatevi a un'eternità di angoscia e tortura: la vendetta sarà mia...", "." },

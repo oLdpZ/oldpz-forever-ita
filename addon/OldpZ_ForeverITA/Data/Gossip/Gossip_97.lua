@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["9726671842ae8465"] = { "Successo! Evviva! La fonte di energia ha ripristinato la collana!", "." },
   ["972b0df0ea5fcd69"] = { "Va bene, {name}. Seguimi fino alla grotta, dove cercherò di imbrigliare il potere della pietra runica in questi occhialoni.", "." },
   ["974bc49608caa9bd"] = { "Ahah! Che divertente! Divertente umano di legno!", "." },
+  ["9753571fd07eaacf"] = { "Sei tornat<o/a> e vedo nei tuoi occhi che hai molto da raccontarmi, {name}. Pensiamo prima alla tua ricompensa.", "." },
   ["9756791b5791af82"] = { "Cho'Rush morire! ORA TU MUORI!", "." },
   ["975d7d769bd541cd"] = { "D'accordo, adesso firmo i permessi. Portateli qui davanti, vermi.", "." },
   ["97632678c878062f"] = { "Mille grazie, {name}. Con queste corna farò una fortuna!", "." },

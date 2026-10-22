@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["b27a12ca5eac02a2"] = { "Non c'è via d'uscita.", "." },
   ["b27b004e0924c762"] = { "Un debole sussurro giunge dall'interno della pietra...\n\nSalute, <piccolo/piccola>. Hai notizie per il Templare?", "." },
   ["b280f0fca835d403"] = { "⟦Rogues' Quarter=Quartiere dei Ladri⟧ attaccato dal Flagello! Aiuto!", "." },
+  ["b28b36e8b95a699a"] = { "Buone notizie, {name}. Molthor in questi giorni canta le tue lodi. Dice che stai diventando <un/una> ver<o/a> <eroe/eroina> di Zandalar.\n\nDice anche che Maywiki deve lucidare ancora il tuo globo! Dammelo qua, così Maywiki può schiarire la visione.", "." },
   ["b2923cdd41ed192d"] = { "Inspira a fondo il profumo del fiore del canto.", "." },
   ["b297a32b0ddc1e40"] = { "Ben <trovato/trovata>, {class}. Se sei qui per affari, prenditi una birra e facciamo due chiacchiere.", "." },
   ["b2a61f0ef906f540"] = { "Cinque e cinque anni, e lui la cerca ancora, benché non fosse una bellezza, e molte dame avrebbero preso il suo posto.", "." },

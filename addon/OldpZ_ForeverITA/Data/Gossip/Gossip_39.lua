@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["3977c120b955c77a"] = { "C'è una cassetta della posta fuori dalla banca, che troverai al centro di Darnassus.", "." },
   ["39867dbfd02f7724"] = { "<Benvenuto/Benvenuta>, <fratello/sorella> <mio/mia>. Se sei qui per addestrarti, sarò felice di farlo.\n\nSiamo i custodi dell'equilibrio, ora e per sempre, come ci ha insegnato Cenarius. Non dimenticarlo mai.", "." },
   ["39875d656fd5cc2d"] = { "Gli scheletri hanno superato la Hall of Lights! Distruggeteli!", "." },
+  ["398b8d864fad109b"] = { "{name}! Le note nella borsa che ti ho dato bastavano per trovare Metzen? Odio pensare a cosa potrebbero fargli quei crudeli delinquenti... ma non possiamo assolutamente permetterci di pagare un riscatto così esorbitante!", "." },
   ["398f247bf8dc7ef0"] = { "<Caro/Cara> amic<o/a>, li onori con la tua attenta veglia. Sei <saldo/salda> nella tua lealtà. Non dubito nemmeno per un istante che saresti pront<o/a> a compiere per il tuo popolo un sacrificio grande quanto quello degli eroi ai cui piedi ti trovi.", "." },
   ["39913f2fe247d3cf"] = { "Per catturare Gahz'ranka ti servirà una speciale Esca per Fanguzzola. Le preparo con le mie mani!\n\nMa non ti basta l'esca: ti servono anche delle fanguzzole... devi metterle nell'esca perché emani un bel tanfo!\n\nQuando avrai le fanguzzole, getta l'esca da Pagle's Point, a ⟦Zul'Gurub=Zul'gurub⟧... poi prenditi da bere e aspetta... ma non troppo, perché Gahz'ranka arriverà di sicuro a gran passi!", "." },
   ["3995b69dbdb975fa"] = { "Aspetterò.", "." },

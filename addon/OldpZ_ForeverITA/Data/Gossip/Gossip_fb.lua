@@ -43,6 +43,7 @@ WFJ.Data.add("gossip", {
   ["fbd66ee318b84446"] = { "Osi toccarmi?!", "." },
   ["fbd730f4a08aa87b"] = { "Ti schiaccerò!", "." },
   ["fbe92b7ebd9933a5"] = { "Tutte le nostre raccolte sono completate, {class}. Ciò che abbiamo riunito è in viaggio verso la ⟦Cenarion Hold=Fortezza Cenariana⟧, a ⟦Silithus=Silitus⟧, e il resto non dovrebbe metterci più di $2113w giorni ad arrivare. A quel punto potrà iniziare la Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧, non appena qualcuno di coraggioso e sconsiderato suonerà il gong proprio fuori dai cancelli laggiù.", "." },
+  ["fbf11a330733f673"] = { "Non posso credere che le nostre vite siano praticamente perdute per colpa di uno stupido medaglione! E sei sicur<o/a> che Anthion abbia parlato di Bodley?\n\nBe', hai fatto il tuo lavoro, quindi sbrighiamo la faccenda della tua ricompensa.", "." },
   ["fbf61df45afcd861"] = { "Non riesco proprio a sentirmi a mio agio senza un bel soffitto di granito sopra la testa. Tutte queste stelle lassù, c'è da farsi venire i brividi.", "." },
   ["fbfd46688195b090"] = { "Per me una pinta di birra ⟦Dark Iron=Ferroscuro⟧. Oh, non sei <il/la> <cameriere/cameriera>?", "." },
 })

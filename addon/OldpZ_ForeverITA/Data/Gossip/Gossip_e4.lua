@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["e47c04305d1d5bd4"] = { "È inquietante. Ti prego, continua.", "." },
   ["e4907b9e67a5bff0"] = { "Mille anni fa, gli elfi immortali, i semidei della foresta e i draghi combatterono contro la Legione sulle pendici dell'Hyjal.", "." },
   ["e49184095fcf93a2"] = { "Fuori di qui!", "." },
+  ["e498954d7bcfa97a"] = { "{name}! L'hai trovato? Gli appunti nella borsa che ti ho dato bastavano per rintracciare Metzen? Odio pensare a cosa potrebbero fargli quei crudeli delinquenti... ma non possiamo permetterci di pagare un riscatto così esorbitante!", "." },
   ["e49b51c497734584"] = { "Ho trovato qualcosa... credo.", "." },
   ["e49f406f3987be8f"] = { "Ah! Ora la tua morte è certa!", "." },
   ["e4a1ce5d33c58100"] = { "Non voglio sentire storie, {name}. No, non c'è verso che tu possa entrare nella ⟦Searing Gorge=Gorgia Rovente⟧. Impossibile. Non succederà. Quante volte te lo devo dire? Non posso farti entrare! Non parli la lingua comune? Sei un orco travestito? N-O. NO!\n\nSe faccio entrare te, poi devo far entrare tutti. In men che non si dica vorranno entrare i tuoi amici più stretti, poi i loro parenti lontani, poi i loro amici, e così via. L'ultima volta che è successo... beh, dell'ultima volta non parliamone.", "." },

@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["4363f24e0fc620ef"] = { "Non disturbarmi, recluta. Presentati al comandante Cyclas o al sacerdote del cielo Aanders se hai le mani in mano.", "." },
   ["4366e6c07f9643f8"] = { "Jeztor sta venendo a prenderti, Piccatonante!", "." },
   ["437280c13549b9b1"] = { "Ci servono altri lupi! Venite alle stalle ad aiutare!", "." },
+  ["4373d0b6ae4ae051"] = { "Sento che hai inflitto innumerevoli morti agli Hakkari, {name}. Porti addosso il fetore del loro mojo.\n\nImmagino che il talismano dell'Ombra ti abbia aiutato nella mattanza? Dammelo e lascia che ne accresca il potere.", "." },
   ["43740eb78425d500"] = { "Il villaggio di Dolanaar, su Teldrassil, è la dimora dell'anziano Bladeleaf.", "." },
   ["437500bc404c8a7d"] = { "%s esce dalla capanna di tronchi e ti sorprende a manomettere le scorte di grano!", "." },
   ["438105ede1ec715b"] = { "Ora dobbiamo aspettare, {name}. Non passerà molto prima che i naga si accorgano di ciò che abbiamo fatto.", "." },

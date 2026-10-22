@@ -20,6 +20,7 @@ WFJ.Data.add("gossip", {
   ["aa51095fae7bf95a"] = { "Se è rotto, Slagtree lo aggiusta!", "." },
   ["aa52b170d04ad0e7"] = { "%s si inginocchia per raccogliere i frammenti dello scettro spezzato.", "." },
   ["aa568805f227789c"] = { "Sono qui per aiutare il capitano.", "." },
+  ["aa5a437a68ce00b6"] = { "La tua costante difesa dei figli di Kalimdor è stata riconosciuta. Dammi il tuo anello con sigillo, così che io possa accrescerne i poteri.", "." },
   ["aa64f52021535d18"] = { "Grazie! Mi hai ridato la libertà!", "." },
   ["aa6ae0ea6c5d9da0"] = { "La nostra è la via della gloria, {race}! La gracile ⟦Alliance=Alleanza⟧ sta ancora cercando di racimolare le sue provviste di guerra, mentre noi abbiamo raccolto tutte le nostre e siamo pronti a spedirle a ⟦Silithus=Silitus⟧.", "." },
   ["aa6cb1d5e9b44019"] = { "L'abominio è arrivato! Avanti!", "." },

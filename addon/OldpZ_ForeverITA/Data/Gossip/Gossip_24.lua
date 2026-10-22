@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["248df58fe930185a"] = { "<Mio/Mia> <signore/signora>, ti prego, lasciami vivere abbastanza da vederti purificare questo mondo dagli infedeli.", "." },
   ["24940e71d13dea19"] = { "%s si ritrae per il dolore quando il Judgement of Wisdom lo investe!", "." },
   ["249569c8a7ba6d6e"] = { "Per quello dovrai andare a Orgrimmar. Segui la strada che esce da ⟦Razor Hill=Tranciacolle⟧ verso nord attraverso il canyon e ci arriverai. Quando sei lì, chiedi a uno dei grunt altre indicazioni.", "." },
+  ["2499e7581a54e51f"] = { "Sha-mon! Maywiki fa una battuta!\n\n<Maywiki ride.>\n\nAllora, hai usato gli spiriti e gli elementi contro i nostri nemici a ⟦Zul'Gurub=Zul'gurub⟧, eh? Lodati siano gli spiriti!\n\nMaywiki ora ravviva il tuo globo. Dammelo qua, {name}.", "." },
   ["249a3b5023b5f219"] = { "Salute, {class}. Provo pietà per quelli come te, perché i segreti della vera magia sono fuori dalla tua portata...", "." },
   ["249ec5d4b5c460a8"] = { "Ti copro io, Slidore, ma a dirla tutta puzzi davvero. Fatti una doccia, amico.", "." },
   ["249ed804bb73711f"] = { "In coscienza non posso permetterti di cercare Volcor finché non ti avrò confezionato quel mantello.", "." },

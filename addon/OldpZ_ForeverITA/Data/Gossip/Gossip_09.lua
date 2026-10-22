@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["0983cffc0e552b72"] = { "Il Soulflayer è sconfitto! Il nostro capo, Molthor, ora richiama altri suoi servitori...", "." },
   ["098a7819d2b55b0d"] = { "Come osi entrare nel mio santuario!", "." },
   ["098adb8f8d770eae"] = { "Bagnati nel mio potere! Abbeverati della mia forza! Combatti per la gloria dell'⟦Horde=Orda⟧!", "." },
+  ["098d66d266c76f0d"] = { "Una dedizione di questa portata è rara. Hai dimostrato che la tua volontà è incrollabile, {name}. Sarai <ricompensato/ricompensata> generosamente per la tua salda vigilanza sul nostro mondo.\n\nDammi il tuo anello con sigillo, così che io possa rafforzarne l'incantamento.", "." },
   ["099573ea33ea20af"] = { "Posso insegnarti i segreti di ⟦Wolf Riding=Cavalca-Lupo⟧, se hai abbastanza oro per pagare la lezione!", "." },
   ["09a9fd5d45f9cf6a"] = { "Paval Reethe! Finalmente ti ho trovato. E adesso te la fai pure con gli ogre? Non temere, persino ai disertori e ai traditori si concede un po' di pietà.", "." },
   ["09ac3b2ccd14b9dc"] = { "Non è il momento, {name}.\n\nTi ha dato di volta il cervello?!", "." },
