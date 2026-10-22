@@ -8,6 +8,6 @@ WFJ.Data.add("spell", {
   [464630] = { "Evoca una tempesta di mana che dura $D1 e infligge $N2 danni da gelo e prosciuga $N3 mana ogni $D2 a tutti i nemici nell'area selezionata.", nil, 0xe9d85538, nil, "um" },
   [464650] = { nil, "Stordito e gelato fino alle ossa.", nil, 0x9cb407ec, "mu" },
   [464743] = { "Riduce la potenza d'attacco in mischia e a distanza dei nemici vicini di $N1 per $D1.", "Potenza d'attacco in mischia e a distanza ridotta di $N1.", 0x2eacb3df, 0x25ffd6c8, "uu" },
-  [464945] = { "Trasforma Ombrafuria in Tuonassalto.", nil, 0xe0d5f71b, nil, "um" },
-  [464946] = { "Trasforma Tuonassalto in Ombrafuria.", nil, 0x144434fe, nil, "um" },
+  [464945] = { "Trasforma Assalto d'Ombra in Tuonassalto.", nil, 0xe0d5f71b, nil, "um" },
+  [464946] = { "Trasforma Tuonassalto in Assalto d'Ombra.", nil, 0x144434fe, nil, "um" },
 })

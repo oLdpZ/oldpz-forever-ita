@@ -35,7 +35,7 @@ WFJ.Data.add("item", {
   [17202] = { "Lanciami!", 0x6c842ba3, "u" },
   [17204] = { "L'⟦Eye of Sulfuras=Occhio di Sulfuras⟧ può combinarsi con il ⟦Sulfuron Hammer=Martello di Sulfuron⟧ per creare Sulfuras, il leggendario martello di Ragnaros.", 0xb742cf90, "u" },
   [17222] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. ", shape = { "6/3", "5/3" } }, 0x64afd919, "u" },
-  [17223] = { "Colpisce fino a 3 bersagli infliggendo $N2 danni da natura. Ogni bersaglio dopo il primo subisce danni inferiori.\nTrasforma Tuonassalto in Ombrafuria.", 0x468f035b, "u" },
+  [17223] = { "Colpisce fino a 3 bersagli infliggendo $N2 danni da natura. Ogni bersaglio dopo il primo subisce danni inferiori.\nTrasforma Tuonassalto in Assalto d'Ombra.", 0x468f035b, "u" },
   [17224] = { "Quando viene utilizzato insieme al Globo della Chiaroveggenza, consente a chi lo usa di vedere la roccaforte dell'⟦Alliance=Alleanza⟧ attraverso l'⟦Ryson's Eye in the Sky=Occhio di Ryson⟧.", 0xe0838665, "u" },
   [17242] = { "Apre il forziere del chierico oscuro Salem.", 0xee274045, "u" },
   [17262] = { "Apre il forziere rubato dalla ⟦Cathedral of Light=Cattedrale della Luce⟧.", 0xbf4b8ac6, "u" },

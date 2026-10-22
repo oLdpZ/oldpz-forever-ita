@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg12
+version: sg13
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg12
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg12)
+## Lessico fissato (sg13)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip, sg12 quelle della revisione dei tooltip e degli oggetti). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip, sg12 quelle della revisione dei tooltip e degli oggetti, sg13 quelle della revisione dei tooltip della Season of Discovery e di Forever). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -38,6 +38,12 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | titoli degli Aspetti | la Protettrice della Vita, la Sognatrice, il Tessitore di Incantesimi, il Senza Tempo, il Custode della Terra, Aspetto della Morte | il Senzatempo |
 | sin'dorei, quel'dorei, kaldorei | minuscolo, come nome di popolo | Sin'dorei |
 | Plaguelands | Terre Infette | Plaguelands |
+| Wrack; Shadowstrike; Life Tap (Lifetap); Soulfire; Sunfire; Mangle | Distruzione; Assalto d'Ombra; Conversione Vitale; Fuoco dell'Anima; Fuoco Solare; Dilaniamento (forme ufficiali del client) | Wrack, Ombrafuria, Lifetap, Soulfire |
+| Mangle (Bear) / (Cat); Sunfire (Bear) / (Cat) | Dilaniamento (Orso) / (Felino); Fuoco Solare (Orso) / (Felino) | Mangle (Bear) |
+| Felguard; Soul Shard | la vilguardia (Evocazione: Vilguardia); frammento d'anima, frammenti d'anima, minuscolo come il client | il vilguardia, Soul Shard |
+| scuole composte: Spellfire, Frostfire, Spellfrost, Shadowfrost, Shadowflame, Twilight, Plague, Radiant, Solar | danni da fuocoincanto, fuocogelo, geloincanto, ombragelo, ombrofuoco, crepuscolo, pestilenza; danni radianti, solari (minuscolo) | fuoco magico |
+| Gain the X ability:; Engrave your <pezzo> with the X rune:; Permanently imbue your shoulders with the Soul of the X: | Ottieni l'abilità X:; Incidi sul tuo elmo (sulla tua cintura…) la runa X:; Infondi in modo permanente nei tuoi spallacci la Soul of the X: | Guadagna l'abilità |
+| equipment slot; fel glamours | spazio d'equipaggiamento (come le bozze degli oggetti); malie vili | slot di equipaggiamento, illusioni vili |
 | Silver Hand / Knights of the Silver Hand | Mano d'Argento / Cavalieri della Mano d'Argento | Silver Hand |
 | Twilight's Hammer | Martello del Crepuscolo | Twilight's Hammer |
 | Shadow Council | Concilio dell'Ombra | Shadow Council |

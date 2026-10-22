@@ -60,7 +60,7 @@ WFJ.Data.add("spell", {
   [1214283] = { "Evoca e congeda una Tigre Spettrale Rapida. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x7d7bae98, 0x2195529a, "uu" },
   [1214284] = { "Ti trasforma in un Drakonid per $D1.", "Trasformato in un Drakonid.", 0xb0e71df4, 0x91d414d7, "uu" },
   [1214285] = { "Aumenta del $N1% i danni di ⟦Ferocious Bite=Morso Feroce⟧ e Artigliata.", nil, 0x8592d461, nil, "um" },
-  [1214286] = { "Aumenta del $N1% i danni di Spazzata e Mangle.", nil, 0x13e15f66, nil, "um" },
+  [1214286] = { "Aumenta del $N1% i danni di Spazzata e Dilaniamento.", nil, 0x13e15f66, nil, "um" },
   [1214289] = { "I tuoi incantesimi ⟦Cure Poison=Cura dei Veleni⟧, ⟦Abolish Poison=Abolizione del Veleno⟧ e ⟦Remove Curse=Rimozione Maledizione⟧ curano inoltre il bersaglio di $N1 quando vengono lanciati.", nil, 0x84f66a21, nil, "um" },
   [1214290] = { "Cura il bersaglio di $N1.", nil, 0xbdf1d263, nil, "um" },
   [1214292] = { "I tuoi incantesimi ⟦Cure Poison=Cura dei Veleni⟧ e ⟦Cure Disease=Rimuovi Malattia⟧ curano inoltre il bersaglio di $N1. Il tuo Totem della Purificazione del Veleno e il tuo Disease Cleansing Totem curano inoltre il tuo gruppo di $N2 quando vengono lanciati.", nil, 0x340a38d8, nil, "um" },
