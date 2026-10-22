@@ -142,7 +142,7 @@ WFJ.Data.add("ui", {
   ["SHOW_PRIMARY_PROFESSION_ON_MAP_TEXT"] = { "Missioni mondiali per la professione primaria", 0xebd6595d, "." },
   ["SHOW_QUEST_FADING_TEXT"] = { "Testo istantaneo delle missioni", 0xe2e42aae, "." },
   ["SHOW_QUEST_LEVELS"] = { "Mostra livelli missioni", 0xc2e553e6, "." },
-  ["SHOW_QUEST_OBJECTIVES_ON_MAP_TEXT"] = { "Mostra obiettivi", 0xd38a12f0, "." },
+  ["SHOW_QUEST_OBJECTIVES_ON_MAP_TEXT"] = { "Obiettivi della missione", 0xd38a12f0, "." },
   ["SHOW_QUICK_BUTTON"] = { "Mostra pulsante d'accesso rapido", 0x84d1b943, "." },
   ["SHOW_SECONDARY_PROFESSION_ON_MAP_TEXT"] = { "Missioni mondiali per la professione secondaria", 0x0dedbe45, "." },
   ["SHOW_SILHOUETTE_OPTION"] = { "Mostra sagoma se oscurato", 0x475367bd, "." },
