@@ -67,4 +67,5 @@ WFJ.Data.add("spell", {
   [1301784] = { "Da collocare fuori dalla porta al secondo piano di Trias' Cheese.", nil, 0x0ae35f91, nil, "um" },
   [1301922] = { "Gli attacchi in mischia e a distanza contro orchi e ogre infliggono il $N1% di danni aggiuntivi come danni fisici.", "Gli attacchi in mischia e a distanza contro orchi e ogre infliggono il $N1% di danni aggiuntivi come danni fisici.", 0x624a2224, 0x624a2224, "uu" },
   [1301928] = { "Aumenta del $N1% i danni da fuoco subiti.", "Aumenta i danni da fuoco subiti del $N1%.", 0x5e40573e, 0x5e40573e, "uu" },
+  [1301968] = { "Evoca una punta di vento corrotto che infligge danni da natura.", nil, 0x909b8703, nil, "um" },
 })

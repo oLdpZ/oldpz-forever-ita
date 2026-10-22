@@ -16,6 +16,8 @@ WFJ.Data.add("spell", {
   [1251938] = { "Aumenta la potenza d'attacco di $N1 per $D1.", "Potenza d'attacco aumentata di $N1.", 0xb593685a, 0x2906fd7f, "uu" },
   [1251940] = { "Aumenta la potenza d'attacco di $N1 per $D1.", "Potenza d'attacco aumentata di $N1.", 0xb593685a, 0x2906fd7f, "uu" },
   [1251984] = { "+$N1 Forza.", nil, 0x7dbddd01, nil, "um" },
+  [1251986] = { nil, nil, nil, 0xfa7853a3, "me" },
   [1251990] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
   [1251991] = { "Aumenta la probabilità di critico del $N1%.", nil, 0xff9a12de, nil, "um" },
+  [1251993] = { nil, "Un bersaglio vicino che sanguina ti ha schizzato addosso Sangue Velenoso.\n\nAl termine dell'effetto, subirai $N1 danni da natura.", nil, 0x65387091, "mu" },
 })

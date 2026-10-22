@@ -9,4 +9,9 @@ WFJ.Data.add("spell", {
   [1277334] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1277335] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1277336] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [1277463] = { nil, "Assorbe $N1 danni.", nil, 0xe074129a, "mu" },
+  [1277464] = { nil, "Assorbe $N1 danni.", nil, 0xe074129a, "mu" },
+  [1277465] = { nil, "Assorbe $N1 danni.", nil, 0xe074129a, "mu" },
+  [1277466] = { nil, "Assorbe $N1 danni.", nil, 0xe074129a, "mu" },
+  [1277467] = { nil, "Assorbe $N1 danni.", nil, 0xe074129a, "mu" },
 })
