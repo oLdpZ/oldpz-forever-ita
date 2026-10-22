@@ -32,11 +32,16 @@ Data\Quest\Quest_0007.lua
 Data\Quest\Quest_0008.lua
 Data\Quest\Quest_0009.lua
 Data\Quest\Quest_0065.lua
+Data\Quest\Quest_0076.lua
+Data\Quest\Quest_0078.lua
 Data\Quest\Quest_0079.lua
 Data\Quest\Quest_0080.lua
 Data\Quest\Quest_0081.lua
 Data\Quest\Quest_0082.lua
 Data\Quest\Quest_0084.lua
+Data\Quest\Quest_0086.lua
+Data\Quest\Quest_0087.lua
+Data\Quest\Quest_0088.lua
 Data\Quest\Quest_0091.lua
 Data\Quest\Quest_0092.lua
 Data\Quest\Quest_0093.lua
