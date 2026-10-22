@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg9
+version: sg10
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg9
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg9)
+## Lessico fissato (sg10)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -28,6 +28,15 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | The Den (Valle delle Sfide) | Antro del Tirocinio | la Tana |
 | (the) Talon Den, «the Den» sul Picco di Petrartiglio | Eremo Grinfialunga (zona ufficiale); il titolo 1089 «The Den» resta inglese, perché il controllo vi pretende Antro del Tirocinio | Antro del Tirocinio |
 | (The) Barrens | Savane (le Savane) | Barrens |
+| Stonemasons' Guild, the Stonemasons | la Gilda dei Tagliapietre, i Tagliapietre (da Mantello dei Tagliapietre) | Stonemasons' Guild |
+| Uther the Lightbringer | Uther il Portatore di Luce | Uther the Lightbringer |
+| Silvermoon | Lunargenta (da Resti di Lunargenta) | Silvermoon |
+| the Frozen Throne; Frostmourne | il Trono di Ghiaccio; Gelidanima | Frozen Throne, Frostmourne |
+| Icecrown | Corona di Ghiaccio | Icecrown |
+| Council / Order / Guardians of Tirisfal; Guardian (la carica) | Consiglio / Ordine / Guardiani di Tirisfal; il Guardiano, la Guardiana, maiuscolo anche davanti al nome | Order of Tirisfal |
+| the Great Dark (Beyond) | la Grande Oscurità (dell'Oltre) | Grande Oscurità Esterna |
+| titoli degli Aspetti | la Protettrice della Vita, la Sognatrice, il Tessitore di Incantesimi, il Senza Tempo, il Custode della Terra, Aspetto della Morte | il Senzatempo |
+| sin'dorei, quel'dorei, kaldorei | minuscolo, come nome di popolo | Sin'dorei |
 | Plaguelands | Terre Infette | Plaguelands |
 | Silver Hand / Knights of the Silver Hand | Mano d'Argento / Cavalieri della Mano d'Argento | Silver Hand |
 | Twilight's Hammer | Martello del Crepuscolo | Twilight's Hammer |
@@ -259,6 +268,8 @@ Una riga è una pagina: traducila così com'è, senza portare frasi da un'altra 
 
 - Libri, cronache, guide e rapporti: prosa scritta, impersonale. Lettere, biglietti e diari: la voce di chi scrive; il saluto (`Dear Morgan,` → `Caro Morgan,`) e la chiusa (`Warm regards,` → `Cordiali saluti,`) diventano formule italiane naturali. Targhe ed epitaffi: formali e brevi.
 - Mantieni ogni a capo dell'inglese (versi, elenchi, firma su una riga sua).
+- Orari con am/pm (`6am`, `12:30pm`): il controllo non conta come numero una cifra attaccata a lettere, quindi l'orario si scrive in lettere (`alle sei del mattino`, `alle dodici e mezza`), mai in cifre a 24 ore.
+- Niente coppie di genere `<m/f>` nei libri: chi scrive non sa chi leggerà; una forma neutra (`Buona fortuna, combattente.`).
 - Una pagina che inizia con `<HTML>` è markup: mantieni ogni tag esattamente com'è, con i suoi attributi, nello stesso ordine e sulla stessa riga, e traduci solo il testo fra i tag.
 
 ## Tooltip (`item_description`, `spell_description`, `spell_aura`)
