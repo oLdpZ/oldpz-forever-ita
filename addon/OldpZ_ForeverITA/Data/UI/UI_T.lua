@@ -10,7 +10,7 @@ WFJ.Data.add("ui", {
   ["TALENTS_INSPECT_FORMAT"] = { "Talenti - %s", 0x12043a17, "." },
   ["TALENTS_INVOLUNTARILY_RESET"] = { "Alcuni dei tuoi talenti sono stati azzerati per i cambi implementati nell'albero dei talenti.", 0x96c9978b, "." },
   ["TALENTS_INVOLUNTARILY_RESET_PET"] = { "I talenti del tuo famiglio sono stati azzerati.", 0x76bbdbfc, "." },
-  ["TALENTS_LINK_FORMAT"] = { "Talenti collegati (%2$s - %1$s)", 0x9c1d664d, "." },
+  ["TALENTS_LINK_FORMAT"] = { "Talenti collegati (%s %s)", 0x9c1d664d, "." },
   ["TALENT_ACTIVE_SPEC_STATUS"] = { "Questi sono i tuoi talenti attivi", 0x5fe8f700, "." },
   ["TALENT_BUTTON_TOOLTIP_CAPSTONE_RANK_NEXT_STAGE_PREVIEW_TITLE"] = { "Successivo:", 0x66d5d2bc, "." },
   ["TALENT_BUTTON_TOOLTIP_CLEAR_REPURCHASE_INSTRUCTIONS"] = { "Clicca col pulsante destro per cancellare i nodi storici", 0x42bada2d, "." },
