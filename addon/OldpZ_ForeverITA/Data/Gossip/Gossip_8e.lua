@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["8e66b78079444206"] = { "{name}! Sei <tornato/tornata> solo per parlare con me? Che pensiero gentile, e stai proprio una favola con quella tenuta!\n\nNon sai quanto mi fa piacere vederti. Quassù ci si può sentire piuttosto soli, visto che quasi tutti questi zoticoni non riescono nemmeno a vedermi. È stata una gran cosa quella che hai fatto per tutti noi, e non la dimenticherò mai!\n\nGrazie di essere <passato/passata> a salutare, e non sparire così.", "." },
   ["8e69d0d2973c11d7"] = { "AH, UN BANCHETTO! CHI L'HA LASCIATO QUI...?", "." },
   ["8e702f91bc040610"] = { "Affascinante. Ti prego, dimmi di più.", "." },
-  ["8e715e4334dc44c5"] = { "Buona festa di Great-Winter dai tuoi amici di Smokeywood Pastures!", "." },
+  ["8e715e4334dc44c5"] = { "Buona Festa del Grande Inverno dai tuoi amici della Masseria Buongusto!", "." },
   ["8e72216fe64479d4"] = { "Abbiamo quasi tutto il silithyst che ci serve! Per l'⟦Horde=Orda⟧!", "." },
   ["8e72c6908866d4f7"] = { "Non vedo in te lo spirito del guerriero, <figliolo/figliola>. Non ho insegnamenti che possano giovare a <un/una> {class} come te.", "." },
   ["8e74a5e4e8ca9612"] = { "%s scava per uscire dalla sabbia e proteggere le sue uova.", "." },

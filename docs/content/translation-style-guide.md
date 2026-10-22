@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg5
+version: sg6
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg5
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg5)
+## Lessico fissato (sg6)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -68,7 +68,9 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | (Rank 2) | (Grado 2) | (Rank 2) |
 | Lunar Festival | Celebrazione della Luna | Lunar Festival |
 | Hallow's End | Veglia delle Ombre | Hallow's End |
-| Winter Veil / Feast of Winter Veil | Grande Inverno / Festa del Grande Inverno | Winter Veil |
+| Winter Veil / Feast of Winter Veil / Feast of Great-Winter | Grande Inverno / Festa del Grande Inverno («Buon Grande Inverno», «Buona Festa del Grande Inverno») | Winter Veil, festa di Great-Winter |
+| Greatfather Winter / Great-father Winter | Babbo Inverno (da Birra Stagionale di Babbo Inverno) | Greatfather Winter |
+| Smokywood Pastures (anche «Smokeywood») | la Masseria Buongusto (dagli oggetti ufficiali: «della», «dalla Masseria Buongusto») | Smokywood Pastures |
 | Wickerman (festa, fantoccio) | Uomo di Paglia | Wickerman |
 | Light's Hope (Chapel) | Cappella della Luce | Light's Hope |
 | Stranglethorn (Vale) | Rovotorto (Valle di Rovotorto) | Stranglethorn |
@@ -108,9 +110,21 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | High Mage / High Sorcerer | sommo mago / alto stregone | — |
 | Dragonmaw (clan, testo libero) | Fauci di Drago (le Fauci di Drago, gli orchi delle Fauci di Drago; dagli oggetti ufficiali) | Dragonmaw, gli orchi Fauci di Drago |
 | Lady Sylvanas | Lady Sylvanas (L maiuscola) | lady Sylvanas |
+| Lady + nome | Lady sempre maiuscola: Lady Proudmoore, Lady Jaina Proudmoore, anche nella grafia inglese «Lady Proudmore»; «Miss Proudmoore» resta «la signorina Proudmoore» | lady Proudmoore |
+| Magus (titolo) | magus («il magus Voidglare», «il magus Tirth»; dall'oggetto Testa della Magus Rimtori) | mago Voidglare, il Magus |
+| Prospector (titolo) | prospettore («il prospettore Ironband»; dagli oggetti Piccone da Prospettore…) | cercatore |
+| Witherbark / Crushridge / Boulderfist / Shadowforge (testo libero) | Scorzasecca / Sfasciacresta / Rocciadura / Forgiascura («gli Scorzasecca»; dalle zone e dagli oggetti ufficiali) | i Witherbark |
+| outrunner(s) | staffetta / staffette (Ashenvale Outrunners → Staffette di Valtetra; dagli oggetti … della Staffetta) | esploratori, Outrunner |
+| dark riders | cavalieri oscuri | Dark Rider |
+| Orb (catena di Orahil) | come gli oggetti ufficiali: Infernal Orb → Globo Infernale («il globo»), Cleansed Infernal Orb → Sfera Infernale Purificata («la sfera purificata»), Orb of Noh'Orahil → Globo di Noh'Orahil | un'unica parola per tutti |
+| Sparklematic 5200 | la Lavatutto 5200 (femminile; dalla Scatola Incartata dalla Lavatutto) | lo Sparklematic 5200 |
+| Gelkis Village | Villaggio dei Gelkis (zona ufficiale) | — |
+| Mithril Order, Scarlet Brotherhood, Magram Village | restano inglesi (nessuna forma ufficiale verificabile) | Ordine del Mithril, confratelli scarlatti, villaggio dei Magram |
+| Epiteti di una parola comune (the Wise, the Ancient, the Devout, the Swift, the Foul, the Lost…) | tradotti, articolo minuscolo ed epiteto maiuscolo: Uthek la Saggia, Galvan l'Antico, Raleigh il Devoto, Helgrum il Rapido, Hank il Martello, Aturk l'Incudine, Balgaras il Lurido, Theldurin il Perduto, Delgren il Purificatore, Taragaman il Famelico (ufficiale) | Uthek the Wise, Raleigh il devoto |
+| Epiteti coniati o giochi di parole (Gakin the Darkbinder, Rethiel the Greenwarden, Neptulon the Tidehunter, Zardeth the Black Claw, Shoni the Shilent) | restano inglesi con il nome | Rethiel il Greenwarden |
 | felhunter | vilsegugio / vilsegugi (da Evocazione: Vilsegugio) | felhunter |
 | Blackfathom (Deeps), il luogo | Abissi di Fondocupo («negli Abissi di Fondocupo»); Fondocupo da solo è la fazione | a Fondocupo |
-| Steelsnap / Sarltooth / Gobbler (testo libero) | Ganascia / Dentesauro / Glugot (da Costola di Ganascia, Artigli di Dentesauro, Testa di Glugot) | — |
+| Steelsnap / Sarltooth / Gobbler / Grimson (testo libero) | Ganascia / Dentesauro / Glugot / Rocciatorva (da Costola di Ganascia, Artigli di Dentesauro, Testa di Glugot, Testa di Rocciatorva; «Rocciatorva il Pallido») | — |
 | Thistlefur (tribù) | Mantocardo | Thistlefur |
 | Ravenholdt Manor | Maniero dei Corvolesto | maniero di Corvolesto |
 | Tarren Mill | il Mulino di Tarren («al», «del», «dal Mulino di Tarren») | a / di Mulino di Tarren |
@@ -127,11 +141,12 @@ Regole che accompagnano la tabella:
 - **Un titolo prima di un nome è minuscolo** (il maresciallo McBride, l'esecutore Arren, la sacerdotessa Alathea, il sommo sacerdote), salvo una forma del glossario che il controllo pretende maiuscola.
 - **I nomi composti di creature** che contengono un termine del glossario, di classe, di razza o di zona (Ice Claw Bear, Armored Scorpid, Redridge Mongrel, Stonesplinter Shaman) restano interi in inglese; il controllo dà solo un avviso. Mai costruzioni come «uno Scorpide, l'Armored Scorpid» o «Bruti di Crestarossa» aggiunte per il controllo.
 - **Nomi di abilità** che il glossario non elenca (Lesser Heal) restano inglesi.
-- **Feste e personaggi stagionali** prendono la forma della tabella, ricavata dagli oggetti ufficiali; una festa o un personaggio senza forma ufficiale ricavabile (Children's Week, Harvest Festival, Brewfest, Greatfather Winter) resta inglese.
+- **Feste e personaggi stagionali** prendono la forma della tabella, ricavata dagli oggetti ufficiali; una festa o un personaggio senza forma ufficiale ricavabile (Children's Week, Harvest Festival, Brewfest) resta inglese. Greatfather Winter è Babbo Inverno, Smokywood Pastures la Masseria Buongusto.
 - **Un nome senza forma ufficiale verificabile resta inglese**, anche se una traduzione sembra ovvia: Gnomeregan Exiles, Apothecarium, Royal Apothecary Society, Shattered Hand, Cult of the Damned, Earthen Ring, Feathermoon Stronghold, Camp Taurajo, Brotherhood of the Light. Non inventarne una (`Saluto Infranto`, `Torre Orientale dei Lupi Bianchi`).
 - **Il titolo concorda con il genere del personaggio** che lo porta: l'alta esecutrice Darthalia, la somma sacerdotessa. Se il genere non si conosce, un'apposizione senza articolo (`a Selgorm, vegliante dell'alba,`).
 - **Un titolo coniato** (Tinkmaster, Dawnwatcher, Windwatcher) si traduce in una sola forma, quella della tabella, in ogni campo; una parola inventata senza senso italiano (Mekgineer) resta inglese come parte del nome.
-- **Oggetti e creature negli obiettivi** (`quest_objectives`): un oggetto con una forma nel glossario ufficiale per quel nome esatto si scrive nella forma ufficiale, anche se la riga del lotto non la elenca in `glossary`, al singolare dopo il numero come nel tracker (`Porta 10 Ascia Usurata`, `Porta 3 Verga della Canalizzazione`); senza una forma ufficiale resta intero in inglese, come lo mostra il tracker (`Uccidi 10 Syndicate Rogue`). Le creature restano inglesi negli obiettivi anche quando il testo libero le traduce (`Uccidi Gobbler…`, ma «Glugot» nella descrizione). Il Lessico vale per il testo libero, non dentro un nome di creatura (`Venture Co. Patroller`, `Dragonmaw Grunt`).
+- **Oggetti e creature negli obiettivi** (`quest_objectives`): un oggetto con una forma nel glossario ufficiale per quel nome esatto si scrive nella forma ufficiale, anche se la riga del lotto non la elenca in `glossary`, al singolare dopo il numero come nel tracker (`Porta 10 Ascia Usurata`, `Porta 3 Verga della Canalizzazione`); senza una forma ufficiale resta intero in inglese, come lo mostra il tracker (`Uccidi 10 Syndicate Rogue`). Le creature restano inglesi negli obiettivi anche quando il testo libero le traduce (`Uccidi Gobbler…`, ma «Glugot» nella descrizione). Il Lessico vale per il testo libero, non dentro un nome di creatura (`Venture Co. Patroller`, `Dragonmaw Grunt`). La regola vale per le missioni di ogni livello. Senza un numero davanti, l'oggetto ufficiale va al plurale che la frase chiede (`Raccogli i Collari Roventi`, `frantuma i Picconi da Prospettore`); un nome del glossario che copre solo una parte del nome inglese non conta (`Soft-shelled Clam Meat` resta intero, anche se `Clam Meat` è `Mollusco`).
+- **Epiteti** («X the Y»): un epiteto di una parola comune si traduce, sempre nello stesso modo, con l'articolo minuscolo e l'epiteto maiuscolo come negli oggetti ufficiali (`Testa di Lathoric il Nero`, `Cuore di Taragaman il Famelico`): `Uthek la Saggia`, `Raleigh il Devoto`, `Hank il Martello`. L'articolo segue il genere del personaggio (Uthek è una donna). Un epiteto coniato o un gioco di parole resta inglese con il nome (`Gakin the Darkbinder`, `Shoni the Shilent`). Negli obiettivi una creatura da uccidere resta inglese intera, epiteto compreso, come la mostra il tracker (`Uccidi Balgaras the Foul`, ma «Balgaras il Lurido» nella descrizione); un personaggio da cercare, a cui parlare o portare qualcosa prende la forma tradotta (`Parla con Uthek la Saggia`).
 - **Una coppia di genere** contiene parole singole, senza spazi né apostrofi (`<un/una> fier<o/a>`, non `<un eroe/un'eroina>`); se non si può, una forma neutra.
 
 ## Il giocatore si dà del "tu"

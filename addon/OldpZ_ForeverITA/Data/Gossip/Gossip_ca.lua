@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["ca502501d9418f09"] = { "Ehi, Pratt, puoi insegnarmi a fare un ⟦Wild Leather Cloak=Mantello di Cuoio Selvatico⟧?", "." },
   ["ca506da805d3417b"] = { "Salute, {race}. Il materiale bellico è in viaggio e dovrebbe arrivare alla ⟦Cenarion Hold=Fortezza Cenariana⟧ entro un giorno. Possiamo solo sperare che, una volta lì, qualcuno, dopo aver ricomposto lo Scettro delle Sabbie Mutevoli, si faccia avanti per suonare il gong e aprire i cancelli.", "." },
   ["ca52fba6e1b37752"] = { "Ah! Eccolo.", "." },
-  ["ca60a30e0e6f149f"] = { "Salute, {name}. Hai scoperto qualcosa di nuovo sui piani e le operazioni della S.P.R. & Co. nella nostra terra?\n\nSe intendono sfruttare le nostre terre come hanno fatto con altre, gli Outrunner non ci metteranno molto a porvi fine.", "." },
+  ["ca60a30e0e6f149f"] = { "Salute, {name}. Hai scoperto qualcosa di nuovo sui piani e le operazioni della S.P.R. & Co. nella nostra terra?\n\nSe intendono sfruttare le nostre terre come hanno fatto con altre, le staffette non ci metteranno molto a porvi fine.", "." },
   ["ca6ff14700ce168e"] = { "Va bene! Va bene! Ci arrendiamo... Abbassate le armi, collaborerò!", "." },
   ["ca71b8a5ced3b2d3"] = { "Che i tuoi anziani ti benedicano, {name}, e ti portino fortuna nell'anno che verrà.", "." },
   ["ca73de4a58b7f38b"] = { "Piacere di conoscerti! Se ti piace armeggiare con i congegni, sei nel posto giusto!", "." },
