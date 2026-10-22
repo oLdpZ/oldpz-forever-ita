@@ -166,6 +166,9 @@ def test_slot_problems_need_the_placeholder_that_points_at_the_slot():
     en = "Regenerate $s1 health every 5 sec for $d."
     assert align.slot_problems(en, "$D2の間、5秒ごとに体力を$N1回復します。") == []
     assert align.slot_problems(en, "$D1の間、5秒ごとに体力を$N1回復します。") == ["duration_missing:D2"]
+    # a duration shown by its `$D` is not a value too: `$N2` here would print the 5 of "every 5 sec"
+    # where the Italian means another number (the 25% a drafter numbered without counting durations)
+    assert align.slot_problems(en, "$D2の間、$D1ごとに体力を$N1回復、$N2%。") == ["value_on_duration:N2"]
     # a literal may be written out; a counter is carried as the code
     assert align.slot_problems("Kill 7 Nightsabers.", "Nightsaberを7体倒す。") == []
     assert align.slot_problems("Slay $1997w Wolves.", "Wolfを$1997w体倒す。") == []

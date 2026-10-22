@@ -37,6 +37,9 @@ reason per problem:
   carry it. A literal the English already shows (`Kill 7 Nightsabers`) is exempt: write it out or use
   `$N<k>`.
 - `duration_as_value:N<k>`: `$N<k>` on a `$d`, the bare number, with a unit the Italian named itself.
+- `value_on_duration:N<k>`: `$N<k>` on a written duration (`every 2 sec`) the Italian already carries as its
+  `$D<j>`. `$N` counts durations too, so a drafter who numbered the values without them prints the
+  duration's number where another value (`25%`) was meant.
 - `duration_missing:D<j>`: the j-th duration is a `$d` and the Italian has no `$D<j>`. A duration is the
   one value whose **unit** the client chooses, so a Italian line that names the unit itself (`18 sec`) is
   wrong the moment the client renders minutes. `Align.check` cannot catch it, because the number

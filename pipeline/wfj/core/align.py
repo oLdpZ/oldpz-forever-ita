@@ -473,7 +473,10 @@ def slot_problems(en: str, it: str) -> list[str] | None:
     - `slot_missing:N<k>`: the k-th value is a code or sum and the Japanese has neither `$N<k>` nor, for a
       duration, its `$D<j>`;
     - `duration_as_value:N<k>`: `$N<k>` on a `$d`: the number without the unit the client chose (ADR-028);
-    - `duration_missing:D<j>`: a `$d` whose `$D<j>` is absent."""
+    - `duration_missing:D<j>`: a `$d` whose `$D<j>` is absent;
+    - `value_on_duration:N<k>`: `$N<k>` on a written duration (`every 5 sec`) the Italian already shows as
+      its `$D<j>`: the k-th number is that duration, so the `$N<k>` prints it where another value was meant
+      (a drafter numbering `$N` without counting the durations)."""
     s = slots(en)
     if s is None:
         return None
@@ -483,6 +486,8 @@ def slot_problems(en: str, it: str) -> list[str] | None:
     for k, x in enumerate(s, 1):
         if x.duration:
             j += 1
+        if x.duration and not x.client_unit and j in ds and k in ns:
+            out.append(f"value_on_duration:N{k}")
         if x.client_unit:
             if k in ns:
                 out.append(f"duration_as_value:N{k}")
