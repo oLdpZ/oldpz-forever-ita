@@ -159,7 +159,7 @@ WFJ.Data.add("ui", {
   ["FactionDescription:2778"] = { "I Windshapers sono le guide spirituali sciamaniche del popolo Skyborne di Zephras Isle. Onorano gli elementi e cercano di comprendere meglio la natura del piano elementale per proteggere lo stile di vita degli shen'dorei a Skywall.", 0x79baf3bf, "." },
   ["FactionDescription:2779"] = { "L'High Order è formato dai discendenti Skyborne dei magistri degli Alti Nobili di Eldre'Thalas. Dopo aver trascorso gli ultimi 10.000 anni nel regno di Skywall, i membri dell'High Order cercano di recuperare l'antico sapere arcano dei loro antenati.", 0xdb7a7bd9, "." },
   ["FactionDescription:2782"] = { "Esiliati per aver tradito i loro falsi profeti, questi ex membri del Martello del Crepuscolo cercano di tracciare la propria strada.", 0xb0d166e2, "." },
-  ["FactionDescription:2787"] = { "L'Earthen Ring è un'alleanza informale di sciamani e druidi vicini all'Orda che cercano di mantenere e coltivare l'equilibrio della natura su Azeroth.", 0x3293070e, "." },
+  ["FactionDescription:2787"] = { "Il Circolo della Terra è un'alleanza informale di sciamani e druidi vicini all'Orda che cercano di mantenere e coltivare l'equilibrio della natura su Azeroth.", 0x3293070e, "." },
   ["FactionDescription:2797"] = { "Membri d'élite della società degli elfi della notte.", 0xd684bc84, "." },
   ["FactionDescription:2798"] = { "Fedeli alla nazione dei troll, i Darkspear Raiders combattono la Theramore Expeditionary Force per il controllo delle loro ancestrali Isole dei Lanciascura.", 0xae4311e4, "." },
   ["FactionDescription:2799"] = { "Partigiani fedeli alla loro città, la Theramore Expeditionary Force combatte i Darkspear Raiders per il controllo delle cosiddette Isole dei Lanciascura.", 0x1bb82cf1, "." },
