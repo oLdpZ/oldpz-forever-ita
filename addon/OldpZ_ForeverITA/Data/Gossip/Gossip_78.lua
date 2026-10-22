@@ -54,4 +54,5 @@ WFJ.Data.add("gossip", {
   ["78f6197fcc0def20"] = { "Capitano Redpath! Come hai potuto abbandonarci!", "." },
   ["78f73009e26027b5"] = { "Bleah... quello non è un pesce!", "." },
   ["78f9c293e27bfccd"] = { "Non dirmelo! Shhh! Sei qui per il Brandicenere?!? Sì... Sì... No! Errore mio.\n\nCosa posso fare per te, {race}?", "." },
+  ["78ff4985d12f3511"] = { "Sei riuscit<o/a> a trovare Merrin? Ti ha dato notizie per me?", "." },
 })

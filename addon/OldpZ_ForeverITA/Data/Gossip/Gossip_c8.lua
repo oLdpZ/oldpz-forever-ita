@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["c8d45aa942a7e230"] = { "Sono qui! Il tuo dominio su questa terra è finito!", "." },
   ["c8db931454e35501"] = { "Padre Cobb è quello con cui devi parlare. Lo trovi sotto l'⟦Spirit Rise=Altura degli Spiriti⟧, nella grotta delle Pozze delle Visioni.", "." },
   ["c8de062c58b11b9c"] = { "Avvicinati, giovane. Ai miei tempi sentivo il fremito del cuore di una preda che batteva, ma ora devi alzare la voce se vuoi che le tue parole siano ascoltate.", "." },
+  ["c8e2459479e690fa"] = { "Hai la statuetta?", "." },
   ["c8f47f457aa6eb58"] = { "Venite, venite tutti! Benvenuti alla ⟦Darkmoon Faire=Fiera di Lunacupa⟧! Non siate timidi. Avvicinatevi a Lhara e compratevi un manufatto esotico da terre lontane. Se siete tra i pochi fortunati che hanno trovato delle Carte di Lunacupa, scambiate due parole con il professor Paleo. Fame? Sete? Siete fortunati! Qui ci sono rinfreschi da Sylannia e Stamp. Vi consiglio la ⟦Darkmoon Special Reserve=Riserva Speciale di Lunacupa⟧ per mandar giù un po' di ⟦Red Hot Wings=Alette Piccanti⟧. E se è il futuro che cercate, correte, non camminate, a parlare con Sayge.", "." },
   ["c8fc9407be25d4d8"] = { "Sergente Hartman! Devo comprare un altro Purificatore per Bombe Puzzolenti!", "." },
   ["c8fd282844930669"] = { "Cerca Yelmak's Alchemy and Potions. La trovi in mezzo a The Drag, a ovest del grande albero.", "." },

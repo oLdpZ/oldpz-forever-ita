@@ -41,6 +41,7 @@ WFJ.Data.add("gossip", {
   ["60a6efdda2e5f877"] = { "Hai detto qualcosa, <giovanotto/signorina>? Non sento un accidente, a parte il fischio nelle orecchie. Ehi, cos'è quella roba che hai lì?", "." },
   ["60a8da6e9650954f"] = { "Ehi! Questo è molto più di quanto avessi messo in conto: da qui in poi sono fatti tuoi, Slim!", "." },
   ["60aa0093f4e0caae"] = { "%s manca il colpo...", "." },
+  ["60aba2226023ceaa"] = { "Salve, {race}. Cosa posso fare per te?", "." },
   ["60af55a1861b48c4"] = { "Scommetto che per Quae sarà importante. Se ne intende parecchio di queste cose: non è un'esperta, ma se ne intende.", "." },
   ["60b9973f28c6cc09"] = { "%s comincia ad attingere energia dalla terra", "." },
   ["60be05b0bcfec47b"] = { "L'ultimo l'hai lanciato tu, idiota. Tocca a me.", "." },

@@ -39,4 +39,5 @@ WFJ.Data.add("gossip", {
   ["22ec6aa982b70229"] = { "Vieni ad apprendere le vie del cacciatore. Orgoglio, onore e tradizione.", "." },
   ["22f96e24b22ec4a9"] = { "«...»\n\nIl corpo del druido tauren giace immobile. Sembra che sia finalmente passato da questo mondo al grande aldilà che gli era stato promesso.", "." },
   ["22fdf4a34c7de687"] = { "La Bandiera dell'⟦Horde=Orda⟧ è stata presa da {name}!", "." },
+  ["22ff6d7eacc8cfb0"] = { "Ho mostrato a Cog l'inizio della nostra macchina per osservare le stelle. Ne è rimasto colpito. Hai per caso trovato qualcosa che rifletta la luce?", "." },
 })

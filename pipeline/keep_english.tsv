@@ -88,9 +88,12 @@ gossip	fe8275319dd8a8d8	text	fe8275319dd8a8d8	Hm...
 gossip	fee728b8ff6a70d7	text	fee728b8ff6a70d7	Grrr...
 gossip	fef919db0d64e7f4	text	fef919db0d64e7f4	Grrrrr!
 gossip	ffaca6741b285d92	text	ffaca6741b285d92	Feralas - Screecher Spirit - On Quest Default Greeting
+quest	19	title	22ab2f517c3706f2	Tharil'zun
 quest	87	title	e78fd7d989b60387	Goldtooth
 quest	117	title	06ba24f24f6beb60	Thunderbrew
+quest	249	title	64aa5799b5a78290	Morganth
 quest	318	title	ab586d5c375ca252	Evershine
+quest	389	title	49a42307a15b56d4	Bazil Thredd
 quest	425	title	d479936791d77493	Ivar the Foul
 quest	446	title	57daa6c7e7770a98	Thule Ravenclaw
 quest	486	title	b9e1d498450fca23	Ursal the Mauler
@@ -103,9 +106,14 @@ quest	828	title	5cde94d68e7e3581	Margoz
 quest	829	title	868b3608d150a7d7	Neeru Fireblade
 quest	852	title	d41b734872295031	Hezrul Bloodmark
 quest	860	title	3c4cd1521fbfcff7	Sergra Darkthorn
+quest	873	title	7582509378901de2	Isha Awak
+quest	874	title	7d6a1f65f028928e	Mahren Skyseer
 quest	876	title	3d86ef8cc292de0e	Serena Bloodfeather
 quest	881	title	8eaea284c0ee070f	Echeyakee
 quest	882	title	574078d6ef3c805b	Ishamuhale
+quest	883	title	8a0292b4de70a30c	Lakota'mani
+quest	884	title	298c2ba234f146ce	Owatanka
+quest	885	title	cfbb9a3465c5c8b4	Washte Pawne
 quest	894	title	59bd049c93e27570	Samophlange
 quest	900	title	59bd049c93e27570	Samophlange
 quest	901	title	59bd049c93e27570	Samophlange
@@ -120,7 +128,9 @@ quest	983	title	ed396ee3f52e901b	Buzzbox 827
 quest	1001	title	ed386236e54d6130	Buzzbox 411
 quest	1002	title	ed381fb2e1553d52	Buzzbox 323
 quest	1003	title	ed38a5c6e945c4d6	Buzzbox 525
+quest	1009	title	a5f22a9f842421e2	Ruuzel
 quest	1132	title	30729feb7fc0bfc4	Fiora Longears
+quest	1483	title	6cf0b9999a7e24a0	Ziz Fizziks
 quest	1489	title	034c803e1d5e2251	Hamuul Runetotem
 quest	1490	title	a9a75b816d8ebbbc	Nara Wildmane
 quest	1502	title	c4560ed6018da132	Thun'grim Firegaze
@@ -183,3 +193,4 @@ quest	6261	title	99cf1567dcef85dc	Dungar Longdrink
 quest	6322	title	30ec3f6acecb039b	Michael Garrett
 quest	6344	title	1cde20018faa7228	Nessa Shadowsong
 quest	6388	title	3b5086d23620ac74	Gryth Thurden
+quest	6641	title	3efe9ea2167a9f0d	Vorsha the Lasher

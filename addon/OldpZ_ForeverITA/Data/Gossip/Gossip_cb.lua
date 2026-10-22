@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["cb45fbd4306ea85f"] = { "Oh, vuoi imparare a raccogliere margheritine, eh? Ah! Ti sto solo prendendo in giro, <ragazzo/ragazza>.\n\nÈ una bella professione, e Reyna Stonebranch può mostrarti come si fa. Lavora all'Ironforge Physician, sul lato sud della ⟦Great Forge=Grande Forgia⟧, qui a ⟦Ironforge=Forgiardente⟧.", "." },
   ["cb538c52d1ea4a55"] = { "%s lancia uno strillo e chiama aiuto!", "." },
   ["cb59ea7799983482"] = { "Oh, che cosa assolutamente deliziosa!", "." },
+  ["cb5cd7b98e80c235"] = { "Oh... non ho mai visto niente del genere...", "." },
   ["cb5fae704ced895a"] = { "Apri la tua mente, viandante, e cominceremo.", "." },
   ["cb60e184345828fa"] = { "In realtà anch'io sto ancora imparando. L'esperta è Rhiannon. È lì, vicino alle casse. Puoi imparare molto da lei.", "." },
   ["cb6ec7510c3ca0c0"] = { "Non posso aiutarti finché non avrai appreso di più sulle basi. Torna da me quando sarai <pronto/pronta>.", "." },
