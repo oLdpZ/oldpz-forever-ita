@@ -560,7 +560,7 @@ WFJ.Data.add("ui", {
   ["AchievementDescription:350"] = { "Portali dei maghi usati", 0x6476b4e8, "." },
   ["AchievementDescription:353"] = { "Volte in cui hai usato la Pietra del Ritorno", 0x9f72be1f, "." },
   ["AchievementDescription:377"] = { "Massimo di fazioni a Osannato", 0x83cd29ed, "." },
-  ["AchievementDescription:378"] = { "Massimo di fazioni a Reverito o superiore", 0x11418a61, "." },
+  ["AchievementDescription:378"] = { "Massimo di fazioni a Riverito o superiore", 0x11418a61, "." },
   ["AchievementDescription:381"] = { "Uccisioni onorevoli nel mondo", 0x1d9ca51d, "." },
   ["AchievementDescription:382"] = { "Uccisioni onorevoli nei campi di battaglia", 0x64091139, "." },
   ["AchievementDescription:393"] = { "Torri della Valle d'Alterac difese", 0xdddd0c98, "." },
