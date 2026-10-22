@@ -924,7 +924,7 @@ WFJ.Data.add("ui", {
   ["AchievementTitle:6142"] = { "Uccisioni di Archaedas (Uldaman)", 0x2144475e, "." },
   ["AchievementTitle:6143"] = { "Uccisioni della principessa Theradras (Maraudon)", 0x29d8ad3d, "." },
   ["AchievementTitle:6144"] = { "Uccisioni dell'Ombra di Eranikus (Tempio di Atal'Hakkar)", 0xb615aeb7, "." },
-  ["AchievementTitle:6145"] = { "Uccisioni del signore supremo Wyrmthalak (Bastioni Inferiori di Roccianera)", 0x21bf7e63, "." },
+  ["AchievementTitle:6145"] = { "Uccisioni del signore supremo Wyrmthalak (Bastioni di Roccianera Inferiori)", 0x21bf7e63, "." },
   ["AchievementTitle:6146"] = { "Uccisioni di re Gordok (Maglio Infausto)", 0xe63920be, "." },
   ["AchievementTitle:61499"] = { "Guerriero novizio", 0x8b422f51, "." },
   ["AchievementTitle:61500"] = { "Guerriero veterano", 0xe873c2e3, "." },
