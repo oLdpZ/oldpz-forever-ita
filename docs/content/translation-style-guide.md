@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg4
+version: sg5
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,14 +18,15 @@ version: sg4
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg4)
+## Lessico fissato (sg5)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
 | People's Militia | Milizia del Popolo | Brigata del Popolo |
-| The Den | Antro del Tirocinio | la Tana |
+| The Den (Valle delle Sfide) | Antro del Tirocinio | la Tana |
+| (the) Talon Den, «the Den» sul Picco di Petrartiglio | Eremo Grinfialunga (zona ufficiale); il titolo 1089 «The Den» resta inglese, perché il controllo vi pretende Antro del Tirocinio | Antro del Tirocinio |
 | (The) Barrens | Savane (le Savane) | Barrens |
 | Plaguelands | Terre Infette | Plaguelands |
 | Silver Hand / Knights of the Silver Hand | Mano d'Argento / Cavalieri della Mano d'Argento | Silver Hand |
@@ -102,6 +103,20 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Stonesplinter (tribù) | Scheggiadura | Pietrarotta |
 | Earthen Ring, Old Town, Dwarven District, Hall of Arms, The Drag, Tinker Town, Lion's Pride Inn, Gilded Rose, Hall of the Brave, Forlorn Cavern, Scarab Gong, silithyst | restano inglesi | Anello della Terra, Città Vecchia |
 | Alterac: luoghi senza forma nel glossario (Frostwolf Relief Hut, Stormpike Aid Station, Dun Baldar North/South Bunker, East/West Frostwolf Tower) | restano inglesi interi | — |
+| High Executor | alto esecutore / alta esecutrice (secondo il personaggio: l'alta esecutrice Darthalia) | somma esecutrice |
+| High Priest / High Priestess | sommo sacerdote / somma sacerdotessa | alta sacerdotessa |
+| High Mage / High Sorcerer | sommo mago / alto stregone | — |
+| Dragonmaw (clan, testo libero) | Fauci di Drago (le Fauci di Drago, gli orchi delle Fauci di Drago; dagli oggetti ufficiali) | Dragonmaw, gli orchi Fauci di Drago |
+| Lady Sylvanas | Lady Sylvanas (L maiuscola) | lady Sylvanas |
+| felhunter | vilsegugio / vilsegugi (da Evocazione: Vilsegugio) | felhunter |
+| Blackfathom (Deeps), il luogo | Abissi di Fondocupo («negli Abissi di Fondocupo»); Fondocupo da solo è la fazione | a Fondocupo |
+| Steelsnap / Sarltooth / Gobbler (testo libero) | Ganascia / Dentesauro / Glugot (da Costola di Ganascia, Artigli di Dentesauro, Testa di Glugot) | — |
+| Thistlefur (tribù) | Mantocardo | Thistlefur |
+| Ravenholdt Manor | Maniero dei Corvolesto | maniero di Corvolesto |
+| Tarren Mill | il Mulino di Tarren («al», «del», «dal Mulino di Tarren») | a / di Mulino di Tarren |
+| Tinkmaster / Dawnwatcher / Windwatcher / Cliffwatcher / Argent Guard (titoli) | mastro inventore / vegliante dell'alba / osservatore dei venti / guardiacolli / guardia argentea | Dawnwatcher, the Windwatcher |
+| The Affray (la prova dell'Isola della Contesa) | la Rissa | — |
+| Mekgineer, Zardeth the Black Claw, Druids of the Fang, Scythe of Elune, Eye of Azora, Nightbane (worgen) | restano inglesi (nessuna forma ufficiale verificabile) | Falce di Elune, Occhio di Azora, Druidi della Zanna |
 
 Regole che accompagnano la tabella:
 
@@ -114,6 +129,9 @@ Regole che accompagnano la tabella:
 - **Nomi di abilità** che il glossario non elenca (Lesser Heal) restano inglesi.
 - **Feste e personaggi stagionali** prendono la forma della tabella, ricavata dagli oggetti ufficiali; una festa o un personaggio senza forma ufficiale ricavabile (Children's Week, Harvest Festival, Brewfest, Greatfather Winter) resta inglese.
 - **Un nome senza forma ufficiale verificabile resta inglese**, anche se una traduzione sembra ovvia: Gnomeregan Exiles, Apothecarium, Royal Apothecary Society, Shattered Hand, Cult of the Damned, Earthen Ring, Feathermoon Stronghold, Camp Taurajo, Brotherhood of the Light. Non inventarne una (`Saluto Infranto`, `Torre Orientale dei Lupi Bianchi`).
+- **Il titolo concorda con il genere del personaggio** che lo porta: l'alta esecutrice Darthalia, la somma sacerdotessa. Se il genere non si conosce, un'apposizione senza articolo (`a Selgorm, vegliante dell'alba,`).
+- **Un titolo coniato** (Tinkmaster, Dawnwatcher, Windwatcher) si traduce in una sola forma, quella della tabella, in ogni campo; una parola inventata senza senso italiano (Mekgineer) resta inglese come parte del nome.
+- **Oggetti e creature negli obiettivi** (`quest_objectives`): un oggetto con una forma nel glossario ufficiale per quel nome esatto si scrive nella forma ufficiale, anche se la riga del lotto non la elenca in `glossary`, al singolare dopo il numero come nel tracker (`Porta 10 Ascia Usurata`, `Porta 3 Verga della Canalizzazione`); senza una forma ufficiale resta intero in inglese, come lo mostra il tracker (`Uccidi 10 Syndicate Rogue`). Le creature restano inglesi negli obiettivi anche quando il testo libero le traduce (`Uccidi Gobbler…`, ma «Glugot» nella descrizione). Il Lessico vale per il testo libero, non dentro un nome di creatura (`Venture Co. Patroller`, `Dragonmaw Grunt`).
 - **Una coppia di genere** contiene parole singole, senza spazi né apostrofi (`<un/una> fier<o/a>`, non `<un eroe/un'eroina>`); se non si può, una forma neutra.
 
 ## Il giocatore si dà del "tu"

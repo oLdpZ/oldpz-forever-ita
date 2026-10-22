@@ -1,4 +1,4 @@
-"""The Italian style guide (sg4): its version, the rules the plan fixes, the interface section's six rules, and
+"""The Italian style guide (sg5): its version, the rules the plan fixes, the interface section's six rules, and
 interface terms that hold on every shipped UI line."""
 
 import re
@@ -20,7 +20,7 @@ def guide(root: Path) -> str:
 
 
 def test_guide_has_a_version(root: Path):
-    assert style_version(root) == 4
+    assert style_version(root) == 5
 
 
 def test_guide_states_the_italian_rules(guide):
@@ -35,12 +35,15 @@ def test_guide_states_the_italian_rules(guide):
 
 
 def test_guide_carries_the_fixed_lexicon(guide):
-    section = guide.split("## Lessico fissato (sg4)", 1)
+    section = guide.split("## Lessico fissato (sg5)", 1)
     assert len(section) == 2, "no fixed lexicon section"
     body = section[1].split("\n## ", 1)[0]
     for term in ("| People's Militia | Milizia del Popolo |", "| SI:7 | IR:7 |", "Brigata del Popolo",
                  "Cognomi dei PNG restano inglesi", "Tribù, clan e gruppi",
-                 "| Lunar Festival | Celebrazione della Luna |", "forma ufficiale verificabile resta inglese"):
+                 "| Lunar Festival | Celebrazione della Luna |", "forma ufficiale verificabile resta inglese",
+                 "| High Executor | alto esecutore / alta esecutrice", "| Lady Sylvanas | Lady Sylvanas", "Fauci di Drago",
+                 "| felhunter | vilsegugio", "Abissi di Fondocupo", "Il titolo concorda con il genere",
+                 "Oggetti e creature negli obiettivi"):
         assert term in body, term
 
 
