@@ -129,6 +129,7 @@ Data\Item\Item_0249.lua
 Data\Item\Item_0250.lua
 Data\Item\Item_0251.lua
 Data\Item\Item_0252.lua
+Data\Item\Item_0253.lua
 Data\Item\Item_0259.lua
 Data\Item\Item_0260.lua
 Data\Item\Item_0262.lua

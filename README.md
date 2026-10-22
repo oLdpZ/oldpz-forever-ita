@@ -20,7 +20,7 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 | Righe di dialogo dei PNG | 10.876 |
 | Pagine di libri | 921 |
 | Pagine di lettere | 208 |
-| Tooltip degli oggetti | 7.424 |
+| Tooltip degli oggetti | 8.470 |
 | Tooltip delle abilità | 6.614 |
 | Testi dell'interfaccia | 8.609 |
 

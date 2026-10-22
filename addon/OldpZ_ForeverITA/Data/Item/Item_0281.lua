@@ -9,4 +9,5 @@ WFJ.Data.add("item", {
   [281167] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [281168] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [281282] = { "Una bevanda alcolica estremamente potente.", 0x7af31672, "u" },
+  [281371] = { "Ti pervade di energia magica, permettendoti di individuare e ottenere Motes of Unstable Magic da alcuni incantatori e nemici potenti.", 0xebca25f0, "u" },
 })
