@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [448107] = { "Aumenta i danni fisici subiti dai nemici vicini di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0xc6df0840, 0xa01a31bd, "uu" },
+  [448323] = { "Evoca $N1 Elementali del Fuoco che affiancano l'incantatore fino al congedo.", nil, 0x592ec6a8, nil, "um" },
   [448572] = { "Costringe il bersaglio nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x26124111, 0x5339954e, "uu" },
   [448824] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0xf6322bec, "mu" },
 })

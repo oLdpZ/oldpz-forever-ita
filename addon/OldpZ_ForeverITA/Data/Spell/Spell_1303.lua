@@ -2,6 +2,10 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1303075] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [1303136] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1303215] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [1303226] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", nil, 0x025dbef1, nil, "um" },
+  [1303228] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [1303308] = { "Avvolge un nemico nelle radici, infliggendo danni da natura ogni $D1 e immobilizzandolo per un massimo di $D2.", "Immobilizzato.\nDanni da natura inflitti ogni $D1.", 0xed46cb1a, 0xe6768e6a, "uu" },
+  [1303979] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
 })

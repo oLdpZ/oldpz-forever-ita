@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1284017] = { "Indica sulla minimappa la posizione delle bestie vicine. Può essere attiva una sola forma di tracciamento alla volta.", nil, 0x7a0f6d82, nil, "um" },
-  [1284381] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1284381] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro e stordendoli per $D1.", "Stordito.", 0x476b69d8, 0x27f95286, "uu" },
   [1284384] = { "Il soggetto muore.", nil, 0x0fda4706, nil, "um" },
+  [1284435] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
 })

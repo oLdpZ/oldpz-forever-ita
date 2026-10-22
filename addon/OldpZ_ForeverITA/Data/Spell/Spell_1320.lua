@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1320379] = { "Trasforma il nemico in una pecora, costringendolo a vagare senza meta per un massimo di $D1. Mentre vaga, la pecora non può attaccare né lanciare incantesimi, ma rigenera molto rapidamente. Eventuali danni riportano il bersaglio alla sua forma originaria. Si può metamorfosare un solo bersaglio alla volta. Funziona solo su bestie, umanoidi e animali.", "Impossibile attaccare o lanciare incantesimi. Rigenerazione aumentata.", 0xd637006d, 0x445227a5, "uu" },
   [1320808] = { "Ferisce il bersaglio, infliggendo $N1 danni.", nil, 0xdaa3fed4, nil, "um" },
+  [1320925] = { nil, "$N1 danni da fuoco ogni $D1.", nil, 0x5a5656de, "mu" },
 })

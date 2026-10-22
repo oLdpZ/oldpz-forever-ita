@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [449432] = { nil, "Infligge $N1 danni da ombra dopo $D1.", nil, 0xa9e12dea, "mu" },
   [449668] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [449669] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo vicino. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta. L'aura dura finché non viene annullata.", nil, 0xb2ca9267, nil, "um" },
   [449879] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [449907] = { "Emette un'onda d'urto magica, infliggendo danni da arcano ai nemici vicini.", nil, 0xb94462fd, nil, "um" },
   [449925] = { "Riduce il costo in mana di tutti i cambi di forma del $N1%.", nil, 0xa1501f59, nil, "um" },

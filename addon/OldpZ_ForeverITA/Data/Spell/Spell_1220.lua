@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [1220180] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xc5176c4d, nil, "um" },
   [1220295] = { "Aumenta la probabilità di bloccare gli attacchi con lo scudo del $N1%.", nil, 0xd6e97b49, nil, "um" },
   [1220418] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [1220515] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
   [1220519] = { "Evoca $N1 Skeletal Servant al fianco dell'incantatore fino al congedo.", nil, 0x2e4fdb3c, nil, "um" },
   [1220520] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1220546] = { "Aumenta l'Armatura del bersaglio alleato di $N1 per $D1.", "Armatura aumentata di $N1.", 0xfb7f6b76, 0xa12a98e7, "uu" },
@@ -29,5 +30,7 @@ WFJ.Data.add("spell", {
   [1220751] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
   [1220756] = { nil, "Danni degli incantesimi aumentati di $N1\nCure aumentate di $N2.", nil, 0xdd675a01, "mu" },
   [1220770] = { "Rigenera $N1 salute ogni $D1.", "Rigenera $N1 salute ogni $D1.", 0xe2d95cbb, 0xe2d95cbb, "uu" },
-  [1220853] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x08fe36e7, "mu" },
+  [1220853] = { "Infligge $N1 danni da gelo ai nemici vicini, riducendo la loro velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xe513fa92, 0x08fe36e7, "uu" },
+  [1220854] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", nil, 0x025dbef1, nil, "um" },
+  [1220855] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
 })

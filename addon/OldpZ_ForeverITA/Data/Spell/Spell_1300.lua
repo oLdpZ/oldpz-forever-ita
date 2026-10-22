@@ -3,6 +3,8 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1300140] = { nil, "Il costo in mana del tuo prossimo incantesimo di danno è ridotto del $N1%.", nil, 0xec1aeca8, "mu" },
   [1300185] = { "Causa una ferita fatale che infligge $N1 danni fisici. Infligge il $N2% di danni in più ai bersagli con meno del $N3% di salute.", nil, 0xbbacb806, nil, "um" },
+  [1300493] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
+  [1300496] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1300663] = { "Riduce i danni da caduta.", nil, 0x879f36dd, nil, "um" },
   [1300752] = { "Aumenta l'Armatura di $N1 per $D1.", "Armatura aumentata di $N1.", 0x92291afa, 0x97d97089, "uu" },
   [1300753] = { "Travolge il bersaglio, infliggendo $N1 danni da fuoco.", nil, 0x9d8bd0af, nil, "um" },

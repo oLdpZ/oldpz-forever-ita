@@ -12,6 +12,7 @@ WFJ.Data.add("spell", {
   [460699] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460700] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460749] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
+  [460754] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [460755] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
   [460756] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [460766] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },

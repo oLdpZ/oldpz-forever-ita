@@ -6,7 +6,9 @@ WFJ.Data.add("spell", {
   [1222394] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1222563] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", nil, 0x790d3c30, nil, "um" },
   [1222564] = { "Aumenta la velocità d'attacco di un alleato del $N1% per $D1.", nil, 0x036d64eb, nil, "um" },
-  [1222567] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1222567] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro e stordendoli per $D1.", "Stordito.", 0x476b69d8, 0x27f95286, "uu" },
   [1222574] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
   [1222578] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [1222688] = { "Costringe un nemico a concentrarsi sull'incantatore e aumenta la velocità d'attacco dell'incantatore del $N1% per $D1. Finché è concentrato sull'incantatore, il bersaglio è molto restio ad attaccare chiunque altro.", nil, 0xa441d417, nil, "um" },
+  [1222942] = { nil, "Danni da fuoco ogni $D1.", nil, 0xfd7a76cf, "mu" },
 })

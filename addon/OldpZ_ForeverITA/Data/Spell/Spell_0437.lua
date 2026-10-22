@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [437138] = { "Riporta in vita un personaggio morto con $N1 salute e $N2 mana. Non utilizzabile in combattimento.", nil, 0xf0621701, nil, "um" },
   [437617] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x08fe36e7, "mu" },
+  [437715] = { "Prosciuga $N1 salute ai nemici vicini, curando l'incantatore fino al doppio dell'ammontare sottratto.", nil, 0xf23f3711, nil, "um" },
   [437833] = { nil, "Stordito.", nil, 0xfa046998, "mu" },
   [437834] = { nil, "Stordito.", nil, 0xfa046998, "mu" },
   [437915] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

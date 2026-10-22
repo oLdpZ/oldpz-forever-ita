@@ -26,7 +26,7 @@ WFJ.Data.add("spell", {
   [25053] = { "Sputa veleno contro i nemici vicini, infliggendo danni da natura e danni aggiuntivi ogni $N1 s per $D2.", "Danni da natura inflitti ogni $N1 s.", 0x8697e456, 0xaae6fcde, "uu" },
   [25054] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [25055] = { "Lancia un dardo magico contro il nemico, infliggendo danni da arcano.", nil, 0x1414a65f, nil, "um" },
-  [25056] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [25056] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro e stordendoli per $D1.", "Stordito.", 0x476b69d8, 0x27f95286, "uu" },
   [25057] = { nil, "Nessuna arma impugnata.", nil, 0x619e24db, "mu" },
   [25058] = { "Cura un alleato ogni $N1 s per $D2.", "Danni curati ogni $N1 s.", 0x61f0e6eb, 0x7668097c, "uu" },
   [25059] = { nil, "$N1 danni da natura inflitti agli attaccanti.", nil, 0x7724a9e2, "mu" },
@@ -179,6 +179,7 @@ WFJ.Data.add("spell", {
   [25768] = { nil, "Riduce le resistenze magiche dei bersagli dei tuoi incantesimi di $N1.", nil, 0xd08a100c, "mu" },
   [25772] = { nil, "La tua mente è controllata da quella del Dottor Male!", nil, 0xd6c04fa2, "mu" },
   [25777] = { "Delle spine fuoriescono dal bersaglio alleato, infliggendo $N1 danni da natura agli attaccanti quando colpiscono. Dura $D1.", "$N1 danni da natura inflitti agli attaccanti.", 0x0eddc25a, 0x7724a9e2, "uu" },
+  [25778] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0xcfea6646, nil, "um" },
   [25779] = { "Colpisce un nemico con un dardo antimana. Per ogni punto di mana consumato, il bersaglio subisce $N1 danni.", nil, 0x5ae7b2cb, nil, "um" },
   [25780] = { "Aumenta la minaccia generata dai tuoi attacchi sacri del $N1%. Dura $D1.", { "Aumenta la minaccia generata dai tuoi attacchi sacri del $N1%. Riduce i danni subiti del $N2%.", "Aumenta la minaccia generata dai tuoi attacchi sacri del $N1%.", shape = { "2/0", "1/0" } }, 0x3f907ad3, 0x6251e847, "uu" },
   [25782] = { "Conferisce Benedizione Superiore del Vigore a tutti i membri dell'incursione o del gruppo della stessa classe del bersaglio, aumentando la potenza d'attacco in mischia di $N1 per $D1. Su ogni giocatore può essere attiva una sola Benedizione per Paladino alla volta.", "Potenza d'attacco in mischia aumentata di $N1.", 0xe7fcf2ba, 0x92e5f308, "uu" },
@@ -260,4 +261,5 @@ WFJ.Data.add("spell", {
   [25991] = { "Lancia veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $N1 s per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0x2c66ca3a, 0xaee3cc02, "uu" },
   [25992] = { "Aumenta in modo permanente la tua reputazione con la ⟦Brood of Nozdormu=Stirpe di Nozdormu⟧.", nil, 0x685b5fd2, nil, "um" },
   [25996] = { "Lanciami prima che mi sciolga!", nil, 0xd8bc9bbb, nil, "um" },
+  [25999] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
 })

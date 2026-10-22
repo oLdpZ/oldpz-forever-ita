@@ -109,6 +109,7 @@ WFJ.Data.add("spell", {
   [27638] = { "Graffia il bersaglio, infliggendo $N1 danni e $N2 danni aggiuntivi in $D1.", "$N1 danni da sanguinamento subiti ogni $N2 s.", 0xd23334a8, 0x59c933ab, "uu" },
   [27640] = { "Infligge danni da ombra a un nemico, riducendone la velocità di movimento per $D1.", "Danni da ombra subiti in $D1.\nVelocità di movimento ridotta.", 0xb24a12b1, 0x0ff93482, "uu" },
   [27641] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
+  [27646] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
   [27648] = { nil, "Intervallo tra gli attacchi aumentato del $N1%.", nil, 0xd81a5b35, "mu" },
   [27650] = { nil, "Danni fisici inflitti aumentati del $N1%.\nDanni magici aumentati del $N2%.\nVelocità di movimento aumentata del $N3%.", nil, 0x0a8a532a, "mu" },
   [27652] = { "Aumenta tutte le resistenze magiche di $N1 per $D1.", "Resistenze magiche aumentate di $N1.", 0x320ca78b, 0x68e3e1b4, "uu" },

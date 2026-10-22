@@ -4,6 +4,10 @@ WFJ.Data.add("spell", {
   [463005] = { "Evoca e congeda un Tecnostruzzo d'Acciaio cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x58925d99, 0x2195529a, "uu" },
   [463006] = { "Evoca e congeda una Fiera Dorata cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x3745fb1e, 0x2195529a, "uu" },
   [463007] = { "Evoca e congeda un Raptor cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x7d1c7f75, 0x2195529a, "uu" },
+  [463171] = { "Costringe un nemico a concentrarsi sull'incantatore e aumenta la velocità d'attacco dell'incantatore del $N1% per $D1. Finché è concentrato sull'incantatore, il bersaglio è molto restio ad attaccare chiunque altro.", nil, 0xa441d417, nil, "um" },
   [463285] = { "Infligge $N1 danni da arcano al bersaglio.", nil, 0xf284a035, nil, "um" },
+  [463448] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [463564] = { "Aumenta di $N1 l'indice di blocco dello scudo per $D1.", "Indice di blocco aumentato di $N1.", 0xe7882b6e, 0x64e8286f, "uu" },
+  [463620] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo vicino. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta. L'aura dura finché non viene annullata.", nil, 0xb2ca9267, nil, "um" },
+  [463621] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo vicino. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta. L'aura dura finché non viene annullata.", nil, 0xb2ca9267, nil, "um" },
 })

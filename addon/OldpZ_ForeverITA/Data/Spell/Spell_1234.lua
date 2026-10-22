@@ -10,6 +10,7 @@ WFJ.Data.add("spell", {
   [1234071] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x5da18de6, "mu" },
   [1234085] = { "Aumenta i danni inflitti da incantesimi ed effetti d'ombra fino a un massimo di $N1.", nil, 0xf6473b19, nil, "um" },
   [1234086] = { "Aumenta i danni inflitti da incantesimi ed effetti d'ombra fino a un massimo di $N1.", nil, 0xf6473b19, nil, "um" },
+  [1234540] = { nil, "$N1 danni da fuoco ogni $D1.", nil, 0x5a5656de, "mu" },
   [1234792] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1234793] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1234806] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },

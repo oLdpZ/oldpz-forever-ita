@@ -3,6 +3,8 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [467141] = { "Accelera la mente, aumentando la velocità di lancio d'incantesimi del Mago del $N1% per $D1.", "Velocità di lancio d'incantesimi aumentata del $N1%.", 0x54f6c7f3, 0xb128184e, "uu" },
   [467346] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
+  [467369] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
+  [467370] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [467404] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [467410] = { "Aumenta fino a un massimo di $N1 i danni inflitti da incantesimi ed effetti arcani.", nil, 0x2d8b8f66, nil, "um" },
   [467411] = { "Aumenta i danni inflitti da incantesimi ed effetti d'ombra fino a un massimo di $N1.", nil, 0xf6473b19, nil, "um" },
@@ -18,4 +20,5 @@ WFJ.Data.add("spell", {
   [467539] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
   [467642] = { "Ferisce il bersaglio, infliggendo $N1 danni.", nil, 0xdaa3fed4, nil, "um" },
   [467740] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
+  [467832] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
 })

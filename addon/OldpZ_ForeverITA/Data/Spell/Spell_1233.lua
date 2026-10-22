@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1233069] = { nil, "$N1 danni ogni $N2 secondi.", nil, 0x6e147642, "mu" },
   [1233297] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1233344] = { "Fornisce $N1 di Armatura aggiuntiva ai membri del gruppo vicini per $D1. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta.", nil, 0x6d8fef2a, nil, "um" },
   [1233832] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },
   [1233834] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1233842] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },

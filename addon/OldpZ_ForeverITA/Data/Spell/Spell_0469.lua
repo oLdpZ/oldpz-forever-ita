@@ -3,9 +3,11 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [469065] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [469134] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [469143] = { "Lancia un fulmine contro un nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
   [469146] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [469148] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xdb6814b9, "mu" },
   [469155] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
+  [469156] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
   [469160] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469209] = { nil, "Danni magici aumentati fino a $N1.", nil, 0x9d292bc3, "mu" },
   [469277] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },
@@ -18,5 +20,8 @@ WFJ.Data.add("spell", {
   [469648] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469668] = { "Permette al bersaglio alleato di individuare l'invisibilità superiore per $D1.", "Individua Invisibilità Superiore.", 0x0bc29431, 0x96a4f3d2, "uu" },
   [469753] = { "Incanta in modo permanente uno scudo per fornire +$N1% di probabilità di blocco.", nil, 0x72a33c60, nil, "um" },
+  [469793] = { "Incute paura in un nemico, facendolo fuggire in preda al terrore per un massimo di $D1. Può essere impaurito solo $N2 bersaglio alla volta.", nil, 0x7ea26162, nil, "um" },
   [469828] = { "Aumenta la Forza di $N1 per $D1.", "Forza aumentata di $N1.", 0xeb1f7146, 0x90d8a2f8, "uu" },
+  [469879] = { "Incute paura in un nemico, facendolo fuggire in preda al terrore per un massimo di $D1. Può essere impaurito solo $N2 bersaglio alla volta.", nil, 0x7ea26162, nil, "um" },
+  [469990] = { "Evoca una pioggia di lava che brucia tutti i nemici in un'area bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco ogni $D1.", 0xee6af47d, 0x5a5656de, "uu" },
 })

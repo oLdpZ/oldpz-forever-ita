@@ -5,4 +5,5 @@ WFJ.Data.add("spell", {
   [474236] = { "Il prossimo incantesimo lanciato entro $D1 sarà istantaneo.", "Il prossimo incantesimo sarà istantaneo.", 0x0b45c4ad, 0x71a46f0d, "uu" },
   [474268] = { nil, "$N1 danni da ombra inflitti ogni secondo per $D1.\nVelocità di movimento ridotta.\nFuga in preda al terrore.", nil, 0x949c7095, "mu" },
   [474402] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
+  [474500] = { "Seleziona poteri casuali per l'Anibusath Guardian.", nil, 0xfe66bd23, nil, "um" },
 })

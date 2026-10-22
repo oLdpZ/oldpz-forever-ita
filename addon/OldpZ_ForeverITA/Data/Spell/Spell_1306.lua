@@ -2,6 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1306128] = { "Ottieni gli aspetti dell'equipaggiamento di questo set.", nil, 0x3bcf52b2, nil, "um" },
+  [1306224] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
+  [1306225] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [1306515] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", "Danni da fuoco inflitti da incantesimi e abilità aumentati fino a $N1.", 0x6e8982e7, 0x3e469155, "uu" },
   [1306518] = { "Aumenta i danni inflitti da incantesimi ed effetti di gelo fino a un massimo di $N1.", nil, 0x8d8b0ac5, nil, "um" },
   [1306579] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", nil, 0x6e8982e7, nil, "um" },

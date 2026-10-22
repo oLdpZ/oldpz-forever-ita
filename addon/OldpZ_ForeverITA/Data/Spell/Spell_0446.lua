@@ -9,8 +9,10 @@ WFJ.Data.add("spell", {
   [446305] = { nil, "Danni degli incantesimi aumentati fino a $N1.\nCure aumentate fino a $N2.", nil, 0xd75bb1cc, "mu" },
   [446317] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [446322] = { "Riduce del $N1% la minaccia che generi per $D1.", "Generazione di minaccia ridotta del $N1%.", 0xbebe7ef8, 0xfac21a7e, "uu" },
+  [446338] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [446354] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [446356] = { "Aumenta la probabilità di blocco dell'incantatore del $N1% per $D1.", nil, 0xebc8dc0b, nil, "um" },
+  [446361] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [446362] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },
   [446364] = { nil, "Tutti gli attributi ridotti di $N1.", nil, 0xfb83ad31, "mu" },
   [446369] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },
@@ -27,4 +29,5 @@ WFJ.Data.add("spell", {
   [446727] = { "+$N1 alla potenza d'attacco contro i dragoidi.", nil, 0x85a118c6, nil, "um" },
   [446728] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [446729] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x61fe647b, 0xdb6814b9, "uu" },
+  [446731] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
 })

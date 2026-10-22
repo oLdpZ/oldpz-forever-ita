@@ -5,7 +5,7 @@ WFJ.Data.add("spell", {
   [31018] = { "Mossa risolutiva che infligge danni per punto combo e converte ogni punto di energia in più in $N1 danni aggiuntivi. I danni aumentano con la potenza d'attacco.\n $N2 punto: $N3-$N4 danni\n $N5 punti: $N6-$N7 danni\n $N8 punti: $N9-$N10 danni\n $N11 punti: $N12-$N13 danni\n $N14 punti: $N15-$N16 danni", nil, 0x58b294b7, nil, "um" },
   [31316] = { nil, "Non colpire questo bersaglio!", nil, 0x0cd960b9, "mu" },
   [31364] = { "Infligge $N1 danni da fuoco ai nemici nell'area d'effetto.", nil, 0x85b142c2, nil, "um" },
-  [31365] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },
+  [31365] = { "Incute paura in un nemico, facendolo fuggire in preda al terrore per un massimo di $D1. Può essere impaurito solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x7ea26162, 0xfa67e4a8, "uu" },
   [31378] = { "Infligge danni fisici a un nemico.", nil, 0x7c1fa4f7, nil, "um" },
   [31599] = { nil, "Ingresso nel Fatuo...", nil, 0xcd13f623, "mu" },
   [31688] = { "Infligge danni da gelo a un nemico, riducendone la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
