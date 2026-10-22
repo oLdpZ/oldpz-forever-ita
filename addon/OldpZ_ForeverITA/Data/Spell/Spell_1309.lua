@@ -10,6 +10,7 @@ WFJ.Data.add("spell", {
   [1309170] = { nil, "Cure ricevute ridotte del $N1%.", nil, 0xc820b7b9, "mu" },
   [1309191] = { "Infligge $N1 danni da arcano al bersaglio. Infligge $N2 volte i danni se il bersaglio sta lanciando un incantesimo.", nil, 0x272e5187, nil, "um" },
   [1309208] = { "Evoca e congeda un prideclaw cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x25ed91ad, 0x2195529a, "uu" },
+  [1309230] = { "Riduce del $N1% la probabilità che gli effetti di immobilizzazione e rallentamento ti colpiscano.", nil, 0x2ff366ec, nil, "um" },
   [1309241] = { "Aumenta fino a $N1 le cure prodotte e fino a $N2 i danni inflitti da tutti gli incantesimi e gli effetti magici. Quando resti fermo per $D1, l'effetto raddoppia.", "Cure prodotte aumentate fino a $N1 e danni inflitti aumentati fino a $N2.", 0x088bce8d, 0x23d08fac, "uu" },
   [1309243] = { nil, "Cure prodotte aumentate fino a $N1 e danni inflitti aumentati fino a $N2.", nil, 0x23d08fac, "mu" },
   [1309268] = { "Evoca e congeda un warden saber cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0xdaf9f742, 0x2195529a, "uu" },

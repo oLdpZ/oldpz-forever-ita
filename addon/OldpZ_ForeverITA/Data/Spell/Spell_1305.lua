@@ -2,12 +2,19 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1305047] = { nil, "Impossibile essere bendati nuovamente.", nil, 0x1a380a54, "mu" },
+  [1305116] = { "Getta nel ⟦The Great Sea=Grande Mare⟧ il sacchetto di polvere tombale legato alla buona.", nil, 0xce53b4dd, nil, "um" },
   [1305394] = { "Causa una ferita fatale che infligge $N1 danni fisici. Infligge il $N2% di danni in più ai bersagli con meno del $N3% di salute.", nil, 0xbbacb806, nil, "um" },
   [1305398] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xc6f8d47d, nil, "um" },
+  [1305400] = { "Scassina una serratura difficile.", nil, 0x66957a86, nil, "um" },
+  [1305416] = { "Inganna i nemici con un sosia, spingendo le creature vicine ad attaccarlo per $D1.", nil, 0x96d3cac5, nil, "um" },
   [1305418] = { nil, "Inganna i nemici vicini.", nil, 0x60683e13, "mu" },
   [1305422] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
-  [1305426] = { nil, "$N1 mana rigenerato.", nil, 0x35080e3c, "mu" },
+  [1305424] = { "Rigenera $N1 mana quando uccidi un dragoide che fa guadagnare esperienza. L'effetto non può verificarsi più di una volta ogni $N2 s.", nil, 0xa1ad9f9e, nil, "um" },
+  [1305426] = { "$N1 mana rigenerato.", "$N1 mana rigenerato.", 0x35080e3c, 0x35080e3c, "uu" },
+  [1305718] = { "In combattimento, i tuoi incantesimi di cura hanno una probabilità di richiamare un Onyxia Whelpling che ti protegge in battaglia per $D1.", nil, 0x137e0bb8, nil, "um" },
+  [1305732] = { "Gli incantesimi di cura hanno una probabilità di richiamare un Onyxia Whelpling che ti protegge in battaglia per $D1.", nil, 0x9d00a5a6, nil, "um" },
   [1305748] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [1305819] = { "Riduce tutti gli attributi di un nemico di $N1 per $D1.", "Tutti gli attributi ridotti di $N1.", 0xfa49afb9, 0xfb83ad31, "uu" },
+  [1305855] = { "Gli occhi di Kargra vedono oltre i regni mortali, riducendo del $N1% la sua probabilità d'impatto con gli attacchi.", nil, 0xf8386eb1, nil, "um" },
   [1305943] = { nil, "Trasporti una pozione instabile. Si destabilizzerà e diventerà inerte tra $N1 min.", nil, 0x86717193, "mu" },
 })
