@@ -85,6 +85,7 @@ WFJ.Data.add("ui", {
   ["FPS_COUNTER_CPU_BOUND"] = { "%.1f - Limite CPU", 0x20144e10, "." },
   ["FPS_COUNTER_GPU_BOUND"] = { "%.1f - Limite GPU", 0x9c6bf1c8, "." },
   ["FRAME_ACTION_ACCEPT"] = { "Accetta", 0xb3c3644e, "." },
+  ["FRAME_ACTION_AMOUNT"] = { "Quantità", 0x64ec564b, "." },
   ["FRAME_ACTION_BACK"] = { "Indietro", 0x08f19b73, "." },
   ["FRAME_ACTION_CANCEL"] = { "Annulla", 0x892958da, "." },
   ["FRAME_ACTION_CHANGE_MAP"] = { "Cambia mappa", 0x71628ac6, "." },

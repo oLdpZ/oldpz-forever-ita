@@ -149,6 +149,8 @@ WFJ.Data.add("ui", {
   ["DRESSUP_FRAME"] = { "Guardaroba", 0x0c3bc3d2, "." },
   ["DRUID_AGILITY_TOOLTIP"] = { "Aumenta la probabilità di |cFFFFFFFFcolpo critico|r del %.1f%%\nAumenta la |cFFFFFFFFpotenza d'attacco|r in Forma Felina di %d\nAumenta l'|cFFFFFFFFArmatura|r di %d\nAumenta la probabilità di |cFFFFFFFFschivata|r del %.1f%%", 0x4215a27a, "." },
   ["DRUID_MELEE_ATTACK_POWER_TOOLTIP"] = { "Aumenta i danni per secondo delle |cFFFFFFFFarmi da mischia|r di %s\n\nAumenta con la |cFFFFFFFFForza|r\nAumenta con la |cFFFFFFFFForza|r e l'|cFFFFFFFFAgilità|r in Forma Felina\n\n|cffBCBCBCOgni 14 punti di potenza d'attacco aggiungono 1 danno per secondo|r", 0x52167239, "." },
+  ["DUAL_SPEC_PRIMARY"] = { "Primario", 0xba960331, "." },
+  ["DUAL_SPEC_SECONDARY"] = { "Secondario", 0xbbbf56de, "." },
   ["DUEL"] = { "Sfida a duello", 0x093b7464, "." },
   ["DUEL_OUTOFBOUNDS_TIMER"] = { "Sei uscito dall'area del duello, ti arrenderai in %d %s.", 0xf593ee01, "." },
   ["DUEL_REQUESTED"] = { "%s ti ha sfidato a duello.", 0x9a28cdc5, "." },

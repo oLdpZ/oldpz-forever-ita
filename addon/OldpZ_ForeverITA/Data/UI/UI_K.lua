@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("ui", {
   ["KEYBINDINGFRAME_MOUSEWHEEL_ERROR"] = { "Impossibile assegnare azioni bidirezionali (su e giù) alla rotella del mouse.", 0x9445c57c, "." },
   ["KEYRING"] = { "Portachiavi", 0x86e9ad33, "." },
+  ["KEY_BINDING_NAME_AND_KEY"] = { "%s (%s)", 0x515ea73e, "." },
   ["KEY_BINDING_TOOLTIP"] = { "<Clicca col pulsante destro per annullare>", 0xddf7d0f8, "." },
   ["KEY_BOUND"] = { "Tasto assegnato correttamente", 0x6d8aee77, "." },
   ["KEY_MOUSEWHEELDOWN"] = { "Rotellina in giù", 0xbd4d8f88, "." },
