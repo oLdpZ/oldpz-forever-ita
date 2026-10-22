@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["1e07f9bf3abbc60c"] = { "Non interrompere Niby, <sciocco/sciocca>! Ti strapperò la carne dalle ossa e userò il tuo scheletro come attaccapanni. Dunque, dove eravamo? Ah sì, Kroshius è durato quasi dieci volte più a lungo di qualsiasi infernale comune. Non so bene perché, ma confido che con abbastanza studio potrei scoprirlo.\n\nHo bisogno che tu recuperi il ⟦Kroshius' Infernal Core=Nucleo Infernale di Kroshius⟧.", "." },
   ["1e09c0210ff59669"] = { "Devi essere in rapporti amichevoli con gli elfi della notte di Darnassus prima che io ti insegni a cavalcare, {class}.", "." },
   ["1e0a3dabfe8ebeff"] = { "Mi dispiace, {class}, ma non hai ancora abbastanza esperienza per entrare nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧.", "." },
+  ["1e10ca8a259d4997"] = { "Potresti essere tu <il/la> prossim<o/a> protett<o/a> di Galvan?", "." },
   ["1e29831fda9859b4"] = { "Torta sarà così preoccupata.", "." },
   ["1e3401159a9bf085"] = { "Salute. Cerchi istruzione nell'arte della guerra?", "." },
   ["1e3d705a1de851d6"] = { "Le vie di Jaedenar sono oscure e insidiose. Fai attenzione alle tue mosse in questo posto, {class}, o scoprirai che la tua anima è stata soggiogata dai tuoi rivali...", "." },
@@ -35,5 +36,6 @@ WFJ.Data.add("gossip", {
   ["1ec761e057dade22"] = { "%s sghignazza.", "." },
   ["1ed0e8347fa25227"] = { "Antichi, sorgete!", "." },
   ["1ed198422c670bdc"] = { "Ci vorrà un po' per scaldarsi, quindi è ora di bere qualcosa! Che ne dici, Tongus?", "." },
+  ["1eed470101d68bd8"] = { "Ce le hai le sacche dei ragni?", "." },
   ["1eef1bff02e78ac8"] = { "Dove sono le Plates of Uldum?", "." },
 })

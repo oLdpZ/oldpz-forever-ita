@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["242a32e6c1c695f4"] = { "Ho bisogno di un passaggio per andarmene da qui, Martin.", "." },
   ["2433691cafcbcbd6"] = { "Proprio così. La ⟦Scarlet Crusade=Crociata Scarlatta⟧ è un'aberrazione dell'Ordine della ⟦Silver Hand=Mano d'Argento⟧.\n\nDevi credermi, {race}: Taelan è un brav'uomo. Ha bisogno di una guida. Ha bisogno di ricordare... ricordare cosa significa essere nobile e onorevole. So che in cuor suo sa che ciò che fa è sbagliato. Lo aiuterai? Lo aiuterai a ricordare?", "." },
   ["24381cbb4f8c96fc"] = { "Skaldrenox! Possiedo il tuo scettro e ti intimo di entrare in questo mondo!", "." },
+  ["2439bccfb00dfab4"] = { "Creerò un amuleto che darà a Gor'mul un po' della forza dei raptor. Forse risveglierà in lui una fiamma...", "." },
   ["243f35e1d9e4ca58"] = { "Grazie per il barile di liquore, {name}. Credo che ne stapperò una bottiglia subito!", "." },
   ["244b13024cc9d3b0"] = { "Se usiamo la teoria suriana, allora sì, ma non se seguiamo l'approccio y'seriano.", "." },
   ["245addbc8ee08b5e"] = { "Ora che il generale dei Piccatonante è stato sconfitto, possiamo spostare qualche truppa a guardia del ⟦Winterax Hold=Covo degli Asciafredda⟧. Ma dobbiamo restare sempre vigili, {class}, perché l'⟦Alliance=Alleanza⟧ tornerà.\n\nQuando li trovi ad aggirarsi furtivi, da' loro un'altra lezione!", "." },

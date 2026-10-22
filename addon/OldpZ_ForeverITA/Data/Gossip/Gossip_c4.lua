@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["c45151ed0daca1ff"] = { "L'anziano High Mountain si trova a Camp Taurajo, nelle ⟦Barrens=Savane⟧.", "." },
   ["c45c6656e33e7cd5"] = { "Il Cimitero dei Lupi Bianchi è in mano all'⟦Horde=Orda⟧.", "." },
   ["c45dff3544cbb7a3"] = { "Odio ammetterlo, ma l'orso ha avuto la meglio su di me. Accidenti, che orso enorme!\n\nTuttavia, se riesci ad abbatterlo, sarà un'impresa di cui vantarsi! Ha dato parecchio filo da torcere a più d'uno dei nostri migliori cacciatori.\n\n<Ti dà una pacca sulla schiena.>\n\nSconfiggi l'orso e ti accetteremo come membro effettivo del ⟦Farstrider Lodge=Padiglione Lungopasso⟧.", "." },
+  ["c4679a7988a39314"] = { "Qualcosa da farmi esaminare?", "." },
   ["c471e095f2465925"] = { "Per cacciare una bestia, bisogna conoscerla. Bisogna imparare e rispettare le sue abitudini.\n\nFare altrimenti non è cacciare. Fare altrimenti è solo uccidere.", "." },
   ["c47dea460204aa89"] = { "In quanto membri dell'⟦Horde=Orda⟧, dobbiamo contribuire alla nostra comunità perché continui a prosperare. Non ho dubbi, quindi, che ci aiuterai volentieri svolgendo un piccolo compito che ho per te.", "." },
   ["c47f7e30c4a8e739"] = { "Buona Veglia delle Ombre, {class}!", "." },

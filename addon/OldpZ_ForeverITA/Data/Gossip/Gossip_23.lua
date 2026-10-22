@@ -44,6 +44,7 @@ WFJ.Data.add("gossip", {
   ["23d2426fd29ed2bf"] = { "Ho perso il mio ⟦Ring of Unspoken Names=Anello dei Nomi Innominati⟧. Puoi sostituirmelo?", "." },
   ["23d7f2890671e1e4"] = { "Il tuo sangue sarà il catalizzatore del ritorno degli Dei Antichi!", "." },
   ["23dc5d661041e5b2"] = { "[PH] Ok, me ne vado... ci vediamo nella tana di Ragnaros... a dopo", "." },
+  ["23dd4b70ec0e2e0c"] = { "Spero che tu abbia fatto soffrire un po' la ⟦Scarlet Crusade=Crociata Scarlatta⟧ prima di rubare il libro.\n\nLe mie opinioni sulla loro gente non sono infondate. Un tempo la Crociata sarà anche stata seguace della Luce, ma ora cerca di distruggere qualsiasi creatura che non abbia abbracciato la sua religione. Credono che tutti i non morti, Reietti o no, debbano essere purificati, e che chi viaggia nelle loro terre debba essere pazzo o in balia della potente magia dei non morti. Idioti. Idioti e stolti, tutti quanti.", "." },
   ["23e64d1f34a71555"] = { "Vieni, {name}. Il lago è appena dopo la curva.", "." },
   ["23e973225c96986f"] = { "Che succede qui? Piznik! Lo sapevo che non dovevamo lasciarti restare!", "." },
   ["23f61b227cbc3b2f"] = { "Ehi, Vi'el, fammi vedere la tua merce!", "." },

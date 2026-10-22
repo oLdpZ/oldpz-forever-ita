@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["5239a27227df378e"] = { "Come mi sento? Grondo d'acqua, grazie.", "." },
   ["523f479f2ec9d787"] = { "La mia risposta è Gul'dan.", "." },
   ["523ff160f09fa84e"] = { "Ehi, <signore/signorina>. Hai l'aria di <un/una> {class} che se ne intende di vino. Ho un favore da chiederti, e credo di poterti fare un'offerta che non puoi rifiutare... fidati!", "." },
+  ["5245520036c20db8"] = { "Gli affari vanno a gonfie vele, {name}, e non ho molto tempo per le domande. Se hai affari con i Reclaimers, sentiamo. Se no, dovrò chiederti di parlare con uno dei miei sottoposti: sono abbastanza bravi da occuparsi delle cose qui intorno.", "." },
   ["525649b277280a54"] = { "Alanna Raveneye attribuisce parte del suo talento nell'incantamento alla sua comunione con gli spiriti della Radura dell'Oracolo. Dovresti trovarla lì adesso.", "." },
   ["525c95743d847a42"] = { "Ti aspettavo, {name}. Che piacere vedere che ce l'hai fatta. Hai il carico?", "." },
   ["526259afaad8d20c"] = { "Continua a leggere...", "." },

@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["7b6bc781b7f37f1a"] = { "Dopo ci siamo separati, ecco cos'è successo. Troppo rancore, immagino... covava da un po'. E la faccenda dell'amuleto è stata la paglia che ha spezzato la schiena al kodo.\n\nDa allora i servitori di Valthalak ci fanno fuori uno a uno. Quasi tutti quelli che custodivano un frammento dell'amuleto sono morti, con l'anima corrotta dalla parte dello spirito di Valthalak racchiusa al suo interno.\n\nEcco perché sono felice che tu sia qui, {name}. Con il tuo aiuto potremo ricomporre l'amuleto e restituirlo a lord Valthalak!", "." },
   ["7b73d6031d15798f"] = { "Il mio unico desiderio è servirti, o grande, finché non morirò sotto il tuo piede!", "." },
   ["7b7a24d9b92d90f2"] = { "Sei qui per imparare le pozioni? Ho un sacco di cose da insegnarti. Avrò anche tirato le cuoia, ma il cervello non l'ho perso. Non ancora.", "." },
+  ["7b7af356f2bc0ca3"] = { "Non volevo offenderti con quella battuta sul fatto che sei <un/una> {class} stupid<o/a>. Siamo amici, giusto? Senza rancore?", "." },
   ["7b7b1d9c78ffa2a8"] = { "Forse stai inseguendo delle favole, {name}, ma anche nel cuore delle voci più assurde si può trovare la verità.", "." },
   ["7b7cdae795023d6f"] = { "Avete commesso un errore terribile e costoso. Non è ancora la mia ora, mortali.", "." },
   ["7b8b101cced7a9a2"] = { "La guarigione è per chi non sa sopportare il dolore. Ma se proprio devi, cerca la Spirit Lodge sul lago della ⟦Valley of Spirits=Valle degli Spiriti⟧, in alto, sopra la ⟦Valley of Strength=Valle della Forza⟧, verso ovest.", "." },

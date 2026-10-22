@@ -9,6 +9,7 @@ WFJ.Data.add("gossip", {
   ["272df25531260a56"] = { "La guerra ha i suoi costi, {class}... spesso trascurati. Quei costi sono gli orfani: bambini che hanno perso i genitori nei troppi conflitti che infuriano in tutta Azeroth. I bambini che non hanno nessun altro a cui rivolgersi vengono spesso a vivere qui, finché non sono abbastanza grandi da cavarsela da soli.\n\nPer una settimana all'anno, in primavera, l'⟦Horde=Orda⟧ si prende il tempo di restituire qualcosa a questi innocenti. Questo periodo si chiama Children's Week.", "." },
   ["2732dfa5bb13dcca"] = { "Sei sempre stato il piantagrane della famiglia, Noggle. Sempre!", "." },
   ["27340efe711775f9"] = { "Gloria al Re dei Lich!", "." },
+  ["2736d03972fd18ea"] = { "Cos'hai lì, {name}? Prove dalle rovine della ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["273a689113bcea82"] = { "Salute, giovane <ladro/ladra>. Cosa cerchi?", "." },
   ["27463deacfa5f806"] = { "Andiamo avanti!", "." },
   ["2747281375704543"] = { "Questo sì che è un pezzo d'acciaio degno di essere indossato. Forma e funzione, <ragazzo/ragazza>, mi hai impressionato. Ne ho visto uno alla sua altezza una sola volta, opera di un maestro della ⟦Great Forge=Grande Forgia⟧ di nome Grumnus Steelshaper. Scommetto che da allora ha imparato qualcosa di nuovo, e probabilmente potrebbe insegnartelo.", "." },

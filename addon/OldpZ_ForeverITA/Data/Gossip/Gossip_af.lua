@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["af685c9ac42316e8"] = { "Noi orchi di solito siamo riservati, ma ultimamente nessuno nasconde i propri sentimenti.", "." },
   ["af69a1e2b6828af6"] = { "Possa la tua abilità nel fondere il Ferroscuro servirti bene, {name}. Ma non lasciare che il tuo sapere ti corrompa... come ha corrotto noi.", "." },
   ["af71d25d88e961f0"] = { "Ho bisogno di addestramento, Lumak.", "." },
+  ["af7531b98d4feb3d"] = { "Ah, è da tanto tempo che non vieni a trovarmi, {name}. Cosa posso fare per te oggi? Hai l'aria di chi ha visto da poco la battaglia in faccia. Bene... bene per l'⟦Horde=Orda⟧ e bene per te. Più battaglie vedi, più sarai utile; e anche più forte.", "." },
   ["af87c8692faf65e7"] = { "Chi osa intromettersi nel clan ⟦Blackrock=Roccianera⟧? Morte a te, {race}!", "." },
   ["afae813357def975"] = { "Panini, focaccine e pane. Appena sfornati!", "." },
   ["afb71b417c494309"] = { "Adesso mi ci vorrebbe proprio un bacio. Sai dove posso trovarne uno?", "." },

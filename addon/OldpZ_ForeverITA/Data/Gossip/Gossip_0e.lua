@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["0ecac1cf1b373eb5"] = { "Se ricordi una sola cosa, sappi questo: nemmeno la morte può fermare la Luce.\r\n\nQuesto lo abbiamo in comune con tutti i Reietti: abbiamo superato ciò che i vivi considerano la propria fine. Eppure alcuni, anche tra i nostri, ci temono; sospettano che li colpiremo come una qualche mostruosità.\r\n\nIn verità, il nostro rapporto con la non morte è complesso, ma non siamo qui per fare del male ai nostri. Aiutami a dimostrarlo agli altri. Avventurati nella Valle Telanera, a nord-ovest, e libera gli sciocchi appena risorti intrappolati dai ragni.\r\n\nAllora vedranno la nostra natura.", "." },
   ["0ecdff26e0399c02"] = { "Mi pare di aver visto arrivare una nuova spedizione di posta non molto tempo fa. Troverai la cassetta postale appena fuori dalla Banca di ⟦Thunder Bluff=Picco del Tuono⟧, sull'altura inferiore.", "." },
   ["0ed841a149622da7"] = { "Grazie per avermi aiutato. Da qui conosco la strada.", "." },
+  ["0edc101af75766bd"] = { "Hai trovato prove sul luogo della ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["0edead8039ca1667"] = { "Stai in guardia, {name}!", "." },
   ["0ee1dc59a551b570"] = { "Un caposaldo della ⟦Thorium Brotherhood=Fratellanza del Torio⟧.\n\nI cristalli d'arcanite si estraggono da ricchi filoni di torio. Grazie all'abilità di potenti alchimisti, nascono i Lingotti d'Arcanite.\n\nCerca un minatore, se non lo sei... e trova un buon alchimista! Ti serviranno entrambi.", "." },
   ["0ee4efaa2a2e9e69"] = { "Il buon dottore salva la situazione! URRÀ!", "." },

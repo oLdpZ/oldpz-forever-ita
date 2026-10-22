@@ -43,6 +43,7 @@ WFJ.Data.add("gossip", {
   ["78bc90d0706cf79f"] = { "Noi esuli di Gnomeregan ci troviamo in guai ancora peggiori, perché le nostre riserve di stoffa stanno finendo! Forse puoi aiutarci, eh?!\n\nPortami tutti i pezzi di stoffa in più che hai, per aiutarci a ricostituire le scorte. Donandoli, ti guadagnerai il rispetto e la fiducia degli gnomi di ogni dove. E questo non si compra con il denaro! Be', con la stoffa sì, a quanto pare, ma non è questo il punto...", "." },
   ["78c1898eab5ab4c2"] = { "Henze è salvo, {name}? Ci sei <riuscito/riuscita>?\n\nTra la tua abilità con le armi e il potere della Luce, immagino che la ⟦Heroes' Vigil=Veglia degli Eroi⟧ sia al sicuro da qualunque minaccia dei Defias, ma spetta al re e ai suoi consiglieri dirlo.", "." },
   ["78c254176eeefc9f"] = { "Perché sei qui, {name}? Hai del piombo negli stivali?\n\nHai gli ordini d'assalto: il maestro di guerra Garrick ne ha bisogno nel ⟦Field of Strife=Pian della Discordia⟧ per poter lanciare l'attacco! Vai!", "." },
+  ["78c26d654b23318f"] = { "Qualcosa per me, {class}?", "." },
   ["78c4f1a1139c585c"] = { "L'⟦Whitereach Post=Accampamento di Manto Bianco⟧ è nato come un piccolo campo di caccia... Ora tutti vogliono aprire bottega e stabilirsi qui.\n\n<Motega scrolla le spalle>", "." },
   ["78c8940e16a5f96d"] = { "%s osserva il proprio sangue che inizia ad agitarsi, mentre l'astuzia del raptor lo pervade.", "." },
   ["78d13ad5323eb683"] = { "Perdonami.", "." },

@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["109ded22d9d2a5db"] = { "La prossima volta, porta più amici!", "." },
   ["10a3d085bc51a7a8"] = { "Luridi codardi dei Lupi Bianchi! Se volete combattere, dovrete venire da me!", "." },
   ["10af33a9afbe5ed0"] = { "Dubito che la fortuna ti assisterà ancora la prossima volta che incontrerai i miei fratelli.", "." },
+  ["10b8afc45599a8e0"] = { "Presto, {name}. Te lo prometto. La tonaca sarà più che adeguata alle tue esigenze e di certo ti darà un vantaggio sui tuoi avversari.", "." },
   ["10be644418c73418"] = { "Bene bene! Sei nel posto giusto per imparare l'Estrazione, <ragazzo/ragazza>! Geofram Bouldertoe in persona risiede alla Deepmountain Mining Guild. Non potresti chiedere un istruttore migliore di lui.", "." },
   ["10c017e5a06b5f85"] = { "Ah, di nuovo vuoto!", "." },
   ["10c243e35fcd5b02"] = { "Voi topi di terraferma siete più tosti di quanto pensassi! Dovrò improvvisare!", "." },

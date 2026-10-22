@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["7fb13120ab3e564e"] = { "Ehi, amico. Va' a parlare col mio maestro Gadrin, proprio là. Sistema quel pazzo di Zalazane per lui e io ti rimetto a posto!", "." },
   ["7fb316a9acac384f"] = { "Ho completato le armi, {name}.", "." },
   ["7fb5686183c5edfb"] = { "Rin'ji ha bisogno di aiuto!", "." },
+  ["7fb968d6da7a6972"] = { "Ti è sgusciato via? Aveva un'aria un po' losca, da come ci osservava.", "." },
   ["7fba6b83a9eb1701"] = { "Denti aguzzi, muscoli come cavi d'acciaio e una mente pronta come una tagliola. Questo bestione è uno dei famigli migliori che abbia mai visto. Ora, se ti interessa, potrei mostrarti un paio di cose per trasformare anche il più debole dei raptor in una forza da non sottovalutare.", "." },
   ["7fcb870696ea808e"] = { "Come va? Adoro l'odore del cuoio, tu no?", "." },
   ["7fd719988b0ba4cc"] = { "Sia noto a tutti che {name}, {class} dell'⟦Alliance=Alleanza⟧, si è <guadagnato/guadagnata> l'eterno rispetto di ⟦Ironforge=Forgiardente⟧ e dell'intera ⟦Alliance=Alleanza⟧. Ha condotto una grande opera diplomatica con il ⟦Timbermaw Hold=Rifugio dei Mordilegno⟧ e ha compiuto azioni valorose per loro a nome nostro. Ha fatto ben più di quanto il dovere richiedesse. Tre urrà per {name}, <un/una> <vero/vera> <eroe/eroina> dell'⟦Alliance=Alleanza⟧!", "." },

@@ -46,6 +46,7 @@ WFJ.Data.add("gossip", {
   ["e8e35bac8c081e4c"] = { "C'è un solo Capoguerra, Eitrigg!", "." },
   ["e8e88e9048ed2cdc"] = { "È molto gentile da parte tua chiederlo, ma pare che abbiamo raccolto tutte le bende di seta che ci servono. Potresti comunque chiedere in giro e vedere se qualcun altro ha bisogno di aiuto con le sue raccolte.", "." },
   ["e8eeb516964308fb"] = { "Pronti. Attenti. VIA!", "." },
+  ["e8f8d67884d593e8"] = { "Mm? Sì, {class}.", "." },
   ["e8fb4c9b97824988"] = { "Te lo stai inventando.", "." },
   ["e8ffdfe6dea34e0e"] = { "Non sconfiggerai mai il clan dei Lupi Bianchi!", "." },
 })

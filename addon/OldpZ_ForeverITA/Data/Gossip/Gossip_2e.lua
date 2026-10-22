@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["2e20fb14e100235e"] = { "Il Parco è il posto giusto se cerchi addestratori di druidi. Theridan e Maldryn si trovano di solito presso il pozzo lunare al centro del quartiere.", "." },
   ["2e2f6115219c8bcd"] = { "Ora tocca a noi metterti i piedi in salamoia!", "." },
   ["2e3926033d52dd5a"] = { "Niente male. Va' a parlare con Snarl, si è appena trasferito a Orgrimmar per studiare con Saru. Cercalo nel quartiere dei guerrieri, vicino alla fucina di Saru. Ah, e ti metterà alla prova, quindi faresti meglio a essere <pronto/pronta> quanto credi di essere.", "." },
+  ["2e3a1856536b9c1a"] = { "Le ⟦Burning Blade=Lame Ardenti⟧ cominciano a capire quanto siano davvero deboli. La loro magia è patetica, la loro forza misera.\n\nIl loro unico potere viene da coloro che servono, non da una vera comprensione del potere e della conoscenza.", "." },
   ["2e3b8df969732ff8"] = { "Quale professione?", "." },
   ["2e47bde63ce9542a"] = { "⟦Dire Maul=Maglio Infausto⟧", "." },
   ["2e48a472c934ee01"] = { "Intrusi! Bene, cominciavo ad annoiarmi...", "." },

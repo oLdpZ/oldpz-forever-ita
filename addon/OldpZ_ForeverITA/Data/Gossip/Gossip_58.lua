@@ -55,4 +55,5 @@ WFJ.Data.add("gossip", {
   ["58f7b826e1f2b772"] = { "Pane fresco! Pane appena sfornato, qui!", "." },
   ["58f98e3f8174ac5b"] = { "Porto con me entrambe le parti dello scettro.", "." },
   ["58fd549b429f4a52"] = { "Fimble Finespindle ha una bottega sul lato nord-occidentale della ⟦Great Forge=Grande Forgia⟧. Scommetto che potrebbe mostrarti come fabbricare un'ottima armatura.", "." },
+  ["58fdfcb91d6e255a"] = { "È una bella lama. Ha un bel taglio. È una bella falce. Grazie. Grazie, grazie, grazie!!! Ora voglio provarla...\n\nDopo. La proverò dopo. Ma come dicevo... grazie.", "." },
 })

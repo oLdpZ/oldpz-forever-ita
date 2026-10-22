@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["9fb7d64c8e40ae12"] = { "Io sono Saurfang. Fratello di Broxigar.", "." },
   ["9fb98507de26858d"] = { "Dov'è l'anziano Runetotem?", "." },
   ["9fbc7b03905303ed"] = { "Abbiamo un vincitore! {name} è il Maestro Pescatore!", "." },
+  ["9fc16527df1fb6b5"] = { "Hai visto il signor Ignatz? L'ho mandato nella palude un po' di tempo fa e non è ancora tornato!", "." },
   ["9fc242d19c398193"] = { "A quanto pare siamo fuori pericolo, eh? Chissà a cosa serve questo...", "." },
   ["9fdae5938fade4a8"] = { "Sei <uno/una> <sciocco/sciocca> che dovrebbe dare ascolto ai miei avvertimenti. Nessuno è invulnerabile. Faresti bene a ricordare questo consiglio.", "." },
   ["9fdbb5ca83798302"] = { "Dobbiamo concentrare i nostri pensieri sul Circolo del Richiamo, se vogliamo che il Signore della Foresta giunga! Dobbiamo sbrigarci! Concentrate le vostre energie!", "." },

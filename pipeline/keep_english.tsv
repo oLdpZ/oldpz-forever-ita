@@ -89,15 +89,25 @@ gossip	fee728b8ff6a70d7	text	fee728b8ff6a70d7	Grrr...
 gossip	fef919db0d64e7f4	text	fef919db0d64e7f4	Grrrrr!
 gossip	ffaca6741b285d92	text	ffaca6741b285d92	Feralas - Screecher Spirit - On Quest Default Greeting
 quest	19	title	22ab2f517c3706f2	Tharil'zun
+quest	55	title	461172d9d080daf4	Morbent Fel
 quest	87	title	e78fd7d989b60387	Goldtooth
 quest	117	title	06ba24f24f6beb60	Thunderbrew
 quest	172	title	70336621d7910786	Children's Week
+quest	200	title	2543b951b33d1d3a	Bookie Herod
+quest	227	title	0593d35442033c77	Morgan Ladimore
+quest	228	title	2fb5d726d7983799	Mor'Ladim
 quest	249	title	64aa5799b5a78290	Morganth
 quest	318	title	ab586d5c375ca252	Evershine
 quest	389	title	49a42307a15b56d4	Bazil Thredd
 quest	425	title	d479936791d77493	Ivar the Foul
 quest	446	title	57daa6c7e7770a98	Thule Ravenclaw
 quest	486	title	b9e1d498450fca23	Ursal the Mauler
+quest	503	title	990985e43a3f9b49	Gol'dir
+quest	535	title	f2b724fc23f3f2fd	Valik
+quest	610	title	57decda3e1eadc74	"Pretty Boy" Duncan
+quest	628	title	f1b790154e1200ff	Excelsior
+quest	638	title	4e0c58beef287f8e	Trollbane
+quest	687	title	fb09538dd1d7f1fc	Theldurin the Lost
 quest	766	title	c53484ace38eaf6e	Mazzranache
 quest	790	title	c29f8f29bc8f6333	Sarkoth
 quest	804	title	c29f8f29bc8f6333	Sarkoth
@@ -136,6 +146,16 @@ quest	1089	title	69a60aaae2d7679c	The Den
 quest	1096	title	896fbf9bd6d55105	Gerenzo Wrenchwhistle
 quest	1131	title	308aefcaf5cf7747	Steelsnap
 quest	1132	title	30729feb7fc0bfc4	Fiora Longears
+quest	1260	title	9691be75a37cf40d	Morgan Stern
+quest	1301	title	44b76fdd62264ffe	James Hyal
+quest	1302	title	44b76fdd62264ffe	James Hyal
+quest	1361	title	1e8becbf71c91343	Regthar Deathgate
+quest	1365	title	139e351372f74914	Khan Dez'hepah
+quest	1373	title	369f906c68117f61	Ongeku
+quest	1374	title	67d27edabd2d5d44	Khan Jehn
+quest	1375	title	bf1765da25d7e30a	Khan Shaka
+quest	1392	title	82434af7bca95009	Noboru the Cudgel
+quest	1418	title	4fdf2d12300e11eb	Neeka Bloodscar
 quest	1468	title	70336621d7910786	Children's Week
 quest	1483	title	6cf0b9999a7e24a0	Ziz Fizziks
 quest	1489	title	034c803e1d5e2251	Hamuul Runetotem
@@ -166,6 +186,7 @@ quest	2379	title	b5f8d527207a3b52	Zando'zan
 quest	2459	title	236ef724fe8a8fa6	Ferocitas the Dream Eater
 quest	2499	title	a9dba359f59ddca3	Oakenscowl
 quest	2561	title	dcee0406ba871b99	Druid of the Claw
+quest	2760	title	569a9c647597cb06	The Mithril Order
 quest	2926	title	f0c05f189723b975	Gnogaine
 quest	3115	title	8ca3cdd0a8470088	Tainted Memorandum
 quest	3261	title	4d1b9bdc7c17663f	Jorn Skyseer
@@ -200,6 +221,7 @@ quest	5677	title	a7b14275f45a024f	Arcane Feedback
 quest	5678	title	a7b14275f45a024f	Arcane Feedback
 quest	5679	title	122ac7cabd5eefa4	Dark Sacrifice
 quest	5680	title	cf44b409d1d1665d	Shadowguard
+quest	5762	title	e0d7815ad28e3754	Hemet Nesingwary
 quest	5929	title	f41bfb43391bb31b	Great Bear Spirit
 quest	5930	title	f41bfb43391bb31b	Great Bear Spirit
 quest	6261	title	99cf1567dcef85dc	Dungar Longdrink
@@ -207,3 +229,5 @@ quest	6322	title	30ec3f6acecb039b	Michael Garrett
 quest	6344	title	1cde20018faa7228	Nessa Shadowsong
 quest	6388	title	3b5086d23620ac74	Gryth Thurden
 quest	6641	title	3efe9ea2167a9f0d	Vorsha the Lasher
+quest	93128	title	67d27edabd2d5d44	Khan Jehn
+quest	93196	title	67d27edabd2d5d44	Khan Jehn

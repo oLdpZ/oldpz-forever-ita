@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["7180be2e92050b51"] = { "Chi osa risvegliare Aquementas?", "." },
   ["718b5c6114347fb5"] = { "Desidero questa quintessenza eterna, duca Idraxis.", "." },
   ["718f1f87b4d97fd0"] = { "Le conoscenze di Cyndra in alchimia sono un po' limitate, ma di sicuro bastano per iniziare. Pratica la sua arte appena a est della locanda di Dolanaar.", "." },
+  ["719925d340741a17"] = { "Ti siamo grati per l'aiuto nel cercare quel corriere, {name}.\n\nMentre eri via, Kin ha visto uno speziale uscire da quella stessa casa a sud di qui. Non ho dubbi che stiano tramando qualcosa di losco: mi serve solo una prova prima di fare qualcosa di avventato.\n\nHai avuto fortuna?", "." },
   ["719ae405f02f7d81"] = { "Sciocchi.", "." },
   ["719fcc8c5211564c"] = { "Vrok dice che il mirino del fucile di Grumlar è starato. Mi sa che dovrei controllarlo.", "." },
   ["71a5c7bcc28b338d"] = { "Ti congelerò il sangue nelle vene!", "." },

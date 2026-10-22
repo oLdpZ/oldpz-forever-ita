@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["e6a824dc15398cf3"] = { "Cerchi Shenthul della Shadowswift Brotherhood, eh? In The Drag, di fronte a Droffers and Son Salvage, cerca un tunnel che scende nella Cleft of Shadow.", "." },
   ["e6ae75f1160c3112"] = { "Ho perso il mio ⟦Cloak of the Gathering Storm=Mantello della Tempesta Crescente⟧. Puoi sostituirmelo?", "." },
   ["e6b27eef0245d289"] = { "Vorrei comprare da te.", "." },
+  ["e6bee56fc3fb12f6"] = { "Senza offesa per chiunque sia questo Nijel, ma questo accampamento non è il posto più comodo dove abbia mai passato la notte, se capisci cosa intendo, {name}.", "." },
   ["e6c18cdda63ea1f7"] = { "Aspetta... tu non sei mio marito. Ma deve averti mandato lui. E tu... sembri... <squisito/squisita>!", "." },
   ["e6c6e6120ea5cbeb"] = { "Penserai che, solo perché viviamo su un'isola galleggiante, non ci sia bisogno di minatori come me. Eppure, dopo tante migliaia di anni, riusciamo ancora a scavare un sacco di cose interessanti. \r\n\nÈ quasi come se ci fosse una forza invisibile che ogni tanto crea di continuo nuovi giacimenti di minerali. Ma la magia è fatta così, no?\r\n\nComunque, se ti serve addestramento come minatore, sono io la persona shen'dorei che fa per te.", "." },
   ["e6c78102f03c8cca"] = { "Ho perso il ⟦Brazier of Beckoning=Braciere del Richiamo⟧!", "." },

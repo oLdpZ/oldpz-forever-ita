@@ -27,6 +27,7 @@ WFJ.Data.add("gossip", {
   ["daaa0a59904ead20"] = { "Ti do il benvenuto, <fratello/sorella> <mio/mia>. Se sei qui per addestrarti, mi farà piacere addestrarti.\n\nPresto verrà il momento in cui il richiamo del ⟦Emerald Dream=Sogno di Smeraldo⟧ si impadronirà di te. Andrai in letargo per molti anni e camminerai tra le forme più pure. Sarà lì, e allora, che si svolgerà il tuo addestramento finale.", "." },
   ["daab03fd650fd222"] = { "Sì? Certo che lavoro alla forgia. Cosa credi, che solo i nani valgano il loro peso in incudini? Va bene, fa' come ti pare. Va' a farti aiutare da un nano!", "." },
   ["dabfbae4c1e147ce"] = { "<Benvenuto/Benvenuta> nel paese del gusto!", "." },
+  ["dac62edd5cb5e4ec"] = { "I miei preparativi sono pronti: mi servono solo i cuori di raptor.", "." },
   ["dac893fd0261506c"] = { "Scatenate la cavalleria!", "." },
   ["dac8e84126e74afb"] = { "Ho colpito il bersaglio per un pelo, stavolta. Mmm... forse devo correggere di nuovo verso destra.", "." },
   ["dacd03ce62b476bf"] = { "Possa io crogiolarmi nella tua ombra per sempre!", "." },

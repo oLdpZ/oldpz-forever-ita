@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["0241fb4bd5797de1"] = { "Inserimento della tessera di sicurezza blu riuscito. Erogazione dell'unità di livello di sicurezza delta.\n\n01010000 01101100 01100001 01111001 00100000 01001101 01101111 01110010 01100101 00100000 01010111 01101111 01010111", "." },
   ["02468fc4bdad69ed"] = { "Una volta ho avuto il piacere di vedere Kyra Windblade in combattimento. Per quello che ho visto, confido che ti addestrerà bene. Cercala alla locanda di Dolanaar.", "." },
   ["02471978065578e2"] = { "Va bene, ragazzi. Indietro. Avete fatto abbastanza. Ci vediamo più tardi.", "." },
+  ["024ea4f34b8524b5"] = { "Lingotti d'oro, sì... sì. Portamene uno e vedremo cosa si può fare per filarti un po' di filo. Nel frattempo, ti suggerirei di concentrare i tuoi sforzi sul diventare più potente. Le prove più dure ti aspettano ancora. E fidati... vorrai essere più preparat<o/a>, per quanto potente tu creda di essere.", "." },
   ["025a46a134a43431"] = { "Ho degli appunti sul lavoro a casa mia. Vado a prenderli e poi ci rivediamo alla locanda.", "." },
   ["026274b143fddf99"] = { "Vuoi lavorare alla forgia? Vuoi forgiare lame per sventrare il tuo nemico? Martelli per spaccargli il cranio? Sì, posso aiutarti, e volentieri, se c'è sangue da versare.", "." },
   ["026854b81d10815b"] = { "%s cerca una fonte di energia arcana.", "." },

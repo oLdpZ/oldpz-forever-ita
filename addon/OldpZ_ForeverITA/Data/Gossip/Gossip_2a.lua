@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["2a9728f3a19d2087"] = { "Be', qualunque cosa sia, funziona proprio bene!", "." },
   ["2aa4a2231502bb99"] = { "Grrr, che vuoi, {race}? Oh, sarai qui per i controfiletti di lupo per l'imminente Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Sì, hai sentito bene, li sto raccogliendo io, e allora? Hai una pila fresca per me? Me ne servono solo $2096w, e sembra che al momento ne abbiamo $2095w.", "." },
   ["2ab2a5caf1be3cc4"] = { "In piedi e alle armi, cittadini di ⟦Darkshire=Borgoscuro⟧! Un abominio non morto si avvicina lungo la strada!", "." },
+  ["2ab9d79b66d97634"] = { "Salve, {class}. Posso aiutarti in qualcosa?", "." },
   ["2ac02f87f082ae3e"] = { "Dopo aver attirato la sua attenzione (e puoi contarci: se ti vede vicino alla torre, avrai fin troppa della sua attenzione), mettiti di fronte a lui ed esegui lo Shattered /Salute. Lascia che ti mostri....", "." },
   ["2ac130a9488da4fb"] = { "La prossima volta porta degli amici.", "." },
   ["2ac661a89812ecda"] = { "Josetta è stata una benedizione per questa città con il suo aiuto alle guardie locali. Se la cerchi per apprendere le vie del sacerdozio, la troverai alla Lion's Pride Inn.", "." },

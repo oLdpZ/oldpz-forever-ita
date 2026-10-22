@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["f20f51cff967419e"] = { "La prossima volta che vai nel ⟦Molten Core=Nucleo Ardente⟧, uccidi un Signore del Fuoco per me, d'accordo?", "." },
   ["f214ae08700ba59c"] = { "Qualcosa affligge questa torre. Una malattia mi ha colpito, e anche gli altri dipendenti della S.P.R. & Co. che lavorano nella torre o nei dintorni si sono ammalati.\n\nGiusto la settimana scorsa, due delle nostre sentinelle sono morte, solo per tornare subito in vita come automi senza mente!\n\nLa forza vitale sta abbandonando il mio corpo. Sento che sto perdendo il controllo. Impulsi che prendono il sopravvento... Impulsi malvagi... *Fizzule si dà uno schiaffo in faccia* Non ancora... Ascolta... La mia è una posizione di potere. Questa posizione mi dà accesso ad alcune informazioni riservate.", "." },
   ["f22b09f69dad6e25"] = { "Quante altre provviste servono per il prossimo potenziamento?", "." },
+  ["f2335f986b6db374"] = { "Non portarmi lo scalpo sbagliato, {class}. Usare i reagenti sbagliati potrebbe costarci la vita. Il signore dei demoni potrebbe avere su di sé incantesimi di riserva per uccidere chi tenta di spiarlo con la divinazione.\n\nIl destino mi ha già inflitto abbastanza dolore.", "." },
   ["f23632f3a7418364"] = { "Ti... spezzo!!", "." },
   ["f239d1653c12f341"] = { "Ci saranno fuochi d'artificio per tutta la notte. Dalle sei di sera fino all'alba, il cielo sopra la ⟦Booty Bay=Baia del Bottino⟧ sarà in fiamme!", "." },
   ["f23b297fc40942a9"] = { "Hai sentito?", "." },

@@ -50,6 +50,7 @@ WFJ.Data.add("gossip", {
   ["a0da62574ccf6e38"] = { "Hai accettato la mia resa.", "." },
   ["a0e2c04f6ed0ed12"] = { "La possente fortezza scavata nelle viscere infuocate del ⟦Blackrock Mountain=Massiccio Roccianera⟧ fu tenuta per secoli dai sinistri nani ⟦Dark Iron=Ferroscuro⟧, finché Nefarian, l'astuto figlio del drago Alamorte, prese il controllo della parte alta della Guglia e mosse guerra ai possedimenti dei nani nelle profondità vulcaniche della montagna. Resosi conto che i nani erano guidati dal possente elementale del fuoco Ragnaros, Nefarian giurò di schiacciare i suoi nemici e prendersi l'intero ⟦Blackrock Mountain=Massiccio Roccianera⟧.", "." },
   ["a0e315cfd9898417"] = { "Bene, ci è appena giunta voce che una carovana sta partendo da Thelsamar. È ora di muoversi! Via, via, via!", "." },
+  ["a0eb60f95b96ba00"] = { "Gloria all'⟦Horde=Orda⟧ e morte ai nostri nemici, {name}!\n\nI demoni di ⟦Desolace=Desolanda⟧ sono una minaccia più grande che mai. La mia speranza di tornare dal Capoguerra si affievolisce man mano che appaiono sempre più di queste creature immonde.\n\nA volte vorrei che avessimo a che fare solo con i centauri.", "." },
   ["a0f3dbf8a8aa7c50"] = { "Forse stavolta siete riusciti a fermarci, ma torneremo... questo te lo assicuriamo!", "." },
   ["a0f4c252a192cfc5"] = { "%s tenta di lanciare ⟦Death Pact=Patto con la Morte⟧ sui suoi servitori!", "." },
   ["a0f57510b493544b"] = { "Per la Grande Madre!", "." },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["9601f5bcafaa3d1b"] = { "Di cosa ti occupi esattamente, Rohan?", "." },
   ["96024ca6532d8a50"] = { "\"Magical Flows and How They Effect the World\", di Maginor Dumas. È quello che cercavo.", "." },
+  ["96040fe2c0c66187"] = { "Nessuna traccia di Ol' Rustlocke, {name}?", "." },
   ["960566488689bc15"] = { "Credi che mi servano altre spille?", "." },
   ["9606325e9f3640e8"] = { "La tua conoscenza delle pozioni ha superato la mia, ma hai ancora molto da imparare. Sali le scale a sud-est e va' dal dottor Marsh. Ti insegnerà la vera soffere... ehm. È un Reietto che ti addestrerà ancora.", "." },
   ["960724e7369511cd"] = { "Ti prego, teletrasportami alla camera finale.", "." },

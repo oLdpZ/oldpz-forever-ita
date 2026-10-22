@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["70440afb06655c64"] = { "Sono Augustus! Se lo vuoi, ce l'ho! Se vuoi venderlo, allora lo voglio io!", "." },
   ["704a089f7f482d2e"] = { "La Fratellanza trionferà!", "." },
   ["70516ee8a7796347"] = { "Questo non era previsto. L'essere che lo ha incantato mi è noto...", "." },
+  ["7056536daf6369ee"] = { "Sei tornat<o/a> di nuovo, eh? Davvero non potrei desiderare altro, ora, che un altro po' della pietà di Tor'gan.\n\nCosa mi porti stavolta? Forse un pezzo di spago dai colori vivaci? O un tratto di corda per porre fine a questa mia miseria...", "." },
   ["705c13c4629487a3"] = { "Sei già <tornato/tornata>! Cosa posso fare per te stavolta?", "." },
   ["705da94e11e2095b"] = { "Guarda dove metti i piedi qui dentro, <ragazzo/ragazza>. Il padrone vede tutto...", "." },
   ["707a451e93b91897"] = { "Per il Rosso!", "." },

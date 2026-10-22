@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["eb2d057c494b17ad"] = { "Giura fedeltà a Hakkar e il dolore che subirai sarà minimo.", "." },
   ["eb32eb44ff081d85"] = { "La gente pensa che i corn dog mi piacciano, ma in realtà mi fanno venire l'indigestione!!!", "." },
   ["eb387e5c80299896"] = { "Come?? Be', è una lunga storia.", "." },
+  ["eb39dca045ca01fd"] = { "Molto bene, {name}! Ascolta e impara.\n\nLa forgiatura non nasce mai da qui! <Hank indica il suo martello.>\n\nLa forgiatura non nasce mai da qui! <Hank indica l'incudine.>\n\nLa forgiatura nasce solo da qui! <Hank indica il suo cuore.>\n\nE ora conosci l'origine della forgiatura.", "." },
   ["eb3a1fa3f9d4387c"] = { "Con i recenti attacchi intorno al ⟦Lake Al'Ameth=Lago Al'ameth⟧, tutti i pescatori si sono trasferiti a Darnassus. Dovresti cercare lì qualcuno che ti addestri.", "." },
   ["eb3c195ffff8d030"] = { "Grazie, gentile <straniero/straniera>. Che il tuo eroismo non venga mai dimenticato.", "." },
   ["eb41a991fbf9b540"] = { "Il vilsegugio... una creatura davvero feroce. Non è forte fisicamente quanto un infernale, ma uno stregone saggio sa che la forza bruta non è sempre la risposta; se lo fosse, avresti scelto la via del guerriero, no?\n\nIl vilsegugio attinge al mana dei suoi nemici, sfruttandolo insieme alla sua rapidità per sopraffarli. La sua forza viene dall'arcano e dall'uso di quel potere arcano per i propri scopi.\n\nSe vuoi saperne di più sugli infernali, dovresti parlare con Magaz, di fronte a me.", "." },

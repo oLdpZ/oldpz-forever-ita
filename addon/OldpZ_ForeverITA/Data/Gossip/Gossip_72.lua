@@ -47,4 +47,5 @@ WFJ.Data.add("gossip", {
   ["72de22fa9de8f0b6"] = { "Grazie! Grazie, <sacerdote/sacerdotessa>. Ora posso affrontare quei murloc con la Luce dalla mia parte!", "." },
   ["72e49cbd5e38ada1"] = { "Ti sembra che abbia tempo da perdere in chiacchiere?", "." },
   ["72eb9a3d1a09f811"] = { "Violenza! Danni alla proprietà! Nessuno passerà!!", "." },
+  ["72ec59cb74ed4858"] = { "Hai la mia lama??", "." },
 })

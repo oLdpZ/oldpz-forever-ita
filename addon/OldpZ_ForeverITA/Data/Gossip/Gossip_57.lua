@@ -38,6 +38,7 @@ WFJ.Data.add("gossip", {
   ["57b00b9eb596502c"] = { "Ehi, Pratt, puoi insegnarmi di nuovo a fare una ⟦Wild Leather Vest=Veste di Cuoio Selvatico⟧?", "." },
   ["57b4ce45306670de"] = { "%s crolla e comincia a fumare lentamente.", "." },
   ["57b8c2b6d8aace1b"] = { "Esigo che tutti i miei allievi dimostrino la loro dedizione. Ora tocca a te...", "." },
+  ["57be0104c5bd8382"] = { "Aspetto il cristallo dell'oracolo, {class}. Trovare e distruggere questo lord Azrethoc ci farebbe guadagnare grande favore presso il Capoguerra, a entrambi. Faremmo bene a lavorare insieme, e in fretta, così da perseguire i nostri scopi e ingraziarci il Capoguerra.", "." },
   ["57c3ef93235dba72"] = { "Sembra il posto perfetto per un pisolino...", "." },
   ["57c69dd8c4984659"] = { "La mia mente. . .la mia carne. . .sto. . .marcendo. . . .!", "." },
   ["57cfe5ac3fbbb4c4"] = { "Vuoi imparare a lavorare con incudine e martello, eh? Karn Stonehoof può insegnartelo. Ha una fucina sull'altura inferiore, vicino allo stagno.", "." },

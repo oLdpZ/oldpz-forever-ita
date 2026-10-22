@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["5d134bf1b1e4c583"] = { "Tempesta di sabbia in arrivo da sud, mettetevi al ripa... Quella non è una tempesta di sabbia! ARRIVA L'ESERCITO QIRAJI!", "." },
   ["5d148aaa216104cd"] = { "Gloria a {name}, <sterminatore/sterminatrice> di Hakkar ed <eroe/eroina> di Azeroth!", "." },
+  ["5d1e5a1ff2214b5e"] = { "Sì? Hai un'aria vagamente familiare. Perdonami, ma ci siamo già conosciuti? Sono così occupato che perdo il filo.", "." },
   ["5d265b2ac02e837b"] = { "Niente batte il suono di un motore a vapore a doppio carburatore e anello a forcella che brucia pietra di fuoco pura!", "." },
   ["5d2a5ddda00cfbc8"] = { "Cosa sono queste Tonk Control Console?", "." },
   ["5d2f7d9299dd422b"] = { "Lanciami!", "." },

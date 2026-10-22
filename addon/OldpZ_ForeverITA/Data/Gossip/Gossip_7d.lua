@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["7d141c14e2b715c7"] = { "Se ci sei tu, io e Dadanga ci siamo. Andiamo!", "." },
   ["7d2ef3ba15ac8128"] = { "Le cospirazioni abbondano, dico io. C'è chi non ha la lungimiranza per capire ciò che faccio, e vorrebbe condannarmi all'anonimato!\n\nNon calpestare la terra.", "." },
+  ["7d3659b6206cf015"] = { "Ben <ritrovato/ritrovata>, {name}. Spero non ti dispiaccia l'aiuto, ma non potevamo permettere che Hendel scappasse o, peggio, che ci lasciasse la pelle.", "." },
   ["7d3cc84dac1a4aa8"] = { "I campioni di sangue vanno protetti! Distruggete gli intrusi!", "." },
   ["7d3e3c6bdfe04afc"] = { "Ahah! La vendetta è mia!", "." },
   ["7d3fd855375840e3"] = { "Maestro dei grifoni", "." },

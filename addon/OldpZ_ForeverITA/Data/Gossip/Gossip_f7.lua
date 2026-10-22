@@ -6,6 +6,7 @@ WFJ.Data.add("gossip", {
   ["f712ebe7173a80e5"] = { "Cosa ne sai, Franzahl?", "." },
   ["f716a8d7ba5f49b1"] = { "Il frullo delle ali di un falco, il respiro di un ariete nella neve, il passo di un orso nella foresta... Così è la vita del cacciatore.", "." },
   ["f717fe3f21756d77"] = { "%s poi prende la mira verso le bottiglie...", "." },
+  ["f7245a6206447837"] = { "Hai trovato qualche indizio su cos'è successo alla ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["f7271dda0743f646"] = { "Istruttore di classe", "." },
   ["f72ca24580ed7a7b"] = { "Uno stregone, eh... Be', se hai in mente di fare quel genere di cose da queste parti, allora faresti meglio a tenere i tuoi demoni al guinzaglio, <ragazzo/ragazza>. Non mi piacciono i demoni, ma adoro piantarci dentro l'ascia. Mi capisci?\n\nOra lasciami in pace e va' a perderti nella Forlorn Cavern. È lì che troverai quello stregone, Thistleheart.", "." },
   ["f732a20054e433bc"] = { "Il Windfield Orchard ha visto giorni migliori...", "." },

@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["d977b9599217d5f0"] = { "Che fortuna. Di solito devo lasciare la mia tana per nutrirmi.", "." },
   ["d980642e88d6dc93"] = { "Comincia a fare freschino qui fuori. Credo che andrò a scaldarmi accanto al fuoco e a farmi una pinta, o dodici.", "." },
   ["d9810225cb2edcef"] = { "Se non fosse per quella maledetta fortuna gnomesca, non vincerebbero mai una corsa!", "." },
+  ["d98913db65e641f5"] = { "{name}, {name}, {name}! Dimmi che hai abbastanza ⟦Alterac Granite=Granito d'Alterac⟧ per farmi iniziare il mio capolavoro in onore di Sully Balloo.", "." },
   ["d990bb297ab8278d"] = { "Litigare di continuo non ci porterà da nessuna parte. Dobbiamo agire.", "." },
   ["d9948d48a39c598b"] = { "Ben fatto! La tua conoscenza delle pozioni sta progredendo bene.", "." },
   ["d99635213fcb0428"] = { "Continua, ti prego, questa storia è intrigante.", "." },

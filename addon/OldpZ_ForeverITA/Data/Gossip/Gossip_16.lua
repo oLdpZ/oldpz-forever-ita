@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["16a76899bd250321"] = { "Manufatto sacro appartiene a ⟦Blackrock=Roccianera⟧! Noi riprende!", "." },
   ["16aea2fb3ed7ef98"] = { "Impossibile! Sorgete, miei servitori! Servite ancora una volta il vostro padrone!", "." },
   ["16affbbe69660ae6"] = { "Cos'è successo alla tua compagnia di mercenari, The Veiled Blade?", "." },
+  ["16b10c287cfbdf39"] = { "Dimostrami che sei amic<o/a> dei Gelkis, {name}.", "." },
   ["16bfe8eacdcd03cc"] = { "L'anziano Moonstrike si trova a Scholomance, nelle ⟦Western Plaguelands=Terre Infette Occidentali⟧.", "." },
   ["16c097c773db762c"] = { "Bleah! È orribile!", "." },
   ["16c30e0dbe20c642"] = { "Guarda cosa hanno fatto al mio ragazzo.", "." },

@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["e41d85b8004acb58"] = { "Non preoccuparti, ti troverò una bella casa.", "." },
   ["e42075d78e5bd587"] = { "Qualcosa non va nel gran signore. Fa' qualcosa!", "." },
   ["e435ee5d43176b00"] = { "%s inizia il conto alla rovescia.", "." },
+  ["e440eb18a233c820"] = { "Salute, cittadin<o/a>. Sei venut<o/a> a dare una mano a mantenere la sicurezza di ⟦Southshore=Riva del Sud⟧?", "." },
   ["e447ceb36a00054e"] = { "Mio figlio saprebbe progettare una vettura più veloce di quel goffo rottame goblin!", "." },
   ["e44886f9f676177d"] = { "Il cancello è in vista! Ce la faremo! Ma prima devo riprendere fiato.", "." },
   ["e44ef0ae88fb7579"] = { "Cosa succede quando i Terrigeni si destabilizzano?", "." },

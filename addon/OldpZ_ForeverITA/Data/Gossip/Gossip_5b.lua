@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["5b5885cc8efbe6ae"] = { "Nei decenni passati, ai tempi di guerre e conflitti ormai antichi, la nostra specie fu spinta sull'orlo dell'estinzione. Molto abbiamo sopportato, {race}.\n\nL'assalto della Legione Infuocata. La Demon Soul. Gli Aspetti divisi. L'ascesa di Alamorte. La schiavitù della nostra Regina, Alexstrasza, per mano delle Fauci di Drago.\n\nAttraverso tutto questo, siamo stati la volontà incrollabile dei draghi: la forza indomita che ha lottato per rappresentare la nostra esistenza al tramonto in questo mondo.", "." },
   ["5b64acf0fab0ea95"] = { "Tenetevi pronti! I naga non aspetteranno molto a sfruttare il loro vantaggio, una volta saputo che siamo vivi.", "." },
   ["5b67c4d08f9afe3c"] = { "{name}! Ti tengo d'occhio!", "." },
+  ["5b69a5725a4c668b"] = { "Noto che il tuo compito non è finito, {name}. Devo informare Sharlindra della tua inettitudine?", "." },
   ["5b6ee80045df2877"] = { "Dov'è il signore della guerra Krom'zar?", "." },
   ["5b74965b5fbcb4f1"] = { "È importante che tu sappia controllare gli esseri che evochi con la tua magia. Sono già pochi quelli che vogliono diventare {class}, e non rischierei di gettare via la tua vita insegnandoti qualcosa prima che tu sia pront<o/a>.", "." },
   ["5b7c7c6083927f02"] = { "Da quando mio marito è partito per il fronte, Helene è stata la mia forza. Il suo cuore gentile e la sua spada affilata mi sono stati di grande aiuto in tanti momenti difficili. Non so cosa avrei fatto senza di lei.", "." },
