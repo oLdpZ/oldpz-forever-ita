@@ -41,7 +41,7 @@ WFJ.Data.add("spell", {
   [1306662] = { "Riduce del $N1% il costo in mana degli incantesimi.", nil, 0xfce6c921, nil, "um" },
   [1306665] = { "Richiama una Sentinella per sorvegliare un'area.", nil, 0x962bd173, nil, "um" },
   [1306672] = { "Rigenera $N1 salute ogni $D1 nelle zone paludose.", "In una zona paludosa, $N1 salute rigenerata ogni $D1.", 0x9d7617d4, 0x5c3d3e75, "uu" },
-  [1306675] = { "Infligge $N1 danni da fuoco.", nil, 0x3237f20f, nil, "um" },
+  [1306675] = { "Infligge $N1 danni da fuoco.", "Infligge $N1 danni da fuoco.", 0x3237f20f, 0x3237f20f, "uu" },
   [1306676] = { "Infligge $N1 danni ogni volta che blocchi. L'entità e la scuola dei danni cambiano con la stagione.", nil, 0x62e17739, nil, "um" },
   [1306677] = { "Infligge $N1 danni da natura.", "Infligge $N1 danni da natura.", 0x7e869c9d, 0x7e869c9d, "uu" },
   [1306678] = { "Infligge $N1 danni da ombra.", "Infligge $N1 danni da ombra.", 0x9e381a18, 0x9e381a18, "uu" },

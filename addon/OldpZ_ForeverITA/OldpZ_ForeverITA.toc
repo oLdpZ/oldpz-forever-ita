@@ -243,12 +243,14 @@ Data\Spell\Spell_0411.lua
 Data\Spell\Spell_0412.lua
 Data\Spell\Spell_0413.lua
 Data\Spell\Spell_0414.lua
+Data\Spell\Spell_0416.lua
 Data\Spell\Spell_0417.lua
 Data\Spell\Spell_0419.lua
 Data\Spell\Spell_0420.lua
 Data\Spell\Spell_0421.lua
 Data\Spell\Spell_0422.lua
 Data\Spell\Spell_0423.lua
+Data\Spell\Spell_0424.lua
 Data\Spell\Spell_0425.lua
 Data\Spell\Spell_0426.lua
 Data\Spell\Spell_0427.lua

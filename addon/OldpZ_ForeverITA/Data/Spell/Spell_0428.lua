@@ -2,5 +2,23 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [428713] = { nil, "Danni fisici subiti ridotti del $N1%. Mentre la protezione è attiva, gli attacchi che infliggono danni non ritardano il lancio degli incantesimi.", nil, 0x94e200c6, "mu" },
+  [428837] = { "Aggiungi $N1 ⟦Light Leather=Cuoio Leggero⟧ per completare la spedizione.", nil, 0x7a0e45b2, nil, "um" },
+  [428838] = { "Aggiungi $N1 Sbocciapace per completare la spedizione.", nil, 0xf297f771, nil, "um" },
+  [428840] = { "Aggiungi $N1 Fogliargenta per completare la spedizione.", nil, 0x6d8888a0, nil, "um" },
+  [428842] = { "Aggiungi $N1 Pozione Minore di Cura per completare la spedizione.", nil, 0xf877dcba, nil, "um" },
+  [428843] = { "Aggiungi $N1 Spada Corta di Rame per completare la spedizione.", nil, 0xb80648ae, nil, "um" },
+  [428844] = { "Aggiungi $N1 ⟦Runed Copper Pants=Pantaloni di Rame Runici⟧ per completare la spedizione.", nil, 0xd4542fc8, nil, "um" },
+  [428845] = { "Aggiungi $N1 Bacchetta Magica Inferiore per completare la spedizione.", nil, 0x5b7e14eb, nil, "um" },
+  [428846] = { "Aggiungi $N1 ⟦Minor Wizard Oil=Olio Magico Minore⟧ per completare la spedizione.", nil, 0x7a19cb6c, nil, "um" },
+  [428847] = { "Aggiungi $N1 Bomba di Rame Grezza per completare la spedizione.", nil, 0x08f90955, nil, "um" },
+  [428848] = { "Aggiungi $N1 Cannalunga Grezzo per completare la spedizione.", nil, 0x2688911f, nil, "um" },
+  [428849] = { "Aggiungi $N1 Cintura di Cuoio Cucita a Mano per completare la spedizione.", nil, 0x29728361, nil, "um" },
+  [428850] = { "Aggiungi $N1 Veste di Cuoio Adorna per completare la spedizione.", nil, 0x2d577b12, nil, "um" },
+  [428851] = { "Aggiungi $N1 ⟦Brown Linen Pants=Pantaloni di Lino Marrone⟧ per completare la spedizione.", nil, 0xf2488b2a, nil, "um" },
+  [428853] = { "Aggiungi $N1 Tonaca di Lino Marrone per completare la spedizione.", nil, 0x7cddac62, nil, "um" },
+  [428855] = { "Aggiungi $N1 Uovo Strapazzato alle Erbe per completare la spedizione.", nil, 0x4b1ea025, nil, "um" },
+  [428856] = { "Aggiungi $N1 ⟦Spiced Wolf Meat=Carne di Lupo Speziata⟧ per completare la spedizione.", nil, 0x0eea74a2, nil, "um" },
+  [428857] = { "Aggiungi $N1 ⟦Brilliant Smallfish=Pesciolino Brillante al Vapore⟧ per completare la spedizione.", nil, 0x277cbe9e, nil, "um" },
+  [428858] = { "Aggiungi $N1 Benda Pesante di Lino per completare la spedizione.", nil, 0x0da3bb2e, nil, "um" },
   [428895] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },
 })
