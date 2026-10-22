@@ -40,7 +40,7 @@ ownership.
 | forever-vo player captures ([ADR-055](../adr/055-forever-vo-captures-as-an-english-source.md)) | 855 | quest progress and turn-in text, and NPC greetings, that no other source has, recorded by Forever players with forever-vo's addon | MIT |
 | The addon's own collector | 30 | text the maintainer's client recorded in game | Blizzard game data |
 
-Sources whose terms forbid it are never used; nothing is scraped from Wowhead or similar sites. The Forever beta
+Sources whose terms forbid it are never used; nothing is scraped from Wowhead or similar sites, except the names of creatures ([ADR-103](../adr/103-npc-names-in-the-world.md)). The Forever beta
 carries no confidentiality terms: Blizzard's license makes a beta test confidential only when Blizzard announces it
 as such, and this one was announced open to press and fan sites.
 

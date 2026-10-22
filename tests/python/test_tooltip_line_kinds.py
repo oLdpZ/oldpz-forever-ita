@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-_KIND = re.compile(r"^([A-Za-z]+)\s+#\s+(translated|english): (\S.*)$")
+_KIND = re.compile(r"^([A-Za-z]+)\s+#\s+(translated|italian|english): (\S.*)$")
 _TYPE = re.compile(r"^([A-Za-z]+)\s+#\s+(hooked|not hooked): (\S.*)$")
 _MODULE = re.compile(r"UI/(\w+)")
 _KEYS = re.compile(r"keys: ([A-Z0-9_ ]+?)(?:;|$)")
