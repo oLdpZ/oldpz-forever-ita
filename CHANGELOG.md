@@ -31,6 +31,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 ### Fixed
 - Nomi più coerenti nelle missioni: oggetti degli obiettivi con il nome ufficiale italiano anche nei livelli 1–20, Babbo Inverno e la Masseria Buongusto, Guardiani della Notte, epiteti dei personaggi, arcidruido, segatronchi e i titoli dei personaggi (guardiano, ispettore, signore supremo).
 - Termini dei tooltip come nel client italiano: «Equipaggia:», potenza magica, «Incanta in modo permanente», i nomi ufficiali di erbe e ricette nelle spedizioni; Uther è «l'Araldo della Luce» anche nei libri, nelle missioni e nei dialoghi, e Firebloom è Sbocciafuoco.
+- Nomi ufficiali italiani di fazioni e luoghi che prima restavano in inglese: il Circolo della Terra, la Roccaforte di Piumaluna, la Città Vecchia e il Distretto dei Nani di Roccavento, il Salone delle Armi, il Varcolargo, la Locanda del Fiero Leone, la Caverna degli Inganni; «Riverito» nella reputazione e i gradi dei mestieri come nel client (Praticante, Esperto, Specialista).
 
 ### Changed
 - Alcune righe restano in inglese di proposito (ad esempio dove il gioco mostra testo che non va tradotto): non è una traduzione mancante.
