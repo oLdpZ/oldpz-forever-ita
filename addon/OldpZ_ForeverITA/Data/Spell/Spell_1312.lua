@@ -7,6 +7,8 @@ WFJ.Data.add("spell", {
   [1312233] = { "Aprilo per ricevere beni ed equipaggiamento adatti al tuo livello, utili per i tuoi viaggi.\n\nAssicurati di avere abbastanza spazio nell'inventario prima di aprirlo. Gli oggetti in eccesso si possono ritirare da una cassetta della posta.", nil, 0xcb344065, nil, "um" },
   [1312330] = { "Colpisce il bersaglio con il potere della fonte sacra, infliggendo $N1 danni da sacro.", nil, 0x9b566f35, nil, "um" },
   [1312438] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xc6f8d47d, nil, "um" },
+  [1312637] = { "Evoca un falco.", nil, 0x69b2fb24, nil, "um" },
+  [1312639] = { "Evoca un falco.", nil, 0x69b2fb24, nil, "um" },
   [1312643] = { "Coltiva un'erba vicina per farne crescere un duplicato che puoi raccogliere senza bisogno della competenza in Erbalismo.", nil, 0xa74c6740, nil, "um" },
   [1312670] = { { "Ti riporta a Orgrimmar. Utilizzabile una sola volta.", "Ti riporta a ⟦Stormwind=Roccavento⟧. Utilizzabile una sola volta.", shape = { "0/0", "0/0" }, key = { "7fb122a87ce345e1", "f2cd5acb8a51ee4f" } }, nil, 0x5a558133, nil, "um" },
   [1312698] = { "Rigenera il $N1% della salute.", nil, 0xbfc764d3, nil, "um" },

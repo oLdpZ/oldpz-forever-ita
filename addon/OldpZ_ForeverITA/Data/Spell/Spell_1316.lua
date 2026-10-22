@@ -37,6 +37,7 @@ WFJ.Data.add("spell", {
   [1316847] = { "Evoca un lupo che ti protegge per $D1.", nil, 0xd462c5fc, nil, "um" },
   [1316865] = { "Brucia il bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco ogni $D1.", 0x9a11784e, 0x5a5656de, "uu" },
   [1316872] = { "Sbloccato in una patch futura.", nil, 0x3e092a44, nil, "um" },
+  [1316990] = { "Aumenta di $N1 la tua reputazione con Legacy.", nil, 0xd1cc2c2b, nil, "um" },
   [1316991] = { "Cura $N1 salute ogni $D1 per $D2.", nil, 0x1b4918cf, nil, "um" },
   [1316992] = { "Cura ogni $D1 per $D2.", nil, 0x032d56b0, nil, "um" },
   [1316993] = { "Infligge $N1 danni da sacro ogni $D1.", nil, 0xcfa7974f, nil, "um" },

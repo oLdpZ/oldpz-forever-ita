@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [1302166] = { "Squarcia il bersaglio, infliggendo $N1 danni da natura. Infligge $N2 volte tanti danni ai nemici acquatici.", nil, 0xbb3c4ab2, nil, "um" },
   [1302190] = { "Quando un tuo incantesimo di danno va a segno, hai una probabilità di rigenerare $N1 mana.", nil, 0x93c3cb52, nil, "um" },
   [1302191] = { "Rigenera $N1 mana.", "$N1 mana rigenerato.", 0xd83d93e2, 0x92d7bb29, "uu" },
+  [1302193] = { "Quando vieni colpito in combattimento, infligge $N1 danni da natura all'attaccante.", nil, 0xa5e49310, nil, "um" },
   [1302196] = { "Clicca col pulsante destro per evocare e congedare il tuo cucciolo di lupo della prateria.", nil, 0x324c7cdc, nil, "um" },
   [1302205] = { "Attinge alla tua mente, rigenerando $N1 mana in $D1, ma riducendo l'Intelletto di $N3 per $D2.", "$N1 mana rigenerato ogni $D1.", 0xcf12a8b9, 0xfee500c5, "uu" },
   [1302206] = { "Riduce l'Intelletto di $N1.", "Intelletto ridotto di $N1.", 0xa8056a1c, 0x87f7df4d, "uu" },

@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [1298407] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
   [1298416] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1298450] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [1298478] = { "+$N1 potenza d'attacco contro gli umanoidi.", nil, 0xf6a10ee8, nil, "um" },
   [1298494] = { "Puoi creare e mescolare veleni, con ingredienti sia trovati sia acquistati dai mercanti.", nil, 0xe282166d, nil, "um" },
   [1298496] = { "Evoca e congeda un Cavallo Scheletrico cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x0c4c86cf, 0x2195529a, "uu" },
   [1298518] = { "Aumenta fino a $N1 i danni inflitti ai Non Morti da incantesimi ed effetti magici.", nil, 0x0674bbf7, nil, "um" },

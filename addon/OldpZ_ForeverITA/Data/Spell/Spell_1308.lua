@@ -38,6 +38,7 @@ WFJ.Data.add("spell", {
   [1308764] = { "Forza aumentata di $N1 nelle zone montuose.", "In una zona montuosa, Forza aumentata di $N1.", 0xcba6c44e, 0xe2393eea, "uu" },
   [1308769] = { "Aumenta del $N1% la probabilità di bloccare gli attacchi con uno scudo. L'effetto raddoppia nelle zone montuose.", nil, 0x8d25e1c9, nil, "um" },
   [1308770] = { nil, "In una zona montuosa, probabilità di bloccare gli attacchi con lo scudo aumentata di un ulteriore $N1%.", nil, 0xfd0cc63c, "mu" },
+  [1308777] = { "Infligge $N1 danni fisici ogni volta che blocchi.", nil, 0x2cbf03aa, nil, "um" },
   [1308816] = { "Aumenta del $N1% la probabilità di infliggere un colpo critico. L'effetto raddoppia mentre sei in acqua o sull'acqua.", nil, 0xe3393bad, nil, "um" },
   [1308817] = { nil, "Probabilità di critico aumentata del $N1%.", nil, 0xa5f6f62a, "mu" },
   [1308836] = { "Ti permette di mostrare il titolo \"Bloodsail Admiral\" su questo personaggio finché resti in buoni rapporti con i ⟦Bloodsail Buccaneers=Bucanieri Velerosse⟧.", nil, 0xc306b438, nil, "um" },

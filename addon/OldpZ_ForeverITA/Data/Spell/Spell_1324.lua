@@ -74,6 +74,7 @@ WFJ.Data.add("spell", {
   [1324684] = { "Gli attacchi in mischia possono aumentare del $N1% la tua probabilità di colpo critico per $D1. L'effetto raddoppia nelle paludi.", nil, 0x8bc46c2b, nil, "um" },
   [1324686] = { "Infligge $N1 danni da natura ogni volta che blocchi un attacco. I danni raddoppiano nelle paludi.", nil, 0x565638e9, nil, "um" },
   [1324687] = { "Smembra il bersaglio, infliggendo $N1 danni fisici.", nil, 0x5aeb8dda, nil, "um" },
+  [1324722] = { "Aumenta di $N1 la tua reputazione con Legacy.", nil, 0xd1cc2c2b, nil, "um" },
   [1324752] = { "Il respiro sott'acqua dura il $N1% in più del normale.", "Respiro Acquatico.", 0x7c55adcc, 0x37a59b8c, "uu" },
   [1324889] = { "Sostituisce il raggio d'interazione del PNG. Vale anche per chi affida missioni, non solo per le creature su cui devi usare un incantesimo d'interazione.", nil, 0xd2ec867c, nil, "um" },
   [1324891] = { "Sostituisce il raggio d'interazione del PNG. Vale anche per chi affida missioni, non solo per le creature su cui devi usare un incantesimo d'interazione.", nil, 0xd2ec867c, nil, "um" },

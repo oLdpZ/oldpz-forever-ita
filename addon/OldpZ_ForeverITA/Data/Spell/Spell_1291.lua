@@ -12,4 +12,6 @@ WFJ.Data.add("spell", {
   [1291806] = { "Stordisce il bersaglio per $D1.", "Stordito.", 0x9d6107dd, 0x27f95286, "uu" },
   [1291901] = { "Estrazione +$N1.", nil, 0x9486815c, nil, "um" },
   [1291904] = { "+$N1 alla potenza d'attacco contro gli elementali.", nil, 0x9ad47681, nil, "um" },
+  [1291915] = { "Riduce del $N1% il tempo di creazione di ⟦Smelt Copper=Fondi Rame⟧, ⟦Smelt Tin=Fondi Stagno⟧, ⟦Smelt Bronze=Fondi Bronzo⟧ e ⟦Smelt Silver=Fondi Argento⟧.", nil, 0x722d604b, nil, "um" },
+  [1291987] = { "Aumenta del $N1% la probabilità di successo delle tue abilità ⟦Pick Pocket=Borseggio⟧ e Distrazione", nil, 0x3f291373, nil, "um" },
 })
