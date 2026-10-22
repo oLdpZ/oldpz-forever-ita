@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1282264] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1282693] = { nil, "In fuga per la paura.", nil, 0xf07ba538, "mu" },
 })

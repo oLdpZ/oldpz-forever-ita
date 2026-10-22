@@ -26,7 +26,7 @@ WFJ.Data.add("spell", {
   [1217203] = { "Incanta in modo permanente un bracciale per aumentare l'Agilità di $N1.", nil, 0x49e95488, nil, "um" },
   [1217206] = { "Applica a un arco o a un'arma da fuoco un mirino permanente che ne aumenta i danni di $N1.", nil, 0xd1129229, nil, "um" },
   [1217297] = { "Riduce il costo in mana di tutti i cambi di forma del $N1%.", nil, 0xa1501f59, nil, "um" },
-  [1217424] = { "Corrompe i nemici vicini, infliggendo danni da ombra ogni $D1 finché restano nella corruzione.", nil, 0xf110760d, nil, "um" },
+  [1217424] = { "Corrompe i nemici vicini, infliggendo danni da ombra ogni $D1 finché restano nella corruzione.", "Danni da ombra ogni $D1.", 0xf110760d, 0x4cc78b5e, "uu" },
   [1217511] = { "Aumenta la probabilità di schivare un attacco del $N1%.", nil, 0x40869ada, nil, "um" },
   [1217724] = { "La torcia arde vivida, ustionando chi la impugna.", "La torcia arde vivida, ustionando chi la impugna.", 0x8dabefa0, 0x8dabefa0, "uu" },
   [1217775] = { "Infligge danni da fuoco ogni $N1 s.", "Infligge danni da fuoco ogni $N1 s.", 0x5091abdd, 0x5091abdd, "uu" },

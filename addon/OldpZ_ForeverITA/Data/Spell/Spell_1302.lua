@@ -79,7 +79,7 @@ WFJ.Data.add("spell", {
   [1302708] = { "Quando subisci un attacco, hai una probabilità del $N1% di aumentare la tua velocità di movimento del $N2% per $D1. Può verificarsi solo una volta ogni $N4 s.", nil, 0x67cc98ac, nil, "um" },
   [1302711] = { "Sfuggi a un effetto di immobilizzazione.", "Sfuggi a un effetto di immobilizzazione.", 0x6e1fd3ca, 0x6e1fd3ca, "uu" },
   [1302712] = { "Quando subisci un attacco, hai una probabilità del $N1% di rimuovere da te un effetto di immobilizzazione. Può verificarsi solo una volta ogni $N2 s.", nil, 0x3e3c7608, nil, "um" },
-  [1302715] = { nil, "Impossibile lanciare incantesimi.", nil, 0x6d133d61, "mu" },
+  [1302715] = { "Silenzia un nemico, impedendogli di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x444e4a7e, 0x6d133d61, "uu" },
   [1302716] = { "Quando subisci un incantesimo dannoso, hai una probabilità del $N1% di silenziare l'incantatore per $D1. Può verificarsi solo una volta ogni $N3 s.", nil, 0x104a227d, nil, "um" },
   [1302717] = { "Disarma un nemico per $D1.", "Disarmato.", 0xda2728ef, 0x98985eda, "uu" },
   [1302718] = { "Quando subisci un attacco in mischia, hai una probabilità del $N1% di disarmare l'attaccante per $D1. Può verificarsi solo una volta ogni $N3 s.", nil, 0xbcc0de36, nil, "um" },

@@ -4,5 +4,5 @@ WFJ.Data.add("spell", {
   [1266240] = { nil, "Armatura ridotta di $N1.", nil, 0xaedf6639, "mu" },
   [1266641] = { "Infligge $N1 danni da gelo a un nemico.", "Tempo tra gli attacchi aumentato del $N1%\nVelocità di movimento ridotta del $N2%.", 0xe9a78e07, 0xc42f1bbc, "uu" },
   [1266642] = { "Infligge $N1 danni da gelo ai nemici vicini, riducendo la loro velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xe513fa92, 0x08fe36e7, "uu" },
-  [1266680] = { nil, "I danni vengono assorbiti dall'armatura d'ossa.", nil, 0xc6778006, "mu" },
+  [1266680] = { "Avvolge l'incantatore in un'armatura d'ossa che assorbe $N1 danni per $D1. Finché l'armatura regge, il lancio degli incantesimi non può essere interrotto dagli attacchi fisici.", "I danni vengono assorbiti dall'armatura d'ossa.", 0x94214c39, 0xc6778006, "uu" },
 })

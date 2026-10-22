@@ -8,6 +8,8 @@ WFJ.Data.add("spell", {
   [1235190] = { nil, "La fine di un'epoca è vicina!", nil, 0xa1468809, "mu" },
   [1235317] = { "Brucia un nemico, poi infligge danni da fuoco aggiuntivi ogni $D1 per $D2.", "Danni da fuoco inflitti ogni $D1.", 0x2a506f3c, 0x01f62b34, "uu" },
   [1235318] = { "Scatena un'ondata di fiamme che infligge danni da fuoco ai nemici vicini e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x7ebaea70, 0xeadcb05a, "uu" },
+  [1235321] = { nil, "Infligge $N1 danni da fuoco ogni $D1.", nil, 0xc2271fc2, "mu" },
+  [1235322] = { nil, "Le armi sono infuse di fuoco.", nil, 0xa56b9316, "mu" },
   [1235327] = { nil, "Salute massima ridotta del $N1%\nInfligge $N2 danni da natura ogni $N3 s.", nil, 0x8611aea9, "mu" },
   [1235328] = { "Riduce i danni magici inflitti dal bersaglio di $N1 per $D1.", nil, 0xac935177, nil, "um" },
   [1235421] = { "Genera un'esplosione di magia arcana attorno all'incantatore che infligge $N1 danni da arcano a tutti i bersagli entro $N2 m.", nil, 0x51d9ff5b, nil, "um" },

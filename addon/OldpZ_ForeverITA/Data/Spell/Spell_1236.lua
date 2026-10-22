@@ -26,6 +26,7 @@ WFJ.Data.add("spell", {
   [1236287] = { "Avvolge il bersaglio in fiamme sacre che infliggono $N1 danni da sacro e altri $N2 danni da sacro ogni $D1 per $D2.", "$N1 danni da sacro inflitti ogni $D1.", 0x8f6c4995, 0xdfb7cd39, "uu" },
   [1236290] = { "Trasforma il nemico in una pecora, costringendolo a vagare senza meta per un massimo di $D1. In questo stato, la pecora non può attaccare o lanciare incantesimi, ma si rigenera rapidamente. Qualsiasi danno riporta il bersaglio alla sua forma normale. Può essere trasformato solo un bersaglio alla volta. Funziona solo su bestie, draghi, giganti, umanoidi e animali.", "Impossibile attaccare o lanciare incantesimi.\nVelocità di rigenerazione della salute aumentata.", 0x1f2ac94a, 0x4096b919, "uu" },
   [1236291] = { "Infligge danni da fuoco a un nemico, poi altri danni ogni $D1 per $D2.", "Danni da fuoco ogni $D1.", 0xaf899fc7, 0xfd7a76cf, "uu" },
+  [1236306] = { nil, "Danni aumentati del $N1%. Periodicamente, dardi divini pioveranno sui nemici vicini.", nil, 0x25cc1e15, "mu" },
   [1236308] = { "Delle spine fuoriescono dal bersaglio alleato, infliggendo $N1 danni da natura agli attaccanti quando colpiscono. Dura $D1.", "$N1 danni da natura inflitti agli attaccanti.", 0x0eddc25a, 0x7724a9e2, "uu" },
   [1236340] = { "Un'oscurità magica e gelida ti avvolge...", "Un'oscurità magica e gelida ti avvolge...", 0x99e047cf, 0x99e047cf, "uu" },
   [1236655] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
