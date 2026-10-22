@@ -6,6 +6,7 @@ WFJ.Data.add("gossip", {
   ["200ca2f0dd629a2f"] = { "A partire dalle sei di sera faranno i fuochi d'artificio dalla rupe più alta!", "." },
   ["200cac288706d6ca"] = { "Alla faccia del potere della natura... muhahahaha.", "." },
   ["200f854daeb5dc76"] = { "Come osi! Ora assaggia la mia ira, {race}.", "." },
+  ["20282ef334383257"] = { "Un buon fuoco da campo è la base di ogni buon accampamento.", "." },
   ["202b07caa139865b"] = { "Quale compito?", "." },
   ["204d6747f07cdd38"] = { "Ah, grazie di cuore. Ti lascio alla biblioteca mentre mi occupo di questa piccola faccenda.", "." },
   ["204ecd76d4406d97"] = { "Silas, perché alla fiera quasi tutto è gratis? Come fai a guadagnarci?", "." },

@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["f7887b878f594b64"] = { "Azshara è sotto attacco in questo momento?", "." },
   ["f79850f4d8fc8e3c"] = { "Ho sete.", "." },
   ["f7a41f7eedd2a6e1"] = { "Ci spiace lasciare un cliente, ma abbiamo posti dove andare e gente da imbrogliare. Torneremo più tardi in giornata. Arrivederci!", "." },
+  ["f7a7f9bddc8ef273"] = { "Sei qui per imparare ad accamparti nelle terre selvagge?", "." },
   ["f7abce0bb335533b"] = { "Maestro di guerra", "." },
   ["f7aece84c935c319"] = { "Lo Sciamano al comando non va preso alla leggera, {race}.", "." },
   ["f7b163b25e4fb230"] = { "Ebbene, <ragazzo/ragazza>, pare che l'⟦Alliance=Alleanza⟧ abbia già raccolto tutto ciò che ci serve per la nostra parte della guerra. So che i fabbri, gli ingegneri e tutti gli altri sono impegnati negli ultimi preparativi, e non appena l'⟦Horde=Orda⟧ avrà radunato tutte le sue merci, tutto verrà spedito a ⟦Silithus=Silitus⟧ per la guerra.", "." },

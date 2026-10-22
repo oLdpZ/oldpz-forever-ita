@@ -8,6 +8,7 @@ WFJ.Data.add("gossip", {
   ["8e1b54dea59c512a"] = { "Ringo! Stai bene!", "." },
   ["8e2182bacbec37fe"] = { "Andiamo a giocare! No, raccontami una storia, papà! No... andiamo a raccogliere i fiori! E giochiamo al tè! Ho ritrovato la mia bambolina, te l'ho detto?", "." },
   ["8e24e14fddf22096"] = { "Il ⟦Iceblood Graveyard=Cimitero di Brinarossa⟧ si trova sul lato sud del ⟦Field of Strife=Pian della Discordia⟧, a est della Torre di Brinarossa.\n\nAl momento è controllato dall'⟦Alliance=Alleanza⟧.", "." },
+  ["8e312c3037781466"] = { "Ecco fatto: ora puoi costruire il tuo Rallying Banner personale. Alla maggior parte della gente non piace che si piantino accampamenti in mezzo al paese, quindi dovrai andare nelle terre selvagge se vuoi provarlo.\n\nAh, e ricorda: nessun accampamento è completo senza un fuoco da campo. Te ne servirà uno prima di allestire il tuo accampamento. Quasi tutti i cuochi possono insegnarti ad accendere un fuoco. Se non l'hai già fatto, potresti rivolgerti a qualcuno che possa istruirti nelle arti culinarie per imparare le basi.", "." },
   ["8e39837b2c76f1b3"] = { "%s annusa l'esca.", "." },
   ["8e422b894921a820"] = { "Aye, tutti vogliono salire sul tram, è uno spasso. Beh, se vuoi trovare il tram, si trova a Tinker Town, appena a est dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["8e47a10fab32f00e"] = { "Vediamo come crescono questi semi nel terreno che ho preparato...", "." },

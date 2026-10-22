@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["ba71fe0a2a891920"] = { "Dov'è la mia pancetta?", "." },
   ["ba7790d67a72d63b"] = { "State all'erta! Gli orchi e i loro alleati sono vicini!", "." },
   ["ba817b7fa05125b7"] = { "Degli intrusi hanno assalito il nostro covo. State in guardia!", "." },
+  ["ba8589170c895aa2"] = { "Questo tomo sembra parlare della famiglia Valor. Credo di aver sentito parlare di alcuni di loro. Brava gente. Non so se meritino un intero libro tutto per loro.\n\nTi farò una copia del tomo. Se durante i tuoi viaggi trovi altro che li riguardi, sarà un piacere prenderlo in consegna.", "." },
   ["ba92ba82440a51db"] = { "Sciamano", "." },
   ["ba93dd58a412cb14"] = { "Erano centinaia, imprigionati dal suo incantesimo. Ora solo pochi restano nelle loro prigioni. A volte ci parlava.", "." },
   ["ba97186b3b749cca"] = { "Tutte le bottiglie su questo tavolo sono pozioni che ho preparato oggi. E dicono che una pentola guardata non bolle mai. Ah!", "." },
