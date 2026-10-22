@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1311015] = { "Quando attivata, questa abilità ti conferisce uno scudo assorbente pari al $N1% della tua salute massima per $D1. Applica Rigorosità per $D2. Non può essere lanciata mentre Rigorosità è attiva.", "$N1 danni subiti assorbiti.", 0xc9efc399, 0x4e7b6db5, "uu" },
   [1311022] = { "Aumenta del $N1% la probabilità di colpire con l'arma nella mano secondaria.", nil, 0x47cf24d1, nil, "um" },
-  [1311033] = { "Riduce i danni subiti da tutti gli attacchi del $N1% per $D1.", nil, 0xbf390b64, nil, "um" },
+  [1311033] = { "Riduce i danni subiti da tutti gli attacchi del $N1% per $D1.", "Danni subiti ridotti del $N1%.", 0xbf390b64, 0xa57a387c, "uu" },
   [1311034] = { "Aumenta del $N1% la minaccia generata da ⟦Holy Strike=Assalto Sacro⟧. Mentre ⟦Righteous Fury=Giusta Furia⟧ è attiva, ⟦Holy Strike=Assalto Sacro⟧ riduce anche del $N2% i danni che subisci per $D1.", nil, 0xe3bdb1c5, nil, "um" },
   [1311074] = { "Conferisce a Giudizio il $N1% di probabilità di restituire il $N2% del costo in mana del sigillo giudicato.", nil, 0xae6640db, nil, "um" },
   [1311077] = { "Il Giudizio restituisce una parte del costo in mana del Sigillo giudicato.", nil, 0x34afaca1, nil, "um" },

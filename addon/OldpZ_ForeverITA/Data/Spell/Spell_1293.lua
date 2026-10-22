@@ -29,5 +29,6 @@ WFJ.Data.add("spell", {
   [1293813] = { "Infligge $N1 danni da fuoco al bersaglio e un ulteriore $N2% di danni se il bersaglio è afflitto da Immolazione.", nil, 0x2c6958c3, nil, "um" },
   [1293817] = { "Incendia un bersaglio già afflitto dalla tua Immolazione, infliggendo $N1 danni da fuoco e consumando il tuo effetto di Immolazione.", nil, 0xd77f3b34, nil, "um" },
   [1293818] = { "Incendia un bersaglio già afflitto dalla tua Immolazione, infliggendo $N1 danni da fuoco e consumando il tuo effetto di Immolazione.", nil, 0xd77f3b34, nil, "um" },
+  [1293885] = { nil, "Velocità d'attacco in mischia aumentata del $N1%.", nil, 0xd471470c, "mu" },
   [1293940] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0xcfea6646, nil, "um" },
 })

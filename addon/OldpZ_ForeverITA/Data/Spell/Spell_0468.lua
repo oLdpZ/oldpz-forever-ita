@@ -134,6 +134,7 @@ WFJ.Data.add("spell", {
   [468592] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [468621] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [468638] = { "Infondi di magia la Depleted Essence of Frost.", nil, 0xe983ec96, nil, "um" },
+  [468670] = { "Travolge fino a un massimo di $N1 bersagli, infliggendo $N2 danni da natura.", nil, 0xd382b11f, nil, "um" },
   [468671] = { "Gli incantesimi non periodici che infliggono danni hanno una probabilità di investire fino a $N1 bersagli con un'esplosione che infligge $N2 danni.", nil, 0x4e40a70e, nil, "um" },
   [468688] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [468698] = { "Posiziona e apri le strane provviste che ti ha dato Xirath.", nil, 0xf8392905, nil, "um" },

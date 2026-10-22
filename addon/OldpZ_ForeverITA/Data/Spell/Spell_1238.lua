@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1238070] = { "Morde il bersaglio, infliggendo il $N1% dei danni normali più $N2 e generando una grande quantità di minaccia.", nil, 0x9d83dc01, nil, "um" },
   [1238073] = { "Morde il bersaglio, infliggendo il $N1% dei danni normali più $N2 e generando una grande quantità di minaccia.", nil, 0x9d83dc01, nil, "um" },
   [1238096] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1238097] = { "Assumi le sembianze di un assassino ninja.", nil, 0xdd706146, nil, "um" },
   [1238122] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1238289] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1238299] = { "Scagli lava fusa contro il bersaglio, infliggendo $N1 danni da fuoco. Se sul bersaglio è attiva la tua ⟦Flame Shock=Folgore del Fuoco⟧, ⟦Lava Burst=Getto di Lava⟧ infligge il $N2% di danni in più.", nil, 0xc9c1c783, nil, "um" },

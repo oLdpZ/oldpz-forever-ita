@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [469010] = { nil, "Offriti come vittima sacrificale volontaria alle Ombre.", nil, 0xb1e42a42, "mu" },
   [469020] = { "Chiudi il portale vile selezionato. Potrebbe attirare attenzioni indesiderate dall'altra parte.", nil, 0x22b41ad4, nil, "um" },
-  [469023] = { nil, "Estelenn scompare nelle terre selvagge.", nil, 0x510aa489, "mu" },
+  [469023] = { "Estelenn scompare nella natura selvaggia.", "Estelenn scompare nelle terre selvagge.", 0x510aa489, 0x510aa489, "uu" },
   [469025] = { nil, "Aumenta del $N1% i danni inflitti ai draghi.", nil, 0xc154ef18, "mu" },
   [469055] = { "Scaglia contro il nemico una raffica di fuoco che infligge $N1 danni da fuoco al secondo per $D1.", nil, 0xfbeedde7, nil, "um" },
   [469056] = { "Scaglia contro il nemico una raffica di gelo che infligge $N1 danni da gelo al secondo per $D1.", nil, 0x22ebd161, nil, "um" },
@@ -25,6 +25,7 @@ WFJ.Data.add("spell", {
   [469140] = { "Ottieni all'istante $N1 attacco aggiuntivo con entrambe le armi.", nil, 0xfbe9cb39, nil, "um" },
   [469142] = { "Evoca $N1 Forze della Natura che aiutano l'incantatore in combattimento per $D1.", nil, 0x460f12d6, nil, "um" },
   [469143] = { "Lancia un fulmine contro un nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
+  [469144] = { nil, "Velocità d'attacco in mischia aumentata del $N1%.", nil, 0xd471470c, "mu" },
   [469145] = { "Il Cacciatore assume gli aspetti di un falco, aumentando la potenza d'attacco in mischia e a distanza della stessa quantità del grado più alto del suo Aspetto del Falco.\n\nMentre Aspect of the Falcon è attivo, il talento ⟦Improved Aspect of the Hawk=Aspetto del Falco Migliorato⟧ può ora attivarsi dagli attacchi in mischia e potenziarli. Può essere attivo un solo Aspetto alla volta.", "Potenza d'attacco aumentata di $N1.", 0x1411b8d8, 0xac133450, "uu" },
   [469146] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [469148] = { "Aumenta la velocità di corsa del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0xff946ff5, 0xdb6814b9, "uu" },

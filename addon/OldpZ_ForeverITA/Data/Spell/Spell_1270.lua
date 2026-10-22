@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [1270201] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [1270262] = { "Colpisce un nemico con un dardo elettrico che si propaga a un altro nemico vicino. L'incantesimo colpisce fino a $N1 bersagli, infliggendo danni da natura a ciascuno.", nil, 0x91b98b1a, nil, "um" },
   [1270400] = { "Scaglia all'istante un fulmine contro un nemico, infliggendo danni da natura.", nil, 0x40d9deb7, nil, "um" },
+  [1270422] = { nil, "In levitazione.", nil, 0xfb3d5081, "mu" },
   [1270427] = { nil, "$N1 danni da ombra inflitti ogni $D1.", nil, 0x62c40fe2, "mu" },
   [1270462] = { nil, "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", nil, 0x87c6dd5a, "mu" },
   [1270602] = { nil, "Velocità di movimento ridotta.", nil, 0xeadcb05a, "mu" },
