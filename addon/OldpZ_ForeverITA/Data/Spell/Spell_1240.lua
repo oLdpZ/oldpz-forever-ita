@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1240045] = { "Infligge $N1 danni da gelo a un bersaglio nemico. Infligge il $N2% di danni in più ai bersagli congelati.", nil, 0x3353dc3d, nil, "um" },
   [1240046] = { "Infligge $N1 danni da gelo a un bersaglio nemico. Infligge il $N2% di danni in più ai bersagli congelati.", nil, 0x3353dc3d, nil, "um" },
   [1240047] = { "Infligge $N1 danni da gelo a un bersaglio nemico. Infligge il $N2% di danni in più ai bersagli congelati.", nil, 0x3353dc3d, nil, "um" },
+  [1240071] = { "Aumenta la probabilità di critico del $N1%.", nil, 0xff9a12de, nil, "um" },
   [1240193] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
   [1240682] = { "Lancia un dardo magico contro il nemico, infliggendo danni da arcano.", nil, 0x1414a65f, nil, "um" },
   [1240687] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini.", nil, 0x301ad2a4, nil, "um" },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1305047] = { nil, "Impossibile essere bendati nuovamente.", nil, 0x1a380a54, "mu" },
   [1305116] = { "Getta nel ⟦The Great Sea=Grande Mare⟧ il sacchetto di polvere tombale legato alla buona.", nil, 0xce53b4dd, nil, "um" },
+  [1305189] = { "Aumenta i danni degli alleati vicini del $N1% per $D1.", "Danni aumentati del $N1%.", 0x9dd27ffb, 0xb556e361, "uu" },
   [1305394] = { "Causa una ferita fatale che infligge $N1 danni fisici. Infligge il $N2% di danni in più ai bersagli con meno del $N3% di salute.", nil, 0xbbacb806, nil, "um" },
   [1305398] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xc6f8d47d, nil, "um" },
   [1305400] = { "Scassina una serratura difficile.", nil, 0x66957a86, nil, "um" },

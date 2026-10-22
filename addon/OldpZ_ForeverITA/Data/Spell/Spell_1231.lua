@@ -18,6 +18,7 @@ WFJ.Data.add("spell", {
   [1231548] = { nil, "Forza aumentata di $N1.", nil, 0x90d8a2f8, "mu" },
   [1231551] = { nil, "Forza aumentata di $N1.", nil, 0x90d8a2f8, "mu" },
   [1231582] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1231615] = { "Porta il personaggio a Gnomeregan.", nil, 0x187b8984, nil, "um" },
   [1231616] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [1231648] = { "Genera un'esplosione di magia arcana attorno all'incantatore che infligge $N1 danni da arcano a tutti i bersagli entro $N2 m.", nil, 0x51d9ff5b, nil, "um" },
   [1231777] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },

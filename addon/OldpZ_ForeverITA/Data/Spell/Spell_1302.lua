@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1302108] = { "Uccidere un nemico non banale ha una probabilità di rianimare uno Scheletro dal suo cadavere per $D1.", nil, 0x1856294d, nil, "um" },
   [1302112] = { "Protendi la Torcia della Fiamma Eterna.", "Regge la Torch of Eternal Flame. Mentre impugni la fiamma non puoi difenderti.\n\nSarebbe saggio evitare il combattimento.", 0xd92c5ba1, 0x90a9adb8, "uu" },
-  [1302113] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
+  [1302113] = { "Mangiane una manciata e recupera il tempo perso lungo il sentiero!", "Velocità di movimento aumentata del $N1%.", 0x33638c5c, 0xd5c3ac7c, "uu" },
   [1302166] = { "Squarcia il bersaglio, infliggendo $N1 danni da natura. Infligge $N2 volte tanti danni ai nemici acquatici.", nil, 0xbb3c4ab2, nil, "um" },
   [1302190] = { "Quando un tuo incantesimo di danno va a segno, hai una probabilità di rigenerare $N1 mana.", nil, 0x93c3cb52, nil, "um" },
   [1302191] = { "Rigenera $N1 mana.", "$N1 mana rigenerato.", 0xd83d93e2, 0x92d7bb29, "uu" },

@@ -19,4 +19,6 @@ WFJ.Data.add("spell", {
   [434839] = { "Scarica una particella di tuono che infligge $N1 danni da natura.", nil, 0x461c0247, nil, "um" },
   [434842] = { "Travolge il bersaglio, infliggendo $N1 danni da natura.", nil, 0x37bddcc4, nil, "um" },
   [434907] = { "Aumenta i danni fisici inflitti dall'incantatore di $N1 e la sua velocità d'attacco del $N2% per $D1.", "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", 0xb2977433, 0xbc6c8e1d, "uu" },
+  [434957] = { "Cattura un insetto esotico e conservalo come esemplare.", nil, 0x7c522522, nil, "um" },
+  [434994] = { "Combina $N1 Conjuror's Pendant e un Soul of the Void vicino a un Void Prism.", nil, 0x29d652dc, nil, "um" },
 })

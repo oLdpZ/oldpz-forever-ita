@@ -10,4 +10,5 @@ WFJ.Data.add("spell", {
   [1251938] = { "Aumenta la potenza d'attacco di $N1 per $D1.", nil, 0xb593685a, nil, "um" },
   [1251940] = { "Aumenta la potenza d'attacco di $N1 per $D1.", nil, 0xb593685a, nil, "um" },
   [1251990] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
+  [1251991] = { "Aumenta la probabilità di critico del $N1%.", nil, 0xff9a12de, nil, "um" },
 })

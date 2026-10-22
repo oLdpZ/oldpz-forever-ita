@@ -60,7 +60,7 @@ WFJ.Data.add("spell", {
   [446707] = { nil, "Disorientato.", nil, 0x6b902ba7, "mu" },
   [446708] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [446713] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
-  [446722] = { nil, "Forza aumentata di $N1.", nil, 0x555ecc60, "mu" },
+  [446722] = { "Probabilità, quando colpisci, di aumentare la Forza di $N1 per $D1.", "Forza aumentata di $N1.", 0x87a49b6f, 0x555ecc60, "uu" },
   [446727] = { "+$N1 alla potenza d'attacco contro i dragoidi.", nil, 0x85a118c6, nil, "um" },
   [446728] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [446729] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x61fe647b, 0xdb6814b9, "uu" },

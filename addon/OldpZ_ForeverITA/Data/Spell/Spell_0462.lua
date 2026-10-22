@@ -7,6 +7,8 @@ WFJ.Data.add("spell", {
   [462221] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [462238] = { "Esausto.", "Esausto.", 0x0c78d890, 0x0c78d890, "uu" },
   [462250] = { "Maledice un nemico con agonia, infliggendo danni da ombra ogni $D1 per $D2. Su un bersaglio può essere attiva solo una maledizione per Stregone alla volta.", "Danni da ombra inflitti ogni $D1.", 0x7a8de5d9, 0x1bf49534, "uu" },
+  [462256] = { "Signore della Guerra", "Signore della Guerra", 0x958ca70d, 0x958ca70d, "uu" },
+  [462257] = { "Signore della Guerra", "Signore della Guerra", 0x958ca70d, 0x958ca70d, "uu" },
   [462259] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [462374] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0xb67314de, 0xf152500f, "uu" },
   [462386] = { "⟦Flame Lash=Sferzata Fiammeggiante⟧ che infligge $N1 danni da fuoco.", nil, 0x46b67d78, nil, "um" },

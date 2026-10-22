@@ -16,6 +16,7 @@ WFJ.Data.add("spell", {
   [1314412] = { "Assorbe $N1 danni da fuoco, curandoti di tutti i danni assorbiti.", "Assorbe $N1 danni da fuoco e cura di una quantità pari ai danni assorbiti.", 0x79a94f06, 0xdaf8bde4, "uu" },
   [1314415] = { "I danni da fuoco assorbiti curano chi lo usa.", "I danni da fuoco assorbiti curano chi lo usa.", 0xbf6c1f8c, 0xbf6c1f8c, "uu" },
   [1314784] = { "Aumenta la Forza di $N1 mentre sei soggetto a un effetto di sanguinamento.", nil, 0x9d3d89fb, nil, "um" },
+  [1314795] = { "Aumenta la probabilità di critico del $N1%.", nil, 0xff9a12de, nil, "um" },
   [1314828] = { "Aumenta la probabilità di critico del $N1%. L'effetto raddoppia di notte.", nil, 0xbc0e222c, nil, "um" },
   [1314829] = { nil, "Più letale di notte. Probabilità di critico aumentata.", nil, 0x93fb57a8, "mu" },
   [1314842] = { "Ricevi la benedizione del Grande Spirito Felino.", "Porta la benedizione del Grande Spirito Felino per averne superato le prove.", 0x816089ed, 0x55c85426, "uu" },
