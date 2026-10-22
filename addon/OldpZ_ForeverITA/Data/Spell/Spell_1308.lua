@@ -32,7 +32,7 @@ WFJ.Data.add("spell", {
   [1308568] = { "Cura un alleato ogni $D1 per $D2.", "Danni curati ogni $D1.", 0x61f0e6eb, 0x7668097c, "uu" },
   [1308651] = { nil, "Raffreddamento rapido del bersaglio.", nil, 0x7e8e31c7, "mu" },
   [1308652] = { "Ti teletrasporta a Dalaran.", nil, 0xda80458c, nil, "um" },
-  [1308663] = { nil, "Cammini sull'aria.", nil, 0xd8b3ea96, "mu" },
+  [1308663] = { "Plana verso il basso per $D1 controllando la direzione di volo.", "Cammini sull'aria.", 0x31bc45eb, 0xd8b3ea96, "uu" },
   [1308707] = { "Maledice un nemico con l'⟦Eye of Paleth=Occhio di Paleth⟧, riducendo di $N1 i danni fisici che infligge e rallentando del $N2% il lancio dei suoi incantesimi per $D1.", nil, 0xf7e31f61, nil, "um" },
   [1308733] = { "Aumenta la celerità del $N1% per $D1.", "Celerità aumentata del $N1%.", 0xb0ddc558, 0x269d2af7, "uu" },
   [1308764] = { "Forza aumentata di $N1 nelle zone montuose.", "In una zona montuosa, Forza aumentata di $N1.", 0xcba6c44e, 0xe2393eea, "uu" },

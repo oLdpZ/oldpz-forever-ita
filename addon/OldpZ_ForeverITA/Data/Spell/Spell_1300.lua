@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1300001] = { "Riduce del $N1% la probabilità che gli effetti di sonno ti colpiscano.", nil, 0x7614236e, nil, "um" },
+  [1300087] = { nil, "Finirà di crescere tra $D1.", nil, 0xaa7844ec, "mu" },
   [1300128] = { "Gli attacchi in mischia infliggono $N1 danni da fuoco aggiuntivi ai bersagli congelati.", nil, 0x1a2a60d5, nil, "um" },
   [1300130] = { "Infligge $N1 danni da fuoco.", "Infligge $N1 danni da fuoco.", 0xc6d10f58, 0xf41e7147, "uu" },
   [1300140] = { nil, "Il costo in mana del tuo prossimo incantesimo di danno è ridotto del $N1%.", nil, 0xec1aeca8, "mu" },
@@ -22,6 +23,8 @@ WFJ.Data.add("spell", {
   [1300438] = { "Infligge $N1 danni da arcano.", "Infligge $N1 danni da arcano.", 0x14797f2f, 0x14797f2f, "uu" },
   [1300493] = { "Immobilizzato.", "Immobilizzato.", 0x18deeb81, 0x18deeb81, "uu" },
   [1300496] = { "Immobilizzato.", "Immobilizzato.", 0x18deeb81, 0x18deeb81, "uu" },
+  [1300620] = { "Onore ottenuto aumentato del $N1%.", "|cFF00AA99Evento bonus: Onore|r\n\nOnore ottenuto aumentato del $N1%.", 0x9b9bce7b, 0x6c62c9e9, "uu" },
+  [1300621] = { "Onore ottenuto aumentato del $N1%.", "|cFF00AA99Evento bonus: Onore|r\n\nOnore ottenuto aumentato del $N1%.", 0x9b9bce7b, 0x6c62c9e9, "uu" },
   [1300663] = { "Riduce i danni da caduta.", nil, 0x879f36dd, nil, "um" },
   [1300680] = { "Quando subisci un attacco, infligge $N1 danni fisici all'attaccante.", nil, 0x3ad296c3, nil, "um" },
   [1300739] = { "Accendi l'aggeggio e invia il segnale a Jurgens.", nil, 0x1a89811d, nil, "um" },
@@ -42,6 +45,7 @@ WFJ.Data.add("spell", {
   [1300875] = { nil, "La luce di Elune è completamente satura.", nil, 0x3b7900aa, "mu" },
   [1300890] = { "Alla morte, tutti i membri del gruppo entro $N1 m recuperano $N2 salute.", "Morendo cura di $N2 tutti i membri del gruppo entro $N1 m.", 0xa30edc96, 0xa30edc96, "uu" },
   [1300891] = { "Alla morte, tutti i membri del gruppo entro $N1 m recuperano $N2 salute.", "Morendo cura di $N2 tutti i membri del gruppo entro $N1 m.", 0xe549b1ad, 0xe549b1ad, "uu" },
+  [1300925] = { "Riduce del $N1% la probabilità che gli effetti di ammaliamento ti colpiscano.", nil, 0x7e411fc2, nil, "um" },
   [1300934] = { "Aumenta del $N1% la velocità d'attacco e di lancio d'incantesimi.", nil, 0xa11af6cb, nil, "um" },
   [1300940] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
   [1300942] = { "Difesa Aumentata +$N1", nil, 0x20bf1b30, nil, "um" },

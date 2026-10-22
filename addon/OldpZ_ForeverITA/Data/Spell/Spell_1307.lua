@@ -9,7 +9,7 @@ WFJ.Data.add("spell", {
   [1307066] = { "In un lampo d'acciaio, l'incantatore fa roteare le armi in un attacco che infligge i danni normali più $N1 a tutti i giocatori entro $N2 m.", nil, 0x5ccd4a0a, nil, "um" },
   [1307067] = { "In un lampo d'acciaio, l'incantatore fa roteare le armi in un attacco che infligge i danni normali più $N1 a tutti i giocatori entro $N2 m.", nil, 0x3a55035e, nil, "um" },
   [1307068] = { "Aumenta lo Spirito di $N1.", "Spirito aumentato di $N1.\nRigenera $N2 mana ogni $D1.", 0xdc5f70d6, 0x9bcdecbc, "uu" },
-  [1307132] = { nil, "Nascosto nelle ombre.", nil, 0x87ac4312, "mu" },
+  [1307132] = { "Permette di entrare in modalità furtiva per $D1.", "Nascosto nelle ombre.", 0x2b8d6e92, 0x87ac4312, "uu" },
   [1307172] = { "Colloca un Alchemy Laboratory utilizzabile per le ricette che lo richiedono e fornisce tutti i benefici di un Mana Well. Richiede un Fuoco da Campo nelle vicinanze.\n\nPuò essere collocato sopra un Mana Well per sostituirlo.\nTutti gli elementi da campeggio condividono un tempo di recupero di $D1.", nil, 0xf6ebb8cc, nil, "um" },
   [1307174] = { "Colloca un Anarchist's Workbench utilizzabile per le ricette che lo richiedono.\n\nRichiede un Fuoco da Campo nelle vicinanze. Tutti gli elementi da campeggio condividono un tempo di recupero di $D1.", nil, 0xd276a787, nil, "um" },
   [1307175] = { "Colloca un'incudine e fornisce tutti i benefici di una Sharpening Wheel. Richiede un Fuoco da Campo nelle vicinanze.\n\nPuò essere collocata sopra una Sharpening Wheel per sostituirla. Tutti gli elementi da campeggio condividono un tempo di recupero di $D1.", nil, 0xb9998893, nil, "um" },

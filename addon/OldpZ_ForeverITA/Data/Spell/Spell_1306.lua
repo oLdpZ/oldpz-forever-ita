@@ -33,6 +33,7 @@ WFJ.Data.add("spell", {
   [1306583] = { "Aumenta del $N1% la tua probabilità di critico magico.", nil, 0xd715ed95, nil, "um" },
   [1306607] = { "Riduce del $N1% la durata di tutti gli effetti di malattia che subisci.", nil, 0x290e598c, nil, "um" },
   [1306608] = { "Richiama una Sentinella per sorvegliare un'area.", nil, 0x962bd173, nil, "um" },
+  [1306613] = { "Rigenera $N1 mana.", nil, 0xd8470caf, nil, "um" },
   [1306620] = { "Congela sul posto il nemico bersaglio per $D1.", "Congelato sul posto", 0x08264c87, 0x210d3971, "uu" },
   [1306622] = { "Infligge $N1 danni da natura al bersaglio e all'alleato più vicino a lui. Infligge $N2 volte i danni alle piante e ai Non Morti.", nil, 0x782a5ec1, nil, "um" },
   [1306628] = { "Raccogli la neve del ⟦South Gate Pass=Passo Meridionale⟧ nel vaso di ceramica.", nil, 0xadbb41d0, nil, "um" },

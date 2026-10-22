@@ -12,9 +12,10 @@ WFJ.Data.add("spell", {
   [1256146] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla destra dell'incantatore.", "Ferito.", 0x2cade6c5, 0x7cead755, "uu" },
   [1256147] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla destra dell'incantatore.", "Ferito.", 0x2cade6c5, 0x7cead755, "uu" },
   [1256148] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla destra dell'incantatore.", "Ferito.", 0x2cade6c5, 0x7cead755, "uu" },
+  [1256151] = { "Clicca col pulsante destro per evocare e congedare Wimdy.", nil, 0x96d3031f, nil, "um" },
   [1256158] = { "Ti permette di camminare sull'acqua per $D1.", "A galla.", 0x42a8b6d3, 0xdd2d4197, "uu" },
   [1256161] = { "Attira tutti verso di te.", nil, 0x11d4571f, nil, "um" },
-  [1256717] = { nil, "Gira e vinci, finché non voli!", nil, 0x30a6c059, "mu" },
-  [1256867] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
-  [1256991] = { nil, "Furtivo.\nVelocità di movimento ridotta del $N1%.", nil, 0x6e7061f2, "mu" },
+  [1256717] = { "Gira e vinci, finché non voli!", "Gira e vinci, finché non voli!", 0x30a6c059, 0x30a6c059, "uu" },
+  [1256867] = { "Furtivo.", "Furtivo.", 0x150ed465, 0x150ed465, "uu" },
+  [1256991] = { "Ti pone in modalità furtiva, ma riduce la tua velocità di movimento del $N1%. Dura finché non viene annullato.", "Furtivo.\nVelocità di movimento ridotta del $N1%.", 0xa71d0c13, 0x6e7061f2, "uu" },
 })

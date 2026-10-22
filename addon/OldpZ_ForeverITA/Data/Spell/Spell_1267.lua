@@ -2,5 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1267046] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
-  [1267199] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1267113] = { "Riduce i danni del $N1%.", "Immune ai danni.", 0xf27200df, 0xf75b02dd, "uu" },
+  [1267143] = { "Scaglia una pietra contro un nemico, infliggendo danni fisici.", nil, 0x866d669f, nil, "um" },
+  [1267193] = { "Non hai ancora il permesso di entrare nella città di Dalaran.", nil, 0x312c457f, nil, "um" },
+  [1267199] = { "Alt! Una guardia del Kirin Tor ti ha segnalato per il trasferimento.", "Stordito.", 0xad1fb213, 0x27f95286, "uu" },
 })

@@ -2,8 +2,12 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1261177] = { nil, "La tua furtività è davvero eccezionale.", nil, 0x2b886deb, "mu" },
-  [1261222] = { nil, "Sanguinamento.", nil, 0xd6c5aa1b, "mu" },
+  [1261222] = { "Scaglia una glaive affilata contro il nemico.", "Sanguinamento.", 0x1ddb27a2, 0xd6c5aa1b, "uu" },
   [1261251] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1261320] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [1261483] = { nil, "Rigenera $N1 salute e $N2 mana ogni $D1.", nil, 0xf627f070, "mu" },
+  [1261692] = { "Riporta in vita il Khan caduto.", "Resurrezione in corso.", 0x941c111c, 0x3e242633, "uu" },
+  [1261773] = { "Completare questa missione ti conferisce il titolo \"<Name> of the Magram\" per tutti i personaggi del tuo account.\n\nQuesto titolo può essere mostrato solo mentre sei Osannato o superiore con i ⟦Magram Clan Centaur=Centauri del Clan Magram⟧.", nil, 0x41006e61, nil, "um" },
+  [1261774] = { "Completare questa missione ti conferisce il titolo \"<Name> of the Gelkis\" per questo personaggio.\n\nQuesto titolo può essere mostrato solo mentre sei Osannato o superiore con i ⟦Gelkis Clan Centaur=Centauri del Clan Gelkis⟧.", nil, 0x25a1c331, nil, "um" },
+  [1261854] = { nil, "Banca personale non disponibile.", nil, 0x90318efa, "mu" },
 })

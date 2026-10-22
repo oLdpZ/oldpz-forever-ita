@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1292008] = { "Intenerisce il bersaglio, aumentando i danni fisici subiti di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0xaae60baf, 0x7b8df538, "uu" },
-  [1292011] = { "Velocità di movimento aumentata del $N1% nella ⟦Elwynn Forest=Foresta di Elwynn⟧, nelle ⟦Westfall=Marche Occidentali⟧, nelle ⟦Redridge Mountains=Montagne Crestarossa⟧ e nelle ⟦Deadmines=Miniere della Morte⟧.", nil, 0xfd5ea01d, nil, "um" },
+  [1292011] = { "Velocità di movimento aumentata del $N1% nella ⟦Elwynn Forest=Foresta di Elwynn⟧, nelle ⟦Westfall=Marche Occidentali⟧, nelle ⟦Redridge Mountains=Montagne Crestarossa⟧ e nelle ⟦Deadmines=Miniere della Morte⟧.", "Nella ⟦Elwynn Forest=Foresta di Elwynn⟧, nelle ⟦Westfall=Marche Occidentali⟧, nelle ⟦Redridge Mountains=Montagne Crestarossa⟧ o nelle ⟦Deadmines=Miniere della Morte⟧, velocità di movimento aumentata del $N1%.", 0xfd5ea01d, 0xf8685d2b, "uu" },
   [1292025] = { "+$N1 potenza d'attacco contro gli umanoidi.", nil, 0xf6a10ee8, nil, "um" },
   [1292028] = { "Conferisce ai tuoi attacchi in mischia una probabilità del $N1%, quando colpisci alle spalle, di centrare un punto vitale, facendo sanguinare il bersaglio per $N2 danni fisici in $D1.", nil, 0x988de598, nil, "um" },
   [1292029] = { nil, "$N1 danni da sanguinamento subiti ogni $D1.", nil, 0x72a94853, "mu" },

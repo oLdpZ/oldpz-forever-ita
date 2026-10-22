@@ -14,6 +14,8 @@ WFJ.Data.add("spell", {
   [1286253] = { "Piazza una Benedizione sul bersaglio alleato, aumentando la potenza d'attacco in mischia di $N1 per $D1. Il bersaglio alleato può ricevere solo una Benedizione per Paladino alla volta.", "Potenza d'attacco in mischia aumentata di $N1.", 0x4fee37ec, 0x92e5f308, "uu" },
   [1286254] = { "Piazza una Benedizione sul bersaglio alleato, aumentando tutte le caratteristiche del $N1% per $D1. Il bersaglio alleato può ricevere solo una Benedizione per Paladino alla volta.", "Caratteristiche aumentate del $N1%.", 0xf4a4668d, 0xb6c88837, "uu" },
   [1286257] = { "Potenzia tutti i membri del gruppo e dell'incursione, aumentando lo Spirito di $N1 per $D1.", "Spirito aumentato di $N1.", 0x19cec3fc, 0x7e8fc3e9, "uu" },
+  [1286298] = { "Tenta di spezzare l'anima di un nemico vicino. Quando il Phantasm viene dissolto, infligge danni a chi lo dissolve ed evoca nella posizione del bersaglio un Phantasm che si dirige verso l'incantatore.", nil, 0x3677b72b, nil, "um" },
+  [1286299] = { "Tenta di spezzare l'anima di un nemico vicino. Quando il Phantasm viene dissolto, infligge danni a chi lo dissolve ed evoca nella posizione del bersaglio un Phantasm che si dirige verso l'incantatore.", nil, 0x3677b72b, nil, "um" },
   [1286345] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1286462] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
 })

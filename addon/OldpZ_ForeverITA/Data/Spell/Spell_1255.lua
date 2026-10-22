@@ -6,7 +6,7 @@ WFJ.Data.add("spell", {
   [1255229] = { "Non puoi raccogliere le bandiere lasciate cadere.", "Non puoi raccogliere le bandiere lasciate cadere.", 0x05dc3374, 0x05dc3374, "uu" },
   [1255415] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. ", shape = { "6/3", "5/3" } }, nil, 0xa7a2efee, nil, "um" },
   [1255924] = { "Emette un breve suono che può essere udito solo da animali, bestie ed esseri che non parlano.", "Il suono più fastidioso del mondo, che nessun altro riesce a sentire!", 0x4a7e0e08, 0x8bb1906f, "uu" },
-  [1255935] = { nil, "Fa troppo caldo... E fa troppo freddo.", nil, 0xba47bd95, "mu" },
-  [1255936] = { nil, "Aspetto alterato.", nil, 0xdfc4a6f2, "mu" },
-  [1255938] = { nil, "In preda al tremendo fetore della moffetta.", nil, 0x01a852d5, "mu" },
+  [1255935] = { "Rende l'aria attorno al bersaglio sgradevole, indipendentemente dalla temperatura dell'ambiente o dal clima.", "Fa troppo caldo... E fa troppo freddo.", 0x7d077aa8, 0xba47bd95, "uu" },
+  [1255936] = { "Conferisce temporaneamente all'utilizzatore un incantamento che lo camuffa da suo bersaglio.", "Aspetto alterato.", 0x8ad96d4e, 0xdfc4a6f2, "uu" },
+  [1255938] = { "Infligge $N1 danni da fuoco a chi si trova nel raggio dell'esplosione, più altri $N2 danni da natura ogni $D1 per $D2. Riduce inoltre del $N5% la velocità di movimento dei bersagli colpiti per $D3.", "In preda al tremendo fetore della moffetta.", 0xcaa07960, 0x01a852d5, "uu" },
 })

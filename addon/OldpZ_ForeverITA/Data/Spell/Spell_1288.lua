@@ -7,6 +7,8 @@ WFJ.Data.add("spell", {
   [1288462] = { nil, "Danni da ombra inflitti ogni $D1.", nil, 0x1bf49534, "mu" },
   [1288561] = { nil, "Armatura ridotta di $N1.\nImpossibile entrare in modalità furtiva o diventare invisibile.", nil, 0x0730b87e, "mu" },
   [1288793] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
-  [1288908] = { nil, "Armatura ridotta del $N1%.", nil, 0x7bc8160f, "mu" },
+  [1288850] = { "Scaglia trappole a freccia congelanti contro più bersagli. Dopo $D1 le trappole si armano e congelano chiunque colpiscano, stordendolo per $D2 e infliggendo $N3 danni da gelo. Nel punto in cui si trovano si forma un'ampia lastra di ghiaccio che riduce la velocità di movimento dei nemici del $N4% e infligge $N5 danni da gelo ogni $D3.", nil, 0x5cf45d9c, nil, "um" },
+  [1288908] = { "Colpisce il bersaglio attuale, infliggendo $N1 danni fisici e riducendone l'armatura del $N2%.", "Armatura ridotta del $N1%.", 0x05022d92, 0x7bc8160f, "uu" },
+  [1288961] = { "Scatena una raffica di dardi sul punto in cui si trova il bersaglio, infliggendo ogni secondo danni fisici ai giocatori in un cono davanti all'incantatore per $D1.", nil, 0x1764e99f, nil, "um" },
   [1288972] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
 })

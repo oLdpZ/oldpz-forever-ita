@@ -25,6 +25,7 @@ WFJ.Data.add("spell", {
   [1317450] = { "Stordisce il bersaglio e te per $D1. Gli ogre vengono storditi per $D2 e ti viene rimborsato il $N3% del tempo di recupero.", "Stordito.", 0xb6db8b9d, 0x27f95286, "uu" },
   [1317472] = { "Stordisce il bersaglio e te per $D1. Gli ogre vengono storditi per $D2 e ti viene rimborsato il $N3% del tempo di recupero.", "Stordito.", 0xb6db8b9d, 0x27f95286, "uu" },
   [1317486] = { "Aumenta la velocità di movimento del $N1% ad ⟦Dustwallow Marsh=Acquemorte⟧ e nella ⟦Swamp of Sorrows=Palude del Dolore⟧.", "Velocità di movimento aumentata del $N1%.", 0x47c33f0f, 0xd5c3ac7c, "uu" },
+  [1317516] = { nil, "Cura $N1 danni ogni $D1.", nil, 0xc0a38409, "mu" },
   [1317583] = { "I tuoi attacchi hanno un'alta probabilità di avvelenare il bersaglio, infliggendo $N1 danni da natura ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0x73c8a5f6, 0xf6322bec, "uu" },
   [1317604] = { "Rimuove tutti gli effetti di sanguinamento, malattia e veleno.", nil, 0x925be841, nil, "um" },
   [1317605] = { "Accende le luci di Dalaran.", nil, 0xea6a4b6d, nil, "um" },

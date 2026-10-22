@@ -4,4 +4,7 @@ WFJ.Data.add("spell", {
   [1268650] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [1268651] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1268652] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1268774] = { "Ti trasforma in un Dread Raven, conferendoti nuove abilità.", "Hai assunto la forma di un astuto corvo del terrore.", 0xf7079fad, 0x2b551a56, "uu" },
+  [1268815] = { "Assume la forma di un feroce Wild God ragno, ottenendone le abilità per $D1.", "Hai assunto la forma di un ragno feroce.", 0x7640f38c, 0x2af56ca3, "uu" },
+  [1268826] = { "Assume la forma di una possente lucertola del tuono per $D1.", "Hai assunto la forma di una possente lucertola del tuono.", 0x88b719ce, 0xed224c9e, "uu" },
 })

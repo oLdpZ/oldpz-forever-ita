@@ -7,6 +7,7 @@ WFJ.Data.add("spell", {
   [1297378] = { "Quando vieni colpito in combattimento, infligge $N1 danni da natura all'attaccante.", nil, 0xa5e49310, nil, "um" },
   [1297442] = { "Competenza nei tirapugni aumentata di $N1.", nil, 0xcffc0304, nil, "um" },
   [1297448] = { nil, "Individuazione della furtività aumentata.", nil, 0x2751c8b9, "mu" },
+  [1297455] = { "Riduce del $N1% la probabilità che gli effetti di ammaliamento ti colpiscano.", nil, 0x7e411fc2, nil, "um" },
   [1297685] = { "Rigenera $N1 mana ogni $D1.", nil, 0x9ac76902, nil, "um" },
   [1297727] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1297910] = { "Quando vieni colpito in combattimento, infligge $N1 danni da natura all'attaccante.", nil, 0xa5e49310, nil, "um" },

@@ -370,8 +370,11 @@ Data\Spell\Spell_1269.lua
 Data\Spell\Spell_1270.lua
 Data\Spell\Spell_1271.lua
 Data\Spell\Spell_1272.lua
+Data\Spell\Spell_1273.lua
 Data\Spell\Spell_1275.lua
+Data\Spell\Spell_1276.lua
 Data\Spell\Spell_1277.lua
+Data\Spell\Spell_1278.lua
 Data\Spell\Spell_1279.lua
 Data\Spell\Spell_1280.lua
 Data\Spell\Spell_1281.lua
