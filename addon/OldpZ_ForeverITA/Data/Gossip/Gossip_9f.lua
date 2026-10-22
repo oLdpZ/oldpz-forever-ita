@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["9f05aa933864fd69"] = { "A-Me buono. Buono, A-Me. Segui... segui A-Me. Casa. A-Me va a casa.", "." },
-  ["9f08d88b87ca724e"] = { "C'è un gran cuoco che lavora alla Pig and Whistle Tavern, a Old Town. L'ho visto usare il coltello mentre cucina e, detto tra noi, non credo che abbia sempre fatto il cuoco. Non fraintendermi... se vuoi ancora imparare, è il migliore che abbiamo.", "." },
+  ["9f08d88b87ca724e"] = { "C'è un gran cuoco che lavora alla Pig and Whistle Tavern, nella Città Vecchia. L'ho visto usare il coltello mentre cucina e, detto tra noi, non credo che abbia sempre fatto il cuoco. Non fraintendermi... se vuoi ancora imparare, è il migliore che abbiamo.", "." },
   ["9f093758e3914ff8"] = { "Affronto il sovrano sul suo comportamento malevolo, difendendo l'onore del mio signore a rischio di ogni futura diplomazia.", "." },
   ["9f12584b8e126661"] = { "Sul fronte delle vivande cucinate, pare che siamo riusciti a raccogliere e mettere da parte $2092w alborelle iridate in carpione su $2093w richieste. Inoltre, al momento abbiamo nelle celle frigorifere $2098w raptor arrosto su $2099w e $2101w pinnagialla maculati al vapore su $2103w.", "." },
   ["9f13a3394193455a"] = { "Ci sono ancora lezioni che devi imparare da altri prima che io possa condividere con te il mio sapere. Sii diligente e non perdere la speranza.", "." },

@@ -18,7 +18,7 @@ WFJ.Data.add("gossip", {
   ["e461be3415be40f2"] = { "Per ⟦Darrowshire=Borgo di Darrow⟧!", "." },
   ["e46379f649dc27e5"] = { "La lama lenta penetra lo scudo.", "." },
   ["e46d7d31b321e2ce"] = { "Eseguito alla perfezione! Ora proseguiamo con la tua formazione...", "." },
-  ["e46f086de2c74f85"] = { "Cerchi Grol'dar e il Darkfire Enclave? Li trovi nella caverna sotterranea chiamata Cleft of Shadow. Ci sono due gallerie che scendono in quella grotta, una appena a sud della Valle della Saggezza e l'altra da The Drag.", "." },
+  ["e46f086de2c74f85"] = { "Cerchi Grol'dar e il Darkfire Enclave? Li trovi nella caverna sotterranea chiamata Cleft of Shadow. Ci sono due gallerie che scendono in quella grotta, una appena a sud della Valle della Saggezza e l'altra dal Varcolargo.", "." },
   ["e471c2f084a0eb26"] = { "Be', fin qui ce l'hai fatta... va' da Lavinia Crowe, vicino all'altra libreria. Se non combini guai con lei, forse potrai imparare qualcos'altro.", "." },
   ["e471ce74c22f6efc"] = { "Gli ordini sono dati! Avanti, mostriamogli di che pasta siamo fatti!", "." },
   ["e473545394e713a5"] = { "Ooh, che forza! Buona Veglia delle Ombre, {name}!", "." },

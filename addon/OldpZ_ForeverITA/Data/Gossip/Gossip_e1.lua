@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["e1935fe7bd2fc212"] = { "Per questo vivrai per sempre nel tormento, <patetico/patetica> <stregone/strega>.", "." },
   ["e197ef677dfef050"] = { "Salve, {name}. Il mio nome è Chronormu, ma puoi chiamarmi Chromie. Tanta familiarità non mi dispiace.\n\nE ora... come faccio a sapere il tuo nome, chiedi? Appartengo allo Stormo dei Draghi di Bronzo, sempre in sintonia con il flusso e il riflusso del tempo. Si potrebbe dire che ci siamo già incontrati. Allo stesso modo, ci incontreremo di nuovo.\n\nSpero che l'aspetto che ho scelto non ti turbi; anche se il mio compito è vegliare su luoghi di dolore, scelgo di non annegare nella tristezza di questi posti.", "." },
   ["e1a32b9d1c1a220b"] = { "Cerco di tenere piene le scorte di ⟦Sentinel Hill=Guardiacolle⟧, e non è facile con tutti gli scontri che ci sono qui.", "." },
-  ["e1af311db6524b64"] = { "Perché non provi a cercare al Lion's Pride Inn? Il cuoco potrebbe insegnarti qualche buona ricetta.", "." },
+  ["e1af311db6524b64"] = { "Perché non provi a cercare alla Locanda del Fiero Leone? Il cuoco potrebbe insegnarti qualche buona ricetta.", "." },
   ["e1b8528d15db4181"] = { "C'è ancora luce, quindi vediamo quella tua ascia spaccare ancora un po' di legna.", "." },
   ["e1c28885ef692074"] = { "Patchwerk vuole giocare!", "." },
   ["e1c2fc8c037d2b8f"] = { "Il tuo cuore batte al ritmo dei venti?", "." },

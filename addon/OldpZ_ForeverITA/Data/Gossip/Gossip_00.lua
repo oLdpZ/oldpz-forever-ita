@@ -13,7 +13,7 @@ WFJ.Data.add("gossip", {
   ["00187af7a5b49a4c"] = { "Ah, The Gilded Rose... con i suoi morbidi letti di piuma e i bagni caldi... solo a pensare a quella locanda mi viene voglia di... ::sbadiglio:: Che fortuna, se ci stai andando... la trovi sul lato ovest del ⟦Trade District=Quartiere del Commercio⟧. ...bei cuscini morbidi, coperte calde. ::sbadiglio::", "." },
   ["001c35bcc77747e8"] = { "Salve, clan Trias! Una mozzarella affumicata, per favore!", "." },
   ["002ba13882824d71"] = { "Se vai nella ⟦Alterac Valley=Valle d'Alterac⟧, parla con Kartra Bloodsnarl. La trovi nella Hall of the Brave, nella ⟦Valley of Honor=Valle dell'Onore⟧.", "." },
-  ["002beb9cc67ef907"] = { "È a Old Town che devi andare se cerchi dei ladri. Si trova nell'angolo nord-est di ⟦Stormwind=Roccavento⟧.", "." },
+  ["002beb9cc67ef907"] = { "È nella Città Vecchia che devi andare se cerchi dei ladri. Si trova nell'angolo nord-est di ⟦Stormwind=Roccavento⟧.", "." },
   ["0031b57f82491d22"] = { "Inchinatevi! Inginocchiatevi davanti al Brandicenere! Si avvicina una nuova alba, fratelli e sorelle! Il nostro messaggio giungerà alla feccia di questo mondo per mezzo del prescelto!", "." },
   ["00323f04e3847137"] = { "Splendido.\n\nIl totem che creerò per te è più di un simbolo: ha anche altri poteri. Uno degli usi del totem è come focus per gli incantesimi. Quegli incantesimi sono legati alla terra e, man mano che acquisirai sempre più saggezza, ti saranno resi accessibili altri poteri della terra. Gli istruttori che si trovano in tutto Kalimdor sapranno quando sarai pront<o/a> per conoscenze più grandi e te lo faranno sapere quando andrai da loro.\n\nMa per ora prendi questo totem della terra...", "." },
   ["0041efb63537c3c2"] = { "Ecco, Relara. Bevi questo...", "." },

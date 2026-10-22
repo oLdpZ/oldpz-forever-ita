@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["4e5d3804b8530835"] = { "Darianna promette bene, ma ha così tanta energia che fatica a stare ferma ad ascoltare. Con la sua forza e la sua agilità, temo che non passerà molto prima che venga chiamata a combattere. Dobbiamo istruirla in fretta.", "." },
   ["4e5e67ddfa4e8762"] = { "È ora che tu ti unisca a noi, {class}.", "." },
   ["4e6d648598cd04a8"] = { "Banca di ⟦Ironforge=Forgiardente⟧", "." },
-  ["4e6e95dc719dc1d5"] = { "Di recente ho avuto un brutto incontro con alcuni dei Defias da queste parti, ma Michelle Belle mi ha rimesso in sesto per bene. Chiedi a lei, al Lion's Pride Inn, e vedi se ti insegna.", "." },
+  ["4e6e95dc719dc1d5"] = { "Di recente ho avuto un brutto incontro con alcuni dei Defias da queste parti, ma Michelle Belle mi ha rimesso in sesto per bene. Chiedi a lei, alla Locanda del Fiero Leone, e vedi se ti insegna.", "." },
   ["4e733c0fa71de317"] = { "Non credo che tu voglia imparare qualcosa che posso insegnarti. Faresti meglio a cercare un istruttore di {class} che ti aiuti.", "." },
   ["4e7486cb0640e50d"] = { "Fate largo! Lasciateli passare!", "." },
   ["4e75b2cecea6222c"] = { "Sei qui per imparare? Molto bene. Immagino che, se ti istruisco, non potrai fare molto male ai nostri alleati. Basta che tu riesca davvero a fare male ai nostri nemici.", "." },

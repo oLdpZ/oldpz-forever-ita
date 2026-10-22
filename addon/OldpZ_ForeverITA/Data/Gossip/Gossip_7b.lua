@@ -42,7 +42,7 @@ WFJ.Data.add("gossip", {
   ["7ba8478828b74ca7"] = { "Siate benedetti, mortali, per questa liberazione... Hakkar non mi controlla più!", "." },
   ["7ba84beaab07c850"] = { "Oh, è semplicissimo! Lo usi come qualsiasi altra cosa che puoi attivare. Non preoccuparti, alla miccia penso io. Una volta in aria ti sembrerà di «galleggiare», ma non durerà per sempre. Devi puntare a un bersaglio sul lago, laggiù in fondo. Assicurati di iniziare la discesa staccando le tue «ali» al momento giusto per atterrare in acqua, altrimenti... beh, io non vendo assicurazioni sulla vita.", "." },
   ["7baa31162b33d927"] = { "Già, è proprio morto. Questo fa di te il nuovo re... beh, di tutti voi! Gordok adesso è vostro, capo! Parla con me, così impari tutto su come si fa il re! Io ero... sono il suo assistente! Già, è per questo che mi chiamano l'astuto!", "." },
-  ["7bb0a3af9afb3482"] = { "Magar's Cloth Goods si trova a The Drag. Lo troverai a sud dell'enorme albero, accanto alla Kodohide Leatherworks.", "." },
+  ["7bb0a3af9afb3482"] = { "Magar's Cloth Goods si trova al Varcolargo. Lo troverai a sud dell'enorme albero, accanto alla Kodohide Leatherworks.", "." },
   ["7bc3d82a8907b1be"] = { "Ma per ora, la tua morte dovrà bastare...", "." },
   ["7bc78265c401ee6d"] = { "Parlami delle torri.", "." },
   ["7bddf318009a865b"] = { "Hulfnar! Thontek! In piedi e rivolgetevi a me.", "." },

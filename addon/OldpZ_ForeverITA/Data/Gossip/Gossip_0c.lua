@@ -46,7 +46,7 @@ WFJ.Data.add("gossip", {
   ["0cdb9d7db7f84173"] = { "Perché dici che è una coincidenza, Rabine?", "." },
   ["0ce0cd79712ab35a"] = { "Se posso andare, vorrei controllare come sta Quinn...", "." },
   ["0ce2b4531b5e3d17"] = { "C'è silenzio... Troppo silenzio...", "." },
-  ["0ce4a78cb5d05b41"] = { "Zaldimar potrebbe insegnarti qualche nuovo incantesimo. Ultimamente ha preso l'abitudine di stare alla Lion's Pride Inn: potresti controllare una delle stanze e vedere se c'è.", "." },
+  ["0ce4a78cb5d05b41"] = { "Zaldimar potrebbe insegnarti qualche nuovo incantesimo. Ultimamente ha preso l'abitudine di stare alla Locanda del Fiero Leone: potresti controllare una delle stanze e vedere se c'è.", "." },
   ["0ce5be55cf6513ab"] = { "Salute, e <benvenuto/benvenuta>. Sorridere non è il mio forte, ma fidati: sono felice di servirti.", "." },
   ["0cf52af1ece19c39"] = { "%s si mette al lavoro...", "." },
   ["0cf86ac06770419e"] = { "Non farti prendere!", "." },

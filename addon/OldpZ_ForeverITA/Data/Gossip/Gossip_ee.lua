@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["ee1efd776a4e55fc"] = { "Buongiorno a te, Nogg! Ho bisogno di addestramento.", "." },
   ["ee31ea4a122e7bf9"] = { "Mi hanno cresciuto ed educato per il servizio pubblico. Una voce che rappresentava il popolo. La mia abilità non stava nelle armi o nei mestieri, ma nelle parole e nella persuasione.", "." },
   ["ee33877d6ee64b58"] = { "Sissignore. Grazie, signore!", "." },
-  ["ee3530f6e3b117c3"] = { "Ah, la ⟦Alterac Valley=Valle d'Alterac⟧, ne ho dei bei ricordi, te lo dico io. <sospira> Be', non posso venire con te, ma fammi fare bella figura lo stesso! Per arrivarci dovrai parlare con Glordrum Steelbeard alla Hall of Arms, qui a ⟦Ironforge=Forgiardente⟧.", "." },
+  ["ee3530f6e3b117c3"] = { "Ah, la ⟦Alterac Valley=Valle d'Alterac⟧, ne ho dei bei ricordi, te lo dico io. <sospira> Be', non posso venire con te, ma fammi fare bella figura lo stesso! Per arrivarci dovrai parlare con Glordrum Steelbeard al Salone delle Armi, qui a ⟦Ironforge=Forgiardente⟧.", "." },
   ["ee433e2435c16f9f"] = { "I tempi in cui viviamo sono mutevoli come i venti, {class}. È importante ricordare ciò che in questo mondo è vero e duraturo, e preservarlo. Tutto il resto è uno spreco.", "." },
   ["ee4a596ce4831051"] = { "Se vuoi dare la caccia ai naga, ti servirà tutto l'aiuto possibile. In fondo all'acqua puoi trovare delle fessure gorgoglianti che producono abbastanza bolle d'aria da permetterti di respirare sott'acqua. Avvicinati a nuoto per poter usare le bolle.", "." },
   ["ee4cc5e81b9daf15"] = { "Belm dice di pagare il conto o ti spacca la faccia.", "." },

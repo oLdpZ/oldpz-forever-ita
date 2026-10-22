@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["1d4a5b1e03b31f3c"] = { "Sì, sì, tutto il materiale bellico dell'Orda e dell'Alleanza viene spedito a ⟦Silithus=Silitus⟧ e dovrebbe arrivare entro $2113w giorni. Sai cosa succede allora, {class}? Ci sbrighiamo per poi aspettare. Speriamo che qualcuno stia raccogliendo i pezzi dello Scettro delle Sabbie Mutevoli, perché per aprire le porte di ⟦Ahn'Qiraj=Ahn'qiraj⟧ bisogna farlo risuonare contro il gong sull'Altare dello Scarabeo.", "." },
   ["1d5a4dcc2a27b5e0"] = { "Mi hai chiesto di istruirti, e in cambio ho un favore da chiederti. Portalo a termine e avrai la tua ricompensa.", "." },
   ["1d5c6a4e852cb1f0"] = { "Il mio scopo è regolare l'accesso al complesso di Uldum per conto dei Creatori. Consento l'ingresso nel complesso solo quando il richiedente esibisce i dischi di sequenza adeguati.\n\nIl tuo set di dischi al momento non contiene le Plates of Uldum, requisito primario per l'ingresso. L'accesso non è consentito se le Plates of Uldum non sono presenti.", "." },
-  ["1d5ccab5d719577b"] = { "Cerchi Zamja al Borstan's Firepit, al livello superiore di The Drag. Sali le scale a sinistra quando entri in The Drag dalla ⟦Valley of Strength=Valle della Forza⟧.", "." },
+  ["1d5ccab5d719577b"] = { "Cerchi Zamja al Borstan's Firepit, al livello superiore del Varcolargo. Sali le scale a sinistra quando entri nel Varcolargo dalla ⟦Valley of Strength=Valle della Forza⟧.", "." },
   ["1d5da07a687d0910"] = { "Dammi il cucciolo di tigre!", "." },
   ["1d68ee6272716010"] = { "Ricorda, ho bisogno del tuo aiuto per incanalare come si deve. Ti chiederò di aiutarmi più volte lungo il cammino, quindi resta all'erta.", "." },
   ["1d6d88812e540c56"] = { "⟦Tower Point=Torre Granguardia⟧ è stata presa dall'⟦Horde=Orda⟧!", "." },

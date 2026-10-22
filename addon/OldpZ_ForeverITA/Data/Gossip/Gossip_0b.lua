@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["0b850e7b78b68681"] = { "Hai visto cose strane nel deserto, di recente?", "." },
   ["0b8a48e159762bc6"] = { "Che freddo... e che fame.\n\nPovero amico mio, spero che tu abbia trovato la pace. Non sopporto il pensiero di ciò che potrebbero averti fatto.\n\nTu! Tu, lì! Ti prego, devi aiutarmi a fuggire. Uno di loro ha una chiave, riesci a trovarla? So che ce l'hanno. Se la prendi, puoi aiutarmi a uscire di qui. Trey sarà già morto, ma c'è ancora tempo! Ti prego, puoi aiutarmi?", "." },
   ["0b8cba841abf8212"] = { "Cerco addestramento nelle vie del Cacciatore.", "." },
-  ["0b961d60e92041a3"] = { "Sai, potrei trafiggere un orco o fare a fette un troll. Potrei perfino incidere le mie iniziali sul fianco di un ogre, ma proprio non sopporto di scuoiare un animale. Vai a capire, eh.\n\nBe', se hai lo stomaco per farlo, vai da Maris Granger al Protective Hide, in Old Town.", "." },
+  ["0b961d60e92041a3"] = { "Sai, potrei trafiggere un orco o fare a fette un troll. Potrei perfino incidere le mie iniziali sul fianco di un ogre, ma proprio non sopporto di scuoiare un animale. Vai a capire, eh.\n\nBe', se hai lo stomaco per farlo, vai da Maris Granger al Protective Hide, nella Città Vecchia.", "." },
   ["0b97c108d95f40c2"] = { "Diviso in due per formare l'uno. Le lame gemelle sono legate a ⟦Zul'Farrak=Zul'farrak⟧.\n\nSul'thraze rinasce quando i gemelli sono ritrovati.", "." },
   ["0ba03211488afd5b"] = { "Nessuno ruberà i segreti dei Creatori!", "." },
   ["0ba8503d292d0349"] = { "Quando si è vissuto a lungo quanto me, diventa facile dimenticarsi dell'amore per anni. È sempre bello che qualcuno te lo ricordi.", "." },

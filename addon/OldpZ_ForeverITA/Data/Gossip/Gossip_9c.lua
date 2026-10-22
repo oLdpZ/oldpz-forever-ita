@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["9c3ceeb06aa1d955"] = { "Ricacciateli nella loro base! Che non resti vivo un solo soldato dell'⟦Alliance=Alleanza⟧ su questo campo di battaglia!", "." },
   ["9c3e25df0c884bba"] = { "E ho tutta l'intenzione di scoprirne di più... Quindi, se ti serve di nuovo il mio aiuto, sai dove trovarmi.", "." },
   ["9c4638900c1123f3"] = { "Dov'è l'istruttore di cucina?", "." },
-  ["9c487c9af5ed4344"] = { "Kelstrum è uno sbruffone e un fanfarone... e come se non bastasse è anche uno dei guerrieri più abili che incontrerai mai!\n\nTe lo dico io, se vuoi addestrarti nelle arti del guerriero, è con lui che devi parlare. Di sicuro lo trovi nella Hall of Arms, a est dei ⟦Gates of Ironforge=Cancelli di Forgiardente⟧.", "." },
+  ["9c487c9af5ed4344"] = { "Kelstrum è uno sbruffone e un fanfarone... e come se non bastasse è anche uno dei guerrieri più abili che incontrerai mai!\n\nTe lo dico io, se vuoi addestrarti nelle arti del guerriero, è con lui che devi parlare. Di sicuro lo trovi nel Salone delle Armi, a est dei ⟦Gates of Ironforge=Cancelli di Forgiardente⟧.", "." },
   ["9c600498a72eb54c"] = { "La prego... la prego... signorina Proudmore. Non volevo...", "." },
   ["9c61ed23104e9e0d"] = { "Buonanotte, buonanotte.", "." },
   ["9c69bad5eeaae79d"] = { "Assicurati di dire a Greatfather Winter quale sorpresa segreta vorresti ricevere per questo Grande Inverno!", "." },

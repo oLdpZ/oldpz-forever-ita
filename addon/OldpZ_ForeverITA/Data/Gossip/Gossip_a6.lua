@@ -44,7 +44,7 @@ WFJ.Data.add("gossip", {
   ["a6da92bacab5a757"] = { "%s armato. Aerie Gryphon in arrivo.", "." },
   ["a6de7b4979389459"] = { "Non profanerai la nostra terra sacra!", "." },
   ["a6e96aa4fcaf24f0"] = { "Se riesci a completare un Mazzo dei Signori della Guerra, riceverai in premio una carta di Lunacupa superiore: la Carta di Lunacupa: Eroismo. Questa carta di tanto in tanto ti curerà mentre combatti in mischia.", "." },
-  ["a6f221163056f2b5"] = { "Scommetto che Keryn Sylvius sa che tipo di persona cerchi. La compagnia che frequenta Keryn è tutt'altro che onorevole. Di solito sta al Lion's Pride Inn.", "." },
+  ["a6f221163056f2b5"] = { "Scommetto che Keryn Sylvius sa che tipo di persona cerchi. La compagnia che frequenta Keryn è tutt'altro che onorevole. Di solito sta alla Locanda del Fiero Leone.", "." },
   ["a6f433da76937dff"] = { "Qui non vengono molti visitatori. Posso interessarti a qualcosa?", "." },
   ["a6f60c772c0c0b49"] = { "È vero che l'⟦Alliance=Alleanza⟧ ha completato tutti i suoi compiti per lo sforzo bellico, ma non lasciarti scoraggiare, {race}. Il tempo stringe, ma preferiamo di gran lunga che tu aiuti nelle raccolte dell'Orda con cura e attenzione. Mi sembra meglio che commettere un errore che potrebbe costare la vita a qualcuno quando questa guerra comincerà davvero. Non sei d'accordo, {class}?", "." },
   ["a6f6f512eb4bfc7f"] = { "Cosa? Perché mi disturbi? Scommetto che non sai nemmeno creare una veste di alta qualità! Va' a parlare con Snang e torna quando sarai <degno/degna> del mio talento!", "." },

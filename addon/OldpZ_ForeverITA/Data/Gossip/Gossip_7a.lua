@@ -49,7 +49,7 @@ WFJ.Data.add("gossip", {
   ["7aed3943bdfa8679"] = { "%s fugge dopo aver visto cadere Kel'Thuzad!", "." },
   ["7af1c107dbefcb7c"] = { "Ho proprio il posto giusto per questo corno!", "." },
   ["7af1c575e233d0bd"] = { "Non mi piacciono queste città umane di pietra e acciaio. Preferirei le foreste di ⟦Ashenvale=Valtetra⟧, sulle tracce di grandi bestie. Ma il mio caro fratello, Kaerbrus, pensava che sarebbe stato utile addestrare gli umani nelle nostre arti. Perciò, anche se gli rendo onore e offro i miei servigi, non per questo deve piacermi.", "." },
-  ["7af2d72741e14986"] = { "Non ci siamo appena liberati dalla Legione Infuocata, e tu vieni qui a trafficare di nuovo con i demoni? Cerca il Darkfire Enclave nella caverna sotterranea chiamata Cleft of Shadow. Troverai un tunnel che ci scende da The Drag.", "." },
+  ["7af2d72741e14986"] = { "Non ci siamo appena liberati dalla Legione Infuocata, e tu vieni qui a trafficare di nuovo con i demoni? Cerca il Darkfire Enclave nella caverna sotterranea chiamata Cleft of Shadow. Troverai un tunnel che ci scende dal Varcolargo.", "." },
   ["7afad67c47a985c2"] = { "Credi di avere ciò che serve per distruggere la ⟦The League of Arathor=Lega di Arathor⟧, {class}? Lo spero. Che cosa vuoi, o sei qui solo per farmi perdere tempo?", "." },
   ["7afaf794adbe73be"] = { "Forse un po' più di grasso farà al caso.", "." },
 })

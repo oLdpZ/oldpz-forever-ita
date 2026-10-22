@@ -12,7 +12,7 @@ WFJ.Data.add("gossip", {
   ["541b3ebdad87d837"] = { "Quando mi offrirono il titolo di magistrato di ⟦Southshore=Riva del Sud⟧, mi entusiasmò aver ottenuto un incarico simile così presto nella mia carriera.\n\nMa ora che sono qui, mi chiedo se non sarebbe stato meglio passare carte a ⟦Stormwind=Roccavento⟧.", "." },
   ["541c9674c1dd2d6b"] = { "Cos'è successo qui, spirito?", "." },
   ["541cd8988547c16f"] = { "Il totem è fatto. Ora il pozzo può essere purificato.", "." },
-  ["541ff4b950a83bae"] = { "Ulbrek Firehand prende molto sul serio la cura degli animali. Di solito sta con i cacciatori nella Hall of Arms, se vuoi che si occupi di un famiglio o due.", "." },
+  ["541ff4b950a83bae"] = { "Ulbrek Firehand prende molto sul serio la cura degli animali. Di solito sta con i cacciatori nel Salone delle Armi, se vuoi che si occupi di un famiglio o due.", "." },
   ["5423314c870a53b7"] = { "Mmm, mmm, mmm. Senti che profumino?! Questa sì che è roba buona, {class}. L'⟦Rainbow Fin Albacore=Alborella Iridata in Carpione⟧ colpisce nel segno ogni volta. Qui c'è Slicky Gastronome, asso indiscusso di tutto ciò che è commestibile, soprattutto il pesce. Con la guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧ alle porte, l'⟦Alliance=Alleanza⟧ ha pensato bene di chiamare un esperto per lo sforzo bellico, ed eccomi qui, a comandare in grande.\n\nSembra che ci serviranno $2093w di questi pesci, e per ora ne abbiamo un mucchio che arriva a $2092w.", "." },
   ["5428173d5c3f29e8"] = { "%s ruggisce verso Terenthis in segno d'intesa.", "." },
   ["54302a90e5862f38"] = { "Nessuno sfida i nomadi Wastewander... nemmeno i polli robotici! ALL'ATTACCO!", "." },

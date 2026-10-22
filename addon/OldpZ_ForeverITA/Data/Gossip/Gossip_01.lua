@@ -49,7 +49,7 @@ WFJ.Data.add("gossip", {
   ["01d182790517060e"] = { "No, Longears non è il mio vero nome. E non ti dirò qual è, quindi non chiedermelo.", "." },
   ["01d2b0e56616e6f8"] = { "Ehehe! Le cose fanno bum!", "." },
   ["01d3c35e9e6cff33"] = { "EVVAI!", "." },
-  ["01d554846bfd1211"] = { "Tutt'a un tratto sei un «Difensore dell'⟦Alliance=Alleanza⟧», eh?! Beh, immagino che adesso vorrai andare alla ⟦Champions' Hall=Sala dei Campioni⟧. È giù a Old Town, ma non ti faranno entrare se non sei un ufficiale, quindi forse dovrai accontentarti di parlare con l'ufficiale Areyn fuori. Circolare, ora.", "." },
+  ["01d554846bfd1211"] = { "Tutt'a un tratto sei un «Difensore dell'⟦Alliance=Alleanza⟧», eh?! Beh, immagino che adesso vorrai andare alla ⟦Champions' Hall=Sala dei Campioni⟧. È giù nella Città Vecchia, ma non ti faranno entrare se non sei un ufficiale, quindi forse dovrai accontentarti di parlare con l'ufficiale Areyn fuori. Circolare, ora.", "." },
   ["01e63eaee057f452"] = { "Ah, lo strato protettivo è quasi svanito. Lo sentite, eroi? Quello... Quello è il suono dell'inevitabile. Delle vostre speranze e dei vostri sogni schiacciati sotto il peso del mio essere.", "." },
   ["01ea16447d200bad"] = { "Questa è la risposta alla prima domanda della prima catena.", "." },
   ["01f28add3e87df12"] = { "Ti manda il maresciallo Haggard? Perché non l'hai detto subito?\n\nAh, il buon vecchio Haggard. Povero diavolo, tra non molto sarà completamente cieco. Comunque, fammi vedere cos'hai lì.", "." },

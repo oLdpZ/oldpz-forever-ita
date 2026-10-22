@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["3e044d25778cb87d"] = { "Impari in fretta, tu, e sei pure <un/una> <bravo/brava> fabbro. Firmerei il tuo lavoro qualsiasi giorno della settimana. Ma sento che hai ancora qualcosa da imparare. Va' a parlare con Bengus Deepforge: è un maestro esigente, ma è anche uno dei migliori.", "." },
   ["3e05589572d79ac3"] = { "Salute, <piccolo/piccola>. Hai affari con i Seguaci di Idraxis?", "." },
-  ["3e19e0b1c27f9ce0"] = { "Uno stregone, eh... Be', se hai in mente di fare quel genere di cose da queste parti, allora faresti meglio a tenere i tuoi demoni al guinzaglio, <ragazzo/ragazza>. Non mi piacciono i demoni, ma adoro piantarci dentro l'ascia. Mi capisci?\n\nOra lasciami in pace e va' a perderti nella Forlorn Cavern. È lì che troverai quello stregone, Thistleheart.", "." },
+  ["3e19e0b1c27f9ce0"] = { "Uno stregone, eh... Be', se hai in mente di fare quel genere di cose da queste parti, allora faresti meglio a tenere i tuoi demoni al guinzaglio, <ragazzo/ragazza>. Non mi piacciono i demoni, ma adoro piantarci dentro l'ascia. Mi capisci?\n\nOra lasciami in pace e va' a perderti nella Caverna degli Inganni. È lì che troverai quello stregone, Thistleheart.", "." },
   ["3e1b8dfde2985ee6"] = { "È l'ora della mia meditazione, lasciami.", "." },
   ["3e1c941d66057d41"] = { "Nessuno gnomo verrà lasciato indietro.", "." },
   ["3e1cc66c78145e50"] = { "Non un passo di più, ogre!", "." },

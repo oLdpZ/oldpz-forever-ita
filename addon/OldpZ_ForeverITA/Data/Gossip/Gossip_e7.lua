@@ -35,5 +35,5 @@ WFJ.Data.add("gossip", {
   ["e7ccb48d4c5277db"] = { "La East Frostwolf Tower è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ la distruggerà!", "." },
   ["e7d152ae28460455"] = { "Salute! Hai un'aria familiare... ci siamo già visti?\n\nBe', se ci siamo già visti, allora... di sicuro ti hanno dato un codice segreto. Dimmi il tuo codice e ti darò un regalo!", "." },
   ["e7d71cfdd6f877ae"] = { "Porta la Tattered Note a Veyric Thunderhame negli ⟦Arathi Highlands=Altopiani d'Arathi⟧.", "." },
-  ["e7e95f422aef9215"] = { "Ci voleva proprio che i nani mandassero da ⟦Ironforge=Forgiardente⟧ un esperto di estrazione a spiegarci come si scava. Quanto sarà difficile prendere un piccone e scalpellare un po' di roccia? Be', visto che è qui, probabilmente è lui che dovresti andare a trovare. Si chiama Gelman e sta nel Dwarven District.", "." },
+  ["e7e95f422aef9215"] = { "Ci voleva proprio che i nani mandassero da ⟦Ironforge=Forgiardente⟧ un esperto di estrazione a spiegarci come si scava. Quanto sarà difficile prendere un piccone e scalpellare un po' di roccia? Be', visto che è qui, probabilmente è lui che dovresti andare a trovare. Si chiama Gelman e sta nel Distretto dei Nani.", "." },
 })

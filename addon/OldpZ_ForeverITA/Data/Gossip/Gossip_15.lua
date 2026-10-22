@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["15a1a8bb2934db1b"] = { "Hakkar dominerà il mondo!", "." },
   ["15a7adde2c9bf4d3"] = { "Io... credo di averne visto abbastanza... è così estenuante...", "." },
   ["15b2f1e2151cf28c"] = { "Ho circa metà dei rifornimenti necessari per promuovere le truppe a unità campione.", "." },
-  ["15b48efe19352148"] = { "Una volta ho sentito il vecchio Grimnur dire che aveva pescato una spada. O era un pesce spada? Maledetto Grimnur, ne ha raccontate così tante, di storie di pesca, che non ricordo più quale sia quale. Beh, perché non vai a trovarlo nella Forlorn Cavern e non ti fai dire cos'era?", "." },
+  ["15b48efe19352148"] = { "Una volta ho sentito il vecchio Grimnur dire che aveva pescato una spada. O era un pesce spada? Maledetto Grimnur, ne ha raccontate così tante, di storie di pesca, che non ricordo più quale sia quale. Beh, perché non vai a trovarlo nella Caverna degli Inganni e non ti fai dire cos'era?", "." },
   ["15bbe34440a79de7"] = { "Mmh, che domanda strana. Non molto, direi. Mia madre lo usava come talco per i neonati, contro l'irritazione da pannolino, ma a parte quello non conosco nessun altro buon uso.\r\n\nPerché lo chiedi?", "." },
   ["15bd6e2470d49e42"] = { "⟦Icebane Gauntlets=Guanti Lunghi della Rovina dei Ghiacci⟧.", "." },
   ["15c9a1326ebaca4f"] = { "Uff... mi servono una fumata e il tocco di una bella gnoma, non necessariamente in quest'ordine!\n\nHo passato mesi nella pancia di quella cosa! Che giorno è, poi? Ah, lascia perdere. Conta solo che finalmente sono fuori.\n\nIUUU-UUUH!", "." },

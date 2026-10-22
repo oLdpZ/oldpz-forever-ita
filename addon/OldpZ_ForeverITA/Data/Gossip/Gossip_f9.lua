@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["f96ac5f7d53fae38"] = { "{name}, ho di nuovo bisogno del tuo aiuto.", "." },
   ["f96c7527f82d8e85"] = { "Mmm, a quanto pare Keever ha bisogno di una nuova cavia. Se quello sciocco di Abernathy continua a prendersi le cavie di Keever, Keever dovrà fare due chiacchiere con lui.", "." },
   ["f9706fafc56b9df1"] = { "Ahimè, ho chiacchierato abbastanza. Cerca la mia apprendista Ayessa Dawnsinger nel porto di Valanaar, se ti capita di passare da quelle parti. Lei sente ancora il canto, anche se debolmente. La vecchiaia mi pesa e gran parte del mio potere mi ha abbandonato. Ayessa rappresenta il futuro del nostro popolo e il cammino che ora dobbiamo percorrere per sopravvivere. Tocca a lei e ai giovani skyborne come te portare avanti le speranze del nostro popolo.", "." },
-  ["f97295bd13f0746e"] = { "Hai la stoffa per eccellere nella caccia? Beh, <ragazzo/ragazza> <mio/mia>, solo il tempo lo dirà. Ma non metterti a tirare alle mele sulla testa della gente finché non hai parlato con Regnus, laggiù nell'Hall of Arms.", "." },
+  ["f97295bd13f0746e"] = { "Hai la stoffa per eccellere nella caccia? Beh, <ragazzo/ragazza> <mio/mia>, solo il tempo lo dirà. Ma non metterti a tirare alle mele sulla testa della gente finché non hai parlato con Regnus, laggiù nell'Salone delle Armi.", "." },
   ["f976ce3f5aeac77e"] = { "Aspetta! Sembra che la nostra vedetta abbia avvistato qualcosa.", "." },
   ["f9804223306be7ec"] = { "Delizioso!", "." },
   ["f9824c44b2ba7432"] = { "Dov'è l'istruttore di Estrazione?", "." },

@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["26028189c7a6fb9c"] = { "Questioni di natura così ufficiale si sbrigano solo a Darnassus. Devi recarti lì per avviare le pratiche per la creazione della tua gilda.", "." },
-  ["2609a123669b9401"] = { "Gli umani hanno bisogno del tuo aiuto nella loro lotta contro i Reietti al ⟦Arathi Basin=Bacino d'Arathi⟧. Va' alla Hall of Arms e parla con il loro rappresentante, Donal Osgood.", "." },
+  ["2609a123669b9401"] = { "Gli umani hanno bisogno del tuo aiuto nella loro lotta contro i Reietti al ⟦Arathi Basin=Bacino d'Arathi⟧. Va' al Salone delle Armi e parla con il loro rappresentante, Donal Osgood.", "." },
   ["261669795c7f82fd"] = { "Ah, <uno/una> dei nostri. È bello vedere che il nostro numero cresce tanto in fretta che non riesco più a ricordare le facce di tutti i membri.\n\nQuello sciocco di Thrall crede che io mi stia impegnando per ripulire l'immagine degli stregoni e dimostrare che siamo suoi servitori. Idiota! La Legione Infuocata ridurrà in cenere questo mondo intero, dopo averlo prosciugato del tutto.", "." },
   ["261cb23e27381f5d"] = { "Buona giornata a te.", "." },
   ["261d9ccbcc70175d"] = { "Le nostre unità veterane stanno lasciando il campo. Ci servono altri rifornimenti!", "." },

@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["6f84bab72a9159d8"] = { "Ah, hai proprio l'aria robusta, eh? Forse puoi darmi una mano con una cosa o due. Qui non c'è molto aiuto, a parte qualche apprendista alle prime armi, e loro hanno altro a cui pensare.", "." },
   ["6f9ae0a3a575fe8f"] = { "Ho circa metà dei rifornimenti necessari per passare alle unità veterane.", "." },
   ["6f9b53b47cd502a8"] = { "%s scatena un attacco devastante.", "." },
-  ["6f9d017463c27970"] = { "Thuwd ti insegnerà a scuoiare le tue prede. Cercalo alla Kodohide Leatherworkers, in The Drag.", "." },
+  ["6f9d017463c27970"] = { "Thuwd ti insegnerà a scuoiare le tue prede. Cercalo alla Kodohide Leatherworkers, nel Varcolargo.", "." },
   ["6f9e2f8c6fa150db"] = { "Rend, figlio di Manonera: capo impotente del clan ⟦Blackrock=Roccianera⟧. Non esiste bastardo più testardo.\n\nAlla fine della Seconda Guerra, Rend e suo fratello Maim fuggirono in cerca di rifugio nella fortezza montana dei ⟦Blackrock Spire=Bastioni di Roccianera⟧. Fu lì che Rend si proclamò Capoguerra del clan ⟦Blackrock=Roccianera⟧ ormai indebolito.", "." },
   ["6fa4caee5a7f7055"] = { "30 secondi all'inizio della battaglia per la ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
   ["6fab26eb50a940c8"] = { "%s tiene davanti a sé la Rune of Escape.", "." },

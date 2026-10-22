@@ -37,7 +37,7 @@ WFJ.Data.add("gossip", {
   ["b4a8c64674b9040a"] = { "Come posso evocare Omen?", "." },
   ["b4aaa662c4d506ce"] = { "I recipienti muisek ora sono pronti, {name}.", "." },
   ["b4ac9661e327cb1b"] = { "Johnson? Credo che sia qui da qualche parte...", "." },
-  ["b4acc52743f2c233"] = { "La corsa di The Drag partirà tra 1 minuto!", "." },
+  ["b4acc52743f2c233"] = { "La corsa del Varcolargo partirà tra 1 minuto!", "." },
   ["b4acf49ca5a84db1"] = { "Salute, {name}. Sei <pronto/pronta> per l'addestramento?", "." },
   ["b4ae046ae3eb3ba9"] = { "<Benvenuto/Benvenuta> nella nostra tenda. Posso esserti utile?", "." },
   ["b4b13147ef3db3e4"] = { "Aprilo.", "." },

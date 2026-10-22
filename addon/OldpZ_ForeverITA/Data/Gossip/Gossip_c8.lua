@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["c8b4171e85086a60"] = { "Anche se me ne vado in pace, avete tutti la mia eterna gratitudine. Grazie per avermi tolto la maledizione della mia follia e della mia avidità.", "." },
   ["c8b6f4d3d59c6462"] = { "La tua comprensione del cuoio è più profonda della mia. Forse dovresti far visita al tauren Krulmoo Fullmoon a Camp Taurajo, nelle ⟦Barrens=Savane⟧. Ha molte conoscenze da offrire a chi ha il tuo talento.", "." },
   ["c8bcac74562e8dda"] = { "I ⟦Razorfen Downs=Sotterranei di Lamaspina⟧ si trovano all'estremità meridionale delle ⟦Barrens=Savane⟧, sul lato est della strada.", "." },
-  ["c8c52ccf44aecb19"] = { "Va' a cercare Zando'zan nel Cleft of Shadow. Ci sono un paio di tunnel che scendono in quella caverna, uno appena a sud della Valle della Saggezza e l'altro in The Drag.", "." },
+  ["c8c52ccf44aecb19"] = { "Va' a cercare Zando'zan nel Cleft of Shadow. Ci sono un paio di tunnel che scendono in quella caverna, uno appena a sud della Valle della Saggezza e l'altro nel Varcolargo.", "." },
   ["c8c81d7696f41231"] = { "La mia qualifica è Specialista in Gestione dei Rifiuti.", "." },
   ["c8d45aa942a7e230"] = { "Sono qui! Il tuo dominio su questa terra è finito!", "." },
   ["c8db931454e35501"] = { "Padre Cobb è quello con cui devi parlare. Lo trovi sotto l'⟦Spirit Rise=Altura degli Spiriti⟧, nella grotta delle Pozze delle Visioni.", "." },
@@ -38,5 +38,5 @@ WFJ.Data.add("gossip", {
   ["c8e2459479e690fa"] = { "Hai la statuetta?", "." },
   ["c8f47f457aa6eb58"] = { "Venite, venite tutti! Benvenuti alla ⟦Darkmoon Faire=Fiera di Lunacupa⟧! Non siate timidi. Avvicinatevi a Lhara e compratevi un manufatto esotico da terre lontane. Se siete tra i pochi fortunati che hanno trovato delle Carte di Lunacupa, scambiate due parole con il professor Paleo. Fame? Sete? Siete fortunati! Qui ci sono rinfreschi da Sylannia e Stamp. Vi consiglio la ⟦Darkmoon Special Reserve=Riserva Speciale di Lunacupa⟧ per mandar giù un po' di ⟦Red Hot Wings=Alette Piccanti⟧. E se è il futuro che cercate, correte, non camminate, a parlare con Sayge.", "." },
   ["c8fc9407be25d4d8"] = { "Sergente Hartman! Devo comprare un altro Purificatore per Bombe Puzzolenti!", "." },
-  ["c8fd282844930669"] = { "Cerca Yelmak's Alchemy and Potions. La trovi in mezzo a The Drag, a ovest del grande albero.", "." },
+  ["c8fd282844930669"] = { "Cerca Yelmak's Alchemy and Potions. La trovi in mezzo al Varcolargo, a ovest del grande albero.", "." },
 })

@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["bb5df2ec8c311e58"] = { "Qui al ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧ non abbiamo un istruttore di Alchimia, ma ce n'è uno a ⟦Thunder Bluff=Picco del Tuono⟧, a nord. Segui la strada fin lì e, quando arrivi in cima, chiedi indicazioni a uno dei Guardiani del Picco.", "." },
   ["bb5e799d47b2356c"] = { "Sono tutti fucili e fiamme finché qualcuno non perde e ci lascia le penne.", "." },
   ["bb6e74a31d684cf7"] = { "Gli spiriti mi avevano detto che saresti <venuto/venuta>, che mi avresti cercato per un motivo, ma che forse nemmeno tu lo conosci. Allora, sai perché sei qui?", "." },
-  ["bb6eff6febb2d44d"] = { "Ehi, questo mi ricorda che devo far riparare i miei stivali a razzo. Un consiglio da amico: stivali a razzo e grifoni non vanno d'accordo.\n\nOh, ma a te servono indicazioni... vai pure al Dwarven District, troverai Lilliam Sparkspindle verso il fondo.", "." },
+  ["bb6eff6febb2d44d"] = { "Ehi, questo mi ricorda che devo far riparare i miei stivali a razzo. Un consiglio da amico: stivali a razzo e grifoni non vanno d'accordo.\n\nOh, ma a te servono indicazioni... vai pure al Distretto dei Nani, troverai Lilliam Sparkspindle verso il fondo.", "." },
   ["bb7dae267f2e756c"] = { "È passato tanto tempo, Bethor, amico mio.", "." },
   ["bb879cb033020796"] = { "Preparati all'impatto glorioso, Impsy!", "." },
   ["bba42aa824e4054b"] = { "No, non che io sappia. Sembra dipendere soprattutto dalla regione. Alcune razze le chiamano poltiglie, altre melme. Per lo più è questione di preferenza.\n\nOgni volta che ho incontrato melme, fanghiglie o poltiglie, erano in pratica le stesse creature. Le differenze sembrano dipendere dal loro ambiente, ed è per questo che ci serve un campione puro.", "." },

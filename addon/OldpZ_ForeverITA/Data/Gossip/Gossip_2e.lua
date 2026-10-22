@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["2ea299127fb8a03d"] = { "Beh, da quel che sento, la nuova pestilenza ha TUTTO il sapore della vecchia pestilenza, ma nessuna delle sue calorie o dei suoi carboidrati!", "." },
   ["2ea7f4d2d22b50fd"] = { "Mi credevano debole. Haha!!", "." },
   ["2eab6186c5291e28"] = { "Certo che posso aiutarti con l'addestramento. Ho solo il grado di praticante, ma di certo c'è qualcosa che posso mostrarti.", "." },
-  ["2ead4d3b5ee85191"] = { "Therum Deepforge è il nano con cui devi parlare. Uno dei migliori fabbri in circolazione, se vuoi la mia opinione. Lo trovi nel cuore del Dwarven District.", "." },
+  ["2ead4d3b5ee85191"] = { "Therum Deepforge è il nano con cui devi parlare. Uno dei migliori fabbri in circolazione, se vuoi la mia opinione. Lo trovi nel cuore del Distretto dei Nani.", "." },
   ["2eafe641cf4c350a"] = { "Sabbie del deserto, sollevatevi e oscurate il sole!", "." },
   ["2ec46bdb752b60d2"] = { "Queste atrocità non morte saranno distrutte!", "." },
   ["2ec6a705438ec035"] = { "Evvai! È ora di far festa!", "." },

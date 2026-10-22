@@ -40,7 +40,7 @@ WFJ.Data.add("gossip", {
   ["cbbf0c3957f116d8"] = { "Ormai è finita, restano solo le lacrime. Tutto il materiale bellico viene trasportato alla ⟦Cenarion Hold=Fortezza Cenariana⟧, a ⟦Silithus=Silitus⟧, e arriverà in meno di $2113w giorni. Non manca molto prima che lo scettro sia ricomposto e la guerra cominci finalmente.", "." },
   ["cbbfb3488d820936"] = { "Gli assassini sono qui! Presto, prima che raggiungano il magistrato!", "." },
   ["cbc1e83ae6203520"] = { "Non stai solo facendo perdere tempo ai tuoi compagni di studio, stai facendo perdere tempo anche a me.", "." },
-  ["cbcc136a5c6ab52f"] = { "Ohè! Cerchi addestramento nella via del guerriero, eh? Kelstrum Stonebreaker ti farà sudare! Basta che tu marci fino alla Hall of Arms, a est dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
+  ["cbcc136a5c6ab52f"] = { "Ohè! Cerchi addestramento nella via del guerriero, eh? Kelstrum Stonebreaker ti farà sudare! Basta che tu marci fino al Salone delle Armi, a est dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["cbd585a35d7d7541"] = { "La battaglia infuria, e sia il nostro capitano sia quello del nemico sono caduti!\n\nOra Drek'Thar ci guida dalla ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧, e il nano Vanndar Stormpike si nasconde nel profondo di Dun Baldar. Sconfiggi Vanndar e conquista la vittoria per l'⟦Horde=Orda⟧!", "." },
   ["cbe36745a181a856"] = { "Piagnone! Piagnone!", "." },
   ["cbebe5a9504cf573"] = { "Salute, {class}! Ho un solo obiettivo: catalogare e registrare tutto il sapere legato alla storia di ⟦Duskwood=Boscovespro⟧ e ⟦Darkshire=Borgoscuro⟧. Forse potresti aiutarmi nella mia impresa?", "." },

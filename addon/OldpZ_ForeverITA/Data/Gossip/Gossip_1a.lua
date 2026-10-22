@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["1a1a96cd7a7419b5"] = { "Ehi! Allontanati da lì!", "." },
   ["1a1ec46941144445"] = { "Vuoi abbassare le nostre difese globali per accontentare un magistrato paranoico e un accampamento di gentaglia che con ogni probabilità soffre di un colpo di calore.", "." },
-  ["1a29e24c7eed9805"] = { "Ti ha convocato Lago Blackwrench, maestro degli stregoni di ⟦Ironforge=Forgiardente⟧. Faresti bene a presentarti da lui subito. Lo troverai nel quartiere della Forlorn Cavern.", "." },
+  ["1a29e24c7eed9805"] = { "Ti ha convocato Lago Blackwrench, maestro degli stregoni di ⟦Ironforge=Forgiardente⟧. Faresti bene a presentarti da lui subito. Lo troverai nel quartiere della Caverna degli Inganni.", "." },
   ["1a31df40b39600f0"] = { "Che altro hai da dire?", "." },
   ["1a3b9cb1a8bb7ea2"] = { "Porterò le tue viscere come collana.", "." },
   ["1a42443c103d7dff"] = { "Malton, zuccone!", "." },

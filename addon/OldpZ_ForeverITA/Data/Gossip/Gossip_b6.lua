@@ -46,7 +46,7 @@ WFJ.Data.add("gossip", {
   ["b6bc541b11548da9"] = { "Una volta costruito il congegno, basta attivarlo per essere portati via nella splendida ⟦Gadgetzan=Meccania⟧! Quasi tutti quelli che hanno usato il congegno sono arrivati qui sulla piattaforma con lo stesso aspetto che avevano alla partenza!\n\nCi sono state alcune segnalazioni di persone trasportate e sostituite dalle loro versioni malvagie di un universo alternativo, ma di sicuro risolveremo presto la cosa...", "." },
   ["b6be6c945bc7d7aa"] = { "Cosa sai della ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["b6c41e2231be9e8c"] = { "Se brami la via del Guerriero, devi cercare Krang Stonehoof. Lo troverai nell'angolo sud-orientale del villaggio, nel suo cerchio d'addestramento, spesso intento a istruire altri allievi.", "." },
-  ["b6c4cad4e798a2f0"] = { "Ti stavo aspett...\n\n<Rimblat tossisce.>\n\nScusami, vecchia abitudine. Sono Rimblat dell'Earthen Ring.", "." },
+  ["b6c4cad4e798a2f0"] = { "Ti stavo aspett...\n\n<Rimblat tossisce.>\n\nScusami, vecchia abitudine. Sono Rimblat del Circolo della Terra.", "." },
   ["b6c96d4531a69f0e"] = { "Faranno fuochi d'artificio per tutta la notte. Dalle sei di sera fino all'alba, il cielo sopra Elune'ara sarà in fiamme!", "." },
   ["b6d3df6e9196dd90"] = { "Direi di no, non ho bisogno di saltare in aria un'altra volta.", "." },
   ["b6d4ebe261cefe29"] = { "Questa spedizione prosciuga terribilmente le scorte militari.", "." },

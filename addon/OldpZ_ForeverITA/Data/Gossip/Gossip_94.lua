@@ -38,7 +38,7 @@ WFJ.Data.add("gossip", {
   ["94ca7afefc057b0c"] = { "Troverai Sildinair alla ⟦Warrior's Terrace=Terrazza dei Guerrieri⟧, tra le guardie: i suoi occhi acuti scrutano la foresta in cerca di nemici che osino entrare nella nostra bella città.", "." },
   ["94d095bc9713d85d"] = { "Devi trovare, tra i miserabili nella parte inferiore di questa cittadella, qualcuno che abbia ottenuto un ⟦Unadorned Seal of Ascension=Sigillo dell'Ascesa Disadorno⟧. Per uno degli esseri inferiori è un grande onore ottenere questo oggetto, perché è il primo passo per accedere alla cittadella superiore e diventare una delle guardie scelte di Nefarian, la legione Manonera. Trova un oggetto simile e portamelo, così che possa esaminarne le proprietà. Saprò come procedere una volta completata l'ispezione del sigillo.", "." },
   ["94d6c60c50cf1372"] = { "Capisco, Madre Terra.", "." },
-  ["94d7754acf5c16fc"] = { "La buona vecchia Erma si prende cura degli animali del posto da anni ormai. Di sicuro sarà felice di occuparsi di quelli che vuoi lasciarle. La trovi proprio fuori dalla Lion's Pride Inn.", "." },
+  ["94d7754acf5c16fc"] = { "La buona vecchia Erma si prende cura degli animali del posto da anni ormai. Di sicuro sarà felice di occuparsi di quelli che vuoi lasciarle. La trovi proprio fuori dalla Locanda del Fiero Leone.", "." },
   ["94e3112d2c85f4d6"] = { "Rane e palle di cuoio in vendita!", "." },
   ["94e5c305af97064e"] = { "Mi interessa l'addestramento in alchimia.", "." },
   ["94ea497a80936448"] = { "Grurk aprire presto. Poi noi dividere tesoro.", "." },

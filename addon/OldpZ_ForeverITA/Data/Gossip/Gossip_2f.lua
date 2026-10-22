@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["2fb94190480b84f7"] = { "Quali ambienti molto stressanti farebbero destabilizzare i Terrigeni?", "." },
   ["2fb9ddd8887f182a"] = { "Puoi dirmi qualcosa di più su questo posto?", "." },
   ["2fbd2013fb3a3b66"] = { "Basta! Niente più birra finché questo pasticcio non sarà sistemato!", "." },
-  ["2fc37b7cc6f89a5f"] = { "<Un/Una> {class}, eh? Beh, allora vorrai parlare con Thorfin Stoneshield, laggiù nel Dwarven District. \r\n\nAh, e assicurati di dirgli che se pesto ancora una volta i bisogni del suo famiglio, addestrerà gli altri cacciatori da dietro le sbarre delle ⟦Stockade=Segrete di Roccavento⟧!", "." },
+  ["2fc37b7cc6f89a5f"] = { "<Un/Una> {class}, eh? Beh, allora vorrai parlare con Thorfin Stoneshield, laggiù nel Distretto dei Nani. \r\n\nAh, e assicurati di dirgli che se pesto ancora una volta i bisogni del suo famiglio, addestrerà gli altri cacciatori da dietro le sbarre delle ⟦Stockade=Segrete di Roccavento⟧!", "." },
   ["2fc468bce0c332f8"] = { "Vieni dalle ⟦Burning Steppes=Steppe Ardenti⟧? Hai le mie uova di drago nero?", "." },
   ["2fc6c1a97c61b49a"] = { "Hai sentito quella dell'ogre, del goblin e <del/della> {race}?", "." },
   ["2fc8261d9c5d1f74"] = { "Grazie, Tirion. E la tua identità?", "." },

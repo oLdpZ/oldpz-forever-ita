@@ -4,7 +4,7 @@ WFJ.Data.add("gossip", {
   ["130cd681b412b212"] = { "Miserabile!", "." },
   ["131a6e7c4a418d33"] = { "Certo che non ho io il frammento. Sarebbe da idioti. Cammino tra selvaggi in questa terra maledetta! Non riesco a fare cinque passi senza che un orco o un umano impazzito cerchi di piantarmi un bastone appuntito nella pelle. In qualsiasi momento potresti benissimo trovarti a parlare con il mio spirito.\n\nComunque... l'ho nascosto.\n\nAvanti... chiedimi dove.", "." },
   ["131ee5d57d439074"] = { "Noi, suoi servitori giurati, eseguiamo i suoi ordini e imponiamo il suo dominio di ferro. Separato dalle energie del suo regno infuocato, Ragnaros non è che l'ombra di se stesso. Tuttavia, ha forza più che sufficiente per porre fine alla tua vita.", "." },
-  ["13232029bfec7c82"] = { "Sono Muln Earthfury dell'Earthen Ring. Cosa ti porta da me oggi?", "." },
+  ["13232029bfec7c82"] = { "Sono Muln Earthfury del Circolo della Terra. Cosa ti porta da me oggi?", "." },
   ["1324ba9129c147ed"] = { "Studio gli elementi noti e ignoti del nostro mondo.", "." },
   ["132ec40895521ca8"] = { "Sono anni che non ragiono con il cuore, ma ora sta tornando tutto a galla.", "." },
   ["1338397e0c767a0a"] = { "Preparati a incontrare il tuo creatore.", "." },

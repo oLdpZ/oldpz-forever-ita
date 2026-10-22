@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["c1001c3f5ffa1cd4"] = { "Il ⟦Stonehearth Bunker=Fortilizio di Cordipietra⟧ è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ lo distruggerà!", "." },
   ["c1038cf54ed7d476"] = { "Il corpo di %s cade a terra, un mucchio senza vita.", "." },
-  ["c1063221546e3be3"] = { "Allora devi parlare con Osborne. A ⟦Stormwind=Roccavento⟧ non c'è maestro delle arti furtive migliore di lui. Cercalo a Old Town.", "." },
+  ["c1063221546e3be3"] = { "Allora devi parlare con Osborne. A ⟦Stormwind=Roccavento⟧ non c'è maestro delle arti furtive migliore di lui. Cercalo nella Città Vecchia.", "." },
   ["c11cfefd5874bcb5"] = { "Sì, subito, mamma!", "." },
   ["c11eacf43d2e2c82"] = { "La mia fede guida le mie azioni, {race}. So che Ivus verrà.", "." },
   ["c13766548658c2f4"] = { "Noi, l'⟦Alliance=Alleanza⟧, trionferemo!", "." },
@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["c1e59e6f61303b54"] = { "Mi spiace, {class}, ma devi diventare più potente prima che io possa lasciarti entrare nel ⟦Arathi Basin=Bacino d'Arathi⟧.", "." },
   ["c1ee62c2c3f183d0"] = { "Gli Dei Primordiali? Impossibile!", "." },
   ["c1f0bd1bf109bef1"] = { "Quando il rappresentante parla con te, comincia ogni battuta con il tuo nome. Se non vedi il tuo nome, non sta ancora parlando con te.", "." },
-  ["c1f184c0eb8dcda8"] = { "Dovresti parlare con Gelman Stonehand. Mi pare che abbia una casa nel Dwarven District, ma non ricordo bene. Io darei un'occhiata lì.", "." },
+  ["c1f184c0eb8dcda8"] = { "Dovresti parlare con Gelman Stonehand. Mi pare che abbia una casa nel Distretto dei Nani, ma non ricordo bene. Io darei un'occhiata lì.", "." },
   ["c1fa2f35a4ae7816"] = { "Ansekhwa, il maestro d'armi tauren, si trova sull'altura inferiore di Picco del Tuono. Può insegnare le mazze a una e a due mani, i bastoni e i fucili.\n\nHanashi, qui accanto a me, può istruirti nell'uso degli archi, delle asce a una e a due mani, dei bastoni e di ogni genere di armi da lancio.\n\nArchibald, il maestro d'armi non morto nel ⟦War Quarter=Quartiere della Guerra⟧ di ⟦Undercity=Sepulcra⟧, può insegnare l'uso delle balestre, dei pugnali, delle spade a una e a due mani e delle armi in asta.", "." },
   ["c1ffd5933a17df9e"] = { "Tocca... a te.", "." },
 })

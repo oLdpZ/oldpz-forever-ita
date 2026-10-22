@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["35c1c072d70f0412"] = { "Ti parlerei se avessi un odore migliore. Che ne dici di un'acqua di colonia? Magari un profumo?", "." },
   ["35cfa0c312e54d2e"] = { "Dov'è l'anziano Goldwell?", "." },
   ["35d048b5232efe99"] = { "Ragnaros vede tutto, mortale.", "." },
-  ["35d5488df7421a57"] = { "Allora, <ragazzo/ragazza>, pensi di avere la stoffa per difendere l'⟦Alliance=Alleanza⟧ contro l'⟦Horde=Orda⟧ nella ⟦Alterac Valley=Valle d'Alterac⟧? Molto bene, allora vorrai parlare con il nostro Glordrum Steelbeard, qui a ⟦Ironforge=Forgiardente⟧. Lo troverai a studiare strategie sul tavolo da guerra nella Hall of Arms.", "." },
+  ["35d5488df7421a57"] = { "Allora, <ragazzo/ragazza>, pensi di avere la stoffa per difendere l'⟦Alliance=Alleanza⟧ contro l'⟦Horde=Orda⟧ nella ⟦Alterac Valley=Valle d'Alterac⟧? Molto bene, allora vorrai parlare con il nostro Glordrum Steelbeard, qui a ⟦Ironforge=Forgiardente⟧. Lo troverai a studiare strategie sul tavolo da guerra nel Salone delle Armi.", "." },
   ["35d64bfc06cf6953"] = { "Ho perso la mia ⟦Blade of Vaulted Secrets=Lama dei Segreti Ignoti⟧. Puoi sostituirmela?", "." },
   ["35d84acdb5f9ca48"] = { "Ho ordinato qualche spedizione di nuovi profumi e acque di colonia dalla città. Quando le avrò disimballate, ripassa e le avrò in vendita.", "." },
   ["35d9c7df4f8011c5"] = { "Eroe, ho una questione urgente con il caporale Splithoof.", "." },

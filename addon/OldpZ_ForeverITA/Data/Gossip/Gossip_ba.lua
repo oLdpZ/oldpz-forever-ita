@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["bac6a8695767839e"] = { "Forse dovresti parlare in questi dispositivi amplificatori di suono attaccati ai miei PUGNI DELLA FURIA.", "." },
   ["bac7eb05068d6691"] = { "Io sono Gath'Ilzogg! E tu sei <un/una> {race} sull'orlo della morte!", "." },
   ["bacca2abc90e5357"] = { "Sembra che tu voglia parlare con Maginor Dumas! Di solito lo trovi nel Wizard's Sanctum, nel ⟦Mage Quarter=Quartiere dei Maghi⟧. Certo, non si sa mai quando o dove quei maghi si teletrasporteranno.", "." },
-  ["bad6e111445ebb09"] = { "Puoi incantare la mia ascia? Vorrei un incantamento permanente. Magari più tardi, allora. Cerca Godan's Runeworks all'estremità ovest di The Drag, vicino alla Valle della Saggezza.", "." },
+  ["bad6e111445ebb09"] = { "Puoi incantare la mia ascia? Vorrei un incantamento permanente. Magari più tardi, allora. Cerca Godan's Runeworks all'estremità ovest del Varcolargo, vicino alla Valle della Saggezza.", "." },
   ["bad9e4775c657dce"] = { "Vediamo la tua attrezzatura da pesca.", "." },
   ["bada152a507b02bf"] = { "Ti do il benvenuto, <fratello/sorella> <mio/mia>. Se sei qui per addestrarti, sarò felice di addestrarti.\n\nCorrono voci di discordia nel ⟦Cenarion Circle=Circolo Cenariano⟧, ma non dovresti dare retta a queste chiacchiere. Il nostro Arcidruido, Fandral Staghelm, guida noi e tutta Teldrassil verso la gloria!", "." },
   ["bae33dc03ca17c6f"] = { "Se vuoi sapere degli arrivi e delle partenze di carovane e mercanti qui all'⟦Splintertree Post=Avamposto di Troncorotto⟧, per tua fortuna sono proprio chi cerchi. Per tua sfortuna, però, la gente non mi piace.\n\nSe vuoi qualcosa, sbrigati.", "." },

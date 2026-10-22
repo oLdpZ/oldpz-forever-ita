@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["873e53ad9401fbd7"] = { "<Ayessa Dawnsinger ti fissa con una furia a stento trattenuta.>\n\nO hai molto coraggio, o pochissimo cervello, per mettere piede così sfacciatamente nel nostro dominio dopo aver versato sangue Windshaper. Siamo lenti a perdonare, e non dimentichiamo mai.\n\nFaresti meglio ad andartene subito. Se non fossimo al centro di Zephras, saresti già <morto/morta>.", "." },
   ["8743c613911c68c0"] = { "Sì, nessun problema, {name}! Scusa... pensavo che avessi già finito.", "." },
   ["8743f489559e88f0"] = { "Non si può permettere a questo male di entrare nel nostro mondo! Venite, figli miei!", "." },
-  ["87513fb57afc6821"] = { "Qualsiasi occasione per combattere contro l'⟦Horde=Orda⟧, soprattutto contro gli orchi, è un bel divertimento, se vuoi saperlo. Troverai battaglia in abbondanza nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧, eccome. Vai alla Hall of Arms e parla con Lylandris. Ti indicherà la strada.", "." },
+  ["87513fb57afc6821"] = { "Qualsiasi occasione per combattere contro l'⟦Horde=Orda⟧, soprattutto contro gli orchi, è un bel divertimento, se vuoi saperlo. Troverai battaglia in abbondanza nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧, eccome. Vai al Salone delle Armi e parla con Lylandris. Ti indicherà la strada.", "." },
   ["875ad23f73d5ce46"] = { "Orsi??", "." },
   ["8762d206bf1e83ec"] = { "Quando impareranno?", "." },
   ["8767bd028dcce4e0"] = { "Temo che non riusciremo mai a placarli...", "." },

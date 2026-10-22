@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["d08ad249ba71df22"] = { "Possiamo fare una pausa? I piedi mi stanno uccidendo, e quelle... quelle cose laggiù mi mettono i brividi.", "." },
   ["d08fdd677f65bdc4"] = { "Più aspetti, meno futuro avrai da farti predire.", "." },
   ["d090ef239394073a"] = { "Ti do il benvenuto al Blue Recluse, dove gli appassionati di magia si riuniscono per scaricare la tensione. Non in senso letterale, s'intende. Cosa ti porto, <signore/signora>?", "." },
-  ["d09f0b82e3d7a1c4"] = { "Ti serve la Kodohide Leatherworkers. La trovi a metà di The Drag.", "." },
+  ["d09f0b82e3d7a1c4"] = { "Ti serve la Kodohide Leatherworkers. La trovi a metà del Varcolargo.", "." },
   ["d0a062b8151c629d"] = { "%s sfoglia freneticamente le pagine di un grosso tomo.", "." },
   ["d0bcc91ef5a6932c"] = { "Grazie ancora per aver aiutato Hilary, <signore/signorina>! Da grande voglio diventare come te, un vero eroe!", "." },
   ["d0bda16ed9c75477"] = { "No! Amico mio... cos'è successo? È tutta colpa mia...", "." },

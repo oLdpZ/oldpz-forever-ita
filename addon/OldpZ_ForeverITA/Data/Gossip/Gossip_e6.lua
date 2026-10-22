@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["e6986385632d05f0"] = { "Ho perso i miei ⟦Zandalar Haruspex's Bracers=Bracciali dell'Aruspice degli Zandalari⟧ e me ne serve un altro paio.", "." },
   ["e6a38ef9ddca142d"] = { "Parla con me per una birra gratis al Pig and Whistle!", "." },
   ["e6a78832ee90bba6"] = { "Troverai l'anziano Grimtotem al ⟦Lariss Pavilion=Padiglione di Lariss⟧, a Feralas.", "." },
-  ["e6a824dc15398cf3"] = { "Cerchi Shenthul della Shadowswift Brotherhood, eh? In The Drag, di fronte a Droffers and Son Salvage, cerca un tunnel che scende nella Cleft of Shadow.", "." },
+  ["e6a824dc15398cf3"] = { "Cerchi Shenthul della Shadowswift Brotherhood, eh? Nel Varcolargo, di fronte a Droffers and Son Salvage, cerca un tunnel che scende nella Cleft of Shadow.", "." },
   ["e6ae75f1160c3112"] = { "Ho perso il mio ⟦Cloak of the Gathering Storm=Mantello della Tempesta Crescente⟧. Puoi sostituirmelo?", "." },
   ["e6b27eef0245d289"] = { "Vorrei comprare da te.", "." },
   ["e6bee56fc3fb12f6"] = { "Senza offesa per chiunque sia questo Nijel, ma questo accampamento non è il posto più comodo dove abbia mai passato la notte, se capisci cosa intendo, {name}.", "." },

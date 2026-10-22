@@ -5,7 +5,7 @@ WFJ.Data.add("gossip", {
   ["5702e95589dbbacd"] = { "Minaccia fisica rilevata! Manovra evasiva! COCCODÈ!", "." },
   ["5703f5c48586c9da"] = { "Ah, mi sa che sto correndo troppo. Ras Frostwhisper è il sovrintendente di questa scuola, l'essere che si occupa dell'addestramento di tutti i suoi Maestri Oscuri. Luogotenente e allievo prediletto di Kel'Thuzad. Un tempo era un mago autodidatta di Stromgarde: un mago rinnegato che non aveva mai ricevuto una formazione regolare da Dalaran.\n\nQuando Kel'Thuzad fondò il Culto, Ras fu tra i primi a unirsi alle sue file. Ras sapeva che attraverso la magia oscura avrebbe trovato l'immortalità.", "." },
   ["5706a363fda0e81e"] = { "Devi fare i punti più piccoli, {name}. Ti cadranno meno oggetti dalle faretre e dalle sacche per munizioni. E poi, a nessuno piace una tunica bitorzoluta.", "." },
-  ["57092f9267ff939d"] = { "Perché mai ti servirebbe un'abilità del genere? Solo la gente disonesta vorrebbe imparare a scassinare le serrature.\n\nSe proprio vuoi imparare, il posto migliore dove cercare è Old Town. Probabilmente in uno di quei vicoli secondari.", "." },
+  ["57092f9267ff939d"] = { "Perché mai ti servirebbe un'abilità del genere? Solo la gente disonesta vorrebbe imparare a scassinare le serrature.\n\nSe proprio vuoi imparare, il posto migliore dove cercare è la Città Vecchia. Probabilmente in uno di quei vicoli secondari.", "." },
   ["571027f32f115883"] = { "Quanti insetti sporcaccioni da queste parti.", "." },
   ["571252ecdb613b8c"] = { "Cos'era? Un gigante marino? Meglio prevenire che curare. Fuoco!", "." },
   ["5712f6a8c5d6ebe2"] = { "Il ⟦Frostwolf Graveyard=Cimitero dei Lupi Bianchi⟧ è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo conquisterà!", "." },

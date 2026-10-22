@@ -12,7 +12,7 @@ WFJ.Data.add("item", {
   [276279] = { "Una vincita in monete poco entusiasmante.", 0x0ab98c53, "u" },
   [276280] = { "Un discreto premio in monete.", 0xe3c20977, "u" },
   [276337] = { "Spaventa tutti i demoni entro $N1 m per $D1.", 0x7f25af81, "u" },
-  [276423] = { "Mazu'kon dell'Earthen Ring sarebbe molto interessato a questo frammento di energia elementale.", 0x3131fb8e, "u" },
+  [276423] = { "Mazu'kon del Circolo della Terra sarebbe molto interessato a questo frammento di energia elementale.", 0x3131fb8e, "u" },
   [276471] = { "Contiene le provviste necessarie a un Cacciatore di livello $N1.", 0x3e584274, "u" },
   [276472] = { "Contiene le provviste necessarie a un Cacciatore di livello $N1.", 0xc1fc0134, "u" },
   [276473] = { "Contiene le provviste necessarie a un Cacciatore di livello $N1.", 0x73527c7a, "u" },

@@ -31,7 +31,7 @@ WFJ.Data.add("gossip", {
   ["4d7881b4ca71190d"] = { "Le migliori bevute di ⟦Stormwind=Roccavento⟧!", "." },
   ["4d7db1bef187fe8f"] = { "Credo... credo che stia funzionando!", "." },
   ["4d8246eec5539370"] = { "Ora dobbiamo solo liberare Tobias e poi possiamo andarcene da qui. Da questa parte!", "." },
-  ["4d957417274108f7"] = { "Durtham Greldon, laggiù nella Forlorn Cavern, può insegnarti tutti i trucchi dello scasso. Solo non metterti a fare pratica con quei trucchi qui a ⟦Ironforge=Forgiardente⟧, se capisci cosa intendo.", "." },
+  ["4d957417274108f7"] = { "Durtham Greldon, laggiù nella Caverna degli Inganni, può insegnarti tutti i trucchi dello scasso. Solo non metterti a fare pratica con quei trucchi qui a ⟦Ironforge=Forgiardente⟧, se capisci cosa intendo.", "." },
   ["4da2f5f1886cfb4f"] = { "Ah, la dolce aria salmastra di ⟦Ratchet=Porto Paranco⟧.", "." },
   ["4da665cde68807ff"] = { "Fratello Wilhelm si allena spesso con Lyria Du Lac, nel retro della fucina di ⟦Goldshire=Borgodoro⟧. Da lui potresti imparare un paio di cose su come essere un paladino.", "." },
   ["4daf2bd21f055cbc"] = { "(Continua.)", "." },

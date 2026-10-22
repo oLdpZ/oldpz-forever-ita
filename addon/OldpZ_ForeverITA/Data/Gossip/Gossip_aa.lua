@@ -31,7 +31,7 @@ WFJ.Data.add("gossip", {
   ["aa78f17405c37c8f"] = { "Ciao! Che piacere rivederti, {name}. Dimmi, hai completato la prima missione che ti ho dato? Se sì, potrei avere una seconda missione per te...", "." },
   ["aa7ae11b5ec90944"] = { "La corruzione si insinua nel boschetto della natura. La foresta va protetta a ogni costo.", "." },
   ["aa7b0486a85c46c7"] = { "Devo tornare al mio mezzo. Cerca e distruggi imminente! Coprimi! Guardami le spalle! VAI VAI VAI!", "." },
-  ["aa81707bc4102b7c"] = { "Vuoi imparare la conciatura, eh? Simon Tanner potrebbe insegnartela. Lo trovi a Old Town, al Protective Hide.", "." },
+  ["aa81707bc4102b7c"] = { "Vuoi imparare la conciatura, eh? Simon Tanner potrebbe insegnartela. Lo trovi nella Città Vecchia, al Protective Hide.", "." },
   ["aa8943a47dd4fca3"] = { "Metti alla prova le tue abilità, {name}. Addomestica l'Adult Plainstrider.", "." },
   ["aa89c2753fa95dbe"] = { "La tua vita è mia!", "." },
   ["aa8a034cc8437e9d"] = { "Il ⟦Stonehearth Graveyard=Cimitero di Cordipietra⟧ è stato conquistato dall'⟦Alliance=Alleanza⟧!", "." },

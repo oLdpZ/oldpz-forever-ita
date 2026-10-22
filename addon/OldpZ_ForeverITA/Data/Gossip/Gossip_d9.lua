@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["d9948d48a39c598b"] = { "Ben fatto! La tua conoscenza delle pozioni sta progredendo bene.", "." },
   ["d99635213fcb0428"] = { "Continua, ti prego, questa storia è intrigante.", "." },
   ["d9986a819b17d81f"] = { "Attendi mentre cerco di unire i frammenti perché tornino interi.", "." },
-  ["d99c53ee1040cabf"] = { "Ti interessa il cuoio, eh? Mi sa che dovresti parlare con Simon Tanner, a Old Town. Ha una bottega che si chiama Protective Hide.", "." },
+  ["d99c53ee1040cabf"] = { "Ti interessa il cuoio, eh? Mi sa che dovresti parlare con Simon Tanner, nella Città Vecchia. Ha una bottega che si chiama Protective Hide.", "." },
   ["d99f5863bdcc4743"] = { "Va bene, va bene! Basta combattere. Nessun altro deve farsi male.", "." },
   ["d9a26a8ee673fc22"] = { "No! Non puoi essere più forte del Foulweald! No!!", "." },
   ["d9a32818da7e9ac9"] = { "La Torre di Brinarossa protegge il ⟦Iceblood Garrison=Presidio di Brinarossa⟧ da sud-est.\n\nÈ controllata dall'⟦Horde=Orda⟧.", "." },

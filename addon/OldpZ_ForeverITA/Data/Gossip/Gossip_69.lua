@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["6994ab7ce211cf9a"] = { "Oh, ciao! Mi chiamo Sarah. Cosa posso fare per te?", "." },
   ["69961a7e952607a6"] = { "Parlami delle miniere.", "." },
   ["69992b88f3bbc042"] = { "Ho tutte le provviste da cucina che ti potranno mai servire, <amico/amica>!", "." },
-  ["699de0ad9f92a993"] = { "Hai preso la decisione giusta, {class}. Troverai il nostro maestro di battaglia, Glordrum Steelbeard, nella Hall of Arms. Buona fortuna, {name}!", "." },
+  ["699de0ad9f92a993"] = { "Hai preso la decisione giusta, {class}. Troverai il nostro maestro di battaglia, Glordrum Steelbeard, nel Salone delle Armi. Buona fortuna, {name}!", "." },
   ["69a2a3705aad5dd5"] = { "La ⟦Light of Elune=Luce di Elune⟧ risplenda su di te, {name}! Troverai Aethalas, la nostra maestra di battaglia, sulla ⟦Warrior's Terrace=Terrazza dei Guerrieri⟧. Ti aiuterà a raggiungere la ⟦Warsong Gulch=Forra dei Cantaguerra⟧.", "." },
   ["69a5668e2272f902"] = { "Pare che i venti ti abbiano portato da me! Ti insegno volentieri l'arte della cucina, se hai voglia di imparare.", "." },
   ["69a75e72f6b1d94a"] = { "La locanda", "." },

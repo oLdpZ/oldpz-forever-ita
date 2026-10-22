@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["ccccf42b077f01f9"] = { "Cos'è successo al bastone?", "." },
   ["ccd55df193eb21bd"] = { "NEFARIAN È STATO UCCISO! Popolo di Orgrimmar, inchinati davanti alla potenza di {name} e dei suoi alleati, poiché hanno inferto allo Stormo dei Draghi Neri un colpo che di certo scuoterà gli Aspetti dal loro torpore! Questa sconfitta si farà sentire dal padre dello Stormo dei Draghi Neri: oggi Alamorte si contorce nel dolore e nell'angoscia!", "." },
   ["ccd81e76d5319f4c"] = { "Esamino ancora il corpo.", "." },
-  ["cce8298829989863"] = { "Uno stregone? Be', se fossi uno stregone, starei probabilmente nel posto più buio da queste parti... cioè la cantina della Lion's Pride Inn. È lì che dovresti cercare per prima cosa.", "." },
+  ["cce8298829989863"] = { "Uno stregone? Be', se fossi uno stregone, starei probabilmente nel posto più buio da queste parti... cioè la cantina della Locanda del Fiero Leone. È lì che dovresti cercare per prima cosa.", "." },
   ["cce892491b6d14c9"] = { "Hai strillato come una ragazzina, la cosa più buffa che abbia mai visto.", "." },
   ["ccf3ab47a4db9e4e"] = { "Bada che anche i tuoi creatori sono fallibili.", "." },
 })

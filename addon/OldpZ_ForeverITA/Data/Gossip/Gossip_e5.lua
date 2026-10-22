@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["e55a1a100aa85c6d"] = { "⟦Tower Point=Torre Granguardia⟧ controlla il passo tra il ⟦Field of Strife=Pian della Discordia⟧ e i territori dell'⟦Horde=Orda⟧ a sud.\n\nÈ controllata dall'⟦Alliance=Alleanza⟧.", "." },
   ["e55b98727d0a31f0"] = { "Grazie, nobile {class}.", "." },
   ["e55dfbfb675b8f24"] = { "%s si inchina davanti a Krang Stonehoof", "." },
-  ["e55fed8e0cba020f"] = { "Tutti i tipi da furfanti bazzicano The Forlorn Cavern, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧. Scommetto che ci troverai Fenthwick, di sicuro intento a contare le monete di un altro borseggiatore. Uno di questi giorni lo acchiappo!\n\nNel frattempo terrò d'occhio anche te, <ragazzo/ragazza>.", "." },
+  ["e55fed8e0cba020f"] = { "Tutti i tipi da furfanti bazzicano la Caverna degli Inganni, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧. Scommetto che ci troverai Fenthwick, di sicuro intento a contare le monete di un altro borseggiatore. Uno di questi giorni lo acchiappo!\n\nNel frattempo terrò d'occhio anche te, <ragazzo/ragazza>.", "." },
   ["e5627e6b4d12267f"] = { "Sull'attenti, soldato!\n\nWINKY! RAPPORTO!", "." },
   ["e56db50d49d03188"] = { "Ecco fatto...", "." },
   ["e56dc4f702a8ddca"] = { "Il tuo destino è segnato, Deliana! Pagherai per i tuoi oltraggi contro lord Valthalak!", "." },

@@ -37,7 +37,7 @@ WFJ.Data.add("gossip", {
   ["53c20d008f110426"] = { "Basta vedere come stai in piedi per capire che non sei <un/una> <guerriero/guerriera>.\n\nPerché non vai a fare qualcosa di sicuro, tipo leggere un libro?", "." },
   ["53c806953261cf33"] = { "TENETE LA LINEA! NON FATE PASSARE NIENTE!", "." },
   ["53c84853ffcedfe8"] = { "È stato rinfrescante. Ora ci sono informazioni che vanno riferite...", "." },
-  ["53c8a1cecfab7b9c"] = { "Hai sentito parlare del tram, eh? Che viaggio! Lo trovi nel Dwarven District, verso il fondo. Ah, e ricordati di tenere braccia e gambe dentro il tram mentre è in movimento.", "." },
+  ["53c8a1cecfab7b9c"] = { "Hai sentito parlare del tram, eh? Che viaggio! Lo trovi nel Distretto dei Nani, verso il fondo. Ah, e ricordati di tenere braccia e gambe dentro il tram mentre è in movimento.", "." },
   ["53ca038aaa7b7c98"] = { "Soldati Horus, Tilling, Rockwell...", "." },
   ["53dc059d2e716321"] = { "Saluti! Custodisco l'ingresso. Usa i dischi appropriati per accedere a Uldum.", "." },
   ["53e00d4bf9f833ab"] = { "La miglior birra di ⟦Stormwind=Roccavento⟧, Langston. Grazie.", "." },

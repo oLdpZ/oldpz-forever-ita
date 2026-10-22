@@ -19,7 +19,7 @@ WFJ.Data.add("gossip", {
   ["c751a56b3af86718"] = { "Ah, il buon vecchio Brandur Ironhammer. Non c'è dubbio che ti darà la guida che cerchi, <ragazzo/ragazza>. Lo troverai nella Hall of Mysteries, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["c766eccd6888dad3"] = { "Ci sono Tuberi di Foglia Blu in questa trincea! È oro che aspetta solo di essere estratto, te lo dico io!", "." },
   ["c768d5273273710f"] = { "Sei <tornato/tornata> ad aiutare Kum'isha, {race}? Non preoccuparti, la fitta che senti alla bocca dello stomaco è solo la tua forza di volontà che crolla.\n\nPer fortuna, per questa raccolta la forza di volontà non ti servirà. Non ho dubbi che apprezzerai i ninnoli che ti farò trovare al tuo ritorno con l'oggetto.", "." },
-  ["c76e43f60a3d89ab"] = { "Hai uno scrigno del tesoro? Fammi vedere! D'accordo, cerca Zando'zan nel Cleft of Shadow. Per trovarlo, cerca il tunnel che scende in The Drag.", "." },
+  ["c76e43f60a3d89ab"] = { "Hai uno scrigno del tesoro? Fammi vedere! D'accordo, cerca Zando'zan nel Cleft of Shadow. Per trovarlo, cerca il tunnel che scende nel Varcolargo.", "." },
   ["c770b7f6a21e433c"] = { "%s lancia un grido trionfante.", "." },
   ["c77505da274c7cbc"] = { "TRAFIGGETELI, FRATELLI!", "." },
   ["c780afe294966e1d"] = { "Si trova nel ⟦Trade District=Quartiere del Commercio⟧, <cittadino/cittadina>. È quasi dritto davanti all'ingresso di ⟦Stormwind=Roccavento⟧.", "." },

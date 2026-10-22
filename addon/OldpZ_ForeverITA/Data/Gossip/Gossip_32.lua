@@ -12,7 +12,7 @@ WFJ.Data.add("gossip", {
   ["3229c05b08063142"] = { "Informazioni sul ⟦Blood of Heroes=Sangue degli Eroi⟧.", "." },
   ["322b30a43755d7f7"] = { "Ti chiedo scusa, Lady Prestor. Non era mia intenzione.", "." },
   ["3232dba57d8669a7"] = { "Commercio! Lo bramo!", "." },
-  ["32342e57af1668c9"] = { "È bene che tu voglia onorare le tue prede facendo buon uso dei loro corpi. Trova Thuwd dentro la Kodohide Leatherworks, al centro di The Drag.", "." },
+  ["32342e57af1668c9"] = { "È bene che tu voglia onorare le tue prede facendo buon uso dei loro corpi. Trova Thuwd dentro la Kodohide Leatherworks, al centro del Varcolargo.", "." },
   ["32382afe8e816a0e"] = { "Oh no... Mist... che cos'è successo...?", "." },
   ["323bc67b3f3c98d7"] = { "Sei tornat<o/a>, {name}. Devi raccontarmi tutto quello che hai scoperto. Ma prima occupiamoci della tua ricompensa.", "." },
   ["324b7b29c7468979"] = { "Che sia l'ultimo!", "." },

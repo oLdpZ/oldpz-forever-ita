@@ -37,7 +37,7 @@ WFJ.Data.add("gossip", {
   ["72a816c83e4ad8c4"] = { "Allora va' da Una, dagli armaioli di ⟦Thunder Bluff=Picco del Tuono⟧. Li trovi sull'altura di mezzo.", "." },
   ["72ab257f248757ce"] = { "Come osi comunicare con un duca del Concilio, verme!", "." },
   ["72acd038ec272037"] = { "Scholomance si trova nelle cripte sotto il maniero di Caer Darrow. Un tempo appartenuto alla nobile famiglia Barov, il maniero cadde in rovina dopo la Seconda Guerra. Quando il mago Kel'Thuzad reclutava seguaci per il suo Cult of the Damned, spesso prometteva l'immortalità a chi serviva il suo Re dei Lich. I Barov caddero sotto la sua influenza e donarono il maniero, ma i cultisti sterminarono la famiglia e trasformarono le cripte in una scuola di negromanzia. Anche se Kel'Thuzad non vi risiede più, cultisti e insegnanti sono ancora lì.", "." },
-  ["72acd473b31118e0"] = { "Faresti meglio ad andare a ⟦Stormwind=Roccavento⟧, nel Dwarven District, se vuoi imparare a estrarre minerali. Di certo uno dei nani lì può insegnarti la professione.", "." },
+  ["72acd473b31118e0"] = { "Faresti meglio ad andare a ⟦Stormwind=Roccavento⟧, nel Distretto dei Nani, se vuoi imparare a estrarre minerali. Di certo uno dei nani lì può insegnarti la professione.", "." },
   ["72bc2f7eb9376cbb"] = { "Devi avere la reputazione Osannato presso gli gnomi degli Gnomeregan Exiles prima che ti insegni a pilotare un Tecnostruzzo, {class}.", "." },
   ["72be773e89c4e562"] = { "Per servire la Dama Oscura e Varimathras dobbiamo far avanzare il fronte contro l'Infestazione Umana.", "." },
   ["72c368970937975b"] = { "Che vengano pure! Non ho paura di qualche bestia rachitica!", "." },

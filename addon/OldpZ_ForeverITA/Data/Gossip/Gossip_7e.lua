@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["7e4522c484f31c81"] = { "Ho sentito che, dopo lo spettacolo pirotecnico, porteranno i calici ai tavoli. Faremo dei bei brindisi!", "." },
   ["7e46bb6badc55b59"] = { "%s esulta!", "." },
   ["7e4716e4447f5e8d"] = { "CHI OSA EVOCARE LOKHOLAR?", "." },
-  ["7e47bdff6ae31741"] = { "Devi imparare da Zamja. Va' al Borstan's Firepit, al piano superiore di The Drag, prendendo le scale a sinistra quando entri dalla ⟦Valley of Strength=Valle della Forza⟧.", "." },
+  ["7e47bdff6ae31741"] = { "Devi imparare da Zamja. Va' al Borstan's Firepit, al piano superiore del Varcolargo, prendendo le scale a sinistra quando entri dalla ⟦Valley of Strength=Valle della Forza⟧.", "." },
   ["7e4d3f30c695111d"] = { "Niente scalda le ossa come un po' di Celebrazione della Luna!", "." },
   ["7e50d7ad6632fcae"] = { "Tutte le raccolte sono finite, e le merci vengono spedite a ⟦Silithus=Silitus⟧ man mano che sono pronte. Pare che manchino meno di $2113w giorni perché arrivi tutto. Dopodiché basta trovare qualcuno che suoni quel gong e apra i cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧. E allora inizia il vero divertimento.", "." },
   ["7e5442699820262e"] = { "Che i giochi abbiano inizio!", "." },

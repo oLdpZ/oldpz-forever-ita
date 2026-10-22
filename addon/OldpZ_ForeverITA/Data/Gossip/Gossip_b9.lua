@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["b9858cd82ee93ab4"] = { "Non è stata colpa sua, {name}. Diglielo...", "." },
   ["b9866b161153e3a7"] = { "Bottega aperta!", "." },
   ["b98875311a6f49d0"] = { "Credo che Aldwin Laughlin sia ancora il maestro di gilda residente di ⟦Stormwind=Roccavento⟧. Cerca la sua residenza sulla sinistra, appena oltrepassata la porta interna di ⟦Stormwind=Roccavento⟧.", "." },
-  ["b98892c26768af5d"] = { "Borgus lavorava alla ⟦Great Forge=Grande Forgia⟧, ma ho sentito che si è trasferito a ⟦Stormwind=Roccavento⟧ quando hanno finito di ricostruirla. Si dice che abbia aperto una bottega nel Dwarven District con un tale di nome Kathrum Axehand.", "." },
+  ["b98892c26768af5d"] = { "Borgus lavorava alla ⟦Great Forge=Grande Forgia⟧, ma ho sentito che si è trasferito a ⟦Stormwind=Roccavento⟧ quando hanno finito di ricostruirla. Si dice che abbia aperto una bottega nel Distretto dei Nani con un tale di nome Kathrum Axehand.", "." },
   ["b992f42a9945bac3"] = { "Salute, {name}. Vedo che arrivi da Orgrimmar per aiutarci. Mi fa piacere. Voglio andarmene da questa foresta dimenticata da tutti il più in fretta possibile. Preferirei di gran lunga passare il mio tempo a Orgrimmar con una buona birra.\n\nAnche se non vedo l'ora di sapere come Belgrom sia riuscito a farti venire fin qui.", "." },
   ["b9945de07516d46b"] = { "Mastro Shaw ha fatto un po' di luce sulla faccenda?", "." },
   ["b995c5dc0d0d826b"] = { "C'è un solo cacciatore qui intorno con cui ti farei parlare, ed è Grif Wildheart. Lo troverai appena fuori dalla fucina di Kharanos.", "." },

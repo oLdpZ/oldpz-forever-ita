@@ -44,7 +44,7 @@ WFJ.Data.add("gossip", {
   ["70e898c2bc6ad260"] = { "Offro le mie cavalcature solo a chi è considerato amico da Orgrimmar e dalla razza degli orchi. Va' a dimostrarci il tuo valore, e ti lascerò esaminare i miei possenti lupi.", "." },
   ["70ee785e154d20d1"] = { "È una domanda seria? Davvero non lo sai?\n\nSe sei del tipo codardo, che ha paura di sporcarsi troppo le mani, troverai rottami di ⟦Dark Iron=Ferroscuro⟧ sulle creature delle ⟦Burning Steppes=Steppe Ardenti⟧ e della ⟦Searing Gorge=Gorgia Rovente⟧.\n\nSe invece sei un tipo avventuroso e assetato di sangue, le spedizioni dei ⟦Blackrock Spire=Bastioni di Roccianera⟧ e dei ⟦Blackrock Depths=Sotterranei di Roccianera⟧ ne custodiscono una bella scorta.", "." },
   ["70ef4eb64415f977"] = { "Sono così intelligente! I-N-T-E-L-I-G-E-N-T-E!", "." },
-  ["70f392caa59c857e"] = { "Hai la stoffa per eccellere nella caccia? Beh, <ragazzo/ragazza> <mio/mia>, solo il tempo lo dirà. Ma non metterti a tirare alle mele sulla testa della gente finché non hai parlato con Regnus, laggiù nell'Hall of Arms.", "." },
+  ["70f392caa59c857e"] = { "Hai la stoffa per eccellere nella caccia? Beh, <ragazzo/ragazza> <mio/mia>, solo il tempo lo dirà. Ma non metterti a tirare alle mele sulla testa della gente finché non hai parlato con Regnus, laggiù nell'Salone delle Armi.", "." },
   ["70f746212c04d930"] = { "Iiih! Pare che i demoni abbiano fame di kodo!", "." },
   ["70f7fce5257d7d28"] = { "La tua interruzione mi sta facendo perdere tempo prezioso: spero ne valga la pena.", "." },
   ["70f8b0300f79f147"] = { "E va bene! Mi avete battuto a forza di ragionamenti, maestri dell'Ingegneria! Mettete la porta dove volete!", "." },
