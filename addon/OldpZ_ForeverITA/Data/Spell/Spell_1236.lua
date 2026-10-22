@@ -9,7 +9,9 @@ WFJ.Data.add("spell", {
   [1236177] = { "Mutila il nemico, infliggendo $N1 danni e riducendo la sua velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x99e679bf, 0xbd9449c1, "uu" },
   [1236179] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1236191] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x08fe36e7, "mu" },
+  [1236308] = { nil, "$N1 danni da natura inflitti agli attaccanti.", nil, 0x7724a9e2, "mu" },
   [1236655] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1236656] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1236675] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1236879] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },
 })

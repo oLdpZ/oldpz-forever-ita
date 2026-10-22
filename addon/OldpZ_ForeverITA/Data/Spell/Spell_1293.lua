@@ -2,6 +2,18 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1293005] = { nil, "Armatura ridotta di $N1.", nil, 0x57b604c7, "mu" },
+  [1293068] = { "Aumenta di $N1 il tuo livello effettivo di furtività.", nil, 0x01a7b84c, nil, "um" },
+  [1293069] = { "Aumenta di $N1 il tuo livello effettivo di furtività.", nil, 0x01a7b84c, nil, "um" },
+  [1293070] = { "Aumenta di $N1 il tuo livello effettivo di furtività.", nil, 0x01a7b84c, nil, "um" },
+  [1293071] = { "Aumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N1.", nil, 0x679f95b3, nil, "um" },
+  [1293185] = { "Aumenta i danni inflitti da incantesimi ed effetti d'ombra fino a un massimo di $N1.", nil, 0xf6473b19, nil, "um" },
+  [1293190] = { "Aumenta fino a $N1 i danni inflitti ai Non Morti da incantesimi ed effetti magici.", nil, 0x0674bbf7, nil, "um" },
+  [1293345] = { "Aumenta l'Armatura di $N1 per $D1.", "Armatura aumentata di $N1.", 0x92291afa, 0x97d97089, "uu" },
+  [1293407] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
+  [1293421] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
+  [1293455] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
+  [1293700] = { nil, "Rigenera $N1 mana ogni $D1.", nil, 0xca58e542, "mu" },
+  [1293711] = { "+$N1 potenza d'attacco contro le bestie.", nil, 0x2e7564c4, nil, "um" },
   [1293733] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },
   [1293790] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1293803] = { nil, "Danni da ombra inflitti aumentati del $N1%.", nil, 0x458bc03a, "mu" },

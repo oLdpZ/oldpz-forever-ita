@@ -2,6 +2,10 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [460084] = { nil, "Intimorito.", nil, 0x441534cf, "mu" },
+  [460229] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
+  [460230] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
+  [460339] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [460343] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [460692] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460698] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460699] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
@@ -9,4 +13,5 @@ WFJ.Data.add("spell", {
   [460755] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
   [460756] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [460767] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [460962] = { "+$N1 ⟦Fire Resistance=Resistenza al Fuoco⟧.", nil, 0x8e808dd4, nil, "um" },
 })

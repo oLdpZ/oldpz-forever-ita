@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("item", {
   [16004] = { "Spara al bersaglio un ⟦Shadow Shot=Tiro dell'Ombra⟧ che infligge $N1 danni da ombra.", 0x3dc0173f, "u" },
   [16005] = { "Infligge $N1 danni da fuoco e stordisce i bersagli in un raggio di $N2 m per $D1. Qualsiasi danno interrompe l'effetto.", 0xfe8b4b47, "u" },
-  [16007] = { "Abilità con le armi da fuoco +$N1.\n+$N2 potenza d'attacco a distanza.", 0x083b774f, "u" },
+  [16007] = { "Competenza nelle armi da fuoco aumentata di $N1.\n+$N2 potenza d'attacco a distanza.", 0x083b774f, "u" },
   [16009] = { "Riduce del $N1% la probabilità che gli effetti di silenzio ti colpiscano.", 0x3b7aed97, "u" },
   [16022] = { "Attiva il ⟦Arcanite Dragonling=Minidrago d'Arcanite⟧ che combatte al tuo fianco per $D1.", 0xdc3c1eaf, "u" },
   [16023] = { "Lascia a terra un manichino che attira i mostri vicini e li induce ad attaccarlo. Dura $N1 s o finché non viene distrutto.", 0x1cceb6d0, "u" },

@@ -2,6 +2,13 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1306128] = { "Ottieni gli aspetti dell'equipaggiamento di questo set.", nil, 0x3bcf52b2, nil, "um" },
+  [1306515] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", "Danni da fuoco inflitti da incantesimi e abilità aumentati fino a $N1.", 0x6e8982e7, 0x3e469155, "uu" },
+  [1306518] = { "Aumenta i danni inflitti da incantesimi ed effetti di gelo fino a un massimo di $N1.", nil, 0x8d8b0ac5, nil, "um" },
+  [1306579] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", nil, 0x6e8982e7, nil, "um" },
+  [1306581] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", nil, 0x6e8982e7, nil, "um" },
+  [1306582] = { "Aumenta i danni inflitti da incantesimi ed effetti di gelo fino a un massimo di $N1.", nil, 0x8d8b0ac5, nil, "um" },
+  [1306583] = { "Aumenta del $N1% la tua probabilità di critico magico.", nil, 0xd715ed95, nil, "um" },
+  [1306680] = { "Riduce del $N1% la probabilità che gli effetti di paura ti colpiscano.", nil, 0xd3bb670e, nil, "um" },
   [1306934] = { "Infligge $N1 danni da fuoco.", nil, 0xa92ff3e1, nil, "um" },
   [1306983] = { nil, "Probabilità di colpire con gli attacchi ridotta del $N1%.", nil, 0x0a40f0d7, "mu" },
 })

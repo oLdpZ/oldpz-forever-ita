@@ -2,10 +2,13 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [462058] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [462149] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x61fe647b, 0xdb6814b9, "uu" },
+  [462221] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [462259] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [462374] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xf152500f, "mu" },
   [462577] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [462586] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [462636] = { nil, "Danni degli incantesimi aumentati fino a $N1.\nCure aumentate fino a $N2.", nil, 0xd75bb1cc, "mu" },
   [462666] = { nil, "Disorientato.", nil, 0x6b902ba7, "mu" },
   [462667] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [462718] = { "Coglie di sorpresa il bersaglio, infliggendo il $N1% dei danni dell'arma e $N2 danni aggiuntivi. Devi essere in modalità furtiva e dietro al bersaglio. Richiede un pugnale nella mano primaria. Fornisce $N3 punti combo.", nil, 0x4291356d, nil, "um" },
@@ -20,6 +23,7 @@ WFJ.Data.add("spell", {
   [462728] = { "Strangola il nemico con una garrota, infliggendo $N1 danni in $D1, aumentati dalla tua potenza d'attacco. Devi essere in modalità furtiva e dietro al bersaglio. Fornisce $N3 punti combo.", "$N1 danni subiti ogni $N2 s.", 0xdd3a1872, 0xef5a123f, "uu" },
   [462729] = { "Strangola il nemico con una garrota, infliggendo $N1 danni in $D1, aumentati dalla tua potenza d'attacco. Devi essere in modalità furtiva e dietro al bersaglio. Fornisce $N3 punti combo.", "$N1 danni subiti ogni $N2 s.", 0xdd3a1872, 0xef5a123f, "uu" },
   [462730] = { "Strangola il nemico con una garrota, infliggendo $N1 danni in $D1, aumentati dalla tua potenza d'attacco. Devi essere in modalità furtiva e dietro al bersaglio. Fornisce $N3 punti combo.", "$N1 danni subiti ogni $N2 s.", 0xdd3a1872, 0xef5a123f, "uu" },
+  [462746] = { "+$N1 alla potenza d'attacco contro gli elementali.", nil, 0x9ad47681, nil, "um" },
   [462890] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
   [462893] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
   [462895] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },

@@ -2,6 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [450086] = { nil, "Tempra aumentata di $N1.", nil, 0x543f3a70, "mu" },
+  [450106] = { "Rigenera $N1 salute.", nil, 0x4d16029e, nil, "um" },
+  [450107] = { "Rigenera $N1 salute.", nil, 0x4d16029e, nil, "um" },
   [450108] = { "Permette all'incantatore di vedere attraverso gli occhi del bersaglio per $D1. Non funziona se il bersaglio si trova in un'altra istanza o su un altro continente.", "È possibile vedere attraverso gli occhi del bersaglio.", 0xba19a819, 0x87c06723, "uu" },
   [450554] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [450662] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },

@@ -11,6 +11,7 @@ WFJ.Data.add("spell", {
   [425275] = { "Cura il bersaglio di $N1 in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0x582e0822, 0x4b6eb5c1, "uu" },
   [425276] = { "Cura il bersaglio di $N1 in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0x582e0822, 0x4b6eb5c1, "uu" },
   [425277] = { "Cura il bersaglio di $N1 in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0x582e0822, 0x4b6eb5c1, "uu" },
+  [425336] = { "Aumenta la velocità d'attacco del $N1% per $D1.", nil, 0x7e4b2c7f, nil, "um" },
   [425728] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
   [425729] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
   [425730] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },

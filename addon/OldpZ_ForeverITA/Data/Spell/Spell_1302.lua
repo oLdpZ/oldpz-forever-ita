@@ -2,13 +2,18 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1302113] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
+  [1302229] = { "Rigenera $N1 salute.", nil, 0x4d16029e, nil, "um" },
+  [1302346] = { "Riduce del $N1% la probabilità che gli effetti di paura ti colpiscano.", nil, 0xd3bb670e, nil, "um" },
   [1302350] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1302357] = { "Disarma il nemico per $D1.", "Disarmato!", 0xef69889f, 0x98985ecd, "uu" },
   [1302362] = { nil, "Assorbe $N1 danni da ombra.", nil, 0x0741eb29, "mu" },
+  [1302363] = { "Rigenera $N1 mana ogni $D1 al tuo Imp.", "Rigenera $N1 mana ogni $D1.", 0xdaacf265, 0xca58e542, "uu" },
+  [1302376] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xdb6814b9, "mu" },
   [1302500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1302521] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1302540] = { "Cura di $N1.", nil, 0xb1a62d77, nil, "um" },
   [1302661] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1302707] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1302717] = { nil, "Disarmato.", nil, 0x98985eda, "mu" },
+  [1302875] = { nil, "Tempra aumentata di $N1.", nil, 0x4e3c4e5f, "mu" },
 })

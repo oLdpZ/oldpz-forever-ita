@@ -9,5 +9,10 @@ WFJ.Data.add("spell", {
   [1299445] = { nil, "Non tracciabile. Potenza d'attacco in mischia aumentata di $N1.", nil, 0x6fd501b3, "mu" },
   [1299446] = { nil, "Non tracciabile. Potenza d'attacco in mischia aumentata di $N1.", nil, 0x6fd501b3, "mu" },
   [1299447] = { nil, "Non tracciabile. Potenza d'attacco in mischia aumentata di $N1.", nil, 0x6fd501b3, "mu" },
+  [1299552] = { "Erbalismo +$N1.", nil, 0x413ab943, nil, "um" },
+  [1299586] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
+  [1299625] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
   [1299739] = { "Ferisce il bersaglio facendolo sanguinare, infliggendo $N1 danni in $D1.", nil, 0x47f171f5, nil, "um" },
+  [1299746] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", nil, 0xc0d35181, nil, "um" },
+  [1299850] = { "Lancia una palla infuocata, infliggendo $N1 danni da fuoco e $N2 danni aggiuntivi in $D1.", nil, 0xa6bc16f5, nil, "um" },
 })

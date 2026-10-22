@@ -6,7 +6,7 @@ WFJ.Data.add("item", {
   [20002] = { "Fa cadere chi la beve in un sonno senza sogni per $D1. In quel periodo rigenera $N2 salute e $N3 mana.", 0x34e223e7, "u" },
   [20003] = { "Gli artigli vibrano di energia primordiale.", 0xe6abd42b, "u" },
   [20004] = { "Rigenera $N1 salute ogni $D1 per $D2.", 0xc7f103fb, "u" },
-  [20005] = { "Competenza con i ⟦Fist Weapons=Tirapugni⟧ aumentata di $N1.\nGli artigli vibrano di energia primordiale.", 0xd10f38d8, "u" },
+  [20005] = { "Competenza nei tirapugni aumentata di $N1.\nGli artigli vibrano di energia primordiale.", 0xd10f38d8, "u" },
   [20007] = { "Rigenera $N1 mana ogni $D1 per $D2.", 0xa58964ae, "u" },
   [20008] = { "Ti rende immune agli effetti di stordimento e di limitazione al movimento per $D1. Inoltre dissolve gli effetti di stordimento e di limitazione al movimento in corso.", 0x00112373, "u" },
   [20009] = { "Scritto da Jennre Cantastoria... dedicato a Uther l'Araldo della Luce.", 0x9812db36, "u" },

@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [31378] = { "Infligge danni fisici a un nemico.", nil, 0x7c1fa4f7, nil, "um" },
   [31599] = { nil, "Ingresso nel Fatuo...", nil, 0xcd13f623, "mu" },
   [31688] = { "Infligge danni da gelo a un nemico, riducendone la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
-  [31700] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xe296361f, "mu" },
+  [31700] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", "Velocità di movimento aumentata del $N1%.", 0x46e67ef3, 0xe296361f, "uu" },
+  [31750] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [31817] = { nil, "Forza aumentata di $N1.", nil, 0x90d8a2f8, "mu" },
 })

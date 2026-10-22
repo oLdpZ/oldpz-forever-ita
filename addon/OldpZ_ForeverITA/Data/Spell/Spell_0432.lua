@@ -9,4 +9,5 @@ WFJ.Data.add("spell", {
   [432148] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [432149] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [432222] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
+  [432639] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
 })

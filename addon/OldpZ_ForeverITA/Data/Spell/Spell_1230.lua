@@ -2,8 +2,10 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1230512] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1230596] = { nil, "Forza aumentata di $N1.", nil, 0x90d8a2f8, "mu" },
   [1230700] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", nil, 0x015e6822, nil, "um" },
   [1230702] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
   [1230704] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
   [1230712] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
+  [1230942] = { nil, "Salute aumentata di $N1.", nil, 0x9cba3d80, "mu" },
 })

@@ -2,9 +2,12 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [470031] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [470108] = { "Ti trasformi in pietra, diventando immune a tutti gli attacchi fisici e agli incantesimi per $D1, ma per tutto quel tempo non puoi attaccare, muoverti né lanciare incantesimi. Puoi beneficiare dell'effetto di un solo tonico alla volta.", "Immune ad attacchi e incantesimi. Impossibile attaccare, muoversi o usare incantesimi.", 0x7d8a1bc0, 0x16dc02b3, "uu" },
   [470265] = { nil, "Frastornato.", nil, 0x8649cd0f, "mu" },
   [470279] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },
-  [470345] = { nil, "$N1 salute rigenerata ogni $N2 s.", nil, 0x4b6eb5c1, "mu" },
+  [470345] = { "Cura $N1 danni in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0xcb31688f, 0x4b6eb5c1, "uu" },
+  [470362] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
+  [470369] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [470743] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470744] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470745] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },

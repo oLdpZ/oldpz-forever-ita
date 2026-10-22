@@ -2,6 +2,14 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [435112] = { "Rallenta la velocità di caduta per $D1.", nil, 0x52529547, nil, "um" },
+  [435168] = { nil, "Assorbe i danni e aumenta la rigenerazione del mana di $N1 ogni $D1.", nil, 0xf4f32f91, "mu" },
+  [435169] = { "Infligge $N1 danni da natura ogni $D1 a ogni nemico entro un raggio di $N3 m attorno all'incantatore per $D2.", nil, 0x9eb2fe62, nil, "um" },
+  [435195] = { nil, "Immune ad attacchi e incantesimi. Impossibile attaccare, muoversi o usare incantesimi.", nil, 0x16dc02b3, "mu" },
+  [435531] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [435535] = { "Competenza nei tirapugni aumentata di $N1.", nil, 0xcffc0304, nil, "um" },
+  [435975] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
+  [435976] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [435978] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", "Danni e cure magici aumentati di $N1.", 0x76cbff0e, 0x27248267, "uu" },
   [435980] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
   [435981] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
 })

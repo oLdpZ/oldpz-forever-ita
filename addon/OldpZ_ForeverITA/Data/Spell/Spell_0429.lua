@@ -4,4 +4,5 @@ WFJ.Data.add("spell", {
   [429147] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [429856] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [429857] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [429863] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
 })

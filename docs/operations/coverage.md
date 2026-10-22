@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `1ce6b99`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `f5c19ec`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -15,9 +15,9 @@
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,224 | 10,210 | 0 | 99.9% | 14 |
-| Spell tooltips + auras | 25,718 | 8,694 | 1 | 33.8% | 17,023 |
+| Spell tooltips + auras | 25,718 | 11,855 | 1 | 46.1% | 13,862 |
 | Interface strings | 16,417 | 8,609 | 1,029 | 58.7% | 6,779 |
-| **All** | **85,702** | | | **71.8%** | **24,180** |
+| **All** | **85,702** | | | **75.5%** | **21,019** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -45,9 +45,9 @@ professions, internal strings): quest 139.
 | Book / letter pages | no Italian yet | 1 |
 | Item descriptions | no Italian yet | 13 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
-| Spell tooltips + auras | no Italian yet | 16,960 |
+| Spell tooltips + auras | no Italian yet | 13,806 |
 | Spell tooltips + auras | no Italian yet: the template includes a spell the Forever tables do not hold | 34 |
-| Spell tooltips + auras | no Italian yet: no text from the Forever tables on this build yet (English still from Classic Era); rechecked at each re-pull | 16 |
+| Spell tooltips + auras | no Italian yet: no text from the Forever tables on this build yet (English still from Classic Era); rechecked at each re-pull | 9 |
 | Spell tooltips + auras | no Italian yet: the template has too many optional parts for one translation | 8 |
 | Spell tooltips + auras | no Italian yet: the template names the aura's caster, which only the game knows | 2 |
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |

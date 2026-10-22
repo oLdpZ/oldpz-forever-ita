@@ -1,0 +1,1 @@
+{"id": 1262528, "field": "description", "it": "Ti permette di camminare sull'acqua per $D1.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t14-sg12@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "42a8b6d373519183", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

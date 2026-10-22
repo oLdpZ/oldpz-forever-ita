@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [457569] = { nil, "Invulnerabile, ma impossibilitato ad agire.", nil, 0xb1a1673e, "mu" },
+  [457645] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
   [457816] = { nil, "Danni fisici inflitti aumentati del $N1%.", nil, 0x4bd3d550, "mu" },
 })
