@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [1326053] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
   [1326054] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
   [1326055] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
+  [1326064] = { nil, "Sempre vigile durante le ore notturne.", nil, 0x9fb3b6e1, "mu" },
   [1326114] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [1326140] = { "Avvia un rituale che evoca il membro del gruppo bersaglio. Per completare il rituale servono l'incantatore e altri $N1 membri del gruppo. Per partecipare, tutti i giocatori devono essere fuori dal combattimento, cliccare con il tasto destro sul portale e non muoversi finché il rituale non è completo.", nil, 0x243b7c43, nil, "um" },
   [1326990] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },

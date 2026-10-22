@@ -14,6 +14,7 @@ WFJ.Data.add("spell", {
   [1315339] = { "Aumenta l'Intelletto di $N1 di notte.", nil, 0xeb59d09c, nil, "um" },
   [1315408] = { "Ricevi la benedizione del Great Windborne Cat Spirit.", "Porta la benedizione del Grande Spirito Felino del Vento per aver superato la prova druidica di Azeroth.", 0xb2b24a36, 0xbd153efd, "uu" },
   [1315451] = { "Clicca col pulsante destro per evocare e congedare il tuo Minfernal.", nil, 0x6d502f06, nil, "um" },
+  [1315527] = { nil, "Furtivo. Verrai scoperto se ti avvicini troppo ai nemici o se entri in combattimento.", nil, 0xf49ee9ce, "mu" },
   [1315557] = { "Ammalia il bersaglio, impedendogli qualsiasi azione per un massimo di $D1. Eventuali danni inflitti annullano l'effetto. Funziona solo sugli umanoidi.", "Ammaliato.", 0xaea65fef, 0xd83f67a3, "uu" },
   [1315767] = { "Riduce la potenza d'attacco del bersaglio nemico di $N1 per $D1.", "Potenza d'attacco ridotta di $N1.", 0x68d8d99c, 0x3ac72513, "uu" },
   [1315778] = { "Aumenta la velocità su cavalcatura del $N1% a ⟦Winterspring=Fontefredda⟧.", "Velocità di movimento aumentata del $N1% in sella.", 0x46e8d69f, 0x939516e9, "uu" },
