@@ -3,5 +3,6 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [459606] = { "Aumenta la velocità della tua abilità ⟦Ghost Wolf=Lupo Spettrale⟧ del $N1%.", nil, 0xfb6a1db0, nil, "um" },
   [459608] = { "Riduce di $N1 il costo in rabbia di Azzoppamento.", nil, 0x1c20335d, nil, "um" },
+  [459622] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [459736] = { "Aumenta la Tempra di $N1 per $D1 e infonde ubriachezza molesta!", "Tempra aumentata di $N1.", 0xfaf19c38, 0x4e3b423b, "uu" },
 })

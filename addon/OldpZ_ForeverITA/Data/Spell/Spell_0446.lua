@@ -13,6 +13,7 @@ WFJ.Data.add("spell", {
   [446356] = { "Aumenta la probabilità di blocco dell'incantatore del $N1% per $D1.", nil, 0xebc8dc0b, nil, "um" },
   [446362] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },
   [446364] = { nil, "Tutti gli attributi ridotti di $N1.", nil, 0xfb83ad31, "mu" },
+  [446369] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },
   [446373] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [446450] = { "+$N1 potenza d'attacco.", nil, 0xff5c97b2, nil, "um" },
   [446458] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },

@@ -257,8 +257,10 @@ Data\Spell\Spell_0434.lua
 Data\Spell\Spell_0435.lua
 Data\Spell\Spell_0436.lua
 Data\Spell\Spell_0437.lua
+Data\Spell\Spell_0438.lua
 Data\Spell\Spell_0439.lua
 Data\Spell\Spell_0440.lua
+Data\Spell\Spell_0441.lua
 Data\Spell\Spell_0442.lua
 Data\Spell\Spell_0443.lua
 Data\Spell\Spell_0444.lua
@@ -329,11 +331,14 @@ Data\Spell\Spell_1256.lua
 Data\Spell\Spell_1257.lua
 Data\Spell\Spell_1258.lua
 Data\Spell\Spell_1260.lua
+Data\Spell\Spell_1261.lua
 Data\Spell\Spell_1262.lua
+Data\Spell\Spell_1263.lua
 Data\Spell\Spell_1264.lua
 Data\Spell\Spell_1265.lua
 Data\Spell\Spell_1266.lua
 Data\Spell\Spell_1267.lua
+Data\Spell\Spell_1268.lua
 Data\Spell\Spell_1269.lua
 Data\Spell\Spell_1270.lua
 Data\Spell\Spell_1271.lua
@@ -341,6 +346,7 @@ Data\Spell\Spell_1277.lua
 Data\Spell\Spell_1279.lua
 Data\Spell\Spell_1280.lua
 Data\Spell\Spell_1281.lua
+Data\Spell\Spell_1282.lua
 Data\Spell\Spell_1283.lua
 Data\Spell\Spell_1284.lua
 Data\Spell\Spell_1285.lua

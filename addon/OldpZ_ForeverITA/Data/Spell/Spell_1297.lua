@@ -5,4 +5,5 @@ WFJ.Data.add("spell", {
   [1297109] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [1297442] = { "Competenza nei tirapugni aumentata di $N1.", nil, 0xcffc0304, nil, "um" },
   [1297685] = { "Rigenera $N1 mana ogni $D1.", nil, 0x9ac76902, nil, "um" },
+  [1297727] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
 })

@@ -4,5 +4,7 @@ WFJ.Data.add("spell", {
   [1229228] = { "Balza sul bersaglio, stordendolo per $D1 e infliggendo $N2 danni in $D2. Bisogna essere in Movimento Furtivo e alle spalle del bersaglio. Fornisce $N4 punti combo.", "Stordito.", 0x97420bb2, 0x27f95286, "uu" },
   [1229305] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1229308] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [1229339] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1229444] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1229760] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
 })

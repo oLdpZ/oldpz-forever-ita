@@ -3,12 +3,14 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [470031] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [470108] = { "Ti trasformi in pietra, diventando immune a tutti gli attacchi fisici e agli incantesimi per $D1, ma per tutto quel tempo non puoi attaccare, muoverti né lanciare incantesimi. Puoi beneficiare dell'effetto di un solo tonico alla volta.", "Immune ad attacchi e incantesimi. Impossibile attaccare, muoversi o usare incantesimi.", 0x7d8a1bc0, 0x16dc02b3, "uu" },
+  [470124] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [470265] = { nil, "Frastornato.", nil, 0x8649cd0f, "mu" },
   [470279] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },
   [470345] = { "Cura $N1 danni in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0xcb31688f, 0x4b6eb5c1, "uu" },
   [470362] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [470369] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
-  [470535] = { "Infligge il $N1% dei danni dell'arma e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", nil, 0x9ac32304, nil, "um" },
+  [470535] = { "Infligge il $N1% dei danni dell'arma e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", "Cure ricevute ridotte del $N1%.", 0x9ac32304, 0x25749c0a, "uu" },
+  [470613] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [470743] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470744] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470745] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
@@ -16,4 +18,5 @@ WFJ.Data.add("spell", {
   [470748] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470749] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470753] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
+  [470856] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
 })

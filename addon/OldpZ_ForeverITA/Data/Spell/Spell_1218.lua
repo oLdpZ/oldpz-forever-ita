@@ -2,5 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1218134] = { "Tenta di rimuovere $N1 effetto di Frenesia da una creatura nemica.", nil, 0x19756a13, nil, "um" },
+  [1218363] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1218364] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1218506] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
 })

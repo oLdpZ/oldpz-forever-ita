@@ -1,0 +1,1 @@
+{"id": 1282264, "field": "description", "it": "Punisce un nemico, infliggendo danni da sacro.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t26-sg12@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "20941603b5439484", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

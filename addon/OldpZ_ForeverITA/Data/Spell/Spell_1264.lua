@@ -7,4 +7,9 @@ WFJ.Data.add("spell", {
   [1264501] = { "Sferra una spazzata contro $N1 nemici vicini, infliggendo $N2 danni.", nil, 0xb0c704b4, nil, "um" },
   [1264502] = { "Sferra una spazzata contro $N1 nemici vicini, infliggendo $N2 danni.", nil, 0xb0c704b4, nil, "um" },
   [1264548] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1264758] = { nil, "Cure ricevute ridotte del $N1%.", nil, 0x25749c0a, "mu" },
+  [1264927] = { nil, "Cure ricevute ridotte del $N1%.", nil, 0x25749c0a, "mu" },
+  [1264929] = { nil, "Cure ricevute ridotte del $N1%.", nil, 0x25749c0a, "mu" },
+  [1264930] = { nil, "Cure ricevute ridotte del $N1%.", nil, 0x25749c0a, "mu" },
+  [1264933] = { nil, "Cure ricevute ridotte del $N1%.", nil, 0x25749c0a, "mu" },
 })

@@ -81,6 +81,7 @@ WFJ.Data.add("spell", {
   [29214] = { nil, "$N1 danni da ombra inflitti ogni $N2 s.", nil, 0x33aab3e1, "mu" },
   [29220] = { "Potresti ruttare fuoco colpendo un nemico in mischia per i successivi $D1.", "Quei sorsi ti hanno riscaldato per bene!", 0x2095742c, 0xa75cec80, "uu" },
   [29228] = { "Ustiona istantaneamente il bersaglio con il fuoco, infliggendo subito $N1 danni da fuoco e $N2 danni da fuoco in $D1.", "$N1 danni da fuoco ogni $N2 s.", 0x803c5b41, 0xa1772ba6, "uu" },
+  [29232] = { nil, "Probabilità di colpo critico aumentata del $N1%.\nProbabilità di colpo critico degli incantesimi aumentata del $N2%.\nIncantesimi e abilità non generano minaccia.", nil, 0x2c6771d6, "mu" },
   [29233] = { "Aumenta i danni inflitti dal famiglio del $N1%.", nil, 0xe2227b67, nil, "um" },
   [29235] = { "Aumenta la Tempra di 30 per $D1.", "Tempra aumentata di 30.", 0x3e3ea034, 0x4cdf2590, "uu" },
   [29236] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
@@ -89,7 +90,7 @@ WFJ.Data.add("spell", {
   [29307] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },
   [29317] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [29324] = { "Esplode quando viene attivata, infliggendo $N1 danni da fuoco ai nemici vicini e $N2 danni a te.", nil, 0x23d5a9fe, nil, "um" },
-  [29325] = { nil, "$N1 danni da natura inflitti ogni $N2 s.", nil, 0xd8c7b0a1, "mu" },
+  [29325] = { "Scaglia dardi acidi contro un nemico, infliggendo danni da natura e altri danni ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0x43311e76, 0xd8c7b0a1, "uu" },
   [29331] = { "Aumenta la probabilità d'impatto con gli attacchi del $N1% per $D1.", "Probabilità d'impatto con gli attacchi aumentata del $N1%.", 0x1ec673b1, 0x57c60795, "uu" },
   [29332] = { "Aumenta la probabilità d'impatto con gli attacchi del $N1% per $D1.", "Probabilità d'impatto con gli attacchi aumentata del $N1%.", 0x1ec673b1, 0x57c60795, "uu" },
   [29333] = { "Aumenta fino a $N1 i danni inflitti dagli incantesimi per $D1.", "Danni magici inflitti aumentati fino a $N1.", 0x9493fcf3, 0x88d5bb53, "uu" },
@@ -139,5 +140,6 @@ WFJ.Data.add("spell", {
   [29849] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [29851] = { "Attacca i nemici vicini in un turbine d'acciaio che dura $D1 e infligge danni normali e $N2 danni aggiuntivi.", "Danni normali e $N1 danni aggiuntivi inflitti ai nemici vicini.", 0xcb02654a, 0x4a0fb3ce, "uu" },
   [29865] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0xf6322bec, "mu" },
+  [29915] = { "Infligge $N1 danni a un nemico ogni $D1 per $D2.", "Danni fisici inflitti ogni $D1.", 0x4de84947, 0xc481aa93, "uu" },
   [29943] = { "Silenzia i nemici vicini, impedendo loro di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x2d8a29ef, 0x6d133d61, "uu" },
 })

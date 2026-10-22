@@ -10,6 +10,6 @@ WFJ.Data.add("spell", {
   [450640] = { nil, "Danni fisici subiti aumentati di $N1.\nTempra ridotta di $N2.\nProbabilità del $N3% di diffondere ⟦Wandering Plague=Piaga Errante⟧ all'impatto.", nil, 0x6e4b81df, "mu" },
   [450643] = { "Infetta un nemico per $D1, costringendolo a infliggere $N2 danni da natura agli alleati vicini ogni $D2.", "$N1 danni da natura inflitti agli alleati vicini ogni $D1.", 0x6e922a9d, 0x953aec8c, "uu" },
   [450646] = { nil, "Danni da ombra inflitti ogni $D1.", nil, 0x1bf49534, "mu" },
-  [450662] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [450662] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [450667] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", nil, 0xe555a300, nil, "um" },
 })

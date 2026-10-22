@@ -2,9 +2,11 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [469065] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
+  [469134] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469146] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [469148] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xdb6814b9, "mu" },
-  [469155] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [469155] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
+  [469160] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469209] = { nil, "Danni magici aumentati fino a $N1.", nil, 0x9d292bc3, "mu" },
   [469277] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },
   [469301] = { "Inizia ad addomesticare una bestia perché diventi tua compagna. La tua armatura è ridotta del $N1% mentre ti concentri sull'addomesticamento della bestia per $D1. Se per qualsiasi motivo perdi l'attenzione della bestia, l'addomesticamento fallisce. Una volta addomesticata, la bestia sarà molto infelice e sleale. Prova a nutrire subito il famiglio per renderlo felice.", "Addomesticamento del famiglio.", 0x653847d0, 0xc7d3fce8, "uu" },
@@ -12,6 +14,8 @@ WFJ.Data.add("spell", {
   [469370] = { "Travolge il bersaglio, infliggendo $N1 danni da fuoco.", nil, 0x9d8bd0af, nil, "um" },
   [469372] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [469499] = { "Rigenera $N1 salute ogni $D1.", "Rigenera $N1 salute ogni $D1.", 0xb1936106, 0xb1936106, "uu" },
+  [469537] = { "Infligge $N1 danni da natura e altri $N2 danni ogni $D1 ai nemici in un cono frontale. La resistenza alla natura si riduce di $N4. Dura $D2.", nil, 0xf7dd67d4, nil, "um" },
+  [469648] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469668] = { "Permette al bersaglio alleato di individuare l'invisibilità superiore per $D1.", "Individua Invisibilità Superiore.", 0x0bc29431, 0x96a4f3d2, "uu" },
   [469753] = { "Incanta in modo permanente uno scudo per fornire +$N1% di probabilità di blocco.", nil, 0x72a33c60, nil, "um" },
   [469828] = { "Aumenta la Forza di $N1 per $D1.", "Forza aumentata di $N1.", 0xeb1f7146, 0x90d8a2f8, "uu" },

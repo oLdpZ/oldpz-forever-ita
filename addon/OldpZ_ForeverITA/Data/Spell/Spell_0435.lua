@@ -12,4 +12,5 @@ WFJ.Data.add("spell", {
   [435978] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", "Danni e cure magici aumentati di $N1.", 0x76cbff0e, 0x27248267, "uu" },
   [435980] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
   [435981] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
+  [435991] = { "Avvolge un nemico nelle radici, infliggendo danni da natura ogni $D1 e immobilizzandolo per un massimo di $D2.", "Immobilizzato.\nDanni da natura inflitti ogni $D1.", 0xed46cb1a, 0xe6768e6a, "uu" },
 })
