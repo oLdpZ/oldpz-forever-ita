@@ -54,6 +54,7 @@ WFJ.Data.add("gossip", {
   ["46ced16d0a9e4a77"] = { "Come se la cavano i miei uomini?", "." },
   ["46d2470fcf20ea8d"] = { "Omen dorme nelle profondità del ⟦Lake Elune'ara=Lago Elune'ara⟧, ma può essere evocato sulle rive sud-orientali, vicino agli ⟦Stormrage Barrow Dens=Eremi di Grantempesta⟧. Lì troverai degli speciali lanciarazzi a grappolo...\n\nUsa i tuoi razzi nei lanciatori e arriveranno i servitori di Omen. Spara altri razzi, quasi tre dozzine, oppure lancia Candele di Elune contro i suoi servitori, e presto si risveglierà.", "." },
   ["46d6c747022e9f70"] = { "<Bentornato/Bentornata>, {name}.", "." },
+  ["46dba375e735cdd7"] = { "Cosa ti porta al Castello di ⟦Stormwind=Roccavento⟧?", "." },
   ["46dda56ed395a41d"] = { "Affari ufficiali, John. Mi servono informazioni sul maresciallo Windsor. Parlami dell'ultima volta che l'hai visto.", "." },
   ["46e05c8a368e6f2d"] = { "Sì? Ho una corazza da finire, quindi sarà meglio che sia una cosa importante.", "." },
   ["46e49f5922cb0edb"] = { "L'ultima carica è piazzata. State indietro!", "." },

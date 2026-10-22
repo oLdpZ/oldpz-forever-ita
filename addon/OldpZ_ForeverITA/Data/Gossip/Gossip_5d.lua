@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["5d134bf1b1e4c583"] = { "Tempesta di sabbia in arrivo da sud, mettetevi al ripa... Quella non è una tempesta di sabbia! ARRIVA L'ESERCITO QIRAJI!", "." },
+  ["5d138380c0899e66"] = { "Devo confessarlo: non credevo che avessi la determinazione per portare a termine questa causa, {class}. Ora gli Zandalari vedono in te un aiuto prezioso. Davvero ben fatto.\n\nDammi il tuo marchio e ne amplificherò ancora una volta il potere.", "." },
   ["5d148aaa216104cd"] = { "Gloria a {name}, <sterminatore/sterminatrice> di Hakkar ed <eroe/eroina> di Azeroth!", "." },
   ["5d1e5a1ff2214b5e"] = { "Sì? Hai un'aria vagamente familiare. Perdonami, ma ci siamo già conosciuti? Sono così occupato che perdo il filo.", "." },
   ["5d265b2ac02e837b"] = { "Niente batte il suono di un motore a vapore a doppio carburatore e anello a forcella che brucia pietra di fuoco pura!", "." },
@@ -18,8 +19,10 @@ WFJ.Data.add("gossip", {
   ["5d50a6cde272423c"] = { "Ora cerchiamo un'Arpia ignara!", "." },
   ["5d510e641e306007"] = { "Abbiamo cominciato a ritorcere la peste del Flagello contro di loro, ma la nostra presa è a dir poco precaria! Aiuta la causa sabotando i loro calderoni!", "." },
   ["5d5f09a1c43c3dc1"] = { "Gli ogre Gordunni invadono le nostre terre. Mandiamo tutti quelli disposti ad affrontarli tra le rovine profanate di Feralas.", "." },
+  ["5d5f831c9e44baf8"] = { "Ce l'hai fatta, {name}? Hai liberato le termiti? Che la Luce ci aiuti, se la ⟦Scarlet Crusade=Crociata Scarlatta⟧ riuscisse a tenersi sia la segheria sia ⟦Hearthglen=Valsalda⟧. Non dovrebbero avere né l'una né l'altra. Stanno solo approfittando delle vittime dell'ultima guerra e andrebbero abbattuti come bestie rabbiose!", "." },
   ["5d6abc2613f9bcd3"] = { "L'infernale è uno dei demoni più potenti che uno stregone possa sperare di avere al proprio fianco in battaglia. La creatura è forte, ben corazzata e infligge colpi devastanti a qualsiasi nemico. Se scegliessi di infondere lo spirito di un infernale nella tua arma, otterresti alcuni di questi vantaggi: più Salute, rigenerazione e simili.\n\nSe vuoi saperne di più sui vilsegugi, dovresti parlare con Wytula, di fronte a me.", "." },
   ["5d6ce7dbd984cd40"] = { "{class}, ti prego, ascolta ciò che ho da dire. L'⟦Alliance=Alleanza⟧ e l'⟦Horde=Orda⟧ si preparano a una guerra contro i silitidi e i loro padroni di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Qualsiasi aiuto tu possa dare sarà molto apprezzato. Come vedi, qui raccolgo lingotti di torio per lo sforzo bellico. Dobbiamo raccoglierne $2012w in tutto, e al momento ne abbiamo $2011w.", "." },
+  ["5d742ffe6b79a3cb"] = { "Che tu possa sfondare molti crani, {name}!", "." },
   ["5d774c2182a28c39"] = { "Non profanare queste rovine, mortale. <Un lampo di luce accecante ti avvolge. Una creatura fatta interamente di fiamme è l'unica cosa che ricordi di aver visto.>", "." },
   ["5d796deef2659412"] = { "%s sbuffa profondamente mentre si ferma.", "." },
   ["5d7df209f61631ff"] = { "Questo posto... è maledetto.\n\nCe l'ho fatta a malapena a fuggire, e non sopporto l'idea di scendere di nuovo nei tunnel.\n\nMio fratello e le mie sorelle, però... non hanno avuto la stessa fortuna. Intrappolati là dentro, sono in preda alla febbre per la nebbia corrotta che emana dal giardino maligno che cresce laggiù.\n\nTi prego, devi aiutarli.", "." },

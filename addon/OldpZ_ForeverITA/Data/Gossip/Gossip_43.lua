@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["433dfbac107ce504"] = { "%s piagnucola.", "." },
   ["43425db52bcfef66"] = { "%s rosicchia l'esca avidamente.", "." },
   ["434764915c4df11a"] = { "I nani Granmartello avranno anche destrieri veloci, ma quei grifoni del ⟦Aerie Peak=Picco dell'Aquila⟧ reggerebbero il calore della ⟦Great Forge=Grande Forgia⟧? Non credo proprio!", "." },
+  ["4350ef28e07b5d4a"] = { "Benvenut<o/a>, <sacerdote/sacerdotessa>. L'⟦The Eye of Zuldazar=Occhio di Zuldazar⟧ pulsa di energia. Sei pront<o/a> per il passo successivo. Dammi il talismano e compirò l'infusione.", "." },
   ["4352061725627201"] = { "Gli spiriti di ⟦Stonetalon=Petrartiglio⟧ sono ancora in collera, {name}.", "." },
   ["43542d62edf59c2d"] = { "Soldati dei Piccatonante, aiutateci e proteggeteci! Il Signore della Foresta ci ha concesso la sua protezione. Ora il portale deve essere aperto!", "." },
   ["4356812cacf5af2a"] = { "%s russa forte e si accoccola accanto ad A-Me 01.", "." },

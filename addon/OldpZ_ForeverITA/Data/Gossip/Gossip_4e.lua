@@ -6,6 +6,7 @@ WFJ.Data.add("gossip", {
   ["4e1b76e5f50533af"] = { "Le caverne sono state purificate. Andiamo alla camera di Naralex!", "." },
   ["4e1cc5e4cf6702a6"] = { "Tragico...", "." },
   ["4e1ceceb91630f2d"] = { "È passato troppo tempo. Dobbiamo riprovare più tardi.", "." },
+  ["4e21dce54520ce4a"] = { "Salute, {name}. Ci siamo già incontrati? Hai un'aria vagamente familiare.", "." },
   ["4e2afc6b23754081"] = { "Posso mostrarti ciò che desideri sapere, ma devi avere pazienza. Prenditi il tempo di lavorare l'acciaio e di sentire come prende forma sotto il tuo martello. Quando diventerai tutt'uno con l'acciaio, allora capirai.", "." },
   ["4e327bef67a4cbbc"] = { "Cerco addestramento da druido.", "." },
   ["4e34684cde53714f"] = { "Sia lodato Egan!", "." },

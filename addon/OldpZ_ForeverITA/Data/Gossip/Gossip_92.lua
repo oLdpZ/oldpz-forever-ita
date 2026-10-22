@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["92b3ac69cc17d7ae"] = { "Aku'mai esige altri sacrifici, ora devi morire!", "." },
   ["92b6e29c75eef60f"] = { "Ho udito le tue parole, Great Bear Spirit, e ho capito. Ora chiedo la tua benedizione per apprendere appieno la via dell'Artiglio.", "." },
   ["92b74e7b45c66024"] = { "Inchinati al mio cospetto, insetto! Di certo senti il potere che ho su di te.", "." },
+  ["92bb2dab981a2358"] = { "Bene, bene... Così Linken si è finalmente deciso a mandarmi la sua spada.", "." },
   ["92c2d00d6f75e39b"] = { "Fu quel giorno che ci vennero donati i silvagufi. Guardiani feroci: la dea affidò ai silvagufi la protezione di tutti i suoi luoghi sacri.", "." },
   ["92c4b5d9478a1abc"] = { "Anche piccole modifiche agli ingredienti di una pozione possono cambiarla radicalmente. Pazienza e precisione, giovane: ti saranno utili in ogni ambito della vita.", "." },
   ["92c536c054cde74b"] = { "Brahaha! Che facce hanno fatto quando il cannone del vecchio Trollplow si è girato verso di loro! Le loro seghe non sono riuscite nemmeno a sfiorarmi!", "." },

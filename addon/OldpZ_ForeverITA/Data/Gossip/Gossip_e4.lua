@@ -38,6 +38,7 @@ WFJ.Data.add("gossip", {
   ["e4d3aa59a9d66f17"] = { "Pare che le ultime merci raccolte partiranno per ⟦Silithus=Silitus⟧ nei prossimi $2113w giorni. Una volta fatto, qualcuno dovrà venire a suonare il gong sull'Altare dello Scarabeo, fuori da ⟦Ahn'Qiraj=Ahn'qiraj⟧, per aprire i cancelli. È allora che le nostre bende torneranno utili.", "." },
   ["e4da5a4f70122547"] = { "<Padrone/Padrona> {name}! Il maestro Kang ha chiesto di te! Forse è giunto il tuo momento!", "." },
   ["e4ea055c699a1cab"] = { "L'esercito degli elfi della notte fu respinto attraverso Un'Goro, fino ai confini del deserto di Tanaris. Qualcosa a Un'Goro impedì ai Qiraji di conquistare quella terra. Non capisco bene questa parola, ma credo significhi 'Terre degli Dei'. Si dice che non riuscirono a 'prendere le Terre degli Dei'.", "." },
+  ["e4f2af7620a3f5b7"] = { "La Borsa degli Orrori!", "." },
   ["e4f4703685067cdf"] = { "I Sons of Thaurissan ti guarderanno perire nel Ring of the Law!", "." },
   ["e4f56b429ab4759f"] = { "Oggi incontrerai i tuoi antenati!", "." },
 })

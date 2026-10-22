@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["de3b61fcc07388b0"] = { "Il Fortilizio di Brinarossa è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ lo distruggerà!", "." },
   ["de3cabf614dd1571"] = { "Il tempo della conquista si avvicina rapidamente.", "." },
   ["de444ee643bc8b69"] = { "Omarion, l'artigianato non fa per me. Puoi aiutarmi lo stesso?", "." },
+  ["de44a003d8d4ec36"] = { "<Lord Arkkoroc si china per esaminarti.>\n\nDove sono?", "." },
   ["de49331c3c73987f"] = { "Nel villaggio non abbiamo un posto del genere. Ma le vette altissime del ⟦Thunder Bluff=Picco del Tuono⟧ sì. Va' a nord lungo la strada che esce dal ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧ finché arrivi ai piedi delle alture. Lì prendi l'ascensore fino in cima e parla con un Guardiano del Picco. Che i tuoi antenati veglino su di te.", "." },
   ["de4a7fcd78d35c62"] = { "Brindo a qualsiasi cosa!", "." },
   ["de4e06caff8add05"] = { "Mi interessa l'addestramento da mago.", "." },

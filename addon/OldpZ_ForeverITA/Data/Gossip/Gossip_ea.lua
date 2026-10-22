@@ -49,6 +49,7 @@ WFJ.Data.add("gossip", {
   ["eadc8682795d6390"] = { "Certo, certo. Abbiamo un istruttore di Estrazione proprio qui in città. Cerca Krunn nell'angolo nord-occidentale, accanto alla locanda.", "." },
   ["eadd51340effa30c"] = { "Non merito tanto, signore.", "." },
   ["eadde088653f7dc7"] = { "Udite, abitanti di Tanaris! Sia noto a tutti che {name} è un membro osannato del Mithril Order. Un fabbro d'onore, dedizione e pazienza infinita. Tre urrà per {name}!", "." },
+  ["eae5b0529361e224"] = { "Mostramele!", "." },
   ["eaf5d7b612a775cb"] = { "Sfrontatezza. Al maestro ⟦Ravenholdt=Corvolesto⟧ la sfrontatezza non piace.", "." },
   ["eaff9284e1e3663c"] = { "Maledetti coboldi. Non riesco a combinare niente con loro che corrono avanti e indietro e mi stanno tra i piedi. Be', non ho niente di meglio da fare. Vuoi imparare qualche tecnica di estrazione? O forse ti servono solo degli attrezzi nuovi?", "." },
 })

@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["1891f964e2b192a6"] = { "Capitolo sui Cristalli Arcani e l'arcanite.", "." },
   ["18a307ae9775aedf"] = { "%s si china per esaminare il suo colpo.", "." },
   ["18b7ed96c13d58c9"] = { "{name}, che bello rivederti! Ti stai divertendo alla Fiera?\n\nVuoi fare a braccio di ferro? No, certo che no... ci tieni al tuo braccio!", "." },
+  ["18bc5c8b86bc90dc"] = { "Già... Dammi le notizie.", "." },
   ["18bf4d2f3b414839"] = { "Quelli come te?", "." },
   ["18c13ed80e1ecc8d"] = { "Di nuovo? Sbrigati, Komak, ne ho fin sopra i capelli.", "." },
   ["18ca933e898a738e"] = { "E anche <modesto/modesta>... Forse allora è giunto il tuo momento, {name}.\n\nTe la senti di entrare nella fortezza degli orchi ⟦Blackrock=Roccianera⟧? Di seminare il caos? Di squarciare le fondamenta della cittadella della montagna?", "." },

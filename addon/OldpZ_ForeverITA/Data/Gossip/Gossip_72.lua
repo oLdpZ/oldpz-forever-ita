@@ -41,6 +41,7 @@ WFJ.Data.add("gossip", {
   ["72bc2f7eb9376cbb"] = { "Devi avere la reputazione Osannato presso gli gnomi degli Gnomeregan Exiles prima che ti insegni a pilotare un Tecnostruzzo, {class}.", "." },
   ["72be773e89c4e562"] = { "Per servire la Dama Oscura e Varimathras dobbiamo far avanzare il fronte contro l'Infestazione Umana.", "." },
   ["72c368970937975b"] = { "Che vengano pure! Non ho paura di qualche bestia rachitica!", "." },
+  ["72c69bed8f4b9650"] = { "Gli Hakkari ti temono, {name}. Parlano di orrori che credevano potesse compiere solo il loro dio senza volto. Li hai bruciati con la forza di Kajaro. Ora conoscono la paura in due luoghi.\n\nÈ ora di rafforzare ancora il ciottolo. Dammi il talismano.", "." },
   ["72d30164f1e1be27"] = { "Ad alcuni è stata risparmiata l'angoscia che i ricordi portano.", "." },
   ["72dc4d6fb8f91814"] = { "Anche se la tua fiducia nelle mie capacità mi lusinga, insegnarti va oltre la mia abilità. Devi andare alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus e parlare con l'elfa della notte Ainethil. Lei può aiutarti.", "." },
   ["72ddc966497c85ec"] = { "Chissà se la tua bambolina sa nuotare!", "." },

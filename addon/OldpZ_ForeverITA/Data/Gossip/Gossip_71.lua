@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["719ae405f02f7d81"] = { "Sciocchi.", "." },
   ["719fcc8c5211564c"] = { "Vrok dice che il mirino del fucile di Grumlar è starato. Mi sa che dovrei controllarlo.", "." },
   ["71a5c7bcc28b338d"] = { "Ti congelerò il sangue nelle vene!", "." },
+  ["71abc13cb8502d5e"] = { "È bello vederti in buona salute, {name}. Le gloriose battaglie che hai combattuto toccano ogni forma di vita su questo pianeta. Hakkar non deve mai lasciare i confini di ⟦Zul'Gurub=Zul'gurub⟧, o il mondo crollerà di certo sotto la sua fame immensa.\n\nDammi il tuo talismano e ne amplificherò la forza. Usa l'⟦Strength of Mugamba=Amuleto della Forza di Mugamba⟧ per punire i nostri nemici!", "." },
   ["71b064ba5d4854fd"] = { "Parlami del Cult of the Damned.", "." },
   ["71b17c15c95edf55"] = { "Non preoccuparti per me! Uccidi questa bestia orrenda e purifica il mondo dalla sua lurida contaminazione!", "." },
   ["71b8faa8fe9ce3ae"] = { "Non mescolare la pozione così, contadino maldestro! No, non smettere nemmeno di mescolarla! Lascia perdere... dammi quel mestolo prima di appiccare un incendio. Salverò quel che posso. Ora fai attenzione.", "." },

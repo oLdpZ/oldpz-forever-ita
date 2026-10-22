@@ -50,6 +50,7 @@ WFJ.Data.add("gossip", {
   ["d7e7acc99c047317"] = { "Il Capoguerra mi ha incaricato di studiare ogni genere di armi e armature. Mi ha mandato qui, nel cuore delle culture tauren e orchesca nelle ⟦Barrens=Savane⟧, per incontrare quanti più viaggiatori possibile e conoscere le culture delle ⟦Barrens=Savane⟧.\n\nRitiene che ci sia qualcosa da imparare persino dalle culture più patetiche... come quella dei verrospini o dei centauri.", "." },
   ["d7e966a79f1af63a"] = { "La porta è aperta, Kharan. Sei un uomo libero.", "." },
   ["d7ea414807c3fdee"] = { "Ahhh, allora quello che cerchi è il Visitor's Center di ⟦Stormwind=Roccavento⟧. È il primo edificio a sinistra quando attraversi i cancelli principali venendo dalla ⟦Valley of Heroes=Valle degli Eroi⟧.", "." },
+  ["d7f14b8a44515360"] = { "Il suo grembiule! Dov'è?", "." },
   ["d7f1a938bfd8ef47"] = { "Continua...", "." },
   ["d7f2c23ace958a17"] = { "Forse riuscirai a battermi, ma i Defias SI RIPRENDERANNO ⟦Stormwind=Roccavento⟧!", "." },
   ["d7f4c3d6b85db408"] = { "Avventurieri da ogni dove vendono cose ad Antonio: venite a vedere con i vostri occhi quali piccoli tesori ha per voi questa settimana.", "." },

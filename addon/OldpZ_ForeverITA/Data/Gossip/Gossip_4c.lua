@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["4c8d8104454bc8be"] = { "Mettiamoci al lavoro!", "." },
   ["4c8e1ddf6602bec9"] = { "Affrontate la ⟦Might of Kalimdor=Forza di Kalimdor⟧!", "." },
   ["4c9a0b1a0bc0fca9"] = { "Sento il male che si prepara...", "." },
+  ["4c9d4f281ef5f10e"] = { "Sono pronto per te, {class}. Ancora una volta potenzierò il tuo talismano. Ti chiedo solo di continuare a distruggere Hakkar e i suoi servitori.\n\nDammi il talismano.", "." },
   ["4c9d63a7a7025ed1"] = { "Vi supplico, mortali: FUGGITE! Fuggite prima che io perda ogni controllo! Il fuoco nero infuria nel mio cuore! DEVO... liberarlo!", "." },
   ["4ca187b682602598"] = { "Nessuno della vostra specie dovrebbe essere qui! Avete condannato solo voi stessi!", "." },
   ["4ca606abd691dabf"] = { "Bambini, smettetela! Dico sul serio!", "." },

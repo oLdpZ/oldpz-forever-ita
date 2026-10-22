@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["34309a001085cfe3"] = { "Leggerò le parole incise sulla pietra, e tu devi trovare un modo per accenderla.", "." },
   ["3434132e025ab68f"] = { "Chi osa interferire con i Sons of Arugal?", "." },
   ["34392e088a20b537"] = { "Mangia questo, figlia mia. Ti aiuterà a sentirti meglio.", "." },
+  ["34476c1713471aff"] = { "Ce l'hai fatta, {name}? Hai liberato le termiti nella segheria?\n\nEra già abbastanza brutto che la mia famiglia avesse perso il lavoro e la vita, ma poi vedere il posto dove ho passato l'infanzia occupato da quei disgustosi cosiddetti uomini santi... puah!!", "." },
   ["34480b3ff3fce9bb"] = { "Il Dun Baldar North Bunker protegge l'ingresso orientale di Dun Baldar.\n\nNon è controllato da nessuna delle due parti.", "." },
   ["344c960bb713b210"] = { "Voglio vedere la Torre dei Maghi.", "." },
   ["344f58a29e31d1ea"] = { "Ti ricordi quando Danath radunò tutti i mercenari di ⟦Stormwind=Roccavento⟧ e marciammo a combattere a ⟦Nethergarde=Guardiafatua⟧?", "." },

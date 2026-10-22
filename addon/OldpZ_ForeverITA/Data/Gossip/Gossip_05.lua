@@ -47,4 +47,5 @@ WFJ.Data.add("gossip", {
   ["05f0416731b6a25c"] = { "Betina, vorrei una ⟦Rune of the Dawn=Runa dell'Alba⟧ nuova, per favore!", "." },
   ["05f36b78ace0504b"] = { "Se lo desideri, oltre all'addestramento, ho il potere di cancellare dalla tua mente la conoscenza dei tuoi talenti. Ma sappi che ogni volta che ti sottoponi a questa procedura diventa più difficile da eseguire, e quindi più costosa.", "." },
   ["05f5dd520b046452"] = { "Sta' lontano da Sumi e Tumi. Hanno... già qualcuno.", "." },
+  ["05fdd5a7ca0d7f36"] = { "Arr, compare! Guadagnare un solo ninnolo non basta a fare di te un maestro dell'Arena! Ora è il momento di dimostrare davvero quanto vali.", "." },
 })

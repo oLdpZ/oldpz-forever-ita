@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["f704059f1bf06471"] = { "Osi sfidarmi? Preparati a un'eternità di terrore.", "." },
+  ["f707cff6c892b548"] = { "Abbiamo un accordo?", "." },
   ["f70ac63855f70656"] = { "Mmmm, che buono. Ma ora è tempo di tornare al lavoro!", "." },
   ["f712ebe7173a80e5"] = { "Cosa ne sai, Franzahl?", "." },
   ["f716a8d7ba5f49b1"] = { "Il frullo delle ali di un falco, il respiro di un ariete nella neve, il passo di un orso nella foresta... Così è la vita del cacciatore.", "." },

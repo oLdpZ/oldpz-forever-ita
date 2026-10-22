@@ -8,6 +8,7 @@ WFJ.Data.add("gossip", {
   ["cc0b319088ac0d7b"] = { "Ho bisogno di aiuto per recuperare un pezzo della mia Illusionist's Attire, Al'tabim.", "." },
   ["cc118617468a68ef"] = { "Va bene *hic*... Ehi, la tua faccia mi è familiare *hic*. Ti ho mai raccontato di quella volta che io e Windsor abbiamo respinto tren... ehm... mill... un milione di orchi?\n\nOh, calmati, amico, questa è bella!", "." },
   ["cc1c835ca759c350"] = { "Hai sentito parlare della madre della covata dello Stormo Nero? Credo che si chiami Onyxia...", "." },
+  ["cc306a17fa2ef70d"] = { "Il pannello in cui va inserito il rivestimento di mithril è ancora ben chiuso. Il resto di A-Me 01 rimane inerte.", "." },
   ["cc3ced63b025a5b3"] = { "Salute! Sono qui a promuovere un torneo che metterà alla prova la tua abilità di pesca a Rovotorto. Per partecipare devi avere abbastanza forza da sopravvivere laggiù e abbastanza abilità nella pesca da convincere i pesci a uscire dall'acqua.\n\nTorna più tardi, quando avrai i requisiti!", "." },
   ["cc3d8f09e0d799fd"] = { "Ah, dunque i miei servitori delle ⟦Burning Steppes=Steppe Ardenti⟧ hanno portato i draghi...", "." },
   ["cc3e2e9de1a96476"] = { "Ragazzi e ragazze. Oggi può essere il vostro giorno più grande, perché oggi combattete per la gloria dei Piccatonante! Cavalcate sul campo e non concedete pietà ai nemici! Abbattete quei selvaggi e che sia il loro Capoguerra a raccoglierne i pezzi!", "." },

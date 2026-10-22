@@ -6,6 +6,7 @@ WFJ.Data.add("gossip", {
   ["a30a96a20170cec5"] = { "Sei davvero potente, {name}. Vieni da me se cerchi altro lavoro.", "." },
   ["a311ae4201a40fad"] = { "Il mio odio è forte <sbuffo>, ma è il momento giusto per raccontarti una storia, {race}.\n\nTanto tempo fa si combatté una battaglia tra dèi. Agamaggan, il nostro grande dio cinghiale, cadde a terra dopo essere stato sconfitto nella Guerra degli Antichi: il suo sangue piovve giù e le sue ossa furono fatte a pezzi. <sbuffo>\n\nGrandi spine spuntarono dalla terra dove il suo sangue toccò il suolo, e il suo teschio adorna una delle caverne a sud.", "." },
   ["a3146c43d3ca1165"] = { "Quale istruttore di professione stai cercando?", "." },
+  ["a3184ea388fa1d76"] = { "È stato un piacere fare affari con te, {name}!\n\nA nome di TB Ltd., ti auguro buona fortuna nella tua ricerca di Sulfuras!", "." },
   ["a322a08d10d10464"] = { "No, Gargal. Semplicemente no.", "." },
   ["a33d853d93b8596b"] = { "I vostri sforzi sono del tutto inutili, sciocchi! Non riuscirete mai a sconfiggermi!", "." },
   ["a341782f6123be92"] = { "Fu solo dopo la sua controversa morte che i cavalieri e i guerrieri di Lordaeron presero a indossare armature simili in onore del loro eroe caduto. Se la morte di Mograine fu una grande vittoria per Kel'Thuzad, il martirio che ne seguì si fece sentire fino alla fine della guerra.\n\nDove uno cadde, molti si sarebbero levati...", "." },

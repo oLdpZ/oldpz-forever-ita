@@ -46,6 +46,7 @@ WFJ.Data.add("gossip", {
   ["98adb720fa298413"] = { "I troll Zandalari hanno viaggiato a lungo e sofferto molto per raggiungere questo luogo, ma non fare nulla... significa invocare la nostra rovina...", "." },
   ["98b6d49dcc1413df"] = { "La banca più vicina è The Vault, a ⟦Ironforge=Forgiardente⟧, <ragazzo/ragazza>.", "." },
   ["98b8095c7075620a"] = { "Cosa dovrei sacrificare?", "." },
+  ["98ba611f0e4a04a9"] = { "Hai già le termiti, {name}? Sono sicuro che per <un/una> {class} in gamba come te sia una cosa ovvia.\n\nQuando ne avremo abbastanza, faremo in modo che nessuno possa più usare la segheria!", "." },
   ["98bbbff0f97b3262"] = { "Scommetto che non ti aspettavi di trovarmi in questa grotta, vero?\n\nMi chiamo J.D., e non posso dirti molto su come mi ritrovo qui, ma quello che posso dirti è che ora questa grotta è casa mia!\n\nPasso il tempo a studiare gli strani cristalli che si trovano in tutto il cratere.", "." },
   ["98c5370b9c5b8539"] = { "<Prendi questo libro per il bene di Azeroth!>", "." },
   ["98d3b7fc1256385d"] = { "Oh... sei di quel genere. Beh, Maximillian è l'unico da queste parti che sa qualcosa delle arti oscure. Probabilmente lo trovi al buio, nello scantinato della Lion's Pride Inn.", "." },

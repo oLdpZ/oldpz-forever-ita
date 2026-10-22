@@ -39,6 +39,7 @@ WFJ.Data.add("gossip", {
   ["e6c78102f03c8cca"] = { "Ho perso il ⟦Brazier of Beckoning=Braciere del Richiamo⟧!", "." },
   ["e6c8e6949e03cb21"] = { "Svegli, cani! Abbiamo un'operazione da mandare avanti qui!", "." },
   ["e6ce3dca2c4bd8b5"] = { "Ce n'è uno del Flagello, proprio laggiù!", "." },
+  ["e6d21164913e7b5a"] = { "Sai dove porta tutto questo, vero, {name}? Non c'è modo che sopravviva... guardala. La cosa migliore per lei ora è aiutarci a trovare una cura per la pestilenza. L'acqua che ha bevuto potrebbe contenere un indizio che ci aiuti a capire come. Morirà comunque: tanto vale che, prima di morire, faccia qualcosa di nobile per il nostro popolo. Non sei d'accordo?", "." },
   ["e6dd3cfba6f4776e"] = { "Sì, ragazzi! Le cose stanno per mettersi parecchio male.", "." },
   ["e6dd83b53800a98d"] = { "No, no, ti prego, continua... è solo che l'aria quassù è così, ehm, fumosa.", "." },
   ["e6dda9992ae372f5"] = { "Chi è furbo punta sugli gnomi per la prossima corsa! Piazza le tue scommesse finché sei in tempo!", "." },

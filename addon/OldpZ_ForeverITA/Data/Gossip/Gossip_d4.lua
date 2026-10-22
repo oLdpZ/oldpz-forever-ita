@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["d48e979a34d289dc"] = { "%s non può più muoversi.", "." },
   ["d494ba6cc9fa71ea"] = { "Un sorriso da un orecchio all'altro...", "." },
   ["d49a8d45089d74c1"] = { "Dunque desideri saperne di più sulle nostre armi elfiche? Che la tua prima lezione abbia inizio.", "." },
+  ["d49d5e041c0e2bd4"] = { "I venti sussurrano i racconti delle tue battaglie contro i Gurubashi, <sacerdote/sacerdotessa>. Persino i reali cominciano a parlare delle tue imprese. Si dice che re Rastakhan abbia perfino fatto il tuo nome.\n\nÈ giunto il momento di infondere l'Occhio. Dammi il talismano e compirò il rito.", "." },
   ["d4a0e6b176afa7dd"] = { "Ascolta, drago. Che la verità risuoni in tutte queste sale.", "." },
   ["d4a860f250e1f96c"] = { "Ho bisogno di addestramento, Nissa.", "." },
   ["d4add1a5aadc53bb"] = { "Finalmente il Soulflayer non mi tiene più!", "." },

@@ -36,6 +36,7 @@ WFJ.Data.add("gossip", {
   ["37979c6abee80670"] = { "Basta chiacchiere. Che vengano pure. Ridurremo le loro ossa in polvere.", "." },
   ["37aa2264b4a9c10d"] = { "Non dimenticare i sacrifici compiuti in questo giorno, elfo della notte. Abbiamo tutti sofferto immensamente per mano di queste bestie.", "." },
   ["37af0b57b68b1399"] = { "Il mio piano d'affari non prevedeva di dover ospitare kodo giganti... forse avrei dovuto mettermi nel ramo dei cestini intrecciati sott'acqua.", "." },
+  ["37c1ae49f409f37f"] = { "Sono venuta a ⟦Undercity=Sepulcra⟧ perché ho sentito che i loro alchimisti studiano da tempo e con impegno come trovare una cura per il loro stesso male. Mi hanno suggerito che forse potevano aiutare anche me.\n\nAnche se in questo posto mi sento tutt'altro che benvenuta, non avevo scelta: la malattia che mi ha colpita mi sta divorando dentro e avevo bisogno subito del loro aiuto.", "." },
   ["37c49ad5514c16fd"] = { "Ora, dove ho messo quel fossile misterioso? Ah, forse lassù...", "." },
   ["37ce0dc9338559a5"] = { "Ehm... li ho trovati così. Volevo mostrare al re che erano una minaccia! Senti, capitano... ho sentito la guardia Fengus chiamarti grassone inutile e amico degli gnoll!", "." },
   ["37d8f81062bf0933"] = { "Entra, entra. Solo non sederti troppo vicino alla stufa. Oggi non è ancora esplosa, ma per sicurezza credo sia meglio che ti sieda da un'altra parte.", "." },

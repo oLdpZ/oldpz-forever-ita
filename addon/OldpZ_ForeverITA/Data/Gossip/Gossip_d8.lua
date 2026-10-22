@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["d883c07081fedc08"] = { "<Signorino/Signorina>, se non ti conoscessi meglio, penserei che sei <uno/una> di quei tipi 'speciali'. Noi li chiamiamo Trogg.\n\nWindsor non aveva niente contro i ⟦Dark Iron=Ferroscuro⟧, dopotutto il miglior amico del suo trisnonno era un ⟦Dark Iron=Ferroscuro⟧. Ed è probabilmente anche per questo che quell'esercito di ⟦Dark Iron=Ferroscuro⟧ non l'ha ammazzato a vista.", "." },
   ["d89488162d014d92"] = { "Oh, il tram, il tram... tutti vogliono salire sul tram. Che fine hanno fatto i bei vecchi tempi in cui si volava in groppa a un grifone, aggrappati alla sella per la vita mentre si sfrecciava alti nel cielo?\n\nBah! E allora vai a prendere il tram... è a Tinker Town, insieme al resto degli aggeggi gnomeschi.", "." },
   ["d89712a49110970c"] = { "Il cucito richiede una mano ferma. E pazienza... soprattutto pazienza.", "." },
+  ["d8a1a5542ade9a8b"] = { "Sei riuscit<o/a> ad aiutare A-Me? Il rivestimento di mithril distrutto di cui parlavi era una buona ipotesi sul guasto. Sono sicura che se lo sostituisci si riattiverà e potrà tornare a casa.", "." },
   ["d8a66fc35f87bf77"] = { "Jin'rokh, temo di aver perso il mio ⟦Zandalar Vindicator's Breastplate=Pettorale Corazzato del Vendicatore degli Zandalari⟧. Puoi darmene uno nuovo?", "." },
   ["d8acbba972394c6c"] = { "%s si contorce dal dolore.", "." },
   ["d8ad46ebd042276f"] = { "Salve, {name}. Ti do il benvenuto a Thelsamar e, già che sei qui, non dimenticare di visitare la nostra birreria!", "." },

@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["4f02874e1918def7"] = { "Dov'è l'anziano Windrun?", "." },
   ["4f04aa74a646fd68"] = { "...nervi di torio.", "." },
   ["4f18677c9b783eba"] = { "Lok'tar, {race}. Sono il generale Zog, ambasciatore dell'⟦Horde=Orda⟧. Sono qui per informarti sui progressi che la possente ⟦Horde=Orda⟧ sta compiendo nei suoi sforzi per la Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Cosa vuoi sapere?", "." },
+  ["4f1bc461163ff1f7"] = { "Il tempo è denaro, {name}, e io non ho molto né dell'uno né dell'altro.", "." },
   ["4f37a64ab6915f7c"] = { "Hai bisogno di una guida fino alla tua destinazione?", "." },
   ["4f3b63f79fd8f2c8"] = { "Signore! Finché il mio corpo non smetterà di funzionare!", "." },
   ["4f3fdb8dafdd90d9"] = { "La magia scatenata brucia %s!", "." },

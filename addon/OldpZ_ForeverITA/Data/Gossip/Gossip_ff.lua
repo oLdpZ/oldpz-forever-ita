@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["ff6a401012a6ffb0"] = { "Va' a Orgrimmar, nella ⟦Valley of Honor=Valle dell'Onore⟧. Lì vive con il marito e le due figlie. Sono tutti fabbri di grande abilità, ma gli spiriti mi dicono che sarà lei a guidare meglio il tuo apprendimento.", "." },
   ["ff750d46edfaf12e"] = { "Cosa pensi di ottenere con questo, <sciocco/sciocca>? Già ora gli eserciti dei ⟦Blackrock=Roccianera⟧ si preparano a distruggere il tuo mondo.", "." },
   ["ff75192fa6cb694c"] = { "Come desideri, Vaelan.", "." },
+  ["ff7aa25cb4fe9951"] = { "Tra i troll Zandalari l'onore si guadagna, {name}. Con l'onore arriva la ricompensa: amicizia, alleanza...\n\nDammi il talismano, così che io possa accrescerne il potere.", "." },
   ["ff8028befb6c97aa"] = { "Anni di tecniche di allevamento di qualità e tante cure mi concedono il privilegio di mostrarti questi cavalli! Prego, prenditi tutto il tempo che serve per sceglierne uno come cavalcatura. Un cavallo è un compagno per la vita, amico. Non accontentarti: prendi il tuo destriero qui, oggi stesso!", "." },
   ["ff80585c5d35df29"] = { "Profanatori!", "." },
   ["ff829e37c4c0c8c0"] = { "Ah, molto bene. Mi hai convinto: sei <un/una> <allievo/allieva> <degno/degna>. Ora il tuo addestramento con me può cominciare...", "." },

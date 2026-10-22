@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["c64479ceaf960688"] = { "È l'avidità a ricondurti da me.\n\n<Mathredis ride.>\n\nUn saggio draenei una volta mi disse che essa, l'avidità, è l'unica qualità che tutte le razze di questo mondo hanno in comune. Devo dargli ragione.\n\nHai raccolto i componenti elencati nel compendio?", "." },
   ["c644895543371254"] = { "La risata di %s riecheggia nelle sale dell'Ala Nera.", "." },
   ["c651708ab9435622"] = { "Sildinair ha addestrato molte delle ⟦Sentinels=Sentinelle⟧ che sorvegliano la nostra amata città. Non ho dubbi che saprà fare di te <un/una> <guerriero/guerriera>. Cercala alla ⟦Warrior's Terrace=Terrazza dei Guerrieri⟧, vicino all'ingresso della nostra città.", "." },
+  ["c653067bf6caa5f3"] = { "Hai già parlato con John?", "." },
   ["c656cfe30371d716"] = { "La rabbia di Ishamuhale scorre in te, {name}.", "." },
   ["c6585f2a85ebfb03"] = { "Se hai attitudine per le arti di {class}, posso addestrarti.", "." },
   ["c65f90075d6bc703"] = { "%s saluta {name} con la mano", "." },

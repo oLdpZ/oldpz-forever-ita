@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["263960090094af41"] = { "Questo è il campo di battaglia della ⟦Alterac Valley=Valle d'Alterac⟧. Al momento le due fazioni sono in conflitto.", "." },
   ["263dbea62b61c265"] = { "⟦Polar Bracers=Bracciali Polari⟧.", "." },
   ["263f195fd35937e2"] = { "Che posso fare per te?", "." },
+  ["2646e1f47394ef28"] = { "Ringrazio i miei antenati: qualcuno è venuto ad aiutarmi. Hai la chiave che mi libererà?", "." },
   ["2648cdc46a647dc5"] = { "La mia abilità nel creare pozioni è inferiore alla tua. Sei <pronto/pronta> per parlare con Ainethil, proprio lì. Capirà che è il momento di istruirti ancora.", "." },
   ["265427cfe485e678"] = { "La mischia è finita!", "." },
   ["26547f1924ffe11d"] = { "Vorrei inserire il codice segreto per ricevere la mia mascotte Zergling.", "." },

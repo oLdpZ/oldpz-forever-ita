@@ -5,6 +5,7 @@ WFJ.Data.add("gossip", {
   ["6607c10dbe4631a9"] = { "Sì, consegnerò gli ordini al maestro di guerra Garrick!", "." },
   ["660fac026228275f"] = { "Cosa hai da vendere?", "." },
   ["660ffc78fa691b37"] = { "<Poso la mano sulla sfera.>", "." },
+  ["661333292f23f150"] = { "Ciao. Ti ho già vist<o/a>... vero?", "." },
   ["6616e74c187a7166"] = { "Vedo del potenziale in te, {name}. Ora prendi un martello e un po' di quei rottami: ti serve un sacco di pratica.", "." },
   ["661dcc2dc3e14f2f"] = { "È la mia fine! Evocate Verog!", "." },
   ["662461e3c0b16b41"] = { "Ah, come dice il titolo, faccio l'assassino per la ⟦Scarlet Crusade=Crociata Scarlatta⟧. Passo le giornate a sterminare bersagli di alta priorità e le notti nella discoteca di ⟦Gadgetzan=Meccania⟧. Ballare è la mia vera vocazione. Assassinare serve solo a pagare i conti.", "." },

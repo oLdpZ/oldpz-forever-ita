@@ -48,6 +48,7 @@ WFJ.Data.add("gossip", {
   ["91db2e742fc6b5a1"] = { "Come osi provare a zergarmi, mezza calzetta!", "." },
   ["91e1e326884eb73d"] = { "È tutto raccolto, {class}. Tutto viene trasportato a ⟦Silithus=Silitus⟧ per i preparativi finali e dovrebbe arrivare entro $2113w giorni. Tutte le nostre forze riunite attendono l'<eroe/eroina> che completerà la riunificazione dello Scettro delle Sabbie Mutevoli, suonerà il gong e darà inizio alla Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧.", "." },
   ["91f15550fae25581"] = { "Non siete che vermi sotto i miei piedi. Osate sfidarmi?", "." },
+  ["91f18130985c6c3f"] = { "Bentornat<o/a>, {class}. Vedo che il ciottolo è stato molto usato. Molti dei nostri nemici sono caduti davanti alle tue abilità ultraterrene. Le loro sofferenze sono state grandi. È ora che io potenzi il ciottolo. Dammelo.", "." },
   ["91f35c6b3f5ba370"] = { "Custodisco il ricettacolo della sua rinascita. Se intendi affrontare questo compito, dovrai fortificare il ricettacolo e infine spezzare il dominio di Ragnaros in persona!", "." },
   ["91f7f3fd5ff4d547"] = { "Su, facciamo a pugni, come gente civile.", "." },
   ["91febcc232d00b42"] = { "Brutto piccolo...!", "." },

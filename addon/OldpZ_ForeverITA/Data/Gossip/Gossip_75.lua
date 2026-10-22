@@ -9,6 +9,7 @@ WFJ.Data.add("gossip", {
   ["7519ad2067427415"] = { "Fermati! Le staccherai la testa!", "." },
   ["751a48106ba51c2a"] = { "SQUAWK!! *coff* *coff* Devo smettere di fumare!", "." },
   ["752049c984ee459e"] = { "{name}, hai disturbato il mio riposo!", "." },
+  ["75236cb2907c13db"] = { "La statua incombe minacciosa sopra di te.", "." },
   ["7529b8069e71a069"] = { "%s sceglie il bersaglio orco...", "." },
   ["752c477c13bea9b6"] = { "Jack e Jill, ma figurati! L'acqua qui intorno la trasporto tutta io.", "." },
   ["752c5ff7f657861f"] = { "Ecco fatto. Devo tornare al lavoro prima che Rokar mi rifili un altro ceffone perché batto la fiacca.", "." },

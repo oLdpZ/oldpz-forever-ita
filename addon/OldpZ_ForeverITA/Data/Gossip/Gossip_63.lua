@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["632ab041747c7123"] = { "Potresti darmi qualche moneta?", "." },
   ["632e58a8ef571d76"] = { "Cerchi una conoscenza più elevata. Tepa è benedetta da tale conoscenza. Dovrebbe essere qui vicino, da qualche parte...", "." },
   ["63331c68673d9178"] = { "Sì, dev'essere Austil de Mon. Se ne sta sempre nella taverna all'estremità sud-est della città. Si chiama ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, non puoi sbagliare.", "." },
+  ["635624c4e75949ab"] = { "Magnifico! Le farò mandare subito con un corriere a ⟦Undercity=Sepulcra⟧!\n\nQuanto a te, ecco la paga, come promesso. Tieniti il resto, sudicia bestia!", "." },
   ["635d1cf61926684f"] = { "Tu hai domande, ma sono troppo grandi perché io possa rispondere, {name}. Devi scambiare due parole con l'orco Yelmak, nel Drag di Orgrimmar. Ti aiuterà lui.", "." },
   ["635e9436140580a6"] = { "Sembra che %s non riesca più a lanciare incantesimi. Felcurse sta facendo effetto!", "." },
   ["6362329550d11bb9"] = { "Sono Ulysses Rackmore, capitano del Gallant. E questo è il diario degli ultimi giorni della mia nave condannata.\n\nNavigavamo verso Feathermoon Stronghold con un carico di rifornimenti quando i naga assaltarono le fiancate del Gallant. Li respingemmo, ma sapevamo che sarebbero tornati. Temendo di perdere i miei beni più preziosi, guidai il Gallant verso un'isola al largo di ⟦Desolace=Desolanda⟧, una con antiche rovine degli elfi della notte. E lì lasciai il mio forziere del tesoro.", "." },

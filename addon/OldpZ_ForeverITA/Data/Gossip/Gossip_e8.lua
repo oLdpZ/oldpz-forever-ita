@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["e83c52a3b89bf174"] = { "Ora lasciami in pace. Devo riposare.", "." },
   ["e83ff0187378af10"] = { "%s pianta il Moss-twined Heart...", "." },
   ["e84073d6eabccb27"] = { "Il ⟦Arathi Basin=Bacino d'Arathi⟧ un tempo era la nostra casa, e con il tuo aiuto lo sarà di nuovo! Ci aiuterai, {class}?", "." },
+  ["e847782c450e0921"] = { "<Eva appare e scompare alla vista.>", "." },
   ["e847853e989f3986"] = { "Salve, <giovanotto/signorina>. Sono Eva Sarkhoff e questo è mio marito, Lucien. È un piacere fare la tua conoscenza.", "." },
   ["e84a61ed8112cf62"] = { "Perché... non... muori e basta?", "." },
   ["e84cf44909c21841"] = { "Grazie, {name}. Che la Luce ti benedica, <fratello/sorella>, e guidi il tuo cammino.", "." },

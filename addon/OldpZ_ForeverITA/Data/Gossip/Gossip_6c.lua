@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["6c7b7e9a9fca7758"] = { "Il ⟦Frostwolf Graveyard=Cimitero dei Lupi Bianchi⟧ si trova lungo il lato della strada, poco a nord del ⟦Frostwolf Village=Villaggio dei Lupi Bianchi⟧.\n\nNon è controllato da nessuna delle due parti.", "." },
   ["6c7f0d86124b4a13"] = { "Dov'è l'istruttore di ⟦First Aid=Primo Soccorso⟧?", "." },
   ["6c82f465ac73fea5"] = { "Impari in fretta, <ragazzo/ragazza>, molto più in fretta di quanto riesca a starti dietro. Se vuoi continuare l'addestramento, ti consiglio di andare dal mio maestro. Si chiama Rotgath, Rotgath Stonebeard, e lo trovi a ⟦Ironforge=Forgiardente⟧, nella ⟦Great Forge=Grande Forgia⟧.", "." },
+  ["6c8a8f84282a97f3"] = { "Sei tornat<o/a>! Sorprendente, {race}. Hai scoperto il vero nome?", "." },
   ["6c8feeed64a0438a"] = { "E ora sai perché vivo in un cratere.", "." },
   ["6c9159fd51313f82"] = { "Il Fruit of Fertility?", "." },
   ["6c9825cd6ca5d0cf"] = { "È un segreto per tutti... anche per me!\n\nSono felice che tu sia <riuscito/riuscita> a scovarmi: per fortuna non mi nascondo in un cespuglio o sotto una roccia, vero?", "." },

@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["9b97d7b32e2b67fb"] = { "Conosci gli ⟦Highborne=Alti Nobili⟧? Gli Shen'dralar?", "." },
   ["9b9df0f975903585"] = { "⟦Wailing Caverns=Caverna dei Lamenti⟧", "." },
   ["9b9ec8098682b791"] = { "Come facevi a saperlo? Cioè, sì... Sì, sto cercando quel frammento. Ce l'hai?", "." },
+  ["9bab358bc3c32bf3"] = { "I venti sussurrano i racconti delle tue battaglie contro i Gurubashi, <sacerdote/sacerdotessa>. Persino i reali cominciano a parlare delle tue imprese. Si dice che re Rastakhan abbia perfino fatto il tuo nome.\n\nÈ giunto il momento di infondere l'Occhio. Dammi il talismano e compirò il rito.", "." },
   ["9bb53cade75bdd8e"] = { "%s scompare nella neve.", "." },
   ["9bb5a230c535947b"] = { "Non te l'avevo detto che le mie nuove tecniche di dominazione avrebbero funzionato?", "." },
   ["9bb76531cc1edd6a"] = { "Avremo le vostre teste!", "." },

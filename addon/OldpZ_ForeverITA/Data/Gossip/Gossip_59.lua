@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["59810b7792a2dc46"] = { "Studi le scienze mediche?", "." },
   ["598625864ffdcea7"] = { "Ras Frostwhat? Chi è?", "." },
   ["598ab44a6e827f9b"] = { "La Frostwolf Relief Hut è stata presa dall'⟦Horde=Orda⟧!", "." },
+  ["5991a2dcf1e262b1"] = { "Benvenut<o/a> nell'ufficio del censimento di ⟦Stormwind=Roccavento⟧. Se ti servono informazioni sulla nostra popolazione, posso aiutarti.", "." },
   ["599379901fa08888"] = { "Ringrazio la Luce per questa benedizione. Che sia usata per la giustizia e per difendere tutte le creature buone.", "." },
   ["59962272ec22cd17"] = { "Temo che la lama che tieni in mano non si possa più salvare. L'odio è troppo radicato. Ma non perdere la speranza, {class}. Dove un capitolo finisce, un altro comincia.\n\nTrova suo figlio: forse non incontrerai mai un uomo più devoto e pio. Si dice che sia in grado di forgiare di nuovo il Brandicenere, senza bisogno della vecchia lama corrotta.", "." },
   ["599bcfdc037e4c94"] = { "Ehi Fizzer, ti ho mai raccontato di quella volta che cavalcavo lungo i canali e certi goblin dentro i loro trituratori hanno cercato di tendermi un'imboscata?", "." },

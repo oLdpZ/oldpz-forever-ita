@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["32cdf8ac2c8a34da"] = { "<Il feldmaresciallo Chambers ringhia.>\n\nQuindi sei tu la marmaglia che ha aiutato Didier a portare qui le provviste tutte intere? Dove sono gli altri? So che dovete essere di più. I fifoni come te di solito girano in branchi enormi.\n\nBah, dammi quel dannato documento così posso firmarlo.", "." },
   ["32d9caabf53b3fc3"] = { "Uccido l'uomo sul posto, come il mio signore si aspetterebbe da me, perché non è altro che un ladro e un bugiardo.", "." },
   ["32e1cc574f00cc48"] = { "Scacceremo i nostri nemici da ⟦Silverpine=Pinargento⟧, poi porteremo la marea della guerra fino alla loro capitale!", "." },
+  ["32e43d2def01efa7"] = { "Vorrei esserci stato per vedere la faccia della bestia quando le hai inferto il colpo mortale, {name}.", "." },
   ["32eeca77d1727f7c"] = { "L'erba è morbida e rigogliosa. L'aria è fresca, piena di luce e di canti. Tutto ciò che ho visto fa pensare che Teldrassil sia un sogno diventato realtà. Perché, allora, il mio cuore è pieno di cattivi presentimenti?", "." },
   ["32f3f833710ee8d6"] = { "Non rivolgermi la parola nella tua lingua volgare! Solo Idraxis riesce a sopportarla.", "." },
 })

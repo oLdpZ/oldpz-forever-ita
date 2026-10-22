@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["060237f54f44a291"] = { "Il posatoio delle viverne è in cima alla scalinata del totem, al centro del paese.", "." },
   ["060496c12b8e2643"] = { "Ti affetto!", "." },
   ["06062700b6bc58dd"] = { "⟦Southshore=Riva del Sud⟧ pagherà col sangue!", "." },
+  ["0606e29d9eea3b05"] = { "Il dipinto, {name}. Hai il dipinto?", "." },
   ["061d199e3d71ef22"] = { "Le stelle di quest'epoca si piegano verso nuovi percorsi, fari di speranza e di forza per le ere a venire.", "." },
   ["062595a0d7e4edfa"] = { "Andatevene, creature immonde! Quelli come voi non hanno posto in questo mondo.", "." },
   ["062c28ce672a9f57"] = { "Prima le ⟦Westfall=Marche Occidentali⟧, poi tutta ⟦Stormwind=Roccavento⟧!", "." },

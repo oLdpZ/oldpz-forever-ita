@@ -42,4 +42,5 @@ WFJ.Data.add("gossip", {
   ["beee28a87bbed57e"] = { "Vedo che hai trovato l'occhio.\n\n<Il maestro Ryson sogghigna.>\n\nBeh, dammelo!", "." },
   ["bef8eb2b574da5ef"] = { "Piccolo goblin su edificio a nord di ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧. Tu esci da ⟦Undercity=Sepulcra⟧ e vai là.", "." },
   ["befc1e36279b6cce"] = { "Tutto il cibo e il materiale bellico che abbiamo raccolto è in viaggio verso ⟦Silithus=Silitus⟧. Dovrebbe arrivare in meno di $2113w giorni. Qualcuno mi ha detto che, una volta assemblato tutto vicino alla ⟦Cenarion Hold=Fortezza Cenariana⟧, qualcuno dovrà andare a suonare il gong all'Altare dello Scarabeo per aprire le porte di ⟦Ahn'Qiraj=Ahn'qiraj⟧ e dare inizio alla guerra.", "." },
+  ["befeb2f10d9158e1"] = { "<Maestro/Maestra> {name}, sei tornat<o/a>! Molthor ha mandato al re notizia delle tue imprese. Il tuo nome è noto persino nei ⟦South Seas=Mari del Sud⟧. Forse un giorno sarai <un/una> {class} leggendari<o/a>: una storia per i secoli.\n\nDammi il tuo talismano, così che io possa amplificarne ancora il potere.", "." },
 })

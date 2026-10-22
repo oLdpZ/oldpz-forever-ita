@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["734682c1f5749732"] = { "Sì, Okla, puoi. Ma non allontanarti troppo da casa.", "." },
   ["735a0cf25aff8c8a"] = { "Salute, {class} {race}. Sono il comandante Stronghammer, l'ambasciatore che rappresenta qui l'⟦Alliance=Alleanza⟧. Se hai domande sullo stato delle raccolte dell'⟦Alliance=Alleanza⟧ per lo sforzo bellico di ⟦Ahn'Qiraj=Ahn'qiraj⟧, <ragazzo/ragazza>, non esitare a chiedere.", "." },
   ["735af90a6d531be6"] = { "Che dolci della Veglia delle Ombre hai in vendita?", "." },
+  ["735eaefcf97f8590"] = { "{name}, non hai ancora assaltato le quattro basi. Torna da me quando avrai completato i tuoi obiettivi.", "." },
   ["735eddbed72f7cc4"] = { "Cosa posso comprare?", "." },
   ["736009cf8cb76919"] = { "Hai superato le mie modeste capacità. Cerca l'elfa della notte Ainethil alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus. Lei può insegnarti di più. Vorrei solo poter venire con te.", "." },
   ["7365f99fff8307b8"] = { "Eccoti un altro carico!", "." },
