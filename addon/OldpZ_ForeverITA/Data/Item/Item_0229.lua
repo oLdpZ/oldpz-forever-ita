@@ -5,6 +5,6 @@ WFJ.Data.add("item", {
   [229009] = { "Ti insegna a incantare in modo permanente un mantello per aumentare la ⟦Nature Resistance=Resistenza alla Natura⟧ di $N1.", 0x1165b881, "u" },
   [229415] = { "Costruisce le fondamenta di un accampamento di sopravvivenza. Porta altre provviste a questo accampamento per costruire un riparo.", 0xac130273, "u" },
   [229894] = { "Aumenta in modo permanente la tua reputazione con il ⟦Cenarion Circle=Circolo Cenariano⟧.", 0x8f12afce, "u" },
-  [229897] = { "Combina con $N1 ⟦Dark Rune=Runa Oscura⟧ e $N2 Firebloom per creare una ⟦Signet of Beckoning: Fire=Tavoletta del Richiamo: Fuoco⟧.", 0xae0da25f, "u" },
+  [229897] = { "Combina con $N1 ⟦Dark Rune=Runa Oscura⟧ e $N2 Sbocciafuoco per creare una ⟦Signet of Beckoning: Fire=Tavoletta del Richiamo: Fuoco⟧.", 0xae0da25f, "u" },
   [229965] = { "L'ultimo globo risonante ribolle di energia vile. È come se sapesse che intendi distruggerlo, e a sua volta irradia verso di te un odio sprezzante.", 0x6565e013, "u" },
 })

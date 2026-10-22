@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg11
+version: sg12
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg11
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg11)
+## Lessico fissato (sg12)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip, sg12 quelle della revisione dei tooltip e degli oggetti). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -29,7 +29,7 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | (the) Talon Den, «the Den» sul Picco di Petrartiglio | Eremo Grinfialunga (zona ufficiale); il titolo 1089 «The Den» resta inglese, perché il controllo vi pretende Antro del Tirocinio | Antro del Tirocinio |
 | (The) Barrens | Savane (le Savane) | Barrens |
 | Stonemasons' Guild, the Stonemasons | la Gilda dei Tagliapietre, i Tagliapietre (da Mantello dei Tagliapietre) | Stonemasons' Guild |
-| Uther the Lightbringer | Uther il Portatore di Luce | Uther the Lightbringer |
+| Uther the Lightbringer; the Lightbringer | Uther l'Araldo della Luce; l'Araldo della Luce (testo ufficiale del client) | Uther il Portatore di Luce |
 | Silvermoon | Lunargenta (da Resti di Lunargenta) | Silvermoon |
 | the Frozen Throne; Frostmourne | il Trono di Ghiaccio; Gelidanima | Frozen Throne, Frostmourne |
 | Icecrown | Corona di Ghiaccio | Icecrown |
@@ -164,7 +164,8 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | dreadlord | signore del terrore, minuscolo (nome comune) | Signore del Terrore |
 | Blazerunner | Fiammafulgida (dall'abilità Aura di Fiammafulgida) | Blazerunner |
 | Emberstrife | Braceardente (dalla Tana di Braceardente); Scryer → Alasaggia e Chronalis → Tac nel testo libero (dai Teschi di Alasaggia e di Tac); le creature da uccidere negli obiettivi restano inglesi | Emberstrife nel testo libero |
-| Cathedral District, Altar of Zanza, Firebloom | restano inglesi (nessuna forma ufficiale verificabile): «nel Cathedral District di Roccavento», «l'Altar of Zanza», «Porta 20 Firebloom» | quartiere della Cattedrale, Altare di Zanza |
+| Cathedral District, Altar of Zanza | restano inglesi (nessuna forma ufficiale verificabile): «nel Cathedral District di Roccavento», «l'Altar of Zanza» | quartiere della Cattedrale, Altare di Zanza |
+| Firebloom | Sbocciafuoco (nome ufficiale dell'erba): «Porta 20 Sbocciafuoco» | Firebloom |
 | Thorium Bar (e gli altri Bar) | Lingotto di Torio (ufficiale); senza numero «i lingotti di torio» | barre di torio |
 | Warsong Outriders / Outrider (oggetti) | Predoni Cantaguerra (fazione ufficiale); negli oggetti la forma ufficiale «Perlustratore» (Kit Curativo di Base dei Perlustratori) | — |
 | Myranda the Hag | Myranda la Megera | Myranda la Strega |
@@ -279,6 +280,8 @@ Queste righe **non** sono dialogo: sono ciò che il gioco stampa nel tooltip. Ig
 - **Registro.** Informativo, alla terza persona o impersonale, come il client italiano: `Rigenera $N1 salute.`, `Infligge $N1 danni da fuoco.` Una frase per ogni frase inglese.
 - **Maiuscole come il client italiano.** Le caratteristiche maiuscole: Forza, Agilità, Tempra, Intelletto, Spirito, Armatura (la caratteristica). Risorse e scuole minuscole: salute, mana, rabbia, energia; danni fisici, da fuoco, da gelo, da arcano, da natura, da ombra, da sacro. Le classi maiuscole (il Guerriero, i Maghi). In un tooltip `health` è `salute` (la tabella dell'interfaccia vale per le etichette dell'interfaccia).
 - **Nomi di abilità.** Un'abilità citata (`Charge`, `Rend`, `Sunder Armor`) prende il nome ufficiale italiano del client: il glossario non elenca i nomi di una parola, quindi si cercano nella tabella dei nomi ufficiali delle abilità (stesso id, client itIT). Senza forma ufficiale il nome resta inglese.
+- **Nomi di oggetti.** Un oggetto citato (un'erba, una ricetta, una pozione) prende il nome ufficiale italiano del client, cercato per id o per nome inglese intero nella tabella dei nomi ufficiali degli oggetti; l'articolo segue il nome italiano (`delle Paranocche d'Ottone`). Senza forma ufficiale il nome resta inglese intero, mai metà inglese e metà italiano. Un nome trovato solo per nome inglese di una parola (`Inferno`) può essere un altro oggetto: si verifica.
+- **Termini fissi come il client.** `Equip:` → `Equipaggia:`, `Use:` → `Usa:`; `spell power` → `potenza magica`; `healing` come statistica → `cure` (`Bonus alla guarigione` nella forma breve); `attack power` → `potenza d'attacco`; `permanently` → `in modo permanente` (`Incanta in modo permanente…`); `Focus` (la risorsa del Cacciatore) → `Focus`; `Bane` → `anatema` (`Hex` → `maleficio`); `Engraving`/`Runecarving` → `incisione`/`incisione runica`; i gradi delle professioni `Apprentice/Journeyman/Expert/Artisan` → `Apprendista/Esperto/Specialista/Artigiano`.
 - **Unità scritte dall'inglese.** Quando l'inglese scrive un'unità per esteso (`5 seconds`, `$s1 secs`, `2 mins`) e la riga non conta una durata (`durations` assente), il controllo vuole `$N`: si scrive `$N1 s` / `$N1 min` come il client (`ogni $N3 s`). Un plurale `$l<sing>:<plur>;` si rende con la forma plurale italiana.
 - **L'inglese è un modello, non il testo finito.** `Restores $o1 health over $d.` è ciò che contengono i dati; il giocatore vede `Restores 61 health over 18 sec.` I valori li inserisce il gioco, diversi per oggetto, grado, livello e talento, quindi l'italiano porta i segnaposto, mai i valori.
 

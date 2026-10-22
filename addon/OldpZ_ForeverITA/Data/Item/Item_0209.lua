@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("item", {
   [209027] = { "Dai il bocconcino al bersaglio.\nI mezzorsi ci catturano i giovani granchi della scogliera", 0x5b4e7a4d, "u" },
-  [209028] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo di Engraving.", 0x7ccaad21, "u" },
+  [209028] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", 0x7ccaad21, "u" },
   [209041] = { "Pianta i Pumpkin Seeds\nHanno bisogno di un terreno e di un nutrimento speciali per crescere.", 0x4b6ce604, "u" },
   [209042] = { "Nutriente quanto puzzolente! Ottimo come fertilizzante.", 0x0deaabc4, "u" },
   [209043] = { "Raccolto da chi di terra se ne intende davvero.", 0xe00cf2e8, "u" },
@@ -39,5 +39,5 @@ WFJ.Data.add("item", {
   [209849] = { "Scritto dal dottor Krastinov. Un'aggiunta discutibile alla collezione di qualsiasi biblioteca.", 0x9f13b028, "u" },
   [209850] = { "Una reliquia dei potenti imperi ogre di Draenor. Un'ottima aggiunta alla collezione di qualsiasi biblioteca.", 0x0d39aa56, "u" },
   [209851] = { "Segreti sciamanici gelosamente custoditi dal clan dei ⟦Grimtotem=Totem Truce⟧. Un'ottima aggiunta alla collezione di qualsiasi biblioteca.", 0x3407a7dd, "u" },
-  [209852] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
+  [209852] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
 })

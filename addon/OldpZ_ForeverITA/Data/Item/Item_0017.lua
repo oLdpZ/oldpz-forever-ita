@@ -137,7 +137,7 @@ WFJ.Data.add("item", {
   [17721] = { "Aumenta le cure prodotte da incantesimi ed effetti fino a un massimo di $N1.\nAumenta i danni inflitti da incantesimi ed effetti di natura fino a un massimo di $N2.", 0x060db67a, "u" },
   [17722] = { "Ti insegna a creare dei ⟦Gloves of the Greatfather=Guanti del Nonno⟧.", 0x6826c3a3, "u" },
   [17724] = { "Ti insegna a creare una ⟦Green Holiday Shirt=Camicia Verde della Festa⟧.", 0x9c34f828, "u" },
-  [17725] = { "Ti insegna a incantare permanentemente un'arma perché conferisca fino a 15 danni da gelo aggiuntivi quando lanci incantesimi di gelo.", 0xd1b68c3a, "u" },
+  [17725] = { "Ti insegna a incantare in modo permanente un'arma perché conferisca fino a 15 danni da gelo aggiuntivi quando lanci incantesimi di gelo.", 0xd1b68c3a, "u" },
   [17731] = { "Clicca col pulsante destro per leggere le parole della pergamena.", 0xa6f43944, "u" },
   [17733] = { "Rigenera $N1 mana. Ne rigenera $N2 volte tanto se attacchi un elementale della terra, un golem o un nemico forgiato dai Titani.", 0x018ad488, "u" },
   [17743] = { "Rigenera $N1 mana ogni $D1.\nRigenera $N3 salute ogni $D2.", 0xc66695fb, "u" },

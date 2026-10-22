@@ -4,7 +4,7 @@ WFJ.Data.add("gossip", {
   ["6b064c8b4a263a50"] = { "%s stride chiedendo aiuto...", "." },
   ["6b076571461b833d"] = { "Merok! Shai! Al mio fianco!", "." },
   ["6b0c23d7863c48e2"] = { "<Benvenuto/Benvenuta> al Registro delle Gilde di ⟦Undercity=Sepulcra⟧. Che cosa vuoi?", "." },
-  ["6b0c387fa28dec89"] = { "L'armatura della Redenzione era indossata dai nostri cavalieri più devoti: un'armatura degna del Portatore di Luce in persona!\n\nIn migliaia caddero nell'ultima guerra; le loro vesti furono strappate dai cadaveri e portate nella terribile cittadella di Naxxramas.\n\nSi dice che i cavalieri della morte di Naxxramas corrompano le piastre della Redenzione per il proprio uso.\n\nChe tragedia...", "." },
+  ["6b0c387fa28dec89"] = { "L'armatura della Redenzione era indossata dai nostri cavalieri più devoti: un'armatura degna dell'Araldo della Luce in persona!\n\nIn migliaia caddero nell'ultima guerra; le loro vesti furono strappate dai cadaveri e portate nella terribile cittadella di Naxxramas.\n\nSi dice che i cavalieri della morte di Naxxramas corrompano le piastre della Redenzione per il proprio uso.\n\nChe tragedia...", "." },
   ["6b0d1ada55a6ebed"] = { "Credo che mi riposerò un momento per riprendere fiato prima di tornare a ⟦Ratchet=Porto Paranco⟧. Grazie di tutto l'aiuto!", "." },
   ["6b14352f1e6b9619"] = { "Io mostro te quanto sono furbo, capo! Tu essere extra <furbo/furba> con potente mojo magico ora!\n\nUhm... forse Slip'kik usare magia su se stesso. Quella essere buona idea...", "." },
   ["6b148598ce29323d"] = { "Hai fatto molta strada, viandante. C'è un ultimo compito che devi svolgere...", "." },

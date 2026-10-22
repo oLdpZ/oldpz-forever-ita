@@ -5,7 +5,7 @@ WFJ.Data.add("item", {
   [216491] = { "Un carico di legname dalla Valle di Rovotorto che può essere utile alla tua fazione negli ⟦Arathi Highlands=Altopiani d'Arathi⟧.", 0x2b313da5, "u" },
   [216492] = { "Evoca e congeda un Raptor cavalcabile.", 0x7d1c7f75, "u" },
   [216523] = { "Apre la gabbia arrugginita", 0xed809cdb, "u" },
-  [216606] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
+  [216606] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [216619] = { "Mangiane una manciata e recupera il tempo perduto lungo il sentiero!\nLa buona vecchia uvetta con le arachidi... e molto altro!", 0xe24843b2, "u" },
   [216635] = { "Combinalo con una fonte di energia adatta per creare un Charged Voidcore.\nSembra corrispondere alla descrizione del nucleo del Vuoto che serve a Wirdal, ma appare del tutto inerte. Dev'esserci un modo per ricaricarlo...", 0x1c5b2e49, "u" },
   [216636] = { "Questo oggetto sembra assorbire tutta la luce e il calore che lo circondano. È gelido al tatto.", 0x4e92cc55, "u" },

@@ -394,7 +394,7 @@ WFJ.Data.add("item", {
   [19847] = { "Aumenta la probabilità d'impatto degli incantesimi del $N1%.\nAumenta fino a $N2 i danni e le cure di incantesimi ed effetti magici.", 0xaf1ddaa7, "u" },
   [19848] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
   [19849] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
-  [19850] = { "Offri un tributo alla tomba di Uther il Portatore di Luce nelle ⟦Western Plaguelands=Terre Infette Occidentali⟧.", 0x74a71722, "u" },
+  [19850] = { "Offri un tributo alla tomba di Uther l'Araldo della Luce nelle ⟦Western Plaguelands=Terre Infette Occidentali⟧.", 0x74a71722, "u" },
   [19851] = { "Offri un tributo al monumento di Grom Hellscream a ⟦Ashenvale=Valtetra⟧.", 0x4147ae82, "u" },
   [19858] = { "Aumenta in modo permanente la tua reputazione con la ⟦Zandalar Tribe=Tribù Zandalari⟧.", 0x35f2928a, "u" },
   [19872] = { "Ti insegna a evocare questa cavalcatura.", 0x720161a4, "u" },

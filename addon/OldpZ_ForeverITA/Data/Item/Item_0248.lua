@@ -5,7 +5,7 @@ WFJ.Data.add("item", {
   [248002] = { "Questo libro è in condizioni perfette.", 0x6239f1b5, "u" },
   [248003] = { "Questo abbecedario splendidamente illustrato è coperto di ragnatele appiccicose, come se qualcuno l'avesse recuperato da un nido di ragni.", 0xd2c6b410, "u" },
   [248004] = { "Una raccolta di diagrammi annotati che illustrano i principi dell'artificeria arcana. È coperta di ragnatele appiccicose.", 0x02029c4f, "u" },
-  [248008] = { "Equipaggiato: Aumenta fino a $N1 i danni e le cure prodotti da incantesimi ed effetti magici.", 0xd1b5cc6e, "u" },
+  [248008] = { "Equipaggia: Aumenta fino a $N1 i danni e le cure prodotti da incantesimi ed effetti magici.", 0xd1b5cc6e, "u" },
   [248206] = { "Strappa la busta per rivelare il contratto.\nUn ordine di artigianato in sospeso, intercettato durante il trasporto. Forse puoi essere tu a portarlo a destinazione.", 0x752c35f2, "u" },
   [248549] = { "Leggi l'etichetta per identificare la spedizione.\nUna spedizione attesa con impazienza che non è mai arrivata a destinazione. Mancano alcune delle sue provviste.", 0xbe6e1722, "u" },
   [248613] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.\nIl \"Lightning\" è solo senape.", 0x6a50a409, "u" },

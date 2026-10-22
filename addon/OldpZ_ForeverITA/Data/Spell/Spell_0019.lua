@@ -144,7 +144,7 @@ WFJ.Data.add("spell", {
   [19581] = { nil, "Salute massima aumentata del $N1%.", nil, 0xdbe692bb, "mu" },
   [19583] = { "Aumenta la salute e l'Armatura dei tuoi famigli del $N1%.", nil, 0x931245cc, nil, "um" },
   [19588] = { "Piazza il magnete tra i Goliath Morti nella ⟦Valley of Bones=Valle delle Ossa⟧.", nil, 0xc41035c2, nil, "um" },
-  [19590] = { "Aumenta la rigenerazione della concentrazione dei tuoi famigli del $N1% e permette al $N2% della tua rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x8c7075e7, nil, "um" },
+  [19590] = { "Aumenta la rigenerazione del focus dei tuoi famigli del $N1% e permette al $N2% della tua rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x8c7075e7, nil, "um" },
   [19593] = { "Esplode, infliggendo danni ai nemici vicini proporzionali alla distanza.", nil, 0xd0341163, nil, "um" },
   [19595] = { "Riflette gli incantesimi d'ombra e di gelo contro chi li lancia", "Gli incantesimi d'ombra e di gelo vengono riflessi contro chi li lancia", 0x7730c31e, 0xa4c56aa8, "uu" },
   [19596] = { "Aumenta la velocità di movimento dei tuoi famigli del $N1%.", nil, 0xcf4fe5c2, nil, "um" },

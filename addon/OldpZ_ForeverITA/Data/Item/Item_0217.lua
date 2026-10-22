@@ -40,5 +40,5 @@ WFJ.Data.add("item", {
   [217719] = { "Infondi l'essenza della magia del sangue in un emblema cavo.", 0x9ddd6f51, "u" },
   [217720] = { "Unisci offerte di carne e ossa.", 0x49295518, "u" },
   [217721] = { "Unisci offerte di carne e ossa.", 0x49295518, "u" },
-  [217736] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
+  [217736] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
 })

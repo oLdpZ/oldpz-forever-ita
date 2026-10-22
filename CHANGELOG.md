@@ -19,6 +19,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Missioni dei livelli 51–60 tradotte in italiano, comprese incursioni, eventi e reputazioni: circa 1.360 missioni in più.
 - Missioni proprie di WoW: Forever (contratti d'artigianato, campeggio, Incursioni dell'Incubo, isole e nuove zone): circa 930 missioni in più. Ora quasi tutto il testo delle missioni è in italiano; restano in inglese solo i titoli che sono nomi propri.
 - Libri, lettere, biglietti e targhe in italiano: circa 1.200 pagine, dalle cronache della storia di Azeroth alle lettere delle missioni. Restano in inglese solo le pagine che sono un nome o un'immagine.
+- Tooltip delle abilità di tutte le classi (descrizioni ed effetti) e descrizioni degli oggetti in italiano: circa 6.100 righe, con i nomi ufficiali italiani delle abilità, delle erbe e degli oggetti quando esistono.
 - Nuova impostazione "stile dei nomi": `/fita nomi it` mostra i nomi italiani ufficiali di luoghi, personaggi e oggetti (predefinito), `/fita nomi en` quelli inglesi.
 - I nomi sono marcati anche nelle descrizioni ufficiali di oggetti e abilità, così seguono lo stile dei nomi scelto.
 - Glossario derivato dai nomi ufficiali, usato per tenere coerenti i nomi in tutte le traduzioni.
@@ -28,6 +29,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 
 ### Fixed
 - Nomi più coerenti nelle missioni: oggetti degli obiettivi con il nome ufficiale italiano anche nei livelli 1–20, Babbo Inverno e la Masseria Buongusto, Guardiani della Notte, epiteti dei personaggi, arcidruido, segatronchi e i titoli dei personaggi (guardiano, ispettore, signore supremo).
+- Termini dei tooltip come nel client italiano: «Equipaggia:», potenza magica, «Incanta in modo permanente», i nomi ufficiali di erbe e ricette nelle spedizioni; Uther è «l'Araldo della Luce» anche nei libri, nelle missioni e nei dialoghi, e Firebloom è Sbocciafuoco.
 
 ### Changed
 - Alcune righe restano in inglese di proposito (ad esempio dove il gioco mostra testo che non va tradotto): non è una traduzione mancante.

@@ -34,7 +34,7 @@ WFJ.Data.add("item", {
   [234439] = { "Aumenta del $N1% per ogni pezzo di armatura Timeworn indossato i danni inflitti da tutti i tuoi incantesimi di danno nel tempo.\nLa Via del Soggiogatore", 0x0ea2a19b, "u" },
   [234440] = { "Aumenta del $N1% per ogni pezzo di armatura Timeworn indossato i danni inflitti da tutti i tuoi incantesimi di danno nel tempo.\nLa Via del Soggiogatore", 0x0ea2a19b, "u" },
   [234444] = { "Ricopre un'arma con un veleno che dura $N1 min. Ogni colpo ha una probabilità del $N2% di avvelenare il nemico, infliggendo $N3 danni da natura in $D1 e facendogli subire il $N5% di danni da arcano, da fuoco, da gelo, da natura e da ombra in più. Si accumula fino a $N6 volte sullo stesso bersaglio.\n\nOccult Poison conta come ⟦Deadly Poison=Veleno Mortale⟧ e beneficia di tutti i talenti e gli effetti che si attivano con ⟦Deadly Poison=Veleno Mortale⟧ o lo modificano.", 0xdb56e997, "u" },
-  [234465] = { "Evoca e congeda una Swift Spectral Tiger. È una cavalcatura molto veloce.", 0x7d7bae98, "u" },
+  [234465] = { "Evoca e congeda una Tigre Spettrale Rapida. È una cavalcatura molto veloce.", 0x7d7bae98, "u" },
   [234542] = { "Riduce del $N1% tutti i danni subiti dai giocatori e dai loro famigli. Questo effetto non si somma se proviene da più fonti.", 0x115db1dc, "u" },
   [234543] = { "Riduce del $N1% tutti i danni subiti dai giocatori e dai loro famigli. Questo effetto non si somma se proviene da più fonti.", 0x115db1dc, "u" },
   [234545] = { "Riduce del $N1% tutti i danni subiti dai giocatori e dai loro famigli. Questo effetto non si somma se proviene da più fonti.", 0x115db1dc, "u" },

@@ -44,7 +44,7 @@ WFJ.Data.add("gossip", {
   ["eac6575607d8e8ea"] = { "Grazie, Ragged John. La tua storia è stata molto edificante e istruttiva.", "." },
   ["eac9370c77062388"] = { "Ah! Ben ti sta, lurido trogg!!", "." },
   ["ead0334f22c5c563"] = { "Non è proprio il risultato che mi aspettavo. Potresti recuperare le mie catene?", "." },
-  ["ead471e3bcac2f5b"] = { "Non siamo gente maleducata, <straniero/straniera>, è solo che tutti vanno di fretta per assicurarsi che sia tutto perfetto per l'arrivo di Uther. Non capita spesso che il Portatore di Luce venga in città.", "." },
+  ["ead471e3bcac2f5b"] = { "Non siamo gente maleducata, <straniero/straniera>, è solo che tutti vanno di fretta per assicurarsi che sia tutto perfetto per l'arrivo di Uther. Non capita spesso che l'Araldo della Luce venga in città.", "." },
   ["ead4a910cfc69c9e"] = { "Ho sentito che tutti i coboldi che stavano laggiù sono morti.", "." },
   ["eadc8682795d6390"] = { "Certo, certo. Abbiamo un istruttore di Estrazione proprio qui in città. Cerca Krunn nell'angolo nord-occidentale, accanto alla locanda.", "." },
   ["eadd51340effa30c"] = { "Non merito tanto, signore.", "." },
