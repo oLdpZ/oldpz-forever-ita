@@ -1,0 +1,517 @@
+-- Core/Align is the Lua twin of align.py (shared vectors) and the runtime gate fails closed.
+local H = require("tests.lua.spec.helpers")
+
+local function set(list) local s = {} for _, v in ipairs(list) do s[v] = true end return s end
+
+describe("Core/Align: shared vectors", function()
+  local A
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+
+  it("loads under a std-lib-only environment and matches every vector", function()
+    local V = dofile(H.ROOT .. "/vectors/align_vectors.lua")
+    assert.is_true(#V.cases >= 25)
+    for _, c in ipairs(V.cases) do
+      local al = set(c.allowlist)
+      local got
+      if c.op == "names" then
+        got = A.names(c.text, al)
+      elseif c.op == "checkNames" then
+        got = A.checkNames(c.text, c.scope, al)
+      elseif c.op == "numbers" then
+        got = {}
+        for run, n in pairs(A.numbers(c.text)) do for _ = 1, n do got[#got + 1] = run end end
+        table.sort(got, function(x, y) if #x ~= #y then return #x < #y end return x < y end)
+      elseif c.op == "numberWords" then
+        got = A.numberWords(c.text)
+      else
+        got = c.expected -- variantKey needs Normalize and Hash: its vectors run in their own block below
+      end
+      assert.are.same(c.expected, got, c.id)
+    end
+  end)
+end)
+
+describe("Core/Align.check: placeholders and the gate", function()
+  local A
+  before_each(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+
+  it("fills $N<k> from the live line's number tokens, in order", function()
+    local ok, text = A.check("$N1ダメージを吸収。$N2秒間持続。", { "Absorbs 240 damage for 30 sec." })
+    assert.is_true(ok)
+    assert.are.equal("240ダメージを吸収。30秒間持続。", text)
+    -- the corpus numbers placeholders in reading order of the English line; a swapped pair shows swapped values
+    local _, swapped = A.check("$N2ダメージを吸収。$N1秒間持続。", { "Absorbs 240 damage for 30 sec." })
+    assert.are.equal("30ダメージを吸収。240秒間持続。", swapped)
+    assert.are.same({ "1200", "18.5", "3" }, A.values("Deals 1,200 damage over 18.5 sec. to 3 targets"))
+    assert.is_nil(A.fill("$N3ダメージ", { "1", "2" }))
+    assert.are.same({ "2", "1" }, select(2, A.fill("$N2と$N1", { "1", "2", "3" })))
+    assert.are.equal("$Nだけ", A.fill("$Nだけ", {}))
+    assert.is_false((A.check("$N3ダメージ", { "Deals 1 damage 2 times" })))
+    local ok2, t2 = A.check("$N1ダメージ", { "Deals 1,200 damage" })
+    assert.is_true(ok2); assert.are.equal("1200ダメージ", t2)
+  end)
+
+  it("the tooltip's name line never supplies numbers (Hearthstone); names need no scope (ADR-101)", function()
+    local line = "Use: Returns you to Shadowglen. Speak to an Innkeeper in a different place to change your home "
+      .. "location."
+    assert.is_true((A.check("【使用】Hearthstoneの場所に戻ります。", { line })))
+    assert.is_true((A.check("【使用】Hearthstoneの場所に戻ります。", { line }, "Hearthstone")))
+    assert.is_false((A.check("$N1回復", { "Restores health." }, "Potion 5")))
+    assert.is_false((A.check("5回復", { "Restores health." }, "Potion 5")))
+  end)
+
+  it("passes when every name and number is in the replaced lines", function()
+    local ok, text = A.check("18秒間でhealthを61回復。回復中は\n座っている必要があります。",
+      { "Use: Restores 61 health over 18 sec. Must remain seated while eating." })
+    assert.is_true(ok)
+    assert.are.equal("18秒間でhealthを61回復。回復中は\n座っている必要があります。", text)
+  end)
+
+  it("fails closed on a missing number or no lines; a missing name is no reason (ADR-101)", function()
+    assert.is_true((A.check("Silverwind Refugeへ行け", { "Go to Splintertree Post." })))
+    assert.is_false((A.check("18秒間でhealthを61回復", { "Use: Restores 70 health over 18 sec." })))
+    assert.is_false((A.check("何か", {})))
+    assert.is_false((A.check("何か", nil)))
+    assert.is_false((A.check(nil, { "x" })))
+  end)
+
+  it("accepts allowlisted words, English number words, full-width digits, and ignores glued digits", function()
+    assert.is_true((A.check("Healthを回復", { "Restores some hit points." })))
+    assert.is_true((A.check("Kobold Verminを3匹", { "Kill three Kobold Vermin." })))
+    assert.is_true((A.check("６１回復", { "Restores 61 health." })))
+    assert.is_true((A.check("Mk2を使え", { "Use the Mk3." }))) -- "Mk2" is neither a name (2 letters) nor a number
+    assert.is_false((A.check("2を使え", { "Use the Mk2." }))) -- a bare 2 in the Japanese, only a glued 2 in the line
+    assert.is_true((A.check("1200ダメージ", { "Deals 1,200 damage" }))) -- a rendered thousands separator
+    assert.are.same({ "1200", "18.5" }, A.values("Deals 1,200 damage over 18.5 sec to the Mk2 for 18sec"))
+  end)
+end)
+
+-- `$D<k>`: the one value whose UNIT the client chooses. `$d` renders through
+-- INT_SPELL_DURATION_SEC / _MIN / _HOURS / _DAYS, so the same template shows seconds on one item and minutes
+-- on another; the Japanese must never name the unit itself. The renderer is UIStrings', stubbed here.
+-- Align.gate: what the tooltip shows for a shipped item / spell entry, by the Translator's status rules.
+describe("gate", function()
+  local A
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+  local LINE = { "Restores 50 health." }
+
+  it("an unaligned or stale line goes through the gate", function()
+    assert.are.same({ true, "体力を50回復する。" }, { A.gate({ ja = "体力を$N1回復する。", status = "u" }, LINE) })
+    assert.are.same({ true, "体力を50回復する。" }, { A.gate({ ja = "体力を$N1回復する。", status = "s" }, LINE) })
+    assert.is_false(A.gate({ ja = "体力を99回復する。", status = "u" }, LINE))
+  end)
+
+  it("a trusted line is shown ungated with its live values filled in", function()
+    assert.are.same({ true, "体力を50回復する。" }, { A.gate({ ja = "体力を$N1回復する。", status = "." }, LINE) })
+    assert.are.same({ true, "回復する。" }, { A.gate({ ja = "回復する。", status = "." }, LINE) })
+  end)
+
+  it("a branch line only when unaligned or stale; no Japanese, or another status, shows nothing", function()
+    local branch = { variants = { "体力を$N1回復する。" }, shapes = { "1/0" } }
+    branch.status = "u"
+    assert.is_true((A.gate(branch, LINE)))
+    branch.status = "."
+    assert.is_false(A.gate(branch, LINE))
+    assert.is_false(A.gate({ ja = "", status = "u" }, LINE))
+    assert.is_false(A.gate({ ja = "x", status = "m" }, LINE))
+    assert.is_false(A.gate(nil, LINE))
+  end)
+end)
+
+describe("durations", function()
+  local A
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+
+  -- answers the way Index:duration does: only for a real duration entry, one or two of them
+  local function renderer(map)
+    return function(text) return map[text] end
+  end
+  local SEC = renderer({
+    ["30 sec"] = "30秒", ["18 sec"] = "18秒", ["1.5 min"] = "1.5分", ["2 min"] = "2分",
+    ["1 hr 30 min"] = "1時間30分", ["18秒"] = "18秒", ["10 days"] = "10日",
+  })
+
+  it("starts only where a number starts, and skips a number that is not a duration whole", function()
+    -- "1.5 sec" has no renderer here (the float form is not shipped): it must not come back as "5 sec"
+    assert.are.same({}, A.durations("Stuns for 1.5 sec.", renderer({ ["5 sec"] = "5秒" })))
+    assert.are.same({ "30秒" }, A.durations("Absorbs 1,230 damage (30 sec).", SEC))
+    assert.are.same({ "30秒" }, A.durations("Lasts 30 sec; stacks.", SEC))
+    assert.are.same({ "30秒" }, A.durations('Lasts 30 sec" and more.', SEC))
+  end)
+
+  it("finds the live line's durations in order, already in Japanese", function()
+    assert.are.same({ "18秒" }, A.durations("Restores 61 health over 18 sec.", SEC))
+    assert.are.same({ "2分" }, A.durations("Lasts 2 min.", SEC))
+    assert.are.same({ "1時間30分" }, A.durations("Lasts 1 hr 30 min.", SEC))
+    -- the two-entry phrase is one duration, not also its second half
+    assert.are.same({ "1時間30分" }, A.durations("1 hr 30 min", SEC))
+    assert.are.same({ "30秒", "10日" }, A.durations("Stuns for 30 sec. Expires in 10 days.", SEC))
+  end)
+
+  -- the spell API's text keeps the client's plural code ("for 1 |4hour:hrs;."); the line the tooltip holds is
+  -- that same text, and the renderer understands it whole, closing ";" included
+  it("reads a duration written in the client's plural code, one or two of them", function()
+    local raw = renderer({ ["1 |4hour:hrs;"] = "1時間", ["5 |4Hr:Hrs; 30 |4Min:Mins;"] = "5時間30分" })
+    assert.are.same({ "1時間" }, A.durations("Increases armor by 34 for 1 |4hour:hrs;.", raw))
+    assert.are.same({ "1時間" }, A.durations("for 1 |4hour:hrs;. Only one Blessing.", raw))
+    assert.are.same({ "5時間30分" }, A.durations("Lasts 5 |4Hr:Hrs; 30 |4Min:Mins;.", raw))
+    assert.are.same({}, A.durations("for 2 |4item:items;.", raw))
+  end)
+
+  it("a gated line in the plural code passes the gate and is filled from it", function()
+    local raw = renderer({ ["1 |4hour:hrs;"] = "1時間" })
+    local ok, text = A.check("$D1の間、味方の対象のアーマーを$N1上げます。",
+      { "Increases the friendly target's armor by 34 for 1 |4hour:hrs;." }, nil, raw)
+    assert.is_true(ok)
+    assert.are.equal("1時間の間、味方の対象のアーマーを34上げます。", text)
+  end)
+
+  it("ignores a number that is not a duration, and a line already in Japanese is read too", function()
+    assert.are.same({}, A.durations("Restores 61 health.", SEC))
+    assert.are.same({}, A.durations("Deals 120 Fire damage to 5 enemies.", SEC))
+    assert.are.same({}, A.durations("Requires Level 40 and 25 Mining.", SEC))
+    -- our own UI strings make the client print "18秒", so the live line may already carry the Japanese unit
+    assert.are.same({ "18秒" }, A.durations("Restores 61 health over 18秒.", SEC))
+  end)
+
+  it("returns nothing without a renderer, so a $D line fails closed rather than guessing", function()
+    assert.are.same({}, A.durations("Lasts 30 sec.", nil))
+    assert.are.same({}, A.durations(nil, SEC))
+    assert.is_nil(A.fill("$D1かけて回復します。", {}, {}))
+  end)
+
+  it("fills $D<k> beside $N<k>, and fails closed when either has no value", function()
+    local text, used = A.fill("$D2かけてhealthを$N1回復します。", { "61", "18" }, { "x", "18秒" })
+    assert.are.equal("18秒かけてhealthを61回復します。", text)
+    assert.are.same({ "18秒", "61" }, used)
+    assert.is_nil(A.fill("$D3です。", { "1" }, { "18秒" }))
+    assert.is_nil(A.fill("$N3です。", { "1" }, { "18秒" }))
+    assert.are.equal("$Nと$Dはそのまま。", A.fill("$Nと$Dはそのまま。", {}, {}))
+  end)
+
+  -- `$D<k>` indexes the DURATIONS of the line, not the shared number space of `$N`: a drafter writes "the
+  -- first duration". `$N` still counts every number, the duration's included.
+  it("check fills the duration from the live line and still gates names and numbers", function()
+    local lines = { "Restores 61 health over 18 sec." }
+    local ja = "$D1かけてhealthを$N1回復します。"
+    local ok, text = A.check(ja, lines, nil, SEC)
+    assert.is_true(ok)
+    assert.are.equal("18秒かけてhealthを61回復します。", text)
+    -- the unit is never assumed: the same Japanese on a minutes line yields minutes
+    local ok2, text2 = A.check(ja, { "Restores 61 health over 2 min." }, nil, SEC)
+    assert.is_true(ok2)
+    assert.are.equal("2分かけてhealthを61回復します。", text2)
+    -- A baked unit is WRONG on the minutes line and the gate cannot see it: both numbers are in the line,
+    -- and 分 against sec is Japanese text `check` never inspects. So the gate does not save a baked unit;
+    -- `translate_lint`'s `duration_missing` is what keeps one out of the corpus.
+    assert.is_true((A.check("18分かけてhealthを61回復します。", lines, nil, SEC)))
+    -- without the renderer the placeholder cannot be filled, so the line stays English
+    assert.is_false(A.check(ja, lines, nil, nil))
+    -- $N still indexes every number, so the duration's number is reachable bare if a line ever wants it
+    local ok3, text3 = A.check("$N2秒相当でhealthを$N1回復します。", lines, nil, SEC)
+    assert.is_true(ok3)
+    assert.are.equal("18秒相当でhealthを61回復します。", text3)
+  end)
+end)
+
+-- a TRUSTED line's placeholders are filled without the gate. A quest objective reads
+-- `Collect $1oa Lady's Tear Moss.` in the text the server sent; the count is only in the line the player is
+-- shown, so the Japanese carries `$N<k>` and the addon fills it, but the names and numbers were already
+-- checked offline, so re-checking them here would reject a good translation over that same count.
+describe("fillValues", function()
+  local A
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+
+  it("a range the client prints is one value, filled as A-B", function()
+    local live = "Hurls a fiery ball that causes 14 to 22 Fire damage and an additional 2 Fire damage over 4 sec."
+    assert.are.same({ "14-22", "2", "4" }, A.values(live))
+    local ja = "$N1のFireダメージを与え、さらに$N3秒かけて$N2のFireダメージを与えます。"
+    assert.are.equal("14-22のFireダメージを与え、さらに4秒かけて2のFireダメージを与えます。", A.fillValues(ja, live))
+    local ok, text = A.check(ja, { live })
+    assert.is_true(ok); assert.are.equal("14-22のFireダメージを与え、さらに4秒かけて2のFireダメージを与えます。", text)
+  end)
+
+  it("Wrath: one slot takes the range or the single number; two slots around one range never fill", function()
+    local ja = "対象に$N1のNature属性ダメージを\n与えます。"
+    local ok, text = A.check(ja, { "Causes 14 to 16 Nature damage to the target." })
+    assert.is_true(ok); assert.are.equal("対象に14-16のNature属性ダメージを\n与えます。", text)
+    ok, text = A.check(ja, { "Causes 15 Nature damage to the target." })
+    assert.is_true(ok); assert.are.equal("対象に15のNature属性ダメージを\n与えます。", text)
+    assert.is_false((A.check("対象に$N1-$N2のNature属性ダメージを\n与えます。",
+      { "Causes 14 to 16 Nature damage to the target." })))
+  end)
+
+  it("fills from the live line without gating names or numbers", function()
+    local live = "Collect 5 Lady's Tear Moss."
+    assert.are.equal("Lady's Tear Mossを5個集める。", A.fillValues("Lady's Tear Mossを$N1個集める。", live))
+    -- The difference from the gate: a number the OBJECTIVE line does not carry (the quest gives 3 days in
+    -- its description, not here) makes `check` refuse. `fillValues` does not check, because the offline
+    -- check already read the whole quest's English (status.Scope), which this one line is not.
+    assert.are.equal("3日で5個集める。", A.fillValues("3日で$N1個集める。", live))
+    assert.is_false((A.check("3日で$N1個集める。", { live })))
+  end)
+
+  it("leaves a line with no placeholder exactly as it is, and never calls it a failure", function()
+    assert.are.equal("7体倒す。", A.fillValues("7体倒す。", "Kill 7 Young Nightsabers."))
+    assert.are.equal("7体倒す。", A.fillValues("7体倒す。", nil))  -- no live text needed
+    assert.are.equal("", A.fillValues("", "x"))
+  end)
+
+  it("fails closed when a placeholder cannot be filled", function()
+    assert.is_nil(A.fillValues("$N1個集める。", nil))        -- no live text at all
+    assert.is_nil(A.fillValues("$N1個集める。", ""))
+    assert.is_nil(A.fillValues("$N3個集める。", "Collect 5 Moss."))  -- no third value
+    assert.is_nil(A.fillValues(nil, "x"))
+  end)
+
+  it("fills a duration too, with the unit the client chose", function()
+    local SEC = function(t) return ({ ["30 sec"] = "30秒", ["2 min"] = "2分" })[t] end
+    assert.are.equal("30秒続く。", A.fillValues("$D1続く。", "Lasts 30 sec.", SEC))
+    assert.are.equal("2分続く。", A.fillValues("$D1続く。", "Lasts 2 min.", SEC))
+    assert.is_nil(A.fillValues("$D1続く。", "Lasts 30 sec.", nil))  -- no renderer: fail closed
+  end)
+end)
+
+-- a name-list tail. The live description is the head, then one line per known spell's name.
+describe("name-list tail ($T)", function()
+  local A
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+  local live = "You are fluent in the following languages:\r\nCommon\r\nDwarvish"
+
+  it("fills the head and copies the live lines from the first break on, byte for byte", function()
+    assert.are.equal("次の言語を流暢に話せます：\r\nCommon\r\nDwarvish",
+      A.fillValues("次の言語を流暢に話せます：$T", live))
+    local ok, text = A.check("次の言語を流暢に話せます：$T", { live })
+    assert.is_true(ok)
+    assert.are.equal("次の言語を流暢に話せます：\r\nCommon\r\nDwarvish", text)
+    -- a client that writes a bare \n keeps it as written
+    assert.are.equal("次の言語：\nCommon", A.fillValues("次の言語：$T", "You know:\nCommon"))
+  end)
+
+  it("takes the head's values from the head only", function()
+    assert.are.equal("4種類の鎧：\r\nCloth\r\nLeather", A.fillValues("$N1種類の鎧：$T", "Wear 4 types:\r\nCloth\r\nLeather"))
+  end)
+
+  it("with no known spell there is no tail to copy", function()
+    assert.are.equal("次の言語を流暢に話せます：", A.fillValues("次の言語を流暢に話せます：$T", "You are fluent in:"))
+  end)
+
+  it("fails closed on a misplaced or doubled marker", function()
+    assert.is_nil(A.fillValues("$T次の言語：", live))
+    assert.is_nil(A.fillValues("次の言語：$T$T", live))
+    assert.is_nil(A.fillValues("次の言語：$T", nil))
+    assert.is_false(A.check("$T次の言語：", { live }))
+  end)
+
+  it("a line with no $T is unchanged by the tail rule", function()
+    assert.are.equal("7体倒す。", A.fillValues("7体倒す。", "Kill 7 Young Nightsabers.\r\nmore"))
+  end)
+end)
+
+describe("Core/Align: icons and branch variants (ADR-043)", function()
+  local A
+  local ICON = "|Tinterface\\icons\\inv_misc_food_15:0|t"
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+
+  it("textures takes icon escapes out of a line and keeps them in order", function()
+    local plain, icons = A.textures("Gain " .. ICON .. " Quick Draw and " .. ICON .. ".")
+    assert.are.equal("Gain   Quick Draw and  .", plain)
+    assert.are.same({ ICON, ICON }, icons)
+  end)
+
+  it("an escaped pipe never opens an icon escape", function()
+    local plain, icons = A.textures("a ||Tfoo|t b " .. ICON)
+    assert.are.equal("a ||Tfoo|t b  ", plain)
+    assert.are.same({ ICON }, icons)
+  end)
+
+  it("$I<k> is filled with the k-th icon of the live line; a missing one fails closed", function()
+    assert.are.equal(ICON .. " Quick Draw：25", (A.fill("$I1 Quick Draw：$N1", { "25" }, {}, { ICON })))
+    assert.is_nil(A.fill("$I2 Quick Draw", {}, {}, { ICON }))
+  end)
+
+  it("check reads no value, name or number out of an icon path", function()
+    local ok, text = A.check("$I1 Quick Draw：$N1のダメージ。", { "Gain " .. ICON .. " Quick Draw: 25 damage." })
+    assert.is_true(ok)
+    assert.are.equal(ICON .. " Quick Draw：25のダメージ。", text)
+    -- without stripping, "15" and "0" in the path would have been $N1 and $N2
+    assert.are.same({ "25" }, A.values((A.textures("Gain " .. ICON .. " Quick Draw: 25 damage."))))
+    assert.is_false(A.check("$I1 Quick Draw：$N1のダメージ。", { "Gain Quick Draw: 25 damage." }))
+  end)
+
+  it("fillValues copies the icon too", function()
+    assert.are.equal(ICON .. "を25回復", A.fillValues("$I1を$N1回復", "Restores " .. ICON .. " 25."))
+  end)
+
+  local FIRE = { "$N1のFireダメージを吸収する。さらに$N2%の確率でFire呪文を反射する。",
+    "$N1のFireダメージを吸収する。" }
+  local SHAPES = { "2/0", "1/0" }
+
+  it("checkVariants picks the variant whose shape the live line has (Fire Ward, with and without it)", function()
+    local live = "Absorbs 165 Fire damage and grants a 10% chance to reflect Fire spells."
+    local ok, text = A.checkVariants(FIRE, SHAPES, { live })
+    assert.is_true(ok)
+    assert.are.equal("165のFireダメージを吸収する。さらに10%の確率でFire呪文を反射する。", text)
+    ok, text = A.checkVariants(FIRE, SHAPES, { "Absorbs 165 Fire damage." })
+    assert.is_true(ok)
+    assert.are.equal("165のFireダメージを吸収する。", text)
+  end)
+
+  it("checkVariants does not pick by name when the shapes are alike (ADR-101): only a key does", function()
+    local signs = { "Orcish Tradeskill Signに加える。", "Dwarven Tradeskill Signに加える。" }
+    assert.is_false(A.checkVariants(signs, { "0/0", "0/0" }, { "Add the sign to your Dwarven Tradeskill Sign toy." }))
+  end)
+
+  it("checkVariants fails closed when none or several variants pass", function()
+    assert.is_false(A.checkVariants({ "攻撃する。", "防御する。" }, { "0/0", "0/0" }, { "Requires Cat Form." }))
+    assert.is_false(A.checkVariants(FIRE, SHAPES, { "Absorbs 165 Fire damage and 10% and 3 more." }))
+    assert.is_false(A.checkVariants({ "5回復。" }, { "0/0" }, { "Restores 6." }))
+    assert.is_false(A.checkVariants({}, {}, { "x" }))
+    assert.is_false(A.checkVariants(FIRE, SHAPES, {}))
+  end)
+
+  it("identical variant texts count once", function()
+    local ok, text = A.checkVariants({ "$N1回復。", "$N1回復。" }, { "1/0", "1/0" }, { "Restores 5." })
+    assert.is_true(ok)
+    assert.are.equal("5回復。", text)
+  end)
+end)
+
+-- a list tail after a head of several lines (Riding, the Shaman totem lists): the Japanese head keeps the
+-- English head's line breaks, so the live text is cut at the break after them.
+describe("name-list tail after a multi-line head", function()
+  local A
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+  local live = "Allows you to ride basic ground mounts that require a riding skill of 75.\r\n\r\nKnown abilities:"
+    .. "\r\nApprentice Riding\r\nBlack Stallion"
+  local ja = "ライディングスキル$N1が必要な基本的な地上マウントに乗れます。\r\n\r\n習得済みの能力：$T"
+
+  it("cuts the live text at the break after the head's own breaks", function()
+    local head, tail = A.splitTail(ja, live)
+    assert.are.equal("ライディングスキル$N1が必要な基本的な地上マウントに乗れます。\r\n\r\n習得済みの能力：", head)
+    assert.are.equal("Allows you to ride basic ground mounts that require a riding skill of 75.\r\n\r\n"
+      .. "Known abilities:", tail.scope)
+    assert.are.equal("\r\nApprentice Riding\r\nBlack Stallion", tail.text)
+    assert.are.equal("ライディングスキル75が必要な基本的な地上マウントに乗れます。\r\n\r\n習得済みの能力："
+      .. "\r\nApprentice Riding\r\nBlack Stallion", A.fillValues(ja, live))
+    local ok, text = A.check(ja, { live })
+    assert.is_true(ok)
+    assert.are.equal(A.fillValues(ja, live), text)
+  end)
+
+  it("a head written with bare line breaks counts them the same", function()
+    local _, tail = A.splitTail("乗れます。\n\n習得済み：$T", "Ride.\n\nKnown:\nFoo\nBar")
+    assert.are.equal("Ride.\n\nKnown:", tail.scope)
+    assert.are.equal("\nFoo\nBar", tail.text)
+  end)
+
+  it("with nothing after the head there is no tail; with fewer breaks than the head it fails closed", function()
+    local head, tail = A.splitTail(ja, "Allows you to ride.\r\n\r\nKnown abilities:")
+    assert.are.equal("ライディングスキル$N1が必要な基本的な地上マウントに乗れます。\r\n\r\n習得済みの能力：", head)
+    assert.are.same({ scope = "Allows you to ride.\r\n\r\nKnown abilities:", text = "" }, tail)
+    assert.is_nil(A.splitTail(ja, "Allows you to ride. Known abilities:\r\nApprentice Riding"))
+    assert.is_nil(A.fillValues(ja, "Allows you to ride. Known abilities:\r\nApprentice Riding"))
+    assert.is_false(A.check(ja, { "Allows you to ride. Known abilities:\r\nApprentice Riding" }))
+  end)
+
+  it("a one-line head still cuts at the first break", function()
+    local head, tail = A.splitTail("次の言語：$T", "You know:\r\nCommon\r\nDwarvish")
+    assert.are.equal("次の言語：", head)
+    assert.are.same({ scope = "You know:", text = "\r\nCommon\r\nDwarvish" }, tail)
+  end)
+end)
+
+-- a VARIANT KEY: the hash of a live line's wording with its values masked, which picks between variants whose
+-- numbers alone cannot tell them apart (the Druid feral talents). Python `align.variant_key` keys the English
+-- template the same way; the vectors hold the pairs.
+describe("Core/Align.variantKey and keyed variants", function()
+  local A
+  local SEC = function(t) return ({ ["30 sec"] = "30秒", ["18 sec"] = "18秒", ["3 sec"] = "3秒", ["2 min"] = "2分",
+    ["1 hr 30 min"] = "1時間30分" })[t] end
+  setup(function()
+    local ns = {}
+    H.loadPure("Core/Normalize.lua", "OldpZ_ForeverITA", ns)
+    H.loadPure("Core/Hash.lua", "OldpZ_ForeverITA", ns)
+    H.loadPure("Core/Align.lua", "OldpZ_ForeverITA", ns)
+    A = ns.Align
+  end)
+
+  it("matches every vector: the live text keys to its template's key", function()
+    local V = dofile(H.ROOT .. "/vectors/align_vectors.lua")
+    local n = 0
+    for _, c in ipairs(V.cases) do
+      if c.op == "variantKey" then
+        assert.are.equal(c.expected, A.variantKey(c.text, SEC), c.id)
+        n = n + 1
+      end
+    end
+    assert.is_true(n >= 8)
+  end)
+
+  it("masks values, durations with their unit, ranges and icons; the wording stays", function()
+    local ICON = "|Tinterface\\icons\\x:0|t"
+    assert.are.equal(A.variantKey("Deals 5 damage.", SEC), A.variantKey("Deals 1,200 damage.", SEC))
+    assert.are.equal(A.variantKey("Lasts 30 sec.", SEC), A.variantKey("Lasts 2 min.", SEC))
+    assert.are.equal(A.variantKey("Causes 14 to 22 damage.", SEC), A.variantKey("Causes 7 damage.", SEC))
+    assert.are.equal(A.variantKey(ICON .. " Fire: 5", SEC), A.variantKey("Fire: 9", SEC))
+    assert.are_not.equal(A.variantKey("Deals 5 damage.", SEC), A.variantKey("Deals 5 Fire damage.", SEC))
+    assert.is_nil(A.variantKey(nil, SEC))
+  end)
+
+  it("checkVariants takes only the variant whose key the live line has", function()
+    local V = { "与える全てのダメージが$N1%増加する。", "物理攻撃のダメージが$N1%増加する。" }
+    V.shape = { "1/0", "1/0" }
+    V.key = { A.variantKey("Increases all damage you deal by 10%.", SEC),
+              A.variantKey("Increases the damage you deal with physical attacks by 10%.", SEC) }
+    local ok, text = A.checkVariants(V, V.shape, { "Increases all damage you deal by 4%." }, nil, SEC)
+    assert.is_true(ok)
+    assert.are.equal("与える全てのダメージが4%増加する。", text)
+    ok, text = A.checkVariants(V, V.shape, { "Increases the damage you deal with physical attacks by 4%." }, nil, SEC)
+    assert.is_true(ok)
+    assert.are.equal("物理攻撃のダメージが4%増加する。", text)
+    -- a wording neither key matches, or a line without the values, fails closed
+    assert.is_false(A.checkVariants(V, V.shape, { "Increases all damage you deal by 4% and more." }, nil, SEC))
+    assert.is_false(A.checkVariants(V, V.shape, { "Increases all damage you deal." }, nil, SEC))
+  end)
+
+  it("a slot without keys behaves exactly as before", function()
+    local V = { "攻撃する。", "防御する。" }
+    assert.is_false(A.checkVariants(V, { "0/0", "0/0" }, { "Requires Cat Form." }))
+    local one = { "$N1回復。" }
+    local ok, text = A.checkVariants(one, { "1/0" }, { "Restores 5." })
+    assert.is_true(ok)
+    assert.are.equal("5回復。", text)
+  end)
+end)

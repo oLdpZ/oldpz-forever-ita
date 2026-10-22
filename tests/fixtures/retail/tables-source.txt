@@ -1,0 +1,17 @@
+# <table> <src>@<build>: written by make tables-extract / make wago-fetch; do not edit
+ChrClasses.enUS wago@12.1.5.70448
+ChrClasses.itIT wago@12.1.5.70448
+ChrRaces.enUS wago@12.1.5.70448
+ChrRaces.itIT wago@12.1.5.70448
+GlobalStrings.enUS wago@12.1.5.70448
+GlobalStrings.itIT wago@12.1.5.70448
+ItemSparse.enUS wago@12.1.5.70448
+ItemSparse.itIT wago@12.1.5.70448
+Spell.enUS wago@12.1.5.70448
+Spell.itIT wago@12.1.5.70448
+AreaTable.enUS wago@12.1.5.70448
+AreaTable.itIT wago@12.1.5.70448
+Faction.enUS wago@12.1.5.70448
+Faction.itIT wago@12.1.5.70448
+SpellName.enUS wago@12.1.5.70448
+SpellName.itIT wago@12.1.5.70448

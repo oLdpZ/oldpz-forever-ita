@@ -1,0 +1,18 @@
+# <kind> <token> <male> <female>, tab-separated, by `wfj import official` (wago-itit@12.1.5.70448); no edits
+CLASS	DRUID	Druido	Druida
+CLASS	HUNTER	Cacciatore	Cacciatrice
+CLASS	MAGE	Mago	Maga
+CLASS	PALADIN	Paladino	Paladina
+CLASS	PRIEST	Sacerdote	Sacerdotessa
+CLASS	ROGUE	Ladro	Ladra
+CLASS	SHAMAN	Sciamano	Sciamana
+CLASS	WARLOCK	Stregone	Strega
+CLASS	WARRIOR	Guerriero	Guerriera
+RACE	Dwarf	Nano	Nana
+RACE	Gnome	Gnomo	Gnoma
+RACE	Human	Umano	Umana
+RACE	NightElf	Elfo della Notte	Elfa della Notte
+RACE	Orc	Orco	Orchessa
+RACE	Scourge	Non Morto	Non Morta
+RACE	Tauren	Tauren	Tauren
+RACE	Troll	Troll	Troll

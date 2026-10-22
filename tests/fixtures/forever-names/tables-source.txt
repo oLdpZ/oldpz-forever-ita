@@ -1,0 +1,5 @@
+# <table> <src>@<build>: written by make tables-extract / make wago-fetch; do not edit
+AreaTable wago@1.60.1.70532
+ChrClasses wago@1.60.1.70532
+ChrRaces wago@1.60.1.70532
+Faction wago@1.60.1.70532

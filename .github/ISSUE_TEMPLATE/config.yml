@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Come contribuire
+    url: https://github.com/oLdpZ/oldpz-forever-ita/blob/main/CONTRIBUTING.md
+    about: Le modifiche al codice partono da una segnalazione. Leggi prima questa pagina.
+  - name: Problema di sicurezza
+    url: https://github.com/oLdpZ/oldpz-forever-ita/security/advisories/new
+    about: Segnalalo in privato, non in una segnalazione pubblica.

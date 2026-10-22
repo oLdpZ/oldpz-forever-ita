@@ -1,0 +1,35 @@
+name: Segnalazione di traduzione
+description: Incolla la segnalazione dal gioco (pulsante della minimappa, Invia segnalazione) per correggere un italiano sbagliato o poco naturale.
+title: "Translation report"
+labels: ["translation-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie dell'aiuto! Nel gioco apri la finestra delle segnalazioni (clic sinistro sul pulsante della minimappa,
+        oppure `/fita fix`), vai su **Invia segnalazione**, fai clic sulla segnalazione, premi **Ctrl+C** e incollala qui
+        sotto così com'è. Entro un minuto un controllo automatico la legge e scrive qui se manca qualcosa. Questa
+        segnalazione è pubblica, come il nome che indichi qui sotto: se il tuo italiano entra nell'addon, quel nome
+        compare in `ATTRIBUTION.md`.
+  - type: textarea
+    id: report
+    attributes:
+      label: Report
+      description: Tutto il blocco, da `OFI-REPORT 1` fino a `end`.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Credit me as
+      description: Il nome da ringraziare nei riconoscimenti pubblici se il tuo italiano entra nell'addon. Lascialo vuoto per usare il tuo nome GitHub.
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Permission
+      options:
+        - label: L'italiano che ho scritto in questa segnalazione può entrare nell'addon con la licenza del progetto (GPL-2.0-or-later).
+          required: true

@@ -1,0 +1,185 @@
+tipo	id	campo	hash	en
+gossip	000c2356b6a1e74a	text	000c2356b6a1e74a	...
+gossip	001246e411f736bd	text	001246e411f736bd	Eh?
+gossip	0014954c35ae7b6f	text	0014954c35ae7b6f	NO!
+gossip	0014a5ac35b2778f	text	0014a5ac35b2778f	No!
+gossip	0041b5e33180b73c	text	0041b5e33180b73c	Raaaaaaaaaaaaarrrr!
+gossip	005f2f383e1146c8	text	005f2f383e1146c8	Martens, Reblock, Adinay, Nikeson...
+gossip	039ca46f29d1762f	text	039ca46f29d1762f	Uldaman
+gossip	03e660b4e0127533	text	03e660b4e0127533	...Sampson, Yorick, Chamley...
+gossip	0b53b3167810ac17	text	0b53b3167810ac17	TEST
+gossip	0c44c249eb2a1a61	text	0c44c249eb2a1a61	Proudtusk!
+gossip	0f83476212bb69b9	text	0f83476212bb69b9	sdsd
+gossip	105d550e2012702f	text	105d550e2012702f	Left Combat
+gossip	134513fae70452bc	text	134513fae70452bc	Generic Text
+gossip	17ea41b3d100936c	text	17ea41b3d100936c	Babba booey....
+gossip	1aa2c618bbcb1473	text	1aa2c618bbcb1473	Only $3658E shopping minutes before Christmas! But wait, is it Christmas? Well then, there are only $3659E minutes left to party! TEST TEST DO NOT LOCALIZE
+gossip	1ace035b09a37078	text	1ace035b09a37078	Huuup...Huuup...Bleeeeehh!
+gossip	1c3db94cb258293e	text	1c3db94cb258293e	Maraudon
+gossip	2223f0fd4600d14e	text	2223f0fd4600d14e	Lok'tar Ogar!
+gossip	23d66db8ec97e731	text	23d66db8ec97e731	GOSSIP_OPTION_SPIRITGUIDE
+gossip	2dfb3da6cb91d1ea	text	2dfb3da6cb91d1ea	Ironfoe?
+gossip	2f7e17353d7ac7e1	text	2f7e17353d7ac7e1	NOOOOOOOOOOOO!
+gossip	304242b37c12c3e2	text	304242b37c12c3e2	Stratholme
+gossip	308eef9e46f6c5f7	text	308eef9e46f6c5f7	Ahhhhh!!!
+gossip	344dd3614d79d586	text	344dd3614d79d586	Isillien!
+gossip	37be1f635b44f2b9	text	37be1f635b44f2b9	Shal myrinan ishnu daldorah...
+gossip	39a44b8ba4dad386	text	39a44b8ba4dad386	Alterac Valley - Alliance Quatmaster Greeting Option Default
+gossip	3a507aef1f86ad09	text	3a507aef1f86ad09	Question 1, Chain 2
+gossip	3d81a117a1e8fcda	text	3d81a117a1e8fcda	AAAAAAAAAAAAAAAARGH!
+gossip	413b25d55ac4baf1	text	413b25d55ac4baf1	ROOKERY MINION death DEBUG
+gossip	453313f0c474ea31	text	453313f0c474ea31	Hmm...
+gossip	60941e4970c33522	text	60941e4970c33522	ROOKERY MINION SPAWN DEBUG
+gossip	62e46b272668e5b6	text	62e46b272668e5b6	capture point Progress1
+gossip	62e46b282668e5b7	text	62e46b282668e5b7	capture point Progress2
+gossip	6422990d71cfb3fb	text	6422990d71cfb3fb	Oh Rly? <PH>
+gossip	64eb357cf4174685	text	64eb357cf4174685	RARRRRRR!
+gossip	68f0530f90fce3ae	text	68f0530f90fce3ae	Officers' Lounge
+gossip	69056dcb4c6484f3	text	69056dcb4c6484f3	ROARRRRR!!
+gossip	6c4ae7e9fc812596	text	6c4ae7e9fc812596	No-o-o-o!!
+gossip	788163ccbaba669e	text	788163ccbaba669e	Ofgut
+gossip	7be0f6a98c0706e9	text	7be0f6a98c0706e9	Mmmmh...
+gossip	7f47c67332e9a0f8	text	7f47c67332e9a0f8	GOSSIP_OPTION_QUESTGIVER
+gossip	8019d546ce4a4816	text	8019d546ce4a4816	GOSSIP_OPTION_AUCTIONEER
+gossip	845d07a32ac53fb1	text	845d07a32ac53fb1	Argh!
+gossip	8954346868a93389	text	8954346868a93389	Anu'dorini Talah. Ru shallora enudoril.
+gossip	898460ace604834e	text	898460ace604834e	Natalia?
+gossip	8d1594325e6e7307	text	8d1594325e6e7307	Upperdeck Promotion - Landro Default
+gossip	8d7f4d80e9a2dcf9	text	8d7f4d80e9a2dcf9	Mograine?
+gossip	8dd77733cb65dd4c	text	8dd77733cb65dd4c	DUMMY SPELL TEST MESSAGE
+gossip	93377ca80c06042a	text	93377ca80c06042a	TIMMY!
+gossip	945e4fd904670e93	text	945e4fd904670e93	ARRRRRGGGHHH!
+gossip	94d867b9e9e032e1	text	94d867b9e9e032e1	Pelver
+gossip	96b0a112a8e9f4d9	text	96b0a112a8e9f4d9	Gnomeregan
+gossip	99e51b0049a9a4c1	text	99e51b0049a9a4c1	Uni-brow
+gossip	9a1c3d4765a03e97	text	9a1c3d4765a03e97	$n!
+gossip	9e299bb6ae69fd99	text	9e299bb6ae69fd99	Holiday - Scourge Invasion, mystic - how long, Tier 0
+gossip	9e299bb7ae69fd9a	text	9e299bb7ae69fd9a	Holiday - Scourge Invasion, mystic - how long, Tier 1
+gossip	9e299bb8ae69fd9b	text	9e299bb8ae69fd9b	Holiday - Scourge Invasion, mystic - how long, Tier 2
+gossip	a04353e9f5f8e0d0	text	a04353e9f5f8e0d0	GOSSIP_OPTION_ARMORER
+gossip	a0ccd09de8a53fb3	text	a0ccd09de8a53fb3	Tormil, Gamlor, Shefferd, Cowry...
+gossip	a14497cc383df7e9	text	a14497cc383df7e9	Vorfalk
+gossip	a2fbd4aa2eafa908	text	a2fbd4aa2eafa908	saved world state is: $2285W
+gossip	a91e6b342b89fe53	text	a91e6b342b89fe53	<PH> Incoming Mages <PH>
+gossip	ace8e2896509bdfa	text	ace8e2896509bdfa	Tauren.
+gossip	ae1cd67702bfbc3a	text	ae1cd67702bfbc3a	Scholomance
+gossip	ae5b76ae1271ba7e	text	ae5b76ae1271ba7e	Zimrel
+gossip	b3811fffbe9beed9	text	b3811fffbe9beed9	DING!
+gossip	b929c7a4f762a927	text	b929c7a4f762a927	Testing 1
+gossip	b929c7a5f762a928	text	b929c7a5f762a928	Testing 2
+gossip	b929c7a6f762a929	text	b929c7a6f762a929	Testing 3
+gossip	c27966bc5ad8e8e4	text	c27966bc5ad8e8e4	Jungle Fever
+gossip	c2c60260e03140da	text	c2c60260e03140da	Arrrgh!
+gossip	c8d82dd6cfc01e9b	text	c8d82dd6cfc01e9b	Ahhh... Ironfoe.
+gossip	d4ab074ca804d19c	text	d4ab074ca804d19c	Bethek
+gossip	d5719c85343a1d5c	text	d5719c85343a1d5c	Malfurion!
+gossip	d5772dc9fff3715c	text	d5772dc9fff3715c	RAAAAAAAR!
+gossip	d637159a1c205aac	text	d637159a1c205aac	Anathera!
+gossip	da53abe0fcc8d922	text	da53abe0fcc8d922	Renault...
+gossip	dace0c6dd6e3bfd4	text	dace0c6dd6e3bfd4	ZZzzzz....
+gossip	dc59394d90d36472	text	dc59394d90d36472	Generic Text2
+gossip	e1f5ef15819f5967	text	e1f5ef15819f5967	Uggel
+gossip	e6013d42cce7163b	text	e6013d42cce7163b	Whiplash
+gossip	e84464a6c5a8d828	text	e84464a6c5a8d828	Staffron...
+gossip	f51035469536be37	text	f51035469536be37	Ishnu... Oshalan thara dormil... Anu'dorin...
+gossip	f6c62cdec702276d	text	f6c62cdec702276d	Clemens, Bartholemew, Enderman, Wyles...
+gossip	f7569e7642d16610	text	f7569e7642d16610	Uuuuuuggggghhhhh....
+gossip	fe8275319dd8a8d8	text	fe8275319dd8a8d8	Hm...
+gossip	fee728b8ff6a70d7	text	fee728b8ff6a70d7	Grrr...
+gossip	fef919db0d64e7f4	text	fef919db0d64e7f4	Grrrrr!
+gossip	ffaca6741b285d92	text	ffaca6741b285d92	Feralas - Screecher Spirit - On Quest Default Greeting
+quest	87	title	e78fd7d989b60387	Goldtooth
+quest	117	title	06ba24f24f6beb60	Thunderbrew
+quest	318	title	ab586d5c375ca252	Evershine
+quest	425	title	d479936791d77493	Ivar the Foul
+quest	446	title	57daa6c7e7770a98	Thule Ravenclaw
+quest	486	title	b9e1d498450fca23	Ursal the Mauler
+quest	766	title	c53484ace38eaf6e	Mazzranache
+quest	790	title	c29f8f29bc8f6333	Sarkoth
+quest	804	title	c29f8f29bc8f6333	Sarkoth
+quest	809	title	c03c982044fdf85b	Ak'Zeloth
+quest	826	title	489251bd7692532a	Zalazane
+quest	828	title	5cde94d68e7e3581	Margoz
+quest	829	title	868b3608d150a7d7	Neeru Fireblade
+quest	852	title	d41b734872295031	Hezrul Bloodmark
+quest	860	title	3c4cd1521fbfcff7	Sergra Darkthorn
+quest	876	title	3d86ef8cc292de0e	Serena Bloodfeather
+quest	881	title	8eaea284c0ee070f	Echeyakee
+quest	882	title	574078d6ef3c805b	Ishamuhale
+quest	894	title	59bd049c93e27570	Samophlange
+quest	900	title	59bd049c93e27570	Samophlange
+quest	901	title	59bd049c93e27570	Samophlange
+quest	902	title	59bd049c93e27570	Samophlange
+quest	922	title	57fb1b20a464ead1	Rellian Greenspyre
+quest	927	title	8ab57346988b06c3	The Moss-twined Heart
+quest	938	title	0a6d119d2926834f	Mist
+quest	940	title	26414cf4473ed6f4	Teldrassil
+quest	948	title	0014e88639aa9bc3	Onu
+quest	962	title	ea89f502d050305e	Serpentbloom
+quest	983	title	ed396ee3f52e901b	Buzzbox 827
+quest	1001	title	ed386236e54d6130	Buzzbox 411
+quest	1002	title	ed381fb2e1553d52	Buzzbox 323
+quest	1003	title	ed38a5c6e945c4d6	Buzzbox 525
+quest	1132	title	30729feb7fc0bfc4	Fiora Longears
+quest	1489	title	034c803e1d5e2251	Hamuul Runetotem
+quest	1490	title	a9a75b816d8ebbbc	Nara Wildmane
+quest	1502	title	c4560ed6018da132	Thun'grim Firegaze
+quest	1515	progress	ec7d24010e4fda4c	Urrrghhhh...
+quest	1667	title	3fd751ee6a28e498	Dead-tooth Jack
+quest	1678	title	79ac8618a8693831	Vejrek
+quest	1679	title	d9ddd0b2c5a8385d	Muren Stormpike
+quest	1680	title	9d447a97ef89128b	Tormus Deepforge
+quest	1683	title	d401ffdac6304670	Vorlus Vilehoof
+quest	1684	title	521e2628c7c074f7	Elanaria
+quest	1686	title	8040e914a3fdfada	The Shade of Elura
+quest	1688	title	9384a1d7d4fd764f	Surena Caledon
+quest	1698	title	cd09cdbf0b2c778e	Yorus Barleybrew
+quest	1715	title	0d4e536f49df7b89	The Slaughtered Lamb
+quest	1819	title	bc5fb5c05807ad2a	Ulag the Cleaver
+quest	1859	title	74b10f5104831be6	Therzok
+quest	1880	title	7e1133b0183ba9bc	Mage-tastic Gizmonitor
+quest	1885	title	e1e85fb2d4112e4e	Mennet Carkad
+quest	1962	title	d0e883d224836242	Spellfire Robes
+quest	1998	title	781cfb6869b972f9	Fenwick Thatros
+quest	2259	title	372c4f19a407f7c0	Erion Shadewhisper
+quest	2379	title	b5f8d527207a3b52	Zando'zan
+quest	2459	title	236ef724fe8a8fa6	Ferocitas the Dream Eater
+quest	2499	title	a9dba359f59ddca3	Oakenscowl
+quest	2561	title	dcee0406ba871b99	Druid of the Claw
+quest	3115	title	8ca3cdd0a8470088	Tainted Memorandum
+quest	3261	title	4d1b9bdc7c17663f	Jorn Skyseer
+quest	3301	title	6ec1c3d12eb8306b	Mura Runetotem
+quest	3903	title	e1f36bcd30122caf	Milly Osworth
+quest	3921	title	60e1e274ce40d0cf	Wenikee Boltbucket
+quest	3922	title	048fd5a7df4046f9	Nugget Slugs
+quest	3923	title	4f8af447c1e0ab7a	Rilli Greasygob
+quest	4761	title	a1402122011b4583	Thundris Windweaver
+quest	5046	title	41b394c09ce6d37e	Razorhide
+quest	5261	title	798f9e22deee0162	Eagan Peltskinner
+quest	5641	title	eabe51393c268b76	Chastise
+quest	5642	title	cf44b409d1d1665d	Shadowguard
+quest	5643	title	cf44b409d1d1665d	Shadowguard
+quest	5644	title	122ac7cabd5eefa4	Dark Sacrifice
+quest	5645	title	eabe51393c268b76	Chastise
+quest	5646	title	122ac7cabd5eefa4	Dark Sacrifice
+quest	5647	title	eabe51393c268b76	Chastise
+quest	5658	title	dccff77220b4ed50	Touch of Weakness
+quest	5660	title	dccff77220b4ed50	Touch of Weakness
+quest	5661	title	dccff77220b4ed50	Touch of Weakness
+quest	5662	title	dccff77220b4ed50	Touch of Weakness
+quest	5663	title	dccff77220b4ed50	Touch of Weakness
+quest	5672	title	2e4562779402b0df	Elune's Grace
+quest	5673	title	2e4562779402b0df	Elune's Grace
+quest	5674	title	2e4562779402b0df	Elune's Grace
+quest	5675	title	2e4562779402b0df	Elune's Grace
+quest	5676	title	a7b14275f45a024f	Arcane Feedback
+quest	5677	title	a7b14275f45a024f	Arcane Feedback
+quest	5678	title	a7b14275f45a024f	Arcane Feedback
+quest	5679	title	122ac7cabd5eefa4	Dark Sacrifice
+quest	5680	title	cf44b409d1d1665d	Shadowguard
+quest	5929	title	f41bfb43391bb31b	Great Bear Spirit
+quest	5930	title	f41bfb43391bb31b	Great Bear Spirit
+quest	6261	title	99cf1567dcef85dc	Dungar Longdrink
+quest	6322	title	30ec3f6acecb039b	Michael Garrett
+quest	6344	title	1cde20018faa7228	Nessa Shadowsong
+quest	6388	title	3b5086d23620ac74	Gryth Thurden

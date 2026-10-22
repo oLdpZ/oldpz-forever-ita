@@ -1,0 +1,27 @@
+name: Proponi un'idea
+description: Qualcosa che l'addon potrebbe fare, o una modifica al codice che vorresti fare tu.
+title: "Proposta: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Le modifiche al codice partono da qui: descrivi la modifica prima di scriverla, così nessuno lavora a
+        qualcosa che poi non può entrare. Alcune proposte vengono rifiutate perché non rispettano i
+        [principi](https://github.com/oLdpZ/oldpz-forever-ita/blob/main/docs/architecture/principles.md) del progetto
+        (in inglese), per esempio tutto ciò che aggiunge una dipendenza o salva testo inglese nell'addon.
+        Per una traduzione sbagliata o poco naturale usa la segnalazione di traduzione. Questa segnalazione è pubblica.
+  - type: textarea
+    id: what
+    attributes:
+      label: Cosa e perché
+      description: Cosa vorresti cambiare e cosa migliorerebbe.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: Come (facoltativo)
+      description: Se pensi di scriverla tu, le parti del codice che cambieresti.
+    validations:
+      required: false

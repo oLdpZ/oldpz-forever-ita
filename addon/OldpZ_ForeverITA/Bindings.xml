@@ -1,0 +1,4 @@
+<Bindings>
+  <Binding name="OFI_TOGGLE" header="OFI">OFI_ToggleTranslation()</Binding>
+  <Binding name="OFI_REVEAL" runOnUp="true" hidden="true">OFI_RevealKey(keystate)</Binding>
+</Bindings>

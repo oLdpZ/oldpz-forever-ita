@@ -1,0 +1,45 @@
+name: Invia l'inglese raccolto
+description: Invia i testi inglesi che il tuo gioco ha registrato, così possono essere tradotti.
+title: "Collected English"
+labels: ["collector-send"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Apri questo modulo dal gioco: nella pagina **Raccolta dei testi inglesi** delle impostazioni fai clic su
+        **Invia l'inglese** (oppure scrivi `/fita collector send`) e segui i passaggi nella finestra. Il riquadro qui
+        sotto viene compilato dal link, oppure ci incolli il testo della finestra. Se la finestra dice che il testo è
+        troppo lungo da incollare, comprimi in uno zip il file **OldpZ_ForeverITA.lua** che trovi in
+        `World of Warcraft\<client folder>\WTF\Account\<ACCOUNT>\SavedVariables\` e trascinalo nel riquadro. Dopo
+        l'invio fai clic su **L'ho inviato** nel gioco. Entro un minuto un controllo
+        automatico legge il riquadro e scrive qui.
+
+        **Cosa contiene:** il testo inglese del gioco che l'addon ha registrato (testo delle missioni, dialoghi dei PNG
+        con l'id dei PNG che li dicono, descrizioni di oggetti e abilità, nomi dei PNG), per id del gioco, con la build
+        del gioco e la versione dell'addon. Salva classe e razza del personaggio, perché alcune righe del gioco cambiano
+        in base a queste. **Non contiene nome del personaggio, account, reame, posizione,
+        chat né orari.** Le frasi che cambiano col sesso del personaggio ("sir" / "madam") restano come le mostra il
+        gioco. Un file salvato e compresso contiene anche le impostazioni dell'addon, le segnalazioni di traduzione in
+        attesa e il registro dei problemi (`OFI_Log`: orari, memoria Lua e nomi delle funzioni e delle finestre del
+        gioco che hanno dato errore). Questa segnalazione è pubblica.
+  - type: textarea
+    id: dump
+    attributes:
+      label: Collected English
+      description: Compilato dal link, oppure il testo della finestra del gioco (inizia con `OFIC1:`), oppure il file compresso.
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Nota
+      description: Qualcosa da aggiungere (facoltativo).
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Permission
+      options:
+        - label: Contiene solo quanto descritto sopra e mi va bene che sia pubblico in questa segnalazione.
+          required: true

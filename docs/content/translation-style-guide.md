@@ -1,0 +1,272 @@
+# Guida di stile della traduzione: testi del server, tooltip e interfaccia
+
+version: sg4
+
+> Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
+
+## Il compito
+
+- Ogni riga del batch è `{"ref", "kind", "en", "targets"}`; le righe di missione (`progress`, `completion`) portano anche `"items"`, i nomi degli oggetti negli obiettivi della missione (spesso vuoto). `kind` è `progress` (il PNG chiede se il compito è fatto, prima della consegna), `completion` (il PNG ringrazia e consegna la ricompensa), `gossip` (ciò che un PNG dice quando gli si parla), `book` (una pagina di libro, lettera, biglietto o targa), uno dei tipi **missione** `quest_title` / `quest_objectives` / `quest_description` (vedi **Missioni**) o uno dei tipi **tooltip** `item_description`, `spell_description`, `spell_aura`, le cui righe portano anche `"slots"` (vedi **Tooltip**).
+- Scrivi una riga di uscita per ogni riga del batch: `{"ref": "<il ref della riga>", "it": "<italiano>"}`, un oggetto JSON per riga, nient'altro. Ogni ref esattamente una volta.
+- Se una riga è solo un nome proprio che resta uguale (o non c'è nulla da tradurre), scrivi `{"ref": "…", "it": null}`.
+- Traduci il significato di tutto il testo inglese. Non aggiungere frasi, non toglierne, non riassumere, non spiegare.
+
+## Terminologia ufficiale
+
+- Il riferimento è il client ufficiale italiano di World of Warcraft (itIT): si usano le sue parole per classi, razze, abilità, oggetti, zone, fazioni e interfaccia (`quest` → `missione`, `Health` → `Salute`, `Stamina` → `Tempra`, `Hearthstone` → `Pietra del Ritorno`).
+- I nomi propri ufficiali italiani vengono dal glossario (`pipeline/glossario_ufficiale.tsv`, generato dalle tabelle itIT). Un nome che il glossario elenca si scrive come lo dà il glossario (`Stormwind` → `Roccavento`, `Elwynn Forest` → `Foresta di Elwynn`).
+- Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
+- Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
+
+## Lessico fissato (sg4)
+
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG). Valgono come il glossario: un termine della tabella si scrive sempre così.
+
+| Inglese | Italiano | Non |
+|---|---|---|
+| People's Militia | Milizia del Popolo | Brigata del Popolo |
+| The Den | Antro del Tirocinio | la Tana |
+| (The) Barrens | Savane (le Savane) | Barrens |
+| Plaguelands | Terre Infette | Plaguelands |
+| Silver Hand / Knights of the Silver Hand | Mano d'Argento / Cavalieri della Mano d'Argento | Silver Hand |
+| Twilight's Hammer | Martello del Crepuscolo | Twilight's Hammer |
+| Shadow Council | Concilio dell'Ombra | Shadow Council |
+| Well of Eternity | Pozzo dell'Eternità | Well of Eternity |
+| Emerald Dream | Sogno di Smeraldo | Emerald Dream |
+| Earthmother | Madre Terra | Earthmother |
+| Greatmother | Grande Madre | Greatmother |
+| the Dark Lady | la Dama Oscura | Dark Lady |
+| Venture Co. / Venture Company | S.P.R. & Co. | Venture Co. |
+| SI:7 | IR:7 | SI:7 |
+| Explorers' League | Lega degli Esploratori | Explorers' League |
+| Great Forge | Grande Forgia | Great Forge |
+| Dark Iron | Ferroscuro | Dark Iron |
+| Blackrock | Roccianera | Blackrock |
+| Warsong (clan) | Cantaguerra | Warsong |
+| Sentinels | Sentinelle | Sentinels |
+| Highborne | Alti Nobili | Highborne |
+| Deathstalker(s) | Inseguitore/i della Morte | Deathstalker |
+| voidwalker | ombra del Vuoto | voidwalker |
+| moonkin | lunagufo / lunagufi | moonkin |
+| furbolg | mezzorso / mezzorsi | furbolg |
+| quilboar (razza) | verrospino / verrospini (minuscolo) | Quilboar |
+| pet (di cacciatore o stregone) | famiglio | pet |
+| Twisting Nether | Distorsione Fatua | Twisting Nether |
+| the Nether (da solo) | Nether | — |
+| Mage Quarter | Quartiere dei Maghi | Quartiere del Mago |
+| Magic Quarter | Quartiere della Magia | Magic Quarter |
+| Trade Quarter / Trade District | Quartiere del Commercio | Trade Quarter |
+| Rogues' Quarter | Quartiere dei Ladri | Rogues' Quarter |
+| War Quarter | Quartiere della Guerra | War Quarter |
+| Cathedral of Light | Cattedrale della Luce | Cathedral of Light |
+| Temple of the Moon | Tempio della Luna | Temple of the Moon |
+| Valley of Strength / Spirits / Honor / Trials | Valle della Forza / degli Spiriti / dell'Onore / delle Sfide | Valley of … |
+| Sepulcher (zona) | la Mausolea (femminile: «alla Mausolea», «nella Mausolea») | a Mausolea |
+| wind rider / gryphon / hippogryph / bat master | maestro delle viverne / dei grifoni / degli ippogrifi / dei pipistrelli | — |
+| Apothecary / Mountaineer / Brave (titoli) | speziale / montanaro / valoroso | — |
+| (Rank 2) | (Grado 2) | (Rank 2) |
+| Lunar Festival | Celebrazione della Luna | Lunar Festival |
+| Hallow's End | Veglia delle Ombre | Hallow's End |
+| Winter Veil / Feast of Winter Veil | Grande Inverno / Festa del Grande Inverno | Winter Veil |
+| Wickerman (festa, fantoccio) | Uomo di Paglia | Wickerman |
+| Light's Hope (Chapel) | Cappella della Luce | Light's Hope |
+| Stranglethorn (Vale) | Rovotorto (Valle di Rovotorto) | Stranglethorn |
+| Night Watch | Guardiani della Notte | Night Watch |
+| Hydraxis | Idraxis (Seguaci di Idraxis) | Hydraxis |
+| Swordsmith / Axesmith / Weaponsmith | Fabbro di Spade / d'Asce / d'Armi | forgiatore |
+| Stable Master | stalliere | maestro di stalla |
+| Arch Druid | Arcidruido | — |
+| Deathwing | Alamorte | Deathwing |
+| Lich King | Re dei Lich | Lich King |
+| Old Gods | Dei Antichi | Old Gods |
+| Eastern Kingdoms | Regni Orientali | Eastern Kingdoms |
+| Ashbringer | il Brandicenere | Ashbringer |
+| Frostwolf (clan) | Lupi Bianchi | Frostwolf |
+| Stormpike (esercito, clan; non il cognome) | Piccatonante | Stormpike |
+| Iceblood (Torre, Presidio, Fortilizio) | Brinarossa (Torre di Brinarossa) | Iceblood |
+| Snowfall (luogo) | Nevealta | Snowfall |
+| Stormwind Keep | Castello di Roccavento | fortezza di Roccavento |
+| Sunken Temple | Tempio di Atal'Hakkar | Tempio Sommerso |
+| Burning Legion | Legione Infuocata | — |
+| War of the Ancients | Guerra degli Antichi | War of the Ancients |
+| (the) Sundering | la Separazione | Frattura, Sundering |
+| Valley of Wisdom | Valle della Saggezza | — |
+| Highlord / Warmaster / Windlord | gran signore / maestro di guerra / Signore del Vento | — |
+| High Tinker | alto inventore | gran tecnico |
+| witch doctor | santone | stregone |
+| dragonspawn | dragobestia / dragobestie | — |
+| crypt fiend | ragno delle cripte | crypt fiend |
+| spirit healer | guaritore degli spiriti | — |
+| Mining | Estrazione | — |
+| Friendly / Honored / Revered / Exalted (reputazione) | Amichevole / Onorato / Reverito / Osannato | — |
+| Stonesplinter (tribù) | Scheggiadura | Pietrarotta |
+| Earthen Ring, Old Town, Dwarven District, Hall of Arms, The Drag, Tinker Town, Lion's Pride Inn, Gilded Rose, Hall of the Brave, Forlorn Cavern, Scarab Gong, silithyst | restano inglesi | Anello della Terra, Città Vecchia |
+| Alterac: luoghi senza forma nel glossario (Frostwolf Relief Hut, Stormpike Aid Station, Dun Baldar North/South Bunker, East/West Frostwolf Tower) | restano inglesi interi | — |
+
+Regole che accompagnano la tabella:
+
+- **Cognomi dei PNG restano inglesi** (Thunderbrew, Proudmoore, Stonefield, Windrunner, Longshore, Bloodhoof come cognome di Cairne o Baine), anche quando un oggetto del glossario li traduce: «nonna Stonefield» e «Nota di Nonna Pietradura» convivono. Se il controllo dà errore, si lascia la forma che il controllo accetta.
+- **Tribù, clan e gruppi** (non cognomi) prendono la forma ufficiale ricavabile dal glossario di zone, oggetti e fazioni: Razormane → Chiomaguzza, Bristleback → Mantotergo, Darkspear → Lanciascura, Frostmane → Mantogelido, Gnarlpine → Mordipigna, Winterhoof → Zoccolo Artico, Thunderhorn → Corno Tonante, Venomtail → Codavenefica, Bloodfeather → Piumarossa, Grimtotem → Totem Truce. Se non è ricavabile, resta inglese.
+- **Nomi ricavati da oggetti ufficiali** sono ammessi allo stesso modo: `Darkmoon Cards` → `Carte di Lunacupa` (dagli oggetti `Carta di Lunacupa: …`). Senza una forma ufficiale resta il nome inglese dell'oggetto (`Darkmoon Faire Prize Ticket`); `Fiera di Lunacupa` solo dove si parla della fiera stessa.
+- **Ravenholdt** persona resta inglese; `Corvolesto` solo per il maniero e la fazione. **Lord + nome** di un nobile: `lord` minuscolo, come gli altri titoli. **Anziano/anziana**: maschile salvo che l'inglese mostri una donna.
+- **Un titolo prima di un nome è minuscolo** (il maresciallo McBride, l'esecutore Arren, la sacerdotessa Alathea, il sommo sacerdote), salvo una forma del glossario che il controllo pretende maiuscola.
+- **I nomi composti di creature** che contengono un termine del glossario, di classe, di razza o di zona (Ice Claw Bear, Armored Scorpid, Redridge Mongrel, Stonesplinter Shaman) restano interi in inglese; il controllo dà solo un avviso. Mai costruzioni come «uno Scorpide, l'Armored Scorpid» o «Bruti di Crestarossa» aggiunte per il controllo.
+- **Nomi di abilità** che il glossario non elenca (Lesser Heal) restano inglesi.
+- **Feste e personaggi stagionali** prendono la forma della tabella, ricavata dagli oggetti ufficiali; una festa o un personaggio senza forma ufficiale ricavabile (Children's Week, Harvest Festival, Brewfest, Greatfather Winter) resta inglese.
+- **Un nome senza forma ufficiale verificabile resta inglese**, anche se una traduzione sembra ovvia: Gnomeregan Exiles, Apothecarium, Royal Apothecary Society, Shattered Hand, Cult of the Damned, Earthen Ring, Feathermoon Stronghold, Camp Taurajo, Brotherhood of the Light. Non inventarne una (`Saluto Infranto`, `Torre Orientale dei Lupi Bianchi`).
+- **Una coppia di genere** contiene parole singole, senza spazi né apostrofi (`<un/una> fier<o/a>`, non `<un eroe/un'eroina>`); se non si può, una forma neutra.
+
+## Il giocatore si dà del "tu"
+
+- Chi parla al giocatore gli dà del **tu**, come fa il client italiano (`Porta queste pelli a Marshal McBride.`, `Grazie, {name}, hai fatto molto per noi.`). Il **voi** solo quando l'inglese si rivolge chiaramente a un gruppo.
+- Un nobile, un re o un essere antico può avere un tono solenne, ma continua a dare del tu (`Hai dimostrato il tuo valore, campione.`).
+
+## Voce
+
+Deduci chi parla dal testo (chi parla così, a chi) e mantieni la voce per tutta la riga.
+
+| Chi parla | Voce |
+|---|---|
+| sacerdoti, druidi, guaritori, studiosi gentili | cortese, pacata |
+| anziani, nobili, esseri antichi o regali | solenne, frasi ampie |
+| soldati, orchi, Reietti, tipi duri o militari | secca, diretta, frasi brevi |
+| allegri, informali, mercanti, goblin | colloquiale, vivace |
+| poco chiaro | neutra, senza un carattere forte |
+
+- Rivolgiti al giocatore come fa l'inglese (`{name}`, `{class}`, "friend" → `amico`).
+- L'avanzamento è breve, un po' impaziente o speranzoso; il completamento è caloroso o pratico; il dialogo può avere colore, ma dice solo ciò che dice l'inglese.
+
+## Genere del giocatore
+
+- L'italiano concorda con il genere: dove il genere del giocatore conta, scrivi una coppia `<maschile/femminile>` e l'addon sceglie il ramo giusto (`Sei <stato/stata> <coraggioso/coraggiosa>.`, `<il/la>`, `<caro/cara>`).
+- La coppia contiene solo le parole che cambiano, senza spazi ai bordi. Dove si può, preferisci una forma che vada bene per entrambi (`Hai dimostrato coraggio.`).
+- `$G<maschile>:<femminile>;` nell'inglese significa che il testo cambia con il genere: rendilo con una coppia `<m/f>` o con una forma neutra, mai con il codice `$G`.
+
+## Segnaposto, paragrafi e numeri
+
+- `{name}`, `{class}` e `{race}` sono il nome, la classe e la razza del giocatore, inseriti dal gioco. Mantieni ogni segnaposto esattamente com'è, tante volte quante nell'inglese.
+- `$` seguito da cifre e `w` (`$1997w`) è un numero che il gioco inserisce: mantienilo esattamente com'è, tutti.
+- L'inglese separa i paragrafi con una riga vuota: l'italiano ha lo stesso numero di paragrafi, separati da una riga vuota.
+- I numeri restano gli stessi valori. Scrivi una cifra solo per un numero che l'inglese scrive come cifra o come parola numerica.
+- `...` resta `...` (o `…`); la punteggiatura segue l'italiano (virgolette `«»` o `"` come nel client, nessuno spazio prima di `!` e `?`).
+
+## Dialoghi dei PNG (righe che un PNG dice, urla, sussurra o mima)
+
+- `%s` è il nome del PNG che parla, inserito dal gioco (`%s goes into a frenzy!`). Mantieni ogni `%s`, tanti quanti nell'inglese, e costruisci la frase in modo che un nome ci stia: `%s va su tutte le furie!`. Non scrivere nessun altro `%`.
+- Un urlo è breve e forte: mantieni i punti esclamativi dell'inglese. Un grido di battaglia resta un grido di battaglia (`For the Horde!` → `Per l'Orda!`).
+- Una mimica descrive il PNG in terza persona, al presente (`%s laughs.` → `%s ride.`).
+- **Opzioni di dialogo** (le righe brevi che il giocatore clicca: `Train me.`, `Inn`, `I would like to buy from you.`): parla il giocatore, in prima persona, breve quanto l'inglese, e lo stesso senso ha sempre la stessa resa (`Train me.` → `Addestrami.`, `I want to browse your goods.` → `Voglio vedere la tua merce.`, `Inn` → `Locanda`). Un'opzione che l'inglese scrive come un imperativo rivolto al giocatore resta all'imperativo, come un pulsante (`Press the yellow button…` → `Premi il pulsante giallo…`, `Access secret goblin engineering schemata!` → `Accedi agli schemi segreti di ingegneria goblin!`).
+- **`{class}` è singolare**: il gioco inserisce il nome della classe al singolare, quindi mai `i {class}` né un accordo al plurale; si riscrive al singolare (`<un/una> {class} come te`). `<un/una> {class}` va bene anche davanti a vocale.
+- **Il genere di chi parla** non si conosce: la stessa riga può dirla un PNG maschio o femmina. Dove il genere di chi parla si vedrebbe (`I am tired`, `I was sent`), usa una forma che vada bene per entrambi (`Sono sfinito` → `Non ne posso più`, `Mi hanno mandato qui`). Le coppie `<m/f>` restano solo per il genere del **giocatore**.
+- **Saluti brevi** (`Greetings, $C.`, `Hello, $N.`): naturali e vari quanto l'inglese, con il tu (`Salute, {class}.`).
+
+## Libri, lettere e targhe (`book`)
+
+Una riga è una pagina: traducila così com'è, senza portare frasi da un'altra pagina e senza aggiungere titoli o numeri di pagina.
+
+- Libri, cronache, guide e rapporti: prosa scritta, impersonale. Lettere, biglietti e diari: la voce di chi scrive; il saluto (`Dear Morgan,` → `Caro Morgan,`) e la chiusa (`Warm regards,` → `Cordiali saluti,`) diventano formule italiane naturali. Targhe ed epitaffi: formali e brevi.
+- Mantieni ogni a capo dell'inglese (versi, elenchi, firma su una riga sua).
+- Una pagina che inizia con `<HTML>` è markup: mantieni ogni tag esattamente com'è, con i suoi attributi, nello stesso ordine e sulla stessa riga, e traduci solo il testo fra i tag.
+
+## Tooltip (`item_description`, `spell_description`, `spell_aura`)
+
+Queste righe **non** sono dialogo: sono ciò che il gioco stampa nel tooltip. Ignora **Voce**.
+
+- **Registro.** Informativo, alla terza persona o impersonale, come il client italiano: `Ripristina $N1 punti Salute.`, `Infligge $N1 danni da Fuoco.` Una frase per ogni frase inglese.
+- **L'inglese è un modello, non il testo finito.** `Restores $o1 health over $d.` è ciò che contengono i dati; il giocatore vede `Restores 61 health over 18 sec.` I valori li inserisce il gioco, diversi per oggetto, grado, livello e talento, quindi l'italiano porta i segnaposto, mai i valori.
+
+### `$N<k>`: un numero
+
+`$N<k>` viene sostituito con il **k-esimo numero della riga che il giocatore vede**, contando ogni numero in ordine di lettura. `"slots"` dice quanti saranno.
+
+```
+EN   Restores $s1 health.                     slots 1
+IT   Ripristina $N1 punti Salute.
+```
+
+Un numero scritto per esteso (`61`) viene rifiutato (`numbers_changed`).
+
+### `$D<k>`: una durata
+
+La durata è l'unico valore di cui il gioco sceglie l'**unità** (secondi, minuti, ore, giorni). **Non scrivere mai un'unità.** `$D<k>` viene sostituito con l'intera durata (numero e unità) come la vede il giocatore; `$D` conta **solo le durate**.
+
+```
+EN   Restores $o1 health over $d.    slots 2
+IT   Ripristina $N1 punti Salute in $D1.
+```
+
+Un numero che l'inglese scrive davanti a un'unità è anch'esso una durata (`every 5 sec for $d`: `$D1` è `5 sec`, il `$d` è `$D2`). `$N2 sec` al posto di `$D2` viene rifiutato (`duration_as_value` / `duration_missing`).
+
+### Contare gli slot
+
+`"slots"` conta ogni numero che il client stamperà, in ordine di lettura: un codice di valore (`$s1`, `$o2`, `$d`) uno; un'espressione (`${$m1/60}`) uno; un letterale già scritto uno; un intervallo (`$s1 to $s2`, che il gioco stampa come `14-22`) uno, quindi `$N1 danni`, mai `$N1-$N2`; un plurale (`$lsecond:seconds;`) nessuno.
+
+### Testo incluso, icone, rami e liste
+
+- Il testo incluso da un'altra abilità (`$@spelldesc…`) è già mostrato nella riga: traducilo come un'unica riga.
+- Un'icona `$I1`, `$I2`… va riportata **esattamente una volta**, dove sta l'icona nella frase italiana (`icon_missing` / `icon_index`).
+- Una riga con `"branches"` contiene `$?<condizione>[A][B]`: mantieni il condizionale, **stessa condizione, stessi rami, stesso ordine**, e traduci ogni ramo perché la frase funzioni con uno qualsiasi al suo posto (un ramo vuoto resta `[]`). I valori di un ramo tengono il numero dell'intero modello e restano nello stesso ramo.
+- Una riga con `"tail": true` finisce con una lista di nomi che il client scrive da sé: traduci solo la testa, mantieni i suoi a capo e termina con `$T`.
+- `%` resta `%`. Una percentuale si scrive `$N1%`.
+
+## Missioni (`quest_title`, `quest_objectives`, `quest_description`)
+
+### `quest_description`: chi affida la missione parla
+
+È il PNG che parla al giocatore: **Voce** vale per intero, con il tu.
+
+### `quest_objectives`: un'istruzione al giocatore
+
+La riga sotto "Obiettivi della missione". Come il client italiano, all'imperativo con il tu:
+
+```
+EN   Kill 6 Rockjaw Troggs.
+IT   Uccidi 6 Rockjaw Trogg.
+```
+
+### `quest_title`: un titolo breve
+
+Un sintagma nominale, non una frase, senza punto finale: `La Milizia del Popolo`, `L'equilibrio della natura`.
+
+### Numeri nelle missioni
+
+Un numero scritto nell'inglese (`Bring 10 Linen Cloth`) si scrive uguale. Un codice del server che sta per un numero inserito dal client (`$1oa`) prende `$N<k>` come nei tooltip. Niente `$D<k>` nelle missioni.
+
+## Testo d'interfaccia (stringhe UI)
+
+Le stringhe d'interfaccia sono etichette, pulsanti, intestazioni, finestre e messaggi del client: il dizionario dell'interfaccia, un italiano per chiave (`data/ui`). Una bozza sono righe `{"id", "field": "text", "it"}` scritte sull'inglese attuale della chiave. Il giocatore tiene premuto il tasto per vedere l'inglese, quindi un'etichetta non si spiega da sé. Sei regole:
+
+### 1. Significato nel contesto
+
+Traduci il senso che usa la schermata dove appare la stringa, non il primo senso del dizionario. Giudicalo dal nome della chiave, dalle finestre che la mostrano (`pipeline/ui_inventory.txt`) e dalle chiavi vicine.
+
+### 2. Lunghezza che ci stia
+
+Un'etichetta è breve quanto la sua inglese: `Accept` è `Accetta`, `Abandon Quest` è `Abbandona missione`. Per un'etichetta corta `ui_lint` avvisa oltre 1,25 volte la larghezza dell'inglese: l'avviso chiede una seconda occhiata, non una riscrittura.
+
+### 3. Registro
+
+Etichette, pulsanti, schede e intestazioni: un nome o un verbo all'imperativo/infinito come il client (`Chiudi`, `Opzioni`). Domande e messaggi: frasi complete, con il tu (`Vuoi abbandonare "%s"?`, `L'inventario è pieno.`).
+
+### 4. Coerenza
+
+Un inglese, un italiano: ogni chiave il cui inglese è già spedito da un'altra chiave prende lo stesso italiano, salvo che la chiave possieda il suo testo su una schermata (`UIStrings.OWN`). I termini seguono il client ufficiale itIT; alcuni termini fissati:
+
+| Inglese | Italiano | Non |
+|---|---|---|
+| quest | missione | quest |
+| achievement | impresa | achievement, obiettivo |
+| profession | professione | mestiere |
+| battleground | campo di battaglia | battleground |
+| health | Salute | punti vita, health |
+| stamina | Tempra | resistenza, stamina |
+| intellect | Intelletto | intelligenza |
+| armor | Armatura | armor |
+
+### 5. Formato intatto
+
+Mantieni ogni specificatore `%s` / `%d`, codice colore (`|cff…` … `|r`), texture (`|T…|t`), link e a capo. Quando l'ordine delle parole sposta gli argomenti, numerali (`%1$s`, `%2$s`). `Requires Level %d` è `Richiede livello %d`. Un link `|H…|h[etichetta]|h` si copia byte per byte; un gruppo plurale `|4singolare:plurale;` resta, con le forme italiane (`%d |4giorno:giorni;`).
+
+### 6. Nomi ufficiali
+
+Un nome di persona, luogo, oggetto, abilità, fazione o zona dentro una stringa d'interfaccia segue **Terminologia ufficiale**: la forma italiana del glossario, altrimenti l'inglese così com'è.

@@ -1,0 +1,7 @@
+ID,NameSubtext_lang,Description_lang,AuraDescription_lang
+100,,"Carica un nemico, infliggendo $s1 danni.",
+101,,"Carica un nemico, infliggendo danni.",
+102,,"Infligge $s1 danni e stordisce il bersaglio per $d.","Stordito."
+103,,"Infligge $s2 danni.",
+104,,"Cura di $s1$?s12345[ e altro][].",
+200,,"Testo retail $s1.",

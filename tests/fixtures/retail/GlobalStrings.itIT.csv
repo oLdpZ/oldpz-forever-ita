@@ -1,0 +1,15 @@
+ID,BaseTag,TagText_lang,Flags
+1,ACCEPT,Accetta,0
+2,ERR_JOINED,%s è entrato.,0
+3,ERR_LEFT,%d è uscito.,0
+4,OKAY,Okay,0
+5,ERR_GONE,%s non c'è più.,0
+6,NOT_IN_FOREVER,Qualcosa,0
+7,ALL_A,Tutto,0
+8,ALL_B,Tutti,0
+9,ALL_C,Tutti,0
+10,BOTH_A,Entrambi,0
+11,BOTH_B,Entrambe,0
+12,ERR_WELCOME,Benvenuto %2$s %1$s,0
+13,CANCEL_A,Annulla,0
+14,CANCEL_B,Annulla,0

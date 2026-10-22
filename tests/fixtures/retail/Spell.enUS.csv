@@ -1,0 +1,7 @@
+ID,NameSubtext_lang,Description_lang,AuraDescription_lang
+100,,"Charge an enemy, dealing $s1 damage.",
+101,,"Charge an enemy, dealing $s1 damage.",
+102,,"Stuns the target for $d and deals $s1 damage.","Stunned."
+103,,"Deals $s1 damage.",
+104,,"Heals for $s1$?s12345[ and more][].",
+200,,"Retail wording $s1.",

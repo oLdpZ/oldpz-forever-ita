@@ -1,0 +1,41 @@
+name: Segnala un errore
+description: Qualcosa nell'addon non funziona. Per una traduzione sbagliata o poco naturale usa la segnalazione di traduzione.
+title: "Errore: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Il modo più rapido è dal gioco: `/fita bug` (oppure **Segnala errore o idea** nel menu del pulsante
+        della minimappa) apre la finestra della segnalazione con build, versione ed errori Lua dell'addon già pronti.
+        Per una riga tradotta male fai prima con la segnalazione di traduzione: clic sinistro sul pulsante della
+        minimappa (o `/fita fix`). Questa segnalazione è pubblica.
+  - type: textarea
+    id: what
+    attributes:
+      label: Cosa è successo
+      description: Cosa stavi facendo, cosa ti aspettavi e cosa è successo invece. Uno screenshot aiuta.
+    validations:
+      required: true
+  - type: input
+    id: client-build
+    attributes:
+      label: Build del client
+      description: La trovi in basso a sinistra nella schermata di accesso (per esempio 1.60.1.70009).
+    validations:
+      required: true
+  - type: input
+    id: addon-version
+    attributes:
+      label: Versione dell'addon
+      description: Scrivi `/fita version` nel gioco.
+    validations:
+      required: true
+  - type: textarea
+    id: errors
+    attributes:
+      label: Errori Lua (se ci sono)
+      description: "`/fita bug` inserisce gli errori Lua dell'addon, oppure te li mostra da incollare qui. Incolla anche gli altri errori Lua che il gioco ha mostrato."
+      render: text
+    validations:
+      required: false

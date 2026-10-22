@@ -1,0 +1,7 @@
+-- luacov settings for `make coverage-lua`: count the addon's own code, not the generated data or the tests.
+return {
+  include = { "addon/OldpZ_ForeverITA/Core/", "addon/OldpZ_ForeverITA/UI/", "addon/OldpZ_ForeverITA/Main" },
+  exclude = { "addon/OldpZ_ForeverITA/Data/", "tests/" },
+  statsfile = "luacov.stats.out",
+  reportfile = "luacov.report.out",
+}

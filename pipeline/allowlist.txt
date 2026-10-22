@@ -1,0 +1,31 @@
+# Latin-script words the human corpus writes inside Japanese prose that are game terms, not names.
+# One per line: term  # justification. A test rejects lines without a justification and terms no
+# corpus line uses. Compared case-insensitively. Terms under 3 letters are never extracted as
+# names (align.NAME_RUN), so they do not belong here.
+# Stat and resource words. Shipped tooltip lines write them in the interface's Japanese (体力, マナ …; the style
+# guide's Settled interface terms, core/stat_words.py), but some lines still hold one in English letters inside a
+# name or phrase ("spirit of Midsummer"), and the rejected human lines keep them ("Healthを70回復"). Listed so the
+# name check never reads them as names on their own: taking them off would make the runtime gate refuse such lines.
+Health  # stat word, not a name
+Mana  # stat word, not a name
+Stamina  # stat word, not a name
+Spirit  # stat word, not a name
+Intellect  # stat word, not a name
+Agility  # stat word, not a name
+Strength  # stat word, not a name
+Armor  # stat word, not a name
+Rage  # resource word, not a name
+Energy  # resource word, not a name
+NPC  # abbreviation
+PvP  # abbreviation
+# World / faction / reputation words the translators add for context even when the English line omits them
+Azeroth  # world name used as context ("Azerothの英雄")
+Horde  # faction word added for context
+Alliance  # faction word added for context
+Forsaken  # faction word added for context
+Elune  # deity name added in night elf dialogue
+Neutral  # reputation level
+Friendly  # reputation level
+Honored  # reputation level
+Revered  # reputation level
+Exalted  # reputation level

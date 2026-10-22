@@ -1,0 +1,47 @@
+local H = require("tests.lua.spec.helpers")
+local Stub = require("tests.lua.spec.wow_stub")
+local Loader = require("tests.lua.spec.loader")
+
+describe("Bindings.xml and its globals", function()
+  local xml
+  setup(function() xml = H.readFile("addon/OldpZ_ForeverITA/Bindings.xml") end)
+
+  it("declares OFI_TOGGLE under header WFJ and the hidden runOnUp OFI_REVEAL, nothing else", function()
+    local _, count = xml:gsub("<Binding%s", "")
+    assert.are.equal(2, count)
+    assert.is_nil(xml:find("VOICE", 1, true))
+    assert.is_nil(xml:find("SKIP", 1, true)) -- no next-line control
+    assert.is_truthy(xml:find('<Binding name="OFI_TOGGLE" header="OFI">OFI_ToggleTranslation()</Binding>', 1, true))
+    local attrs, body = xml:match('<Binding (name="OFI_REVEAL"[^>]*)>%s*(.-)%s*</Binding>')
+    assert.is_truthy(attrs)
+    assert.is_truthy(attrs:find('runOnUp="true"', 1, true))
+    assert.is_truthy(attrs:find('hidden="true"', 1, true))
+    assert.are.equal("OFI_RevealKey(keystate)", body)
+  end)
+
+  it("is not listed in the TOC (the client auto-loads it)", function()
+    for _, f in ipairs(Loader.tocFiles(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")) do
+      assert.is_nil(f:find("Bindings", 1, true))
+    end
+  end)
+
+  it("its body names a global that exists after load and toggles the master switch", function()
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    local WFJ = Loader.load("OldpZ_ForeverITA")
+    Stub.fireAll("ADDON_LOADED", "OldpZ_ForeverITA")
+    local body = xml:match("<Binding%s[^>]*>%s*(.-)%s*</Binding>")
+    local fnName = body:match("^([%w_]+)%(%)$")
+    assert.is_truthy(fnName, "binding body must be a bare global call: " .. tostring(body))
+    assert.is_function(_G[fnName])
+    assert.is_true(WFJ.Settings.get("enabled"))
+    _G[fnName]()
+    assert.is_false(WFJ.Settings.get("enabled"))
+    assert.is_false(WFJ.State.enabled)
+    _G[fnName]()
+    assert.is_true(WFJ.Settings.get("enabled"))
+    assert.is_string(BINDING_HEADER_OFI); assert.is_true(#BINDING_HEADER_OFI > 0)
+    assert.is_string(BINDING_NAME_OFI_TOGGLE); assert.is_true(#BINDING_NAME_OFI_TOGGLE > 0)
+    assert.is_function(OFI_RevealKey)
+    assert.is_truthy(BINDING_NAME_OFI_REVEAL:find("settings", 1, true))
+  end)
+end)

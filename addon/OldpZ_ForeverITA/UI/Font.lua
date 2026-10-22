@@ -1,0 +1,141 @@
+-- UI/Font.lua: the face the addon's text is drawn in, applied per FontString (SetFont with the element's own
+-- size/flags). Italian needs no face of its own: Font.PATH is the client's standard UI face (Font.CLIENT), and
+-- Font.bundle, which dressed pooled client rows in the bundled Japanese face, changes nothing.
+-- Never creates or modifies a global font object (luacheck forbids CreateFont / GameFont* / SystemFont*).
+local _, WFJ = ...
+local Font = {}
+WFJ.Font = Font
+
+Font.CLIENT = "Fonts\\FRIZQT__.TTF" -- the client's standard UI face
+Font.PATH = Font.CLIENT
+Font.DEFAULT_SIZE = 12
+
+-- Font changes the client refused: on a fresh launch the bundled font file is not loaded yet when the
+-- addon builds its own widgets at load, and SetFont returns false. fs → { path, size, flags } (weak keys).
+local pending = setmetatable({}, { __mode = "k" })
+
+-- SetFont for a FontString the addon owns outright (settings pages, the marker banner). A refusal is remembered and
+-- retried by Font.retryPending; a later Font.set on the same FontString replaces what is pending.
+-- → the SetFont result
+function Font.set(fs, path, size, flags)
+  local ok = fs:SetFont(path, size, flags)
+  if ok == false then
+    pending[fs] = { path, size, flags }
+  else
+    pending[fs] = nil
+  end
+  return ok
+end
+
+-- Pooled FontStrings the client reuses (chat rows, the guild bank log, speech bubbles) that the addon dressed in the
+-- bundled face. SetFontObject alone does not undress one: re-applying the object the FontString already has leaves
+-- a SetFont made since in place (in game: chat lines kept the bundled face through the chat frame's own
+-- InitializeFontString, scrollingmessageframe.lua:642, 716). So each is remembered with the font it had, and given
+-- a font back directly once it shows anything else.
+local dressed = setmetatable({}, { __mode = "k" }) -- fs → { path, size, flags } it had before the bundled face
+-- The rows Font.restore gave a font back to. That font is a SetFont, a fixed size: when the player later changes the
+-- chat font size, the client changes the frame's font object, and the refresh's SetFontObject(same object) leaves
+-- the SetFont in place, so the row keeps the old size until Font.follow gives it the object's font again.
+local restored = setmetatable({}, { __mode = "k" })
+
+-- A no-op kept for its callers (chat, guild bank, speech bubbles, tooltips): the client's own face already reads
+-- Italian, so a pooled row keeps its font. → the size `fs` shows at (`fontObject`'s when given), as before
+function Font.bundle(fs, fontObject)
+  local _, size = fs:GetFont()
+  if type(fontObject) == "table" and type(fontObject.GetFont) == "function" then
+    local _, objSize = fontObject:GetFont()
+    size = objSize or size
+  end
+  return size or Font.DEFAULT_SIZE
+end
+
+-- Whether `fs` is wearing the bundled face from Font.bundle.
+function Font.dressed(fs) return dressed[fs] ~= nil end
+
+-- `fs` given its owner's font back: `fontObject`'s when given, else the font it had before Font.bundle. → true
+-- when it no longer wears the bundled face
+function Font.restore(fs, fontObject)
+  if type(fs) ~= "table" or not dressed[fs] then return false end
+  local path, size, flags
+  if type(fontObject) == "table" and type(fontObject.GetFont) == "function" then
+    path, size, flags = fontObject:GetFont()
+  end
+  if type(path) ~= "string" then path, size, flags = dressed[fs][1], dressed[fs][2], dressed[fs][3] end
+  if type(path) ~= "string" or fs:SetFont(path, size, flags or "") == false then return false end
+  dressed[fs] = nil
+  restored[fs] = true
+  return true
+end
+
+-- A row Font.restore gave a font back to, given `fontObject`'s font again when its face or size no longer matches
+-- (the player changed the chat font size since). A row that never wore the bundled face, or wears it now, is left
+-- alone. → true when it set the font
+function Font.follow(fs, fontObject)
+  if type(fs) ~= "table" or not restored[fs] or dressed[fs] then return false end
+  if type(fontObject) ~= "table" or type(fontObject.GetFont) ~= "function" then return false end
+  local path, size, flags = fontObject:GetFont()
+  if type(path) ~= "string" then return false end
+  local hasPath, hasSize = fs:GetFont()
+  if hasPath == path and hasSize == size then return false end
+  return fs:SetFont(path, size, flags or "") ~= false
+end
+
+-- Whether the client refused this FontString's face and the retry has not applied it yet.
+function Font.isPending(fs)
+  return pending[fs] ~= nil
+end
+
+-- → the number still refused after one more try
+function Font.retryPending()
+  local n = 0
+  for fs, f in pairs(pending) do
+    if fs:SetFont(f[1], f[2], f[3]) == false then
+      n = n + 1
+    else
+      pending[fs] = nil
+    end
+  end
+  return n
+end
+
+-- The font-load probe. On a fresh launch the client refuses the bundled font until something makes it load the
+-- file, and hidden widgets never do: in game, with no window opened, every refused font was still
+-- refused after 60 s; with this probe shown, all were applied on the first retry, 1 s after PLAYER_ENTERING_WORLD
+-- [verified in-game: the client loads an addon font file when a visible FontString asks for it]. The probe is one
+-- visible, nearly transparent character, shown until the refused fonts are applied. → the probe FontString
+local probe
+function Font.startProbe(parent)
+  if probe then return probe.fs end
+  if not parent then return nil end
+  local holder = CreateFrame("Frame", nil, parent)
+  holder:SetSize(16, 16)
+  holder:SetPoint("BOTTOMLEFT", parent, "BOTTOMLEFT", 0, 0)
+  local fs = holder:CreateFontString(nil, "OVERLAY")
+  fs:SetPoint("CENTER", holder, "CENTER", 0, 0)
+  -- a client font first: SetText needs a font, and the bundled one may be refused (the client font is always loaded)
+  fs:SetFont(Font.CLIENT, 8, "")
+  fs:SetTextColor(1, 1, 1, 0.02)
+  fs:SetText("a")
+  holder:Show()
+  Font.set(fs, Font.PATH, 8, "") -- refused until the file loads; Font.retryPending keeps asking
+  probe = { holder = holder, fs = fs }
+  return fs
+end
+
+function Font.stopProbe()
+  if not probe then return false end
+  probe.holder:Hide()
+  pending[probe.fs] = nil
+  probe = nil
+  return true
+end
+
+-- The bundled font at an element's original size and flags ({path,size,flags} as captured by SurfaceState).
+-- The element keeps its own face (a parchment title its Morpheus, chat its Arial): only an unknown one takes PATH.
+function Font.bundled(orig)
+  return {
+    path = (orig and orig.path) or Font.PATH,
+    size = (orig and orig.size) or Font.DEFAULT_SIZE,
+    flags = (orig and orig.flags) or "",
+  }
+end

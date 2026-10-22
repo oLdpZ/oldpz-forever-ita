@@ -1,0 +1,488 @@
+-- UI/Popups.lua over StaticPopup1–4, as Forever's StaticPopup_Show (staticpopup.lua:309–433) sets them up:
+-- dialog:Init writes Text with SetFormattedText(dialogInfo.text, text_arg1, text_arg2) and keeps the arguments on the
+-- FontString (gamedialog.lua:120–128), and each button's SetText(dialogInfo.buttonN) (:319–336). The death dialog's
+-- countdown is GameDialogDefsUtil.GetDefaultExpirationText (gamedialogdefsutil.lua:53–61), written each frame from
+-- StaticPopup_OnUpdate (staticpopup.lua:490–500).
+local Stub = require("tests.lua.spec.wow_stub")
+local X = require("tests.lua.spec.stub_framexml_hud")
+
+local UI = {
+  DELETE_ITEM = { "Do you want to destroy %s?", "%sを破棄しますか？" },
+  CONFIRM_BINDER = { "Do you want to make %s your new home?", "%sを新しいホームにしますか？" },
+  CONFIRM_RESET_INSTANCES = { "Do you really want to reset all of your instances?",
+    "すべてのインスタンスをリセットしますか？" },
+  DEATH_RELEASE_TIMER = { "%d %s until release", "解放まで%d%s" },
+  SECONDS = { "|4Second:Seconds;", "秒" }, MINUTES = { "|4Minute:Minutes;", "分" },
+  YES = { "Yes", "はい" }, NO = { "No", "いいえ" }, DEATH_RELEASE = { "Release Spirit", "霊体になる" },
+  -- The age-verification dialogs (blizzard_staticpopup_game/gamedialogdefs.lua:3312–3327)
+  SOCIAL_FEATURES_UNAVAILABLE = { "Social Features Unavailable", "ソーシャル機能は利用できません" },
+  SOCIAL_FEATURES_UNAVAILABLE_DESCRIPTION = { "World of Warcraft includes social features that allow players to "
+    .. "communicate and interact with one another.|n|nThis account belongs to a minor.",
+    "World of Warcraftには、プレイヤー同士が交流し、やり取りできるソーシャル機能があります。|n|nこのアカウントは未成年者のものです。" },
+  OKAY = { "Okay", "OK" },
+  -- the party invite (gamedialogdefs.lua:1306-1331, eventimplementation.lua:61-72)
+  INVITATION = { "%s invites you to a group.", "%sがあなたをグループに招待しています。" },
+  ACCEPTING_INVITE_WILL_REMOVE_QUEUE = { "Accepting this invite will remove you from all queues.",
+    "このグループに参加すると、現在のキューからすべて外れます。" },
+  INVITATION_XREALM = { "%s invites you to a group.\n\nAccepting this invitation may transfer you to another realm.",
+    "%sがあなたをグループに招待しています。\n\nこの招待を承諾すると、別のレルムに移動することがあります。" },
+  CONFIRM_TALENT_WIPE_1 = { "Do you want to unlearn all of your talents?", "すべてのタレントを忘れますか？" },
+  CANCEL = { "Cancel", "キャンセル" },
+  ACCEPT = { "Accept", "承諾" }, DECLINE = { "Decline", "辞退" },
+  -- the group voice-chat join (mainline/gamedialogdefs.lua:1560–1583): text "", its OnShow writes the line
+  VOICE_CHAT_JOIN_GROUP_TEXT = { "This group is using voice chat for easier communication.",
+    "このグループは連絡を取りやすくするためにボイスチャットを使っています。" },
+  VOICE_CHAT_JOIN_GROUP_DISCORD_TEXT = { "Text-to-Speech and Speech-to-Text are not supported in this channel.",
+    "このチャンネルでは読み上げと音声入力は使えません。" },
+  VOICE_CHAT_JOIN_GROUP_BUTTON = { "Join Voice Chat", "ボイスチャットに参加" },
+  CONFIRM_LEAVE_INSTANCE_PARTY = { "Are you sure you want to leave the instance group?",
+    "インスタンスグループから離れますか？" },
+  -- the remove-friend confirmation (unitpopupsharedbuttonmixins.lua:661–675: the caller formats one of three lines)
+  REMOVE_TITLE_FRIEND_CONFIRMATION = { "Are you sure you want to remove %s as a WoW friend?",
+    "%sをWoWフレンドから外しますか？" },
+  BATTLETAG_REMOVE_FRIEND_CONFIRMATION = { "Are you sure you want to remove %s as a BattleTag friend?",
+    "%sをバトルタグフレンドから外しますか？" },
+  REMOVE_FRIEND_CONFIRMATION = { "Are you sure you want to remove %s as a Real ID friend?",
+    "%sをReal IDフレンドから外しますか？" },
+  -- the Hardcore duel request: a dialog line with a player link (gamedialogdefs.lua:3578–3579)
+  DUEL_TO_THE_DEATH_REQUESTED = { "|Hplayer:%s|h[%s]|h has challenged you to a duel to the death.",
+    "|Hplayer:%s|h[%s]|hから死闘の決闘を申し込まれました。" },
+  -- the typed confirmation under a dialog's text (gamedialog.lua:214–235); the word to type stays as written
+  DIALOG_CONFIRMATION_PROMPT_MKB = { "Type \"%s\" into the field to confirm.", "確認のため、欄に「%s」と入力してください。" },
+  DIALOG_CONFIRMATION_PROMPT_GAMEPAD = { "Press the button sequence to confirm.", "確認のため、ボタンを順に押してください。" },
+  COMMUNITIES_DELETE_CONFIRM_STRING = { "DELETE", "Elimina" },
+  -- the community delete (mainline/gamedialogdefs.lua:897–925): text "", OnShow writes the line with the name
+  CONFIRM_DESTROY_COMMUNITY_UNPROMPTED = { "Are you sure you want to delete the group \"%s\"? This can't be undone.",
+    "グループ「%s」を削除しますか？元に戻すことはできません。" },
+  CONFIRM_DESTROY_CHARACTER_COMMUNITY_UNPROMPTED = {
+    "Are you sure you want to delete the community \"%s\"? This can't be undone.",
+    "コミュニティ「%s」を削除しますか？元に戻すことはできません。" },
+  -- the shard-transfer button's combat tooltip (gamedialogdefs.lua:3434–3445, 3470–3482)
+  SHARD_TRANSFER_COMBAT = { "You can't refresh the world while in combat.", "戦闘中はワールドを更新できません。" },
+  SHARD_TRANSFER_NOW = { "Your world is ready to refresh.", "ワールドを更新する準備ができました。" },
+  SHARD_TRANSFER_NOW_BUTTON = { "Refresh Now", "今すぐ更新" },
+  -- the add-friend dialog (blizzard_addfriend/addfriendtemplates.lua:118–128, xml:462)
+  BATTLETAG_LABEL = { "BattleTag", "バトルタグ" },
+  BATTLETAG_DESCRIPTION = { "Add a BattleTag friend to chat across games.", "バトルタグフレンドを追加して、ゲームをまたいでチャットしよう。" },
+  WOW_FRIEND_DESCRIPTION = { "Add a WoW friend.", "WoWフレンドを追加します。" },
+  ERR_REAL_ID_FRIEND_REQUESTS_DISABLED = { "Real ID friend requests are disabled.", "Real IDフレンドリクエストは無効です。" },
+  ENTER_NAME_OR_BATTLETAG = { "Enter name or BattleTag", "名前またはバトルタグを入力" },
+}
+local NAMES = { "StaticPopup_Show", "StaticPopup_OnUpdate", "StaticPopupDialogs", "GameDialogDefsUtil",
+  "StaticPopup1", "StaticPopup2", "StaticPopup3", "StaticPopup4", "StaticPopupSpecial_Show", "AddFriendFrame" }
+
+local function dialog(i)
+  local d = { Text = Stub.fontString(""), SubText = Stub.fontString(""), ConfirmText = Stub.fontString(""),
+    shown = false,
+    ButtonContainer = { Buttons = { Stub.button(nil, ""), Stub.button(nil, "") } } }
+  function d:IsShown() return self.shown end
+  _G["StaticPopup" .. i] = d
+  return d
+end
+
+local C = {}
+
+local function install()
+  local util = {}
+  function util.GetDefaultExpirationText(d, _, timeleft)
+    local fmt = d.dialogInfo.text
+    if timeleft < 60 then return string.format(fmt, timeleft, _G.SECONDS) end
+    return string.format(fmt, math.ceil(timeleft / 60), _G.MINUTES)
+  end
+  _G.GameDialogDefsUtil = util
+  _G.StaticPopupDialogs = {}
+  for i = 1, 4 do dialog(i) end
+  _G.StaticPopup_Show = function(which, a1, a2, data)
+    local info = _G.StaticPopupDialogs[which]
+    local d = _G.StaticPopup1.shown and _G.StaticPopup2 or _G.StaticPopup1
+    d.which, d.dialogInfo, d.data = which, info, data
+    if info.text == "" then d.Text:SetText(a1) -- gamedialog.lua:121–122
+    else
+      local ok, text = pcall(string.format, info.text, a1, a2)
+      d.Text:SetText(ok and text or " ") -- the countdown dialogs write their text on the first update
+    end
+    d.Text.text_arg1, d.Text.text_arg2 = a1, a2
+    for n, b in ipairs(d.ButtonContainer.Buttons) do b:SetText(info["button" .. n] or "") end
+    d.SubText:SetText(info.subText or "") -- gamedialog.lua's SubText from dialogInfo.subText
+    d.ConfirmText:SetText("") -- SetupConfirmation (gamedialog.lua:214–235), run from Init (:424)
+    if info.requiresConfirmation or info.confirmationString then
+      if C.gamepad then d.ConfirmText:SetText(_G.DIALOG_CONFIRMATION_PROMPT_GAMEPAD)
+      elseif info.confirmationString then
+        d.ConfirmText:SetText(_G.DIALOG_CONFIRMATION_PROMPT_MKB:format(info.confirmationString))
+      end
+    end
+    if info.OnShow then info.OnShow(d, data) end -- staticpopup.lua: OnShow runs before StaticPopup_Show returns
+    d.shown = true
+    if info.timeout then d.timeleft = info.timeout end
+    return d
+  end
+  _G.StaticPopup_OnUpdate = function(d, elapsed)
+    local info = d.dialogInfo
+    if d.startDelay then -- staticpopup.lua:518–525: the start delay ends and the text is formatted again
+      d.startDelay = nil
+      d.Text:SetText(string.format(info.text, d.Text.text_arg1, d.Text.text_arg2))
+      return
+    end
+    if d.timeleft and info.GetExpirationText then
+      d.timeleft = d.timeleft - elapsed
+      d.Text:SetText(info.GetExpirationText(d, nil, math.ceil(d.timeleft)))
+    end
+  end
+end
+
+describe("the StaticPopup dialogs on Forever", function()
+  local WFJ
+  before_each(function()
+    C.discord, C.other, C.gamepad, C.combat = nil, nil, nil, nil
+    WFJ = X.load("UI/Popups.lua", UI, { before = install })
+    local D = _G.StaticPopupDialogs
+    D.DELETE_ITEM = { text = _G.DELETE_ITEM, button1 = _G.YES, button2 = _G.NO }
+    D.CONFIRM_BINDER = { text = _G.CONFIRM_BINDER, button1 = _G.YES, button2 = _G.NO }
+    D.CONFIRM_RESET_INSTANCES = { text = _G.CONFIRM_RESET_INSTANCES, button1 = _G.YES, button2 = _G.NO }
+    D.DEATH = { text = _G.DEATH_RELEASE_TIMER, button1 = _G.DEATH_RELEASE, timeout = 90,
+      GetExpirationText = _G.GameDialogDefsUtil.GetDefaultExpirationText }
+    D.SERVER = { text = "", button1 = _G.YES }
+    D.GENERIC_CONFIRMATION = { text = "" } -- its OnShow writes the caller's text and buttons
+    D.PARTY_INVITE = { text = "%s", button1 = _G.ACCEPT, button2 = _G.DECLINE }
+    -- the decline lock writes its countdown label in OnShow (gamedialogdefs.lua:19-34, 1311-1314)
+    D.PARTY_INVITE_LOCKED = { text = "%s", button1 = _G.ACCEPT, button2 = _G.DECLINE,
+      OnShow = function(d) d.ButtonContainer.Buttons[2]:SetText(_G.DECLINE .. " (1s)") end }
+    D.CONFIRM_TALENT_WIPE = { text = "%s", button1 = _G.ACCEPT, button2 = _G.CANCEL }
+    D.CONFIRM_LEAVE_INSTANCE_PARTY = { text = "%s", button1 = _G.YES, button2 = _G.NO }
+    D.VOICE_CHAT_JOIN_GROUP = { text = "", button1 = _G.VOICE_CHAT_JOIN_GROUP_BUTTON, button2 = _G.CANCEL,
+      OnShow = function(d)
+        local text = _G.VOICE_CHAT_JOIN_GROUP_TEXT
+        if C.discord then text = text .. "\n\n" .. _G.VOICE_CHAT_JOIN_GROUP_DISCORD_TEXT end
+        d.Text:SetText(C.other or text)
+      end }
+    D.AGE_VERIFICATION_RESTRICTED_MINOR = { text = _G.SOCIAL_FEATURES_UNAVAILABLE,
+      subText = _G.SOCIAL_FEATURES_UNAVAILABLE_DESCRIPTION, button1 = _G.OKAY }
+    D.CONFIRM_REMOVE_BN_FRIEND = { text = "%s", button1 = _G.YES, button2 = _G.NO }
+    D.DUEL_TO_THE_DEATH_REQUESTED = { text = _G.DUEL_TO_THE_DEATH_REQUESTED, button1 = _G.ACCEPT, button2 = _G.DECLINE }
+    D.CONFIRM_DESTROY_COMMUNITY = { text = "", button1 = _G.ACCEPT, button2 = _G.CANCEL, requiresConfirmation = true,
+      confirmationString = _G.COMMUNITIES_DELETE_CONFIRM_STRING,
+      OnShow = function(d, club)
+        local line = club.bnet and _G.CONFIRM_DESTROY_COMMUNITY_UNPROMPTED
+          or _G.CONFIRM_DESTROY_CHARACTER_COMMUNITY_UNPROMPTED
+        d.Text:SetText(line:format(club.name))
+      end }
+    -- button1's OnEnter is set in OnShow: the combat tooltip (gamedialogdefs.lua:3470–3482)
+    D.SHARD_TRANSFER_IMMEDIATE = { text = _G.SHARD_TRANSFER_NOW, button1 = _G.SHARD_TRANSFER_NOW_BUTTON,
+      OnShow = function(d)
+        local b1 = d.ButtonContainer.Buttons[1]
+        b1.OnEnter = function(button)
+          if C.combat then
+            local tt = _G.GameTooltip
+            tt:SetOwner(button)
+            tt:ClearLines()
+            tt:AddLine(_G.SHARD_TRANSFER_COMBAT)
+            tt:Show()
+          end
+        end
+      end }
+    assert.is_true(WFJ.Popups.init())
+  end)
+  after_each(function() X.teardown(NAMES) end)
+
+  it("the remove-friend confirmation: the caller's line with the friend's name kept; Alt shows English", function()
+    local d = _G.StaticPopup_Show("CONFIRM_REMOVE_BN_FRIEND",
+      string.format(_G.REMOVE_TITLE_FRIEND_CONFIRMATION, "Reyn"))
+    assert.are.equal("ReynをWoWフレンドから外しますか？", d.Text:GetText())
+    assert.are.equal("はい", d.ButtonContainer.Buttons[1]:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal("Are you sure you want to remove Reyn as a WoW friend?", d.Text:GetText())
+    X.alt(WFJ, false)
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("CONFIRM_REMOVE_BN_FRIEND",
+      string.format(_G.BATTLETAG_REMOVE_FRIEND_CONFIRMATION, "Wind Mami#1234"))
+    assert.are.equal("Wind Mami#1234をバトルタグフレンドから外しますか？", e.Text:GetText())
+  end)
+
+  it("the duel to the death request: the player link kept byte for byte", function()
+    local d = _G.StaticPopup_Show("DUEL_TO_THE_DEATH_REQUESTED", "Reyn", "Reyn")
+    assert.are.equal("|Hplayer:Reyn|h[Reyn]|hから死闘の決闘を申し込まれました。", d.Text:GetText())
+    assert.are.equal("承諾", d.ButtonContainer.Buttons[1]:GetText())
+  end)
+
+  it("the typed confirmation line: the word to type stays as written; gamepad mode's line; none is blank", function()
+    local d = _G.StaticPopup_Show("CONFIRM_DESTROY_COMMUNITY", nil, nil, { name = "Wind Mami's Club", bnet = true })
+    assert.are.equal("確認のため、欄に「DELETE」と入力してください。", d.ConfirmText:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal("Type \"DELETE\" into the field to confirm.", d.ConfirmText:GetText())
+    X.alt(WFJ, false)
+    _G.StaticPopup1.shown = false
+    C.gamepad = true
+    local e = _G.StaticPopup_Show("CONFIRM_DESTROY_COMMUNITY", nil, nil, { name = "Reyn", bnet = false })
+    assert.are.equal(UI.DIALOG_CONFIRMATION_PROMPT_GAMEPAD[2], e.ConfirmText:GetText())
+    _G.StaticPopup1.shown = false
+    local f = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES")
+    assert.are.equal("", f.ConfirmText:GetText())
+    assert.is_true(X.unrecorded(WFJ, f.ConfirmText))
+  end)
+
+  it("the confirmation line takes only its two keys; a dialog with no ConfirmText raises nothing", function()
+    local d = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES")
+    d.ConfirmText:SetText(_G.YES) -- a dictionary English that is not a confirmation prompt
+    WFJ.Popups.onShow(d)
+    assert.are.equal("Yes", d.ConfirmText:GetText())
+    d.ConfirmText = nil
+    assert.has_no.errors(function() WFJ.Popups.onShow(d) end)
+  end)
+
+  it("the community delete: OnShow's line with the community's name kept; Alt shows English", function()
+    local d = _G.StaticPopup_Show("CONFIRM_DESTROY_COMMUNITY", nil, nil, { name = "Wind Mami's Club", bnet = true })
+    assert.are.equal("グループ「Wind Mami's Club」を削除しますか？元に戻すことはできません。", d.Text:GetText())
+    assert.are.equal("承諾", d.ButtonContainer.Buttons[1]:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal("Are you sure you want to delete the group \"Wind Mami's Club\"? This can't be undone.",
+      d.Text:GetText())
+    X.alt(WFJ, false)
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("CONFIRM_DESTROY_COMMUNITY", nil, nil, { name = "Reyn", bnet = false })
+    assert.are.equal("コミュニティ「Reyn」を削除しますか？元に戻すことはできません。", e.Text:GetText())
+  end)
+
+  it("the shard-transfer button's combat tooltip translates; its other tooltips are not read", function()
+    local d = _G.StaticPopup_Show("SHARD_TRANSFER_IMMEDIATE")
+    local b1 = d.ButtonContainer.Buttons[1]
+    assert.are.equal("今すぐ更新", b1:GetText())
+    C.combat = true
+    b1:OnEnter()
+    assert.are.equal(UI.SHARD_TRANSFER_COMBAT[2], _G.GameTooltipTextLeft1:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal(UI.SHARD_TRANSFER_COMBAT[1], _G.GameTooltipTextLeft1:GetText())
+    X.alt(WFJ, false)
+    local tt = _G.GameTooltip -- another dialog's button1 tooltip with a dictionary word: untouched
+    tt:SetOwner(_G.StaticPopup3.ButtonContainer.Buttons[1])
+    tt:ClearLines()
+    tt:AddLine(_G.YES)
+    tt:Show()
+    assert.are.equal("Yes", _G.GameTooltipTextLeft1:GetText())
+  end)
+
+  it("the add-friend dialog: its info and error lines translate; the BattleTag title and a dropped key stay English",
+    function()
+      local function container(...)
+        local regions = { ... }
+        return { GetRegions = function() return unpack(regions) end, GetChildren = function() return end }
+      end
+      local title, desc = Stub.fontString(_G.BATTLETAG_LABEL), Stub.fontString(_G.BATTLETAG_DESCRIPTION)
+      local right = Stub.fontString(_G.WOW_FRIEND_DESCRIPTION)
+      local err = Stub.fontString(_G.ERR_REAL_ID_FRIEND_REQUESTS_DISABLED)
+      local old = Stub.fontString(_G.ENTER_NAME_OR_BATTLETAG)
+      local parts = { container(title, desc), container(right), container(err, old) }
+      _G.AddFriendFrame = { GetRegions = function() return end,
+        GetChildren = function() return unpack(parts) end }
+      _G.StaticPopupSpecial_Show = function() end
+      WFJ.Popups.onSpecial(_G.AddFriendFrame)
+      assert.are.equal(UI.BATTLETAG_DESCRIPTION[2], desc:GetText())
+      assert.are.equal(UI.ERR_REAL_ID_FRIEND_REQUESTS_DISABLED[2], err:GetText())
+      assert.are.equal(UI.WOW_FRIEND_DESCRIPTION[2], right:GetText())
+      assert.are.equal("BattleTag", title:GetText()) -- a product name
+      assert.are.equal("Enter name or BattleTag", old:GetText()) -- no longer written by the client
+      X.alt(WFJ, true)
+      assert.are.equal(UI.BATTLETAG_DESCRIPTION[1], desc:GetText())
+      X.alt(WFJ, false)
+    end)
+
+  it("a plain dialog and its buttons translate; Alt shows the live English", function()
+    local d = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES")
+    assert.are.equal("すべてのインスタンスをリセットしますか？", d.Text:GetText())
+    assert.are.equal("はい", d.ButtonContainer.Buttons[1]:GetText())
+    assert.are.equal("いいえ", d.ButtonContainer.Buttons[2]:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal("Do you really want to reset all of your instances?", d.Text:GetText())
+    assert.are.equal("Yes", d.ButtonContainer.Buttons[1]:GetText())
+    X.alt(WFJ, false)
+    assert.are.equal("すべてのインスタンスをリセットしますか？", d.Text:GetText())
+  end)
+
+  it("an age-verification dialog's text and subText translate from its definition; Alt shows English",
+    function()
+      local d = _G.StaticPopup_Show("AGE_VERIFICATION_RESTRICTED_MINOR")
+      assert.are.equal("ソーシャル機能は利用できません", d.Text:GetText())
+      assert.are.equal(UI.SOCIAL_FEATURES_UNAVAILABLE_DESCRIPTION[2], d.SubText:GetText())
+      X.alt(WFJ, true)
+      assert.are.equal("Social Features Unavailable", d.Text:GetText())
+      assert.are.equal(UI.SOCIAL_FEATURES_UNAVAILABLE_DESCRIPTION[1], d.SubText:GetText())
+      X.alt(WFJ, false)
+    end)
+
+  it("a name inside the dialog is copied as the English showed it, even a dictionary word", function()
+    local d = _G.StaticPopup_Show("DELETE_ITEM", "|cffffffff[Linen Cloth]|r")
+    assert.are.equal("|cffffffff[Linen Cloth]|rを破棄しますか？", d.Text:GetText())
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("CONFIRM_BINDER", "Yes") -- an inn named like a dictionary word
+    assert.are.equal("Yesを新しいホームにしますか？", e.Text:GetText())
+  end)
+
+  it("a dialog whose text is not its definition's (computed, server text) stays as written", function()
+    local d = _G.StaticPopup_Show("SERVER", "Something the server said.")
+    assert.are.equal("Something the server said.", d.Text:GetText())
+    assert.is_true(X.unrecorded(WFJ, d.Text))
+    assert.are.equal("はい", d.ButtonContainer.Buttons[1]:GetText())
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES")
+    e.Text:SetText("Do you really want to reset all of your instances? (2 left)") -- rewritten by the client
+    WFJ.Popups.onUpdate(e)
+    assert.are.equal("Do you really want to reset all of your instances? (2 left)", e.Text:GetText())
+  end)
+
+  it("the death countdown is rebuilt each time the client re-writes it, with its unit word in Japanese", function()
+    local d = _G.StaticPopup_Show("DEATH")
+    _G.StaticPopup_OnUpdate(d, 0.5) -- 89.5 s left: "2 Minutes"
+    assert.are.equal("解放まで2分", d.Text:GetText())
+    d.timeleft = 30.2
+    _G.StaticPopup_OnUpdate(d, 0.1) -- 30.1 → "31 Seconds"
+    assert.are.equal("解放まで31秒", d.Text:GetText())
+    assert.are.equal("霊体になる", d.ButtonContainer.Buttons[1]:GetText())
+  end)
+
+  it("the start delay's re-format of the English is shown in Japanese again", function()
+    local d = _G.StaticPopup_Show("DELETE_ITEM", "Linen Cloth")
+    assert.are.equal("Linen Clothを破棄しますか？", d.Text:GetText())
+    d.startDelay = 1
+    _G.StaticPopup_OnUpdate(d, 1)
+    assert.are.equal("Linen Clothを破棄しますか？", d.Text:GetText())
+  end)
+
+  it("an accept delay's end puts button1's English back; it is shown in Japanese again", function()
+    local d = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES")
+    local b1 = d.ButtonContainer.Buttons[1]
+    d.acceptDelay = 2
+    b1:SetText("2") -- staticpopup.lua:535–540: the countdown number on the button
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("2", b1:GetText())
+    d.acceptDelay = nil
+    b1:SetText("Yes") -- :541–547: the delay ended, the English label back
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("はい", b1:GetText())
+  end)
+
+  it("a generic confirmation keeps the caller's text and buttons Japanese when the client rewrites them", function()
+    local data = { text = _G.CONFIRM_RESET_INSTANCES }
+    local d = _G.StaticPopup_Show("GENERIC_CONFIRMATION", nil, nil, data)
+    d.Text:SetText(data.text) -- shareddialogdefs.lua:1-8: OnShow writes the caller's text and YES / NO
+    d.ButtonContainer.Buttons[1]:SetText("Yes")
+    WFJ.Popups.onShow(d)
+    assert.are.equal("すべてのインスタンスをリセットしますか？", d.Text:GetText())
+    assert.are.equal("はい", d.ButtonContainer.Buttons[1]:GetText())
+    d.ButtonContainer.Buttons[1]:SetText("Yes") -- an accept delay ended: the English label back
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("はい", d.ButtonContainer.Buttons[1]:GetText())
+  end)
+
+  it("the party invite: the caller's line with the inviter's name, and the queue paragraph", function()
+    local d = _G.StaticPopup_Show("PARTY_INVITE", string.format(_G.INVITATION, "Wind Mami"))
+    assert.are.equal("Wind Mamiがあなたをグループに招待しています。", d.Text:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal("Wind Mami invites you to a group.", d.Text:GetText())
+    X.alt(WFJ, false)
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("PARTY_INVITE",
+      string.format(_G.INVITATION, "Yes") .. "\n\n" .. _G.ACCEPTING_INVITE_WILL_REMOVE_QUEUE)
+    assert.are.equal("Yesがあなたをグループに招待しています。\n\nこのグループに参加すると、現在のキューからすべて外れます。",
+      e.Text:GetText())
+    _G.StaticPopup_OnUpdate(e, 0.1)
+    assert.are.equal("Yesがあなたをグループに招待しています。\n\nこのグループに参加すると、現在のキューからすべて外れます。",
+      e.Text:GetText())
+  end)
+
+  it("the group voice-chat join: OnShow's line, the Discord paragraph and the button; Alt shows English", function()
+    local d = _G.StaticPopup_Show("VOICE_CHAT_JOIN_GROUP")
+    assert.are.equal(UI.VOICE_CHAT_JOIN_GROUP_TEXT[2], d.Text:GetText())
+    assert.are.equal("ボイスチャットに参加", d.ButtonContainer.Buttons[1]:GetText())
+    assert.are.equal("キャンセル", d.ButtonContainer.Buttons[2]:GetText())
+    _G.StaticPopup1.shown = false
+    C.discord = true
+    local e = _G.StaticPopup_Show("VOICE_CHAT_JOIN_GROUP")
+    local en = UI.VOICE_CHAT_JOIN_GROUP_TEXT[1] .. "\n\n" .. UI.VOICE_CHAT_JOIN_GROUP_DISCORD_TEXT[1]
+    assert.are.equal(UI.VOICE_CHAT_JOIN_GROUP_TEXT[2] .. "\n\n" .. UI.VOICE_CHAT_JOIN_GROUP_DISCORD_TEXT[2],
+      e.Text:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal(en, e.Text:GetText())
+    assert.are.equal("Join Voice Chat", e.ButtonContainer.Buttons[1]:GetText())
+    X.alt(WFJ, false)
+    _G.StaticPopup1.shown, _G.StaticPopup2.shown = false, false
+    C.other = "A line this file does not know."
+    local f = _G.StaticPopup_Show("VOICE_CHAT_JOIN_GROUP")
+    assert.are.equal("A line this file does not know.", f.Text:GetText())
+  end)
+
+  it("the cross-realm invite, alone and with the queue paragraph", function()
+    local d = _G.StaticPopup_Show("PARTY_INVITE", string.format(_G.INVITATION_XREALM, "Wind Mami"))
+    assert.are.equal(UI.INVITATION_XREALM[2]:format("Wind Mami"), d.Text:GetText())
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("PARTY_INVITE",
+      string.format(_G.INVITATION_XREALM, "Wind Mami") .. "\n\n" .. _G.ACCEPTING_INVITE_WILL_REMOVE_QUEUE)
+    assert.are.equal(UI.INVITATION_XREALM[2]:format("Wind Mami") .. "\n\n" .. UI.ACCEPTING_INVITE_WILL_REMOVE_QUEUE[2],
+      e.Text:GetText())
+    X.alt(WFJ, true)
+    local en = string.format(_G.INVITATION_XREALM, "Wind Mami") .. "\n\n" .. _G.ACCEPTING_INVITE_WILL_REMOVE_QUEUE
+    assert.are.equal(en, e.Text:GetText())
+    X.alt(WFJ, false)
+  end)
+
+  it("the talent wipe's caller line translates by its exact English", function()
+    local d = _G.StaticPopup_Show("CONFIRM_TALENT_WIPE", _G.CONFIRM_TALENT_WIPE_1)
+    assert.are.equal("すべてのタレントを忘れますか？", d.Text:GetText())
+    assert.are.equal("キャンセル", d.ButtonContainer.Buttons[2]:GetText())
+  end)
+
+  it("in the client's order the locked Decline stays as written, then turns Japanese once unlocked", function()
+    local d = _G.StaticPopup_Show("PARTY_INVITE_LOCKED", string.format(_G.INVITATION, "Wind Mami"))
+    local b2 = d.ButtonContainer.Buttons[2]
+    assert.are.equal("Decline (1s)", b2:GetText()) -- seen by the show hook as the countdown: left alone
+    assert.are.equal("承諾", d.ButtonContainer.Buttons[1]:GetText())
+    X.alt(WFJ, true)
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("Decline (1s)", b2:GetText())
+    X.alt(WFJ, false)
+    b2:SetText("Decline") -- the ticker unlocks it (gamedialogdefs.lua:38-41)
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("辞退", b2:GetText())
+  end)
+
+  it("a %s dialog whose line is exactly one key's English translates; any other line stays", function()
+    local d = _G.StaticPopup_Show("CONFIRM_LEAVE_INSTANCE_PARTY", _G.CONFIRM_LEAVE_INSTANCE_PARTY)
+    assert.are.equal("インスタンスグループから離れますか？", d.Text:GetText())
+    _G.StaticPopup1.shown = false
+    local e = _G.StaticPopup_Show("CONFIRM_LEAVE_INSTANCE_PARTY", "Leave the battlefield?")
+    assert.are.equal("Leave the battlefield?", e.Text:GetText())
+    assert.is_true(X.unrecorded(WFJ, e.Text))
+  end)
+
+  it("the invite's Decline, locked with a countdown, is Japanese once its English is back", function()
+    local d = _G.StaticPopup_Show("PARTY_INVITE", string.format(_G.INVITATION, "Wind Mami"))
+    local b2 = d.ButtonContainer.Buttons[2]
+    b2:SetText("Decline (1s)") -- gamedialogdefs.lua:13-16, 33: the lock's countdown, written in OnShow
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("Decline (1s)", b2:GetText())
+    b2:SetText("Decline") -- :38-41: the ticker unlocks it with the English it saved
+    _G.StaticPopup_OnUpdate(d, 0.1)
+    assert.are.equal("辞退", b2:GetText())
+    assert.are.equal("承諾", d.ButtonContainer.Buttons[1]:GetText())
+    X.alt(WFJ, true)
+    assert.are.equal("Decline", b2:GetText())
+    X.alt(WFJ, false)
+    assert.are.equal("辞退", b2:GetText())
+  end)
+
+  it("two shown dialogs of one type: the call's own (by data) gets its buttons", function()
+    local first = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES", nil, nil, "one")
+    first.ButtonContainer.Buttons[1]:SetText("Yes") -- the client re-set the first's buttons meanwhile
+    local second = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES", nil, nil, "two")
+    assert.are_not.equal(first, second)
+    assert.are.equal("はい", second.ButtonContainer.Buttons[1]:GetText())
+  end)
+
+  it("hooks once; a missing StaticPopup_Show is no surface; wrong-typed input raises nothing", function()
+    assert.is_false(WFJ.Popups.init())
+    assert.has_no.errors(function()
+      WFJ.Popups.onShow(nil)
+      WFJ.Popups.onShow({ dialogInfo = 3 })
+      WFJ.Popups.onShowCall("NOPE")
+      WFJ.Popups.onUpdate({ Text = 1 })
+    end)
+  end)
+end)
