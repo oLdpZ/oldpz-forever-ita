@@ -43,6 +43,6 @@ WFJ.Data.add("spell", {
   [1308870] = { "Clicca col pulsante destro per evocare e congedare il tuo punteruolo.", nil, 0xdcb15f31, nil, "um" },
   [1308910] = { "Rimuove $N1 effetto di veleno.", nil, 0x396a13ff, nil, "um" },
   [1308913] = { "I tuoi attacchi in mischia hanno una probabilità di conferire mana.", nil, 0xa1973b06, nil, "um" },
-  [1308917] = { "Rimuove $N1 effetto di disarmo dall'alleato bersaglio.", nil, 0x5af749bd, nil, "um" },
+  [1308917] = { "Rimuove $N1 effetto di disarmo dall'alleato bersaglio.", "Rimuove un effetto di disarmo.", 0x5af749bd, 0x3af9e5cf, "uu" },
   [1308939] = { "I danni di ⟦Fire Nova=Esplosione di Fuoco⟧ prolungano di $D1 la durata della tua ⟦Flame Shock=Folgore del Fuoco⟧ sul bersaglio. Contro le Bestie la durata viene prolungata di altri $D2.", nil, 0x282524ea, nil, "um" },
 })

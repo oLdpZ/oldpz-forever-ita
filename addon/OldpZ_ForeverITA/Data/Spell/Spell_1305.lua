@@ -15,6 +15,6 @@ WFJ.Data.add("spell", {
   [1305732] = { "Gli incantesimi di cura hanno una probabilità di richiamare un Onyxia Whelpling che ti protegge in battaglia per $D1.", nil, 0x9d00a5a6, nil, "um" },
   [1305748] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [1305819] = { "Riduce tutti gli attributi di un nemico di $N1 per $D1.", "Tutti gli attributi ridotti di $N1.", 0xfa49afb9, 0xfb83ad31, "uu" },
-  [1305855] = { "Gli occhi di Kargra vedono oltre i regni mortali, riducendo del $N1% la sua probabilità d'impatto con gli attacchi.", nil, 0xf8386eb1, nil, "um" },
+  [1305855] = { "Gli occhi di Kargra vedono oltre i regni mortali, riducendo del $N1% la sua probabilità d'impatto con gli attacchi.", "Probabilità d'impatto con gli attacchi ridotta del $N1%.", 0xf8386eb1, 0x05f73d77, "uu" },
   [1305943] = { nil, "Trasporti una pozione instabile. Si destabilizzerà e diventerà inerte tra $N1 min.", nil, 0x86717193, "mu" },
 })

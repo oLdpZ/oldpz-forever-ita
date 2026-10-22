@@ -2,6 +2,14 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [453053] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [453635] = { "Incidi sul tuo anello la runa Sword Specialization:\n\n$I1\nAbilità con Spade e Spade a due mani aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x619fe816, nil, "um" },
+  [453688] = { "Incidi sul tuo anello la runa Axe Specialization:\n\n$I1\nAbilità con Asce e Asce a due mani aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x80944dc1, nil, "um" },
+  [453689] = { "Incidi sul tuo anello la runa Mace Specialization:\n\n$I1\nAbilità con Mazze e Mazze a due mani aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0xf8361805, nil, "um" },
+  [453690] = { "Incidi sul tuo anello la runa Dagger Specialization:\n\n$I1\nAbilità con Pugnali aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x422d6569, nil, "um" },
+  [453691] = { "Incidi sul tuo anello la runa Fist Weapon Specialization:\n\n$I1\nAbilità con Tirapugni (A Mani Nude) aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0xba06bcf2, nil, "um" },
+  [453692] = { "Incidi sul tuo anello la runa Ranged Weapon Specialization:\n\n$I1\nAbilità con Archi, Armi da fuoco, Balestre e Armi da Lancio aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x139ba8eb, nil, "um" },
+  [453694] = { "Incidi sul tuo anello la runa Pole Weapon Specialization:\n\n$I1\nAbilità con Bastoni e Armi ad asta aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x78d36c53, nil, "um" },
+  [453695] = { "Incidi sul tuo anello la runa Arcane Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non si cumula con altre rune dell'anello.", nil, 0xf9b5ffe6, nil, "um" },
   [453696] = { "Incidi sul tuo anello la runa Fire Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x8e19242b, nil, "um" },
   [453697] = { "Incidi sul tuo anello la runa ⟦Frost Specialization=Specializzazione del Gelo⟧:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x7c83ee46, nil, "um" },
   [453698] = { "Incidi sul tuo anello la runa Nature Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x916cd76f, nil, "um" },
