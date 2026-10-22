@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["d11c4e72e85c67b7"] = { "Ho svolto moltissime ricerche sugli Aspetti e sui titani che li crearono, quante ne può svolgere un umano in una vita. Gli Aspetti erano cinque quando i titani lasciarono questo mondo: erano draghi possenti incaricati di proteggere il mondo di Azeroth. Le loro storie sono vaste e varie, e ancora oggi, nonostante tutte le informazioni che ho raccolto, so che c'è molto altro da imparare su queste magnifiche creature.", "." },
+  ["d1dd85fcf0a9b7d9"] = { "Usa il potere dell'⟦Amulet of Spirits=Amuleto degli Spiriti⟧ per costringerli a manifestarsi e prendi loro le gemme! Poi incastona le gemme nell'⟦Amulet of Spirits=Amuleto degli Spiriti⟧ e riportamelo. Quando avrò l'⟦Amulet of Union=Amuleto dell'Unione⟧, sarò abbastanza potente da riunire le tribù, così che potremo finalmente essere come volevano i nostri antenati!", "." },
 })

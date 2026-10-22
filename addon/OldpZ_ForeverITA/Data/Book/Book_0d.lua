@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["0d1d2680f9d4e2fd"] = { "Il sovrintendente dei campi di internamento, Aedelas Blackmoore, sorvegliava gli orchi prigionieri dalla sua roccaforte-prigione, Durnholde. Un orco in particolare aveva sempre destato il suo interesse: il piccolo orfano che aveva trovato quasi diciotto anni prima. Blackmoore aveva cresciuto il giovane maschio come uno schiavo prediletto e gli aveva dato il nome di Thrall. Blackmoore insegnò all'orco tattica, filosofia e combattimento. Thrall fu persino addestrato come gladiatore. Per tutto il tempo, il corrotto sovrintendente cercò di plasmare l'orco in un'arma.", "." },
+  ["0da106e61c3cecba"] = { "Lo stato del culto, volume 127\n\nÈ davvero un giorno felice! Siamo stati messi alla prova a ⟦Silithus=Silitus⟧, e l'abbiamo superata!\n\nLe notizie della distruzione del nostro accampamento più a nord potranno turbare il cuore di chi non ha fede, ma questo massacro non va visto come una tragedia. No!", "." },
+  ["0dfa5e8e8a564128"] = { "Goditi le armature Nemesis e Stormrage che potresti trovare nel mio tesoro. Credimi quando ti dico questo: provo un immenso piacere nel sapere di aver fatto ciò che mio padre non è riuscito a fare...\n\nCordialmente,\n\nLord Victor Nefarius\n\"Nefarian\"", "." },
 })

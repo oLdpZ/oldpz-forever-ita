@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["2106c80137570ae1"] = { "Il livello di sicurezza di questi dati è COSÌ alto che si attende l'invenzione di un nuovo numero per descriverlo!", "." },
+  ["2136d41b213e22a3"] = { "Lady Mara Fordragon\n\nSomma chierica di ⟦Stormwind=Roccavento⟧\n\nPatrona dei profughi fuggiti in Lordaeron dopo la Prima Guerra.\n\nFu la luminosa madre del nostro futuro. Possa riposare nella Luce.", "." },
   ["215979b0e5b665f7"] = { "Eonar, ⟦Titan=Titano⟧ e patrona di ogni forma di vita, donò una parte del suo potere al leviatano rosso Alexstrasza. Da allora Alexstrasza sarebbe stata conosciuta come la Protettrice della Vita, e si sarebbe adoperata per proteggere tutte le creature viventi del mondo. Per la sua somma saggezza e la sua infinita compassione per ogni essere vivente, Alexstrasza fu incoronata Regina dei Draghi e ricevette il dominio sulla sua stirpe.", "." },
   ["21ede6d0f75e6f93"] = { "Giorno 5:\n\nOggi Thorsen era molto agitato. Qualunque cosa abbia visto o chiunque abbia incontrato durante la sua escursione di ieri, deve averlo spaventato.\n\nPensavo che i nostri agenti gli avessero parlato, ma quando ho chiesto a Thorsen dove fosse andato mentre lo coprivo, è rimasto in silenzio. Mi crede suo amico, e crede di proteggermi da un segreto pericoloso.\n\nLa sua lealtà è mal riposta, ma è forte. Quando tornerà con noi, sarà un'aggiunta preziosa alle forze di Kurzen.", "." },
 })

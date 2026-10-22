@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["bb0c439e02a63260"] = { "Mio carissimo Tarrel,\n\nPerdona la fretta con cui ti scrivo, ma il tempo è un lusso che non abbiamo.\n\nLa squadra di scavo stava facendo notevoli progressi nel riportare alla luce importanti manufatti dei Titani. Ma abbiamo cominciato a scoprire altri oggetti antichi, in particolare grosse ossa.", "." },
+  ["bb6a95067292de7e"] = { "Giorno 1\nIl nostro pellegrinaggio è finito. Abbiamo finalmente raggiunto ⟦Silithus=Silitus⟧, dove dovremo stabilire il contatto. Veniamo da molti luoghi per collaborare a quella che sarà un'impresa monumentale.\n\nNell'aria si respira un'eccitazione tremenda. Domani dedicheremo tutte le nostre energie a costruire ciò che ci permetterà di comunicare con LORO.\n\nDomani costruiremo una pietra del vento!", "." },
   ["bb8cd8529131aaa7"] = { "Saluti a te, fratello o sorella. Gli spiriti dicono che per te è arrivato il momento di aiutare i nostri alleati. Tu hai legami forti con gli elementi, e tu hai molto più potere di quando hai cominciato le tue lezioni con me.\n\nOra io ti mando da Shikrik, l'orchessa che istruisce gli sciamani nella ⟦Valley of Trials=Valle delle Sfide⟧. Lei sa già che tu vai a studiare con lei. Rendi fieri i nostri antenati. Finché non ci rivediamo, che la fiamma ti tenga al caldo e il vento ti stia alle spalle.\n\n-Ishi-yo", "." },
 })

@@ -18,8 +18,8 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 |---|---|
 | Missioni | 4.775 |
 | Righe di dialogo dei PNG | 10.876 |
-| Pagine di libri | 742 |
-| Pagine di lettere | 183 |
+| Pagine di libri | 921 |
+| Pagine di lettere | 208 |
 | Tooltip degli oggetti | 1.232 |
 | Tooltip delle abilità | 3.761 |
 | Testi dell'interfaccia | 8.609 |

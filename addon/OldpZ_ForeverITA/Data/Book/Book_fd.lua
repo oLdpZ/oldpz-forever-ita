@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["fd139cae5bb9d53a"] = { "Gli eserciti uniti di elfi e umani si scontrarono con le soverchianti bande da guerra dei troll ai piedi delle ⟦Alterac Mountains=Montagne d'Alterac⟧. La battaglia durò molti giorni, ma gli instancabili eserciti di Arathor non cedettero mai alla stanchezza né arretrarono di un passo davanti all'assalto dei troll. I nobili elfici giudicarono che fosse giunto il momento di scatenare sul nemico i poteri della loro magia.", "." },
+  ["fd2f90efafcce039"] = { "Infine Cenarius strinse amicizia con gli Shu'halo e parlò loro del mondo che ruota. I figli della terra lo riconobbero come fratello e giurarono di aiutarlo a prendersi cura dei campi della vita e delle creature predilette della loro grande Madre Terra.", "." },
+  ["fd96efbd04c90941"] = { "Capitolo 4 - East Frostwolf Tower e West Frostwolf Tower\n\nOra c'è un solo strato tra te e la vittoria: le unità di guardia più fidate e potenti di Drek'Thar, i guardiani dei Lupi Bianchi.\n\nI guardiani dei Lupi Bianchi partono dai plotoni tenuti di riserva nelle torri dei Lupi Bianchi a est e a ovest. Distruggi quelle torri e guarda i guardiani dei Lupi Bianchi rimasti fuggire nella vergogna.", "." },
 })

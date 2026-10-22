@@ -483,10 +483,12 @@ Data\Book\Book_26.lua
 Data\Book\Book_27.lua
 Data\Book\Book_28.lua
 Data\Book\Book_29.lua
+Data\Book\Book_2a.lua
 Data\Book\Book_2b.lua
 Data\Book\Book_2c.lua
 Data\Book\Book_2d.lua
 Data\Book\Book_2e.lua
+Data\Book\Book_2f.lua
 Data\Book\Book_30.lua
 Data\Book\Book_31.lua
 Data\Book\Book_33.lua
@@ -617,6 +619,7 @@ Data\Book\Book_af.lua
 Data\Book\Book_b0.lua
 Data\Book\Book_b1.lua
 Data\Book\Book_b2.lua
+Data\Book\Book_b3.lua
 Data\Book\Book_b4.lua
 Data\Book\Book_b5.lua
 Data\Book\Book_b6.lua
@@ -629,6 +632,7 @@ Data\Book\Book_bc.lua
 Data\Book\Book_bd.lua
 Data\Book\Book_be.lua
 Data\Book\Book_bf.lua
+Data\Book\Book_c0.lua
 Data\Book\Book_c1.lua
 Data\Book\Book_c2.lua
 Data\Book\Book_c3.lua
@@ -644,6 +648,7 @@ Data\Book\Book_cc.lua
 Data\Book\Book_cd.lua
 Data\Book\Book_ce.lua
 Data\Book\Book_cf.lua
+Data\Book\Book_d0.lua
 Data\Book\Book_d1.lua
 Data\Book\Book_d2.lua
 Data\Book\Book_d3.lua
@@ -665,6 +670,7 @@ Data\Book\Book_e2.lua
 Data\Book\Book_e3.lua
 Data\Book\Book_e4.lua
 Data\Book\Book_e5.lua
+Data\Book\Book_e6.lua
 Data\Book\Book_e7.lua
 Data\Book\Book_e8.lua
 Data\Book\Book_e9.lua

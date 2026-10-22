@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["29173f1824fce640"] = { "Zanne degli Scalporosso:\n\nLe zanne dei troll Scalporosso della Valle di Rovotorto hanno una qualità rara. La depravazione degli Scalporosso si concentra nelle loro zanne e, se queste vengono ridotte in polvere, se ne possono liberare i poteri malvagi.", "." },
+  ["29fef013c68eb1ad"] = { "Cercando di fuggire, il grande cervo balzò nel cielo. Ma proprio quando la fuga sembrava certa, le sue possenti corna si impigliarono tra le stelle, che lo trattennero. Per quanto scalciasse e si dibattesse, Apa'ro non riusciva a liberarsi dai cieli. Fu allora che Mu'sha lo trovò, mentre inseguiva suo fratello An'she verso l'alba. Mu'sha vide il possente cervo che si dibatteva e se ne innamorò all'istante.", "." },
 })
