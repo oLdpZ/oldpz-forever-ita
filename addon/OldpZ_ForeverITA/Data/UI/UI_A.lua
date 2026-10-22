@@ -64,7 +64,7 @@ WFJ.Data.add("ui", {
   ["ACHIEVEMENT_SUMMARY_CATEGORY"] = { "Sommario", 0x1171d7d7, "." },
   ["ACHIEVEMENT_TITLE"] = { "Punti impresa dell'account", 0xf98a70df, "." },
   ["ACHIEVEMENT_TOOLTIP_COMPLETE"] = { "Impresa compiuta da %1$s il %3$02d/%2$d/20%4$02d", 0xc9caa893, "." },
-  ["ACHIEVEMENT_UNLOCKED"] = { "Legacy Challenge compiuta", 0xb6482bc3, "." },
+  ["ACHIEVEMENT_UNLOCKED"] = { "Sfida del retaggio compiuta", 0xb6482bc3, "." },
   ["ACHIEVEMENT_WATCH_TOO_MANY"] = { "Puoi seguire solo %d imprese alla volta.", 0x9ea6169b, "." },
   ["ACTIONBARS_LABEL"] = { "Barre delle azioni", 0x4a126ad3, "." },
   ["ACTION_LABEL_ADJUST_BRIGHTNESS"] = { "Regola luminosità", 0xf0853b50, "." },
