@@ -110,7 +110,7 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | crypt fiend | ragno delle cripte | crypt fiend |
 | spirit healer | guaritore degli spiriti | — |
 | Mining | Estrazione | — |
-| Friendly / Honored / Revered / Exalted (reputazione) | Amichevole / Onorato / Reverito / Osannato | — |
+| Friendly / Honored / Revered / Exalted (reputazione) | Amichevole / Onorato / Riverito / Osannato (come il client: FACTION_STANDING_LABEL7) | — |
 | Stonesplinter (tribù) | Scheggiadura | Pietrarotta |
 | Earthen Ring, Old Town, Dwarven District, Hall of Arms, The Drag, Tinker Town, Lion's Pride Inn, Gilded Rose, Hall of the Brave, Forlorn Cavern, Scarab Gong, silithyst | restano inglesi | Anello della Terra, Città Vecchia |
 | Alterac: luoghi senza forma nel glossario (Frostwolf Relief Hut, Stormpike Aid Station, Dun Baldar North/South Bunker, East/West Frostwolf Tower) | restano inglesi interi | — |

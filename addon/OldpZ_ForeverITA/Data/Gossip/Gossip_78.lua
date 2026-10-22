@@ -8,7 +8,7 @@ WFJ.Data.add("gossip", {
   ["7809246c1d5c082f"] = { "The Vault, a ⟦Ironforge=Forgiardente⟧, è la banca più vicina che troverai da queste parti.", "." },
   ["78197a05136b2a3e"] = { "Gubber, non so pescare.", "." },
   ["781b1cb3b2b18041"] = { "AIUTO!!!!", "." },
-  ["78216e7f714f4a89"] = { "Reverito.", "." },
+  ["78216e7f714f4a89"] = { "Riverito.", "." },
   ["7823cbaf8cbcc274"] = { "L'antico regno di Lordaeron è pieno di pericoli. Raccomandiamo prudenza a chiunque osi avventurarsi nelle terre ormai in rovina delle ⟦Tirisfal Glades=Radure di Tirisfal⟧. Se proprio devi, cerca ⟦Undercity=Sepulcra⟧: sono i cortili superiori il luogo che cerchi.", "." },
   ["782d2dbca8c760b8"] = { "Questa torta di ciliegie è così buona che farebbe piangere uno gnomo adulto.", "." },
   ["7833064e289abb75"] = { "Con la ⟦Stone of Relu=Pietra di Relu⟧ potrò liberare i segreti nascosti del mio fossile e anche di quello di Remtravel, da ⟦Darkshore=Rivafosca⟧, {name}.", "." },
