@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1290060] = { nil, "$N1 danni da natura ogni $D1.\nDanni fisici subiti aumentati di $N3.", nil, 0x4ee0a8ee, "mu" },
   [1290708] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", "Furtivo. Movimento rallentato del $N1%.", 0xe555a300, 0xbaa30eb0, "uu" },
+  [1290861] = { nil, "Rigenera $N1 salute e $N2 mana al secondo.", nil, 0x602a9085, "mu" },
 })

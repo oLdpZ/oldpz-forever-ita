@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1320093] = { { "Non m'ama...", "M'ama...", shape = { "0/0", "0/0" }, key = { "9d5894e7a9039387", "5d2047f07372cb7f" } }, nil, 0xf327873f, nil, "um" },
-  [1320095] = { nil, "Immobilizzato.\n$N1 danni da natura inflitti ogni $D1.", nil, 0x4d35cbba, "mu" },
+  [1320095] = { "Avvolge un nemico nelle radici, infliggendo danni da natura ogni $D1 e immobilizzandolo per un massimo di $D2.", "Immobilizzato.\n$N1 danni da natura inflitti ogni $D1.", 0xdee22147, 0x4d35cbba, "uu" },
   [1320096] = { "M'ama...", nil, 0x5d2047f0, nil, "um" },
   [1320097] = { "Non m'ama...", nil, 0x9d5894e7, nil, "um" },
   [1320105] = { "M'ama...", "Fiducia alle stelle! Sfrutta al meglio questo momento.", 0x7ef898f7, 0xa0da5478, "uu" },

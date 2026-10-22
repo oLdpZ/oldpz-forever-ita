@@ -3,5 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1281530] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1281744] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x8e26e034, nil, "um" },
-  [1281781] = { nil, "Immobilizzato.\nDanni da natura inflitti ogni $D1.", nil, 0xe6768e6a, "mu" },
+  [1281781] = { "Avvolge un nemico nelle radici, infliggendo danni da natura ogni $D1 e immobilizzandolo per un massimo di $D2.", "Immobilizzato.\nDanni da natura inflitti ogni $D1.", 0xdee22147, 0xe6768e6a, "uu" },
 })
