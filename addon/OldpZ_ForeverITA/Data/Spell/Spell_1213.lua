@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1213147] = { "Aumenta le cure prodotte da incantesimi ed effetti magici fino a un massimo di $N1 per $D1.", "Cure prodotte aumentate di $N1", 0x31025e03, 0x1dbdba9b, "uu" },
+  [1213169] = { nil, "Infligge $N1 danni ogni $D1.", nil, 0x2af65718, "mu" },
   [1213176] = { nil, "Sanguinamento.", nil, 0xd6c5aa1b, "mu" },
   [1213221] = { nil, "Resistenze magiche aumentate di $N1.", nil, 0x68e3e1b4, "mu" },
   [1213232] = { nil, "Assorbe $N1 danni da natura.", nil, 0x3df0dfc8, "mu" },

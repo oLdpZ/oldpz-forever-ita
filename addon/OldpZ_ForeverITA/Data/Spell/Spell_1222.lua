@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [1222393] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1222394] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1222395] = { "Teletrasporta il giocatore in un luogo relativamente sicuro.", "Teletrasporta il giocatore in un luogo relativamente sicuro.", 0x2b174d0f, 0x2b174d0f, "uu" },
+  [1222487] = { "Tenta di finire un nemico ferito con un colpo fatale.", nil, 0xf3728b92, nil, "um" },
   [1222546] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [1222563] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
   [1222564] = { "Aumenta la velocità d'attacco di un alleato del $N1% per $D1.", "Velocità d'attacco aumentata del $N1%.", 0x036d64eb, 0x8859e2db, "uu" },
