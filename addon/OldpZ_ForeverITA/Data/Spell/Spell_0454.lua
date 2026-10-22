@@ -2,6 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [454017] = { "Collega una Fel Scar o un Rift a un mondo nelle profondità dello spazio della Legione. Potrebbe avere effetti imprevedibili e pericolosi.", nil, 0x2c3e94e3, nil, "um" },
+  [454042] = { nil, "Danni magici aumentati di $N1.", nil, 0x62dc133a, "mu" },
+  [454204] = { nil, "La fenditura si sta destabilizzando.", nil, 0xb39de444, "mu" },
   [454466] = { "Collega una Fel Scar o un Rift a un mondo nelle profondità dello spazio della Legione. Potrebbe avere effetti imprevedibili e pericolosi.", nil, 0x2c3e94e3, nil, "um" },
   [454469] = { "Sovraccarica un Legion Portal Tuner.", nil, 0x8db069f9, nil, "um" },
 })

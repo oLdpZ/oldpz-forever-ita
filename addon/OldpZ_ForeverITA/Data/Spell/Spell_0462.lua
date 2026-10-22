@@ -27,6 +27,7 @@ WFJ.Data.add("spell", {
   [462398] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [462400] = { nil, "Danni da fuoco subiti aumentati di $N1.", nil, 0xbe4d5e70, "mu" },
   [462402] = { "Lancia una bomba contro un bersaglio nemico. Dopo $D1 la bomba esplode, infliggendo $N2 danni da fuoco al bersaglio e agli alleati vicini.", nil, 0xe8a91811, nil, "um" },
+  [462467] = { "Recupera mana.", "Assorbe energia.", 0xd2c09394, 0x87d0b35a, "uu" },
   [462577] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [462580] = { "Lancia un fulmine contro un nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
   [462584] = { "Infligge il $N1% dei danni dell'arma e sbilancia il bersaglio, riducendone l'abilità in Difesa di $N2 per $D1.", "Abilità in Difesa ridotta di $N1.", 0x21ce67c5, 0x598673a8, "uu" },

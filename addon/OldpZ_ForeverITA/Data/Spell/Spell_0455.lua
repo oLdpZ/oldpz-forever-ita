@@ -6,4 +6,12 @@ WFJ.Data.add("spell", {
   [455858] = { "Aumenta la probabilità d'impatto con incantesimi e attacchi del $N1%.", nil, 0xf76ce6d7, nil, "um" },
   [455859] = { "Riduce del $N1% il tempo di recupero di Pioggia di Stelle.", nil, 0x380667fd, nil, "um" },
   [455864] = { "Il tuo ⟦Faerie Fire=Fuoco Fatato⟧ (Feral) aumenta anche del $N1% la probabilità d'impatto di tutti gli attacchi contro quel bersaglio per $D1.", nil, 0xfcdba914, nil, "um" },
+  [455868] = { nil, "Aumenta del $N1% la probabilità di subire colpi da tutti gli attacchi.", nil, 0xbbd13c2a, "mu" },
+  [455872] = { "I danni periodici di Graffio e Squarcio ora possono essere critici.", nil, 0x334ed61d, nil, "um" },
+  [455873] = { "I tuoi Squarcio e ⟦Ferocious Bite=Morso Feroce⟧ hanno una probabilità del $N1% per punto combo speso di riportare la durata di Ruggito Selvaggio al valore iniziale.", nil, 0xffae246b, nil, "um" },
+  [455876] = { "Lucidalo per togliere la fuliggine.", nil, 0x2b57291d, nil, "um" },
+  [455987] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla sinistra dell'incantatore.", "Ferito.", 0xa8cf8863, 0x7cead755, "uu" },
+  [455989] = { "Un attacco ad ampio raggio che colpisce tutti i nemici alla destra dell'incantatore.", "Ferito.", 0x2cade6c5, 0x7cead755, "uu" },
+  [455991] = { "Scarica energia con l'impatto del tuo pestone, respingendo e danneggiando i nemici vicini.", "Lanciato in aria.", 0xf45894b7, 0x23fd7111, "uu" },
+  [455994] = { "Un attacco ad ampio raggio che colpisce tutti i nemici di fronte all'incantatore.", "Ferito.", 0xb405a060, 0x7cead755, "uu" },
 })

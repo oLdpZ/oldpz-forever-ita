@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [460060] = { "Salute aumentata del $N1%.", nil, 0x334d75a3, nil, "um" },
   [460084] = { "Urla contro un nemico, paralizzandolo dal terrore per $D1 e costringendo tutti gli altri nemici vicini a fuggire impauriti.", "Intimorito.", 0x3743a9ab, 0x441534cf, "uu" },
   [460086] = { nil, "In preda alla paura.", nil, 0xc957ad86, "mu" },
+  [460200] = { nil, "Danni magici aumentati di $N1.", nil, 0x62dc133a, "mu" },
   [460201] = { "Evoca $N1 ombre del Vuoto per aiutare l'incantatore in battaglia per $D1.", nil, 0x3af52f99, nil, "um" },
   [460228] = { "Riduce di $N1 il tuo livello effettivo di furtività.", nil, 0x4380924e, nil, "um" },
   [460229] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },

@@ -25,7 +25,7 @@ WFJ.Data.add("spell", {
   [1231777] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
   [1231844] = { nil, "Marchiato per il dominio...", 0x6e018d2a, 0xd38da000, "eu" },
   [1231845] = { nil, "Ammaliato.", 0x6e018d2a, 0xd83f67a3, "eu" },
-  [1231860] = { "Entra in sintonia con i cieli e sostituisci la tua Forma di Lunagufo con un aspetto più celestiale.", nil, 0x7d88df02, nil, "um" },
+  [1231860] = { "Entra in sintonia con i cieli e sostituisci la tua Forma di Lunagufo con un aspetto più celestiale.", "Assume un aspetto astrale...", 0x7d88df02, 0xf73bad51, "uu" },
   [1231885] = { "L'ombra emette un ululato stridente che terrorizza un nemico, facendolo fuggire in preda al terrore per $D1.", "Fuga in preda al terrore.", 0xac1017aa, 0xfa67e4a8, "uu" },
   [1231899] = { "Balnazzar evoca un infernale per interrompere uno Scarlet Lightbearer, infliggendo $N1 danni da fuoco entro $N2 m e stordendo per $N3 i giocatori colpiti.", "Stordito.", 0x9526a7f9, 0x8f5df1ed, "uu" },
   [1231900] = { "Balnazzar evoca un infernale per interrompere uno Scarlet Lightbearer, infliggendo $N1 danni da fuoco entro $N2 m e stordendo per $N3 i giocatori colpiti.", nil, 0x9526a7f9, nil, "um" },

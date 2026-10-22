@@ -42,5 +42,5 @@ WFJ.Data.add("spell", {
   [449974] = { "Dopo un blocco, il tuo indice di blocco aumenta di $N1 per $D1.", nil, 0xe9f3e19a, nil, "um" },
   [449975] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
   [449980] = { "⟦Holy Shock=Folgore Sacra⟧ riduce di $D2 il tempo di lancio della tua prossima ⟦Holy Light=Luce Sacra⟧ lanciata entro $D1.", nil, 0xc809364f, nil, "um" },
-  [449982] = { "Tempo di lancio di ⟦Holy Light=Luce Sacra⟧ ridotto di $D1.", nil, 0x04def3d9, nil, "um" },
+  [449982] = { "Tempo di lancio di ⟦Holy Light=Luce Sacra⟧ ridotto di $D1.", "Tempo di lancio di ⟦Holy Light=Luce Sacra⟧ ridotto di $D1.", 0x04def3d9, 0x7544ab48, "uu" },
 })

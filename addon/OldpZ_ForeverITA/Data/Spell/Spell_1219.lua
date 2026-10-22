@@ -22,5 +22,13 @@ WFJ.Data.add("spell", {
   [1219522] = { "Aumenta fino a $N1 i danni inflitti a Non Morti e Demoni da incantesimi ed effetti magici. Permette di ottenere le Pietre del Flagello per conto dell'⟦Argent Dawn=Alba d'Argento⟧.", nil, 0xc1a76244, nil, "um" },
   [1219541] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
   [1219708] = { "Rigenera $N1 mana.", "$N1 mana rigenerato.", 0x09fdd6de, 0xffb4963e, "uu" },
+  [1219957] = { "Dopo aver cambiato postura, il costo in rabbia della tua prossima abilità offensiva si riduce di $N1.", nil, 0xc539fdf3, nil, "um" },
+  [1219958] = { "Per $D1 dopo aver lasciato una postura, puoi usare le abilità che la richiedono come se fossi ancora in quella postura.", nil, 0xc53a0004, nil, "um" },
+  [1219960] = { "Per i primi $D1 dopo aver attivato una postura, puoi ottenere un beneficio aggiuntivo:\n\nPostura da Battaglia/Gladiator Stance: danni inflitti aumentati del $N2%.\n\nPostura da Berserker: probabilità di critico aumentata del $N3%.\n\nPostura da Difesa: danni fisici subiti ridotti del $N4%.", nil, 0xc53a827a, nil, "um" },
   [1219972] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xc539fd73, nil, "um" },
+  [1219974] = { "Ottieni $N1 rabbia aggiuntiva ogni volta che subisci danni o infliggi danni con l'attacco automatico.", nil, 0xc539fd74, nil, "um" },
+  [1219976] = { "Aumenta di un ulteriore $N1% tutta la minaccia che generi in Postura da Difesa e del $N2% tutti i danni che infliggi in Gladiator Stance.", nil, 0xc539fdf2, nil, "um" },
+  [1219994] = { "Finta conferisce anche Elusione per $D1, riducendo del $N2% tutti i danni subiti dagli attacchi ad area dei non giocatori.", nil, 0xc5393356, nil, "um" },
+  [1219996] = { "Aumenta del $N1% il bonus ai danni critici dei tuoi veleni.", nil, 0xc53933d9, nil, "um" },
+  [1219998] = { "Le tue mosse risolutive hanno una probabilità del $N1% per punto combo di azzerare il costo in energia della tua prossima abilità.", nil, 0xc5393457, nil, "um" },
 })

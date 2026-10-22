@@ -3,10 +3,10 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [450005] = { "Infila la mano nel borsellino e lancia una manciata di monete contro i tuoi nemici.", "Una manciata di monete in piena faccia.", 0xdb52295e, 0x5e730b4c, "uu" },
   [450012] = { "Infliggere danni con Fendente d'Ombra riduce del $N1% il tempo di lancio della tua prossima Immolazione. Cumulabile fino a $N2 volte. Dura $D1.", nil, 0xe922f1ce, nil, "um" },
-  [450013] = { "Riduce del $N1% il tempo di lancio della tua prossima Immolazione.", nil, 0x401b01e2, nil, "um" },
+  [450013] = { "Riduce del $N1% il tempo di lancio della tua prossima Immolazione.", "Riduce del $N1% il tempo di lancio della tua prossima Immolazione.", 0x401b01e2, 0x401b01e2, "uu" },
   [450066] = { "..", nil, 0x000017b8, nil, "um" },
   [450083] = { "⟦Rapid Fire=Rapidità di Tiro⟧ ora aumenta anche la velocità d'attacco in mischia del $N1% per $D1.", nil, 0xba77c772, nil, "um" },
-  [450084] = { "Aumenta la velocità d'attacco in mischia del $N1%.", nil, 0xa4764cc8, nil, "um" },
+  [450084] = { "Aumenta la velocità d'attacco in mischia del $N1%.", "Aumenta la velocità d'attacco in mischia del $N1%.", 0xa4764cc8, 0xa4764cc8, "uu" },
   [450085] = { nil, "Un tocco finale per un travestimento da Nano Ferroscuro.", nil, 0x79de3b54, "mu" },
   [450086] = { "Un potere pervade il gruppo del bersaglio, aumentandone la Tempra di $N1 per $D1.", "Tempra aumentata di $N1.", 0xefc57601, 0x543f3a70, "uu" },
   [450098] = { "L'incantatore colpisce violentemente il terreno, infliggendo $N1 danni fisici a tutti i giocatori e respingendoli indietro.", nil, 0x0a79ce72, nil, "um" },
@@ -26,7 +26,7 @@ WFJ.Data.add("spell", {
   [450583] = { "Ti cura di $N1.", nil, 0x7a962ef2, nil, "um" },
   [450585] = { "I tuoi incantesimi hanno una probabilità del $N1% di curarti di $N2.", nil, 0xf891c6ed, nil, "um" },
   [450587] = { "Probabilità all'attacco in mischia di curarti di $N1 e generare $N2 rabbia.", nil, 0xdbd43346, nil, "um" },
-  [450600] = { "Trasforma il nemico in una rana, impedendogli di attaccare o lanciare incantesimi per $D1.", nil, 0x973ecaf9, nil, "um" },
+  [450600] = { "Trasforma il nemico in una rana, impedendogli di attaccare o lanciare incantesimi per $D1.", "Maledetto.", 0x973ecaf9, 0xba4d399d, "uu" },
   [450601] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [450602] = { "Travolge il nemico con la potenza del fulmine, infliggendo danni da natura.", nil, 0x86118ec0, nil, "um" },
   [450603] = { "Si affida alla magia della natura per curare un alleato.", nil, 0xa861c49b, nil, "um" },
@@ -43,5 +43,5 @@ WFJ.Data.add("spell", {
   [450659] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [450662] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [450663] = { "Infligge danni da natura a un nemico.", nil, 0x6878f321, nil, "um" },
-  [450667] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", nil, 0xe555a300, nil, "um" },
+  [450667] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", "Furtivo. Movimento rallentato del $N1%.", 0xe555a300, 0xbaa30eb0, "uu" },
 })

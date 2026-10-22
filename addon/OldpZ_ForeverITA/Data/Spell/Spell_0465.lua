@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [465230] = { nil, "Immobilizzato.", nil, 0x7d75228d, "mu" },
-  [465352] = { nil, "Invulnerabile, ma impossibilitato ad agire.", nil, 0xb1a1673e, "mu" },
+  [465352] = { "Esilia il bersaglio, impedendogli qualsiasi azione ma rendendolo invulnerabile per un massimo di $D1. Si può esiliare un solo bersaglio alla volta. Funziona solo su demoni ed elementali.", "Invulnerabile, ma impossibilitato ad agire.", 0x43e913d0, 0xb1a1673e, "uu" },
   [465414] = { "Aumenta di $N1 i danni inflitti e del $N2% la velocità d'attacco per $D1.", "Danni in mischia e velocità d'attacco aumentati.", 0x1e1de541, 0x7fac8986, "uu" },
   [465725] = { "Lancia una bomba contro un bersaglio nemico. Dopo $D1 la bomba esplode, infliggendo $N2 danni da fuoco al bersaglio e agli alleati vicini.", nil, 0xe8a91811, nil, "um" },
 })

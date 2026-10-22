@@ -2,6 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [451398] = { nil, "Un tocco finale per un travestimento da Nano Ferroscuro.", nil, 0x79de3b54, "mu" },
-  [451439] = { "Le mosse risolutive che infliggono danni hanno una probabilità del $N1% per punto combo di ripristinare $N2 energia.", nil, 0x3337749b, nil, "um" },
+  [451439] = { "Le mosse risolutive che infliggono danni hanno una probabilità del $N1% per punto combo di ripristinare $N2 energia.", "Le mosse risolutive che infliggono danni hanno una probabilità del $N1% per punto combo di ripristinare $N2 energia.", 0x3337749b, 0x3337749b, "uu" },
   [451714] = { { "Ti insegna a creare un ⟦Goblin Mortar=Mortaio dei Goblin⟧", shape = { "0/0" } }, nil, 0x08e69178, nil, "um" },
 })
