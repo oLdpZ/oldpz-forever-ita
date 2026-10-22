@@ -240,6 +240,7 @@ WFJ.Data.add("ui", {
   ["CAPPED_LEVEL_TRIAL"] = { "Hai raggiunto il livello massimo della prova gratuita.", 0x4196b960, "." },
   ["CAPPED_MONEY_TRIAL"] = { "Quantità massima d'oro per l'account di prova gratuito raggiunta.", 0x6c200ba9, "." },
   ["CASH_ON_DELIVERY"] = { "P.C.", 0x05b8aee5, "." },
+  ["CATEGORIZE"] = { "Raggruppa", 0xd57af3ae, "." },
   ["CATEGORY"] = { "Categoria", 0xad30b2be, "." },
   ["CDMSND_ANIMALS_CAT"] = { "Gatto", 0x0011bd72, "." },
   ["CDMSND_ANIMALS_COW"] = { "Mucca", 0x0011c49f, "." },
