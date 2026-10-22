@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["1ce38290b3b35b5d"] = { "Sarebbe magnifico! Grazie, Meridith.", "." },
   ["1cebdb1b635fbf8b"] = { "%s armeggia con la serratura arrugginita della porta del cortile.", "." },
   ["1cf04265226bd07a"] = { "Sembra che ti serva un po' di lavoro, <giovanotto/signorina>. Dovresti salire sul tram e andare a trovare mio fratello, Monty, al deposito del ⟦Deeprun Tram=Tram degli Abissi⟧ di ⟦Ironforge=Forgiardente⟧. Di certo avrà qualcosa da farti fare.", "." },
-  ["1cf342f957789b45"] = { "Salute, {name}. Vuoi entrare in battaglia alle Isole ⟦Darkspear=Lanciascura⟧?", "." },
+  ["1cf342f957789b45"] = { "Salute, {name}. Vuoi entrare in battaglia alle Isole dei ⟦Darkspear=Lanciascura⟧?", "." },
   ["1cfac513d0422938"] = { "Credo che voi bambini siate il nostro futuro...", "." },
   ["1cff4ecf21c0f9db"] = { "Parlami della pelle.", "." },
 })

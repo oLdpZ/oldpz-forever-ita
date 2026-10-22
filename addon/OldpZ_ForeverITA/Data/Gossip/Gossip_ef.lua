@@ -23,7 +23,7 @@ WFJ.Data.add("gossip", {
   ["ef9221b47f752493"] = { "Hai saccheggiato i nostri tesori troppo a lungo. Preparati a incontrare la tua tomba d'acqua!", "." },
   ["ef967a3e16f2008a"] = { "Ho visto contadini armati di bastone tenere testa a soldati addestrati. Non sottovalutare mai la forza e l'abilità che servono per maneggiarne uno come si deve.", "." },
   ["ef98cf4e1ff9b7ad"] = { "Khan Jehn era forte, ma stupido. Pensava che la sua forza fosse grande. Non vedeva che la magia della terra è più forte. I centauri Magram ora cadranno senza il loro capo, e un giorno i Gelkis domineranno!", "." },
-  ["efa7482dd7478da1"] = { "Altri galoppini del Custode!", "." },
+  ["efa7482dd7478da1"] = { "Altri galoppini del direttore!", "." },
   ["efa869dcd9bc9eec"] = { "Si fa a modo mio, o te ne vai per la ⟦Gold Road=Strada dell'Oro⟧. Chiaro?", "." },
   ["efa9a75f32aebd13"] = { "Ehi, amico! Sei mai andat<o/a> a immergerti in fondo all'oceano? Ti svelo un piccolo segreto, eh. In fondo all'oceano puoi trovare delle fessure gorgoglianti: ti permettono di respirare aria sott'acqua. Ma teniamolo tra noi due, eh. Non mi serve concorrenza per le mie trappole per molluschi da altre parti... se capisci cosa intendo!", "." },
   ["efac364031c33add"] = { "Ah, libertà! Breve, ma così dolce...", "." },

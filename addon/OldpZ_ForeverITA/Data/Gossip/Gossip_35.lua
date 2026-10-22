@@ -38,7 +38,7 @@ WFJ.Data.add("gossip", {
   ["35d64bfc06cf6953"] = { "Ho perso la mia ⟦Blade of Vaulted Secrets=Lama dei Segreti Ignoti⟧. Puoi sostituirmela?", "." },
   ["35d84acdb5f9ca48"] = { "Ho ordinato qualche spedizione di nuovi profumi e acque di colonia dalla città. Quando le avrò disimballate, ripassa e le avrò in vendita.", "." },
   ["35d9c7df4f8011c5"] = { "Eroe, ho una questione urgente con il caporale Splithoof.", "." },
-  ["35dcc299de151f70"] = { "Immagino sia vero. Io e il resto dei miei scelti appartenevamo a un ordine noto come Empyrean Blades. Eravamo la guardia personale del nostro precedente capo, lo Shal'nan. \r\n\nIn questi tempi incerti facciamo il possibile per aiutare a guidare la milizia cittadina dei custodi della pace, visto che siamo la cosa più vicina a soldati di professione rimasta su Zephras.", "." },
+  ["35dcc299de151f70"] = { "Immagino sia vero. Io e il resto dei miei scelti appartenevamo a un ordine noto come Empyrean Blades. Eravamo la guardia personale del nostro precedente capo, lo Shal'nan. \r\n\nIn questi tempi incerti facciamo il possibile per aiutare a guidare la milizia cittadina dei Pacificatori, visto che siamo la cosa più vicina a soldati di professione rimasta su Zephras.", "." },
   ["35ded2e53b592928"] = { "Tempio di Atal'Hakkar", "." },
   ["35e0c6651914b4d5"] = { "Morirò, me lo sento!", "." },
   ["35e360b69f2033e6"] = { "Quindi hai conquistato un piccolo pezzo di terra. Una battuta d'arresto da poco! Il Flagello regna ancora qui!", "." },

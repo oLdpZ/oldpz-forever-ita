@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["d74cc61c5aade82b"] = { "starnutisce violentemente!", "." },
   ["d753981775d38477"] = { "Mi spiace, <ragazzo/ragazza>, ma non hai le basi per imparare ciò che ho da insegnare. Ma non preoccuparti, va' a parlare con il mio allievo Rotgath, lui ti darà una mano.", "." },
   ["d75478c2b1ba6b56"] = { "Inviare assalti di terra richiede enormi quantità di rifornimenti!", "." },
-  ["d75d730365052449"] = { "Uccidete le guardie, prendete vivo il guardiano!", "." },
+  ["d75d730365052449"] = { "Uccidete le guardie, prendete vivo il direttore!", "." },
   ["d761fe09ee37b5c8"] = { "Grazie, <ragazzo/ragazza>. Grazie infinite.", "." },
   ["d7681ef3ef3178b0"] = { "Ah, {name}, che piacere sentire di nuovo il tuo odore.\n\n<Falthir sogghigna.>\n\nDovrai perdonare il mio senso dell'umorismo. A volte sa essere davvero fetido.\n\nSento che hai causato grande angoscia ai nostri nemici. Le forze di Hakkar gridano il tuo nome con rabbia. Questo è eccellente.\n\nTi sei guadagnat<o/a> un'altra trama sul tuo talismano. Consegnamelo.", "." },
   ["d7688b2be7a8638b"] = { "Larion, voglio aiutarti a combattere questi parassiti!", "." },
@@ -57,5 +57,5 @@ WFJ.Data.add("gossip", {
   ["d7f4c3d6b85db408"] = { "Avventurieri da ogni dove vendono cose ad Antonio: venite a vedere con i vostri occhi quali piccoli tesori ha per voi questa settimana.", "." },
   ["d7f6a6c613aa3737"] = { "%s resta indifferente.", "." },
   ["d7fb90d41d6acdf9"] = { "%s è completamente avvolto dalle fiamme e nei suoi occhi compare uno sguardo folle!", "." },
-  ["d7ff280c530ac060"] = { "Morte al guardiano!", "." },
+  ["d7ff280c530ac060"] = { "Morte al direttore!", "." },
 })

@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["432d729b444e63a9"] = { "Veniamo al presente: la formula che ne è risultata funziona e permette di creare un drone più controllato; lo svantaggio, però, è che il composto inattivo è estremamente instabile.\n\nGallywix, tutti in questa torre e tutti là fuori sono infettati dal veleno. Ci sta colpendo la mente e il corpo. I nostri organi interni sono diventati molli ed estremamente fragili. Questa è la tua occasione, {name}. Non ho la forza di andare avanti e sento che presto diventerò uno di «loro».", "." },
   ["4331ad48e173d8dd"] = { "Sento odore di {race}.", "." },
   ["433b454991468670"] = { "Gli intrusi hanno violato la covata! Date l'allarme! Proteggete le uova a ogni costo!", "." },
-  ["433d11c4f7106238"] = { "Supremo magistro... ho... fallito.", "." },
+  ["433d11c4f7106238"] = { "Magistro supremo... ho... fallito.", "." },
   ["433dfbac107ce504"] = { "%s piagnucola.", "." },
   ["43425db52bcfef66"] = { "%s rosicchia l'esca avidamente.", "." },
   ["434764915c4df11a"] = { "I nani Granmartello avranno anche destrieri veloci, ma quei grifoni del ⟦Aerie Peak=Picco dell'Aquila⟧ reggerebbero il calore della ⟦Great Forge=Grande Forgia⟧? Non credo proprio!", "." },

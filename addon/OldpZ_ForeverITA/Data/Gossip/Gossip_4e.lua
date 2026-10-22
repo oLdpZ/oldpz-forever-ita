@@ -11,7 +11,7 @@ WFJ.Data.add("gossip", {
   ["4e327bef67a4cbbc"] = { "Cerco addestramento da druido.", "." },
   ["4e34684cde53714f"] = { "Sia lodato Egan!", "." },
   ["4e3bb93a6c74f863"] = { "Ci servono avventurieri che ci aiutino, {name}. Ci aiuterai?", "." },
-  ["4e4f86b7669c3cee"] = { "L'istruttore dei Cacciatori si chiama Thotar. Cercalo dentro la tana nell'angolo sud-ovest di ⟦Razor Hill=Tranciacolle⟧.", "." },
+  ["4e4f86b7669c3cee"] = { "L'istruttore dei cacciatori si chiama Thotar. Cercalo dentro la tana nell'angolo sud-ovest di ⟦Razor Hill=Tranciacolle⟧.", "." },
   ["4e5d3804b8530835"] = { "Darianna promette bene, ma ha così tanta energia che fatica a stare ferma ad ascoltare. Con la sua forza e la sua agilità, temo che non passerà molto prima che venga chiamata a combattere. Dobbiamo istruirla in fretta.", "." },
   ["4e5e67ddfa4e8762"] = { "È ora che tu ti unisca a noi, {class}.", "." },
   ["4e6d648598cd04a8"] = { "Banca di ⟦Ironforge=Forgiardente⟧", "." },

@@ -37,7 +37,7 @@ WFJ.Data.add("gossip", {
   ["b3cc6cba7ff8b67a"] = { "Mi piace come ragioni! Andiamocene di qui!", "." },
   ["b3d1ff89cddb0395"] = { "Voglio affidare il felino corrotto a Winna.", "." },
   ["b3da132f25919061"] = { "Ancora qualcuno che si dà all'Alchimia, mmm. Dubito che la tua abilità sia grande quanto la mia, quindi forse posso insegnarti qualche tecnica come si deve.", "." },
-  ["b3e192af0a2a32f8"] = { "Salute, sono Elaadrin Evengale, l'attuale supremo magistro dell'High Order. Come posso aiutarti?", "." },
+  ["b3e192af0a2a32f8"] = { "Salute, sono Elaadrin Evengale, l'attuale magistro supremo dell'High Order. Come posso aiutarti?", "." },
   ["b3e3d9e84bd033bc"] = { "Tu ci proteggerai dalla malvagia padrona, sì!", "." },
   ["b3e786d0a7b69aaf"] = { "All'inizio ho aperto bottega nel ⟦Magic Quarter=Quartiere della Magia⟧, ma lì c'era parecchio rumore. Qui è decisamente meglio, a parte qualche studente insistente che riesce ancora a scovarmi, nonostante il trasloco.", "." },
 })

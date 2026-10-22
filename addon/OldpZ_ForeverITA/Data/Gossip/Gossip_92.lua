@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["928d0889f561ed5b"] = { "Oh cielo, le mie scorte stanno finendo pericolosamente! Cosa ci mette tanto quel maledetto goblin?", "." },
   ["929a9d60ec3247b7"] = { "È una storia leggendaria, e non ho né il tempo né la voglia di raccontarla di nuovo. Sappi solo che Medivh fu l'ultimo dei Guardiani. Il granbastone Atiesh era il fulcro del suo potere e il fulcro della corruzione.", "." },
   ["92b3ac69cc17d7ae"] = { "Aku'mai esige altri sacrifici, ora devi morire!", "." },
-  ["92b6e29c75eef60f"] = { "Ho udito le tue parole, Great Bear Spirit, e ho capito. Ora chiedo la tua benedizione per apprendere appieno la via dell'Artiglio.", "." },
+  ["92b6e29c75eef60f"] = { "Ho udito le tue parole, Grande Spirito Ursino, e ho capito. Ora chiedo la tua benedizione per apprendere appieno la via dell'Artiglio.", "." },
   ["92b74e7b45c66024"] = { "Inchinati al mio cospetto, insetto! Di certo senti il potere che ho su di te.", "." },
   ["92bb2dab981a2358"] = { "Bene, bene... Così Linken si è finalmente deciso a mandarmi la sua spada.", "." },
   ["92c2d00d6f75e39b"] = { "Fu quel giorno che ci vennero donati i silvagufi. Guardiani feroci: la dea affidò ai silvagufi la protezione di tutti i suoi luoghi sacri.", "." },

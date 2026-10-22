@@ -38,7 +38,7 @@ WFJ.Data.add("gossip", {
   ["7ccfe7d0596f8e49"] = { "Avremo anche patito la siccità, ma la carne non manca! Vuoi dare un'occhiata alla mia merce?", "." },
   ["7cd26e414511cc60"] = { "Ah, l'eterna ossessione per la ricchezza materiale. Beh, la fortuna ti sorride: la casa d'aste si trova nella Tradesman's Terrace.", "." },
   ["7cd61ae8dcdfab2f"] = { "Se volete scusarmi, devo congedarmi. Buona giornata, signore.", "." },
-  ["7cd99c06529c6a1c"] = { "Morte agli uomini del Custode!", "." },
+  ["7cd99c06529c6a1c"] = { "Morte agli uomini del direttore!", "." },
   ["7cdec4dfd5364047"] = { "Dea, concedimi il potere di sconfiggere i miei nemici! Ascoltami, ti prego: il mio bisogno è disperato e la mia causa è giusta!", "." },
   ["7ce07c70781762de"] = { "Il ⟦Stonehearth Graveyard=Cimitero di Cordipietra⟧ si trova a est dell'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧, nel ⟦Field of Strife=Pian della Discordia⟧.\n\nAl momento nessuna delle due parti lo controlla.", "." },
   ["7ce337d40c7d3f22"] = { "Il nostro bottino del Grande Inverno non finirà a <un/una> {class} da strapazzo! Prendeteli!", "." },
