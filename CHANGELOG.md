@@ -13,6 +13,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 ### Added
 - First Italian build: the interface strings, item flavour text and spell tooltips that Blizzard's own Italian client (retail, itIT) words exactly as Forever does now show in Italian. Books stay in English for now.
 - Missioni dei livelli 1–20 tradotte in italiano: circa 1.140 missioni, con titolo, obiettivi, descrizione, testo di avanzamento e di completamento.
+- Missioni dei livelli 21–30 tradotte in italiano: circa 450 missioni in più.
 - Nuova impostazione "stile dei nomi": `/fita nomi it` mostra i nomi italiani ufficiali di luoghi, personaggi e oggetti (predefinito), `/fita nomi en` quelli inglesi.
 - I nomi sono marcati anche nelle descrizioni ufficiali di oggetti e abilità, così seguono lo stile dei nomi scelto.
 - Glossario derivato dai nomi ufficiali, usato per tenere coerenti i nomi in tutte le traduzioni.
