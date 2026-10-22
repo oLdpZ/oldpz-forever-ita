@@ -3,5 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("quest", {
   [93128] = { nil, nil, nil, nil, nil, 0x67d27eda, nil, nil, nil, nil, "emmmm" },
   [93196] = { nil, nil, nil, nil, nil, 0x67d27eda, nil, nil, nil, nil, "emmmm" },
+  [93461] = { "Benvenuti a Shen'dar Village", nil, nil, nil, nil, 0x4c9d3c02, nil, nil, nil, nil, ".mmmm" },
   [93689] = { "Amico del Kirin Tor", nil, nil, nil, nil, 0xa01b2371, nil, nil, nil, nil, ".mmmm" },
+  [93835] = { "Affrontare Lorthuna", nil, nil, nil, nil, 0x90290d9d, nil, nil, nil, nil, ".mmmm" },
 })
