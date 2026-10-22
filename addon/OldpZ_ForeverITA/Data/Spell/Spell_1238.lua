@@ -8,8 +8,8 @@ WFJ.Data.add("spell", {
   [1238097] = { "Assumi le sembianze di un assassino ninja.", nil, 0xdd706146, nil, "um" },
   [1238122] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1238149] = { "Aumenta del $N1% i danni inflitti dal tuo ⟦Lightning Shield=Scudo di Fulmini⟧.", nil, 0x29320703, nil, "um" },
-  [1238214] = { "Cura il bersaglio e il suo gruppo di $N1 in $D1. I membri del gruppo devono trovarsi entro $N3 m dal bersaglio. La cura viene applicata rapidamente all'inizio e rallenta man mano che Crescita Rigogliosa si avvicina al termine della sua durata.", nil, 0x6bd7eac1, nil, "um" },
-  [1238215] = { "Cura il bersaglio e il suo gruppo di $N1 in $D1. I membri del gruppo devono trovarsi entro $N3 m dal bersaglio. La cura viene applicata rapidamente all'inizio e rallenta man mano che Crescita Rigogliosa si avvicina al termine della sua durata.", nil, 0x6bd7eac1, nil, "um" },
+  [1238214] = { "Cura il bersaglio e il suo gruppo di $N1 in $D1. I membri del gruppo devono trovarsi entro $N3 m dal bersaglio. La cura viene applicata rapidamente all'inizio e rallenta man mano che Crescita Rigogliosa si avvicina al termine della sua durata.", "$N1 salute rigenerata ogni $D1.", 0x6bd7eac1, 0xd87c9fb9, "uu" },
+  [1238215] = { "Cura il bersaglio e il suo gruppo di $N1 in $D1. I membri del gruppo devono trovarsi entro $N3 m dal bersaglio. La cura viene applicata rapidamente all'inizio e rallenta man mano che Crescita Rigogliosa si avvicina al termine della sua durata.", "$N1 salute rigenerata ogni $D1.", 0x6bd7eac1, 0xd87c9fb9, "uu" },
   [1238289] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1238299] = { "Scagli lava fusa contro il bersaglio, infliggendo $N1 danni da fuoco. Se sul bersaglio è attiva la tua ⟦Flame Shock=Folgore del Fuoco⟧, ⟦Lava Burst=Getto di Lava⟧ infligge il $N2% di danni in più.", nil, 0xc9c1c783, nil, "um" },
   [1238300] = { "Scagli lava fusa contro il bersaglio, infliggendo $N1 danni da fuoco. Se sul bersaglio è attiva la tua ⟦Flame Shock=Folgore del Fuoco⟧, ⟦Lava Burst=Getto di Lava⟧ infligge il $N2% di danni in più.", nil, 0xc9c1c783, nil, "um" },
@@ -18,4 +18,5 @@ WFJ.Data.add("spell", {
   [1238376] = { "Scagli lava fusa contro il bersaglio, infliggendo $N1 danni da fuoco. Se sul bersaglio è attiva la tua ⟦Flame Shock=Folgore del Fuoco⟧, ⟦Lava Burst=Getto di Lava⟧ infligge il $N2% di danni in più.", nil, 0x2838b0c8, nil, "um" },
   [1238640] = { "Trasforma lo Sciamano in ⟦Ghost Wolf=Lupo Spettrale⟧, aumentandone la velocità del $N1%.", "Velocità di movimento aumentata del $N1%.", 0x2e704fc7, 0xf1529318, "uu" },
   [1238787] = { "Infligge danni ripartiti equamente tra tutti i bersagli colpiti", nil, 0x4e959530, nil, "um" },
+  [1238931] = { nil, "Rigeneri il $N1% della normale rigenerazione del mana mentre lanci incantesimi.", nil, 0x6cf2fbcb, "mu" },
 })

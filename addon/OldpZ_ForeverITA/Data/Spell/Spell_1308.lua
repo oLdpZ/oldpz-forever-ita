@@ -29,7 +29,7 @@ WFJ.Data.add("spell", {
   [1308527] = { "Attiva un Goaz Warder.", "Attivazione in corso.", 0x5cce541e, 0x3cfa7e61, "uu" },
   [1308528] = { "Attiva un Goaz Warder.", nil, 0x3e261b23, nil, "um" },
   [1308531] = { "Rigenera $N1 mana ogni $D1 nelle zone di foresta e di prateria.", "In una zona di foresta o prateria, rigenera $N1 mana ogni $D1.", 0x7686c001, 0x28d6301d, "uu" },
-  [1308568] = { "Cura un alleato ogni $D1 per $D2.", nil, 0x61f0e6eb, nil, "um" },
+  [1308568] = { "Cura un alleato ogni $D1 per $D2.", "Danni curati ogni $D1.", 0x61f0e6eb, 0x7668097c, "uu" },
   [1308651] = { nil, "Raffreddamento rapido del bersaglio.", nil, 0x7e8e31c7, "mu" },
   [1308652] = { "Ti teletrasporta a Dalaran.", nil, 0xda80458c, nil, "um" },
   [1308663] = { nil, "Cammini sull'aria.", nil, 0xd8b3ea96, "mu" },

@@ -23,7 +23,7 @@ WFJ.Data.add("spell", {
   [1303308] = { "Avvolge un nemico nelle radici, infliggendo danni da natura ogni $D1 e immobilizzandolo per un massimo di $D2.", "Immobilizzato.\nDanni da natura inflitti ogni $D1.", 0xed46cb1a, 0xe6768e6a, "uu" },
   [1303309] = { "Sputa veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $D1 per $D2.", "Danni da natura inflitti ogni $D1.", 0xf250210d, 0xaae6fcde, "uu" },
   [1303317] = { "Innalza lo stendardo di ⟦Ironforge=Forgiardente⟧.", nil, 0xdbe77c86, nil, "um" },
-  [1303350] = { "Aumenta del $N1% l'intervallo tra gli attacchi dei nemici vicini e ne riduce la velocità di movimento e di lancio del $N2% per $D1.", nil, 0x95a001cd, nil, "um" },
+  [1303350] = { "Aumenta del $N1% l'intervallo tra gli attacchi dei nemici vicini e ne riduce la velocità di movimento e di lancio del $N2% per $D1.", "Intervallo tra gli attacchi aumentato del $N1%.\nVelocità di lancio d'incantesimi ridotta del $N2%.\nVelocità di movimento ridotta del $N3%.", 0x95a001cd, 0x74fe21b8, "uu" },
   [1303457] = { "Fornisce una montagna di materiali di professione per provare le professioni, oltre al denaro e ai gettoni necessari per acquistare ricette e materiali.", nil, 0x925578dd, nil, "um" },
   [1303458] = { "Riflette il $N1% degli incantesimi d'attacco contro gli alleati vicini per $D1.", "Probabilità del $N1% di riflettere gli incantesimi.", 0x6e29658a, 0x374c4ab7, "uu" },
   [1303459] = { "Riflette il $N1% degli incantesimi d'attacco contro gli alleati vicini per $D1.", "Probabilità del $N1% di riflettere gli incantesimi.", 0x5c451f40, 0x567c6934, "uu" },

@@ -4,7 +4,7 @@ WFJ.Data.add("spell", {
   [1244245] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $N3 s diventi Ben Nutrito e guadagni $N4 Tempra e Spirito per $D2. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $N3 s diventi Ben Nutrito e guadagni $N4 Tempra e Spirito per $D2. ", shape = { "6/2", "5/2" } }, nil, 0xccd053f5, nil, "um" },
   [1244396] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [1244416] = { "Infligge $N1 danni fisici a tutti i giocatori entro $N2, stordendoli per $D1.", "Stordito.", 0xa937ebb2, 0x27f95286, "uu" },
-  [1244482] = { "Impugni un'arma improvvisata e riluttante, che aumenta i danni inflitti del $N1% e riduce i danni subiti del $N2%.", nil, 0x84c8d6fa, nil, "um" },
+  [1244482] = { "Impugni un'arma improvvisata e riluttante, che aumenta i danni inflitti del $N1% e riduce i danni subiti del $N2%.", "Aumenta i danni inflitti del $N1% e riduce i danni subiti del $N2%.", 0x84c8d6fa, 0xbb3e0617, "uu" },
   [1244484] = { "Infligge $N1 danni fisici a tutti i giocatori entro $D1. Applica inoltre un'aura che riduce la velocità di movimento di $N3 per $D2.", "Velocità di movimento ridotta di $N1 per $D1.", 0x6b95ac29, 0x4e56a342, "uu" },
   [1244493] = { "Assorbe gli insoliti poteri di Clawbert, modificando alcune abilità.", "Infuriato.", 0x0829e231, 0x8be4b6b8, "uu" },
   [1244625] = { "Assorbi la magia da un Leyline Rift.", nil, 0x1a0dc057, nil, "um" },

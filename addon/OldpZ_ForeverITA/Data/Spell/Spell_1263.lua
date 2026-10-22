@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [1263107] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1263109] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1263110] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [1263425] = { "Crea un Faction Banner.", nil, 0xd67a2145, nil, "um" },
   [1263473] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [1263629] = { "Aumenta la potenza d'attacco in mischia dei membri del gruppo vicini di $N1 per $D1.", "Potenza d'attacco in mischia aumentata di $N1.", 0xcaa6b105, 0xa50b6fd4, "uu" },
   [1263640] = { nil, "Immobilizzato.\nDanni da natura inflitti ogni $D1.", nil, 0xe6768e6a, "mu" },

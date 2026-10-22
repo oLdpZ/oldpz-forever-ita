@@ -21,5 +21,6 @@ WFJ.Data.add("spell", {
   [1289453] = { nil, "Nascosto nelle ombre.", nil, 0x87ac4312, "mu" },
   [1289530] = { "Lancia un fulmine contro un nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
   [1289610] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [1289927] = { nil, "Rigenera il $N1% della salute massima ogni $D1.", nil, 0x7e09b166, "mu" },
   [1289998] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },
 })
