@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["3a27409188a3ab7a"] = { "Non tutti i Reietti sono mossi dalla volontà di Sylvanas, {name}. Alcuni di noi sono mossi dal vero potere... un potere che ci guadagniamo da soli.", "." },
   ["3a37108a208c5235"] = { "Osi profanare questo suolo sacro?", "." },
   ["3a3ba39e09b464fc"] = { "Un Ash'ari Crystal è caduto! Restate fedeli al Re dei Lich, fratelli miei, e cercate di evocarlo di nuovo.", "." },
+  ["3a3beeaff3d5a48a"] = { "Grazie per il tuo impegno, {name}. Ultimamente c'è stata un'ondata di banditi e ladri che intercettano le rotte commerciali. Se trovi altre casse in giro, portale qui e al resto penseremo noi.\n\nEcco il tuo compenso.", "." },
   ["3a3fd5a4dbf30352"] = { "Quanto al tuo avvertimento, non preoccuparti. Le nostre truppe conoscono bene la catena di comando. Combattiamo uniti. Speriamo che anche le tue truppe se ne ricordino...", "." },
   ["3a46a0649b834fad"] = { "Il ⟦Darrowshire=Borgo di Darrow⟧ è sconfitto! Presto tutta Lordaeron cadrà!", "." },
   ["3a4d24708694274c"] = { "Salve, {class}. Confido che tu porti buone notizie sui preparativi per la guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Mi è stata affidata la raccolta di tutto il cuoio duro per l'⟦Horde=Orda⟧, un compito per cui ho un talento particolare. Mai sottovalutare l'utilità di un coltello ben affilato.\n\nQuanto al cuoio duro, al momento ne abbiamo $2073w sui $2074w necessari.", "." },

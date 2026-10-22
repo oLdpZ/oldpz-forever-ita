@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("quest", {
   [95042] = { "Alla ricerca della Gemma Kor", nil, nil, nil, nil, 0x5d353131, nil, nil, nil, nil, ".mmmm" },
+  [95161] = { "Ricorda che ti voglio bene", nil, nil, nil, nil, 0x920a601f, nil, nil, nil, nil, ".mmmm" },
   [95494] = { "Orgoglio ferito e pelli di leone", "Raccogli 6 Savannah Lion Hide dalle Savannah Matriarch e dai Savannah Patriarch nelle ⟦Barrens=Savane⟧.", "Mi serve qualcuno con un braccio forte per la spada e un po' di tempo libero, che mi aiuti a raccogliere delle pelli di leone. Mi brucia l'orgoglio chiedere un aiuto simile a un estraneo, ma di recente mi sono ferito a una gamba. Finché non guarisco non sono in condizione di andare a caccia, ma ho degli impegni da rispettare.\n\nDi solito i più grossi di questa zona hanno le pelli migliori, quindi comincia da quelli.", "Come va la caccia?", nil, 0x5b2ff02d, 0xce49bfcd, 0x5cce729a, 0xe02b27bb, nil, "....m" },
   [95999] = { nil, nil, nil, "Che cos'hai lì, {race}?", nil, nil, nil, nil, 0x46dc827d, nil, "mmm.m" },
 })
