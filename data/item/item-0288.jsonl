@@ -1,0 +1,1 @@
+{"id": 288338, "field": "description", "it": "Lancia un fuoco d'artificio che esplode in migliaia di stelle rosse.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-i03-sg11@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "b5141a1bc3b96ecb", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

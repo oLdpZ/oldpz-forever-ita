@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("item", {
   [46102] = { "Ti insegna a evocare questa cavalcatura.", 0x720161a4, "u" },
+  [46362] = { "Evoca il tuo ⟦Venomhide Hatchling=Cucciolo di Malapelle⟧. Utilizzabile solo nel ⟦Un'Goro Crater=Cratere di Un'Goro⟧, a Tanaris o a ⟦Silithus=Silitus⟧.", 0xe64abc24, "u" },
 })

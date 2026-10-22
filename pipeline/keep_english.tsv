@@ -113,6 +113,14 @@ gossip	fe8275319dd8a8d8	text	fe8275319dd8a8d8	Hm...
 gossip	fee728b8ff6a70d7	text	fee728b8ff6a70d7	Grrr...
 gossip	fef919db0d64e7f4	text	fef919db0d64e7f4	Grrrrr!
 gossip	ffaca6741b285d92	text	ffaca6741b285d92	Feralas - Screecher Spirit - On Quest Default Greeting
+item	5378	description	c2446cc543a1afd6	STONE HENDGE
+item	5937	description	00149a9235afba61	NYI
+item	8243	description	2a9888d9dbd62b7f	Scooby-dooby-doo!
+item	12385	description	0fa5d816a41ba189	test
+item	18769	description	a9e73fef9b0c4cf4	Volume I
+item	18770	description	f155b944c32276eb	Volume II
+item	18771	description	7eddd07cadb296e0	Volume III
+item	210323	description	aea177cc56c2486f	0-4-5-1
 quest	19	title	22ab2f517c3706f2	Tharil'zun
 quest	55	title	461172d9d080daf4	Morbent Fel
 quest	87	title	e78fd7d989b60387	Goldtooth
