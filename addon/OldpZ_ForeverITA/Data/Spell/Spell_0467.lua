@@ -2,4 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [467346] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
+  [467404] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
+  [467480] = { "Congeda il tuo famiglio. Congedare il famiglio ne riduce la felicità di $N1.", nil, 0x87fe12cc, nil, "um" },
+  [467539] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
 })

@@ -1,0 +1,1 @@
+{"id": 1271632, "field": "aura", "it": "Assorbe i danni fisici, prosciugando mana al loro posto.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t01-sg11@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "d9625b22f2b3c130", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

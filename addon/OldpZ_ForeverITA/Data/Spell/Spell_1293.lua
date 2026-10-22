@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1293005] = { nil, "Armatura ridotta di $N1.", nil, 0x57b604c7, "mu" },
+  [1293733] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },
+  [1293790] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
 })

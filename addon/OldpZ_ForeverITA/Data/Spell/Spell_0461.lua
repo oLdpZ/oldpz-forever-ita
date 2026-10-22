@@ -2,10 +2,13 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [461232] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
+  [461607] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [461810] = { nil, "Tempo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ee2e, "mu" },
   [461826] = { nil, "Tempo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ee2e, "mu" },
   [461827] = { nil, "Tempo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ee2e, "mu" },
   [461828] = { nil, "Tempo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ee2e, "mu" },
   [461829] = { nil, "Tempo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ee2e, "mu" },
   [461830] = { nil, "Tempo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ee2e, "mu" },
+  [461896] = { "Investe il nemico con $N1 danni da fuoco.", nil, 0x27fcb60f, nil, "um" },
+  [461966] = { "Affligge il bersaglio con energia d'ombra che cura tutti i membri del gruppo del $N1% dei danni da incantesimi d'ombra che infliggi, per $D1.", nil, 0xac61f89c, nil, "um" },
 })

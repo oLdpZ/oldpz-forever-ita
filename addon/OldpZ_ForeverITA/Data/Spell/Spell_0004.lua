@@ -65,6 +65,7 @@ WFJ.Data.add("spell", {
   [4981] = { "Induce una Visione.", nil, 0xffcda5c6, nil, "um" },
   [4983] = { "Crea un Totem della Purificazione.", nil, 0x1d056aee, nil, "um" },
   [4986] = { "Rende l'incantatore invisibile.", nil, 0xcb72756c, nil, "um" },
+  [4987] = { "Purifica un bersaglio alleato, rimuovendo $N1 effetto di veleno, $N2 effetto di malattia e $N3 effetto magico.", nil, 0x9d3e22e1, nil, "um" },
   [4996] = { "Porta il personaggio a Orgrimmar.", nil, 0xcdb71f13, nil, "um" },
   [4997] = { "Porta il personaggio alla ⟦Booty Bay=Baia del Bottino⟧.", nil, 0x7e62bb91, nil, "um" },
   [4998] = { "Porta il personaggio a Grom'gol.", nil, 0xb5c81f34, nil, "um" },

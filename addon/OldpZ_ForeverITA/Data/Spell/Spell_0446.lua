@@ -2,4 +2,9 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [446137] = { "Ottieni gli aspetti dell'equipaggiamento ⟦Green Snugglefin Murloc Romper=Tutina da Murloc Pinnabbraccio Verde⟧.", nil, 0x17e75ff5, nil, "um" },
+  [446354] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [446373] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [446685] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [446707] = { nil, "Disorientato.", nil, 0x6b902ba7, "mu" },
+  [446728] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
 })
