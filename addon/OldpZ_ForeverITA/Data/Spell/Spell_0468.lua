@@ -12,6 +12,7 @@ WFJ.Data.add("spell", {
   [468183] = { "Dopo un colpo critico, il tuo famiglio ha una probabilità di ottenere un aumento del $N1% della velocità d'attacco per $D1.", "Velocità d'attacco aumentata del $N1%.", 0xa8ba9cb2, 0x8859e2db, "uu" },
   [468184] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [468224] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
+  [468225] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [468260] = { "Aumenta la probabilità di critico di Ira Silvana e Fuoco Stellare del $N1%.", nil, 0xfd71dc1f, nil, "um" },
   [468277] = { "Aumenta la probabilità d'impatto degli incantesimi del $N1%.", nil, 0xbe55f28d, nil, "um" },
   [468297] = { "Distrugge un uovo vicino.", nil, 0x10a0ae27, nil, "um" },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1289125] = { "Aumenta la velocità d'attacco dell'incantatore del $N1% e i danni fisici che infligge di $N2 per $D1.", "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", 0x1d3f8a49, 0xbc6c8e1d, "uu" },
   [1289133] = { "Il bersaglio nemico viene assalito da uno sciame di insetti, che riduce la sua probabilità d'impatto con gli attacchi del $N1% e gli infligge $N2 danni da natura in $D1.", "Probabilità d'impatto con gli attacchi ridotta del $N1% e $N2 danni da natura subiti ogni $D1.", 0xc1011ca5, 0xd1ca9f2a, "uu" },
+  [1289135] = { nil, "Danni inflitti aumentati del $N1%.", nil, 0x33ad9bd9, "mu" },
   [1289139] = { nil, "Danni subiti ridotti del $N1%.", nil, 0xa4f10210, "mu" },
   [1289140] = { "Graffia il bersaglio, infliggendo $N1 danni e $N2 danni aggiuntivi in $D1.", nil, 0xd23334a8, nil, "um" },
   [1289145] = { nil, "Danni aumentati del $N1%.", nil, 0xb556e361, "mu" },

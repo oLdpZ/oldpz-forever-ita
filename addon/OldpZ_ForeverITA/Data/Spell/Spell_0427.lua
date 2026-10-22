@@ -45,5 +45,5 @@ WFJ.Data.add("spell", {
   [427745] = { "Carica un nemico, infliggendo $N1 danni e stordendolo per $D1.", nil, 0x481312e4, nil, "um" },
   [427746] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [427751] = { nil, "Le acque purificatrici lavano via ogni impurità.", nil, 0x3316bbef, "mu" },
-  [427774] = { nil, "Un'oscurità opprimente ti avvolge...", nil, 0x7e9d0505, "mu" },
+  [427774] = { "Avverti una pressione ultraterrena e schiacciante.", "Un'oscurità opprimente ti avvolge...", 0x9dda1230, 0x7e9d0505, "uu" },
 })

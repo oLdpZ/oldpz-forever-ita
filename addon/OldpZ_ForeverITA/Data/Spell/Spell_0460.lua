@@ -29,6 +29,7 @@ WFJ.Data.add("spell", {
   [460858] = { nil, "$N1 danni da fuoco inflitti ogni $D1.", nil, 0xbc8b8357, "mu" },
   [460890] = { nil, "Armatura ridotta di $N1.", nil, 0xaede5a15, "mu" },
   [460907] = { nil, "Potenza d'attacco aumentata del $N1%.", nil, 0x28c2d282, "mu" },
+  [460923] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [460931] = { "Infligge $N1 danni da ombra ai nemici vicini dopo $D1.", "$N1 danni da ombra subiti dopo $D1.", 0x0a28521b, 0x7fe6a36d, "uu" },
   [460933] = { "..", nil, 0x000017b8, nil, "um" },
   [460939] = { "Aumenta la salute di $N1. Celerità di incantesimi e attacchi aumentata del $N2%. Rigenera $N3 mana ogni $N4 s.", "Aumenta la salute di $N1. Celerità di incantesimi e attacchi aumentata del $N2%. Rigenera $N3 mana ogni $N4 s. Nessun effetto all'interno di un'istanza d'incursione.", 0xa677ca69, 0x54efce23, "uu" },

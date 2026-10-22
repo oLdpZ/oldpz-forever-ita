@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [440113] = { "I tuoi colpi in mischia hanno una probabilità del $N1% di conferire Morte Improvvisa. Morte Improvvisa consente un uso di Esecuzione indipendentemente dalla salute del bersaglio. Quando Esecuzione è resa possibile da Morte Improvvisa, conservi $N2 rabbia dopo averla usata.", nil, 0x06740070, nil, "um" },
   [440114] = { nil, "Puoi usare Esecuzione una volta indipendentemente dalla salute del bersaglio, e dopo ti resteranno $N1 rabbia.", nil, 0x0287cac8, "mu" },
   [440212] = { { "Infligge $N1 danni da gelo in un raggio di $N2 m.", shape = { "2/0" } }, nil, 0x477a9729, nil, "um" },
+  [440213] = { nil, "Il Loa del Sangue vuole una sfida leale, non il massacro degli indifesi! Lascia la tua incursione o affronta la sua ira! Tutti gli attributi e la velocità di movimento ridotti del $N1%.", nil, 0xa7fb784d, "mu" },
   [440236] = { "Usalo sulla ⟦Hypnotic Blade=Lama Ipnotica⟧ per creare un'arma potente.", nil, 0x0c3b5db4, nil, "um" },
   [440285] = { nil, "Il tuo prossimo incantesimo tra ⟦Chain Lightning=Catena di Fulmini⟧, ⟦Chain Heal=Catena di Guarigione⟧ e ⟦Lava Burst=Getto di Lava⟧ sarà a lancio istantaneo.", nil, 0x72a3c338, "mu" },
   [440471] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0x508bfddc, "mu" },

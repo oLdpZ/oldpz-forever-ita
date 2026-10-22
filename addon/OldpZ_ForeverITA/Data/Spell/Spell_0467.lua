@@ -43,6 +43,8 @@ WFJ.Data.add("spell", {
   [467667] = { "Gli attacchi in mischia dello Spirito d'Ombra sottraggono energia al bersaglio e la convertono in mana per il suo padrone.", "Converte i danni da ombra in mana.", 0x63a87b32, 0x41ef7edc, "uu" },
   [467740] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [467742] = { "Infonde nell'incantatore una benedizione degli Dei Primordiali. Potenza d'attacco in mischia e a distanza aumentata di $N1 per $D1.", "Potenza d'attacco in mischia aumentata di $N1.\nPotenza d'attacco a distanza aumentata di $N2.", 0x6b1b063b, 0x5b9eb74e, "uu" },
+  [467763] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
+  [467782] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [467828] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [467830] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [467832] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },

@@ -25,6 +25,7 @@ WFJ.Data.add("spell", {
   [434523] = { "Scagli lava fusa sul bersaglio, infliggendo $N1 danni da fuoco. Se la tua ⟦Flame Shock=Folgore del Fuoco⟧ è sul bersaglio, ⟦Lava Burst=Getto di Lava⟧ infligge un colpo critico.", nil, 0x0de277c5, nil, "um" },
   [434698] = { nil, "Gli alleati entro $N1 m dalla Priestess of the Moon ottengono il $N2% di salute in più e il $N3% di danni in più per ogni Keeper of the Grove vivo nel suo esercito.", nil, 0x270bb4b9, "mu" },
   [434724] = { nil, "Danni da natura subiti aumentati del $N1%.", nil, 0x2093012d, "mu" },
+  [434744] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [434752] = { "Teletrasportati da un membro del gruppo. Sia tu sia il bersaglio dovete riposare in una locanda o in una città.", nil, 0xce3c6cf9, nil, "um" },
   [434753] = { "Fai comparire una preda pregiata da un banco di pesci vicino.", nil, 0x54f22f26, nil, "um" },
   [434754] = { "Trasforma il bersaglio in un Odd Melon.", nil, 0xa08bd2d0, nil, "um" },

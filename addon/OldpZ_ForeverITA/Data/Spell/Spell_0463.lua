@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [463448] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [463518] = { nil, "Danni subiti ridotti del $N1% e il $N2% di tutta la minaccia trasferito al Guerriero.", nil, 0x4c5cf7a8, "mu" },
   [463555] = { "Ricevi dei gettoni per il tuo servizio al Dio del Sangue.", nil, 0xf0c62931, nil, "um" },
+  [463557] = { "Trasmuta $N1 Silver Massacre Coins in $N2 Gold Massacre Coin.", nil, 0x01f22e4e, nil, "um" },
   [463564] = { "Aumenta di $N1 l'indice di blocco dello scudo per $D1.", "Indice di blocco aumentato di $N1.", 0xe7882b6e, 0x64e8286f, "uu" },
   [463620] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo vicino. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta. L'aura dura finché non viene annullata.", "$N1 danni da sacro inflitti agli attaccanti in mischia.", 0xb2ca9267, 0x210150aa, "uu" },
   [463621] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo vicino. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta. L'aura dura finché non viene annullata.", "$N1 danni da sacro inflitti agli attaccanti in mischia.", 0xb2ca9267, 0x210150aa, "uu" },

@@ -5,9 +5,11 @@ WFJ.Data.add("spell", {
   [1270178] = { "Lancia un fulmine contro un nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
   [1270201] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [1270262] = { "Colpisce un nemico con un dardo elettrico che si propaga a un altro nemico vicino. L'incantesimo colpisce fino a $N1 bersagli, infliggendo danni da natura a ciascuno.", nil, 0x91b98b1a, nil, "um" },
+  [1270400] = { "Scaglia all'istante un fulmine contro un nemico, infliggendo danni da natura.", nil, 0x40d9deb7, nil, "um" },
   [1270427] = { nil, "$N1 danni da ombra inflitti ogni $D1.", nil, 0x62c40fe2, "mu" },
   [1270462] = { nil, "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", nil, 0x87c6dd5a, "mu" },
   [1270602] = { nil, "Velocità di movimento ridotta.", nil, 0xeadcb05a, "mu" },
   [1270802] = { "Carica un nemico, respingendolo indietro e infliggendo danni normali e $N1 danni aggiuntivi.", nil, 0xa2823b6b, nil, "um" },
   [1270811] = { "Urla contro un nemico, paralizzandolo dal terrore per $D1 e costringendo tutti gli altri nemici vicini a fuggire impauriti.", "Intimorito.", 0x3743a9ab, 0x441534cf, "uu" },
+  [1270825] = { nil, "Armatura ridotta del $N1%.", nil, 0x7bc85918, "mu" },
 })

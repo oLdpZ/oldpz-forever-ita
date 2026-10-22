@@ -2,10 +2,17 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [448107] = { "Aumenta i danni fisici subiti dai nemici vicini di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0xc6df0840, 0xa01a31bd, "uu" },
+  [448156] = { "Infila la mano nel borsellino e lancia una manciata di monete contro i tuoi nemici.", "Una manciata di monete in piena faccia.", 0xdb52295e, 0x5e730b4c, "uu" },
+  [448160] = { "Infila la mano nel borsellino e lancia una manciata di monete contro i tuoi nemici.", "Una manciata di monete in piena faccia.", 0xdb52295e, 0x5e730b4c, "uu" },
   [448323] = { "Evoca $N1 Elementali del Fuoco che affiancano l'incantatore fino al congedo.", nil, 0x592ec6a8, nil, "um" },
   [448324] = { "Aumenta la probabilità di critico del $N1%.", nil, 0xff9a12de, nil, "um" },
   [448572] = { "Costringe il bersaglio nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x26124111, 0x5339954e, "uu" },
+  [448573] = { nil, "Danni elementali inflitti.", nil, 0x8ecf024b, "mu" },
   [448575] = { nil, "Scatena una devastante combinazione di tre attacchi fisici in rapida successione.", nil, 0x890bf452, "mu" },
+  [448642] = { nil, "Manca qualche pezzo d'armatura...", nil, 0x569cbd4b, "mu" },
+  [448653] = { nil, "Manca qualche pezzo d'armatura...", nil, 0x569cbd4b, "mu" },
   [448707] = { "Respinge indietro i nemici.", nil, 0x9e3e0fa7, nil, "um" },
+  [448779] = { nil, "Sonno profondo.", nil, 0x11982e2f, "mu" },
+  [448809] = { nil, "Infligge danni magici ai nemici.", nil, 0x1a0e9b5e, "mu" },
   [448824] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0xf6322bec, "mu" },
 })

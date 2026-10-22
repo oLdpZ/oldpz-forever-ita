@@ -10,5 +10,6 @@ WFJ.Data.add("spell", {
   [466739] = { "Circonda l'incantatore con $N1 sfere di fulmini che hanno una probabilità del $N2% di colpire attaccanti in mischia o a distanza e infliggere $N3 danni. Ogni volta che lo scudo di fulmini colpisce, una sfera di fulmini scompare. Lo scudo si esaurisce dopo $D1 o dopo aver colpito per $N5 volte.", "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", 0x994de1bb, 0x87c6dd5a, "uu" },
   [466740] = { "Travolge il nemico con la potenza del fulmine, infliggendo danni da natura.", nil, 0x86118ec0, nil, "um" },
   [466841] = { "Lancia una catena uncinata per immobilizzare il bersaglio e trascinarlo verso di te.", nil, 0x752fe057, nil, "um" },
+  [466870] = { "Rigenera $N1 energia.", nil, 0xa6064380, nil, "um" },
   [466938] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
 })

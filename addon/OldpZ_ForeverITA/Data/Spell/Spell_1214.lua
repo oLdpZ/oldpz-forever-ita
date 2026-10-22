@@ -13,6 +13,7 @@ WFJ.Data.add("spell", {
   [1214233] = { "Aumenta fino a $N1 i danni inflitti da incantesimi ed effetti magici e riduce di $N2 le resistenze magiche dei bersagli dei tuoi incantesimi per $D1.", "Danni magici aumentati fino a $N1.\nResistenze magiche dei bersagli dei tuoi incantesimi ridotte di $N2.", 0xb0176327, 0xe014e8ba, "uu" },
   [1214263] = { nil, "$N1 danni da natura inflitti agli attaccanti.", nil, 0x7724a9e2, "mu" },
   [1214273] = { nil, "Impossibile lanciare incantesimi.", nil, 0x6d133d61, "mu" },
+  [1214278] = { "Aumenta la potenza d'attacco in mischia e a distanza di $N1 per $D1.", nil, 0xf1ea894a, nil, "um" },
   [1214283] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1214290] = { "Cura il bersaglio di $N1.", nil, 0xbdf1d263, nil, "um" },
   [1214293] = { "Cura il bersaglio di $N1.", nil, 0xbdf1d263, nil, "um" },
