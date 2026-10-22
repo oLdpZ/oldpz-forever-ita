@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `9c68fd8`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `ea109a6`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
