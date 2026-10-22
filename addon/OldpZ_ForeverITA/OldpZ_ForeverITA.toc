@@ -114,6 +114,7 @@ Data\Item\Item_0225.lua
 Data\Item\Item_0226.lua
 Data\Item\Item_0227.lua
 Data\Item\Item_0228.lua
+Data\Item\Item_0229.lua
 Data\Item\Item_0230.lua
 Data\Item\Item_0231.lua
 Data\Item\Item_0232.lua
@@ -128,6 +129,7 @@ Data\Item\Item_0249.lua
 Data\Item\Item_0250.lua
 Data\Item\Item_0251.lua
 Data\Item\Item_0252.lua
+Data\Item\Item_0259.lua
 Data\Item\Item_0260.lua
 Data\Item\Item_0262.lua
 Data\Item\Item_0263.lua

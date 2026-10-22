@@ -22,6 +22,7 @@ WFJ.Data.add("item", {
   [213118] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [213119] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [213120] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
+  [213121] = { "Trasforma la tua cavalcatura in qualcosa di più festoso.", 0x3ce08c15, "u" },
   [213122] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [213123] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [213124] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },

@@ -14,6 +14,7 @@ WFJ.Data.add("item", {
   [287976] = { "Ti rende immune agli effetti di stordimento e di rallentamento per $D1. Non rimuove gli effetti già attivi su chi la beve.", 0x1fa37517, "u" },
   [287977] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },
   [287978] = { "Aumenta di $N1 i danni delle armi da taglio per $N2 min.", 0x2a8c6b23, "u" },
+  [287979] = { "Applicato all'arma bersaglio, aumenta fino a $N1 i danni e le cure degli incantesimi. Dura $N2 min.", 0x143db2f8, "u" },
   [287980] = { "Aumenta del 2% la probabilità di critico di un'arma da mischia per 30 min.", 0x052517c4, "u" },
   [287992] = { "Una vecchia chiave.", 0xf21ba4b0, "u" },
 })

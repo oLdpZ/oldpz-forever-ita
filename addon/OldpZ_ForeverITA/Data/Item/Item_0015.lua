@@ -124,6 +124,7 @@ WFJ.Data.add("item", {
   [15922] = { "Inizia ad addomesticare un Nightsaber Stalker che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xeceb41f2, "u" },
   [15923] = { "Inizia ad addomesticare uno Strigid Screecher che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0x70d666a5, "u" },
   [15993] = { "Infligge $N1 danni da fuoco e stordisce i bersagli per $D1 in un raggio di $N3 m. Qualsiasi danno interrompe l'effetto.", 0x4fab66fc, "u" },
+  [15995] = { "+$N1 potenza d'attacco a distanza.", 0x1e3d63d6, "u" },
   [15996] = { "Ti insegna a evocare questa mascotte.", 0x42caee1b, "u" },
   [15999] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
 })

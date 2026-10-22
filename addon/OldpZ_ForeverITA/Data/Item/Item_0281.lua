@@ -8,4 +8,5 @@ WFJ.Data.add("item", {
   [281166] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [281167] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [281168] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
+  [281282] = { "Una bevanda alcolica estremamente potente.", 0x7af31672, "u" },
 })

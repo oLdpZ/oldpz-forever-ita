@@ -90,6 +90,7 @@ WFJ.Data.add("item", {
   [13451] = { "Reca il sigillo dei Barov.", 0x9e7d57d5, "u" },
   [13452] = { "Aumenta l'Agilità di $N1 e la probabilità di critico del $N2%. Dura $D1.", 0xbbd35125, "u" },
   [13453] = { "Aumenta la Forza e la Tempra di $N1 per $D1.", 0x00bdbea7, "u" },
+  [13454] = { "Aumenta i danni degli incantesimi fino a $N1 per $D1.", 0xbfd948e7, "u" },
   [13455] = { "Aumenta l'Armatura di $N1 per $D1.", 0x92291afa, "u" },
   [13456] = { "Assorbe $N1 danni da gelo. Dura $D1.", 0x08003478, "u" },
   [13457] = { "Assorbe $N1 danni da fuoco. Dura $D1.", 0x8a1157b9, "u" },

@@ -13,5 +13,7 @@ WFJ.Data.add("item", {
   [212561] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [212562] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [212568] = { "Incanta permanentemente un oggetto per la testa: quando ti trasformi in Forma Felina o in Forma d'Orso ottieni $N1 energia o $N2 rabbia.", 0x8b0dbf5f, "u" },
+  [212580] = { "Rigenera $N1 mana ogni $D1.", 0x9ac76902, "u" },
+  [212584] = { "Rigenera $N1 mana ogni $D1.", 0x9ac76902, "u" },
   [212982] = { "Proteggiti dagli elementi finché sopravvivi.", 0x0590d635, "u" },
 })

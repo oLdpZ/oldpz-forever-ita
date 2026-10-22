@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("item", {
   [216483] = { "Colpisci il gong nella tana degli Scorzasecca.", 0x7ebcfac1, "u" },
   [216491] = { "Un carico di legname dalla Valle di Rovotorto che può essere utile alla tua fazione negli ⟦Arathi Highlands=Altopiani d'Arathi⟧.", 0x2b313da5, "u" },
+  [216492] = { "Evoca e congeda un Raptor cavalcabile.", 0x7d1c7f75, "u" },
   [216523] = { "Apre la gabbia arrugginita", 0xed809cdb, "u" },
   [216606] = { "Ti insegna una nuova abilità di Engraving.", 0xbc8956a2, "u" },
   [216619] = { "Mangiane una manciata e recupera il tempo perduto lungo il sentiero!\nLa buona vecchia uvetta con le arachidi... e molto altro!", 0xe24843b2, "u" },

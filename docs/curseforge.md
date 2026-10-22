@@ -21,7 +21,7 @@ Paste everything under "Description" into the project's description with the edi
 - **Tooltip di oggetti e abilità** e **testi dell'interfaccia** (finestre, pulsanti, menu, messaggi), con il testo del client italiano ufficiale di Blizzard dove usa le stesse parole di Forever.
 - **Libri e lettere** per ora restano in inglese.
 
-In numeri: **4.775** missioni, **10.876** righe di dialogo dei PNG, **921** pagine di libri, **208** pagine di lettere, **6.670** tooltip degli oggetti, **6.614** tooltip delle abilità, **8.609** testi dell'interfaccia.
+In numeri: **4.775** missioni, **10.876** righe di dialogo dei PNG, **921** pagine di libri, **208** pagine di lettere, **7.424** tooltip degli oggetti, **6.614** tooltip delle abilità, **8.609** testi dell'interfaccia.
 
 ### <span style="color:#E8C77E;">Nomi</span>
 

@@ -5,6 +5,7 @@ WFJ.Data.add("item", {
   [247240] = { "Rigenera istantaneamente $N1 salute, ma subisci anche il $N2% di tale quantità nel tempo.\n\nI sintomi di questo effetto possono manifestarsi come un veleno di $D1 o una malattia di $D2.", 0x47c52fb1, "u" },
   [247241] = { "Rigenera istantaneamente $N1 salute, ma subisci anche il $N2% di tale quantità nel tempo.\n\nI sintomi di questo effetto possono manifestarsi come un veleno di $D1 o una malattia di $D2.", 0x47c52fb1, "u" },
   [247242] = { "Rigenera istantaneamente $N1 salute, ma subisci anche il $N2% di tale quantità nel tempo.\n\nI sintomi di questo effetto possono manifestarsi come un veleno di $D1 o una malattia di $D2.", 0x47c52fb1, "u" },
+  [247754] = { "Aumenta i danni degli incantesimi fino a $N1 per $D1.", 0xbfd948e7, "u" },
   [247824] = { "Una forte bevanda alcolica.", 0x6f5754c9, "u" },
   [247876] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
 })

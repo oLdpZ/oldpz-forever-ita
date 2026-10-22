@@ -59,6 +59,7 @@ WFJ.Data.add("item", {
   [211786] = { "Un Mago può decifrarlo con l'abilità Comprehension.", 0x147f07df, "u" },
   [211787] = { "Un Mago può decifrarlo con l'abilità Comprehension.", 0x147f07df, "u" },
   [211799] = { "Con ogni probabilità viene dalla cattedrale da cui Ada è fuggita.", 0x2bc1b16b, "u" },
+  [211800] = { "Riporta in vita un personaggio morto con il $N1% della salute e del mana massimi. Non può essere usato in combattimento.", 0x71cd66d4, "u" },
   [211809] = { "Aiuta a tradurre appunti di incantesimi elementari.", 0x402a974b, "u" },
   [211813] = { "Viene da un combattente caduto delle Sentinelle Alargentea. Forse il veggente sarebbe interessato.", 0xfbf15fdf, "u" },
   [211814] = { "Viene da un combattente caduto dei Predoni ⟦Warsong=Cantaguerra⟧. Forse la sacerdotessa della Luna sarebbe interessata.", 0x7e5e83bc, "u" },
