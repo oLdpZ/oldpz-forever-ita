@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["44612d35b34a2a0b"] = { "Cercavo un po' di aiuto. Visto che hai l'abilità, immagino che andrai bene, purché tu abbia anche fegato.", "." },
   ["4464b878878576d3"] = { "Attenzione a entrare nel territorio dei Lupi Bianchi, soldato. Quel maledetto posto è pieno di trappole! Mine a non finire! Parla con il nostro esperto di esplosivi nella prima torre in prima linea per saperne di più. Di sicuro potrebbe insegnarti come disinnescare la situazione.", "." },
   ["44725f3947b3c671"] = { "%s comincia a evocare un Blackhand Dreadweaver!", "." },
+  ["4480e881321f09bf"] = { "Ci è voluta la forza di sei combattenti esperti per abbattere una di queste creature, e nonostante ciò è riuscita a stenderne quattro prima che potessimo finirla.\n\nSe queste bestie mostruose comparissero in numero maggiore, i danni che i verrospini potrebbero infliggere a questa terra sarebbero catastrofici.", "." },
   ["4481dfb1d4c9df02"] = { "Tornerò appena avrò sistemato questo pasticcio.", "." },
   ["4486716290068cd7"] = { "Salute, {class}. Il mio titolo è Custode della Fiamma. Durante il Midsummer Fire Festival è mio dovere tenere acceso e vivo questo fuoco accanto a me. Essere scelti per un simile compito è un onore, e lo svolgo con gioia.\n\nCome posso aiutarti?", "." },
   ["4486f2d1bb78998b"] = { "Non è facile proteggere il taglio del legname dell'Orda qui a ⟦Ashenvale=Valtetra⟧, ma non ci siamo mai tirati indietro davanti alla battaglia! Gli elfi della notte e i loro alleati cadranno!", "." },

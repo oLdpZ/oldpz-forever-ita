@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["69b82965959bb45d"] = { "Smettila di strapparle i capelli!", "." },
   ["69baad7508e8c38a"] = { "Salute, mortali! I Discs of Norgannon mi hanno attivato per assistervi!", "." },
   ["69cea6b631a1eeaf"] = { "Stavo solo pensando. Fa paura stare qui fuori di questi tempi, sai? Da un momento all'altro questa parte dell'isola potrebbe sprofondare sotto i miei piedi e io finirei a capitombolare... da qualche parte? Dimmi, sai almeno cosa succede a <un/una> {race} che cade dall'isola?", "." },
+  ["69cffb7c7f6f5a16"] = { "Guardati dall'inverno, amico.", "." },
   ["69d621fbd758e572"] = { "Salve, {class}. Di solito sarei in giro per le strade a vegliare sulla gente di ⟦Stormwind=Roccavento⟧, ma molte guardie di ⟦Stormwind=Roccavento⟧ stanno combattendo in terre lontane. E così eccomi qui, con un incarico provvisorio a offrire taglie, quando preferirei essere di pattuglia...", "." },
   ["69d82b9669260cb6"] = { "Lunga è la via, e dura la strada che hai percorso. Pochi raggiungono una tale posizione tra le nostre file. Sei <un/una> grande <amico/amica> dell'impero degli Zandalari, {name}.\n\n<Leggendario/Leggendaria>, forse... Sì... Forse.", "." },
   ["69dab2ba8d81d003"] = { "Devi salvarlo!", "." },

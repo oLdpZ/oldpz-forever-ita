@@ -8,6 +8,7 @@ WFJ.Data.add("gossip", {
   ["860d1e3237479672"] = { "Sì, lo faremo!", "." },
   ["86123b41d54774be"] = { "In quanto <mago/maga>, fai parte di una cerchia ristretta capace di evocare un portale che ti riporti proprio qui. Posso insegnartelo, se te la senti.", "." },
   ["8613cc7e71a0ba31"] = { "<Benvenuto/Benvenuta>, <fratello/sorella> <mio/mia>. Se sei qui per addestrarti, sarò felice di farlo.\n\nSiamo i custodi dell'equilibrio, ora e per sempre, come ci ha insegnato Cenarius. Non dimenticarlo mai.", "." },
+  ["8617a389bd176719"] = { "Notevole, {class}. Nessuno dubiterà più dei miei racconti quando tornerò a Orgrimmar con questa macabra prova dell'esistenza di questi abomini. Ma sappi che questa gloria è tua, e parlerò a gran voce delle tue imprese.\n\nLok-tar!", "." },
   ["861b5979eb43b748"] = { "Non si vedono molti fabbri così lontano da ⟦Ironforge=Forgiardente⟧. Cosa posso fare per te?", "." },
   ["861c4c41d2641eca"] = { "%s ha l'aria stanca. Poi sbadiglia e si sdraia accanto ad A-Me 01", "." },
   ["86222efd23b1bb0f"] = { "E di onore ne avrai molto, non ho dubbi. Parla con Martin Lindsey alle Pozze delle Visioni. È una grotta sul fianco dell'⟦Spirit Rise=Altura degli Spiriti⟧.", "." },
