@@ -3,4 +3,6 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1223046] = { "Riduce i danni da caduta.", nil, 0x879f36dd, nil, "um" },
   [1223459] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1223716] = { "Soggioga il demone bersaglio, fino al livello $N1, costringendolo a eseguire i tuoi ordini. Mentre è soggiogato, l'intervallo tra gli attacchi del demone aumenta del $N2% e la sua velocità di lancio d'incantesimi si riduce del $N3%. Dura fino a $D1. Se soggioghi ripetutamente lo stesso demone, diventerà più difficile da controllare a ogni tentativo.", "Assoggettato.", 0x93ce24f8, 0xb260b47a, "uu" },
+  [1223963] = { "Corrompe il bersaglio, infliggendo $N1 danni da ombra in $D1.", "$N1 danni da ombra ogni $N2 s.", 0x4a06c2d9, 0x9554e839, "uu" },
 })

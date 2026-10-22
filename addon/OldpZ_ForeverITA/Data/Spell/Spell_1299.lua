@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [1299332] = { "Ferisce il bersaglio facendolo sanguinare, infliggendo $N1 danni in $D1.", nil, 0x47f171f5, nil, "um" },
   [1299346] = { nil, "Potenza d'attacco a distanza aumentata di $N1.", nil, 0x0e786fb6, "mu" },
   [1299348] = { nil, "Potenza d'attacco a distanza aumentata di $N1.", nil, 0x0e786fb6, "mu" },
+  [1299440] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [1299443] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1299445] = { nil, "Non tracciabile. Potenza d'attacco in mischia aumentata di $N1.", nil, 0x6fd501b3, "mu" },
   [1299446] = { nil, "Non tracciabile. Potenza d'attacco in mischia aumentata di $N1.", nil, 0x6fd501b3, "mu" },

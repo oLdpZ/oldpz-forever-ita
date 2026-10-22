@@ -4,5 +4,6 @@ WFJ.Data.add("spell", {
   [447549] = { "Il Sacerdote si circonda di energia antimagica. Ogni incantesimo lanciato con successo contro il Sacerdote brucia $N1 mana dell'attaccante, infliggendo $N2 danni da ombra per ogni punto di mana bruciato. Dura $D1.", "L'energia antimagica brucia $N1 mana dell'attaccante, infliggendo $N2 danni da ombra per ogni punto di mana bruciato.", 0x7d1a32d9, 0x0019d6f5, "uu" },
   [447555] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [447563] = { "Acceca il bersaglio, costringendolo a vagare disorientato per un massimo di $D1. Eventuali danni inflitti interrompono l'effetto.", "Disorientato.", 0x9dce52b1, 0x6b902ba7, "uu" },
+  [447585] = { nil, "$N1 danni da ombra ogni $N2 s.", nil, 0x568adae4, "mu" },
   [447891] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
 })

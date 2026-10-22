@@ -130,7 +130,7 @@ WFJ.Data.add("spell", {
   [13752] = { "Riduce l'armatura del bersaglio di $N1 per $D1. Mentre ne è affetto, il bersaglio non può entrare in modalità furtiva o diventare invisibile.", "Armatura ridotta di $N1. Impossibile entrare in modalità furtiva o diventare invisibile.", 0xf183631b, 0xa06fedc8, "uu" },
   [13754] = { "Fornisce a Calcio una probabilità del $N1% di silenziare il bersaglio per $D1.", nil, 0x95802d31, nil, "um" },
   [13795] = { "Piazza una trappola di fuoco che brucia il primo nemico che si avvicina, infliggendo $N1 danni da fuoco in $D1. La trappola dura $D2. Può essere attiva una sola trappola di fuoco alla volta.", nil, 0x2a66629e, nil, "um" },
-  [13797] = { "Infligge $N1 danni da fuoco ogni $N2 s.", nil, 0x1ac4462c, nil, "um" },
+  [13797] = { "Infligge $N1 danni da fuoco ogni $N2 s.", "$N1 danni da fuoco ogni $N2 s.", 0x1ac4462c, 0x0d35ca56, "uu" },
   [13809] = { "Piazza una trappola di gelo che crea una lastra di ghiaccio intorno a sé per $D1 quando il primo nemico si avvicina. Tutti i nemici entro $N2 m vengono rallentati del $N3% finché restano nell'area d'effetto. La trappola dura $D2. Può essere attiva una sola trappola di gelo alla volta.", nil, 0x921945ad, nil, "um" },
   [13812] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0xa1772ba6, "mu" },
   [13813] = { "Piazza una trappola di fuoco che esplode quando un nemico si avvicina, infliggendo $N1 danni da fuoco e altri $N2 danni da fuoco in $D1 a tutti i bersagli entro $N4 m. La trappola dura $D2. Può essere attiva una sola trappola di fuoco alla volta.", nil, 0x17fdbf4b, nil, "um" },

@@ -110,6 +110,8 @@ WFJ.Data.add("spell", {
   [8282] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },
   [8283] = { "Da usare su un Roditore Tartasniffo.", nil, 0x8de47a0a, nil, "um" },
   [8285] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, stordendoli per $D1.", "Stordito.", 0x0a34dbe9, 0x27f95286, "uu" },
+  [8288] = { "Risucchia l'anima del bersaglio, infliggendo $N1 danni da ombra in $D1. I bersagli non banali danneggiati da Risucchio d'Anima hanno una probabilità di conferirti un frammento d'anima. I bersagli non banali uccisi da Risucchio d'Anima ti conferiscono sempre un frammento d'anima. I frammenti d'anima sono necessari per altri incantesimi.", "$N1 danni da ombra ogni $N2 s.", 0x0ad8031e, 0x774bc67a, "uu" },
+  [8289] = { "Risucchia l'anima del bersaglio, infliggendo $N1 danni da ombra in $D1. I bersagli non banali danneggiati da Risucchio d'Anima hanno una probabilità di conferirti un frammento d'anima. I bersagli non banali uccisi da Risucchio d'Anima ti conferiscono sempre un frammento d'anima. I frammenti d'anima sono necessari per altri incantesimi.", "$N1 danni da ombra ogni $N2 s.", 0x0ad8031e, 0x774bc67a, "uu" },
   [8292] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo $N2 danni da natura a ogni bersaglio.", nil, 0xd7982b30, nil, "um" },
   [8312] = { "Impedisce a un bersaglio di muoversi per $D1.", "Immobilizzato.", 0x73de166e, 0x9bb1efcf, "uu" },
   [8313] = { "Avvelena il bersaglio, infliggendo $N1 danni da natura ogni $N2 s per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0xc6bab046, 0xf6322bec, "uu" },

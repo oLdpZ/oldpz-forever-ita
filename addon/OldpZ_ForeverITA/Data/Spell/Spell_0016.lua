@@ -293,6 +293,7 @@ WFJ.Data.add("spell", {
   [16878] = { "Aumenta l'Armatura del bersaglio alleato di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3 per $D1.", "Armatura aumentata di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3.", 0x48c4c0cd, 0xa07843b3, "uu" },
   [16880] = { "Tutti i critici degli incantesimi non periodici ti conferiscono una benedizione della natura, che aumenta la velocità di lancio e riduce il tempo di recupero globale del $N1% per $D1.", nil, 0xb6fd5023, nil, "um" },
   [16881] = { nil, "Respiro Acquatico.", nil, 0x37a59b8c, "mu" },
+  [16882] = { "Permette al bersaglio alleato di individuare l'invisibilità superiore per $D1.", "Individua Invisibilità Superiore.", 0x0bc29431, 0x96a4f3d2, "uu" },
   [16896] = { "Aumenta i danni inflitti dai tuoi incantesimi di arcano e di natura del $N1%.", nil, 0xd1b14514, nil, "um" },
   [16898] = { "Brucia il nemico, infliggendo $N1 danni in $D1.", "$N1 danni inflitti ogni $N2 s.", 0xf61ae3fe, 0x02ab23c7, "uu" },
   [16902] = { { "Aumenta tutti i danni che infliggi del $N1%.", "Aumenta del $N1% i danni che infliggi con gli attacchi fisici in tutte le forme.", shape = { "1/0", "1/0" }, key = { "33ca953113e68fc4", "c750b65a39bcc361" } }, nil, 0xb9fcceb9, nil, "um" },

@@ -170,6 +170,7 @@ WFJ.Data.add("spell", {
   [24664] = { "Fa dormire i nemici vicini fino a un massimo di $D1. Eventuali danni inflitti ai bersagli interrompono l'effetto.", "Addormentato.", 0x5be1a322, 0x5339954e, "uu" },
   [24668] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [24669] = { "Evoca una pioggia di fuoco e brucia tutti i nemici in un'area bersaglio, infliggendo $N1 danni da fuoco ogni $N2 s per $D2.", "$N1 danni da fuoco inflitti ogni $N2 s.", 0xee6af47d, 0x5a5656de, "uu" },
+  [24670] = { "Evoca una meteora dalla ⟦Twisting Nether=Distorsione Fatua⟧, che infligge $N1 danni da fuoco e stordisce tutti i nemici nell'area per $D1. Dal cratere sorge un infernale, agli ordini dell'incantatore per $D2. Una volta perso il controllo, l'infernale deve essere soggiogato per mantenerne il controllo. Utilizzabile solo all'aperto.", nil, 0x5a6ba85a, nil, "um" },
   [24671] = { "Infligge $N1 danni a un nemico, stordendolo per $D1.", "Stordito.", 0x9f56403f, 0x27f95286, "uu" },
   [24672] = { "Aumenta la velocità d'attacco di un alleato del $N1% per $D1, ma infligge $N3 danni da natura a tale alleato ogni $N4 s.", "Velocità d'attacco aumentata del $N1%.\n$N2 danni da natura inflitti ogni $N3 s.", 0xa2d508d9, 0x475d59de, "uu" },
   [24673] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },

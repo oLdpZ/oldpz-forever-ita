@@ -5,4 +5,5 @@ WFJ.Data.add("spell", {
   [1326054] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
   [1326055] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
   [1326114] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [1326140] = { "Avvia un rituale che evoca il membro del gruppo bersaglio. Per completare il rituale servono l'incantatore e altri $N1 membri del gruppo. Per partecipare, tutti i giocatori devono essere fuori dal combattimento, cliccare con il tasto destro sul portale e non muoversi finché il rituale non è completo.", nil, 0x243b7c43, nil, "um" },
 })

@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1219270] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1219355] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
   [1219379] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
+  [1219388] = { "Infligge $N1 danni da fuoco.", nil, 0xa92ff3e1, nil, "um" },
   [1219475] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
   [1219506] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1219541] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },

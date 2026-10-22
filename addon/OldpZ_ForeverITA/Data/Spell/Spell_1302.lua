@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [1302113] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1302350] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1302357] = { "Disarma il nemico per $D1.", "Disarmato!", 0xef69889f, 0x98985ecd, "uu" },
+  [1302362] = { nil, "Assorbe $N1 danni da ombra.", nil, 0x0741eb29, "mu" },
   [1302500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1302521] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1302540] = { "Cura di $N1.", nil, 0xb1a62d77, nil, "um" },
