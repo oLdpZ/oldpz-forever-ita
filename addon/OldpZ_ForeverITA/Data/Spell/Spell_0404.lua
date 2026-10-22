@@ -4,4 +4,5 @@ WFJ.Data.add("spell", {
   [404275] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [404316] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9449c1, "mu" },
   [404433] = { nil, "$N1 danni ogni $N2 s e intervallo tra gli attacchi aumentato del $N3%.", nil, 0x82fe525e, "mu" },
+  [404806] = { nil, "Instabili particelle d'acqua si addensano attorno al tuo corpo.", nil, 0x6a1b0a06, "mu" },
 })

@@ -12,6 +12,7 @@ WFJ.Data.add("spell", {
   [417065] = { "Cura il bersaglio di $N1 in $D1.", "Cura di $N1 ogni $N2 s.", 0x3367b9a9, 0x1302c045, "uu" },
   [417066] = { "Cura il bersaglio di $N1 in $D1.", "Cura di $N1 ogni $N2 s.", 0x3367b9a9, 0x1302c045, "uu" },
   [417068] = { "Cura il bersaglio di $N1 in $D1.", "Cura di $N1 ogni $N2 s.", 0x3367b9a9, 0x1302c045, "uu" },
+  [417434] = { "Combina con altri $N1 pezzi per ottenere la mappa completa.", nil, 0xdcc7f5cf, nil, "um" },
   [417441] = { nil, "$N1 danni da sanguinamento subiti ogni $N2 s.", nil, 0xbabe73bb, "mu" },
   [417448] = { nil, "$N1 danni da sanguinamento subiti ogni $D1.", nil, 0x84eecd00, "mu" },
 })

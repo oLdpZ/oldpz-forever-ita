@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [473469] = { "Aumenta la tua potenza d'attacco in mischia di $N1 e le tue dimensioni per $D1.", "Dimensioni e potenza d'attacco in mischia aumentate di $N1.", 0x1f3c4cc7, 0x1bbffd49, "uu" },
   [473544] = { nil, "Furtivo. Movimento rallentato del $N1%.", nil, 0xbaa2cba7, "mu" },
+  [473570] = { nil, "Immune agli effetti di stordimento.", nil, 0xfd2ef3a2, "mu" },
   [473701] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
   [473847] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", nil, 0x46e67ef3, nil, "um" },
   [473848] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x46e67ef3, 0x2195529a, "uu" },

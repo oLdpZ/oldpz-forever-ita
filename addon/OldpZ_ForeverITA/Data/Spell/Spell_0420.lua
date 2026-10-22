@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [420526] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
   [420536] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
+  [420794] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
   [420843] = { nil, "In traslazione...", nil, 0xe8b15d2f, "mu" },
   [420998] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo vicino. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta. L'aura dura finché non viene annullata.", nil, 0xb2ca9267, nil, "um" },
 })

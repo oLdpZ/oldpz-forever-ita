@@ -16,6 +16,7 @@ WFJ.Data.add("spell", {
   [436537] = { nil, "Congelato.", nil, 0x16ac477b, "mu" },
   [436609] = { "Incidi sul tuo mantello la runa Ventaglio di Lame:\n\n$I1\nScaglia istantaneamente entrambe le armi contro tutti i bersagli entro $N1 m, infliggendo il $N2% dei danni dell'arma con i pugnali e il $N3% con tutte le altre armi.", nil, 0x35afb930, nil, "um" },
   [436739] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [436817] = { nil, "Infligge $N1 danni da fuoco ogni $D1.", nil, 0xe0649799, "mu" },
   [436831] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [436937] = { "Cura un bersaglio alleato di $N1 e di altri $N2 in $D1.", "Cura di $N1 ogni $N2 s.", 0x1430248d, 0x9eb1427b, "uu" },
   [436938] = { "Cura un bersaglio alleato di $N1 e di altri $N2 in $D1.", "Cura di $N1 ogni $N2 s.", 0x1430248d, 0x9eb1427b, "uu" },

@@ -20,4 +20,5 @@ WFJ.Data.add("spell", {
   [408689] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
   [408690] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
   [408693] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
+  [408916] = { nil, "All'interno di un blocco di ghiaccio che si rigenera rapidamente.", nil, 0xeedfae42, "mu" },
 })

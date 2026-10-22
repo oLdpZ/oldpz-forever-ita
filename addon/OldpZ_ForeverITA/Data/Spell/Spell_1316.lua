@@ -31,6 +31,8 @@ WFJ.Data.add("spell", {
   [1316865] = { "Brucia il bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco ogni $D1.", 0x9a11784e, 0x5a5656de, "uu" },
   [1316872] = { "Sbloccato in una patch futura.", nil, 0x3e092a44, nil, "um" },
   [1316991] = { "Cura $N1 salute ogni $D1 per $D2.", nil, 0x1b4918cf, nil, "um" },
+  [1316992] = { "Cura ogni $D1 per $D2.", nil, 0x032d56b0, nil, "um" },
   [1316993] = { "Infligge $N1 danni da sacro ogni $D1.", nil, 0xcfa7974f, nil, "um" },
+  [1316994] = { "Infligge danni da sacro ogni $D1.", nil, 0x703b6482, nil, "um" },
   [1316995] = { "Scaglia una raffica di luce sacra sul bersaglio, infliggendo $N1 danni da sacro a un nemico o curando un alleato di $N2, all'istante e ogni $D1 per $D2.", nil, 0x761a741e, nil, "um" },
 })

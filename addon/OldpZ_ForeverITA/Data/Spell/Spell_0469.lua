@@ -36,6 +36,7 @@ WFJ.Data.add("spell", {
   [469753] = { "Incanta in modo permanente uno scudo per fornire +$N1% di probabilità di blocco.", nil, 0x72a33c60, nil, "um" },
   [469793] = { "Incute paura in un nemico, facendolo fuggire in preda al terrore per un massimo di $D1. Può essere impaurito solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x7ea26162, 0xfa67e4a8, "uu" },
   [469828] = { "Aumenta la Forza di $N1 per $D1.", "Forza aumentata di $N1.", 0xeb1f7146, 0x90d8a2f8, "uu" },
+  [469865] = { nil, "Non è ancora abbastanza caldo! Più calore!", nil, 0x9987dc33, "mu" },
   [469879] = { "Incute paura in un nemico, facendolo fuggire in preda al terrore per un massimo di $D1. Può essere impaurito solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x7ea26162, 0xfa67e4a8, "uu" },
   [469990] = { "Evoca una pioggia di lava che brucia tutti i nemici in un'area bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco ogni $D1.", 0xee6af47d, 0x5a5656de, "uu" },
 })

@@ -59,6 +59,7 @@ WFJ.Data.add("spell", {
   [1309550] = { "I tuoi attacchi hanno una probabilità di attivare Wax, che infligge $N1 danni da arcano, o Wane, che conferisce $N2 Forza per $D1.", nil, 0x92f3b255, nil, "um" },
   [1309551] = { "Aumenta del $N1% i danni da fuoco subiti e del $N2% la velocità di movimento per $D1.", "Danni da fuoco subiti aumentati del $N1%.\nVelocità di movimento aumentata del $N2%.", 0x11d99fba, 0xa677b51a, "uu" },
   [1309595] = { "Una parola di vincolo oscuro che infligge $N1 danni da ombra al bersaglio. Se il bersaglio non viene ucciso da Parola d'Ombra: Morte, subisci danni di contraccolpo pari al $N2% della tua salute massima.", nil, 0xc614e8d0, nil, "um" },
+  [1309598] = { "Una parola di oscuro vincolo che infligge danni da ombra al bersaglio. Se il bersaglio non viene ucciso da Parola d'Ombra: Morte, l'incantatore subisce danni pari a quelli inflitti al bersaglio.", nil, 0xdc462015, nil, "um" },
   [1309618] = { "Evoca un Windwell portatile tutto tuo per $D1.", nil, 0xf17e3f13, nil, "um" },
   [1309631] = { "Aumenta il tuo Spirito del $N1%.", nil, 0x531062da, nil, "um" },
   [1309633] = { "Una parola di vincolo oscuro che infligge $N1 danni da ombra al bersaglio. Se il bersaglio non viene ucciso da Parola d'Ombra: Morte, subisci danni di contraccolpo pari al $N2% della tua salute massima.", nil, 0xc614e8d0, nil, "um" },

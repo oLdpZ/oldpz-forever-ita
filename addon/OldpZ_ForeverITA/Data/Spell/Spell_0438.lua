@@ -6,4 +6,6 @@ WFJ.Data.add("spell", {
   [438538] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },
   [438539] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0x5b233dd6, nil, "um" },
   [438550] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0x5b233dd6, nil, "um" },
+  [438710] = { nil, "Infligge $N1 danni da fuoco ogni $D1.", nil, 0xe0649799, "mu" },
+  [438938] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
 })

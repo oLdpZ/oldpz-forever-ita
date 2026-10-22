@@ -33,4 +33,5 @@ WFJ.Data.add("spell", {
   [416090] = { "Incidi sul tuo elmo la runa Uccisione Rapida:\n\n$I1\nRiduce il tempo di recupero della tua abilità Rapidità di Tiro di $D1. Inoltre, quando uccidi un nemico non banale o questi muore mentre è afflitto dal tuo Morso del Serpente, ottieni Uccisione Rapida, che aumenta del $N3% i danni della tua prossima abilità di tiro entro $D2.", nil, 0xbecee8c6, nil, "um" },
   [416091] = { "Incidi sui tuoi gambali la runa Sniper Training:\n\n$I1\nQuando non ti sei mosso nell'ultimo $D1, hai il $N2% di probabilità di ottenere Sniper's Aim, cumulabile fino a $N3 volte. Sniper's Aim aumenta del $N4% la probabilità di critico delle tue abilità di tiro.", nil, 0x5849af1c, nil, "um" },
   [416093] = { "Incidi sui tuoi bracciali la runa Raptor Fury:\n\n$I1\nAssalto del Raptor aumenta del $N1% i danni inflitti da Assalto del Raptor e Morso della Mangusta per $D1, effetto cumulabile fino a $N3 volte. Le applicazioni successive non prolungano la durata di questo effetto.", nil, 0x34e5d6c2, nil, "um" },
+  [416288] = { "Combina con altri $N1 pezzi per ottenere la mappa completa.", nil, 0xdcc7f5cf, nil, "um" },
 })

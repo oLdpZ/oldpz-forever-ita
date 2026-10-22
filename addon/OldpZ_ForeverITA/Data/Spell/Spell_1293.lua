@@ -17,6 +17,8 @@ WFJ.Data.add("spell", {
   [1293421] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [1293455] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
   [1293654] = { "Silenzia un nemico, impedendogli di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x92e27777, 0x6d133d61, "uu" },
+  [1293693] = { nil, "Danni subiti dagli effetti periodici di danni da ombra dell'incantatore aumentati del $N1%.", nil, 0xe0d6f2ae, "mu" },
+  [1293694] = { nil, "Danni subiti dagli effetti periodici di danni da ombra dell'incantatore aumentati del $N1%.", nil, 0xe0d6f2ae, "mu" },
   [1293700] = { nil, "Rigenera $N1 mana ogni $D1.", nil, 0xca58e542, "mu" },
   [1293711] = { "+$N1 potenza d'attacco contro le bestie.", nil, 0x2e7564c4, nil, "um" },
   [1293733] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },

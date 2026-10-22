@@ -34,6 +34,7 @@ WFJ.Data.add("spell", {
   [467642] = { "Ferisce il bersaglio, infliggendo $N1 danni.", nil, 0xdaa3fed4, nil, "um" },
   [467647] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [467651] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
+  [467667] = { "Gli attacchi in mischia dello Spirito d'Ombra sottraggono energia al bersaglio e la convertono in mana per il suo padrone.", "Converte i danni da ombra in mana.", 0x63a87b32, 0x41ef7edc, "uu" },
   [467740] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [467828] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [467830] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },

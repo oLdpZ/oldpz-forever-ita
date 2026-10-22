@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [421248] = { "L'incantatore è circondato dalle ombre. Quando un incantesimo o un attacco in mischia o a distanza colpisce l'incantatore, l'attaccante subisce $N1 danni da ombra. Gli attaccanti possono subire danni solo una volta ogni pochi secondi. Questi danni non generano minaccia. $N2 cariche. Dura $D1.", "Infligge $N1 danni da ombra all'attaccante quando vieni colpito. Questi danni non generano minaccia. $N2 cariche.", 0x3a134e5f, 0x49d9a232, "uu" },
+  [421425] = { "Combina con altri $N1 pezzi per ottenere la mappa completa.", nil, 0xdcc7f5cf, nil, "um" },
+  [421596] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
 })
