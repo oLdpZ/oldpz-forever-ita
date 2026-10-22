@@ -1730,7 +1730,7 @@ WFJ.Data.add("ui", {
   ["SharedString:1146"] = { "Vuoi davvero acquistare una scheda della Banca per:", 0x0af685f1, "." },
   ["SharedString:1152"] = { "Scheda 6", 0xcf98f470, "." },
   ["SharedString:1159"] = { "Classico", 0x1ccdf9b2, "." },
-  ["SharedString:1318"] = { "Spendi altri %d |4punto:punti; nel ramo %s del passato", 0xe5d1e012, "." },
+  ["SharedString:1318"] = { "Spendi altri %d |4punto:punti; nel ramo %s del retaggio", 0xe5d1e012, "." },
   ["SharedString:911"] = { "Spendi altri %d |4punto:punti; |4nel talento:nei talenti; %s", 0x45dbdaeb, "." },
   ["SharedString:992"] = { "Scheda 1", 0xcf98f46b, "." },
   ["SharedString:993"] = { "Scheda 2", 0xcf98f46c, "." },
