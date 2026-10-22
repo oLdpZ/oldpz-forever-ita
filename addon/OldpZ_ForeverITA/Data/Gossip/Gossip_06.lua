@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["0659b80136ed9b38"] = { "Uff! Ecco un altro carico di provviste, Harlan. Devono vendere come il pane!", "." },
   ["0659bd0dec07e61b"] = { "Intrusi!", "." },
   ["0663eca114ae585a"] = { "Touché...", "." },
+  ["068164b17643f77c"] = { "Hai i due pettorali corazzati e i guanti di ⟦Turtle Scale=Scaglie di Tartaruga⟧? E non dimenticare la vite selvaggia!\n\nGià con i primi schemi impariamo che i fondamenti della forma si trasferiscono bene a indumenti più difficili. Anche se sono oggetti diversi, la forma dei pettorali corazzati di ⟦Turtle Scale=Scaglie di Tartaruga⟧ ti prepara ai dettagli necessari per fare una veste di Cuoio Selvatico.\n\nMan mano che procedi con le lezioni, le abilità che ti insegno diventeranno arte.", "." },
   ["0682a1b5f00fb9d7"] = { "Salve di nuovo, {name}. Pensavi che ti avrei scordato?\n\nSapevo che non l'avresti pensato. Sei <un/una> {class} <sveglio/sveglia>, che riconosce una persona dalla memoria perfetta quando la vede.", "." },
   ["0689cdf0d03b58da"] = { "Temeva che il suo potere si stesse indebolendo, che presto persino noi, le ultime delle sue preziose gemme dell'anima, saremmo svanite e morte.", "." },
   ["0689f189ee903c38"] = { "Se cerchi un volo per tornare a ⟦Thunder Bluff=Picco del Tuono⟧, dovresti parlare con il mio collega tauren, Bunthen Plainswind.", "." },

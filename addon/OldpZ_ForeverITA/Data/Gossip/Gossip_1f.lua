@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["1fab3bb028163bea"] = { "Lo farò con o senza il tuo aiuto, Loramus.", "." },
   ["1fb119e6dc685d0b"] = { "Che esplosione fantastica! Hai visto quant'era grande?", "." },
   ["1fb561518e4c2559"] = { "Cosa?! Come osi!", "." },
+  ["1fb7c5378b36a862"] = { "<Senza alzare lo sguardo dalle catene, Lotwil tende una mano e agita le dita con impazienza.>\n\nL'ingranaggio, {name}, l'ingranaggio!", "." },
   ["1fb82e6bb6b5ac94"] = { "Molti sono i sentieri della Madre Terra. Ovunque tu decida di viaggiare, possa lei vegliare su di te.", "." },
   ["1fc7847f62cdbd83"] = { "Shadowgale Forest!\n\nÈ infestata! Infestata, com'è vero che il cielo è blu! Terribili spiriti della foresta, uccelli del terrore con artigli grossi come il tuo braccio! È... un incubo!\n\n<Swimmers si volta verso Donaal e rutta sonoramente.>\n\nNON SONO VANEGGIAMENTI, DONAAL!", "." },
   ["1fc7ac8488767215"] = { "Raccontami una storia, Skorn.", "." },

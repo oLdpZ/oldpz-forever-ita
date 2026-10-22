@@ -44,6 +44,7 @@ WFJ.Data.add("gossip", {
   ["adb781452801659a"] = { "Il ⟦Stormpike Graveyard=Cimitero dei Piccatonante⟧ è scavato nelle montagne, oltre il ponte a est di Dun Baldar.\n\nAl momento è controllato dall'⟦Horde=Orda⟧.", "." },
   ["adb7d7d82343f5cc"] = { "Ysida è viva grazie al tuo coraggio, {name}. Ho un grande debito con te e ti aiuterò per quanto è in mio potere.", "." },
   ["adc334ce030b1853"] = { "Oh, <un/una> <sacerdote/sacerdotessa>, eh? Be', il buon vecchio Maxan lo trovi di sicuro a farsi un goccio alla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, se ti serve un po' d'addestramento.", "." },
+  ["add5101a48e83ba3"] = { "Fa' ciò che ti chiedo. Dimostrami di essere alleat<o/a> dei Magram!", "." },
   ["addc214cf7e9734d"] = { "Il mondo è in debito con te e con i tuoi alleati, {name}.", "." },
   ["addf19af9e685dd9"] = { "<Mio/Mia> <signore/signora>, ti prego, lasciami vivere abbastanza da vederti purificare questo mondo dagli infedeli.", "." },
   ["ade1f912304b0272"] = { "Da qui ce la faccio. Grazie, {name}! E parla con il mio datore di lavoro per una ricompensa!", "." },

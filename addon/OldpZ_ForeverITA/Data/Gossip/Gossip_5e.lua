@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["5e86cd8343b297e9"] = { "Ciao, cosa desideri?", "." },
   ["5e8804dc898d1917"] = { "Feccia dei Piccatonante! Nella mia rocca?! Uccideteli tutti!", "." },
   ["5e8a911b2fc25773"] = { "E ora sai tutto ciò che c'è da sapere, mortale...", "." },
+  ["5e8d31de0cc97648"] = { "Spero che tu ti sia res<o/a> utile al nostro caro amico, lo speziale Faustin.", "." },
   ["5e8f87f8889d08e9"] = { "Il capitano Galvangar è il fidato braccio destro di Drek'Thar. Guida le forze dell'⟦Horde=Orda⟧ dal ⟦Iceblood Garrison=Presidio di Brinarossa⟧, nella parte meridionale del ⟦Field of Strife=Pian della Discordia⟧.\n\nIl capitano Galvangar è stato ucciso.", "." },
   ["5e9e58d798f9d8aa"] = { "Ora vive al fianco dell'imperatore Thaurissan. La tiene sotto una sorta di potente incantesimo che le altera la mente... e io me ne sto qui, del tutto impotente.", "." },
   ["5ea8de58627aa9af"] = { "La natura fornisce tutto ciò di cui abbiamo bisogno. Parla con Komin ⟦Winterhoof=Zoccolo Artico⟧ a Holistic Herbalism, sull'altura di mezzo.", "." },

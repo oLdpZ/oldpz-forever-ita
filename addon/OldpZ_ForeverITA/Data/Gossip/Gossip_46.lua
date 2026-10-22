@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["460bc3d369626d65"] = { "I Sarkhoff... a volte i Sarkhoff vengono a trovarci. Sono brave persone.", "." },
   ["4611564be7160cd3"] = { "Proteggete il magistrato a ogni costo. Potrebbero arrivare da qualunque direzione!", "." },
   ["46195ba318452c14"] = { "Patetico...", "." },
+  ["462f67778bbf9813"] = { "È morto! Khan Hratha è morto! E ora i ⟦Maraudine=Maraudon⟧ cadranno! Quando i Gelkis governeranno questa terra, {name}, ci ricorderemo di te. E gli spiriti della terra canteranno il tuo nome per sempre.", "." },
   ["463122705acb1ea2"] = { "I primi passi della nostra lotta contro il Flagello procedono bene. Abbiamo ottenuto alcuni successi, e spero che il mio aiuto possa servirti a portare nuovi successi in battaglia.", "." },
   ["46337db68f6ae336"] = { "Fermi! Infedeli!", "." },
   ["4633c6cd0479b3b4"] = { "Shenthul, ho perso il fischietto e non ho più razzi di segnalazione. Aiuto, ti prego!", "." },

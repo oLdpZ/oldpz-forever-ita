@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("quest", {
   [96136] = { "Il richiamo dell'aria", "Trova Prate Cloudseer a ⟦Thousand Needles=Millepicchi⟧.", nil, nil, nil, 0x8f4acf86, 0x7a57cbe0, nil, nil, nil, "..mmm" },
+  [96222] = { nil, nil, nil, nil, nil, 0xa9d55f09, nil, nil, nil, nil, "emmmm" },
   [96243] = { "Il richiamo della terra", "Trova Teo Hammerstorm a Dun Morogh.", "È ora che tu dia ascolto alla terra, <valoroso/valorosa> <Sciamano/Sciamana>. Gli elementi già ti pizzicano la pelle, ma una volta che avrai parlato con la pietra, il suolo stesso si farà saldo sotto i tuoi piedi... e nella tua anima.\n\nCerca Teo Hammerstorm nella ⟦Coldridge Valley=Valle Crestafredda⟧. Lo troverai dentro ⟦Anvilmar=Forgiamara⟧, una roccaforte forgiata con martello, fuoco e volontà.", nil, nil, 0xe316c17f, 0xf8e81384, 0x13c0eb8d, nil, nil, "...mm" },
   [96877] = { "Lo zoccolo di Halikor", "Consegna lo Halikor's Hoof a Orgrimmar.", "L'enorme zoccolo è la prova della tua vittoria sulla possente lucertola.", "Sì?", "Che trofeo, {class}! Dev'essere stato un bel combattimento!", 0x795887e1, 0xda5a81ff, 0x4475e6e3, 0x0c07a888, 0x6e0703c3, "....." },
 })

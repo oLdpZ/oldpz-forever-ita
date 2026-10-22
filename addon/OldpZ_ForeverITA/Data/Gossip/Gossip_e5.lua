@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["e51cabf03a640a4b"] = { "Se vuoi andare avanti, dobbiamo prima costruire una prigione per contenere la bestia.", "." },
   ["e51e9ac87901057d"] = { "Se ti hanno silenziato, o hai domande sulla procedura di silenziamento e riattivazione, visita... zzzzttt!!", "." },
   ["e51f8c56ede28d36"] = { "Mio! Mio! Mio! ⟦Gizlock=Tagliafizz⟧ è il signore di questo dominio! Non rivelerai mai la mia presenza!", "." },
+  ["e5274aa273553290"] = { "Devi affrettarti verso lo Stagno dei Draghi, {name}. Con le uova di Onyxia sparse per il ⟦Wyrmbog=Brago dei Dragoni⟧, ci troveremo davanti a un numero schiacciante di nemici se non si fa qualcosa in fretta.\n\nDistruggi le sue uova! Non lasciare che la piaga dei draghi neri si diffonda nella nostra terra!", "." },
   ["e5286cb381fbc131"] = { "%s si riaccende grazie al calore di un altro Core Hound!", "." },
   ["e52c83f5734496ee"] = { "Ma dove, nelle Terre Esterne, sono finite quelle spedizioni? Sono giorni che mi fanno aspettare!", "." },
   ["e52da0f002e5066b"] = { "Zul'jin un giorno tornerà, {race}. Ricorda le mie parole. Fino ad allora, manteniamo tutti le nostre posizioni e facciamo il possibile per preservare la popolazione dei troll della foresta.\n\nDetto questo, come capocaccia del ⟦Revantusk Village=Villaggio degli Zannatorta⟧, è mia responsabilità garantire che il mondo intorno a noi sia sicuro per viverci.\n\nLe bestie di questa zona vanno tenute sotto controllo.\n\nCerchi lavoro?", "." },

@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["7b3746a6fa1054a0"] = { "Ok, si parte!", "." },
   ["7b37b76d848b7700"] = { "Se ho da fare? Che cosa vorresti dire? Credi che stia qui tutto il giorno a girarmi i pollici? Se sei qui per comprare qualcosa, parla con Handor.", "." },
   ["7b3ea0b1ce0be3e9"] = { "E cosa ti ha portato a Naxxramas?", "." },
+  ["7b4404a499e7d14c"] = { "Ci hai pensato, vero? Sei <un/una> {class} in gamba se accetti questo patto: tu e io avremo ciò che vogliamo entrambi, e Droffers and Son Salvage crederanno di avere ciò che vogliono loro.", "." },
   ["7b4b7418fe6a8683"] = { "Ahah! Perfetto!", "." },
   ["7b4c0c7cdecf3b44"] = { "L'⟦Argent Dawn=Alba d'Argento⟧ ti saluta, {class}. Sono Hasana, una dei pochi intendenti autorizzati per l'equipaggiamento e il materiale dell'Alba.\n\nMentre combatti il male su nostro incarico, guadagnandoti nel frattempo il nostro rispetto e la nostra fiducia, otterrai Emblemi del Valore dall'ufficiale Garush. Gli emblemi servono a due scopi: usali per migliorare la tua posizione nei nostri ranghi, oppure come moneta per acquistare oggetti speciali.\n\nMan mano che migliorerai la tua posizione presso l'Alba, scoprirai che avrai a disposizione sempre più oggetti.", "." },
   ["7b4f3c0bf43f3d21"] = { "Alla salute! Non troverai birra migliore da nessuna parte!", "." },

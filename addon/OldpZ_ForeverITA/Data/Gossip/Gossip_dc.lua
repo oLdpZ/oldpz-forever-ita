@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["dc65ba7dff21703a"] = { "Ben <trovato/trovata>, {name}. È bello vedere che druidi come te prendono parte attiva alla protezione dei boschetti.", "." },
   ["dc688d6afbacd0f0"] = { "Ti presento il ⟦Libram of Resilience=Compendio sulla Resilienza⟧.", "." },
   ["dc6ec8139ae1e445"] = { "Non costringetemi ad agire, ragazzini! Userò le vostre pelli per foderarmi gli stivali.", "." },
+  ["dc6f78ab4f426685"] = { "Voglio le loro teste, {name}, non scuse.", "." },
   ["dc75077e9ec884f3"] = { "Guidi gli spiriti nell'acciaio a proteggere e difendere con un'abilità molto superiore alla mia. L'allievo ha superato il maestro, e ora devo mandarti dove la tua istruzione potrà continuare. {name}, devi cercare Shayis Steelfury a Orgrimmar. È la miglior Fabbro d'Armature che abbia mai conosciuto, e può insegnarti molto.", "." },
   ["dc758d1e7f91b06c"] = { "Allora, per come la vedo io, {name}, abbiamo due possibilità per uscire da questa caverna.\n\nPossiamo uscire di soppiatto: io uso il mantello che mi hai dato e tu dovrai cavartela per conto tuo; oppure, e questa potrebbe essere la scelta più difficile viste le mie ferite, ci apriamo la strada combattendo spalla a spalla.\n\nLascio decidere a te, visto che conosci i tuoi punti di forza meglio di me.", "." },
   ["dc8ca5f2e9a5c28a"] = { "Ho scoperto questa grotta il nostro primo giorno qui. Credo che l'energia della pietra possa tornarci utile.", "." },

@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["0a044ece3562b58d"] = { "Altre bestie in arrivo!", "." },
   ["0a04d4ba15136a70"] = { "La Celebrazione della Luna quest'anno è davvero magnifica!", "." },
   ["0a098c3db42eb78b"] = { "Possibile che quello laggiù nella Fossa Infausta sia The Razza? Sarà emozionante!", "." },
+  ["0a1289be26c713b9"] = { "Non interrompere il processo di incanalamento.", "." },
   ["0a13633ca64374e7"] = { "Insegnami le vie degli spiriti.", "." },
   ["0a1a96cb43c9bd45"] = { "La Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧ è all'orizzonte, {class}, e in preparazione l'⟦Alliance=Alleanza⟧ ha chiesto alla mia famiglia di raccogliere una buona quantità di Cuoio Leggero per lo sforzo bellico. Su $2061w richiesti, al momento ne abbiamo $2060w. Hai l'aria di chi potrebbe dare una mano.", "." },
   ["0a20f312814b55e4"] = { "Uldaman si trova all'estremità settentrionale delle ⟦Badlands=Maleterre⟧.", "." },

@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["3367483eb768708e"] = { "Sì, ti prego.", "." },
   ["336f3b1ce8adb47a"] = { "Non voglio avere niente a che fare con ⟦Silithus=Silitus⟧, i Qiraji e men che meno con quei dannati draghi!", "." },
   ["337740bc70d1edef"] = { "Ecco il segatronchi rubato! Fermatelo, o Lugwizzle ci farà la pelle!", "." },
+  ["3378040a40a38f41"] = { "Ehilà, {name}. Che notizie porti dall'accampamento dei Velerosse a sud?", "." },
   ["3379d4274319308a"] = { "Sì, Remulos. Prepara le razze mortali.", "." },
   ["33854260995a1532"] = { "Perché mi hai ucciso, {name}?", "." },
   ["33858108e73289d2"] = { "Non lasciate passare nessuno!", "." },

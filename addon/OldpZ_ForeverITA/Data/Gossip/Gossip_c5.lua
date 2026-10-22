@@ -46,6 +46,7 @@ WFJ.Data.add("gossip", {
   ["c5d437ab009c8a14"] = { "%s crolla vedendo morire il suo padrone!", "." },
   ["c5d7cd0e291638d5"] = { "È molto su cui riflettere.", "." },
   ["c5db88a9461e54f5"] = { "Allora è Bowen Brisboise che cerchi. Lo troverai in casa sua, a sud-ovest di Brill, appena oltre il ponte, al ⟦Cold Hearth Manor=Maniero Cuorduro⟧.", "." },
+  ["c5dc9fc26723e352"] = { "Non ti sei nemmeno fermat<o/a> a darti una ripulita dopo aver lasciato Uldaman, vero? Sei venut<o/a> dritt<o/a> qui, al diavolo il tanfo di sotterraneo che ti porti dietro. Be', speriamo che questa visita sia solo maleodorante, e non pure inutile.\n\nHai la sorgente energetica per la collana?", "." },
   ["c5dd1896182ea397"] = { "Ho bisogno di addestramento.", "." },
   ["c5f4bf6adbff0e6a"] = { "Servitori di Hakkar, ascoltate il vostro Dio. La sacralità di questo tempio è stata violata. Gli invasori calpestano il suolo sacro! L'Altar of Blood va protetto. Uccideteli tutti!", "." },
   ["c5fb52925909d111"] = { "Dove posso trovare la ⟦Crystal Restore=Guarigione del Cristallo⟧?", "." },

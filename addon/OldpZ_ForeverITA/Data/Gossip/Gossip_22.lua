@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["22b67b17851ec7c7"] = { "Abbiamo fame di vendetta.", "." },
   ["22c0cffb3350b748"] = { "%s scuote la testa con delusione.", "." },
   ["22c7db75d4734b0a"] = { "Il tuo travestimento non mi inganna, tentatrice. È giunta la tua ora.", "." },
+  ["22c8c3a1223a4cf0"] = { "Ti prego, abbi pietà di me! Ho informazioni che vanno oltre i confini dell'alleanza. Non sono certo un simpatizzante dell'⟦Horde=Orda⟧, ma è in corso un tradimento politico che deve essere svelato!", "." },
   ["22caaa705eca4eaa"] = { "Silenzio, servo! Avrò la mia vendetta! Morte a ⟦Stormwind=Roccavento⟧! Morte per pollo!", "." },
   ["22e176cf0c106888"] = { "Prendete una corda!", "." },
   ["22e899d1750412b6"] = { "Ehi, salve, signore mie. Avete sentito della nuova piaga?", "." },

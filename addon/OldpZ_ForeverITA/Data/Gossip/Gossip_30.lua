@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["300e6de1fa9c8669"] = { "Chi osa rubare la mia preziosa cavalcatura? Pagherai per la tua insolenza, mortale!", "." },
   ["300efbc6080a2a54"] = { "Ora sei tu a comandare! Lunga vita al nuovo re dei Gordok!", "." },
   ["3013b7a923a304ac"] = { "%s va su tutte le furie!", "." },
+  ["301772277717da56"] = { "Allora, <ispettore/ispettrice> apprendista {name}, il vecchio Pestlezugg ha pronto quel rapporto?", "." },
   ["3021d6081df41e2d"] = { "La ⟦Valley of Trials=Valle delle Sfide⟧ temprerà anche i più deboli fino a farne guerrieri degni di unirsi all'⟦Horde=Orda⟧. Chi non saprà superare le sue prove sarà lasciato a cuocere sotto il sole cocente del deserto.", "." },
   ["3023e2c8cc134c7c"] = { "%s si tira su per il naso un granello di polvere dei sogni...", "." },
   ["302845bad1443036"] = { "Hai sentito, <viaggiatore/viaggiatrice>. Parlami di nuovo quando sarai <pronto/pronta> a parlare con Belgrum.", "." },

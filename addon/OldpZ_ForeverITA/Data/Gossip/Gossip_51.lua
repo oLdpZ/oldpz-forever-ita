@@ -9,6 +9,7 @@ WFJ.Data.add("gossip", {
   ["514585e49a114ecd"] = { "Nani!!! Ora mi stai dicendo che i nani in origine discendevano dai Terrigeni?!", "." },
   ["5147dfd0f490920c"] = { "A volte penso che ci sia un grosso nuvolone grigio in cielo che ci fa piovere addosso solo sfortuna. Prima ci hanno cacciati dalla nostra terra, e ora non riusciamo nemmeno ad andarcene dalle ⟦Westfall=Marche Occidentali⟧. È tutto un disastro. Bisogna fare qualcosa.", "." },
   ["514b489bfd068a7f"] = { "Interessante, molto interessante. L'hai trovato a Durotar, {name}?", "." },
+  ["51546d57af0c4ca5"] = { "Qual è il problema, {name}? Dobbiamo attaccare prima che lo facciano i ⟦Bloodsail Buccaneers=Bucanieri Velerosse⟧!", "." },
   ["51558f6b800becfb"] = { "Allora, mettiamo che io trovi questa pelle: cos'altro ti servirebbe e cosa potresti fare davvero?", "." },
   ["5155db4ac9a06adf"] = { "Se ti interessa cucire il cuoio, sei proprio nel posto giusto. Faldron e Telonis sono veri artisti, e spero di imparare molto da loro.", "." },
   ["5162b0bf49dfc611"] = { "Se usiamo la sequenza giusta dovremmo cavarcela. Ci vorrà solo un bel po' di studio prima di cominciare.", "." },

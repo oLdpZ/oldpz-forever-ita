@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["ff2d4d26f84284d8"] = { "Molti considerano il bastone un'arma inferiore. Sfido chiunque la pensi così a mettere alla prova la sua forza contro il mio bastone.", "." },
   ["ff36d45a60800ef1"] = { "Interessante... continua, John.", "." },
   ["ff4bccc32175dabd"] = { "%s inizia il rituale.", "." },
+  ["ff4eb55eba0beeaa"] = { "Sono paziente. Paziente ed eterno come un'antica pietra kank di Draenor. Gli uomini-pesce non oltrepasseranno i nostri confini, non finché sarò in piedi. Se avessimo un esercito ai nostri ordini, ripulirei questo mondo e tutti gli altri dalla loro presenza. Sento l'odio ribollire solo a parlarne.", "." },
   ["ff54dc6a6bdc970f"] = { "Ehi, Rocknot!", "." },
   ["ff56d459547fc19c"] = { "Ce l'hai il sapta, <fratello/sorella>?\n\nConosco un altro che ha avuto problemi dopo aver sconfitto lo spirito dell'acqua corrotto: pare che abbia aspettato troppo e sia uscito dal mondo degli spiriti troppo presto pe' i suoi gusti. Non vorrei che succedesse a qualcun altro, quindi aspetterò qui ancora un po' per essere sicuro che nessun altro abbia bisogno del mio aiuto.", "." },
   ["ff597f7b055e1b8b"] = { "Beccati questa, arpia rognosa! Hyaa!", "." },

@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["1501010a03ee67d6"] = { "Questo dovrebbe bastare.", "." },
+  ["1502ec7f6133dd71"] = { "Khan Hratha è morto? Hai il frammento della chiave?", "." },
   ["15053dbbfe990ab2"] = { "Attenzione! <Il/La> {race} {name} ci attacca al ⟦Winterax Hold=Covo degli Asciafredda⟧!", "." },
   ["150faeb72bfe5169"] = { "Il Flagello è qui! Scappate! Mettetevi in salvo!", "." },
   ["1512c9ba11f0aa85"] = { "Gloria e sangue per gli Dei Antichi!", "." },

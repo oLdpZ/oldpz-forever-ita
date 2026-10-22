@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["65002d110a8a4429"] = { "Le tue azioni ci disonorano tutti, {class}. Mi addolora doverti riempire di botte!", "." },
   ["650bcd87333d3c6f"] = { "{name} ha assaltato la segheria!", "." },
+  ["650cdeab120f87d3"] = { "Cosa ti porta al ⟦Nethergarde Keep=Forte di Guardiafatua⟧, {race}?", "." },
   ["6511dd061fc4c28d"] = { "Dove vuoi volare?", "." },
   ["6515c9041fba6d63"] = { "Gradisce qualcos'altro da mangiare, signore?", "." },
   ["651be20f5c5c07b7"] = { "Non proseguire! Torna indietro, torna indietro finché sei in tempo!", "." },

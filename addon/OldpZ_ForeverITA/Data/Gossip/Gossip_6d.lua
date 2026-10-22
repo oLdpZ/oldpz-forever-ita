@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["6d87e40578b8ecba"] = { "Forse un giorno Saru Steelfury ti insegnerà a fare un'ascia buona come la mia. Lo trovi alla Burning Anvil, nella ⟦Valley of Honor=Valle dell'Onore⟧, scendendo per il sentiero a destra dopo la Red Canyon Mining.", "." },
   ["6d8c179d320e5185"] = { "Leccapiedi, tutti quanti!", "." },
   ["6d8f15944a432a50"] = { "L'etichetta su questo regalo dice: \"Dai 10 anni in su.\"", "." },
+  ["6d94a2b9ec51a58f"] = { "Il mastro mercante è ancora vivo?", "." },
   ["6d94ec63d14130a5"] = { "Cosa potrebbe esserci di peggio della morte?", "." },
   ["6d95ccaae73f47ac"] = { "Ho perso la mia ⟦Band of Vaulted Secrets=Vera dei Segreti Ignoti⟧. Puoi sostituirmela?", "." },
   ["6d993a94f3d5da4f"] = { "Maestro degli ippogrifi", "." },

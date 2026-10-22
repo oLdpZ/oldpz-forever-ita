@@ -94,6 +94,7 @@ quest	87	title	e78fd7d989b60387	Goldtooth
 quest	117	title	06ba24f24f6beb60	Thunderbrew
 quest	172	title	70336621d7910786	Children's Week
 quest	200	title	2543b951b33d1d3a	Bookie Herod
+quest	206	title	46e076d19515190f	Mai'Zoth
 quest	227	title	0593d35442033c77	Morgan Ladimore
 quest	228	title	2fb5d726d7983799	Mor'Ladim
 quest	249	title	64aa5799b5a78290	Morganth
@@ -103,11 +104,15 @@ quest	425	title	d479936791d77493	Ivar the Foul
 quest	446	title	57daa6c7e7770a98	Thule Ravenclaw
 quest	486	title	b9e1d498450fca23	Ursal the Mauler
 quest	503	title	990985e43a3f9b49	Gol'dir
+quest	507	title	e7c398ac64df6440	Lord Aliden Perenolde
 quest	535	title	f2b724fc23f3f2fd	Valik
 quest	610	title	57decda3e1eadc74	"Pretty Boy" Duncan
 quest	628	title	f1b790154e1200ff	Excelsior
 quest	638	title	4e0c58beef287f8e	Trollbane
+quest	645	title	c3a3e914ee3ee601	Trol'kalar
+quest	646	title	c3a3e914ee3ee601	Trol'kalar
 quest	687	title	fb09538dd1d7f1fc	Theldurin the Lost
+quest	739	title	6c30dcfa127e5c38	Murdaloc
 quest	766	title	c53484ace38eaf6e	Mazzranache
 quest	790	title	c29f8f29bc8f6333	Sarkoth
 quest	804	title	c29f8f29bc8f6333	Sarkoth
@@ -154,8 +159,11 @@ quest	1365	title	139e351372f74914	Khan Dez'hepah
 quest	1373	title	369f906c68117f61	Ongeku
 quest	1374	title	67d27edabd2d5d44	Khan Jehn
 quest	1375	title	bf1765da25d7e30a	Khan Shaka
+quest	1380	title	a9d55f09bf36ff26	Khan Hratha
+quest	1381	title	a9d55f09bf36ff26	Khan Hratha
 quest	1392	title	82434af7bca95009	Noboru the Cudgel
 quest	1418	title	4fdf2d12300e11eb	Neeka Bloodscar
+quest	1451	title	18625738bf504af7	Rhapsody Shindigger
 quest	1468	title	70336621d7910786	Children's Week
 quest	1483	title	6cf0b9999a7e24a0	Ziz Fizziks
 quest	1489	title	034c803e1d5e2251	Hamuul Runetotem
@@ -186,11 +194,17 @@ quest	2379	title	b5f8d527207a3b52	Zando'zan
 quest	2459	title	236ef724fe8a8fa6	Ferocitas the Dream Eater
 quest	2499	title	a9dba359f59ddca3	Oakenscowl
 quest	2561	title	dcee0406ba871b99	Druid of the Claw
+quest	2622	completion	b47cdba15fa794e4	Swamp tal... talk.. talker...
 quest	2760	title	569a9c647597cb06	The Mithril Order
+quest	2770	title	020c88eb807d8159	Gahz'rilla
+quest	2864	title	862f6956a0e183c7	Tran'rek
 quest	2926	title	f0c05f189723b975	Gnogaine
+quest	2990	title	544cdf02a1f6660d	Thadius Grimshade
 quest	3115	title	8ca3cdd0a8470088	Tainted Memorandum
+quest	3161	title	0b56dac1a9d11b17	Gahz'ridian
 quest	3261	title	4d1b9bdc7c17663f	Jorn Skyseer
 quest	3301	title	6ec1c3d12eb8306b	Mura Runetotem
+quest	3379	title	a980b06f5b394747	Shadoweaver
 quest	3903	title	e1f36bcd30122caf	Milly Osworth
 quest	3921	title	60e1e274ce40d0cf	Wenikee Boltbucket
 quest	3922	title	048fd5a7df4046f9	Nugget Slugs
@@ -231,3 +245,4 @@ quest	6388	title	3b5086d23620ac74	Gryth Thurden
 quest	6641	title	3efe9ea2167a9f0d	Vorsha the Lasher
 quest	93128	title	67d27edabd2d5d44	Khan Jehn
 quest	93196	title	67d27edabd2d5d44	Khan Jehn
+quest	96222	title	a9d55f09bf36ff26	Khan Hratha
