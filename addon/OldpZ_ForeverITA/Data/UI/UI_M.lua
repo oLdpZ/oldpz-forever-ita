@@ -29,6 +29,7 @@ WFJ.Data.add("ui", {
   ["MAINMENUBAR_BANDWIDTH_LABEL"] = { "Ampiezza di banda: %d Mbps", 0x5a21ba97, "." },
   ["MAINMENUBAR_COMMUNICATION_PROTOCOL_LABEL"] = { "Protocollo di comunicazione:\nCasa: %s\nMondo: %s", 0x4565aadf, "." },
   ["MAINMENUBAR_DOWNLOAD_PERCENT_LABEL"] = { "Scaricamento completato al %d%%", 0x24c426b8, "." },
+  ["MAINMENUBAR_FPS_LABEL"] = { "Frequenza fotogrammi: %.0f fps", 0xeb38af9e, "." },
   ["MAINMENUBAR_LATENCY_LABEL"] = { "Latenza:\n%.0f ms (locale)\n%.0f ms (reame)", 0xb0e94216, "." },
   ["MAINMENUBAR_PROTOCOLS_LABEL"] = { "Protocolli Internet:\nlocale: %s\nreame: %s", 0x051654de, "." },
   ["MAINMENU_BUTTON"] = { "Menu di gioco", 0x4880ed18, "." },

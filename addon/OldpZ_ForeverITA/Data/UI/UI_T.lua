@@ -287,6 +287,8 @@ WFJ.Data.add("ui", {
   ["TRANSMOG_USABLE_DISCOUNT_CONFIRM"] = { "Hai disponibile un aggiornamento gratuito del completo di trasmogrificazione. Quest'offerta è utilizzabile una sola volta per personaggio.", 0x9f7d79e1, "." },
   ["TRANSMOG_USABLE_DISCOUNT_USE_GOLD"] = { "Usa l'oro", 0x4b802e77, "." },
   ["TRANSMOG_WEAPON_OPTIONS_HELPTIP"] = { "Puoi assegnare aspetti diversi ai vari tipi di armi che equipaggi.", 0xd1633e0e, "." },
+  ["TRAVEL_PASS_INVITE"] = { "Invita in un gruppo", 0x36db2de9, "." },
+  ["TRAVEL_PASS_INVITE_CROSS_FACTION"] = { "Invita in un gruppo", 0x36db2de9, "." },
   ["TRIAL_RESTRICTED"] = { "Devi aggiornare l'account per poter accedere a questa funzione.", 0x91bda895, "." },
   ["TRINKET0SLOT"] = { "Monile", 0x8d85b3cd, "." },
   ["TRINKET1SLOT"] = { "Monile", 0x8d85b3cd, "." },

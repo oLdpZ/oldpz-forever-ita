@@ -27,6 +27,7 @@ WFJ.Data.add("ui", {
   ["INSPECT_GUILD_FACTION"] = { "Gilda dell'%s", 0xce4e6e23, "." },
   ["INSPECT_GUILD_NUM_MEMBERS"] = { "%d membri di gilda", 0x84f74a4a, "." },
   ["INSPECT_REQUIREMENTS"] = { "<CTRL+pulsante sinistro per visualizzare i requisiti>", 0xc24ea601, "." },
+  ["INSPECT_TALENTS"] = { "Mostra talenti", 0xcb6764bc, "." },
   ["INSPECT_TALENTS_BUTTON"] = { "Talenti", 0x0d31e779, "." },
   ["INSTANCE"] = { "Istanza", 0xb1e81ec9, "." },
   ["INSTANCE_BOOT_TIMER"] = { "Non sei più in un gruppo d'istanza. Verrai teletrasportato al cimitero più vicino in %d %s.", 0x41aaa34a, "." },
