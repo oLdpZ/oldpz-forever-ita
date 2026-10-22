@@ -170,6 +170,7 @@ WFJ.Data.add("ui", {
   ["UNIT_SKINNABLE_LEATHER"] = { "Scuoiabile", 0xc8ada3d3, "." },
   ["UNIT_SKINNABLE_ROCK"] = { "Richiede Estrazione", 0x7934e4cf, "." },
   ["UNIT_TYPE_LETHAL_LEVEL_TEMPLATE"] = { "%s livello ??", 0xf33e72b9, "." },
+  ["UNIT_TYPE_LEVEL_FACTION_TEMPLATE"] = { "%2$s livello %1$d (%3$s)", 0xe781bb46, "." },
   ["UNIT_TYPE_LEVEL_TEMPLATE"] = { "%2$s livello %1$d", 0x2fcf25e1, "." },
   ["UNIT_TYPE_PLUS_LEVEL_TEMPLATE"] = { "%2$s Élite di livello %1$d", 0x6bf9a577, "." },
   ["UNLEARN"] = { "Riassegna", 0x879908ea, "." },

@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("ui", {
   ["BACK"] = { "Indietro", 0x08f19b73, "." },
+  ["BACKGROUND"] = { "Sfondo", 0x6f309c25, "." },
   ["BACKPACK_AUTHENTICATOR_DIALOG_DESCRIPTION"] = { "Ottieni 4 scomparti aggiuntivi per lo zaino proteggendo il tuo account con il Battle.net Authenticator e gli avvisi sul cellulare.|n|nIl Battle.net Authenticator è gratuito, facile da utilizzare e protegge il tuo account da accessi indesiderati; inoltre, la funzione di avvisi sul cellulare ti avverte quando vengono eseguite modifiche importanti al tuo account.|n|nClicca su \"Attiva\" per passare al sito web delle impostazioni sulla sicurezza dell'account.", 0x4e642763, "." },
   ["BACKPACK_AUTHENTICATOR_FULL_INVENTORY"] = { "Spazio insufficiente nel tuo zaino. Libera dello spazio per ricevere gli oggetti mancanti.", 0x5b57b53c, "." },
   ["BACKPACK_AUTHENTICATOR_INCREASE_SIZE"] = { "Aumenta le dimensioni dello zaino", 0xd85bf49e, "." },
@@ -554,6 +555,7 @@ WFJ.Data.add("ui", {
   ["BROWSER_EXTERNAL_LINK_DIALOG"] = { "Stai per essere reindirizzato sul sito:\n|cffffd200%s|r\nClicca su \"OK\" per aprire il collegamento nel tuo browser Internet.", 0xbb148dae, "." },
   ["BROWSER_SETTINGS_TOOLTIP"] = { "Opzioni browser di assistenza", 0x8ebb6715, "." },
   ["BROWSE_NO_RESULTS"] = { "Nessun oggetto trovato", 0x106da9f3, "." },
+  ["BROWSE_ORDERS"] = { "Assegna ordine", 0x4ed922e8, "." },
   ["BROWSE_SEARCH_TEXT"] = { "Scegli un criterio di ricerca e premi \"Cerca\".", 0xda97ce14, "." },
   ["BUILDING_DAMAGE"] = { "Assedio", 0xbf1e9896, "." },
   ["BUILDING_DAMAGE_COMBATLOG_TOOLTIP"] = { "Mostra un messaggio quando un incantesimo o un'abilità infligge danni a un edificio.", 0xef69791f, "." },

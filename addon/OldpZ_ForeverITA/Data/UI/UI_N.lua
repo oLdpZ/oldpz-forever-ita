@@ -67,6 +67,7 @@ WFJ.Data.add("ui", {
   ["NEW_SPOKEN_LANGUAGE_HELPTIP"] = { "Hai appreso una nuova lingua. Cambia qui la lingua che parli.", 0xd867169a, "." },
   ["NEXT"] = { "Avanti", 0x0a8e55a3, "." },
   ["NEXT_BATTLE"] = { "Prossima battaglia: %1$02d:%2$02d:%3$02d.", 0xf8c5b65d, "." },
+  ["NONE"] = { "Nessuno", 0x0a90eed0, "." },
   ["NOTCH_MODE"] = { "Modalità Tacca", 0xa571ca3e, "." },
   ["NOTCH_MODE_OVERLAP"] = { "Sovrapposizione", 0xae6c0245, "." },
   ["NOTCH_MODE_SHIFT_UI"] = { "Sposta l'IU verso il basso", 0x4c3da827, "." },
