@@ -124,7 +124,7 @@ WFJ.Data.add("ui", {
   ["DISCORD_VALID_SERVER_CHANNEL_LIST"] = { "Canali per il server %s:", 0x4f635475, "." },
   ["DISCORD_VOICE_TTS_STT_UNSUPPORTED"] = { "La sintesi vocale e il riconoscimento vocale non sono supportati in questo canale perché usa il servizio Discord. Se ti servono queste funzioni, chiedi al capogruppo di passare la chat vocale al servizio Classico.", 0xfa62395f, "." },
   ["DISHONORABLE_KILLS"] = { "Uccisioni disonorevoli", 0x2b16af23, "." },
-  ["DISPELS"] = { "Dissolvenze", 0x1a8009a9, "." },
+  ["DISPELS"] = { "Dissoluzioni", 0x1a8009a9, "." },
   ["DISPEL_AURA_COMBATLOG_TOOLTIP"] = { "Mostra un messaggio quando un'aura viene dissolta, rimossa o rubata.", 0x34385c2c, "." },
   ["DISPLAY_FREE_BAG_SLOTS"] = { "Mostra lo spazio libero nelle sacche", 0xd5a34712, "." },
   ["DISPLAY_LABEL"] = { "Schermo", 0x1a81d94d, "." },
