@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1304277] = { "Smaltisci i materiali pericolosi a distanza di sicurezza da ⟦Gadgetzan=Meccania⟧ e da altra spazzatura.", nil, 0xc144223e, nil, "um" },
   [1304310] = { nil, "Questo giocatore proviene da un altro regolamento: alcune interazioni sono limitate.", nil, 0x5409a6cf, "mu" },
+  [1304398] = { "Emette un'onda d'urto magica che infligge $N1 danni da arcano ai nemici vicini.", nil, 0xe5bc2450, nil, "um" },
   [1304401] = { "Silenzia i nemici vicini, impedendo loro di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x2d8a29ef, 0x6d133d61, "uu" },
   [1304452] = { "Aumenta del $N1% la probabilità di critico di incantesimi e attacchi, aumenta la potenza d'attacco di $N2 e aumenta fino a $N3 i danni e le cure degli incantesimi per $D1.", "Aumenta la probabilità di critico di tutti gli incantesimi e gli attacchi del $N1%, la potenza d'attacco di $N2 e i danni e le cure degli incantesimi fino a $N3.", 0xc8723c2f, 0x3f699905, "uu" },
   [1304473] = { "Maledice un nemico per $D1, conferendogli il $N2% di probabilità di subire $N3 danni quando attacca.", "Probabilità del $N1% di subire $N2 danni quando attacca.", 0x9901f804, 0xfce0ca62, "uu" },

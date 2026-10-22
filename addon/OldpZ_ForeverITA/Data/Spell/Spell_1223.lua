@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1223046] = { "Riduce i danni da caduta.", nil, 0x879f36dd, nil, "um" },
   [1223262] = { "Aumenta la probabilità di critico del $N1%.", nil, 0xff9a12de, nil, "um" },
   [1223265] = { "Riduce di $N1 tutti gli attributi dei nemici vicini per $D1.", "Tutti gli attributi ridotti di $N1.", 0x91ab660c, 0xfb83ad31, "uu" },
+  [1223311] = { "La via è illuminata. Il sentiero è sgombro. Ti serve solo la forza di seguirlo.", "La via è illuminata. Il sentiero è sgombro. Ti serve solo la forza di seguirlo.", 0x54f255bd, 0x54f255bd, "uu" },
   [1223455] = { "Aumenta del $N1% la tua probabilità di critico magico.", nil, 0xd715ed95, nil, "um" },
   [1223458] = { "Aumenta la velocità d'attacco dell'incantatore del $N1% e i danni fisici che infligge di $N2 per $D1.", "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", 0x1d3f8a49, 0xbc6c8e1d, "uu" },
   [1223459] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro e stordendoli per $D1.", "Stordito.", 0x476b69d8, 0x27f95286, "uu" },
@@ -13,4 +14,5 @@ WFJ.Data.add("spell", {
   [1223795] = { "Aumenta fino a $N1 i danni inflitti ai Non Morti da incantesimi ed effetti magici.", nil, 0x0674bbf7, nil, "um" },
   [1223963] = { "Corrompe il bersaglio, infliggendo $N1 danni da ombra in $D1.", "$N1 danni da ombra ogni $N2 s.", 0x4a06c2d9, 0x9554e839, "uu" },
   [1223975] = { "Aumenta la velocità d'attacco del $N1% per $D1.", "Velocità d'attacco aumentata.", 0xa077c7f4, 0x778d86da, "uu" },
+  [1223997] = { "La via è illuminata. Il sentiero è sgombro. Ti serve solo la forza di seguirlo.", "La via è illuminata. Il sentiero è sgombro. Ti serve solo la forza di seguirlo.", 0x54f255bd, 0x54f255bd, "uu" },
 })

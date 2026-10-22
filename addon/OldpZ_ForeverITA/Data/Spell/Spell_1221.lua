@@ -2,6 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1221073] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1221075] = { "Solleva l'Enchanted Torch e tenta di dissipare l'oscurità vicino alle Karazhan Crypts.", nil, 0xc5218775, nil, "um" },
+  [1221278] = { "È tutto sbagliato. Sei fuori dallo spazio. Fuori dal tempo.", "È tutto sbagliato. Sei fuori dallo spazio. Fuori dal tempo.", 0x0f95f18f, 0x0f95f18f, "uu" },
   [1221329] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },
   [1221330] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },
   [1221332] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },

@@ -19,6 +19,9 @@ WFJ.Data.add("spell", {
   [1222581] = { "Prende il controllo di un nemico umanoide fino al livello $N1 per $D1.", "Ammaliato.", 0x54466006, 0xd83f67a3, "uu" },
   [1222688] = { "Costringe un nemico a concentrarsi sull'incantatore e aumenta la velocità d'attacco dell'incantatore del $N1% per $D1. Finché è concentrato sull'incantatore, il bersaglio è molto restio ad attaccare chiunque altro.", nil, 0xa441d417, nil, "um" },
   [1222704] = { "Teletrasporta il giocatore in un luogo relativamente sicuro.", "Teletrasporta il giocatore in un luogo relativamente sicuro.", 0x2b174d0f, 0x2b174d0f, "uu" },
+  [1222772] = { "La luce scaccia gli spiriti e l'oscurità, offrendo un po' di sicurezza.", "La luce scaccia gli spiriti e l'oscurità, offrendo un po' di sicurezza.", 0x39449ec8, 0x39449ec8, "uu" },
   [1222939] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
   [1222942] = { nil, "Danni da fuoco ogni $D1.", nil, 0xfd7a76cf, "mu" },
+  [1222951] = { "La luce scaccia gli spiriti e l'oscurità, offrendo un po' di sicurezza.", "La luce scaccia gli spiriti e l'oscurità, offrendo un po' di sicurezza.", 0x39449ec8, 0x39449ec8, "uu" },
+  [1222982] = { "La via è illuminata. Il sentiero è sgombro. Ti serve solo la forza di seguirlo.", "La via è illuminata. Il sentiero è sgombro. Ti serve solo la forza di seguirlo.", 0x54f255bd, 0x54f255bd, "uu" },
 })

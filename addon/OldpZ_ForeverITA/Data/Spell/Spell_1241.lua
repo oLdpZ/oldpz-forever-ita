@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1241115] = { "Indica sulla minimappa la posizione dei non morti vicini finché non viene annullato. Può essere usato un solo tipo di rilevamento alla volta.", "Non morti individuati.", 0x07ce0db8, 0x2b625a65, "uu" },
+  [1241325] = { "Emette un'onda d'urto magica che infligge $N1 danni da arcano ai nemici vicini.", nil, 0xe5bc2450, nil, "um" },
   [1241514] = { nil, "$N1 danni da arcano inflitti ogni $D1.", nil, 0xd8708d96, "mu" },
   [1241523] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
 })

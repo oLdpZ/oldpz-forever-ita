@@ -16,6 +16,7 @@ WFJ.Data.add("spell", {
   [1234792] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1234793] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1234806] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
+  [1234812] = { "Riduce del $N1% i danni inflitti a tutti gli spiriti vicini.", nil, 0x6e293676, nil, "um" },
   [1234823] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", "Furtivo. Movimento rallentato del $N1%.", 0xe555a300, 0xbaa30eb0, "uu" },
   [1234831] = { "Teletrasporta il giocatore in un luogo relativamente sicuro.", "Teletrasporta il giocatore in un luogo relativamente sicuro.", 0x2b174d0f, 0x2b174d0f, "uu" },
   [1234862] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },

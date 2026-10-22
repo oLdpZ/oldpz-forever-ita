@@ -174,4 +174,6 @@ WFJ.Data.add("spell", {
   [1220926] = { nil, "$N1 danni da ombra in $D1.", nil, 0x1df96f24, "mu" },
   [1220927] = { "Scatena un'ondata di fiamme che infligge danni da fuoco ai nemici vicini e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x7ebaea70, 0xeadcb05a, "uu" },
   [1220938] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
+  [1220972] = { "È tutto sbagliato. Sei fuori dallo spazio. Fuori dal tempo.", "È tutto sbagliato. Sei fuori dallo spazio. Fuori dal tempo.", 0x0f95f18f, 0x0f95f18f, "uu" },
+  [1220976] = { "È tutto sbagliato. Sei fuori dallo spazio. Fuori dal tempo.", "È tutto sbagliato. Sei fuori dallo spazio. Fuori dal tempo.", 0x0f95f18f, 0x0f95f18f, "uu" },
 })

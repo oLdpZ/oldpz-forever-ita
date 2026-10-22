@@ -5,5 +5,6 @@ WFJ.Data.add("spell", {
   [1226220] = { nil, "Danni aggiuntivi subiti da Mark of Mograine.", nil, 0x83591c01, "mu" },
   [1226282] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [1226357] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [1226739] = { nil, "Danni e danni critici inflitti ai Non Morti aumentati del $N1%.", nil, 0xd6f5d105, "mu" },
   [1226808] = { "Rigenera il $N1% della salute e del mana al secondo per $D1. Devi sederti per mangiare.", "Rigenera il $N1% della salute e del mana al secondo.", 0x9265d95a, 0x68f16274, "uu" },
 })

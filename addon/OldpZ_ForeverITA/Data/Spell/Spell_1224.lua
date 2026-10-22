@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1224125] = { "Silenzia un nemico, impedendogli di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x92e27777, 0x6d133d61, "uu" },
+  [1224428] = { "Le forze del Flagello si rafforzano.", nil, 0xc72f3794, nil, "um" },
 })
