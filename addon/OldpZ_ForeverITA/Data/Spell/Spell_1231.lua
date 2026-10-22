@@ -17,6 +17,8 @@ WFJ.Data.add("spell", {
   [1231582] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1231616] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [1231648] = { "Genera un'esplosione di magia arcana attorno all'incantatore che infligge $N1 danni da arcano a tutti i bersagli entro $N2 m.", nil, 0x51d9ff5b, nil, "um" },
+  [1231845] = { nil, "Ammaliato.", nil, 0xd83f67a3, "mu" },
+  [1231885] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },
   [1231899] = { nil, "Stordito.", nil, 0x8f5df1ed, "mu" },
   [1231901] = { nil, "Stordito.", nil, 0x8f5df1ed, "mu" },
   [1231906] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

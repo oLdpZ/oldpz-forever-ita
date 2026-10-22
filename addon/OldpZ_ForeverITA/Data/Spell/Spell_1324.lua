@@ -50,6 +50,7 @@ WFJ.Data.add("spell", {
   [1324556] = { "Stordisce il bersaglio per $D1.", "Stordito.", 0xd636ff6a, 0x445226a2, "uu" },
   [1324558] = { "Disarma il nemico per $D1.", "Disarmato!", 0x59ac0dc1, 0xe2065db8, "uu" },
   [1324578] = { "Riduce del $N1% la probabilità che gli effetti di paura ti colpiscano.", nil, 0xd3bb670e, nil, "um" },
+  [1324618] = { "Costringe i nemici vicini a fuggire impauriti per $D1.", "Fuga in preda al terrore.", 0x9265f43a, 0xfa67e4a8, "uu" },
   [1324673] = { "+$N1 ⟦Fire Resistance=Resistenza al Fuoco⟧.", nil, 0x8e808dd4, nil, "um" },
   [1324675] = { "Competenza nelle spade aumentata di $N1.", nil, 0x445b9a87, nil, "um" },
   [1324752] = { "Il respiro sott'acqua dura il $N1% in più del normale.", "Respiro Acquatico.", 0x7c55adcc, 0x37a59b8c, "uu" },

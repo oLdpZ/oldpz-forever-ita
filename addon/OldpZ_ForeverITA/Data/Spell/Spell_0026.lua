@@ -35,7 +35,7 @@ WFJ.Data.add("spell", {
   [26069] = { "Silenzia i nemici vicini, impedendo loro di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x2d8a29ef, 0x6d133d61, "uu" },
   [26070] = { "Incute paura in un nemico, facendolo fuggire in preda al terrore per un massimo di $D1. Può essere impaurito solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x7ea26162, 0xfa67e4a8, "uu" },
   [26071] = { "Intrappola un nemico con le radici, infliggendo danni da natura ogni $N1 s e immobilizzando il bersaglio per un massimo di $D2.", "Immobilizzato.\nDanni da natura inflitti ogni $N1 s.", 0xed46cb1a, 0xe6768e6a, "uu" },
-  [26072] = { nil, "Probabilità di colpire con gli attacchi ridotta del $N1%.", nil, 0x0a40f0d7, "mu" },
+  [26072] = { "Riduce la probabilità d'impatto degli attacchi dei nemici vicini del $N1% per $D1.", "Probabilità di colpire con gli attacchi ridotta del $N1%.", 0x4e36c3e7, 0x0a40f0d7, "uu" },
   [26073] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [26074] = { "Infonde nel bersaglio la gioia della festività.", nil, 0x0d3345d6, nil, "um" },
   [26077] = { "Provoca un fastidioso prurito al bersaglio, e in seguito si tramuta in veleno.", "Senti un fastidioso prurito.", 0xd8e48cdb, 0xe312130d, "uu" },

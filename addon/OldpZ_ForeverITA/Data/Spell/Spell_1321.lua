@@ -2,5 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1321196] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
-  [1321938] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1321938] = { "Infligge $N1 danni a un nemico, stordendolo per $D1.", "Stordito.", 0x9f56403f, 0x27f95286, "uu" },
 })

@@ -7,6 +7,7 @@ WFJ.Data.add("spell", {
   [24005] = { "Rigenera il $N1% della salute al secondo per $D1. Devi sederti per mangiare.", "$N1% della salute rigenerato ogni secondo.", 0x45b87aaa, 0x365a905e, "uu" },
   [24006] = { "Evoca $N1 cibo dal raccolto.\n\nGli oggetti evocati scompaiono se si resta disconnessi per più di 15 min.", nil, 0x28dd28ed, nil, "um" },
   [24011] = { "Sputa veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $N1 s per $D2.", "Danni da natura inflitti ogni $N1 s.", 0xf250210d, 0xaae6fcde, "uu" },
+  [24016] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, ma solo con un attacco alle spalle.", nil, 0xe417670e, nil, "um" },
   [24018] = { "Attacca i nemici vicini con una raffica di asce che dura $D1.", "Nemici vicini attaccati.", 0xb8b1b76b, 0x3ae78abe, "uu" },
   [24020] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [24021] = { "Crea uno Scudo Antimagia attorno all'incantatore, fornendo immunità alla magia per $D1.", "Immune alla magia.", 0xc5aec100, 0xcb106244, "uu" },

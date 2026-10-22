@@ -3,5 +3,6 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [402790] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [402794] = { nil, "Parla in lingua demoniaca: tempo di lancio aumentato del $N1%.", nil, 0xa89ef244, "mu" },
+  [402808] = { nil, "Intervallo tra gli attacchi aumentato del $N1%.", nil, 0x4f44ab25, "mu" },
   [402818] = { nil, "Armatura ridotta di $N1.", nil, 0x57b604c7, "mu" },
 })

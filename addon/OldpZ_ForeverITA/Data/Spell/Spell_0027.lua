@@ -173,6 +173,7 @@ WFJ.Data.add("spell", {
   [27781] = { "Quando subisci un attacco, hai una probabilità di rigenerare 300 mana, 40 energia o generare 10 rabbia.", nil, 0x92efcac3, nil, "um" },
   [27782] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [27789] = { "Aumenta del $N1% la portata di Punizione e ⟦Holy Fire=Fuoco Sacro⟧ e il raggio d'azione di ⟦Prayer of Healing=Preghiera di Cura⟧ ed ⟦Holy Nova=Esplosione Sacra⟧.", nil, 0xc31c5a2e, nil, "um" },
+  [27794] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico e ai suoi alleati più vicini, colpendo fino a un massimo di $N2 bersagli.", nil, 0xb36a844f, nil, "um" },
   [27797] = { "Riduce del $N1% il costo in mana di Marea Gelida.", nil, 0xd76475b7, nil, "um" },
   [27799] = { "Provoca un'esplosione di luce sacra attorno all'incantatore, infliggendo $N1 danni da sacro a tutti i nemici entro $N2 m e curando tutti i membri del gruppo entro $N3 m di $N4. Questi effetti non generano minaccia.\n\nOgni volta che ⟦Holy Fire=Fuoco Sacro⟧ infligge danni, hai il $N5% di probabilità che la tua prossima ⟦Holy Nova=Esplosione Sacra⟧ non costi mana.", nil, 0xa74b049b, nil, "um" },
   [27800] = { "Provoca un'esplosione di luce sacra attorno all'incantatore, infliggendo $N1 danni da sacro a tutti i nemici entro $N2 m e curando tutti i membri del gruppo entro $N3 m di $N4. Questi effetti non generano minaccia.\n\nOgni volta che ⟦Holy Fire=Fuoco Sacro⟧ infligge danni, hai il $N5% di probabilità che la tua prossima ⟦Holy Nova=Esplosione Sacra⟧ non costi mana.", nil, 0xa0ca80a3, nil, "um" },

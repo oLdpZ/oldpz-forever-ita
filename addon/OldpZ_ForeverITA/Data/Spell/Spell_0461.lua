@@ -2,6 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [461120] = { "Ti permette di camminare sull'acqua per $D1.", nil, 0x42a8b6d3, nil, "um" },
+  [461125] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },
+  [461146] = { nil, "$N1 danni da fuoco inflitti ogni $D1.", nil, 0xbc8b8357, "mu" },
   [461224] = { nil, "Forza aumentata di $N1.", nil, 0xb2147e94, "mu" },
   [461232] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
   [461235] = { nil, "Forza aumentata di $N1.", nil, 0xb2147e94, "mu" },

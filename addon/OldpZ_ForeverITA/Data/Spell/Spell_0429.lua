@@ -3,8 +3,8 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [429147] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [429434] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
-  [429687] = { "Prende il controllo di un nemico umanoide fino al livello $N1 per $D1.", nil, 0x54466006, nil, "um" },
-  [429688] = { nil, "Ammaliato.\nIntervallo tra gli attacchi aumentato del $N1%.", nil, 0xd198bff7, "mu" },
+  [429687] = { "Prende il controllo di un nemico umanoide fino al livello $N1 per $D1.", "Ammaliato.", 0x54466006, 0xd83f67a3, "uu" },
+  [429688] = { "Prende il controllo di un nemico umanoide fino al livello $N1 per $D1, ma aumenta l'intervallo tra i suoi attacchi del $N3%.", "Ammaliato.\nIntervallo tra gli attacchi aumentato del $N1%.", 0xa2a4015c, 0xd198bff7, "uu" },
   [429821] = { "Scaglia una freccia infuocata contro un nemico, infliggendo i danni dell'arma e $N1 danni aggiuntivi. Tutti i danni inflitti sono danni da fuoco.", nil, 0xc91c8900, nil, "um" },
   [429823] = { nil, "$N1 danni da arcano inflitti ogni $D1.", nil, 0xd8708d96, "mu" },
   [429825] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },

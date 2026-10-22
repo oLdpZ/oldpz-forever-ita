@@ -9,5 +9,7 @@ WFJ.Data.add("spell", {
   [447555] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [447563] = { "Acceca il bersaglio, costringendolo a vagare disorientato per un massimo di $D1. Eventuali danni inflitti interrompono l'effetto.", "Disorientato.", 0x9dce52b1, 0x6b902ba7, "uu" },
   [447585] = { nil, "$N1 danni da ombra ogni $N2 s.", nil, 0x568adae4, "mu" },
+  [447586] = { "Evoca $N1 Treant Allies che affiancano l'incantatore fino al congedo.", nil, 0x7f52587e, nil, "um" },
+  [447589] = { "Silenzia i nemici vicini, impedendo loro di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x2d8a29ef, 0x6d133d61, "uu" },
   [447891] = { "Stordisce un nemico, impedendogli di muoversi e attaccare per $D1.", "Stordito.", 0x79289398, 0x27f95286, "uu" },
 })

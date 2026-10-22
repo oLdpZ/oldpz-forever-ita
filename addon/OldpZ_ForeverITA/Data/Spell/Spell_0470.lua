@@ -19,5 +19,7 @@ WFJ.Data.add("spell", {
   [470748] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470749] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [470753] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
+  [470836] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $D2.", nil, 0x9a2f7afe, nil, "um" },
   [470856] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [470866] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $D2.", nil, 0x9a2f7afe, nil, "um" },
 })

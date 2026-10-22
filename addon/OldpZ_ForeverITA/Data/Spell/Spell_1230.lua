@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [1230283] = { "Avvolge un nemico nelle radici, infliggendo danni da natura ogni $D1 e immobilizzandolo per un massimo di $D2.", "Immobilizzato.\nDanni da natura inflitti ogni $D1.", 0xed46cb1a, 0xe6768e6a, "uu" },
   [1230512] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1230517] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1230576] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },
   [1230596] = { nil, "Forza aumentata di $N1.", nil, 0x90d8a2f8, "mu" },
   [1230664] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1230673] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },

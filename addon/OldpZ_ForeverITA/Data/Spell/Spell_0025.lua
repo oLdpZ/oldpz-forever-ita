@@ -68,6 +68,7 @@ WFJ.Data.add("spell", {
   [25161] = { nil, "Impossibile lanciare incantesimi.\nVelocità di movimento ridotta del $N1%.", nil, 0xe40976b1, "mu" },
   [25162] = { "Clicca col pulsante destro per evocare e congedare una Melmina Disgustosa. La melmina emana un lezzo nauseabondo e riduce significativamente le tue difese quando è nei paraggi.", nil, 0xda3f9fa6, nil, "um" },
   [25164] = { nil, "Velocità d'attacco aumentata del $N1%.\nVelocità di movimento aumentata del $N2%.", nil, 0x2cc873aa, "mu" },
+  [25174] = { nil, "Armatura ridotta di $N1.", nil, 0xaede5a98, "mu" },
   [25176] = { nil, "Danni inflitti aumentati del $N1%.", nil, 0xa5897505, "mu" },
   [25177] = { nil, "Resistenza al fuoco ridotta del $N1%.\nDanni da fuoco subiti aumentati del $N2%.", nil, 0x87308e8e, "mu" },
   [25178] = { nil, "Resistenza al gelo ridotta del $N1%.\nDanni da gelo subiti aumentati del $N2%.", nil, 0x9813e132, "mu" },

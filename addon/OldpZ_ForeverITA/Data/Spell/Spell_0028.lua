@@ -112,6 +112,7 @@ WFJ.Data.add("spell", {
   [28478] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
   [28479] = { "Infligge danni da gelo ai nemici vicini, riducendone la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x79377a2f, 0xeadcb05a, "uu" },
   [28487] = { "Clicca col pulsante destro per evocare e congedare il tuo animaletto.", nil, 0x77484ae0, nil, "um" },
+  [28498] = { nil, "Danni fisici inflitti aumentati di $N1.", nil, 0x422f867d, "mu" },
   [28505] = { "Clicca col pulsante destro per evocare e congedare il tuo animaletto.", nil, 0x77484ae0, nil, "um" },
   [28522] = { nil, "Congelato.", nil, 0x16ac477b, "mu" },
   [28530] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },

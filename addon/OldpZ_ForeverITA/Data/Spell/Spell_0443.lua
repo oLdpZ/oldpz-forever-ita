@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [443635] = { "Evoca $N1 bottiglie d'acqua sorgiva, fornendo al Mago e ai suoi alleati qualcosa da bere.\n\nGli oggetti evocati scompaiono se si resta disconnessi per più di $N2 min.", nil, 0xc65f7367, nil, "um" },
   [443856] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
+  [443953] = { nil, "$N1 danni da ombra inflitti ogni $D1.", nil, 0x62c40fe2, "mu" },
 })

@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [467141] = { "Accelera la mente, aumentando la velocità di lancio d'incantesimi del Mago del $N1% per $D1.", "Velocità di lancio d'incantesimi aumentata del $N1%.", 0x54f6c7f3, 0xb128184e, "uu" },
+  [467280] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $D2.", nil, 0x9a2f7afe, nil, "um" },
   [467346] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
   [467369] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [467370] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },

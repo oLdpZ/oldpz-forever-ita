@@ -10,7 +10,7 @@ WFJ.Data.add("spell", {
   [446317] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [446322] = { "Riduce del $N1% la minaccia che generi per $D1.", "Generazione di minaccia ridotta del $N1%.", 0xbebe7ef8, 0xfac21a7e, "uu" },
   [446338] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
-  [446354] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [446354] = { "Infligge $N1 danni a un nemico, stordendolo per $D1.", "Stordito.", 0x9f56403f, 0x27f95286, "uu" },
   [446356] = { "Aumenta la probabilità di blocco dell'incantatore del $N1% per $D1.", nil, 0xebc8dc0b, nil, "um" },
   [446361] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [446362] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },

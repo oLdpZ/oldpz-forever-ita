@@ -305,6 +305,7 @@ Data\Spell\Spell_1220.lua
 Data\Spell\Spell_1221.lua
 Data\Spell\Spell_1222.lua
 Data\Spell\Spell_1223.lua
+Data\Spell\Spell_1224.lua
 Data\Spell\Spell_1225.lua
 Data\Spell\Spell_1226.lua
 Data\Spell\Spell_1227.lua
@@ -375,6 +376,7 @@ Data\Spell\Spell_1300.lua
 Data\Spell\Spell_1301.lua
 Data\Spell\Spell_1302.lua
 Data\Spell\Spell_1303.lua
+Data\Spell\Spell_1304.lua
 Data\Spell\Spell_1305.lua
 Data\Spell\Spell_1306.lua
 Data\Spell\Spell_1307.lua

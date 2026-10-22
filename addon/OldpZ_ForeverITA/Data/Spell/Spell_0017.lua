@@ -257,6 +257,7 @@ WFJ.Data.add("spell", {
   [17670] = { nil, "Permette l'acquisizione di Pietre del Flagello per conto dell'⟦Argent Dawn=Alba d'Argento⟧.", nil, 0xa21be432, "mu" },
   [17682] = { "Prosciuga fino a un massimo di $N1 mana a un nemico in $D1 e lo trasferisce all'incantatore.", nil, 0x55b7bb58, nil, "um" },
   [17684] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", nil, 0x6e8982e7, nil, "um" },
+  [17685] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico e ai suoi alleati più vicini, colpendo fino a un massimo di $N2 bersagli.", nil, 0xb36a844f, nil, "um" },
   [17686] = { nil, "$N1 danni da natura subiti in $D1.", nil, 0x999464c0, "mu" },
   [17687] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [17691] = { nil, "Stordito.\nSarai rianimato automaticamente in $D1.", nil, 0x90c45b98, "mu" },

@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `f7caa86`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `9ef0a43`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -15,9 +15,9 @@
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,224 | 10,210 | 0 | 99.9% | 14 |
-| Spell tooltips + auras | 25,718 | 13,183 | 1 | 51.3% | 12,534 |
+| Spell tooltips + auras | 25,718 | 13,435 | 1 | 52.2% | 12,282 |
 | Interface strings | 16,417 | 15,252 | 1,029 | 99.2% | 136 |
-| **All** | **85,702** | | | **84.8%** | **13,048** |
+| **All** | **85,702** | | | **85.1%** | **12,796** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -45,7 +45,7 @@ professions, internal strings): quest 139.
 | Book / letter pages | no Italian yet | 1 |
 | Item descriptions | no Italian yet | 13 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
-| Spell tooltips + auras | no Italian yet | 12,480 |
+| Spell tooltips + auras | no Italian yet | 12,228 |
 | Spell tooltips + auras | no Italian yet: the template includes a spell the Forever tables do not hold | 34 |
 | Spell tooltips + auras | no Italian yet: the template has too many optional parts for one translation | 8 |
 | Spell tooltips + auras | no Italian yet: no text from the Forever tables on this build yet (English still from Classic Era); rechecked at each re-pull | 7 |

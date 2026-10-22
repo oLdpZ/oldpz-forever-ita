@@ -18,7 +18,9 @@ WFJ.Data.add("spell", {
   [460756] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [460766] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },
   [460767] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [460848] = { nil, "$N1 danni da fuoco inflitti ogni $D1.", nil, 0xbc8b8357, "mu" },
+  [460858] = { nil, "$N1 danni da fuoco inflitti ogni $D1.", nil, 0xbc8b8357, "mu" },
   [460890] = { nil, "Armatura ridotta di $N1.", nil, 0xaede5a15, "mu" },
-  [460931] = { "Infligge $N1 danni da ombra ai nemici vicini dopo $D1.", nil, 0x0a28521b, nil, "um" },
+  [460931] = { "Infligge $N1 danni da ombra ai nemici vicini dopo $D1.", "$N1 danni da ombra subiti dopo $D1.", 0x0a28521b, 0x7fe6a36d, "uu" },
   [460962] = { "+$N1 ⟦Fire Resistance=Resistenza al Fuoco⟧.", nil, 0x8e808dd4, nil, "um" },
 })

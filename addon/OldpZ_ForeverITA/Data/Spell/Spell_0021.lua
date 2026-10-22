@@ -312,6 +312,7 @@ WFJ.Data.add("spell", {
   [21667] = { "Lancia un fulmine contro il nemico, infliggendo $N1 danni da natura.", nil, 0x76acffff, nil, "um" },
   [21668] = { "Infligge $N1 danni da arcano al bersaglio.", nil, 0xf284a035, nil, "um" },
   [21669] = { nil, "$N1 danni da arcano inflitti ogni $D1.", nil, 0xd8708d96, "mu" },
+  [21670] = { "Riduce l'Armatura di un nemico di $N1 per $D1. Sotto l'effetto, il bersaglio non può entrare in modalità furtiva o diventare invisibile.", "Armatura ridotta di $N1.\nImpossibile entrare in modalità furtiva o diventare invisibile.", 0x8b009da8, 0x0730b87e, "uu" },
   [21687] = { "Infligge danni da natura a un nemico.", "Danni da natura inflitti ogni $N1 s.", 0x6878f321, 0x4a5acc7c, "uu" },
   [21688] = { "Piazza la ⟦Goblin Land Mine=Mina dei Goblin⟧ sul terreno. La mina esplode per $N1 danni da fuoco quando una creatura ostile si avvicina.", nil, 0x4463a76c, nil, "um" },
   [21728] = { "Piazza il faro nel ⟦Snowfall Graveyard=Cimitero di Nevealta⟧ e proteggilo!", nil, 0xf31d701d, nil, "um" },

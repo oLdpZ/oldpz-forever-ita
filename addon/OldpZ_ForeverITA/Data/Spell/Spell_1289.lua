@@ -13,6 +13,7 @@ WFJ.Data.add("spell", {
   [1289447] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [1289448] = { "Infligge $N1 danni da gelo ai nemici vicini, riducendo la loro velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xe513fa92, 0x08fe36e7, "uu" },
   [1289451] = { "Infligge $N1 danni da natura a un nemico.", nil, 0x269958fb, nil, "um" },
+  [1289452] = { "Riduce l'Armatura di un nemico di $N1 per $D1. Sotto l'effetto, il bersaglio non può entrare in modalità furtiva o diventare invisibile.", "Armatura ridotta di $N1.\nImpossibile entrare in modalità furtiva o diventare invisibile.", 0x8b009da8, 0x0730b87e, "uu" },
   [1289530] = { "Lancia un fulmine contro un nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
   [1289610] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1289998] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },

@@ -4,5 +4,5 @@ WFJ.Data.add("spell", {
   [1323500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1323656] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, poi altri $N2 danni da natura ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0x28109756, 0xf6322bec, "uu" },
   [1323676] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
-  [1323802] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", nil, 0x790d3c30, nil, "um" },
+  [1323802] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
 })
