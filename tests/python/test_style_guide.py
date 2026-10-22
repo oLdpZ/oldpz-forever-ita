@@ -1,4 +1,4 @@
-"""The Italian style guide (sg6): its version, the rules the plan fixes, the interface section's six rules, and
+"""The Italian style guide (sg7): its version, the rules the plan fixes, the interface section's six rules, and
 interface terms that hold on every shipped UI line."""
 
 import re
@@ -20,7 +20,7 @@ def guide(root: Path) -> str:
 
 
 def test_guide_has_a_version(root: Path):
-    assert style_version(root) == 6
+    assert style_version(root) == 7
 
 
 def test_guide_states_the_italian_rules(guide):
@@ -35,7 +35,7 @@ def test_guide_states_the_italian_rules(guide):
 
 
 def test_guide_carries_the_fixed_lexicon(guide):
-    section = guide.split("## Lessico fissato (sg6)", 1)
+    section = guide.split("## Lessico fissato (sg7)", 1)
     assert len(section) == 2, "no fixed lexicon section"
     body = section[1].split("\n## ", 1)[0]
     for term in ("| People's Militia | Milizia del Popolo |", "| SI:7 | IR:7 |", "Brigata del Popolo",
@@ -45,7 +45,10 @@ def test_guide_carries_the_fixed_lexicon(guide):
                  "| felhunter | vilsegugio", "Abissi di Fondocupo", "Il titolo concorda con il genere",
                  "Oggetti e creature negli obiettivi", "| Magus (titolo) | magus", "Babbo Inverno",
                  "Masseria Buongusto", "| Prospector (titolo) | prospettore", "Scorzasecca", "la Lavatutto 5200",
-                 "Uthek la Saggia", "**Epiteti**"):
+                 "Uthek la Saggia", "**Epiteti**", "| Watcher (titolo) | guardiano / guardiana",
+                 "| Surveyor (titolo) | ispettore / ispettrice", "signore supremo", "Zanzil l'Esiliato",
+                 "Hakkar lo Scortica Anime", "| (The) Hinterlands | Entroterre", "| Huntsman (titolo) | predatore",
+                 "| Shredder (goblin) | segatronchi", "silvagufo", "Discs of Norgannon"):
         assert term in body, term
 
 
