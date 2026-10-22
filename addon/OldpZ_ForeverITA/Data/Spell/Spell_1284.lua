@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1284017] = { "Indica sulla minimappa la posizione delle bestie vicine. Può essere attiva una sola forma di tracciamento alla volta.", nil, 0x7a0f6d82, nil, "um" },
   [1284381] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1284384] = { "Il soggetto muore.", nil, 0x0fda4706, nil, "um" },
 })

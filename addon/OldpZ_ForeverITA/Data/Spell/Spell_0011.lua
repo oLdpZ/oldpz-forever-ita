@@ -239,6 +239,8 @@ WFJ.Data.add("spell", {
   [11759] = { "Esegui un'analisi qualitativa di questo campione. Richiede l'⟦Field Testing Kit=Attrezzatura per le Analisi da Campo⟧.", nil, 0xcb5a840e, nil, "um" },
   [11760] = { "Esegui un'analisi qualitativa di questo campione. Richiede l'⟦Field Testing Kit=Attrezzatura per le Analisi da Campo⟧.", nil, 0xcb5a840e, nil, "um" },
   [11761] = { "Esegui un'analisi qualitativa di questo campione. Richiede l'⟦Field Testing Kit=Attrezzatura per le Analisi da Campo⟧.", nil, 0xcb5a840e, nil, "um" },
+  [11762] = { "Infligge $N1 danni da fuoco a un bersaglio.", nil, 0x782b8b54, nil, "um" },
+  [11763] = { "Infligge $N1 danni da fuoco a un bersaglio.", nil, 0x782b8b54, nil, "um" },
   [11766] = { nil, "Tempra aumentata di $N1.", nil, 0x543f3a70, "mu" },
   [11767] = { nil, "Tempra aumentata di $N1.", nil, 0x543f3a70, "mu" },
   [11789] = { "Il respiro sott'acqua dura il $N1% in più del normale.", "Respiro Acquatico.", 0x7c55adcc, 0x37a59b8c, "uu" },

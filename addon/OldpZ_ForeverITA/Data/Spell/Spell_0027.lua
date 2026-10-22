@@ -198,6 +198,7 @@ WFJ.Data.add("spell", {
   [27852] = { nil, "Non colpire questo bersaglio!", nil, 0x0cd960b9, "mu" },
   [27853] = { "Aumenta del $N1% la cura iniziale di Ricrescita quando la lanci su un bersaglio sotto l'effetto del tuo Rinvigorimento.", nil, 0x0e299bc7, nil, "um" },
   [27855] = { "Aumenta fino a $N1 le cure prodotte da ⟦Lesser Healing Wave=Ondata di Cura Inferiore⟧.", nil, 0x0f673ce5, nil, "um" },
+  [27857] = { nil, "Danni fisici subiti aumentati di $N1.\nTempra ridotta di $N2.\nProbabilità del $N3% di diffondere ⟦Wandering Plague=Piaga Errante⟧ all'impatto.", nil, 0x6e4b81df, "mu" },
   [27859] = { "Aumenta del $N1% i danni dei tuoi incantesimi Folgore.", nil, 0xe1397502, nil, "um" },
   [27861] = { "La tua intrusione ha allarmato il Barone Fieramorte. Il suo prigioniero ha i minuti contati.", "La tua intrusione ha allarmato il Barone Fieramorte. Il suo prigioniero ha i minuti contati.", 0x5868adbc, 0x5868adbc, "uu" },
   [27862] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro.", nil, 0x82914e2a, nil, "um" },

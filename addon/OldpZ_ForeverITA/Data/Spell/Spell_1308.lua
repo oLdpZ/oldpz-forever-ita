@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1308520] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
+  [1308707] = { "Maledice un nemico con l'⟦Eye of Paleth=Occhio di Paleth⟧, riducendo di $N1 i danni fisici che infligge e rallentando del $N2% il lancio dei suoi incantesimi per $D1.", nil, 0xf7e31f61, nil, "um" },
   [1308843] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", nil, 0xc0d35181, nil, "um" },
 })

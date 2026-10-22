@@ -8,5 +8,6 @@ WFJ.Data.add("spell", {
   [1289417] = { "Ottieni gli aspetti dell'equipaggiamento di questo set.", nil, 0x3bcf52b2, nil, "um" },
   [1289419] = { "Ottieni gli aspetti dell'equipaggiamento di questo set.", nil, 0x3bcf52b2, nil, "um" },
   [1289448] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x08fe36e7, "mu" },
+  [1289451] = { "Infligge $N1 danni da natura a un nemico.", nil, 0x269958fb, nil, "um" },
   [1289998] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },
 })

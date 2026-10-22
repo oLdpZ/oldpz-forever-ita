@@ -4,4 +4,5 @@ WFJ.Data.add("spell", {
   [1305394] = { "Causa una ferita fatale che infligge $N1 danni fisici. Infligge il $N2% di danni in più ai bersagli con meno del $N3% di salute.", nil, 0xbbacb806, nil, "um" },
   [1305398] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xc6f8d47d, nil, "um" },
   [1305422] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
+  [1305819] = { "Riduce tutti gli attributi di un nemico di $N1 per $D1.", "Tutti gli attributi ridotti di $N1.", 0xfa49afb9, 0xfb83ad31, "uu" },
 })

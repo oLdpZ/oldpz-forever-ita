@@ -121,6 +121,7 @@ WFJ.Data.add("spell", {
   [18138] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", nil, 0xeeaaaf00, nil, "um" },
   [18140] = { "Rigenera $N1 mana in $D1. Devi sederti per bere. Aumenta inoltre lo Spirito di $N3 per $D2.", "$N1 mana rigenerato ogni secondo.", 0x661ecf95, 0x338019ff, "uu" },
   [18144] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [18147] = { "Infligge $N1 danni da natura ai nemici vicini.", nil, 0xb85c687d, nil, "um" },
   [18149] = { "Infetta un nemico per $D1, costringendolo a infliggere $N2 danni da natura agli alleati vicini ogni $N3 s.", "$N1 danni da natura inflitti agli alleati vicini ogni $N2 s.", 0x7b503350, 0x9e9ef2c3, "uu" },
   [18151] = { "Riduce la resistenza alla natura di un nemico di $N1 per $D1.", "Resistenza alla natura ridotta di $N1.", 0x01030c3f, 0x6c373958, "uu" },
   [18152] = { "Prosciuga $N1 salute a un nemico, trasferendola all'incantatore.", nil, 0x922bf65a, nil, "um" },

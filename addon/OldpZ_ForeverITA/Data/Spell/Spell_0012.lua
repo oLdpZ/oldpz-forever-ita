@@ -113,6 +113,7 @@ WFJ.Data.add("spell", {
   [12533] = { nil, "$N1 danni da natura inflitti ogni $N2 s.", nil, 0xf6322bec, "mu" },
   [12534] = { "Dai fuoco alla torre accendendo un Braciere della Sentinella.", nil, 0x7061790f, nil, "um" },
   [12536] = { nil, "Il costo in mana del tuo prossimo incantesimo di danno è ridotto del $N1%.", nil, 0xec1aeca8, "mu" },
+  [12538] = { "Prosciuga $N1 salute a un nemico, trasferendola all'incantatore.", nil, 0x922bf65a, nil, "um" },
   [12540] = { nil, "Inabilitato.", nil, 0x147cb83f, "mu" },
   [12541] = { nil, "Probabilità di colpire con gli attacchi ridotta del $N1%.", nil, 0x0a40f0d7, "mu" },
   [12542] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },

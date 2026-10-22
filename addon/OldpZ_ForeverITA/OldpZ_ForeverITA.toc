@@ -260,6 +260,7 @@ Data\Spell\Spell_0439.lua
 Data\Spell\Spell_0440.lua
 Data\Spell\Spell_0442.lua
 Data\Spell\Spell_0443.lua
+Data\Spell\Spell_0444.lua
 Data\Spell\Spell_0445.lua
 Data\Spell\Spell_0446.lua
 Data\Spell\Spell_0447.lua
@@ -277,6 +278,7 @@ Data\Spell\Spell_0460.lua
 Data\Spell\Spell_0461.lua
 Data\Spell\Spell_0462.lua
 Data\Spell\Spell_0463.lua
+Data\Spell\Spell_0464.lua
 Data\Spell\Spell_0465.lua
 Data\Spell\Spell_0466.lua
 Data\Spell\Spell_0467.lua

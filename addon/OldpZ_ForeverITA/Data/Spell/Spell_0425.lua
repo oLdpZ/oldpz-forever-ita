@@ -21,4 +21,5 @@ WFJ.Data.add("spell", {
   [425735] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
   [425736] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
   [425737] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
+  [425895] = { "Infligge $N1 danni da gelo a un nemico.", nil, 0xe9a78e07, nil, "um" },
 })

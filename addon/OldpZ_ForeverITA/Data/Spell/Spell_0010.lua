@@ -103,6 +103,7 @@ WFJ.Data.add("spell", {
   [10370] = { "Provoca lacerazioni al bersaglio, aumentando i danni fisici che subisce di $N1 per $D1. Si accumula fino a $N3 volte.", "Danni fisici subiti aumentati di $N1.", 0x2312fd3a, 0x7b8df538, "uu" },
   [10371] = { "Aumenta l'intervallo tra gli attacchi del bersaglio di $N1 per $D1.", "Velocità d'attacco ridotta.", 0x03dd093c, 0x407a3795, "uu" },
   [10373] = { "Causa una ferita fatale che infligge $N1 danni fisici. Infligge il $N2% di danni in più ai bersagli con meno del $N3% di salute.", nil, 0xbbacb806, nil, "um" },
+  [10388] = { "Evoca $N1 Prismatic Exiles per aiutare l'incantatore in battaglia per $D1.", nil, 0x71d9c6a7, nil, "um" },
   [10390] = { "Genera un'esplosione di magia arcana che infligge $N1 danni a tutti i bersagli entro $N2 m.", nil, 0x9a05fe47, nil, "um" },
   [10391] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [10392] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },

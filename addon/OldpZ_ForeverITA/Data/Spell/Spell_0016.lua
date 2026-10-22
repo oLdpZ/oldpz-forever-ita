@@ -62,6 +62,7 @@ WFJ.Data.add("spell", {
   [16164] = { "Fornisce il $N1% di probabilità di entrare in uno stato di Lancio Istintivo dopo aver lanciato un qualsiasi incantesimo di danni da fuoco, gelo o natura. Lo stato di Lancio Istintivo riduce del $N2% il costo in mana del tuo prossimo incantesimo di danni.", nil, 0xb505288c, nil, "um" },
   [16166] = { "Conferisce la padronanza del fuoco e del fulmine, riducendo il tempo di lancio di ⟦Lightning Bolt=Dardo Fulminante⟧ e ⟦Lava Burst=Getto di Lava⟧ di $D1 e rimuovendo il tempo di recupero di ⟦Chain Lightning=Catena di Fulmini⟧. Dura $D2.", "Tempo di lancio di ⟦Lightning Bolt=Dardo Fulminante⟧ e ⟦Lava Burst=Getto di Lava⟧ ridotto di $D1 e ⟦Chain Lightning=Catena di Fulmini⟧ senza tempo di recupero.", 0x3ba426df, 0x7e48dc81, "uu" },
   [16170] = { "Aumenta la velocità d'attacco di un alleato del $N1% per $D1.", "Velocità d'attacco aumentata del $N1%.", 0x036d64eb, 0x8859e2db, "uu" },
+  [16172] = { "Riduce la Tempra di un nemico di $N1 per $D1.", "Tempra ridotta di $N1.", 0x008ebbf3, 0x63d43a85, "uu" },
   [16173] = { "Riduce del $N1% il costo in mana dei tuoi totem e di qualsiasi incantesimo che li evoca o li sposta.", nil, 0x4134e220, nil, "um" },
   [16176] = { "Aumenta del $N1% il valore di Armatura del bersaglio per $D1 dopo un effetto critico di uno dei tuoi incantesimi di cura.", nil, 0xd1d498a9, nil, "um" },
   [16177] = { "Aumenta del $N1% il valore di Armatura fornito dai tuoi oggetti.", "Aumenta del $N1% il valore di Armatura fornito dai tuoi oggetti.", 0x7e505d7e, 0x7ed993ea, "uu" },

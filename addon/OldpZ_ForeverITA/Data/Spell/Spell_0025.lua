@@ -191,6 +191,7 @@ WFJ.Data.add("spell", {
   [25815] = { "Il grido dell'Uccisore infonde una grande paura.", "Fuga in preda al terrore.", 0x8cbee101, 0xfa67e4a8, "uu" },
   [25816] = { "Indebolisce il bersaglio nemico, riducendo i danni inflitti di $N1 per $D1.", "Danni fisici inflitti ridotti di $N1.", 0x49645aff, 0x212710bf, "uu" },
   [25817] = { "Cura tutti i membri del gruppo vicini di $N1 ogni $N2 s per $D1. È necessario mantenere la canalizzazione affinché l'incantesimo resti attivo.", "$N1 salute rigenerata ogni $N2 s ai membri del gruppo vicini.", 0xd1533eff, 0x7cc0de27, "uu" },
+  [25819] = { "Infligge $N1 danni da natura ai nemici vicini.", nil, 0xb85c687d, nil, "um" },
   [25820] = { "Teme gli attaccanti.", "Probabilità di suscitare paura all'impatto.", 0x6c19eb70, 0xd5f257ec, "uu" },
   [25822] = { "Fagli mangiare la polvere!", nil, 0x24637d05, nil, "um" },
   [25823] = { "Evoca un cerchio di luce in una posizione specifica che dura $D1.", nil, 0xe266a9da, nil, "um" },

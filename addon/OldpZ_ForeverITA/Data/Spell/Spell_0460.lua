@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [460084] = { nil, "Intimorito.", nil, 0x441534cf, "mu" },
+  [460201] = { "Evoca $N1 ombre del Vuoto per aiutare l'incantatore in battaglia per $D1.", nil, 0x3af52f99, nil, "um" },
   [460229] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
   [460230] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
   [460339] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
@@ -13,5 +14,6 @@ WFJ.Data.add("spell", {
   [460755] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
   [460756] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [460767] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [460890] = { nil, "Armatura ridotta di $N1.", nil, 0xaede5a15, "mu" },
   [460962] = { "+$N1 ⟦Fire Resistance=Resistenza al Fuoco⟧.", nil, 0x8e808dd4, nil, "um" },
 })

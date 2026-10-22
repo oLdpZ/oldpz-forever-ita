@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1309005] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
+  [1309069] = { "Infligge $N1 danni a un nemico ogni $D1 per $D2.", "$N1 danni inflitti ogni $D1.", 0x02f9cbe1, 0x2613e2e6, "uu" },
   [1309208] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1309268] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1309270] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
@@ -20,7 +21,7 @@ WFJ.Data.add("spell", {
   [1309381] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1309405] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1309718] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
-  [1309719] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1309719] = { "Stordisce un nemico, impedendogli di muoversi e attaccare per $D1.", "Stordito.", 0x79289398, 0x27f95286, "uu" },
   [1309725] = { "Rigenera $N1 salute.", nil, 0x4d16029e, nil, "um" },
   [1309726] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1309761] = { "Aumenta la velocità d'attacco a distanza del $N1%.", nil, 0x3009bf39, nil, "um" },

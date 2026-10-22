@@ -7,5 +7,5 @@ WFJ.Data.add("spell", {
   [447555] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [447563] = { "Acceca il bersaglio, costringendolo a vagare disorientato per un massimo di $D1. Eventuali danni inflitti interrompono l'effetto.", "Disorientato.", 0x9dce52b1, 0x6b902ba7, "uu" },
   [447585] = { nil, "$N1 danni da ombra ogni $N2 s.", nil, 0x568adae4, "mu" },
-  [447891] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [447891] = { "Stordisce un nemico, impedendogli di muoversi e attaccare per $D1.", "Stordito.", 0x79289398, 0x27f95286, "uu" },
 })

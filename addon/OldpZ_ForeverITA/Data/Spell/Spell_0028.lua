@@ -210,6 +210,8 @@ WFJ.Data.add("spell", {
   [28891] = { "Applicato all'arma del bersaglio, ne aumenta di $N1 la potenza d'attacco contro i non morti. Dura $D1.", nil, 0xc677f88b, nil, "um" },
   [28893] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
   [28898] = { "Applicato all'arma del bersaglio, ne aumenta fino a $N1 i danni degli incantesimi contro i non morti. Dura $D1.", nil, 0x39d7c1a9, nil, "um" },
+  [28911] = { nil, "$N1 danni inflitti ogni $D1.", nil, 0x2613e2e6, "mu" },
+  [28913] = { "Infligge $N1 danni a un nemico ogni $D1 per $D2.", "$N1 danni inflitti ogni $D1.", 0x02f9cbe1, 0x2613e2e6, "uu" },
   [28991] = { "Lancia una ragnatela contro il nemico, immobilizzandolo per $D1.", "Immobilizzato.", 0xc19c3572, 0x18deeb81, "uu" },
   [28995] = { nil, "$N1 salute rigenerata in $D1.", nil, 0x6ed72e1e, "mu" },
   [28996] = { "Riduce del $N1% i danni subiti dagli effetti di fuoco, gelo e natura.", nil, 0x22b34bd2, nil, "um" },

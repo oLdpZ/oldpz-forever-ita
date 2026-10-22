@@ -163,6 +163,7 @@ WFJ.Data.add("spell", {
   [19627] = { "Infligge $N1 danni da fuoco ai nemici vicini.", nil, 0xcdc05fe4, nil, "um" },
   [19628] = { "Infligge $N1 danni da fuoco ai nemici vicini.", nil, 0xcdc05fe4, nil, "um" },
   [19630] = { "Infligge $N1 danni da fuoco ai nemici in un cono frontale.", nil, 0xad2ec576, nil, "um" },
+  [19631] = { nil, "Armatura ridotta di $N1.", nil, 0xaede5a15, "mu" },
   [19632] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico e ai suoi alleati più vicini, colpendo fino a un massimo di $N2 bersagli.", nil, 0xb36a844f, nil, "um" },
   [19633] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0xcfea6646, nil, "um" },
   [19634] = { "Rigenera $N1 mana ogni $N2 s per $D2.", "$N1 mana rigenerato ogni $N2 s.", 0x17437600, 0xb1bbeede, "uu" },

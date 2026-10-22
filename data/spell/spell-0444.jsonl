@@ -1,0 +1,1 @@
+{"id": 444046, "field": "aura", "it": "Velocità di lancio d'incantesimi ridotta del $N1%.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t21-sg12@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "7aa99f7562b9c098", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

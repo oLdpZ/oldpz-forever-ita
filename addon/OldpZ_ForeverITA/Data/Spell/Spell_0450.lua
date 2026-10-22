@@ -6,6 +6,9 @@ WFJ.Data.add("spell", {
   [450107] = { "Rigenera $N1 salute.", nil, 0x4d16029e, nil, "um" },
   [450108] = { "Permette all'incantatore di vedere attraverso gli occhi del bersaglio per $D1. Non funziona se il bersaglio si trova in un'altra istanza o su un altro continente.", "È possibile vedere attraverso gli occhi del bersaglio.", 0xba19a819, 0x87c06723, "uu" },
   [450554] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
+  [450607] = { "Ammorba un nemico per $D1, aumentando i danni fisici che subisce di $N2 e riducendone la Tempra di $N3. Il bersaglio ammorbato ha una probabilità del $N4% di diffondere la malattia a uno degli alleati vicini quando viene colpito in combattimento.", "Danni fisici subiti aumentati di $N1.\nTempra ridotta di $N2.\nProbabilità del $N3% di diffondere ⟦Wandering Plague=Piaga Errante⟧ all'impatto.", 0x9ac57eb9, 0x6e4b81df, "uu" },
+  [450640] = { nil, "Danni fisici subiti aumentati di $N1.\nTempra ridotta di $N2.\nProbabilità del $N3% di diffondere ⟦Wandering Plague=Piaga Errante⟧ all'impatto.", nil, 0x6e4b81df, "mu" },
+  [450643] = { "Infetta un nemico per $D1, costringendolo a infliggere $N2 danni da natura agli alleati vicini ogni $D2.", "$N1 danni da natura inflitti agli alleati vicini ogni $D1.", 0x6e922a9d, 0x953aec8c, "uu" },
   [450662] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [450667] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", nil, 0xe555a300, nil, "um" },
 })

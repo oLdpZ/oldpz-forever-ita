@@ -9,7 +9,7 @@ WFJ.Data.add("spell", {
   [1302362] = { nil, "Assorbe $N1 danni da ombra.", nil, 0x0741eb29, "mu" },
   [1302363] = { "Rigenera $N1 mana ogni $D1 al tuo Imp.", "Rigenera $N1 mana ogni $D1.", 0xdaacf265, 0xca58e542, "uu" },
   [1302376] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xdb6814b9, "mu" },
-  [1302500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1302500] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, stordendolo per $D1.", "Stordito.", 0x16b62254, 0x27f95286, "uu" },
   [1302521] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1302540] = { "Cura di $N1.", nil, 0xb1a62d77, nil, "um" },
   [1302661] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },

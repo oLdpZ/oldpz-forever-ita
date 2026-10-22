@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [462577] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [462586] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [462636] = { nil, "Danni degli incantesimi aumentati fino a $N1.\nCure aumentate fino a $N2.", nil, 0xd75bb1cc, "mu" },
+  [462665] = { "Prosciuga $N1 salute a un nemico, trasferendola all'incantatore.", nil, 0x922bf65a, nil, "um" },
   [462666] = { nil, "Disorientato.", nil, 0x6b902ba7, "mu" },
   [462667] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [462718] = { "Coglie di sorpresa il bersaglio, infliggendo il $N1% dei danni dell'arma e $N2 danni aggiuntivi. Devi essere in modalità furtiva e dietro al bersaglio. Richiede un pugnale nella mano primaria. Fornisce $N3 punti combo.", nil, 0x4291356d, nil, "um" },
