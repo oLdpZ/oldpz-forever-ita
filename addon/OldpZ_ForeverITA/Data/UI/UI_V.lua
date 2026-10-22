@@ -97,6 +97,7 @@ WFJ.Data.add("ui", {
   ["VOICE_CHAT_JOIN"] = { "Unisciti alla chat vocale", 0x6ae0295b, "." },
   ["VOICE_CHAT_JOIN_GROUP_BUTTON"] = { "Unisciti alla chat vocale", 0x6ae0295b, "." },
   ["VOICE_CHAT_JOIN_GROUP_DISCORD_TEXT"] = { "La sintesi vocale e il riconoscimento vocale non sono supportati in questo canale perché usa il servizio Discord. Se ti servono queste funzioni, chiedi al capogruppo di passare la chat vocale al servizio Classico.", 0xfa62395f, "." },
+  ["VOICE_CHAT_JOIN_GROUP_TEXT"] = { "Questo gruppo usa la chat vocale per comunicare più facilmente.", 0x927ac2eb, "." },
   ["VOICE_CHAT_LEAVE"] = { "Abbandona la chat vocale", 0x91e5c8ab, "." },
   ["VOICE_CHAT_MIC_DEVICE"] = { "Microfono", 0xe8668cc2, "." },
   ["VOICE_CHAT_MIC_SENSITIVITY"] = { "Sensibilità del microfono", 0x56bd93ef, "." },
