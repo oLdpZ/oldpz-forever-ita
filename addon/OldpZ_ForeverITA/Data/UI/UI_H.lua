@@ -68,6 +68,7 @@ WFJ.Data.add("ui", {
   ["HONOR_YESTERDAY"] = { "Ieri", 0x0ee909e7, "." },
   ["HONOR_YOUVE_REACHED"] = { "Hai raggiunto il", 0x4a4a8f22, "." },
   ["HORDE_CHEER"] = { "Per l'Orda!", 0xd2b403e1, "." },
+  ["HOSTILE"] = { "Ostile", 0xd2eedd39, "." },
   ["HOT_ITEM"] = { "Oggetto popolare!", 0xeaf28319, "." },
   ["HOT_ITEM_SELLER"] = { "Venditore:", 0x477e25d0, "." },
   ["HOURS_ABBR"] = { "%d |4ora:ore;", 0x57780980, "." },
@@ -398,5 +399,7 @@ WFJ.Data.add("ui", {
   ["HUD_EDIT_MODE_UNSAVED_CHANGES_LAYOUT_CHANGE_DIALOG_TITLE"] = { "Se cambi interfaccia, perderai tutte le modifiche non salvate.|nCome vuoi procedere?", 0x48153f70, "." },
   ["HUD_EDIT_MODE_VEHICLE_LEAVE_BUTTON_LABEL"] = { "Pulsante Uscita dal Veicolo", 0xd06bc088, "." },
   ["HUD_EDIT_MODE_VEHICLE_SEAT_INDICATOR_LABEL"] = { "Sedili veicolo", 0xb9c6fe7f, "." },
+  ["HUNTER_AGILITY_TOOLTIP"] = { "Aumenta la probabilità di |cFFFFFFFFcolpo critico|r del %.1f%%\nAumenta la |cFFFFFFFFpotenza d'attacco|r di %d\nAumenta la |cFFFFFFFFpotenza d'attacco a distanza|r di %d\nAumenta l'|cFFFFFFFFArmatura|r di %d\nAumenta la probabilità di |cFFFFFFFFschivata|r del %.1f%%", 0x1b87af75, "." },
+  ["HUNTER_MELEE_ATTACK_POWER_TOOLTIP"] = { "Aumenta i danni per secondo delle |cFFFFFFFFarmi da mischia|r di %s\n\nAumenta con la |cFFFFFFFFForza|r e l'|cFFFFFFFFAgilità|r\n\n|cffBCBCBCOgni 14 punti di potenza d'attacco aggiungono 1 danno per secondo|r", 0x118d6e69, "." },
   ["HUNTER_TRACKING_TEXT"] = { "Tracciamento del Cacciatore", 0xae24c2e4, "." },
 })

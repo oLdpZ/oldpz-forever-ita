@@ -101,6 +101,7 @@ WFJ.Data.add("ui", {
   ["INVTYPE_LEGS"] = { "Gambe", 0x0a49b1b9, "." },
   ["INVTYPE_NECK"] = { "Collo", 0x0a8e4adb, "." },
   ["INVTYPE_QUIVER"] = { "Faretra", 0xa8d12f9d, "." },
+  ["INVTYPE_RANGED"] = { "A distanza", 0x45ead356, "." },
   ["INVTYPE_RELIC"] = { "Reliquia", 0xad09821c, "." },
   ["INVTYPE_ROBE"] = { "Torso", 0xa620ec19, "." },
   ["INVTYPE_SHIELD"] = { "Mano secondaria", 0x4d66f8e7, "." },

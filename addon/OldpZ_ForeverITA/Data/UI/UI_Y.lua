@@ -14,5 +14,6 @@ WFJ.Data.add("ui", {
   ["YOU_LOOT_MONEY_GUILD"] = { "Ricevi %s (%s depositati nella banca di gilda).", 0x7a7c23cc, "." },
   ["YOU_LOOT_MONEY_MOD"] = { "Ricevi %s (+%s)", 0x7a002794, "." },
   ["YOU_RECEIVED"] = { "Ricevi:", 0xf602dd1d, "." },
+  ["YOU_RECEIVED_LABEL"] = { "Hai ricevuto", 0x7eb928fd, "." },
   ["YOU_WON_LABEL"] = { "Hai vinto!", 0x10e5029d, "." },
 })

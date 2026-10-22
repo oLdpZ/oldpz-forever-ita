@@ -179,6 +179,7 @@ WFJ.Data.add("ui", {
   ["UNLIST_ME"] = { "Rimuovimi", 0xd5e523e5, "." },
   ["UNLIST_MY_GROUP"] = { "Rimuovi gruppo", 0xfba91a11, "." },
   ["UNLOCK_WINDOW"] = { "Sblocca finestra", 0x6f1034ee, "." },
+  ["UNMUTE"] = { "Desilenzia", 0x1c8b5ce9, "." },
   ["UNMUTE_SILENCED"] = { "Attiva (il giocatore è silenziato)", 0xce7d2e49, "." },
   ["UNSPENT_TALENT_POINTS"] = { "Talenti non usati: %s", 0x71e64127, "." },
   ["UNTRACK_ACHIEVEMENT_TOOLTIP"] = { "Disattiva questa opzione per smettere di seguire questa impresa.", 0x0057036d, "." },
