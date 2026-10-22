@@ -6,7 +6,7 @@ WFJ.Data.add("spell", {
   [1323209] = { "Respinge i nemici vicini.", nil, 0x632bdade, nil, "um" },
   [1323500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1323522] = { "Infondi nel Paladino vari potenziamenti divini.\n\nAttualmente hai accesso a:$T", nil, 0x407037e6, nil, "um" },
-  [1323651] = { nil, "$N1 danni da arcano inflitti ogni $D1.", nil, 0x1e69ddb3, "mu" },
+  [1323651] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", "$N1 danni da arcano inflitti ogni $D1.", 0xba2c738b, 0x1e69ddb3, "uu" },
   [1323656] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, poi altri $N2 danni da natura ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0x28109756, 0xf6322bec, "uu" },
   [1323676] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1323772] = { "Fornisci allo Sciamano totem incantati della terra.\n\nAttualmente hai accesso a:$T", nil, 0x8e14cd33, nil, "um" },

@@ -41,6 +41,7 @@ WFJ.Data.add("spell", {
   [9175] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x0c7925e2, 0xdb6814b9, "uu" },
   [9176] = { "Riduce l'armatura del bersaglio di $N1 per $D1.", "Armatura ridotta.", 0xbf9102f4, 0x79ec6f6c, "uu" },
   [9177] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
+  [9179] = { nil, "Stordito", nil, 0xa280ed13, "mu" },
   [9221] = { "Evochi un'Ombra del Vuoto utilizzando una Runa dell'Evocazione.", nil, 0x9c46052b, nil, "um" },
   [9222] = { "Evochi un'Ombra del Vuoto utilizzando una Runa dell'Evocazione.", nil, 0x9c46052b, nil, "um" },
   [9223] = { "Evochi una Succube utilizzando il Circolo d'Evocazione.", nil, 0x39bf5bb5, nil, "um" },

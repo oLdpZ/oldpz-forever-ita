@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [1236172] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [1236173] = { nil, "Danni da fuoco ogni $D1.", nil, 0xfd7a76cf, "mu" },
   [1236174] = { "Trasforma il nemico in una pecora, costringendolo a vagare senza meta per un massimo di $D1. In questo stato, la pecora non può attaccare o lanciare incantesimi, ma si rigenera rapidamente. Qualsiasi danno riporta il bersaglio alla sua forma normale. Può essere trasformato solo un bersaglio alla volta. Funziona solo su bestie, draghi, giganti, umanoidi e animali.", "Impossibile attaccare o lanciare incantesimi.\nVelocità di rigenerazione della salute aumentata.", 0x1f2ac94a, 0x4096b919, "uu" },
+  [1236175] = { nil, "In traslazione...", nil, 0xe8b15d2f, "mu" },
   [1236176] = { "Disarma il nemico per $D1.", "Disarmato!", 0xef69889f, 0x98985ecd, "uu" },
   [1236177] = { "Mutila il nemico, infliggendo $N1 danni e riducendo la sua velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x99e679bf, 0xbd9449c1, "uu" },
   [1236179] = { "Infligge $N1 danni a un nemico, stordendolo per $D1.", "Stordito.", 0x9f56403f, 0x27f95286, "uu" },

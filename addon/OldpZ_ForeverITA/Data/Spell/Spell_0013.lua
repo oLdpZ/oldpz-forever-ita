@@ -20,6 +20,7 @@ WFJ.Data.add("spell", {
   [13044] = { "Porta il personaggio sull'altopiano di Razelikh.", nil, 0x35c20fb0, nil, "um" },
   [13049] = { "Richiama un Draghetto di Smeraldo che ti protegga in battaglia per un breve periodo di tempo.", nil, 0x4e150bce, nil, "um" },
   [13099] = { nil, "Impossibile muoversi.", nil, 0x4e3a6b36, "mu" },
+  [13119] = { nil, "Immobilizzato.", nil, 0x9bb1efcf, "mu" },
   [13120] = { "Cattura il bersaglio per $D1. Tuttavia, la rete ha molti ganci e potrebbe impigliarsi negli indumenti dell'utilizzatore al momento del lancio...", nil, 0x81b432be, nil, "um" },
   [13138] = { nil, "La Rete-matica si è incastrata!\nImmobilizzato.", nil, 0x2b14846e, "mu" },
   [13140] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },

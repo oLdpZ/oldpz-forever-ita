@@ -101,6 +101,7 @@ WFJ.Data.add("spell", {
   [19385] = { "Aumenta i danni inflitti con le armi da mischia del $N1%.", nil, 0x05754504, nil, "um" },
   [19391] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [19393] = { "Infligge $N1 danni da fuoco a un nemico in $D1, impedendo il lancio d'incantesimi e riducendo i danni fisici che infligge del $N3%.", "$N1 danni da fuoco subiti in $D1.\nDanni fisici inflitti ridotti del $N3%.\nSilenziato.", 0x6082ccb7, 0x0e54b828, "uu" },
+  [19396] = { nil, "Danni da fuoco subiti aumentati di $N1.", nil, 0xbe4d5e70, "mu" },
   [19397] = { nil, "Danni da fuoco subiti aumentati di $N1.", nil, 0xbe4d5e70, "mu" },
   [19407] = { "Fornisce a ⟦Concussive Shot=Tiro Stordente⟧ una probabilità del $N1% di stordire il bersaglio per $D1.", nil, 0x86d96aef, nil, "um" },
   [19408] = { "Semina il panico tra i nemici vicini, costringendoli a scappare per $D1.", "Fuga in preda al terrore.", 0x66319295, 0xfa67e4a8, "uu" },

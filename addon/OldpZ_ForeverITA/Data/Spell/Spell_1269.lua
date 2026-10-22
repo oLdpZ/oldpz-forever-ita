@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [1269278] = { nil, "Stordito. Qualsiasi danno interrompe l'effetto.", nil, 0x83abe74b, "mu" },
   [1269330] = { nil, "Stordito. Qualsiasi danno interrompe l'effetto.", nil, 0x83abe74b, "mu" },
   [1269334] = { nil, "Stordito. Qualsiasi danno interrompe l'effetto.", nil, 0x83abe74b, "mu" },
+  [1269337] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
   [1269354] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare.", nil, 0x043d7c8b, nil, "um" },
   [1269433] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1269434] = { "Infligge danni ripartiti equamente tra tutti i bersagli colpiti", nil, 0x4e959530, nil, "um" },

@@ -4,6 +4,8 @@ WFJ.Data.add("spell", {
   [1240193] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
   [1240682] = { "Lancia un dardo magico contro il nemico, infliggendo danni da arcano.", nil, 0x1414a65f, nil, "um" },
   [1240687] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini.", nil, 0x301ad2a4, nil, "um" },
+  [1240688] = { nil, "Immobilizzato.\n$N1 danni da natura inflitti ogni $D1.", nil, 0x4d35cbba, "mu" },
+  [1240869] = { nil, "Impossibile attaccare o lanciare incantesimi.", nil, 0x03c3096f, "mu" },
   [1240943] = { "Permette a un alchimista di preparare pozioni di base. Puoi salire di competenza fino a un massimo di $N1. Richiede erbe trovate con l'Erbalismo.", nil, 0xe28084c1, nil, "um" },
   [1240944] = { "Permette a un fabbro di creare armi e armature di base. Puoi salire di competenza fino a un massimo di $N1. Richiede pietre e metalli ottenuti con l'Estrazione.", nil, 0xe27ffca2, nil, "um" },
   [1240945] = { "Permette a un cuoco di preparare ricette di base. Puoi salire di competenza fino a un massimo di $N1. Richiede carne di bestie e un fuoco per cucinare.", nil, 0xe2814dd3, nil, "um" },

@@ -35,6 +35,7 @@ WFJ.Data.add("spell", {
   [1220751] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
   [1220756] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", "Danni degli incantesimi aumentati di $N1\nCure aumentate di $N2.", 0x77ff472e, 0xdd675a01, "uu" },
   [1220770] = { "Rigenera $N1 salute ogni $D1.", "Rigenera $N1 salute ogni $D1.", 0xe2d95cbb, 0xe2d95cbb, "uu" },
+  [1220845] = { nil, "Immobilizzato.", nil, 0x9bb1efcf, "mu" },
   [1220853] = { "Infligge $N1 danni da gelo ai nemici vicini, riducendo la loro velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xe513fa92, 0x08fe36e7, "uu" },
   [1220854] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
   [1220855] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },

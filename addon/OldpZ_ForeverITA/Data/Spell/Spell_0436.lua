@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [436289] = { "Evoca e congeda un Raptor cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x7d1c7f75, 0x2195529a, "uu" },
   [436327] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [436329] = { "Evoca e congeda una Fiera Dorata cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x3745fb1e, 0x2195529a, "uu" },
+  [436332] = { nil, "$N1 danni da sanguinamento subiti ogni $D1.", nil, 0x72a94853, "mu" },
   [436368] = { "Incidi sulla tua armatura per il torso o sulla tua veste la runa Two-Handed Mastery:\n\n$I1\nOgni volta che colpisci un nemico con un'arma a due mani, ottieni il $N1% di velocità d'attacco con le armi a due mani, il $N2% di potenza d'attacco in più e il $N3% di probabilità d'impatto in più con gli incantesimi per $D1. L'effetto svanisce se colpisci un nemico con un'arma a una mano.", nil, 0xdd8ed9f4, nil, "um" },
   [436377] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [436391] = { nil, "Immune agli effetti di limitazione al movimento.", nil, 0xfedffc69, "mu" },

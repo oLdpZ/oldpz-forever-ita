@@ -60,7 +60,7 @@ WFJ.Data.add("spell", {
   [1307508] = { "Quando subisci un attacco, infliggi $N1 danni da natura e $N2 danni da arcano all'attaccante.", "$N1 danni da natura inflitti agli attaccanti.", 0x605e5266, 0xecffe814, "uu" },
   [1307509] = { nil, "$N1 danni da arcano inflitti agli attaccanti.", nil, 0x7c47b36a, "mu" },
   [1307519] = { "Invoca la protezione della natura per $D1. Il primo nemico che ti colpisce con un attacco in mischia resta immobilizzato per $D2.", "Intrappola il prossimo nemico che ti infligge danni in mischia.", 0x79b02591, 0x831fbd93, "uu" },
-  [1307520] = { "Immobilizza il bersaglio e gli infligge $N1 danni da natura in $D1. Eventuali danni inflitti potrebbero interrompere l'effetto.", nil, 0x7630bc67, nil, "um" },
+  [1307520] = { "Immobilizza il bersaglio e gli infligge $N1 danni da natura in $D1. Eventuali danni inflitti potrebbero interrompere l'effetto.", "Immobilizzato. Infligge $N1 danni da natura ogni $D1.", 0x7630bc67, 0xb6c2d1ea, "uu" },
   [1307644] = { "Gli attacchi in mischia dei nemici hanno una probabilità di azzerare il tempo di recupero di ⟦Flame Blast=Detonazione Fiammeggiante⟧.", nil, 0x7c7474cc, nil, "um" },
   [1307694] = { "[DNT] Subisci danni pari al $N1% della salute massima ogni $D1. Non può uccidere il bersaglio.\n\nQuesto è un incantesimo di debug.", "[DNT] Subisci danni pari al $N1% della tua salute massima ogni $D1.", 0xd831b8af, 0xdf751d76, "uu" },
   [1307696] = { "Infligge $N1 danni da natura al bersaglio. Infligge $N2 volte i danni ai dragoidi e ai nemici alati.", nil, 0x583039a3, nil, "um" },

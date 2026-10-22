@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1232013] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1232051] = { nil, "Celerità aumentata del $N1%.", nil, 0x269d2af7, "mu" },
   [1232150] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [1232151] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [1232152] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
@@ -23,6 +24,7 @@ WFJ.Data.add("spell", {
   [1232234] = { nil, "Spirito aumentato di $N1.", nil, 0x7e8fc3e9, "mu" },
   [1232312] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1232387] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1232406] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
   [1232477] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1232478] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1232479] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
@@ -44,4 +46,5 @@ WFJ.Data.add("spell", {
   [1232981] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
   [1232982] = { "Morde il bersaglio, infliggendo $N1 danni da natura in $D1. Su ogni bersaglio può essere attivo un solo Morso per Cacciatore.", nil, 0x7d1286a5, nil, "um" },
   [1232988] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1232994] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
 })

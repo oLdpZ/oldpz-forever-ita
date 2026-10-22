@@ -37,7 +37,7 @@ WFJ.Data.add("spell", {
   [1301123] = { "Probabilità all'impatto di ottenere il $N1% di velocità d'attacco per $D1. Se non ci sono alleati entro $N3 m, la probabilità che gli attacchi attivino questo effetto è $N4 volte maggiore.", nil, 0xcaf5b4c4, nil, "um" },
   [1301124] = { "Velocità d'attacco aumentata del $N1%.", "Velocità d'attacco aumentata del $N1%.", 0x8859e2db, 0x8859e2db, "uu" },
   [1301126] = { "Riduce del $N1% la probabilità che gli effetti di paura ti colpiscano.", nil, 0xd3bb670e, nil, "um" },
-  [1301167] = { "Assorbe fino a un massimo di $N1 danni e ti stordisce per $D1. Al termine dello stordimento, la tua velocità di movimento aumenta del $N3% per $D2.", nil, 0x584acd6f, nil, "um" },
+  [1301167] = { "Assorbe fino a un massimo di $N1 danni e ti stordisce per $D1. Al termine dello stordimento, la tua velocità di movimento aumenta del $N3% per $D2.", "Stordito", 0x584acd6f, 0xa280ed13, "uu" },
   [1301168] = { "Assorbe fino a un massimo di $N1 danni e ti stordisce per $D1. Al termine dello stordimento, la tua velocità di movimento aumenta del $N3% per $D2.", "Velocità di movimento aumentata del $N1%.", 0x5bffbb71, 0xd5c3ac7c, "uu" },
   [1301195] = { "Versa un bicchiere di Silvermoon Shimmerwine.", "Sta gustando un bicchiere di Silvermoon Shimmerwine.", 0x40582d15, 0xf294aede, "uu" },
   [1301242] = { "Aumenta la durata di Sciame d'Insetti di $D1.", nil, 0xd8cbc54d, nil, "um" },
@@ -64,5 +64,5 @@ WFJ.Data.add("spell", {
   [1301722] = { "Riduce il tempo di recupero di ⟦Shield Wall=Muro di Scudi⟧ di $D1.", nil, 0x8c993d2d, nil, "um" },
   [1301784] = { "Da collocare fuori dalla porta al secondo piano di Trias' Cheese.", nil, 0x0ae35f91, nil, "um" },
   [1301922] = { "Gli attacchi in mischia e a distanza contro orchi e ogre infliggono il $N1% di danni aggiuntivi come danni fisici.", "Gli attacchi in mischia e a distanza contro orchi e ogre infliggono il $N1% di danni aggiuntivi come danni fisici.", 0x624a2224, 0x624a2224, "uu" },
-  [1301928] = { "Aumenta del $N1% i danni da fuoco subiti.", nil, 0x5e40573e, nil, "um" },
+  [1301928] = { "Aumenta del $N1% i danni da fuoco subiti.", "Aumenta i danni da fuoco subiti del $N1%.", 0x5e40573e, 0x5e40573e, "uu" },
 })

@@ -5,5 +5,6 @@ WFJ.Data.add("spell", {
   [1288462] = { nil, "Danni da ombra inflitti ogni $D1.", nil, 0x1bf49534, "mu" },
   [1288561] = { nil, "Armatura ridotta di $N1.\nImpossibile entrare in modalità furtiva o diventare invisibile.", nil, 0x0730b87e, "mu" },
   [1288793] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
+  [1288908] = { nil, "Armatura ridotta del $N1%.", nil, 0x7bc8160f, "mu" },
   [1288972] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
 })

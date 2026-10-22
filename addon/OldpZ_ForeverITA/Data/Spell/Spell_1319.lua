@@ -8,7 +8,7 @@ WFJ.Data.add("spell", {
   [1319257] = { "Consacra la tua arma, infliggendo $N1 danni aggiuntivi con il prossimo attacco. Tutti i danni inflitti sono basati sulla magia sacra.", nil, 0x78665754, nil, "um" },
   [1319258] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
   [1319259] = { "Infligge $N1 danni a un nemico e aumenta di $N2 i danni da sacro che subisce per ogni ⟦Crusader Strike=Assalto del Crociato⟧ per $D1. Può essere applicato fino a $N4 volte.", "Danni da sacro subiti aumentati.", 0x35834ea5, 0x6508d97f, "uu" },
-  [1319260] = { "Aumenta la celerità del $N1% per tutti gli alleati entro $N2 m.", nil, 0xa8949f96, nil, "um" },
+  [1319260] = { "Aumenta la celerità del $N1% per tutti gli alleati entro $N2 m.", "Celerità aumentata del $N1%.", 0xa8949f96, 0x269d2af7, "uu" },
   [1319309] = { "$I1 Aura del Lunagufo\nAumenta del $N1% la probabilità di colpo critico degli incantesimi.\n\n$I2 Capobranco\nAumenta del $N2% la probabilità di colpo critico in mischia e a distanza.", nil, 0x6b190f28, nil, "um" },
   [1319310] = { "Un pasto nutriente ti conferisce ⟦Well Fed=Ben Nutrito⟧, aumentando la tua Armatura.", { "La tua Armatura è aumentata di $N1. Esperienza ottenuta dalle uccisioni aumentata del $N2%.", "La tua Armatura è aumentata di $N1. ", shape = { "2/0", "1/0" } }, 0xcd2d5aa0, 0x0725885c, "uu" },
   [1319311] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Armatura per $D3. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Armatura per $D3. ", shape = { "6/3", "5/3" } }, nil, 0xa37508da, nil, "um" },

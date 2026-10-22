@@ -135,6 +135,7 @@ WFJ.Data.add("spell", {
   [22699] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [22700] = { "Crea un Robot di Riparazione che può riparare gli oggetti danneggiati e acquistare i beni che non servono. Dopo 10 min, il suo motore interno si brucia.", nil, 0xbb250bbd, nil, "um" },
   [22703] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [22707] = { nil, "Stordito", nil, 0xa280ed13, "mu" },
   [22709] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo $N1 danni da ombra.", nil, 0xb6da9066, nil, "um" },
   [22710] = { nil, "Danni fisici inflitti aumentati di $N1.", nil, 0x422f867d, "mu" },
   [22713] = { "Infligge $N1 danni da fuoco a un nemico e aumenta di $N2 i danni da fuoco che subisce per $D1.", "Danni da fuoco subiti aumentati di $N1.", 0x03b94a10, 0xbe4d5ef3, "uu" },

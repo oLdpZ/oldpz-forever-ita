@@ -7,4 +7,5 @@ WFJ.Data.add("spell", {
   [1225771] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [1225772] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [1225774] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
+  [1225987] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd64ce2e8, "mu" },
 })

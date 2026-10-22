@@ -43,6 +43,7 @@ WFJ.Data.add("spell", {
   [468767] = { "Rigenera $N1 mana in $D1. Devi sederti per bere.", "$N1 mana rigenerato ogni secondo.", 0x792a9d04, 0x338019ff, "uu" },
   [468768] = { nil, "Forza aumentata di $N1.", nil, 0xb2147e94, "mu" },
   [468782] = { "Scaglia un fulmine contro il bersaglio, infliggendo $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
+  [468879] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
   [468971] = { "Tutti gli attacchi vanno sicuramente a segno e sono colpi critici per $D1.", nil, 0x14cb9ba5, nil, "um" },
   [468993] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
 })

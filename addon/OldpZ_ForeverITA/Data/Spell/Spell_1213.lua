@@ -40,6 +40,7 @@ WFJ.Data.add("spell", {
   [1213873] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [1213892] = { "Aumenta fino a un massimo di $N1 i danni inflitti da incantesimi ed effetti magici per $D1. Puoi beneficiare dell'effetto di un solo tonico alla volta. L'effetto persiste dopo la morte.", nil, 0x866d214b, nil, "um" },
   [1213897] = { nil, "Potenza d'attacco aumentata di $N1.", nil, 0x564bbf31, "mu" },
+  [1213924] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
   [1213971] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1213972] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x61fe647b, 0xdb6814b9, "uu" },
   [1213997] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },

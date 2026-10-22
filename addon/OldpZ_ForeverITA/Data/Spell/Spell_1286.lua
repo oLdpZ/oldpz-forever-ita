@@ -15,4 +15,5 @@ WFJ.Data.add("spell", {
   [1286254] = { "Piazza una Benedizione sul bersaglio alleato, aumentando tutte le caratteristiche del $N1% per $D1. Il bersaglio alleato può ricevere solo una Benedizione per Paladino alla volta.", "Caratteristiche aumentate del $N1%.", 0xf4a4668d, 0xb6c88837, "uu" },
   [1286257] = { "Potenzia tutti i membri del gruppo e dell'incursione, aumentando lo Spirito di $N1 per $D1.", "Spirito aumentato di $N1.", 0x19cec3fc, 0x7e8fc3e9, "uu" },
   [1286345] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
+  [1286462] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
 })

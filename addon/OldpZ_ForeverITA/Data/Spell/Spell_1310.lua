@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1310015] = { "Aumenta la velocità di movimento del $N1% nella Valle di Rovotorto e a Riverglades.", "Velocità di movimento aumentata del $N1%.", 0x1dd0ad7e, 0xd5c3ac7c, "uu" },
-  [1310023] = { "Ti nascondi nell'ombra, riducendo la probabilità che i nemici rilevino la tua presenza. Dura fino all'annullamento o finché non ti muovi.", nil, 0x16418a14, nil, "um" },
+  [1310023] = { "Ti nascondi nell'ombra, riducendo la probabilità che i nemici rilevino la tua presenza. Dura fino all'annullamento o finché non ti muovi.", "Furtivo.", 0x16418a14, 0x150ed465, "uu" },
   [1310041] = { "Studia le arti magiche con l'aiuto di una biblioteca.", nil, 0xe625e7db, nil, "um" },
   [1310076] = { "Aumenta del $N2% la probabilità di critico di Parola d'Ombra: Morte sui bersagli con il $N1% di salute o meno.", nil, 0x7bab764f, nil, "um" },
   [1310077] = { "Aumenta fino a $N1 i danni da sacro degli incantesimi per $D1.", "Danni da sacro di incantesimi e abilità aumentati fino a $N1.", 0xc4a3d79d, 0x3cf79be5, "uu" },
@@ -16,7 +16,7 @@ WFJ.Data.add("spell", {
   [1310181] = { "Estrai la tua Replica Ironforge Air Rifle per una sparatoria amichevole.", nil, 0x84fb68f1, nil, "um" },
   [1310185] = { "Mantieni fino a $N1 rabbia quando cambi postura.", nil, 0xb206dc30, nil, "um" },
   [1310189] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
-  [1310195] = { "Riduce l'armatura di un nemico del $N1% per $D1.", nil, 0x2309ec8a, nil, "um" },
+  [1310195] = { "Riduce l'armatura di un nemico del $N1% per $D1.", "Armatura ridotta del $N1%.", 0x2309ec8a, 0x7bc8160f, "uu" },
   [1310196] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
   [1310197] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
   [1310198] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
@@ -55,7 +55,7 @@ WFJ.Data.add("spell", {
   [1310721] = { "Quando Perforazione infligge danni periodici, il costo in energia della tua prossima Emorragia o Pugnalata alle Spalle entro $D1 è ridotto di $N2, cumulabile fino a $N3 volte.", nil, 0x09ab53fa, nil, "um" },
   [1310723] = { nil, "Costo in energia di Emorragia e Pugnalata alle Spalle ridotto di $N1.", nil, 0xe4baf8d2, "mu" },
   [1310725] = { nil, "Rigenerazione del $N1% della salute totale ogni $D1.", nil, 0xcde80f3c, "mu" },
-  [1310726] = { nil, "Morso della Mangusta attivato.", nil, 0xa50c647a, "mu" },
+  [1310726] = { "Utilizzabile dopo un blocco, una schivata o una parata riusciti.", "Morso della Mangusta attivato.", 0x80d60310, 0xa50c647a, "uu" },
   [1310728] = { "⟦Sinister Strike=Assalto Funesto⟧, Assalto Spettrale ed Emorragia infliggono il $N1% di danni in più ai bersagli con meno del $N2% di salute.", nil, 0x578b2d2a, nil, "um" },
   [1310735] = { "Riduce del $N1% il costo in mana dei tuoi Sigilli e, quando sostituisci Sigillo del Comando, Sigillo della Rettitudine, Seal of Fury o Seal of Justice con un altro Sigillo, ottieni un Echo di quel Sigillo. Il tuo prossimo attacco in mischia applica gli effetti del Sigillo sostituito, consumando l'Echo.", nil, 0x00166838, nil, "um" },
   [1310785] = { "Un tiro a lunga gittata che infligge danni a distanza più $N1 e aumenta di $N3 m la portata dei tuoi prossimi $N2 tiri per $D1.", "Gittata dei tiri aumentata di $N1.", 0x21accfde, 0xb6f07a04, "uu" },

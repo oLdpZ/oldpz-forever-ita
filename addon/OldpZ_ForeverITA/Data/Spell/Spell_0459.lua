@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [459313] = { "Incidi sul tuo anello la runa Defense Specialization:\n\n$I1\nDifesa aumentata di $N1. Non cumulabile con le altre rune dell'anello.", nil, 0xef86bf94, nil, "um" },
+  [459499] = { nil, "Immobilizzato.", nil, 0x9bb1efcf, "mu" },
   [459592] = { "Attacca i nemici vicini in un turbine d'acciaio che dura $D1 e infligge danni normali e $N2 danni aggiuntivi.", nil, 0xb90dc628, nil, "um" },
   [459606] = { "Aumenta la velocità della tua abilità ⟦Ghost Wolf=Lupo Spettrale⟧ del $N1%.", nil, 0xfb6a1db0, nil, "um" },
   [459608] = { "Riduce di $N1 il costo in rabbia di Azzoppamento.", nil, 0x1c20335d, nil, "um" },

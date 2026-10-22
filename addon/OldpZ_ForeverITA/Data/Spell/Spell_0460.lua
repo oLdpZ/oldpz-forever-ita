@@ -7,6 +7,7 @@ WFJ.Data.add("spell", {
   [460230] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
   [460339] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [460343] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [460651] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x09876d53, "mu" },
   [460692] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460698] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },
   [460699] = { nil, "$N1 danni da fuoco ogni $N2 s.", nil, 0x0d35ca56, "mu" },

@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1322000] = { "Conferisce all'incantatore una probabilità, quando colpisce, di aumentare di $N1 i danni da fuoco subiti da un nemico per $D1.", nil, 0x0e7c457d, nil, "um" },
-  [1322001] = { "Aumenta di $N1 i danni da fuoco subiti da un nemico per $D1.", nil, 0x6ca87730, nil, "um" },
+  [1322001] = { "Aumenta di $N1 i danni da fuoco subiti da un nemico per $D1.", "Danni da fuoco subiti aumentati di $N1.", 0x6ca87730, 0xbe4d5e70, "uu" },
   [1322004] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1322005] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1322007] = { "Evoca un'ombra del Vuoto agli ordini dello Stregone.", nil, 0xe766a608, nil, "um" },

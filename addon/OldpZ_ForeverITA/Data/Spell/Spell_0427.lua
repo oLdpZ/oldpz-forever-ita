@@ -8,5 +8,6 @@ WFJ.Data.add("spell", {
   [427081] = { "Incidi sui tuoi bracciali la runa Furia:\n\n$I1\nScateni la tua furia, aumentando del $N1% la tua potenza d'attacco per $D1. Questa abilità si può usare solo mentre sei infuriato.", nil, 0x0c6ff633, nil, "um" },
   [427082] = { "Incidi sui tuoi bracciali la runa Scudo e Spada:\n\n$I1\nQuando le tue abilità Sfondamento e Rivincita infliggono danni, hanno il $N1% di probabilità di azzerare il tempo di recupero della tua abilità Colpo di Scudo e di ridurne del $N2% il costo in rabbia per $D1.", nil, 0xa197703f, nil, "um" },
   [427084] = { "Incidi sui tuoi bracciali la runa Collera Distruttiva:\n\n$I1\nI tuoi critici in mischia ti rendono infuriato (attivando le abilità che richiedono di essere infuriato) e aumentano del $N1% i danni di Assalto Mortale, Sete di Sangue e Colpo di Scudo per $D1.", nil, 0x5e77eb3f, nil, "um" },
+  [427719] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
   [427746] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
 })

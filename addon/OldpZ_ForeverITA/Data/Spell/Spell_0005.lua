@@ -77,6 +77,7 @@ WFJ.Data.add("spell", {
   [5280] = { "Fa spuntare spine dall'incantatore, che infliggono $N1 danni da natura agli attaccanti in mischia. Le spine durano $D1.", "$N1 danni da natura inflitti agli attaccanti in mischia.", 0x21c986fb, 0xd89ce264, "uu" },
   [5286] = { "Ti insegna l'abilità ⟦Mark of the Wild=Marchio Selvaggio⟧ (Grado $N1).", nil, 0xf6191ed4, nil, "um" },
   [5287] = { "Ti insegna l'abilità ⟦Mark of the Wild=Marchio Selvaggio⟧ (Grado $N1).", nil, 0xf61961dd, nil, "um" },
+  [5302] = { "Utilizzabile dopo un blocco, una schivata o una parata riusciti.", nil, 0x80d60310, nil, "um" },
   [5308] = { "Tenta di finire un nemico ferito, infliggendo $N1 danni e convertendo ogni punto di rabbia in più in $N2 danni aggiuntivi. Utilizzabile solo su nemici con il $N3% della salute o meno.", nil, 0x320612c2, nil, "um" },
   [5316] = { "Piazzalo presso un nido di scytheclaw.", nil, 0x797dac97, nil, "um" },
   [5321] = { "Aumenta la Tempra del bersaglio di $N1 per $D1.", nil, 0xa3e89b8e, nil, "um" },

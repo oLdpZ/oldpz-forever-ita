@@ -159,6 +159,7 @@ WFJ.Data.add("spell", {
   [26373] = { "Ti teletrasporta dal Chiaro di Luna Maggiore.", nil, 0x837d96a1, nil, "um" },
   [26374] = { "Lancia un fuoco d'artificio al bersaglio.", nil, 0x3725fcee, nil, "um" },
   [26379] = { "Frastorna tutti i nemici vicini per $D1.", "Frastornato.", 0xd3c4b256, 0x8649cd0f, "uu" },
+  [26386] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", nil, 0xba2c738b, nil, "um" },
   [26389] = { "Una bevanda alcolica dotata di uno strano bagliore.", "Sbronza in corso.", 0xf0d09d48, 0xf7852f65, "uu" },
   [26391] = { "Evoca un Tentacolo Dominato in tuo aiuto per $D1.", nil, 0x961b4e69, nil, "um" },
   [26392] = { "Evoca un raggio di Luce Lunare su Bifido, che beneficia chiunque vi passi attraverso.", nil, 0xe63ec70e, nil, "um" },
