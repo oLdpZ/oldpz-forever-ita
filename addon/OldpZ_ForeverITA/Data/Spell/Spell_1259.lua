@@ -2,6 +2,17 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1259338] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
+  [1259416] = { nil, "Cammini sull'aria.", nil, 0xd8b3ea96, "mu" },
+  [1259630] = { nil, "Questo shriekling è appena nato e ha la vista debole. Il raggio d'individuazione dei nemici è molto ridotto.", nil, 0x4bc69be6, "mu" },
   [1259652] = { "Scaglia all'istante un fulmine contro un nemico, infliggendo danni da natura.", nil, 0x40d9deb7, nil, "um" },
+  [1259688] = { nil, "Velocità di movimento e velocità in sella aumentate del $N1%.", nil, 0xc7a5c1df, "mu" },
+  [1259691] = { nil, "Velocità di rigenerazione di mana e salute aumentata del $N1%.", nil, 0xdf5d4fac, "mu" },
   [1259721] = { "Danni inflitti alle Bestie aumentati del $N1%.", nil, 0x6cc36038, nil, "um" },
+  [1259799] = { nil, "Probabilità di critico con tutti gli incantesimi e gli attacchi aumentata del $N1%.", nil, 0x9bebb889, "mu" },
+  [1259812] = { nil, "Le abilità dannose non periodiche costano il $N1% di energia in meno e infliggono il $N2% di danni in più.", nil, 0x04c56d64, "mu" },
+  [1259813] = { nil, "Le abilità dannose non periodiche costano il $N1% di rabbia in meno e infliggono il $N2% di danni in più.", nil, 0x710ce8a9, "mu" },
+  [1259817] = { nil, "Le abilità dannose costano il $N1% di mana in meno e infliggono il $N2% di danni in più.", nil, 0x46ef5db9, "mu" },
+  [1259821] = { nil, "Le abilità dannose non periodiche costano il $N1% di mana in meno e infliggono il $N2% di danni in più.", nil, 0x50a6416c, "mu" },
+  [1259823] = { nil, "Le abilità dannose o curative non periodiche costano il $N1% di mana in meno e infliggono il $N2% di danni o cure in più.", nil, 0x09ffed9d, "mu" },
+  [1259907] = { nil, "Velocità di movimento e velocità in sella aumentate del $N1%.", nil, 0xf10f757a, "mu" },
 })

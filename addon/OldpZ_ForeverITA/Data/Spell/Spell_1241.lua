@@ -3,6 +3,16 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1241115] = { "Indica sulla minimappa la posizione dei non morti vicini finché non viene annullato. Può essere usato un solo tipo di rilevamento alla volta.", "Non morti individuati.", 0x07ce0db8, 0x2b625a65, "uu" },
   [1241325] = { "Emette un'onda d'urto magica che infligge $N1 danni da arcano ai nemici vicini.", nil, 0xe5bc2450, nil, "um" },
+  [1241329] = { "Si è verificato un malfunzionamento. Ogni $N1 s viene rilasciata energia arcana che infligge danni ai giocatori nell'area vicina.", nil, 0x221a1b06, nil, "um" },
+  [1241359] = { "Emette un cono di energia arcana davanti a sé, infliggendo $N1 danni da arcano e respingendo tutti i bersagli colpiti.", nil, 0x509f84f3, nil, "um" },
+  [1241501] = { "Incanala energia in avanti, infliggendo danni a tutti i bersagli colti dall'esplosione.", nil, 0x34c7fb8c, nil, "um" },
+  [1241506] = { "Infligge $N1 danni da arcano a un nemico.", nil, 0xe247bc12, nil, "um" },
   [1241514] = { nil, "$N1 danni da arcano inflitti ogni $D1.", nil, 0xd8708d96, "mu" },
-  [1241523] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
+  [1241515] = { "Lancia un globo infuso di mana verso un giocatore casuale, che si allontana e poi ritorna al punto d'origine. I giocatori colpiti subiscono $N1 danni da arcano.", nil, 0xa6b35329, nil, "um" },
+  [1241523] = { "Lancia un globo infuso di mana verso un giocatore casuale, che si allontana e poi ritorna al punto d'origine. I giocatori colpiti subiscono $N1 danni da arcano.", "Silenziato.", 0x2f1ec3eb, 0x20816e34, "uu" },
+  [1241524] = { "Lancia un globo infuso di mana verso un giocatore casuale, che si allontana e poi ritorna al punto d'origine. I giocatori colpiti subiscono $N1 danni da arcano.", nil, 0xa6b35329, nil, "um" },
+  [1241582] = { "Attacca all'istante con entrambe le armi, infliggendo il $N1% dei danni dell'arma più $N2 danni aggiuntivi con ciascuna arma. Danni aumentati del $N3% contro i bersagli avvelenati. Fornisce $N4 punti combo.", nil, 0x31535b05, nil, "um" },
+  [1241584] = { "Attacca all'istante con entrambe le armi, infliggendo il $N1% dei danni dell'arma più $N2 danni aggiuntivi con ciascuna arma. Danni aumentati del $N3% contro i bersagli avvelenati. Fornisce $N4 punti combo.", nil, 0xed0e4713, nil, "um" },
+  [1241797] = { "Le tue mosse risolutive che infliggono danni riducono il tempo di recupero residuo di ⟦Adrenaline Rush=Scarica d'Adrenalina⟧, ⟦Blade Flurry=Vortice di Lame⟧, Evasione, Scatto e Sparizione di $D1 per punto combo.", nil, 0x0145ecad, nil, "um" },
+  [1241821] = { "Crea $N1 minerali a tua scelta.", nil, 0x90ab02b9, nil, "um" },
 })

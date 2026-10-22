@@ -3,9 +3,17 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1242139] = { nil, "Danni inflitti aumentati del $N1%.", nil, 0x3436d245, "mu" },
   [1242252] = { "Emette un'onda d'urto magica che infligge $N1 danni da arcano ai nemici vicini.", nil, 0xe5bc2450, nil, "um" },
+  [1242393] = { "Evoca un'aquila che ti accompagna finché non la congedi.", nil, 0xe441dba9, nil, "um" },
+  [1242436] = { "Riporta in vita servitori non morti perché ti aiutino.", nil, 0x8c029435, nil, "um" },
   [1242440] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
+  [1242512] = { "Rigenerazione del mana durante il lancio.", nil, 0xdf7219d3, nil, "um" },
   [1242634] = { "Un colpo che diventa disponibile dopo aver parato l'attacco di un avversario. Questo attacco infligge il $N1% dei danni dell'arma e $N2 danni aggiuntivi e immobilizza il bersaglio per $D1. Contrattacco non può essere bloccato, schivato né parato.", "Immobilizzato.", 0xbfd6d532, 0x7d75228d, "uu" },
-  [1242884] = { nil, "Intimorito.", nil, 0x441534cf, "mu" },
+  [1242853] = { "Rigenerazione del mana aumentata del $N1%; il $N2% della rigenerazione del mana continua durante il lancio.", nil, 0xc8cd6870, nil, "um" },
+  [1242871] = { "Infligge $N1 danni da fuoco, poi continua a infliggere lievi danni solari ogni $D1.", nil, 0x200bb819, nil, "um" },
+  [1242884] = { "Ruggisce contro un nemico, paralizzandolo dal terrore per $D1 e mettendo in fuga per la paura tutti gli altri nemici vicini.", "Intimorito.", 0x0c98d7ea, 0x441534cf, "uu" },
+  [1242907] = { "Infligge il $N1% di danni fisici al bersaglio nemico attuale.", nil, 0x4fb414e5, nil, "um" },
+  [1242913] = { "Infligge danni solari moderati, poi continua a infliggere lievi danni solari ogni $D1.", nil, 0xb092ac84, nil, "um" },
   [1242971] = { "L'energia d'ombra distrugge lentamente il bersaglio, infliggendo $N1 danni in $D1. Inoltre, se Afflizione Instabile viene dissolta, infligge $N3 danni a chi la dissolve e lo silenzia per $D2. Su un bersaglio può essere attiva una sola Afflizione Instabile o Immolazione per Stregone.", "$N1 danni da ombra ogni $D1. Se viene dissolto, infligge $N3 danni a chi lo dissolve e lo silenzia per $D2.", 0xaf411821, 0x88bbd8b6, "uu" },
   [1242972] = { "L'energia d'ombra distrugge lentamente il bersaglio, infliggendo $N1 danni in $D1. Inoltre, se Afflizione Instabile viene dissolta, infligge $N3 danni a chi la dissolve e lo silenzia per $D2. Su un bersaglio può essere attiva una sola Afflizione Instabile o Immolazione per Stregone.", "$N1 danni da ombra ogni $D1. Se viene dissolto, infligge $N3 danni a chi lo dissolve e lo silenzia per $D2.", 0xaf411821, 0x88bbd8b6, "uu" },
+  [1242979] = { "Applica un'aura che cura del $N1% della salute massima ogni $N2 per $D1.", nil, 0xf8694e97, nil, "um" },
 })

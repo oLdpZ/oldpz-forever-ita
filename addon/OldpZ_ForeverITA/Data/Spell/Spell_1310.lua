@@ -38,6 +38,8 @@ WFJ.Data.add("spell", {
   [1310438] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1310496] = { "Riduce del $N1% il tempo di recupero delle tue trappole e di Prevenzione.", nil, 0x795736e0, nil, "um" },
   [1310497] = { nil, "$N1 danni da fuoco e $N2 mana bruciato ogni $D1.", nil, 0x71d9c442, "mu" },
+  [1310499] = { "Cura un alleato ogni $D1 per $D2.", nil, 0x61f0e6eb, nil, "um" },
+  [1310502] = { "Cura un alleato ogni $D1 per $D2.", nil, 0x61f0e6eb, nil, "um" },
   [1310503] = { "Aumenta l'Armatura del bersaglio alleato di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3 per $D1.", "Armatura aumentata di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3.", 0x48c4c0cd, 0x4ce7615d, "uu" },
   [1310532] = { "I tuoi attacchi in mischia e a distanza contro i nemici afflitti da ⟦Hunter's Mark=Marchio del Cacciatore⟧ hanno il $N1% di probabilità di permettere l'attivazione di Morso della Mangusta. Dura $D1.", nil, 0x07396d22, nil, "um" },
   [1310533] = { "Morso della Mangusta fa anche sanguinare il bersaglio, infliggendo in $D1 danni pari al $N1% dei danni inflitti da Morso della Mangusta.", nil, 0x416f9d13, nil, "um" },

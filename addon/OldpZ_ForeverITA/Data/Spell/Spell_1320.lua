@@ -24,6 +24,7 @@ WFJ.Data.add("spell", {
   [1320824] = { "Ferisce il bersaglio, facendolo sanguinare per $N1 danni in $D1.", "$N1 danni da sanguinamento subiti ogni $D1.", 0x85a68264, 0x72a94853, "uu" },
   [1320864] = { "La lancia va riforgiata prima di poterla usare. Per riforgiarla servono $N1 Lingotto di Mithril, $N2 Lingotto di Verargento, $N3 Acquamarina, $N4 ⟦Solid Grinding Stone=Pietra da Molatura Solida⟧ e $N5 ⟦Elemental Fire=Fuoco Elementale⟧.", nil, 0xb280519c, nil, "um" },
   [1320898] = { "Gettalo in un'Unstable Mana Rift.", nil, 0xee05b862, nil, "um" },
+  [1320922] = { "Riempi la cassa con uno qualsiasi dei lotti dell'elenco seguente:|cnIQ1:\n- $N1 Tubo di Bronzo\n- $N2 Ingranaggi Rotanti di Bronzo\n- $N3 Struttura di Bronzo\n- $N4 Nucleo Energetico d'Oro", nil, 0xa780e349, nil, "um" },
   [1320925] = { "Brucia il bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco ogni $D1.", 0x9a11784e, 0x5a5656de, "uu" },
   [1320930] = { "Scaglia all'istante un fulmine contro un nemico, infliggendo danni da natura.", nil, 0x40d9deb7, nil, "um" },
   [1320965] = { nil, "Velocità di movimento ridotta.", nil, 0xeadcb05a, "mu" },

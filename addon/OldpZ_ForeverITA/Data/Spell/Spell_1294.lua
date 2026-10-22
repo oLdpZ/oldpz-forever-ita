@@ -15,6 +15,7 @@ WFJ.Data.add("spell", {
   [1294111] = { nil, "Gli attacchi hanno una probabilità di intrappolare il nemico.", nil, 0xd1d6dbec, "mu" },
   [1294112] = { nil, "Immobilizzato. Infligge $N1 danni da natura ogni $D1.", nil, 0xb6c2d1ea, "mu" },
   [1294121] = { "Tira contro un bersaglio nemico, infliggendo danni fisici.", nil, 0x75634826, nil, "um" },
+  [1294124] = { "Un tiro mirato che aumenta i danni a distanza di $N1.", nil, 0x8edc6d6f, nil, "um" },
   [1294135] = { "Competenza nei pugnali aumentata di $N1.", nil, 0x54703ebc, nil, "um" },
   [1294136] = { "Competenza nei pugnali aumentata di $N1.", nil, 0x54703ebc, nil, "um" },
   [1294146] = { "Competenza nei pugnali aumentata di $N1.", nil, 0x54703ebc, nil, "um" },
@@ -36,4 +37,5 @@ WFJ.Data.add("spell", {
   [1294666] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1294769] = { "Aumenta del $N1% la probabilità di colpire con le armi a distanza.", nil, 0x24c1db5c, nil, "um" },
   [1294897] = { "Evoca e congeda una Pantera Maculata cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0xc76b7a9d, 0x2195529a, "uu" },
+  [1294946] = { nil, "Fa troppo caldo... E fa troppo freddo.", nil, 0xba47bd95, "mu" },
 })

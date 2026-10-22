@@ -343,6 +343,7 @@ Data\Spell\Spell_1242.lua
 Data\Spell\Spell_1243.lua
 Data\Spell\Spell_1244.lua
 Data\Spell\Spell_1245.lua
+Data\Spell\Spell_1246.lua
 Data\Spell\Spell_1247.lua
 Data\Spell\Spell_1248.lua
 Data\Spell\Spell_1249.lua
@@ -350,6 +351,7 @@ Data\Spell\Spell_1250.lua
 Data\Spell\Spell_1251.lua
 Data\Spell\Spell_1252.lua
 Data\Spell\Spell_1253.lua
+Data\Spell\Spell_1254.lua
 Data\Spell\Spell_1255.lua
 Data\Spell\Spell_1256.lua
 Data\Spell\Spell_1257.lua

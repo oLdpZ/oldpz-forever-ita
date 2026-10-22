@@ -10,8 +10,11 @@ WFJ.Data.add("spell", {
   [1270422] = { nil, "In levitazione.", nil, 0xfb3d5081, "mu" },
   [1270427] = { nil, "$N1 danni da ombra inflitti ogni $D1.", nil, 0x62c40fe2, "mu" },
   [1270462] = { nil, "Probabilità del $N1% di infliggere $N2 danni da natura all'impatto.", nil, 0x87c6dd5a, "mu" },
+  [1270518] = { "Leggi l'etichetta per identificare la spedizione.", nil, 0xef5de173, nil, "um" },
   [1270602] = { nil, "Velocità di movimento ridotta.", nil, 0xeadcb05a, "mu" },
   [1270802] = { "Carica un nemico, respingendolo indietro e infliggendo danni normali e $N1 danni aggiuntivi.", nil, 0xa2823b6b, nil, "um" },
   [1270811] = { "Urla contro un nemico, paralizzandolo dal terrore per $D1 e costringendo tutti gli altri nemici vicini a fuggire impauriti.", "Intimorito.", 0x3743a9ab, 0x441534cf, "uu" },
   [1270825] = { nil, "Armatura ridotta del $N1%.", nil, 0x7bc85918, "mu" },
+  [1270842] = { nil, "Velocità di rigenerazione di mana e salute aumentata del $N1%.", nil, 0xdf5d4fac, "mu" },
+  [1270893] = { nil, "Velocità di movimento e velocità in sella aumentate del $N1%.", nil, 0xc7a5c1df, "mu" },
 })
