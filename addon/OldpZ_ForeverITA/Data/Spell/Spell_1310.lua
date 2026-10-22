@@ -3,6 +3,8 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1310015] = { "Aumenta la velocità di movimento del $N1% nella Valle di Rovotorto e a Riverglades.", "Velocità di movimento aumentata del $N1%.", 0x1dd0ad7e, 0xd5c3ac7c, "uu" },
   [1310023] = { "Ti nascondi nell'ombra, riducendo la probabilità che i nemici rilevino la tua presenza. Dura fino all'annullamento o finché non ti muovi.", "Furtivo.", 0x16418a14, 0x150ed465, "uu" },
+  [1310029] = { "Decifra una pergamena non tradotta.", nil, 0x2551fb8b, nil, "um" },
+  [1310030] = { "Decifra una pergamena non tradotta.", nil, 0x2551fb8b, nil, "um" },
   [1310041] = { "Studia le arti magiche con l'aiuto di una biblioteca.", nil, 0xe625e7db, nil, "um" },
   [1310076] = { "Aumenta del $N2% la probabilità di critico di Parola d'Ombra: Morte sui bersagli con il $N1% di salute o meno.", nil, 0x7bab764f, nil, "um" },
   [1310077] = { "Aumenta fino a $N1 i danni da sacro degli incantesimi per $D1.", "Danni da sacro di incantesimi e abilità aumentati fino a $N1.", 0xc4a3d79d, 0x3cf79be5, "uu" },

@@ -103,7 +103,7 @@ WFJ.Data.add("spell", {
   [1293881] = { "Ogni fendente fa alternare la tua velocità d'attacco tra un aumento del $N1% e una riduzione del $N2%.", nil, 0xdd442978, nil, "um" },
   [1293885] = { "Velocità d'attacco in mischia aumentata del $N1%.", "Velocità d'attacco in mischia aumentata del $N1%.", 0xd471470c, 0xd471470c, "uu" },
   [1293886] = { "Velocità d'attacco in mischia ridotta del $N1%.", "Velocità d'attacco in mischia rallentata del $N1%.", 0x2ade855c, 0x2ade855c, "uu" },
-  [1293889] = { "Tenta di immobilizzare l'anziano Minderel, imprigionandolo in un blocco di ghiaccio e rendendolo vulnerabile agli effetti di fuoco.", nil, 0xdf7e7d47, nil, "um" },
+  [1293889] = { "Tenta di immobilizzare l'anziano Minderel, imprigionandolo in un blocco di ghiaccio e rendendolo vulnerabile agli effetti di fuoco.", "Stordito. Danni da fuoco subiti aumentati del $N1%.", 0xdf7e7d47, 0xec527bc0, "uu" },
   [1293928] = { "Infligge subito $N1 danni da ombra, poi $N2 danni da ombra ogni $D1 per $D2.", "Infligge $N1 danni da ombra ogni $D1.", 0xa16bee18, 0xe30fa957, "uu" },
   [1293940] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0xcfea6646, nil, "um" },
   [1293958] = { "Scatena una raffica di dardi sul punto in cui si trova il bersaglio, infliggendo ogni secondo danni fisici ai giocatori in un cono davanti all'incantatore per $D1.", nil, 0xeddb59d8, nil, "um" },

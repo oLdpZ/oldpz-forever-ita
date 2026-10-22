@@ -35,7 +35,8 @@ WFJ.Data.add("spell", {
   [1270842] = { nil, "Velocità di rigenerazione di mana e salute aumentata del $N1%.", nil, 0xdf5d4fac, "mu" },
   [1270893] = { nil, "Velocità di movimento e velocità in sella aumentate del $N1%.", nil, 0xc7a5c1df, "mu" },
   [1270940] = { "Ripristina $N1 cariche di un dispositivo di marca SAF-T o EZ-Thro in tuo possesso che non preveda esplosioni. Con gli esplosivi sarebbe del tutto non-SAF.", nil, 0x848cf013, nil, "um" },
-  [1270942] = { nil, "Impossibile lanciare incantesimi e danni ridotti del $N1%.", nil, 0x4bb28e5c, "mu" },
-  [1270943] = { nil, "Impossibile lanciare incantesimi e danni ridotti del $N1%.", nil, 0x4bb28e5c, "mu" },
-  [1270944] = { nil, "Impossibile lanciare incantesimi e danni ridotti del $N1%.", nil, 0x4bb28e5c, "mu" },
+  [1270941] = { "Trasforma il bersaglio in un pollo per $D1. Sempre che la polarità della trasmogrificazione non sia stata invertita...", nil, 0x4ecdd5b2, nil, "um" },
+  [1270942] = { "Trasforma il nemico in un pollo che non può lanciare incantesimi e infligge il $N1% di danni in meno fino a un massimo di $D1 o finché non subisce danni.", "Impossibile lanciare incantesimi e danni ridotti del $N1%.", 0xf2b8a056, 0x4bb28e5c, "uu" },
+  [1270943] = { "Trasforma il nemico in un pollo che non può lanciare incantesimi e infligge il $N1% di danni in meno fino a un massimo di $D1.", "Impossibile lanciare incantesimi e danni ridotti del $N1%.", 0x31dfe6ad, 0x4bb28e5c, "uu" },
+  [1270944] = { "Trasforma il nemico in un pollo che non può lanciare incantesimi e infligge il $N1% di danni in meno fino a un massimo di $D1.", "Impossibile lanciare incantesimi e danni ridotti del $N1%.", 0x31dfe6ad, 0x4bb28e5c, "uu" },
 })

@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1318001] = { "+$N1 potenza d'attacco. L'effetto è triplicato nelle zone di foresta e di prateria.", nil, 0x81659b5b, nil, "um" },
   [1318002] = { nil, "In una zona di foresta o di prateria, danni e cure prodotti da incantesimi ed effetti magici aumentati di altri $N1.", nil, 0xb50c7e59, "mu" },
   [1318003] = { nil, "In una zona di foresta o di prateria, danni e cure prodotti da incantesimi ed effetti magici aumentati di altri $N1.", nil, 0x85af3731, "mu" },
+  [1318004] = { "Aumenta fino a $N1 i danni e le cure prodotti da incantesimi ed effetti magici. L'effetto è triplicato nelle zone di foresta e di prateria.", nil, 0xc854c672, nil, "um" },
   [1318024] = { "Piazza un Compact Critter Carrier per $D1 che permette ai Cacciatori del tuo gruppo di accedere ai famigli nella stalla.", nil, 0xfe7715de, nil, "um" },
   [1318031] = { "Gli attacchi da lancio esplodono all'impatto, infliggendo $N1 danni da fuoco ai nemici vicini.", nil, 0x7696e5a4, nil, "um" },
   [1318034] = { "Gli attacchi da lancio esplodono all'impatto, infliggendo $N1 danni da fuoco ai nemici vicini.", nil, 0x975e2d49, nil, "um" },

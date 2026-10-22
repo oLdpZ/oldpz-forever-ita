@@ -10,6 +10,8 @@ WFJ.Data.add("spell", {
   [1315218] = { "Infonde nel bersaglio la gioia della festività.", nil, 0x0d3345d6, nil, "um" },
   [1315237] = { "Esala marciume putrido e decomposizione, infliggendo $N1 danni da natura a tutti i giocatori entro $N2 m.", nil, 0x8a69f23d, nil, "um" },
   [1315267] = { "Clicca col pulsante destro per evocare e congedare il tuo Tallstrider Hatchling.", nil, 0x097b71e8, nil, "um" },
+  [1315286] = { nil, "Stordito. Danni da fuoco subiti aumentati del $N1%.", nil, 0xec527bc0, "mu" },
+  [1315307] = { "Evoca un Mist-Forgotten Horror in un punto casuale.", nil, 0xf0755ac2, nil, "um" },
   [1315330] = { "Aumenta l'Intelletto di $N1 di notte.", nil, 0x2ca27d14, nil, "um" },
   [1315339] = { "Aumenta l'Intelletto di $N1 di notte.", nil, 0xeb59d09c, nil, "um" },
   [1315408] = { "Ricevi la benedizione del Great Windborne Cat Spirit.", "Porta la benedizione del Grande Spirito Felino del Vento per aver superato la prova druidica di Azeroth.", 0xb2b24a36, 0xbd153efd, "uu" },

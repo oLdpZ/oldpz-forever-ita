@@ -2,5 +2,13 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1279399] = { "Evoca un cavallo da guerra da usare come cavalcatura.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x0e0de767, 0x2195529a, "uu" },
+  [1279523] = { "Dissolvi la magia protettiva da un membro del Blackthorn Pact.", nil, 0xbe2a5311, nil, "um" },
+  [1279600] = { "Rimuovi la contaminazione vile e le energie rubate dal bersaglio.", nil, 0xdc87133d, nil, "um" },
   [1279692] = { nil, "Le unità nascoste e invisibili sono rivelate.", nil, 0xe485f4e9, "mu" },
+  [1279983] = { "$N1 danni da fuoco inflitti a tutti i nemici nell'area bersaglio.", nil, 0x551bc007, nil, "um" },
+  [1279985] = { "$N1 danni da fuoco inflitti a tutti i nemici nell'area bersaglio.", nil, 0x551bc007, nil, "um" },
+  [1279987] = { "$N1 danni da fuoco inflitti a tutti i nemici nell'area bersaglio.", nil, 0x551bc007, nil, "um" },
+  [1279988] = { "$N1 danni da fuoco inflitti a tutti i nemici nell'area bersaglio.", nil, 0x551bc007, nil, "um" },
+  [1279989] = { "$N1 danni da fuoco inflitti a tutti i nemici nell'area bersaglio.", nil, 0x551bc007, nil, "um" },
+  [1279990] = { "$N1 danni da fuoco inflitti a tutti i nemici nell'area bersaglio.", nil, 0x551bc007, nil, "um" },
 })

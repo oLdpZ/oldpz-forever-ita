@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1290013] = { nil, "Indebolito.", nil, 0x43fd0a53, "mu" },
-  [1290040] = { nil, "Affligge il bersaglio con una maledizione mortale che impiega $D1 per fare effetto. Allo scadere, infligge $N2 danni da ombra e riduce i danni inflitti del $N3%.", nil, 0xedda4d38, "mu" },
+  [1290040] = { "Colpisce il bersaglio con una maledizione mortale che fa effetto dopo $D1. Allo scadere, infligge $N2 danni da ombra e riduce del $N3% i danni inflitti dal bersaglio.", "Affligge il bersaglio con una maledizione mortale che impiega $D1 per fare effetto. Allo scadere, infligge $N2 danni da ombra e riduce i danni inflitti del $N3%.", 0xedda4d38, 0xedda4d38, "uu" },
   [1290041] = { nil, "Immobilizzato per $D1. $N2 danni da natura inflitti ogni $D2.", nil, 0xa3c6bcb4, "mu" },
   [1290042] = { nil, "Rigenera $N1 mana al secondo.\nRigenera $N2 energia al secondo.\nGenera $N3 rabbia al secondo.", nil, 0xcc5cc316, "mu" },
   [1290043] = { nil, "Congelato.\nStordito per $D1.", nil, 0x0a60dcde, "mu" },

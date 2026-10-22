@@ -16,6 +16,7 @@ WFJ.Data.add("spell", {
   [1322305] = { "Rigenera $N1 salute, $N2 mana e $N3 rabbia.", nil, 0x08c6a32c, nil, "um" },
   [1322311] = { "Non può beneficiare di Siphon the Grave.", "Non può beneficiare di Siphon the Grave.", 0x77e9d499, 0x77e9d499, "uu" },
   [1322312] = { "Aumenta del $N1% la tua velocità in Cucina.", nil, 0x2371bf1d, nil, "um" },
+  [1322318] = { "Gli attacchi in mischia hanno una probabilità di infliggere $N1 danni da ombra aggiuntivi.", nil, 0xc298e39c, nil, "um" },
   [1322587] = { "La cheesecake rende felici.", "Evviva la cheesecake!", 0x81d403b4, 0xc0088836, "uu" },
   [1322605] = { "Converte istantaneamente $N1 mana in $N2 energia. Il costo di Potere Mutevole è ridotto dagli effetti che riducono il costo dei cambi di forma.", nil, 0xa7e4f4f6, nil, "um" },
   [1322670] = { "Riduce il tempo di recupero di Potere Mutevole di $D1.", nil, 0x9860d8d1, nil, "um" },

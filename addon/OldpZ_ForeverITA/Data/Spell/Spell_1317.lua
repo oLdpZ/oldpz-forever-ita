@@ -25,11 +25,12 @@ WFJ.Data.add("spell", {
   [1317450] = { "Stordisce il bersaglio e te per $D1. Gli ogre vengono storditi per $D2 e ti viene rimborsato il $N3% del tempo di recupero.", "Stordito.", 0xb6db8b9d, 0x27f95286, "uu" },
   [1317472] = { "Stordisce il bersaglio e te per $D1. Gli ogre vengono storditi per $D2 e ti viene rimborsato il $N3% del tempo di recupero.", "Stordito.", 0xb6db8b9d, 0x27f95286, "uu" },
   [1317486] = { "Aumenta la velocità di movimento del $N1% ad ⟦Dustwallow Marsh=Acquemorte⟧ e nella ⟦Swamp of Sorrows=Palude del Dolore⟧.", "Velocità di movimento aumentata del $N1%.", 0x47c33f0f, 0xd5c3ac7c, "uu" },
-  [1317516] = { nil, "Cura $N1 danni ogni $D1.", nil, 0xc0a38409, "mu" },
+  [1317516] = { "Cura un alleato ogni $D1 per $D2.", "Cura $N1 danni ogni $D1.", 0x9e55a345, 0xc0a38409, "uu" },
   [1317583] = { "I tuoi attacchi hanno un'alta probabilità di avvelenare il bersaglio, infliggendo $N1 danni da natura ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0x73c8a5f6, 0xf6322bec, "uu" },
   [1317604] = { "Rimuove tutti gli effetti di sanguinamento, malattia e veleno.", nil, 0x925be841, nil, "um" },
   [1317605] = { "Accende le luci di Dalaran.", nil, 0xea6a4b6d, nil, "um" },
   [1317692] = { "Insegna Beast Training, ⟦Feed Pet=Nutri Famiglio⟧ e ⟦Revive Pet=Rianima Famiglio⟧.", nil, 0x9352da05, nil, "um" },
   [1317695] = { "Insegna Beast Training, ⟦Feed Pet=Nutri Famiglio⟧ e ⟦Revive Pet=Rianima Famiglio⟧.", nil, 0x9352da05, nil, "um" },
   [1317740] = { "Individua il forziere più vicino, se ce n'è uno nei paraggi. Solo all'aperto.", nil, 0x4c47d05a, nil, "um" },
+  [1317999] = { nil, "Nelle zone di foresta o di prateria, potenza d'attacco aumentata di ulteriori $N1.", nil, 0xc5b620c2, "mu" },
 })

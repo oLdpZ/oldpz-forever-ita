@@ -81,5 +81,7 @@ WFJ.Data.add("spell", {
   [1309823] = { "Silenzia un nemico vicino, impedendogli di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x0c473315, 0x6d133d61, "uu" },
   [1309950] = { "Riduce del $N1% il costo in mana di Piaga Divoratrice.\n\nI bersagli che muoiono mentre Piaga Divoratrice è attiva la diffondono: salta su $N2 nemici vicini entro $N3 m per la durata rimanente.", nil, 0x8a7e198e, nil, "um" },
   [1309957] = { "Aumenta del $N1% la probabilità di colpire con gli incantesimi sacri.", nil, 0x9e735c14, nil, "um" },
+  [1309965] = { "Decifra una pergamena non tradotta.", nil, 0x2551fb8b, nil, "um" },
   [1309969] = { "Punizione e Contrizione infliggono il $N1% di danni in più ai bersagli afflitti dal tuo ⟦Holy Fire=Fuoco Sacro⟧ o dalla tua ⟦Shadow Word: Pain=Parola d'Ombra: Dolore⟧.", nil, 0x5016940f, nil, "um" },
+  [1309973] = { "Decifra una pergamena non tradotta.", nil, 0x2551fb8b, nil, "um" },
 })

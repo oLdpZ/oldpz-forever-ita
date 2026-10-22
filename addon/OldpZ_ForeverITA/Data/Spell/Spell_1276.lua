@@ -3,5 +3,6 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1276042] = { nil, "Dissanguamento per una ferita brutale.", nil, 0xd1b3d02b, "mu" },
   [1276061] = { nil, "Dissanguamento per una ferita brutale.", nil, 0xd1b3d02b, "mu" },
-  [1276442] = { nil, "A riposo.", nil, 0x8bafdcca, "mu" },
+  [1276442] = { "Riposo.", "A riposo.", 0x8bafdcca, 0x8bafdcca, "uu" },
+  [1276954] = { "Questo recipiente va riempito con l'acqua del lago salmastro vicino alla cascata meridionale delle ⟦Wetlands=Paludi Grigie⟧.", nil, 0x8adbc028, nil, "um" },
 })

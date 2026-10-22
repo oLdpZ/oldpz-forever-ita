@@ -415,4 +415,6 @@ spell	1226451	aura	16d3929f49e1dde4	Spellcasting speed increased by $s~1%. Globa
 spell	1231844	description	6e018d2ab9508a6c	$@spellname1231843
 spell	1231845	description	6e018d2ab9508a6c	$@spellname1231843
 spell	1251986	aura	fa7853a338c651b9	Whenever you suffer Bleed damage, one dose is splashed onto a nearby enemy within $s~2 yds. When this effect expires, you will suffer $w1 Nature damage.
+spell	1271412	description	84727607c217b635	Bounce Protection
+spell	1271565	description	84727607c217b635	Bounce Protection
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud
