@@ -8,7 +8,7 @@ WFJ.Data.add("spell", {
   [1230596] = { nil, "Forza aumentata di $N1.", nil, 0x90d8a2f8, "mu" },
   [1230664] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1230673] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
-  [1230700] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", nil, 0x015e6822, nil, "um" },
+  [1230700] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Blade Flurry=Vortice di Lame⟧.", 0x015e6822, 0xb4e9bb2e, "uu" },
   [1230702] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
   [1230704] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
   [1230712] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },

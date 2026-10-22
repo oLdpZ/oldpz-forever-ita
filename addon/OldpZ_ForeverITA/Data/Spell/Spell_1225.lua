@@ -8,6 +8,9 @@ WFJ.Data.add("spell", {
   [1225771] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [1225772] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [1225774] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
+  [1225782] = { nil, "La tua potenza d'attacco aumenta di $N1, i danni magici di $N2, le cure di $N3 e la Tempra di $N4.", nil, 0xfcc6f20d, "mu" },
   [1225841] = { nil, "Aumenta la potenza d'attacco in mischia di $N1 e riduce l'Armatura di $N2. Il bersaglio non fugge e ignora gli effetti di paura e orrore.", nil, 0x83fba197, "mu" },
+  [1225972] = { nil, "Il tuo congegno ha avuto un guasto.", nil, 0xd84dd292, "mu" },
   [1225987] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd64ce2e8, "mu" },
+  [1225994] = { nil, "Velocità di movimento aumentata del $N1% e i tuoi scatti di euforia sono inarrestabili.", nil, 0x47e2ea33, "mu" },
 })

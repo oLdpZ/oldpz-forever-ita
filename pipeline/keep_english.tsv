@@ -411,6 +411,7 @@ spell	437987	description	d4a2025bda32f58b	$@spellname437983
 spell	457021	description	00109fb3fa20851d	???
 spell	468781	aura	62be2c8ab33e0f9d	Electrical Charge.
 spell	1217127	aura	0000002e0000002e	.
+spell	1226451	aura	16d3929f49e1dde4	Spellcasting speed increased by $s~1%. Global Cooldown of your Divine Light, Holy Light, Flash of Light, and Holy Shock reduced by ${$m~2/-1000}.1 seconds.
 spell	1231844	description	6e018d2ab9508a6c	$@spellname1231843
 spell	1231845	description	6e018d2ab9508a6c	$@spellname1231843
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud
