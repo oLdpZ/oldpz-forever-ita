@@ -9,7 +9,7 @@ WFJ.Data.add("gossip", {
   ["621a21e86e470f8e"] = { "Devo sapere una cosa: come facevi ad andare in bagno con quell'affare addosso?", "." },
   ["621e46c8e9c3e0d6"] = { "Ti chiedo scusa, non pensavo che potessi capire quello che dicevo. Cosa ci fai qui fuori?", "." },
   ["622aae0b39157fc3"] = { "Buongiorno, <signore/signora>. Ti stringerei la mano, ma come vedi sono nel bel mezzo di qualcosa. Posso esserti utile?", "." },
-  ["622b2d8447c8ae18"] = { "NEFARIAN È STATO UCCISO! Popolo di Orgrimmar, inchinati davanti alla potenza di {name} e dei suoi alleati, poiché hanno inferto allo Stormo Nero un colpo che di certo scuoterà gli Aspetti dal loro torpore! Questa sconfitta si farà sentire dal padre dello Stormo Nero: oggi Alamorte si contorce nel dolore e nell'angoscia!", "." },
+  ["622b2d8447c8ae18"] = { "NEFARIAN È STATO UCCISO! Popolo di Orgrimmar, inchinati davanti alla potenza di {name} e dei suoi alleati, poiché hanno inferto allo Stormo dei Draghi Neri un colpo che di certo scuoterà gli Aspetti dal loro torpore! Questa sconfitta si farà sentire dal padre dello Stormo dei Draghi Neri: oggi Alamorte si contorce nel dolore e nell'angoscia!", "." },
   ["622d017012624ab3"] = { "Dov'è l'anziano Dawnstrider?", "." },
   ["623111d893d963de"] = { "Avvisami quando sei <pronto/pronta> ad ascoltare la storia.", "." },
   ["6233ae94213ceea1"] = { "Perché non ci occupiamo di te adesso, Hendel? Lady Proudmoore ti parlerà alla torre.", "." },

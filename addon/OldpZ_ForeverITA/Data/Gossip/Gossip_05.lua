@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["0568fadc25bc30a2"] = { "Spero che la tua interruzione sia per una buona causa. Ero nel bel mezzo di un lavoro importante.", "." },
   ["056b3adc8317e5b7"] = { "Gli gnomi possono essere difficili da colpire per via della loro taglia. Però hanno un debole per la danza e per ancheggiare. Quando lo fanno, colpiteli così...", "." },
   ["0576391e86c79352"] = { "%s emerge dall'oscurità, attirato dal visore divinatorio!", "." },
-  ["05777ffd3aa9369a"] = { "Le tue intromissioni finiscono qui, {name}! Sire Valthalak avrà la sua vendetta!", "." },
+  ["05777ffd3aa9369a"] = { "Le tue intromissioni finiscono qui, {name}! Lord Valthalak avrà la sua vendetta!", "." },
   ["058847dfa3bd67cf"] = { "Vuoi imparare l'antica arte? Vuoi fondere il Ferroscuro?\n\nPlacami, {race}. Mostrami un sacrificio e ci penserò!", "." },
   ["058ac63036845401"] = { "Le nostre forze nella ⟦Alterac Valley=Valle d'Alterac⟧ hanno bisogno di saggezza per vincere, {class}. Hai l'aria di chi può guidarle.", "." },
   ["058db46af9f3c19e"] = { "Mia arma avere sete!", "." },

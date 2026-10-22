@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["2c13ae02d41dec67"] = { "Ascolta bene, perché il signore di ⟦Blackrock=Roccianera⟧ ti distruggerà di certo, se non sarai <pronto/pronta>.", "." },
   ["2c15ccec3228abae"] = { "Avvicinati un po'. Abbiamo questioni importanti da discutere, io e te.\n\nE alcune non vogliamo che le senta chiunque...", "." },
   ["2c1fcac16c1bd6d6"] = { "Aspiranti intrusi, temo.", "." },
-  ["2c2ac470e2003289"] = { "Ascolta, {race}. Ascolta bene...\n\nI cavalieri dei draghi arrivarono di notte, in sella allo stormo nero. Colpirono rapidi e con precisione letale, prendendo i cuccioli, come me, e fuggendo sotto il velo dell'oscurità.\n\nGuardai con orrore mentre usavano i miei fratelli e le mie sorelle nei loro esperimenti. Dalla nostra essenza sarebbe stato creato lo stormo cromatico.", "." },
+  ["2c2ac470e2003289"] = { "Ascolta, {race}. Ascolta bene...\n\nI cavalieri dei draghi arrivarono di notte, in sella allo Stormo dei Draghi Neri. Colpirono rapidi e con precisione letale, prendendo i cuccioli, come me, e fuggendo sotto il velo dell'oscurità.\n\nGuardai con orrore mentre usavano i miei fratelli e le mie sorelle nei loro esperimenti. Dalla nostra essenza sarebbe stato creato lo stormo cromatico.", "." },
   ["2c2c801a696293fa"] = { "Nessuno può sfidare la Confraternita!", "." },
   ["2c307dd6868e9e89"] = { "Dicono che io abbia ricevuto una benedizione: che sia l'araldo di una nuova era.", "." },
   ["2c329816d8779967"] = { "Questi documenti sono sorvegliati. Parla con Zamek perché crei un diversivo!", "." },

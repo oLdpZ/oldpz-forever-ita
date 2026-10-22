@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["f5739fbd011b0243"] = { "Pescare è così piacevole, amico. Sai? Devo il mio stato di beatitudine al mio maestro, il più grande pescatore del mondo: Nat Pagle. Ne hai sentito parlare, amico?\n\nSe cerchi l'illuminazione, Nat Pagle è quello che ti mostrerà la via.", "." },
   ["f5810adbd97500eb"] = { "Ancora una volta hai fatto un buon lavoro, {name}. È da parecchio tempo che non vedo <un/una> giovane <stregone/strega> con il tuo potenziale. Ti assicuro che continuerò a seguire i tuoi progressi e a prepararti e assisterti nelle tue prove future.\n\nPer ora, lascia che ti mostri l'incantesimo per evocare la succube che hai appena dominato.", "." },
   ["f586e79f14893039"] = { "Teletrasportami al centro", "." },
-  ["f58b2e34a6ac578a"] = { "Vaelastrasz, quando questo mondo apparterrà allo stormo nero, il tuo stormo conoscerà la sua fine.", "." },
+  ["f58b2e34a6ac578a"] = { "Vaelastrasz, quando questo mondo apparterrà allo Stormo dei Draghi Neri, il tuo stormo conoscerà la sua fine.", "." },
   ["f58cfa5748517548"] = { "Sangue e anime per Hakkar! AHAHAHAH!", "." },
   ["f58d82f0f4c491b0"] = { "Prendi questo, bevilo tutto.", "." },
   ["f58f2133e6126d08"] = { "Lo eri. L'Occhio non sbaglia mai.\n\nDopotutto sei <un/una> <sacerdote/sacerdotessa>. <Un/Una> <sacerdote/sacerdotessa> potente, se l'Occhio ti ha mostrato questo orribile ricordo.\n\nSei <venuto/venuta> in cerca di redenzione, eppure nemmeno tu te ne rendi conto... vero?", "." },

@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["f98b9cab8696d6cb"] = { "L'ostessa Pala ti aiuterà a far riposare corpo e spirito. La trovi nell'edificio appena a sud della banca, sul terrazzo inferiore.", "." },
   ["f98cb116da27609a"] = { "Berte! Evalyn! Si fa buio. Venite dentro.", "." },
   ["f992bfc86a355129"] = { "Un'anima appassionata come me, eh? Beh, aspetta e vedrai: faremo di te una testa di bullone in un attimo!", "." },
-  ["f996b0f943ae6a89"] = { "Altro che investimento sbagliato!\n\nIl libro oscuro di incantesimi di Lord Valthalak ci ha fruttato un bel gruzzolo al mercato nero. Peccato che lui non abbia preso affatto bene il furto dei suoi averi. Quel fetente ci ha fatto pagare anche dopo essere morto da mesi!", "." },
+  ["f996b0f943ae6a89"] = { "Altro che investimento sbagliato!\n\nIl libro oscuro di incantesimi di lord Valthalak ci ha fruttato un bel gruzzolo al mercato nero. Peccato che lui non abbia preso affatto bene il furto dei suoi averi. Quel fetente ci ha fatto pagare anche dopo essere morto da mesi!", "." },
   ["f997bd20b6fc294c"] = { "Che maledetto spreco!", "." },
   ["f9a28c27da4e1ac8"] = { "Soldati dei Piccatonante, venite in mio aiuto! Il segnale deve essere piantato.", "." },
   ["f9af619b18905d5e"] = { "Mmm... Adoro la mia deliziosa birra scura di ⟦Southshore=Riva del Sud⟧.", "." },

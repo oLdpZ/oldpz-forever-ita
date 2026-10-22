@@ -51,7 +51,7 @@ WFJ.Data.add("gossip", {
   ["33bf403328eff2ea"] = { "Dov'è l'anziano Bellowrage?", "." },
   ["33c8293780b50902"] = { "Mi sa che ti serve un passaggio per attraversare il Grande Mare. Beh, sei nel posto giusto: questo è l'ormeggio della Maiden's Fancy, la miglior nave passeggeri che solchi queste acque. Quando arriva, sali a bordo e, prima che te ne accorga, ti ritroverai a crogiolarti sulle spiagge sabbiose di Rovotorto.", "." },
   ["33cc6ee5364ff3bd"] = { "Dov'è l'anziano Morningdew?", "." },
-  ["33d38c522a70603b"] = { "Abbi pazienza!\n\n<Bodley borbotta qualcosa sottovoce sull'impazienza dei vivi>\n\nCome stavo dicendo, lo spirito di Sire Valthalak e gli assassini spettrali, evocati con i suoi trastulli negromantici, cominciarono ad assalirci. Te lo dico io, a quel punto non eravamo in condizione di reagire, quindi scappammo. Ricordo ancora Mor Grayhoof, uno dei nostri druidi, scivolare e cadere a un certo punto nei livelli inferiori della guglia.\n\nIl resto, come si dice, è storia.", "." },
+  ["33d38c522a70603b"] = { "Abbi pazienza!\n\n<Bodley borbotta qualcosa sottovoce sull'impazienza dei vivi>\n\nCome stavo dicendo, lo spirito di lord Valthalak e gli assassini spettrali, evocati con i suoi trastulli negromantici, cominciarono ad assalirci. Te lo dico io, a quel punto non eravamo in condizione di reagire, quindi scappammo. Ricordo ancora Mor Grayhoof, uno dei nostri druidi, scivolare e cadere a un certo punto nei livelli inferiori della guglia.\n\nIl resto, come si dice, è storia.", "." },
   ["33ddeb9aa05480ea"] = { "Vorrei addestrarmi!", "." },
   ["33e00c0137106293"] = { "Chiedi a Kibler del tesoro! SQUAWK!", "." },
   ["33e474963d8855eb"] = { "Sono Bolvar Fordragon, Gran Signore di ⟦Stormwind=Roccavento⟧.", "." },

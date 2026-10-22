@@ -51,6 +51,6 @@ WFJ.Data.add("gossip", {
   ["60def8a7b388810a"] = { "Dove stiamo combattendo il Flagello?", "." },
   ["60e561fd559ff10c"] = { "Questo è il saluto di un venditore di stoffa non morto.", "." },
   ["60f275cd21c0012d"] = { "Quando guardo una succube, il mio cuore prende il volo... Ma al tempo stesso sento quasi la mia anima rifluire, allontanarsi come la marea.\n\nStai in guardia, amico mio.", "." },
-  ["60f391e4e9bed353"] = { "Cerchi il frammento di scettro affidato alla protezione dello ⟦Blue Flight=Stormo Blu⟧?\n\n<Azuregos sembra sorridere.>", "." },
+  ["60f391e4e9bed353"] = { "Cerchi il frammento di scettro affidato alla protezione dello Stormo dei Draghi Blu?\n\n<Azuregos sembra sorridere.>", "." },
   ["60fc9fc176c8299a"] = { "Mmm, il tuo lavoro è discreto, ma è ben lontano dalla qualità che cerco in un allievo. Va' a parlare con il fabbro Argus a ⟦Goldshire=Borgodoro⟧: di sicuro può insegnarti le basi. Poi, quando hai finito, torna da me e ti darò una piccola prova per assicurarmi che tu sia <pronto/pronta>.", "." },
 })

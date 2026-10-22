@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["096c14ce927969ca"] = { "Ho un pezzo di ferro nella schiena che mi ricorderà quella notte per il resto dei miei giorni.", "." },
   ["0973f174fb7f063d"] = { "Predoni da nord-ovest! Fuoco!", "." },
   ["097d23c31794e0c8"] = { "Ah, eccoci! Be', mettiamoci al lavoro, che ne dici...?", "." },
-  ["0983cffc0e552b72"] = { "Il Soulflayer è sconfitto! Il nostro capo, Molthor, ora richiama altri suoi servitori...", "." },
+  ["0983cffc0e552b72"] = { "Lo Scortica Anime è sconfitto! Il nostro capo, Molthor, ora richiama altri suoi servitori...", "." },
   ["098a7819d2b55b0d"] = { "Come osi entrare nel mio santuario!", "." },
   ["098adb8f8d770eae"] = { "Bagnati nel mio potere! Abbeverati della mia forza! Combatti per la gloria dell'⟦Horde=Orda⟧!", "." },
   ["098d66d266c76f0d"] = { "Una dedizione di questa portata è rara. Hai dimostrato che la tua volontà è incrollabile, {name}. Sarai <ricompensato/ricompensata> generosamente per la tua salda vigilanza sul nostro mondo.\n\nDammi il tuo anello con sigillo, così che io possa rafforzarne l'incantamento.", "." },

@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["3e37eb67547e05a8"] = { "Bene, Razziatori! Sono arrivati gli ordini! Alla battaglia!", "." },
   ["3e4adbab8b38adc0"] = { "Deludente.", "." },
   ["3e5197d48dc6d9c3"] = { "Hai dimenticato la tua tenuta scolastica? Pensi che la moda sia più importante del dominio del Flagello?", "." },
-  ["3e5f7fb395f26f17"] = { "Vattene! Io tengo consiglio con i Signori del Terrore, e le questioni di cui discutiamo non ti riguardano!", "." },
+  ["3e5f7fb395f26f17"] = { "Vattene! Io tengo consiglio con i signori del terrore, e le questioni di cui discutiamo non ti riguardano!", "." },
   ["3e626e5d37be14ce"] = { "Fa così male... Itharius, mio vecchio amico... ti prego, aiutami...", "." },
   ["3e67fb231b00d003"] = { "Leggo nei tuoi occhi che la tragedia di Stratholme non ti è estranea. Se desideri porre fine all'esistenza miserabile delle povere anime intrappolate laggiù, entra nel cerchio. Porta direttamente ai cancelli della città in fiamme.", "." },
   ["3e692c40473b582b"] = { "Ti senti uno chef? Va' a ⟦Undercity=Sepulcra⟧, a sud della città, per il tuo addestramento. Puoi prendere gli ascensori che scendono in fondo alle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧. Una volta arrivat<o/a>, parla con uno di quei goffi Guardiani di ⟦Undercity=Sepulcra⟧ per altre indicazioni.", "." },
@@ -39,5 +39,5 @@ WFJ.Data.add("gossip", {
   ["3ecf795225819b1a"] = { "Lo rivoglio, mortale. Atiesh... Da esso creerei di nuovo gli ⟦Highborne=Alti Nobili⟧. Rivorrei tutto. Perfino la Regina...", "." },
   ["3eee5e6fdb0c56b5"] = { "Portami alla ⟦Eastwall Tower=Torre di Levante⟧.", "." },
   ["3ef2600c5fef3d1b"] = { "Ora le loro menti sono corrotte, {race}. Sì, ancora più di prima. Vivono solo per servire e proteggere Razelikh. I frammenti d'amuleto che ognuno di loro custodisce sono la chiave per evocare il signore dei demoni. Quello che non capisci è che nessuno di loro può essere ferito con mezzi convenzionali", "." },
-  ["3efc9122fe7b93d0"] = { "{name}! Le nostre provviste si stanno esaurendo e finché non ne arriveranno altre non possiamo lanciare grandi assalti di terra nel ⟦Field of Strife=Pian della Discordia⟧!\n\nParla con il furiere dei Piccatonante. Ti dirà cosa puoi fare per rifornire le nostre forze d'assalto.", "." },
+  ["3efc9122fe7b93d0"] = { "{name}! Le nostre provviste si stanno esaurendo e finché non ne arriveranno altre non possiamo lanciare grandi assalti di terra nel ⟦Field of Strife=Pian della Discordia⟧!\n\nParla con il quartiermastro dei Piccatonante. Ti dirà cosa puoi fare per rifornire le nostre forze d'assalto.", "." },
 })

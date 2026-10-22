@@ -45,6 +45,6 @@ WFJ.Data.add("gossip", {
   ["a9eb73c45815802c"] = { "Osannato.", "." },
   ["a9f47d4753737fc8"] = { "Seguimi e ti aprirò la porta del cortile.", "." },
   ["a9f5572bd496891e"] = { "Bravo, Gerard, hai superato te stesso, ancora una volta.", "." },
-  ["a9f5993329effbaa"] = { "Che sentano l'ira dello ⟦Blue Flight=Stormo Blu⟧! Che Malygos mi protegga!", "." },
+  ["a9f5993329effbaa"] = { "Che sentano l'ira dello Stormo dei Draghi Blu! Che Malygos mi protegga!", "." },
   ["a9fe35cad646d51b"] = { "Mi stavi parlando della Veiled Blade e di come hai accettato la missione sbagliata.", "." },
 })

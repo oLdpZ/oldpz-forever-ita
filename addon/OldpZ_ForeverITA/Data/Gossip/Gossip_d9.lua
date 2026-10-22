@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["d9646336d8c3ebb9"] = { "Questa è un'attrezzatura specializzata! Non maneggiarla con leggerezza, e naturalmente non provare a farla funzionare se hai bevuto troppo di quel rum volatile che, a quanto sento, ti piace tanto...\n\nA proposito... non è che per caso ne hai un po', di quella roba schifosa?", "." },
   ["d96a8830a71d7a6f"] = { "Ti do il benvenuto a Thelsamar, una seconda casa a Loch Modan!\n\nThelsamar è un bel posto, ma per chi risponde alla chiamata del dovere non è tutto birra e carne salata! Se te la senti di affrontare il pericolo in nome dell'⟦Alliance=Alleanza⟧, leggi l'avviso fuori dalla sede di Thelsamar della ⟦Explorers' League=Lega degli Esploratori⟧.", "." },
   ["d96d5fbb7c46420a"] = { "Il Flagello ha schierato solo piccole forze contro ciascuna delle capitali di Azeroth, mentre il grosso delle sue truppe attacca periodicamente le seguenti terre:\n\nAzshara, le ⟦Blasted Lands=Terre Devastate⟧, le ⟦Burning Steppes=Steppe Ardenti⟧, il Deserto di Tanaris, le ⟦Eastern Plaguelands=Terre Infette Orientali⟧ e ⟦Winterspring=Fontefredda⟧.", "." },
-  ["d96ef658fd86937e"] = { "La mascherata è finita, lady Prestor. O dovrei chiamarti con il tuo vero nome... Onyxia...", "." },
+  ["d96ef658fd86937e"] = { "La mascherata è finita, Lady Prestor. O dovrei chiamarti con il tuo vero nome... Onyxia...", "." },
   ["d970a2277ff57082"] = { "Kibler è sotto indagine da parte della G.E.T.A.", "." },
   ["d977b9599217d5f0"] = { "Che fortuna. Di solito devo lasciare la mia tana per nutrirmi.", "." },
   ["d980642e88d6dc93"] = { "Comincia a fare freschino qui fuori. Credo che andrò a scaldarmi accanto al fuoco e a farmi una pinta, o dodici.", "." },

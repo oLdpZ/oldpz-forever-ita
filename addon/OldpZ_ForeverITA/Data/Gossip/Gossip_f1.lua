@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["f15c09909333fb21"] = { "Relara... sei sveglia?", "." },
   ["f15cde226c42b8dc"] = { "%s fa avanti e indietro nervosamente.", "." },
   ["f1668418307b1264"] = { "Shelby Stoneflint custodisce un bel po' di famigli per i cacciatori del posto. La trovi vicino alla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, se ti serve qualcuno che badi al tuo famiglio.", "." },
-  ["f168dac79190cc3a"] = { "Il momento che C'Thun aveva atteso con tanta pazienza era finalmente giunto. I suoi figli avevano passato migliaia di anni a costruire un esercito capace di vendicarsi su tutta Kalimdor, e ora il premio era alla loro portata.", "." },
+  ["f168dac79190cc3a"] = { "Il momento che C'thun aveva atteso con tanta pazienza era finalmente giunto. I suoi figli avevano passato migliaia di anni a costruire un esercito capace di vendicarsi su tutta Kalimdor, e ora il premio era alla loro portata.", "." },
   ["f175c3a46a0429d2"] = { "Seguimi, <buon/buona> <Paladino/Paladina>. Ti preparerò la bardatura più in fretta di quanto riesca a scolarmi una birra scura nanica. Mmmm... birra scura.", "." },
   ["f18971b7b7671c3f"] = { "%s ti guarda con aria interrogativa. Forse dovresti esaminarlo?", "." },
   ["f1972d6897f5e0f3"] = { "Soccombete allo sguardo, mortali!", "." },

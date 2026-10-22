@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["a4027093172fbf39"] = { "Ho stabilito il contatto, {name}. È Lokholar the Ice Lord. Ha giudicato degna la nostra causa, sufficiente il nostro sacrificio legato alla terra. Arriverà presto... preparati.", "." },
-  ["a40b02c0d7798d06"] = { "Più di mille anni fa, un gruppo di sacerdoti troll noti come Atal'ai tentò di riportare in vita un antico dio del sangue chiamato Hakkar the Soulflayer. Dopo la guerra civile che ne seguì, i sacerdoti furono sconfitti ed esiliati nella ⟦Swamp of Sorrows=Palude del Dolore⟧. Lì eressero un tempio a Hakkar per preparare il suo arrivo nel mondo fisico. L'Aspetto dei draghi Ysera venne presto a sapere dei piani degli Atal'ai e sprofondò il tempio sotto le paludi. Ancora oggi, le rovine del tempio sono sorvegliate dai possenti draghi verdi.", "." },
+  ["a40b02c0d7798d06"] = { "Più di mille anni fa, un gruppo di sacerdoti troll noti come Atal'ai tentò di riportare in vita un antico dio del sangue chiamato Hakkar lo Scortica Anime. Dopo la guerra civile che ne seguì, i sacerdoti furono sconfitti ed esiliati nella ⟦Swamp of Sorrows=Palude del Dolore⟧. Lì eressero un tempio a Hakkar per preparare il suo arrivo nel mondo fisico. L'Aspetto dei draghi Ysera venne presto a sapere dei piani degli Atal'ai e sprofondò il tempio sotto le paludi. Ancora oggi, le rovine del tempio sono sorvegliate dai possenti draghi verdi.", "." },
   ["a4111b4615fc274c"] = { "Voglio unirmi alla battaglia!", "." },
   ["a413a2d503bdf128"] = { "Pesciolino, pesciolino... vieni da papà.", "." },
   ["a41a94cf7c3f42d3"] = { "L'ippogrifo è una bestia nobile, fiera e veloce. Addestrarli è un onore, e portano in fretta il loro cavaliere molto lontano.", "." },

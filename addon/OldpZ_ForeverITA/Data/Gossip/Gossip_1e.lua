@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["1e5acf5624868202"] = { "L'⟦Horde=Orda⟧ ha raccolto $1777W risorse ed è vicina alla vittoria!", "." },
   ["1e5da87e9e3ca51e"] = { "Il Flagello attacca il ⟦Magic Quarter=Quartiere della Magia⟧!", "." },
   ["1e67ba772d9d01f1"] = { "Sì, la Falce Ossuta. Vedi, è stato il nostro tenore, un tipo scorbutico noto come Don Julio, a farmi cominciare tutta la faccenda. Nei suoi viaggi per Lordaeron, Don Julio ha imparato molte abilità interessanti, tra cui quella di prendere le ossa dei caduti del Flagello e ricavarne un letale completo d'armatura di cuoio, perfetto per un assassino.", "." },
-  ["1e68edb69bc614f5"] = { "Perdona l'intrusione, lady Prestor, ma il gran signore Bolvar mi ha suggerito di chiederti consiglio.", "." },
+  ["1e68edb69bc614f5"] = { "Perdona l'intrusione, Lady Prestor, ma il gran signore Bolvar mi ha suggerito di chiederti consiglio.", "." },
   ["1e6baf5bca6a5629"] = { "Parla con il guardiamorte Billmuth a Bandarion Keep.", "." },
   ["1e6c24b0ca6ccdfc"] = { "Credi di aver già vinto? Forse ti serve un'altra lezione di dolore!", "." },
   ["1e7208e4f34a5862"] = { "Mamma, Jesse si è arrampicato di nuovo sulla torre del vento.", "." },

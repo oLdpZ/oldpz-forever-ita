@@ -28,7 +28,7 @@ WFJ.Data.add("gossip", {
   ["9874d1927de38b2f"] = { "Non è colpa mia! Lo giuro!", "." },
   ["9878dcf121514972"] = { "Ma sei fuori di testa? Lo sai che razza di bestie abitano quel posto? Il peggio che può succedere è che dovremo raccogliere i tuoi resti con una pala. Abbiamo perso dei bravi nani per colpa di quei mostri orribili.\n\nQuindi la risposta è no. Se proprio vuoi arrivare alla ⟦Searing Gorge=Gorgia Rovente⟧, dovrai trovare un'altra strada.", "." },
   ["987f4f82472ea873"] = { "Va bene, allora, {name}. Vedo che hai capito i tuoi errori e sei <tornato/tornata> nell'ovile degli ingegneri.\n\nDivertiti con il tuo yeti!!!", "." },
-  ["9881ac00cd0d1c6b"] = { "Dov'è l'anziano ⟦Grimtotem=Totem Truce⟧?", "." },
+  ["9881ac00cd0d1c6b"] = { "Dov'è l'anziano Grimtotem?", "." },
   ["9882698b5d57dd19"] = { "Ho dei campioni ottimi, Hornizz. Mi metto subito al lavoro. Puoi occuparti tu del resto?", "." },
   ["9886e8adbc5c74b2"] = { "La piaga del Flagello è quasi al punto di svolta: ancora qualche calderone sabotato e ce la faremo! Assicurati di fare la tua parte!", "." },
   ["9887d85727bd54ec"] = { "Salute, {class}. Sono Rexxar, campione dell'⟦Horde=Orda⟧, servitore di Thrall, signore delle bestie selvagge.", "." },

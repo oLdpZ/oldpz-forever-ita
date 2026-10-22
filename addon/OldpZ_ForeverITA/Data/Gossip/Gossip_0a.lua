@@ -40,5 +40,5 @@ WFJ.Data.add("gossip", {
   ["0ad5fd37e94f3d21"] = { "Vattene, infedele! Che il potere dell'Abisso ti abbatta!", "." },
   ["0ae6485afc32f60f"] = { "Pagherai per questo oltraggio! Guardie!", "." },
   ["0aedf87816222460"] = { "Ma... Malfurion, Cenarius, Ysera... combattono ancora. Hanno bisogno di me. Devo tornare subito nel Sogno.", "." },
-  ["0afa20dd4e085251"] = { "Ben <ritrovato/ritrovata>, {name}. Percepisco che il flusso del tempo resta minacciato da forze davvero molto potenti. Il tuo aiuto continuo è sempre gradito allo stormo dei draghi di bronzo.\n\nMentre il passato è immutabile, il futuro cambia sempre. Le decisioni che prendi qui e ora aiutano a guidare quel cambiamento.", "." },
+  ["0afa20dd4e085251"] = { "Ben <ritrovato/ritrovata>, {name}. Percepisco che il flusso del tempo resta minacciato da forze davvero molto potenti. Il tuo aiuto continuo è sempre gradito allo Stormo dei Draghi di Bronzo.\n\nMentre il passato è immutabile, il futuro cambia sempre. Le decisioni che prendi qui e ora aiutano a guidare quel cambiamento.", "." },
 })

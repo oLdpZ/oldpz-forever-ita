@@ -18,7 +18,7 @@ WFJ.Data.add("gossip", {
   ["df7eb4a37540795c"] = { "Ahh, eccolo.", "." },
   ["df91c63b1e34615a"] = { "Ora prova tu.", "." },
   ["df9715e2afa19a7e"] = { "%s barcolla.", "." },
-  ["df9b08db03e98620"] = { "Tu! {name}! Che ci fai a girovagare per il villaggio così? Ci sono nemici dell'⟦Alliance=Alleanza⟧ ad Alterac! Dobbiamo cacciarli!\n\nLe nostre scorte sono troppo scarse per lanciare un grande assalto di terra, quindi parla con il nostro furiere. Ti dirà come puoi aumentare le nostre riserve.", "." },
+  ["df9b08db03e98620"] = { "Tu! {name}! Che ci fai a girovagare per il villaggio così? Ci sono nemici dell'⟦Alliance=Alleanza⟧ ad Alterac! Dobbiamo cacciarli!\n\nLe nostre scorte sono troppo scarse per lanciare un grande assalto di terra, quindi parla con il nostro quartiermastro. Ti dirà come puoi aumentare le nostre riserve.", "." },
   ["dfab9f344dc84d2f"] = { "Per favore, lancia un incantesimo di POTENZIAMENTO ad alta priorità su tutti i bersagli vicini.", "." },
   ["dfac93900d714249"] = { "Ti porta l'idromele\n\nTi porta la birra\n\nUn sorriso da un orecchio all'altro\n\nCi serve tutti da anni e anni\n\nLo chiamiamo Smiling Jim.", "." },
   ["dfb0c3b51f11b4c3"] = { "Racconti una storia incredibile, Fairbanks. E la lama? Non c'è più modo di redimerla?", "." },

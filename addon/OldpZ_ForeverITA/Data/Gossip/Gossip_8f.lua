@@ -49,6 +49,6 @@ WFJ.Data.add("gossip", {
   ["8fe9e9e4ba9301f9"] = { "Hai qualche spicciolo?", "." },
   ["8feb33e3edff15d7"] = { "Uccidere...", "." },
   ["8ff4244abc413f38"] = { "Guarda! Guarda! Ho preso qualcosa! Ohhh... è solo un vecchio stivale puzzolente.", "." },
-  ["8ff8fcc4253a9907"] = { "Dov'è il furiere dei Piccatonante?", "." },
+  ["8ff8fcc4253a9907"] = { "Dov'è il quartiermastro dei Piccatonante?", "." },
   ["8fffeeb8d464765b"] = { "⟦Elune's Candle=La Candela di Elune⟧ stordisce %s!", "." },
 })

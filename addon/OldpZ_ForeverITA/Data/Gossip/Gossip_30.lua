@@ -16,7 +16,7 @@ WFJ.Data.add("gossip", {
   ["3032a220e3ad8aa7"] = { "Krathok, un tempo forgiavo armi e voglio riprendere in mano il martello! Insegnami la via del Fabbro d'Armi.", "." },
   ["303d743a4ec17282"] = { "Zamja può aiutarti, {race}?", "." },
   ["303e372e72d9aebc"] = { "Uccideteli tutti. Lasciate i loro gusci al padrone, che li divori...", "." },
-  ["303e418a05407d37"] = { "Il Frostwolf Quartermaster si trova a sud-ovest di questo fortilizio. Entra nel fortilizio ed esci sulla destra: vedrai l'intendente poco più avanti lungo il sentiero.", "." },
+  ["303e418a05407d37"] = { "Il Frostwolf Quartermaster si trova a sud-ovest di questo fortilizio. Entra nel fortilizio ed esci sulla destra: vedrai il quartiermastro poco più avanti lungo il sentiero.", "." },
   ["303ee1b50826d1b5"] = { "Le protezioni magiche in quel punto dovrebbero essere abbastanza sostenute dal flusso di energia da contenere l'entità.", "." },
   ["30445edb450ab5f4"] = { "Va bene, va bene. Comunque, diciamo che ho cercato riparo nell'ombra.\n\nLa cosa non è piaciuta granché a Windsor, visto che era già di pessimo umore. Beh, ha cominciato a far roteare il vecchio Ironfoe e a urlare come un pazzo contro gli orchi.", "." },
   ["3044756cbd272b21"] = { "La Dama Oscura ha lanciato la sfida. Sta a noi raccoglierla.", "." },

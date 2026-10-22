@@ -7,7 +7,7 @@ WFJ.Data.add("gossip", {
   ["1c27d7ef00472bd6"] = { "Ach! Passami una birra gelata, Belm!", "." },
   ["1c29f7441daf01dd"] = { "Uau! Guarda che centro!", "." },
   ["1c2c52d197c7866e"] = { "%s prende la mira con più attenzione...", "." },
-  ["1c2e4d7dc812511f"] = { "Sei <giunto/giunta> proprio mentre stavano per gettarmi in pasto ai demoni di sotto, e per questo ti ringrazio. Forse io... anzi, noi dello stormo blu possiamo aiutarti ancora?\n\nHai fatto tanta strada, {race}, e rischiato molto. Vuoi spingerti ancora un po' oltre per combattere Nefarian e la sua legione dei ⟦Blackrock=Roccianera⟧?", "." },
+  ["1c2e4d7dc812511f"] = { "Sei <giunto/giunta> proprio mentre stavano per gettarmi in pasto ai demoni di sotto, e per questo ti ringrazio. Forse io... anzi, noi dello Stormo dei Draghi Blu possiamo aiutarti ancora?\n\nHai fatto tanta strada, {race}, e rischiato molto. Vuoi spingerti ancora un po' oltre per combattere Nefarian e la sua legione dei ⟦Blackrock=Roccianera⟧?", "." },
   ["1c309351c8316428"] = { "%s si volta verso il bersaglio di carta...", "." },
   ["1c36878137454228"] = { "I Windshaper non dimenticano, e il sangue si paga sempre con il sangue. Mi compiace che tu sia riuscit<o/a> a consegnare a quel traditore quest'ultimo, doloroso promemoria del nostro credo.\n\nTuttavia, questo cuore non sarà l'unica cosa ad alimentare le fiamme oggi. C'è un altro compito da svolgere.", "." },
   ["1c3947a81b757649"] = { "Ora il capo sei tu, amico!", "." },

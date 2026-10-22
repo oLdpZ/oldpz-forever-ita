@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["6703f20be7ca5c1c"] = { "Ciao ciao, <piccolo/piccola> {race}. Raze andare ora.", "." },
   ["67073178acd43cf7"] = { "Puoi imparare a cucire a Orgrimmar. È a nord. Forse uno degli Orgrimmar Grunt può aiutarti.", "." },
-  ["6715a9b2defc035b"] = { "Per ragioni che non riesco a capire, l'anziano ⟦Thunderhorn=Corno Tonante⟧ è andato all'Anfratto Brulicante, nel ⟦Un'Goro Crater=Cratere di Un'Goro⟧.", "." },
+  ["6715a9b2defc035b"] = { "Per ragioni che non riesco a capire, l'anziano Thunderhorn è andato all'Anfratto Brulicante, nel ⟦Un'Goro Crater=Cratere di Un'Goro⟧.", "." },
   ["672b5ffabf3673c9"] = { "{class}, l'⟦Horde=Orda⟧ ha raccolto tutto ciò che le serve per la Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧! Ora aspettiamo che quella misera ⟦Alliance=Alleanza⟧ ci raggiunga. Quando lo farà, cominceremo a trasportare tutto a ⟦Silithus=Silitus⟧. Una volta completati i preparativi laggiù, non dovrebbe passare molto prima che la guerra cominci!", "." },
   ["672e08d2ac0f85b3"] = { "Ben fatto. Un duro colpo per Arugal, non c'è dubbio!", "." },
   ["67318b4829532a33"] = { "Se non fosse per la loro incredibile, stupida fortuna, i goblin si schianterebbero con l'auto a ogni gara!", "." },

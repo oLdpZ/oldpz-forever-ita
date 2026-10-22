@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["4a32c12be4f0acb5"] = { "L'infestazione del Flagello cresce nelle ⟦Blasted Lands=Terre Devastate⟧. Serve ogni guerriero abile per arginare la marea della loro invasione.\n\nNecropoli rimanenti: $2280W", "." },
   ["4a455cef76cb6204"] = { "Andiamocene da questo posto.", "." },
   ["4a458c0c4fdd5566"] = { "Cos'è questo? Gli orchi si avvicinano già?", "." },
-  ["4a497f443eea70ec"] = { "Riesci a vedermi? Sai quanto mi ignorano quassù solo perché nessuno può vedermi? Che sollievo avere finalmente qualcuno con cui parlare!\n\nAllora, deve averti mandato qualche membro ancora vivo della mia vecchia compagnia di mercenari, giusto? Certo che sì!\n\nMa basta chiacchiere: c'è un sacco di lavoro per te e per me, se vuoi rimettere le cose a posto e restituire a sire Valthalak il suo spirito!", "." },
+  ["4a497f443eea70ec"] = { "Riesci a vedermi? Sai quanto mi ignorano quassù solo perché nessuno può vedermi? Che sollievo avere finalmente qualcuno con cui parlare!\n\nAllora, deve averti mandato qualche membro ancora vivo della mia vecchia compagnia di mercenari, giusto? Certo che sì!\n\nMa basta chiacchiere: c'è un sacco di lavoro per te e per me, se vuoi rimettere le cose a posto e restituire a lord Valthalak il suo spirito!", "." },
   ["4a50aaa181fce321"] = { "Voglio proprio vedere cos'ha da offrire un ammasso di bulloni.", "." },
   ["4a583d7f4489607f"] = { "Verme va su amo, amo va in acqua. Pesce è in acqua, nostro pesce.", "." },
   ["4a6d6aa8cb401786"] = { "La tua intromissione negli affari demoniaci finisce ORA, mortale! Affronta il grande corruttore: Xandivious!", "." },

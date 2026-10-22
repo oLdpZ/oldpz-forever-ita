@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["32236632d38805d7"] = { "Sono pezzi davvero belli, {name}. La maestria e la cura messe nel farli mostrano che hai scelto di dedicarti completamente a questi compiti.\n\nHai soddisfatto le mie richieste, e con esse arriva la tua ricompensa. La conoscenza per fare le vesti di Cuoio Selvatico ora è tua!", "." },
   ["32298cbc7ee603e9"] = { "Ben fatto, Edward e Tyler. State procedendo molto bene nel vostro addestramento. Presto metteremo di nuovo alla prova il vostro coraggio.", "." },
   ["3229c05b08063142"] = { "Informazioni sul ⟦Blood of Heroes=Sangue degli Eroi⟧.", "." },
-  ["322b30a43755d7f7"] = { "Ti chiedo scusa, lady Prestor. Non era mia intenzione.", "." },
+  ["322b30a43755d7f7"] = { "Ti chiedo scusa, Lady Prestor. Non era mia intenzione.", "." },
   ["3232dba57d8669a7"] = { "Commercio! Lo bramo!", "." },
   ["32342e57af1668c9"] = { "È bene che tu voglia onorare le tue prede facendo buon uso dei loro corpi. Trova Thuwd dentro la Kodohide Leatherworks, al centro di The Drag.", "." },
   ["32382afe8e816a0e"] = { "Oh no... Mist... che cos'è successo...?", "." },

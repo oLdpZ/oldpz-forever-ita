@@ -11,7 +11,7 @@ WFJ.Data.add("gossip", {
   ["8d21b0012e802784"] = { "<Benvenuto/Benvenuta> alla Banca di ⟦Stormwind=Roccavento⟧. Offriamo conti finanziari e cassette di sicurezza per gli oggetti di valore. Hai già un conto presso di noi, <signore/signora>?", "." },
   ["8d221ae3cc4d5010"] = { "Le tue abilità stanno progredendo bene. Presto gestirai una bottega di pelletteria tutta tua. Mi farà piacere avere un aiuto, {name}. Le mie mani hanno un limite di velocità, sai? C'è così tanto lavoro da fare!", "." },
   ["8d24ffc7c70840fd"] = { "Bene... bene, A-Me. A-Me fa bene. Casa. Trova casa.", "." },
-  ["8d3a1a168e6c86b9"] = { "Pensi di aver vinto? Così facilmente? La legione ha appena iniziato la sua marcia. Gli eserciti di C'Thun raderanno al suolo questo mondo.", "." },
+  ["8d3a1a168e6c86b9"] = { "Pensi di aver vinto? Così facilmente? La legione ha appena iniziato la sua marcia. Gli eserciti di C'thun raderanno al suolo questo mondo.", "." },
   ["8d3a1b6dcb212630"] = { "Ascoltatemi, abitanti del Cratere! Vengo a purificare col fuoco questa terra dalla sua impurità!", "." },
   ["8d42be5d61bd660b"] = { "Per la forza della terra, il potere delle tempeste e...", "." },
   ["8d4435cec73bff6e"] = { "Su %s sono sparse ossa rotte e briciole di cracker.", "." },

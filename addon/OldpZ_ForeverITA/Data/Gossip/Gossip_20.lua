@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["20bd221469986c91"] = { "Intorno a Dolanaar troverai numerosi istruttori con secoli di esperienza da trasmetterti. Da chi vuoi che ti indirizzi?", "." },
   ["20c05d40cab75dec"] = { "Eh? Non ho tempo per chiacchierare, mio padre vuole che finisca quest'ordine per lui.", "." },
   ["20c297a40a7c6b48"] = { "⟦Ashenvale=Valtetra⟧ è una foresta rigogliosa, traboccante di vita. È un piacere percorrerne i sentieri segreti in cerca di erbe, ma bisogna stare attenti. La foresta non è priva di pericoli.", "." },
-  ["20c921c1a9d76ce3"] = { "Il villaggio di Astranaar, a ⟦Ashenvale=Valtetra⟧, è l'attuale dimora dell'anziana Riversong.", "." },
+  ["20c921c1a9d76ce3"] = { "Il villaggio di Astranaar, a ⟦Ashenvale=Valtetra⟧, è l'attuale dimora dell'anziano Riversong.", "." },
   ["20d3ee13a15a1d34"] = { "Tutti coloro che tradiscono Ragnaros devono morire!", "." },
   ["20da1a4db2e67956"] = { "Mi divertirò, {class}.", "." },
   ["20e64c17d95154c1"] = { "Svegliati!", "." },

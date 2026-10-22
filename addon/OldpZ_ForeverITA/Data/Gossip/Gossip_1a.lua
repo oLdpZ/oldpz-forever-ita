@@ -11,7 +11,7 @@ WFJ.Data.add("gossip", {
   ["1a47573fc0445b05"] = { "Dove posso migliorare la mia abilità nello scasso?", "." },
   ["1a48b6bc052e484c"] = { "Sono pezzi pregiati, {name}. Lascia che inizi a lavorare alla tua tonaca.", "." },
   ["1a4a77d9dc78b302"] = { "Arriva la fiera!", "." },
-  ["1a4b4185a2790497"] = { "È storia... Una storia di ⟦Silithus=Silitus⟧... di ⟦Ahn'Qiraj=Ahn'qiraj⟧... di Titani e di Dei Antichi... Leggo dalla profezia di C'Thun scritta dal profeta qiraji Skerram. Una profezia che preannuncia un cataclisma...", "." },
+  ["1a4b4185a2790497"] = { "È storia... Una storia di ⟦Silithus=Silitus⟧... di ⟦Ahn'Qiraj=Ahn'qiraj⟧... di Titani e di Dei Antichi... Leggo dalla profezia di C'thun scritta dal profeta qiraji Skerram. Una profezia che preannuncia un cataclisma...", "." },
   ["1a5793fcfaed5bc8"] = { "Salute, {race}. Una giornata meravigliosa per essere vivi, non trovi?", "." },
   ["1a5acff9ff91643f"] = { "I Kolkar sono i più forti!", "." },
   ["1a60ae6d9072011c"] = { "Non rovinerai le mie terre, feccia!", "." },

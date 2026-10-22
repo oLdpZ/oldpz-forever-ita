@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["00839bc18c4226c0"] = { "È fatta.", "." },
   ["008b2e47d80a4539"] = { "%s colpisce solo il fianco della cassa!", "." },
   ["0092a889032e279d"] = { "Basta! Il gioco è finito!", "." },
-  ["009711b7ba0b0ebb"] = { "<Emberstrife si accorge della tua presenza.>", "." },
+  ["009711b7ba0b0ebb"] = { "<Braceardente si accorge della tua presenza.>", "." },
   ["009f08eabc8cd79e"] = { "Parlami del ⟦Beasts Deck=Mazzo delle Bestie⟧.", "." },
   ["00a7c27318553d17"] = { "Che ne pensi dello Snow Leopard, {name}?", "." },
   ["00ac689968b504ae"] = { "Sì, me l'aspettavo che saresti <tornato/tornata>. Prima ho mandato fuori Korra e ha trovato la Dartol's Rod, abbandonata nella foresta.\n\nAbbiamo faticato tanto per recuperarla, {name}. Ti prego, in futuro bada a non trattarla con tanta leggerezza.", "." },

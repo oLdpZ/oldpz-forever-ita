@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["1b929c8f7b977a69"] = { "Dabu! Farò attenzione, papà!", "." },
   ["1b93753046837375"] = { "Non si fermerà davanti a nulla pur di raggiungere la manifestazione fisica di Malfurion. Non deve accadere... Dobbiamo tenere occupata la bestia abbastanza a lungo da permettere a Tyrande di arrivare.", "." },
   ["1b945388f31414af"] = { "Individueremo l'origine dell'Incubo grazie ai frammenti che hai raccolto, {name}. Da lì trascineremo Eranikus attraverso uno squarcio nel Sogno. Preparati, {class}. Stiamo invitando nel nostro mondo l'incarnazione stessa dell'Incubo.", "." },
-  ["1b99480f5e33c78c"] = { "Coraggio!\n\nIl Soulflayer è stato sconfitto e il suo cuore immondo è stato scagliato nel Nether!", "." },
+  ["1b99480f5e33c78c"] = { "Coraggio!\n\nLo Scortica Anime è stato sconfitto e il suo cuore immondo è stato scagliato nel Nether!", "." },
   ["1b9a823e5ca5d076"] = { "Uno di questi giorni lo affogo in quella tunica blu. E tutte le sue scope pure.", "." },
   ["1ba4f8d18110a00b"] = { "Questo è un posto pericoloso, {name}. Fai attenzione da queste parti.", "." },
   ["1bb9c4dfe3019937"] = { "Bene, {name}. Il tuo ritorno qui significa che sei davvero pront<o/a> per il passo successivo.\n\nDi tutti gli elementi, la terra rappresenta il fondamento di tutte le cose. È la tua forza, la tua resistenza e la tua pazienza. La Madre Terra ti proteggerà, ma solo se le mostrerai il giusto rispetto. Lei è la base della vita e, osservando le sue leggi, otterrai una saggezza più grande. Non dimenticare mai i segreti che condivide con te.\n\nOra preparerò per te la tua sapta e, accettandola, un nuovo sentiero si aprirà davanti a te.", "." },

@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg7
+version: sg8
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg7
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg7)
+## Lessico fissato (sg8)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -138,19 +138,40 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Shredder (goblin) | segatronchi, maschile invariabile («il segatronchi», «i segatronchi XT:4 e XT:9»; da Segatronchi d'Osso Bianco, Manuale di Funzionamento del Segatronchi) | shredder, trinciatrice, trituratore |
 | wildkin, owlbeast | silvagufo / silvagufi (da Penna di Silvagufo); nelle creature degli obiettivi resta l'inglese (Savage Owlbeast) | bestiagufo |
 | Zanzil the Outcast | Zanzil l'Esiliato | Zanzil il Reietto (si confonde con i Reietti) |
-| Hakkar the Soulflayer | Hakkar lo Scortica Anime, senza virgole (dall'abilità ufficiale) | Hakkar, lo Scortica Anime, |
+| Hakkar the Soulflayer, the Soulflayer | Hakkar lo Scortica Anime, senza virgole (dall'abilità ufficiale); da solo «lo Scortica Anime» | Hakkar, lo Scortica Anime,; il Soulflayer |
 | (The) Hinterlands | Entroterre, zona ufficiale, femminile plurale («nelle Entroterre», «delle Entroterre», «Verso le Entroterre») | negli Hinterlands |
 | Grimlok (testo libero) | Tetrok (da Maglia Tribale di Tetrok, Guisarma di Tetrok); negli obiettivi resta Grimlok, come Ganascia/Glugot | — |
 | Hatetalon | cognome (Edana Hatetalon) e luogo (le pietre Hatetalon): restano inglesi; Bramartiglio solo nell'oggetto Corno di Bramartiglio | Bramartiglio nel testo libero |
 | Broken Alliances (titolo) | Alleanze infrante | Alleanze spezzate |
 | Discs of Norgannon, Stone Watcher of Norgannon, Plates of Uldum, Tablet of the Seven, Seal of the Earth | restano inglesi («i Discs of Norgannon», «lo Stone Watcher of Norgannon»; nessuna forma ufficiale verificabile); «i dischi», «il guardiano di pietra» da soli si traducono | Dischi di Norgannon, Tavoletta dei Sette, Sigillo della Terra |
+| Windcaller (titolo) | evocatore / evocatrice dei venti («l'evocatore dei venti Proudhorn», «all'evocatrice dei venti Yessendra») | evocatore del vento, invocatore dei venti |
+| Fleet Master (titolo) | ammiraglio («l'ammiraglio Seahorn», «l'ammiraglio Firallon»); negli obiettivi la creatura da uccidere resta inglese (`Uccidi Fleet Master Seahorn`) | comandante della flotta |
+| Quartermaster | quartiermastro / quartiermastri (dallo Scrigno del Quartiermastro Zigris): «il quartiermastro dei Lupi Bianchi», «a Hasana, quartiermastro della Granbarricata» | furiere, intendente |
+| Keeper of the Rolls | il Custode degli Archivi, maiuscolo (dalla Lettera dal Custode degli Archivi) | custode dei registri |
+| Warden (titolo) | sorvegliante («il sorvegliante Haro»); il direttore di una prigione resta direttore (il direttore Thelwater); A Warden of the Alliance/Horde (Settimana dei Bambini) → «Un tutore dell'Alleanza/dell'Orda». Custode è Keeper; gli oggetti Warden's… (… del Custode) restano come sono | custode Haro |
+| X the Elder, Elder X (Celebrazione della Luna e altri anziani) | «l'anziano X», «l'anziana X» se l'inglese mostra una donna (l'anziana Ragetotem: «her days»); nei titoli «L'anziano Morndeep»; il nome resta inglese, cognomi di tribù compresi (l'anziano Thunderhorn, Winterhoof, Grimtotem) | Morndeep l'Anziano, l'anziano Corno Tonante |
+| Lord Valthalak | «lord Valthalak» nel testo libero (anche «il frammento sinistro dell'amuleto di lord Valthalak»); negli oggetti la forma ufficiale «Sire» (Frammento Sinistro dell'Amuleto di Sire Valthalak, Amuleto di Sire Valthalak) | Sire Valthalak nel testo libero |
+| X Dragonflight, the X Flight (stormi dei draghi) | la forma della fazione, maiuscola: Stormo dei Draghi Neri / Rossi / Blu / Verdi / di Bronzo, anche per «the Black Flight» e per le righe minuscole («lo stormo nero»); il draco campione dello Stormo dei Draghi Blu; Ysera's Dragonflight → Stormo di Ysera. I nomi ufficiali di oggetti e abilità restano: Muta dello Stormo Nero, Fiamme dello Stormo Nero. «lo stormo», «gli stormi» da soli e «lo stormo cromatico» sono nomi comuni | Stormo Nero nel testo libero, stormo dei draghi verdi |
+| dreadlord | signore del terrore, minuscolo (nome comune) | Signore del Terrore |
+| Blazerunner | Fiammafulgida (dall'abilità Aura di Fiammafulgida) | Blazerunner |
+| Emberstrife | Braceardente (dalla Tana di Braceardente); Scryer → Alasaggia e Chronalis → Tac nel testo libero (dai Teschi di Alasaggia e di Tac); le creature da uccidere negli obiettivi restano inglesi | Emberstrife nel testo libero |
+| Cathedral District, Altar of Zanza, Firebloom | restano inglesi (nessuna forma ufficiale verificabile): «nel Cathedral District di Roccavento», «l'Altar of Zanza», «Porta 20 Firebloom» | quartiere della Cattedrale, Altare di Zanza |
+| Thorium Bar (e gli altri Bar) | Lingotto di Torio (ufficiale); senza numero «i lingotti di torio» | barre di torio |
+| Warsong Outriders / Outrider (oggetti) | Predoni Cantaguerra (fazione ufficiale); negli oggetti la forma ufficiale «Perlustratore» (Kit Curativo di Base dei Perlustratori) | — |
+| Myranda the Hag | Myranda la Megera | Myranda la Strega |
+| Al'tabim the All-Seeing | Al'tabim l'Onniveggente | Al'tabim l'Onnisciente |
+| the Blood God (Hakkar) | il Dio del Sangue, maiuscolo come titolo; «un antico dio del sangue» generico minuscolo | il dio del sangue Hakkar |
+| C'Thun | C'thun, come il glossario (Armate di C'thun, Occhio di C'thun) | C'Thun |
+| Warbringer (Orda, campi di battaglia) | araldo della guerra | araldo di guerra, Warbringer |
+| Primal (Primal Torntusk) | la primordiale Torntusk (donna: «her mate») | il primordiale Torntusk |
 
 Regole che accompagnano la tabella:
 
-- **Cognomi dei PNG restano inglesi** (Thunderbrew, Proudmoore, Stonefield, Windrunner, Longshore, Bloodhoof come cognome di Cairne o Baine), anche quando un oggetto del glossario li traduce: «nonna Stonefield» e «Nota di Nonna Pietradura» convivono. Se il controllo dà errore, si lascia la forma che il controllo accetta.
+- **Cognomi dei PNG restano inglesi** (Thunderbrew, Proudmoore, Stonefield, Windrunner, Longshore, Bloodhoof come cognome di Cairne o Baine), anche quando un oggetto del glossario li traduce: «nonna Stonefield» e «Nota di Nonna Pietradura» convivono. Così Rend Blackhand (Testa di Rend Manonera), il barone Rivendare (Testa del Barone Fieramorte), Ras Frostwhisper (Testa Umana di Ras Soffiogelo), Mor Grayhoof, il signore della guerra Goretooth (Ordine del Signore della Guerra Zannatruce), Andre Firebeard, Edana Hatetalon: nel testo libero il cognome inglese, nel nome di un oggetto la forma ufficiale. Se il controllo dà errore, si lascia la forma che il controllo accetta; quando il controllo impone la forma ufficiale in un titolo (7761 «Lettera di Manonera», dall'oggetto Blackhand's Command), il testo libero di quella catena concorda («-Capoguerra Rend Manonera» nella lettera stessa).
+- **`{class}` non prende prefissi**: `Arch$C` non diventa «l'arci{class}» (darebbe «arciMago»); si riscrive con una parola intera e il segnaposto altrove («L'arcimago Xylem attende il tuo arrivo, {class}.»).
 - **Tribù, clan e gruppi** (non cognomi) prendono la forma ufficiale ricavabile dal glossario di zone, oggetti e fazioni: Razormane → Chiomaguzza, Bristleback → Mantotergo, Darkspear → Lanciascura, Frostmane → Mantogelido, Gnarlpine → Mordipigna, Winterhoof → Zoccolo Artico, Thunderhorn → Corno Tonante, Venomtail → Codavenefica, Bloodfeather → Piumarossa, Grimtotem → Totem Truce. Se non è ricavabile, resta inglese.
 - **Nomi ricavati da oggetti ufficiali** sono ammessi allo stesso modo: `Darkmoon Cards` → `Carte di Lunacupa` (dagli oggetti `Carta di Lunacupa: …`). Senza una forma ufficiale resta il nome inglese dell'oggetto (`Darkmoon Faire Prize Ticket`); `Fiera di Lunacupa` solo dove si parla della fiera stessa.
-- **Ravenholdt** persona resta inglese; `Corvolesto` solo per il maniero e la fazione. **Lord + nome** di un nobile: `lord` minuscolo, come gli altri titoli. **Anziano/anziana**: maschile salvo che l'inglese mostri una donna.
+- **Ravenholdt** persona resta inglese; `Corvolesto` solo per il maniero e la fazione. **Lord + nome** di un nobile: `lord` minuscolo, come gli altri titoli (lord Valthalak, lord Incendius); `Sire` solo dove è il nome ufficiale di un oggetto. **Anziano/anziana**: maschile salvo che l'inglese mostri una donna.
 - **Un titolo prima di un nome è minuscolo** (il maresciallo McBride, l'esecutore Arren, la sacerdotessa Alathea, il sommo sacerdote), salvo una forma del glossario che il controllo pretende maiuscola.
 - **I nomi composti di creature** che contengono un termine del glossario, di classe, di razza o di zona (Ice Claw Bear, Armored Scorpid, Redridge Mongrel, Stonesplinter Shaman) restano interi in inglese; il controllo dà solo un avviso. Mai costruzioni come «uno Scorpide, l'Armored Scorpid» o «Bruti di Crestarossa» aggiunte per il controllo.
 - **Nomi di abilità** che il glossario non elenca (Lesser Heal) restano inglesi.

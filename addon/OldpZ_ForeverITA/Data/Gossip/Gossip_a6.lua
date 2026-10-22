@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["a6a7e05bd62136d9"] = { "Tilloa, sei tu? Ma no! È solo <un/una> lurid<o/a> {race}!", "." },
   ["a6a7ef1da95339ce"] = { "⟦Zul'Farrak=Zul'farrak⟧ - Weegli Blastfuse - Saluto predefinito.", "." },
   ["a6afae77ff7e31e8"] = { "Salute, viaggiatore. Fu qui, quasi 1.000 anni fa, che i Qiraji cominciarono la loro marcia di distruzione attraverso Kalimdor.\n\nMigliaia di vite andarono perdute durante la guerra, per lo più in questo deserto maledetto, durante l'invasione iniziale.\n\nDi noi ne restano pochi, e io sono tra questi, in catene sia al passato sia al presente. Non so perché devo restare di guardia qui, ma so che devo farlo.", "." },
-  ["a6c88e9e8bb44a2a"] = { "Patetico. Il potere del Soulflayer scorre in me. Non temo nulla se non l'ira dell'onnipotente Hakkar. Non servo nessuno se non il mio padrone, Jin.", "." },
+  ["a6c88e9e8bb44a2a"] = { "Patetico. Il potere dello Scortica Anime scorre in me. Non temo nulla se non l'ira dell'onnipotente Hakkar. Non servo nessuno se non il mio padrone, Jin.", "." },
   ["a6d637c7dfef399e"] = { "La temperatura è di 564 gradi Kraklenheit.", "." },
   ["a6d7cff8711ddda3"] = { "La terra di Azshara.", "." },
   ["a6d9f1a0f47f9f13"] = { "Quanti cibi cucinati ha raccolto finora l'⟦Horde=Orda⟧?", "." },
