@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [474204] = { "Infligge danni da ombra a un nemico e ne riduce la velocità di movimento per $D1.", nil, 0xb24a12b1, nil, "um" },
   [474236] = { "Il prossimo incantesimo lanciato entro $D1 sarà istantaneo.", "Il prossimo incantesimo sarà istantaneo.", 0x0b45c4ad, 0x71a46f0d, "uu" },
   [474268] = { "Infligge danni da ombra a un nemico e ne riduce la velocità di movimento per $D1.", "$N1 danni da ombra inflitti ogni secondo per $D1.\nVelocità di movimento ridotta.\nFuga in preda al terrore.", 0xb24a12b1, 0x949c7095, "uu" },
+  [474386] = { "Rimuove tutti gli effetti di limitazione al movimento e tutti gli effetti che ti fanno perdere il controllo del personaggio.", nil, 0x5922de69, nil, "um" },
   [474402] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
   [474500] = { "Seleziona poteri casuali per l'Anibusath Guardian.", nil, 0xfe66bd23, nil, "um" },
   [474553] = { "Lancia un incantesimo su un singolo bersaglio.", nil, 0x3a0676a2, nil, "um" },

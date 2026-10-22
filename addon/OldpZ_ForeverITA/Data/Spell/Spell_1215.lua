@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1215091] = { "Infligge $N1 danni da natura ai nemici vicini ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0xa5f95a74, 0xf6322bec, "uu" },
   [1215198] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
+  [1215329] = { "Ricevi dei gettoni per il tuo servizio al Dio del Sangue.", nil, 0xf0c62931, nil, "um" },
   [1215378] = { "Evoca e congeda una tigre cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x745feae3, 0x2195529a, "uu" },
   [1215380] = { "Evoca e congeda un Raptor cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x955b85b6, 0x2195529a, "uu" },
   [1215421] = { "Infligge $N1 danni da natura ogni $D1.", "Infligge $N1 danni da natura ogni $D1.", 0x9d4ac814, 0x9d4ac814, "uu" },

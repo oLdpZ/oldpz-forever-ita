@@ -21,6 +21,7 @@ WFJ.Data.add("spell", {
   [1302283] = { "Infonde magia in un bastone per $D1, aumentando fino a $N2 i danni inflitti da incantesimi ed effetti di gelo.", nil, 0xb4ef8d75, nil, "um" },
   [1302284] = { "Infonde magia in un pugnale per $D1, facendogli a volte congelare i nemici colpiti.", nil, 0x17199842, nil, "um" },
   [1302285] = { "Evoca un fedele famiglio rana per $D1. La sua presenza aumenta il tuo Intelletto di $N2.", "Il tuo famiglio aumenta il tuo Intelletto di $N1.", 0xaf2388c7, 0xbba5b326, "uu" },
+  [1302286] = { "Usalo sulla ⟦Hypnotic Blade=Lama Ipnotica⟧ per creare un'arma potente.", nil, 0x0c3b5db4, nil, "um" },
   [1302293] = { "Da usare sulla Blade of Silverlaine per creare un'arma potente.", nil, 0x4228a647, nil, "um" },
   [1302294] = { "Da usare sulla Witchblade per creare un'arma potente.", nil, 0x5fb53cd2, nil, "um" },
   [1302297] = { "Apre magicamente una serratura di difficoltà $N1 o inferiore.", nil, 0x95ebe730, nil, "um" },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [447255] = { "+$N1 alla potenza d'attacco contro i dragoidi.", nil, 0x85a118c6, nil, "um" },
   [447274] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
+  [447301] = { "Attacchi tutti i nemici vicini per $D1, infliggendo i danni dell'arma più altri $N2 ogni $D2.", "Attacchi tutti i nemici vicini infliggendo i danni dell'arma + $N1.", 0x3df8972c, 0xde7e324f, "uu" },
   [447546] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [447547] = { "Evoca una colonna di fuoco che brucia tutti i nemici in un'area bersaglio, infliggendo danni aggiuntivi ogni $D1 per $D2.", "Danni da fuoco ogni $D1.", 0x54539376, 0xfd7a76cf, "uu" },
   [447549] = { "Il Sacerdote si circonda di energia antimagica. Ogni incantesimo lanciato con successo contro il Sacerdote brucia $N1 mana dell'attaccante, infliggendo $N2 danni da ombra per ogni punto di mana bruciato. Dura $D1.", "L'energia antimagica brucia $N1 mana dell'attaccante, infliggendo $N2 danni da ombra per ogni punto di mana bruciato.", 0x7d1a32d9, 0x0019d6f5, "uu" },

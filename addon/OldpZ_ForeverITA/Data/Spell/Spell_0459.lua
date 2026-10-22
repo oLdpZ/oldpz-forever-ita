@@ -12,4 +12,6 @@ WFJ.Data.add("spell", {
   [459615] = { "Quando metti a segno un colpo di grazia che fornisce esperienza o onore, il tuo prossimo attacco sarà un colpo critico.", "Quando metti a segno un colpo di grazia che fornisce esperienza o onore, il tuo prossimo attacco sarà un colpo critico.", 0x11413859, 0x11413859, "uu" },
   [459622] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [459736] = { "Aumenta la Tempra di $N1 per $D1 e infonde ubriachezza molesta!", "Tempra aumentata di $N1.", 0xfaf19c38, 0x4e3b423b, "uu" },
+  [459837] = { nil, "Offriti come vittima sacrificale volontaria alle Ombre.", nil, 0xb1e42a42, "mu" },
+  [459845] = { nil, "Offriti come vittima sacrificale volontaria alle Ombre.", nil, 0xb1e42a42, "mu" },
 })
