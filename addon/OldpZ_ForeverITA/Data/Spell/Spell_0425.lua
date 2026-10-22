@@ -81,6 +81,7 @@ WFJ.Data.add("spell", {
   [425460] = { nil, "Il sogno sta crollando.", nil, 0x2b57184c, "mu" },
   [425463] = { "Ti pervade di vil energia, aumentando del $N1% la probabilità di schivata tua e del tuo famiglio e del $N2% la tua probabilità di critico con tutti gli attacchi. Dura $D1.", "Probabilità di schivata aumentata del $N1%.\nProbabilità di critico del padrone aumentata del $N2%.", 0x95ecc1be, 0xb041bbc1, "uu" },
   [425464] = { "L'effetto del tuo Sacrificio Demoniaco non viene più annullato quando evochi un altro famiglio demoniaco. Evocare di nuovo il famiglio sacrificato annulla comunque l'effetto.", nil, 0x910d423f, nil, "um" },
+  [425467] = { nil, "Danni magici e cure aumentati di $N1.", nil, 0x79cd41df, "mu" },
   [425473] = { "Ottieni l'abilità Demonic Pact:\n\n$I1\nL'effetto del tuo Sacrificio Demoniaco non viene più annullato quando evochi un altro famiglio demoniaco. Evocare di nuovo il famiglio sacrificato annulla comunque l'effetto.", nil, 0x71ac3206, nil, "um" },
   [425474] = { "Ottieni l'abilità Demonic Grace:\n\n$I1\nTi pervade di vil energia, aumentando del $N1% la probabilità di schivata tua e del tuo famiglio e del $N2% la tua probabilità di critico con tutti gli attacchi. Dura $D1.", nil, 0xa8b370d2, nil, "um" },
   [425476] = { "Incidi sui tuoi gambali la runa Demonic Pact:\n\n$I1\nL'effetto del tuo Sacrificio Demoniaco non viene più annullato quando evochi un altro famiglio demoniaco. Evocare di nuovo il famiglio sacrificato annulla comunque l'effetto.", nil, 0x15896149, nil, "um" },

@@ -37,5 +37,6 @@ WFJ.Data.add("spell", {
   [416288] = { "Combina con altri $N1 pezzi per ottenere la mappa completa.", nil, 0xdcc7f5cf, nil, "um" },
   [416304] = { "Dissotterra il tesoro nel punto segnato", nil, 0xcb9fbb49, nil, "um" },
   [416772] = { "Da piazzare come esca vicino alla tana di un felino dell'isola", nil, 0xaf609f27, nil, "um" },
+  [416837] = { nil, "Hai trovato un amico!", nil, 0x135ae248, "mu" },
   [416861] = { "La tua abilità ⟦Tame Beast=Addomesticamento⟧ funziona anche sulle vipere (come mascotte)", "La tua abilità ⟦Tame Beast=Addomesticamento⟧ funziona anche sulle vipere (come mascotte)", 0xe11da250, 0xe11da250, "uu" },
 })

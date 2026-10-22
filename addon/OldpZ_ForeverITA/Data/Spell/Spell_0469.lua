@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [469065] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [469122] = { "Fornisce all'incantatore $N1 attacchi aggiuntivi.", nil, 0x2dd42c6d, nil, "um" },
   [469123] = { "Fornisce all'incantatore $N1 attacchi aggiuntivi.", nil, 0x2dd42c6d, nil, "um" },
+  [469132] = { nil, "$N1 danni da natura ogni $N2 s.", nil, 0x1062340a, "mu" },
   [469133] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [469134] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [469138] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },

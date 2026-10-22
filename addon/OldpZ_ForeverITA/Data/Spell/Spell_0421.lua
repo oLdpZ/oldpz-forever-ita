@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [421262] = { nil, "Quella torta ti è rimasta sullo stomaco...", nil, 0xc7597fda, "mu" },
   [421295] = { "Da piazzare come esca nella tana di un grande orso", nil, 0x638bcf42, nil, "um" },
   [421311] = { "La tua abilità ⟦Tame Beast=Addomesticamento⟧ funziona anche sui cervi (come mascotte)", "La tua abilità ⟦Tame Beast=Addomesticamento⟧ funziona anche sui cervi (come mascotte)", 0x26fbe948, 0x26fbe948, "uu" },
+  [421312] = { nil, "Hai trovato un amico!", nil, 0x135ae248, "mu" },
   [421322] = { nil, "Le ossa bramano energia maledetta", nil, 0x3b356f3d, "mu" },
   [421406] = { "Sfida a duello un Tauren", "Danni fisici subiti aumentati", 0x21d0c0b2, 0xf95df00f, "uu" },
   [421424] = { "Dissotterra il tesoro nel punto segnato", nil, 0xcb9fbb49, nil, "um" },

@@ -28,6 +28,7 @@ WFJ.Data.add("spell", {
   [417159] = { "Ti cura istantaneamente del $N1% della tua salute massima. Utilizzabile in tutte le forme.", nil, 0x28428f72, nil, "um" },
   [417192] = { nil, "Inginocchiati davanti al Loa per ricevere la sua saggezza.", nil, 0x731b2e2d, "mu" },
   [417315] = { nil, nil, 0x5c0f8e85, nil, "em" },
+  [417316] = { nil, "La meditazione ha espanso la tua mente, dandoti la lucidità per apprendere nuovi incantesimi dalle Memorie sparse per il mondo.", nil, 0x0f1e11e9, "mu" },
   [417345] = { "Equipaggia un oggetto per la testa con una runa incisa per attivare un'abilità in questo spazio.", nil, 0x407fa9b3, nil, "um" },
   [417346] = { "Equipaggia un oggetto per i polsi con una runa incisa per attivare un'abilità in questo spazio.", nil, 0xbb892d16, nil, "um" },
   [417347] = { "Equipaggia un oggetto per la schiena con una runa incisa per attivare un'abilità in questo spazio.", nil, 0x39b2b0bc, nil, "um" },
