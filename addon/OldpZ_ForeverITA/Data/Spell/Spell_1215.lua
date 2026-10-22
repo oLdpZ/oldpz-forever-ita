@@ -8,7 +8,7 @@ WFJ.Data.add("spell", {
   [1215380] = { "Evoca e congeda un Raptor cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x955b85b6, 0x2195529a, "uu" },
   [1215421] = { "Infligge $N1 danni da natura ogni $D1.", "Infligge $N1 danni da natura ogni $D1.", 0x9d4ac814, 0x9d4ac814, "uu" },
   [1215510] = { "Assorbe $N1 danni da gelo. Dura $D1.", "Assorbe $N1 danni da gelo.", 0x08003478, 0xa3f74587, "uu" },
-  [1215511] = { "Assorbe $N1 danni da natura. Dura $D1.", nil, 0x61752927, nil, "um" },
+  [1215511] = { "Assorbe $N1 danni da natura. Dura $D1.", "Assorbe $N1 danni da natura.", 0x61752927, 0x3df0dfc8, "uu" },
   [1215512] = { "Assorbe $N1 danni da ombra. Dura $D1.", nil, 0x8d4773b5, nil, "um" },
   [1215625] = { "Riduce tutti i danni da incantesimi subiti del $N1%.", nil, 0x9a4d57c2, nil, "um" },
   [1215740] = { "Infligge danni da ombra a un nemico e ne riduce la velocità di movimento per $D1.", "$N1 danni da ombra inflitti ogni secondo per $D1.\nVelocità di movimento ridotta al $N3% del normale.", 0xb24a12b1, 0xbc2e574c, "uu" },

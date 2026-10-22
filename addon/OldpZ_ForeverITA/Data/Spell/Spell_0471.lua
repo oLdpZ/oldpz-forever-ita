@@ -2,5 +2,9 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [471149] = { "Entra in un'altra area avvolta dall'incubo.", "Torna nell'area della missione, altrimenti il teletrasporto avverrà tra $D1.", 0x339fbd21, 0x57e7cc86, "uu" },
+  [471400] = { "Crea Magnificent Trollshine.", nil, 0x2e9829a1, nil, "um" },
+  [471401] = { "Applicato allo scudo bersaglio, aumenta fino a $N1 i danni e le cure degli incantesimi e aumenta del $N2% la probabilità di critico magico. Dura $N3 min.", nil, 0x6c2a8aac, nil, "um" },
   [471402] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici. Aumenta inoltre la probabilità di colpo critico degli incantesimi del $N2%.", nil, 0x299ae61d, nil, "um" },
+  [471698] = { "Entra in sintonia con l'oscurità che hai dentro per controllare meglio il tuo demone interiore.", "La tua anima è tutt'uno con il demone...", 0x4255a78a, 0x872359eb, "uu" },
+  [471699] = { "Entra in sintonia con l'oscurità che hai dentro per controllare meglio il tuo demone interiore.", "La tua anima è tutt'uno con il demone...", 0xa0b0ec43, 0x872359eb, "uu" },
 })

@@ -45,6 +45,7 @@ WFJ.Data.add("spell", {
   [1232755] = { nil, "$N1 danni ogni $N2 secondi.", nil, 0x6e147642, "mu" },
   [1232758] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
   [1232761] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
+  [1232829] = { "Lancia una palla infuocata, infliggendo $N1 danni da fuoco al nemico.", nil, 0x0a1b47cf, nil, "um" },
   [1232839] = { "Tira contro un bersaglio nemico, infliggendo danni fisici.", nil, 0x75634826, nil, "um" },
   [1232842] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1232884] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },

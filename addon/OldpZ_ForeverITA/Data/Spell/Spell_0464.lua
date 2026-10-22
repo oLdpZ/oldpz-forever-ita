@@ -5,4 +5,6 @@ WFJ.Data.add("spell", {
   [464592] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [464650] = { nil, "Stordito e gelato fino alle ossa.", nil, 0x9cb407ec, "mu" },
   [464743] = { "Riduce la potenza d'attacco in mischia e a distanza dei nemici vicini di $N1 per $D1.", "Potenza d'attacco in mischia e a distanza ridotta di $N1.", 0x2eacb3df, 0x25ffd6c8, "uu" },
+  [464945] = { "Trasforma Ombrafuria in Tuonassalto.", nil, 0xe0d5f71b, nil, "um" },
+  [464946] = { "Trasforma Tuonassalto in Ombrafuria.", nil, 0x144434fe, nil, "um" },
 })

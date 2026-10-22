@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1219090] = { nil, "Silenziato.", nil, 0x20816e34, "mu" },
+  [1219101] = { "Il tuo prossimo incantesimo Evocazione: Imp, Evocazione: Ombra del Vuoto, Evocazione: Succube, Evocazione: Incubus, Evocazione: Vilsegugio o Evocazione: Vilguardia ha il tempo di lancio ridotto di $D1 e non costa frammenti d'anima né mana.", nil, 0x59404b53, nil, "um" },
   [1219206] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
   [1219267] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1219269] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
@@ -13,7 +14,7 @@ WFJ.Data.add("spell", {
   [1219388] = { "Infligge $N1 danni da fuoco.", nil, 0xa92ff3e1, nil, "um" },
   [1219415] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1219475] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
-  [1219500] = { "Aumenta la velocità d'attacco del $N1% per $D1.", nil, 0xa077c7f4, nil, "um" },
+  [1219500] = { "Aumenta la velocità d'attacco del $N1% per $D1.", "Velocità d'attacco aumentata.", 0xa077c7f4, 0x778d86da, "uu" },
   [1219506] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
   [1219513] = { "Aumenta fino a $N2 le cure prodotte dai prossimi $N1 incantesimi per $D1.", "Incantesimi di cura aumentati fino a $N1.", 0x9695f8e3, 0xd754af7b, "uu" },
   [1219515] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", "Danni e cure degli incantesimi aumentati fino a $N1.", 0xc0d35181, 0xce30f511, "uu" },

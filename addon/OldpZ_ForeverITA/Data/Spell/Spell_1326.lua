@@ -19,6 +19,8 @@ WFJ.Data.add("spell", {
   [1326099] = { "Gli incantesimi che infliggono danni possono evocare un elementale arcano che ti aiuta in combattimento.", nil, 0x288d1e97, nil, "um" },
   [1326114] = { "Costringe un nemico a dormire per un massimo di $D1. Eventuali danni inflitti al bersaglio interrompono l'effetto. Può essere addormentato solo un bersaglio alla volta.", "Addormentato.", 0x5d4e03d9, 0x5339954e, "uu" },
   [1326140] = { "Avvia un rituale che evoca il membro del gruppo bersaglio. Per completare il rituale servono l'incantatore e altri $N1 membri del gruppo. Per partecipare, tutti i giocatori devono essere fuori dal combattimento, cliccare con il tasto destro sul portale e non muoversi finché il rituale non è completo.", nil, 0x243b7c43, nil, "um" },
+  [1326144] = { nil, "$N1 danni da fuoco e $N2 mana bruciato ogni $D1.", nil, 0x71d9c442, "mu" },
+  [1326146] = { nil, "$N1 danni da fuoco e $N2 mana bruciato ogni $D1.", nil, 0x71d9c442, "mu" },
   [1326159] = { "⟦Mind Blast=Detonazione Mentale⟧ e ⟦Mind Flay=Flagello Mentale⟧ incanalato fino in fondo provocano Ispirazione Oscura, aumentando del $N1% lo Spirito tuo e del tuo gruppo per $D1.", nil, 0x5cca5eb5, nil, "um" },
   [1326168] = { "⟦Mind Blast=Detonazione Mentale⟧ e ⟦Mind Flay=Flagello Mentale⟧ incanalato fino in fondo provocano Ispirazione Oscura, aumentando del $N1% lo Spirito tuo e del tuo gruppo per $D1.", "Spirito aumentato del $N1%.", 0xf9e6ff89, 0x9348a814, "uu" },
   [1326175] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },

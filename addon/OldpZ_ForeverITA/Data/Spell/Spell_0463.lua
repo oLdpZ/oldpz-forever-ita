@@ -4,7 +4,7 @@ WFJ.Data.add("spell", {
   [463005] = { "Evoca e congeda un Tecnostruzzo d'Acciaio cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x58925d99, 0x2195529a, "uu" },
   [463006] = { "Evoca e congeda una Fiera Dorata cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x3745fb1e, 0x2195529a, "uu" },
   [463007] = { "Evoca e congeda un Raptor cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x7d1c7f75, 0x2195529a, "uu" },
-  [463168] = { "Zilbagob lancia il segatronchi in un decollo esplosivo, generando onde d'urto che spazzano il pavimento.", nil, 0x53455fe4, nil, "um" },
+  [463168] = { "Zilbagob lancia il segatronchi in un decollo esplosivo, generando onde d'urto che spazzano il pavimento.", "Fa cadere tutti a terra.", 0x53455fe4, 0xcfd65d4c, "uu" },
   [463171] = { "Costringe un nemico a concentrarsi sull'incantatore e aumenta la velocità d'attacco dell'incantatore del $N1% per $D1. Finché è concentrato sull'incantatore, il bersaglio è molto restio ad attaccare chiunque altro.", nil, 0xa441d417, nil, "um" },
   [463285] = { "Infligge $N1 danni da arcano al bersaglio.", nil, 0xf284a035, nil, "um" },
   [463365] = { "Convince Zotl, il pipistrello averla, ad accompagnarti per una sfida.", "In compagnia di Zotl, il pipistrello averla.", 0x57f28cc1, 0xf8f20aba, "uu" },
