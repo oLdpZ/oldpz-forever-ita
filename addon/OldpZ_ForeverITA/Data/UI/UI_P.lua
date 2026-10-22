@@ -25,6 +25,7 @@ WFJ.Data.add("ui", {
   ["PARAGON_REPUTATION_TOOLTIP_TEXT"] = { "Continua a guadagnare reputazione con la fazione %s per ricevere una ricompensa.", 0x167be0ad, "." },
   ["PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL"] = { "Sei di livello troppo basso per ottenere la reputazione Eccellenza con questa fazione.", 0xed056cdf, "." },
   ["PARENS_TEMPLATE"] = { "(%s)", 0x05660b87, "." },
+  ["PARRY"] = { "Parata", 0x896675f5, "." },
   ["PARRY_CHANCE"] = { "Probabilità di parata", 0x58abcd17, "." },
   ["PARTICLE_DENSITY"] = { "Densità delle particelle", 0x406e0f61, "." },
   ["PARTY"] = { "Gruppo", 0x896676fb, "." },

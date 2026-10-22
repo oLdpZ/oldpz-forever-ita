@@ -191,6 +191,7 @@ WFJ.Data.add("ui", {
   ["UNIT_NAMEPLATES_STACK_FRIENDLY_UNITS_TOOLTIP"] = { "Impila le barre delle unità amichevoli.", 0xede6bc2b, "." },
   ["UNIT_NAMEPLATES_STACK_NONE"] = { "Nessuno", 0x0a90eed0, "." },
   ["UNIT_NAMEPLATES_STYLE"] = { "Stile", 0xc09d2d82, "." },
+  ["UNIT_NAMEPLATES_STYLE_BLOCK"] = { "Blocco", 0x951f0255, "." },
   ["UNIT_NAMEPLATES_STYLE_CAST_FOCUS"] = { "Lancio in evidenza", 0x62b6417a, "." },
   ["UNIT_NAMEPLATES_STYLE_HEALTH_FOCUS"] = { "Salute in evidenza", 0x8059989b, "." },
   ["UNIT_NAMEPLATES_STYLE_LEGACY"] = { "Classico", 0xa6163476, "." },

@@ -505,6 +505,7 @@ WFJ.Data.add("ui", {
   ["BLIZZARD_STORE_VAS_ERROR_TOO_MUCH_MONEY_FOR_LEVEL"] = { "- L'oro in possesso di questo personaggio supera la quantità massima trasportabile al suo livello (%s).", 0xe73fa60d, "." },
   ["BLIZZARD_STORE_VAS_ERROR_UNDER_MIN_LEVEL_REQ"] = { "- Il personaggio non soddisfa i requisiti minimi di livello.", 0xa335a845, "." },
   ["BLIZZARD_STORE_VAS_INVALID_NAME"] = { "- Questo nome non è valido, scegli un altro nome.", 0x8de5ec47, "." },
+  ["BLOCK"] = { "Blocco", 0x951f0255, "." },
   ["BLOCKED_INVITES"] = { "Invito bloccato", 0x4a1be1d3, "." },
   ["BLOCK_CHANCE"] = { "Probabilità di blocco", 0x805d3336, "." },
   ["BLOCK_CHAT_CHANNEL_INVITE"] = { "Blocca inviti ai canali di chat", 0x6c0773a5, "." },
