@@ -1,0 +1,1 @@
+{"id": 406680, "field": "aura", "it": "Velocità di movimento ridotta del $N1%.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t02-sg11@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "bd9449c14e5aeafa", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

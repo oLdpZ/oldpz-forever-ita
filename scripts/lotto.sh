@@ -35,7 +35,7 @@ MODEL="${LOTTO_MODEL:-claude-opus-5-5}"
 DATE="${LOTTO_DATE:-$(date +%F)}"
 BATCHES="$ROOT/pipeline/batches"
 export PYTHONPATH="$CODE/pipeline${PYTHONPATH:+:$PYTHONPATH}"
-KINDS="quest_title quest_objectives quest_description progress completion gossip objective area book"
+KINDS="quest_title quest_objectives quest_description progress completion gossip objective area book item_description spell_description spell_aura"
 
 usage() {
 	echo "uso: scripts/lotto.sh taglia <kind> <nome> <ids-file|-> <size> | importa <nome>" >&2

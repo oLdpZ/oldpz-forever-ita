@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `2f23f94`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `03c90d6`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -15,9 +15,9 @@
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,224 | 1,232 | 0 | 12.1% | 8,992 |
-| Spell tooltips + auras | 25,718 | 4,863 | 1 | 18.9% | 20,854 |
+| Spell tooltips + auras | 25,718 | 5,233 | 1 | 20.4% | 20,484 |
 | Interface strings | 16,417 | 8,609 | 1,029 | 58.7% | 6,779 |
-| **All** | **85,702** | | | **56.8%** | **36,989** |
+| **All** | **85,702** | | | **57.3%** | **36,619** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -46,7 +46,7 @@ professions, internal strings): quest 139.
 | Item descriptions | no Italian yet | 6,974 |
 | Item descriptions | no Italian yet: no text from the Forever tables on this build yet (English still from Classic Era); rechecked at each re-pull | 2,017 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
-| Spell tooltips + auras | no Italian yet | 20,782 |
+| Spell tooltips + auras | no Italian yet | 20,412 |
 | Spell tooltips + auras | no Italian yet: the template includes a spell the Forever tables do not hold | 34 |
 | Spell tooltips + auras | no Italian yet: no text from the Forever tables on this build yet (English still from Classic Era); rechecked at each re-pull | 25 |
 | Spell tooltips + auras | no Italian yet: the template has too many optional parts for one translation | 8 |

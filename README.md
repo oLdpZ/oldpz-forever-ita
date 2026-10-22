@@ -21,7 +21,7 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 | Pagine di libri | 921 |
 | Pagine di lettere | 208 |
 | Tooltip degli oggetti | 1.232 |
-| Tooltip delle abilità | 3.761 |
+| Tooltip delle abilità | 4.054 |
 | Testi dell'interfaccia | 8.609 |
 
 - **Missioni** dei livelli 1–20: titolo, obiettivi, descrizione, testo di avanzamento e di completamento, nella

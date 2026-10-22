@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg10
+version: sg11
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg10
 - Un nome che il glossario non elenca (un personaggio, una creatura o un luogo che il client italiano non traduce) resta esattamente come lo scrive l'inglese: `Marshal McBride`, `Hogger`. Non inventare traduzioni di nomi.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg10)
+## Lessico fissato (sg11)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -276,7 +276,10 @@ Una riga è una pagina: traducila così com'è, senza portare frasi da un'altra 
 
 Queste righe **non** sono dialogo: sono ciò che il gioco stampa nel tooltip. Ignora **Voce**.
 
-- **Registro.** Informativo, alla terza persona o impersonale, come il client italiano: `Ripristina $N1 punti Salute.`, `Infligge $N1 danni da Fuoco.` Una frase per ogni frase inglese.
+- **Registro.** Informativo, alla terza persona o impersonale, come il client italiano: `Rigenera $N1 salute.`, `Infligge $N1 danni da fuoco.` Una frase per ogni frase inglese.
+- **Maiuscole come il client italiano.** Le caratteristiche maiuscole: Forza, Agilità, Tempra, Intelletto, Spirito, Armatura (la caratteristica). Risorse e scuole minuscole: salute, mana, rabbia, energia; danni fisici, da fuoco, da gelo, da arcano, da natura, da ombra, da sacro. Le classi maiuscole (il Guerriero, i Maghi). In un tooltip `health` è `salute` (la tabella dell'interfaccia vale per le etichette dell'interfaccia).
+- **Nomi di abilità.** Un'abilità citata (`Charge`, `Rend`, `Sunder Armor`) prende il nome ufficiale italiano del client: il glossario non elenca i nomi di una parola, quindi si cercano nella tabella dei nomi ufficiali delle abilità (stesso id, client itIT). Senza forma ufficiale il nome resta inglese.
+- **Unità scritte dall'inglese.** Quando l'inglese scrive un'unità per esteso (`5 seconds`, `$s1 secs`, `2 mins`) e la riga non conta una durata (`durations` assente), il controllo vuole `$N`: si scrive `$N1 s` / `$N1 min` come il client (`ogni $N3 s`). Un plurale `$l<sing>:<plur>;` si rende con la forma plurale italiana.
 - **L'inglese è un modello, non il testo finito.** `Restores $o1 health over $d.` è ciò che contengono i dati; il giocatore vede `Restores 61 health over 18 sec.` I valori li inserisce il gioco, diversi per oggetto, grado, livello e talento, quindi l'italiano porta i segnaposto, mai i valori.
 
 ### `$N<k>`: un numero
@@ -285,7 +288,7 @@ Queste righe **non** sono dialogo: sono ciò che il gioco stampa nel tooltip. Ig
 
 ```
 EN   Restores $s1 health.                     slots 1
-IT   Ripristina $N1 punti Salute.
+IT   Rigenera $N1 salute.
 ```
 
 Un numero scritto per esteso (`61`) viene rifiutato (`numbers_changed`).
@@ -296,7 +299,7 @@ La durata è l'unico valore di cui il gioco sceglie l'**unità** (secondi, minut
 
 ```
 EN   Restores $o1 health over $d.    slots 2
-IT   Ripristina $N1 punti Salute in $D1.
+IT   Rigenera $N1 salute in $D1.
 ```
 
 Un numero che l'inglese scrive davanti a un'unità è anch'esso una durata (`every 5 sec for $d`: `$D1` è `5 sec`, il `$d` è `$D2`). `$N2 sec` al posto di `$D2` viene rifiutato (`duration_as_value` / `duration_missing`).

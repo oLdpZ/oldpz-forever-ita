@@ -87,6 +87,7 @@ WFJ.Data.add("spell", {
   [18399] = { "Evoca una colonna di fuoco che brucia tutti i nemici in un'area bersaglio, infliggendo danni aggiuntivi ogni $N1 s per $D2.", "Danni da fuoco inflitti ogni $N1 s.", 0x54539376, 0xfd7a76cf, "uu" },
   [18432] = { "Infligge $N1 danni da fuoco ai nemici vicini.", nil, 0xcdc05fe4, nil, "um" },
   [18435] = { "Infligge $N1 danni da fuoco ai nemici in un cono frontale.", nil, 0xad2ec576, nil, "um" },
+  [18499] = { "Il Guerriero entra in una furia berserker, diventando immune agli effetti di paura e di inabilitazione e generando rabbia aggiuntiva quando subisce danni. Dura $D1.", "Immune agli effetti di paura e di inabilitazione. Genera rabbia aggiuntiva quando subisce danni.", 0x51fbbad9, 0xfc70f3d2, "uu" },
   [18502] = { "Prosciuga $N1 mana a un nemico ogni $N2 s, trasferendolo all'incantatore in $D2.", "$N1 mana prosciugato ogni $N2 s.", 0x89163bbf, 0x7f81e2e0, "uu" },
   [18503] = { "Trasforma il nemico in una gallina, impedendogli di attaccare o lanciare incantesimi per $D1.", "Maledetto.", 0xf1ad23de, 0xba4d399d, "uu" },
   [18543] = { "Brucia un nemico, infliggendo danni da fuoco aggiuntivi ogni $N1 s per $D2.", "Danni da fuoco inflitti ogni $N1 s.", 0x2a506f3c, 0x01f62b34, "uu" },

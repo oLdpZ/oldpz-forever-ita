@@ -82,6 +82,7 @@ WFJ.Data.add("spell", {
   [15548] = { nil, "Intervallo tra gli attacchi aumentato del $N1%.\nVelocità di movimento ridotta del $N2%.", nil, 0x51978cac, "mu" },
   [15549] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri nemici vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura a ogni bersaglio.", nil, 0x91b98b1a, nil, "um" },
   [15570] = { "Brucia un nemico, infliggendo danni da fuoco aggiuntivi ogni $N1 s per $D2.", "Danni da fuoco inflitti ogni $N1 s.", 0x2a506f3c, 0x01f62b34, "uu" },
+  [15571] = { nil, "Frastornato.", nil, 0x8649cd0f, "mu" },
   [15575] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },
   [15580] = { "Assale un nemico, infliggendo danni in mischia crescenti.", nil, 0xcffda50e, nil, "um" },
   [15583] = { "Infligge danni fisici a un nemico ogni $N1 s per $D2.", "Danni fisici inflitti ogni $N1 s.", 0x922b6035, 0xc8fd5ef3, "uu" },

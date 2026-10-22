@@ -20,7 +20,7 @@ def guide(root: Path) -> str:
 
 
 def test_guide_has_a_version(root: Path):
-    assert style_version(root) == 9
+    assert style_version(root) == 11
 
 
 def test_guide_states_the_italian_rules(guide):
@@ -35,7 +35,7 @@ def test_guide_states_the_italian_rules(guide):
 
 
 def test_guide_carries_the_fixed_lexicon(guide):
-    section = guide.split("## Lessico fissato (sg9)", 1)
+    section = guide.split("## Lessico fissato (sg11)", 1)
     assert len(section) == 2, "no fixed lexicon section"
     body = section[1].split("\n## ", 1)[0]
     for term in ("| People's Militia | Milizia del Popolo |", "| SI:7 | IR:7 |", "Brigata del Popolo",
@@ -56,7 +56,8 @@ def test_guide_carries_the_fixed_lexicon(guide):
                  "i Pacificatori", "linee di potere", "magistro supremo", "il guardiamorte X",
                  "Incursione / Incursioni dell'Incubo", "capitano / capitana di campo", "Radura dell'Oracolo",
                  "Isole dei Lanciascura", "Grande Spirito Ursino", "dragoide / dragoidi", "Pellemarcia",
-                 "cavalcatore di pipistrelli", "Campeggio 101", "`Scarlet Magi`", "spirito del thane Forgiamara"):
+                 "cavalcatore di pipistrelli", "Campeggio 101", "`Scarlet Magi`", "spirito del thane Forgiamara",
+                 "Gilda dei Tagliapietre", "Uther il Portatore di Luce", "Lunargenta", "Grande Oscurità (dell'Oltre)"):
         assert term in body, term
 
 

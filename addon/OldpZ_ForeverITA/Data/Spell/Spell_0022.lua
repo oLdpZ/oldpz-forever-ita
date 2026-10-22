@@ -87,6 +87,7 @@ WFJ.Data.add("spell", {
   [22730] = { "Aumenta l'Intelletto di $N1 per $D1.", "Intelletto aumentato di $N1.", 0x6bc386a8, 0xe79c9491, "uu" },
   [22731] = { nil, "$N1 salute rigenerata ogni secondo.", nil, 0xfde4540f, "mu" },
   [22736] = { "Travestiti da Ogre Gordok e potresti perfino ingannare un certo capitano! Il travestimento dura $D1.", "Travestito da Ogre Gordok.", 0xa5250f37, 0xb8d7b7ae, "uu" },
+  [22738] = { "Riduce il tempo di recupero di Intercettazione di $D1.", nil, 0xf2afc079, nil, "um" },
   [22739] = { "Infligge $N1 danni da fuoco per $D1 a tutti i bersagli in un cono di fronte all'ingegnere che usa l'arma. Tutto questo finché l'arma non esplode...", nil, 0xd24952c3, nil, "um" },
   [22746] = { "Infligge danni da gelo ai nemici in un cono frontale, riducendone la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x69a4f7ed, 0xeadcb05a, "uu" },
   [22752] = { nil, "Impossibile beneficiare nuovamente della ⟦Fury of the Frostwolf=Furia del Lupo Bianco⟧.", nil, 0x30817e98, "mu" },

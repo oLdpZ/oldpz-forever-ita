@@ -1,0 +1,1 @@
+{"id": 417441, "field": "aura", "it": "$N1 danni da sanguinamento subiti ogni $N2 s.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t02-sg11@2026-10-22", "imported": "2026-10-22"}, "english": {"hash": "babe73bb2ed0c6ac", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}
