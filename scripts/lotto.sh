@@ -7,7 +7,7 @@
 #         <ids-file>: un id per riga (`#` commenta; id di missione, hash del testo per gossip, id numerico
 #         per objective e area); `-` al posto del file = nessun filtro: tutte le righe non ancora tradotte,
 #         fino a <size>. <kind>: quest_title, quest_objectives, quest_description, progress, completion,
-#         gossip, objective, area.
+#         gossip, objective, area, book.
 #   scripts/lotto.sh importa <nome>
 #       → per ogni pipeline/batches/<nome>.<kind>.draft.jsonl (righe {"ref","it"}) translate_lint; se anche una
 #         sola bozza ha un errore (ref mancante, duplicato, nome del glossario, segnaposto…) si ferma prima di
@@ -35,7 +35,7 @@ MODEL="${LOTTO_MODEL:-claude-opus-5-5}"
 DATE="${LOTTO_DATE:-$(date +%F)}"
 BATCHES="$ROOT/pipeline/batches"
 export PYTHONPATH="$CODE/pipeline${PYTHONPATH:+:$PYTHONPATH}"
-KINDS="quest_title quest_objectives quest_description progress completion gossip objective area"
+KINDS="quest_title quest_objectives quest_description progress completion gossip objective area book"
 
 usage() {
 	echo "uso: scripts/lotto.sh taglia <kind> <nome> <ids-file|-> <size> | importa <nome>" >&2

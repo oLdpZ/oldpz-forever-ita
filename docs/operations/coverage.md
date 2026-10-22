@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `2b02acc`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-22 at commit `58d3da9`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -11,13 +11,13 @@
 |---|---|---|---|---|---|
 | Quest text | 20,466 | 20,094 | 98 | 98.7% | 274 |
 | NPC dialogue (gossip, speech) | 10,965 | 10,876 | 0 | 99.2% | 89 |
-| Book / letter pages | 1,257 | 0 | 80 | 6.4% | 1,177 |
+| Book / letter pages | 1,257 | 652 | 74 | 57.8% | 531 |
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,224 | 1,232 | 0 | 12.1% | 8,992 |
 | Spell tooltips + auras | 25,718 | 4,863 | 1 | 18.9% | 20,854 |
 | Interface strings | 16,417 | 8,609 | 1,029 | 58.7% | 6,779 |
-| **All** | **85,702** | | | **55.5%** | **38,165** |
+| **All** | **85,702** | | | **56.2%** | **37,519** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -30,8 +30,8 @@ professions, internal strings): quest 139.
 | Exploration / event objectives | name only (`pipeline/area_names.txt`) | 2 |
 | Quest text | placeholder quest (never shown) | 93 |
 | Quest text | a bare label: a name or a one-word placeholder (ships as the English) | 5 |
-| Book / letter pages | Missing Text / picture-only page | 54 |
-| Book / letter pages | a bare label: names and numbers only (ships as the English) | 24 |
+| Book / letter pages | Missing Text / picture-only page | 53 |
+| Book / letter pages | a bare label: names and numbers only (ships as the English) | 19 |
 | Book / letter pages | picture-only or cipher page | 2 |
 | Spell tooltips + auras | a template that prints nothing (`$@null`) | 1 |
 | Interface strings | a client-table row its family's key list leaves out (a name or developer row, ADR-042) | 1,029 |
@@ -42,7 +42,7 @@ professions, internal strings): quest 139.
 |---|---|---|
 | Quest text | no Italian yet | 274 |
 | NPC dialogue (gossip, speech) | no Italian yet | 89 |
-| Book / letter pages | no Italian yet | 1,177 |
+| Book / letter pages | no Italian yet | 531 |
 | Item descriptions | no Italian yet | 6,974 |
 | Item descriptions | no Italian yet: no text from the Forever tables on this build yet (English still from Classic Era); rechecked at each re-pull | 2,017 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
