@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("ui", {
   ["OBJECTIVES_HIDE_VIEW_IN_QUESTLOG"] = { "Chiudi i dettagli della missione", 0x4699d1c1, "." },
   ["OBJECTIVES_SHOW_QUEST_MAP"] = { "Apri la mappa della missione", 0xbacaee3a, "." },
+  ["OBJECTIVES_STOP_TRACKING"] = { "Non tracciare", 0x15c4a4a6, "." },
   ["OBJECTIVES_VIEW_ACHIEVEMENT"] = { "Apri l'impresa", 0x5fa06a7d, "." },
   ["OBJECTIVES_VIEW_IN_QUESTLOG"] = { "Apri i dettagli della missione", 0x96a9dbe0, "." },
   ["OBJECTIVES_WATCH_TOO_MANY"] = { "Non puoi seguire altre missioni.", 0x3a0fe54d, "." },

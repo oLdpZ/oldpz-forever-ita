@@ -2,6 +2,10 @@
 local _, WFJ = ...
 WFJ.Data.add("ui", {
   ["HANDSSLOT"] = { "Mani", 0xfcf7b014, "." },
+  ["HARDCORE_DEATH"] = { "Sei morto. Le tue gesta eroiche saranno ricordate.", 0x7f07e0bb, "." },
+  ["HARDCORE_GO_AGAIN"] = { "Riprova!", 0x7ec773bb, "." },
+  ["HARDCORE_GUILDLEADER_DEATH"] = { "Sei morto. Devi cedere la guida di %s a qualcun altro. Digita qui sotto il nome del personaggio.", 0x468bd140, "." },
+  ["HARDCORE_RECOVER_CORPSE"] = { "La morte è permanente: non puoi più resuscitare.", 0x455e271e, "." },
   ["HARMFUL_AURA_COMBATLOG_TOOLTIP"] = { "Mostra un messaggio quando il personaggio ottiene o perde un'aura penalizzante.", 0xc3614134, "." },
   ["HARMFUL_TO_MINORS_DISABLED_TOOLTIP"] = { "È necessario selezionare una o più opzioni Nome disponibili", 0x654ea8ef, "." },
   ["HAVE_MAIL"] = { "Hai un nuovo messaggio.", 0x542a3a3e, "." },

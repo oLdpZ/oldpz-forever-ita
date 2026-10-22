@@ -60,6 +60,7 @@ WFJ.Data.add("ui", {
   ["WIDE"] = { "Largo", 0x0bc411ef, "." },
   ["WINDOW_SIZE"] = { "Risoluzione", 0xd7b55619, "." },
   ["WITHDRAW"] = { "Preleva", 0xdbe77b05, "." },
+  ["WORLD"] = { "Mondo", 0x0626ad84, "." },
   ["WORLDMAP_BUTTON"] = { "Mappa", 0xcdc6abf0, "." },
   ["WORLD_MAP"] = { "Mappa", 0x00145bc8, "." },
   ["WORLD_MAP_ACTIVITY_TRACKER_LIST_INTRO"] = { "Traccia le attività delle fazioni principali disponibili selezionandole dall'elenco.", 0xc9b1ce55, "." },
