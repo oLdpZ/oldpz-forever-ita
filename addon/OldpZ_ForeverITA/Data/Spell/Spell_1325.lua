@@ -2,4 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1325543] = { "Evoca $N1 ⟦Crypt Scarabs=Scarabei delle Cripte⟧ per aiutare l'incantatore in battaglia per $D1.", nil, 0x25f2ef80, nil, "um" },
+  [1325756] = { nil, "Marked for Death. Subirai $N1 danni dopo $D1.", nil, 0x094d228f, "mu" },
+  [1325757] = { nil, "Marked for Death. Subirai $N1 danni dopo $D1.", nil, 0x094d228f, "mu" },
+  [1325758] = { nil, "Marked for Death. Subirai $N1 danni dopo $D1.", nil, 0x094d228f, "mu" },
 })

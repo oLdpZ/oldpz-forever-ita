@@ -11,5 +11,8 @@ WFJ.Data.add("spell", {
   [1313350] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },
   [1313351] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },
   [1313352] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },
+  [1313374] = { "Fondi la chiave in una forgia per ottenere $N1 Lingotti di Bronzo.", nil, 0x8a94dcd7, nil, "um" },
+  [1313379] = { "Pone sul bersaglio un incantesimo che lo cura la prossima volta che subisce danni. Quando avviene la cura, Preghiera di Guarigione salta a un membro del gruppo o dell'incursione entro $N1 m. Salta fino a $N2 volte e dura $D1 dopo ogni salto. Questo incantesimo può essere posto su un solo bersaglio alla volta.", nil, 0xc3608d43, nil, "um" },
+  [1313381] = { "Pone sul bersaglio un incantesimo che lo cura la prossima volta che subisce danni. Quando avviene la cura, Preghiera di Guarigione salta a un membro del gruppo o dell'incursione entro $N1 m. Salta fino a $N2 volte e dura $D1 dopo ogni salto. Questo incantesimo può essere posto su un solo bersaglio alla volta.", nil, 0xc3608d43, nil, "um" },
   [1313503] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
 })

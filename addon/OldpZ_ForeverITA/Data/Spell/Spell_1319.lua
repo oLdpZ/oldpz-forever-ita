@@ -2,13 +2,19 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1319202] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1319206] = { nil, "Questa creatura ha il $N1% di probabilità di colpire con gli incantesimi in più.", nil, 0xaafa145e, "mu" },
   [1319258] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
   [1319259] = { nil, "Danni da sacro subiti aumentati.", nil, 0x6508d97f, "mu" },
+  [1319310] = { nil, { "La tua Armatura è aumentata di $N1. Esperienza ottenuta dalle uccisioni aumentata del $N2%.", "La tua Armatura è aumentata di $N1. ", shape = { "2/0", "1/0" } }, nil, 0x0725885c, "mu" },
+  [1319378] = { nil, "Infligge $N1 danni da arcano.", nil, 0xebbc0ec3, "mu" },
   [1319382] = { "Aumenta la Forza di $N1 per $D1.", "Forza aumentata di $N1.", 0xeb1f7146, 0x90d8a2f8, "uu" },
+  [1319421] = { nil, "Di nuovo al lavoro.", nil, 0xda9be9e6, "mu" },
   [1319423] = { "Aumenta la velocità di movimento del $N1% nella Valle di Rovotorto e a Riverglades.", "Velocità di movimento aumentata del $N1%.", 0x1dd0ad7e, 0xd5c3ac7c, "uu" },
   [1319426] = { "Aumenta la velocità di movimento del $N1% nella Valle di Rovotorto e a Riverglades.", "Velocità di movimento aumentata del $N1%.", 0x1dd0ad7e, 0xd5c3ac7c, "uu" },
   [1319427] = { "Aumenta la velocità di movimento del $N1% nella Valle di Rovotorto e a Riverglades.", "Velocità di movimento aumentata del $N1%.", 0x1dd0ad7e, 0xd5c3ac7c, "uu" },
+  [1319446] = { nil, "Questa creatura ha il $N1% di celerità in più.", nil, 0xbc3c3d56, "mu" },
   [1319539] = { nil, "Spirito ridotto di $N1.", nil, 0x9eeea285, "mu" },
+  [1319611] = { nil, "In comunione con il ⟦Emerald Dream=Sogno di Smeraldo⟧ per soggiogare Nythus.", nil, 0x663f60a8, "mu" },
   [1319632] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
   [1319792] = { "Infligge $N1 danni da natura ai nemici vicini.", nil, 0xb85c687d, nil, "um" },
 })
