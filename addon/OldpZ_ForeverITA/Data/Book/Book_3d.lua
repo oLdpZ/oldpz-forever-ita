@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["3d0a92cc62e43716"] = { "Ciò che ho notato è che le esalazioni sono estremamente letali. Immagina se <testo illeggibile> Ahahah!", "." },
+  ["3d2897df3a8d63b1"] = { "Intuendo che la sua creatura, il Re dei Lich, stava diventando troppo potente per essere controllata, Kil'jaeden ordinò a Illidan di distruggere Ner'zhul e di porre fine una volta per tutte al Flagello dei non morti. In cambio, Illidan avrebbe ricevuto un potere incalcolabile e un vero posto tra i signori rimasti della Legione Infuocata.", "." },
+  ["3d4522f1845de514"] = { "Infuriato per la morte di Durotan, Orgrim si propose di liberare l'⟦Horde=Orda⟧ dalla corruzione demoniaca e alla fine assunse il ruolo di capoguerra dell'⟦Horde=Orda⟧ uccidendo il corrotto fantoccio di Gul'dan, Blackhand. Sotto la sua guida risoluta, l'implacabile ⟦Horde=Orda⟧ cinse infine d'assedio il Castello di ⟦Stormwind=Roccavento⟧.", "." },
 })

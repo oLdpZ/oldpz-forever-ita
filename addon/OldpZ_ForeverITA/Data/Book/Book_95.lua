@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["95c076517a8276c1"] = { "Mathias Shaw ha mandato un galoppino a uccidermi. <testo illeggibile>\n\nOra fa la ronda qui fuori. Un fuco senza mente e senza vita.\n\nAhahahah!", "." },
+  ["95ef1b4cb51f77a5"] = { "Spero che gli spiriti ti abbiano protetto finora, eh. Tu hai tante prove davanti a te, e io sono disposto a condividere con te le mie esperienze quando te la senti. Sta a te decidere quanto in fretta e quanto potente diventi. Io posso solo guidarti quando è il tuo momento.\n\nPer qualcuno, questo succede in un lampo; per altri... non così in fretta. Ma tu non preoccuparti di questo. Ne parliamo meglio quando vieni da me.\n\n-Ken'jai, istruttore dei sacerdoti", "." },
 })

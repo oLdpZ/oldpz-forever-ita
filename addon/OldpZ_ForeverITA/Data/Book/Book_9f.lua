@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["9f494cbf312f6b42"] = { "Corremmo a perdifiato fino al campo base, senza mai rallentare. Più tardi quella notte sedemmo in silenzio attorno al fuoco, sapendo che le nostre vite erano state salvate da uno strano scherzo del destino. Tali sono i rischi del cacciatore di grossa selvaggina. Giochiamo con il destino dispensandolo. Eppure ognuno di noi, prima o poi, dovrà affrontare le zanne affilate del destino. Questo Nano è solo felice che quel momento non sia giunto sulle verdi colline di Rovotorto.\n\n--Fine--", "." },
+  ["9fafa301a54089ff"] = { "I cultisti al servizio di Kel'Thuzad erano ansiosi di morire e di risorgere al servizio del loro oscuro signore. Esultavano alla prospettiva dell'immortalità attraverso la non morte. Mentre la pestilenza si diffondeva, sempre più zombi selvaggi si levavano nelle terre del nord. Kel'Thuzad osservò l'esercito crescente del Re dei Lich e lo chiamò Flagello, perché presto avrebbe marciato sulle porte di Lordaeron e spazzato via l'umanità dalla faccia del mondo.", "." },
 })

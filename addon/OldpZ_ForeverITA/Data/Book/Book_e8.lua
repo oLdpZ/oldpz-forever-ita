@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["e877e8a3886ca097"] = { "Heralath e la sua gente cercano di scoprire l'origine della corruzione in questo luogo. Agamaggan era ritenuto un dio puro, mi ha detto. Perché queste creature immonde e queste spine maligne sfregino la terra è davvero un mistero.\n\nPrima che potessi chiedergli altro, Heralath è ricaduto in un sonno agitato...", "." },
+  ["e89efc3f8d65ab82"] = { "Mentre Illidan partiva con i naga, la sorvegliante Maiev Shadowsong cominciò a dargli la caccia. Maiev era stata la carceriera di Illidan per diecimila anni e pregustava l'idea di catturarlo di nuovo. Tuttavia Illidan fu più astuto di Maiev e delle sue Guardiane e, nonostante i loro sforzi, riuscì a impadronirsi dell'Eye of Sargeras. Con il potente Occhio in suo possesso, Illidan si recò a Dalaran, l'antica città dei maghi.", "." },
   ["e8fcc96f6c69cff8"] = { "Uggel Hammerhand\n\nUggel è uno scalpellino abile e austero e, quando non porta il fardello della chiave oscura, le sue mani plasmano grandi opere nella Hall of Crafting.", "." },
 })

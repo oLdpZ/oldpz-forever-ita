@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["f3628329c7a56cb3"] = { "Guidai il gruppo verso il mare, sperando che la costa ci offrisse riparo dai raptor. Nella fretta ci eravamo spinti troppo a nord, fino a un'altura pericolosamente elevata. L'errore era fatto. La colpa era mia. Ci fermammo appena prima di una scogliera a picco, con i raptor a pochi passi da noi.", "." },
+  ["f3ec6301fa07152d"] = { "Mentre la politica e le rivalità delle sette nazioni umane crescevano e scemavano, la stirpe dei Guardiani manteneva la sua costante vigilanza contro il caos. Nel corso degli anni vi furono molti Guardiani, ma in ogni momento soltanto uno deteneva i poteri magici di Tirisfal. Una degli ultimi Guardiani di quell'epoca si distinse come possente guerriera contro l'ombra.", "." },
 })

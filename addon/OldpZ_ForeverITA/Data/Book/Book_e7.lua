@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["e7520f9b275dc37c"] = { "Il suo fucile rinculò con violenza fra le sue braccia. La canna scartò di lato e finì sotto il fucile di Ajeck. Ajeck aveva scelto proprio quel momento per premere il grilletto. Il fucile, la mira ormai deviata goffamente verso il limitare del bosco, sparò con un boato inconfondibile. Uno stormo di uccelli schizzò fuori dalle fronde strillando, disperdendosi in ogni direzione. Dall'albero si levò un pennacchio di fumo. Guardammo sbalorditi un enorme ramo cadere dritto sulla pantera in fuga, spezzandole la schiena.", "." },
+  ["e752de4f0ffab70a"] = { "Questi maghi più giovani cominciarono a praticare la magia per tornaconto personale anziché per un qualche senso di responsabilità verso i loro simili.", "." },
+  ["e78275c9e60c6999"] = { "Troppo spesso gente come i seguaci della ⟦Holy Light=Luce Sacra⟧ spaventa chi è curioso del vero potere, convincendolo di non poter indagare nessuna forma di arcano: non tutto ciò che viene da fuori di questo mondo è malvagio. Non tutte le entità cercano di dominare o soggiogare gli altri. Se hai abbastanza potere, quelle stesse entità possono diventare i seguaci.\n\nÈ una cosa di cui vorrei parlarti ancora. Cercami nel cimitero sul lato destro dell'abbazia.\n\n-Drusilla La Salle, istruttrice degli stregoni", "." },
 })

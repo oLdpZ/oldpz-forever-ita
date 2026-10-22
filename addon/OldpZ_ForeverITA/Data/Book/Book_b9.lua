@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["b99968d49d77a2f2"] = { "Negli anni che seguirono, dopo che ⟦Stormwind=Roccavento⟧ ebbe tradito la Stonemasons' Guild, Sir Erlgadin divenne amareggiato riguardo al ruolo dei nobili nel Regno. Non desiderava più mantenere la posizione che la stirpe di suo padre gli aveva guadagnato nella House of Nobles.\n\nMa sto divagando. Lo scopo di questo racconto non è fare da trattato politico né da biografia. Questo è il resoconto delle mie esperienze di caccia grossa sulle verdi colline di Rovotorto.", "." },
+  ["b9d54b67b1307f71"] = { "Gli ostinati elfi, decisi a non cedere la loro nuova terra, usarono le magie che avevano appreso dal ⟦Well of Eternity=Pozzo dell'Eternità⟧ e tennero a bada i selvaggi troll. Sotto la guida di Dath'Remar riuscirono a sconfiggere le bande da guerra Amani, che li superavano di dieci a uno. Alcuni elfi, memori degli antichi avvertimenti dei Kaldorei, temevano che il loro uso della magia potesse attirare l'attenzione della Legione Infuocata esiliata.", "." },
+  ["b9e072ac539de39e"] = { "Pur indebolito com'era, Arthas alla fine superò in astuzia Illidan e raggiunse per primo il Trono di Ghiaccio. Con la sua spada runica, Frostmourne, Arthas frantumò la prigione di ghiaccio del Re dei Lich, liberando così l'elmo e la corazza incantati di Ner'zhul.", "." },
 })

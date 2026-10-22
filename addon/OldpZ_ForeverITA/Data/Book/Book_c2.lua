@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("book", {
   ["c21b68e7e7faf10a"] = { "Il ricordo di tutti i momenti felici trascorsi con te mi pervade, e sono profondamente grato alla Luce e a te di averli potuti godere così a lungo; e quanto mi è difficile rinunciarvi e ridurre in cenere le speranze degli anni futuri, quando avremmo potuto ancora vivere e amarci insieme e vedere i nostri figli crescere attorno a noi fino a diventare nani d'onore.", "." },
   ["c2273c885ed8a679"] = { "Poco dopo aver dissotterrato le ossa siamo stati attaccati dai raptor. Il battaglione del reggimento di Longbraid ha combattuto con valore, ma alla fine è stato sopraffatto. Sono morti quasi tutti. Solo 3 di noi sono sopravvissuti. Un operaio di nome Ormer Ironbraid si è dimostrato il più eroico di tutti, mettendo in salvo me e il prospettore Whelgar.", "." },
+  ["c2ea384ac7797558"] = { "Re Llane confidò le sue preoccupazioni ad Anduin Lothar, l'ultimo discendente della stirpe di Arathi, che nominò suo luogotenente d'armi. Eppure nessuno dei due avrebbe potuto immaginare che la lenta discesa di Medivh nella follia avrebbe portato gli orrori che stavano per arrivare.", "." },
 })

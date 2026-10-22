@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["032d093f69a94ed1"] = { "Quando il dubbio e la disperazione sopraffecero i sensi di Sargeras, egli perse ogni fede non solo nella sua missione, ma anche nella visione dei Titani di un universo ordinato. Alla fine giunse a credere che il concetto stesso di ordine fosse una follia, e che il caos e la depravazione fossero gli unici assoluti nell'universo oscuro e solitario.", "." },
+  ["03ad52868ff56a3a"] = { "Dai confini del Frozen Throne, Ner'zhul cominciò a protendere la sua vasta coscienza e a toccare le menti degli abitanti nativi di Nordania. Con poco sforzo rese schiave le menti di molte creature indigene, tra cui i troll dei ghiacci e i feroci wendigo, e attirò i loro malvagi simili nella sua ombra crescente. I suoi poteri psichici si rivelarono quasi illimitati, ed egli li usò per creare un piccolo esercito che alloggiò nei tortuosi labirinti della Corona di Ghiaccio.", "." },
 })

@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["6482add600162637"] = { "⟦Zul'Gurub=Zul'gurub⟧. E così andò avanti per generazioni: la Pietra appariva con la marea, e il Tidebearer se ne andava con la marea.\n\nResoconti moderni della ⟦Stone of the Tides=Pietra delle Maree⟧ sono emersi qua e là, ma resta da chiedersi perché un oggetto di tale potere comparisse con tanta regolarità, e per volere di chi.", "." },
+  ["64edc67700ed485c"] = { "Sargeras attese il suo momento finché il potere del giovane non si manifestò. Quando Medivh raggiunse l'adolescenza, era diventato molto popolare ad Azeroth per la sua abilità magica e partiva spesso all'avventura con i suoi due amici: Llane, il principe di Azeroth, e Anduin Lothar, uno degli ultimi discendenti della stirpe di Arathi. I tre ragazzi combinavano continuamente guai in tutto il regno, ma la gente comune voleva loro bene.", "." },
 })

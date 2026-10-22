@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["37c1b1f90e868cf4"] = { "È stata presa una posizione difensiva nella vecchia casa di Ivar e, mentre Rane sorvegliava in attesa di altri attacchi, Erland ha proseguito la missione di ricognizione.\n\nErland è stato poi bloccato dai worg in un frutteto a nord, e si è salvato solo grazie all'aiuto di un altro agente dei Reietti. Quell'agente è il latore di questo rapporto.", "." },
+  ["37cab6d2cf6d59f5"] = { "Per quasi quattromila anni gli alti elfi vissero in pace, al sicuro nel loro regno appartato. Ma i vendicativi troll non si lasciavano sconfiggere tanto facilmente. Tramavano e complottavano nel profondo delle foreste, aspettando che le loro bande da guerra crescessero di numero. Infine, un possente esercito troll irruppe dalle foreste ombrose e cinse ancora una volta d'assedio le splendenti guglie di Quel'Thalas.", "." },
 })

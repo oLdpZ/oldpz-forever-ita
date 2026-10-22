@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["bb0c439e02a63260"] = { "Mio carissimo Tarrel,\n\nPerdona la fretta con cui ti scrivo, ma il tempo è un lusso che non abbiamo.\n\nLa squadra di scavo stava facendo notevoli progressi nel riportare alla luce importanti manufatti dei Titani. Ma abbiamo cominciato a scoprire altri oggetti antichi, in particolare grosse ossa.", "." },
+  ["bb8cd8529131aaa7"] = { "Saluti a te, fratello o sorella. Gli spiriti dicono che per te è arrivato il momento di aiutare i nostri alleati. Tu hai legami forti con gli elementi, e tu hai molto più potere di quando hai cominciato le tue lezioni con me.\n\nOra io ti mando da Shikrik, l'orchessa che istruisce gli sciamani nella ⟦Valley of Trials=Valle delle Sfide⟧. Lei sa già che tu vai a studiare con lei. Rendi fieri i nostri antenati. Finché non ci rivediamo, che la fiamma ti tenga al caldo e il vento ti stia alle spalle.\n\n-Ishi-yo", "." },
 })

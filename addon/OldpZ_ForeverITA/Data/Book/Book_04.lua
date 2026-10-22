@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["04161d43c6f4a0f7"] = { "Mentre il suo smarrimento e la sua infelicità si facevano più profondi, Sargeras dovette affrontare un altro gruppo deciso a sovvertire l'ordine dei Titani: i Nathrezim. Questa oscura razza di demoni vampirici (noti anche come signori del terrore) conquistò numerosi mondi popolati possedendone gli abitanti e volgendoli all'ombra.", "." },
+  ["04508547939f1fe6"] = { "Sostenuto dai clan Stormreaver e ⟦Twilight's Hammer=Martello del Crepuscolo⟧, Gul'dan riuscì a far emergere la Tomb of Sargeras dal fondo del mare. Ma quando aprì l'antica cripta allagata, vi trovò ad attenderlo soltanto demoni impazziti.", "." },
+  ["04f2d9d8c55fc010"] = { "La corruzione e il male che, si dice, accompagnano l'arcano non sono nulla in confronto al dolore che abbiamo già provato. Non siamo più vittime, {name}. Siamo noi a controllare il nostro destino. Sylvanas ci ha spianato la strada: ha dimostrato che la nostra volontà ci appartiene, che non siamo più schiavi di quel bastardo di Arthas.\n\nCercami nella chiesa, ti istruirò ancora... se è questo che desideri.\n\n- Isabella, istruttrice dei maghi", "." },
 })

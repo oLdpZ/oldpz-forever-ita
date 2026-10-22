@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["2b86fffa935fdd56"] = { "Ora che hai trovato la mia vecchia brocca di whisky, sei quasi al tesoro! Voltati verso ovest dalla bottiglia e scendi fino alla riva. Quando arrivi all'acqua, continua! Nuota dritto verso ovest finché non trovi l'isola con il mio forziere del tesoro!", "." },
+  ["2bebdc51cc03198a"] = { "Per la prima volta in quasi tremila anni, le diverse nazioni di Arathor erano di nuovo unite sotto un unico vessillo. Nominato comandante supremo delle forze dell'⟦Alliance=Alleanza⟧, lord Lothar preparò i suoi eserciti all'arrivo dell'⟦Horde=Orda⟧.", "." },
   ["2bf5bbab7cec9852"] = { "Una volta collocati i manufatti, la pestilenza cominciò a penetrare nella terra e a colpire i suoi ignari abitanti. Sotto gli occhi di Kel'Thuzad, l'esercito del Re dei Lich crebbe rapidamente e presto prese il controllo di vaste porzioni del territorio. Questo esercito divenne noto come il Flagello, perché il suo unico scopo era flagellare l'umanità fino a cancellarla da tutta Azeroth.", "." },
 })

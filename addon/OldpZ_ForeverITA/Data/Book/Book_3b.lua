@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["3b2c72e7aa0819f3"] = { "Sembrerebbe che qualunque cosa Klaven abbia chiuso nello scrigno stia avendo effetti nefasti sugli abitanti della torre. Sospetto che anche le altre guardie abbiano debolezze simili e che forse perfino Klaven stesso sia caduto vittima delle sue conseguenze.\n\nAgente Amber Kearnen\nOperativa sul campo dell'⟦SI:7=IR:7⟧, R8", "." },
+  ["3bdab1272406fed3"] = { "Ai nuovi studenti delle arti arcane:\n\nSiete tenuti a cercare lo gnomo Marryk Nurribit e a studiare sotto la sua guida finché non giungerà il momento in cui sarete chiamati ad aiutare il vostro popolo a ristabilirsi in un nuovo insediamento. Siete pregati di prepararvi, senza alcuna trepidazione, a rigorose procedure di verifica e a un difficile processo di adattamento, mentre cercate un domicilio e/o qualsivoglia forma di compagnia tra gli abitanti del luogo.\n\nLe domande relative ai vostri doveri e alle vostre abilità vanno rivolte a Marrek Nurribit.", "." },
 })

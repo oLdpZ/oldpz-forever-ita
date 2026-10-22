@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["7e3ce46098441c51"] = { "Illidan, anch'egli sopravvissuto alla Separazione, aveva raggiunto la vetta dell'Hyjal molto prima di Malfurion e degli elfi della notte. Nel folle tentativo di preservare i flussi della magia nel mondo, Illidan aveva versato nel lago di montagna le sue fiale, che contenevano le preziose acque del ⟦Well of Eternity=Pozzo dell'Eternità⟧.", "." },
+  ["7e49a90e860f0de6"] = { "I nani della montagna di ⟦Ironforge=Forgiardente⟧ vissero in pace per molti, lunghi secoli. Tuttavia, la loro società divenne troppo grande per i confini delle loro città nella montagna. Benché il possente gran re Modimus ⟦Anvilmar=Forgiamara⟧ governasse tutti i nani con giustizia e saggezza, tre potenti fazioni erano sorte nella società dei nani.", "." },
 })

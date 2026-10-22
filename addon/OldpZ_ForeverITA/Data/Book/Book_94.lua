@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["948b62aa3a35544f"] = { "Ora, da questo barile qui, voltati verso nord. Dritto come vola il corvo, continua a camminare finché non vedi la brocca vuota accanto al mulino a vento solitario sulle scogliere a picco sul mare. Se frughi intorno a quella brocca, potresti proprio trovare quel che cerchi.", "." },
+  ["94a0a1933aed8c80"] = { "Pieno di risorse ma inesperto, Thrall decise di fuggire dalla fortezza di Blackmoore e partì in cerca di altri della sua specie. Nei suoi viaggi Thrall visitò i campi di internamento e trovò la sua razza, un tempo possente, stranamente sottomessa e letargica. Non avendo trovato i fieri guerrieri che sperava di incontrare, Thrall partì alla ricerca dell'ultimo capo orco mai sconfitto, Grom Hellscream.", "." },
 })
