@@ -11,6 +11,7 @@ WFJ.Data.add("spell", {
   [1294080] = { "Competenza nelle asce aumentata di $N1.", nil, 0x36fd3d3d, nil, "um" },
   [1294081] = { "Competenza nelle asce aumentata di $N1.", nil, 0x36fd3d3d, nil, "um" },
   [1294112] = { nil, "Immobilizzato. Infligge $N1 danni da natura ogni $D1.", nil, 0xb6c2d1ea, "mu" },
+  [1294121] = { "Tira contro un bersaglio nemico, infliggendo danni fisici.", nil, 0x75634826, nil, "um" },
   [1294135] = { "Competenza nei pugnali aumentata di $N1.", nil, 0x54703ebc, nil, "um" },
   [1294136] = { "Competenza nei pugnali aumentata di $N1.", nil, 0x54703ebc, nil, "um" },
   [1294146] = { "Competenza nei pugnali aumentata di $N1.", nil, 0x54703ebc, nil, "um" },

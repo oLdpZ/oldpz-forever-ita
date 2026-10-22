@@ -149,6 +149,8 @@ WFJ.Data.add("spell", {
   [10496] = { "Evoca per $D1 ai piedi dell'incantatore un ⟦Mana Spring Totem=Totem del Flusso di Mana⟧ con $N1 salute, che ripristina $N3 mana ogni $N4 s ai membri del gruppo entro $N5 m.", nil, 0xdab5155e, nil, "um" },
   [10497] = { "Evoca per $D1 ai piedi dell'incantatore un ⟦Mana Spring Totem=Totem del Flusso di Mana⟧ con $N1 salute, che ripristina $N3 mana ogni $N4 s ai membri del gruppo entro $N5 m.", nil, 0x88731c88, nil, "um" },
   [10526] = { "Evoca ai piedi dell'incantatore un ⟦Flametongue Totem=Totem della Lingua di Fuoco⟧ con $N1 salute. Il totem potenzia gli attacchi in mischia di tutti i membri del gruppo o dell'incursione entro $N2 m. Ogni colpo con la mano primaria infligge $N3 danni da fuoco aggiuntivi, in base alla velocità dell'arma. Le armi più lente infliggono più danni da fuoco per colpo. Dura $D1.", nil, 0xacb04bc6, nil, "um" },
+  [10534] = { nil, "⟦Fire Resistance=Resistenza al Fuoco⟧ aumentata di $N1.", nil, 0xbcf3a4bc, "mu" },
+  [10535] = { nil, "⟦Fire Resistance=Resistenza al Fuoco⟧ aumentata di $N1.", nil, 0xbcf3a4bc, "mu" },
   [10537] = { "Evoca per $D1 ai piedi dell'incantatore un Fire Resistance Totem con $N1 salute, che aumenta di $N4 la resistenza al fuoco dei membri del gruppo o dell'incursione entro $N3 m.", nil, 0xb88d9587, nil, "um" },
   [10538] = { "Evoca per $D1 ai piedi dell'incantatore un Fire Resistance Totem con $N1 salute, che aumenta di $N4 la resistenza al fuoco dei membri del gruppo o dell'incursione entro $N3 m.", nil, 0x54e95e9c, nil, "um" },
   [10561] = { "Ti insegna a creare dei ⟦Big Voodoo Pants=Pantaloni del Grande Vudù⟧.", nil, 0xe519e21e, nil, "um" },

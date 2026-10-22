@@ -22,8 +22,10 @@ WFJ.Data.add("spell", {
   [430403] = { "Aggiungi $N1 ⟦Smoked Bear Meat=Carne d'Orso Affumicata⟧ per completare la spedizione.", nil, 0x2a8a60af, nil, "um" },
   [430404] = { "Aggiungi $N1 ⟦Goblin Deviled Clams=Bivalve Piccante alla Goblin⟧ per completare la spedizione.", nil, 0xfcc3a5db, nil, "um" },
   [430405] = { "Aggiungi $N1 Benda Pesante di Lana per completare la spedizione.", nil, 0x0446fd96, nil, "um" },
+  [430723] = { "Infligge danni fisici a un nemico ogni $D1 per $D2.", "Danni fisici inflitti ogni $D1.", 0x922b6035, 0xc8fd5ef3, "uu" },
   [430771] = { "Aggiungi $N1 ⟦Rough Stone=Pietra Grezza⟧ per completare la spedizione.", nil, 0x79e2e22d, nil, "um" },
   [430773] = { "Aggiungi $N1 Pozione di Cura per completare la spedizione.", nil, 0xb779cd03, nil, "um" },
   [430776] = { "Aggiungi $N1 Elixir of Firepower per completare la spedizione.", nil, 0xfe005c23, nil, "um" },
+  [430948] = { "Rigenera $N1 mana ogni $D1.", nil, 0x6c7dd0eb, nil, "um" },
   [430952] = { "Aumenta del $N1% la tua probabilità di critico magico.", nil, 0xd715ed95, nil, "um" },
 })

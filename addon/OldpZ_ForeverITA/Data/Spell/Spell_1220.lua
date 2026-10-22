@@ -11,6 +11,7 @@ WFJ.Data.add("spell", {
   [1220520] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1220529] = { "Evoca $N1 ⟦Crypt Scarabs=Scarabei delle Cripte⟧ per aiutare l'incantatore in battaglia per $D1.", nil, 0x25f2ef80, nil, "um" },
   [1220540] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
+  [1220545] = { nil, "Aumenta la potenza d'attacco di $N1.", nil, 0x7d819cdc, "mu" },
   [1220546] = { "Aumenta l'Armatura del bersaglio alleato di $N1 per $D1.", "Armatura aumentata di $N1.", 0xfb7f6b76, 0xa12a98e7, "uu" },
   [1220565] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1220566] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
@@ -22,6 +23,7 @@ WFJ.Data.add("spell", {
   [1220653] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [1220666] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1220683] = { "Aumenta l'Armatura del bersaglio alleato di $N1 per $D1.", "Armatura aumentata di $N1.", 0xfb7f6b76, 0xa12a98e7, "uu" },
+  [1220686] = { nil, "Aumenta la potenza d'attacco di $N1.", nil, 0x7d819cdc, "mu" },
   [1220700] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
   [1220711] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [1220738] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
@@ -39,5 +41,7 @@ WFJ.Data.add("spell", {
   [1220853] = { "Infligge $N1 danni da gelo ai nemici vicini, riducendo la loro velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xe513fa92, 0x08fe36e7, "uu" },
   [1220854] = { "Infligge danni da gelo a un nemico e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x025dbef1, 0xeadcb05a, "uu" },
   [1220855] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
+  [1220926] = { nil, "$N1 danni da ombra in $D1.", nil, 0x1df96f24, "mu" },
   [1220927] = { "Scatena un'ondata di fiamme che infligge danni da fuoco ai nemici vicini e ne riduce la velocità di movimento per $D1.", "Velocità di movimento ridotta.", 0x7ebaea70, 0xeadcb05a, "uu" },
+  [1220938] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
 })

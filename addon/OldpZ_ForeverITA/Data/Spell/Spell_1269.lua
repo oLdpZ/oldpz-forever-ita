@@ -13,8 +13,10 @@ WFJ.Data.add("spell", {
   [1269354] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare.", nil, 0x043d7c8b, nil, "um" },
   [1269433] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
   [1269434] = { "Infligge danni ripartiti equamente tra tutti i bersagli colpiti", nil, 0x4e959530, nil, "um" },
+  [1269457] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [1269471] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [1269557] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1269585] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [1269877] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1269904] = { "Colpisce un nemico con un dardo elettrico che si propaga a un altro nemico vicino. L'incantesimo colpisce fino a $N1 bersagli, infliggendo danni da natura a ciascuno.", nil, 0x91b98b1a, nil, "um" },
 })

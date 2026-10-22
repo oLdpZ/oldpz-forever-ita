@@ -2,7 +2,12 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [367701] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [367724] = { nil, "Velocità di movimento ridotta del $N1%.\n\nChe sonno...", nil, 0x162b6e71, "mu" },
   [367728] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [367740] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x79a226e8, "mu" },
+  [367741] = { "Congelato.", "Congelato.", 0x91935cc1, 0x91935cc1, "uu" },
   [367888] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [367897] = { nil, "Velocità di movimento ridotta del $N1%.\n\nChe sonno...", nil, 0x162b6e71, "mu" },
   [367928] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [367968] = { "Distrugge un uovo vicino.", nil, 0x10a0ae27, nil, "um" },
 })

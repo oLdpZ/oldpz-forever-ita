@@ -4,6 +4,7 @@ WFJ.Data.add("spell", {
   [1323075] = { "Serve il pranzo a Kyle!", nil, 0x43ed5da4, nil, "um" },
   [1323184] = { "Nuotare in acque pericolose può attirare i Darkspear Shark nei paraggi!\n\nUn morso ti fa subire danni pari al $N1% della tua salute ogni $D1.", "Nuotare in acque pericolose può attirare i Darkspear Shark nei paraggi!\n\nUn morso ti fa subire danni pari al $N1% della tua salute ogni $D1.", 0xd7fdc4a2, 0xd7fdc4a2, "uu" },
   [1323209] = { "Respinge i nemici vicini.", nil, 0x632bdade, nil, "um" },
+  [1323246] = { "Tira contro un bersaglio nemico, infliggendo danni fisici.", nil, 0x75634826, nil, "um" },
   [1323500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1323522] = { "Infondi nel Paladino vari potenziamenti divini.\n\nAttualmente hai accesso a:$T", nil, 0x407037e6, nil, "um" },
   [1323651] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", "$N1 danni da arcano inflitti ogni $D1.", 0xba2c738b, 0x1e69ddb3, "uu" },

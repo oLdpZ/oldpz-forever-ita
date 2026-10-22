@@ -9,6 +9,7 @@ WFJ.Data.add("spell", {
   [1306224] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [1306225] = { "Infligge danni da gelo ai nemici vicini, immobilizzandoli per un massimo di $D1.", "Immobilizzato.", 0x1eb0ef79, 0x18deeb81, "uu" },
   [1306267] = { "Colloca un Traveler's Sign che dura $D1. Sul cartello si può scrivere un messaggio: in tal caso dura $D2 ed è visibile agli altri giocatori.", "Stai incidendo segni del viaggiatore.", 0x4a755175, 0xc3102aab, "uu" },
+  [1306284] = { "Tira contro un bersaglio nemico, infliggendo danni fisici.", nil, 0x75634826, nil, "um" },
   [1306362] = { "Riduce del $N1% la probabilità che gli effetti di immobilizzazione e rallentamento ti colpiscano.", nil, 0x2ff366ec, nil, "um" },
   [1306384] = { "Combina $N1 Mathystral Amulet Fragment per creare un Mathystral Amulet restaurato.", nil, 0x98c0977d, nil, "um" },
   [1306396] = { "Richiama, presso una Fathom Stone, l'essere che custodisce le Mathystral Ruins.", nil, 0xdf237b95, nil, "um" },

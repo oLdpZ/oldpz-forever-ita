@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [20005] = { "Rallenta il bersaglio del $N1% e aumenta l'intervallo tra gli attacchi del $N2% per $D1.", "Velocità di movimento ridotta del $N1% e intervallo tra gli attacchi aumentato del $N2%.", 0xca73b1e6, 0x7449b15b, "uu" },
   [20006] = { nil, "Danni fisici inflitti ridotti di $N1.", nil, 0x212710bf, "mu" },
-  [20007] = { "Cura di $N1 e aumenta la Forza di $N2 per $D1.", nil, 0xed487095, nil, "um" },
+  [20007] = { "Cura di $N1 e aumenta la Forza di $N2 per $D1.", "Forza aumentata di $N1.", 0xed487095, 0x555ecc60, "uu" },
   [20008] = { "Incanta in modo permanente dei bracciali conferendo +$N1 Intelletto.", nil, 0x86af3dfe, nil, "um" },
   [20009] = { "Incanta in modo permanente dei bracciali conferendo +$N1 Spirito.", nil, 0x03bc3e43, nil, "um" },
   [20010] = { "Incanta in modo permanente dei bracciali per conferire +$N1 Forza.", nil, 0x2e596431, nil, "um" },
@@ -228,6 +228,7 @@ WFJ.Data.add("spell", {
   [20504] = { "Riduce il tempo di recupero di Intercettazione di $D1.", nil, 0xf2afc079, nil, "um" },
   [20506] = { "Evoca $N1 Magmoide per aiutare l'incantatore in battaglia per $D1.", nil, 0x00b94faf, nil, "um" },
   [20508] = { "Carica un nemico, infliggendo $N1 danni da fuoco al bersaglio e ai nemici vicini, respingendoli indietro.", nil, 0x581efc78, nil, "um" },
+  [20511] = { nil, "In preda alla paura.", nil, 0xc957ad86, "mu" },
   [20512] = { nil, "$N1 danni da natura inflitti ogni $N2 s.", nil, 0xc06cec1b, "mu" },
   [20513] = { "Spacca il ⟦Resonite Crystal=Cristallo di Resonite⟧ Incantato nel Barile di Resonite.", nil, 0x9608e71a, nil, "um" },
   [20528] = { "Mor'rogal evoca i Cristalli di Resonite.", nil, 0x6a52c6ae, nil, "um" },

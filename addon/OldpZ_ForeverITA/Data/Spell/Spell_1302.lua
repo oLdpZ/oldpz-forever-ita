@@ -64,6 +64,7 @@ WFJ.Data.add("spell", {
   [1302500] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, stordendolo per $D1.", "Stordito.", 0x16b62254, 0x27f95286, "uu" },
   [1302502] = { "Evoca uno scaffale di libri in un accampamento, che funge così da biblioteca. Richiede un Fuoco da Campo nelle vicinanze.", nil, 0x94cc5a4b, nil, "um" },
   [1302508] = { "Svolgi ricerche sugli incantesimi, ottenendo un fascio di pergamene. Richiede una biblioteca adatta.", nil, 0x0345d78a, nil, "um" },
+  [1302511] = { "Purga $N1 effetti magici dannosi da un alleato o $N2 effetti magici benefici da un nemico. Se un effetto viene divorato, il vilsegugio recupera $N3 salute.", nil, 0x59f4eedb, nil, "um" },
   [1302521] = { "Rigenera $N1 mana.", "Rigenera $N1 mana.", 0x09fdd6de, 0x0a971cd0, "uu" },
   [1302540] = { "Cura di $N1.", "Cura di $N1.", 0xb1a62d77, 0xb1a62d77, "uu" },
   [1302545] = { "Aumenta i danni contro i non morti del $N1%.", nil, 0x1f5b08b4, nil, "um" },

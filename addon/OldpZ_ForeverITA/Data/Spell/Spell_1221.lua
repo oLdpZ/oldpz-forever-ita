@@ -2,10 +2,14 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1221073] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1221329] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },
+  [1221330] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },
+  [1221332] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },
   [1221379] = { "Soggioga il demone bersaglio, fino al livello $N1, costringendolo a eseguire i tuoi ordini. Mentre è soggiogato, l'intervallo tra gli attacchi del demone aumenta del $N2% e la sua velocità di lancio d'incantesimi si riduce del $N3%. Dura fino a $D1. Se soggioghi ripetutamente lo stesso demone, diventerà più difficile da controllare a ogni tentativo.", "Assoggettato.", 0x93ce24f8, 0xb260b47a, "uu" },
   [1221404] = { nil, "Le unità nascoste e invisibili sono rivelate.", nil, 0xe485f4e9, "mu" },
   [1221416] = { nil, "Le unità nascoste e invisibili sono rivelate.", nil, 0xe485f4e9, "mu" },
   [1221421] = { "Permette all'incantatore di vedere attraverso gli occhi del bersaglio per $D1. Non funziona se il bersaglio si trova in un'altra istanza o su un altro continente.", "È possibile vedere attraverso gli occhi del bersaglio.", 0xba19a819, 0x87c06723, "uu" },
   [1221422] = { "Permette all'incantatore di vedere attraverso gli occhi del bersaglio per $D1. Non funziona se il bersaglio si trova in un'altra istanza o su un altro continente.", "È possibile vedere attraverso gli occhi del bersaglio.", 0xba19a819, 0x87c06723, "uu" },
   [1221571] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
+  [1221731] = { nil, "Velocità d'attacco e di movimento aumentate del $N1%.", nil, 0xf1f5f5d4, "mu" },
 })

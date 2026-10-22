@@ -33,6 +33,7 @@ WFJ.Data.add("spell", {
   [1303509] = { "Spargi l'incenso sulla scogliera meridionale dell'⟦Hunter Rise=Altura dei Cacciatori⟧.", nil, 0x55017d5c, nil, "um" },
   [1303520] = { "Combina un Bundle of Herbs, un Bundle of Dried Cedar Twigs, un Sinew Thread e una Ceremonial Flint and Tinder per creare un Prepared Incense.", nil, 0x8e38e0e9, nil, "um" },
   [1303543] = { "Pianta uno Scarlet Banner in un accampamento. Richiede un Fuoco da Campo nelle vicinanze.", nil, 0xc1dc1b97, nil, "um" },
+  [1303551] = { "Colpisce un nemico con un dardo elettrico che si propaga a un altro nemico vicino. L'incantesimo colpisce fino a $N1 bersagli, infliggendo danni da natura a ciascuno.", nil, 0x91b98b1a, nil, "um" },
   [1303598] = { "Trasforma i nemici vicini in un animale, costringendoli a vagare per un massimo di $D1. Mentre vagano non possono attaccare né lanciare incantesimi.", "Impossibile attaccare o lanciare incantesimi.", 0xb8524f66, 0x03c3096f, "uu" },
   [1303599] = { "Mentre canalizzi questo incantesimo, il tuo mana si rigenera più rapidamente.", "Rigenerazione del mana aumentata.", 0xe99d7c7c, 0x3a24120a, "uu" },
   [1303634] = { "Cura il bersaglio dai malanni.", "Cura dei malanni in corso.", 0xb7bf7abb, 0x8be991aa, "uu" },

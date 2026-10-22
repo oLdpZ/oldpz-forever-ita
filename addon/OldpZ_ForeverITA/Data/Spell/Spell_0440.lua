@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [440014] = { nil, "Infligge $N1 danni da fuoco ogni $D1.", nil, 0xe0649799, "mu" },
   [440054] = { "Crea uno spirito d'ombra che attacca il bersaglio. L'incantatore riceve il $N1% di mana quando lo Spirito d'Ombra attacca. Dura $D1.", nil, 0x609469be, nil, "um" },
+  [440108] = { nil, "Impossibile attaccare o usare incantesimi.", nil, 0x3f987751, "mu" },
   [440483] = { nil, "Danni fisici inflitti aumentati del $N1%.", nil, 0x07715b9c, "mu" },
   [440488] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [440492] = { "Incidi sul tuo mantello la runa Carne Fresca:\n\n$I1\nDanneggiare un bersaglio con Sete di Sangue, Assalto Mortale o Colpo di Scudo ha una probabilità del $N1% la prima volta e del $N2% ogni volta successiva di farti infuriare (attivando le abilità che richiedono di essere infuriati) e di farti infliggere il $N3% di danni fisici in più per $D1.", nil, 0x5a6bf051, nil, "um" },
@@ -17,6 +18,7 @@ WFJ.Data.add("spell", {
   [440630] = { "Incidi sul tuo mantello la runa Spirito Ferino:\n\n$I1\nEvoca due Spirit Wolves al comando dello Sciamano per $D1.", nil, 0x3a18cf25, nil, "um" },
   [440632] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [440634] = { "Incidi sul tuo mantello la runa Tempesta, Terra e Fuoco:\n\n$I1\nRiduce il tempo di recupero di Catena di Fulmini del $N1%, fa sì che il tuo Totem del Vincolo Terrestre immobilizzi i bersagli per $D1 quando viene posato e aumenta del $N3% i danni periodici inflitti da Folgore del Fuoco.", nil, 0xb99a4382, nil, "um" },
+  [440651] = { nil, "Assorbe danni e aumenta del $N1% la probabilità del Paladino incantatore di infliggere un colpo critico con ⟦Flash of Light=Lampo di Luce⟧.", nil, 0xc8eb5579, "mu" },
   [440788] = { "Incidi sul tuo mantello la runa Shield of Righteousness:\n\n$I1\nColpisce il bersaglio con lo scudo, infliggendo danni da sacro basati sul tuo indice di blocco più altri $N1 danni.", nil, 0xb62d614f, nil, "um" },
   [440790] = { "Incidi sul tuo mantello la runa Dominio Rapido:\n\n$I1\nQuando Giusta Furia non è attiva, infliggere danni con Folgore Sacra ti conferisce il $N1% del tuo Intelletto come danni magici e riduce la minaccia che generi del $N2% per $D1.\n\nSe è incisa Infusione di Luce, ottieni Luce Solare per $D2.\n\n$I2\nLuce Solare fa sì che Tempesta Divina, Assalto del Crociato e gli attacchi in mischia contro bersagli non controllati da giocatori infliggano danni da sacro aggiuntivi pari al $N5% della tua potenza magica sacra.", nil, 0x21f37d6a, nil, "um" },
   [440792] = { "Incidi sul tuo mantello la runa Righteous Vengeance:\n\n$I1\nQuando Giudizio o Assalto del Crociato infliggono un colpo critico, il bersaglio subisce il $N1% di danni aggiuntivi in $D1.", nil, 0xdd37e14e, nil, "um" },

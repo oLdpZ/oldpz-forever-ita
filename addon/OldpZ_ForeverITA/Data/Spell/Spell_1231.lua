@@ -9,6 +9,8 @@ WFJ.Data.add("spell", {
   [1231312] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1231314] = { "Infligge il $N1% dei danni dell'arma e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", "Cure ricevute ridotte del $N1%.", 0x9ac32304, 0x25749c0a, "uu" },
   [1231335] = { "Rimuove $N1 malattie dal bersaglio amico.", nil, 0xf774a370, nil, "um" },
+  [1231339] = { nil, "Forza aumentata di $N1.", nil, 0x555ecc60, "mu" },
+  [1231376] = { "Infligge $N1 danni da fuoco ogni $D1.", nil, 0xa9aeaf55, nil, "um" },
   [1231402] = { "Aumenta la velocità d'attacco del $N1% per $D1.", nil, 0xa077c7f4, nil, "um" },
   [1231409] = { nil, "Agilità aumentata di $N1.", nil, 0x2b7ef3f0, "mu" },
   [1231431] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

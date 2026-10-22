@@ -129,6 +129,6 @@ WFJ.Data.add("spell", {
   [425887] = { nil, "Qualcosa dentro di te ora brama sangue di gnoll e vendetta...", nil, 0xc8c5dbf4, "mu" },
   [425891] = { nil, "L'attacco d'apertura è stato resistito.", nil, 0x0ea6a3e3, "mu" },
   [425893] = { nil, "I wendigo sono noti per la loro sporcizia, e questo è particolarmente unto.", nil, 0xc50e2d5c, "mu" },
-  [425894] = { nil, "Infligge $N1 danni fisici ogni $D1.", nil, 0x59f89116, "mu" },
+  [425894] = { "Infligge danni fisici a un nemico ogni $D1 per $D2.", "Infligge $N1 danni fisici ogni $D1.", 0x40a759e7, 0x59f89116, "uu" },
   [425895] = { "Infligge $N1 danni da gelo a un nemico.", "Tempo tra gli attacchi aumentato del $N1%\nVelocità di movimento ridotta del $N2%.", 0xe9a78e07, 0xc42f1bbc, "uu" },
 })

@@ -2,7 +2,9 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [456195] = { "Aumenta la rigenerazione del mana del bersaglio del $N1% e permette al $N2% della rigenerazione del mana del bersaglio di continuare durante il lancio. Dura $D1.", "Rigenerazione del mana aumentata del $N1%. Il $N2% della rigenerazione del mana può continuare durante il lancio.", 0x5be63390, 0x7042e9d9, "uu" },
-  [456485] = { nil, "Cura di $N1 salute in $D1.", nil, 0x71292dfd, "mu" },
+  [456223] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
+  [456397] = { nil, "Immune a tutti i danni.", nil, 0xec662d6c, "mu" },
+  [456485] = { "Cura il bersaglio di $N1 salute in $D1 e applica Temporal Beacon per $D2.\n\nTemporal Beacon\n$I1\nRegistra la posizione spazio-temporale del soggetto. Il $N4% di tutti i danni da arcano inflitti dall'incantatore viene convertito in cure cronomantiche su ciascuno dei bersagli attuali di Temporal Beacon dell'incantatore. Questa cura è ridotta del $N5% su sé stessi, e ridotta anche del $N6% quando i danni sono inflitti da incantesimi arcani che colpiscono più bersagli.", "Cura di $N1 salute in $D1.", 0x7470eeff, 0x71292dfd, "uu" },
   [456496] = { nil, "Danni da sacro subiti aumentati fino a un massimo di $N1.", nil, 0x6174ebc2, "mu" },
   [456536] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
 })

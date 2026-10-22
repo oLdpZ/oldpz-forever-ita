@@ -3,5 +3,9 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [364161] = { "Aumenta l'Intelletto del bersaglio di $N1 per $D1.", "Intelletto aumentato di $N1.", 0x9663f4be, 0xec5dd10a, "uu" },
   [364163] = { "Aumenta l'Armatura del bersaglio alleato di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3 per $D1.", "Armatura aumentata di $N1, tutti gli attributi di $N2 e tutte le resistenze di $N3.", 0x48c4c0cd, 0xa07843b3, "uu" },
+  [364455] = { "Salute aumentata del $N1%.", nil, 0x334d75a3, nil, "um" },
   [364812] = { "Dissolve la magia sul bersaglio, rimuovendo $N1 incantesimi dannosi da un alleato o $N2 incantesimi benefici da un nemico.", nil, 0xf935d550, nil, "um" },
+  [364820] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
+  [364838] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
+  [364895] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
 })

@@ -19,6 +19,6 @@ WFJ.Data.add("spell", {
   [1219520] = { "Aumenta di $N1 l'indice di blocco dello scudo per $D1.", "Indice di blocco aumentato di $N1.", 0xe7882b6e, 0x64e8286f, "uu" },
   [1219522] = { "Aumenta fino a $N1 i danni inflitti a Non Morti e Demoni da incantesimi ed effetti magici. Permette di ottenere le Pietre del Flagello per conto dell'⟦Argent Dawn=Alba d'Argento⟧.", nil, 0xc1a76244, nil, "um" },
   [1219541] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
-  [1219708] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
+  [1219708] = { "Rigenera $N1 mana.", "$N1 mana rigenerato.", 0x09fdd6de, 0xffb4963e, "uu" },
   [1219972] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xc539fd73, nil, "um" },
 })

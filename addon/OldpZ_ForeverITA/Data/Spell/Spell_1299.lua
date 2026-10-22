@@ -16,5 +16,5 @@ WFJ.Data.add("spell", {
   [1299739] = { "Ferisce il bersaglio facendolo sanguinare, infliggendo $N1 danni in $D1.", "$N1 danni da sanguinamento subiti ogni $D1.", 0x47f171f5, 0x72a94853, "uu" },
   [1299746] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", nil, 0xc0d35181, nil, "um" },
   [1299796] = { nil, "Spirito aumentato del $N1%.", nil, 0x9348a814, "mu" },
-  [1299850] = { "Lancia una palla infuocata, infliggendo $N1 danni da fuoco e $N2 danni aggiuntivi in $D1.", nil, 0xa6bc16f5, nil, "um" },
+  [1299850] = { "Lancia una palla infuocata, infliggendo $N1 danni da fuoco e $N2 danni aggiuntivi in $D1.", "$N1 danni da fuoco ogni $D1.", 0xa6bc16f5, 0xfead54e5, "uu" },
 })

@@ -24,6 +24,7 @@ WFJ.Data.add("spell", {
   [1310200] = { "Colpisce l'avversario, infliggendo i danni dell'arma e $N1 danni aggiuntivi.", nil, 0x27b9eb8b, nil, "um" },
   [1310222] = { "Un attacco brutale che infligge il $N1% dei danni dell'arma. Infligge un ulteriore $N2% dei danni dell'arma contro Giganti, Dragoidi e bersagli in sella. I bersagli in sella vengono disarcionati.", nil, 0x6bba7af9, nil, "um" },
   [1310236] = { "Aumenta la tua rabbia massima di $N1.", nil, 0xc6ddd0b5, nil, "um" },
+  [1310243] = { "Infligge danni fisici a un nemico ogni $D1 per $D2.", "Danni fisici inflitti ogni $D1.", 0x922b6035, 0xc8fd5ef3, "uu" },
   [1310285] = { "Trasforma un nemico casuale entro $N1 m in un satiro per $D1. È costretto a parlare in demoniaco e la sua velocità di lancio è ridotta del $N3%.", "Trasformato in un satiro. Parli il demoniaco e la tua velocità di lancio è ridotta del $N1%.", 0xdbe76720, 0x25694a58, "uu" },
   [1310296] = { "Cammina sull'acqua per $D1.", "Permette di camminare sull'acqua e sulle superfici simili.", 0x0293663f, 0x129bf543, "uu" },
   [1310308] = { "Aumenta del $N1% la probabilità di infliggere un colpo critico con le armi a distanza.", nil, 0xc16b511e, nil, "um" },
@@ -76,6 +77,7 @@ WFJ.Data.add("spell", {
   [1310925] = { "Rigenera il $N1% del tuo mana massimo quando blocchi.", "Rigenera il $N1% del mana massimo.", 0xef59e135, 0x9001c7ae, "uu" },
   [1310927] = { nil, "$N1 danni subiti assorbiti.", nil, 0x4e7b6db5, "mu" },
   [1310949] = { "Aumenta del $N1% la probabilità di effetto critico dei tuoi incantesimi d'ombra.", nil, 0x9bf21488, nil, "um" },
+  [1310990] = { "Ti conferisce istantaneamente energia.", nil, 0x7598f2ea, nil, "um" },
   [1310993] = { nil, "Gli incantesimi di cura diretta infliggono danni periodici al bersaglio.", nil, 0x3eb766d7, "mu" },
   [1310994] = { "Azzera il tempo di recupero residuo di Giudizio e riduce del $N1% il costo in mana del tuo prossimo Giudizio.", "Costo in mana di Giudizio ridotto del $N1%.", 0x4a717fac, 0x551000dd, "uu" },
 })

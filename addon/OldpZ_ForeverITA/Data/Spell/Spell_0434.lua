@@ -2,6 +2,11 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [434223] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $D2.", nil, 0x9a2f7afe, nil, "um" },
+  [434312] = { nil, "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", nil, 0x91a87ea7, "mu" },
+  [434313] = { nil, "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", nil, 0x91a87ea7, "mu" },
+  [434314] = { nil, "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", nil, 0x91a87ea7, "mu" },
+  [434315] = { nil, "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", nil, 0x91a87ea7, "mu" },
+  [434316] = { "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", 0x91a87ea7, 0x91a87ea7, "uu" },
   [434435] = { nil, "Gli alleati entro $N1 m dalla Priestess of the Moon ottengono il $N2% di salute in più e il $N3% di danni in più per ogni Keeper of the Grove vivo nel suo esercito.", nil, 0x270bb4b9, "mu" },
   [434436] = { nil, "Gli alleati entro $N1 m dalla Priestess of the Moon ottengono il $N2% di salute in più e il $N3% di danni in più per ogni Keeper of the Grove vivo nel suo esercito.", nil, 0x270bb4b9, "mu" },
   [434443] = { nil, "Danni da fuoco ogni $D1.", nil, 0xfd7a76cf, "mu" },
@@ -10,6 +15,8 @@ WFJ.Data.add("spell", {
   [434508] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [434698] = { nil, "Gli alleati entro $N1 m dalla Priestess of the Moon ottengono il $N2% di salute in più e il $N3% di danni in più per ogni Keeper of the Grove vivo nel suo esercito.", nil, 0x270bb4b9, "mu" },
   [434837] = { nil, "Armatura ridotta di $N1.", nil, 0x57b604c7, "mu" },
+  [434838] = { "Travolge il bersaglio, infliggendo $N1 danni da natura.", nil, 0x37bddcc4, nil, "um" },
   [434839] = { "Scarica una particella di tuono che infligge $N1 danni da natura.", nil, 0x461c0247, nil, "um" },
+  [434842] = { "Travolge il bersaglio, infliggendo $N1 danni da natura.", nil, 0x37bddcc4, nil, "um" },
   [434907] = { "Aumenta i danni fisici inflitti dall'incantatore di $N1 e la sua velocità d'attacco del $N2% per $D1.", "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", 0xb2977433, 0xbc6c8e1d, "uu" },
 })

@@ -16,5 +16,7 @@ WFJ.Data.add("spell", {
   [1292573] = { "Ferisce il bersaglio, infliggendo $N1 danni fisici.", nil, 0x4c070685, nil, "um" },
   [1292574] = { "Riduce del $N1% la probabilità che gli effetti di paura ti colpiscano.", nil, 0xd3bb670e, nil, "um" },
   [1292648] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
+  [1292679] = { "Travolge il bersaglio, infliggendo $N1 danni da natura.", nil, 0x37bddcc4, nil, "um" },
   [1292739] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
+  [1292879] = { "Travolge il bersaglio, infliggendo $N1 danni da natura.", nil, 0x37bddcc4, nil, "um" },
 })

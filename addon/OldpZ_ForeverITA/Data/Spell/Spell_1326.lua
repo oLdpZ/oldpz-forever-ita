@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1326019] = { "Colpisce il bersaglio con il potere della fonte sacra, infliggendo $N1 danni da sacro.", nil, 0x9b566f35, nil, "um" },
   [1326044] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1326047] = { "Scagli lava fusa contro il bersaglio, infliggendo $N1 danni da fuoco. Se sul bersaglio è attiva la tua ⟦Flame Shock=Folgore del Fuoco⟧, ⟦Lava Burst=Getto di Lava⟧ infligge il $N2% di danni in più.", nil, 0xc9c1c783, nil, "um" },
   [1326053] = { "Lancia rapidamente contro il nemico una debole esplosione di gelo, infliggendo $N1 danni da gelo e rallentandone la velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xa4579360, 0xbe1d3d24, "uu" },
   [1326054] = { "Lancia rapidamente contro il nemico una debole esplosione di gelo, infliggendo $N1 danni da gelo e rallentandone la velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xa4579360, 0xbe1d3d24, "uu" },
   [1326055] = { "Lancia rapidamente contro il nemico una debole esplosione di gelo, infliggendo $N1 danni da gelo e rallentandone la velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xa4579360, 0xbe1d3d24, "uu" },

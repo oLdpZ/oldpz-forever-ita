@@ -3,6 +3,8 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1271266] = { nil, "Furtivo.", nil, 0x150ed465, "mu" },
   [1271513] = { nil, "Danni da natura inflitti ogni $D1.", nil, 0xaae6fcde, "mu" },
+  [1271514] = { nil, "Danni fisici inflitti ogni $D1.", nil, 0xc8fd5ef3, "mu" },
+  [1271521] = { "Travolge il nemico con la potenza del fulmine, infliggendo danni da natura.", nil, 0x86118ec0, nil, "um" },
   [1271522] = { "Colpisce un nemico con un dardo elettrico che danneggia anche altri bersagli vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura maggiori a ogni bersaglio successivo.", nil, 0x245b0721, nil, "um" },
   [1271593] = { nil, "Fuga in preda al terrore.", nil, 0xfa67e4a8, "mu" },
   [1271632] = { nil, "Assorbe i danni fisici, prosciugando mana al loro posto.", nil, 0xd9625b22, "mu" },

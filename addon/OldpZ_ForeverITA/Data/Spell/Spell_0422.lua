@@ -3,10 +3,16 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [422171] = { "Dai il bocconcino al bersaglio.", nil, 0x553028f9, nil, "um" },
   [422387] = { nil, nil, 0xf05f36d2, nil, "em" },
+  [422397] = { "Scaglia un arpione contro il bersaglio (gittata $N1 m)", "Salute massima e danni notevolmente ridotti.", 0x7b4e6704, 0x09814f56, "uu" },
+  [422410] = { nil, "Serve un motore nuovo", nil, 0x43e3dbae, "mu" },
   [422477] = { "Combina pezzi di ricambio di mietitrice con un nucleo elementale per creare un motore prototipo.", nil, 0x9e0358e6, nil, "um" },
   [422478] = { "Da installare in un prototipo di mietitrice.", nil, 0x8cfaa23c, nil, "um" },
   [422488] = { "Da piazzare come esca vicino alla tana di un coyote", nil, 0x80f8c7e8, nil, "um" },
-  [422498] = { "Insegui la luce che svanisce!", nil, 0xa364a2ec, nil, "um" },
-  [422621] = { "Riduce del $N1% il costo di incantesimi e abilità.", nil, 0x1f210876, nil, "um" },
+  [422498] = { "Insegui la luce che svanisce!", "Insegui la luce che svanisce!", 0xa364a2ec, 0xa364a2ec, "uu" },
+  [422549] = { nil, "Accumula energia empia per tornare in vita...", nil, 0x785bfee7, "mu" },
+  [422598] = { nil, "Fugge se percepisce un pericolo", nil, 0x2c44318d, "mu" },
+  [422621] = { "Riduce del $N1% il costo di incantesimi e abilità.", "Riduce del $N1% il costo di incantesimi e abilità.", 0x1f210876, 0x1f210876, "uu" },
+  [422746] = { nil, "Probabilità di raccogliere le anime dei murloc uccisi", nil, 0x1eb9c3c0, "mu" },
+  [422978] = { nil, "Tutti gli attributi ridotti del $N1%, tutti i danni inflitti ridotti del $N2%, Armatura e resistenze ridotte del $N3%.", nil, 0x894238da, "mu" },
   [422996] = { "Spruzza sul bersaglio un antico veleno corrosivo che infligge $N1 danni da natura ogni $D1 e riduce l'Armatura del bersaglio di $N3 per $D2.", "Armatura ridotta e danni da natura periodici.", 0x79ecb000, 0x8a10a16c, "uu" },
 })

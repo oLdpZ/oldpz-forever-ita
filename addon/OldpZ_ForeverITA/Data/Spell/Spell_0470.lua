@@ -22,4 +22,5 @@ WFJ.Data.add("spell", {
   [470836] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $D2.", nil, 0x9a2f7afe, nil, "um" },
   [470856] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [470866] = { "Genera una nube di fulmini che dura $D1 e colpisce tutti i nemici in un'area bersaglio, infliggendo $N2 danni da natura e $N3 danni aggiuntivi ogni $D2.", nil, 0x9a2f7afe, nil, "um" },
+  [470868] = { nil, "⟦Wisp Costume=Costume da Fuoco Fatuo⟧. Impossibile attaccare o lanciare incantesimi in forma di fuoco fatuo. Clicca col pulsante destro su questa icona per rimuovere l'effetto.", nil, 0xe8f91a53, "mu" },
 })

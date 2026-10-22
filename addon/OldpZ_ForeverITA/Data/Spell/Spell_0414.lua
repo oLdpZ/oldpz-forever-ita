@@ -17,6 +17,7 @@ WFJ.Data.add("spell", {
   [414800] = { nil, "Il tuo prossimo ⟦Healing Touch=Tocco Curativo⟧ è istantaneo e lanciabile in qualsiasi forma.", nil, 0xc63f596d, "mu" },
   [414824] = { nil, "In sintonia con i misteri della natura", nil, 0x0351d683, "mu" },
   [414827] = { nil, "In preda a una furia bestiale", nil, 0xd7d1ae5f, "mu" },
+  [414900] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
   [414923] = { nil, "Frastornato.", nil, 0x8649cd0f, "mu" },
   [414924] = { "Balza alle spalle di un nemico.", nil, 0x0f628101, nil, "um" },
 })

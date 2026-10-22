@@ -3,9 +3,11 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1237064] = { "Applica in modo permanente a un arco o a un'arma da fuoco un mirino che ne aumenta la probabilità d'impatto del $N1%.", nil, 0xb1a50f38, nil, "um" },
   [1237155] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
-  [1237312] = { nil, "Velocità di movimento ridotta del $N1%. $N2 danni da fuocogelo ogni $D1.", nil, 0x3991e2af, "mu" },
-  [1237313] = { nil, "Velocità di movimento ridotta del $N1%. $N2 danni da fuocogelo ogni $D1.", nil, 0x3991e2af, "mu" },
+  [1237312] = { "Scaglia un dardo di fuocogelo contro il nemico, infliggendo $N1 danni da fuocogelo, rallentandone la velocità di movimento del $N2% e infliggendo altri $N3 danni da fuocogelo in $D1. Per questo incantesimo vale la più bassa tra le resistenze al gelo e al fuoco del bersaglio, e conta sia come danni da gelo sia come danni da fuoco.", "Velocità di movimento ridotta del $N1%. $N2 danni da fuocogelo ogni $D1.", 0xff979685, 0x3991e2af, "uu" },
+  [1237313] = { "Scaglia un dardo di fuocogelo contro il nemico, infliggendo $N1 danni da fuocogelo, rallentandone la velocità di movimento del $N2% e infliggendo altri $N3 danni da fuocogelo in $D1. Per questo incantesimo vale la più bassa tra le resistenze al gelo e al fuoco del bersaglio, e conta sia come danni da gelo sia come danni da fuoco.", "Velocità di movimento ridotta del $N1%. $N2 danni da fuocogelo ogni $D1.", 0xff979685, 0x3991e2af, "uu" },
   [1237632] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
+  [1237720] = { nil, "Impossibile attaccare o usare incantesimi.", nil, 0x3f987751, "mu" },
+  [1237938] = { "Lancia veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $D1 per $D2.", "Infligge $N1 danni da natura ogni $D1.", 0x2c66ca3a, 0x47e40c07, "uu" },
   [1237939] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1237948] = { "Riporta in vita un personaggio morto con $N1 salute e $N2 mana. Non utilizzabile in combattimento.", nil, 0xf0621701, nil, "um" },
   [1237949] = { "Riporta in vita un personaggio morto con $N1 salute e $N2 mana. Non utilizzabile in combattimento.", nil, 0xf0621701, nil, "um" },

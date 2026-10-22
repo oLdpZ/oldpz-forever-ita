@@ -2,6 +2,11 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [409163] = { "Incidi sulla tua cintura la runa Rabbia Concentrata:\n\n$I1\nRiduce di $N1 il costo in rabbia delle tue abilità offensive.", nil, 0xbd819656, nil, "um" },
+  [409324] = { nil, "Danni convertiti in cure sui membri del gruppo vicini, e cure convertite in danni sul bersaglio di ⟦Flame Shock=Folgore del Fuoco⟧.", nil, 0xabc76e9a, "mu" },
+  [409365] = { nil, "Velocità d'attacco.", nil, 0x62b8a592, "mu" },
   [409372] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
+  [409396] = { nil, "Danni inflitti da Sfregio e Morso aumentati del $N1%.", nil, 0xce508390, "mu" },
   [409495] = { nil, "Disarmato.", nil, 0x98985eda, "mu" },
+  [409918] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
+  [409930] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
 })

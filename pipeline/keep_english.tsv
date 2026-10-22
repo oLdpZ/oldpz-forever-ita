@@ -400,6 +400,10 @@ quest	98326	title	08b6e05feae7de2c	Frosthowl
 quest	98338	title	33acc140a20dbd02	REUSE ME
 quest	99079	title	0e88eacac3e99e26	Longwalker Malah
 quest	99142	title	739d084a832a3a9f	Tomb Weed
+spell	407580	description	5c0f8e85760b141c	Summon Soboz
+spell	417056	description	5c0f8e85760b141c	Summon Soboz
+spell	417315	description	5c0f8e85760b141c	Summon Soboz
+spell	418065	description	5c0f8e85760b141c	Summon Soboz
 spell	422387	description	f05f36d23295a69d	Plant Pumpkin Seeds
 spell	425265	aura	1e8354d4c4a6e1ad	[PH] needs a tooltip
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud

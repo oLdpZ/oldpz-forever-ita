@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1222207] = { "Infligge il $N1% dei danni dell'arma e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", "Cure ricevute ridotte del $N1%.", 0x9ac32304, 0x25749c0a, "uu" },
   [1222393] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
   [1222394] = { "Aumenta la tua velocità d'attacco del $N1%.", nil, 0xdd436c29, nil, "um" },
+  [1222546] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
   [1222563] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
   [1222564] = { "Aumenta la velocità d'attacco di un alleato del $N1% per $D1.", "Velocità d'attacco aumentata del $N1%.", 0x036d64eb, 0x8859e2db, "uu" },
   [1222567] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro e stordendoli per $D1.", "Stordito.", 0x476b69d8, 0x27f95286, "uu" },
@@ -12,5 +13,6 @@ WFJ.Data.add("spell", {
   [1222578] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [1222581] = { "Prende il controllo di un nemico umanoide fino al livello $N1 per $D1.", "Ammaliato.", 0x54466006, 0xd83f67a3, "uu" },
   [1222688] = { "Costringe un nemico a concentrarsi sull'incantatore e aumenta la velocità d'attacco dell'incantatore del $N1% per $D1. Finché è concentrato sull'incantatore, il bersaglio è molto restio ad attaccare chiunque altro.", nil, 0xa441d417, nil, "um" },
+  [1222939] = { "Infligge $N1 danni da fuoco ogni $D1.", "Infligge $N1 danni da fuoco ogni $D1.", 0xa9aeaf55, 0xa9aeaf55, "uu" },
   [1222942] = { nil, "Danni da fuoco ogni $D1.", nil, 0xfd7a76cf, "mu" },
 })

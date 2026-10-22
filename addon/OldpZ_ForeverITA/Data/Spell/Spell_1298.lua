@@ -10,6 +10,8 @@ WFJ.Data.add("spell", {
   [1298518] = { "Aumenta fino a $N1 i danni inflitti ai Non Morti da incantesimi ed effetti magici.", nil, 0x0674bbf7, nil, "um" },
   [1298519] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
   [1298520] = { "Aumenta i danni inflitti da incantesimi ed effetti d'ombra fino a un massimo di $N1.", nil, 0xf6473b19, nil, "um" },
+  [1298533] = { "In preda alla follia.", nil, 0x02d4316d, nil, "um" },
   [1298722] = { "Aumenta fino a $N1 i danni inflitti ai Non Morti da incantesimi ed effetti magici.", nil, 0x0674bbf7, nil, "um" },
+  [1298750] = { "In preda alla follia.", nil, 0x02d4316d, nil, "um" },
   [1298896] = { "In fiamme!", "In fiamme!", 0xfaec4c66, 0xfaec4c66, "uu" },
 })

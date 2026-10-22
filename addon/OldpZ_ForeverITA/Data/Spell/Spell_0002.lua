@@ -89,6 +89,8 @@ WFJ.Data.add("spell", {
   [2791] = { "Potenzia il bersaglio, aumentando la Tempra di $N1 per $D1.", "Tempra aumentata di $N1.", 0xf7c34722, 0x54404694, "uu" },
   [2800] = { "Cura un bersaglio alleato di un ammontare pari alla salute massima del Paladino e gli rigenera $N1 mana. Quando viene usato, consuma tutto il mana rimanente del Paladino, ma non interrompe la rigenerazione del mana.", nil, 0x7af9502f, nil, "um" },
   [2812] = { "Scaglia dardi di potere sacro in tutte le direzioni, infliggendo $N1 danni da sacro a tutti i bersagli Non Morto e Demone entro $N2 m e stordendoli per $D1.", nil, 0x21c005b6, nil, "um" },
+  [2818] = { "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", 0x91a87ea7, 0x91a87ea7, "uu" },
+  [2819] = { "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", 0x91a87ea7, 0x91a87ea7, "uu" },
   [2823] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha il $N2% di probabilità di avvelenare il nemico, infliggendo $N3 danni da natura in $D1. Si accumula fino a $N5 volte su un singolo bersaglio. $N6 cariche.", nil, 0xf73ef176, nil, "um" },
   [2824] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha il $N2% di probabilità di avvelenare il nemico, infliggendo $N3 danni da natura in $D1. Si accumula fino a $N5 volte su un singolo bersaglio. $N6 cariche.", nil, 0xdebf2dab, nil, "um" },
   [2826] = { "Non ancora implementato.", nil, 0x0a8b18e4, nil, "um" },

@@ -19,5 +19,6 @@ WFJ.Data.add("spell", {
   [432297] = { "Incidi sui tuoi bracciali la runa Prontezza in Mischia:\n\n$I1\nSventramento e Affondo Venefico rinnovano la durata di Fendenti Furiosi o di Lame Danzanti al massimo di $N1 punti combo. Se sono attivi entrambi, viene rinnovato solo quello con la durata residua più breve.", nil, 0x7d169149, nil, "um" },
   [432299] = { "Incidi sui tuoi bracciali la runa Carneficina:\n\n$I1\nLe tue abilità infliggono il $N1% di danni in più ai bersagli colpiti da uno dei tuoi effetti di sanguinamento. Perforazione inoltre ti cura del $N2% dei danni che infligge.", nil, 0xf0efc132, nil, "um" },
   [432301] = { "Incidi sui tuoi bracciali la runa Vantaggio Sleale:\n\n$I1\nOgni volta che schivi o pari un attacco ottieni Vantaggio Sleale, contrattaccando con il $N1% dei danni dell'arma principale e ottenendo $N2 punti combo. Questo effetto non può verificarsi più di una volta al secondo.", nil, 0xf11d0a7e, nil, "um" },
+  [432308] = { nil, "Danni fisici inflitti ogni $D1.", nil, 0xc8fd5ef3, "mu" },
   [432639] = { "Aumenta la probabilità d'impatto del $N1%.", nil, 0x47acc177, nil, "um" },
 })

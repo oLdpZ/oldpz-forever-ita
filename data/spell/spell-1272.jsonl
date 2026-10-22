@@ -1,0 +1,1 @@
+{"id": 1272941, "field": "description", "it": "Tira contro un bersaglio nemico, infliggendo danni fisici.", "status": "unaligned", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-t36-sg12@2026-10-23", "imported": "2026-10-23"}, "english": {"hash": "75634826c9339361", "src": "db2@1.60.1.70450"}, "reasons": [], "conflicts": []}

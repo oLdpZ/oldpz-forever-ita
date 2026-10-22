@@ -56,6 +56,7 @@ WFJ.Data.add("spell", {
   [4320] = { "Silenzia, infliggendo $N1 danni da gelo ogni $N2 s e riducendo la velocità d'attacco del nemico del $N3% per $D2.", "Silenziato.\n$N1 danni da gelo inflitti ogni $N2 s.\nVelocità d'attacco ridotta del $N3%.", 0xf157465a, 0x7dbc421f, "uu" },
   [4436] = { "Infligge 10 danni da fuoco a chiunque ti colpisca in mischia.", nil, 0xd5dee2b1, nil, "um" },
   [4506] = { "Libera Yenniku dalla sua prigionia.", nil, 0x88fb5c23, nil, "um" },
+  [4511] = { "Sfasa l'Imp rispetto al mondo, rendendolo inattaccabile finché non attacca.", nil, 0x3650e994, nil, "um" },
   [4514] = { "Aumenta la velocità d'attacco del $N1% e la velocità di movimento del $N2% per $D1, ma infligge $N4 danni da ombra all'incantatore ogni $N5 s.", "$N1 danni da ombra inflitti ogni $N2 s.\nVelocità d'attacco aumentata del $N3%.\nVelocità di movimento aumentata del $N4%.", 0xf982b834, 0xa77485db, "uu" },
   [4525] = { "Quando l'Infernale subisce danni, ha una probabilità del 15% di prendere fuoco, infliggendo danni a chiunque lo colpisca per $D1.", nil, 0xf6226670, nil, "um" },
   [4538] = { "Stordisce la succube e il bersaglio per $D1, rubando $N2 vita dal bersaglio nel frattempo.", "$N1 salute prosciugata ogni $N2 s.", 0x446d8ed5, 0x815a028c, "uu" },

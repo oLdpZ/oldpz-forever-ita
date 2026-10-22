@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1247087] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
+  [1247169] = { nil, "Immune a tutti i danni.", nil, 0xec662d6c, "mu" },
+  [1247998] = { "Travolge il nemico con la potenza del fulmine, infliggendo danni da natura.", nil, 0x86118ec0, nil, "um" },
 })
