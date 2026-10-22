@@ -42,6 +42,7 @@ WFJ.Data.add("gossip", {
   ["2ed1a5c352ce6d57"] = { "I druidi sono molto sensibili alle sofferenze di tutte le creature del mondo. Quando si è scoperto che questi uccelli erano in pericolo, abbiamo organizzato un sistema per salvarli dalla corruzione di Feralas.\n\nUna gnoma di nome Curgle Cranklehop guida l'impresa: raccoglie le uova e le fa spedire qui, dove me ne prendo cura.\n\nCi farebbe sempre comodo altro aiuto per la nostra causa, {name}. Forse dovresti andare a ⟦Gadgetzan=Meccania⟧ e cercare Curgle.", "." },
   ["2edbf7e0dabd0e70"] = { "%s trasforma gli oggetti che {name} gli ha dato in un totem di purificazione...", "." },
   ["2edf96a3f1a0aa31"] = { "<Demitrian cade in ginocchio.>\n\nHai recuperato l'eterna prigione del mio Maestro!\n\nQuanto a lungo ho atteso questo giorno, e finalmente è arrivato.\n\nDeve essere liberato!", "." },
+  ["2ee3cde7bf1cd6d6"] = { "Grazie mille! Mi metto subito al lavoro su un piano di fuga. Nel frattempo, prendi questo!", "." },
   ["2ee3eaf91a7097a6"] = { "Och! Bada bene a cosa ti fai incantare, <ragazzo/ragazza>. Ho fatto incantare il mio boccale perché non versasse una goccia, ma ora non riesco a berci! Che tragedia.\n\nSegui bene il mio consiglio quando vedi Gimble. Lo troverai nella sua bottega, proprio accanto al maestro dei grifoni della ⟦Great Forge=Grande Forgia⟧.", "." },
   ["2ee833636e6dc77c"] = { "Anthion, mi sa che ho perso lo stendardo che hai creato per me.", "." },
   ["2ee997176af6525d"] = { "Vi prego, sacerdotesse, perdonate la nostra intrusione. Non vogliamo fare alcun male qui.", "." },

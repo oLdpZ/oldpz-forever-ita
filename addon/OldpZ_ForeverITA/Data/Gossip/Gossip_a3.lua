@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["a3900f2e56870338"] = { "Che succede se il moccio ti si congela nel naso?", "." },
   ["a398efff2350886e"] = { "Mi hai portato quelle teste, {name}?", "." },
   ["a39af22f3e5a3f93"] = { "Cosa posso fare per te, <figlio/figlia> <mio/mia>?", "." },
+  ["a39befbfe17be430"] = { "Quegli shriekling sono troppo pericolosi per lasciarli nidificare così vicino a Valanaar. Però... sono il minore dei nostri problemi.", "." },
   ["a3a16ecba65e69cf"] = { "Salve, mi chiamo Petra. Alla mia destra c'è il mio kodo, Dadanga. Lavoriamo per la Marshal Expeditions, ormai da qualche anno, da quando Dadanga era un cucciolo.\n\nSe hai torce accese o fiamme libere, ti chiederei di tenerle via, se puoi. A Dadanga il fumo non piace.", "." },
   ["a3a8694bcd22b029"] = { "Sì, <signore/signora>! Mi è stato ordinato di riferire che l'⟦Alliance=Alleanza⟧ ha raccolto tutto il materiale bellico necessario. Mi hanno comunicato che aspettiamo solo che l'⟦Horde=Orda⟧ finisca la sua parte, e poi tutto sarà spedito a ⟦Silithus=Silitus⟧. Grazie, <signore/signora>!", "." },
   ["a3ab047b486b9151"] = { "Dove vuoi andare?", "." },

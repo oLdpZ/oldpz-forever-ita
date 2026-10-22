@@ -42,5 +42,6 @@ WFJ.Data.add("gossip", {
   ["86e64235ce658693"] = { "Quante battaglie abbiamo vinto?", "." },
   ["86ed00bdf1ecc310"] = { "%s si libera dai suoi vincoli spettrali con un tremendo fragore di tuono!", "." },
   ["86edfa122ce58899"] = { "Nelle acque della parte settentrionale della ⟦Sar'theris Strand=Riva di Sar'theris⟧, a ⟦Desolace=Desolanda⟧, o nella ⟦Angor Fortress=Fortezza di Angor⟧, nelle ⟦Badlands=Maleterre⟧, ci sono casse chiuse a chiave che si possono scassinare.", "." },
+  ["86f9d0d9ce05da29"] = { "Là fuori è un disastro, {name}! Hai raccolto i pezzi che mi servono?", "." },
   ["86fa5bbc752ebb66"] = { "Salute, {name}. Non torneresti da me se non avessi portato a termine il tuo compito. Lascia che sia la prima a darti il benvenuto, a pieno titolo, sul primo dei quattro sentieri che governeranno per sempre i tuoi viaggi.\n\nSe hai la pietra che la terra ti ha dato, ti darò il totem che ti ha promesso. Altrimenti, provo pena per te. C'è molto di cui andare fieri quando ci si è dedicati completamente agli elementi.", "." },
 })
