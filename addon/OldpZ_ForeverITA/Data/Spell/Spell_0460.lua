@@ -23,5 +23,6 @@ WFJ.Data.add("spell", {
   [460858] = { nil, "$N1 danni da fuoco inflitti ogni $D1.", nil, 0xbc8b8357, "mu" },
   [460890] = { nil, "Armatura ridotta di $N1.", nil, 0xaede5a15, "mu" },
   [460931] = { "Infligge $N1 danni da ombra ai nemici vicini dopo $D1.", "$N1 danni da ombra subiti dopo $D1.", 0x0a28521b, 0x7fe6a36d, "uu" },
+  [460933] = { "..", nil, 0x000017b8, nil, "um" },
   [460962] = { "+$N1 ⟦Fire Resistance=Resistenza al Fuoco⟧.", nil, 0x8e808dd4, nil, "um" },
 })

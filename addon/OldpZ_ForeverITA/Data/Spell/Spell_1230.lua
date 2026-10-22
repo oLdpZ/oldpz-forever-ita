@@ -14,4 +14,5 @@ WFJ.Data.add("spell", {
   [1230712] = { "I tuoi prossimi $N1 colpi con armi da mischia colpiscono un altro avversario vicino.", "⟦Sweeping Strikes=Assalti Fendenti⟧.", 0x015e6822, 0xc3bc26d8, "uu" },
   [1230942] = { nil, "Salute aumentata di $N1.", nil, 0x9cba3d80, "mu" },
   [1230943] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [1230992] = { nil, "Un'oscurità opprimente ti avvolge...", nil, 0x7e9d0505, "mu" },
 })

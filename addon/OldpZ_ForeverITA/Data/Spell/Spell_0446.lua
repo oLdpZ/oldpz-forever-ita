@@ -55,4 +55,5 @@ WFJ.Data.add("spell", {
   [446728] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [446729] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x61fe647b, 0xdb6814b9, "uu" },
   [446731] = { nil, "Immobilizzato.", nil, 0x18deeb81, "mu" },
+  [446732] = { "Esausto.", nil, 0x9029b02e, nil, "um" },
 })

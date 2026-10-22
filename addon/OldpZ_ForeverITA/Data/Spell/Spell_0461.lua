@@ -10,6 +10,7 @@ WFJ.Data.add("spell", {
   [461235] = { nil, "Forza aumentata di $N1.", nil, 0xb2147e94, "mu" },
   [461280] = { "Lancia un dardo di magia oscura contro un bersaglio nemico, infliggendo danni da ombra.", nil, 0x42ce8448, nil, "um" },
   [461323] = { "Aumenta la Tempra di $N1 per $D1 e infonde ubriachezza molesta!", "Tempra aumentata di $N1.", 0xfaf19c38, 0x4e3b423b, "uu" },
+  [461339] = { "..", nil, 0x000017b8, nil, "um" },
   [461347] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
   [461348] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
   [461349] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },

@@ -7,4 +7,6 @@ WFJ.Data.add("spell", {
   [1235421] = { "Genera un'esplosione di magia arcana attorno all'incantatore che infligge $N1 danni da arcano a tutti i bersagli entro $N2 m.", nil, 0x51d9ff5b, nil, "um" },
   [1235538] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },
   [1235793] = { "Riduce i danni da caduta.", nil, 0x879f36dd, nil, "um" },
+  [1235826] = { "Lacera il bersaglio nemico, facendolo sanguinare e infliggendo $N1 danni in $D1, più il $N3% dei danni dell'arma per ogni applicazione di Lacerazione già presente sul bersaglio. Genera un'elevata quantità di minaccia. L'effetto si cumula fino a $N4 volte sullo stesso bersaglio.", nil, 0x58e2b595, nil, "um" },
+  [1235827] = { "Lacera il bersaglio nemico, facendolo sanguinare e infliggendo $N1 danni in $D1, più il $N3% dei danni dell'arma per ogni applicazione di Lacerazione già presente sul bersaglio. Genera un'elevata quantità di minaccia. L'effetto si cumula fino a $N4 volte sullo stesso bersaglio.", nil, 0x58e2b595, nil, "um" },
 })

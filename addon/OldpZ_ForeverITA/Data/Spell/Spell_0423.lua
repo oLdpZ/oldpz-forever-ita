@@ -2,5 +2,18 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [423002] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
-  [423481] = { nil, "Individuazione della furtività leggermente aumentata.", nil, 0x99370680, "mu" },
+  [423003] = { "Scarica una particella di tuono che infligge $N1 danni da natura.", nil, 0x461c0247, nil, "um" },
+  [423004] = { "Scaglia una raffica di vento che infligge $N1 danni da natura.", nil, 0x24083c31, nil, "um" },
+  [423088] = { "Apri il Waterlogged Captain's Chest", nil, 0x9433ac13, nil, "um" },
+  [423187] = { "Bilancia i poteri della Luna, del ⟦Emerald Dream=Sogno di Smeraldo⟧ e della Natura Selvaggia per apprendere una nuova abilità.", nil, 0xb3c699cf, nil, "um" },
+  [423253] = { "Infligge ingenti danni nelle vicinanze; se non colpisce alcun nemico, danneggia chi lo usa.", nil, 0xba65d20f, nil, "um" },
+  [423298] = { "Aumenta la velocità di nuoto del $N1%.", nil, 0xe184d52a, nil, "um" },
+  [423299] = { "Aumenta di $N1 i danni inflitti alle Bestie con gli attacchi fisici.", nil, 0x35fca8b7, nil, "um" },
+  [423300] = { "M'grrgl ti accompagnerà per $D1, offrendoti una lieve protezione contro l'ombra.", nil, 0x0eb12453, nil, "um" },
+  [423304] = { "Sottrae vita alla vittima, curandoti di $N1.", nil, 0xea366d8f, nil, "um" },
+  [423474] = { "Aumenta di $N1 i danni dell'incantesimo Dardo di Fuoco del tuo Imp.", nil, 0xc780d6c3, nil, "um" },
+  [423481] = { "Aumenta leggermente l'individuazione della furtività.", "Individuazione della furtività leggermente aumentata.", 0xf1baa545, 0x99370680, "uu" },
+  [423484] = { "Aumenta del $N1% i danni inflitti dai tuoi famigli.", nil, 0xa112dde1, nil, "um" },
+  [423549] = { "Infondi magia selvaggia in una ⟦Greater Magic Wand=Bacchetta Magica Superiore⟧.", nil, 0x40589d5e, nil, "um" },
+  [423632] = { "Apre il Waterlogged Captain's Chest.", nil, 0x97ea925d, nil, "um" },
 })

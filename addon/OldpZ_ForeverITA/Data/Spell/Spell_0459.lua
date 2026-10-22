@@ -6,6 +6,7 @@ WFJ.Data.add("spell", {
   [459592] = { "Attacca i nemici vicini in un turbine d'acciaio che dura $D1 e infligge danni normali e $N2 danni aggiuntivi.", nil, 0xb90dc628, nil, "um" },
   [459606] = { "Aumenta la velocità della tua abilità ⟦Ghost Wolf=Lupo Spettrale⟧ del $N1%.", nil, 0xfb6a1db0, nil, "um" },
   [459608] = { "Riduce di $N1 il costo in rabbia di Azzoppamento.", nil, 0x1c20335d, nil, "um" },
+  [459615] = { nil, "Quando metti a segno un colpo di grazia che fornisce esperienza o onore, il tuo prossimo attacco sarà un colpo critico.", nil, 0x11413859, "mu" },
   [459622] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [459736] = { "Aumenta la Tempra di $N1 per $D1 e infonde ubriachezza molesta!", "Tempra aumentata di $N1.", 0xfaf19c38, 0x4e3b423b, "uu" },
 })
