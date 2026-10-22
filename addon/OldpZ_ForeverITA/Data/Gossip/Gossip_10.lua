@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["109c9b65c751fc35"] = { "Sei qui per farti istruire nell'arte di preparare pozioni? Ti sbagliavi se pensavi che ti avrei concesso un simile privilegio senza che te lo fossi guadagnato. Vattene, e non tornare da me finché non avrai più abilità.", "." },
   ["109ded22d9d2a5db"] = { "La prossima volta, porta più amici!", "." },
   ["10a3d085bc51a7a8"] = { "Luridi codardi dei Lupi Bianchi! Se volete combattere, dovrete venire da me!", "." },
+  ["10acb4364f368b1f"] = { "Il corpo della sentinella dei Guardiani della Notte che giace davanti a te è coperto di squarci e tagli profondi. È evidente che l'uomo è stato sbranato da una grossa bestia.\n\nNoti che il cadavere stringe in mano una torcia spenta. Ti chini e la sfili dalle sue dita irrigidite. Potrebbe esserti utile nei tuoi viaggi per ⟦Duskwood=Boscovespro⟧ e oltre, per rivelare ciò che l'oscurità nasconde.", "." },
   ["10af33a9afbe5ed0"] = { "Dubito che la fortuna ti assisterà ancora la prossima volta che incontrerai i miei fratelli.", "." },
   ["10b8afc45599a8e0"] = { "Presto, {name}. Te lo prometto. La tonaca sarà più che adeguata alle tue esigenze e di certo ti darà un vantaggio sui tuoi avversari.", "." },
   ["10be644418c73418"] = { "Bene bene! Sei nel posto giusto per imparare l'Estrazione, <ragazzo/ragazza>! Geofram Bouldertoe in persona risiede alla Deepmountain Mining Guild. Non potresti chiedere un istruttore migliore di lui.", "." },

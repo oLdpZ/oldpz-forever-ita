@@ -27,6 +27,7 @@ WFJ.Data.add("gossip", {
   ["5475eaabd126ccac"] = { "Davvero? Chiamali, servitore.", "." },
   ["5476cf471d3f99fe"] = { "È da un po' che non ti si vede da queste parti. Hai trovato il tomo e le verghe?", "." },
   ["547ad6651b4db0be"] = { "Le tue capacità superano le mie competenze. Georgio Bolero, il maestro di Duncan's Textiles qui dietro l'angolo, potrebbe aiutarti a migliorare le tue abilità.", "." },
+  ["547dd283aa1c2e09"] = { "Ah, sei tornat<o/a> giusto in tempo.\n\nChe succede, ragazz<o/a>? Sembra che tu abbia visto un fantasma.", "." },
   ["54805afa085bc7f7"] = { "Ci siamo, {name}. La mia roba dovrebbe essere in quella stanza. Coprimi, entro!", "." },
   ["5486f890fa35a178"] = { "<Lady Sylvanas Windrunner ti osserva in silenzio.>", "." },
   ["54875ae89acbe73d"] = { "Non sai quello che fai! Dobbiamo distruggerti per il tuo stesso bene.", "." },
