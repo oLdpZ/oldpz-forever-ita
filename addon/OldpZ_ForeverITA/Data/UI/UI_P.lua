@@ -149,7 +149,7 @@ WFJ.Data.add("ui", {
   ["PLAYER_DIFFICULTY_STORY_RAID"] = { "Storia dell'incursione", 0xed29d132, "." },
   ["PLAYER_DIFFICULTY_TIMEWALKER"] = { "Viaggio nel Tempo", 0xd655abd2, "." },
   ["PLAYER_IS_PVP_AFK"] = { "|cffff64ff%s (Inattivo)|r", 0x165d8563, "." },
-  ["PLAYER_LEVEL"] = { "|c%2$s%4$s (%3$s)|r di livello %1$s", 0xd029ffa1, "." },
+  ["PLAYER_LEVEL"] = { "Livello %s |c%s%s %s|r", 0xd029ffa1, "." },
   ["PLAYER_LEVEL_NO_SPEC"] = { "|c%2$s%3$s|r di livello %1$s", 0xa99e6ce2, "." },
   ["PLAYER_MESSAGES"] = { "Messaggi del giocatore", 0xb23c9a71, "." },
   ["PLAYER_OFFLINE"] = { "Non in linea", 0x06e66a7a, "." },
