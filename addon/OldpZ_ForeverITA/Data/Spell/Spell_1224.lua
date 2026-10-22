@@ -2,10 +2,10 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1224125] = { "Silenzia un nemico, impedendogli di lanciare incantesimi per $D1.", "Impossibile lanciare incantesimi.", 0x92e27777, 0x6d133d61, "uu" },
-  [1224315] = { "Immobilizzato sul posto.", nil, 0xeb220d13, nil, "um" },
+  [1224315] = { "Immobilizzato sul posto.", "Immobilizzato.", 0xeb220d13, 0xeb220d13, "uu" },
   [1224410] = { "Applicato a un'arma o a uno scudo, aumenta fino a $N1 i danni magici contro i non morti. Dura $D1.", nil, 0xa4a14416, nil, "um" },
   [1224422] = { "Applicato a un'arma o a uno scudo, aumenta di $N1 la potenza d'attacco contro i non morti. Dura $D1.", nil, 0x1020c5f4, nil, "um" },
-  [1224428] = { "Le forze del Flagello si rafforzano.", nil, 0xc72f3794, nil, "um" },
+  [1224428] = { "Le forze del Flagello si rafforzano.", "Impegnato contro le forze del Flagello.\n\nI benefici del tuo ⟦Seal of the Dawn=Sigillo dell'Alba⟧ non possono superare il Grado $N1.", 0xc72f3794, 0xa8fb80a9, "uu" },
   [1224553] = { "Aumenta del $N1% la probabilità di colpo critico dei tuoi incantesimi ⟦Holy Shock=Folgore Sacra⟧ e ⟦Holy Light=Luce Sacra⟧.", nil, 0x0a423554, nil, "um" },
   [1224692] = { "Aumenta del $N1% tutte le cure prodotte dai tuoi incantesimi e del $N2% tutte le cure che ricevi.", nil, 0x4065c70b, nil, "um" },
   [1224697] = { "Aumenta del $N1% la tua Tempra totale e riduce di $D1 il tempo di recupero dei tuoi incantesimi ⟦Divine Shield=Scudo Divino⟧, ⟦Divine Protection=Protezione Divina⟧ e Templar's Bulwark.", nil, 0x6ff8c6b6, nil, "um" },
