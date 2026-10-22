@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["0b7a3a3465548d4f"] = { "Forse sono stato troppo precipitoso nel giudicarti, {class}. Pare che la tua fede cieca in questa Luce abbia un qualche valore, dopotutto.\n\nDammi il tuo marchio e ne amplificherò il potere.", "." },
   ["0b7c867f8e765823"] = { "Chaw Stronghide risiede nella grande tenda all'angolo nord-ovest del villaggio. Per ora ti insegnerà ciò che devi sapere sulla Conciatura.", "." },
   ["0b7ef27c8c743d18"] = { "Uff.", "." },
+  ["0b8098cdf6933d19"] = { "Ecco fatto: ora puoi fabbricare una Lodestone tutta tua. Alla gente non piace granché vedere accampamenti montati in centro città, quindi dovrai andartene in mezzo alla natura selvaggia se vuoi provarla.\n\nAh, e ricorda: nessun accampamento è completo senza un fuoco da campo. Te ne servirà uno prima di montare il tuo accampamento. Quasi tutti i cuochi possono insegnarti ad accendere un fuoco. Se non l'hai già fatto, potresti fare un salto da qualcuno che ti istruisca nelle arti culinarie, per impararne le basi.", "." },
   ["0b834f3eaa746117"] = { "Come hai richiesto, il caporale Splithoof è arrivato, {name}.", "." },
   ["0b84e029089ae3cc"] = { "Percepisco l'OMBRA nei vostri cuori. Non c'è pace per i malvagi!", "." },
   ["0b850e7b78b68681"] = { "Hai visto cose strane nel deserto, di recente?", "." },

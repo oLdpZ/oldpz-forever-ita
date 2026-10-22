@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["5456b59aef3be5f0"] = { "C'è dell'altro?", "." },
   ["545b411e79de6056"] = { "Non puoi nasconderti da me!", "." },
   ["546dd6cb0dae420d"] = { "L'orso ti guarda con calma e pazienza, ma non dice nulla.", "." },
+  ["547275386e1e1645"] = { "Ecco fatto: ora puoi fabbricare un Fish Bowl tutto tuo. Alla gente non piace granché vedere accampamenti montati in centro città, quindi dovrai andartene in mezzo alla natura selvaggia se vuoi provarlo.\n\nAh, e ricorda: nessun accampamento è completo senza un fuoco da campo. Te ne servirà uno prima di montare il tuo accampamento. Quasi tutti i cuochi possono insegnarti ad accendere un fuoco. Se non l'hai già fatto, potresti fare un salto da qualcuno che ti istruisca nelle arti culinarie, per impararne le basi.", "." },
   ["547414273202a272"] = { "Vogliamo affrontare il Profanatore.", "." },
   ["5475eaabd126ccac"] = { "Davvero? Chiamali, servitore.", "." },
   ["5476cf471d3f99fe"] = { "È da un po' che non ti si vede da queste parti. Hai trovato il tomo e le verghe?", "." },

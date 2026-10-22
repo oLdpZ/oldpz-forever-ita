@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["310193d24d78c2c2"] = { "L'anziano Dreamseer risiede a ⟦Gadgetzan=Meccania⟧, nel deserto di Tanaris.", "." },
   ["31045ed168214e40"] = { "Interessante... Non l'avevo notato prima...", "." },
+  ["310d83d617c02a9f"] = { "Che notizie porti della Guardia della Morte Falgan?", "." },
   ["311b84425729a830"] = { "Prendete la base. Noi la assedieremo da terra.", "." },
   ["311b89d072329065"] = { "Ti rallenterò soltanto, ma nessun umano dalla pelle rosa mi separerà dalla libertà!", "." },
   ["311c2ba10a02d357"] = { "Liladris mi aspetta all'⟦Maestra's Post=Accampamento di Maestra⟧, quindi dovremmo sbrigarci, {name}.", "." },

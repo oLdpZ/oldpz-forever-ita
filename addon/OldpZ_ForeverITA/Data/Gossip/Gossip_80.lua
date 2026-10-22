@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["80176c121afced13"] = { "Sì, è vero. Paladini e sacerdoti affinano le loro abilità e studiano grandi verità dentro le mura della Cattedrale.", "." },
   ["8026003f044a17ba"] = { "Come vanno i tuoi viaggi, {name}? Ho sentito racconti delle tue avventure: a quanto pare hai avuto molto da fare. Ora vediamo cosa hai imparato mentre eri via.", "." },
   ["802760c26da61e3e"] = { "Alla tribù dei Selvanera non si deve permettere di ostacolare il corso della natura.", "." },
+  ["802e37b7d2c376c1"] = { "Spero di non esserti di troppo disturbo, nobile {class}.", "." },
   ["80302cbd64c6d426"] = { "Possiamo restare solo pochi istanti prima di tornare alla torre. Se vuoi parlarci ancora, ci troverai lì.", "." },
   ["803e8d9164e10bb7"] = { "Un altro esperto di sopravvivenza, mmh. Dubito che la tua abilità sia grande quanto la mia, quindi forse posso insegnarti qualche tecnica come si deve.", "." },
   ["803ea69cdd41e5bc"] = { "Chi controlla la ⟦Coldtooth Mine=Miniera di Dentefreddo⟧?", "." },

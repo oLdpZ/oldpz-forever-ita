@@ -20,6 +20,7 @@ WFJ.Data.add("gossip", {
   ["014573843b7a6aa7"] = { "Ho troppo da fare e troppo poco tempo per farlo, {race}! Ti prego, levati di mezzo.", "." },
   ["014a131845a36b73"] = { "Seguitemi, amici. Al Castello di ⟦Stormwind=Roccavento⟧!", "." },
   ["014ea8506ecfba38"] = { "Devo smettere di fumare! Dammi un minuto per riprendere fiato.", "." },
+  ["01530ff61a3b291e"] = { "Ecco fatto: una tenda da campo tutta tua. Alla gente non piace granché vedere tende montate in centro città, quindi dovrai andartene in mezzo alla natura selvaggia se vuoi provarla.\n\nAh, e ricorda: nessun accampamento è completo senza un fuoco da campo. Te ne servirà uno prima di montare il tuo accampamento. Quasi tutti i cuochi possono insegnarti ad accendere un fuoco. Se non l'hai già fatto, potresti fare un salto da qualcuno che ti istruisca nelle arti culinarie, per impararne le basi.", "." },
   ["01531197b9f4a36e"] = { "Strano. Molto strano...", "." },
   ["0159c2043d8a2169"] = { "Il Flagello è sconfitto! ⟦Darrowshire=Borgo di Darrow⟧ è salvo!", "." },
   ["0159d6ad19a29743"] = { "Ah sì, ne ho sentito parlare.", "." },
