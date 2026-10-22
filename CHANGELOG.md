@@ -15,6 +15,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Missioni dei livelli 1–20 tradotte in italiano: circa 1.140 missioni, con titolo, obiettivi, descrizione, testo di avanzamento e di completamento.
 - Missioni dei livelli 21–30 tradotte in italiano: circa 450 missioni in più.
 - Missioni dei livelli 31–40 tradotte in italiano: circa 460 missioni in più.
+- Missioni dei livelli 41–50 tradotte in italiano: circa 480 missioni in più.
 - Nuova impostazione "stile dei nomi": `/fita nomi it` mostra i nomi italiani ufficiali di luoghi, personaggi e oggetti (predefinito), `/fita nomi en` quelli inglesi.
 - I nomi sono marcati anche nelle descrizioni ufficiali di oggetti e abilità, così seguono lo stile dei nomi scelto.
 - Glossario derivato dai nomi ufficiali, usato per tenere coerenti i nomi in tutte le traduzioni.
@@ -23,7 +24,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Le segnalazioni dal gioco (una riga tradotta male, un errore o un'idea, l'inglese raccolto) aprono i moduli del progetto su GitHub: il link si copia dalla finestra e si apre nel browser.
 
 ### Fixed
-- Nomi più coerenti nelle missioni: oggetti degli obiettivi con il nome ufficiale italiano anche nei livelli 1–20, Babbo Inverno e la Masseria Buongusto, Guardiani della Notte, epiteti dei personaggi.
+- Nomi più coerenti nelle missioni: oggetti degli obiettivi con il nome ufficiale italiano anche nei livelli 1–20, Babbo Inverno e la Masseria Buongusto, Guardiani della Notte, epiteti dei personaggi, arcidruido, segatronchi e i titoli dei personaggi (guardiano, ispettore, signore supremo).
 
 ### Changed
 - Alcune righe restano in inglese di proposito (ad esempio dove il gioco mostra testo che non va tradotto): non è una traduzione mancante.
