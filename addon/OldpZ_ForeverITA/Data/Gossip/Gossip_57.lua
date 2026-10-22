@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["57519a901c6fb1ff"] = { "Un essere di grande potere si è risvegliato.", "." },
   ["57561b5ecb530a5f"] = { "Era destino, Windsor? Se sei venuto in cerca di morte, allora la profezia si è compiuta. Che la tua coscienza marcisca nella ⟦Twisting Nether=Distorsione Fatua⟧. Finite il resto di questi insetti impiccioni, figli miei. Bolvar, sei stato un burattino piacevole.", "." },
   ["575ce926b1a7e2a7"] = { "Ce l'abbiamo fatta, {name}!", "." },
+  ["57705db0a34cb5f5"] = { "Non riesco proprio a immaginare perché qualcuno voglia rubare questi componenti a questo costrutto. A parte il gyrozephyr, non hanno quasi nessuna utilità pratica. E perfino il gyro sarebbe pressoché inutile fuori dallo scopo per cui è stato creato.", "." },
   ["577c0fab8faed76f"] = { "Se lo chiedi a me, Grif passa un po' troppo tempo con gli animali. Eppure nessun altro conosce la via del cacciatore come lui. Cercalo fuori dalla fucina di Kharanos.", "." },
   ["577c475f46dc95ae"] = { "... Un messaggio da Banehollow? Che messaggio? Ha bisogno del suo grande consigliere e servitore, Ulathek? Richiede la mia presenza?", "." },
   ["578114aaa1d35b59"] = { "Sono anni che non vedo un'armatura migliore, {name}. Da quando mi addestravo sotto Grumnus Steelshaper nella ⟦Great Forge=Grande Forgia⟧. Scommetto che potrebbe insegnarti cose sulla fabbricazione delle armature che ti interesserebbero.", "." },
