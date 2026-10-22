@@ -7,5 +7,8 @@ WFJ.Data.add("spell", {
   [1215510] = { "Assorbe $N1 danni da gelo. Dura $D1.", "Assorbe $N1 danni da gelo.", 0x08003478, 0xa3f74587, "uu" },
   [1215512] = { "Assorbe $N1 danni da ombra. Dura $D1.", nil, 0x8d4773b5, nil, "um" },
   [1215625] = { "Riduce tutti i danni da incantesimi subiti del $N1%.", nil, 0x9a4d57c2, nil, "um" },
+  [1215740] = { "Infligge danni da ombra a un nemico e ne riduce la velocità di movimento per $D1.", nil, 0xb24a12b1, nil, "um" },
   [1215753] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
+  [1215755] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [1215885] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
 })

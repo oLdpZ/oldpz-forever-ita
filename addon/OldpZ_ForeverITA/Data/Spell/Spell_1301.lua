@@ -5,7 +5,9 @@ WFJ.Data.add("spell", {
   [1301078] = { "+$N1 potenza d'attacco contro le bestie.", nil, 0x2e7564c4, nil, "um" },
   [1301084] = { "+$N1 potenza d'attacco contro i non morti.", nil, 0xa2233649, nil, "um" },
   [1301090] = { "+$N1 alla potenza d'attacco contro gli elementali.", nil, 0x9ad47681, nil, "um" },
+  [1301124] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1301126] = { "Riduce del $N1% la probabilità che gli effetti di paura ti colpiscano.", nil, 0xd3bb670e, nil, "um" },
   [1301168] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
+  [1301635] = { nil, "Immune alla magia.", nil, 0xcb106244, "mu" },
   [1301636] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
 })

@@ -5,5 +5,5 @@ WFJ.Data.add("spell", {
   [434495] = { "Trasforma la tua cavalcatura in qualcosa di più festoso.", nil, 0x3ce08c15, nil, "um" },
   [434508] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [434837] = { nil, "Armatura ridotta di $N1.", nil, 0x57b604c7, "mu" },
-  [434907] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
+  [434907] = { "Aumenta i danni fisici inflitti dall'incantatore di $N1 e la sua velocità d'attacco del $N2% per $D1.", "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", 0xb2977433, 0xbc6c8e1d, "uu" },
 })

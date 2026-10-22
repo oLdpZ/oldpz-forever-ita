@@ -10,6 +10,7 @@ WFJ.Data.add("spell", {
   [461347] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
   [461348] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
   [461349] = { nil, "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", nil, 0xbc6c8e1d, "mu" },
+  [461470] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [461569] = { "Aumenta le cure prodotte da incantesimi ed effetti fino a un massimo di $N1.", nil, 0x28fa3697, nil, "um" },
   [461580] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [461607] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },

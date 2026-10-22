@@ -29,6 +29,7 @@ WFJ.Data.add("spell", {
   [1240976] = { "Permette a un sarto di creare camicie e armature all'ultima moda. Puoi salire di competenza fino a un massimo di $N1.", nil, 0xe2a4a586, nil, "um" },
   [1240977] = { "Permette a un alchimista di distillare pozioni straordinarie fino a una competenza potenziale massima di $N1.", nil, 0xd6142c38, nil, "um" },
   [1240979] = { "Permette a un fabbro di creare armi e armature fino a una competenza potenziale massima di $N1.", nil, 0xe371f4b0, nil, "um" },
+  [1240980] = { "Permette a un cuoco di preparare ricette straordinarie. Puoi salire di competenza fino a un massimo di 300.", nil, 0xd70341df, nil, "um" },
   [1240981] = { "Permette a un incantatore di applicare incantamenti magistrali ad armi e armature, fino a una competenza massima di $N1.", nil, 0xd659910b, nil, "um" },
   [1240982] = { "Permette a un ingegnere di creare bombe e congegni davvero sorprendenti, fino a una competenza massima di $N1.", nil, 0xd6367be4, nil, "um" },
   [1240985] = { "Permette a un conciatore di creare armature di cuoio di qualità da specialista, fino a una competenza potenziale massima di $N1.", nil, 0xd5f1e12d, nil, "um" },

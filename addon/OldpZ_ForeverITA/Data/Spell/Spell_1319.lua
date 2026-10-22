@@ -2,11 +2,13 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1319202] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1319258] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
   [1319259] = { nil, "Danni da sacro subiti aumentati.", nil, 0x6508d97f, "mu" },
   [1319382] = { "Aumenta la Forza di $N1 per $D1.", "Forza aumentata di $N1.", 0xeb1f7146, 0x90d8a2f8, "uu" },
   [1319423] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1319426] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1319427] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1319539] = { nil, "Spirito ridotto di $N1.", nil, 0x9eeea285, "mu" },
+  [1319632] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
   [1319792] = { "Infligge $N1 danni da natura ai nemici vicini.", nil, 0xb85c687d, nil, "um" },
 })

@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [369330] = { "Evoca una pioggia di lava che brucia tutti i nemici in un'area bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco ogni $D1.", 0xee6af47d, 0x5a5656de, "uu" },
+  [369982] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
 })

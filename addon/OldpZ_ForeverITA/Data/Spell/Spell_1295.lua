@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1295233] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", nil, 0xc0d35181, nil, "um" },
+  [1295279] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1295387] = { "Evoca e congeda un Cavallo da Guerra Scheletrico cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0xd0dfd432, 0x2195529a, "uu" },
   [1295678] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1295683] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },

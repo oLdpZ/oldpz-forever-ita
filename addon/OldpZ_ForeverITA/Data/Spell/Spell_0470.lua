@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [470031] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici vicini, respingendoli indietro e stordendoli per $D1.", "Stordito.", 0x476b69d8, 0x27f95286, "uu" },
+  [470052] = { nil, "Velocità di movimento ridotta.", nil, 0xeadcb05a, "mu" },
   [470108] = { "Ti trasformi in pietra, diventando immune a tutti gli attacchi fisici e agli incantesimi per $D1, ma per tutto quel tempo non puoi attaccare, muoverti né lanciare incantesimi. Puoi beneficiare dell'effetto di un solo tonico alla volta.", "Immune ad attacchi e incantesimi. Impossibile attaccare, muoversi o usare incantesimi.", 0x7d8a1bc0, 0x16dc02b3, "uu" },
   [470124] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
   [470265] = { nil, "Frastornato.", nil, 0x8649cd0f, "mu" },

@@ -2,6 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1219206] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
+  [1219267] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
+  [1219269] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [1219270] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
   [1219355] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
   [1219379] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },

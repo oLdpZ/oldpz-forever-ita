@@ -134,6 +134,7 @@ WFJ.Data.add("spell", {
   [24392] = { "I tuoi incantesimi Dardo di Gelo hanno una probabilità del $N1% di rigenerare $N2 mana quando vengono lanciati.", nil, 0xaacc97b8, nil, "um" },
   [24394] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [24402] = { nil, "Riduce la probabilità d'impatto con incantesimi e attacchi in mischia di $N1.", nil, 0x22327985, "mu" },
+  [24407] = { "Sopraffà istantaneamente un nemico, infliggendo i danni dell'arma e $N1 danni aggiuntivi. Utilizzabile solo dopo che il bersaglio ha schivato. Dominazione non può essere bloccata, schivata o parata.", nil, 0xe292d06f, nil, "um" },
   [24408] = { "Carica un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", nil, 0xaf4293e6, nil, "um" },
   [24409] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare. Utilizzabile solo all'interno del ⟦Arathi Basin=Bacino d'Arathi⟧.", nil, 0xde9a4fab, nil, "um" },
   [24410] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare. Utilizzabile solo all'interno del ⟦Arathi Basin=Bacino d'Arathi⟧.", "$N1 salute rigenerata e $N2 mana rigenerato ogni secondo.", 0x21288bb1, 0x41faa520, "uu" },

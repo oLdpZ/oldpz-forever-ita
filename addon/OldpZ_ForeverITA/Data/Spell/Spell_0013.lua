@@ -297,6 +297,8 @@ WFJ.Data.add("spell", {
   [13947] = { "Incanta in modo permanente dei guanti, fornendo un lieve bonus alla velocità di movimento quando sei in sella.", nil, 0xffd47f87, nil, "um" },
   [13948] = { "Incanta in modo permanente dei guanti per conferire +$N1% alla velocità d'attacco e di lancio degli incantesimi.", nil, 0x1441e518, nil, "um" },
   [13951] = { "Ripara un golem amico vicino per $N1 danni ogni $N2 s per $D2.", "$N1 danni riparati ogni $N2 s.", 0x54e85f29, 0x7ca00158, "uu" },
+  [13952] = { "Si affida alla magia sacra per curare un alleato.", nil, 0x4305c810, nil, "um" },
+  [13953] = { "Consacra l'arma dell'incantatore, infliggendo $N1 danni aggiuntivi al successivo attacco. I danni inflitti sono danni da sacro.", nil, 0xd04665c0, nil, "um" },
   [13958] = { "Riduce la probabilità che i nemici ti individuino mentre sei in modalità furtiva, come se il tuo livello fosse superiore di $N1 livelli.", nil, 0xbe694887, nil, "um" },
   [13959] = { "Quando subisci un attacco, hai una probabilità del $N1% di infliggere $N2 danni da natura all'attaccante.", nil, 0xfb53f46d, nil, "um" },
   [13960] = { "Conferisce ai tuoi attacchi in mischia con l'arma un beneficio che dipende dall'arma.\n\n|CFFFFFFFFAscia/Spada:|R i tuoi attacchi in\n mischia riusciti hanno una probabilità\n del $N1% di attivare un attacco\n aggiuntivo sul bersaglio.\n\n|CFFFFFFFFPugnale/Tirapugni:|R aumenta la tua\n probabilità di critico del $N2%.\n\n|CFFFFFFFFMazza:|R i tuoi attacchi ignorano il $N3%\n dell'Armatura del bersaglio.", nil, 0xdb5f3773, nil, "um" },

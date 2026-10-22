@@ -331,6 +331,7 @@ WFJ.Data.add("spell", {
   [23850] = { nil, "Effetti di cura ridotti del $N1%.", nil, 0x25745901, "mu" },
   [23851] = { "L'uovo si schiude e genera una Pincopallina. È necessario aspettare un po' di tempo prima che l'uovo si schiuda.", nil, 0x677d8716, nil, "um" },
   [23858] = { "Genera un'esplosione di luce divina, infliggendo $N1 danni da sacro ai nemici vicini e riducendo la quantità di minaccia dell'incantatore per $D1.", nil, 0xd810826d, nil, "um" },
+  [23859] = { "Disperde la magia su un alleato, dissolvendo $N1 incantesimi negativi.", nil, 0x6864240a, nil, "um" },
   [23860] = { "Consuma un nemico nelle fiamme, bruciandolo e infliggendo danni da fuoco aggiuntivi ogni $N1 s in $D2.", "Danni da fuoco inflitti ogni $N1 s.", 0x2900110b, 0xfd7a76cf, "uu" },
   [23861] = { "Infligge $N1 danni da natura ai nemici vicini ogni $N2 s per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0xa5f95a74, 0xf6322bec, "uu" },
   [23862] = { "Sputa veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $N1 s per $D2.", "Danni da natura inflitti ogni $N1 s.", 0xf250210d, 0xaae6fcde, "uu" },

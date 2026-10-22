@@ -14,6 +14,7 @@ WFJ.Data.add("spell", {
   [412231] = { "Assorbe $N1 danni da fuoco. Dura $D1.", nil, 0x02e1e8ba, nil, "um" },
   [412232] = { "Assorbe $N1 danni da fuoco. Dura $D1.", nil, 0x02e1e8ba, nil, "um" },
   [412325] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
+  [412526] = { "Infligge danni da ombra a un nemico e ne riduce la velocità di movimento per $D1.", nil, 0xb24a12b1, nil, "um" },
   [412532] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbe1d3d24, "mu" },
   [412789] = { "Costringe tutti i nemici vicini a concentrare i loro attacchi su di te per $D1.", "Provocato.", 0x0cbe2fc8, 0x36f56123, "uu" },
   [412790] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

@@ -23,6 +23,7 @@ WFJ.Data.add("spell", {
   [30112] = { "Si lancia in picchiata su un nemico, infliggendo danni normali più $N1 e stordendo l'avversario per $D1.", "Stordito.", 0xab228865, 0x27f95286, "uu" },
   [30113] = { "Aumenta di $N1 i danni subiti da un nemico per $D1.", "Danni subiti aumentati di $N1.", 0xbb8293cb, 0x101f12be, "uu" },
   [30121] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, respingendolo indietro.", nil, 0xcfea6646, nil, "um" },
+  [30138] = { "Sferza istantaneamente i nemici vicini con la magia oscura, infliggendo danni da ombra.", nil, 0x5a61f917, nil, "um" },
   [30152] = { "Clicca col pulsante destro per evocare e congedare un Cucciolo di Tigre Bianca.", nil, 0xf9a3ddc7, nil, "um" },
   [30156] = { "Clicca col pulsante destro per evocare e congedare un Cucciolo di Ippogrifo.", nil, 0x6a69107e, nil, "um" },
   [30160] = { "I tuoi colpi critici con gli incantesimi a danno diretto aumentano del $N1% la tua probabilità di colpo critico con gli attacchi in mischia per $D1.", nil, 0xcac3ccc2, nil, "um" },

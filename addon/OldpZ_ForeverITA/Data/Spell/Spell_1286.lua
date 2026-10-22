@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [1286025] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1286026] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1286177] = { "Punisce un nemico, infliggendo danni da sacro.", nil, 0x20941603, nil, "um" },
+  [1286183] = { "Spara una raffica di colpi contro un nemico e i suoi alleati vicini, colpendo fino a un massimo di $N1 bersagli con danni normali e $N2 danni aggiuntivi.", nil, 0x2f4b5730, nil, "um" },
   [1286238] = { "Scuoiatura +$N1.", nil, 0xcb590ff6, nil, "um" },
   [1286251] = { nil, "Minaccia generata ridotta del $N1%.", nil, 0x69005136, "mu" },
   [1286253] = { "Piazza una Benedizione sul bersaglio alleato, aumentando la potenza d'attacco in mischia di $N1 per $D1. Il bersaglio alleato può ricevere solo una Benedizione per Paladino alla volta.", "Potenza d'attacco in mischia aumentata di $N1.", 0x4fee37ec, 0x92e5f308, "uu" },

@@ -15,6 +15,6 @@ WFJ.Data.add("spell", {
   [1302661] = { nil, { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, nil, 0x2195529a, "mu" },
   [1302707] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1302717] = { nil, "Disarmato.", nil, 0x98985eda, "mu" },
-  [1302767] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0xd8c7b0a1, "mu" },
+  [1302767] = { "Infligge $N1 danni da natura a un nemico e altri $N2 danni ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0xb0c5d469, 0xd8c7b0a1, "uu" },
   [1302875] = { nil, "Tempra aumentata di $N1.", nil, 0x4e3c4e5f, "mu" },
 })

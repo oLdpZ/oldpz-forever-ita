@@ -12,6 +12,7 @@ WFJ.Data.add("spell", {
   [436480] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [436536] = { "Ti riporta alla tua residenza. Parla con un locandiere in un'altra località per cambiare la tua residenza.", nil, 0xf92eb2a9, nil, "um" },
   [436537] = { nil, "Congelato.", nil, 0x16ac477b, "mu" },
+  [436739] = { nil, "Velocità d'attacco aumentata del $N1%.", nil, 0x8859e2db, "mu" },
   [436831] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [436937] = { "Cura un bersaglio alleato di $N1 e di altri $N2 in $D1.", "Cura di $N1 ogni $N2 s.", 0x1430248d, 0x9eb1427b, "uu" },
   [436938] = { "Cura un bersaglio alleato di $N1 e di altri $N2 in $D1.", "Cura di $N1 ogni $N2 s.", 0x1430248d, 0x9eb1427b, "uu" },

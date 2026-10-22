@@ -4,4 +4,5 @@ WFJ.Data.add("spell", {
   [457569] = { nil, "Invulnerabile, ma impossibilitato ad agire.", nil, 0xb1a1673e, "mu" },
   [457645] = { "Aumenta l'indice di blocco con lo scudo di $N1.", nil, 0xb2abc955, nil, "um" },
   [457816] = { nil, "Danni fisici inflitti aumentati del $N1%.", nil, 0x4bd3d550, "mu" },
+  [457848] = { "Consacra l'arma dell'incantatore, infliggendo $N1 danni aggiuntivi al successivo attacco. I danni inflitti sono danni da sacro.", nil, 0xd04665c0, nil, "um" },
 })

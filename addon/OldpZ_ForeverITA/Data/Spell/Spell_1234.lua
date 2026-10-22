@@ -17,5 +17,7 @@ WFJ.Data.add("spell", {
   [1234823] = { "Permette al Ladro di muoversi furtivamente, ma riduce la tua velocità del $N1%. Dura fino all'annullamento.", nil, 0xe555a300, nil, "um" },
   [1234862] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },
   [1234864] = { "Aumenta lo Spirito dei membri del gruppo vicini di $N1.", nil, 0x23ae3f5e, nil, "um" },
-  [1234893] = { nil, "Danni da sacro subiti aumentati.", nil, 0x6508d97f, "mu" },
+  [1234870] = { "Consacra l'arma dell'incantatore, infliggendo $N1 danni aggiuntivi al successivo attacco. I danni inflitti sono danni da sacro.", nil, 0xd04665c0, nil, "um" },
+  [1234893] = { "Infligge $N1 danni a un nemico e aumenta i danni da sacro subiti di $N2 per ⟦Crusader Strike=Assalto del Crociato⟧. Si accumula fino a 5 volte. Dura $D1.", "Danni da sacro subiti aumentati.", 0xe1adbda3, 0x6508d97f, "uu" },
+  [1234894] = { "Infligge i danni dell'arma e $N1 danni aggiuntivi a un nemico e ai suoi alleati più vicini, colpendo fino a un massimo di $N2 bersagli.", nil, 0xbd91ba0f, nil, "um" },
 })

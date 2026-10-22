@@ -105,7 +105,7 @@ WFJ.Data.add("spell", {
   [27634] = { "Frastorna un nemico, riducendo la sua velocità di movimento del $N1% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xd6ffef29, 0x08fe36e7, "uu" },
   [27635] = { "Lancia un fulmine che infligge $N1 danni da natura.", nil, 0x50eaf6a6, nil, "um" },
   [27636] = { "Frammenti stellari cadono sulla testa del bersaglio nemico, infliggendo $N1 danni da arcano in $D1.", "$N1 danni da arcano inflitti ogni $N2 s.", 0xd2bcccc1, 0xfca4d861, "uu" },
-  [27637] = { "Cura un alleato di una quantità fissa, poi rigenera altra salute ogni $D1 per $D2.", nil, 0xa1edb50c, nil, "um" },
+  [27637] = { "Cura un alleato di una quantità fissa, poi rigenera altra salute ogni $D1 per $D2.", "Danni curati ogni $D1.", 0xa1edb50c, 0x71ec551c, "uu" },
   [27638] = { "Graffia il bersaglio, infliggendo $N1 danni e $N2 danni aggiuntivi in $D1.", "$N1 danni da sanguinamento subiti ogni $N2 s.", 0xd23334a8, 0x59c933ab, "uu" },
   [27640] = { "Infligge danni da ombra a un nemico, riducendone la velocità di movimento per $D1.", "Danni da ombra subiti in $D1.\nVelocità di movimento ridotta.", 0xb24a12b1, 0x0ff93482, "uu" },
   [27641] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
