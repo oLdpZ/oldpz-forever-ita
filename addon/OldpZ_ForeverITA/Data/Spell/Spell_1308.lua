@@ -3,5 +3,13 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1308520] = { nil, "Velocità di movimento aumentata del $N1%.", nil, 0xd5c3ac7c, "mu" },
   [1308707] = { "Maledice un nemico con l'⟦Eye of Paleth=Occhio di Paleth⟧, riducendo di $N1 i danni fisici che infligge e rallentando del $N2% il lancio dei suoi incantesimi per $D1.", nil, 0xf7e31f61, nil, "um" },
+  [1308769] = { "Aumenta del $N1% la probabilità di bloccare gli attacchi con uno scudo. L'effetto raddoppia nelle zone montuose.", nil, 0x8d25e1c9, nil, "um" },
+  [1308816] = { "Aumenta del $N1% la probabilità di infliggere un colpo critico. L'effetto raddoppia mentre sei in acqua o sull'acqua.", nil, 0xe3393bad, nil, "um" },
+  [1308836] = { "Ti permette di mostrare il titolo \"Bloodsail Admiral\" su questo personaggio finché resti in buoni rapporti con i ⟦Bloodsail Buccaneers=Bucanieri Velerosse⟧.", nil, 0xc306b438, nil, "um" },
   [1308843] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", nil, 0xc0d35181, nil, "um" },
+  [1308870] = { "Clicca col pulsante destro per evocare e congedare il tuo punteruolo.", nil, 0xdcb15f31, nil, "um" },
+  [1308910] = { "Rimuove $N1 effetto di veleno.", nil, 0x396a13ff, nil, "um" },
+  [1308913] = { "I tuoi attacchi in mischia hanno una probabilità di conferire mana.", nil, 0xa1973b06, nil, "um" },
+  [1308917] = { "Rimuove $N1 effetto di disarmo dall'alleato bersaglio.", nil, 0x5af749bd, nil, "um" },
+  [1308939] = { "I danni di ⟦Fire Nova=Esplosione di Fuoco⟧ prolungano di $D1 la durata della tua ⟦Flame Shock=Folgore del Fuoco⟧ sul bersaglio. Contro le Bestie la durata viene prolungata di altri $D2.", nil, 0x282524ea, nil, "um" },
 })
