@@ -191,3 +191,22 @@ def test_read_tsv_round_trips_and_refuses_another_shape(tmp_path):
         out.write_text(co.HEADER + "\n" + bad, encoding="utf-8")
         with pytest.raises(ValueError):
             co.read_tsv(out)
+
+
+def test_a_quest_text_name_replaces_a_later_wowhead_rename(tmp_path):
+    path = tmp_path / "missioni.tsv"
+    path.write_text(
+        co.QUEST_HEADER + "\n15183\tGeologist Larksbane\tGeologa Guastafesta\t8284 Il mistero del Crepuscolo\n",
+        encoding="utf-8",
+    )
+    rows = [
+        (15183, "name", "Geologist Larksbane", "Geologa Gneiss", "wowhead"),
+        (15184, "name", "Other", "Altro", "wowhead"),
+    ]
+    out = co.apply_quest_names(rows, co.read_quest_names(path))
+    assert out[0][3] == "Geologa Guastafesta"
+    assert out[1] == rows[1]
+    # another English under the same id is not touched
+    other = [(15183, "name", "Someone Else", "X", "wowhead")]
+    assert co.apply_quest_names(other, co.read_quest_names(path))[0][3] == "X"
+    assert co.read_quest_names(tmp_path / "missing.tsv") == {}

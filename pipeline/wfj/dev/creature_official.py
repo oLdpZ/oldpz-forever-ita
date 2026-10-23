@@ -6,7 +6,11 @@ Two Blizzard sources, each kept only where its English is the English Forever sh
 `db2` is Creature.db2 from wago.tools (`Name_lang` -> name, `Title_lang` -> subname, enUS and itIT), `wowhead`
 is the Wowhead tooltip endpoint (the `name` of locale 0 and locale 9; the title is not asked there, its
 `tooltip` field is not reliable for it). db2 wins; Wowhead is asked only for the ids db2 gave no name for.
-Wowhead answers are cached one file per (id, locale), a miss as an empty file, so a rerun resumes."""
+Wowhead answers are cached one file per (id, locale), a miss as an empty file, so a rerun resumes.
+
+`pipeline/creature_official_missioni.tsv` (id, en, it, missione) corrects a Wowhead name with the one
+Blizzard's own Italian quest text of the classic era gives the same NPC, where the NPC was renamed later
+(Geologist Larksbane is «Geologa Gneiss» on Wowhead, «Geologa Guastafesta» in «Il mistero del Crepuscolo»)."""
 
 from __future__ import annotations
 
@@ -27,6 +31,8 @@ from wfj.paths import data_root
 
 Official = tuple[int, str, str, str, str]
 OUT = Path(__file__).resolve().parents[2] / "creature_official.tsv"
+QUEST_NAMES = OUT.with_name("creature_official_missioni.tsv")
+QUEST_HEADER = "id	en	it	missione"
 HEADER = "id\tfield\ten\tit\tfonte"
 CACHE = Path("/root/inputs/wowhead-npc")
 URL = "https://nether.wowhead.com/tooltip/npc/{id}?dataEnv=1&locale={locale}"
@@ -211,6 +217,31 @@ def build(
     return sorted(rows, key=lambda r: (r[0], r[1]))
 
 
+def read_quest_names(path: Path) -> dict[int, tuple[str, str]]:
+    """{id: (en, it)} from `creature_official_missioni.tsv`; no file → {}."""
+    if not Path(path).exists():
+        return {}
+    lines = Path(path).read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0] != QUEST_HEADER:
+        raise ValueError(f"{path}: the first line must be {QUEST_HEADER!r}")
+    out: dict[int, tuple[str, str]] = {}
+    for n, raw in enumerate(lines[1:], 2):
+        parts = raw.split("	")
+        if len(parts) != 4 or not parts[0].isdigit() or not parts[2].strip():
+            raise ValueError(f"{path}:{n}: not `{QUEST_HEADER}`: {raw!r}")
+        out[int(parts[0])] = (parts[1], parts[2])
+    return out
+
+
+def apply_quest_names(rows: Iterable[Official], names: dict[int, tuple[str, str]]) -> list[Official]:
+    """A `wowhead` name row whose id and English a quest-text name covers takes that Italian."""
+    out: list[Official] = []
+    for id_, field, en, it, src in rows:
+        fix = names.get(id_) if field == "name" and src == "wowhead" else None
+        out.append((id_, field, en, fix[1] if fix and fix[0] == en else it, src))
+    return out
+
+
 def write_tsv(path: Path, rows: Iterable[Official]) -> None:
     body = "".join(f"{i}\t{f}\t{en}\t{it}\t{src}\n" for i, f, en, it, src in rows)
     Path(path).write_text(HEADER + "\n" + body, encoding="utf-8", newline="\n")
@@ -277,6 +308,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     except Aborted as e:
         print(f"creature_official: aborted, {e}; the cache is kept, rerun to resume", file=sys.stderr)
         return 2
+    try:
+        rows = apply_quest_names(rows, read_quest_names(QUEST_NAMES))
+    except (OSError, ValueError) as e:
+        print(f"creature_official: {e}", file=sys.stderr)
+        return 1
     write_tsv(a.out, rows)
     n = {s: sum(1 for r in rows if r[4] == s) for s in ("db2", "wowhead")}
     print(

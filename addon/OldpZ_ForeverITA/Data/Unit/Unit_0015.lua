@@ -127,7 +127,7 @@ WFJ.Data.add("unit", {
   [15180] = { "Baristolth delle Sabbie Mutevoli", nil, 0x92a52d55, nil, ".m" },
   [15181] = { "Comandante Mar'alith", nil, 0xbeff8a73, nil, ".m" },
   [15182] = { nil, "Capitano della Guardia", 0x76d57443, 0x038cc9ba, "e." },
-  [15183] = { "Geologa Gneiss", nil, 0x88cea8b6, nil, ".m" },
+  [15183] = { "Geologa Guastafesta", nil, 0x88cea8b6, nil, ".m" },
   [15184] = { "Gregario della Fortezza Cenariana", nil, 0xcccc91d8, nil, ".m" },
   [15185] = { "Stirpe di Nozdormu", nil, 0x91ff5b33, nil, ".m" },
   [15186] = { "Fosky", nil, 0x576b5f89, nil, ".m" },
