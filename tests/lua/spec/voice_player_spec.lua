@@ -135,30 +135,77 @@ describe("UI/VoicePlayer", function()
     assert.is_nil(saved.voiceDialogMuted)
   end)
 
-  it("never speaks while the reveal key is held or translation is off; the key going down stops the line",
-  function()
-    WFJ.Settings.set("voice.greeting", "always") -- the same greeting again and again
-    Stub.keys.alt = true
+  local function alt(down)
+    Stub.keys.alt = down
     WFJ.Modifier.refresh()
-    gossip()
+  end
+
+  it("the reveal key going down never stops the line playing", function()
+    Stub.showDetail()
+    alt(true)
+    assert.are.equal("2-description", P.current())
+    assert.are.same({}, v.stopped)
+    assert.are.equal(1, Q.size())
+    alt(false)
+    assert.are.equal(1, #v.sounds) -- not started again
+  end)
+
+  it("a line the window shows while the reveal key is held waits, and starts when the key is let go", function()
+    alt(true)
+    Stub.showDetail() -- the window shows the English: the line is still offered to the player
+    assert.are.equal("Kill Sharptalon at Silverwind Refuge.", QuestInfoDescriptionText:GetText())
     assert.are.equal(0, #v.sounds)
-    Stub.keys.alt = false
-    WFJ.Modifier.refresh()
-    gossip()
+    assert.are.equal(1, Q.size())
+    assert.is_false(P.state().playing)
+    gossip() -- a second line held back too
+    assert.are.equal(2, Q.size())
+    alt(false)
+    assert.are.equal("Uccidi Sharptalon al Rifugio di Ventargento.", QuestInfoDescriptionText:GetText())
     assert.are.equal(1, #v.sounds)
-    Stub.keys.alt = true
-    WFJ.Modifier.refresh()
+    assert.are.equal(E.path("2-description"), v.sounds[1].path)
+    assert.are.equal(1, P.state().waiting)
+  end)
+
+  it("a line ending while the reveal key is held: the next one waits for the key, then starts", function()
+    Stub.showDetail()
+    gossip()
+    alt(true)
+    Stub.fireTimers(3.5)
+    assert.are.equal(1, #v.sounds)
+    assert.are.equal(1, Q.size())
+    assert.are.equal("1", v.cvars.Sound_EnableDialog) -- nothing plays while it waits
+    alt(false)
+    assert.are.equal(2, #v.sounds)
+    assert.are.equal(E.path("g-" .. E.GOSSIP), v.sounds[2].path)
+    assert.are.equal("0", v.cvars.Sound_EnableDialog)
+  end)
+
+  it("translation switched off stops the line and voices nothing", function()
+    WFJ.Settings.set("voice.greeting", "always") -- the same greeting again and again
+    gossip()
+    WFJ.State.setEnabled(false)
     assert.are.same({ 1 }, v.stopped)
     assert.are.equal(0, Q.size())
-    Stub.keys.alt = false
-    WFJ.Modifier.refresh()
-    WFJ.State.setEnabled(false)
     gossip()
     assert.are.equal(1, #v.sounds)
-    WFJ.State.setEnabled(true)
+    assert.are.equal(0, Q.size())
+  end)
+
+  it("a loading screen ends the line and empties the queue", function()
+    Stub.showDetail()
     gossip()
-    WFJ.State.setEnabled(false)
-    assert.are.same({ 1, 2 }, v.stopped)
+    Stub.fireAll("LOADING_SCREEN_ENABLED")
+    assert.are.same({ 1 }, v.stopped)
+    assert.are.equal(0, Q.size())
+    assert.are.equal("1", v.cvars.Sound_EnableDialog)
+  end)
+
+  it("a dialog channel the player switched by hand during the line is left as they chose", function()
+    Stub.showDetail()
+    v.cvars.Sound_EnableDialog = "1" -- turned back on in the sound options mid-line
+    P.stop()
+    assert.are.equal("1", v.cvars.Sound_EnableDialog)
+    assert.is_nil(db.voiceDialogMuted)
   end)
 
   it("voice switched off stops the line; a kind switched off is not voiced", function()

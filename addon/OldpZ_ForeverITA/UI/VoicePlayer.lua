@@ -5,15 +5,19 @@
 --     shown while one plays waits its turn, never twice for one key (the gossip window lays its first page out
 --     twice), and plays when the one before it ends.
 --   * The window closing does not stop its line: it plays to its end, and the lines waiting after it.
---   * Stop (the queue emptied): the panel's stop button, /fita voce stop, translation or voice switched off, the
---     reveal key going down (no voice while English shows), logout. Skip: the next waiting line now.
+--   * The reveal key (Alt) never stops a line already playing: a player holds it to compare the English while
+--     listening. While it is held no line starts: a line shown then (UI/Render fires "lineShown" for a line the key
+--     kept English) or the next one in the queue waits, and starts when the key is let go.
+--   * Stop (the queue emptied): the panel's stop button, /fita voce stop, translation or voice switched off, a
+--     loading screen, logout. Skip: the next waiting line now.
 --   * Channel "Master", so silencing the dialog channel never silences our own line. PlaySoundFile(path, channel) →
 --     willPlay, handle [unverified in the Forever client's own files; the in-game check is in docs/testing/
 --     strategy.md]. The client reports no end: a line ends at the pack's length plus a margin.
 --   * The game's English voice: while a line plays, Sound_EnableDialog is turned off when it was on, and the fact is
 --     kept in OFI_DB.voiceDialogMuted, because the client saves the setting to Config.wtf: a crash in between would
 --     otherwise leave the player's NPC voices off for good. It is put back when the queue runs out, on stop, at
---     logout and on the next load. A player who had the dialog channel off keeps it off.
+--     logout and on the next load. A player who had the dialog channel off keeps it off; one who changed it by hand
+--     while the line played keeps what they chose.
 -- Without a voice pack nothing here creates a frame or calls the sound API: `onShown` returns at once.
 local _, WFJ = ...
 local VoicePlayer = {}
@@ -33,11 +37,16 @@ VoicePlayer.counts = { played = 0, refused = 0 }
 local db -- OFI_DB
 local playing -- { handle, key, token } while a line plays
 local tokens = 0 -- a stale end timer (a line stopped or skipped) finds a newer token and does nothing
-local events -- the PLAYER_LOGOUT frame, made by the first line that plays
+local events -- the loading screen / logout frame, made by the first line queued
 
--- a line may start: translation and voice on, and the reveal key up (no voice starts while English shows)
+-- a line may play or wait: translation and voice on
 local function allowed()
-  return WFJ.State.enabled and not WFJ.State.modifierHeld and WFJ.Settings.get("voice.enabled") and true or false
+  return WFJ.State.enabled and WFJ.Settings.get("voice.enabled") and true or false
+end
+
+-- the reveal key held: English shows, so no line starts (one playing goes on)
+local function held()
+  return WFJ.State.modifierHeld and true or false
 end
 
 local function notify(reason)
@@ -101,10 +110,12 @@ local function playerSex()
   return type(sex) == "function" and sex("player") or nil
 end
 
--- Puts the dialog channel back if this addon turned it off. → true when it did
+-- Puts the dialog channel back if this addon turned it off. Only while it is still off as we left it ("0"): a
+-- player who switched it by hand in the meantime keeps their choice. → true when it did
 function VoicePlayer.restoreDialog()
   if not (db and db.voiceDialogMuted) then return false end
   db.voiceDialogMuted = nil
+  if tostring(getCVar(DIALOG)) ~= "0" then return false end
   setCVar(DIALOG, "1")
   return true
 end
@@ -123,13 +134,16 @@ local function silence()
   playing = nil
 end
 
--- Logout (a /reload too) ends the line: the dialog channel must be back on before the client saves its settings.
-local function watchLogout()
+-- A loading screen ends the line and the queue (the player is somewhere else now); logout (a /reload too) as well:
+-- the dialog channel must be back on before the client saves its settings. LOADING_SCREEN_ENABLED [likely on
+-- Forever; in-game check: a portal or a hearthstone stops the voice].
+local function watchEvents()
   if events then return end
   local createFrame = Compat.resolve("CreateFrame")
   if type(createFrame) ~= "function" then return end
   events = createFrame("Frame")
   events:RegisterEvent("PLAYER_LOGOUT")
+  events:RegisterEvent("LOADING_SCREEN_ENABLED")
   events:SetScript("OnEvent", function() VoicePlayer.stop() end)
 end
 
@@ -150,16 +164,20 @@ end
 
 local startHead -- the queue's head, played (below)
 
-local function finished()
+-- The head is done (ended or skipped): the next line plays, or waits for the reveal key, or the queue is over.
+local function advance()
   playing = nil
   Q.pop()
   if Q.current() and allowed() then
-    startHead()
-    return
+    if not held() then return startHead() end
+    VoicePlayer.restoreDialog() -- nothing plays while the next line waits
+    notify("waiting")
+    return false
   end
   Q.clear()
   VoicePlayer.restoreDialog()
   notify("ended")
+  return false
 end
 
 local function play(item)
@@ -172,13 +190,12 @@ local function play(item)
   local token = tokens
   playing = { handle = handle, key = item.key, token = token }
   VoicePlayer.counts.played = VoicePlayer.counts.played + 1
-  watchLogout()
   -- a greeting set to play once per NPC counts as heard once it actually plays
   if item.greeting and item.speaker then WFJ.Voice.markHeard(item.speaker.creature) end
   local timer = Compat.resolve("C_Timer")
   if type(timer) == "table" and type(timer.After) == "function" then
     timer.After((item.seconds or UNKNOWN_LENGTH) + END_MARGIN, function()
-      if playing and playing.token == token then finished() end
+      if playing and playing.token == token then advance() end
     end)
   end
   return true
@@ -199,23 +216,28 @@ startHead = function()
   return false
 end
 
--- Adds a line to the queue (a window's line, the quest log's replay); it plays now when nothing else does.
--- `item`: { key, path, seconds, window, speaker, name, greeting }. → true when it started now
+-- Adds a line to the queue (a window's line, the quest log's replay); it plays now when nothing else does and the
+-- reveal key is up. `item`: { key, path, seconds, window, speaker, name, greeting }. → true when it started now
 function VoicePlayer.enqueue(item)
   if not allowed() or not Q.push(item) then return false end
-  if Q.size() == 1 then return startHead() end
+  watchEvents()
+  if Q.size() == 1 and not held() then return startHead() end
   notify("queued")
   return false
 end
 
--- The next waiting line now (the panel's next button); with none waiting, the line stops. → true when one started
+-- The next waiting line now (the panel's next button); with none waiting, the line stops and the panel goes after
+-- its usual linger. → true when one started
 function VoicePlayer.skip()
   if Q.size() == 0 then return false end
   silence()
-  Q.pop()
-  if Q.current() and allowed() then return startHead() end
-  VoicePlayer.stop()
-  return false
+  return advance()
+end
+
+-- The reveal key let go: the line that waited for it starts.
+local function released()
+  if playing or not Q.current() or not allowed() or held() then return false end
+  return startHead()
 end
 
 -- State "lineShown" listener. → true when the line started now
@@ -263,7 +285,7 @@ function VoicePlayer.init(savedDb)
   VoicePlayer.listening = true
   -- guarded: an error here must not reach the surface that rendered the line
   WFJ.State.on("lineShown", function(...) pcall(VoicePlayer.onShown, ...) end)
-  WFJ.State.on("modifier", function(held) if held then VoicePlayer.stop() end end)
+  WFJ.State.on("modifier", function(down) if not down then pcall(released) end end)
   WFJ.State.on("enabled", stopUnless)
   WFJ.State.on("voice", function() -- a voice setting changed
     if not WFJ.Settings.get("voice.enabled") then return VoicePlayer.stop() end

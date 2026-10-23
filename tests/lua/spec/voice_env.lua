@@ -87,7 +87,8 @@ function E.setup(withPack)
     lookup = lookup,
     marker = function(n) return S.get("marker." .. n) end,
   }))
-  WFJ.Voice.init({ lookup = lookup, hash = WFJ.Hash.key, setting = S.get, revealed = WFJ.Modifier.isDown,
+  -- as Main wires it: no `revealed` (the player holds a line back while the reveal key is down)
+  WFJ.Voice.init({ lookup = lookup, hash = WFJ.Hash.key, setting = S.get,
     enabled = function() return WFJ.State.enabled end, db = db })
   assert(WFJ.QuestFrame.init())
   assert(WFJ.VoicePlayer.init(db))

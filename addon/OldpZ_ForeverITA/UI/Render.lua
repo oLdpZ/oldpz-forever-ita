@@ -252,7 +252,7 @@ local function sync(rec, fromShow)
   local text, font, action = desired(rec)
   if text == nil then
     pendingFonts[rec] = nil
-    return SS.restore(rec.surface, rec.key)
+    return SS.restore(rec.surface, rec.key), action
   end
   if rec.applied == text and sameFont(rec.appliedFont, font) then
     pendingFonts[rec] = nil
@@ -309,8 +309,12 @@ function Render.show(surface, key, fs, en, area, kind, id, ctx)
   if changed then refit(rec) end
   updateBanner(surface)
   -- the Italian just written for a write the client asked for (never a refresh): the voice player may speak it.
-  -- Guarded: a listener's error must not cost the surface its render.
-  if changed and action == "apply" then pcall(WFJ.State.fire, "lineShown", surface, key, kind, id) end
+  -- A line the reveal key alone kept English is offered too: its voice waits until the key is let go (and the
+  -- refresh shows the Italian). Guarded: a listener's error must not cost the surface its render.
+  local revealed = action == "leave" and WFJ.State.enabled and WFJ.State.areaEnabled(area) and WFJ.State.modifierHeld
+  if (changed and action == "apply") or revealed then
+    pcall(WFJ.State.fire, "lineShown", surface, key, kind, id)
+  end
   return changed
 end
 

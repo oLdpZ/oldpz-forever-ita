@@ -302,7 +302,7 @@ function WFJ.OnLoad()
     lookup = WFJ.Lookup.raw,
     hash = WFJ.Hash.key,
     setting = WFJ.Settings.get,
-    revealed = WFJ.Modifier.isDown,
+    -- no `revealed`: the reveal key only holds a line back, it does not unvoice it (UI/VoicePlayer waits for it)
     enabled = function() return WFJ.State.enabled end,
     db = OFI_DB, -- greetings heard once: OFI_DB.voiceHeard
   }) end)
