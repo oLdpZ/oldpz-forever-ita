@@ -16,7 +16,7 @@ default; the English hash is untouched, so stale detection is unaffected.
 from __future__ import annotations
 
 import re
-from collections.abc import Iterable, Sequence
+from collections.abc import Collection, Iterable, Sequence
 from typing import Protocol
 
 OPEN, CLOSE, SEP = "⟦", "⟧", "="
@@ -86,26 +86,34 @@ def _usable(en: str, it: str, kind: str) -> bool:
     return not any(c in s for s in (en, it) for c in (OPEN, CLOSE, SEP))
 
 
-def mark_names(it: str, glossary: Iterable[Sequence[str]]) -> str:
+def mark_names(it: str, glossary: Iterable[Sequence[str]], english_kinds: Collection[str] = ()) -> str:
     """`it` with every whole-word occurrence of a glossary term's Italian form marked `⟦en=it⟧`. Longest
     Italian form first (then longest English), never inside a marker already there, so a second call changes
     nothing. `glossary`: (en, it[, kind]) rows; a `classe` / `razza` row, or one holding the marker syntax, is
-    skipped."""
+    skipped. A term of one of `english_kinds` (`creatura`: an NPC name the Italian left in English) is also
+    found by its English form, marked with its Italian: both searches run together, longest first, so a name
+    inside a longer one (`Defias Thug` in `Defias Thug Leader`) is never marked on its own."""
     terms: dict[str, str] = {}
+    english: dict[str, str] = {}
     for row in glossary:
         en, form, kind = row[0], row[1], (row[2] if len(row) > 2 else "")
         if not _usable(en, form, kind):
             continue
         if form not in terms or len(en) > len(terms[form]):
             terms[form] = en
+        if kind in english_kinds and en not in english:
+            english[en] = form
     if not terms or not it:
         return it
-    for form in sorted(terms, key=lambda f: (-len(f), -len(terms[f]), f)):
-        word = re.compile(rf"(?<!{_WORD}){re.escape(form)}(?!{_WORD})")
-        marker = f"{OPEN}{terms[form]}{SEP}{form}{CLOSE}"
+    # search text → its marker; an Italian form wins over an English one spelt the same
+    search = {en: f"{OPEN}{en}{SEP}{form}{CLOSE}" for en, form in english.items() if en not in terms}
+    search.update({form: f"{OPEN}{en}{SEP}{form}{CLOSE}" for form, en in terms.items()})
+    for text in sorted(search, key=lambda f: (-len(f), -len(search[f]), f)):
+        word = re.compile(rf"(?<!{_WORD}){re.escape(text)}(?!{_WORD})")
+        marker = search[text]
 
-        def put(text: str, word: re.Pattern[str] = word, marker: str = marker) -> str:
-            return word.sub(lambda _m: marker, text)
+        def put(chunk: str, word: re.Pattern[str] = word, marker: str = marker) -> str:
+            return word.sub(lambda _m: marker, chunk)
 
         parts, at = [], 0
         for m in MARK.finditer(it):  # only the text between markers is searched
@@ -116,9 +124,11 @@ def mark_names(it: str, glossary: Iterable[Sequence[str]]) -> str:
     return it
 
 
-def mark_from_english(it: str, en: str | None, matcher: _Finder | None) -> str:
+def mark_from_english(
+    it: str, en: str | None, matcher: _Finder | None, english_kinds: Collection[str] = ()
+) -> str:
     """`mark_names` with the glossary terms `en` holds (`glossary_it.Matcher.find`): no English or no
-    glossary, no marker."""
+    glossary, no marker. `english_kinds`: as `mark_names`."""
     if matcher is None or not en or not it:
         return it
-    return mark_names(it, matcher.find(en))
+    return mark_names(it, matcher.find(en), english_kinds)

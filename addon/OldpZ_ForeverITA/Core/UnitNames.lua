@@ -69,4 +69,57 @@ function UnitNames.forUnit(unit, shown)
   return UnitNames.name(unitGUID(unit), shown)
 end
 
+-- ── by English: a name with no GUID ─────────────────────────────────────────────────────────────────────────────
+-- An objective line ("0/4 Young Thistle Boar slain") or a system line names a mob by its English alone. The index,
+-- built once at load (Main), maps the fingerprint of each shipped name's English (its h1) to its Italian, the marked
+-- names inside it resolved to Italian whatever the style then. Two Italian names for one English: the most common;
+-- a tie answers nothing (the shipped rows carry no provenance, so the official one cannot be told apart).
+local byH1, counts = nil, { names = 0, ambiguous = 0 }
+
+function UnitNames.buildIndex(rows)
+  rows = rows or (WFJ.Data and WFJ.Data.unit) or {}
+  local slots = WFJ.SLOTS.unit
+  local i = slots.index.name
+  local tally = {} -- [h1] = { [Italian] = count }
+  for _, row in pairs(rows) do
+    local ja, h1 = row[i], row[i + slots.hash]
+    if type(ja) == "string" and ja ~= "" and h1 ~= nil then
+      if WFJ.Names then ja = WFJ.Names.resolve(ja, "it") end
+      local t = tally[h1] or {}
+      tally[h1] = t
+      t[ja] = (t[ja] or 0) + 1
+    end
+  end
+  byH1, counts = {}, { names = 0, ambiguous = 0 }
+  for h1, forms in pairs(tally) do
+    local best, top, tie = nil, 0, false
+    for ja, n in pairs(forms) do
+      if n > top then best, top, tie = ja, n, false elseif n == top then tie = true end
+    end
+    if tie then
+      counts.ambiguous = counts.ambiguous + 1
+    else
+      byH1[h1], counts.names = best, counts.names + 1
+    end
+  end
+  return byH1
+end
+
+function UnitNames.indexCounts()
+  return { names = counts.names, ambiguous = counts.ambiguous }
+end
+
+-- The Italian name for an NPC's English `en`, by the index. nil (leave `en`): no index, `names.style` = "en", a
+-- secret value, not a string, or no shipped name. → Italian | nil
+function UnitNames.byEnglish(en)
+  if byH1 == nil then return nil end
+  if WFJ.Names and WFJ.Names.style() == "en" then return nil end
+  if secret(en) or type(en) ~= "string" or en == "" then return nil end
+  return byH1[WFJ.Hash.h32x2(WFJ.Normalize.v1(en))]
+end
+
+-- the `creatureName` argument kind of Core/UIStrings (QUEST_MONSTERS_KILLED's mob)
+WFJ.UIStrings = WFJ.UIStrings or {}
+WFJ.UIStrings.creatureName = UnitNames.byEnglish
+
 WFJ.State.on("names", UnitNames.reset)

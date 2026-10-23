@@ -271,6 +271,8 @@ function WFJ.OnLoad()
   -- lines a newer addon covers leave the collector file; the tooltip gate needs the UI index's duration strings
   step("collectorprune", function() WFJ.Collector.prune() end)
   step("objectiveindex", WFJ.BuildObjectiveIndex)
+  -- an NPC's name with no GUID (an objective line's mob) by its English: Core/UnitNames.byEnglish
+  step("creaturenames", function() WFJ.UnitNames.buildIndex(WFJ.Data.unit) end)
   step("render", function() WFJ.Render.init(WFJ.Translator.new({
     enabled = function() return WFJ.State.enabled end,
     areaEnabled = WFJ.State.areaEnabled,

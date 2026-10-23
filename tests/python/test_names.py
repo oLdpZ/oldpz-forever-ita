@@ -93,3 +93,17 @@ def test_english_style_drops_the_after_an_italian_article(text, en):
     loses its "The " ("la The Bulwark" → "la Bulwark"); the Italian style is untouched."""
     assert names.resolve(text, "en") == en
     assert names.resolve(text, "it") == names.MARK.sub(lambda m: m.group(2), text)
+
+
+def test_english_kinds_mark_the_english_left_in_the_italian():
+    """`english_kinds`: an NPC name the Italian left in English is marked too (the unit table's Italian as the
+    form), longest first across both forms, and never inside a marker."""
+    g = [("Defias Thug", "Brigante Defias", "creatura"), ("Defias Thug Leader", "Capo dei Briganti", "creatura"),
+         SW]
+    it = "Il Defias Thug Leader e un Brigante Defias a Stormwind City."
+    assert names.mark_names(it, g, english_kinds={"creatura"}) == (
+        "Il ⟦Defias Thug Leader=Capo dei Briganti⟧ e un ⟦Defias Thug=Brigante Defias⟧ a Stormwind City."
+    )
+    assert names.mark_names(it, g) == "Il Defias Thug Leader e un ⟦Defias Thug=Brigante Defias⟧ a Stormwind City."
+    once = names.mark_names(it, g, english_kinds={"creatura"})
+    assert names.mark_names(once, g, english_kinds={"creatura"}) == once

@@ -215,6 +215,14 @@ describe("the UI errors frame", function()
     assert.are.equal("Guild を倒した: 1/2", _G.UIErrorsFrame.lines[4]:GetText())
   end)
 
+  it("the kill line names the mob as the unit table does (UIStrings.creatureName)", function()
+    local resolve = WFJ.UIStrings.creatureName
+    WFJ.UIStrings.creatureName = function(en) if en == "Kobold Vermin" then return "Coboldo Parassita" end end
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 3/10")
+    assert.are.equal("Coboldo Parassita を倒した: 3/10", _G.UIErrorsFrame.lines[4]:GetText())
+    WFJ.UIStrings.creatureName = resolve
+  end)
+
   it("the modifier shows the live English; releasing it shows the Japanese", function()
     _G.UIErrorsFrame:TryDisplayMessage(1, "Out of range.")
     X.alt(WFJ, true)

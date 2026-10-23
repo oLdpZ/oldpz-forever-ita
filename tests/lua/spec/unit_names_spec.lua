@@ -82,4 +82,56 @@ describe("Core/UnitNames", function()
     assert.is_true(U.cacheSize() <= U.CACHE_MAX)
     assert.are.equal("Senani Cuore Tonante", U.name(SENANI, "Senani Thunderheart"))
   end)
+  describe("byEnglish: the name an objective line or a system line carries (no GUID)", function()
+    local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+
+    it("the shipped rows' Italian, found by the English's fingerprint (the index Main builds at load)", function()
+      assert.are.equal("Senani Cuore Tonante", U.byEnglish("Senani Thunderheart"))
+      U.buildIndex({})
+      assert.is_nil(U.byEnglish("Senani Thunderheart"))
+      U.buildIndex()
+      assert.are.equal("Senani Cuore Tonante", U.byEnglish("Senani Thunderheart"))
+      assert.is_nil(U.byEnglish("Senani Stormheart"))
+      assert.is_nil(U.byEnglish(nil))
+      assert.is_nil(U.byEnglish(""))
+    end)
+
+    it("names.style = en and a secret text leave the English", function()
+      U.buildIndex()
+      S.set("names.style", "en")
+      assert.is_nil(U.byEnglish("Senani Thunderheart"))
+      S.set("names.style", "it")
+      _G.issecretvalue = function() return true end
+      assert.is_nil(U.byEnglish("Senani Thunderheart"))
+    end)
+
+    it("a marked name is indexed in its Italian form, whatever the style when the index is built", function()
+      local rows = { [213] = { "⟦Dire Wolf=Metalupo⟧ Affamato", nil, h1("Hungry Dire Wolf"), nil,
+        ".m" } }
+      S.set("names.style", "en")
+      U.buildIndex(rows)
+      S.set("names.style", "it")
+      assert.are.equal("Metalupo Affamato", U.byEnglish("Hungry Dire Wolf"))
+    end)
+
+    it("two Italian names for one English: the most common; a tie leaves the English", function()
+      U.buildIndex({
+        [1] = { "Bruto Gnoll", nil, h1("Gnoll Brute"), nil, ".m" },
+        [2] = { "Gnoll Bruto", nil, h1("Gnoll Brute"), nil, ".m" },
+        [3] = { "Gnoll Bruto", nil, h1("Gnoll Brute"), nil, ".m" },
+        [4] = { "Lupo A", nil, h1("Wolf"), nil, ".m" }, [5] = { "Lupo B", nil, h1("Wolf"), nil, ".m" },
+        [6] = { nil, nil, h1("Kept"), nil, "em" }, -- kept English: no name
+        [7] = { nil, "Solo sottotitolo", nil, h1("Sub"), "m." },
+      })
+      assert.are.equal("Gnoll Bruto", U.byEnglish("Gnoll Brute"))
+      assert.is_nil(U.byEnglish("Wolf"))
+      assert.is_nil(U.byEnglish("Kept"))
+      assert.is_nil(U.byEnglish("Sub"))
+      assert.are.same({ names = 1, ambiguous = 1 }, U.indexCounts())
+    end)
+
+    it("is the creatureName resolver of the UI strings", function()
+      assert.are.equal(U.byEnglish, WFJ.UIStrings.creatureName)
+    end)
+  end)
 end)

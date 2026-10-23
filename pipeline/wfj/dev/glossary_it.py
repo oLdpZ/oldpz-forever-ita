@@ -163,6 +163,40 @@ def creature_terms(
     return terms, dropped
 
 
+def unit_terms(data: Path, counts: Counter[str], conflicts: list[str] | None = None) -> list[GlossTerm]:
+    """The NPC names of the `unit` table as `creatura` terms, for the marker pass (`dev.remark_names`): every
+    trusted `name` row, official or machine, so a name drafted by a lot is the one the text shows too. The
+    rules of `creature_terms` (a one-word name only where the corpus never writes it in lower case). One
+    Italian per English: the official one, else the most common (then the first in Italian order); each
+    English that had more than one is appended to `conflicts`. `data`: the data/ folder."""
+    english = {ln["id"]: ln["en"].strip() for ln in Store(Path(data), english=True).load("unit")
+               if ln["field"] == "name"}
+    found: dict[str, list[tuple[bool, str, int]]] = {}
+    for ln in Store(Path(data)).load("unit"):
+        if ln["field"] != "name" or ln.get("status") != "trusted" or not isinstance(ln.get("it"), str):
+            continue
+        en, it = english.get(ln["id"]), ln["it"].strip()
+        if not en or not it or it == en or len(en) < MIN_LEN or INTERNAL_TEXT.search(en):
+            continue
+        if any(c in en + it for c in "\t\n\r"):
+            continue
+        if len(WORD.findall(en)) < 2 and counts[en.lower()]:
+            continue
+        official = (ln.get("provenance") or {}).get("class") == "official"
+        found.setdefault(en, []).append((official, it, ln["id"]))
+    terms: list[GlossTerm] = []
+    for en, rows in sorted(found.items()):
+        tally = Counter(it for _, it, _ in rows)
+        official = Counter(it for o, it, _ in rows if o)
+        pool = official or tally
+        it = sorted(pool, key=lambda f: (-pool[f], f))[0]
+        if len(tally) > 1 and conflicts is not None:
+            shown = ", ".join(f"{f} ×{n}" for f, n in sorted(tally.items()))
+            conflicts.append(f"{en}: {shown} → {it}")
+        terms.append((CREATURE_KIND, min(i for _, f, i in rows if f == it), en, it))
+    return terms
+
+
 def build_glossary(
     retail_dir: Path,
     english_store: Path,
@@ -336,6 +370,20 @@ def load_matcher(repo: Path) -> Matcher | None:
     glossary."""
     path = Path(repo) / "pipeline" / GLOSSARY
     return Matcher(load_terms(repo)) if path.is_file() else None
+
+
+def load_marker_matcher(repo: Path, conflicts: list[str] | None = None) -> Matcher | None:
+    """`load_matcher` plus the `unit` table's NPC names (`unit_terms`, data/ in `repo`): the terms the marker
+    pass (`dev.remark_names`) marks. A glossary term keeps its English: a unit name spelt like one is left
+    out. None when the repository has no glossary."""
+    path = Path(repo) / "pipeline" / GLOSSARY
+    if not path.is_file():
+        return None
+    terms = load_terms(repo)
+    taken = {en for _, _, en, _ in terms}
+    data = Path(repo) / "data"
+    units = unit_terms(data, word_counts(Store(data, english=True)), conflicts)
+    return Matcher(terms + [t for t in units if t[2] not in taken])
 
 
 def main(argv: list[str]) -> int:

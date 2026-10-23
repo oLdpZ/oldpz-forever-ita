@@ -14,4 +14,5 @@ return { cases = {
   { id = "the_capital", text = "Il ⟦The Great Sea=Mare Infinito⟧ è vasto. Nelle ⟦The Barrens=Savane⟧ fa caldo.", it = "Il Mare Infinito è vasto. Nelle Savane fa caldo.", en = "Il Great Sea è vasto. Nelle Barrens fa caldo." },
   { id = "the_elided", text = "Torna dall'⟦The Den=Antro del Tirocinio⟧ e nell’⟦The Den=Antro del Tirocinio⟧.", it = "Torna dall'Antro del Tirocinio e nell’Antro del Tirocinio.", en = "Torna dall'Den e nell’Den." },
   { id = "the_kept", text = "Vai verso ⟦The Barrens=Savane⟧, poi Isola ⟦The Barrens=Savane⟧; ⟦The Den=Antro del Tirocinio⟧.", it = "Vai verso Savane, poi Isola Savane; Antro del Tirocinio.", en = "Vai verso The Barrens, poi Isola The Barrens; The Den." },
+  { id = "creature", text = "Parla con ⟦Senani Thunderheart=Senani Cuore Tonante⟧, poi uccidi il ⟦Defias Thug Leader=Capo dei Briganti Defias⟧ e un ⟦Defias Thug=Brigante Defias⟧.", it = "Parla con Senani Cuore Tonante, poi uccidi il Capo dei Briganti Defias e un Brigante Defias.", en = "Parla con Senani Thunderheart, poi uccidi il Defias Thug Leader e un Defias Thug." },
 } }
