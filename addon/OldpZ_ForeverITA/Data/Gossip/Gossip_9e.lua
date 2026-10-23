@@ -41,7 +41,7 @@ WFJ.Data.add("gossip", {
   ["9ec2ff048ce64d02"] = { "A causa dell'incompatibilità della tua specifica di classe, non sono in grado di aiutarti a rimediare a qualsiasi situazione tu abbia riguardo alla mancanza di abilità.", "." },
   ["9ec379161abb6138"] = { "Le forze dei Piccatonante ottengono l'⟦General's Warcry=Urlo di Guerra del Generale⟧.", "." },
   ["9ecc1faedb7fbe43"] = { "Abbiamo ordini diretti da Cairne, {race}. Non intralciare il compito del comandante.", "." },
-  ["9ece08b033ed6461"] = { "<L'inquisitore supremo Fairbanks annuisce.>\n\nSì, il Mograine minore, quello noto come il Comandante Scarlatto, tramite (così sospetto) le trame del Gran Crociato. Ha condotto suo padre nell'imboscata come un agnello al macello.", "." },
+  ["9ece08b033ed6461"] = { "<Il gran inquisitore Fierasponda annuisce.>\n\nSì, il Mograine minore, quello noto come il Comandante Scarlatto, tramite (così sospetto) le trame del Gran Crociato. Ha condotto suo padre nell'imboscata come un agnello al macello.", "." },
   ["9ed27eb919146298"] = { "Qualcuno ha visto qualcosa? Che cos'è successo?", "." },
   ["9ed2d4aa4072b44a"] = { "%s solleva la sua enorme ascia sopra Grark.", "." },
   ["9eda8579d6317070"] = { "Non ne posso più di queste tasse! F.I.C.A. a me? F.I.C.A. a TE!", "." },

@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["304b782422c2d7b4"] = { "Mi serve una fiala di Quintessenza Acquea, Idraxis, perché vado al ⟦Molten Core=Nucleo Ardente⟧ a spegnere una runa dei Signori del Fuoco.", "." },
   ["304ff384d01be6d7"] = { "Abbiamo abbastanza provviste! Il nostro capitano ha ripreso posizione nel ⟦Field of Strife=Pian della Discordia⟧!", "." },
   ["30570c5700a68bd3"] = { "Ho finito, <fratello/sorella>. Finisci tu. Io me ne torno a riposare sulla roccia.", "." },
-  ["305c0adcfe46e30d"] = { "L'anziano Silvervein si trova vicino a Thelsamar, a Loch Modan.", "." },
+  ["305c0adcfe46e30d"] = { "L'anziano Venargento si trova vicino a Thelsamar, a Loch Modan.", "." },
   ["305c9aaf4a310e23"] = { "%s esplode, illuminando il cielo con uno splendido spettacolo di fuochi d'artificio! Sembra che ti stia chiamando, <ladro/ladra>.", "." },
   ["3060fa3df14a5928"] = { "Era ora che mi facessi il mio giro.", "." },
   ["30677153be5b3e04"] = { "Il ⟦Stonehearth Graveyard=Cimitero di Cordipietra⟧ è stato preso dall'⟦Horde=Orda⟧!", "." },

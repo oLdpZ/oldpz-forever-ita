@@ -38,6 +38,6 @@ WFJ.Data.add("gossip", {
   ["8edbbaa683592c76"] = { "Un'altra vittoria per la ⟦Defias Brotherhood=Fratellanza dei Defias⟧!", "." },
   ["8edbcf2658f2abae"] = { "%s esplode in una melma velenosa!", "." },
   ["8edc4baa5f61c427"] = { "Vek'nilash e Vek'lor, conosciuti come gli Imperatori Gemelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧, osservavano la guerra dal santuario del loro tempio. Gli astuti fratelli escogitarono un piano per demoralizzare e dividere le forze di Staghelm.", "." },
-  ["8ee47ae68db6501f"] = { "Dov'è l'anziano Hammershout?", "." },
+  ["8ee47ae68db6501f"] = { "Dov'è l'anziano Urlamazza?", "." },
   ["8ef887b9b9a49210"] = { "Sei qui per chiedere assistenza al censimento di ⟦Undercity=Sepulcra⟧, o solo per chiedermi se qualcuno che conoscevi è morto? Me lo chiedono spesso.", "." },
 })

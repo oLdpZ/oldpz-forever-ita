@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["2302157af18a785b"] = { "Il forziere dell'⟦SI:7=IR:7⟧ si apre, facendo scattare un allarme ben udibile.", "." },
   ["2307e28308bc81e6"] = { "Il tuo spirito è puro, {name}.", "." },
-  ["2308d888f87578b6"] = { "Dov'è l'anziano Mistwalker?", "." },
+  ["2308d888f87578b6"] = { "Dov'è l'anziana Calca Nebbia?", "." },
   ["230dd393cb501c68"] = { "Come osi!", "." },
   ["2315435bbf84f45e"] = { "I nostri preparativi procedono come previsto, padrone.", "." },
   ["2316c67cc8d03d48"] = { "C'è altro che dovrei sapere sui Terrigeni?", "." },
@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["23256d871509e288"] = { "E adesso che c'è? Non vedi che ho parecchio da fare?", "." },
   ["233069f94314d11e"] = { "Ti tengo d'occhio, {race}.", "." },
   ["23327e64828872ba"] = { "Non addestro quelli come te, {class}.", "." },
-  ["2336ac04c907ddb8"] = { "No, Ulathek. Lui conosce il tuo segreto. Sa che complotti con lord Hel'nurath di Xoroth.", "." },
+  ["2336ac04c907ddb8"] = { "No, Ulathek. Lui conosce il tuo segreto. Sa che complotti con sire Hel'nurath di Xoroth.", "." },
   ["2339c993414fba4b"] = { "Schiaccio deboli come te ogni giorno! Fatti sotto!", "." },
   ["2344417af8ca62b3"] = { "Oh no! I draghi fatati catturati non ce l'hanno fatta. Cosa facciamo?", "." },
   ["23469fa273f901b7"] = { "Devi lasciare il bar!", "." },

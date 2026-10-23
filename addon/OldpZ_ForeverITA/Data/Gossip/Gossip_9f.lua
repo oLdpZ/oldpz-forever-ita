@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["9f99a5b5fe2cdc0b"] = { "Perché non riprovate senza i vostri trucchetti da quattro soldi, smidollati! O siete troppo fifoni???", "." },
   ["9fb131157fa2239f"] = { "Vuoi dirmi che vendi rane?", "." },
   ["9fb7d64c8e40ae12"] = { "Io sono Saurfang. Fratello di Broxigar.", "." },
-  ["9fb98507de26858d"] = { "Dov'è l'anziano Runetotem?", "." },
+  ["9fb98507de26858d"] = { "Dov'è l'anziana Totem Runico?", "." },
   ["9fbc7b03905303ed"] = { "Abbiamo un vincitore! {name} è il Maestro Pescatore!", "." },
   ["9fc16527df1fb6b5"] = { "Hai visto il signor Ignatz? L'ho mandato nella palude un po' di tempo fa e non è ancora tornato!", "." },
   ["9fc242d19c398193"] = { "A quanto pare siamo fuori pericolo, eh? Chissà a cosa serve questo...", "." },

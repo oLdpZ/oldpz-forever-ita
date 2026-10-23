@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["1f9e7114c12fe1a7"] = { "%s si ferma e comincia a liberare il controagente nell'aria.", "." },
   ["1fa177261bbce520"] = { "Ach, è già abbastanza difficile mantenere l'ordine qui senza tutti questi nuovi guai che spuntano fuori! Spero che tu abbia buone notizie, {name}...", "." },
   ["1fa2301171da053d"] = { "Grumnus è quello che fa per te, {name}. Ti insegnerà l'arte del fabbro d'armature.", "." },
-  ["1fa9d46599dd91db"] = { "Dov'è l'anziano Farwhisper?", "." },
+  ["1fa9d46599dd91db"] = { "Dov'è l'anziano Soffiolungo?", "." },
   ["1fab3bb028163bea"] = { "Lo farò con o senza il tuo aiuto, Loramus.", "." },
   ["1fb119e6dc685d0b"] = { "Che esplosione fantastica! Hai visto quant'era grande?", "." },
   ["1fb561518e4c2559"] = { "Cosa?! Come osi!", "." },

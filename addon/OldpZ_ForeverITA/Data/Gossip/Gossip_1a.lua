@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["1a7c956a1520d7e6"] = { "Lo ⟦The Scepter of the Shifting Sands=Scettro delle Sabbie Mutevoli⟧ è di nuovo intero, {name}.\n\nDevi essere tu a usare lo scettro. Devi essere tu ad annunciare la nuova era del tuo popolo.\n\nQuando sarai <pronto/pronta> a suonare lo Scarab Gong e ad aprire di nuovo i cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧, ti consegnerò lo Scettro. Devi solo chiedere.", "." },
   ["1a7e6dde1219b912"] = { "Ti prego, ti prego, ti prego, dimmi che sei qui per liberarmi da queste catene. Dev'esserci una chiave da qualche parte...\n\nO almeno, magari puoi far fuori la guardia Slip'kik. Credo di poterti dare una mano!\n\nVedi quella trappola rotta laggiù? Gli ogre sono troppo stupidi per capire come aggiustarla. Si vede che le servono un Meccanismo di Torio e un po' di Olio del Freddo. Se la ripari, scommetto che potresti attirarci dentro Slip'kik e BLAMMO: guardia ogre in trappola!", "." },
   ["1a7ea056c0e906af"] = { "Ho perso il mio ⟦Dagger of Veiled Shadows=Pugnale delle Ombre Velate⟧. Puoi sostituirmelo?", "." },
-  ["1a891350f5b58355"] = { "L'anziano Nightwind passa i giorni al santuario di Jaedenar, a ⟦Felwood=Vilbosco⟧.", "." },
+  ["1a891350f5b58355"] = { "L'anziano Scurovento passa i giorni al santuario di Jaedenar, a ⟦Felwood=Vilbosco⟧.", "." },
   ["1a8df22b29a4bca9"] = { "Voglio vedere la tua merce.", "." },
   ["1a99ae9126e85bee"] = { "Se ti serve addestramento in alchimia, c'è un solo posto a ⟦Stormwind=Roccavento⟧ dove devi andare... Alchemy Needs. Lo trovi nel ⟦Mage Quarter=Quartiere dei Maghi⟧, lungo il giro esterno di negozi.", "." },
   ["1a9e268832814f23"] = { "Va bene, va bene! Non c'è bisogno di diventare violenti. Parlo. Parlo!", "." },

@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["3e6ad2144be79bdd"] = { "Non ne ho mai visto uno così grande! Non vedo l'ora di spedirlo indietro per le ricerche...", "." },
   ["3e705f0dc45fbe0d"] = { "⟦Vanndar Stormpike=Vanndar Piccatonante⟧ è il generale dell'esercito dell'⟦Alliance=Alleanza⟧ ad Alterac, e guida le sue forze da Dun Baldar.\n\nSe verrà sconfitto, l'⟦Alliance=Alleanza⟧ perderà di sicuro la battaglia per Alterac.", "." },
   ["3e720523c7c5c7c7"] = { "Per poco non mandavano a questo raduno mio fratello Loksey. Non sa nemmeno badare ai suoi segugi, figuriamoci rappresentare la ⟦Scarlet Crusade=Crociata Scarlatta⟧ in modo competente.", "." },
-  ["3e7617a5b8e966bd"] = { "Salute, {class}. Sono il feldmaresciallo Snowfall, al comando dello sforzo bellico qui. Abbiamo una strada dura davanti, <ragazzo/ragazza>, quindi se puoi dare una mano, fallo. E non esitare a fare domande.", "." },
+  ["3e7617a5b8e966bd"] = { "Salute, {class}. Sono il primo maresciallo Nevealta, al comando dello sforzo bellico qui. Abbiamo una strada dura davanti, <ragazzo/ragazza>, quindi se puoi dare una mano, fallo. E non esitare a fare domande.", "." },
   ["3e8336be2b4bb5da"] = { "Grazie per le provviste, {name}.", "." },
   ["3e88cdfc96b2af4e"] = { "Risposta sbagliata, {name}. Vattene.", "." },
   ["3e9734dcbaa225a0"] = { "E se posso aggiungere, quel vestito è delizioso! Devi dirmi dove l'hai preso.", "." },

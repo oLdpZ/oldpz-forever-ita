@@ -39,6 +39,6 @@ WFJ.Data.add("gossip", {
   ["9be93330fb1e4763"] = { "%s cade a terra. Il suo spirito si libera con l'ultimo respiro.", "." },
   ["9bea23698ac6d7d7"] = { "L'arcano corrompe solo i deboli. Non trascurare il tuo addestramento, o potresti fare la stessa fine.", "." },
   ["9bf997ed68330bc1"] = { "Parla con la sentinella Onaeya all'⟦Maestra's Post=Accampamento di Maestra⟧, a ⟦Ashenvale=Valtetra⟧: farà in modo che tu riceva la giusta ricompensa per il coraggio dimostrato oggi.", "." },
-  ["9bfd2be9653fa80b"] = { "Dov'è l'anziano Rumblerock?", "." },
+  ["9bfd2be9653fa80b"] = { "Dov'è l'anziano Sfaldarocce?", "." },
   ["9bfea0d2726d61cb"] = { "Vi state divertendo finora? Splendido! Benvenuti alla ⟦Darkmoon Faire=Fiera di Lunacupa⟧, il più grande spettacolo di tutta Azeroth! Non dimenticate di parlare con Yebb e i suoi amici mentre visitate il Darkmoon Zoo Bizarre di Neblegear.", "." },
 })

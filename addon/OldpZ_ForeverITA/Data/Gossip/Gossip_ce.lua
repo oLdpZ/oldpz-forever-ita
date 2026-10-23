@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["ce5b2e29fdb11538"] = { "Hai l'aria di chi ha viaggiato da lontano, {race}.", "." },
   ["ce5f433dd2cc9065"] = { "Al maniero non si parla d'altro che del tuo arrivo, <padrone/padrona> {name}. Siamo tutti onorati e lusingati dalla tua presenza.", "." },
   ["ce67150164b11669"] = { "Il ⟦Snowfall Graveyard=Cimitero di Nevealta⟧ si trova in cima a una collina nel ⟦Field of Strife=Pian della Discordia⟧, a est del ⟦Winterax Hold=Covo degli Asciafredda⟧.\n\nAl momento è sotto il controllo dell'⟦Horde=Orda⟧.", "." },
-  ["ce6d5adfcd0fcdc6"] = { "Tu va Royal Quarter. Vedi sir Malory Wheeler. Lui fa paura.", "." },
+  ["ce6d5adfcd0fcdc6"] = { "Tu va Royal Quarter. Vedi ser Malory Wheeler. Lui fa paura.", "." },
   ["ce6eea9eb93b73d3"] = { "Dov'è «Garona: Studio sulla Furtività e sul Tradimento»? Questi testi vanno restituiti!", "." },
   ["ce719502444e19e3"] = { "Non ti biasimo se hai scelto la pesca. Mulgore ha alcuni dei migliori posti di pesca del Kalimdor meridionale, e la Mountaintop Bait & Tackle, sull'altura, ha tutta l'attrezzatura che ti serve per approfittarne.\n\nDi' a ⟦Kah Mistrunner=Kah Cavalca Nebbia⟧ che ti mando io!", "." },
   ["ce737556caf9155c"] = { "Il segnale è stato inviato. Dovrebbe arrivare a breve.", "." },

@@ -11,7 +11,7 @@ WFJ.Data.add("gossip", {
   ["123965b9a398c5a2"] = { "Supporto aereo in arrivo a Dun Baldar! Piccatonante, inchinatevi!", "." },
   ["1242fac319dda672"] = { "Il nostro capitano ci salverà!", "." },
   ["12434ec502e3cbf2"] = { "Diciamo che ho l'anima del capitalista, {race}.", "." },
-  ["1244792bb300414e"] = { "Perché lord Vyletongue non ha riunito le due parti dello scettro?", "." },
+  ["1244792bb300414e"] = { "Perché sire Linguatroce non ha riunito le due parti dello scettro?", "." },
   ["1244a17d086c216c"] = { "Ne ho abbastanza di questi giochi. Procedete, e bandirò le vostre anime nell'oblio!", "." },
   ["124d4b9e03d91e66"] = { "Comandante, è giunto il momento che i cavalieri dei lupi carichino le linee nemiche. Dai l'ordine.", "." },
   ["1257c278d8fcf813"] = { "Mi abbevero della tua sofferenza, mortale. Che la tua essenza si rapprenda con Lokholar!", "." },

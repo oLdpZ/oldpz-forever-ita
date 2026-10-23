@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["2c9412305760c234"] = { "Sì, ce l'ho fatta a risigillare la reliquia, {name}.", "." },
   ["2c9cead8b7942cff"] = { "La tua conoscenza del cuoio è più profonda della mia. Forse dovresti far visita ad ⟦Aayndia Floralwind=Ayandia Ariafresca⟧, nella città di Astranaar, a ⟦Ashenvale=Valtetra⟧. Ha molto da offrire a chi ha il tuo talento.", "." },
   ["2ca422394375cf50"] = { "Quanti ufficiali dei Lupi Bianchi sono vivi, Vanndar?", "." },
-  ["2cab5e4ae8563c69"] = { "Dov'è l'anziano Bronzebeard?", "." },
+  ["2cab5e4ae8563c69"] = { "Dov'è l'anziano Barbabronzea?", "." },
   ["2cb3428831362260"] = { "Hanno liberato l'umano, Windsor, sire. Non ci vorrà molto prima che Onyxia venga smascherata.", "." },
   ["2cb432682afa6365"] = { "Grazie della tua richiesta, {class}, ma abbiamo tutti i pinnagialla maculati che ci servono. Ci sono altri qui, però, che forse stanno ancora raccogliendo materiali per la guerra imminente. Cercali, e che la dea ti illumini.", "." },
   ["2cb7aecf75be02e7"] = { "Birra gratis al Pig and Whistle!", "." },

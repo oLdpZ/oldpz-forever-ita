@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["9da4aa503064c765"] = { "Dove sono i rinforzi da ⟦Stormwind=Roccavento⟧? Ci segnalano una forte attività dei ⟦Blackrock=Roccianera⟧ a est.", "." },
   ["9daa02c8c44d949f"] = { "Non sfuggirai al tuo destino, Onyxia. È stato profetizzato: una visione che riecheggia dalle grandi sale di Karazhan. Finisce qui...", "." },
   ["9dbeaff96334ea75"] = { "⟦Arathi Basin=Bacino d'Arathi⟧", "." },
-  ["9dbfb9fae0862d65"] = { "Senza conoscere gli incantesimi necessari a unire le due parti, lord Vyletongue non ha potuto usare lo scettro. Ora però che la maledizione della corruzione di Vyletongue non grava più su di me, potrò aiutarti, se vorrai portarmi le due parti: sia la testa che l'asta dello scettro.", "." },
+  ["9dbfb9fae0862d65"] = { "Senza conoscere gli incantesimi necessari a unire le due parti, sire Linguatroce non ha potuto usare lo scettro. Ora però che la maledizione della corruzione di Linguatroce non grava più su di me, potrò aiutarti, se vorrai portarmi le due parti: sia la testa che l'asta dello scettro.", "." },
   ["9dc469d901560981"] = { "Sei <arrivato/arrivata> più lontano di molti, {name}. Rispetta gli elementi intorno a te e ti andrà molto meglio che alla maggior parte degli altri.", "." },
   ["9dc57ca0994ec809"] = { "Non c'è tempo da perdere, soldato. Devo tornare subito alla base! Coprimi!", "." },
   ["9dcdee345c09313e"] = { "Più liscia di un elfo, più forte di un orco! Non c'è da bere migliore in tutta ⟦Stormwind=Roccavento⟧!", "." },

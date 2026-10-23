@@ -19,7 +19,7 @@ WFJ.Data.add("gossip", {
   ["73433bdb1e2b8bdb"] = { "Questi fuochi d'artificio fanno proprio un bel BUM, non trovi?", "." },
   ["7343b82a90bfad68"] = { "Balai Lok'Wein di ⟦Brackenwall Village=Felcimura⟧, ad ⟦Dustwallow Marsh=Acquemorte⟧, vende un manuale che dovrai studiare per migliorare le tue abilità!", "." },
   ["734682c1f5749732"] = { "Sì, Okla, puoi. Ma non allontanarti troppo da casa.", "." },
-  ["735a0cf25aff8c8a"] = { "Salute, {class} {race}. Sono il comandante Stronghammer, l'ambasciatore che rappresenta qui l'⟦Alliance=Alleanza⟧. Se hai domande sullo stato delle raccolte dell'⟦Alliance=Alleanza⟧ per lo sforzo bellico di ⟦Ahn'Qiraj=Ahn'qiraj⟧, <ragazzo/ragazza>, non esitare a chiedere.", "." },
+  ["735a0cf25aff8c8a"] = { "Salute, {class} {race}. Sono il comandante Martelduro, l'ambasciatore che rappresenta qui l'⟦Alliance=Alleanza⟧. Se hai domande sullo stato delle raccolte dell'⟦Alliance=Alleanza⟧ per lo sforzo bellico di ⟦Ahn'Qiraj=Ahn'qiraj⟧, <ragazzo/ragazza>, non esitare a chiedere.", "." },
   ["735af90a6d531be6"] = { "Che dolci della Veglia delle Ombre hai in vendita?", "." },
   ["735eaefcf97f8590"] = { "{name}, non hai ancora assaltato le quattro basi. Torna da me quando avrai completato i tuoi obiettivi.", "." },
   ["735eddbed72f7cc4"] = { "Cosa posso comprare?", "." },
@@ -56,6 +56,6 @@ WFJ.Data.add("gossip", {
   ["73dae4caae73341d"] = { "Invasori in arrivo da sud!", "." },
   ["73e2820e1b504703"] = { "La Locanda del Fiero Leone di ⟦Goldshire=Borgodoro⟧ è buona quanto qualsiasi altra locanda da queste parti. Fai un salto e lascia che il locandiere Farley ti faccia sentire a casa.", "." },
   ["73e4dfcfd8a81ae9"] = { "È ora di preparare un Kalimdor Kocktail! Hic!", "." },
-  ["73ed4b629197038b"] = { "Dov'è l'anziano Highpeak?", "." },
+  ["73ed4b629197038b"] = { "Dov'è l'anziano Granvetta?", "." },
   ["73fe130f1e4ce4b0"] = { "<Tocca il cristallo instabile della fenditura.>", "." },
 })

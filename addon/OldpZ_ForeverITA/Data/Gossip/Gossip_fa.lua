@@ -39,7 +39,7 @@ WFJ.Data.add("gossip", {
   ["fac9c38c1f8c1b69"] = { "Proteggete lo stormo! Questi intrusi muoiono ora!", "." },
   ["face2b8ff71d77fb"] = { "Cogli il frutto dal drago della notte.", "." },
   ["fad595865848ccc6"] = { "In questa zona vivono molte creature considerate alleate degli elfi della notte. Gli elfi hanno avuto accesso al potere racchiuso in ognuna di queste creature: è tempo che anche all'Orda sia concessa la stessa soddisfazione. Ho escogitato un modo per catturare questo potere e usarlo a nostro vantaggio.\n\nNon dubitare di ciò che ti dico, {name}. Aiutami, e vedrai che dico la verità.", "." },
-  ["fad76b2e0a9fef42"] = { "<Il sommo inquisitore Fairbanks scuote la testa.>\n\nNo, {race}: solo uno dei suoi figli è morto. L'altro vive...\n\n<Il sommo inquisitore Fairbanks indica il cielo.>\n\nLe ⟦Outland=Terre Esterne⟧... Cercalo là...", "." },
+  ["fad76b2e0a9fef42"] = { "<Il gran inquisitore Fierasponda scuote la testa.>\n\nNo, {race}: solo uno dei suoi figli è morto. L'altro vive...\n\n<Il gran inquisitore Fierasponda indica il cielo.>\n\nLe ⟦Outland=Terre Esterne⟧... Cercalo là...", "." },
   ["faea9e7f7efcc84c"] = { "Se ti servono i documenti per fondare una gilda, devi salire a ⟦Ironforge=Forgiardente⟧ e passare dal Visitor's Center di ⟦Ironforge=Forgiardente⟧.", "." },
   ["faec692b9aeead70"] = { "Hai fatto un lavoro eccezionale, soldato! La cavalleria è pronta a partire al tuo comando.", "." },
   ["fafa57c32d068858"] = { "%s fa un sorrisetto.", "." },

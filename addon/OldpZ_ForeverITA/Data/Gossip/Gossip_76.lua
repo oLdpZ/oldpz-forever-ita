@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["760de24a806a24c4"] = { "La resa dei conti è giunta per te, debole!", "." },
   ["7616774c3f5dc90d"] = { "Anche tu sei <un/una> <ragazzo/ragazza> materialista, eh? Beh, se sei <ossessionato/ossessionata> dai tuoi preziosi oggetti, probabilmente vorrai custodirli alla banca di Darnassus, al centro della nostra città.", "." },
   ["7616bfd62e5ad914"] = { "Qui nelle ⟦Badlands=Maleterre⟧ può fare davvero caldo. Ma almeno è un caldo secco.", "." },
-  ["761b7ac8aab4a819"] = { "Non merito tali lodi, signore della guerra Goretooth.", "." },
+  ["761b7ac8aab4a819"] = { "Non merito tali lodi, signore della guerra Zannatruce.", "." },
   ["761cc108833060a9"] = { "Sindaco Ello! I nostri esploratori del cimitero tornano con notizie inquietanti...", "." },
   ["7622aaa1e8801ab3"] = { "Non ho ancora capito cosa sia, ma c'è qualcosa di strano nelle sorgenti termali...", "." },
   ["76275e6e28340fd7"] = { "A Malyfous, presumo.", "." },

@@ -7,7 +7,7 @@ WFJ.Data.add("gossip", {
   ["df1bc32ada36838a"] = { "Eh?! Accidenti, è ora di pranzo! Ho dormito troppo!", "." },
   ["df1e3b1a0cbd3a40"] = { "Il ⟦Stonehearth Graveyard=Cimitero di Cordipietra⟧ si trova a est dell'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧, nel ⟦Field of Strife=Pian della Discordia⟧.\n\nAl momento è controllato dall'⟦Alliance=Alleanza⟧.", "." },
   ["df25832767fdf3ea"] = { "Questo Grande Inverno ti farò assaggiare la mia lama! Yeargh!", "." },
-  ["df2faa33dc6ecf96"] = { "Dov'è l'anziano Stonefort?", "." },
+  ["df2faa33dc6ecf96"] = { "Dov'è l'anziano Sassoforte?", "." },
   ["df486a358ff59a52"] = { "Tanto tempo fa, durante i miei viaggi, ho incontrato un uomo che mi ha detto: «Impara a usarlo alla perfezione e potrai averlo».\n\nCosa credi che voglia dire? Non lo sapevo allora e, a dire il vero, non lo so nemmeno adesso...", "." },
   ["df590779c98c3a63"] = { "Molti ti direbbero che lo zampalunga è un famiglio ridicolo. Ma la sua intelligenza e la sua lealtà lo rendono una creatura difficile da eguagliare in molte situazioni. Se la razza ti interessa, forse posso insegnare a te e al tuo famiglio alcuni talenti che ho appreso negli anni.", "." },
   ["df62a86015a240f7"] = { "Cosa porta <un/una> giovane {class} come te a far visita a chi coltiva la terra da una vita, come me?", "." },

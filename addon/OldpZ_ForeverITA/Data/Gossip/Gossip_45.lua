@@ -41,6 +41,6 @@ WFJ.Data.add("gossip", {
   ["45e3990493eabc9f"] = { "In attesa di ordini!", "." },
   ["45e537292af1f836"] = { "Ogni articolo che vendo me lo sono procurato personalmente. Hai la mia garanzia personale di autenticità.", "." },
   ["45ea7653376cdbf0"] = { "A dis punto tu sai quanto me, mon. Forse tu vai a trovare Magar a Orgrimmar. Lui non essere il sarto più allegro in giro, ma ti aiuta lo stesso.", "." },
-  ["45f90ffaf7fadf5f"] = { "Dov'è l'anziano Thunderhorn?", "." },
+  ["45f90ffaf7fadf5f"] = { "Dov'è l'anziano Corno Tonante?", "." },
   ["45fe0e32dc25b569"] = { "Prendi il tuo regalo dal mucchio.", "." },
 })

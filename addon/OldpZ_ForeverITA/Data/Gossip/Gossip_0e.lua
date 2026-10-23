@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["0e560f4eda449a83"] = { "Invasori, cessate subito questa folle impresa! Tornate indietro finché potete!", "." },
   ["0e63ffdcd671c0cf"] = { "Be', vado fuori a controllare. C'è qualcosa che non va.", "." },
   ["0e68ab94ea80d62c"] = { "Massacrateli nel nome del padrone!", "." },
-  ["0e6b07ab0fcac51d"] = { "L'anziano Bronzebeard si trova a ⟦Ironforge=Forgiardente⟧, la dimora ancestrale dei Bronzebeard.", "." },
+  ["0e6b07ab0fcac51d"] = { "L'anziano Barbabronzea si trova a ⟦Ironforge=Forgiardente⟧, la dimora ancestrale dei Bronzebeard.", "." },
   ["0e74d0bfb73b4136"] = { "Aaahhh... Un'altra gloriosa vittoria per l'⟦Horde=Orda⟧!", "." },
   ["0e751740f689b1db"] = { "Oh, lo farò, amico mio. Lo farò senz'altro. Abbi cura di te anche tu.", "." },
   ["0e87d25f5c43a30d"] = { "I Sabbiafurente regnano supremi!", "." },

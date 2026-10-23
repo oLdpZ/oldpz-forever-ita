@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["7503614b360a57b3"] = { "Se è questo che desideri, {class}, devi parlare con ⟦Keras Wolfheart=Keras Cuordilupo⟧ sulla ⟦Warrior's Terrace=Terrazza dei Guerrieri⟧. È un rappresentante della ⟦The League of Arathor=Lega di Arathor⟧ e può aiutarti a raggiungere il ⟦Arathi Basin=Bacino d'Arathi⟧.", "." },
-  ["750a39bbf0be7483"] = { "Anche se a Brill non c'è un istruttore di Ingegneria, ce n'è uno giù a ⟦Undercity=Sepulcra⟧. Per arrivarci, va' sul retro delle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧, a sud del paese, e prendi l'ascensore per scendere. Una volta lì, chiedi a una guardia di ⟦Undercity=Sepulcra⟧ indicazioni più precise.", "." },
+  ["750a39bbf0be7483"] = { "Anche se a Brill non c'è un istruttore di Ingegneria, ce n'è uno giù a ⟦Undercity=Sepulcra⟧. Per arrivarci, va' sul retro delle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧, a sud del paese, e prendi l'ascensore per scendere. Una volta lì, chiedi a un Guardiano di ⟦Undercity=Sepulcra⟧ indicazioni più precise.", "." },
   ["750cd8cec7a5d195"] = { "Al collo di questa renna c'è una targhetta con il marchio della Masseria Buongusto e un nome: «Metzen».\n\nMetzen ti guarda con occhi tristi e sconsolati. È quasi come se la renna fosse stata immobilizzata da una forza invisibile.", "." },
   ["750e7ffb74705198"] = { "La bandiera dell'⟦Horde=Orda⟧ è tornata alla sua base!", "." },
   ["75198c52189ba9e9"] = { "MORITE, CANI DEMONIACI!", "." },

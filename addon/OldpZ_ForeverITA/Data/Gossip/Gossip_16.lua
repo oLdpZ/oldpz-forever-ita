@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["1602f2591c8fac85"] = { "Questo è suolo sacro, infedele.", "." },
-  ["160777a54698fc1c"] = { "<Il capitano Shatterskull ruggisce in trionfo.>\n\nQuanto ancora possono resistere? Quanta altra feccia dell'⟦Alliance=Alleanza⟧ deve perire per mano dell'⟦Horde=Orda⟧ prima che si ritirino? Solo il tempo lo dirà, {race}...", "." },
+  ["160777a54698fc1c"] = { "<Il capitano Spaccateschi ruggisce in trionfo.>\n\nQuanto ancora possono resistere? Quanta altra feccia dell'⟦Alliance=Alleanza⟧ deve perire per mano dell'⟦Horde=Orda⟧ prima che si ritirino? Solo il tempo lo dirà, {race}...", "." },
   ["160a08531172207a"] = { "Sissignore! Grazie, signore!", "." },
   ["1612374162ba5393"] = { "Chi va là?", "." },
   ["16143a51383630d3"] = { "Perché lo chiedi a me, <novellino/novellina> imberbe?", "." },
@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["16aea2fb3ed7ef98"] = { "Impossibile! Sorgete, miei servitori! Servite ancora una volta il vostro padrone!", "." },
   ["16affbbe69660ae6"] = { "Cos'è successo alla tua compagnia di mercenari, The Veiled Blade?", "." },
   ["16b10c287cfbdf39"] = { "Dimostrami che sei amic<o/a> dei Gelkis, {name}.", "." },
-  ["16bfe8eacdcd03cc"] = { "L'anziano Moonstrike si trova a Scholomance, nelle ⟦Western Plaguelands=Terre Infette Occidentali⟧.", "." },
+  ["16bfe8eacdcd03cc"] = { "L'anziana Predastelle si trova a Scholomance, nelle ⟦Western Plaguelands=Terre Infette Occidentali⟧.", "." },
   ["16c097c773db762c"] = { "Bleah! È orribile!", "." },
   ["16c30e0dbe20c642"] = { "Guarda cosa hanno fatto al mio ragazzo.", "." },
   ["16c85df0b0c25d27"] = { "La forza del cuore è ciò che ti dà la determinazione per agire... un'azione radicata in intenti puri e sinceri. Mantenere l'equilibrio non significa essere compiacenti o banali.\n\nDevi mostrare determinazione per ciò in cui credi, e devi essere <disposto/disposta> a lottare per esso. L'orsa madre mostra una convinzione infinita nel proteggere i suoi piccoli, come l'orso anziano che protegge la sua tana. È questa determinazione, questa forza del cuore, che devi imparare a conoscere se vuoi padroneggiare la via dell'Artiglio.", "." },

@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("objective", {
   [383005] = { "⟦Samuel's Remains=Resti di Samuel⟧ sepolti", 0xa43ae335, "." },
-  [383114] = { "Cura e rinforza la guardia della morte Kel", 0xe47b6c3f, "." },
+  [383114] = { "Cura e rinforza il guardiamorte Kel", 0xe47b6c3f, "." },
   [383128] = { "Spegni il Brazier of Pain", 0x85fb3182, "." },
   [383129] = { "Spegni il Brazier of Malice", 0x81a35ccd, "." },
   [383130] = { "Spegni il Brazier of Suffering", 0xf9fd61d0, "." },

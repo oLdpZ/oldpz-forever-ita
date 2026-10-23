@@ -8,7 +8,7 @@ WFJ.Data.add("gossip", {
   ["0a13633ca64374e7"] = { "Insegnami le vie degli spiriti.", "." },
   ["0a1a96cb43c9bd45"] = { "La Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧ è all'orizzonte, {class}, e in preparazione l'⟦Alliance=Alleanza⟧ ha chiesto alla mia famiglia di raccogliere una buona quantità di Cuoio Leggero per lo sforzo bellico. Su $2061w richiesti, al momento ne abbiamo $2060w. Hai l'aria di chi potrebbe dare una mano.", "." },
   ["0a20f312814b55e4"] = { "Uldaman si trova all'estremità settentrionale delle ⟦Badlands=Maleterre⟧.", "." },
-  ["0a23fb4caa737a3a"] = { "Ecco gli ordini, {name}. Ora portali in fretta al feldmaresciallo Teravaine!", "." },
+  ["0a23fb4caa737a3a"] = { "Ecco gli ordini, {name}. Ora portali in fretta al primo maresciallo Teravaine!", "." },
   ["0a2cbd474bd157aa"] = { "Uccideteli tutti!", "." },
   ["0a38fb4095f62c9c"] = { "Compio un ultimo servizio. Prego che basti...", "." },
   ["0a4a53045cc73938"] = { "Calma, io sono solo un aiutante. Se vuoi cominciare a imparare le cose difficili, parla col vecchio Stonebrew, laggiù.", "." },

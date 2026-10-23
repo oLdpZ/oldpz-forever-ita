@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["721f508e53ee0553"] = { "Temo di non essere più gentile né umile. L'età e innumerevoli battaglie mi hanno indurito la pelle e l'anima. Forse è per questo che Cairne mi ha dato un incarico al ⟦Sun Rock Retreat=Rifugio Roccia del Sole⟧... i venti gentili e il sole caldo leniscono il dolore.", "." },
   ["722e9c43ed1728c0"] = { "A quanto ho capito, <caro/cara>, è stato raccolto tutto e l'ultimo materiale viene assemblato e spedito alla ⟦Cenarion Hold=Fortezza Cenariana⟧. Le ultime casse dovrebbero arrivare in meno di $2113w giorni. Quando il nostro equipaggiamento e le nostre forze saranno tutti lì, chi porta lo Scettro delle Sabbie Mutevoli potrà suonare il gong vicino ad ⟦Ahn'Qiraj=Ahn'qiraj⟧ per aprire le porte. Allora la guerra avrà inizio.", "." },
   ["723c1b35cb3e262a"] = { "Ti insegnerò, ma prima devi dimostrare quanto vali...", "." },
-  ["723fd776f65dab64"] = { "L'anziano Morningdew si è messo a osservare il trambusto alla ⟦Mirage Raceway=Pista dei Miraggi⟧, a ⟦Thousand Needles=Millepicchi⟧.", "." },
+  ["723fd776f65dab64"] = { "L'anziana Granrugiada si è messo a osservare il trambusto alla ⟦Mirage Raceway=Pista dei Miraggi⟧, a ⟦Thousand Needles=Millepicchi⟧.", "." },
   ["72411e7f71a2cece"] = { "{class}, ci serve il tuo aiuto nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧. Ci aiuterai nella nostra lotta contro i ⟦Warsong Outriders=Predoni Cantaguerra⟧?", "." },
   ["72468878883cef22"] = { "Come se non avessimo già abbastanza problemi, tu vai e ne crei altri!", "." },
   ["7247755d0bbe0563"] = { "<Copia il modello nel diario.>", "." },

@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["61062abc963f5fd0"] = { "Mi rincresce dirti che non posso aiutarti, <nobile/gentile> <signore/dama>, finché non saprai di più sulla conciatura. Parla invece con Faldron o Darianna, qui. Possono insegnarti l'abilità che ti serve.", "." },
   ["6108fbcddf000598"] = { "Quando incontrò i profughi al Muro dei Mantogrigio, sentì il dovere di soccorrerli, e mandò la sua donna a ⟦Hillsbrad=Colletorto⟧.", "." },
-  ["611e541c424fa71b"] = { "L'anziano Darkcore si trova a ⟦Undercity=Sepulcra⟧.", "." },
+  ["611e541c424fa71b"] = { "L'anziano Cuornero si trova a ⟦Undercity=Sepulcra⟧.", "." },
   ["612729c279c4216c"] = { "Salvami...", "." },
   ["612c58b691980155"] = { "<Amico/Amica>, ⟦Stormwind=Roccavento⟧ ha bisogno del tuo aiuto e della tua generosità!\n\nLe nostre scorte di tessuti, un tempo abbondanti, sono ormai pericolosamente basse. ⟦Stormwind=Roccavento⟧ è impegnata su più fronti per ricostituire quelle riserve per la produzione di tessuti e bende! Una tua donazione di stoffa aiuterebbe immensamente ⟦Stormwind=Roccavento⟧ e ti farebbe guadagnare il rispetto dei cittadini!", "." },
   ["612fd2a00b0f13c6"] = { "Presto la tua sete di distruzione sarà placata.", "." },

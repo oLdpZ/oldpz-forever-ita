@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["4847c75ccf98be50"] = { "Vi taglieremo la gola e vi dissangueremo!", "." },
   ["4848fcdd0e3ee432"] = { "Non fai che rimandare l'inevitabile!", "." },
   ["484aeb76d5243f49"] = { "Se sento un solo commento sugli uccelli acquatici, ti nutrirai con un tubicino.", "." },
-  ["484c1a81dfbbe759"] = { "Dov'è l'anziano Stormbrow?", "." },
+  ["484c1a81dfbbe759"] = { "Dov'è l'anziano Cigliatonanti?", "." },
   ["484fe496de526f75"] = { "{name}, sei riuscit<o/a> a raccogliere qualche informazione? Hai trovato il messaggero?", "." },
   ["485b1f1faa992e08"] = { "Possiamo sconfiggere queste creature immonde!", "." },
   ["485cfdfcca7dbd34"] = { "Bene, ragazzi, la pausa pranzo è finita. Torniamo al lavoro. Se il resto della giornata va bene come stamattina, magari stacchiamo prima.", "." },

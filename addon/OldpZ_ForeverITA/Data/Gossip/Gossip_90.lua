@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["9002d728d2b5825a"] = { "La Madre Terra custodisce molti segreti e ⟦Brek Stonehoof=Brek Zoccolo Granitico⟧ può aiutarti a scoprirne alcuni. Lo troverai sull'altura inferiore, alla Stonehoof Geology.", "." },
   ["9004a8f2c5d6ab80"] = { "Perché dovrei andarci piano, se funziona?", "." },
-  ["900a841ecae88141"] = { "L'anziano Brightspear si trova a vagare tra le rovine di Kel'Theril, a ⟦Winterspring=Fontefredda⟧.", "." },
+  ["900a841ecae88141"] = { "L'anziana Lanciachiara si trova a vagare tra le rovine di Kel'Theril, a ⟦Winterspring=Fontefredda⟧.", "." },
   ["900d2b9e41000baa"] = { "E se uno muore, due sorgeranno!", "." },
   ["901095e91f13947d"] = { "Puoi depositare i tuoi beni terreni alla banca di Darnassus, che si trova al centro della nostra splendida città.", "." },
   ["9019e421ded72cf1"] = { "Ecco la classifica finale!\n\nThrall: $2200w\n\nCairne: $2201w\n\nSylvanas: $2202w\n\nTotale ⟦Horde=Orda⟧: $2207w\n\nBolvar: $2203w\n\nMagni: $2204w\n\nTyrande: $2205w\n\nTotale ⟦Alliance=Alleanza⟧: $2206w\n\nL'⟦Horde=Orda⟧ e l'⟦Alliance=Alleanza⟧ hanno pareggiato nel totale dei voti!", "." },

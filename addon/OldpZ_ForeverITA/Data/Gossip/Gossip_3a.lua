@@ -4,7 +4,7 @@ WFJ.Data.add("gossip", {
   ["3a001ad43967f98e"] = { "Consegno l'uomo al mio signore perché venga punito, poiché ha infranto la legge del regno ed è mio dovere giurato farla rispettare.", "." },
   ["3a007267a5a3588d"] = { "Pelli? Sì, ho appena ricevuto notizie in merito. Pare che, dei $2067w di cuoio pesante necessari, l'⟦Horde=Orda⟧ ne abbia raccolti $2066w. Inoltre sono stati raccolti $2070w di cuoio spesso su $2071w e $2073w di cuoio duro su $2074w.", "." },
   ["3a0eeeb302f3dc03"] = { "Non posso insegnarti la conciatura elementale, {name}. Devi andare a Tanaris e trovare la casa di ⟦Narain Soothfancy=Narain Veravite⟧. Una volta lì, consulta il libro \"Soothsaying for Dummies\".", "." },
-  ["3a0f5540d793983f"] = { "L'anziano Stonefort si è rifugiato nelle segrete dei ⟦Blackrock Spire=Bastioni di Roccianera⟧.", "." },
+  ["3a0f5540d793983f"] = { "L'anziano Sassoforte si è rifugiato nelle segrete dei ⟦Blackrock Spire=Bastioni di Roccianera⟧.", "." },
   ["3a1bba19686a460c"] = { "I Creatori sono consapevoli della portata delle informazioni custodite in questo archivio. Di conseguenza, una copia portatile dei dati qui conservati ti sarà resa disponibile una volta che sarai in sintonia con i Discs of Norgannon.\n\nConsidera completi i requisiti preliminari per l'assimilazione di questa conoscenza. Quando vorrai, accedi ai Discs of Norgannon per iniziare la sintesi dei tuoi dischi.", "." },
   ["3a249af523cac25a"] = { "Solo carne e ossa. I mortali sono prede così facili...", "." },
   ["3a27409188a3ab7a"] = { "Non tutti i Reietti sono mossi dalla volontà di Sylvanas, {name}. Alcuni di noi sono mossi dal vero potere... un potere che ci guadagniamo da soli.", "." },

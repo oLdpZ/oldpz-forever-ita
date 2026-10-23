@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["d10ded98e1b8fa2f"] = { "Puoi insegnarmi a usare le abilità da ladro?", "." },
   ["d11406bbf12c2da3"] = { "Prendeteli, ragazzi. Dategli una lezione! Nessuno si mette contro Slim.", "." },
   ["d1149c0bd0f69da2"] = { "Con tutto il rispetto, Capoguerra, perché non lasciare che vengano distrutti? Non rafforzerebbe la nostra posizione?", "." },
-  ["d11aad9771589dc7"] = { "L'anziano Highpeak veglia sulle Entroterre da una collina vicino al loro centro.", "." },
+  ["d11aad9771589dc7"] = { "L'anziano Granvetta veglia sulle Entroterre da una collina vicino al loro centro.", "." },
   ["d11b5bf9d41cee8d"] = { "Devo aver rotto centinaia di fiale quando ho cominciato a preparare pozioni. Il vetro era così fragile nelle mie mani goffe. Spero che tu abbia più cautela di me.", "." },
   ["d1291fd79429e877"] = { "Smidollati dei Piccatonante, affrontatemi nella mia fortezza, se ne avete il coraggio!", "." },
   ["d129f67dc0907ccd"] = { "Cos'è questo? Keever ha chiesto una pecora? Keever voleva un'arma di grande potere e tutto quello che ha avuto è questa pecora. Keever è molto deluso.", "." },

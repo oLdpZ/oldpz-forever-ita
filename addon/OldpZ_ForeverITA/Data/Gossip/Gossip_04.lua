@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["0463bfa367acb8e9"] = { "Allora devi andare a Orgrimmar. La strada nord che esce da ⟦Razor Hill=Tranciacolle⟧ porta dritta lì. Parla con uno dei grunt sul posto e ti darà altre indicazioni.", "." },
   ["04662fa3b1e236ff"] = { "Lo so, lo so, sono qui in mezzo al nulla!\n\nIn realtà vivo a ⟦Ratchet=Porto Paranco⟧, ma dopo che il mio zeppelin si è schiantato qui, ho pensato che tanto valeva cominciare le ricerche che mi avevano portato fin qui!", "." },
   ["0466c83c13920da6"] = { "Ti prego, dimmi di più sugli ippogrifi.", "." },
-  ["0467081f2aaa290f"] = { "Dov'è l'anziano Splitrock?", "." },
+  ["0467081f2aaa290f"] = { "Dov'è l'anziano Spezzasassi?", "." },
   ["046d179af467e865"] = { "La tua abilità nel preparare pozioni deve migliorare prima che tu possa unirti ai miei studenti. Nel frattempo, forse ⟦Sylvanna Forestmoon=Sylvanna Erbaluna⟧ o ⟦Milla Fairancora=Milla Ferancora⟧ possono aiutarti, proprio lì.", "." },
   ["04771e61596b0d33"] = { "Venite, miseri mortali. Venite ad affrontare la vostra fine. I segreti di ⟦Ahn'Qiraj=Ahn'qiraj⟧ moriranno con Roman'khan!", "." },
   ["04776961d5829808"] = { "Tanto tempo fa, io e le mie sorelle driadi entrammo in queste grotte per liberare lo spirito tormentato di mio zio, Zaetar. Ma la corruzione che già si era diffusa in queste caverne ci sopraffece presto, e cademmo anche noi.\n\nEravamo destinate a vagare per questi passaggi, con le tossine che ci avvelenavano la mente...\n\nAnche se ora il mio spirito può riposare, so di aver fallito nella mia missione. È una grande tristezza quella che devo portare...", "." },

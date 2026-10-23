@@ -4,7 +4,7 @@ WFJ.Data.add("gossip", {
   ["7700dbc07ef4547b"] = { "Pare che Skarr abbia trovato il suo prossimo sfidante! Non vorrei essere nei panni di quel povero sciocco!", "." },
   ["7705d302cc424b4f"] = { "Non rischierebbe di disfare la trama, se non viene ancorata a dovere prima di iniziare il lancio?", "." },
   ["7705d50c2f6971f5"] = { "Ah, errore mio, {name}. Ti chiedo scusa. Non mi ero accorto che possedessi la Torcia. Sono lieto di fare la tua conoscenza.\n\nMolti avventurieri arrivano fin qui in cerca di tesori perduti o attratti dalla promessa di creature mistiche da uccidere, solo per essere respinti da un santuario apparentemente vuoto. Ma noi conosciamo la verità, non è così, {name}?\n\nQuesto santuario cela un segreto più grande ai membri comuni dell'⟦Horde=Orda⟧. Per noi è sacro.", "." },
-  ["77088fb2462aea8f"] = { "Se ti serve tempo per riposare e recuperare le forze, il posto migliore è la locanda di Dolanaar. Keldamyr, che la gestisce, si prenderà cura di te.", "." },
+  ["77088fb2462aea8f"] = { "Se ti serve tempo per riposare e recuperare le forze, il posto migliore è la locanda di Dolanaar. Il locandiere Keldamyr si prenderà cura di te.", "." },
   ["770d83a4590d7402"] = { "Mi serve un altro ⟦Relic Bundle=Mucchio di Reliquie⟧!", "." },
   ["770ea11d794aa499"] = { "La ⟦Darkmoon Faire=Fiera di Lunacupa⟧ resterà aperta solo per poco, prima che cali il sipario. Non mancare di visitarla oggi!", "." },
   ["7713d9c9480713a7"] = { "Usa l'ingegneria per accedere a schemi nascosti!", "." },

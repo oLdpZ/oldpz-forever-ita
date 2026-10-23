@@ -16,7 +16,7 @@ WFJ.Data.add("gossip", {
   ["c44c1fc81acab358"] = { "Cosa sono le Carte di Lunacupa?", "." },
   ["c44cde3d55ce658e"] = { "Muori, <straniero/straniera>!", "." },
   ["c4509dd34846b1e0"] = { "I Windshapers sono quasi gli unici colpevoli di tutto ciò che è accaduto. Il loro rifiuto di cambiare ha compromesso la nostra capacità di salvarci dal pericolo che ci minaccia. Parlano per assoluti e trattano supposizioni e speranze superstiziose come fatti.\n\nSai chi altro ragiona solo per assoluti? Gli Al'Aketh.\n\nIo, per parte mia, non intendo lasciare che la cieca adesione a credenze pericolose condanni il nostro popolo. Se non fosse per la minaccia del culto, marcerei con i nostri maghi fino all'altro lato di Valnaar per spazzare via i Windshapers.", "." },
-  ["c45151ed0daca1ff"] = { "L'anziano High Mountain si trova a Camp Taurajo, nelle ⟦Barrens=Savane⟧.", "." },
+  ["c45151ed0daca1ff"] = { "L'anziano Gran Monte si trova a Camp Taurajo, nelle ⟦Barrens=Savane⟧.", "." },
   ["c45c6656e33e7cd5"] = { "Il Cimitero dei Lupi Bianchi è in mano all'⟦Horde=Orda⟧.", "." },
   ["c45dff3544cbb7a3"] = { "Odio ammetterlo, ma l'orso ha avuto la meglio su di me. Accidenti, che orso enorme!\n\nTuttavia, se riesci ad abbatterlo, sarà un'impresa di cui vantarsi! Ha dato parecchio filo da torcere a più d'uno dei nostri migliori cacciatori.\n\n<Ti dà una pacca sulla schiena.>\n\nSconfiggi l'orso e ti accetteremo come membro effettivo del ⟦Farstrider Lodge=Padiglione Lungopasso⟧.", "." },
   ["c4679a7988a39314"] = { "Qualcosa da farmi esaminare?", "." },

@@ -44,6 +44,6 @@ WFJ.Data.add("gossip", {
   ["f8e554b46426cf88"] = { "%s sibila.", "." },
   ["f8e779785fc3cd9d"] = { "Cane! Ora intrappolerò la tua anima in un frammento e ti darò al mio imp come giocattolo!", "." },
   ["f8e9a1aab2f3e759"] = { "Ce l'abbiamo fatta!", "." },
-  ["f8ef26e8317afc17"] = { "Thrall ha pagato bene me e i miei ragazzi per aver aiutato a costruire Orgrimmar, così ho deciso di aprire un porto qui. Facciamo la maggior parte dei nostri affari tramite la ⟦Booty Bay=Baia del Bottino⟧ e il barone Revilgaz.", "." },
+  ["f8ef26e8317afc17"] = { "Thrall ha pagato bene me e i miei ragazzi per aver aiutato a costruire Orgrimmar, così ho deciso di aprire un porto qui. Facciamo la maggior parte dei nostri affari tramite la ⟦Booty Bay=Baia del Bottino⟧ e il barone Granbottino.", "." },
   ["f8fa296bab4c5f46"] = { "Parrebbe, <caro/cara>, che l'⟦Alliance=Alleanza⟧ sia riuscita a raccogliere tutto il necessario per lo sforzo bellico. Ora non ci resta che aspettare che quelle povere creature dell'⟦Horde=Orda⟧ finiscano con il loro.", "." },
 })

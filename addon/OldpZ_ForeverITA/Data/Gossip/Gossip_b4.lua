@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["b45abefe0dac33e5"] = { "Ah, ehm, sì, <signore/signora>. Pare che abbiamo raccolto tutto il Cuoio Medio che l'⟦Alliance=Alleanza⟧ ritiene necessario per la guerra. Mi dicono però che qui potrebbe esserci qualcun altro che ha ancora bisogno del tuo aiuto per la raccolta.", "." },
   ["b462dfab2f2de284"] = { "%s ruggisce, in cima ai ⟦Blackrock Spire=Bastioni di Roccianera⟧...", "." },
   ["b4677c1b23a584c5"] = { "Cerco addestramento da ladro.", "." },
-  ["b46a258d0ed55e7a"] = { "{name}, abbiamo abbastanza rifornimenti per lanciare assalti di terra nel ⟦Field of Strife=Pian della Discordia⟧. Se vuoi inviare gli ordini, e il tuo grado è abbastanza alto, parla con il sergente Yazra Bloodsnarl nel ⟦Frostwolf Village=Villaggio dei Lupi Bianchi⟧.", "." },
+  ["b46a258d0ed55e7a"] = { "{name}, abbiamo abbastanza rifornimenti per lanciare assalti di terra nel ⟦Field of Strife=Pian della Discordia⟧. Se vuoi inviare gli ordini, e il tuo grado è abbastanza alto, parla con il sergente Yazra Ringhiorosso nel ⟦Frostwolf Village=Villaggio dei Lupi Bianchi⟧.", "." },
   ["b46a64f6e94ec6f8"] = { "Il potere della Luce è davvero grande e misericordioso.", "." },
   ["b46acb7719645ebb"] = { "Be', c'è un maestro dei grifoni su a ⟦Stormwind=Roccavento⟧, se devi volare da qualche parte. Dovresti vedere i grifoni atterrare alla tua destra mentre attraversi la ⟦Valley of Heroes=Valle degli Eroi⟧.", "." },
   ["b46c470ba18d1f4a"] = { "<Andorov ti guarda cupo.>\n\nSe sanguina, possiamo ucciderlo.", "." },

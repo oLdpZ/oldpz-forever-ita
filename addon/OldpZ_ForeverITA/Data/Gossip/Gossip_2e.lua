@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["2e8ce5dcec7b5c7d"] = { "Ho vinto!!", "." },
   ["2e8dce7298f275bf"] = { "Il ⟦Snowfall Graveyard=Cimitero di Nevealta⟧ si trova in cima a una collina nel ⟦Field of Strife=Pian della Discordia⟧, a est del ⟦Winterax Hold=Covo degli Asciafredda⟧.\n\nNessuna delle due parti lo controlla.", "." },
   ["2e8ebc5d22e1734f"] = { "Finalmente. Quel bastardo ha avuto ciò che si meritava.", "." },
-  ["2e9474975033913b"] = { "Dov'è l'anziano High Mountain?", "." },
+  ["2e9474975033913b"] = { "Dov'è l'anziano Gran Monte?", "." },
   ["2e9c74636d389d33"] = { "Il locandiere Kauth può soddisfare le tue esigenze. Lo trovi sul lato ovest del villaggio, in una delle case lunghe.", "." },
   ["2ea299127fb8a03d"] = { "Beh, da quel che sento, la nuova pestilenza ha TUTTO il sapore della vecchia pestilenza, ma nessuna delle sue calorie o dei suoi carboidrati!", "." },
   ["2ea7f4d2d22b50fd"] = { "Mi credevano debole. Haha!!", "." },

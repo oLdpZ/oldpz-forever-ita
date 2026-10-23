@@ -3,11 +3,11 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["6703f20be7ca5c1c"] = { "Ciao ciao, <piccolo/piccola> {race}. Raze andare ora.", "." },
   ["67073178acd43cf7"] = { "Puoi imparare a cucire a Orgrimmar. È a nord. Forse uno degli Orgrimmar Grunt può aiutarti.", "." },
-  ["6715a9b2defc035b"] = { "Per ragioni che non riesco a capire, l'anziano Thunderhorn è andato all'Anfratto Brulicante, nel ⟦Un'Goro Crater=Cratere di Un'Goro⟧.", "." },
+  ["6715a9b2defc035b"] = { "Per ragioni che non riesco a capire, l'anziano Corno Tonante è andato all'Anfratto Brulicante, nel ⟦Un'Goro Crater=Cratere di Un'Goro⟧.", "." },
   ["672b5ffabf3673c9"] = { "{class}, l'⟦Horde=Orda⟧ ha raccolto tutto ciò che le serve per la Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧! Ora aspettiamo che quella misera ⟦Alliance=Alleanza⟧ ci raggiunga. Quando lo farà, cominceremo a trasportare tutto a ⟦Silithus=Silitus⟧. Una volta completati i preparativi laggiù, non dovrebbe passare molto prima che la guerra cominci!", "." },
   ["672e08d2ac0f85b3"] = { "Ben fatto. Un duro colpo per Arugal, non c'è dubbio!", "." },
   ["67318b4829532a33"] = { "Se non fosse per la loro incredibile, stupida fortuna, i goblin si schianterebbero con l'auto a ogni gara!", "." },
-  ["6731ee44b682228a"] = { "Dov'è l'anziano Darkhorn?", "." },
+  ["6731ee44b682228a"] = { "Dov'è l'anziana Corno Nero?", "." },
   ["6734c58905bf7e21"] = { "Ehilà, <amico/amica>. Tu sei nel posto giusto pe' imparare a usare 'na nuova arma.", "." },
   ["67378d5e76ae5a67"] = { "<Benvenuto/Benvenuta> a ⟦Ironforge=Forgiardente⟧, {class}.", "." },
   ["673b6b97de8e7746"] = { "Se non fosse per il Torvo Beone, passerei il tempo libero a strappare le ali ai cuccioli di drago.", "." },
@@ -47,5 +47,5 @@ WFJ.Data.add("gossip", {
   ["67e8dedce2093e9c"] = { "Hai bisogno di volare da qualche parte? Per quello devi andare a ⟦Undercity=Sepulcra⟧! Prendi la strada verso sud uscendo dal paese, poi vai a sud-ovest fino alle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧. Dal retro delle rovine puoi prendere l'ascensore che scende a ⟦Undercity=Sepulcra⟧ e, una volta lì, chiedi indicazioni più precise a un ⟦Undercity Guardian=Guardiano di Sepulcra⟧.", "." },
   ["67ebee1552630f7a"] = { "Hai tutta la mia attenzione.", "." },
   ["67f7229636061bdd"] = { "Sono un BOT. Ho tantissime informazioni. Per scoprire cosa so, sussurrami", "." },
-  ["67f7b2fcc4608e92"] = { "Salute, {class} {race}. Sono il comandante Stronghammer, l'ambasciatore che rappresenta qui l'⟦Alliance=Alleanza⟧. Se hai domande sullo stato delle raccolte dell'⟦Alliance=Alleanza⟧ per lo sforzo bellico di ⟦Ahn'Qiraj=Ahn'qiraj⟧, <ragazzo/ragazza>, non esitare a chiedere.", "." },
+  ["67f7b2fcc4608e92"] = { "Salute, {class} {race}. Sono il comandante Martelduro, l'ambasciatore che rappresenta qui l'⟦Alliance=Alleanza⟧. Se hai domande sullo stato delle raccolte dell'⟦Alliance=Alleanza⟧ per lo sforzo bellico di ⟦Ahn'Qiraj=Ahn'qiraj⟧, <ragazzo/ragazza>, non esitare a chiedere.", "." },
 })

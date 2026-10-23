@@ -337,7 +337,7 @@ WFJ.Data.add("item", {
   [20647] = { "Rigenera $N1 mana ogni $D1.", 0x9ac76902, "u" },
   [20648] = { "Rigenera $N1 mana ogni $D1.", 0x9ac76902, "u" },
   [20650] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },
-  [20651] = { "Clicca col pulsante destro per evocare e congedare Fosky.", 0xd2b48019, "u" },
+  [20651] = { "Clicca col pulsante destro per evocare e congedare ⟦Murki=Foski⟧.", 0xd2b48019, "u" },
   [20676] = { "Un articolo decifrato dal bollettino Vero Credente.", 0x1a546d87, "u" },
   [20677] = { "Un articolo decifrato dal bollettino Vero Credente.", 0x1a546d87, "u" },
   [20678] = { "Un articolo decifrato dal bollettino Vero Credente.", 0x1a546d87, "u" },

@@ -48,7 +48,7 @@ WFJ.Data.add("gossip", {
   ["cfdd0e59f17d9cd3"] = { "%s indica verso ovest.", "." },
   ["cfe0b2564c9391af"] = { "Ehi, qualcuno mi aiuti a prendere questo coso!", "." },
   ["cfe0f251e2db144e"] = { "Ah, Stonebrow di questi tempi non lascia quasi mai ⟦Ironforge=Forgiardente⟧, quindi se vuoi imparare la Sartoria dovrai andare a trovarlo lassù a ⟦Ironforge=Forgiardente⟧.", "." },
-  ["cfe2af137aa01b0f"] = { "Credo che l'anziano Splitrock sia andato a Maraudon, in ⟦Desolace=Desolanda⟧.", "." },
+  ["cfe2af137aa01b0f"] = { "Credo che l'anziano Spezzasassi sia andato a Maraudon, in ⟦Desolace=Desolanda⟧.", "." },
   ["cfeb55290a711701"] = { "Morte a qualunque {race} si metta sulla mia strada!", "." },
   ["cfedf86221f4c830"] = { "Buona fortuna, {name}. E ricorda: cerca Muiredon dopo aver portato a termine il compito.", "." },
   ["cff2e4b2869246cc"] = { "%s distrugge la picca!", "." },

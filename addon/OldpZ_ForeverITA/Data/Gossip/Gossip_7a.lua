@@ -16,7 +16,7 @@ WFJ.Data.add("gossip", {
   ["7a374449c1f3aa4a"] = { "Nagmara! È rimasto del montone?", "." },
   ["7a4a0f2e93147745"] = { "{name}! Come te la passi, <ragazzo/ragazza>? Fammi vedere cos'hai imparato dall'ultima volta che ti ho visto, così vediamo se c'è qualcosa di nuovo che posso insegnarti.", "." },
   ["7a4ba35becc5d59e"] = { "Mi spiace, <ragazzo/ragazza>, non sei ancora all'altezza di imparare da me. Va' da mio figlio Groum: un nuovo apprendista gli farebbe proprio piacere.", "." },
-  ["7a4dae2795ccdd3e"] = { "L'ultima volta che ho saputo, l'anziano Stonespire era a ⟦Everlook=Lungavista⟧, a ⟦Winterspring=Fontefredda⟧.", "." },
+  ["7a4dae2795ccdd3e"] = { "L'ultima volta che ho saputo, l'anziano Spira Dura era a ⟦Everlook=Lungavista⟧, a ⟦Winterspring=Fontefredda⟧.", "." },
   ["7a4ecbd2af1fce63"] = { "%s perde il collegamento!", "." },
   ["7a4f264e86866aea"] = { "%s toglie i semi dal ⟦Glowing Fruit=Frutto Brillante⟧...", "." },
   ["7a500cc0eb86fd4e"] = { "Dopo la caduta di Karazhan, il Kirin Tor inviò un gruppo di maghi a perquisire la torre e a sequestrare tutti gli oggetti importanti... a scopo di «ricerca». Fu allora che il leggendario bastone venne scoperto e riportato a Dalaran.", "." },

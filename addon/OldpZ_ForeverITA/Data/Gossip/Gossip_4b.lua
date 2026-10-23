@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["4ba4ef3e81b5efd9"] = { "È ora di insegnarti un po' di buone maniere, <ragazzo/ragazza>.", "." },
   ["4ba65d2b0df86cac"] = { "Randal è un po' un damerino, ma è affidabile, e questo è più di quanto possa dire di molti degli allievi che prendo con me. Comunque, immagino di non poterli biasimare se vogliono un po' d'avventura.", "." },
   ["4baad70d2c9b29a9"] = { "La bestia torna da dove è venuta. L'ira di Neptulon si è placata.", "." },
-  ["4badaf46dedc75a4"] = { "Dov'è l'anziano Bladeleaf?", "." },
+  ["4badaf46dedc75a4"] = { "Dov'è l'anziano Fogliaguzza?", "." },
   ["4bb0781c4a753a81"] = { "I miei carcerieri erano crudeli oltre ogni misura, {name}. Si alternavano fra me e il tenente Kirith, torturando uno di noi mentre l'altro guardava. Durante una pausa in una giornata particolarmente brutale, Kirith mi raccontò cosa era successo ai miei uomini e di un piano che stava elaborando per liberarli dai loro padroni.\n\nHanno subito una sorte di gran lunga peggiore della morte, peggiore perfino del dolore che io e Kirith abbiamo sopportato.", "." },
   ["4bb51654b21b9a2e"] = { "<Benvenuto/Benvenuta> alla Banca di ⟦Stormwind=Roccavento⟧. Offriamo conti finanziari e cassette di sicurezza per gli oggetti di valore. Hai già un conto presso di noi, <signore/signora>?", "." },
   ["4bb9fa1f9e6a55cf"] = { "<Un bandito solitario siede sul ciglio del precipizio, chiaramente immerso nei suoi pensieri. Se si accorge di te, non sembra interessato ad attaccarti.>", "." },

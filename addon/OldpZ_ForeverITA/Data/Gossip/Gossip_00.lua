@@ -47,7 +47,7 @@ WFJ.Data.add("gossip", {
   ["00d763c30917b3b0"] = { "Per millenni questo essere è rimasto assopito sotto il mondo, in attesa del suo momento. Dalla sua prigione ha atteso l'istante esatto in cui colpire chi voleva fargli del male.", "." },
   ["00d767a24a2a80d3"] = { "Dunque Hakkar è tornato?", "." },
   ["00d9e19801c0c351"] = { "Denni'ka può insegnarti a stare al caldo. Cercala a Survival of the Fittest, una capanna sulla riva del lago accanto alla Spirit Lodge. Sali e dirigiti a ovest, sopra la ⟦Valley of Strength=Valle della Forza⟧.", "." },
-  ["00db43cef8c98f74"] = { "Dov'è l'anziano Proudhorn?", "." },
+  ["00db43cef8c98f74"] = { "Dov'è l'anziano Corno Fiero?", "." },
   ["00dbd44927b40790"] = { "Grazie per ciò che hai fatto, {name}.\n\nCustodisci lo scettro; possa aiutarti nella tua lotta contro i mali che hanno invaso questo luogo...", "." },
   ["00e85c169695a867"] = { "Scappa finché puoi!", "." },
   ["00eb17e7794e3fc0"] = { "Cosa? La Falce Ossuta?", "." },

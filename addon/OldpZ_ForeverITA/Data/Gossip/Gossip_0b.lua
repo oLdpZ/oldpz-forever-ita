@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["0b658b8e153ce9a2"] = { "Non darti pena, amore mio. Mi hai liberato dalla schiavitù, e per questo ti amo ancora di più.", "." },
   ["0b6e7bec570496bd"] = { "Cosa ha detto Gryphe a capo?? Gryphe non mentiva! Eccola lì, cerca di rubare i piani di battaglia!", "." },
   ["0b71157ddc9fcc66"] = { "Seguaci, servitori, soldati del freddo buio! Obbedite al richiamo di Kel'Thuzad!", "." },
-  ["0b747af02ade31ab"] = { "Dov'è l'anziano Stonespire?", "." },
+  ["0b747af02ade31ab"] = { "Dov'è l'anziano Spira Dura?", "." },
   ["0b7a3a3465548d4f"] = { "Forse sono stato troppo precipitoso nel giudicarti, {class}. Pare che la tua fede cieca in questa Luce abbia un qualche valore, dopotutto.\n\nDammi il tuo marchio e ne amplificherò il potere.", "." },
   ["0b7c867f8e765823"] = { "⟦Chaw Stronghide=Chaw Pelle Forte⟧ risiede nella grande tenda all'angolo nord-ovest del villaggio. Per ora ti insegnerà ciò che devi sapere sulla Conciatura.", "." },
   ["0b7ef27c8c743d18"] = { "Uff.", "." },

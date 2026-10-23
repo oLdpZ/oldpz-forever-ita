@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["9126238580c671ee"] = { "Malygos, eh?", "." },
   ["91282d286ea2ebd0"] = { "Non cercare oltre: c'è la Locanda del Fiero Leone di ⟦Goldshire=Borgodoro⟧. Con un'ampia scelta di birre e morbidi letti di piuma, non potresti chiedere un posto migliore per riposare.", "." },
   ["912a719f887eef47"] = { "Non vedi che ho da fare qui? Va' a nord lungo la strada per Orgrimmar e chiedi a uno dei grunt. Non puoi sbagliare.", "." },
-  ["912c2e977f0c49aa"] = { "Va' al ⟦Freewind Post=Presidio di Ventolibero⟧, a ⟦Thousand Needles=Millepicchi⟧, e troverai l'anziano Skyseer.", "." },
+  ["912c2e977f0c49aa"] = { "Va' al ⟦Freewind Post=Presidio di Ventolibero⟧, a ⟦Thousand Needles=Millepicchi⟧, e troverai l'anziano Scruta Cieli.", "." },
   ["912d46b4f63c4b7c"] = { "Agenti del ⟦Cenarion Circle=Circolo Cenariano⟧ hanno scoperto informazioni inquietanti riguardo alla situazione attuale a Eldre'Thalas. Non so che decisione prendere al riguardo, e senza dubbio cercherò presto l'aiuto di persone abili, capaci di cavarsela in combattimento.\n\nPer agire come si deve a Eldre'Thalas, però, bisogna conoscere la tradizione di un oggetto noto come Fruit of Fertility.", "." },
   ["9136476f3df99279"] = { "Un altro cade!", "." },
   ["913bb3a1c1283b82"] = { "<TRADITORE/TRADITRICE>!", "." },

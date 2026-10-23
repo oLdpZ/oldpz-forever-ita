@@ -13,7 +13,7 @@ WFJ.Data.add("gossip", {
   ["f42c5d49be43294f"] = { "Certo. Ti aspetta nella biblioteca.", "." },
   ["f42e2ab409d6884f"] = { "Va' alla ⟦Great Forge=Grande Forgia⟧, proprio al centro di ⟦Ironforge=Forgiardente⟧. Lavora lì, insieme agli altri Maestri della nostra gente.", "." },
   ["f4359724886020d5"] = { "È ora che tu ti rechi a Darnassus a parlare con Me'lynn. D'ora in poi sarà lei a guidarti.", "." },
-  ["f4365d2614299fad"] = { "Soldato, chiama subito il capitano Blackanvil!", "." },
+  ["f4365d2614299fad"] = { "Soldato, chiama subito il capitano Neraforgia!", "." },
   ["f438343f439bebe6"] = { "Ho raggiunto l'ultimo punto di passaggio. Evviva!", "." },
   ["f43a752b1ae32b14"] = { "Non credo ci siano pesci in questi canali.", "." },
   ["f44d3f68bdfe603d"] = { "Muori nel nome di Ragnaros!", "." },

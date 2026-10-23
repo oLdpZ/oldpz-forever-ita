@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["a801e703c994eac2"] = { "%s implora che si ponga fine alle sue sofferenze.", "." },
-  ["a8074aecb09c586d"] = { "%s e il predone Kerr si lanciano nella battaglia...", "." },
+  ["a8074aecb09c586d"] = { "%s e l'incursore Kerr si lanciano nella battaglia...", "." },
   ["a80c17cc5ab04028"] = { "Percepisco il tuo arrivo da parecchio tempo, {name}. Era scritto nella trama delle stelle.", "." },
   ["a810f16c872aca92"] = { "Ho fallito ancora una volta...", "." },
   ["a81e8184a5d494b4"] = { "La battaglia va bene. Le forze del Flagello sembrano indebolite. Credo che sia solo questione di tempo prima di ricacciarle dalle nostre coste. Rivolgerò la mia magia a te, per aiutarti in questa lotta.", "." },
@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["a867d6bd99e3a344"] = { "Dobbiamo riempire questo carro entro la fine della giornata. Quindi tornate al lavoro. Forza, svelti!", "." },
   ["a86ecf4ee28adb1c"] = { "Il ⟦Iceblood Graveyard=Cimitero di Brinarossa⟧ è stato conquistato dall'⟦Horde=Orda⟧!", "." },
   ["a87bcb8e3830903d"] = { "Lascia le tue battaglie o le tue commissioni, e guarda la mia incredibile merce! Solo per poco tempo a ⟦Darkshire=Borgoscuro⟧... sia lodata la Luce per questo.", "." },
-  ["a88032d6f1245132"] = { "Salute, {name}. Sono ⟦Johnny McWeaksauce=Johnny Salsaforte⟧. Gli sviluppatori mi usano come strumento per svolgere funzioni specifiche a scopo di test. Per questo periodo di test sono impostato per fare due cose precise:\n\n(1) Segnarti come chi ha completato la missione di sintonia di Naxxramas, così da poter accettare la missione successiva, \"Echoes of War\", dal comandante Eligor Dawnbringer. Devi prima completare quella missione per accedere alle missioni del tuo set di armatura Tier 3.\n\n(2) Teletrasportarti a Naxxramas.\n\nDi cosa hai bisogno?", "." },
+  ["a88032d6f1245132"] = { "Salute, {name}. Sono ⟦Johnny McWeaksauce=Johnny Salsaforte⟧. Gli sviluppatori mi usano come strumento per svolgere funzioni specifiche a scopo di test. Per questo periodo di test sono impostato per fare due cose precise:\n\n(1) Segnarti come chi ha completato la missione di sintonia di Naxxramas, così da poter accettare la missione successiva, \"Echoes of War\", dal comandante Eligor Araldo dell'Alba. Devi prima completare quella missione per accedere alle missioni del tuo set di armatura Tier 3.\n\n(2) Teletrasportarti a Naxxramas.\n\nDi cosa hai bisogno?", "." },
   ["a88abadbc30af46b"] = { "Cos'è questo rumore?", "." },
   ["a88ca7cb776ae16c"] = { "Non abbocca niente....", "." },
   ["a892886186ad4819"] = { "Se tu non parla con Mizzle, tu non diventa re! Parla con Mizzle l'Astuto!", "." },

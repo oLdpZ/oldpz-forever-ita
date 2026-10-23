@@ -23,7 +23,7 @@ WFJ.Data.add("gossip", {
   ["a7804370b0274f1e"] = { "Ecco fatto, ce l'abbiamo fatta! Il rituale è avviato, e i fuochi dell'idolo stanno per spegnersi per sempre! Siete davvero gli eroi che speravo!", "." },
   ["a783e6d8ab47a6f7"] = { "Throm'ka, {class}. Sei qui per aiutarmi con i Lingotti di Stagno? Mi dicono che me ne serviranno $2006w per fare armi e armature per l'imminente Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧, ma per ora ne ho solo $2005w. Me ne porterai altri!", "." },
   ["a78a8947d4203cda"] = { "CIAO MONDO!", "." },
-  ["a799a74b1497f509"] = { "Nonostante la loro tragedia, i Non Morti sono venuti fin qui per aiutarci. Spero solo che noi possiamo essere altrettanto utili a loro. Cerca padre Cobb vicino alle Pozze delle Visioni, sotto l'⟦Spirit Rise=Altura degli Spiriti⟧.", "." },
+  ["a799a74b1497f509"] = { "Nonostante la loro tragedia, i Non Morti sono venuti fin qui per aiutarci. Spero solo che noi possiamo essere altrettanto utili a loro. Cerca padre Otium vicino alle Pozze delle Visioni, sotto l'⟦Spirit Rise=Altura degli Spiriti⟧.", "." },
   ["a7a542dd2d607b7d"] = { "Siediti e ascolta la mia storia, {race}.", "." },
   ["a7a93c5872661fa2"] = { "Quale saggezza posso trasmetterti?", "." },
   ["a7ab4c8f3c0ff8d6"] = { "È così che si fa, classe! Fareste meglio a stare attenti!", "." },

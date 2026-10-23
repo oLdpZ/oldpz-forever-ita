@@ -53,7 +53,7 @@ WFJ.Data.add("gossip", {
   ["78eeb473e532efbe"] = { "Guarda sopra di te; thara dormil dorah...", "." },
   ["78f1cfc141ced234"] = { "Cosa sta succedendo a tutti? Ho... freddo...", "." },
   ["78f387791a6b66af"] = { "{class}, grazie agli sforzi di molti siamo riusciti a raccogliere tutte le bende di telarunica che l'⟦Alliance=Alleanza⟧ ritiene necessarie per il conflitto imminente. Fossi in te, chiederei ad altri qui intorno se hanno ancora raccolte da completare.", "." },
-  ["78f6197fcc0def20"] = { "Capitano Redpath! Come hai potuto abbandonarci!", "." },
+  ["78f6197fcc0def20"] = { "⟦Captain Redpath=Capitano Tracciarossa⟧! Come hai potuto abbandonarci!", "." },
   ["78f73009e26027b5"] = { "Bleah... quello non è un pesce!", "." },
   ["78f9c293e27bfccd"] = { "Non dirmelo! Shhh! Sei qui per il Brandicenere?!? Sì... Sì... No! Errore mio.\n\nCosa posso fare per te, {race}?", "." },
   ["78ff4985d12f3511"] = { "Sei riuscit<o/a> a trovare Merrin? Ti ha dato notizie per me?", "." },

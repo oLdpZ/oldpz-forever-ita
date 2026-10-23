@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["b3a7a9e99d936f73"] = { "Ho già visitato ⟦Ironforge=Forgiardente⟧. C'è un odore strano laggiù.", "." },
   ["b3a86e23d6ab3ccd"] = { "Ti ascolto, Demitrian.", "." },
   ["b3aea61a5482e62d"] = { "Esatto. Ti sto davanti in una forma che puoi comprendere, mortale. Di certo non potresti sopportare di trovarti al cospetto del drago noto come Vaelastrasz.\n\n<Vaelan ride.>\n\nVuoi che continui?", "." },
-  ["b3af757b998cf10c"] = { "Dov'è l'anziano Moonwarden?", "." },
+  ["b3af757b998cf10c"] = { "Dov'è l'anziano Guardialuna?", "." },
   ["b3b246392c490a34"] = { "Un'altra interruzione. Come dovrei riuscire a lavorare così? Non rispondere: ti sembra che m'importi quello che hai da dire? Perché non vai a disturbare il signor Pezzo-Grosso?", "." },
   ["b3b43e906ca6155d"] = { "Cra!", "." },
   ["b3b870a0a05ecd63"] = { "Abbiamo una scorta minima di rifornimenti per ricostruire la ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧. Ne serviranno molti di più prima di poterla riparare e tornare in battaglia.", "." },

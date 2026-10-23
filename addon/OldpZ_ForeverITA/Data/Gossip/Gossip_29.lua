@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["29038333f70701be"] = { "Ti do il benvenuto da Kibler's Exotic Pets! Come puoi aiutarmi oggi??", "." },
-  ["290e3817e57b2bcc"] = { "All'arcimago Allistarj degli Shadowsworn ne furono concesse tre. Anche a lady Sevine, strega degli Shadowsworn, ne furono concesse tre. Le restanti tre furono date a ⟦Grol the Destroyer=Grol il Distruttore⟧, signore degli ogre Dreadmaul di queste terre devastate.\n\nVedi, {name}, senza un'anima il corpo non può essere ucciso. Ciò che resta dei miei uomini è ora un'unità combattente indistruttibile. Per fortuna, le pietre del vincolo limitano fin dove possono spingersi.", "." },
+  ["290e3817e57b2bcc"] = { "All'arcimago Allistarj degli Shadowsworn ne furono concesse tre. Anche a dama Sevine, strega degli Shadowsworn, ne furono concesse tre. Le restanti tre furono date a ⟦Grol the Destroyer=Grol il Distruttore⟧, signore degli ogre Dreadmaul di queste terre devastate.\n\nVedi, {name}, senza un'anima il corpo non può essere ucciso. Ciò che resta dei miei uomini è ora un'unità combattente indistruttibile. Per fortuna, le pietre del vincolo limitano fin dove possono spingersi.", "." },
   ["2913eeee29c23636"] = { "La West Frostwolf Tower è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ la distruggerà!", "." },
   ["291a94366a55e80b"] = { "Muori, <intruso/intrusa>!", "." },
   ["291c1771902e181c"] = { "La tua anima è mia, debole.", "." },

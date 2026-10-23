@@ -7,7 +7,7 @@ WFJ.Data.add("gossip", {
   ["180da3a470cf32f9"] = { "Le tue conoscenze sono scarse. Torna da me quando le tue abilità nella fusione saranno cresciute!", "." },
   ["18149e1fc7e00e8f"] = { "Nel cielo notturno è all'opera qualcosa di più grande della magia. Un giorno mi daranno ascolto. . . .", "." },
   ["18160e83b09095cc"] = { "Ben detto! Ben detto! Ci brindo sopra!", "." },
-  ["1817445ecf622ad3"] = { "L'anziano Rumblerock trascorre gli anni in una grotta in cima al ⟦Dreadmaul Rock=Masso dei Maglioinfame⟧, nelle ⟦Burning Steppes=Steppe Ardenti⟧.", "." },
+  ["1817445ecf622ad3"] = { "L'anziano Sfaldarocce trascorre gli anni in una grotta in cima al ⟦Dreadmaul Rock=Masso dei Maglioinfame⟧, nelle ⟦Burning Steppes=Steppe Ardenti⟧.", "." },
   ["181d53c11c8989d4"] = { "Cosa desideri, <signore/signorina>?", "." },
   ["181f4453cd447e7c"] = { "In ginocchio, infedele.", "." },
   ["181f95a72db5ea87"] = { "%s annuisce con aria d'intesa.", "." },

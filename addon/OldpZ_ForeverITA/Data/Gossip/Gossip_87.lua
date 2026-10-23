@@ -42,7 +42,7 @@ WFJ.Data.add("gossip", {
   ["87aad64f9aadfc7e"] = { "Intrusi! Uccideteli! Non lasciateli entrare nella stanza!", "." },
   ["87ab59c189c6a588"] = { "Come desideri, {class}.", "." },
   ["87ac366ca6bdebac"] = { "È una bella giornata per vivere, no? Lavoro duro e buon cibo: ci sono cose peggiori che potremmo fare in una giornata così bella.", "." },
-  ["87aec11f91f3abba"] = { "Dov'è l'anziano Brightspear?", "." },
+  ["87aec11f91f3abba"] = { "Dov'è l'anziana Lanciachiara?", "." },
   ["87baf82cc0ae7514"] = { "Vengo da ⟦Ironforge=Forgiardente⟧ per dare una mano con la ricostruzione qui. Se riesco a insegnare le mie abilità a un bel po' di voi, forse potrò lasciare il lavoro a voi e tornarmene a casa.", "." },
   ["87bbc0c2d6576088"] = { "Pensi di avere abbastanza cervello? Pensi di avere quello che serve? Scopriamolo!", "." },
   ["87bfee5c3f6f80db"] = { "Guarda questi campioni! Che cosa significa? Che cosa significa? Mi servirà tempo, tempo per esaminare tutte queste informazioni. E mi serviranno altre informazioni. Informazioni che non posso ottenere... dannazione! Pensa, Laris, pensa!\n\nChe cosa farai? Cosa?!\n\nDeve esserci una soluzione!", "." },
@@ -59,5 +59,5 @@ WFJ.Data.add("gossip", {
   ["87f778e40ef703b6"] = { "Servirò il padrone... nella morte!", "." },
   ["87fa8adffe3cf087"] = { "State in guardia!", "." },
   ["87fb5c4a958b4a98"] = { "⟦Glacial Wrists=Polsiere Glaciali⟧.", "." },
-  ["87fe03a386b5e8e2"] = { "Mio signore. Da parte di padre Lankester.", "." },
+  ["87fe03a386b5e8e2"] = { "Mio signore. Da parte di padre Niflheim.", "." },
 })

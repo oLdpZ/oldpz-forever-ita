@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["cdd2d3f9e410fe05"] = { "Ecco! Ha funzionato!", "." },
   ["cdd2db0d7e9804b6"] = { "Il rogo dell'Uomo di Paglia comincerà tra cinque minuti! Venite alla festa, appena a ovest di ⟦Undercity=Sepulcra⟧, e celebrate la Veglia delle Ombre e la nostra liberazione dal Flagello!", "." },
   ["cde1a9121365bd3f"] = { "Padrone, ho bisogno di aiuto!", "." },
-  ["cdf0e54d64af766b"] = { "L'ultima volta che ne ho sentito parlare, l'anziano Runetotem era in viaggio verso ⟦Razor Hill=Tranciacolle⟧, in Durotar.", "." },
+  ["cdf0e54d64af766b"] = { "L'ultima volta che ne ho sentito parlare, l'anziana Totem Runico era in viaggio verso ⟦Razor Hill=Tranciacolle⟧, in Durotar.", "." },
   ["cdf53291f84ae7dc"] = { "<Benvenuto/Benvenuta> al fronte, {class}. I politici potranno anche tramare e complottare tra loro, ma qui non troveranno un simile lusso. Questa è la Granbarricata, e qui combattiamo ogni giorno per la nostra sopravvivenza.\n\nSe sei <venuto/venuta> a cercare l'occasione di dimostrarti <un/una> <eroe/eroina>, qui ne troverai in abbondanza... soprattutto ora che avanziamo verso Andorhal e la forza maligna che controlla il Flagello laggiù.", "." },
   ["cdf7c0e0f195ca21"] = { "Solo perché non è il mio cuore non vuol dire che non possa spezzarsi.", "." },
 })

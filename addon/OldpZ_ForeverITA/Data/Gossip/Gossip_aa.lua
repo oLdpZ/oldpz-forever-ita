@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["aa6ae0ea6c5d9da0"] = { "La nostra è la via della gloria, {race}! La gracile ⟦Alliance=Alleanza⟧ sta ancora cercando di racimolare le sue provviste di guerra, mentre noi abbiamo raccolto tutte le nostre e siamo pronti a spedirle a ⟦Silithus=Silitus⟧.", "." },
   ["aa6cb1d5e9b44019"] = { "L'abominio è arrivato! Avanti!", "." },
   ["aa701e4b67e64cad"] = { "Sono caduti in troppi, <sacerdote/sacerdotessa>. Devi concentrarti!", "." },
-  ["aa734c0600001888"] = { "Dov'è l'anziano Wildmane?", "." },
+  ["aa734c0600001888"] = { "Dov'è l'anziana Manto Selvaggio?", "." },
   ["aa73929badcffc6c"] = { "Certamente!", "." },
   ["aa77950425b9644d"] = { "Dai un pesce a un toro e lo sfamerai per un giorno. Insegna a un toro a pescare e lo sfamerai per tutta la vita. ⟦Uthan Stillwater=Uthan Acqua Ferma⟧ può insegnarti a pescare. Cerca la sua saggezza a ovest del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧, lungo le rive del ⟦Stonebull Lake=Lago Toro di Pietra⟧.", "." },
   ["aa78f17405c37c8f"] = { "Ciao! Che piacere rivederti, {name}. Dimmi, hai completato la prima missione che ti ho dato? Se sì, potrei avere una seconda missione per te...", "." },

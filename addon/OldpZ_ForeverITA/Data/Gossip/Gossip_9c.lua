@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["9c69bad5eeaae79d"] = { "Assicurati di dire a ⟦Greatfather Winter=Babbo Inverno⟧ quale sorpresa segreta vorresti ricevere per questo Grande Inverno!", "." },
   ["9c70f7cd5837b25c"] = { "Con questo distruggo questi strumenti del male! Per l'⟦Horde=Orda⟧!", "." },
   ["9c7a35637d68678f"] = { "Questo lavoro non vale di certo sedicimila e cinquecento all'anno.", "." },
-  ["9c80476bad5905cc"] = { "Eccellente! Renderai un grande servizio alla Lega di Arathor liberando il ⟦Arathi Basin=Bacino d'Arathi⟧ dai ⟦The Defilers=Profanatori⟧ e dai loro scagnozzi dell'⟦Horde=Orda⟧. Cerca lady Hoteshem nella sala delle udienze reali del Castello di ⟦Stormwind=Roccavento⟧. Ti sta aspettando, {name}.", "." },
+  ["9c80476bad5905cc"] = { "Eccellente! Renderai un grande servizio alla Lega di Arathor liberando il ⟦Arathi Basin=Bacino d'Arathi⟧ dai ⟦The Defilers=Profanatori⟧ e dai loro scagnozzi dell'⟦Horde=Orda⟧. Cerca dama Hoteshem nella sala delle udienze reali del Castello di ⟦Stormwind=Roccavento⟧. Ti sta aspettando, {name}.", "." },
   ["9c8156492bc57ab6"] = { "HAI VINTO!", "." },
   ["9c851c410e1fc0d2"] = { "Devo ammettere che te la cavi molto bene nell'arte della sartoria. Ora vediamo quanto vali DAVVERO...", "." },
   ["9c859ef1027953b5"] = { "Mm... dopo aver consegnato questo, credo che farò un salto in quella bottega del formaggio per uno spuntino.", "." },

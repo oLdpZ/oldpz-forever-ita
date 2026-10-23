@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["4176768b1f990b55"] = { "Se provi a fallire e ci riesci, cosa hai appena fatto?", "." },
   ["41791003aed682b3"] = { "La forza del corpo è la potenza e la rapidità dell'azione. Devi mantenerti in forma in ogni momento, sia nel fisico sia nella mente. La mole dell'orso mette in risalto la sua forza, perché in combattimento è un nemico feroce. La sua mole, però, nasconde un'agilità flessuosa e una mente acuta. Sono sorprese che userai a tuo vantaggio.\n\nDevi affidarti alla forza del corpo dell'orso per padroneggiare la via dell'Artiglio.", "." },
   ["417c3914fbe2a7d4"] = { "Infedeli!", "." },
-  ["417ca41d329c2ea4"] = { "L'anziano Darkhorn si trova tra le rocce rosse di Orgrimmar.", "." },
+  ["417ca41d329c2ea4"] = { "L'anziana Corno Nero si trova tra le rocce rosse di Orgrimmar.", "." },
   ["417e2f944db26dba"] = { "Il nostro Signore ci ordina di prepararci alla guerra!", "." },
   ["417e61545d5259ed"] = { "Che la Luce guidi il tuo cammino e ti aiuti nei tuoi viaggi. Se ti serve aiuto mentre guardi la merce, sono proprio qui.", "." },
   ["4181248cdc7be917"] = { "Ho abbastanza rifornimenti per promuovere le nostre truppe a campioni.", "." },

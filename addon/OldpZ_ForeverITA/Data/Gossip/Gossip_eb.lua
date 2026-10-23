@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["eb4d8f6bac8f0b05"] = { "Mi sento debole", "." },
   ["eb514c407c4f000f"] = { "Un gioco? Sei fuori di testa?", "." },
   ["eb5ee44c460be3f4"] = { "E sono partiti!", "." },
-  ["eb66c85e529a3f70"] = { "Hai l'aria di chi torna dalle pianure. Hai notizie della Grande Madre Hawkwind?", "." },
+  ["eb66c85e529a3f70"] = { "Hai l'aria di chi torna dalle pianure. Hai notizie della madre anziana Vento Agile?", "." },
   ["eb717850c107007c"] = { "Pare che l'ultima parte delle merci che abbiamo raccolto verrà spedita a ⟦Silithus=Silitus⟧ entro domani. E una volta fatto, qualcuno dovrà andare a suonare il gong sullo Scarab Dais, fuori da ⟦Ahn'Qiraj=Ahn'qiraj⟧, per aprire i cancelli. È allora che le nostre bende torneranno utili.", "." },
   ["eb75d69a0f9064b2"] = { "L'oscurità era calata sui miei occhi, ma tu mi hai strappato al mio sogno empio. Mi hai salvato, {name}.\n\nE ora ti supplico... di perdonarmi.", "." },
   ["eb7bac46e653a8f1"] = { "Lo scontro è cominciato. {name}, preparati a combattere!", "." },

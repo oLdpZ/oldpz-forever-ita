@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["3dc0dff54b79e582"] = { "Ora nessuno ti salverà, umano!", "." },
   ["3dc2fe4952d957ab"] = { "Vecchio re morto? È impossibbile!", "." },
   ["3dcaaaa53fa711bf"] = { "Cosa? Non conosco nessun istruttore di stregoni a ⟦Stormwind=Roccavento⟧.\n\nAnche se... C'è chi ha notato attività demoniache dalle parti dello Slaughtered Lamb, nel ⟦Mage Quarter=Quartiere dei Maghi⟧. Potresti dare un'occhiata lì.", "." },
-  ["3dd166b4c0b433a9"] = { "Ti do il benvenuto a ⟦Darkshire=Borgoscuro⟧. Sono l'impiegato Daltry, al tuo servizio. Posso esserti d'aiuto?", "." },
+  ["3dd166b4c0b433a9"] = { "Ti do il benvenuto a ⟦Darkshire=Borgoscuro⟧. Sono il cancelliere Daltry, al tuo servizio. Posso esserti d'aiuto?", "." },
   ["3dd27061dcb14c28"] = { "Hazza'rah, il Tessitore di Sogni.\n\nSuo è il potere degli incubi, e che i suoi nemici possano dormire per sempre.\n\nOra Hazza'rah sogna sull'orlo della follia.", "." },
   ["3dda1f2599d93798"] = { "Cos'è lo sforzo bellico per ⟦Ahn'Qiraj=Ahn'qiraj⟧?", "." },
   ["3deebb3ba568bda6"] = { "EVVIVA! SONO IN SALVO!", "." },

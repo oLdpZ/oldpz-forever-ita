@@ -44,7 +44,7 @@ WFJ.Data.add("gossip", {
   ["15e55a5b8b0208f3"] = { "Incredibile! Ha funzionato! {name}, ho la tua armatura.", "." },
   ["15e560ac5d22dc38"] = { "Hai già ucciso Ran, amico mio?\n\nNemmeno gli Elfi della Notte meritano davvero la sua furia. Il suo odio brucia ancora più forte del mio, ma la sua mente non gli appartiene più. È una minaccia per tutte le creature naturali di questa foresta.", "." },
   ["15e7c7c8851ddbd7"] = { "⟦Dirge Quikcleave=Dirge Pestacarne⟧ di ⟦Gadgetzan=Meccania⟧ è un maestro delle arti culinarie. Per migliorare dovrai andare a cercarlo.", "." },
-  ["15e9c80658ae96bb"] = { "L'anziano Morndeep passa il tempo al Ring of Law, nei ⟦Blackrock Depths=Sotterranei di Roccianera⟧.", "." },
+  ["15e9c80658ae96bb"] = { "L'anziano Albafonda passa il tempo al Ring of Law, nei ⟦Blackrock Depths=Sotterranei di Roccianera⟧.", "." },
   ["15ec35ea3ef370b0"] = { "<Il/La> {class} che trasale è <il/la> {class} che muore. Se vuoi guardare la morte in faccia da {class}, ti insegnerò a non trasalire.", "." },
   ["15f0eb24adaf5a31"] = { "Parlami della promozione della confezione regalo iCoke.", "." },
   ["15f6163212b78ad9"] = { "Cos'è stato quel rumore?", "." },

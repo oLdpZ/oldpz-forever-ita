@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["8664db2ac2f53bf8"] = { "Ora c'è solo una via d'uscita: percorrere il sentiero solitario dei dannati.", "." },
   ["866c6d50320d030a"] = { "Che il destino sia così crudele da concederci solo questo dopo mille anni di lontananza...", "." },
   ["866f1cbb6deb54c4"] = { "Ehi, tu! Se vuoi guadagnarti il rispetto dei nani di ⟦Ironforge=Forgiardente⟧, puoi cominciare donando risorse preziose! ⟦Ironforge=Forgiardente⟧ è a corto di stoffa; tessuti e bende non crescono sugli alberi, sai!\n\nInvece di monetizzare le varie stoffe che trovi durante le tue avventure, donale! Così ti guadagnerai la riconoscenza del popolo nanico di ⟦Ironforge=Forgiardente⟧!", "." },
-  ["867d1292537553db"] = { "Dov'è l'anziano Winterhoof?", "." },
+  ["867d1292537553db"] = { "Dov'è l'anziano Zoccolo Artico?", "." },
   ["86870c6a354256bd"] = { "Certo che posso insegnarti la nobile arte di maneggiare un'arma ad asta, ma ti costerà.", "." },
   ["868a1c2b7b0f17ad"] = { "La risposta non si vede attraverso la Distorsione Fatua.", "." },
   ["868dbf08fbed3327"] = { "Ecco la ⟦Cathedral of Light=Cattedrale della Luce⟧, il centro dell'illuminazione spirituale qui a ⟦Stormwind=Roccavento⟧.", "." },

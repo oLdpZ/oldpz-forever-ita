@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["b8ae34df26099419"] = { "Cerca la torre d'attracco degli zeppelin fuori dalla città, a sud-est.", "." },
   ["b8aea88810eb6fbc"] = { "Puoi darmi qualche indicazione?", "." },
   ["b8b3714a35e17b6c"] = { "C'è qualcuno?", "." },
-  ["b8bd3f9f24a64ed3"] = { "Dov'è l'anziano Starsong?", "." },
+  ["b8bd3f9f24a64ed3"] = { "Dov'è l'anziana Cantastella?", "." },
   ["b8c27d15ec1e33a1"] = { "Per quanto ci proviate, alla fine le vostre strade si separeranno.", "." },
   ["b8ca098436d51b36"] = { "La tua capacità di imparare ha superato la mia. Per altre lezioni dovrai parlare con ⟦Bena Winterhoof=Bena Zoccolo Artico⟧, laggiù. Però, ti prego, non rubarle troppo tempo. Ha bisogno di riposare.", "." },
   ["b8d2d3f6f0c0383d"] = { "Come catturo le puzzole del fango per la tua esca?", "." },

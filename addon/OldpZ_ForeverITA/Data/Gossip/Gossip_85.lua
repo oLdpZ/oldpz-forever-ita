@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["8545b0113b99f5f9"] = { "%s si ferma e guarda il mare di soldati che gli stanno davanti, nervosi.", "." },
   ["85469c4bb8de9b90"] = { "Grazie... a te...", "." },
   ["8548839975bb711d"] = { "%s ascolta la supplica di {name}.", "." },
-  ["854889853ddcb45f"] = { "%s consegna gli occhiali luminosi al dottor Draxlegauge.", "." },
+  ["854889853ddcb45f"] = { "%s consegna gli occhiali luminosi al dottor Erbanera.", "." },
   ["855bffede6056c66"] = { "Molto bene, che il tuo viaggio nella sartoria abbia inizio.", "." },
   ["8563b2771dca1c5d"] = { "La tua presenza ci rinsalda i nervi, <signore/signora> {name}.", "." },
   ["8564b38d57ef1c3f"] = { "Cerchi la morte?", "." },

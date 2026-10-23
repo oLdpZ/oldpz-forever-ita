@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["535933a1c59debbb"] = { "Non so, Jill. Se Klaven scende mentre battiamo la fiacca, potremmo finire come una di quelle cose!", "." },
   ["535dc65e7afed0c1"] = { "Popolo dell'⟦Horde=Orda⟧, cittadini di Orgrimmar, venite, radunatevi e celebrate <un/una> <eroe/eroina> dell'⟦Horde=Orda⟧. In questo giorno, {name}, sotto gli auspici del nostro glorioso Capoguerra, ha inferto un colpo mortale allo Stormo dei Draghi Neri. La madre della covata, Onyxia, è stata uccisa!", "." },
   ["5365bdd2936c53fc"] = { "Salve, {class}!", "." },
-  ["536bd20463608dcb"] = { "Quando le nostre scorte sono alte, il feldmaresciallo Teravaine è di stanza nel ⟦Field of Strife=Pian della Discordia⟧, presso la nostra postazione di baliste più a sud.", "." },
+  ["536bd20463608dcb"] = { "Quando le nostre scorte sono alte, il primo maresciallo Teravaine è di stanza nel ⟦Field of Strife=Pian della Discordia⟧, presso la nostra postazione di baliste più a sud.", "." },
   ["53713b6aefa58b7a"] = { "Erbalismo", "." },
   ["537c3d154ddd4a22"] = { "La nostra evocazione è completa! Il cristallo Ash'ari è stato ripristinato!", "." },
   ["5386a3e1c87c56c5"] = { "Renderemo schiavi i verrospini!", "." },

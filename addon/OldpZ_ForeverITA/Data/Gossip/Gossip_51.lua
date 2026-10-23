@@ -42,7 +42,7 @@ WFJ.Data.add("gossip", {
   ["51e0f993f4659a93"] = { "%s comincia a brillare e a fumare!", "." },
   ["51e11d67f8b58bfe"] = { "Non dire a Tirth che sono ancora qui. Se scopre che non ho lasciato le Distese Salate, mi toccherà fargli le commissioni e lavargli i panni sporchi per sempre!", "." },
   ["51e9082eacc418a6"] = { "Vuoi sapere della raccolta delle razioni? Molto bene. Secondo le ultime notizie, l'⟦Horde=Orda⟧ ha preparato $2095w controfiletti di lupo su $2096w. Abbiamo anche messo da parte $2102w pinnagialla maculati al vapore su $2103w e $2105w salmoni impanati sui $2106w necessari.", "." },
-  ["51ea6689e6de8cad"] = { "%s bacia la padrona Nagmara", "." },
+  ["51ea6689e6de8cad"] = { "%s bacia la signora Nagmara", "." },
   ["51eb16ac0ef8abf1"] = { "Se sei qui per farmi perdere tempo, stai facendo perdere tempo all'intero ⟦Cenarion Circle=Circolo Cenariano⟧. Per il tuo bene, speriamo che tu non sia così <sciocco/sciocca> da fare proprio questo.", "." },
   ["51f4a03d141c3ef3"] = { "Mamma!", "." },
 })

@@ -2,12 +2,12 @@
 local _, WFJ = ...
 WFJ.Data.add("objective", {
   [479017] = { "Ricevi istruzioni da Randal Emerson", 0x1d0e4aad, "." },
-  [479018] = { "Parla con il sommo inventore Mekkatorque", 0x3ba9399f, "." },
-  [479019] = { "Parla con re Magni Bronzebeard", 0x960d6338, "." },
+  [479018] = { "Parla con il gran meccanista Meccatork", 0x3ba9399f, "." },
+  [479019] = { "Parla con re Magni Barbabronzea", 0x960d6338, "." },
   [479020] = { "Parla con ⟦Tyrande Whisperwind=Tyrande Soffiabrezza⟧", 0xbc1c9bb6, "." },
   [479025] = { "Parla con Vol'jin", 0x3d2e07a1, "." },
   [479026] = { "Parla con ⟦Cairne Bloodhoof=Cairne Zoccolo Sanguinario⟧", 0x607021a5, "." },
-  [479027] = { "Parla con lady Sylvanas Windrunner", 0x19e7ef9c, "." },
+  [479027] = { "Parla con ⟦Lady Sylvanas Windrunner=Dama Sylvanas Ventolesto⟧", 0x19e7ef9c, "." },
   [479385] = { "Duelli tra giocatori vinti o Novice Warriors sconfitti", 0x9a5b34f1, "." },
   [479408] = { "Guardie della morte motivate", 0xfc11df5d, "." },
 })

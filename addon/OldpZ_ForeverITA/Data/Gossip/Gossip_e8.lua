@@ -41,7 +41,7 @@ WFJ.Data.add("gossip", {
   ["e8b8bcb94581e2e1"] = { "Ma certo! Verso quale professione vuoi che ti indirizzi?\r\n\nSegnerò sulla tua mappa la posizione dell'istruttore locale che preferisci. Ricorda che nelle capitali puoi trovare istruttori per un addestramento più completo.", "." },
   ["e8b9e35dffd30953"] = { "Datti da fare prima che sostituisca quel manichino con te e cominci un riscaldamento tutto mio!", "." },
   ["e8c1fec59423a1ce"] = { "L'etichetta di questo regalo dice: «Dai 40 anni in su.»", "." },
-  ["e8c231a13bb1f5c7"] = { "L'anziano Skygleam si trova vicino al ⟦Ravencrest Monument=Colosso di Crinocorvo⟧, ad Azshara.", "." },
+  ["e8c231a13bb1f5c7"] = { "L'anziano Splendicielo si trova vicino al ⟦Ravencrest Monument=Colosso di Crinocorvo⟧, ad Azshara.", "." },
   ["e8c3966e5822c8b8"] = { "Estrazione", "." },
   ["e8d45c4311689976"] = { "Ora, se fossi la locandiera Renee, dove potrei essere? Mmm? Oh, magari dentro la ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧. Sì, è così, non ho dubbi. Prova all'estremità sud-orientale di Brill... pensi di riuscire a trovarla?", "." },
   ["e8e35bac8c081e4c"] = { "C'è un solo Capoguerra, Eitrigg!", "." },

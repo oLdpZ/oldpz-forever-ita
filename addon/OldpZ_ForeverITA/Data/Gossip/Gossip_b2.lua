@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["b21585ebb764ad48"] = { "Cosa credi che potrei insegnarti? Roxxik farebbe un lavoro molto migliore. Lo trovi a Orgrimmar. Ora vattene!", "." },
   ["b21db46ea478a3cc"] = { "Cosa ci fa un elfo come te in una grotta come questa?", "." },
   ["b2276c81ee78e3ee"] = { "Servito!", "." },
-  ["b227e05612c466a7"] = { "Dov'è l'anziano Morndeep?", "." },
+  ["b227e05612c466a7"] = { "Dov'è l'anziano Albafonda?", "." },
   ["b22bc7189e3b55ee"] = { "Sei <uno/una> <stolto/stolta>, e presto perderai la vita. No?", "." },
   ["b2301c8c950c5fc0"] = { "PER LA FORZA DI KALIMDOR!", "." },
   ["b23449bccc0c0143"] = { "Chi è <questo/questa> {class} che si presenta davanti alla Corte di Lakshire nel Regno di ⟦Stormwind=Roccavento⟧? Dichiara cosa ti porta in questo borgo, {race}. La minaccia degli orchi sul Regno è troppo grande per sprecare tempo in chiacchiere oziose.", "." },

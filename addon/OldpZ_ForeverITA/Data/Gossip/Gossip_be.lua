@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["bec1d952b7a68014"] = { "Non vedi che sto pescando?!", "." },
   ["bec3fd24ef37a43e"] = { "Sì, tu cercare Christopher Drakul nel ⟦Trade Quarter=Quartiere del Commercio⟧. Lui su piattaforma est.", "." },
   ["bec9deae1e071496"] = { "%s trasforma gli oggetti in un totem.", "." },
-  ["becad70d68ac4de5"] = { "Situata a Dun Morogh, Gnomeregan è stata per generazioni la capitale degli gnomi, ma di recente è stata infestata da trogg mutanti. In un disperato tentativo di reagire, l'alto inventore Mekkatorque ha ordinato lo svuotamento d'emergenza dei serbatoi di scorie radioattive della città. Sebbene i trogg siano rimasti contaminati, il loro assedio è continuato senza sosta e gli gnomi sono stati costretti a cercare rifugio nella città nanica di ⟦Ironforge=Forgiardente⟧, dove l'alto inventore ora arruola anime coraggiose per aiutare il suo popolo a riconquistare l'amata città.", "." },
+  ["becad70d68ac4de5"] = { "Situata a Dun Morogh, Gnomeregan è stata per generazioni la capitale degli gnomi, ma di recente è stata infestata da trogg mutanti. In un disperato tentativo di reagire, il gran meccanista Meccatork ha ordinato lo svuotamento d'emergenza dei serbatoi di scorie radioattive della città. Sebbene i trogg siano rimasti contaminati, il loro assedio è continuato senza sosta e gli gnomi sono stati costretti a cercare rifugio nella città nanica di ⟦Ironforge=Forgiardente⟧, dove l'alto inventore ora arruola anime coraggiose per aiutare il suo popolo a riconquistare l'amata città.", "." },
   ["becd2d32f6c37107"] = { "Ecco, vorrei darti questo pegno del mio amore.", "." },
   ["bed0218ca6aff688"] = { "Quando vuoi, <guerriero/guerriera>.", "." },
   ["bed5f140f54ae1ec"] = { "Ok, andiamo!", "." },

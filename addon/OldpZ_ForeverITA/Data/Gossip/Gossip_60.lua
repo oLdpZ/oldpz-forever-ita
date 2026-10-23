@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["606496bc4809f0b0"] = { "John, tesoro, dove sei?", "." },
   ["607236b0b110d6d7"] = { "Ehi, <signore/signorina>. Hai l'aria di <un/una> {class} che se ne intende di vino. Ho un favore da chiederti, e credo di poterti fare un'offerta che non puoi rifiutare... fidati!", "." },
   ["6077e5e42cbfd7c3"] = { "{name}, questo è arrivato per te stamattina.", "." },
-  ["607c071ee6cd2d2c"] = { "L'anziano Goldwell passa il suo tempo nel villaggio di Kharanos, a Dun Morogh.", "." },
+  ["607c071ee6cd2d2c"] = { "L'anziano Pozzodoro passa il suo tempo nel villaggio di Kharanos, a Dun Morogh.", "." },
   ["60850155e51488e4"] = { "È Erma che si occupa di tutti gli animali qui intorno. Si trova proprio fuori dalla Locanda del Fiero Leone, se hai bisogno di parlarle.", "." },
   ["608a49cdda299a5c"] = { "Presto libereremo Azeroth dalla presenza abominevole dei silitidi. Il loro potenziale distruttivo è molto più grande di quanto tu abbia visto con i tuoi occhi, {name}. Dietro le loro attività ci sono poteri più grandi e più oscuri.", "." },
   ["6091e3b178b7ed4d"] = { "%s prende la mira verso le bottiglie...", "." },

@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["f9804223306be7ec"] = { "Delizioso!", "." },
   ["f9824c44b2ba7432"] = { "Dov'è l'istruttore di Estrazione?", "." },
   ["f9867c6f18b14f28"] = { "Lo dico alla mamma!", "." },
-  ["f98b9cab8696d6cb"] = { "L'ostessa Pala ti aiuterà a far riposare corpo e spirito. La trovi nell'edificio appena a sud della banca, sul terrazzo inferiore.", "." },
+  ["f98b9cab8696d6cb"] = { "La locandiera Pala ti aiuterà a far riposare corpo e spirito. La trovi nell'edificio appena a sud della banca, sul terrazzo inferiore.", "." },
   ["f98cb116da27609a"] = { "Berte! Evalyn! Si fa buio. Venite dentro.", "." },
   ["f992bfc86a355129"] = { "Un'anima appassionata come me, eh? Beh, aspetta e vedrai: faremo di te una testa di bullone in un attimo!", "." },
   ["f996b0f943ae6a89"] = { "Altro che investimento sbagliato!\n\nIl libro oscuro di incantesimi di lord Valthalak ci ha fruttato un bel gruzzolo al mercato nero. Peccato che lui non abbia preso affatto bene il furto dei suoi averi. Quel fetente ci ha fatto pagare anche dopo essere morto da mesi!", "." },

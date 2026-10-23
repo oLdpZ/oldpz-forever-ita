@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["a9b9cf43457121bc"] = { "%s consegna lo Scettro delle Sabbie Mutevoli a ⟦Fandral Staghelm=Fandral Elmocervo⟧.", "." },
   ["a9ba3752bcbfce77"] = { "Il tempo della guerra è quasi giunto, {class}! Sia l'⟦Horde=Orda⟧ sia l'⟦Alliance=Alleanza⟧ hanno completato i preparativi. Tutto il nostro materiale bellico viene spedito a ⟦Silithus=Silitus⟧ proprio ora. Mi aspetto che l'ultima parte arrivi entro un giorno. Quando tutto sarà radunato là, chi avrà portato a termine l'arduo compito di ricomporre lo Scettro delle Sabbie Mutevoli lo batterà contro lo Scarab Gong e aprirà i cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Allora si combatterà una battaglia come non se ne vedevano da secoli!\n\nLok'tar Ogar!", "." },
   ["a9bb5156e799029f"] = { "QUESTO EVENTO FUNZIONA.", "." },
-  ["a9bfa3fdffe0e7f7"] = { "Signori del Terrore? Forse intendi lord Banehollow. Ti manda i suoi saluti, e ha un messaggio per te...", "." },
+  ["a9bfa3fdffe0e7f7"] = { "Signori del Terrore? Forse intendi sire Sacramorte. Ti manda i suoi saluti, e ha un messaggio per te...", "." },
   ["a9bfc1fc0f5eb96f"] = { "Ho appena assegnato l'uccisione a {name}.", "." },
   ["a9c8dad921b9c6fc"] = { "Ahh, sei tornat<o/a>. Se hai la pietra, vuol dire che la montagna ti ha scelt<o/a> davvero. Ti darò il totem che ti ha promesso. Ma se sei venut<o/a> a mani vuote, fuori dai piedi! Il sentiero non è per chi dimentica la propria strada.", "." },
   ["a9cdccbbdc211915"] = { "Ora guarda...", "." },

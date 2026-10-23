@@ -42,7 +42,7 @@ WFJ.Data.add("gossip", {
   ["34ae7ced898f2662"] = { "%s emette un ruggito profondo, allertando gli alleati vicini e andando su tutte le furie!", "." },
   ["34b5b6f60425e928"] = { "Lysta, evoca... l'abominio!", "." },
   ["34bb5550702f7f71"] = { "Come posso aiutarti, amico?", "." },
-  ["34c3c622d667b01a"] = { "Dov'è l'anziano Riversong?", "." },
+  ["34c3c622d667b01a"] = { "Dov'è l'anziana Cantariva?", "." },
   ["34c43ab65c5391b9"] = { "È tutto raccolto, {class}. Tutto viene trasportato a ⟦Silithus=Silitus⟧ per i preparativi finali e dovrebbe arrivare entro un giorno. Tutte le nostre forze unite attendono l'<eroe/eroina> che completerà la riunificazione dello Scettro delle Sabbie Mutevoli, suonerà il gong e darà inizio alla Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧.", "." },
   ["34c60ac7e6f31b82"] = { "Spero proprio che restino vivi abbastanza a lungo perché io possa... presentarmi.", "." },
   ["34c81a80380e08aa"] = { "<Minuscolo/Minuscola> {class}! Non sei all'altezza del clan ⟦Blackrock=Roccianera⟧!", "." },

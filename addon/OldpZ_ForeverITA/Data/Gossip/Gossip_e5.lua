@@ -23,7 +23,7 @@ WFJ.Data.add("gossip", {
   ["e55fed8e0cba020f"] = { "Tutti i tipi da furfanti bazzicano la Caverna degli Inganni, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧. Scommetto che ci troverai ⟦Fenthwick=Passoscuro⟧, di sicuro intento a contare le monete di un altro borseggiatore. Uno di questi giorni lo acchiappo!\n\nNel frattempo terrò d'occhio anche te, <ragazzo/ragazza>.", "." },
   ["e5627e6b4d12267f"] = { "Sull'attenti, soldato!\n\nWINKY! RAPPORTO!", "." },
   ["e56db50d49d03188"] = { "Ecco fatto...", "." },
-  ["e56dc4f702a8ddca"] = { "Il tuo destino è segnato, Deliana! Pagherai per i tuoi oltraggi contro lord Valthalak!", "." },
+  ["e56dc4f702a8ddca"] = { "Il tuo destino è segnato, Deliana! Pagherai per i tuoi oltraggi contro sire Valthalak!", "." },
   ["e57154b4dc5899a1"] = { "La Madre Terra mi ha mandato dei segni: hai fatto un buon lavoro.", "." },
   ["e577ee56a2877042"] = { "Potenziamento a unità veterane!", "." },
   ["e57b8d0280bf2cf0"] = { "Senti il richiamo della caccia, {class}? Devi ascoltare con attenzione, ma il richiamo viene dal profondo di te. Viene dal profondo di tutti noi.", "." },

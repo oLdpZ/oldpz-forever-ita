@@ -23,7 +23,7 @@ WFJ.Data.add("gossip", {
   ["2b8af182d83a029b"] = { "Salve, {class}.", "." },
   ["2b8ca4472986b907"] = { "Cos'è questa storia? Vuoi rovinarmi la reputazione? Io non insegno ai novellini, <amico/bella>. Prova a parlare con l'orco Whuut, nel Drag di Orgrimmar. È molto più vicino al tuo livello di abilità. E di cervello.", "." },
   ["2b9680d953e4fbb5"] = { "Ehi, Jangdor, puoi insegnarmi di nuovo a fare un ⟦Wild Leather Helmet=Elmetto di Cuoio Selvatico⟧?", "." },
-  ["2b96c239b7151025"] = { "Dov'è l'anziano Skygleam?", "." },
+  ["2b96c239b7151025"] = { "Dov'è l'anziano Splendicielo?", "." },
   ["2b974602ba2ec117"] = { "Ho un sasso nel naso.", "." },
   ["2b9c6b4e1cb0ea44"] = { "%s cade su un ginocchio. Ha l'aria stremata.", "." },
   ["2b9f46faa4a992f1"] = { "Demonio! Affronta la potenza di Cenarius!", "." },

@@ -13,7 +13,7 @@ WFJ.Data.add("gossip", {
   ["ad1ffec0b33c8c5d"] = { "Oh no! Eccoli che arrivano!", "." },
   ["ad21939bd7f7a937"] = { "Si è passato il limite. Come osa il Flagello attaccare ⟦Stormwind=Roccavento⟧! Distruggetelo prima che ne arrivino altri!", "." },
   ["ad23de3ae0e85669"] = { "Un po' di questo unguento dovrebbe aiutare.", "." },
-  ["ad27884eaee63868"] = { "Abbiamo abbastanza rifornimenti per lanciare un assalto di terra. Se vuoi consegnare gli ordini, e pensi di averne i requisiti, parla con il caporale Noreg Stormpike.", "." },
+  ["ad27884eaee63868"] = { "Abbiamo abbastanza rifornimenti per lanciare un assalto di terra. Se vuoi consegnare gli ordini, e pensi di averne i requisiti, parla con il caporale Noreg Piccatonante.", "." },
   ["ad27b22f6b6934fb"] = { "Hai trovato qualcosa di interessante alla ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["ad2c0b7559c888c9"] = { "I segreti nascosti nei piloni del ⟦Un'Goro Crater=Cratere di Un'Goro⟧ ora sono tuoi. Visita i piloni quando vuoi per accedere al loro potere e ottenere risorse utili.", "." },
   ["ad2d267589334d3d"] = { "Cos'hai lì? Fammi dare un'occhiata...", "." },

@@ -2,6 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("book", {
   ["6625073f5f231c8d"] = { "Ti saluto, giovane {class}. I venti mi hanno parlato del tuo arrivo. La terra ha lodato la tua forza. E ora gli antichi spiriti sussurrano delle imprese che compirai. Il nostro popolo ha sempre bisogno di capi saggi e grandi, e spesso si rivolge a quelli come noi per entrambe le virtù. Se lo desideri, ti insegnerò di più sulle nostre vie.\n\nCercami a ⟦Camp Narache=Campo Narache⟧, sulla ⟦Red Cloud Mesa=Mesa Nuvola Rossa⟧: allora parleremo ancora.\n\n-Meela Dawnstrider, istruttrice degli sciamani", "." },
-  ["662a26ee286b4809"] = { "Messaggio urgente per il guardiacolli Longhorn\n\nUn grosso contingente di centauri dell'⟦Camp E'thok=Accampamento E'thok⟧ ha razziato una delle nostre carovane di rifornimenti. Abbiamo perso tutti i membri della carovana e tutte le provviste. È stato un attacco audace e senza precedenti da parte dei centauri, e temo che ce ne saranno altri.", "." },
+  ["662a26ee286b4809"] = { "Messaggio urgente per il guardiacolli Corno Lungo\n\nUn grosso contingente di centauri dell'⟦Camp E'thok=Accampamento E'thok⟧ ha razziato una delle nostre carovane di rifornimenti. Abbiamo perso tutti i membri della carovana e tutte le provviste. È stato un attacco audace e senza precedenti da parte dei centauri, e temo che ce ne saranno altri.", "." },
   ["66b27657edf55b6d"] = { "Vorfalk Irongourd\n\nVorfalk lavora nel magazzino del Torvo Beone, e il suo sacrificio per i Guardiani Oscuri è profondo.\n\nChe il suo spirito resti saldo.", "." },
 })
