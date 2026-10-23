@@ -1241,6 +1241,10 @@ UI\Tutorial.lua
 UI\NewPlayerTutorial.lua
 UI\Popups.lua
 UI\Scan.lua
+UI\VoicePlayer.lua
+UI\VoicePanelHead.lua
+UI\VoicePanel.lua
+UI\VoiceQuestLog.lua
 UI\OptionsText.lua
 UI\OptionsWidgets.lua
 UI\KeyCapture.lua

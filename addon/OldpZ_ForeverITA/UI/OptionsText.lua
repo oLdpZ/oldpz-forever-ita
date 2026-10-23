@@ -11,6 +11,7 @@ Text.T = {
   ["page.main"] = { en = "oLd_pZ Forever - Traduzione Italiana", it = "oLd_pZ Forever - Traduzione Italiana" },
   ["page.collector"] = { en = "English Collector", it = "Raccolta dei testi inglesi" },
   ["page.about"] = { en = "About & Help", it = "Informazioni e aiuto" },
+  ["page.voice"] = { en = "Voice", it = "Voce" }, -- only with a voice pack
   ["tagline"] = {
     en = "Italian quest, NPC and tooltip text. Hold a key for the game's English.",
     it = "Missioni, dialoghi dei PNG e tooltip in italiano. Tieni premuto un tasto per l'inglese del gioco.",
@@ -24,6 +25,11 @@ Text.T = {
   ["section.files"] = { en = "Sending it in", it = "Come inviarlo" },
   ["section.help"] = { en = "How it works", it = "Come funziona" },
   ["section.slash"] = { en = "Slash commands", it = "Comandi slash" },
+  ["section.voice"] = { en = "Italian voices", it = "Voci italiane" },
+  ["section.voiceKinds"] = { en = "What is read aloud", it = "Cosa si legge ad alta voce" },
+  -- the voice panel's buttons (UI/VoicePanel), as their tooltips
+  ["voice.stop"] = { en = "Stop (and drop the lines waiting)", it = "Ferma (e togli le battute in attesa)" },
+  ["voice.skip"] = { en = "Next line", it = "Battuta successiva" },
 
   ["toggleKey"] = { en = "Turn translation on / off", it = "Attiva / disattiva la traduzione" },
   ["key.notSet"] = { en = "Not set", it = "Non assegnato" },
@@ -326,6 +332,7 @@ Text.SLASH = {
   "/fita nomi [it | en]  (official Italian or original English names)",
   "/fita config [collector | about]  ·  /fita fix  (report a line)",
   "/fita bug  (report a bug or an idea)",
+  "/fita voce stop  (stop the Italian voice and drop the lines waiting)",
   "/fita collector [on | off | status | path | clear | send [all]]",
   "/fita log [<n>]  (the problem log)  ·  /fita taint  (action-bar taint scan)",
   "/fita debug [hash | quest <id> | item <id> | spell <id>]",

@@ -305,9 +305,12 @@ function Render.show(surface, key, fs, en, area, kind, id, ctx)
   if not translator then return false end
   local rec = SS.capture(surface, key, fs, en, { area = area, kind = kind, id = id, ctx = ctx })
   if not rec then return false end
-  local changed = sync(rec, true)
+  local changed, action = sync(rec, true)
   if changed then refit(rec) end
   updateBanner(surface)
+  -- the Italian just written for a write the client asked for (never a refresh): the voice player may speak it.
+  -- Guarded: a listener's error must not cost the surface its render.
+  if changed and action == "apply" then pcall(WFJ.State.fire, "lineShown", surface, key, kind, id) end
   return changed
 end
 

@@ -34,8 +34,12 @@ end
 
 -- Global entry point for the voice pack: its Register.lua runs in its own addon's chunk and cannot see this
 -- namespace. The pack lists this addon as a dependency, so it loads after it. → registered, invalid (Core/Voice)
+-- A pack that brought lines tells the UI (State "voicePack"): the settings get their Voce page, the quest log its
+-- button's hook. Guarded like the load steps (WFJ.step, set by the time a pack loads).
 function OldpZ_ForeverITA_RegisterVoice(tbl)
-  return WFJ.Voice.register(tbl)
+  local n, bad = WFJ.Voice.register(tbl)
+  if n > 0 and WFJ.step then WFJ.step("voice.pack", function() WFJ.State.fire("voicePack") end) end
+  return n, bad
 end
 
 -- The one reader of the player's own name / class / race / sex, shared by Core/Placeholders (the corpus tokens)
@@ -424,6 +428,11 @@ function WFJ.OnLoad()
   step("menus.untagged", WFJ.MenusUntagged.init) -- the Options and Edit Mode dropdowns (no tag)
   step("helptips", WFJ.HelpTips.init)
   step("scan", WFJ.Scan.init) -- /fita debug ui scan
+  -- the voice over: the player (it puts back the game's English voice a crash left off), the small panel, the quest
+  -- log's button. Each only listens: no frame, hook or sound until a pack registers and a line plays.
+  step("voiceplayer", function() WFJ.VoicePlayer.init(OFI_DB) end)
+  step("voicepanel", WFJ.VoicePanel.init)
+  step("voicequestlog", function() WFJ.VoiceQuestLog.init(OFI_DB) end)
   step("slash", WFJ.Slash.register)
   step("minimapbutton", function() WFJ.MinimapButton.init(OFI_DB) end) -- the fix-report minimap button
   step("diag.timer", function()

@@ -86,6 +86,8 @@ def test_real_toc_fields_and_load_order(root):
         "UI/NewPlayerTutorial.lua",
         "UI/Popups.lua",
         "UI/Scan.lua",
+        # the voice over: the player, the small panel and its head, the quest log's button
+        "UI/VoicePlayer.lua", "UI/VoicePanelHead.lua", "UI/VoicePanel.lua", "UI/VoiceQuestLog.lua",
         # the settings pages' copy, widgets, key capture, the modifier's override binding, the AddOn List button
         "UI/OptionsText.lua", "UI/OptionsWidgets.lua", "UI/KeyCapture.lua",
             "UI/FixWindow.lua", "UI/CollectorSendWindow.lua", "UI/CollectorReminder.lua", "UI/IntroWindow.lua",

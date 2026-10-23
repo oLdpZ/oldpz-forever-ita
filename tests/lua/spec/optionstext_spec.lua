@@ -46,7 +46,7 @@ describe("UI/OptionsText.SLASH names every command", function()
     local Text = H.loadChunks({ "UI/OptionsText.lua" }).OptionsText
     local all = table.concat(Text.SLASH, "\n")
     for _, verb in ipairs({ "on", "off", "toggle", "config", "debug", "togglekey", "collector",
-        "version", "modifier", "area", "marker", "fix" }) do
+        "version", "modifier", "area", "marker", "fix", "voce" }) do
       assert.is_truthy(all:find("/fita " .. verb, 1, true) or all:find("| " .. verb, 1, true), verb)
     end
     local debug = {}

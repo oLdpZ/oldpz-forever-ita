@@ -2,7 +2,11 @@
 -- Events: "enabled"(bool) · "area"(id, bool) · "modifier"(bool) · "markers"() (each fired only on change);
 -- "names"(style), fired by the `names.style` setting on every apply (Core/Names);
 -- "revealKey"(key), fired by Modifier.setKey on every apply so UI/RevealBinding re-applies;
--- and "voice"(), fired by every voice.* setting on apply (Core/Settings) so the voice player re-reads them.
+-- "voice"(), fired by every voice.* setting on apply (Core/Settings) so the voice player re-reads them;
+-- "lineShown"(surface, key, kind, id), fired by UI/Render when a write the client asked for applied the Italian;
+-- "questShown"(quest id, panel), fired by UI/QuestFrame when the quest window shows a panel;
+-- "voicePack"(), fired by Main when a voice pack registered lines; "voiceQueue"(reason), fired by UI/VoicePlayer
+-- whenever the line playing or the lines waiting change.
 local _, WFJ = ...
 local State = { enabled = true, modifierHeld = false, areas = {} }
 WFJ.State = State
