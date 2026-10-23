@@ -146,7 +146,8 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Tarren Mill | il Mulino di Tarren («al», «del», «dal Mulino di Tarren») | a / di Mulino di Tarren |
 | Tinkmaster / Dawnwatcher / Windwatcher / Cliffwatcher / Argent Guard (titoli) | mastro inventore / vegliante dell'alba / osservatore dei venti / guardiacolli / guardia argentea | Dawnwatcher, the Windwatcher |
 | The Affray (la prova dell'Isola della Contesa) | la Rissa | — |
-| Mekgineer (titolo o nome di un PNG: segue «Nomi dei PNG»), Druids of the Fang, Scythe of Elune, Eye of Azora, Nightbane (worgen; una creatura segue «Nomi dei PNG»), Zardeth the Black Claw (PNG: «Nomi dei PNG») | restano inglesi (nessuna forma ufficiale verificabile) | Falce di Elune, Occhio di Azora, Druidi della Zanna |
+| Druids of the Fang, Scythe of Elune, Eye of Azora, Nightbane (i worgen come gruppo, non una creatura) | restano inglesi (nessuna forma ufficiale verificabile) | Falce di Elune, Occhio di Azora, Druidi della Zanna |
+| Mekgineer (titolo o nome di un PNG), Nightbane (la creatura), Zardeth the Black Claw | seguono «Nomi dei PNG», come ogni nome di PNG | — |
 | Watcher (titolo) | guardiano / guardiana («il guardiano Mahar Ba», «la guardiana Sarah Ladimore»); stone watcher → guardiano di pietra | osservatore |
 | Surveyor (titolo) | ispettore / ispettrice; Junior Surveyor → ispettore apprendista («l'<ispettore/ispettrice> apprendista {name}»), Senior Surveyor → ispettore anziano | rilevatore, ispettore capo |
 | Overlord (titolo) | signore supremo («il signore supremo Mok'Morokk») | il supremo |
