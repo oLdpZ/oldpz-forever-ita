@@ -17,7 +17,7 @@ from collections.abc import Iterable
 from dataclasses import dataclass, field, replace
 from pathlib import Path
 
-from wfj.io import casc, db2, dbcache, wago
+from wfj.io import casc, db2, dbcache, tables_stamp, wago
 
 ID = "id"  # the row id (id list, or the inline id field)
 PARENT = "parent"  # the table's relationship map (a foreign id stored outside the record)
@@ -951,3 +951,54 @@ def select(names: Iterable[str] | None) -> list[Table]:
     if unknown:
         raise TableError(f"unknown table {unknown} (have {list(TABLES)})")
     return [TABLES[n] for n in names]
+
+
+# ---- who a creature display shows (voice casting) --------------------------------------------------------
+#
+# - `CreatureDisplayInfo.Gender`: 0 male, 1 female, 2 none (every display, monsters included).
+# - `CreatureDisplayInfo.ExtendedDisplayInfoID` → `CreatureDisplayInfoExtra.DisplayRaceID` / `DisplaySexID`
+#   (0 male, 1 female): set only for displays built like a player character.
+# - `ChrRaces.ClientFileString`: the race's name ("Scourge", "Tauren").
+
+DISPLAY_TABLES = ("CreatureDisplayInfo", "CreatureDisplayInfoExtra", "ChrRaces")
+_DISPLAY_GENDER = {0: "male", 1: "female", 2: "none"}
+
+
+@dataclass(frozen=True)
+class Display:
+    gender: str  # male · female · none
+    race: str | None  # ChrRaces name, lowercased ("scourge"); None for a display not built like a character
+
+
+def _csv_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def read_displays(folder: Path) -> tuple[dict[int, Display], str]:
+    """display id → Display, from the CSVs `make tables-extract` writes, and the three tables' source label
+    (`client@<build>`). Raises FileNotFoundError naming a missing table, ValueError when the three come from
+    different builds or are unstamped."""
+    for t in DISPLAY_TABLES:
+        if not (folder / f"{t}.csv").is_file():
+            raise FileNotFoundError(f"{folder / (t + '.csv')}: run make tables-extract")
+    stamps = tables_stamp.read(folder)
+    labels = {stamps.get(t) for t in DISPLAY_TABLES}
+    if None in labels or len(labels) != 1:
+        raise ValueError(f"{folder}: {', '.join(DISPLAY_TABLES)} are not stamped from one build ({labels})")
+    build = str(next(iter(labels))).split("@", 1)[1]
+    races = {int(r["ID"]): r["ClientFileString"].strip().lower() for r in _csv_rows(folder / "ChrRaces.csv")}
+    extra = {
+        int(r["ID"]): (int(r["DisplayRaceID"]), int(r["DisplaySexID"]))
+        for r in _csv_rows(folder / "CreatureDisplayInfoExtra.csv")
+    }
+    out: dict[int, Display] = {}
+    for r in _csv_rows(folder / "CreatureDisplayInfo.csv"):
+        gender = _DISPLAY_GENDER.get(int(r["Gender"]), "none")
+        race = None
+        ext = extra.get(int(r["ExtendedDisplayInfoID"]))
+        if ext:
+            race = races.get(ext[0])
+            gender = _DISPLAY_GENDER.get(ext[1], gender)
+        out[int(r["ID"])] = Display(gender, race)
+    return out, f"client@{build}"

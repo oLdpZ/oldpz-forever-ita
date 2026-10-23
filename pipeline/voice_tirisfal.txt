@@ -1,0 +1,80 @@
+# The tirisfal voice scope: written by `wfj voice scope tirisfal`; do not edit.
+# Quests: the database's quests of zones 85, 154, and Forever's quests whose
+# captured giver stands on map 0 inside the zone's map bounds, above z 0.
+# `b <key>`: a page of a sign or a book standing there.
+8
+354
+355
+356
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+374
+375
+376
+380
+381
+382
+383
+398
+404
+405
+407
+408
+409
+410
+411
+426
+427
+431
+445
+492
+590
+3901
+3902
+5481
+5482
+5847
+5901
+5902
+6395
+86784
+91920
+95314
+96656
+96895
+97558
+98601
+99134
+99141
+99142
+99156
+b 156e80c7587b5387
+b 215979b0e5b665f7
+b 273b2dd8223a91a2
+b 5643bd9de4d72bc0
+b 5a7492ba929a62cc
+b 5f02fb23df030dc0
+b 5f0660d034611ace
+b 720094d215a79304
+b 7c0b2931c91483f6
+b 7ce1ee0140c3e9bf
+b 7f315e365737d890
+b 7ff66bda20b04ddb
+b 829831402f41cfa3
+b 874fdc02bacb377a
+b b4292e186801cdc4
+b c3de158687dd34ce
+b f3ec6301fa07152d

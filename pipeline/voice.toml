@@ -1,0 +1,123 @@
+# Voice over: the voices we may use (the roster) and which kind of speaker each one reads (the cast rows).
+# Every voice is one of the Gemini TTS prebuilt voices; `notes` is the director's note the prompt carries for
+# it, in English only (Gemini reads Italian direction aloud: `wfj validate` refuses accented letters and
+# common Italian words). A starting cast for the Tirisfal pilot, to be confirmed by ear at the audition.
+#
+# To recast a kind of speaker, change the voices of its cast row and run `wfj voice cast`: a file's
+# fingerprint holds its voice and notes, so only that row's lines are made again.
+
+model = "gemini-3.1-flash-tts-preview"
+
+# the voice of a line no creature says (a quest an item or object starts), and of a book page whose author
+# is not a known speaker
+narrator = "narrator"
+book_narrator = "booknarrator"
+
+# One table per voice: voice (the Gemini voice name), notes (how it reads), fits (what it is for).
+[roster.narrator]
+voice = "Charon"
+notes = "A calm, measured storyteller. Even pace, clear diction, a hint of gravity, never theatrical."
+fits = "narrator: object and item quests"
+
+[roster.booknarrator]
+voice = "Vindemiatrix"
+notes = "Reading a written page aloud: gentle, unhurried, attentive, as if by candlelight."
+fits = "book narrator: unsigned pages, signs and plaques"
+
+[roster.undeadmale]
+voice = "Algenib"
+notes = "A Forsaken man: raspy, gravelly and dry, with a cold, sardonic edge. Slow and deliberate."
+fits = "undead male (Undertaker Mordo)"
+
+[roster.undeadhollow]
+voice = "Enceladus"
+notes = "A Forsaken man: breathy and hollow, weary, a whisper of decay under every word."
+fits = "undead male, second voice"
+
+[roster.undeadfemale]
+voice = "Gacrux"
+notes = "A Forsaken woman: mature, cold and dry, a faint rasp, quietly menacing."
+fits = "undead female"
+
+[roster.malefirm]
+voice = "Orus"
+notes = "A grown man of the living: firm, steady, plain-spoken."
+fits = "adult male"
+
+[roster.femalefirm]
+voice = "Kore"
+notes = "A grown woman of the living: firm, confident, clear."
+fits = "adult female"
+
+[roster.elderman]
+voice = "Sadaltager"
+notes = "An elderly man: knowledgeable, slightly slower, a gentle crackle of age."
+fits = "elderly male"
+
+[roster.elderwoman]
+voice = "Sulafat"
+notes = "An elderly woman: warm, patient, a soft tremor of age."
+fits = "elderly female"
+
+[roster.youngman]
+voice = "Puck"
+notes = "A young man: upbeat, eager, quick."
+fits = "young male, boy"
+
+[roster.youngwoman]
+voice = "Leda"
+notes = "A young woman: youthful, bright, light."
+fits = "young female, girl"
+
+[roster.creature]
+voice = "Fenrir"
+notes = "A creature that is not human: rough, growling, intense, barely held back."
+fits = "beasts, demons, dragons, elementals, giants, constructs"
+
+# Cast rows, first match wins: `when` holds profile fields (core/casting: race, gender, age, archetype,
+# role), each a value or a list of values; a creature gets one voice from `voices` and keeps it.
+
+[[cast]]
+name = "undead, female"
+when = { archetype = ["undead", "ghost"], gender = "female" }
+voices = ["undeadfemale"]
+
+[[cast]]
+name = "undead"
+when = { archetype = ["undead", "ghost"] }
+voices = ["undeadmale", "undeadhollow"]
+
+[[cast]]
+name = "creature"
+when = { archetype = ["demon", "dragon", "elemental", "mechanical", "beast-kin", "giant"] }
+voices = ["creature"]
+
+[[cast]]
+name = "elder, female"
+when = { age = "elder", gender = "female" }
+voices = ["elderwoman"]
+
+[[cast]]
+name = "elder"
+when = { age = "elder" }
+voices = ["elderman"]
+
+[[cast]]
+name = "young, female"
+when = { age = ["child", "young"], gender = "female" }
+voices = ["youngwoman"]
+
+[[cast]]
+name = "young"
+when = { age = ["child", "young"] }
+voices = ["youngman"]
+
+[[cast]]
+name = "female"
+when = { gender = "female" }
+voices = ["femalefirm"]
+
+[[cast]]
+name = "male"
+when = { gender = ["male", "none"] }
+voices = ["malefirm"]

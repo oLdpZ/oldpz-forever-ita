@@ -1,0 +1,87 @@
+"""`wfj voice scope tirisfal`: the pilot's quests and book pages, from the database's zone and spawns and the
+players' captures; and the committed list it wrote."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+import voice_fixture as vf
+
+from wfj.cmd import voice as cmd
+from wfj.cmd import voice_scope
+from wfj.core import voice
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def test_the_zone_quests_forever_quests_given_inside_and_signs_standing_inside(tmp_path):
+    data = vf.make_data(tmp_path)
+    db = vf.make_speaker_db(tmp_path / "mangos.sqlite")
+    cap = vf.make_captures(tmp_path / "fvo",
+                           {"event": "accept", "questID": 459, "npc": 1992},  # given in Tirisfal
+                           {"event": "accept", "questID": 461, "npc": 9000},  # the same spot, on another map
+                           {"event": "complete", "questID": 462, "npc": 1992})  # nobody saw who gives it
+    quests, books, report = voice_scope.build(data, db, "tirisfal", cap)
+    assert quests == (456, 457, 458, 459, 463)  # 456: its highest patch is Tirisfal's; 463 is Deathknell's
+    assert books == (vf.SIGNED, vf.UNSIGNED)  # sign 800's two pages; 801 stands far south and under the city
+    assert report["forever"] == ["459: given by 1992"]
+    assert report["outside"] == ["461: given by 9000"]
+    assert report["unplaced"] == ["462: no giver captured"]
+
+
+def test_the_zone_is_its_map_rectangle_above_the_city_under_it():
+    z = voice_scope.ZONES["tirisfal"]
+    assert z.holds(0, *vf.IN)
+    assert not z.holds(1, *vf.IN) and not z.holds(0, *vf.OUT) and not z.holds(0, *vf.UNDER)
+
+
+def test_a_giver_the_database_never_spawns_is_reported(tmp_path):
+    data = vf.make_data(tmp_path)
+    db = vf.make_speaker_db(tmp_path / "mangos.sqlite")
+    cap = vf.make_captures(tmp_path / "fvo", {"event": "accept", "questID": 459, "npc": 256930},
+                           {"event": "accept", "questID": 461, "isObject": True})
+    _, _, report = voice_scope.build(data, db, "tirisfal", cap)
+    assert report["unplaced"] == ["459: given by 256930, whom the database never spawns", "461: given by an object",
+                                  "462: no giver captured"]
+
+
+def test_without_captures_forever_quests_are_reported_not_guessed(tmp_path):
+    data = vf.make_data(tmp_path)
+    db = vf.make_speaker_db(tmp_path / "mangos.sqlite")
+    quests, _, report = voice_scope.build(data, db, "tirisfal", None)
+    assert quests == (456, 457, 458, 463)
+    assert report["unplaced"] == ["459: no giver captured", "461: no giver captured", "462: no giver captured"]
+
+
+def test_the_list_is_deterministic_and_reads_back(tmp_path, monkeypatch):
+    data = vf.make_data(tmp_path)
+    monkeypatch.setattr(voice_scope, "data_root", lambda: data)
+    db = vf.make_speaker_db(tmp_path / "mangos.sqlite")
+    out = tmp_path / "scope.txt"
+    argv = ["tirisfal", "--vmangos", str(db), "--out", str(out)]
+    assert voice_scope.run(argv) == 0
+    first = out.read_bytes()
+    assert voice_scope.run(argv) == 0
+    assert out.read_bytes() == first
+    assert voice.read_scope_file(out) == ((456, 457, 458, 463), (vf.SIGNED, vf.UNSIGNED))
+    assert first.decode().startswith("# ")  # says what wrote it
+
+
+def test_the_dispatcher_runs_scope(monkeypatch):
+    seen = []
+    monkeypatch.setattr(voice_scope, "run", lambda argv: seen.append(list(argv)) or 0)
+    assert cmd.run(["scope", "tirisfal", "--vmangos", "x"]) == 0
+    assert seen == [["tirisfal", "--vmangos", "x"]]
+
+
+def test_the_committed_pilot_list():
+    path = ROOT / voice.SCOPES["tirisfal"]
+    quests, books = voice.read_scope_file(path)
+    body = [ln for ln in path.read_text(encoding="utf-8").splitlines() if ln and not ln.startswith("#")]
+    assert (len(quests), len(books), len(body)) == (QUESTS, BOOKS, QUESTS + BOOKS)
+    assert 363 in quests  # Rude Awakening, Deathknell's first quest
+
+
+# what `wfj voice scope tirisfal` wrote from VMaNGOS 4641790 and forever-vo 025070f: 48 quests of Tirisfal and
+# Deathknell, 11 Forever quests given there, and the 17 pages of 3 signs and books standing there
+QUESTS, BOOKS = 59, 17
