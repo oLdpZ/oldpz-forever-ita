@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -257,7 +257,7 @@ RETAIL_BUILD  ?= 12.1.5.70448
 # The `imported` date the official lines record: pinned with the build, so a rebuild (`make data`,
 # rebuild-check) gives back the same lines on any day. Bump it with RETAIL_BUILD (or DATE= on the command line).
 RETAIL_DATE   ?= 2026-10-21
-RETAIL_TABLES := ItemSparse SpellName Spell GlobalStrings AreaTable Faction ChrClasses ChrRaces
+RETAIL_TABLES := ItemSparse SpellName Spell GlobalStrings AreaTable Faction ChrClasses ChrRaces Creature
 RETAIL_LOCALES := enUS itIT
 RETAIL_DIR    ?= $(REPO_ROOT)/inputs/clients/retail-$(RETAIL_BUILD)
 RETAIL_FILES   = $(foreach t,$(RETAIL_TABLES),$(foreach l,$(RETAIL_LOCALES),$(t).$(l)))
@@ -353,6 +353,9 @@ quest-levels: ## regenerate pipeline/quest_levels.tsv (id, min, lvl, fonte; `ass
 
 # Dialogue priority (tier 1-4 per gossip hash) from the VMaNGOS database: who speaks a line decides when it is translated.
 VMANGOS_PRIORITY_DB ?= $(INPUTS)/vmangos-priority/mangos.sqlite
+creature-official: ## pipeline/creature_official.tsv: Blizzard's Italian NPC names from Creature.db2 (make wago-fetch-retail) and Wowhead (cached outside the repo, resumable; hours the first time): [WOWHEAD_NPC_DIR=<cache>] [WOWHEAD=--no-wowhead]
+	cd pipeline && $(PY) -m wfj.dev.creature_official --retail "$(RETAIL_DIR)" --build $(RETAIL_BUILD) $(if $(WOWHEAD_NPC_DIR),--cache "$(WOWHEAD_NPC_DIR)") $(WOWHEAD)
+
 unit-english: ## write the English NPC names and titles (data/english/unit) from the VMaNGOS database: [VMANGOS_DB=<mangos.sqlite>] [VMANGOS_UNIT_SHA=4641790]
 	cd pipeline && $(PY) -m wfj.dev.unit_english --db "$(VMANGOS_DB)" --commit $(VMANGOS_UNIT_SHA)
 
