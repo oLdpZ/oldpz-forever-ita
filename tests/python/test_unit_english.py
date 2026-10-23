@@ -69,8 +69,8 @@ def test_main_writes_and_keeps_collector(tmp_path):
     db = _db(tmp_path)
     assert unit_english.main(["--db", str(db), "--data", str(root)]) == 0
     lines = Store(root, english=True).load("unit")
-    assert [(l["id"], l["field"]) for l in lines] == [(2, "name"), (2, "subname"), (3, "name"), (12696, "name")]
-    assert [l["src"] for l in lines if l["id"] == 3] == ["collector@1.60.1.70205"]
+    assert [(r["id"], r["field"]) for r in lines] == [(2, "name"), (2, "subname"), (3, "name"), (12696, "name")]
+    assert [r["src"] for r in lines if r["id"] == 3] == ["collector@1.60.1.70205"]
     # idempotente
     assert unit_english.main(["--db", str(db), "--data", str(root)]) == 0
     assert Store(root, english=True).load("unit") == lines

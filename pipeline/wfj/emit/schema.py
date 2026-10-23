@@ -80,8 +80,9 @@ FILE_PREFIX = {
 # keeps the rows the new build dropped at the old one; refusing them would block the build with no import
 # able to clear it.
 # the collector records what the client showed at the build it ran on; dumps add up across builds (ADR-053)
-# `vmangos` too: quest, gossip and book English is a database snapshot (`db-13b49dc`), the NPC names and titles
-# (`dev.unit_english`) a core commit (`4641790`), each replaced as a set by its own script, so the two pins differ.
+# `vmangos` too: quest, gossip and book English is a database snapshot (`db-13b49dc`), the NPC names and
+# titles (`dev.unit_english`) a core commit (`4641790`), each replaced as a set by its own script, so the
+# two pins differ.
 MULTI_VERSION_SOURCES = frozenset({"wdb", "db2", "wago", "collector", "vmangos"})
 GENERATED_TYPES = (*TYPES, *KEYED_TYPES, "ui")
 # TOC load order: the translation types.

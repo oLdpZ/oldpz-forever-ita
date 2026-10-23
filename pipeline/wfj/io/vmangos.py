@@ -245,7 +245,8 @@ def read_creatures(path: Path, creatures: set[int] | None = None) -> dict[int, d
     """creature id → its highest-patch row: name, subname (title), type (1 beast · 2 dragonkin · 3 demon ·
     4 elemental · 5 giant · 6 undead · 7 humanoid · 8 critter · 9 mechanical · 10 not specified), rank,
     racial_leader and its non-zero display ids in slot order. Read to judge a speaker (voice casting) and, by
-    `wfj.dev.unit_english`, written as the English NPC names and titles of data/english/unit. `creatures` None reads every creature."""
+    `wfj.dev.unit_english`, written as the English NPC names and titles of data/english/unit.
+    `creatures` None reads every creature."""
     db = _connect(path, _CREATURE_NEEDS)
     where = ""
     if creatures is not None:

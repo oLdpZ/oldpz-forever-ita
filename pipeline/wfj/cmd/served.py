@@ -218,7 +218,8 @@ def run_served(a: argparse.Namespace) -> int:
         "item": lambda ln: ln["id"] in ever["item"],
         "spell": lambda ln: ln["id"] in ever["spell"],
         "ui": lambda ln: ln["id"] in ever["ui"],
-        "unit": lambda ln: True,  # creature names come from the server database: no client cache narrows them
+        # creature names come from the server database: no client cache narrows them
+        "unit": lambda _ln: True,
     }
     result: dict[str, list[dict[str, Any]]] = {}
     removed: dict[str, int] = {}

@@ -29,9 +29,11 @@ FIELDS = ("name", "subname")
 
 
 def build(
-    creatures: dict[int, dict[str, Any]], existing: list[dict[str, Any]], src: str = f"vmangos@{DEFAULT_COMMIT}"
+    creatures: dict[int, dict[str, Any]],
+    existing: list[dict[str, Any]],
+    src: str = f"vmangos@{DEFAULT_COMMIT}",
 ) -> list[dict[str, Any]]:
-    """The vmangos English lines for `creatures`, without those whose (id, field) a collector line holds."""
+    """The vmangos English lines for `creatures`, minus those whose (id, field) a collector line holds."""
     held = {(ln["id"], ln["field"]) for ln in existing if source_name(ln) == "collector"}
     rows: list[dict[str, Any]] = []
     for id_, c in sorted(creatures.items()):
