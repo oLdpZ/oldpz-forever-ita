@@ -42,7 +42,7 @@ Voice.counts = zero()
 
 -- deps: lookup(kind, id) → { ja } | nil (the shipped Italian, raw: Lookup.raw), hash(text) → 16 hex,
 -- setting(id) → value, revealed() → bool (English showing: the reveal key held), enabled() → bool (translation on),
--- db → OFI_DB (greetings heard once are remembered in db.voiceHeard[creature id], created on the first one)
+-- db → OFI_DB (greetings heard once are remembered in db.voiceHeard[creature id], created by the first markHeard)
 function Voice.init(d)
   deps = d or {}
 end
@@ -152,8 +152,10 @@ function Voice.packs()
   return packs
 end
 
+-- A pack counts once it brought at least one line: a table whose every line was malformed voices nothing and shows
+-- no settings.
 function Voice.hasPack()
-  return lines ~= nil
+  return Voice.counts.registered > 0
 end
 
 -- The pack key of a rendered line (its Translator kind and id): a quest field by quest id, gossip and book pages by
@@ -179,8 +181,10 @@ local function heard(creature)
   return t ~= nil and t[creature] == true
 end
 
-local function markHeard(creature)
-  if type(deps.db) ~= "table" then return end
+-- A greeting set to play once per creature: the voice player calls this when the line actually starts playing (a
+-- line decided but dropped from the queue, or whose file failed, leaves the creature unheard).
+function Voice.markHeard(creature)
+  if creature == nil or type(deps.db) ~= "table" then return end
   local t = heardTable()
   if not t then
     t = {}
@@ -201,7 +205,9 @@ end
 -- ({ creature = id, sex = the speaker's UnitSex } or nil), to a character of UnitSex `sex` (3 female).
 -- → the file's path and its length in seconds, or nil and why ("kind" · "off" · "english" · "nopack" · "missing" ·
 -- "notext" · "stale" · "nofemale"). A greeting set to play once per creature is "off" for a creature already heard.
--- `peek`: only asking (the replay button): /fita debug's counts are left as they are and nothing is remembered.
+-- Only reads: the voice player calls Voice.markHeard when a greeting starts playing.
+-- `peek`: only asking (the replay button): /fita debug's counts are left as they are, and a greeting heard once is
+-- asked anyway.
 function Voice.decide(surface, recKey, kind, id, who, sex, peek)
   local byKey = Voice.KINDS[surface]
   local kindSetting = byKey and byKey[recKey]
@@ -215,7 +221,7 @@ function Voice.decide(surface, recKey, kind, id, who, sex, peek)
     or (type(deps.revealed) == "function" and deps.revealed()) then
     return nil, "english"
   end
-  if not lines then return nil, "nopack" end
+  if not Voice.hasPack() then return nil, "nopack" end
   local key = Voice.packKey(kind, id)
   local entry = key and lines[key]
   if not entry then
@@ -237,9 +243,6 @@ function Voice.decide(surface, recKey, kind, id, who, sex, peek)
       return nil, "nofemale"
     end
   end
-  if not peek then
-    Voice.counts.matched = Voice.counts.matched + 1
-    if once then markHeard(creature) end
-  end
+  if not peek then Voice.counts.matched = Voice.counts.matched + 1 end
   return "Interface\\AddOns\\" .. entry.folder .. "\\Sound\\" .. t.file, t.seconds
 end

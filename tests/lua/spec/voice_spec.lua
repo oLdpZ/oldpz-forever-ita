@@ -78,6 +78,18 @@ describe("Core/Voice: the pack registry and the decision", function()
     assert.is_false(V.hasPack())
   end)
 
+  it("a pack whose every line is malformed is no pack: nothing to voice, no settings to show", function()
+    assert.are.same({ 0, 0 }, { V.register(pack({})) })
+    assert.is_false(V.hasPack())
+    assert.are.same({ 0, 1 }, { V.register(pack({ ["2-description"] = { "../x.mp3", WFJ.Hash.key(desc) } })) })
+    assert.is_false(V.hasPack())
+    assert.are.same({ nil, "nopack" }, offer())
+    V.register({ format = 3, folder = FOLDER .. "_2", lines = { ["2-description"] = entry("a.mp3", desc) } })
+    assert.is_true(V.hasPack())
+    V.register({ format = 3, folder = FOLDER .. "_2", lines = {} }) -- that pack again, now empty
+    assert.is_false(V.hasPack())
+  end)
+
   it("keys a quest field by quest id, gossip and book pages by their key, nothing else", function()
     assert.are.equal("456-description", V.packKey("quest.description", 456))
     assert.are.equal("g-0a044ece3562b58d", V.packKey("gossip", "0a044ece3562b58d"))
@@ -236,10 +248,12 @@ describe("Core/Voice: the pack registry and the decision", function()
     end
     local GREETING = PATH:format(FOLDER, "g-" .. KEY .. ".mp3")
 
-    it("once: a creature greets the first time only, remembered in the saved table", function()
+    it("once: decide only reads; a creature is heard once the player marks it (saved table)", function()
       settings["voice.greeting"] = "once"
-      assert.is_nil(db.voiceHeard)
       assert.are.same({ GREETING, 1 }, greet({ creature = 10 }))
+      assert.are.same({ GREETING, 1 }, greet({ creature = 10 })) -- never played yet: asked again, it plays
+      assert.is_nil(db.voiceHeard)
+      V.markHeard(10) -- the player, when the line starts playing
       assert.are.same({ [10] = true }, db.voiceHeard)
       assert.are.same({ nil, "off" }, greet({ creature = 10 }))
       assert.are.same({ GREETING, 1 }, greet({ creature = 11 })) -- another creature
@@ -248,27 +262,26 @@ describe("Core/Voice: the pack registry and the decision", function()
       assert.are.same({ GREETING, 1 }, greet(nil))
     end)
 
-    it("once: a greeting that does not play is not remembered", function()
-      settings["voice.greeting"] = "once"
-      revealed = true
-      assert.are.same({ nil, "english" }, greet({ creature = 10 }))
+    it("markHeard ignores a missing creature id and a missing saved table", function()
+      V.markHeard(nil)
       assert.is_nil(db.voiceHeard)
-      revealed = false
-      assert.are.same({ GREETING, 1 }, greet({ creature = 10 }))
+      V.init({}) -- no db
+      V.markHeard(10)
     end)
 
     it("the quest window's greeting panel is a greeting too", function()
       settings["voice.greeting"] = "once"
       assert.are.same({ GREETING, 1 },
         { V.decide("questframe.greeting", "greeting", "gossip", KEY, { creature = 10 }) })
+      V.markHeard(10)
       assert.are.same({ nil, "off" }, greet({ creature = 10 }))
     end)
 
     it("always plays every time; never plays nothing", function()
       settings["voice.greeting"] = "always"
+      V.markHeard(10)
       assert.are.same({ GREETING, 1 }, greet({ creature = 10 }))
       assert.are.same({ GREETING, 1 }, greet({ creature = 10 }))
-      assert.is_nil(db.voiceHeard)
       settings["voice.greeting"] = "never"
       assert.are.same({ nil, "off" }, greet({ creature = 12 }))
     end)
@@ -394,6 +407,8 @@ describe("voice in the loaded addon", function()
     OldpZ_ForeverITA_RegisterVoice({ format = 3, folder = FOLDER,
       lines = { ["g-" .. KEY] = { "g-" .. KEY .. ".mp3", WFJ.Hash.key(MARKED), 2 } } })
     assert.is_string((WFJ.Voice.decide("gossip", "greeting", "gossip", KEY, { creature = 42 }, 2)))
+    assert.is_nil(OFI_DB.voiceHeard)
+    WFJ.Voice.markHeard(42)
     assert.are.same({ [42] = true }, OFI_DB.voiceHeard)
     assert.are.same({ nil, "off" }, { WFJ.Voice.decide("gossip", "greeting", "gossip", KEY, { creature = 42 }, 2) })
   end)
