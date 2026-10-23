@@ -70,9 +70,11 @@ for i = 1, 5 do
 end
 
 -- The one switch for the NPC names on the target-style frames (ADR-103, Task 9): false (the default) writes them in
--- combat too; true leaves the client's English while InCombatLockdown() and puts the Italian back on
--- PLAYER_REGEN_ENABLED (Main → UnitFrames.onCombatEnd). Meant for the in-game check (Task 12): flip it here if the
--- taint watch ever traces a block to these FontStrings.
+-- combat too; true makes combat write-free for these FontStrings: on PLAYER_REGEN_DISABLED (Main →
+-- UnitFrames.onCombatStart, before the lockdown) the English goes back and the records are released, then nothing
+-- of this addon writes them (no Alt, no /fita nomi, no client update) until PLAYER_REGEN_ENABLED (Main →
+-- UnitFrames.onCombatEnd) puts the Italian back. Meant for the in-game check (Task 12): flip it here if the taint
+-- watch ever traces a block to these FontStrings.
 UnitFrames.NAMES_OUT_OF_COMBAT = false
 
 local TARGET_STYLE = { "TargetFrame", "FocusFrame", "Boss1TargetFrame", "Boss2TargetFrame", "Boss3TargetFrame",
@@ -209,6 +211,18 @@ local function inCombat()
   return type(fn) == "function" and fn() and true or false
 end
 
+-- Out-of-combat mode: from PLAYER_REGEN_DISABLED to PLAYER_REGEN_ENABLED (or while InCombatLockdown() says so) the
+-- name FontStrings get NO write at all from this addon: no Italian, no English put back, no font.
+local combatHeld = false
+local function quiet()
+  return UnitFrames.NAMES_OUT_OF_COMBAT and (combatHeld or inCombat())
+end
+
+-- Forgets a name record without reading or writing its widget (so Render's refresh, on Alt, has nothing to sync).
+local function forget(key)
+  WFJ.SurfaceState.records(SURFACE)[key] = nil
+end
+
 -- hooksecurefunc target (UnitFrame_Update; also called for UNIT_NAME_UPDATE and the names / combat refreshes): an
 -- NPC's name on one of the target-style frames takes its `unit` row's Italian (Core/UnitNames: a creature's GUID,
 -- the English shown hashing to the row's). Written only over the English just read; our own text still showing (an
@@ -218,6 +232,10 @@ function UnitFrames.onName(frame)
   local key = frame ~= nil and nameFrames[frame] or nil
   local fs = key and frame.name or nil
   if type(fs) ~= "table" or type(fs.GetText) ~= "function" then return false end
+  if quiet() then -- normally released at PLAYER_REGEN_DISABLED already; a record left over is forgotten unwritten
+    forget(key)
+    return false
+  end
   local text = fs:GetText()
   if secret(text) then
     WFJ.SurfaceState.drop(SURFACE, key)
@@ -227,8 +245,7 @@ function UnitFrames.onName(frame)
   if rec and rec.fs == fs and rec.applied ~= nil and text == rec.applied then return false end
   local unit = frame.overrideName or frame.unit
   local U = WFJ.UnitNames
-  local ja = not (UnitFrames.NAMES_OUT_OF_COMBAT and inCombat()) and U and type(text) == "string"
-    and U.forUnit(unit, text) or nil
+  local ja = U and type(text) == "string" and U.forUnit(unit, text) or nil
   local unitGUID = get("unitGUID")
   local id = ja and type(unitGUID) == "function" and WFJ.Collector.creatureId(unitGUID(unit)) or nil
   if not id then
@@ -249,6 +266,7 @@ end
 -- → the number of names written
 function UnitFrames.refreshNames()
   local n = 0
+  if quiet() then return 0 end -- out-of-combat mode in combat: onCombatEnd runs this again
   for frame, key in pairs(nameFrames) do
     WFJ.SurfaceState.drop(SURFACE, key)
     if UnitFrames.onName(frame) then n = n + 1 end
@@ -258,8 +276,28 @@ end
 -- The State "names" event (/fita nomi): Render's refresh does not consult the names style, so this surface does.
 WFJ.State.on("names", function() UnitFrames.refreshNames() end)
 
--- PLAYER_REGEN_ENABLED (Main): in out-of-combat mode, the names the client wrote during combat. → names written
+-- PLAYER_REGEN_DISABLED (Main), still before the lockdown: in out-of-combat mode every name goes back to the
+-- client's English and its record is released, so nothing (Alt, /fita nomi, a client update) writes it in combat.
+-- → records released
+function UnitFrames.onCombatStart()
+  if not UnitFrames.NAMES_OUT_OF_COMBAT then return 0 end
+  combatHeld = false -- drop's own write happens now, before the hold
+  local n = 0
+  for _, key in pairs(nameFrames) do
+    if WFJ.SurfaceState.get(SURFACE, key) then
+      WFJ.SurfaceState.drop(SURFACE, key)
+      n = n + 1
+    end
+  end
+  combatHeld = true
+  WFJ.Render.updateBanner(SURFACE)
+  return n
+end
+
+-- PLAYER_REGEN_ENABLED (Main): in out-of-combat mode, the Italian over the names the client wrote during combat.
+-- → names written
 function UnitFrames.onCombatEnd()
+  combatHeld = false
   if not UnitFrames.NAMES_OUT_OF_COMBAT then return 0 end
   return UnitFrames.refreshNames()
 end

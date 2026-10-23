@@ -447,10 +447,13 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
     if WFJ.Diag.onBlocked(event, name, ..., ADDON) then WFJ.TaintWatch.onBlocked() end
   elseif event == "PLAYER_REGEN_DISABLED" then
     WFJ.Options.setCombat(true)
+    -- a surface module, guarded like the load-on-demand calls: its failure must not reach the combat handling
+    if WFJ.UnitFrames then step("unitframes.combat", WFJ.UnitFrames.onCombatStart) end
   elseif event == "PLAYER_REGEN_ENABLED" then
     WFJ.RevealBinding.flush() -- a modifier change made in combat
     WFJ.Options.setCombat(false)
-    WFJ.UnitFrames.onCombatEnd() -- the target frames' NPC names, in out-of-combat mode only
+    -- the target frames' NPC names, in out-of-combat mode only (guarded as above)
+    if WFJ.UnitFrames then step("unitframes.combat", WFJ.UnitFrames.onCombatEnd) end
   elseif event == "MODIFIER_STATE_CHANGED" then
     WFJ.Modifier.refresh()
   elseif event == "PLAYER_ENTERING_WORLD" then

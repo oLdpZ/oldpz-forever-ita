@@ -391,4 +391,74 @@ describe("the NPC names on the target-style frames", function()
     update(_G.TargetFrame)
     assert.are.equal("Hogger il Rosso", nameOf(_G.TargetFrame))
   end)
+
+  -- the addon's writes to one name widget (the stub counts SetText / SetFont made from addon code)
+  local function addonWrites(fs) return fs.calls.addonSetText + fs.calls.addonSetFont end
+
+  it("out-of-combat mode: combat start gives the English back; Alt in combat writes nothing", function()
+    WFJ.UnitFrames.NAMES_OUT_OF_COMBAT = true
+    update(_G.TargetFrame)
+    update(_G.Boss1TargetFrame)
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    WFJ.UnitFrames.onCombatStart() -- PLAYER_REGEN_DISABLED, before the lockdown
+    Stub.combat = true
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    assert.are.equal("Senani Thunderheart", nameOf(_G.Boss1TargetFrame))
+    local fs, boss = _G.TargetFrame.name, _G.Boss1TargetFrame.name
+    local before, bossBefore = addonWrites(fs), addonWrites(boss)
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    update(_G.TargetFrame) -- the client's own update in combat
+    _G.UnitFrame_OnEvent(_G.TargetFrame, "UNIT_NAME_UPDATE", "target")
+    assert.are.equal(before, addonWrites(fs))
+    assert.are.equal(bossBefore, addonWrites(boss))
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    Stub.combat = false
+    WFJ.UnitFrames.onCombatEnd()
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.Boss1TargetFrame))
+  end)
+
+  it("out-of-combat mode: /fita nomi in combat writes nothing; the style applies when combat ends", function()
+    local style = "en"
+    WFJ.Names = { style = function() return style end }
+    WFJ.UnitFrames.NAMES_OUT_OF_COMBAT = true
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    WFJ.UnitFrames.onCombatStart()
+    Stub.combat = true
+    local fs = _G.TargetFrame.name
+    local before = addonWrites(fs)
+    style = "it"; WFJ.State.fire("names")
+    assert.are.equal(before, addonWrites(fs))
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    Stub.combat = false
+    WFJ.UnitFrames.onCombatEnd()
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+  end)
+
+  it("the Italian shown, then the client writes a secret name: no error, no write, the record dropped", function()
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    local SECRET_NAME = {} -- a secret value: never compared
+    _G.issecretvalue = function(v) return v == SECRET_NAME end
+    Stub.units.target = { name = SECRET_NAME, guid = SENANI }
+    local fs = _G.TargetFrame.name
+    local before = fs.calls.addonSetText
+    assert.has_no.errors(function() update(_G.TargetFrame) end)
+    assert.are.equal(SECRET_NAME, nameOf(_G.TargetFrame))
+    assert.are.equal(before, fs.calls.addonSetText)
+    assert.is_nil(WFJ.SurfaceState.get(WFJ.UnitFrames.SURFACE, "name.TargetFrame"))
+  end)
+
+  it("a target change while Alt is held shows the new English; releasing Alt gives its Italian", function()
+    update(_G.TargetFrame)
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    Stub.units.target = { name = "Hogger", guid = HOGGER }
+    update(_G.TargetFrame)
+    assert.are.equal("Hogger", nameOf(_G.TargetFrame))
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    assert.are.equal("Hogger il Rosso", nameOf(_G.TargetFrame))
+  end)
 end)
