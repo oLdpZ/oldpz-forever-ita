@@ -1,4 +1,4 @@
-"""The Italian style guide (sg14): its version, the rules the plan fixes, the interface section's six rules, and
+"""The Italian style guide (sg15): its version, the rules the plan fixes, the interface section's six rules, and
 interface terms that hold on every shipped UI line."""
 
 import re
@@ -20,7 +20,7 @@ def guide(root: Path) -> str:
 
 
 def test_guide_has_a_version(root: Path):
-    assert style_version(root) == 14
+    assert style_version(root) == 15
 
 
 def test_guide_states_the_italian_rules(guide):
@@ -35,24 +35,24 @@ def test_guide_states_the_italian_rules(guide):
 
 
 def test_guide_carries_the_fixed_lexicon(guide):
-    section = guide.split("## Lessico fissato (sg14)", 1)
+    section = guide.split("## Lessico fissato (sg15)", 1)
     assert len(section) == 2, "no fixed lexicon section"
     body = section[1].split("\n## ", 1)[0]
     for term in ("| People's Militia | Milizia del Popolo |", "| SI:7 | IR:7 |", "Brigata del Popolo",
                  "Tribù, clan e gruppi",
                  "| Lunar Festival | Celebrazione della Luna |", "forma ufficiale verificabile resta inglese",
-                 "| High Executor | alto esecutore / alta esecutrice", "| Lady Sylvanas | Lady Sylvanas", "Fauci di Drago",
+                 "| High Executor | alto esecutore / alta esecutrice", "| Lady Sylvanas | dama Sylvanas", "Fauci di Drago",
                  "| felhunter | vilsegugio", "Abissi di Fondocupo", "Il titolo concorda con il genere",
                  "Oggetti e creature negli obiettivi", "| Magus (titolo) | magus", "Babbo Inverno",
                  "Masseria Buongusto", "| Prospector (titolo) | prospettore", "Scorzasecca", "la Lavatutto 5200",
-                 "Uthek la Saggia", "**Epiteti**", "| Watcher (titolo) | guardiano / guardiana",
-                 "| Surveyor (titolo) | ispettore / ispettrice", "signore supremo", "Zanzil l'Esiliato",
+                 "Uthek il Saggio", "**Epiteti**", "| Watcher (titolo) | custode",
+                 "| Surveyor (titolo) | ispettore / ispettrice", "il supremo Mok'morokk", "Zanzil l'Errante",
                  "Hakkar lo Scortica Anime", "| (The) Hinterlands | Entroterre", "| Huntsman (titolo) | predatore",
                  "| Shredder (goblin) | segatronchi", "silvagufo", "Discs of Norgannon",
-                 "| Windcaller (titolo) | evocatore / evocatrice dei venti", "| Fleet Master (titolo) | ammiraglio",
-                 "| Quartermaster | quartiermastro", "Custode degli Archivi", "| Warden (titolo) | sorvegliante",
+                 "| Windcaller (titolo) | invocatore / invocatrice del vento", "| Fleet Master (titolo) | contrammiraglio",
+                 "| Quartermaster | quartiermastro", "Custode degli Archivi", "| Warden (titolo) | custode",
                  "L'anziano Morndeep", "| Lord Valthalak |", "Stormo dei Draghi Neri", "| Blazerunner | Fiammafulgida",
-                 "Al'tabim l'Onniveggente", "| C'Thun | C'thun", "{class}` non prende prefissi",
+                 "Al'tabim l'Onnisciente", "| C'Thun | C'thun", "{class}` non prende prefissi",
                  "i Pacificatori", "linee di potere", "magistro supremo", "il guardiamorte X",
                  "Incursione / Incursioni dell'Incubo", "capitano / capitana di campo", "Radura dell'Oracolo",
                  "Isole dei Lanciascura", "Grande Spirito Ursino", "dragoide / dragoidi", "Pellemarcia",

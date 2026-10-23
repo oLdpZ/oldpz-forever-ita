@@ -1,6 +1,6 @@
 # Guida di stile della traduzione: testi del server, tooltip e interfaccia
 
-version: sg14
+version: sg15
 
 > Ciò che riceve un modello che scrive le bozze, insieme a un file di batch, per tradurre in italiano i testi di missione (titolo, obiettivi, descrizione, avanzamento, completamento), i dialoghi dei PNG, le pagine di libri, lettere e targhe, e le descrizioni dei tooltip di oggetti e abilità. Cambiare una regola o un esempio è una nuova versione: si aumenta `version:` (al numero `sg` successivo) e i nomi delle bozze finiscono con il nuovo `-sg<N>`. La sezione **Testo d'interfaccia** fa eccezione: governa le bozze del dizionario dell'interfaccia, che non hanno versione, quindi cambiarla non aumenta nulla.
 
@@ -18,9 +18,9 @@ version: sg14
 - Un nome di luogo o di oggetto che il glossario non elenca e che il client italiano non traduce resta esattamente come lo scrive l'inglese. Non inventare traduzioni di nomi. I nomi dei PNG seguono la regola «Nomi dei PNG» del Lessico fissato.
 - Un titolo o un nome comune usato da solo si traduce, anche se l'inglese lo scrive maiuscolo: `the Captain` → `il capitano`, `the Warchief` → `il Capoguerra`, `the Inn` → `la locanda`.
 
-## Lessico fissato (sg14)
+## Lessico fissato (sg15)
 
-Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip, sg12 quelle della revisione dei tooltip e degli oggetti, sg13 quelle della revisione dei tooltip della Season of Discovery e di Forever, sg14 la regola dei nomi dei PNG). Valgono come il glossario: un termine della tabella si scrive sempre così.
+Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più lungo, decisi una volta per tutti i lotti (sg2 raccoglie le decisioni della revisione delle missioni 1–20, sg3 e sg4 quelle dei dialoghi dei PNG, sg5 quelle della revisione delle missioni 21–30, sg6 quelle della revisione delle missioni 31–40, sg7 quelle della revisione delle missioni 41–50, sg8 quelle della revisione delle missioni 51–60, sg9 quelle della revisione delle missioni senza livello, sg10 quelle della revisione dei libri, sg11 quelle del pilota dei tooltip, sg12 quelle della revisione dei tooltip e degli oggetti, sg13 quelle della revisione dei tooltip della Season of Discovery e di Forever, sg14 la regola dei nomi dei PNG, sg15 le righe allineate ai nomi ufficiali dei PNG). Valgono come il glossario: un termine della tabella si scrive sempre così.
 
 | Inglese | Italiano | Non |
 |---|---|---|
@@ -50,7 +50,7 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Well of Eternity | Pozzo dell'Eternità | Well of Eternity |
 | Emerald Dream | Sogno di Smeraldo | Emerald Dream |
 | Earthmother | Madre Terra | Earthmother |
-| Greatmother | Grande Madre | Greatmother |
+| Greatmother | Grande Madre (la carica); la PNG è «Madre Anziana Vento Agile» (ufficiale), «la madre anziana Vento Agile» nel testo libero | Greatmother |
 | the Dark Lady | la Dama Oscura | Dark Lady |
 | Venture Co. / Venture Company | S.P.R. & Co. | Venture Co. |
 | SI:7 | IR:7 | SI:7 |
@@ -125,8 +125,8 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | High Priest / High Priestess | sommo sacerdote / somma sacerdotessa | alta sacerdotessa |
 | High Mage / High Sorcerer | sommo mago / alto stregone | — |
 | Dragonmaw (clan, testo libero) | Fauci di Drago (le Fauci di Drago, gli orchi delle Fauci di Drago; dagli oggetti ufficiali) | Dragonmaw, gli orchi Fauci di Drago |
-| Lady Sylvanas | Lady Sylvanas (L maiuscola) | lady Sylvanas |
-| Lady + nome | Lady sempre maiuscola: Lady Proudmoore, Lady Jaina Proudmoore, anche nella grafia inglese «Lady Proudmore»; «Miss Proudmoore» resta «la signorina Proudmoore» | lady Proudmoore |
+| Lady Sylvanas | dama Sylvanas nel testo libero, come il nome ufficiale Dama Sylvanas Ventolesto | lady Sylvanas |
+| Lady + nome | il titolo del nome ufficiale, minuscolo nel testo libero: «dama Jaina Marefiero» (ufficiale Dama Jaina Marefiero), «dama Sylvanas»; senza una forma ufficiale Lady resta maiuscola; «Miss Proudmoore» resta «la signorina Proudmoore» | lady Proudmoore |
 | Magus (titolo) | magus («il magus Voidglare», «il magus Tirth»; dall'oggetto Testa della Magus Rimtori) | mago Voidglare, il Magus |
 | Prospector (titolo) | prospettore («il prospettore Ironband»; dagli oggetti Piccone da Prospettore…) | cercatore |
 | Witherbark / Crushridge / Boulderfist / Shadowforge (testo libero) | Scorzasecca / Sfasciacresta / Rocciadura / Forgiascura («gli Scorzasecca»; dalle zone e dagli oggetti ufficiali) | i Witherbark |
@@ -136,38 +136,38 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Sparklematic 5200 | la Lavatutto 5200 (femminile; dalla Scatola Incartata dalla Lavatutto) | lo Sparklematic 5200 |
 | Gelkis Village | Villaggio dei Gelkis (zona ufficiale) | — |
 | Mithril Order, Scarlet Brotherhood, Magram Village | restano inglesi (nessuna forma ufficiale verificabile) | Ordine del Mithril, confratelli scarlatti, villaggio dei Magram |
-| Epiteti di una parola comune (the Wise, the Ancient, the Devout, the Swift, the Foul, the Lost…) | tradotti, articolo minuscolo ed epiteto maiuscolo: Uthek la Saggia, Galvan l'Antico, Raleigh il Devoto, Helgrum il Rapido, Hank il Martello, Aturk l'Incudine, Balgaras il Lurido, Theldurin il Perduto, Delgren il Purificatore, Taragaman il Famelico (ufficiale) | Uthek the Wise, Raleigh il devoto |
+| Epiteti di una parola comune (the Wise, the Ancient, the Devout, the Swift, the Foul, the Lost…) | tradotti, articolo minuscolo ed epiteto maiuscolo; dove il PNG ha un nome ufficiale vale quello: Uthek il Saggio, Galvan l'Antico, Raleigh il Devoto, Helgrum l'Agile, Balgaras l'Infetto, Theldurin il Perduto, Taragaman il Famelico (ufficiali), Hank il Martello, Aturk l'Incudine, Delgren il Purificatore | Uthek the Wise, Raleigh il devoto |
 | Epiteti coniati o giochi di parole (Gakin the Darkbinder, Rethiel the Greenwarden, Neptulon the Tidehunter, Zardeth the Black Claw, Shoni the Shilent) | seguono «Nomi dei PNG», come ogni nome di PNG | Rethiel il Greenwarden |
 | felhunter | vilsegugio / vilsegugi (da Evocazione: Vilsegugio) | felhunter |
 | Blackfathom (Deeps), il luogo | Abissi di Fondocupo («negli Abissi di Fondocupo»); Fondocupo da solo è la fazione | a Fondocupo |
-| Steelsnap / Sarltooth / Gobbler / Grimson (testo libero) | Ganascia / Dentesauro / Glugot / Rocciatorva (da Costola di Ganascia, Artigli di Dentesauro, Testa di Glugot, Testa di Rocciatorva; «Rocciatorva il Pallido») | — |
+| Steelsnap / Sarltooth / Gobbler / Grimson (testo libero) | Ganascia / Dentesauro / Glugot / Rocciatorva (da Costola di Ganascia, Artigli di Dentesauro, Testa di Glugot, Testa di Rocciatorva); il PNG è «Grimson il Pallido» (ufficiale) | — |
 | Thistlefur (tribù) | Mantocardo | Thistlefur |
 | Ravenholdt Manor | Maniero dei Corvolesto | maniero di Corvolesto |
 | Tarren Mill | il Mulino di Tarren («al», «del», «dal Mulino di Tarren») | a / di Mulino di Tarren |
-| Tinkmaster / Dawnwatcher / Windwatcher / Cliffwatcher / Argent Guard (titoli) | mastro inventore / vegliante dell'alba / osservatore dei venti / guardiacolli / guardia argentea | Dawnwatcher, the Windwatcher |
+| Tinkmaster / Dawnwatcher / Windwatcher / Cliffwatcher / Argent Guard (titoli) | mastro meccanista / miraurora / guardiavento / guardiacolli / guardia d'Argento, come i nomi ufficiali (Mastro Meccanista Granfavilla, Miraurora Selgorm, Bath'rah il Guardiavento, Guardiacolli Corno Lungo, Guardia d'Argento Manados); minuscoli davanti al nome nel testo libero | mastro inventore, vegliante dell'alba, osservatore dei venti, guardia argentea |
 | The Affray (la prova dell'Isola della Contesa) | la Rissa | — |
 | Druids of the Fang, Scythe of Elune, Eye of Azora, Nightbane (i worgen come gruppo, non una creatura) | restano inglesi (nessuna forma ufficiale verificabile) | Falce di Elune, Occhio di Azora, Druidi della Zanna |
 | Mekgineer (titolo o nome di un PNG), Nightbane (la creatura), Zardeth the Black Claw | seguono «Nomi dei PNG», come ogni nome di PNG | — |
-| Watcher (titolo) | guardiano / guardiana («il guardiano Mahar Ba», «la guardiana Sarah Ladimore»); stone watcher → guardiano di pietra | osservatore |
-| Surveyor (titolo) | ispettore / ispettrice; Junior Surveyor → ispettore apprendista («l'<ispettore/ispettrice> apprendista {name}»), Senior Surveyor → ispettore anziano | rilevatore, ispettore capo |
-| Overlord (titolo) | signore supremo («il signore supremo Mok'Morokk») | il supremo |
+| Watcher (titolo) | custode come i nomi ufficiali («il custode Mahar Ba», ufficiale Custode Mahar Ba); senza una forma ufficiale guardiano / guardiana («la guardiana Sarah Ladimore»); stone watcher → guardiano di pietra | osservatore |
+| Surveyor (titolo) | ispettore / ispettrice; Junior Surveyor → ispettore apprendista («l'<ispettore/ispettrice> apprendista {name}»), Senior Surveyor → ispettore esperto (ufficiale Ispettore Esperto Acquafrizz) | rilevatore, ispettore capo, ispettore anziano |
+| Overlord (titolo) | supremo, come i nomi ufficiali («il supremo Mok'morokk», «il gran supremo Faucisaure») | signore supremo |
 | Huntsman (titolo) | predatore («il predatore Markhor»; dagli oggetti Teschio del Predatore Malkhor, Stivali del Predatore…) | cacciatore |
 | Shredder (goblin) | segatronchi, maschile invariabile («il segatronchi», «i segatronchi XT:4 e XT:9»; da Segatronchi d'Osso Bianco, Manuale di Funzionamento del Segatronchi) | shredder, trinciatrice, trituratore |
 | wildkin, owlbeast | silvagufo / silvagufi (da Penna di Silvagufo); nelle creature degli obiettivi vale «Nomi dei PNG» | bestiagufo |
-| Zanzil the Outcast | Zanzil l'Esiliato | Zanzil il Reietto (si confonde con i Reietti) |
+| Zanzil the Outcast | Zanzil l'Errante (ufficiale) | Zanzil l'Esiliato, Zanzil il Reietto (si confonde con i Reietti) |
 | Hakkar the Soulflayer, the Soulflayer | Hakkar lo Scortica Anime, senza virgole (dall'abilità ufficiale); da solo «lo Scortica Anime» | Hakkar, lo Scortica Anime,; il Soulflayer |
 | (The) Hinterlands | Entroterre, zona ufficiale, femminile plurale («nelle Entroterre», «delle Entroterre», «Verso le Entroterre») | negli Hinterlands |
 | Grimlok (testo libero) | Tetrok (da Maglia Tribale di Tetrok, Guisarma di Tetrok); negli obiettivi Grimlok, come Ganascia/Glugot, ha la forma di «Nomi dei PNG» | — |
 | Hatetalon | il PNG (Edana Hatetalon) segue «Nomi dei PNG»; il luogo (le pietre Hatetalon) resta inglese; Bramartiglio solo nell'oggetto Corno di Bramartiglio | Bramartiglio nel testo libero |
 | Broken Alliances (titolo) | Alleanze infrante | Alleanze spezzate |
 | Discs of Norgannon, Plates of Uldum, Tablet of the Seven, Seal of the Earth | restano inglesi («i Discs of Norgannon»; nessuna forma ufficiale verificabile); «i dischi» da soli si traducono; lo Stone Watcher of Norgannon è una creatura e segue «Nomi dei PNG» | Dischi di Norgannon, Tavoletta dei Sette, Sigillo della Terra |
-| Windcaller (titolo) | evocatore / evocatrice dei venti («l'evocatore dei venti Proudhorn», «all'evocatrice dei venti Yessendra») | evocatore del vento, invocatore dei venti |
-| Fleet Master (titolo) | ammiraglio («l'ammiraglio Seahorn», «l'ammiraglio Firallon»); negli obiettivi la creatura segue «Nomi dei PNG» | comandante della flotta |
+| Windcaller (titolo) | invocatore / invocatrice del vento, come i nomi ufficiali («all'invocatrice del vento Yessendra», ufficiale Invocatrice del Vento Yessendra) | evocatore dei venti, invocatore dei venti |
+| Fleet Master (titolo) | contrammiraglio, come i nomi ufficiali («il contrammiraglio Corno Marino», «il contrammiraglio Firallon») | ammiraglio, comandante della flotta |
 | Quartermaster | quartiermastro / quartiermastri (dallo Scrigno del Quartiermastro Zigris): «il quartiermastro dei Lupi Bianchi», «a Hasana, quartiermastro della Granbarricata» | furiere, intendente |
 | Keeper of the Rolls | il Custode degli Archivi, maiuscolo (dalla Lettera dal Custode degli Archivi) | custode dei registri |
-| Warden (titolo) | sorvegliante («il sorvegliante Haro»); il direttore di una prigione resta direttore (il direttore Thelwater); A Warden of the Alliance/Horde (Settimana dei Bambini) → «Un tutore dell'Alleanza/dell'Orda». Custode è Keeper; gli oggetti Warden's… (… del Custode) restano come sono | custode Haro |
+| Warden (titolo) | custode, come i nomi ufficiali («il custode Haro», «il custode Cuorsaldo» per Warden Thelwater); A Warden of the Alliance/Horde (Settimana dei Bambini) → «Un tutore dell'Alleanza/dell'Orda»; gli oggetti Warden's… (… del Custode) restano come sono | sorvegliante Haro, il direttore Thelwater |
 | X the Elder, Elder X (Celebrazione della Luna e altri anziani) | «l'anziano X», «l'anziana X» se l'inglese mostra una donna (l'anziana Ragetotem: «her days»); nei titoli «L'anziano Morndeep»; il cognome di tribù segue la forma ufficiale della tribù, come nel punto «Tribù, clan e gruppi» (l'anziano Thunderhorn → Corno Tonante, Winterhoof → Zoccolo Artico, Grimtotem → Totem Truce); il resto del nome segue «Nomi dei PNG» | Morndeep l'Anziano |
-| Lord Valthalak | «lord Valthalak» nel testo libero (anche «il frammento sinistro dell'amuleto di lord Valthalak»); negli oggetti la forma ufficiale «Sire» (Frammento Sinistro dell'Amuleto di Sire Valthalak, Amuleto di Sire Valthalak) | Sire Valthalak nel testo libero |
+| Lord Valthalak | «sire Valthalak» nel testo libero, come il nome ufficiale Sire Valthalak e gli oggetti (Amuleto di Sire Valthalak) | lord Valthalak |
 | X Dragonflight, the X Flight (stormi dei draghi) | la forma della fazione, maiuscola: Stormo dei Draghi Neri / Rossi / Blu / Verdi / di Bronzo, anche per «the Black Flight» e per le righe minuscole («lo stormo nero»); il draco campione dello Stormo dei Draghi Blu; Ysera's Dragonflight → Stormo di Ysera. I nomi ufficiali di oggetti e abilità restano: Muta dello Stormo Nero, Fiamme dello Stormo Nero. «lo stormo», «gli stormi» da soli e «lo stormo cromatico» sono nomi comuni | Stormo Nero nel testo libero, stormo dei draghi verdi |
 | dreadlord | signore del terrore, minuscolo (nome comune) | Signore del Terrore |
 | Blazerunner | Fiammafulgida (dall'abilità Aura di Fiammafulgida) | Blazerunner |
@@ -176,19 +176,19 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Firebloom | Sbocciafuoco (nome ufficiale dell'erba): «Porta 20 Sbocciafuoco» | Firebloom |
 | Thorium Bar (e gli altri Bar) | Lingotto di Torio (ufficiale); senza numero «i lingotti di torio» | barre di torio |
 | Warsong Outriders / Outrider (oggetti) | Predoni Cantaguerra (fazione ufficiale); negli oggetti la forma ufficiale «Perlustratore» (Kit Curativo di Base dei Perlustratori) | — |
-| Myranda the Hag | Myranda la Megera | Myranda la Strega |
-| Al'tabim the All-Seeing | Al'tabim l'Onniveggente | Al'tabim l'Onnisciente |
+| Myranda the Hag | Myranda la Strega (ufficiale) | Myranda la Megera |
+| Al'tabim the All-Seeing | Al'tabim l'Onnisciente (ufficiale) | Al'tabim l'Onniveggente |
 | the Blood God (Hakkar) | il Dio del Sangue, maiuscolo come titolo; «un antico dio del sangue» generico minuscolo | il dio del sangue Hakkar |
 | C'Thun | C'thun, come il glossario (Armate di C'thun, Occhio di C'thun) | C'Thun |
 | Warbringer (Orda, campi di battaglia) | araldo della guerra | araldo di guerra, Warbringer |
-| Primal (Primal Torntusk) | la primordiale Torntusk (donna: «her mate») | il primordiale Torntusk |
+| Primal (Primal Torntusk) | la primalista Zannaculea, come il nome ufficiale Primalista Zannaculea (donna: «her mate») | la primordiale Torntusk |
 | Peacekeeper(s) (Zephras) | i Pacificatori, il gruppo, maiuscolo (dagli oggetti Cintura del Pacificatore Shen'dorei…); il singolo pacificatore / pacificatrice, minuscolo («il pacificatore Vaaniel», «era una pacificatrice»); Valennia Stormfist è la capitana dei Pacificatori | custodi della pace, guardiani della pace |
 | leyline(s) | linea / linee di potere; l'abilità razziale Read Leyline resta inglese | linee di energia |
 | Supreme Magister / High Elder / Grand Skyseer | magistro supremo / alto anziano, alta anziana / gran scrutacieli | supremo magistro, anziano supremo |
 | skysight | lo skysight, come l'abilità razziale Skysight | la vista del cielo |
 | Constable Aonda | la conestabile Aonda (donna: «a good woman») | il conestabile Aonda |
 | Deathguard + nome | il guardiamorte X, minuscolo, invariabile (dal Mantello del Guardiamorte); l'articolo segue il personaggio, maschile salvo che l'inglese mostri una donna (la guardiamorte Linnea); più persone «i guardiamorte»; il corpo armato resta la Guardia della Morte («un membro della Guardia della Morte») | la Guardia della Morte Dillinger |
-| Druid of the Claw | druido / druida dell'Artiglio, titolo minuscolo («la druida dell'Artiglio Alara Grovemender»); il titolo di missione «Druido dell'Artiglio» | il Druido dell'Artiglio |
+| Druid of the Claw | druido / druida dell'Unghia, come il nome ufficiale Druido dell'Unghia; titolo minuscolo («la druida dell'Unghia Alara Grovemender») | druido dell'Artiglio |
 | Nightmare Incursion(s) | Incursione / Incursioni dell'Incubo, maiuscola («nell'Incursione dell'Incubo di Feralas»); i titoli «Missione di Boscovespro I: sconfiggere i worgen», «Missione delle Entroterre XVI: salvare …», infinito minuscolo dopo i due punti | incursione dell'Incubo, Nightmare Incursion, Missione a Valtetra |
 | Field Captain | capitano / capitana di campo, davanti al nome («dalla capitana di campo Hannalah», «dal capitano di campo Arunnel») | Hannalah, capitano di campo; il capitano Palandar |
 | Dreamwarden | sorvegliante del Sogno («il sorvegliante del Sogno Thalinar», «la sorvegliante del Sogno Amalia»; senza genere noto «da Laninar, sorvegliante del Sogno,») | Dreamwarden |
@@ -205,7 +205,7 @@ Termini ricorrenti che il glossario non copre, o copre solo dentro un nome più 
 | Wrenix the Wretched | Wrenix il Miserabile | — |
 | Rot Hide (gnoll) | Pellemarcia nel testo libero (da Icore di Pellemarcia: «gli gnoll Pellemarcia», «i Pellemarcia»); nelle creature degli obiettivi vale «Nomi dei PNG» | i Rot Hide |
 | hunter trainer | istruttore / istruttrice dei cacciatori, minuscolo | istruttore dei Cacciatori |
-| Keeper (titolo) / Warden delle Segrete | il custode Remulos, il custode del bosco; Warden Thelwater è il direttore anche nei dialoghi («Morte al direttore!») | il Custode, il guardiano delle Segrete |
+| Keeper (titolo) | il custode Remulos (ufficiale Custode Remulos), il custode del bosco; dove il nome ufficiale di un PNG dice altro vale quello (Keeper Moonshade → la protettrice Ombraluna) | il Custode |
 | Craftsman's Writ / Camping 101 | Contratto d'Artigianato: <oggetto nella forma ufficiale>; Campeggio 101: <professione ufficiale> (Alchimia, Forgiatura, Incantamento, Ingegneria, Erbalismo, Estrazione, Scuoiatura, Sartoria, Conciatura, Pesca, Cucina, Primo Soccorso) | Campeggio 101: la cucina |
 | Gyromatic Micro-Adjuster | Microavvitatore Giromatico (lo stesso oggetto dell'ufficiale Gyromatic Micro-Adjustor) | — |
 
@@ -216,16 +216,16 @@ Regole che accompagnano la tabella:
 - **Tribù, clan e gruppi** (non cognomi) prendono la forma ufficiale ricavabile dal glossario di zone, oggetti e fazioni: Razormane → Chiomaguzza, Bristleback → Mantotergo, Darkspear → Lanciascura, Frostmane → Mantogelido, Gnarlpine → Mordipigna, Winterhoof → Zoccolo Artico, Thunderhorn → Corno Tonante, Venomtail → Codavenefica, Bloodfeather → Piumarossa, Grimtotem → Totem Truce. Se non è ricavabile, resta inglese.
 - **Nomi ricavati da oggetti ufficiali** sono ammessi allo stesso modo: `Darkmoon Cards` → `Carte di Lunacupa` (dagli oggetti `Carta di Lunacupa: …`). Senza una forma ufficiale resta il nome inglese dell'oggetto (`Darkmoon Faire Prize Ticket`); `Fiera di Lunacupa` solo dove si parla della fiera stessa.
 - **Nomi dei PNG** (ADR-103; creature e personaggi che il giocatore vede nel mondo, ovunque il testo li nomini: dialoghi, descrizioni, obiettivi, tracker, tooltip). Il nome è quello **ufficiale itIT** se esiste, anche per i nomi propri (`Senani Thunderheart` → `Senani Cuore Tonante`); altrimenti è la forma della tabella `unit` del progetto, e mai una forma inventata quando ne esiste una ufficiale. Se non c'è né l'una né l'altra, si traduce il nome nello stile dell'italiano ufficiale di Blizzard: un nome descrittivo si traduce (`Syndicate Rogue` → forma italiana), cognomi ed epiteti si traducono come fanno i nomi ufficiali (`Thunderheart` → `Cuore Tonante`, `the Foul` → `il Lurido`), un nome puro (`Hogger`) resta com'è; quella forma diventa la voce della tabella `unit` e da allora si usa ovunque. Negli obiettivi (`Uccidi …`, `Parla con …`) si scrive la stessa forma del testo libero, così un PNG ha lo stesso nome in ogni punto. Se il controllo dà errore, si lascia la forma che il controllo accetta. Una creatura in un obiettivo usa la forma della tabella `unit` senza modifiche, come il client scrive «0/10 <nome> uccisi»: nessun plurale fatto a mano. Questa regola sostituisce le regole precedenti che tenevano inglesi i cognomi, i nomi composti e le creature negli obiettivi: dove si contraddicono vale questa.
-- **Ravenholdt**: il PNG segue «Nomi dei PNG»; `Corvolesto` solo per il maniero e la fazione. **Lord + nome** di un nobile: `lord` minuscolo, come gli altri titoli (lord Valthalak, lord Incendius); `Sire` solo dove è il nome ufficiale di un oggetto. **Anziano/anziana**: maschile salvo che l'inglese mostri una donna.
+- **Ravenholdt**: il PNG segue «Nomi dei PNG»; `Corvolesto` solo per il maniero e la fazione. **Lord + nome** di un nobile: il titolo del nome ufficiale, minuscolo come gli altri titoli (sire Valthalak, sire Incendius, ser Grayson Spezzaombra); senza una forma ufficiale `lord` minuscolo. **Anziano/anziana**: maschile salvo che l'inglese mostri una donna.
 - **Un titolo prima di un nome è minuscolo** (il maresciallo McBride, l'esecutore Arren, la sacerdotessa Alathea, il sommo sacerdote), salvo una forma del glossario che il controllo pretende maiuscola.
 - **I nomi composti di creature** che contengono un termine del glossario, di classe, di razza o di zona (Ice Claw Bear, Armored Scorpid, Redridge Mongrel, Stonesplinter Shaman) prendono la forma di «Nomi dei PNG» e non si ricompongono con il termine del glossario; il controllo dà solo un avviso. Mai costruzioni come «uno Scorpide, l'Armored Scorpid» o «Bruti di Crestarossa» aggiunte per il controllo.
 - **Nomi di abilità** che il glossario non elenca (Lesser Heal) restano inglesi.
 - **Feste e personaggi stagionali** prendono la forma della tabella, ricavata dagli oggetti ufficiali; una festa o un personaggio senza forma ufficiale ricavabile (Children's Week, Harvest Festival, Brewfest) resta inglese. Greatfather Winter è Babbo Inverno, Smokywood Pastures la Masseria Buongusto.
 - **Un nome senza forma ufficiale verificabile resta inglese** (verificabile vuol dire anche nelle tabelle Faction e AreaTable del client itIT, cercate per nome inglese, non solo nel glossario), anche se una traduzione sembra ovvia: Gnomeregan Exiles, Apothecarium, Royal Apothecary Society, Shattered Hand, Cult of the Damned, Camp Taurajo, Brotherhood of the Light. Non inventarne una (`Saluto Infranto`, `Torre Orientale dei Lupi Bianchi`).
 - **Il titolo concorda con il genere del personaggio** che lo porta: l'alta esecutrice Darthalia, la somma sacerdotessa. Se il genere non si conosce, un'apposizione senza articolo (`a Selgorm, vegliante dell'alba,`).
-- **Un titolo coniato** (Tinkmaster, Dawnwatcher, Windwatcher) si traduce in una sola forma, quella della tabella, in ogni campo; una parola inventata senza senso italiano (Mekgineer) resta com'è solo se così la fissa la tabella `unit` (per un PNG vale «Nomi dei PNG»).
+- **Un titolo coniato** (Tinkmaster, Dawnwatcher, Windwatcher) si traduce in una sola forma, quella del nome ufficiale del PNG riportata nella tabella, in ogni campo; una parola inventata senza senso italiano (Mekgineer) resta com'è solo se così la fissa la tabella `unit` (per un PNG vale «Nomi dei PNG»).
 - **Oggetti e creature negli obiettivi** (`quest_objectives`): un oggetto con una forma nel glossario ufficiale per quel nome esatto si scrive nella forma ufficiale, anche se la riga del lotto non la elenca in `glossary`, al singolare dopo il numero come nel tracker (`Porta 10 Ascia Usurata`, `Porta 3 Verga della Canalizzazione`); senza una forma ufficiale resta intero in inglese, come lo mostra il tracker; si toglie solo la -s del plurale regolare in fondo al nome; un plurale irregolare o dentro il nome resta come lo scrive l'inglese della riga (`Bottles of Whispering Elixir`, `Sons of Cenarius`). Le creature e i capi da uccidere negli obiettivi hanno invece la forma di «Nomi dei PNG», la stessa del testo libero (titolo ed epiteto compresi), e le due versioni di una missione gemella (Orda e Alleanza) dicono la stessa cosa. La regola vale per le missioni di ogni livello. Senza un numero davanti, l'oggetto ufficiale va al plurale che la frase chiede (`Raccogli i Collari Roventi`, `frantuma i Picconi da Prospettore`); un nome del glossario che copre solo una parte del nome inglese non conta (`Soft-shelled Clam Meat` resta intero, anche se `Clam Meat` è `Mollusco`).
-- **Epiteti** («X the Y»): un epiteto di una parola comune si traduce, sempre nello stesso modo, con l'articolo minuscolo e l'epiteto maiuscolo come negli oggetti ufficiali (`Testa di Lathoric il Nero`, `Cuore di Taragaman il Famelico`): `Uthek la Saggia`, `Raleigh il Devoto`, `Hank il Martello`. L'articolo segue il genere del personaggio (Uthek è una donna). Un epiteto coniato o un gioco di parole (`Gakin the Darkbinder`, `Shoni the Shilent`) segue «Nomi dei PNG» come ogni nome di PNG. Negli obiettivi un PNG, da uccidere o da cercare, ha la stessa forma del testo libero («Nomi dei PNG»): `Uccidi Balgaras il Lurido`, `Parla con Uthek la Saggia`.
+- **Epiteti** («X the Y»): un epiteto di una parola comune si traduce, sempre nello stesso modo, con l'articolo minuscolo e l'epiteto maiuscolo come negli oggetti ufficiali (`Testa di Lathoric il Nero`, `Cuore di Taragaman il Famelico`): `Raleigh il Devoto`, `Hank il Martello`, `Helgrum l'Agile`. L'articolo segue il genere del personaggio, salvo un nome ufficiale che dice altro (Uthek il Saggio). Un epiteto coniato o un gioco di parole (`Gakin the Darkbinder`, `Shoni the Shilent`) segue «Nomi dei PNG» come ogni nome di PNG. Negli obiettivi un PNG, da uccidere o da cercare, ha la stessa forma del testo libero («Nomi dei PNG»): `Uccidi Balgaras l'Infetto`, `Parla con Uthek il Saggio`.
 - **Una coppia di genere** contiene parole singole, senza spazi né apostrofi (`<un/una> fier<o/a>`, non `<un eroe/un'eroina>`); se non si può, una forma neutra.
 
 ## Il giocatore si dà del "tu"
