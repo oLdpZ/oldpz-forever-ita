@@ -311,8 +311,10 @@ def read_kept(repo: Path) -> dict[KeepKey, str]:
 
 def record_kept(data: Path, keep_files: Iterable[Path]) -> int:
     """Record the kept-English rows of `translate_lint` (`<draft>.keep.jsonl`) in `pipeline/keep_english.tsv`
-    with each target's current English hash (a row already there is updated). A row whose line has an Italian
-    translation in data/ now is dropped: the decision no longer applies. → the targets recorded."""
+    with each target's current English hash (a row already there is updated). A kept target's machine
+    variants are dropped first (`drop_machine_for_kept`: a redraft to keep-English replaces the old draft); a
+    row whose line still has an Italian translation in data/ (official, human) is dropped: the decision no
+    longer applies. → the targets recorded."""
     english: dict[str, dict[tuple[Any, str], dict[str, Any]]] = {}
     found: dict[KeepKey, tuple[str, str]] = {}
     for path in keep_files:
@@ -325,7 +327,54 @@ def record_kept(data: Path, keep_files: Iterable[Path]) -> int:
                 if ln is None:
                     raise SystemExit(f"translate_batch: keep: no English for {type_} {id_} {field}")
                 found[(type_, id_, field)] = (ln["hash"], " ".join(ln["en"].split()))
+    dropped = drop_machine_for_kept(data, found)
+    if dropped:
+        print(f"keep: {dropped} machine variants dropped (a redraft keeps those lines English)")
     return record_found(data, found)
+
+
+_VARIANT_KEYS = ("it", "provenance", "ruling")
+
+
+def drop_machine_for_kept(data: Path, kept: Iterable[KeepKey]) -> int:
+    """A redraft to keep-English (`{"it": null}`) on a line that already has Italian: its MACHINE variants are
+    dropped (the line goes when nothing is left), so the keep `record_found` writes next holds and the old draft
+    stops shipping. An official, human or correction variant is never dropped: the line keeps it (it wins
+    over any keep) and a warning names the line on stderr. → machine variants dropped"""
+    by_type: dict[str, set[tuple[Any, str]]] = {}
+    for type_, id_, field in kept:
+        by_type.setdefault(type_, set()).add((id_, field))
+    store, n = Store(data), 0
+    for type_, keys in sorted(by_type.items()):
+        lines = store.load(type_)
+        out: list[dict[str, Any]] = []
+        changed = False
+        for ln in lines:
+            if (ln["id"], ln["field"]) not in keys:
+                out.append(ln)
+                continue
+            variants = decisions.variant_dicts(ln)
+            others = [v for v in variants if not decisions.is_machine(v["provenance"])]
+            n += len(variants) - len(others)
+            changed |= len(others) != len(variants)
+            if others:
+                print(f"translate_batch: keep: {type_} {ln['id']} {ln['field']} has a "
+                      f"{others[0]['provenance'].get('class')} Italian: it stays, the keep is not recorded",
+                      file=sys.stderr)
+            if not others:
+                continue
+            if others[0] is not ln:
+                top = others[0]
+                for key in _VARIANT_KEYS:
+                    if key in top:
+                        ln[key] = top[key]
+                    else:
+                        ln.pop(key, None)
+            ln["conflicts"] = others[1:]
+            out.append(ln)
+        if changed:
+            store.save(type_, out, allow_empty=True)  # every line of the type dropped: deliberate
+    return n
 
 
 def record_found(data: Path, found: dict[KeepKey, tuple[str, str]]) -> int:
@@ -334,7 +383,7 @@ def record_found(data: Path, found: dict[KeepKey, tuple[str, str]]) -> int:
     old = _keep_table(data.parent)
     translated = {
         (t, ln["id"], ln["field"])
-        for t in {k[0] for k in old}
+        for t in {k[0] for k in {**old, **found}}
         for ln in Store(data).load(t)
         if any(str(v.get("it") or "").strip() for v in decisions.variant_dicts(ln))
     }

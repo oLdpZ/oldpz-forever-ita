@@ -13,7 +13,8 @@
 #         sola bozza ha un errore (ref mancante, duplicato, nome del glossario, segnaposto…) si ferma prima di
 #         importare. Poi translate_batch expand --name <nome>-sg<N>, wfj import draft (machine, MODEL,
 #         data di oggi), translate_batch keep (le righe {"ref","it":null}, che restano in inglese, in
-#         pipeline/keep_english.tsv: non vengono importate né ritagliate), wfj check (che non deve far crescere
+#         pipeline/keep_english.tsv: non vengono importate né ritagliate; l'italiano machine che una di queste
+#         righe aveva già viene tolto, quello ufficiale o umano resta con un avviso), wfj check (che non deve far crescere
 #         le righe respinte né i duplicate_conflict: una bozza che dà un altro italiano a righe già tradotte da un
 #         altro lotto viene rifiutata), wfj generate e il rapporto
 #         di copertura (come `make coverage`: docs/operations/coverage.md e i conteggi in README.md e
