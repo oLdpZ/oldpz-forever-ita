@@ -54,6 +54,47 @@ describe("Core/UIStrings OWN", function()
     assert.are.equal(2, index.counts.owned)
   end)
 
+  describe("a female character's standing", function()
+    local function standings(t, female)
+      local function h1(text) return (t.Hash.h32x2(t.Normalize.v1(text))) end
+      local EN = { FACTION_STANDING_LABEL6 = "Honored", FACTION_STANDING_LABEL6_FEMALE = "Honored",
+        QUEST_FACTION_NEEDED_NOPROGRESS = "%s: %s" }
+      local rows = {
+        FACTION_STANDING_LABEL6 = { "Onorato", h1("Honored"), "." },
+        FACTION_STANDING_LABEL6_FEMALE = { "Onorata", h1("Honored"), "." },
+        QUEST_FACTION_NEEDED_NOPROGRESS = { "%s: %s", h1("%s: %s"), "." },
+      }
+      return t.UIStrings.build({ rows = rows, english = function(k) return EN[k] end, hash = h1,
+        female = female })
+    end
+    local BOTH = { "FACTION_STANDING_LABEL6", "FACTION_STANDING_LABEL6_FEMALE" }
+
+    it("a female player's panel shows the female form, a male player's the male one", function()
+      local t = ns()
+      local her = standings(t, function() return true end)
+      local him = standings(t, function() return false end)
+      assert.are.equal("FACTION_STANDING_LABEL6_FEMALE", (her:matchOnly("Honored", BOTH)))
+      assert.are.equal("FACTION_STANDING_LABEL6", (him:matchOnly("Honored", BOTH)))
+      assert.are.equal(0, her.counts.ambiguous)
+    end)
+
+    it("without a sex the male form answers, and the open match never gives the female form", function()
+      local t = ns()
+      local index = standings(t, nil)
+      assert.are.equal("FACTION_STANDING_LABEL6", (index:matchOnly("Honored", BOTH)))
+      assert.are.equal("FACTION_STANDING_LABEL6", (standings(t, function() return true end):match("Honored")))
+    end)
+
+    it("a standing argument takes the female form for a female player", function()
+      local t = ns()
+      local her = standings(t, function() return true end)
+      local him = standings(t, function() return false end)
+      local key = "QUEST_FACTION_NEEDED_NOPROGRESS"
+      assert.are.equal("Darnassus: Onorata", her:fill("%s: %s", { key = key, "Darnassus", "Honored" }))
+      assert.are.equal("Darnassus: Onorato", him:fill("%s: %s", { key = key, "Darnassus", "Honored" }))
+    end)
+  end)
+
   it("the shipped OWN table holds plain keys only", function()
     local t = ns()
     for key in pairs(t.UIStrings.OWN) do

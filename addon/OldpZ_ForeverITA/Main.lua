@@ -143,7 +143,8 @@ end
 
 -- Builds WFJ.UIIndex from the shipped UI strings; called once at load (Core/UIStrings).
 function WFJ.BuildUIIndex()
-  WFJ.UIIndex = WFJ.UIStrings.build({ rows = WFJ.Data.ui, english = uiEnglish, hash = uiHash })
+  WFJ.UIIndex = WFJ.UIStrings.build({ rows = WFJ.Data.ui, english = uiEnglish, hash = uiHash,
+    female = function() return call(UnitSex, "player") == 3 end }) -- UnitSex: 3 female
   return WFJ.UIIndex
 end
 

@@ -874,6 +874,13 @@ UIStrings.OWN = {
   -- the combat text options' menu entries: "Effects" is the effects shown on a target (not the sound
   -- effects volume slider) and "Shields" is an absorb shield (not the item subclass)
   SHOW_TARGET_EFFECTS = true, SHOW_COMBAT_HEALING_ABSORB_SELF = true, SHOW_COMBAT_HEALING_ABSORB_TARGET = true,
+  -- a female character's reputation standing: the English is the male key's ("Honored"), the Italian is not
+  -- ("Onorata"). Asked for by the reputation and guild panels, and answered only for a female player
+  -- (Index:ownAnswers); a standing argument takes it the same way (Index:standing)
+  FACTION_STANDING_LABEL1_FEMALE = true, FACTION_STANDING_LABEL2_FEMALE = true,
+  FACTION_STANDING_LABEL3_FEMALE = true, FACTION_STANDING_LABEL4_FEMALE = true,
+  FACTION_STANDING_LABEL5_FEMALE = true, FACTION_STANDING_LABEL6_FEMALE = true,
+  FACTION_STANDING_LABEL7_FEMALE = true, FACTION_STANDING_LABEL8_FEMALE = true,
 }
 
 -- argument kind → the one fingerprint family it may be shown as

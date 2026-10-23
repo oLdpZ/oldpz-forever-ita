@@ -6,7 +6,9 @@
 -- A fixed word the client exposes no string for (an item subclass: the API returns the long "Staves" while the tooltip
 -- shows "Staff") is matched by FINGERPRINT instead: a live line whose hash equals the row's
 -- h1 is that word. Only rows whose Japanese takes no argument can be matched that way; a template needs its English.
---   UIStrings.build{ rows, english(key) → text|nil, hash(text) → h1 } → index
+--   UIStrings.build{ rows, english(key) → text|nil, hash(text) → h1, female() → bool|nil } → index
+--                                               female: whether the player is a woman (an owned `_FEMALE` key
+--                                               answers only then); absent → never
 --   index:match(text)     → key, args | nil     exact string (by English, then by h1), then templates (most literal
 --                                               text first), then labels
 --   index:fill(ja, args)  → text                the Japanese with the captured values put back (verbatim)
@@ -1032,11 +1034,13 @@ function Index:matchOnly(text, keys)
     return false
   end
   for _, k in ipairs(self.own[text] or {}) do -- a key that owns its Japanese, named by this widget
-    if set[k] then return k, nil end
+    if set[k] and self:ownAnswers(k) then return k, nil end
   end
   local open, inner, close = text:match("^(|c%x%x%x%x%x%x%x%x)(.-)(%s*|r%s*)$") -- an owned word, colour-wrapped
   for _, k in ipairs(open and self.own[inner] or {}) do
-    if set[k] and hasForm(k, "wrapped") then return k, { form = "wrapped", open = open, close = close } end
+    if set[k] and self:ownAnswers(k) and hasForm(k, "wrapped") then
+      return k, { form = "wrapped", open = open, close = close }
+    end
   end
   local names = setNames[set] -- only a set naming a family key pays for the family lookups
   if not names then
@@ -1125,6 +1129,27 @@ function Index:nested(value)
   local key = self:exactKey(value)
   if key then return self.rows[key][1] end
   return value
+end
+
+-- Whether the player is a woman (deps.female). → bool
+function Index:isFemale()
+  return type(self.female) == "function" and self.female() == true
+end
+
+-- Whether an owned key may answer: a `_FEMALE` key (a female character's standing) only for a female player.
+function Index:ownAnswers(key)
+  if key:find("_FEMALE$") then return self:isFemale() end
+  return true
+end
+
+-- A standing argument ("Honored"): the key's Italian, a female player's own form where the dictionary has it.
+function Index:standing(value)
+  local key = self:exactKey(value)
+  if key and self:isFemale() then
+    local female = self.rows[key .. "_FEMALE"]
+    if female then return female[1] end
+  end
+  return self:nested(value)
 end
 
 function Index:fill(ja, args)
@@ -1216,7 +1241,9 @@ function Index:fill(ja, args)
       if v == nil then return nil end -- the Japanese asks for an argument the line did not have: fail closed
       local kinds = args.key and argKinds(args.key)
       local kind = kinds and kinds[p.arg]
-      if kind == "word" or kind == "words" or kind == "standing" then
+      if kind == "standing" then
+        v = self:standing(v)
+      elseif kind == "word" or kind == "words" then
         v = self:nested(v)
       elseif (kind == "entry" or kind == "entryOrText" or kind == "entryList" or UIStrings.FAMILY_KINDS[kind]
           or UIStrings.FAMILY_LIST_KINDS[kind]) and type(v) == "table" then
@@ -1243,7 +1270,7 @@ function UIStrings.build(deps)
   local index = setmetatable({ rows = rows, exact = {}, templates = {}, prefixes = {}, byHash = {}, hashCount = 0,
     memo = {}, memoCount = 0, durations = {}, spellDurations = {}, synonyms = {}, own = {}, templateKeys = {},
     bySlots = {}, byNumbers = {}, byRestricted = {}, byTemplate = {},
-    hash = deps.hash,
+    hash = deps.hash, female = deps.female,
     counts = { shipped = 0, indexed = 0, hashed = 0, mismatched = 0, ambiguous = 0, unresolved = 0, unsupported = 0,
       owned = 0 },
     problems = { mismatched = {}, ambiguous = {}, unresolved = {}, unsupported = {} } }, Index)
