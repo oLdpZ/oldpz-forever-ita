@@ -1159,6 +1159,7 @@ UI\PvPMatch.lua
 UI\QueueStatus.lua
 UI\RaidManager.lua
 UI\UnitFrames.lua
+UI\NamePlates.lua
 UI\GroupFinder.lua
 UI\Channels.lua
 UI\QuickJoin.lua

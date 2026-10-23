@@ -345,6 +345,7 @@ function WFJ.OnLoad()
     "Statistics", "Widgets",
     "Macro", "SpellSearch", "TimeManager", "CombatText", "CooldownViewer", "DamageMeter", "DeathRecap",
     "GamepadEdit", "Gamepad", "HudLabels", "HudTips", "Minimap", "PvPMatch", "QueueStatus", "RaidManager", "UnitFrames",
+    "NamePlates",
     "GroupFinder", "Channels", "QuickJoin", "RecentAllies", "RecruitAFriend", "ReportFrame", "HelpFrame",
     "StatusNotices", "BNetToast", "SettingsPanel", "SettingsTutorials", "EditMode", "QuickKeybind", "ColorPicker",
     "ChatConfig", "TextToSpeech", "ChatTabs", "CombatLog", "AddonList", "ScriptErrors", "Splash", "EventTrace",
@@ -431,6 +432,8 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
       self:RegisterEvent("PLAYER_ENTERING_WORLD")
       self:RegisterEvent("PLAYER_REGEN_DISABLED")
       self:RegisterEvent("PLAYER_REGEN_ENABLED")
+      self:RegisterEvent("NAME_PLATE_UNIT_ADDED") -- UI/NamePlates (frames are Main's, ADR-016)
+      self:RegisterEvent("NAME_PLATE_UNIT_REMOVED")
       for _, blocked in ipairs(WFJ.Diag.BLOCK_EVENTS) do self:RegisterEvent(blocked) end
     else
       -- Guarded like the load sequence. These run the deferred setup for the talent frame, the trainer and the
@@ -449,11 +452,21 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
     WFJ.Options.setCombat(true)
     -- a surface module, guarded like the load-on-demand calls: its failure must not reach the combat handling
     if WFJ.UnitFrames then step("unitframes.combat", WFJ.UnitFrames.onCombatStart) end
+    -- the nameplates' NPC names: always English in combat (their English back now, before the lockdown)
+    if WFJ.NamePlates then step("nameplates.combat", WFJ.NamePlates.onCombatStart) end
   elseif event == "PLAYER_REGEN_ENABLED" then
     WFJ.RevealBinding.flush() -- a modifier change made in combat
     WFJ.Options.setCombat(false)
     -- the target frames' NPC names, in out-of-combat mode only (guarded as above)
     if WFJ.UnitFrames then step("unitframes.combat", WFJ.UnitFrames.onCombatEnd) end
+    -- the nameplates' NPC names: the Italian on every plate shown
+    if WFJ.NamePlates then step("nameplates.combat", WFJ.NamePlates.onCombatEnd) end
+  elseif event == "NAME_PLATE_UNIT_ADDED" then
+    -- many per second in a crowd: called directly (a guard's record per event would pile up); the module never raises
+    -- on client data (every value is type- and secret-checked) and does nothing until its init hooked the writer
+    if WFJ.NamePlates then WFJ.NamePlates.onAdded(name) end
+  elseif event == "NAME_PLATE_UNIT_REMOVED" then
+    if WFJ.NamePlates then WFJ.NamePlates.onRemoved(name) end
   elseif event == "MODIFIER_STATE_CHANGED" then
     WFJ.Modifier.refresh()
   elseif event == "PLAYER_ENTERING_WORLD" then

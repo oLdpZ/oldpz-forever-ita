@@ -958,6 +958,42 @@ local function svValue(v, depth, out)
   end
 end
 
+-- Nameplates (opt-in per spec): C_NamePlate.GetNamePlates() lists the plates shown now, GetNamePlateForUnit(token) the
+-- plate of one token. Stub.namePlate(token, unitFrame?) shows a plate for `token` whose `.UnitFrame` is a compact-
+-- style unit frame (`unit`, `name` FontString, IsForbidden); pass an existing unit frame to reuse it (plates are
+-- pooled by the client). Stub.removeNamePlate(token) hides it again (the unit frame keeps its last `unit`).
+function Stub.installNamePlateAPI()
+  Stub.namePlates = {}
+  _G.C_NamePlate = {
+    GetNamePlates = function()
+      local tokens, out = {}, {}
+      for token in pairs(Stub.namePlates) do tokens[#tokens + 1] = token end
+      table.sort(tokens)
+      for i, token in ipairs(tokens) do out[i] = Stub.namePlates[token] end
+      return out
+    end,
+    GetNamePlateForUnit = function(token) return Stub.namePlates[token] end,
+  }
+end
+
+function Stub.namePlate(token, unitFrame)
+  local plate = CreateFrame("Frame")
+  local uf = unitFrame or CreateFrame("Button", nil, plate)
+  if not unitFrame then
+    uf.name = Stub.fontString("")
+    uf.IsForbidden = function() return false end
+  end
+  uf.unit = token
+  plate.UnitFrame = uf
+  plate.namePlateUnitToken = token
+  Stub.namePlates[token] = plate
+  return plate, uf
+end
+
+function Stub.removeNamePlate(token)
+  Stub.namePlates[token] = nil
+end
+
 function Stub.serializeSavedVariables(names)
   local out = {}
   for _, name in ipairs(names) do

@@ -80,7 +80,8 @@ def test_every_exclusion_names_a_key_the_forever_ui_can_reach(root):
 
 
 # Modules that declare a Compat namespace but are not a translated surface.
-NOT_SURFACES = {"scan", "readings"}  # the word-reading box rides the quest / gossip surfaces, no window
+NOT_SURFACES = {"scan", "readings", "nameplates"}  # the word-reading box rides the quest / gossip surfaces, no window;
+# the nameplates write NPC names from `unit` rows only (blizzard_nameplates is `no-text`: no UI key)
 _SURFACE_CONST = re.compile(r'^local (?:SURFACE|DECLARE) = "([a-z.]+)"', re.M)
 
 
