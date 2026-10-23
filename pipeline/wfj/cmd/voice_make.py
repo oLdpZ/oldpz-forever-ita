@@ -8,9 +8,11 @@
   generate --scope S --store DIR [--env-file F] [--limit N] [--config F]
       Makes them through Gemini (the key is GEMINI_API_KEY, from the environment or --env-file) into DIR, the
       audio store: mp3/ holds what the pack ships (mono, 22.05 kHz, 32 kbps, no Xing / Info frame), wav/ the
-      original take. Each file is recorded in data/voice/audio.jsonl as soon as it is made, so a stopped run
-      resumes where it stopped. A take the filter blocks four times goes to DIR/blocked.jsonl and is not
-      asked again until its line, spoken version or voice changes; a busy or failing engine stops the run.
+      original take with the fingerprint it was made for (a take paid for but never encoded is encoded from
+      it on the next run, not asked again). Each file is recorded in data/voice/audio.jsonl as soon as it is
+      made, so a stopped run resumes where it stopped. A take the filter blocks four times goes to
+      DIR/blocked.jsonl and is not asked again until its line, spoken version, voice or profile changes; a
+      busy or failing engine, a missing encoder or an unreadable take stops the run.
       --limit N stops after N files made (a trial at a known cost).
   status --store DIR
       The running or last generation: done / total, rate, time left, and whether its process is alive.
@@ -27,6 +29,7 @@ import datetime
 import hashlib
 import json
 import os
+import shutil
 import subprocess
 import sys
 import time
@@ -230,7 +233,8 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
                     silent.append((stem, "refused", str(e)))
                     continue
                 fp = voice.fingerprint(
-                    voice.text_hash(it, vals, said), vid, r["gemini_voice"], r["model"], r["notes"], sex
+                    voice.text_hash(it, vals, said), vid, r["gemini_voice"], r["model"], r["notes"], sex,
+                    profile,
                 )
                 takes.append(Take(voice.Job(stem, key, vid, sex), it, text, prompt, r["gemini_voice"], fp))
     return Survey(takes, silent)
@@ -254,6 +258,47 @@ def mp3_file(store: Path, stem: str) -> Path:
 
 def wav_file(store: Path, stem: str) -> Path:
     return store / "wav" / f"{stem}.wav"
+
+
+def take_file(store: Path, stem: str) -> Path:
+    """Beside a kept WAV: the fingerprint it was made for. A paid take whose MP3 or record was never written
+    (the encoder failed, the run died) is encoded again from it, not asked of the engine again."""
+    return store / "wav" / f"{stem}.json"
+
+
+def kept_take(store: Path, t: Take) -> bytes | None:
+    """The WAV the store already holds for this take, when it was made for the same fingerprint."""
+    wav, side = wav_file(store, t.job.stem), take_file(store, t.job.stem)
+    if not (wav.is_file() and side.is_file()):
+        return None
+    try:
+        made_for = json.loads(side.read_text(encoding="utf-8")).get("fingerprint")
+    except (ValueError, AttributeError):
+        return None
+    return wav.read_bytes() if made_for == t.fingerprint else None
+
+
+def keep_take(store: Path, t: Take, wav: bytes) -> None:
+    """The paid take first, then what it was made for: a resume encodes it again from here."""
+    _write_bytes(wav_file(store, t.job.stem), wav)
+    _write_bytes(take_file(store, t.job.stem), (json.dumps({"fingerprint": t.fingerprint}) + "\n").encode())
+
+
+def record_row(t: Take, mp3: Path, seconds: float, provenance: Mapping[str, str]) -> dict[str, Any]:
+    """The audio record's row for a made file."""
+    return {
+        "file": t.job.stem,
+        "key": t.job.key,
+        "voice": t.job.voice,
+        "sex": t.job.sex,
+        "it_hash": voice.it_hash(t.it),
+        "fingerprint": t.fingerprint,
+        "seconds": round(seconds, 2),
+        "bytes": mp3.stat().st_size,
+        "chars": len(t.transcript),
+        "sha256": file_sha(mp3),
+        "provenance": dict(provenance),
+    }
 
 
 def store_dir(arg: str | None) -> Path | None:
@@ -398,6 +443,10 @@ def generate(  # noqa: PLR0913 - the engine, encoder, log and sleep are injected
     if not work:
         return out
     encode = encode or to_mp3
+    if encode is to_mp3 and shutil.which(LAME[0]) is None:
+        # checked before the first paid take: a take that cannot be encoded is a take paid for nothing
+        out["stopped"] = f"{LAME[0]} is not installed: it encodes the MP3s"
+        return out
     audio = audio_record(root)
     blocked = read_blocked(store)
     for d in ("mp3", "wav"):
@@ -425,9 +474,11 @@ def generate(  # noqa: PLR0913 - the engine, encoder, log and sleep are injected
             if limit is not None and out["made"] >= limit:
                 break
             stem = t.job.stem
+            wav_path, mp3 = wav_file(store, stem), mp3_file(store, stem)
+            kept = kept_take(store, t)
             try:
-                wav = gemini.synthesize_retry(engine, t.prompt, t.gemini_voice, tries=TRIES,
-                                              sleep=sleep or time.sleep)
+                wav = kept if kept is not None else gemini.synthesize_retry(
+                    engine, t.prompt, t.gemini_voice, tries=TRIES, sleep=sleep or time.sleep)
             except gemini.Blocked as e:
                 blocked[stem] = {"file": stem, "key": t.job.key, "sex": t.job.sex, "tries": TRIES,
                                  "reason": str(e), "it_hash": voice.it_hash(t.it),
@@ -437,23 +488,14 @@ def generate(  # noqa: PLR0913 - the engine, encoder, log and sleep are injected
                 log(f"voice generate: {stem}: blocked {TRIES} times ({e}), listed in {store / BLOCKED}")
                 save()
                 continue
-            wav_path, mp3 = wav_file(store, stem), mp3_file(store, stem)
-            _write_bytes(wav_path, wav)
+            try:
+                secs = wav_seconds(wav)
+            except (wave.Error, EOFError) as e:
+                raise gemini.EngineError(f"{stem}: the engine's audio is not a readable WAV ({e})") from None
+            if kept is None:
+                keep_take(store, t, wav)
             encode(wav_path, mp3)
-            secs = wav_seconds(wav)
-            audio[stem] = {
-                "file": stem,
-                "key": t.job.key,
-                "voice": t.job.voice,
-                "sex": t.job.sex,
-                "it_hash": voice.it_hash(t.it),
-                "fingerprint": t.fingerprint,
-                "seconds": round(secs, 2),
-                "bytes": mp3.stat().st_size,
-                "chars": len(t.transcript),
-                "sha256": file_sha(mp3),
-                "provenance": {"source": source, "imported": today},
-            }
+            audio[stem] = record_row(t, mp3, secs, {"source": source, "imported": today})
             blocked.pop(stem, None)
             out["made"] += 1
             out["chars_made"] += len(t.transcript)

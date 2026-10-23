@@ -189,11 +189,15 @@ def read_scope_file(path: Path) -> tuple[tuple[int, ...], tuple[str, ...]]:
     return tuple(sorted(quests)), tuple(sorted(books))
 
 
-def fingerprint(it_h: str, voice_id: str, gemini_voice: str, model: str, notes: str, sex: str) -> str:
+def fingerprint(
+    it_h: str, voice_id: str, gemini_voice: str, model: str, notes: str, sex: str, profile: str = ""
+) -> str:
     """What a file was made from: the Italian hash, the roster voice, the engine's voice and model, the
-    director's notes and the player's sex. A file is made again when any of them changes, so recasting one
-    kind of speaker remakes only its lines."""
-    return f"{it_h}|{voice_id}|{gemini_voice}|{model}|{hash_key(notes)}|{sex}"
+    director's notes, the player's sex and the prompt's audio profile line (who the speaker is). A file is
+    made again when any of them changes, so recasting one kind of speaker, or correcting one creature's
+    profile, remakes only its lines."""
+    fp = f"{it_h}|{voice_id}|{gemini_voice}|{model}|{hash_key(notes)}|{sex}"
+    return f"{fp}|{hash_key(profile)}" if profile else fp
 
 
 @dataclass(frozen=True)

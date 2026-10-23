@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import subprocess
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -30,6 +31,7 @@ TOML = (
 SALVE = "Salve, {name}. Difendi la valle."
 CLASS = "Un {class} come te serve qui."
 PROFILE = {"source": "maintainer", "imported": "2026-10-23"}
+MORDO = "Undertaker Mordo; race: scourge; gender: male; age: elder; archetype: undead; role: priest"
 
 
 def _it(id_, field, it):
@@ -153,7 +155,7 @@ def test_a_plain_line_makes_one_file_and_a_name_makes_one_per_sex(world):
     assert f["it_hash"] == voice.it_hash(SALVE)
     r_um = world.cfg["roster"]["um"]
     assert f["fingerprint"] == voice.fingerprint(voice.text_hash(SALVE), "um", "Algenib", r_um["model"],
-                                                 r_um["notes"], "f")
+                                                 r_um["notes"], "f", MORDO)
     assert audio["456-description"]["sex"] == "m"
     assert f["provenance"]["source"] == "gemini@gemini-3.1-flash-tts-preview"
     mp3 = world.store / "mp3" / "456-description_f.mp3"
@@ -191,7 +193,7 @@ def test_a_class_line_stays_silent_until_it_has_a_spoken_version(world):
     assert rec["it_hash"] == voice.it_hash(CLASS)  # the addon still compares the written Italian
     r_um = world.cfg["roster"]["um"]
     assert rec["fingerprint"] == voice.fingerprint(voice.text_hash(CLASS, (), "Uno come te serve qui."), "um",
-                                                   "Algenib", r_um["model"], r_um["notes"], "m")
+                                                   "Algenib", r_um["model"], r_um["notes"], "m", MORDO)
 
 
 def test_a_spoken_version_of_older_italian_is_ignored(world):
@@ -263,7 +265,67 @@ def test_a_file_gone_from_the_store_is_made_again(world):
     _gen(world, FakeEngine())
     (world.store / "mp3" / "457-description.mp3").unlink()
     engine = FakeEngine()
+    assert _gen(world, engine)["made"] == 1 and engine.calls == []  # encoded again from the kept take
+    assert (world.store / "mp3" / "457-description.mp3").is_file()
+    for kind in ("mp3", "wav"):
+        (world.store / kind / f"457-description.{kind}").unlink()
+    engine = FakeEngine()
     assert _gen(world, engine)["made"] == 1 and engine.said() == ["Uccidi 7 lupi."]
+
+
+def test_a_take_paid_for_but_not_encoded_is_encoded_on_resume_without_the_engine(world):
+    def broken(wav_file, out):
+        raise subprocess.CalledProcessError(1, ["lame"])
+
+    engine = FakeEngine()
+    r = voice_make.generate(world.data, world.cfg, "tirisfal", world.store, engine, encode=broken,
+                            log=lambda *_: None, sleep=lambda _s: None)
+    assert r["stopped"] and r["made"] == 0 and len(engine.calls) == 1
+    stem = "456-completion"  # the first take of the scope
+    assert (world.store / "wav" / f"{stem}.wav").is_file() and _audio(world) == {}
+    engine = FakeEngine()
+    assert _gen(world, engine)["made"] == 5
+    assert "Ben fatto." not in engine.said() and len(engine.calls) == 4  # the kept take is encoded, not bought
+    assert (world.store / "mp3" / f"{stem}.mp3").is_file() and stem in _audio(world)
+
+
+def test_a_kept_take_for_another_fingerprint_is_asked_again(world):
+    _gen(world, FakeEngine())
+    write_quests(world.data, **{"456_completion": "Ben fatto, davvero."})
+    engine = FakeEngine()
+    assert _gen(world, engine)["made"] == 1 and engine.said() == ["Ben fatto, davvero."]
+
+
+def test_without_lame_no_take_is_asked(world, monkeypatch):
+    monkeypatch.setattr(voice_make.shutil, "which", lambda _name: None)
+    engine = FakeEngine()
+    r = voice_make.generate(world.data, world.cfg, "tirisfal", world.store, engine, log=lambda *_: None)
+    assert engine.calls == [] and r["made"] == 0 and "lame is not installed" in r["stopped"]
+
+
+def test_an_unreadable_wav_stops_the_run_and_keeps_the_progress(world):
+    class Garbled(FakeEngine):
+        def synthesize(self, prompt, voice_name):
+            wav = super().synthesize(prompt, voice_name)
+            return wav if len(self.calls) <= 2 else b"not a wav"
+
+    r = _gen(world, Garbled())
+    assert r["made"] == 2 and "not a readable WAV" in r["stopped"]
+    assert len(_audio(world)) == 2
+    assert json.loads((world.store / "status.json").read_text())["finished"] is False
+
+
+def test_a_corrected_profile_remakes_only_that_creatures_lines(world):
+    _gen(world, FakeEngine())
+    rows = voice_make._rows(world.data / "voice" / "profiles.jsonl")
+    rows[0]["age"] = "elder"  # Saltain (1992)
+    vf.write_rows(world.data / "voice" / "profiles.jsonl", rows)
+    p = voice_make.plan(world.data, world.cfg, "tirisfal", world.store)
+    assert (p["stale"], p["to_make"]) == (1, 1)
+    engine = FakeEngine()
+    assert _gen(world, engine)["made"] == 1
+    assert engine.said() == ["Prega al santuario."]
+    assert "age: elder" in engine.calls[0][0]
 
 
 def test_limit_stops_after_that_many_files_and_the_next_run_resumes(world):

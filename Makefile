@@ -515,11 +515,11 @@ release: ## start the Release workflow on GitHub and follow it to the end: [VERS
 	echo "release: run $$id"; gh run watch "$$id" --exit-status
 
 # NPC voice over (pipeline/wfj/cmd/voice*.py). SCOPE is a voice scope (pipeline/voice_<scope>.txt). The audio
-# store lives outside the repository: VOICE_ROOT when set, else build/voice-store of the main checkout (a
-# worktree is removed with its branch, the takes are paid for). The Gemini key is GEMINI_API_KEY, from the
-# environment or VOICE_ENV (a .env file); LIMIT=n stops after n files.
+# store lives outside the repository: VOICE_ROOT when set, else voce-store in the home folder. Never under the
+# checkout: the takes are paid for, and a worktree's removal or a `git clean -fdx` of build/ would lose them.
+# The Gemini key is GEMINI_API_KEY, from the environment or VOICE_ENV (a .env file); LIMIT=n stops after n files.
 SCOPE       ?= tirisfal
-VOICE_STORE ?= $(or $(VOICE_ROOT),$(REPO_ROOT)/build/voice-store)
+VOICE_STORE ?= $(or $(VOICE_ROOT),$(HOME)/voce-store)
 VOICE_ENV   ?=
 LIMIT       ?=
 # the VMaNGOS dump the speakers come from, and its commit
