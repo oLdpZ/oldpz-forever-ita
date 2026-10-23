@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from wfj.dev import creature_official as co
 
 FIX = Path(__file__).resolve().parents[1] / "fixtures" / "wowhead"
@@ -111,3 +113,69 @@ def test_fetch_cached_retries_then_gives_up(tmp_path: Path) -> None:
 
     got = co.fetch_cached(7, 0, tmp_path, get=get, sleep=lambda s: None, clock=lambda: 0.0)
     assert got == {"name": "X"} and n[0] == 3
+
+
+def test_wowhead_italian_equal_to_english_or_placeholder_is_dropped() -> None:
+    names = {
+        1: ("Thrall", "Thrall"),
+        2: ("[UNUSED] Marlon Darnik", "[UNUSED] Marlon Darnik"),
+        3: ("Hogger", "Boccalarga"),
+    }
+    english = {(i, "name"): en for i, (en, _) in names.items()}
+
+    def fetch(id_: int, locale: int) -> dict | None:
+        return {"name": names[id_][0 if locale == 0 else 1]}
+
+    assert co.from_wowhead([1, 2, 3], fetch, english) == [(3, "name", "Hogger", "Boccalarga", "wowhead")]
+
+
+def test_only_a_clear_miss_is_cached(tmp_path: Path) -> None:
+    kw = {"sleep": lambda s: None, "clock": lambda: 0.0}
+    assert co.fetch_cached(1, 0, tmp_path, get=lambda u: None, **kw) is None  # 404
+    assert (tmp_path / "1.0.json").read_text() == ""
+    assert co.fetch_cached(2, 0, tmp_path, get=lambda u: "{}", **kw) is None
+    assert (tmp_path / "2.0.json").is_file()
+    for n, body in enumerate(["<html>blocked</html>", '{"name": "Tru', '{"foo": 1}', "[1]"], start=10):
+
+        def bad(u: str, body: str = body) -> str:
+            return body
+
+        with pytest.raises(co.Transient):
+            co.fetch_cached(n, 0, tmp_path, get=bad, **kw)
+        assert not (tmp_path / f"{n}.0.json").exists()
+
+
+def test_http_other_4xx_is_transient(monkeypatch: pytest.MonkeyPatch) -> None:
+    import io
+    import urllib.error
+
+    def boom(req, timeout):
+        raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", {}, io.BytesIO(b""))
+
+    monkeypatch.setattr(co.urllib.request, "urlopen", boom)
+    with pytest.raises(co.Transient):
+        co._http_get("https://example.invalid/x")
+
+
+def test_guarded_aborts_after_consecutive_failures() -> None:
+    def down(id_: int, locale: int) -> dict | None:
+        raise co.Transient("HTTP 503")
+
+    g = co.guarded(down, limit=3)
+    assert g(1, 0) is None and g(1, 9) is None and g(2, 0) is None  # two ids so far
+    with pytest.raises(co.Aborted):
+        g(3, 0)
+
+    ok = [False]
+
+    def flaky(id_: int, locale: int) -> dict | None:
+        if ok[0]:
+            return {"name": "X"}
+        raise co.Transient("x")
+
+    h = co.guarded(flaky, limit=3)
+    h(1, 0), h(2, 0)
+    ok[0] = True
+    assert h(3, 0) == {"name": "X"}
+    ok[0] = False
+    h(4, 0), h(5, 0)  # the success reset the count

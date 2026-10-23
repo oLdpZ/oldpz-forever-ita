@@ -33,6 +33,7 @@ URL = "https://nether.wowhead.com/tooltip/npc/{id}?dataEnv=1&locale={locale}"
 AGENT = "OldpZ_ForeverITA-pipeline/1.0 (personal translation addon)"
 COLUMNS = (("name", "Name_lang"), ("subname", "Title_lang"))
 RETRIES = 5
+MAX_FAILED_IN_A_ROW = 20
 
 _last_request = [float("-inf")]
 
@@ -79,34 +80,56 @@ def from_wowhead(
         forever = english.get((id_, "name"))
         if forever is None:
             continue
-        if _name(fetch(id_, 0)) != forever.strip():
+        en = _name(fetch(id_, 0))
+        if en != forever.strip() or en.startswith("["):  # "[UNUSED] ...", "[DND] ..."
             continue
         it = _name(fetch(id_, 9))
-        # Wowhead wraps a name it has no Italian for in brackets: "[Waypoint]"
-        if it and not (it.startswith("[") and it.endswith("]")):
+        # Wowhead wraps a name it has no Italian for in brackets ("[Waypoint]"); an Italian equal to the
+        # English is no evidence of a Blizzard translation: those names go to the lots
+        if it and not it.startswith("[") and it != en:
             out.append((id_, "name", forever, it, "wowhead"))
     return out
 
 
 def _http_get(url: str) -> str | None:
+    """The body of a 200; None for HTTP 404 (no such NPC); Transient for anything else."""
     req = urllib.request.Request(url, headers={"User-Agent": AGENT})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        if e.code == 429 or e.code >= 500:
-            raise Transient(f"HTTP {e.code}") from None
-        return None
+        if e.code == 404:
+            return None
+        raise Transient(f"HTTP {e.code}") from None
     except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
         raise Transient(str(e)) from None
 
 
 def _parse(text: str) -> dict[str, Any] | None:
+    """The tooltip document of a cache file or a response; None for a recorded miss (empty text)."""
     try:
         doc = json.loads(text) if text.strip() else None
     except ValueError:
         return None
     return doc if isinstance(doc, dict) and _name(doc) else None
+
+
+def _answer(text: str | None) -> dict[str, Any] | None:
+    """A response body as a tooltip document, or None for a clear miss (404, `{}`, `{"error": ...}`);
+    anything else (HTML, truncated JSON, an unknown shape) is Transient and not cached."""
+    if text is None:
+        return None
+    try:
+        doc = json.loads(text)
+    except ValueError:
+        raise Transient("not JSON") from None
+    if not isinstance(doc, dict):
+        raise Transient("unexpected JSON")
+    if _name(doc):
+        return doc
+    if not doc or "error" in doc:
+        return None
+    raise Transient("JSON without a name")
 
 
 def fetch_cached(
@@ -125,26 +148,53 @@ def fetch_cached(
     if path.is_file():
         return _parse(path.read_text(encoding="utf-8"))
     delay = 5.0
-    text: str | None = None
+    doc: dict[str, Any] | None = None
     for attempt in range(RETRIES):
         wait = _last_request[0] + min_interval - clock()
         if wait > 0:
             sleep(wait)
         _last_request[0] = clock()
         try:
-            text = get(URL.format(id=id_, locale=locale))
+            doc = _answer(get(URL.format(id=id_, locale=locale)))
             break
         except Transient:
             if attempt == RETRIES - 1:
                 raise
             sleep(delay)
             delay *= 3
-    doc = _parse(text or "")
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".part")
     tmp.write_text(json.dumps(doc, ensure_ascii=False) if doc else "", encoding="utf-8")
     tmp.replace(path)
     return doc
+
+
+class Aborted(Exception):
+    """Too many ids in a row could not be fetched: Wowhead is down or blocking us."""
+
+
+def guarded(
+    fetch: Callable[[int, int], dict[str, Any] | None], limit: int = MAX_FAILED_IN_A_ROW
+) -> Callable[[int, int], dict[str, Any] | None]:
+    """`fetch` where a Transient failure reads as no answer for that id, and `limit` ids in a row failing
+    raises Aborted."""
+    run = [0]
+    last: list[int | None] = [None]
+
+    def call(id_: int, locale: int) -> dict[str, Any] | None:
+        try:
+            doc = fetch(id_, locale)
+        except Transient:
+            if last[0] != id_:
+                run[0] += 1
+                last[0] = id_
+            if run[0] >= limit:
+                raise Aborted(f"{run[0]} ids in a row failed") from None
+            return None
+        run[0] = 0
+        return doc
+
+    return call
 
 
 def build(
@@ -197,14 +247,18 @@ def main(argv: Sequence[str] | None = None) -> int:
         except Transient as e:
             failed.append(id_)
             print(f"creature_official: id {id_} locale {locale} skipped ({e}); rerun to retry", flush=True)
-            return None
+            raise
 
-    rows = build(
-        retail.csv_path(a.retail, "Creature", "enUS"),
-        retail.csv_path(a.retail, "Creature", "itIT"),
-        english,
-        None if a.no_wowhead else fetch,
-    )
+    try:
+        rows = build(
+            retail.csv_path(a.retail, "Creature", "enUS"),
+            retail.csv_path(a.retail, "Creature", "itIT"),
+            english,
+            None if a.no_wowhead else guarded(fetch),
+        )
+    except Aborted as e:
+        print(f"creature_official: aborted, {e}; the cache is kept, rerun to resume", file=sys.stderr)
+        return 2
     write_tsv(a.out, rows)
     n = {s: sum(1 for r in rows if r[4] == s) for s in ("db2", "wowhead")}
     print(
