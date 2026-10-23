@@ -37,6 +37,11 @@ APOSTROPHE_ARTICLES = frozenset({"l", "dell", "all", "dall", "nell", "sull"})
 APOSTROPHES = ("'", "’")
 # the word before the marker: ASCII letters and anything outside ASCII (the Lua twin's `[%a\128-\255]`)
 _LAST_WORD = re.compile(r"(?:[A-Za-z]|[^\x00-\x7f])+$")
+# mark_names: the token for a held name while the search runs (private-use characters, which stored Italian
+# never holds); every token is put back before the text is returned
+_HOLD_OPEN, _HOLD_CLOSE = "", ""
+_HOLD = re.compile(f"{_HOLD_OPEN}([0-9]+){_HOLD_CLOSE}")
+_TAKEN = re.compile(f"{MARK.pattern}|{_HOLD.pattern}", re.S)
 
 
 class _Finder(Protocol):
@@ -92,11 +97,16 @@ def mark_names(it: str, glossary: Iterable[Sequence[str]], english_kinds: Collec
     nothing. `glossary`: (en, it[, kind]) rows; a `classe` / `razza` row, or one holding the marker syntax, is
     skipped. A term of one of `english_kinds` (`creatura`: an NPC name the Italian left in English) is also
     found by its English form, marked with its Italian: both searches run together, longest first, so a name
-    inside a longer one (`Defias Thug` in `Defias Thug Leader`) is never marked on its own."""
+    inside a longer one (`Defias Thug` in `Defias Thug Leader`) is never marked on its own. Such a term whose
+    two forms agree (a longer NPC name with no Italian yet) is never marked but still taken first, so the
+    names inside it stay as they are (`Peddlefeet` in `Kwee Q. Peddlefeet`)."""
     terms: dict[str, str] = {}
     english: dict[str, str] = {}
+    held: set[str] = set()
     for row in glossary:
         en, form, kind = row[0], row[1], (row[2] if len(row) > 2 else "")
+        if kind in english_kinds and en and en == form and not any(c in en for c in (OPEN, CLOSE, SEP)):
+            held.add(en)
         if not _usable(en, form, kind):
             continue
         if form not in terms or len(en) > len(terms[form]):
@@ -108,6 +118,9 @@ def mark_names(it: str, glossary: Iterable[Sequence[str]], english_kinds: Collec
     # search text → its marker; an Italian form wins over an English one spelt the same
     search = {en: f"{OPEN}{en}{SEP}{form}{CLOSE}" for en, form in english.items() if en not in terms}
     search.update({form: f"{OPEN}{en}{SEP}{form}{CLOSE}" for form, en in terms.items()})
+    # a held name is set aside as a token (private-use characters around its index), put back at the end
+    kept = [en for en in held if en not in search]
+    search.update({en: f"{_HOLD_OPEN}{i}{_HOLD_CLOSE}" for i, en in enumerate(kept)})
     for text in sorted(search, key=lambda f: (-len(f), -len(search[f]), f)):
         word = re.compile(rf"(?<!{_WORD}){re.escape(text)}(?!{_WORD})")
         marker = search[text]
@@ -116,11 +129,13 @@ def mark_names(it: str, glossary: Iterable[Sequence[str]], english_kinds: Collec
             return word.sub(lambda _m: marker, chunk)
 
         parts, at = [], 0
-        for m in MARK.finditer(it):  # only the text between markers is searched
+        for m in _TAKEN.finditer(it):  # only the text between markers (and held names) is searched
             parts += [put(it[at : m.start()]), m.group(0)]
             at = m.end()
         parts.append(put(it[at:]))
         it = "".join(parts)
+    if kept:
+        it = _HOLD.sub(lambda m: kept[int(m.group(1))], it)
     return it
 
 

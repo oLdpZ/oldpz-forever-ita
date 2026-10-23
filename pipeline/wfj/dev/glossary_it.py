@@ -375,15 +375,23 @@ def load_matcher(repo: Path) -> Matcher | None:
 def load_marker_matcher(repo: Path, conflicts: list[str] | None = None) -> Matcher | None:
     """`load_matcher` plus the `unit` table's NPC names (`unit_terms`, data/ in `repo`): the terms the marker
     pass (`dev.remark_names`) marks. A glossary term keeps its English: a unit name spelt like one is left
-    out. None when the repository has no glossary."""
+    out. Every other NPC name of several words (data/english/unit, no Italian yet) is a term of its own
+    English: never marked (`names` skips a term whose two forms agree), it only keeps a shorter name inside
+    it from being marked on its own (`Peddlefeet` in `Kwee Q. Peddlefeet`). None when the repository has no
+    glossary."""
     path = Path(repo) / "pipeline" / GLOSSARY
     if not path.is_file():
         return None
     terms = load_terms(repo)
     taken = {en for _, _, en, _ in terms}
     data = Path(repo) / "data"
-    units = unit_terms(data, word_counts(Store(data, english=True)), conflicts)
-    return Matcher(terms + [t for t in units if t[2] not in taken])
+    english = Store(data, english=True)
+    units = [t for t in unit_terms(data, word_counts(english), conflicts) if t[2] not in taken]
+    taken |= {en for _, _, en, _ in units}
+    whole = {ln["en"].strip(): ln["id"] for ln in english.load("unit") if ln["field"] == "name"}
+    held = [(CREATURE_KIND, id_, en, en) for en, id_ in sorted(whole.items())
+            if en not in taken and len(WORD.findall(en)) >= 2]
+    return Matcher(terms + units + held)
 
 
 def main(argv: list[str]) -> int:

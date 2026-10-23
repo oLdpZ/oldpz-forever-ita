@@ -76,6 +76,18 @@ def test_an_npc_name_is_never_marked_as_itself_only_the_names_inside_it(tmp_path
         3: "Mangiatore di Carne", 213: "⟦Dire Wolf=Metalupo⟧ Affamato"}
 
 
+def test_a_name_inside_a_longer_npc_name_with_no_italian_yet_is_left_alone(tmp_path):
+    """`Kwee Q. Peddlefeet` has no Italian row yet: the `Peddlefeet` inside it is no NPC of its own, so it is
+    never marked there (a marker is never taken back, so a partial one would stay once the long name lands)."""
+    data = _unit_repo(tmp_path, [(16085, "Peddlefeet", "Stupìdo", "official")], [
+        (1, "I am Kwee Q. Peddlefeet! Ask Peddlefeet.", "Sono Kwee Q. Peddlefeet! Chiedi a Peddlefeet.")])
+    eng = Store(data, english=True)
+    eng.save("unit", eng.load("unit") + [
+        {"id": 16075, "field": "name", "en": "Kwee Q. Peddlefeet", "hash": "c" * 16, "src": "vmangos@4641790"}])
+    remark_names.remark(data)
+    assert _it(data)[1] == "Sono Kwee Q. Peddlefeet! Chiedi a ⟦Peddlefeet=Stupìdo⟧."
+
+
 def _it(data: Path) -> dict[int, str]:
     return {ln["id"]: ln["it"] for ln in Store(data).load("quest")}
 
