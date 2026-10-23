@@ -1029,6 +1029,7 @@ Core\Lookup.lua
 Core\Names.lua
 Core\Align.lua
 Core\State.lua
+Core\UnitNames.lua
 Core\Settings.lua
 Core\Modifier.lua
 Core\Placeholders.lua

@@ -2,6 +2,7 @@
 {"id": "ascii-02", "raw": "Bring Sharptalon's Claw to Senani Thunderheart at Splintertree Post, Ashenvale.", "player": null, "norm": "Bring Sharptalon's Claw to Senani Thunderheart at Splintertree Post, Ashenvale.", "h1": 248848670, "h2": 1279896883, "key": "0ed5211e4c49ad33"}
 {"id": "ascii-03", "raw": "Hello there.", "player": null, "norm": "Hello there.", "h1": 773573235, "h2": 2905936755, "key": "2e1bca73ad351373"}
 {"id": "ascii-04", "raw": "Hello there", "player": null, "norm": "Hello there", "h1": 2005851740, "h2": 3303286433, "key": "778ede5cc4e426a1"}
+{"id": "unit-01", "raw": "Senani Thunderheart", "player": null, "norm": "Senani Thunderheart", "h1": 673917508, "h2": 162111781, "key": "282b2a4409a9a125"}
 {"id": "ja-01", "raw": "大いなるヒポグリフSharptalonは倒され、死んだ獣の鉤爪が勝利の証となった。", "player": null, "norm": "大いなるヒポグリフSharptalonは倒され、死んだ獣の鉤爪が勝利の証となった。", "h1": 1254906757, "h2": 1306622800, "key": "4acc5b854de17b50"}
 {"id": "ja-02", "raw": "Kobold Verminを10匹殺して、Marshal McBrideへ報告してください。", "player": null, "norm": "Kobold Verminを10匹殺して、Marshal McBrideへ報告してください。", "h1": 4077868721, "h2": 2662950728, "key": "f30f56b19eb96748"}
 {"id": "color-01", "raw": "|cffffd100Quest|r text here", "player": null, "norm": "Quest text here", "h1": 3974343204, "h2": 674212460, "key": "ece3aa24282faa6c"}

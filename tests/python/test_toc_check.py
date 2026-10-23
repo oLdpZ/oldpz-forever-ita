@@ -19,7 +19,9 @@ def test_real_toc_fields_and_load_order(root):
     tail = [
         "Core/Lookup.lua",
         "Core/Names.lua",  # marked names, read by Lookup at call time (spec §8)
-        "Core/Align.lua", "Core/State.lua", "Core/Settings.lua",
+        "Core/Align.lua", "Core/State.lua",
+        "Core/UnitNames.lua",  # NPC names by GUID; registers on State's "names" event at load
+        "Core/Settings.lua",
         "Core/Modifier.lua",
         "Core/Placeholders.lua", "Core/Translator.lua", "Core/UIStringKeys.lua", "Core/UIStrings.lua",
         "Core/Objectives.lua",  # objective lines
