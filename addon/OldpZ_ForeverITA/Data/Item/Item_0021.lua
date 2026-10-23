@@ -117,7 +117,7 @@ WFJ.Data.add("item", {
   [21290] = { "Ti insegna l'abilità ⟦Holy Light=Luce Sacra⟧ (Grado $N1).", 0x4ef1bf88, "u" },
   [21291] = { "Ti insegna l'abilità ⟦Healing Wave=Ondata di Cura⟧ (Grado $N1).", 0xea71f51d, "u" },
   [21292] = { "Ti insegna l'abilità ⟦Strength of Earth Totem=Totem della Forza della Terra⟧ (Grado $N1).", 0x888a52cc, "u" },
-  [21293] = { "Ti insegna l'abilità Grace of Air Totem (Grado $N1).", 0xeed41ac6, "u" },
+  [21293] = { "Ti insegna l'abilità ⟦Grace of Air Totem=Totem della Grazia dell'Aria⟧ (Grado $N1).", 0xeed41ac6, "u" },
   [21294] = { "Ti insegna l'abilità ⟦Healing Touch=Tocco Curativo⟧ (Grado $N1).", 0x4ece61d2, "u" },
   [21295] = { "Ti insegna l'abilità Fuoco Stellare (Grado $N1).", 0xa1bd92e4, "u" },
   [21296] = { "Ti insegna l'abilità Rinvigorimento (Grado $N1).", 0xe0a2bd4d, "u" },

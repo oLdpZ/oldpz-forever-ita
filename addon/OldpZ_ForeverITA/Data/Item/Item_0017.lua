@@ -118,7 +118,7 @@ WFJ.Data.add("item", {
   [17623] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici.\nRigenera $N2 mana ogni $D1.", 0xddcc8385, "u" },
   [17624] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici.\nRigenera $N2 mana ogni $D1.", 0xddcc8385, "u" },
   [17625] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici.\nRigenera $N2 mana ogni $D1.", 0xddcc8385, "u" },
-  [17626] = { "Usala per addestrare un Lupo Bianco. Riporta l'animale domato dallo Stalliere dei Lupi Bianchi.", 0x87774241, "u" },
+  [17626] = { "Usala per addestrare un ⟦Frostwolf=Lupo Bianco⟧. Riporta l'animale domato dallo Stalliere dei Lupi Bianchi.", 0x87774241, "u" },
   [17662] = { "Destinatario: Negozio al dettaglio della Masseria Buongusto.", 0x8761e712, "u" },
   [17682] = { "Ti insegna l'abilità Dono della Selva (Grado 1).", 0x9621dc9e, "u" },
   [17683] = { "Ti insegna l'abilità Dono della Selva (Grado 2).", 0x96221fa7, "u" },

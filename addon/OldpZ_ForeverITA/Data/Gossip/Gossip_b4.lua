@@ -48,7 +48,7 @@ WFJ.Data.add("gossip", {
   ["b4c2699886d14a9d"] = { "Ehi, Jangdor, puoi insegnarmi di nuovo a fare gli ⟦Wild Leather Shoulders=Spallacci di Cuoio Selvatico⟧?", "." },
   ["b4cb149a91d09620"] = { "Il mio altare ti risucchierà la vita!", "." },
   ["b4ccba7ca72795c1"] = { "Sei tornat<o/a>. Splendido!\n\nCom'è andato il tuo viaggio a ⟦Silverpine=Pinargento⟧? Ti ci è voluto molto?\n\nMi è difficile capire se laggiù hai avuto successo, perché gran parte di quella terra è ormai corrotta. Il suo fetore soverchia qualunque bene tu possa aver fatto. Ma i piccoli successi a volte contano quanto quelli grandi. Purificare l'acqua laggiù è stato fondamentale per te e per tutti gli sciamani.", "." },
-  ["b4d20a60c3b95163"] = { "Torna da Rau Cliffrunner al ⟦Freewind Post=Presidio di Ventolibero⟧ e riferiscigli cos'è successo.", "." },
+  ["b4d20a60c3b95163"] = { "Torna da ⟦Rau Cliffrunner=Rau Scalarupi⟧ al ⟦Freewind Post=Presidio di Ventolibero⟧ e riferiscigli cos'è successo.", "." },
   ["b4d8c598021c4a02"] = { "Non ho mai visto niente del genere! Guarda l'estensione della mandibola...", "." },
   ["b4da25df243d924e"] = { "Ehi! Smettila!", "." },
   ["b4dc8bc32bdf1f98"] = { "Ci sono due possibili risultati quando la matrice di sintesi dei Terrigeni si destabilizza. Avvio della rappresentazione visiva numero uno.\n\nLa prima matrice variante è un prodotto degenerativo della sintesi, qui designato con la nomenclatura comune di \"Trogg\". Questa variante mantiene forza e resistenza paragonabili a quelle dei Terrigeni, ma la sua capacità di elaborazione cognitiva è stata quasi del tutto compromessa. La forza di volontà e una spiccata astuzia sono gli unici fattori che guidano la psiche del trogg.", "." },

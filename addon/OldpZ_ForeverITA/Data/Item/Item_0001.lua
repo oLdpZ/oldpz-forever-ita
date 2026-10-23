@@ -15,7 +15,7 @@ WFJ.Data.add("item", {
   [1038] = { "Ti insegna l'abilità ⟦Healing Wave=Ondata di Cura⟧ (Grado $N1).", 0x0d840c94, "u" },
   [1041] = { "Evoca e congeda un Lupo Nero cavalcabile.", 0x1e6d5fb5, "u" },
   [1042] = { "Evoca e congeda un Lupo Invernale cavalcabile.", 0x66cc379a, "u" },
-  [1043] = { "Evoca e congeda un Lupo della Foresta cavalcabile.", 0xf1b94ca6, "u" },
+  [1043] = { "Evoca e congeda un ⟦Timber Wolf=Lupo della Foresta⟧ cavalcabile.", 0xf1b94ca6, "u" },
   [1044] = { "Evoca e congeda un Lupo Rosso cavalcabile.", 0x282dee9c, "u" },
   [1048] = { "Ti insegna l'abilità ⟦Lightning Shield=Scudo di Fulmini⟧ (Grado $N1).", 0x50c59cc5, "u" },
   [1049] = { "Ti insegna l'abilità Epurazione.", 0x75af50db, "u" },

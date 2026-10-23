@@ -89,7 +89,7 @@ WFJ.Data.add("spell", {
   [7289] = { "Riduce la Forza di un nemico di $N1 e la Tempra di $N2 per $D1.", "Forza ridotta di $N1.\nTempra ridotta di $N2.", 0x6dc48b47, 0xa274e4eb, "uu" },
   [7290] = { "Prosciuga $N1 salute in $D1 a un nemico e al suo alleato più vicino, curando l'incantatore fino al doppio dell'ammontare prosciugato.", "$N1 salute prosciugata in $D1.", 0x38685f9f, 0x1e299aef, "uu" },
   [7291] = { "Rigenera $N1 salute in $D1. Il combattimento interrompe l'effetto.", nil, 0x8475b913, nil, "um" },
-  [7293] = { nil, "Trasformato in uno Zombi Miserabile.", nil, 0x6aedcc67, "mu" },
+  [7293] = { nil, "Trasformato in uno ⟦Wretched Zombie=Zombi Miserabile⟧.", nil, 0x6aedcc67, "mu" },
   [7294] = { "Infligge $N1 danni da sacro a qualsiasi creatura che attacca un membro del gruppo entro $N2 m. Il bersaglio alleato può ricevere solo un'Aura per Paladino alla volta.", "Infligge $N1 danni da sacro a chiunque ti colpisca.", 0x491f2ea9, 0x506b4a8f, "uu" },
   [7295] = { "Immobilizza un nemico per $D1 e prosciuga $N2 salute, trasferendola all'incantatore.", "Immobilizzato.", 0xd0fdc3db, 0x18deeb81, "uu" },
   [7300] = { "Aumenta l'Armatura di $N1. Se un nemico colpisce l'incantatore, la sua velocità di movimento può essere ridotta del $N2% e l'intervallo tra i suoi attacchi aumentato del $N3% per $D1. Sul Mago può essere attivo un solo tipo di incantesimo di armatura alla volta. Dura $D2.", "Armatura aumentata di $N1. Può rallentare gli aggressori.", 0xc9cf58c7, 0xe901b2ed, "uu" },

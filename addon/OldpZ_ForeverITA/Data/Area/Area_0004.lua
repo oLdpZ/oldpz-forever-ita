@@ -24,9 +24,9 @@ WFJ.Data.add("area", {
   [4842] = { "Scopri la ⟦Darkwhisper Gorge=Gola di Mormoscuro⟧", 0x59153320, "." },
   [4866] = { "Mungitura eseguita", 0xe87f7cac, "." },
   [4901] = { "Scopri il segreto dell'Altare di Elune", 0x87ffd220, "." },
-  [4904] = { "Scorta Lakota Windsong via dal ⟦Darkcloud Pinnacle=Pinnacolo Nubenera⟧.", 0x1d3633f2, "." },
+  [4904] = { "Scorta ⟦Lakota Windsong=Lakota Soffia Vento⟧ via dal ⟦Darkcloud Pinnacle=Pinnacolo Nubenera⟧.", 0x1d3633f2, "." },
   [4941] = { "Consulto con Eitrigg.", 0x42428d3e, "." },
   [4964] = { "Aspetta che ⟦Menara Voidrender=Menara Squarciavuoto⟧ completi il tuo oggetto", 0xad154db8, "." },
-  [4966] = { "Proteggi Kanati Greycloud", 0x87ee9084, "." },
+  [4966] = { "Proteggi ⟦Kanati Greycloud=Kanati Nube Grigia⟧", 0x87ee9084, "." },
   [4975] = { "Aspetta che ⟦Menara Voidrender=Menara Squarciavuoto⟧ completi il tuo oggetto", 0xad154db8, "." },
 })

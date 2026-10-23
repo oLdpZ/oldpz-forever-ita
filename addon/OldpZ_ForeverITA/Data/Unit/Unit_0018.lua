@@ -4,4 +4,5 @@ WFJ.Data.add("unit", {
   [18039] = { "Spirito della Vittoria", nil, 0x920b2537, nil, ".m" },
   [18078] = { "Coniglio Cattivo", nil, 0x4a8d897c, nil, ".m" },
   [18153] = { "⟦Spirit Healer=Spirito Guaritore⟧", nil, 0x98253514, nil, ".m" },
+  [18199] = { nil, nil, 0xb4b45651, nil, "em" },
 })

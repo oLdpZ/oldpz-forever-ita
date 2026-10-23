@@ -26,6 +26,6 @@ WFJ.Data.add("gossip", {
   ["7dd6621860f42ca4"] = { "%s si affretta verso la sua fioriera.", "." },
   ["7dddcd481f39c46e"] = { "Ogni speranza è perduta!", "." },
   ["7def6f7f1146c475"] = { "Dai, non mollarmi proprio adesso!", "." },
-  ["7df8b1f7c6ecd095"] = { "Grazie mille... Da qui so tornare all'⟦Whitereach Post=Accampamento di Manto Bianco⟧. Mi raccomando, parla con Motega Firemane: magari riesci a convincerlo a non rimandarmi a casa.", "." },
+  ["7df8b1f7c6ecd095"] = { "Grazie mille... Da qui so tornare all'⟦Whitereach Post=Accampamento di Manto Bianco⟧. Mi raccomando, parla con ⟦Motega Firemane=Motega Crestardente⟧: magari riesci a convincerlo a non rimandarmi a casa.", "." },
   ["7df8eb8979d06b05"] = { "La mia ascia ha visto molte battaglie, e mi piace tenerla a portata di mano. Le forze nemiche si sono aperte la strada fino alla nostra capitale già diverse volte, ma non temere: le abbiamo sempre respinte.", "." },
 })

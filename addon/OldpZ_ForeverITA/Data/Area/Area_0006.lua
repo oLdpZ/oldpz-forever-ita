@@ -9,7 +9,7 @@ WFJ.Data.add("area", {
   [6063] = { "Addomestica un ⟦Webwood Lurker=Ragno Guardingo Telalegno⟧", 0x17857790, "." },
   [6064] = { "Addomestica un ⟦Large Crag Boar=Grande Cinghiale delle Rupi⟧", 0x184605f2, "." },
   [6082] = { "Addomestica un ⟦Armored Scorpid=Scorpide Corazzato⟧", 0x6e9a7ca0, "." },
-  [6083] = { "Addomestica uno Surf Crawler", 0x7e574a99, "." },
+  [6083] = { "Addomestica uno ⟦Surf Crawler=Crostaceo delle Onde⟧", 0x7e574a99, "." },
   [6084] = { "Addomestica uno ⟦Snow Leopard=Leopardo delle Nevi⟧", 0x95652772, "." },
   [6085] = { "Addomestica un ⟦Ice Claw Bear=Orso dalle Zampe di Ghiaccio⟧", 0xd4afd648, "." },
   [6087] = { "Addomestica un ⟦Prairie Stalker=Inseguitore delle Praterie⟧", 0xf7b9e50b, "." },

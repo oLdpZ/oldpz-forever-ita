@@ -3,5 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("objective", {
   [464773] = { "Roiling Winds distrutti", 0xc7468ec2, "." },
   [464975] = { "Scopri i piani dei cultisti", 0xdfa1f88a, "." },
-  [464991] = { "Parla con Illaya Amberwind", 0xcb5d90b0, "." },
+  [464991] = { "Parla con ⟦Illaya Amberwind=Illaya Vento d'Ambra⟧", 0xcb5d90b0, "." },
 })

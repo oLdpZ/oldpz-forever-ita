@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["49af4aa89722ad27"] = { "Molti non sono d'accordo su questo punto. Io credo che la chiave sia la semplice comunicazione. I canti del vento ci arrivavano così chiari quando gli spiriti erano ancora qui. Da quando se ne sono andati è calato il silenzio, e il nostro potere di plasmavento si è indebolito.\n\nEppure alcuni di noi sentono ancora qualcosa. Un tono sommesso. Frammenti di una melodia. Chi riesce ancora a sentire e a vedere nei piani elementali deve diventare più forte. Credo che questa sia la chiave della nostra salvezza.", "." },
   ["49b024a7c8b28308"] = { "Sai cucinare? Anch'io! C'è una ricetta che puoi insegnarmi?", "." },
   ["49b437f13d0aa6e4"] = { "Bevute gratis al Blue Recluse!", "." },
-  ["49b53774826c51ce"] = { "Porta la Tattered Note a Rau Cliffrunner, a ⟦Thousand Needles=Millepicchi⟧.", "." },
+  ["49b53774826c51ce"] = { "Porta la Tattered Note a ⟦Rau Cliffrunner=Rau Scalarupi⟧, a ⟦Thousand Needles=Millepicchi⟧.", "." },
   ["49b72426ab41b58e"] = { "Raaarrrrggghhh! Veniamo a prenderti!", "." },
   ["49b9c272e750dd0c"] = { "La nonna diceva sempre che non c'era cosa più bella al mondo di una fetta calda e fragrante di torta di ciliegie fresca, fatta in casa.", "." },
   ["49c08fce7bcffaf7"] = { "Glorioso davvero, Maltrake. Pare che il mio piano abbia funzionato alla perfezione. Non sei d'accordo, mortale?", "." },

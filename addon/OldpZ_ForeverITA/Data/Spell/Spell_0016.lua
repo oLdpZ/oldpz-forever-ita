@@ -97,7 +97,7 @@ WFJ.Data.add("spell", {
   [16254] = { "Aumenta di un ulteriore $N1% la tua probabilità di schivata.", nil, 0xcde877ce, nil, "um" },
   [16255] = { "Aumenta del $N1% la tua probabilità di colpo critico con tutti gli incantesimi e gli attacchi.", nil, 0xb4430359, nil, "um" },
   [16256] = { "Aumenta del $N1% la tua velocità d'attacco per i tuoi prossimi $N2 colpi dopo aver inflitto un colpo critico in mischia.", nil, 0x7e8c5273, nil, "um" },
-  [16258] = { "Aumenta del $N1% la riduzione dei danni del tuo ⟦Stoneskin Totem=Totem della Pelle di Pietra⟧ e del tuo Windwall Totem e riduce il tempo di recupero del tuo ⟦Grounding Totem=Totem dell'Adescamento Magico⟧ di $D1.", nil, 0x8001d0af, nil, "um" },
+  [16258] = { "Aumenta del $N1% la riduzione dei danni del tuo ⟦Stoneskin Totem=Totem della Pelle di Pietra⟧ e del tuo ⟦Windwall Totem=Totem del Muro di Vento⟧ e riduce il tempo di recupero del tuo ⟦Grounding Totem=Totem dell'Adescamento Magico⟧ di $D1.", nil, 0x8001d0af, nil, "um" },
   [16259] = { "Aumenta del $N1% l'effetto del tuo Totem della Forza della Terra e del tuo Grace of Air Totem.", nil, 0xd208c6c9, nil, "um" },
   [16261] = { "Aumenta del $N1% i danni inflitti dai globi del tuo ⟦Lightning Shield=Scudo di Fulmini⟧.", nil, 0xb1335ea3, nil, "um" },
   [16262] = { "Riduce il tempo di lancio di ⟦Ghost Wolf=Lupo Spettrale⟧ di $D1 e permette di usare ⟦Ghost Wolf=Lupo Spettrale⟧ al chiuso.", nil, 0xd1b06196, nil, "um" },

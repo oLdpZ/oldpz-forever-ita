@@ -37,7 +37,7 @@ WFJ.Data.add("gossip", {
   ["75a544b0bc3d4669"] = { "Non ho quasi rifornimenti per i potenziamenti.", "." },
   ["75a63b86b182a6fb"] = { "Maestro, devo fare pipì!", "." },
   ["75aed52f3fe6965c"] = { "Cosa stai cercando?", "." },
-  ["75b384bbdd34de9c"] = { "<La misteriosa sfera che tieni ti riempie di un terrore gelido. Ti sembra quasi di sentire una voce echeggiare debolmente nella mente. Bassa e gutturale: capisci bene che la lingua parlata è di natura demoniaca. \r\n\nAnche per <un/una> <paladino/paladina> come te, questa magia è fuori portata. Delgren il Purificatore potrebbe aiutarti a capire la natura di questo oggetto sinistro.>", "." },
+  ["75b384bbdd34de9c"] = { "<La misteriosa sfera che tieni ti riempie di un terrore gelido. Ti sembra quasi di sentire una voce echeggiare debolmente nella mente. Bassa e gutturale: capisci bene che la lingua parlata è di natura demoniaca. \r\n\nAnche per <un/una> <paladino/paladina> come te, questa magia è fuori portata. ⟦Delgren the Purifier=Delgren il Purificatore⟧ potrebbe aiutarti a capire la natura di questo oggetto sinistro.>", "." },
   ["75b8df645304e94c"] = { "Prego, seguimi.", "." },
   ["75c44e6a1cfcf4e9"] = { "C'è un modo...", "." },
   ["75c9ebfc41ccaf50"] = { "Sono io che li sfamo, <ragazzo/ragazza>. Già, Daryl Riknussun, al tuo servizio.", "." },

@@ -418,27 +418,2727 @@ spell	1251986	aura	fa7853a338c651b9	Whenever you suffer Bleed damage, one dose i
 spell	1271412	description	84727607c217b635	Bounce Protection
 spell	1271565	description	84727607c217b635	Bounce Protection
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud
+unit	1	name	1a3650769998e6ac	Waypoint (Only GM can see it)
+unit	1	subname	c118e0df28a31629	Visual
+unit	2	name	80c9db9498a04230	Spawn Point (Only GM can see it)
+unit	19	subname	001495f135ae9b72	NPC
+unit	54	name	db98770632fbecbd	Corina Steele
+unit	66	name	897f3380fdcdee49	Tharynn Bouden
+unit	67	name	b7214d0faa0c4b1b	[UNUSED] Marlon Darnik
+unit	70	name	07064ce389d583ba	[UNUSED] Lower Class Citizen
+unit	71	name	c7b47062d37d19c9	Rankist
+unit	72	name	1c7c52da40ca6b11	[UNUSED] Antaris the Trader
+unit	73	subname	105fc8eb3306e8ff	Questgiver
+unit	74	name	027371a60f456d68	Kurran Steele
+unit	75	name	7f20867a60bf3dcc	[UNUSED] Vashaum Nightwither
+unit	81	name	fae3ff9087d48a25	[UNUSED] Luglar the Clogger
+unit	107	name	4632db2d3efa1095	Raptor
+unit	128	name	f6f5d0a8685eacb1	Angry Programmer Tweedle Dee
+unit	128	subname	78244bfa180c5ea2	Testing
+unit	129	name	f6f5d8e06860aac9	Angry Programmer Tweedle Dum
+unit	130	name	f712dd787e318f48	Programmer Vendor
+unit	149	name	591b4d84fd8c7e8c	[UNUSED] Small Black Dragon Whelp
+unit	150	name	95a8c8b5ea8a3af7	[UNUSED] Brother Milius
 unit	153	name	d385cc0e5180f0d0	Bethina
+unit	153	subname	98c8cf4307ae2948	iCoke Redemption Vendor
+unit	161	name	dba5bbbcc72d0be0	[UNUSED] Ander the Monk
+unit	163	name	b321f9bb2333e9c5	[UNUSED] Destitute Farmer
+unit	165	name	599844af2b20d4d4	[UNUSED] Small Child
+unit	190	name	10580738025ab3cf	Dermot Johns
 unit	198	name	631817a39a7ed481	Khelden Bremen
+unit	200	name	e3aac6c118ec1193	Shambling Skeleton UNUSED
+unit	201	name	8eca2d2dcfddf028	Brittlebones Skeleton UNUSED
+unit	204	name	4d39567f12fd792b	[UNUSED] Cackle Flamebone
+unit	207	name	2a6d3ab56e86e722	[UNUSED] Riverpaw Hideflayer
+unit	208	name	b3fc37a8905f8f34	[UNUSED] Riverpaw Pack Warder
+unit	209	name	a97fcd2e0970bfd6	[UNUSED] Riverpaw Bone Chanter
+unit	211	name	0ab1262f3c05c3ec	Ogre
+unit	219	name	775f0485ffa426d8	[UNUSED] Logan Mar
+unit	220	name	cb051873235411c9	[UNUSED] Khebil Steelsmith
+unit	221	name	84b08e1496d2044a	Dannus
+unit	222	name	6bb481e382da918c	Nillen Andemar
+unit	223	name	2756a07ebca874e0	Dan Golthas
+unit	224	name	8134e3aaa31503b0	Zek Marston
+unit	227	name	1dffeb861083d447	Mabel Solaj
+unit	229	name	33529e569370791b	Vaious
 unit	235	name	c8876533935aa8af	Salma Saldean
-unit	239	name	f169ce9a860eb043	Grimbooze Thunderbrew
+unit	243	name	0484f2d20fa8df80	[UNUSED] Greeby Mudwhisker TEST
 unit	247	name	57c3f162fec767d0	Billy Maclure
 unit	251	name	c3e93d6f12c8ce5c	Maybell Maclure
-unit	253	name	56dd187115965b5b	William Pestle
 unit	255	name	72dee6530297f3ed	Gerard Tiller
-unit	265	name	c8404cde056c857e	Madame Eva
-unit	268	name	4ce0bdfed9c0e1c7	Sirra Von'Indi
-unit	276	name	eb90a71397b85ec9	Viktori Prism'Antras
+unit	258	name	4123cc9bb40ec562	Joshua Maclure
+unit	260	name	af0a06ae6b66e00d	[UNUSED] Elwynn Tower Guard
+unit	269	name	778d46dd323edb5e	Role Dreuger
+unit	275	name	d77d057683896e91	Whit Wantmal
+unit	277	name	3f1bf6afbc1eace0	Roberto Pupellyverbos
+unit	278	name	1f7388635c4410a2	Sara Timberlain
+unit	280	name	6fb8771083349fba	Placeholder - Jasperlode Mine
+unit	280	subname	c32367a5b2c7327b	Area Trigger
+unit	285	name	bbf222450ca97da9	Murloc
+unit	287	name	e455c9e2d166ee48	Placeholder - Darkhollow Mine
+unit	289	name	a8c0829571b251cc	Abercrombie
+unit	290	name	b81d04f329bf5e43	Placeholder - Fargodeep Mine
+unit	290	subname	c32367a5b2c7327b	Area Trigger
+unit	291	name	cb79f547b5d3f816	Placeholder Chest of Drawers
+unit	291	subname	3296577d5c94c1d2	Placeholder!
+unit	296	name	758861b5fd92ac22	[UNUSED] Goodmother Jans
+unit	298	name	20b3cf8376c8392d	[UNUSED] Aunt Bethda
+unit	298	subname	a0a7b8d014cc7a70	<Needs Texture>
+unit	300	name	223546821d801e9b	Zzarc' Vul
+unit	301	name	ae9af6efad33decd	[UNUSED] Brog'Mud
+unit	303	name	6127b430dc1fc4d7	Placeholder Interactive Doodad - jk
+unit	303	subname	237aea49060f06c9	Use Your Imagination
+unit	311	name	f86479b508060189	Sven Yorgen
+unit	313	name	6f6811c5fe57b34e	Theocritus
+unit	314	name	c9c69ecd5df24af3	Eliza
+unit	318	name	cc663006f4bdf295	[UNUSED] Brother Akil
+unit	319	name	08312a908ab368aa	[UNUSED] Brother Benthas
+unit	320	name	bc5a5697f6864c9d	[UNUSED] Brother Cryus
+unit	321	name	cc2843b88b5ece21	[UNUSED] Brother Deros
+unit	322	name	dee9e5325706980e	[UNUSED] Brother Enoch
+unit	323	name	2a374c17868ea37b	[UNUSED] Brother Farthing
+unit	324	name	1c310e5802640e4c	[UNUSED] Brother Greishan
+unit	325	name	4e1e8ea73415377e	Hogan Ference
+unit	326	name	1d677f0007ee5059	[UNUSED] Brother Ictharin
+unit	328	name	37483c68cc66a13e	Zaldimar Wefhellt
+unit	331	name	6eb4843838872af9	Maginor Dumas
+unit	333	name	a40e618ab37ebc4e	[UNUSED] Edwardo the Jester
+unit	335	name	bf20f3e7fa645c82	Singe
+unit	336	name	4098e850671a6b32	[UNUSED] Rin Tal'Vara
+unit	339	name	d6359c30c5593aef	[UNUSED] Helgor the Pugilist
+unit	340	name	1ff09765b7bed956	Kendor Kabonka
+unit	342	name	38da9d09e1c26098	Martie Jainrose
+unit	348	name	15112d53fdfd0838	Zem Leeward
+unit	353	name	3feedfb7f04d1080	Antonia Dart
+unit	353	subname	98c8cf4307ae2948	iCoke Redemption Vendor
+unit	354	name	e7c5ba0a621e0516	[UNUSED] Grall Twomoons
+unit	365	name	0b29f465bc3f611a	Scott's Flying Mount
+unit	379	name	b6c1e2778f47d3c7	Darcy
+unit	380	name	44411fa67d9f2e57	[UNUSED] Waldin Thorbatt
+unit	383	name	5080de9fe0b8e722	Jason Mathers
+unit	384	name	cee5d15b9d2152bf	Katie Hunter
+unit	386	name	2cede2ef5dda3679	[UNUSED] Ulric the Grim
+unit	388	name	324b4f40b0e6576d	Bromos Murphy
+unit	395	name	5cdfa4059e6003c4	Markus
+unit	397	name	64aa5799b5a78290	Morganth
+unit	399	name	aa98c8820a1c0e99	Boy - placeholder 05
+unit	400	name	aa98c8830a1c0e9a	Boy - placeholder 06
+unit	401	name	aa98c8840a1c0e9b	Boy - placeholder 07
+unit	402	name	aa98c8850a1c0e9c	Boy - placeholder 08
+unit	403	name	aa98c8860a1c0e9d	Boy - placeholder 09
+unit	404	name	aff3591157bea607	Girl - placeholder 01
+unit	405	name	aff3591257bea608	Girl - placeholder 02
+unit	406	name	aff3591357bea609	Girl - placeholder 03
+unit	407	name	aff3591457bea60a	Girl - placeholder 04
+unit	408	name	aff3591557bea60b	Girl - placeholder 05
+unit	409	name	aff3591657bea60c	Girl - placeholder 06
+unit	410	name	aff3591757bea60d	Girl - placeholder 07
+unit	411	name	aff3591857bea60e	Girl - placeholder 08
+unit	415	name	3e1df666b4e3e35a	Verner Osgood
 unit	416	name	001355c821d8e557	Imp
+unit	421	name	763a1ad0a51989ce	Murphestos
+unit	444	name	756a6f944bf3f634	[UNUSED] Goreripper
+unit	459	name	13a69ef84745b866	Drusilla La Salle
+unit	460	name	3df64fd0d37b3468	Alamar Grimm
+unit	461	name	ec568fb334a543ef	Demisette Cloyce
+unit	462	name	1ef0cb4ae7252f67	Vultros
+unit	470	name	d613da872b379803	[UNUSED] Scribe Colburg
+unit	482	name	514ccaf452d42625	Elling Trias
+unit	483	name	ed933e2feff9ea68	Elaine Trias
+unit	486	name	22ab2f517c3706f2	Tharil'zun
+unit	496	name	bb2daee033e518e4	[UNUSED] Watcher Kleeman
+unit	497	name	d252b91ca9be363b	[UNUSED] Watcher Benjamin
+unit	498	name	800e2e0a453ac42f	[UNUSED] Watcher Larsen
+unit	502	name	5200c634d35f5404	Benny Blaanco
+unit	507	name	c1f107aac56fa60c	Fenros
+unit	509	name	f94ae99ba15e834f	[UNUSED] Long Fang
+unit	516	name	4f3ed9901f377208	[UNUSED] Riverpaw Hunter
+unit	519	name	bf847aea6f022685	Slark
+unit	520	name	95e92979f1dd897a	Brack
+unit	521	name	45dd252c8acbd739	Lupos
+unit	523	name	0b5cebc303056c45	Thor
+unit	534	name	9cfc85c4a3013626	Nefaru
+unit	535	name	2fe4a83f4debbce8	[UNUSED] Savar
+unit	536	name	ad3e30166d333afc	[UNUSED] Rhal'Del
+unit	538	name	64a22aa0960ddb46	[UNUSED] Buk'Cha
+unit	566	name	eaf320153237c026	V'rex
+unit	572	name	ac2810de5fc91ebb	Leprithus
+unit	574	name	39cd5eb2ae47f440	Naraxis
+unit	584	name	31a3fd14c774ec9c	Kazon
+unit	586	name	843dae24c88d5528	[UNUSED] Watcher Kern
+unit	592	name	2c70ad9e2434c3f4	[UNUSED] Defias Arsonist
+unit	599	name	60a2f3af4e4ca532	Marisa du'Paige
+unit	605	name	cbdb1f8de4c1caed	[UNUSED] Mr. Whipple
+unit	606	name	7b4b35bb24b26a28	[UNUSED] Mrs. Whipple
+unit	607	name	d64807fa77a046de	[UNUSED] Johnny Whipple
+unit	609	name	f84d5958b4973c90	[UNUSED] Grandpa Whipple
+unit	610	name	9415a9b3c932f05d	[UNUSED] Rabid Gina Whipple
+unit	611	name	b64cd42c6a15dc61	[UNUSED] Rabid Mr. Whipple
+unit	612	name	737aa2e181b1c965	[UNUSED] Rabid Mrs. Whipple
+unit	613	name	f983c6147cb01aea	[UNUSED] Rabid Johnny Whipple
+unit	614	name	ffdfa100122e19de	[UNUSED] Rabid Grandpa Whipple
+unit	631	name	e55dfdca279ddd94	pnagle's test dude
+unit	633	name	ce536c81de760515	Elaine Carevin
+unit	639	name	961d3f24278d7a0d	Edwin VanCleef
+unit	643	name	bfca1b9699b17f24	Sneed
+unit	659	name	b472fddca411105c	El Pollo Grande
+unit	661	name	ceb3aa53d3338cfc	Jonathan Carevin
+unit	663	name	a532a00d988d3c4b	Calor
+unit	664	name	b52950f3a7297663	Benjamin Carevin
+unit	715	name	e0d7815ad28e3754	Hemet Nesingwary
+unit	717	name	a80e999419d38f59	Ajeck Rouack
+unit	725	name	000cb3b3c53e57ec	[UNUSED] Skeletal Enforcer
+unit	728	name	c83060b95697db30	Bhag'thera
+unit	730	name	83f85aa063b34666	Tethis
+unit	737	name	3226eaa59dce629f	Kebok
+unit	753	name	848ca310445b95c7	[UNUSED] Rebel Soldier
+unit	773	name	8dfce62fa081ec53	Krazek
+unit	777	name	83972f0f4f498568	Amy Davenport
+unit	789	name	8a72dca3d341d5a6	Kimberly Hiett
+unit	790	name	21b7f1e03ce589fb	Karen Taylor
+unit	793	name	6a749a5557e0c69e	Kara Adams
+unit	794	name	0a6af9d809648528	Matt
+unit	795	name	0a6af8c90964455d	Mark
+unit	796	name	60343e065c1526e2	Joshua
+unit	797	name	0000223500083871	Bo
+unit	798	name	1b1219d426465c9c	Solomon
+unit	799	name	322c244aed32ee70	Kevin
+unit	800	name	0a2ca3534dd9f81a	Kyle
+unit	801	name	095cfae7e1a005f0	Eric
+unit	802	name	001392b625cfaa95	Jay
+unit	804	name	09363c4010bc3183	Dana
+unit	805	name	1ee2c73dc40a06fe	Cameron
+unit	806	name	0a07b55b98bedf05	John
+unit	807	name	0a4ac3ef9bbe8f2c	Lisa
+unit	809	name	a4ed51e059ab0d5b	[UNUSED] Smith Theo
+unit	810	name	8218c59df289d3d7	Aaron
+unit	811	name	0a07baf398c03da7	Jose
+unit	834	name	8065d3088d8af303	Coyote
+unit	837	name	91f6059fcd83ab84	Branstock Khalder
+unit	841	name	4457f35841643b03	Harl Cutter
+unit	843	name	57de49933e435523	Gina MacGregor
+unit	844	name	5d22953ae2ae8a16	Antonio Perelli
+unit	846	name	ec5a64b5fdf870e6	Ghoul
+unit	847	name	58a7b77ffece4d03	Nathan
+unit	848	name	906bd4217f45733d	Madison
+unit	849	name	4471c0bee10e403e	Rachel
+unit	850	name	095cfaf2e1a005fb	Erin
+unit	851	name	72c1b24ddcf62eec	Hannah
+unit	857	name	8ac0fa892c5c2504	Donal Osgood
+unit	881	name	9384a1d7d4fd764f	Surena Caledon
+unit	893	name	0a48ab367bfc5155	Lars
+unit	897	name	7908d92ff8c72b9c	[UNUSED] Brannon Aybara (TEMP)
+unit	904	name	b654b6db5fa2ea73	[UNUSED] Regna Khurn
+unit	906	name	0320b57956816fd0	Maximillian Crowe
+unit	911	name	73e720b95120bac7	Llane Beshere
+unit	912	name	de78fb04dccc1766	Thran Khorman
+unit	913	name	5abfce4897786564	Lyria Du Lac
+unit	914	name	46b435bad961a62f	Ander Germaine
+unit	915	name	80a9ee06c9ffd01e	Jorik Kerridan
+unit	916	name	ca97acdbdccf186d	Solm Hargrin
+unit	917	name	c64610e0c4ccee89	Keryn Sylvius
+unit	919	name	b5766bbd1a94e814	[UNUSED] [PH] Berail Spiritwhisper
+unit	919	subname	b76b7c74cafcdab6	Shaman Trainer *Temp*
+unit	924	name	777948195b738628	[UNUSED] Lesser Arachnid
+unit	926	name	4e2f38c3fbd0cc98	Bromos Grummner
+unit	944	name	4c3275b80a9408e2	Marryk Nurribit
+unit	953	name	5bbc383fa5803ff5	Spawn Test One
+unit	953	subname	382b78050b54d7c9	TEST MOB
+unit	954	name	74273331ec5b04d9	Kat Sampson
+unit	957	name	4b32013bd8df9715	Dane Lindgren
+unit	959	name	15dfa3091e829724	Morley Eberlein
+unit	980	name	6051186f643b7bda	Grimnal
+unit	981	name	0022ef7dd02aba4b	Hartash
+unit	982	name	04bbd4142eb59f9e	Thultash
+unit	983	name	6c1f5f8c27c0889f	Thultazor
+unit	984	name	5009595a72593b83	Thralosh
+unit	985	name	5c12dd765dd11ace	Malosh
+unit	986	name	734b31eb168fc16d	Haromm
+unit	987	name	bd3b89318ad264b4	Ogromm
+unit	988	name	1e3eb27808822e64	Kartosh
+unit	989	name	0b166af65c1e5f7e	Banalash
+unit	996	subname	bbe112b57fe463af	Cheesy Test Tailor
+unit	1058	name	43b944d78cc5aca7	[UNUSED] Truek
+unit	1061	name	4459568ed95ae076	Gan'zulah
+unit	1066	subname	e7944cd23b32e4ee	UNUSED
+unit	1068	name	09a0d1a8f08841b0	Gorn
+unit	1074	name	d71a047c21f55379	Motley Garmason
+unit	1075	name	147f2eda7187ad9d	Rhag Garmason
+unit	1103	name	3ff5ad21063f30b6	Eldrin
+unit	1104	name	c165c2e0208361fc	Grundel Harkin
+unit	1130	name	94d6c451869fc770	Bjarn
+unit	1135	name	3c52f7a5e7bb810d	Wendigo
+unit	1141	name	00072612bb69c29a	Angus Stern
+unit	1146	name	f3a46778d621d4ce	Vharr
+unit	1147	name	87c9533c81ef6c0f	Hragran
+unit	1148	name	2a21cc151ccb1796	Nerrist
+unit	1149	name	e3b4281ab3e0405b	Uthok
+unit	1155	name	1f70828a3fbe96c0	Kelt Thomasin
+unit	1198	name	ec6cf7586d1a8137	Rallic Finn
+unit	1210	name	153e093959c85b71	Chok'sul
+unit	1213	name	3ca153f0eda2dda3	Godric Rothgar
+unit	1214	name	36566398e2ad593a	Aldren Cordon
+unit	1226	name	196ad0deda6e3830	Maxan Anvol
+unit	1227	subname	98c8cf4307ae2948	iCoke Redemption Vendor
+unit	1230	name	7237fddd2b6167b7	[UNUSED] Lexin Haze
+unit	1230	subname	3f09298bee86c985	Warlock Trainer *Temp*
+unit	1234	name	3c14e95b3862ffc6	Hogral Bakkan
+unit	1235	name	6cf733ee1bc6ef90	[UNUSED] Maryann Grapefoot
+unit	1237	name	f9cb1c388c20e397	Kazan Mogosh
+unit	1242	name	412dc2e23b362c79	Karl Boran
+unit	1246	name	700a222322923880	Vosur Brakthel
+unit	1250	name	19f6688f32047b50	Drake Lindgren
+unit	1257	name	ed7388ee0a363d4a	Keldric Boucher
+unit	1266	name	5bc3e40b94db7427	Tundra MacGrann
+unit	1273	name	c845dab5442df09a	Grawn Thromwyn
+unit	1275	name	fd2ffcb34cd45fdb	Kyra Boucher
+unit	1285	name	3dffcbaecb0532c4	Thurman Mullby
+unit	1286	name	b5a5cc03c1452c12	Edna Mullby
+unit	1288	name	a9fc6e4d52b7ac2e	[UNUSED] Hevram Bristol
+unit	1289	name	602aafdfaf98fdb9	Gunther Weller
+unit	1290	name	76d8ba497d279cc9	[UNUSED] Winston Bagley
+unit	1291	name	7dfce90fe63f2831	Carla Granger
+unit	1292	name	79a2e049f72b9f33	Maris Granger
+unit	1293	name	39bb54083058e995	[UNUSED] Gerard Granger
+unit	1294	name	20070031862bca62	Aldric Moore
+unit	1295	name	26cc5ae8b2401dbe	Lara Moore
+unit	1296	name	61e9d60bac5b8f05	Felder Stover
+unit	1297	name	dccbd41500370dec	Lina Stover
+unit	1298	name	4e4be7f800eb6614	Frederick Stover
+unit	1299	name	0ce4a984a59fc7eb	Lisbeth Schneider
+unit	1300	name	10f9290250db2140	Lawrence Schneider
+unit	1302	name	7455f4389d6a06ee	Bernard Gump
+unit	1303	name	6dc2db332b33e6f6	Felicia Gump
+unit	1304	name	1ddba57b816e8d88	Darian Singh
+unit	1305	name	b9f9d91f0dc6a439	Jarel Moor
+unit	1306	name	45547d885fdf42dc	[UNUSED] Melechan Damodred
+unit	1307	name	76ae25736081561e	Charys Yserian
+unit	1308	name	a9c62e9319f889a8	Owen Vaughn
+unit	1309	name	8e62b8e24fc9f391	Wynne Larson
+unit	1310	name	2c55450790a7ca6c	Evan Larson
+unit	1311	name	e4640c37c691cb38	Joachim Brenlow
+unit	1312	name	4c439b9c54a7cbe1	Ardwyn Cailen
+unit	1313	name	c0a73fa47487bd94	Maria Lumere
+unit	1314	name	95a75d69d69b54d1	Duncan Cullen
+unit	1315	name	063e0d3fe3744d7a	Allan Hafgan
+unit	1316	name	d63c413851307a38	Adair Gilroy
+unit	1317	name	ff51c326df4bb532	Lucan Cordell
+unit	1318	name	0608c2160f6ac07d	Jessara Cordell
+unit	1319	name	aeacdba29897a2c5	Bryan Cross
+unit	1320	name	f568f19dbf9a70be	Seoman Griffith
+unit	1321	name	84810bb9003397ec	Alyssa Griffith
+unit	1322	name	a468d70724196861	Maxton Strang
+unit	1323	name	147f70cf921d35ef	Osric Strang
+unit	1325	name	adccf9dddef742d8	Jasper Fel
+unit	1326	name	c37d756089b18c9a	Sloan McCoy
+unit	1327	name	990f0acf5f126b8b	Reese Langston
+unit	1328	name	b91d7afa20f489bf	Elly Langston
+unit	1333	name	54b0c5e9c6e0049b	Gerik Koen
+unit	1339	name	be736363b2a46715	Mayda Thane
+unit	1341	name	b6ba116bc5e38327	Wilhelm Strang
+unit	1346	name	78ce6686685a6626	Georgio Bolero
+unit	1347	name	e5561bef9301a780	Alexandra Bolero
+unit	1348	name	d1b2120d272e3189	Gregory Ardus
+unit	1349	name	78cad53bb8ab30f6	Agustus Moulaine
+unit	1350	name	5d02bdbcd5f904d1	Theresa Moulaine
+unit	1361	name	0d0d9d2f042b50f0	[UNUSED] Kern the Enforcer
+unit	1362	name	a04fca43a4e4ccd1	Gothor Brumn
+unit	1365	name	0729af70516384ee	Goli Krumn
+unit	1366	name	08d015ef746b8246	Adam
+unit	1367	name	94b7551224e1fd81	Billy
+unit	1368	name	c989a241c535d240	Justin
+unit	1370	name	4c859e2b26ada318	Brandon
+unit	1371	name	ae60c92667f09247	Roman
+unit	1379	name	55cfb71cd0c5af78	Miran
+unit	1380	name	be0c28b56b699b40	Saean
+unit	1381	name	33e4966fc81d03c4	Krakk
+unit	1382	name	ba0fce9d3138c675	Mudduk
+unit	1384	name	28be28023459a828	Z'tark
+unit	1385	name	95e933b8f1e00711	Brawn
+unit	1386	name	3abe98157f143e15	Rogvar
+unit	1387	name	b94fe88cef26d0d8	Thysta
+unit	1388	name	330a5791410c9cb1	Vagash
+unit	1392	name	001744535d651d66	Xon
+unit	1398	name	d74536550605e5a4	Boss Galgosh
+unit	1399	name	5b67596f9ac956a0	Magosh
+unit	1401	name	650a827934483735	Test Squirrel
+unit	1403	name	512960f4eb5c2f6e	Mogwah
+unit	1404	name	33e4945fc81c843c	Kragg
+unit	1405	name	b2254cd9ae532430	Morris Lawry
+unit	1406	name	099efaddd4be07c3	Ghok
+unit	1407	name	6a1c1e36fd2befde	Sranda
+unit	1408	name	b85b0c0cc9d8c2a2	Thragg
+unit	1410	name	9371c200cd4f0b0c	Loranna Dawnfyre UNUSED (Reuse me)
+unit	1411	name	f52f9c6e055671a6	Ian Strom
+unit	1413	name	824d1a6b07314887	Janey Anship
+unit	1414	name	20280a81c09622f8	Lisan Pierce
+unit	1415	name	f40bdc05889c1cfb	Suzanne
+unit	1416	name	32eacdf38774b740	Grimand Elmore
+unit	1419	name	001e454424b7bf94	Fizzles
+unit	1425	name	620e833b8a9258c1	Grizlak
+unit	1427	name	f3fb99efd03ae7c1	Harlan Bagley
+unit	1428	name	a062013bef3b4c38	Rema Schneider
+unit	1429	name	32cdef06d16868ad	Thurman Schneider
+unit	1430	name	d17c35cd25c59142	Tomas
+unit	1432	name	b966791d59e040d5	Renato Gallina
+unit	1433	name	2026ca2ca69494b6	Corbett Schneider
+unit	1437	name	bb724b52f7c2cd75	Thomas Booker
+unit	1440	name	499d0e2805eda8ed	Milton Sheaf
+unit	1441	name	2ce396243f5f9fff	Brak Durnad
+unit	1443	name	9780d5c05c200079	Fel'zerul
+unit	1445	name	a24581ffa06a9d5a	Jesse Halloran
+unit	1446	name	998bd544bad7a6f0	Regina Halloran
+unit	1447	name	eb651a01d7478124	Gimlok Rumdnul
+unit	1448	name	75a81ec5496480cb	Neal Allen
+unit	1450	name	c06426a049faf7f6	Brahnmar
+unit	1451	name	1a9db6b455edc5a5	Camerick Jongleur
+unit	1452	name	e747256df49e01f5	Gruham Rumdnul
+unit	1455	name	025c65ea74c952cd	[UNUSED] Grummar Thunk
+unit	1456	name	496d53a0617c58bc	Kersok Prond
+unit	1457	name	c56d2ed62c1035b9	Samor Festivus
+unit	1459	name	520ccb5665eafbc8	Naela Trance
+unit	1460	name	64d6d0016dc0f916	Unger Statforth
+unit	1461	name	712dd7c720781137	Murndan Derth
+unit	1462	name	09fa18b5cd934bb5	Edwina Monzor
+unit	1463	name	c2de5454b367397d	Falkan Armonis
+unit	1467	name	2c4eb753a23e5549	[UNUSED] [PH] Brawl Thunderpunch
+unit	1467	subname	0902d2f14922e037	Weaponsmith <Temp>
+unit	1476	name	924b6a02b4158147	Hargin Mundar
+unit	1477	name	aca57796c9214220	Christoph Faral
+unit	1478	name	3624e38250b0285c	Aedis Brom
+unit	1479	name	cff4d0ae6aee1080	Timothy Clark
+unit	1482	name	6afdf025f71ae230	Andrea Halloran
+unit	1483	name	713a1d461f6418b4	Murphy West
+unit	1484	name	f852c7508341ac56	Derina Rumdnul
+unit	1485	name	34fbf0caa7bd4759	[UNUSED] Bazaar Merchant TEST
+unit	1492	name	0b99f28f84dbd1d8	Gorlash
+unit	1493	name	22e27138f08fa1bc	Mok'rash
+unit	1494	name	8c553e6929744da7	Negolash
+unit	1497	name	d4c217b2df4375ef	Gunther Arcanus
+unit	1500	name	e96579dde8e4dac1	Coleman Farthing
+unit	1516	name	33811174537fb952	Konda
+unit	1521	name	09a3783a6cd861a7	Gretchen Dedmar
+unit	1546	name	15b7a58ae3820b97	[UNUSED] Kegnar Thraln
+unit	1560	name	cd3e6a7f5d48a63b	Yvette Farthing
+unit	1567	name	cf79b70e8aa9be1b	[UNUSED] Anson Phelps
+unit	1567	subname	33440aae25142bb6	Miner <Temp>
+unit	1571	name	27c02c76d3a9e8f4	Shellei Brondir
+unit	1572	name	c1a5bfd5cf95b289	Thorgrum Borrelson
+unit	1573	name	3b5086d23620ac74	Gryth Thurden
+unit	1627	name	321ebf19166aadd2	Priest 15
+unit	1628	name	edfd59c255cff6c4	Hunter 30
+unit	1629	name	321ebf97166acdae	Priest 20
+unit	1631	name	edfd5a4555d016a5	Hunter 40
+unit	1632	name	e3e6445e5d217265	Adele Fielder
+unit	1633	name	321ec01a166aed8f	Priest 30
+unit	1634	name	321ec09d166b0d70	Priest 40
+unit	1635	name	8d0f5c559d3b68b6	Warrior 1
+unit	1636	name	8d0f5c599d3b68ba	Warrior 5
+unit	1637	name	2edc411762e65efa	Warrior 10
+unit	1638	name	2edc411c62e65eff	Warrior 15
+unit	1639	name	2edc419a62e67edb	Warrior 20
+unit	1640	name	2edc421d62e69ebc	Warrior 30
+unit	1641	name	2edc42a062e6be9d	Warrior 40
+unit	1643	name	0849e148195ad5f1	[UNUSED] Elwynn Guard
+unit	1644	name	6ee09e9f7f947b07	[UNUSED] Redridge Guard
+unit	1646	name	92dfd15e19342520	Baros Alexston
+unit	1649	name	deac6b28a7261b1b	UNUSED Jordan Croft
+unit	1649	subname	708d0d7810641495	Reuse Me
+unit	1650	name	81a613965fdce4bf	Terry Palin
+unit	1651	name	ab409d299f7902f1	Lee Brown
+unit	1654	name	3f1b70d7349e0dee	Gregor Agamand
+unit	1655	name	7a5891472e0a081d	Nissa Agamand
+unit	1656	name	bf53e5c68d7d94f7	Thurman Agamand
+unit	1657	name	501811ed93552b80	Devlin Agamand
+unit	1659	name	c1610f3f9140ceca	[UNUSED] Coleman Mills
+unit	1659	subname	8d96ddf351290edc	NEEDS MODEL
+unit	1663	name	e8e8a7ba4fe36b17	Dextren Ward
+unit	1667	name	e0b0044a85318c43	Meven Korgal
+unit	1668	name	046d357777eb1b28	William MacGregor
+unit	1670	name	8a71a4f890da1ca6	Mike Miller
+unit	1671	name	b701b498a7ddffd2	Lamar Veisilli
+unit	1672	name	80faf1300269e0cb	Lohgan Eva
+unit	1673	name	5b6a2f36c876cb32	Alyssa Eva
+unit	1677	name	7ba469732af11679	[UNUSED] Curtis Ashlock
+unit	1678	name	90bcb9d8ca152a7a	Vernon Hale
+unit	1679	name	dae4e589c658f4b4	Avarus Kharag
+unit	1680	name	76c824f3824bf268	Matthew Hooper
+unit	1687	name	24e13c1b8ad0a99c	Cliff Hadin
+unit	1690	name	aa60c28224a766f8	Thrawn Boltar
+unit	1691	name	b891bb0caa20d7c4	Kreg Bilmn
+unit	1694	name	0ac54bf1854f7f64	Loslor Rudge
+unit	1695	name	8c20e8b0604fea56	Rendow
+unit	1697	name	f344d0c7e0316d38	Keeg Gibn
+unit	1698	name	c3f587f9313737c9	Frast Dokner
+unit	1699	name	c306d16e99bcc117	Gremlock Pilsnor
+unit	1700	name	33ff29369d13cecb	Paxton Ganter
+unit	1703	name	a7f2c869c5e8b99f	Uthrar Threx
+unit	1714	name	39ec74841803e5eb	SAVE Defias Lifer
+unit	1716	name	49a42307a15b56d4	Bazil Thredd
+unit	1717	name	a6c65ef00c48831c	Hamhock
+unit	1721	name	302e2e064f0148d9	Nikova Raskol
+unit	1723	subname	3cf7606b6f7ee78f	Placeholder
+unit	1724	name	bc64807aacecbe82	Stormwind Citizen Masculine
+unit	1724	subname	3cf7606b6f7ee78f	Placeholder
+unit	1733	name	0c2a763b4f7be1a0	Zggi
+unit	1747	name	98605494fa60b848	Anduin Wrynn
+unit	1758	name	460c6fb166cb6a5b	Warlock (TEST)
+unit	1759	name	fc69262c09da3bc4	Mage (TEST)
+unit	1760	name	844e93f672b9c0dd	Warrior (TEST)
+unit	1761	name	04616893054c91d1	Priest (TEST)
+unit	1762	name	c339291e1edc0096	Rogue (TEST)
+unit	1763	name	0366821867f1979c	Gilnid
+unit	1765	name	0bc5ab51c7078232	Worg
+unit	1775	name	a7d5437408a39bd9	Zun'dartha
+unit	1776	name	c68d409d1f9b5f09	Magtoor
+unit	1850	name	703e155ade475a1f	Putridius
+unit	1855	name	71ce1f0103ffb96c	Tirion Fordring
+unit	1858	name	b9da8b5567df89d0	Pissed not a Vendor
+unit	1859	name	c59a8c074b6beed8	[UNUSED] Nyein Longwind
+unit	1859	subname	513f420f5696751d	Bowyer *Temp*
+unit	1880	name	942fb4e00714c2dd	Berte
+unit	1881	name	ef165974fb60b6cd	Evalyn
+unit	1910	name	0a702cc358c77279	Muad
+unit	1911	name	093743ca209c219f	Deeb
+unit	1916	name	93214cf4974ba4bd	Stephen Bhartec
+unit	1917	name	b08c9c98bdd0070d	Daniel Ulfman
+unit	1918	name	e754a16b7ea7a438	Karrel Grayves
+unit	1919	name	d1452ea1d05be810	Samuel Fipps
+unit	1925	name	7c38011232a7d2a3	Heat Miser
+unit	1926	name	349e97a08812a09c	Snow Miser
+unit	1927	name	07e6e197c2e99113	Good Miser
+unit	1928	name	a1cfe3fb0546c22f	Bad Miser
+unit	1929	name	343effb1a33ffb22	Earth Miser
+unit	1930	name	438ef0668b8dc678	Steel Miser
+unit	1945	name	3f63226578b00692	Tree Form 0.33
+unit	1946	name	1f3af233e35639e8	Lillith Nefara
+unit	1950	name	fcfed72c8a315585	Rane Yorick
+unit	1951	name	8ebd4b5e493ccc1e	Quinn Yorick
+unit	1964	name	66263dfe50bb3829	Treant
+unit	1979	name	20d97c5a6e10a40a	TEST WOLF (ALPHA FIRST)
+unit	1980	name	06741f4175d1b4b5	TEST WOLF (ALPHA SECOND)
+unit	1987	name	43e5b4b64a3a05cc	Webwood Creeper UNUSED
+unit	1988	name	edaec9ce5c5434cf	Grell
+unit	1990	name	1a19bd33e0a1f576	Gremlin
+unit	1991	name	87870d5166438beb	Jaxil Rye
+unit	1992	name	0ea1887499b35bf8	Tarindrella
+unit	2046	name	7a97a24050991c8f	Andrew Krighton
+unit	2050	name	03cf4ca084daeab6	Raleigh Andrean
+unit	2051	name	509f02bcc76a24a5	Twain The Tester FOO
+unit	2051	subname	9b2b3ed02650ed4f	Model and Texture
+unit	2057	name	d18cb72004c596d7	Huldar
+unit	2080	name	d2a98f13f13e9eeb	Denalan
+unit	2087	name	a5e3f7a13dd30de7	[UNUSED] Ambermill Citizen
+unit	2094	name	75c5cb26441ab9e7	James Halloran
+unit	2097	name	e2afc063860228f5	Harlo Barnaby
+unit	2107	name	e42d7f5e6cbb5fe9	Gaerolas Talvethren
+unit	2111	name	0b3adb7f79945d3a	Sida
+unit	2112	name	9ad6c1095b57e03a	Farrin Daris
+unit	2113	name	7e53492f8020519e	Archibald Kava
+unit	2114	name	7c44337c8b4fa22b	Faruza
+unit	2115	name	7f5d39da8bfe451b	Joshua Kien
+unit	2117	name	3cb514ed1e37944c	Harold Raims
+unit	2118	name	6811d9f870cd169e	Abigail Shiel
+unit	2119	name	b0820411e1cacd0f	Dannal Stern
+unit	2122	name	6441ad000b900285	David Trias
+unit	2124	name	4eaa2eec9f534075	Isabella
+unit	2126	name	cb8361ab93596205	Maximillion
+unit	2127	name	566f970560a4d595	Rupert Boch
+unit	2130	name	286824136d08ad39	Marion Call
+unit	2131	name	cedfb2e6c3449e98	Austil de Mon
+unit	2132	name	1e07febaf8bceb06	Carolai Anise
+unit	2133	name	58060b3913e732d4	[UNUSED] Theo Reshan
+unit	2135	name	05c0ccc5ffff8875	Abe Winters
+unit	2136	name	a27048dc43680213	Oliver Dwor
+unit	2137	name	c1470239775fd194	Eliza Callen
+unit	2138	name	2edc419f62e67ee0	Warrior 25
+unit	2140	name	49c77977319a839d	Edwin Harly
+unit	2153	name	a3bc8da2f7f93bb2	Terl Arakor
+unit	2154	subname	9b2b3ed02650ed4f	Model and Texture
+unit	2162	name	08d0df0980544d88	Agal
+unit	2191	name	18dc6c1e41009bd2	Licillin
+unit	2197	name	8ef6686235a42346	[UNUSED] Crier Kirton
+unit	2199	name	28dd28ebf3a83dd8	[UNUSED] Crier Backus
+unit	2200	name	76cd6564971b0b12	[UNUSED] Crier Pierce
+unit	2220	name	adc0a38c063c290f	[UNUSED] Undead Blacksmith Trainer
+unit	2223	name	bf67ec1357dc1efd	[UNUSED] Undead Cooking Trainer
+unit	2225	name	4ad5f881dcac6be1	Zora Guthrek
+unit	2226	name	efcef084a48c2b4e	Karos Razok
+unit	2227	name	01d67ec5183d7593	Sharlindra
+unit	2229	name	33e9d73b17834df1	Krusk
+unit	2230	name	0b808905a446d2e1	Umpi
+unit	2238	name	79323d4916dfa7ba	Tog'thar
+unit	2239	name	b909d76bff18f26e	Drull
+unit	2257	name	7147e21fe289bb45	Mug'thol
+unit	2274	name	436e28bd9881be32	Stanley
+unit	2278	name	96170e92f014297c	Melisara
+unit	2282	name	f520bf33734b8cde	[PH] Orgrun Iceflow
+unit	2286	name	d1ab2c24d16c5118	Bow Guy
+unit	2289	name	44837ee92487f05d	Connor McCoy
+unit	2290	name	5cf7cea069f1d077	Bertran Keldrake
+unit	2291	name	dc319980471fdefe	Corbin Halman
+unit	2292	name	f2d8c05caac7132d	Reginald Berry
+unit	2293	name	1f8985236a68d067	[UNUSED] Sherra Vayne
+unit	2294	name	2d54f1ab2c637868	Jaynice Sillestan
+unit	2295	name	5ec6eef821046ae0	[UNUSED] Bartok Steelgrip
+unit	2296	name	06d3c718a3e2d99a	[UNUSED] Fulgar Iceforge
+unit	2297	name	cc645ff36f6dcd69	[UNUSED] Kerrik Firebeard
+unit	2300	name	6468d1d74f9ed9d3	[UNUSED] Seoman Verilas
+unit	2301	name	3022e3def1f4dadb	[UNUSED] Nerrik Shoyul
+unit	2302	name	c4f2f80b56e4560f	Aethalas
+unit	2308	name	465916da1cad3b39	Andrew Brownell
+unit	2309	name	f3e2250c2eab9fbd	Thomas Arlento
+unit	2310	name	571154646bb8883c	Jamie Nore
+unit	2311	name	06e1b0a56699715c	Doreen Beltis
+unit	2312	name	d78833c618d8d7c1	[UNUSED] Thesule Klaven
+unit	2312	subname	15d9abdd2e01ddee	<Needs Model>
+unit	2313	name	1baea6c5dfd30dc1	[UNUSED] Kir'Nazz
+unit	2316	name	990985e43a3f9b49	Gol'dir
+unit	2317	name	c9cacbc89d75a7dc	Elysa
+unit	2320	name	66481f3e18c5a578	Nagaz
+unit	2326	name	27ac87c4019b780a	Thamner Pol
+unit	2327	name	7e2ed1760756513d	Shaina Fuller
+unit	2329	name	5a361ebc72d9fea1	Michelle Belle
+unit	2330	name	6e8a9ea225020b79	Karlee Chaddis
+unit	2331	name	84f01bc8cbd93e66	Paige Chaddis
+unit	2332	name	8d19551b37daf294	Valdred Moray
+unit	2334	name	9518331bd7b4135c	Event Generator 001
+unit	2357	name	92ceb1fde86d5767	Merideth Carlson
+unit	2364	name	66d0d5a346766c87	Neema
+unit	2367	name	a203ff1ebe690033	Donald Rabonne
+unit	2378	name	8b91f054ec751dc6	Kundric Zanden
+unit	2380	name	607e7d01107d9599	Nandar Branson
+unit	2381	name	88e0cce214b9f3d2	Micha Yance
+unit	2382	name	7bdcedd0889922bb	Darren Malvew
+unit	2383	name	6e486c03c346db1b	Lindea Rabonne
+unit	2389	name	2296f3ffba6cdf52	Zarise
+unit	2391	name	04b9e26bbac3dcea	Serge Hinott
+unit	2392	name	3822a464754aeea1	Delia Verana
+unit	2393	name	6c91945bf996e5fe	Christoph Jeffcoat
+unit	2394	name	0aa316af467f0d2a	Mallen Swain
+unit	2395	name	f9fb15a423f1b31f	Vinna Wayne
+unit	2396	name	45196fc02c41bda0	Hans Zandin
+unit	2399	name	f34c999786de10d5	Daryl Stack
+unit	2400	name	b16be0a021e364bb	Craig Hewitt
+unit	2402	name	da52b5298181f0b3	Shara Blazen
+unit	2409	name	611c3ab8a90b054e	Felicia Maline
+unit	2411	name	d0e297b808056928	Ricter
+unit	2412	name	838fbf65e246ce7b	Alina
+unit	2413	name	cb7057aa4422cf4e	Dermot
+unit	2414	name	251bbd7645bc08ba	Kegan Darkmar
+unit	2420	name	0b5b1802e73bf185	Targ
+unit	2422	name	e4895fcfb08ab61b	Glommus
+unit	2424	name	5137a8973e85651c	Test Banker
+unit	2425	name	325d1afc53f2809b	Varimathras
+unit	2432	name	b04c749a1f7f6ce4	Darla Harris
+unit	2438	name	e4aa111aad16ee7c	Bartolo Ginsetti
+unit	2441	name	4949723f3fd46d84	[UNUSED] Southshore Citizen
+unit	2447	name	626cf031a984cb28	Narillasanz
+unit	2452	name	f02c8e04c694c14e	Skhowl
+unit	2458	name	37c7dc7193550e69	Randolph Montague
+unit	2459	name	38d941d40d7c5c9e	Mortimer Montague
+unit	2473	name	9cd54b99213c9c55	Granistad
+unit	2474	name	c270885d9cac82fb	Kurdros
+unit	2475	name	bf88266ba6961ad2	Sloth
+unit	2477	name	9fe5fa070306b046	Gradok
+unit	2480	name	38c3e2ce3b750861	Bro'kin
+unit	2481	name	f5795bb2152a8fa7	Bliztik
+unit	2483	name	c6b7e9951c1b95da	Jaquilina Dramet
+unit	2485	name	b6ae1730eb21490e	Larimaine Purdue
+unit	2488	name	093743cf209c21a4	Deeg
+unit	2492	name	7b7ee18b95f0f6b8	Lexington Mortaim
+unit	2495	name	c8fbbf260a7f768e	Drizzlik
+unit	2497	name	be4b268049b057b1	Nimboya
+unit	2499	name	e4723c7f1d1ca38c	Markel Smythe
+unit	2504	name	d11ce567acaa6fe1	Donyal Tovald
+unit	2519	name	86e9d2462e28041a	Kin'weelay
+unit	2530	name	a70f676c18f8b34a	Yenniku
+unit	2532	name	b8a11a563b177bd0	Donna
+unit	2533	name	085b2347db4c0b5d	William
+unit	2543	subname	4914c8f4becf2557	Kirin Tor
+unit	2551	name	b902c3adb6fa69ed	Brutus
+unit	2598	name	83bdf40c2f0d8839	Darbel Montrose
+unit	2599	name	0ab48eb46fa17485	Otto
+unit	2600	name	cddcd18c396b1ec2	Singer
+unit	2603	name	5c21463771a027bb	Kovork
+unit	2610	name	16963578390d786b	Shakes O'Breen
+unit	2611	name	7315cd271b78d072	Fozruk
+unit	2614	name	105f567e8b55d19c	[UNUSED] Stromgarde Horseman
+unit	2615	name	d270aa3c94b8b62b	[UNUSED] Stromgarde Roughrider
+unit	2617	name	385d65af490b10e1	[UNUSED] Archmage Detrae
+unit	2624	name	78d5e58bfca8c834	Gazban
+unit	2663	name	664b05b04471cd7e	Narkk
+unit	2664	name	ab32cbff3dfa9a75	Kelsey Yance
+unit	2695	name	dfdc4cc3533be616	Sara Balloo
+unit	2696	name	4134912cc660d2e3	Foggy MacKreel
+unit	2697	name	4ada5328a72406b1	Clyde Ranthal
+unit	2698	name	46b024463b8c5cd0	George Candarte
+unit	2699	name	d1f43d89675cbdad	Rikqiz
+unit	2702	subname	e7944cd23b32e4ee	UNUSED
+unit	2703	name	3977b9c7dd2e08c0	Zengu
+unit	2704	name	b76504b51d3d04c1	Hanashi
+unit	2706	name	2f6fa598d84bf75c	Tor'gan
+unit	2707	name	ba9067d720520df6	Shadra
+unit	2709	subname	e7944cd23b32e4ee	UNUSED
+unit	2710	subname	e7944cd23b32e4ee	UNUSED
+unit	2711	name	b0940d69f7b0a444	Phin Odelic
+unit	2712	name	0af963308e674298	Quae
+unit	2713	name	29e41db7dcc1d0e9	Kinelory
+unit	2737	name	26386f5ad8507912	Durtham Greldon
 unit	2748	name	d84b54647a807364	Archaedas
+unit	2753	name	dbe0ca04e4ae880f	Barnabus
+unit	2754	name	d635d0fb084985cd	Anathemus
+unit	2755	name	a83094cdfd85eb21	Myzrael
+unit	2756	name	63e1bab1feebc01f	Grund Drokda
+unit	2756	subname	708d0d7810641495	Reuse Me
+unit	2759	name	93e8c69e88730fbf	Hematus
+unit	2763	name	b6a07f97cf2c0fc6	Thenan
+unit	2764	name	0150b27dd59221b8	Sleeby
+unit	2765	name	3aacbce3d9cf3f77	Znort
+unit	2770	name	3cb023be8cab768c	Tallow
+unit	2771	name	a2e3caa53da49d13	Drum Fel
+unit	2772	name	15ba29db47b055ae	Korin Fel
+unit	2787	name	38ef969fb77105ea	Zaruk
+unit	2789	name	c9a69ddc4428996c	Skuerto
+unit	2792	name	025e2d3e977a7869	Gor'mul
+unit	2796	name	d40f4a515dbb1eda	Faelyssa
+unit	2797	subname	98c8cf4307ae2948	iCoke Redemption Vendor
+unit	2799	name	3204e4c447dfb135	Lucian Fenner
+unit	2801	name	59411f699dd395ac	Tresa MacGregor
+unit	2801	subname	98c8cf4307ae2948	iCoke Redemption Vendor
+unit	2803	name	1efb36d41d7443b7	Malygen
+unit	2805	name	b82b22242c660556	Deneb Walker
+unit	2806	name	08f1a008f5ec09a5	Bale
+unit	2808	name	b6bc8adca79d212a	Vikki Lonsav
+unit	2810	name	6fec315101ed99ba	Hammon Karwn
+unit	2813	name	0d1a2bcc282cd68d	[UNUSED] Thurgas
+unit	2815	name	77b4a79d7e9a0590	[UNUSED] Teresa Shore
+unit	2816	name	6fbb942c0f034eea	Androd Fadran
+unit	2818	name	bf8475456f00c7d6	Slagg
+unit	2819	name	d24a4f8e7a2ecbf2	Tunkk
+unit	2820	name	edadc23d4c7444ac	Graud
+unit	2821	name	3227b333a9b70df7	Keena
+unit	2833	name	7da442ed8e3c258e	DEBUG - Gossip Gryphon Master
+unit	2835	name	e294112b894d6f47	Cedrik Prose
+unit	2837	name	7c0fc2ed8d713cd9	Jaxin Chong
+unit	2839	name	3d8ada1b32cbb446	Haren Kanmae
+unit	2842	name	bafcd6b091d98b3f	Wigcik
+unit	2843	name	22c2bd7cdcd628f1	Jutak
+unit	2844	name	a546fce661eed937	Hurklor
+unit	2845	name	f2727c8ddce61df0	Fargon Mortalak
+unit	2851	name	0b81d206b81ea712	Urda
+unit	2855	name	bfc9141089d18f0c	Snang
+unit	2856	name	7566da382626e205	Angrun
+unit	2857	name	d08e357067b1a16b	Thund
+unit	2858	name	607192ddd5da151c	Gringer
+unit	2859	name	09a36cee183a2803	Gyll
+unit	2861	name	6d87a5cb01c15bb6	Gorrik
+unit	2862	name	2edc419b62e67edc	Warrior 21
+unit	2863	name	2edc419c62e67edd	Warrior 22
+unit	2864	name	2edc419d62e67ede	Warrior 23
+unit	2865	name	2edc419e62e67edf	Warrior 24
+unit	2866	name	2edc41a062e67ee1	Warrior 26
+unit	2867	name	2edc41a162e67ee2	Warrior 27
+unit	2868	name	2edc41a262e67ee3	Warrior 28
+unit	2869	name	2edc41a362e67ee4	Warrior 29
+unit	2870	name	8ca0751d2d6be9ca	[UNUSED] Henria Derth
+unit	2871	name	166c70bc8ec6a726	[PH] Tallstrider Trainer
+unit	2872	name	c77b6b998e7bc108	[UNUSED] Whaldak Darbenk
+unit	2873	name	8292f01c84d31be8	[PH] Raptor Trainer
+unit	2874	name	12707f4d8dcad2be	[PH] Horse Trainer
+unit	2875	name	17f212918edeb76d	[PH] Gorilla Trainer
+unit	2876	name	f9cb6df4fd600bf0	Grunenstur Balindom
+unit	2877	name	cc227a6c3dba813d	[PH] Crawler Trainer
+unit	2878	name	fb2314edfeaf6a3a	Peria Lamenur
+unit	2879	name	0a274fb9a221fd31	Karrina Mekenda
+unit	2880	name	c78f30001a96aefd	[UNUSED] Hurom Juggendolf
+unit	2881	name	b5c0267f69769f07	[UNUSED] Durdek Karrin
+unit	2883	name	91e3558ed47f844a	[UNUSED] [PH] Monster Slayer Trainer
+unit	2885	name	77f43fd268061de0	[UNUSED] [PH] Magic Skills Trainer
+unit	2886	name	7e79583df8da81cb	Ranged Skills Trainer
+unit	2888	name	eb6b06622c0791ec	Garek
+unit	2896	name	0b1f6a751c5a26b8	[PH] Alliance Magic Skills Trainer
+unit	2896	subname	c582ea7e8d24c91c	Magic Skill Trainer *Temp*
+unit	2899	name	e4d0c5c31c7965fc	[PH] Alliance Toughness/Resist Trainer
+unit	2899	subname	8b05df079772b5bd	Toughness/Resist Trainer *Temp*
+unit	2908	name	edadc34b4c748476	Grawl
+unit	2921	name	62a99e7a810b3b78	Lotwil Veriatus
+unit	2922	name	be98d156d4a779a1	Servo
+unit	2931	name	b7087eafda5dd270	Zaricotl
+unit	2935	name	7bba028fa2affcc9	[PH] Demon Master
+unit	2939	name	eb3c24bb3f74cb2e	Jackson Bayne
+unit	2940	name	70d00946cab0f6da	[UNUSED] Frank Ward
+unit	2942	name	7ae7ae8a5707f28f	Dylan Bissel
+unit	2943	name	69af158f8ebfce6e	Ransin Donner
+unit	2944	name	b81dfd011a37fa2b	Boss Tho'grun
+unit	2945	name	6c30dcfa127e5c38	Murdaloc
+unit	2995	name	001631034d825012	Tal
+unit	2996	name	0b5ec2871ecfa62b	Torn
+unit	3000	name	0c4ecb5936cb44c4	Gibbert
+unit	3004	name	0b5c231af71cc0c1	Tepa
+unit	3005	name	0a6af3b50963069d	Mahu
+unit	3008	name	00145bc331b875ca	Mak
+unit	3016	name	0b5b15f3e73b71fe	Tand
+unit	3045	name	fdf9e80d7e03d282	Malakai Cross
+unit	3048	name	229c2244b041376f	Ursyn Ghull
+unit	3053	name	c145cd97d0e39d0b	Synge
+unit	3058	name	93c6e1f4b7804f50	Arra'chea
+unit	3068	name	c53484ace38eaf6e	Mazzranache
+unit	3070	name	1f4704be1a1700ac	[UNUSED] [PH] Mulgore Alchemy Trainer
+unit	3070	subname	621b5150d5316255	Alchemist <Needs Model>
+unit	3071	name	14be38b04ac991d1	[UNUSED] [PH] Mulgore Herbalism Trainer
+unit	3071	subname	6cb23fa0c7ef9332	Herbalist <Needs Model>
+unit	3082	name	95f1f465f0f8fe94	[UNUSED] Narache Guard
+unit	3085	name	4cfa492616e277f5	Gloria Femmel
+unit	3086	name	58bd4da9634b6234	Gretchen Vogel
+unit	3087	name	2a8582740889b472	Crystal Boughman
+unit	3088	name	3e9e87e31937cbbb	Henry Chapal
+unit	3089	name	69734da5a720a271	Sherman Femmel
+unit	3090	name	6ef7c8c1ce191dda	Gerald Crawley
+unit	3091	name	5787cf973e7245ef	Franklin Hamar
+unit	3092	name	3c01bb399df809c4	Tagain
+unit	3093	name	09a19930fc70ad46	Grod
+unit	3095	name	097be2943b6ce8d4	Fela
+unit	3097	name	cdbafdaae7f52099	Bernard Brubaker
+unit	3134	name	34f9224353206093	Kzixx
+unit	3135	name	1cd988ad7699ee7b	Malissa
+unit	3137	name	b78dd534846aca55	Matt Johnson
+unit	3138	name	bc2cb844888c5179	Scott Carevin
+unit	3143	name	6d86979bf1dfcd1d	Gornek
+unit	3144	name	e106178a1e7a01c6	Eitrigg
+unit	3146	name	ee19167e3826a293	Gurek
+unit	3148	name	1dd0f77ced88d18c	[UNUSED] Torc the Orc
+unit	3149	name	ac851455ca62b8db	Nez'raz
+unit	3150	name	e76918a77c7f298b	Hin Denburg
+unit	3153	name	dc20085a6d88e60d	Frang
+unit	3154	name	a043e92ed63f4b08	Jen'shan
+unit	3155	name	0b1c36df23bfbe2c	Rwag
+unit	3156	name	586647dc13a3505c	Nartok
+unit	3157	name	0542fb2d2cfbfb13	Shikrik
+unit	3158	name	e3e44d4682a24347	Duokna
+unit	3160	name	d16c81c3971fc0c5	Huklah
+unit	3161	name	0b167cc8cc6c0972	Rarc
+unit	3163	name	e2183aaa0f06cdf9	Uhgar
+unit	3164	name	0a040ff8612c693e	Jark
+unit	3165	name	f2a33d29a5dd1ddf	Ghrawt
+unit	3166	name	a7e2c138c46cac9d	Cutac
+unit	3167	name	06f00ea6e353b8ac	Wuark
+unit	3168	name	db5235331d18ce41	Flakk
+unit	3170	name	6592aa54e4728db1	Kaplak
+unit	3171	name	b7f919df6d0d2eac	Thotar
+unit	3173	name	c0fdd09c8279a2e9	Swart
+unit	3174	name	b9b55aeec22096ba	Dwukk
+unit	3175	name	33e9d4af1782ae8f	Krunn
+unit	3176	name	925266ef6ba199ff	[UNUSED] [PH] Durotar Engineering Trainer
+unit	3178	name	24d15cf0496d0ae8	Stuart Fleming
+unit	3179	name	3dc6f8a18185edc0	Harold Riggs
+unit	3182	name	09b572db595fba88	Junder Brokk
+unit	3184	name	f95c5922676339bb	Miao'zan
+unit	3185	name	73b6f1df663522c0	Mishiki
+unit	3186	name	6c649dd6157f6e53	K'waii
+unit	3187	name	8e7340d7efef3715	Tai'tasi
+unit	3189	name	1325f37b48d15c7c	Kor'ghan
+unit	3190	name	c0211ebc61b88bc5	Rhinag
+unit	3193	name	a2b764e8713cc8d5	Misha Tor'kren
+unit	3200	name	54d68f94963aea34	Eric's AAA Special Vendor
+unit	3201	name	d1a22f4b448286ea	SM Test Mob
+unit	3202	name	40022ec2985cdbe8	[UNUSED] Josh Test
+unit	3202	subname	4b3489195e56a08d	NPCTEST
+unit	3204	name	d89c91dfdc18bf25	Gazz'uz
+unit	3205	name	489251bd7692532a	Zalazane
+unit	3208	name	5cde94d68e7e3581	Margoz
+unit	3230	name	c7074e93de399223	Nazgrel
+unit	3257	name	574078d6ef3c805b	Ishamuhale
+unit	3281	name	c29f8f29bc8f6333	Sarkoth
+unit	3287	name	ce871d9362ce9a86	Hana'zua
+unit	3293	name	8dbe9d0620efba6f	Rezlak
+unit	3294	name	79d8a6aa44c034a2	Ophek
+unit	3298	name	dfaea40cb6b793e9	Gabrielle Chase
+unit	3299	name	9cb4f8c7f76f6ff3	[UNUSED] Antione LeMarca
+unit	3301	name	0593d35442033c77	Morgan Ladimore
+unit	3302	name	43b471afb3159013	[UNUSED] Korl
+unit	3303	name	c6915cc6048d4f6f	[UNUSED] Marna
+unit	3305	name	a0fc50c7a9d169a0	Grisha
+unit	3306	name	ab3e34ec0aba9d7f	Keldas
+unit	3307	name	7bfd0856329a11a7	[UNUSED] Orgrun Blacktusk
+unit	3309	name	31a1e7e3a7b38ddf	Karus
+unit	3310	name	b8a21fe54af6ec79	Doras
+unit	3312	name	79531cbe46b4988c	Olvia
+unit	3313	name	51836503d8771c0e	Trak'gen
+unit	3314	name	027ed2c9afea0739	Urtharo
+unit	3315	name	475846b9622a264f	Tor'phan
+unit	3316	name	72bf1b27b54547ba	Handor
+unit	3317	name	53da73472398b45c	Ollanus
+unit	3318	name	0a2a05782627726d	Koma
+unit	3319	name	0b38c85559d37dfc	Sana
+unit	3320	name	bfefcea45ab46487	Soran
+unit	3321	name	529e904ebf51ed52	Morgum
+unit	3322	name	0a265971ee935e2b	Kaja
+unit	3323	name	c160e888617c215c	Horthus
+unit	3324	name	1388cf202aaa506e	Grol'dar
+unit	3325	name	e94d4e5e95b2017c	Mirket
+unit	3326	name	e8ba9983b355a9df	Zevrost
+unit	3327	name	099e33d7c8d5bc0d	Gest
+unit	3328	name	7a1e962b736aae40	Ormok
+unit	3329	name	d5282f78e1ec01ca	Kor'jus
+unit	3330	name	2b6c26e773f7a72e	Muragus
+unit	3331	name	65d57a01e37af929	Kareth
+unit	3332	name	45dc54df7ee14da0	Lumak
+unit	3333	name	793a646ac217ff2b	Shankys
+unit	3334	name	8bbbd825d3e2a7b9	Rekkul
+unit	3335	name	71d2a97b0f020f63	Hagrus
+unit	3342	name	7928936db4256067	Shan'ti
+unit	3343	name	19f72fa54f427d00	Grelkor
+unit	3345	name	ed479855b022b646	Godan
+unit	3346	name	f288872c01854aab	Kithas
+unit	3347	name	6c7cb2f5a3fc4c2c	Yelmak
+unit	3348	name	13252ff73ce9efda	Kor'geld
+unit	3349	name	dc53c4c4c788776c	Ukra'nor
+unit	3350	name	ce3dcc69ebf88203	Asoran
+unit	3351	name	92d685b7e31a3e35	Magenius
+unit	3356	name	0b3e048ea938a937	Sumi
+unit	3357	name	5bece4e798d5525c	Makaru
+unit	3358	name	6d854cffde079937	Gorina
+unit	3359	name	0a2875df0e567b5a	Kiro
+unit	3360	name	0a2a081b262811e6	Koru
+unit	3361	name	befeec6370f56b86	Shoma
+unit	3363	name	54ba68e539db25f5	Magar
+unit	3364	name	9586bf798d24ea89	Borya
+unit	3365	name	1d925e2f398fe0a8	Karolek
+unit	3366	name	cf9bf7526a1638c7	Tamar
+unit	3367	name	c1aa0f0586e4dc9e	Felika
+unit	3368	name	8511841e022d5ddc	Borstan
+unit	3369	name	ed4bd193efa91042	Gotri
+unit	3371	name	3ccf9177ee68e0db	Tamaro
+unit	3372	name	41f9a4968b9045d7	Sarlek
+unit	3373	name	845ee0c1468ff969	Arnok
+unit	3398	name	e699dba92993445f	Gesharahan
+unit	3399	name	38ee41c7a3965470	Zamja
+unit	3400	name	712ab7d25762610f	Xen'to
+unit	3401	name	f822da3b7a511190	Shenthul
+unit	3402	name	b5f8d527207a3b52	Zando'zan
+unit	3403	name	b4762a61311f8548	Sian'tsu
+unit	3404	name	20131cb1b8e5e165	Jandi
+unit	3405	name	02a58f0c07631334	Zeal'aya
+unit	3406	name	2453f1cc1afc744f	Xor'juul
+unit	3407	name	b471fad4f19b88e6	Sian'dur
+unit	3408	name	2f242e9f88c56b57	Zel'mak
+unit	3409	name	9889f0dd45f919b5	Zendo'jian
+unit	3410	name	73109266486597e1	Jin'sora
+unit	3411	name	b08060ef60bb0437	Denni'ka
+unit	3412	name	0a90eb3dce5e8f3b	Nogg
+unit	3413	name	bff0dedd6a967290	Sovik
+unit	3420	name	bfcd9c2ea690c0e9	[UNUSED] Ancestral Watcher
+unit	3427	name	eb04f3379817fd40	[UNUSED] Kendur
+unit	3428	name	5b98d03647e704f2	Korran
+unit	3429	name	d08ca54d4fe08a70	Thork
+unit	3431	name	6dcbab455144203a	Grenthar
+unit	3432	name	403948684b4552ff	Mankrik
+unit	3434	name	00149ecc35b0b98b	Nak
+unit	3436	name	0013dffc29ca6beb	Kuz
+unit	3440	name	9faa35f3371d7eb3	[UNUSED] Ancestral Sage
+unit	3443	name	09a19c40fc716c8a	Grub
+unit	3464	name	78da1d3e3c2ec29c	Gazrog
+unit	3470	name	f19335fc49eb5865	Rathorian
+unit	3472	name	cfbb9a3465c5c8b4	Washte Pawne
+unit	3473	name	298c2ba234f146ce	Owatanka
+unit	3474	name	8a0292b4de70a30c	Lakota'mani
+unit	3475	name	8eaea284c0ee070f	Echeyakee
+unit	3476	name	7582509378901de2	Isha Awak
+unit	3477	name	09c3dfae89d6e315	Hraq
+unit	3478	name	65a240a56a7fd3ec	Traugh
+unit	3481	name	08f1a31cf5ecc8ed	Barg
+unit	3482	name	76facab1d982a244	Tari'qa
+unit	3484	name	f1fc7aaccfaf5974	Kil'hala
+unit	3485	name	068920b73b1a9dd4	Wrahk
+unit	3488	name	853153244bce5cf3	Uthrok
+unit	3489	name	38ef8f72b76f4799	Zargh
+unit	3490	name	98d9cc23dfa85793	Hula'mahi
+unit	3493	name	d5a0d4d3933f5c0f	Grazlix
+unit	3497	name	32b2c413fb21f73d	Kilxx
+unit	3498	name	6b691558508d1f97	Jazzik
+unit	3499	name	ac80d1cab03a7c93	Ranik
+unit	3500	name	3d7cec4acd3adef7	Tarhus
+unit	3504	name	0012cda619e7de4d	Gil
+unit	3505	name	001524e73da14116	Pat
+unit	3507	name	08d2b5ce9c1e876f	Andi
+unit	3508	name	55cde3f4b4fc54c0	Mikey
+unit	3509	name	ebf3743155beb6a3	Geoff
+unit	3510	name	d28b824c61630375	Twain
+unit	3511	name	8dc2da1c1062fcf9	Steven
+unit	3512	name	21254b2b202e5cea	Jimmy
+unit	3518	name	20689f849aee870e	Thomas Miller
+unit	3522	name	9874a08a62ea8bd8	Constance Brisboise
+unit	3523	name	10f9918e8b261972	Bowen Brisboise
+unit	3525	name	6d6269b24a65a7e6	[UNUSED] Turtle Trainer
+unit	3536	name	1481eb116710ea74	Kris Legace
+unit	3537	name	3a038f8a3a80be32	Zixil
+unit	3540	name	6b75a90f3d843f93	Hal McAllister
+unit	3541	name	5e8d655f0af9a95f	Sarah Raycroft
+unit	3542	name	fef29f3e775758ec	Jaysin Lanyda
+unit	3543	name	b90c55fb0f85a58a	Robert Aebischer
+unit	3544	name	0f21ad3b4647d1ac	Jason Lemieux
+unit	3545	name	b74f6a1adffdf7e6	Claude Erksine
+unit	3546	name	6cf62ba0cf48164c	Bernie Heisten
+unit	3547	name	1c896062ab8fc3a9	Hamlin Atkins
+unit	3548	name	28115b0ec7e2d53e	Selina Weston
+unit	3549	name	8192a76fd4c72b1d	Shelene Rhobart
+unit	3550	name	30c2d8c3fe774700	Martine Tramblay
+unit	3551	name	9f6b352b4720240f	Patrice Dwyer
+unit	3552	name	a9e6c1870abc1437	Alexandre Lefevre
+unit	3553	name	1e97bc115fdf6887	Sebastian Meloche
+unit	3554	name	1c2a341f40422eba	Andrea Boynton
+unit	3555	name	b7b1f61d295ff326	Johan Focht
+unit	3556	name	3950d27e30ce0730	Andrew Hilbert
+unit	3557	name	4e90d1effa28c427	Guillaume Sorouy
+unit	3558	name	d9b97b9028921134	[UNUSED] Temp Poisoning Vendor Undead
+unit	3559	name	452fd896698acf5e	Temp Poisoning Vendor Dwarf
+unit	3561	name	34d92425e96ff106	Kyrai
+unit	3562	name	1e4dd1ee8e3b8faf	Alaindia
+unit	3564	name	41b38ba41bb03f6b	Temp Reagent Vendor Dwarf
+unit	3565	name	fead5a6270ef7e07	[UNUSED] Temp Reagent Vendor Undead
+unit	3572	name	b01b7fd4607b3cef	Zizzek
+unit	3575	name	0124f667b35cb9ea	Praenus Raxxeus
+unit	3582	name	08d271419825e410	Aman
+unit	3584	name	5f4a8d8611c3b982	Therylune
+unit	3585	name	b67995895a154454	Therysil
+unit	3587	name	4666da76c85a7081	Lyrai
+unit	3589	name	3228bf57b9981cfb	Keina
+unit	3592	name	74fd95155a346460	Andiss
+unit	3593	name	b3645a7731b73dd4	Alyissia
+unit	3595	name	ba92ff074802f532	Shanda
+unit	3601	name	b73cec681e15f061	Dazalar
+unit	3602	name	0013d5b229c7ee49	Kal
+unit	3608	name	838e6da9ce6cdc51	Aldia
+unit	3609	name	e64c072fc72639ac	Shalomon
+unit	3612	name	bf20f25afa63fcdb	Sinda
+unit	3615	name	cbfad6108d9a33da	Devrak
+unit	3616	name	0014e88639aa9bc3	Onu
+unit	3620	name	734bff1c22798bb6	Harruk
+unit	3621	name	344ff35db3d17f96	Kurll
+unit	3622	name	a1c80dc7da7fe2fd	Grokor
+unit	3623	name	441f6bb729167bd1	[UNUSED] Tursk
+unit	3624	name	0c2e1f2b870f3686	Zudd
+unit	3625	name	ac81dadcc01acc51	Rarck
+unit	3626	name	b980940243d3992f	Jenn Langston
+unit	3627	name	88c6ac054d931cbd	Erich Lohan
+unit	3628	name	3919fe456a9ba221	Steven Lohan
+unit	3629	name	06ac4dc22b60b8e2	David Langston
+unit	3650	name	7456020dc061276b	Asterion
+unit	3651	name	298e3793ad45eaac	[UNUSED] Kolkar Observer
+unit	3653	name	33e5a6a8d7ff11cd	Kresh
+unit	3658	name	dab08f69664b748e	Lizzarik
+unit	3659	name	0a07ba6d98c01dc3	Jorb
+unit	3660	name	08dbc303b9fa095e	Athrikus Narassin
+unit	3664	name	06b8905d869a2eb8	Ilkrud Magthrull
+unit	3672	name	9582433a49a64cd4	Boahn
+unit	3674	name	0b3b6a50818702b9	Skum
+unit	3679	name	39ca383f7ea447b5	Naralex
+unit	3683	name	d4eaab950649a38a	Kiknikle
+unit	3692	name	2976581b3cd7617f	Volcor
+unit	3693	name	a049705089c0adbb	Terenthis
+unit	3698	name	8326356f356caa01	Bolyun
+unit	3699	name	66d43fa77a127cb9	Nerra
+unit	3704	name	5b85f9fef09cf6ad	Mahani
+unit	3706	name	d038e72d986ff979	Tai'jin
+unit	3707	name	bbc657ae36dee1a6	Ken'jai
+unit	3708	name	edb2fb599bd8b096	Gruna
+unit	3718	name	3891c984db752c87	[UNUSED] Wrathtail Tide Princess
+unit	3773	name	da1816a89afff2f1	Akkrilus
+unit	3777	name	94af2ee49030d95d	Aelyssa
+unit	3779	name	8c9c3ac2a47a0b9d	Syurana
+unit	3831	name	1c9970e7e80a5bec	[UNUSED] Ancient Guardian
+unit	3831	subname	154bf9f0c0f52b0c	NEED MODEL
+unit	3838	name	5872073aa2cdce90	Vesprystus
+unit	3842	name	df13d9ecc8512a02	Brombar Higgleby
+unit	3843	name	83d247f4dd55f72d	Anaya
+unit	3846	name	cf9bb651661e7486	Talen
+unit	3881	name	6052aaa47c0d125f	Grimtak
+unit	3888	name	338224c2636286a4	Korra
+unit	3897	name	33e8416cffb0d82f	Krolg
+unit	3901	name	aa01b6f2c1fd5e7f	Illiyana
+unit	3915	name	b6bf08b1639ec89b	Dagri
+unit	3915	subname	e7be206f6b7952e3	Raene's Pet
+unit	3916	name	4ce70f12f8a810c0	Shael'dryn
+unit	3920	name	75a9dd072923b4f5	Anilia
+unit	3933	name	57dcb1b1d4e43899	Hai'zan
+unit	3935	name	b525749c294ba4b9	Toddrick
+unit	3943	name	a5f22a9f842421e2	Ruuzel
+unit	3952	name	c79bf0ac1679ea92	Aeolynn
+unit	3954	name	846cf8cc8be1aca1	Dalria
+unit	3955	name	0f83634d63cc31b2	Shandrina
+unit	3958	name	615978e5310a01d8	Lardan
+unit	3959	name	57dd0a4dde01c1e6	Nantar
+unit	3960	name	1d650455c6adecdd	Ulthaan
+unit	3961	name	1cdb18618e6ae5a9	Maliynn
+unit	3964	name	46c77b6df13b2355	Kylanna
+unit	3966	name	6507a0b7930962d2	Kaleem
+unit	3970	name	44a47c9d56982aab	Llana
+unit	3971	name	fbff3ed2154180e3	Agro 5
+unit	3972	name	fbff3ed4154180e5	Agro 7
+unit	3973	name	f39d261a9d2d7224	Agro 10
+unit	3975	name	fd81f83640932048	Herod
+unit	3981	name	6ddc2d10551dfe31	Vorrel Sengutz
+unit	3982	name	11236c1ac6e764c7	Monika Sengutz
+unit	3984	name	f248b0115bdc02e1	Nancy Vishas
+unit	4039	name	111e3a7d8e248185	Dinnis
+unit	4043	name	e21fcd045cdf4263	Galthuk
+unit	4045	name	bce0f12539f70e1c	[UNUSED] JEFF CHOW TEST
+unit	4045	subname	bc644d9e9455fb04	No Clothes NPC
+unit	4063	name	c0b81cae8d43d5b7	Feeboz
+unit	4066	name	211a4869531da7fd	Nal'taszar
+unit	4073	name	0be0ca1ee939576b	XT:4
+unit	4074	name	0be0ca23e9395770	XT:9
+unit	4078	name	e2b541e472e82d0c	Collin Mauren
+unit	4082	name	d53a6df0f2f7085e	Grawnal
+unit	4083	name	2099f7c4cacb4fb2	Jeeda
+unit	4084	name	d31327c52be8d1ad	Chylina
+unit	4085	name	e5e7f6608e07c39f	Nizzik
+unit	4086	name	78fff806d580e490	Veenix
+unit	4088	name	521e2628c7c074f7	Elanaria
+unit	4089	name	42432cca652aefcc	Sildanair
+unit	4091	name	213110a46ca9e73e	Jandria
+unit	4092	name	615acc1d44e45398	Lariia
+unit	4115	name	6f3f6ed08d5b4d49	[UNUSED] Gravelsnout Ambusher
+unit	4115	subname	27e9cea517ceffb7	<Needs Scale>
+unit	4146	name	20efbdc1a9df8054	Jocaste
+unit	4149	name	5bbbd63ec79c0b2e	Kesteryth
+unit	4153	name	18afa0fa415557b4	Kysandia
+unit	4155	name	a5e92cef06e631ed	Idriana
+unit	4159	name	50210bc467950e7b	Me'lynn
+unit	4160	name	80859519961c3c76	Ainethil
+unit	4161	name	09cb9ef6ca9819c1	Lysheana
+unit	4163	name	e7ab3bcb3196cab0	Syurna
+unit	4164	name	a131e2384485dab6	Cylania
+unit	4165	name	d0193aa2ab0c5bc9	Elissa Dumas
+unit	4167	name	3729b4bdb4710d71	Dendrythis
+unit	4168	name	42c501368fe5c5b0	Elynna
+unit	4169	name	68922e4553c81c62	Jaeana
+unit	4170	name	2b6efb35d8651685	Ellandrieth
+unit	4171	name	a4430f9d5b713351	Merelyssa
+unit	4172	name	a8703165583dacda	Anadyia
+unit	4173	name	8a96764b17d71195	Landria
+unit	4174	name	74bf6cd31f877769	Siannai
+unit	4175	name	754d29d057c69d5b	Vinasia
+unit	4176	name	4aed18468de492e4	Ki'rasia
+unit	4177	name	5544f0798354c84b	Melea
+unit	4178	name	befb3fd939613774	Shaia
+unit	4179	name	245c9a2babaa0eac	Freillania
+unit	4181	name	2925799bb4690684	Fyrenna
+unit	4182	name	c31966ed9a0cd1c5	Dalmond
+unit	4185	name	78f3f3f08b7e3cd0	Shaldyn
+unit	4186	name	320c107cd9b594b3	Mavralyn
+unit	4188	name	bfa93a69a28146b4	Illyanie
+unit	4189	name	9c2049acb20384b3	Valdaron
+unit	4190	name	0a9517298fde98de	Kyndri
+unit	4191	name	05d876e3fdcdd5f4	Allyndia
+unit	4192	name	3cae04436ce79a2d	Taldan
+unit	4194	name	900aa09a251f5417	Ullanna
+unit	4195	name	cad8e531869bcd83	Tiyani
+unit	4197	name	9cda18759e621820	Ken'zigla
+unit	4200	name	432d414b62e34bdf	Laird
+unit	4205	name	7af86aafe96abaf0	Dorion
+unit	4206	name	cf9bb449661df506	Talar
+unit	4208	name	432d415562e34be9	Lairn
+unit	4209	name	7a874027f90d2fd0	Garryeth
+unit	4210	name	f802c288b15aac17	Alegorn
+unit	4211	name	dd3e72bae6aba216	Dannelor
+unit	4212	name	fc9a18615073d194	Telonis
+unit	4213	name	0ca608f526ea2c42	Taladan
+unit	4215	name	36dbf867552b7652	Anishar
+unit	4216	name	d70e1fa4aa77ec8a	Chardryn
+unit	4218	name	3d71d37023745de3	Denatharion
+unit	4220	name	2efecb5664da635d	Cyroen
+unit	4221	name	791bbe46483e75ba	Talaelar
+unit	4222	name	392b7c603ae23011	Voloren
+unit	4223	name	20baf925dd5c4085	Fyldan
+unit	4224	name	0d300fa6687485f1	Talegon
+unit	4225	name	5f4a7163185af6d5	Saenorion
+unit	4226	name	fa5ca276cda66cbd	Ulthir
+unit	4228	name	f2b54ba8082919b1	Vaean
+unit	4229	name	3e279b5e5ac22557	Mythrin'dir
+unit	4230	name	28d78140b467d0ab	Yldan
+unit	4231	name	f088996ce020a3a6	Kieran
+unit	4232	name	ab9882293b8688d8	Glorandiir
+unit	4233	name	7d4b6642d311c6ca	Mythidan
+unit	4234	name	74fff16c7def05eb	Andrus
+unit	4235	name	9c8f636b3b829a99	Turian
+unit	4236	name	0b93f296c190d33e	Cyridan
+unit	4237	name	3cd56d529b59cfb3	Urthoniir
+unit	4240	name	f2bc10932fb05448	Caynrus
+unit	4241	name	1a81dcf642031b6d	Mydrannul
+unit	4243	subname	e2259679a1286681	Jeen'ra's Pet
+unit	4244	subname	42d8954ce99b32a9	Dorion's Pet
+unit	4245	subname	c68ff0f2385d8f38	Valyen's Pet
+unit	4246	subname	8a73210faf73366b	Kysandia's Pet
+unit	4247	subname	851e3613b38da548	Talar's Pet
+unit	4265	name	698184197a4822b8	Nyoma
+unit	4266	name	e61521bcf22be2cd	Danlyia
+unit	4267	name	45a45ac90c7c1df0	Daelyshia
+unit	4276	name	dced69340177eabc	Piznik
+unit	4305	name	24707d6cffa561ae	Kriggon Talsone
+unit	4312	name	d088fad1184cd5e4	Tharm
+unit	4313	name	6d15358b1694086a	[UNUSED] [PH] Ambassador Saylaton Gravehoof
+unit	4314	name	6d85cc7ce5f6825e	Gorkas
+unit	4315	name	2a19f81919dd2e8f	[UNUSED] Guthrin Gravehoof
+unit	4317	name	0a938fb9f612b34f	Nyse
+unit	4318	name	0a27c13495e0beb5	[UNUSED] Delyka
+unit	4319	name	0f066651e1f4e6a8	Thyssiana
+unit	4320	name	87f703ea44b0bde3	Caelyb
+unit	4321	name	588013820221bd9c	Baldruc
+unit	4322	name	9f5eac225f2f1ae7	Corthryn
+unit	4340	name	c0a0aaa386269cf2	Mirallia
+unit	4407	name	fc9b22746054610f	Teloren
+unit	4439	name	76166fd84bbed07b	[UNUSED] Charlga's Bodyguard
+unit	4443	name	04488e793a7444ed	Wazza
+unit	4445	name	620f094d9282e043	Griznak
+unit	4450	name	ba1a612eefa56a04	Rugfizzle
+unit	4479	name	1c14d189cda4c453	Fardel Dabyrie
+unit	4480	name	2dcd603940ebb4ce	Kenata Dabyrie
+unit	4481	name	54de9c4b01061b37	Marcel Dabyrie
+unit	4483	name	3108670becb1807f	Moktar Krin
+unit	4486	name	06d81b7d8b8b0119	Genavie Callow
+unit	4487	name	59b63668687d4aac	Kodiak
+unit	4488	name	52a51a4eb2f8b822	Parqual Fintallas
+unit	4491	name	0bc5a9c7c707228e	Woof
+unit	4502	name	d088facb184cd5de	Tharg
+unit	4507	name	b6bf8f566b8f700e	Daisy
+unit	4509	name	c212ae3f4f5bde87	Sargath
+unit	4511	name	c8f15d8fd09ae7c5	Agam'ar
+unit	4545	name	cb907138ecb527d3	Nag'zehn
+unit	4546	name	e2b357a69aef5770	Bor'zehn
+unit	4549	name	a8c447478b9a96de	William Montague
+unit	4550	name	65222ea8cd2b18e2	Ophelia Montague
+unit	4551	name	30ec3f6acecb039b	Michael Garrett
+unit	4552	name	cc7e5a2cd1e5c271	Eunice Burch
+unit	4553	name	e0eded45e8529cf3	Ronald Burch
+unit	4554	name	cf8a097b83a4fe68	Tawny Grisette
+unit	4555	name	a008665cca1a68f2	Eleanor Rusk
+unit	4556	name	984a2132d9c82521	Gordon Wendham
+unit	4557	name	8acf671791fba1dd	Louis Warren
+unit	4558	name	25e08126cdd5cfb7	Lauren Newcomb
+unit	4559	name	97326505f178f799	Timothy Weldon
+unit	4560	name	aa763ae760be89f6	Walter Ellingson
+unit	4561	name	a75e8ae12fb4a181	Daniel Bartlett
+unit	4562	name	8a869cb4051a9e8d	Thomas Mordan
+unit	4565	name	222c675ea7fb5b71	Richard Kerwin
+unit	4569	name	03f0bdbe4ae24382	Charles Seaton
+unit	4570	name	dcad4538974aec0c	Sydney Upton
+unit	4571	name	a6820e42a2fb6058	Morley Bates
+unit	4572	name	5f3f68f239d7ffdc	Silas Zimmer
+unit	4573	name	7eef953582ed13d5	Armand Cromwell
+unit	4574	name	6cdb60490ba50f02	Lizbeth Cromwell
+unit	4575	name	5c9099b08413fd16	Hannah Akeley
+unit	4576	name	e15d5179b084e6ac	Josef Gregorian
+unit	4577	name	56014b248a1d5626	Millie Gregorian
+unit	4578	name	9748aa396c3a1d28	Josephine Lister
+unit	4579	name	95dd9f0a387c156c	[UNUSED] Alexander Lister
+unit	4580	name	13b31ad8848e7dff	Lucille Castleton
+unit	4581	name	67d495627a69c55d	Salazar Bloch
+unit	4585	name	3ff00252573653cc	Ezekiel Graves
+unit	4586	name	27a0e346a349e8ae	Graham Van Talen
+unit	4587	name	f3299b346a469d89	Elizabeth Van Talen
+unit	4588	name	92bf766049c246b1	Arthur Moore
+unit	4589	name	8f0a161e5bcf19c0	Joseph Moore
+unit	4590	name	8cc8a182a6b15191	Jonathan Chambers
+unit	4591	name	71dd092f55cedc0a	Mary Edras
+unit	4592	name	c5e8872313b6baf2	Nathaniel Steenwick
+unit	4593	name	0baa02af0ea501b5	Christoph Walker
+unit	4594	name	dfe2c2a9ffc020e5	Angela Curthas
+unit	4595	name	9885cb506a1d7dc1	Baltus Fowler
+unit	4596	name	9fa4d5b46cd94cfa	James Van Brunt
+unit	4597	name	f3d15eaac60207d3	Samuel Van Brunt
+unit	4598	name	a6b2f27ef643f6ab	Brom Killian
+unit	4599	name	ed9c7c448d00b756	Sarah Killian
+unit	4601	name	b02e4b98508bc74a	Francis Eliot
+unit	4602	name	f23080e395ddea5e	Benijah Fenner
+unit	4603	name	0697f1747abb0b0f	Nicholas Atwood
+unit	4604	name	c82806c0eca93a26	Abigail Sawyer
+unit	4605	name	c195455524eff2d8	Basil Frye
+unit	4606	name	ca8aeefc1a1ddc27	Aelthalyste
+unit	4610	name	bdbc964a591ec339	Algernon
+unit	4612	name	95888e15a8ed2667	Boyle
+unit	4613	name	2dd87b068339f567	Christopher Drakul
+unit	4614	name	cae0a0225f29607d	Martha Alliestar
+unit	4615	name	2b3776164261eb91	Katrina Alliestar
+unit	4616	name	6af1dc0b7aebca0c	Lavinia Crowe
+unit	4617	name	8807ee72fc69ca03	Thaddeus Webb
+unit	4619	name	20e16f89e97083a0	Geltharis
+unit	4620	name	6fdb16f3a61c80b8	Fobeed
+unit	4621	name	d402d525fd620769	Rebald Yorglun
+unit	4630	name	4642d38b6a9a1499	Pozzik
+unit	4706	name	024d3fb5afacbf0e	Razzeric
+unit	4707	name	e799a6eabc34f5c4	Zuzubee
+unit	4708	name	bcd7cb99882fe7e7	Shreev
+unit	4709	name	38ee3f42a395b515	Zamek
+unit	4730	name	55243f24e80ed0bd	Lelanai
+unit	4731	name	043f966829cff33a	Zachariah Post
+unit	4732	name	3e54dfb7ca2caf24	Randal Hunter
+unit	4752	name	f1750e2f86649b59	Kildar
+unit	4753	name	698d0295c2ca6a67	Jartsam
+unit	4773	name	ac1b1b26cf6a4a6c	Velma Warnam
+unit	4775	name	6d5a5a066b28f5c3	Felicia Doan
+unit	4794	name	9691be75a37cf40d	Morgan Stern
+unit	4829	name	0cc5e678ec8951fd	Aku'mai
+unit	4875	name	9c8f206b378a56e1	Turhaw
+unit	4877	name	69c7af445857dc8c	Jandia
+unit	4878	name	02a5b6a475f8d356	Montarr
+unit	4879	name	7d732d15257e7823	Ogg'marr
+unit	4881	name	f2b8b9bd3bc628e4	Varng
+unit	4882	name	5c021946b9854fa7	[UNUSED] Om'kan
+unit	4883	name	0a2ac879320ebf2e	Krak
+unit	4884	name	3b9c12f8abbe2064	Zulrg
+unit	4885	name	0c8c5166e940a8ff	Gregor MacVince
+unit	4886	name	99731dcdb5db7cca	Hans Weston
+unit	4887	name	5f98651a239f36cf	Ghamoo-ra
+unit	4888	name	058123d215c40f0d	Marie Holdston
+unit	4890	name	ca8f4c4a215cfdc9	Piter Verance
+unit	4891	name	95bcd075789c5942	Dwane Wertle
+unit	4892	name	e90a5acc70a3e85e	Jensen Farran
+unit	4894	name	ba95c7b26fe90eab	Craig Nollward
+unit	4896	name	d3a4e133e46af1e7	Charity Mipsy
+unit	4897	name	85916cf72f2aaae1	Helenia Olden
+unit	4899	name	a5d60bc67ef0755a	Uma Bartulm
+unit	4901	name	2c978edbfa0f9a7c	Sara Pierce
+unit	4902	name	4897e5f6a7584eba	Mikal Pierce
+unit	4926	name	0a2acf9f32107d78	Krog
+unit	4942	name	4d716345da743c07	Test Petition Giver
+unit	4942	subname	0b5c24b6f71d2077	Test
+unit	4943	name	52bf4a2b34e7eb3a	Mosarn
+unit	4949	name	b85b0ea0c9d9620c	Thrall
+unit	4953	name	61b4598786c481cc	Moccasin
+unit	4954	name	86cbe321dccb0002	Uttnar
+unit	4959	name	6011a53fcab2f10e	Jorgen
+unit	4963	name	e74726074f1ec932	Mikhail
+unit	4972	name	645ec1b3f7b5e29d	Kagoro
+unit	4974	name	089cbc734d80e908	Aldwin Laughlin
+unit	4976	name	eb1299b554816cdc	Elise Laughlin
+unit	4980	name	60ee906f90cb2d5f	Paval Reethe
+unit	4981	name	0aa301981c2a9919	Ben Trias
+unit	4982	name	b7f744a151435466	Thomas
+unit	4983	name	78a68fb273cc84ad	Ogron
+unit	5002	name	050b776b4d9c5221	World Boar Trainer
+unit	5006	name	98c6c0a5df8e97d8	World Demon Trainer
+unit	5007	name	00a9bd1c76868a00	World Felhunter Trainer
+unit	5007	subname	e7944cd23b32e4ee	UNUSED
+unit	5010	name	845e1d4f75fc85db	World Imp Trainer
+unit	5010	subname	e7944cd23b32e4ee	UNUSED
+unit	5014	name	2c8c6f14c79c642f	World Succubus Trainer
+unit	5014	subname	e7944cd23b32e4ee	UNUSED
+unit	5016	name	11dd3722e358a384	World Voidwalker Trainer
+unit	5016	subname	e7944cd23b32e4ee	UNUSED
+unit	5027	name	82c8b56051281c94	World Lockpicking Trainer
+unit	5029	name	6d5a098efc4a9d98	World Survival Trainer
+unit	5034	name	5069c0465f15de66	World Brewing Trainer
+unit	5035	name	d5cb7005d830650e	World Cartography Trainer
+unit	5039	name	1d382708e9a3aa99	World Tracking Trainer
+unit	5047	name	4998aad4cba68989	Ellaercia
+unit	5050	name	8529a8665c23dbd5	[UNUSED] Rallus
+unit	5051	name	4df525001c70b5c7	[UNUSED] Frewa
+unit	5052	name	76994ea67164711a	Edward Remington
+unit	5054	name	33e9d42c17828eae	Krumn
+unit	5061	name	42c1c0ea4a53fa79	World Guild Tabbard Vendor
+unit	5063	name	98a1cd358e09ac52	Pat's Test Kobold
+unit	5081	name	6904865566c73aa3	Connor Rivers
+unit	5082	name	8436e67d802eb459	Vincent Hyal
+unit	5087	name	70eb28327405b4fe	Do'gol
+unit	5088	name	4f2ae5b76a083dc6	Falgran Hastil
+unit	5089	name	453f84b847a4d702	Balos Jacken
+unit	5098	name	ba0fd07d9881f9ea	[UNUSED] Guffren Boulderbeard
+unit	5106	name	3d546fed93f3e717	Bromiir Ormsen
+unit	5109	name	9fb3584191c5439d	Myra Tyrngaarde
+unit	5110	name	be718c6d018ae006	Barim Jurgenstaad
+unit	5131	name	56a227ee34a6904a	[UNUSED] Kiren Tyrngaarde
+unit	5144	name	08f3b95c15ae6786	Bink
+unit	5152	name	1a13d422cf48d1a1	Bingus
+unit	5159	name	bec6d428cf2367ff	Daryl Riknussun
+unit	5160	name	35ed19e3982f264f	Emrul Riknussun
+unit	5173	name	4587002ba661adab	Alexander Calder
+unit	5188	name	eb6b109f2c0a0f81	Garyl
+unit	5189	name	b8604bd9193ecd14	Thrumn
+unit	5190	name	8ebf0bc9ad9278bf	Merill Pleasance
+unit	5192	name	9a57afccc39bc9da	[UNUSED] Nils Stonebrow
+unit	5193	name	8f50ebc639d90172	Rebecca Laughlin
+unit	5201	name	d90b74f68a537750	Pat's Test Human
+unit	5312	name	e2818ae1b549f149	Lethlas
+unit	5350	name	9c0697904c716bb8	Qirot
+unit	5353	name	d42a693d7322b4c6	Itharius
+unit	5355	name	4e9357aed4ad06b6	Blink (Reuse)
+unit	5391	name	84685dc608a15ea2	Galen Goodward
+unit	5398	name	044673a81ab18786	Warug
+unit	5400	name	67de2f08602e79c7	Zekkis
+unit	5402	name	a9d55f09bf36ff26	Khan Hratha
+unit	5405	name	8a77d7a55da67c99	Pinto
+unit	5406	name	9227561402c5c9f8	Palomino
+unit	5479	name	9922b97ead039346	Wu Shen
+unit	5480	name	a6017268fe1c5586	Ilsa Corbin
+unit	5482	name	7c589b94b4cbb855	Stephen Ryback
+unit	5483	name	7ccf260a7fbc2669	Erika Tate
+unit	5493	name	2f9c07b47d863b9d	Arnold Leland
+unit	5494	name	88038c2d4c3f76d7	Catherine Leland
+unit	5495	name	8a92f0263222f8fc	Ursula Deline
+unit	5496	name	7b74e60a2b788605	Sandahl
+unit	5498	name	9819318a49ef6d71	Elsharin
+unit	5501	name	8f83e32329f848c2	Kaerbrus
+unit	5502	name	d3e6e67d670ef777	Shylamiir
+unit	5503	name	0fd8e789f6f7be52	Eldraeith
+unit	5505	name	455bebe0abf1b800	Theridran
+unit	5506	name	1c2dc4bcaf9aa5df	Maldryn
+unit	5507	name	4b718196ff34adcd	Celmoridan
+unit	5543	name	a640c58cbbf19930	Clarice Foster
+unit	5544	name	2725aa211b37b002	[UNUSED] Yuriv Adhem
+unit	5546	name	b04a6f88e7240a2b	Grunt Zuul
+unit	5547	name	9113910020b3495e	Grunt Tharlak
+unit	5548	name	35b4f0510d6095e3	[PH] Mine Boss
+unit	5549	name	d424a470d799a841	[PH] Mine Guard
+unit	5550	name	f61a07e5c2a0f0d6	[PH] PVP Peasent
+unit	5551	name	854403ce1845b99d	[PH] Caravan Guard
+unit	5552	name	b1eecdf997dca66a	[PH] PVP Peon
+unit	5553	name	5582c6d0d1889ee8	[PH] Caravan Scout
+unit	5554	name	ce87c5a254022293	[PH] PVP Wildlife
+unit	5555	name	656e7162e7b21090	[PH] Ogre Caravan Packhorse
+unit	5556	name	db80d2c4e2d4b45a	[PH] Alliance Commander
+unit	5557	name	ecaaa09cd17a0d39	[PH] Horde Commander
+unit	5558	name	d9b7745b32b1a780	[PH] Alliance Guard
+unit	5559	name	2076d50a81c9ecd9	[PH] Horde Guard
+unit	5560	name	d98c518d5bb1881f	[PH] Alliance Raider
+unit	5561	name	0d7ac944d06ce9c1	[PH] Horde Raider
+unit	5562	name	4f5fa1da7e910acd	[PH] Alliance Archer
+unit	5563	name	834e198cf34c6c6f	[PH] Horde Archer
+unit	5564	name	340be2acfa4f7e3a	Simon Tanner
+unit	5565	name	a75f7865d518f2c8	Jillian Tanner
+unit	5566	name	3184ef5c66665c3c	Tannysa
+unit	5567	name	40a04e0427be7261	Sellandus
+unit	5587	name	a36578a74a2e78c5	[PH] Alliance Mine Boss
+unit	5588	name	f57a698a3707efa6	[PH] Alliance Mine Guard
+unit	5589	name	b48f467f38d3d1a4	[PH] Horde Mine Boss
+unit	5590	name	bddebf3ffc1de7db	[PH] Horde Mine Guard
+unit	5591	name	001200790dfe1408	Dar
+unit	5593	name	31a263b8afa197cc	Katar
+unit	5596	name	77c58976f23ab051	Twain Test Prop
+unit	5597	name	2df9767603f9618b	Grunt Komak
+unit	5600	name	139e351372f74914	Khan Dez'hepah
+unit	5601	name	67d27edabd2d5d44	Khan Jehn
+unit	5602	name	bf1765da25d7e30a	Khan Shaka
+unit	5603	name	51141f11b5e6d3ed	Grunt Mojka
+unit	5604	name	9c18357f91e3427c	[UNUSED] [PH] Orcish Barfly
+unit	5605	name	9ae3d5f80dd4a5fd	Tisa Martine
+unit	5606	name	09a0cf0cf087a23e	Goma
+unit	5607	name	ae5f3900501f7b49	Roger
+unit	5608	name	2012dc3cb4ee3d0e	Jamin
+unit	5609	name	0c28edc437aca8d3	Zazo
+unit	5610	name	5ca8eaed8f6e8131	Kozish
+unit	5613	name	68b9875c5e7832c8	Doyo'da
+unit	5614	name	be0f97519f06ca58	Sarok
+unit	5621	name	d0ae6a55d5575796	Timmy
+unit	5622	name	369f906c68117f61	Ongeku
+unit	5626	name	0a07b3dd98be7f6d	Joey
+unit	5627	name	5ebc7716606e61fe	Johnny
+unit	5632	name	9536fbb52acfe9f5	Theramore Incursion Master Control Program
+unit	5637	subname	776eb56fe0d1c17e	Reclaimers Inc.
+unit	5638	name	b0e48b394e45d7a1	Kreldig Ungor
+unit	5638	subname	776eb56fe0d1c17e	Reclaimers Inc.
+unit	5639	name	40280b8123b26f7f	Craven Drok
+unit	5640	name	a0d981484a9126c2	Keldran
+unit	5643	name	febfdf5abdd513b2	Tyranis Malem
+unit	5644	name	137557ced1848e00	Dalinda Malem
+unit	5651	name	6bc7c7928e5aef10	Patrick Garrett
+unit	5653	name	d2d2fcdda7dd554f	Tyler
+unit	5654	name	b60f4e0d4a26f094	Edward
+unit	5655	name	7fd2e836734a2c21	Robert Gossom
+unit	5656	name	460885a54df43d10	Richard Van Brunt
+unit	5657	name	d0d5c57baeba6bd9	Marla Fowler
+unit	5658	name	76a9b2a5799a6be9	Chloe Curthas
+unit	5663	name	2c199f5e59e982cc	Travist Bosk
+unit	5664	name	52aa23dd43bb8c64	Eldin Partridge
+unit	5665	name	cb1755e0b945e678	Alyssa Blaye
+unit	5667	name	83b4addaa594244e	Venya Marthand
+unit	5668	name	8b15fa9cc840e66a	Mattie Alred
+unit	5669	name	dfab4473c26d990b	Helena Atwood
+unit	5670	name	26eeed193c3508c6	Edrick Killian
+unit	5671	name	b21de4aa6eabd58f	[UNUSED] Lawrence Sawyer
+unit	5672	name	9d3579502762382d	[UNUSED] Charles Brewton
+unit	5675	name	426caabf205a74f6	Carendin Halgar
+unit	5678	name	6c82c61a7689feee	[UNUSED] Deathstalker Vincent DEBUG
+unit	5679	name	014bf12231981d97	Lysta Bancroft
+unit	5683	name	cf53c3ba3a84dd01	Comar Villard
+unit	5690	name	e6de7d10ab40f064	Clyde Kellen
+unit	5696	name	2cde3da9e73d564e	Gerard Abernathy
+unit	5697	name	74ab9196b1260c7a	Theresa
+unit	5699	name	8fb42e8a52b37c20	Leona Tharpe
+unit	5700	name	8904eccf4062df7e	Samantha Shackleton
+unit	5701	name	63ff376b25f87771	Selina Pickman
+unit	5702	name	9f402164613817f9	Jezelle Pruitt
+unit	5703	name	d18d953a1d758233	Winifred Kerwin
+unit	5704	name	36a235e67f0694d3	Adrian Bartlett
+unit	5705	name	cd5ebdbec275e613	Victor Bartholomew
+unit	5706	name	5f6aea625a929d6a	Davitt Hickson
+unit	5707	name	5e0dc300a6342346	Reginald Grimsford
+unit	5712	name	0c2c91186f3e9f13	Zolo
+unit	5713	name	77e75a9436a33216	Gasher
+unit	5714	name	0a4c55b0b39005df	Loro
+unit	5715	name	ffa4faacfb480706	Hukku
+unit	5717	name	55cd9ed4b1039170	Mijan
+unit	5718	name	3c78e5a175c9ac40	Rothos
+unit	5719	name	48552610d7cabd71	Morphaz
+unit	5722	name	74607a08ad78cc6e	Hazzas
+unit	5724	name	6a3a0d9ea258b4b3	Ageron Kargal
+unit	5744	name	3cacf636fde350a2	Cedric Stumpel
+unit	5745	name	2cce90e6f0fdd33c	Lazlow Ashby
+unit	5746	name	96016953e925cd59	Appolonia Kimble
+unit	5747	name	41545517d64f6f35	Hepzibah Sedgewick
+unit	5748	name	47780e624456f595	Killian Sanatha
+unit	5749	name	1906866e56cbcebc	Kayla Smithe
+unit	5750	name	ca8b2da8ce13674d	Gina Lang
+unit	5754	name	593910c70f6094c1	Zane Bradford
+unit	5757	name	44407441da0af82d	Lilly
+unit	5758	name	0b7fbe2e316b4758	Leo Sarn
+unit	5765	name	af32023debfbbb41	Ruzan
+unit	5767	name	579762ecb350cacc	Nalpak
+unit	5768	name	0958cf04a21ce8db	Ebru
+unit	5782	name	8d61685758c84bf7	Crildor
+unit	5784	name	2f3aee51618656b4	Waldor
+unit	5792	name	4c4be6f61e8e02e8	Drag Master Miglen
+unit	5796	name	00117c6f060e0c06	Ben
+unit	5800	name	8bbc5ccacd8d6306	Marcus Bel
+unit	5801	name	7ca017d33fab14a1	[PH] Party Bot
+unit	5810	name	e486ab404bc37d61	Uzzek
+unit	5811	name	6528e8d11091e647	Kamari
+unit	5812	name	0b60522936a09d47	Tumi
+unit	5813	name	fb26ba2619e464c9	[UNUSED] Shikar
+unit	5815	name	c4e83ef355bd960a	Kurgul
+unit	5816	name	31a267d1afa296d5	Katis
+unit	5817	name	bba53000af4c0ffb	Shimra
+unit	5818	name	5b443cf5e4c02290	[UNUSED] Tren'Shan
+unit	5819	name	fb7f53469e755c1d	Mirelle Tremayne
+unit	5820	name	694031573c771b76	Gillian Moore
+unit	5821	name	3b412b467fe7bec2	Sheldon Von Croy
+unit	5827	name	4249ca459705970b	Brontus
+unit	5865	name	b7d494e3fe805725	Dishu
+unit	5866	name	6dd9628aa46b4b1c	Equipment Squirrel
+unit	5867	name	865b79a1faa95525	Maximum Squirrel
+unit	5868	name	8032ddf2e3c99b6c	Evil Squirrel
+unit	5870	name	33e8426fffb117ee	Krond
+unit	5871	name	615a8a1a40ec4f99	Larhka
+unit	5876	name	e2187e4fa56b1cd6	[UNUSED] Grumol
+unit	5877	name	75451295a301ed49	[UNUSED] Yar'luk
+unit	5882	name	d8cdc6703a02c0ea	Pephredo
+unit	5883	name	095bf6ffd1c0f508	Enyo
+unit	5884	name	5b9910e797c3f284	Mai'ah
+unit	5885	name	b748c329a12ea0bd	Deino
+unit	5886	name	c0f68adf9effd6cf	Gwyn Farrow
+unit	5899	name	95eb475c11a10638	Brine
+unit	5900	name	c16e0781c218ab88	Telf Joolam
+unit	5903	subname	98c8cf4307ae2948	iCoke Redemption Vendor
+unit	5904	name	1d8b17d38fe5e99c	[UNUSED] Hurll Kans
+unit	5907	name	58e7ed66906930f5	Kranal Fiss
+unit	5908	name	a5402abc69467b5b	Grunt Dogran
+unit	5909	name	a5364d97d021b019	Cazul
+unit	5910	name	6d47ea12606e8610	Zankaja
+unit	5911	name	81613893e1ba791c	Grunt Logmar
+unit	5917	name	0d91eb041acd95bd	Clara Charles
+unit	5936	name	0ab3ffe167aecf04	Orca
+unit	5942	name	221059ddac7f3536	Zansoa
+unit	5943	name	ac8331b6d3f5fd45	Rawrk
+unit	5944	name	1c474a6d44526185	Yonada
+unit	5955	name	d17cbedf2db6d7f8	Tooga
+unit	5956	name	d5a156b79b2ee473	Graznab
+unit	5957	name	1a78edf9b20f8b2b	Birgitte Cranston
+unit	5958	name	d08e390d67b2809a	Thuul
+unit	5994	name	38f16be6d33ae039	Zayus
+unit	6014	name	326220e3642f2727	X'yera
+unit	6015	name	d17d8ea139a141a8	Torta
+unit	6018	name	595e620a8acbcc61	Ur'kyo
+unit	6026	name	95ea40df01c155e5	Breyk
+unit	6027	name	32b4d4141ae2172f	Kitha
+unit	6028	name	6918612f7839b00a	Burkrum
+unit	6032	name	30cf506ed867f82c	[UNUSED] Sharn
+unit	6034	name	0fbbc7d38a58ea62	Lotherias
+unit	6046	name	d5f2057d9f064f26	[UNUSED] Gozwin Vilesprocket
+unit	6067	name	74e808ceff5e5ef4	[UNUSED] Meritt Herrion
+unit	6089	name	1ca578b40493d274	Harry Burlguard
+unit	6090	name	46ad25003d8b6ee2	Bartleby
+unit	6091	name	98934313e83af5f4	Dellylah
+unit	6094	name	2d2369675d78467e	Byancie
+unit	6109	name	4330fcb384b972d5	Azuregos
+unit	6113	name	79ac8618a8693831	Vejrek
+unit	6121	name	75261419edd3c707	Remen Marcot
+unit	6140	name	0ec4d3b865503407	Hetaera
+unit	6142	name	a9224821b8d19265	Mathiel
+unit	6168	name	3bcd2197aeca638b	Roogug
+unit	6171	name	1eda275356555aa4	Duthorian Rall
+unit	6172	name	0692262afe56d163	Henze Faulk
+unit	6173	name	c06dad8c66c59efa	Gazin Tenorm
+unit	6174	name	c94ce42704d70594	Stephanie Turner
+unit	6175	name	0a50bb445cba268b	John Turner
+unit	6177	name	f2da758431b238a2	Narm Faulk
+unit	6181	name	bf58d6f9931aff24	Jordan Stilwell
+unit	6182	name	7635d05af7e1b0bc	Daphne Stilwell
+unit	6183	name	cac04641d51ba092	[UNUSED] Briton Kilras
+unit	6236	name	4c2655705ca48783	Klannoc Macleod
+unit	6243	name	c7f4a8f61c26a971	Gelihast
+unit	6245	name	47fc83178105deaa	Anathera
+unit	6246	name	8786a8631e9c556b	Latherion
+unit	6247	name	03970f1709cfc9c3	Doan Karhan
+unit	6251	name	057a017b9600ad11	Strahad Farsan
+unit	6269	name	46957206d767aebf	Azgalaril
+unit	6270	name	317890bcbdd91d7c	Asjorah
+unit	6286	name	22994a3bde26025a	Zarrin
+unit	6288	name	20160224e491c9b0	Jayla
+unit	6289	name	50377bb271493b2e	Rand Rhobart
+unit	6292	name	a4d9d0f252c3cd91	Eladriel
+unit	6293	name	d1b4671ca28c5970	Jorah Annison
+unit	6295	name	36522ea681687a76	Wilma Ranthal
+unit	6367	name	a387dd33f87af796	Donni Anthania
+unit	6373	name	04cd467d2ce8db9e	Dane Winslow
+unit	6387	name	b9049bb9afb3e718	Dranh
+unit	6408	name	eb7063df691533c9	Ula'elek
+unit	6411	name	2c2f61a4c6b70532	Velora Nitely
+unit	6446	name	74b10f5104831be6	Therzok
+unit	6466	name	eb69bc56182f7df4	Gamon
+unit	6467	name	e1e85fb2d4112e4e	Mennet Carkad
+unit	6494	name	cf9f5ec39db1a990	Tazan
+unit	6495	name	d3f5fe68a48abf50	Riznek
+unit	6496	name	53c4fa9f340f021e	Brivelthwerp
+unit	6497	name	a2c823cbc208e0a1	Astor Hadren
+unit	6522	name	86b11dc9cdd37115	Andron Gant
+unit	6526	name	3e81c821615b08a2	GOSSIP TEST DUDE
+unit	6546	name	5daa544ae6e61ccd	Tabetha
+unit	6548	name	322a08b0f1a2287b	Magus Tirth
+unit	6566	name	0f89b50c240e773e	Estelle Gendry
+unit	6567	name	f301f1b20fa7d79f	Ghok'kah
+unit	6568	name	cdefc8178a6a0a30	Vizzklick
+unit	6569	name	5b8e97ae37239f37	Gnoarn
+unit	6570	name	781cfb6869b972f9	Fenwick Thatros
+unit	6574	name	c8c9f3f5d0818d06	Jun'ha
+unit	6583	name	edb2f7469bd7b193	Gruff
+unit	6585	name	88a5a11eee907ac5	Uhk'loc
+unit	6607	name	734bfc022278cc68	Harroc
+unit	6648	name	f69cd92373123581	Antilos
+unit	6707	name	7aec558bf9543196	Fahrad
+unit	6726	name	b616ca43919d7674	Thalon
+unit	6729	name	dcf10524e73276ad	Morridune
+unit	6730	name	834971151a40cd3f	Jinky Twizzlefixxit
+unit	6732	name	f1f14b773737d9ff	Amie Pierce
+unit	6749	name	095cfcf1e1a08572	Erma
+unit	6767	name	77c6e6c2c5063725	Garona
+unit	6769	name	7e6cb07ebaa1e2fa	[UNUSED] Ravenholdt Falconer
+unit	6770	name	3ce156199e19fd63	[UNUSED] Ravenholdt Houndmaster
+unit	6775	name	44a9b29818167f26	Antur Fallow
+unit	6780	name	20ca60c89faa7961	Porthannius
+unit	6781	name	098927c48b1a9787	Melarith
+unit	6783	name	16458bd7f9a5d4a3	[UNUSED] Lorek Belm
+unit	6784	name	ed790f5547df2344	Calvin Montague
+unit	6785	name	c1657c6f51c864b2	Ratslin Maime
+unit	6786	name	0b8002799c562b87	Ukor
+unit	6886	name	475182532b0a0cc3	Onin MacHammar
+unit	6887	name	2760455bc0b2d1ee	Yalda
+unit	6906	name	8c72b331f325d501	Baelog
+unit	6908	name	0ab26caa4fdcf8c1	Olaf
+unit	6910	name	7756431e4894164f	Revelosh
+unit	6926	name	2cfdb2339a46fa2e	Test Satyr
+unit	6931	name	b05ea6bffc48fafd	Respawn Test Mob
+unit	6931	subname	0de01f3afc248974	Free Bug 001
+unit	6966	name	be6a849766207b26	Lucius
+unit	6986	name	5b14479f0abf866d	Dran Droffers
+unit	6987	name	93c584fe8a4f5bb3	Malton Droffers
+unit	7007	name	33d3a1a26d5d5d6e	Tiev Mordune
+unit	7009	name	97d718d7109a8ac3	Arantir
+unit	7087	name	44b2231f07d1da72	Killian Hagey
+unit	7088	name	d08e3a0b67b2c054	Thuwd
+unit	7089	name	33344a32551dfe8c	Mooranta
+unit	7104	name	f160ef840b9123f6	Dessecus
+unit	7137	name	2bedf5a1a8483c2f	Immolatus
+unit	7167	name	8b451f27a624ae46	Polly
+unit	7168	name	8b451f27a624ae46	Polly
+unit	7170	name	4f5dd246af50b814	Thragomm
+unit	7186	name	0000004100000041	A
+unit	7208	name	6826d428bca5853f	Noarm
+unit	7236	name	a009a79b5bfbbc66	Test Anubisath
+unit	7236	subname	e902250766814308	I am a test, don't bug me
+unit	7273	name	020c88eb807d8159	Gahz'rilla
+unit	7293	name	2ad8ad4b4ebae79a	[UNUSED] Drayl
+unit	7294	name	0573f43f1e10691f	Shim'la
+unit	7295	name	b13aea1c724c9152	Shailiea
+unit	7296	name	7f72063a781ed2f1	Corand
+unit	7297	name	f73befc914ed7754	Gothard Winslow
+unit	7311	name	829fd028cdc40680	Uthel'nay
+unit	7312	name	09385492307e4f95	Dink
+unit	7314	name	8260e56125cd2dd9	Test BattleMaster
+unit	7323	name	8d10936c0226f0f6	Winstone Wolfe
+unit	7355	name	9e9b096d5e8cfe81	Tuten'kash
+unit	7361	name	31792e4a941fcb24	Grubbis
 unit	7389	name	69a9f0c616d7d9b5	Senegal
+unit	7406	name	ad1b4d1dbd970581	Oglethorpe Obnoticus
+unit	7485	name	3a953027a36af4c2	Nargatt
+unit	7488	name	909fed54e3ed930c	Haka'wani
+unit	7525	name	1678e37f24c3a848	World Leatherworking Dragonscale Trainer
+unit	7528	name	08544e6dab8c8890	World Leatherworking Tribal Trainer
+unit	7624	name	a1319be50f107f42	Test Death Knight
+unit	7643	name	d3dcf7c6539e147f	Bengor
+unit	7734	name	2eaf3728dfc97104	Ilifar
+unit	7766	name	e2c643d9b72e56c2	Tyrion
+unit	7777	name	3093c0ece35e6573	Rok Orhan
+unit	7780	name	d247c632e9d123b0	Rin'ji
+unit	7783	name	b60ce987497592d4	Loramus Thalipedes
+unit	7790	name	96a914fdae6eb9d2	Orokk Omosh
+unit	7793	name	000028e50009d6e7	Ox
+unit	7794	name	89551943826fc363	McGavan
+unit	7797	name	a5f22e3d84250112	Ruuzlu
+unit	7852	name	72c22cedff12810c	Pratt McGrubben
+unit	7866	name	d14166a4010c80be	Peter Galen
+unit	7868	name	9f61f70c6ed1b949	Sarah Tanner
+unit	7876	name	862f6956a0e183c7	Tran'rek
+unit	7881	name	8f1743db6ebfdfc5	Stoley
+unit	7898	name	a32b9226925ba532	Pirate treasure trigger mob
+unit	7904	name	201040e88d3c56be	Jacob
+unit	7938	name	c8a2aec2ed853acb	Test Auctioneer
+unit	7940	name	2c8a4ef7295fce5e	Darnall
+unit	7942	name	d6f14e78af7cb440	Faralorn
+unit	7943	name	7559c69717e386c9	Harklane
+unit	7945	name	077f1a46ae30d5b9	Savanne
+unit	7946	name	29b6f39c8b6abc04	Brannock
+unit	7947	name	6ca45773d8cc210d	Vivianna
 unit	7952	name	56a1fda1de334526	Zjolnir
+unit	7977	name	e4cbb48ad20e0d77	Gammerita
+unit	8020	name	0b3aa342759eb6fb	Shyn
+unit	8118	name	942373556347a325	Lillian Singh
+unit	8119	name	ae150639dbd7f817	Zikkel
+unit	8124	name	d874d94082a4c1d4	Qizzik
+unit	8127	name	fba9cdfabd571b88	Antu'sul
+unit	8128	name	daea1587ac78328c	Pikkle
+unit	8137	name	03436b76cea0d85d	Gikkix
+unit	8139	name	682b83faaf876533	Jabbey
+unit	8143	name	5f3c1ccce47c55f9	Loorana
+unit	8146	name	0015b5384594462f	Ruw
+unit	8148	name	04473b3a2699f326	Waurg
+unit	8150	name	95c65c46df47b80b	Janet Hommers
+unit	8152	name	734aefed1297bd73	Harnor
+unit	8157	name	b6f53640b41a37ce	Logannas
+unit	8158	name	95ecd99829729cc4	Bronk
+unit	8160	name	675caa69a3c8e22f	Nioma
+unit	8161	name	fe66879fb9b2ae9b	Harggan
+unit	8176	name	0160976bccf56c86	Gharash
+unit	8177	name	46776f3959c83a56	Rartar
+unit	8196	name	e0e5ebd373b1c7a0	Occulus
+unit	8215	name	b8b3d2bc64137c76	Grimungous
+unit	8277	name	6bafc890f6810bd3	Rekk'tilac
+unit	8278	name	58495a3f53fe8ab2	Smoldar
+unit	8280	name	7ef65896e2fed6ca	Shleipnarr
+unit	8281	name	be4fbd5e7659d2ec	Scald
+unit	8303	name	331986237c737f9c	Grunter
+unit	8305	name	f315f3bb76aab576	Kixxle
+unit	8306	name	b96d59c873b59d7d	Duhng
+unit	8308	name	be73fdc8f80597f6	Alenndaar Lapidaar
+unit	8309	name	934b3831372c8178	Carlo Aurelius
+unit	8316	name	01325033192cacff	Paladin 10 Alternate
+unit	8320	name	c0122366e81e16d1	Sprok
+unit	8321	name	5a36c1f6cd6d4e54	Paladin 20 Alternate
+unit	8322	name	b33b33b981adefba	Paladin 30 Alternate
+unit	8323	name	0c3fa58135ee9120	Paladin 40 Alternate
+unit	8356	name	02d8cf5478e295fd	Chesmu
+unit	8357	name	84a1211f3da59f86	Atepa
+unit	8358	name	09c0836b563e2f8e	Hewa
+unit	8359	name	830470c58ce4e069	Ahanu
+unit	8360	name	095b69bdc9ceaf32	Elki
+unit	8361	name	a620ea855a9b2e19	Chepi
+unit	8362	name	344ff7f7b3d29e7e	Kuruk
+unit	8364	name	8964a32de67e709e	Pakwa
+unit	8378	name	af391c6836269d2c	Alexandra Blazen
+unit	8381	name	66b8d66fa425216f	Lindros
+unit	8382	name	77b32caa2f9c3426	Patrick Mills
+unit	8398	name	cc81d42a01dd2c26	Ohanko
+unit	8399	name	fdac7c8ecdf3fab3	Nyrill
+unit	8400	name	457f97afeb908e58	Obsidion
+unit	8401	name	fcf73014f321d971	Halpa
+unit	8403	name	a44c4cd911d9917c	Jeremiah Payson
+unit	8404	name	55d0de447d05bf48	Xan'tish
+unit	8405	name	bd7e92aa8dd0d614	Ogtinc
+unit	8420	name	edc55df83c080c84	Kim'jael
+unit	8421	name	7af86dc6e96b7a3b	Dorius
+unit	8439	name	a828f9e2c43e2b6d	Nilith Lokrav
+unit	8441	name	0b1680e2cc6d087c	Raze
+unit	8447	name	a6ae507dcfbefa87	Clunk
+unit	8498	name	97e06c34917f81de	TEST Uber Night Elf
+unit	8499	name	ead469c4b0a13a5f	TEST Uber Succubus
+unit	8500	name	124f1b0204fd5580	TEST Uber Abomination
+unit	8501	name	204b2bcdfadba51c	TEST Uber Crypt Fiend
+unit	8502	name	9838f23e52e466ea	TEST Uber Human
+unit	8507	name	d2d34504abd6d7da	Tymor
+unit	8508	name	f98f90c26a7f882d	Gretta Ganter
+unit	8516	name	c11661d6003e8184	Belnistrasz
+unit	8549	name	502614a8f3d7de58	[UNUSED] Acolyte
+unit	8578	name	0298ba9c99ca0eb4	Magus Rimtori
+unit	8579	name	0c90d1ab67456928	Yeh'kinya
+unit	8580	name	20d2f84494af95d9	Atal'alarion
+unit	8582	name	63f899465b64b3dd	Kadrak
+unit	8584	name	723d6aa9accfe208	Iverron
+unit	8587	name	aea8cea161cb651f	Jediga
+unit	8609	name	14f8bd5ef045c293	Alexandra Constantine
+unit	8610	name	33e8460dffb1f71e	Kroum
+unit	8611	name	645a30db0834f321	Idol Room Spawner
+unit	8613	name	7b3467601245000e	Ozzie
+unit	8617	name	47a405b7b48401b4	Zalashji
+unit	8659	name	78d58eef81ca5b46	Jes'rimon
+unit	8662	name	091ea8177cfc6c5e	Idol Oven Fire Target
+unit	8665	name	795c51fbe9f52866	Shylenai
+unit	8696	name	4fb5dfe093ee61f8	Henry Stern
+unit	8737	name	ed3fcc4c0e88874c	Linken
+unit	8756	name	47678e6a379fe687	Raytaf
+unit	8757	name	786c006d69b4c263	Shahiar
+unit	8758	name	38ee3d39a3953594	Zaman
+unit	8767	name	1b3aa55329f4bb04	Sah'rhee
+unit	8777	name	4f081686038bf90c	Seinrick Coulthane
+unit	8796	name	8120ec8a7d9d04a3	Swimming Murloc Test
+unit	8878	name	bc5a962dccb131fa	Muuran
+unit	8934	name	e32281e9708131c6	Christopher Hewen
+unit	8935	name	6315771d2c2e2f0b	Paladin 20 AlternateHighDamage
+unit	8962	name	fee76aee85e0efd9	Hilary
+unit	8965	name	befb47103962f5cf	Shawn
+unit	8976	name	93e8c38c88725079	Hematos
+unit	8978	name	5090216e93986943	Thauris Balgarr
+unit	8979	name	f053096246180623	Gruklash
+unit	9028	name	62123354c2276bf4	Grizzle
+unit	9031	name	5651aa54e1a21351	Anub'shiah
+unit	9042	name	f341eb927164da1d	Verek
+unit	9047	name	209c5197ee8551e3	Jenal
+unit	9076	name	ec57bda1d643ad64	Ghede
+unit	9080	name	29426c65727ea888	Lexlort
+unit	9086	name	a383896d14dd1406	Grunt Gargal
+unit	9099	name	c05243e8bf6fc0d0	Sraaz
+unit	9117	name	bb2eefa68fce1f19	J.D. Collie
+unit	9118	name	615acf3c44e512eb	Larion
+unit	9119	name	babc159e0027d75d	Muigin
+unit	9176	name	371d1969958e1ba1	Gor'tesh
+unit	9177	name	79556a03785d6024	Oralius
+unit	9179	name	f6c847cc0696d9b1	Jazzrik
+unit	9180	name	c848b0632b2034f9	World Event Generator
+unit	9238	name	1bc60243da4ad954	Quentin
+unit	9273	name	1dca97874fd613b0	Petra Grossen
+unit	9274	name	350fca80fde042a8	Dadanga
+unit	9296	name	e1f36bcd30122caf	Milly Osworth
+unit	9299	name	b2afc2584df339df	Gaeriyan
+unit	9453	name	a2e8e5f33465dfd3	Aquementas
+unit	9454	name	8b4de2be28bbf9aa	Xavathras
+unit	9459	name	3c7e18d17fc5d89c	Cyrus Therepentous
+unit	9518	name	91b43c1fb0abd52f	Rakaiah
+unit	9520	name	f4017ef8b4933e54	Grark Lorkrub
+unit	9549	name	83edba9a269528e5	Borand
+unit	9550	name	3c288d35f54bd8c9	Furmund
+unit	9551	name	c096e7c5da41c6c4	Starn
+unit	9552	name	220ba4c4650ad147	Zanara
+unit	9553	name	21b26108c3951965	Nadia Vernon
+unit	9555	name	b1e7c3bac2f00056	Mu'uta
+unit	9557	name	3652bd13edfd7b46	[UNUSED] dun garok test
+unit	9561	name	ce710c10ee00671a	Jalinda Sprig
+unit	9564	name	a4f0ad303e74078f	Frezza
+unit	9566	name	8f9a83db194212f6	Zapetta
+unit	9567	name	04025617d36b16ba	Test Stable Master
+unit	9577	name	8e65325f2b5d0347	[UNUSED] Gorilla Test
+unit	9584	name	2a2c39646df678a1	Jalane Ayrole
+unit	9598	name	08d3c275abffb654	Arei
+unit	9604	name	64924a0284f01361	Gorgon'och
+unit	9617	name	962c2e224ff8181c	[UNUSED] Eyan Mulcom
+unit	9622	name	d9617daf17c1a7e8	U'cha
+unit	9636	name	f85be26e2404ed77	Kireena
+unit	9659	name	908cdbbe58824fcd	Unkillable Test Dummy
+unit	9677	name	44c67e7c33d469c6	Ograbisi
+unit	9678	name	4779da33e2b80815	Shill Dinger
+unit	9679	name	7057e209523032c1	Tobias Seecher
+unit	9681	name	001392b725cfaa96	Jaz
+unit	9684	name	aa77cb9a747d7e32	Lar'korwi
+unit	9686	name	def3f5a3b5d5cfb9	[PH] TESTTAUREN
+unit	9702	name	edb2fd6f9bd93024	Grurk
+unit	9703	name	9e2e41d64774981f	Il'thurk
+unit	9704	name	bfc4af801bd2d0e3	Lumurk
+unit	9796	name	76f6f64254d2c294	Galgar
+unit	9820	name	aebe7cca612d1908	[UNUSED] [PH] Cheese Servant Floh
+unit	9837	name	bab0d28a24028b5d	Lithilia
+unit	9860	name	be0e01ff87347482	Salia
+unit	9861	name	569cc849154eba57	Moora
+unit	9876	name	8b419079fb4ec419	Locheed
+unit	9916	name	6926a3e2228414d7	Jarquia
+unit	9938	name	5b66d46e92d90eeb	Magmus
+unit	9976	name	a7e227457dcd6ef7	Tharlidun
+unit	9977	name	ed70d1251d097ef8	Sylista
+unit	9978	name	7663fa03dac8e011	Wesley
+unit	9979	name	828fb54ca19b9995	Sarah Goode
+unit	9981	name	bf2032f8ee7d8f4b	Sikwa
+unit	9982	name	89ee9e312805ed3f	Penny
+unit	9983	name	a2dce1ad9f93fbc7	Kelsuwa
+unit	9985	name	0cb1d1490d6a79ce	Laziphus
+unit	9987	name	827a2962ad4668ab	Shoja'my
+unit	9988	name	bc028f06a31c1e34	Xon'cha
+unit	9990	name	51b39282f5cc08d1	Lanti'gah
+unit	9996	name	8a753b71f417ce8d	Winna Hazzard
+unit	9998	name	0747a10d95d5c531	Shizzle
+unit	9999	name	ad933da01b79dd22	Ringo
+unit	10000	name	bd7b065531d2d179	Arugal
+unit	10044	name	4cea57cf3a95362f	[PH] Alex's Raid Testing Peon
+unit	10045	name	3218dede07514180	Kirk Maxwell
+unit	10047	name	5ad9717357ca4de7	Michael
+unit	10048	name	bdfb1c1518fc30e6	Gereck
+unit	10049	name	b890e265a481a374	Hekkru
+unit	10050	name	86fb898a0a9ca97e	Seikwa
+unit	10051	name	45713708b45d6cc6	Seriadne
+unit	10052	name	050afb8383ffc802	Maluressian
+unit	10053	name	c717cb267cb8b92e	Anya Maulray
+unit	10054	name	ec76a60f5321cc84	Bulrug
+unit	10055	name	64aa5827b5a7a27c	Morganus
+unit	10056	name	b3689411e6700eb1	Alassin
+unit	10057	name	7f70e2bd3bbed827	Theodore Mont Claire
+unit	10058	name	edaecde25c5533d3	Greth
+unit	10059	name	a6a1adb798c6ff0a	Antarius
+unit	10062	name	89282209f17130bd	Steven Black
+unit	10063	name	dd47fe5673662028	Reggifuz
+unit	10082	name	8b0735c01d759183	Zerillis
+unit	10085	name	b1d55039335df7de	Jaelysia
+unit	10088	name	0c589bea4ffd2f53	Xao'tsu
+unit	10089	name	175826a8aaf9534c	Silvaria
+unit	10119	name	378d38b6724f9a98	Volchan
+unit	10156	name	5dc04aadfe28df9c	Scott's Test Dummy
+unit	10156	subname	7e69961dfa81b6b9	TEST, Don't BUG
+unit	10176	name	b4edfc37e6d428a6	Kaltunk
+unit	10182	name	8d7d264335c2ff73	Rexxar
+unit	10184	name	390dfde3a4cd6f76	Onyxia
+unit	10200	name	ff9392ce89487f02	Rak'shiri
+unit	10202	name	d393a1942901cca5	Azurous
+unit	10203	name	713d0c9bf66c66be	Berylgos
+unit	10204	name	55cffdadd4bed253	Misha
+unit	10216	name	dd25b418ddf013af	Gubber Blump
+unit	10220	name	977cb1a561a389ac	Halycon
+unit	10236	name	0016fc2e596b9add	Wep
+unit	10237	name	00178760615d612b	Yor
+unit	10238	name	427cbf66a6d1fdef	Staggon
+unit	10239	name	42d0677fc42c48e4	Tepolar
+unit	10256	name	47e16c65eee2cc25	[UNUSED] World Weapon Master Trainer
+unit	10257	name	94b6d0851cf1d59e	Bijou
+unit	10260	name	f02020752017b09a	Kibler
+unit	10262	name	0ab383175fc08566	Opus
+unit	10265	name	6bf4659d0b2af0e2	UNUSED [PH] Flamewreath Guard
+unit	10266	name	edcd3364df204c27	Ug'thok
+unit	10291	name	49ab6740d455b2e4	Krysteea
+unit	10296	name	32c8948e51e56021	Vaelan
+unit	10300	name	06ebf00f58e7a135	Ranshalla
+unit	10302	name	8df8fc3764f6d325	Krakle
+unit	10339	name	09a37102183b2707	Gyth
+unit	10356	name	93a850a1ed3e0daf	Bayne
+unit	10359	name	a437cf196af5a4cf	Sri'skulk
+unit	10362	name	c5e978c0cead3db2	[UNUSED] Gethuxxuz
+unit	10365	name	f1534cd506ec9ba2	[UNUSED] Yillixa
+unit	10368	name	c5baf83b8b1fdcfd	[UNUSED] Dat'xus
+unit	10370	name	66e6fb1f9853ce3c	[UNUSED] Xur'gyl
+unit	10373	name	d5c2d7b54606fdc1	Xabraxxis
+unit	10377	name	0012492611f7b677	Elu
+unit	10393	name	0b3b6a4f818702b8	Skul
+unit	10401	name	5d4c9697cc419818	[UNUSED] Thuzadin Shadow Lord
+unit	10402	name	fe5b9ca87098f484	[UNUSED] Cannibal Wight
+unit	10403	name	a00d6af3510e8760	[UNUSED] Devouring Wight
+unit	10404	name	f9499ab68bfed6bb	[UNUSED] Fetid Wight
+unit	10432	name	78bcf525d284118e	Vectus
+unit	10437	name	088268272a1dddf4	Nerub'enkan
+unit	10443	name	8385fd7f3b46ac4f	[UNUSED] Gustav Montague
+unit	10444	name	60bf7e124a8dbcb8	[UNUSED] Mallory Welsh
+unit	10445	name	0d9f8c2b967818a3	Selina Dourman
+unit	10446	name	93c3bd43c52cd9e8	[UNUSED] Elliott Jacks
+unit	10448	name	edc4229f56508390	[UNUSED] Rachael Vaccar
+unit	10449	name	be0eaf706efb8d36	Emily Vaccar
+unit	10450	name	9b1a436a3541aa2f	[UNUSED] Paul Burges
+unit	10451	name	1dc438a42e95545e	Sarah Arello
+unit	10456	name	7ac687004a4f114d	Prynne
+unit	10459	name	d627186f33569bb6	Rend on Drake Visual
+unit	10503	name	80596f41a4116f13	Jandice Barov
+unit	10538	name	3cd45c1cda0ba1d5	Vaelastrasz
+unit	10540	name	2f83928c55e3ef2d	Vol'jin
 unit	10578	name	231933ee6547aa70	Bom'bay
+unit	10579	name	e27cb4b19ce0c9ba	Kirtonos the Herald (Spell Visual)
+unit	10582	subname	0b3ae2ad79961b8c	Sire
+unit	10583	name	edb40369abb8c096	Gryfe
+unit	10607	name	2f5a8329f3147750	[UNUSED] Siralnaya
+unit	10610	name	83d3d830f5270e41	Angus
+unit	10620	name	ca21f62d7462d46b	TEST NPC - DBUCKLER
+unit	10639	name	cf0d63bbfa9edfb2	Rorgish Jowl
+unit	10642	name	ecb1b14409fba98d	Eck'alom
+unit	10648	name	8efda1fd6a022f27	Xavaric
+unit	10666	name	ed4b445de7b6ca78	Gordo
+unit	10718	name	786e5bb98d6f2427	Shahram
+unit	10736	name	db439b5ac998e4a0	Unkillable Test Dummy 60 Mage
+unit	10737	name	e75213da8cea7769	Shy-Rotam
+unit	10740	name	85073b38d9f351aa	Awbee
+unit	10741	name	d4fe14385fe18618	Sian-Rotam
+unit	10776	name	cd69ed5f22ae1611	Finkle Einhorn
+unit	10799	name	300ba358dda177a6	Warosh
+unit	10806	name	638ce3f47db737dd	Ursius
+unit	10807	name	bd4b336b1e827d28	Brumeran
+unit	10810	name	1ef210dd8d98ec78	[UNUSED] Deathcaller Majestis
+unit	10813	name	4b0fbe3373efc17f	Balnazzar
+unit	10882	name	23d8ed72144ac1f0	Arikara
+unit	10897	name	d4aca819c1fc63c3	Sindrayl
+unit	10917	name	f1bdd0cc2e4d78e8	Aurius
+unit	10918	name	450fd277424ae845	Lorax
+unit	10929	name	fcf72a7af3207acd	Haleh
+unit	10942	name	66d4834b7e0ae073	Nessy
+unit	10945	name	553a0c36276f2522	Davil Crokford
+unit	10976	name	b19b776488b9be70	Jeziba
+unit	10977	name	6354efb7ebe56e8d	Quixxil
+unit	10978	name	fd5cd34561d0a8e6	Legacki
+unit	11017	name	3d064983eaecf920	Roxxik
+unit	11018	name	fc9af7e433972696	Arko'narin
+unit	11022	name	1bd70404a05c21ce	Alexi Barov
+unit	11023	name	582698b4fb11a709	Weldon Barov
+unit	11024	name	b7498b30ad172c30	Della
+unit	11025	name	b0f5ea9b2f6e72b0	Mukdrak
+unit	11031	name	9f3890d0d58744b1	Franklin Lloyd
+unit	11033	name	eced339dc61433ea	Smokey LaRue
+unit	11037	name	0ffe5ff0f2d3802f	Jenna Lemkenilli
+unit	11045	name	96548b8cdd93441d	Burns
+unit	11046	name	05375c0d0471ff13	Whuut
+unit	11047	name	0a2ac887320ebf3c	Kray
+unit	11048	name	1c09aa73e3bcc6a0	Victor Ward
+unit	11049	name	dad6c8ccdf83b159	Rhiannon Davis
+unit	11050	name	8bc890911c033ced	Trianna
+unit	11051	name	0ba17fcb1dd39602	Vhan
+unit	11052	name	357fbdde1ed71ce1	Timothy Worthington
+unit	11058	name	f4834bda6bc62ad8	Fras Siabi
+unit	11066	name	0a05dc807cf42590	Jhag
+unit	11067	name	3d371410a4d5f57e	Malcomb Wynn
+unit	11068	name	403e08b12f47d267	Betty Quin
+unit	11073	name	76562ec4f815633e	Annora
+unit	11074	name	da571d31f811340a	Hgarth
+unit	11080	name	e0631554ac70110d	[PH[ Combat Tester
+unit	11081	name	2b4adbce587b52fe	Faldron
+unit	11083	name	730260b7a48e6473	Darianna
+unit	11084	name	0b5b1809e73bf18c	Tarn
+unit	11096	name	9d73e1358f4f3fb3	Randal Worth
+unit	11104	name	1feca7b99411f147	Shelgrayn
+unit	11105	name	823a446f74079dec	Aboda
+unit	11117	name	c79e779dd8891251	Awenasa
+unit	11119	name	2a87b77f0b718e97	Azzleby
+unit	11137	name	15874ce0e45aebc7	Xai'ander
+unit	11138	name	a25028e4230f8b3e	Maethrya
+unit	11139	name	84ade53ce37651d5	Yugrek
+unit	11140	name	095a1577b5f41da8	Egan
+unit	11179	name	b19ec90d2e6348cb	Crystal Trigger
+unit	11181	name	bdf4306eb5c6a694	Shi'alune
+unit	11182	name	8255642f109898d4	Nixxrak
+unit	11183	name	7a8a0eef5d519c2c	Blixxrak
+unit	11184	name	dc9dada612e3d742	Wixxrak
+unit	11187	name	ff0cd84c42eaf1fe	Himmik
+unit	11189	name	00156bf5419a83cc	Qia
+unit	11192	name	f178b8a8bdf84fe2	Kilram
+unit	11216	name	0caac2501c80d941	Eva Sarkhoff
+unit	11217	name	50c15cfd0b392905	Lucien Sarkhoff
+unit	11282	name	5544f285835547cf	Melia
+unit	11283	name	be0e472c8b2d37df	Sammy
+unit	11285	name	0b1a275c03ffbe27	Rory
+unit	11316	name	f041a5bf4109f156	Joseph Dirte
 unit	11326	name	ec56d1b70891da62	Mini Diablo
 unit	11327	name	67eb028653b866a3	Zergling
+unit	11337	name	81229d62bb4b379e	[UNUSED] Hakkar Axe Thrower
+unit	11341	name	fab34d6f82387fb7	[UNUSED] Hakkar Berserker
+unit	11342	name	2fb4a30e81055ee4	[UNUSED] Hakkar Warrior
+unit	11343	name	2ee8651d48679cd2	[UNUSED] Hakkar Warlord
+unit	11344	name	c7dd389d46dcca3f	[UNUSED] Hakkar Blood Drinker
+unit	11345	name	5da47b929a745c53	[UNUSED] Hakkar Headhunter
+unit	11349	name	c1edcc664102059e	[UNUSED] Gurubashi Hideskinner
+unit	11354	name	2ff693753e4d4096	[UNUSED] Gurubashi Warlord
+unit	11358	name	40c2d1eed8a4612e	[UNUSED] Daughter of Hakkar
+unit	11364	name	b01dbaa505ad1555	[UNUSED] Zulian Tigress
+unit	11366	name	d4a09a001387451a	[UNUSED] Zulian Matriarch
+unit	11367	name	31e254cfce9b2857	[UNUSED] Zulian Patriarch
+unit	11369	name	fa4d48e2fe4ca498	[UNUSED] Hidden Bloodseeker
+unit	11375	name	45b35448c49967bc	[UNUSED] Zath
+unit	11376	name	d334ed757750f4e6	[UNUSED] Lor'khan
+unit	11377	name	8f49963e444fd1f5	[UNUSED] Hak'tharr the Mindhunter
+unit	11379	name	0f2f8504e65c6e17	[UNUSED] Nik'reesh
+unit	11381	name	001396c325d0a992	Jin
+unit	11384	name	7c6e440d61c64ca2	[UNUSED] Elder T'kashra
+unit	11385	name	328285faccbbd949	[UNUSED] Mogwhi the Ruthless
+unit	11386	name	a6fb9113d8a6d188	[UNUSED] Janook the Bladefury
+unit	11392	name	b21980ea1a02894c	Audrey Vergara
+unit	11393	name	df87b815996b0f0b	Josh Miller
+unit	11394	name	1b2d1625dadc7986	Lauren Preston
+unit	11395	name	6cfa59354b658280	Kevin Faulder
+unit	11396	name	662b37d23060877f	Joelle McCarthy
+unit	11397	name	38d2991664ba2ceb	Nara Meideros
+unit	11399	name	e98517985a840a96	Ashlyn Vor'lair
+unit	11400	name	feb6ff4efb0d7a07	Ann'rimor Falchi
+unit	11403	name	3e5ac5dc698fda9c	Russle Hochstein
+unit	11404	name	578be445d2144f35	Dillon Gregor
+unit	11407	name	d799bbd619dd1d9e	Var'jun
+unit	11408	name	0446f61f22a12fdb	Watna
+unit	11409	name	21e0c2b25aba2f91	Jo'bu
+unit	11410	name	dca88ee625a3f924	Shal'vol
+unit	11412	name	aca525584a87dad8	Danielle Koppen
+unit	11413	name	cc1dcb8133bebcac	Vincent Wilfork
+unit	11414	name	302293e909b02593	Nicole Tarlow
+unit	11415	name	5c01853a9523f1df	Amber Provost
+unit	11416	name	9a3ef8f08f087888	Thomas Brady
+unit	11447	name	3de9f95730b91394	Mushgog
+unit	11449	name	6c94cabb8d16d6f8	[UNUSED] Gordok Battle Mage
+unit	11463	name	3fe955ca1b8d1c66	[UNUSED] Warpwood Scrabbler
+unit	11467	name	522ef2b9069fa4ed	Tsu'zee
+unit	11468	name	1d020ed20e4c10a4	[UNUSED] Eldreth Lichling
+unit	11478	name	4477cd29a8c66e5b	[UNUSED] Mana Beast
+unit	11481	name	4b38aab50f8f3ec9	[UNUSED] Arcane Terror
+unit	11493	name	eb3fc55ee852b3fd	[UNUSED] Sentius
+unit	11494	name	81b9ec05aceccacc	Alzinn Trigger
+unit	11495	name	4197965c73420b71	[UNUSED] Avidus
+unit	11496	name	80a5f32af2096aef	Immol'thar
+unit	11499	name	2eecdb11a2a85b8f	[UNUSED] Commander Gormaul
+unit	11500	name	723e63057734aba7	[UNUSED] Majordomo Bagrosh
 unit	11502	name	844de3baf9d81549	Ragnaros
+unit	11519	name	8aaa46ee0ba9fa46	Bazzalan
+unit	11537	name	23a8d6d8c09f686f	TEST GEAR PALADIN
+unit	11538	name	80267a1cc8fdbfff	TEST GEAR WARRIOR
+unit	11539	name	7f9699a27cd68959	TEST GEAR HUNTER
+unit	11540	name	857b94407f44f689	TEST GEAR MAGE
+unit	11541	name	7f5a3485905e1fc5	TEST GEAR WARLOCK
+unit	11542	name	b28c494ffab5406e	TEST GEAR DRUID
+unit	11543	name	6853cf3261c6a0ba	TEST GEAR SHAMAN
+unit	11544	name	2660694d6dd25d4e	TEST GEAR PRIEST
+unit	11545	name	a7e1b4984bbe26f7	TEST GEAR ROGUE
+unit	11546	name	199739ae765f6643	Jack Sterling
+unit	11548	name	da4f674d5e9f1a99	Loh'atu
+unit	11549	name	782fdbebeda575f8	Austin Burwell
+unit	11550	name	64413381a8687cd0	Taylor Burwell
+unit	11554	name	9febbb3e5a5c2333	Grazle
+unit	11556	name	be0e0076873414df	Salfa
+unit	11557	name	d6a770e9b857e56d	Meilosh
+unit	11558	name	ac0ea65f82dd5ac7	Kernda
+unit	11583	name	9be0db101747436c	Nefarian
+unit	11597	name	7556eb0537c6b444	Cheveyo
+unit	11599	name	873d296aea5add59	Irondeep Geomancer UNUSED
+unit	11601	name	84481638a92f8c0a	Irondeep Cave Lurker UNUSED
+unit	11615	name	e7e555693e1afdf6	Mickey Levine
+unit	11616	name	ab9952a0e066db41	Nathaniel Dumah
+unit	11657	name	47cdc5d7bdf5074a	Morloch
+unit	11660	name	0bade17aebaa23b8	[UNUSED] Molten Colossus
+unit	11670	name	6486268e7ef49468	[UNUSED] Flame Shrieker
+unit	11699	name	a79a1e04cdf740fe	Varian Wrynn
+unit	11701	name	3e90b158bcba5b15	Mor'vek
+unit	11702	name	84e55a2a7a5ce5e2	Arin'sor
+unit	11706	name	08d01d1a746d4095	Adon
+unit	11707	name	eef1307221617ccf	Joy Ar'nareth
+unit	11710	name	6137cf39959a23d0	Mirador
+unit	11715	name	8430f8e803c87bf9	Talendria
+unit	11750	name	049189da737617ad	Ganoosh
+unit	11751	name	6c5c484b0ec941ff	Rilan Howard
+unit	11752	name	152abe43e67d2ca0	Blaise Montgomery
+unit	11753	name	09a0cc08f086e306	Gogo
+unit	11756	name	9d9fdefac9965a62	Quinn
+unit	11758	name	326cef6b36aa959c	Andi Lynn
+unit	11799	name	e98e4f7aa0aaffc6	Tajarri
+unit	11800	name	44ae2ea9715d4a16	Silva Fil'naveth
+unit	11801	name	53da4216524e48a9	Rabine Saturna
+unit	11814	name	6defabcbcebc64bc	Kali Remik
+unit	11815	name	2a45c100a519eeeb	Voriya
+unit	11816	name	ae5eb6087be44772	Una Ji'ro
+unit	11817	name	b99cbaa6cd7f49f8	Krah'ranik
+unit	11818	name	bf9940519ff4138c	Orik'ando
+unit	11819	name	5d88162d008e2de2	Jory Zaga
+unit	11820	name	b15433254f52d21c	Locke Okarr
+unit	11824	name	7e23e3ec219a4f1d	Erik Felixe
+unit	11825	name	4350a1fdc07666a7	Paige Felixe
+unit	11826	name	790b1ab4b8be2887	Kristy Grant
+unit	11827	name	7a18d18fdd1d1c2d	Kimberly Grant
+unit	11828	name	ed29b17bad9c035a	Kelly Grant
+unit	11829	name	7aec5592f954319d	Fahrak
+unit	11833	name	5d0e46524391a1d3	Rahauro
+unit	11835	name	3d7fa80cd5d45bb2	Theodore Griffs
+unit	11861	name	cc9feab2b5fe483a	Mor'rogal
+unit	11862	name	e8fc488f4aecd9f1	Tsunaman
+unit	11863	name	40ecce28fd983de9	Azore Aldamort
+unit	11867	name	3bf6862d0c5a1ec6	Woo Ping
+unit	11868	name	be116c88bad0a497	Sayoc
+unit	11869	name	f063da09e117a28b	Ansekhwa
+unit	11870	name	64515a97bdb52665	Archibald
+unit	11874	name	0ef65fcca3275fec	Masat T'andr
+unit	11884	name	0014e25639a91d2b	Obi
+unit	11899	name	ba940b3357e4043e	Shardi
+unit	11900	name	4c2083739a3de2f6	Brakkar
+unit	11901	name	74fff1647def05e3	Andruk
+unit	11902	name	832782d9263480cc	Aiden
+unit	11903	name	2e812005767a2eea	Alexander
+unit	11904	name	0a90e82cce5dcff6	Noah
+unit	11905	name	6010da18bec9a647	Jordan
+unit	11906	name	3773f7b191b2c6d6	Sophia
+unit	11907	name	517c8c2e08003caa	Alanna
+unit	11908	name	55cfb716d0c5af72	Mirah
+unit	11909	name	ac50df0fd1745a2f	Penelope
+unit	11916	name	3fb54abba0e61679	Imelda
+unit	11919	name	1d0ea75f70e128bb	Claudia
+unit	11920	name	c9dc472cb9c74fdc	Goggeroc
+unit	11921	name	479f4be5a501b3f7	Besseleth
+unit	11926	name	bda8172be5e5c544	[PH] Northshire Gift Dispenser
+unit	11939	name	e2c27190be35bed5	Umber
+unit	11940	name	3a3c145ef687fd28	Merissa Stilwell
+unit	11943	name	54ba6be639dbe52a	Magga
+unit	11945	name	c2d847c1c6aefca1	Claire Willower
+unit	11959	name	e89ba71ee69ba391	[UNUSED] Obsidian Watcher
+unit	11978	name	792c421f907d86d7	[NOT USED] Neltharion
+unit	11979	name	31dbef7d0b2567fd	Kim Bridenbecker
+unit	11980	name	65d6b4a190cb2521	[NOT USED] Zuluhed the Whacked
+unit	11982	name	1d84edfb984b0538	Magmadar
+unit	11994	name	6648fc8d78a03b43	Rob Bridenbecker
+unit	11996	name	36d1312c82becd6b	Ashley Bridenbecker
+unit	12019	name	8537ec2ab0a73ad6	Dargon
+unit	12023	name	92b8d3afab931ccd	Kharedon
+unit	12024	name	a2482402c1a96243	Meliri
+unit	12025	name	5c14b0b3799a759b	Malvor
+unit	12026	name	1ba7b88c84c8411f	My'lanna
+unit	12027	name	0b60512536a05d87	Tukk
+unit	12029	name	1d717c463aa89ff6	Narianna
+unit	12030	name	54bbc2544db6f654	Malux
+unit	12033	name	06f2e7590efc841a	Wulan
+unit	12034	name	5a649de5573077b0	Koiter
+unit	12037	name	2a94ef12b7dc3ec7	Ursol'lok
+unit	12038	name	35ded13c9613667c	[UNUSED] Aerie Peak Cooking Supplies
+unit	12042	name	b6f1ceca807ec700	Loganaar
+unit	12043	name	c41e97b244d09b56	Kulwia
+unit	12057	name	099d272eb8f48d26	Garr
+unit	12118	name	907091b80b723759	Lucifron
+unit	12121	name	b9049a29afb3876e	Draka
+unit	12122	name	b96ff8b19b6862f4	Duros
+unit	12180	name	5849482b6755c2ae	Anubisath
+unit	12198	name	94e56d7e52d23fec	Martin Lindsey
+unit	12259	name	947dd112de5eee6b	Gehennas
+unit	12264	name	dd869d481f484321	Shazzrah
+unit	12317	name	6358b9d83425af89	Unkillable Test Dummy 60 Low AC
+unit	12339	name	188da4bc7625f51e	Demetria
+unit	12383	name	fd337dbba9b194b4	Nibbles
+unit	12386	name	964f04dcae662e28	Magus Kyara
+unit	12417	name	c2d648db43c5fea1	[NOT USED] Death Talon Whelp
+unit	12421	name	3238f6709e1f2e54	[NOT USED] Blackwing Assassin
+unit	12430	name	8743f2b08dc6e36c	Grunt Kor'ja
+unit	12434	name	dc5cdd6259584ffa	Monster Generator (Blackwing)
+unit	12462	name	b6c44b92d8878f47	[NOT USED] Blackwing Warlord
+unit	12466	name	93cead7f5b0ce757	[NOT USED] Death Talon Scalebane
+unit	12469	name	fc034685e96d67c6	[NOT USED] Death Talon Earthshaker
+unit	12470	name	32db537ebc7f81b1	[NOT USED] Death Talon Firetongue
+unit	12480	name	5ce4c1fb54d50640	Melris Malagan
+unit	12481	name	89994ebe40fde575	Justine Demalier
+unit	12516	name	9a51bae57e11beeb	TEST Resist Gear
+unit	12517	name	25635fb2e8c2aed0	TEST Potions and Enchantments
+unit	12577	name	867544f8cf1a6dd7	Jarrodenus
+unit	12578	name	5a6e27bf8be712f0	Mishellena
+unit	12580	name	bc997e651e1b2e61	Reginald Windsor
+unit	12616	name	f61f103f027bddd3	Vhulgra
+unit	12636	name	04953a0f20fbbeaf	Georgia
+unit	12656	name	fe6bd7095e880bef	Thamarian
+unit	12657	name	aca140a8705329e6	Don Pompa
+unit	12658	name	57f2b945a66f06c6	Adam Lind
+unit	12677	name	66143339232ce51f	Shadumbra
+unit	12678	name	95086be966107d75	Ursangous
+unit	12716	name	8efa0d54126dc891	Decedra Willham
+unit	12719	name	87c550613133ffe5	Marukai
+unit	12720	name	f5eba2674a91beb0	Framnali
+unit	12721	name	86c12861883bca26	Mitsuwa
+unit	12723	name	ca3ee022f9cbf8b5	Har'alen
+unit	12724	name	8a7a6e4f855743f1	Pixel
+unit	12736	name	2bde3927415ebe4d	Je'neu Sancrea
+unit	12740	name	0688377ec7beb4d5	Faustron
+unit	12741	name	d135930cb45740d6	Warrior 40 (More Leash)
+unit	12757	name	3eb03683f7fde884	Karang Amakkar
+unit	12758	name	a71f84a5f51609e7	Onyxia Trigger
+unit	12776	name	ff3b78912b5ec42a	Hraug
+unit	12797	name	ae464fae863ac783	Grunt Korf
+unit	12798	name	8f7410268705e10e	Grunt Bek'rah
+unit	12800	name	91d167708740be3b	Chimaerok
+unit	12804	name	bdb673869d47bb9a	[PH] TEST Fire God
+unit	12807	name	1ae683aa2130de65	Greshka
+unit	12857	name	416c216dee0bc3bb	Elogit
+unit	12858	name	d17d86fe399f6383	Torek
+unit	12867	name	c84f29265cec37e7	Kuray'bin
+unit	12899	name	26ade740099681f2	Axtroz
+unit	12900	name	370ea74c014dffec	Somnus
+unit	12902	name	3f771380d28b136e	Lorgus Jett
+unit	12916	name	469414f1debbf641	Unkillable Test Dummy 60 Low Magic Resistances
+unit	12917	name	e25a559aaac78bea	Unkillable Test Dummy 60 High Magic Resistances
+unit	12919	name	959591ab4cdd320d	Nat Pagle
+unit	12941	name	0d3a868daaf27619	Jase Farlane
+unit	12942	name	e7358e043f74d66f	Leonard Porter
+unit	12959	name	9e99b2825bb01f1d	Nergal
+unit	12960	name	704b36d71d3cac8d	Christi Galvanis
+unit	12997	name	569c865e1156b670	Monty
+unit	12999	name	ec24343af6a76d3b	Blackwing Trigger
+unit	13018	name	675cf09ca7c1e54e	Nipsy
+unit	13056	name	2ef049fb0a7ad4ea	test spirit healer (DND)
+unit	13078	name	fec5b4d84700131e	Umi Thorson
+unit	13079	name	aa52463e6c672d51	Keetar
+unit	13082	name	1ecc07938044a481	Milton Beats
+unit	13156	name	7864809c40fd9d0a	Carrosh
+unit	13157	name	3b5bceab68aba7b2	Makasgar
+unit	13159	name	d05bc1ca5e81bde7	James Clark
+unit	13177	name	30a61bb1de7342f9	Vahgruk
+unit	13219	name	e609c423c9d159ad	Jekyll Flandring
+unit	13277	name	20f2780b01326b49	Dahne Pierce
+unit	13281	name	dc8b6241593ca2a4	Furis
+unit	13282	name	676cd5cbd619f1b5	Noxxion
+unit	13339	name	2edc43a662e6fe5f	Warrior 60
+unit	13476	name	69dba615d0a4952b	Balai Lok'Wein
+unit	13477	name	a125c2eb2e08bc4b	Noxxion Trigger
+unit	13656	name	bbaab926789c7088	Willow
+unit	13697	name	eb5d61047be1452d	Cavindra
+unit	13699	name	1bde8aeb7dc1566b	Selendra
+unit	13738	name	0ba0bd5011ec6925	Veng
+unit	13739	name	1c3db951b2582943	Maraudos
+unit	13740	name	54ba718739dd43d5	Magra
+unit	13741	name	099e3039c8d4dcdd	Gelk
+unit	13742	name	0a2a04ff26275296	Kolk
+unit	13756	name	ea8db2cfab50f905	PvP Graveyard Credit Marker
+unit	13778	name	56f6e4a5a002e61c	PvP Tower Credit Marker
+unit	13796	name	3e26bcd96cd430e4	PvP Mine Credit Marker
+unit	13798	name	21f4ede68c66f048	Jotek
+unit	13856	name	2ad590414c5ca365	Alliance Res Fixer
+unit	13856	subname	d7e3368eb171d5c3	Click me to clear res effects
+unit	13857	name	0ba1dbe92d4f431e	Horde Res Fixer
+unit	13857	subname	d7e3368eb171d5c3	Click me to clear res effects
+unit	13876	name	21ac9e0b821a04a2	Mekgineer Trigger
+unit	14018	name	48a8c441f6e101e2	Rezrelek
+unit	14026	name	d47e3c0133ea4e84	Trigger Guse
+unit	14027	name	1d174d5cfdba521d	Trigger Mulverick
+unit	14028	name	5ccb390b3f27cdad	Trigger Jeztor
+unit	14029	name	3bc02f7622ae637a	Trigger Ichman
+unit	14030	name	8a5697b2ece16b71	Trigger Slidore
+unit	14031	name	6bdd4810f35d48d1	Trigger Vipore
+unit	14041	name	71cfc36fe3560710	Haggle
 unit	14042	name	ec002e740f288ce2	Rytama
 unit	14143	name	b308b4553000c8ae	Ar'lia
+unit	14144	name	3d7eb954e902bb29	Taroen
+unit	14145	name	6045fc8b3c4c8910	Ja'ker
+unit	14146	name	e3722e51c0c3bd1d	Urrul
+unit	14147	name	5718aa4755f4aeaf	Lorael
+unit	14148	name	a4dae487f4f2f2ee	Fre'an
+unit	14161	name	65d46ac4d3992ad8	Karana
+unit	14162	name	c91ad3f09825df27	RaidMage
+unit	14162	subname	5af1b2409d6b2066	100FR Arcane
+unit	14181	name	82661bceffccdd19	[PH] Graveyard Herald
+unit	14187	name	dcf4b9c630920fe2	Athramanis
+unit	14201	name	baf9bd1d6bcff3eb	[UNUSED] Sid Stuco
+unit	14222	name	845b752a12f3898a	Araga
+unit	14224	name	076e09b3479fbd3e	7:XT
+unit	14226	name	31a225c6abaa92ce	Kaskk
+unit	14227	name	a012e081daa27368	Hissperak
+unit	14232	name	09363e5f10bcb11a	Dart
+unit	14234	name	fcfa970826bd2a70	Hayoc
+unit	14242	name	7ecb5618827687e6	[UNUSED] Sulhasa
+unit	14270	name	b0c5621c5440a59b	Squiddic
+unit	14301	name	859fac7fa7cdb4c9	Brinna Valanaar
+unit	14306	name	72decbf839603b4d	Eskhandar
+unit	14307	name	c2f781ea1b716a1f	Black Drakonid Spawner
+unit	14308	name	da668d1a82be80f2	Ferra
+unit	14309	name	a861f0a53f767afa	Red Drakonid Spawner
+unit	14310	name	a5ee2a627da80751	Green Drakonid Spawner
+unit	14311	name	9e1a2a37095848f9	Bronze Drakonid Spawner
+unit	14312	name	637490e6c4e878dc	Blue Drakonid Spawner
+unit	14327	name	c9b46de3af27a71b	Lethtendris
+unit	14344	name	78ddf49bafad8d38	Mongress
+unit	14349	name	db2da30db766abf1	Pimgib
+unit	14354	name	27479318324e529d	Pusillin
+unit	14391	name	2da7e0a744032300	Dire Maul Reaver Post
+unit	14422	name	b452d68e503d05d2	BRD Trigger
+unit	14427	name	251fa8843850786d	Gibblesnik
+unit	14428	name	63d41a6dc039062b	Uruson
+unit	14432	name	959291350b381873	Threggil
+unit	14433	name	d1eb8ef609cd0cc8	Sludginn
+unit	14443	name	b032b50005c9635f	Doomguard Tap Trigger
+unit	14446	name	0824f867156cfc60	Fingat
+unit	14447	name	9b2e2d43dce644f6	Gilmorian
+unit	14449	name	13201d64273a9ab8	Blackwing Orb Trigger
+unit	14467	name	74e5e42213f8ab05	Kroshius
+unit	14470	name	1021977382cd3816	Impsy
+unit	14471	name	be9950c5dc9662ba	Setis
+unit	14472	name	d58186d8ddfb60e1	Gretheer
+unit	14473	name	af8ebf225dc13703	Lapress
+unit	14474	name	0c2c941c6f3f5e4b	Zora
+unit	14475	name	bd9a1365027fb78a	Rex Ashil
+unit	14476	name	27620891e209fe39	Krellack
+unit	14477	name	536be09ef6e285ea	Grubthor
+unit	14478	name	cbcd7c813e40f79e	Huricanian
+unit	14487	name	4d0c3d3981c74542	Gluggle
+unit	14488	name	3b6847d9265267b4	Roloch
+unit	14490	name	ad93c83f236b837f	Rippa
+unit	14491	name	c3a477a1896acc78	Kurmokk
+unit	14492	name	3f6ecc58ff6a6ec6	Verifonix
+unit	14493	name	6c6e2b806948e767	Priest Epic Event Caller
+unit	14495	name	2e0de4ff90d28cc1	Invisible Trigger One
+unit	14497	name	d3f4340a4552c7ed	Shellene
+unit	14498	name	3c9141999096b7c4	Tosamina
+unit	14500	name	875fdd42ba836795	J'eevee
+unit	14501	name	1bd25ee3a508fd8f	Warlock Mount Ritual Mob Type 3, Infernal (DND)
+unit	14508	name	abc623c077c87d0c	Short John Mithril
+unit	14522	name	595c80826efef501	Ur'dan
+unit	14523	name	d17df6d4f7f04111	Ulathek
+unit	14606	name	7dfbc27bcb0ecd37	Drakonid Corpse Trigger
+unit	14641	name	e16943dbac1cad05	[PH] Horde spell thrower
+unit	14642	name	54363a572c8b5fb7	[PH] Alliance Spell thrower
+unit	14643	name	4dcc2b7594ba8971	[PH] Alliance Herald
+unit	14644	name	81baa3270975eb24	[PH] Horde Herald
+unit	14646	name	a7cce01bf0e3b6d8	Stratholme Trigger
+unit	14685	name	529d4127ab789a93	Morbus
+unit	14690	name	15ba3905e06f2c88	Revanchion
+unit	14692	name	832da4a816d30649	Wollstonecraft
+unit	14699	name	67c68b6eed2745a4	Spectral Soldier UNUSED
+unit	14706	name	290a611c202e4f70	Skeletal Shocktrooper UNUSED
+unit	14711	name	09c3b45016a7b906	Plagued Eater UNUSED
+unit	14719	name	4e5458320c748d70	[PH] Alliance Tower Lieutenant
+unit	14722	name	0c53c17feb8cd0c9	Clavicus Knavingham
+unit	14724	name	3c685edb8c5fd96a	Bubulo Acerbus
+unit	14727	name	796487fe59fefe34	Vehena
+unit	14729	name	344b4822226a58e1	Ralston Farnsley
+unit	14731	name	0a48ab277bfc5146	Lard
+unit	14732	name	4b7ae5a560442102	PvP CTF Credit Marker
+unit	14735	name	663d5620d3dc2610	ggoodman's flag tester
+unit	14738	name	e3000589583245f8	Otho Moji'ko
+unit	14746	name	c36ed2dd302220ad	[PH] Horde Tower Lieutenant
+unit	14754	name	c7a78276d4c27c9a	Kelm Hargunth
+unit	14801	name	5b4be71413b132a0	Wild Polymorph Target
+unit	14822	name	be116872bacfa591	Sayge
+unit	14824	name	4fca5e74020e2211	GGOODMAN
+unit	14827	name	96548e93dd940358	Burth
+unit	14830	name	8c1b83542cda273b	Unkillable Test Dummy 60 Warrior
+unit	14831	name	e95d3e1ee7ee0a78	Unkillable Test Dummy 63 Warrior
+unit	14832	name	39848abc7903ae22	Kerri Hicks
+unit	14834	name	725a006b28d587a5	Hakkar
+unit	14841	name	a3f91861ed31bee9	Rinling
+unit	14844	name	f3a043fbd98c8653	Sylannia
+unit	14846	name	441b483d20f8da11	Lhara
+unit	14847	name	307ae09e52dd4f5f	Professor Thaddeus Paleo
+unit	14850	name	09a19c49fc716c93	Gruk
+unit	14852	name	d08d6cdf5bc8f610	Throk
+unit	14853	name	0b5ec2801ecfa624	Torg
+unit	14854	name	0a265a82ee939df8	Kall
+unit	14855	name	093638b110bb5262	Dagg
+unit	14856	name	0a6ea45640f839b6	Mott
+unit	14857	name	00124c2e11f875b3	Erk
+unit	14858	name	8bacce765a44b635	Progk
+unit	14860	name	097db65457366382	Flik
+unit	14865	name	1a0681a951c89083	Felinni
+unit	14868	name	8cbbad436c60a41b	Hornsley
+unit	14870	name	4cfbd94476c7a619	Stoneclaw Totem TEST
+unit	14871	name	569d8d4c21368692	Morja
+unit	14872	name	0b5f8a162ab811c8	Trok
+unit	14873	name	0ab22f3d4be613a6	Okla
+unit	14874	name	0a265d9dee945d47	Karu
+unit	14875	name	df8c1db3d3ed4f04	Molthor
+unit	14877	name	c63dea5037160bdf	High Priest Venoxis Transform Visual
+unit	14885	name	7006df44aee26638	[PH] Jon LeCraft
+unit	14885	subname	ca11572bf36d9c1c	Designer Extraordinaire
+unit	14887	name	79d7f4d559920c03	Ysondre
+unit	14888	name	a7d600add766b514	Lethon
+unit	14889	name	c7c99d7654e4b08c	Emeriss
+unit	14890	name	3bc18f88c6a3a282	Taerar
+unit	14906	name	70c09230b4dfd330	Test Guy
+unit	14908	name	0a6e9da240f69b3c	Mogg
+unit	14909	name	8b45e7a7b20d5990	Pooka
+unit	14910	name	158a41d078787e7a	Exzhal
+unit	14913	name	bd0b44295add58e3	TEST DUDE
+unit	14941	name	b7f485b6de622086	High Priestess Jeklik Transform Visual
+unit	14966	name	06019356ffffb294	High Priest Thekal Transform Visual
+unit	14967	name	f1437d14dc49b6f1	High Priestess Mar'li Transform Visual
+unit	14968	name	240ce730d96b659b	High Priestess Arlokk Transform Visual
+unit	14981	name	59c88166716e83c5	Elfarran
+unit	14982	name	d014c524774559bd	Lylandris
+unit	14988	name	78c5f4c0d587d113	Ohgan
+unit	14994	name	7bd84a8ac2ba70a5	Zandalarian Event Generator
+unit	15001	name	22cf490ba5c5fcd6	PvP A-Mid Credit Marker
+unit	15002	name	44905993deed6555	PvP Mid Credit Marker
+unit	15003	name	89985c4d4ee3224b	PvP H-Mid Credit Marker
+unit	15004	name	bab5d53e061019f7	PvP ALT-S Credit Marker
+unit	15005	name	0282f989d867e00e	PvP ALT-N Credit Marker
+unit	15012	name	d0266cc0180d7004	Javnir Nashak
+unit	15047	name	665c14cc5d8b32dd	Gurubashi
+unit	15065	name	0a48a4127bfa930d	Lady
+unit	15066	name	0916cb7baefe07e3	Cleo
+unit	15070	name	281c7173bd3d4de3	Vinchaxa
+unit	15073	name	8efd29e57e91b592	Pat's Hellfire Guy
+unit	15078	name	0a040de8612be9b6	Jang
+unit	15081	name	56ef5c06b1deb98a	Gri'lek
+unit	15082	name	56ef5c06b1deb98a	Gri'lek
+unit	15083	name	a66b455472516c50	Hazza'rah
+unit	15084	name	560bcb1d7447b488	Renataki
+unit	15085	name	2cc62744115b4ee8	Wushoolay
+unit	15109	name	01ea2609cca4cb0b	Primal Blessing Visual
+unit	15114	name	00faa1a21d2e48be	Gahz'ranka
+unit	15116	name	6072a289e5bc033a	Grinkle
+unit	15119	name	8e323964393f8f54	Barrus
+unit	15123	name	db4fa44ef5d2d67e	[PH] Kris Zierhut
+unit	15123	subname	ca11572bf36d9c1c	Designer Extraordinaire
+unit	15126	name	41e6136caace4ab6	Rutherford Twing
+unit	15127	name	f350010d3eba819e	Samuel Hawke
+unit	15131	name	9b79f721e3358b58	Qeeju
+unit	15133	name	52a2d0ee78ce789e	Killable Test Dummy 60 Warrior
+unit	15134	name	3836d0d0c3ebdfc2	Outlands Test Dummy Warrior 70
+unit	15140	name	4b960d8e23d11569	Pat's Splash Guy
+unit	15142	name	3836d04dc3ebbfe1	Outlands Test Dummy Warrior 60
+unit	15143	name	3836d050c3ebbfe4	Outlands Test Dummy Warrior 63
+unit	15144	name	3836d052c3ebbfe6	Outlands Test Dummy Warrior 65
+unit	15145	name	3836d054c3ebbfe8	Outlands Test Dummy Warrior 67
+unit	15151	name	3836cfcfc3eba005	Outlands Test Dummy Warrior 55
+unit	15152	name	3836cfd0c3eba006	Outlands Test Dummy Warrior 56
+unit	15153	name	3836cfd1c3eba007	Outlands Test Dummy Warrior 57
+unit	15154	name	3836cfd2c3eba008	Outlands Test Dummy Warrior 58
+unit	15155	name	3836cfd3c3eba009	Outlands Test Dummy Warrior 59
+unit	15156	name	3836d04ec3ebbfe2	Outlands Test Dummy Warrior 61
+unit	15157	name	3836d04fc3ebbfe3	Outlands Test Dummy Warrior 62
+unit	15158	name	3836d051c3ebbfe5	Outlands Test Dummy Warrior 64
+unit	15159	name	3836d053c3ebbfe7	Outlands Test Dummy Warrior 66
+unit	15160	name	3836d055c3ebbfe9	Outlands Test Dummy Warrior 68
+unit	15161	name	3836d056c3ebbfea	Outlands Test Dummy Warrior 69
+unit	15164	name	195f958fdba4db71	Mulgore Trigger
+unit	15166	name	c6d65c48b767a18d	[PH] Luis Barriga
+unit	15167	name	0d483a7dafdcaaea	[PH] Luis Test NPC
+unit	15172	name	ece1ff281bc44cd2	Glibb
+unit	15173	name	3836cfcec3eba004	Outlands Test Dummy Warrior 54
+unit	15174	name	66a932ddc26faf8f	Calandrath
+unit	15176	name	348540816c55ef5f	Vargus
+unit	15179	name	e96eda7817330865	Mishta
+unit	15182	name	76d57443502a0ecf	Vish Kozus
+unit	15210	name	df910efa90fd39f9	Vulculon UNUSED
+unit	15214	name	b7cafaf7041bd5aa	Invisible Stalker
+unit	15218	name	cc91c5b0a1f8df01	Faire Cannon Trigger
+unit	15221	name	8eb54e3f40277692	Frankal Invisible Trigger
+unit	15222	name	bcd94175b2bc0e2b	Rutgar Invisible Trigger
+unit	15223	name	d9cfd242828cbb50	[PH] [UNUSED] Lord Inquisitor Opalezzix
+unit	15226	name	d4e1aebadcca7824	[UNUSED] Vekniss Builder
+unit	15227	name	06d450ac7af83a98	[UNUSED] Vekniss Hiveshaper
+unit	15228	name	9eb2c0c70b3011d0	[UNUSED] Vekniss Wellborer
+unit	15231	name	55cc7abbfe2b3e79	[UNUSED] Vekniss Patroller
+unit	15232	name	ba060b7b65ec5681	[UNUSED] Vekniss Eradicator
+unit	15234	name	402aa082abb3d235	[UNUSED] Vekniss Swarmer
+unit	15237	name	103691aafdbaf91f	[UNUSED] Vekniss Wrathstinger
+unit	15238	name	8f8f8801d7ab856c	[UNUSED] Vekniss Hive Reaver
+unit	15239	name	c5956d3e1555cbde	[UNUSED] Vekniss Hive Lurker
+unit	15241	name	6a9d35e29e7ac406	[UNUSED] Vekniss Crusher
+unit	15242	name	f8f84998126c02f9	[UNUSED] Vekniss Demolisher
+unit	15243	name	b7eab1063975412d	[UNUSED] Vekniss Wasprider
+unit	15244	name	4a6664f37fcc643b	[UNUSED] Vekniss Hive Raider
+unit	15245	name	f86ebc483a5a0a7c	[UNUSED] Vekniss Waspguard
+unit	15248	name	16f29af70ffd4435	[UNUSED] Qiraji Soulbender
+unit	15251	name	1b0dd90c8926ce17	[UNUSED] Qiraji Slaymaster
+unit	15253	name	15149789ac6a06c2	[UNUSED] Qiraji Champion
+unit	15254	name	376733ea3227f429	[UNUSED] Qiraji Captain
+unit	15255	name	e85b1f300c36d559	[UNUSED] Qiraji Officer
+unit	15256	name	7f5f7045208f475b	[UNUSED] Qiraji Commander
+unit	15257	name	080294f6134c546f	[UNUSED] Qiraji Honor Guard
+unit	15258	name	0ef8103ce78ad466	[UNUSED] Qiraji Praetor
+unit	15259	name	b5a4fc0dff2bfe5f	[UNUSED] Qiraji Imperator
+unit	15286	name	b3d2dcfb4f6ad1b2	Xil'xix
+unit	15288	name	11cf917591b283c2	Aluntir
+unit	15290	name	bace067c3595cee5	Arakis
+unit	15299	name	11d500d2ee3dfff2	Viscidus
+unit	15309	name	48e1394dff000bc1	Spoops
+unit	15310	name	b0ad2f00c6ac4c2e	Jesper
+unit	15322	name	16d68dc214cc1b8c	[UNUSED] Hive'Zara Ambusher
+unit	15326	name	dd848647ff2244a4	[UNUSED] Hive'Zara Swarmer
+unit	15329	name	cb6743a70dd99f8a	[UNUSED] Hive'Zara Scout
+unit	15330	name	d53086b81d15c704	[UNUSED] Sand Borer
+unit	15331	name	77cbb9193a08b366	[UNUSED] Dune Tunneler
+unit	15332	name	f8cb5869c0e67ef8	[UNUSED] Crystal Feeder
+unit	15337	name	59160764b59cba85	[UNUSED] Sand Mold
+unit	15340	name	0a6e9a9640f5dbfc	Moam
+unit	15342	name	87719fb37be18371	[UNUSED] Sphinx
+unit	15345	name	85e4a9acc15e76e9	[UNUSED] Daughter of Hecate
+unit	15346	name	bd5b2790ea04b9f4	[UNUSED] Qiraji Wasprider
+unit	15347	name	5c7ebc4ebc20033f	[UNUSED] Qiraji Wasplord
+unit	15348	name	ecddfb518904570a	Kurinnaxx
+unit	15349	name	30af1b5b54350ab4	RC Blimp <PH>
+unit	15354	name	be34f5cd8b850ca2	Rachelle Gothena
+unit	15364	name	dcbaa4eef500af64	RC Mortar Tank <PH>
+unit	15379	name	58b20d28b1d856e8	Caelestrasz
+unit	15380	name	be0443f267745fec	Arygos
+unit	15384	name	7b89de35f5e95745	World Trigger
+unit	15393	name	28c4737bf5850932	[UNUSED] Ruins Qiraji Gladiator Named 7
+unit	15395	name	56c7be1a4717b7df	Nafien
+unit	15415	name	31866e1a3e2cbfa4	Southshore Stink Bomb Counter
+unit	15419	name	31a0d58997d1003d	Kania
+unit	15425	name	0830c0e3a6316cbc	Debug Point
+unit	15426	name	aacf5494d96f5fa9	Ahn'Qiraj Trigger
+unit	15454	name	df5286f5dbe45170	Anachronos Quest Trigger Invisible
+unit	15460	name	ae8741f069775aa8	Grunt Maug
+unit	15472	name	d4c350d3ced7c2a2	[UNUSED] Deep Ooze
+unit	15502	name	e41c6306a90e0fc5	Andorgos
+unit	15503	name	c44b2cfe8335cb70	Kandrostrasz
+unit	15504	name	93aa5a30ce093f1f	Vethsera
+unit	15506	name	8adc62f13487f3f7	Stewvul
+unit	15507	name	dbae475006a3623d	Buru the Gorger Transform Visual
+unit	15517	name	0ab4d0b773997884	Ouro
+unit	15520	name	c1556f92a77249d5	O'Reily
+unit	15544	name	0016b92255735719	Vem
+unit	15571	name	0a6afb600964e4ca	Maws
+unit	15590	name	336e571ebed0c50f	Ossirian Crystal Trigger
+unit	15608	name	a135b935566a418a	Medivh
+unit	15619	name	e4d26c2fd2718303	silithus test mob
+unit	15623	name	d146b525d4c2f4d2	Xandivious
+unit	15632	name	4fbf2e5e250df574	Test dude for 1.8
+unit	15633	name	0a6205b52d041fdf	Tyrande
+unit	15660	name	0954dcc43e3779a5	Eranikus Transformed
+unit	15695	name	4c93c18bd2a09cf3	Vek Twins Trigger
+unit	15717	name	9a87d1f486e57875	Ouro Trigger
+unit	15729	name	dc9d2c3b0ccbb2c0	Father Winter's Helper (BIG) gm
+unit	15730	name	1bdde306b084f6f6	Pat's Snowcloud Guy
+unit	15772	name	ddddebd703936dea	Christmas Darkmaster Gandling
+unit	15773	name	fcfb02a7de966879	Christmas Cannon Master Willey
+unit	15774	name	a8978a9a484d705d	Christmas Prince Tortheldrin
+unit	15775	name	2cee249bde2a3395	Christmas Emperor Dagran Thaurissan
+unit	15776	name	68b46c4af2cbbac0	Christmas Warchief Rend Blackhand
+unit	15777	name	c1a73ffbff39840f	Christmas War Master Voone
+unit	15778	name	b84af3fb8ba588be	Mouth Tentacle Mount Visual
+unit	15796	name	ccfce7c29b00ce1f	Christmas Goraluk Anvilcrack
+unit	15800	name	0d14133ed45ed0b1	Exit Trigger
+unit	15801	name	441279fbf8314ef5	GONG BOY DND DNR
+unit	15801	subname	f0e80acc129cf8ea	HOLDER OF THE GONG
+unit	15809	name	74af6496f49c3340	C'Thun Transformation Visual
+unit	15832	name	dc9d31dc0ccd116b	Father Winter's Helper (BIG) rm
+unit	15835	name	dc9d31d50ccd1164	Father Winter's Helper (BIG) rf
+unit	15838	name	dc9d2c340ccbb2b9	Father Winter's Helper (BIG) gf
+unit	15872	name	8ee19ab07a4304fd	Pat's Firework Cluster Guy (BLUE)
+unit	15873	name	5d1ed7ad5c93ebe1	Pat's Firework Cluster Guy (RED)
+unit	15874	name	6e3522eb8d37b27a	Pat's Firework Cluster Guy (GREEN)
+unit	15875	name	97b12be630ecf58e	Pat's Firework Cluster Guy (PURPLE)
+unit	15876	name	777ddd1461d40267	Pat's Firework Cluster Guy (WHITE)
+unit	15877	name	cfda115cb769cefc	Pat's Firework Cluster Guy (YELLOW)
+unit	15879	name	81655fd17f088cb5	Pat's Firework Guy - BLUE
+unit	15880	name	8f6e3a321b0e9cc8	Pat's Firework Guy - GREEN
+unit	15881	name	73786617615cc44e	Pat's Firework Guy - PURPLE
+unit	15882	name	33d02f98bbf7e5f9	Pat's Firework Guy - RED
+unit	15883	name	3174cd77f03b5fd2	Pat's Firework Guy - YELLOW
+unit	15884	name	a6f3ab019389f924	Pat's Firework Guy - WHITE
+unit	15885	name	db06d632764d56bd	Pat's Firework Guy - BLUE BIG
+unit	15886	name	5451adc37633f47e	Pat's Firework Guy - GREEN BIG
+unit	15887	name	0f495c3fbd62c432	Pat's Firework Guy - PURPLE BIG
+unit	15888	name	cb8bc90984de71ed	Pat's Firework Guy - RED BIG
+unit	15889	name	8cd0f1f3b7b09aee	Pat's Firework Guy - WHITE BIG
+unit	15890	name	d6e268f536442605	Pat's Firework Guy - YELLOW BIG
+unit	15893	name	8e0b75b2c0becf46	Lunar Firework Credit Marker
+unit	15894	name	a3e1e2610b23429a	Lunar Cluster Credit Marker
+unit	15911	name	18374d49a6b61033	Pat's Firework Cluster Guy (BLUE BIG)
+unit	15912	name	0ccaa6e1f4f32d0e	Pat's Firework Cluster Guy (GREEN BIG)
+unit	15913	name	06e3f195fc5ce39c	Pat's Firework Cluster Guy (PURPLE BIG)
+unit	15914	name	363d12098bbf3450	Pat's Firework Cluster Guy (RED BIG)
+unit	15915	name	f5ea8bfd9ba99026	Pat's Firework Cluster Guy (WHITE BIG)
+unit	15916	name	2a3574b5854b4d0c	Pat's Firework Cluster Guy (YELLOW BIG)
+unit	15918	name	1001762baadde4e9	Pat's Firework Cluster Guy (ELUNE)
+unit	15922	name	a1978ccd04401a5f	Viscidus Trigger
+unit	15928	name	cfd578b021e377cd	Thaddius
+unit	15929	name	4326ad1852072c88	Stalagg
+unit	15930	name	c2de4061779b2a2f	Feugen
+unit	15931	name	39ca18bbdfab970d	Grobbulus
+unit	15932	name	ece52cd04b69b7b6	Gluth
+unit	15952	name	a3fd6524bb207208	Maexxna
+unit	15957	name	648584458930ae32	Ouro Spawner
+unit	15964	name	2ffe724791b8f206	Buru Egg Trigger
+unit	15982	name	54abd46d8e285c1d	[PH] Valentine Reveler, Male
+unit	15983	name	585daeb533956b3c	[PH] Valentine Reveler, Female
+unit	15985	name	2b8cb310d34cc0a6	[PH] Eric Maloof Test Guy
+unit	15990	name	ef6a7937243ba6df	Kel'Thuzad
+unit	15992	name	0dd94f6833fbabe2	Sam's Test Dummy 1
+unit	15993	name	0dd94f6933fbabe3	Sam's Test Dummy 2
+unit	15996	name	8d91d20bc65f27b3	Sam's Test Dummy 1 (1)
+unit	15997	name	9f1f885ca549a72e	Sam's Test Dummy 2 (1)
+unit	15998	name	8d91d28ec65f4794	Sam's Test Dummy 1 (2)
+unit	15999	name	9f1f88dfa549c70f	Sam's Test Dummy 2 (2)
+unit	16002	name	787e8ca8b167f805	Colara Dean
+unit	16004	name	feabbdc5287e851b	Elenia Haydon
+unit	16006	name	f827ac17d5e44e1d	InCombat Trigger
+unit	16011	name	69c29034ea4200cf	Loatheb
+unit	16012	name	51b254611d03bbe6	Mokvar
+unit	16013	name	b09db48072fff557	Deliana
+unit	16015	name	f3b77e5c7d48d0a0	Vi'el
+unit	16016	name	2a19521042f42a65	Anthion Harmon
+unit	16026	name	644166b506ee8b43	Flesh Giant B [PH]
+unit	16031	name	be42ea77c8ffe3a3	Ysida Harmon
+unit	16033	name	821058fd968f9ae2	Bodley
+unit	16035	name	9e1878bf9da6ef31	Bog Beast B [PH]
+unit	16039	name	b3af901c50e62922	Pack Trainer [PH]
+unit	16040	name	b8745fe05e4b9875	Pack Handler [PH]
+unit	16044	name	5c869eb3736d4f51	Mor Grayhoof Trigger
+unit	16045	name	250a9215c949e968	Isalien Trigger
+unit	16046	name	7cd308580d5cd4b8	Jarien and Sothos Trigger
+unit	16047	name	289cee848878f4ce	Kormok Trigger
+unit	16048	name	0c289454bc4e139d	Lord Valthalak Trigger
+unit	16053	name	0a2a081c262811e7	Korv
+unit	16054	name	8a6e00cee9911c28	Rezznik
+unit	16055	name	1595bfcf2b6ca9c3	Va'jashni
+unit	16058	name	2977e49f54a79949	Volida
+unit	16059	name	4a56acd983167f89	Theldren
+unit	16064	name	2799511a3ccf4a64	Thane Korth'azz
+unit	16068	name	432f9ea5869e2d29	Larva
 unit	16069	name	ee19199e382761e7	Gurky
+unit	16077	name	3033a76b460c319d	[PH] Alex's Test DPS Mob
+unit	16078	name	c0baf0b5a893c73b	Unkillable Fixed Damage Test Dummy
+unit	16079	name	c5ed84b95a7f2fc3	Theldren Trigger
+unit	16082	name	af6970443b9b7aa8	Naxxramas Trigger
+unit	16083	name	0dd58c4b77bcdc53	Mor Grayhoof Transformation Visual
+unit	16089	name	a5320a8f0c4d9c3e	Omar the Test Kobold
+unit	16090	name	3c9e0e702edb0b04	Rousch
+unit	16092	name	5f7f9a2e50e7c748	Silithis Teleporter
+unit	16094	name	b96ff5979b67a3a6	Durik
+unit	16097	name	38a97c74c85d8d27	Isalien
+unit	16099	name	06dbc756bfbfcd9b	[PH] Naxxramas Test Boss
+unit	16099	subname	573c20a42ce4f8a4	Minion of Alex
+unit	16100	name	082bd262856964b8	Ysida's Trigger
+unit	16101	name	6a5232dea1d07ff8	Jarien
+unit	16102	name	37fd3141c753564c	Sothos
+unit	16105	name	cbce94f6e23228f4	Aristan Mottar
+unit	16106	name	94d914cd838f8169	Evert Sorisam
+unit	16108	name	91464cd8a3c7a139	Fenstad Argyle
+unit	16109	name	d43b6b178f609865	Mara Rennick
+unit	16110	name	e1d49a3505cd745f	Annalise Lerent
+unit	16118	name	5b978830340f7078	Kormok
+unit	16128	name	c0eef47db2294301	Rhonin
+unit	16135	name	ac83b5b6dbe6053d	Rayne
+unit	16137	name	4f07ac2e5e3b3de5	Naxxramas Military Sub-Boss Trigger
+unit	16138	name	ffc4afe4626efd0b	[UNUSED] Scourge Invasion Guardian
+unit	16140	name	c3dd2156eaad2c4d	[UNUSED] Necropolis Crystal, Buttress
+unit	16166	name	c2bd5f3cfeb641b1	Theldren Kill Credit
+unit	16188	name	73fcfc2235ac0ee8	[UNUSED] Buttress Channeler
+unit	16227	name	b6514902773f292b	Bragok
+unit	16256	name	6f871657fbc04c3a	Jessica Chambers
+unit	16306	name	4a0a585ebe864128	Scourge Invasion Minion, spawner, Ghost/Ghoul
+unit	16336	name	f2f7b882de83e7e9	Scourge Invasion Minion, spawner, Ghost/Skeleton
+unit	16338	name	58bd6ddb826d2336	Scourge Invasion Minion, spawner, Ghoul/Skeleton
+unit	16356	name	5541e42af012656a	Scourge Invasion Minion, finder
+unit	16387	name	defa52d346da1650	Atiesh
+unit	16398	name	d34e89d2753a8703	Necropolis Proxy
+unit	16430	name	e97248499a1dbc36	Ashbringer Trigger
+unit	16439	name	bf98080b81b18b2a	Fairbanks Transformed
+unit	16440	name	38c42c4df7724f27	Highlord Mograine Transform
 unit	16445	name	d0268210b3909a7b	Terky
+unit	16450	subname	eac684968d8376c6	CocaCola Ambassador
+unit	16454	subname	eac684968d8376c6	CocaCola Ambassador
+unit	16455	subname	eac684968d8376c6	CocaCola Ambassador
 unit	16456	name	8b451b92a623cf1f	Poley
+unit	16536	name	bffa526cf581028d	test: saved world state
+unit	16543	name	698068cfe97209bf	Garon Hutchins
+unit	16604	name	e04498bd7efa980f	Blackwing Spell Marker
+unit	16606	name	856327437e5d80b6	Midsummer Bonfire Despawner
+unit	16891	name	2a0fe834e4a39900	Yuree
+unit	16999	subname	ac8003f11ab8efbf	Public Test Realm Bot
+unit	17025	name	15a59e702104914f	Sapphiron's Wing buffet
+unit	17066	name	c6f312019670bf4b	Ribbon Pole Debug Target
+unit	17090	name	1c337226ec7a7665	Silithus Dust Turnin Quest Doodad
+unit	17163	name	f2711e231798bbe8	Worm Target (DND)
+unit	17209	name	b19c1b3f1e1d31c9	William Kielar
+unit	17239	name	86bcf33d9bf70ae0	[PH] Plaguelands Herald
+unit	17249	name	60d04b2dfb6c4f9b	Landro
+unit	17284	name	8987240fa1c9e9c8	Lottery Commissioner [DND]
+unit	17313	name	addce6e3543e1ab1	Unkillable Test Dummy Spammer
+unit	17598	name	b61b3631bbd7e88a	Renn'az
+unit	17685	name	759078b38bc3bf5a	Unkillable Test Dummy 60 No Armor
+unit	17688	name	bd4fb5c60654082f	Crown Guard Horde Capture Quest Doodad
+unit	17689	name	d8ceed0d8b7db04d	<TXT>Crown Guard Capture Quest Doodad
+unit	17690	name	ab5dc6139206e6dc	<TXT>Eastwall Capture Quest Doodad
+unit	17691	name	4ce23b7c33c7768f	Eastwall Horde Capture Quest Doodad
+unit	17696	name	1b386d25323b97ae	<TXT>Northpass Capture Quest Doodad
+unit	17697	name	47435280735c987d	Northpass Horde Capture Quest Doodad
+unit	17698	name	dd5209512f5c2686	<TXT>Plaguewood Capture Quest Doodad
+unit	17699	name	966b433ea04d58ca	Plaguewood Horde Capture Quest Doodad
+unit	17869	name	88ccb8da454dbab9	Silithus Spice Sandworm Mortar Target
+unit	18199	name	b4b45651bbb7755c	Silithus Dust Turnin Quest Doodad Horde
+unit	247226	name	5daf5231c274b308	Kelsey Fargo
+unit	247229	name	84af36b082f6b36e	Daniel
+unit	251371	name	a96387125f9f0b6d	Falorne Fallwind
+unit	251487	name	55b612f86655d751	Ventaari Brightwish
+unit	263113	name	bf1b0dbfa5ecb52f	Myriaal Mistwake

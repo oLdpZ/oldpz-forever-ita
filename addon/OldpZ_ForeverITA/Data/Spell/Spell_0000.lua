@@ -120,7 +120,7 @@ WFJ.Data.add("spell", {
   [575] = { "Ti insegna l'abilità ⟦Unyielding Will=Volontà Inflessibile⟧ (Grado $N1).", nil, 0x6d797663, nil, "um" },
   [578] = { "Evoca e congeda un Lupo Nero cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x1e6d5fb5, 0x2195529a, "uu" },
   [579] = { "Evoca e congeda un Lupo Rosso cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x282dee9c, 0x2195529a, "uu" },
-  [580] = { "Evoca e congeda un Lupo della Foresta cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0xf1b94ca6, 0x2195529a, "uu" },
+  [580] = { "Evoca e congeda un ⟦Timber Wolf=Lupo della Foresta⟧ cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0xf1b94ca6, 0x2195529a, "uu" },
   [581] = { "Evoca e congeda un Lupo Invernale cavalcabile.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x66cc379a, 0x2195529a, "uu" },
   [585] = { "Punisce un nemico infliggendo $N1 danni da sacro.", nil, 0x05e38ce8, nil, "um" },
   [586] = { "Ti rende trasparente, scoraggiando i nemici dall'attaccarti per $D1.", "Quantità di minaccia ridotta.", 0x197a4c18, 0x904dd7ad, "uu" },

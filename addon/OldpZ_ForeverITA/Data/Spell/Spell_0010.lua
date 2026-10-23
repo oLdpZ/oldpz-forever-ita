@@ -172,7 +172,7 @@ WFJ.Data.add("spell", {
   [10622] = { "Cura il bersaglio alleato di $N1, poi passa a curare altri bersagli vicini. Se lanciata su un membro del gruppo, la cura passa solo ad altri membri del gruppo. Ogni passaggio è efficace al $N2% rispetto al bersaglio precedente. Cura $N3 bersagli in totale.", nil, 0xa9f16400, nil, "um" },
   [10623] = { "Cura il bersaglio alleato di $N1, poi passa a curare altri bersagli vicini. Se lanciata su un membro del gruppo, la cura passa solo ad altri membri del gruppo. Ogni passaggio è efficace al $N2% rispetto al bersaglio precedente. Cura $N3 bersagli in totale.", nil, 0xa9f16400, nil, "um" },
   [10626] = { nil, "Agilità aumentata di $N1.", nil, 0xc1ec13c7, "mu" },
-  [10627] = { "Evoca ai piedi dell'incantatore un Grace of Air Totem con $N1 salute. Il totem aumenta di $N3 l'Agilità dei membri del gruppo o dell'incursione entro $N2 m. Dura $D1.", nil, 0x989c6700, nil, "um" },
+  [10627] = { "Evoca ai piedi dell'incantatore un ⟦Grace of Air Totem=Totem della Grazia dell'Aria⟧ con $N1 salute. Il totem aumenta di $N3 l'Agilità dei membri del gruppo o dell'incursione entro $N2 m. Dura $D1.", nil, 0x989c6700, nil, "um" },
   [10656] = { "Permette a un conciatore di creare speciali armature di scaglie di drago che non sono disponibili per i normali conciatori. Le armature di scaglie di drago sono armature di maglia.", nil, 0xf9994e04, nil, "um" },
   [10658] = { "Permette a un conciatore di creare speciali armature elementali che non sono disponibili per i normali conciatori.", nil, 0x5ebfa623, nil, "um" },
   [10660] = { "Permette a un conciatore di creare speciali armature tribali che non sono disponibili per i normali conciatori.", nil, 0xffa9da8d, nil, "um" },

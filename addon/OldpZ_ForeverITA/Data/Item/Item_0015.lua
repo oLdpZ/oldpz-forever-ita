@@ -118,7 +118,7 @@ WFJ.Data.add("item", {
   [15915] = { "Inizia ad addomesticare un ⟦Prairie Stalker=Inseguitore delle Praterie⟧ che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0x5db2e4b1, "u" },
   [15916] = { "Inizia ad addomesticare uno Swoop che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xe1e033f5, "u" },
   [15917] = { "Inizia ad addomesticare un ⟦Dire Mottled Boar=Cinghiale Chiazzato Feroce⟧ che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0x80b01137, "u" },
-  [15919] = { "Inizia ad addomesticare un Surf Crawler che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xfb1deeb8, "u" },
+  [15919] = { "Inizia ad addomesticare un ⟦Surf Crawler=Crostaceo delle Onde⟧ che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xfb1deeb8, "u" },
   [15920] = { "Inizia ad addomesticare un ⟦Armored Scorpid=Scorpide Corazzato⟧ che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xf07d9c63, "u" },
   [15921] = { "Inizia ad addomesticare un ⟦Webwood Lurker=Ragno Guardingo Telalegno⟧ che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0x2682ee04, "u" },
   [15922] = { "Inizia ad addomesticare un ⟦Nightsaber Stalker=Fiera della Notte Inseguitrice⟧ che sarà tuo compagno per $N1 min. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xeceb41f2, "u" },

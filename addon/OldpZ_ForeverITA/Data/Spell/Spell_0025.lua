@@ -119,7 +119,7 @@ WFJ.Data.add("spell", {
   [25349] = { "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", "Il bersaglio subisce $N1 danni da natura ogni $N2 s.", 0x91a87ea7, 0x91a87ea7, "uu" },
   [25351] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha una probabilità del $N2% di avvelenare il nemico, infliggendo $N3 danni da natura in $D1. Si cumula fino a $N5 volte sullo stesso bersaglio. $N6 cariche.", nil, 0x93cb7a7d, nil, "um" },
   [25357] = { "Cura un bersaglio alleato di $N1.", nil, 0xbe4c0f4a, nil, "um" },
-  [25359] = { "Evoca ai piedi dell'incantatore un Grace of Air Totem con $N1 salute. Il totem aumenta di $N3 l'Agilità dei membri del gruppo o dell'incursione entro $N2 m. Dura $D1.", nil, 0x7682bb98, nil, "um" },
+  [25359] = { "Evoca ai piedi dell'incantatore un ⟦Grace of Air Totem=Totem della Grazia dell'Aria⟧ con $N1 salute. Il totem aumenta di $N3 l'Agilità dei membri del gruppo o dell'incursione entro $N2 m. Dura $D1.", nil, 0x7682bb98, nil, "um" },
   [25360] = { nil, "Agilità aumentata di $N1.", nil, 0xc1ec13c7, "mu" },
   [25361] = { "Evoca ai piedi dell'incantatore un ⟦Strength of Earth Totem=Totem della Forza della Terra⟧ con $N1 salute. Il totem aumenta di $N3 la Forza dei membri del gruppo o dell'incursione entro $N2 m. Dura $D1.", nil, 0xa61ed958, nil, "um" },
   [25362] = { nil, "Forza aumentata di $N1.", nil, 0xb2147e94, "mu" },

@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["d9a26a8ee673fc22"] = { "No! Non puoi essere più forte del Foulweald! No!!", "." },
   ["d9a32818da7e9ac9"] = { "La Torre di Brinarossa protegge il ⟦Iceblood Garrison=Presidio di Brinarossa⟧ da sud-est.\n\nÈ controllata dall'⟦Horde=Orda⟧.", "." },
   ["d9ace3e2259f8fd2"] = { "Nella tua corsa verso la gloria, hai dato per scontato che il ritmo del gioco ruotasse attorno alle tue azioni. Riesci anche solo a immaginare quanto suoni assurdo per un essere come me? Un essere che, volendo, potrebbe far sì che i tuoi stessi pensieri insignificanti schiaccino quella massa grigia grande quanto una nocciolina che ti galleggia nel cranio.", "." },
-  ["d9b540bba6767a43"] = { "È l'ora dell'evento principale! Skarr the Unbreakable è nella Fossa Infausta!", "." },
+  ["d9b540bba6767a43"] = { "È l'ora dell'evento principale! ⟦Skarr the Unbreakable=Skarr l'Indistruttibile⟧ è nella Fossa Infausta!", "." },
   ["d9ba7008f391e1e4"] = { "Solo guai da queste parti. Ho provato a dire a quello sciocco di Saldean di andarsene finché poteva, ma non vuole sentire ragioni. Io però la testa ce l'ho. Io e Verna ce ne andiamo appena sistemiamo questo carro.", "." },
   ["d9bbc9bd0a8d70e2"] = { "Mai avrei pensato di trovare qualcosa in condizioni così perfette.", "." },
   ["d9c1463d28357592"] = { "Altri agenti della ⟦Syndicate=Lega dei Tagliagole⟧, scommetto! Non vi riprenderete mai Alterac... né ⟦Southshore=Riva del Sud⟧!", "." },

@@ -20,7 +20,7 @@ WFJ.Data.add("item", {
   [5126] = { "Impara a travestirti da ⟦Defias Footpad=Bandito dei Defias⟧.", 0x36d6e8e9, "u" },
   [5127] = { "Impara a travestirti da pirata dei ⟦South Seas=Mari del Sud⟧.", 0xfbe3e6a6, "u" },
   [5129] = { "Impara a travestirti da ⟦Dark Iron Dwarf=Nano Ferroscuro⟧.", 0x69fe6a0d, "u" },
-  [5130] = { "Impara a travestirti da Dalaran Wizard.", 0x9d923548, "u" },
+  [5130] = { "Impara a travestirti da ⟦Dalaran Wizard=Mago di Dalaran⟧.", 0x9d923548, "u" },
   [5131] = { "Impara a travestirti da ⟦Stonesplinter Trogg=Trogg Scheggiadura⟧.", 0x20bec919, "u" },
   [5132] = { "Impara a travestirti da ⟦Syndicate Highwayman=Sciacallo della Lega dei Tagliagole⟧.", 0x5b7a9788, "u" },
   [5139] = { "Ti insegna l'abilità Spine (Grado $N1).", 0x3bf88899, "u" },

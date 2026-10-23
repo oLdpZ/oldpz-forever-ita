@@ -63,7 +63,7 @@ WFJ.Data.add("spell", {
   [1214286] = { "Aumenta del $N1% i danni di Spazzata e Dilaniamento.", nil, 0x13e15f66, nil, "um" },
   [1214289] = { "I tuoi incantesimi ⟦Cure Poison=Cura dei Veleni⟧, ⟦Abolish Poison=Abolizione del Veleno⟧ e ⟦Remove Curse=Rimozione Maledizione⟧ curano inoltre il bersaglio di $N1 quando vengono lanciati.", nil, 0x84f66a21, nil, "um" },
   [1214290] = { "Cura il bersaglio di $N1.", nil, 0xbdf1d263, nil, "um" },
-  [1214292] = { "I tuoi incantesimi ⟦Cure Poison=Cura dei Veleni⟧ e ⟦Cure Disease=Rimuovi Malattia⟧ curano inoltre il bersaglio di $N1. Il tuo ⟦Poison Cleansing Totem=Totem della Purificazione del Veleno⟧ e il tuo Disease Cleansing Totem curano inoltre il tuo gruppo di $N2 quando vengono lanciati.", nil, 0x340a38d8, nil, "um" },
+  [1214292] = { "I tuoi incantesimi ⟦Cure Poison=Cura dei Veleni⟧ e ⟦Cure Disease=Rimuovi Malattia⟧ curano inoltre il bersaglio di $N1. Il tuo ⟦Poison Cleansing Totem=Totem della Purificazione del Veleno⟧ e il tuo ⟦Disease Cleansing Totem=Totem Purificatore delle Malattie⟧ curano inoltre il tuo gruppo di $N2 quando vengono lanciati.", nil, 0x340a38d8, nil, "um" },
   [1214293] = { "Cura il bersaglio di $N1.", nil, 0xbdf1d263, nil, "um" },
   [1214295] = { "Aumenta del $N1% i danni di Fuoco Lunare e Ira Silvana.", nil, 0xf6fe88bd, nil, "um" },
   [1214296] = { "Aumenta del $N1% i danni di Esorcismo e ⟦Crusader Strike=Assalto del Crociato⟧.", nil, 0x95bf1dc4, nil, "um" },

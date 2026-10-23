@@ -327,7 +327,7 @@ WFJ.Data.add("spell", {
   [21790] = { "Spruzza acqua in ogni direzione, infliggendo danni da gelo ai nemici vicini e respingendoli indietro.", nil, 0x1ed31ab6, nil, "um" },
   [21791] = { "Cura tutti i membri del gruppo vicini di $N1 ogni $N2 s per $D1. È necessario mantenere la canalizzazione affinché l'incantesimo resti attivo.", "$N1 salute rigenerata ogni $N2 s ai membri del gruppo vicini.", 0xd1533eff, 0x7cc0de27, "uu" },
   [21793] = { "Infligge danni da natura ai nemici in un'area bersaglio per $D1, riducendo la velocità di movimento del $N2% e aumentando l'intervallo tra gli attacchi del $N3%.", "Danni da natura inflitti ogni $N1 s.\nVelocità di movimento ridotta del $N2%.\nIntervallo tra gli attacchi aumentato del $N3%.", 0x94cf54e0, 0x90ce53f4, "uu" },
-  [21794] = { "Usala per addestrare un Lupo Bianco. Riporta l'animale domato dallo Stalliere dei Lupi Bianchi.", nil, 0x87774241, nil, "um" },
+  [21794] = { "Usala per addestrare un ⟦Frostwolf=Lupo Bianco⟧. Riporta l'animale domato dallo Stalliere dei Lupi Bianchi.", nil, 0x87774241, nil, "um" },
   [21807] = { "Lancia un fulmine contro il nemico, infliggendo danni da natura.", nil, 0xb05756c5, nil, "um" },
   [21808] = { "Evoca dei Frammenti di Theradrim ogni 2 s e stordisce i nemici in un'area per $D1.", "Stordito.", 0xb6525af2, 0x27f95286, "uu" },
   [21831] = { "Aumenta i danni da squartamento inflitti da Sanguinamento di $N1 per intervallo.", nil, 0x29ce8650, nil, "um" },

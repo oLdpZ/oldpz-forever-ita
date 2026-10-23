@@ -491,6 +491,14 @@ Data\Unit\Unit_0015.lua
 Data\Unit\Unit_0016.lua
 Data\Unit\Unit_0017.lua
 Data\Unit\Unit_0018.lua
+Data\Unit\Unit_0247.lua
+Data\Unit\Unit_0248.lua
+Data\Unit\Unit_0249.lua
+Data\Unit\Unit_0251.lua
+Data\Unit\Unit_0252.lua
+Data\Unit\Unit_0257.lua
+Data\Unit\Unit_0263.lua
+Data\Unit\Unit_0265.lua
 Data\Gossip\Gossip_00.lua
 Data\Gossip\Gossip_01.lua
 Data\Gossip\Gossip_02.lua
