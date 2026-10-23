@@ -71,7 +71,9 @@ def test_every_owned_key_is_listed_and_asked_for_by_a_surface():
         assert k in listed, k
         # LossOfControl builds its list from the family's suffixes ("PACIFYSILENCE")
         names = [k, k.removeprefix("LOSS_OF_CONTROL_DISPLAY_")]
-        assert any(f'"{x}"' in ui for x in names), f"{k}: no surface names it"
+        # the reputation and guild panels build the eight standings in a loop ("…LABEL" .. i .. "_FEMALE")
+        built = k.startswith("FACTION_STANDING_LABEL") and '"FACTION_STANDING_LABEL" .. i .. "_FEMALE"' in ui
+        assert built or any(f'"{x}"' in ui for x in names), f"{k}: no surface names it"
     assert {"SCORE_DAMAGE_DONE", "AUCTION_HOUSE_BACK_BUTTON", "AVAILABLE", "LEAVE_VEHICLE", "BACK"} <= own
 
 

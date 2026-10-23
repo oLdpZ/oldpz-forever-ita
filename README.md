@@ -22,7 +22,7 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 | Pagine di lettere | 208 |
 | Tooltip degli oggetti | 10.223 |
 | Tooltip delle abilità | 19.870 |
-| Testi dell'interfaccia | 15.252 |
+| Testi dell'interfaccia | 15.257 |
 
 - **Missioni** dei livelli 1–20: titolo, obiettivi, descrizione, testo di avanzamento e di completamento, nella
   finestra della missione, nel registro e nel tracker.
