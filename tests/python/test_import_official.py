@@ -222,7 +222,8 @@ def test_reimport_replaces_its_own_variant_and_drops_one_no_longer_accepted(tmp_
     # Forever's English for ACCEPT changes: the official text no longer matches and goes; the draft stays
     english = Store(data, english=True)
     english.save("ui", [ln if ln["id"] != "ACCEPT" else _en("ACCEPT", "text", "Accept!") for ln in english.load("ui")])
-    report = run_official(FIXTURES, data, "12.1.5.70448", "2026-10-22", placeholders_out=tmp_path / "n.tsv")
+    report = run_official(FIXTURES, data, "12.1.5.70448", "2026-10-22", placeholders_out=tmp_path / "n.tsv",
+                          ambiguous_out=tmp_path / "a.tsv")
     ui = _lines(data, "ui")
     assert ui[("ACCEPT", "text")]["it"] == "Accetto"
     assert ui[("ACCEPT", "text")]["conflicts"] == []
@@ -282,3 +283,62 @@ def test_official_descriptions_get_the_glossary_names_their_english_holds_marked
     assert _lines(data, "item")[(117, "description")]["conflicts"] == []
     # UI strings are interface text: never marked
     assert "⟦" not in "".join(ln["it"] for ln in Store(data).load("ui"))
+
+
+def _units(data: Path, tmp_path: Path) -> None:
+    Store(data, english=True).save("unit", [
+        _en(12696, "name", "Senani Thunderheart"),
+        _en(12696, "subname", "Warsong Outriders"),
+        _en(3, "name", "Flesh Eater"),
+        _en(416, "name", "Imp"),
+        _en(500, "name", "Forever Wording"),
+    ])
+    (tmp_path / "pipeline" / "creature_official.tsv").write_text(
+        "id\tfield\ten\tit\tfonte\n"
+        "3\tname\tFlesh Eater\tMangiatore di Carne\twowhead\n"
+        "416\tname\tImp\tImp\tdb2\n"
+        "500\tname\tRetail Wording\tFormulazione Retail\tdb2\n"
+        "12696\tname\tSenani Thunderheart\tSenani Cuore Tonante\tdb2\n"
+        "12696\tsubname\tWarsong Outriders\tEsploratori Cantaguerra\tdb2\n",
+        encoding="utf-8",
+    )
+
+
+def test_import_official_unit_rows(tmp_path, monkeypatch):
+    # NPC names (pipeline/creature_official.tsv, Creature.db2 or Wowhead): taken where the TSV's English is
+    # Forever's English for that (id, field), never marked (the line is the name), trusted after check
+    data = _setup(tmp_path, monkeypatch)
+    _units(data, tmp_path)
+    report = _run(data, tmp_path)
+    unit = _lines(data, "unit")
+    line = unit[(12696, "name")]
+    assert line["it"] == "Senani Cuore Tonante"
+    assert line["provenance"] == {"class": "official", "source": f"wago-itit@{BUILD}", "imported": DATE}
+    assert unit[(12696, "subname")]["it"] == "Esploratori Cantaguerra"
+    assert unit[(3, "name")]["provenance"] == {"class": "official", "source": f"wowhead@{DATE}", "imported": DATE}
+    assert (416, "name") not in unit  # Italian equal to the English: nothing to ship
+    assert (500, "name") not in unit  # another English than Forever's
+    c = report.counts["unit"]
+    assert (c["accepted"], c["same_as_english"], c["rejected_english_mismatch"]) == (3, 1, 1)
+    assert check.run([]) == 0
+    line = _lines(data, "unit")[(12696, "name")]
+    assert (line["status"], line["provenance"]["class"]) == ("trusted", "official")
+
+
+def test_unit_names_are_never_marked(tmp_path, monkeypatch):
+    data = _setup(tmp_path, monkeypatch)
+    _units(data, tmp_path)
+    (tmp_path / "pipeline" / "glossario_ufficiale.tsv").write_text(
+        "tipo\tid\ten\tit\ncreatura\t12696\tSenani Thunderheart\tSenani Cuore Tonante\n", encoding="utf-8")
+    _run(data, tmp_path)
+    assert _lines(data, "unit")[(12696, "name")]["it"] == "Senani Cuore Tonante"
+
+
+def test_without_the_creature_file_unit_lines_are_left_alone(tmp_path, monkeypatch):
+    data = _setup(tmp_path, monkeypatch)
+    _units(data, tmp_path)
+    _run(data, tmp_path)
+    (tmp_path / "pipeline" / "creature_official.tsv").unlink()
+    report = _run(data, tmp_path)
+    assert _lines(data, "unit")[(12696, "name")]["it"] == "Senani Cuore Tonante"
+    assert report.counts["unit"]["accepted"] == 0

@@ -62,7 +62,8 @@ reason per problem:
   on every variant's line another variant's Italian would pass the addon's gate too, so the addon (which
   shows a variant only when exactly one fits) would never show any; `branches_unsafe`, a shadowed variant
   carries an icon or a duration the variant shadowing it lacks, so a fill failure would show the wrong branch.
-- Warning (the row still passes): `glossary_term:<en>→<it>`, the same for an `oggetto` or `abilita` term, a
+- Warning (the row still passes): `glossary_term:<en>→<it>`, the same for an `oggetto`, `abilita` or
+  `creatura` term (an NPC name: a warning until the stored texts are realigned to the official names), a
   `curato` name (`pipeline/glossario_curato.tsv`: the coordinator's, not Blizzard's) (or
   a glossary pair without a kind): the client's tracker and tooltips may still show that name in English
 - `markup_changed:<difference>`: an HTML book page (`<HTML…`) whose Italian does not carry the English's
@@ -108,7 +109,10 @@ _CODE = re.compile(r"\$(?!\d+[wW]|[NDI]\d|T\Z)\S?")
 # before the token sets are compared. The server-only kinds never carry one; the tooltip kinds do.
 _SUM = re.compile(r"\$\{[^{}]*\}")
 PLAYER_TOKENS = tuple(f"{{{w}}}" for w in placeholders.KNOWN)  # {name} {class} {race}
-# the glossary kinds a draft must write the official Italian of; the others only warn
+# the glossary kinds a draft must write the official Italian of; the others only warn. `creatura` (NPC names)
+# is deliberately not here yet: the texts translated before it keep many NPC names in English, so an error
+# would block every new lot naming them. It warns until the phase-2 realignment of the stored lines (nomi-png
+# Task 11) brings the old texts to the official names; then it joins this set.
 NAME_KINDS = frozenset({"zona", "fazione", "classe", "razza"})
 
 

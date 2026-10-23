@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-23 at commit `88fba80`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-10-23 at commit `c388fb8`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -17,8 +17,8 @@
 | Item descriptions | 10,224 | 10,210 | 0 | 99.9% | 14 |
 | Spell tooltips + auras | 25,718 | 23,343 | 1 | 90.8% | 2,374 |
 | Interface strings | 16,417 | 15,252 | 1,029 | 99.2% | 136 |
-| NPC names | 12,899 | 0 | 0 | 0.0% | 12,899 |
-| **All** | **98,601** | | | **84.0%** | **15,787** |
+| NPC names | 12,899 | 101 | 0 | 0.8% | 12,798 |
+| **All** | **98,601** | | | **84.1%** | **15,686** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -54,7 +54,7 @@ professions, internal strings): quest 139.
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
 | Interface strings | no Italian yet | 136 |
-| NPC names | no Italian yet | 12,899 |
+| NPC names | no Italian yet | 12,798 |
 
 ### Quests without a level
 

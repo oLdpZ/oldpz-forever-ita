@@ -216,6 +216,24 @@ def write_tsv(path: Path, rows: Iterable[Official]) -> None:
     Path(path).write_text(HEADER + "\n" + body, encoding="utf-8", newline="\n")
 
 
+SOURCES = ("db2", "wowhead")
+
+
+def read_tsv(path: Path) -> list[Official]:
+    """The rows `write_tsv` wrote; a row of another shape, field or `fonte` is refused."""
+    lines = Path(path).read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0] != HEADER:
+        raise ValueError(f"{path}: the first line must be {HEADER!r}")
+    out: list[Official] = []
+    for n, raw in enumerate(lines[1:], 2):
+        parts = raw.split("\t")
+        fields = {f for f, _ in COLUMNS}
+        if len(parts) != 5 or not parts[0].isdigit() or parts[1] not in fields or parts[4] not in SOURCES:
+            raise ValueError(f"{path}:{n}: not `{HEADER}`: {raw!r}")
+        out.append((int(parts[0]), parts[1], parts[2], parts[3], parts[4]))
+    return out
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="wfj.dev.creature_official", description=__doc__.split("\n", 1)[0])
     p.add_argument("--retail", type=Path, required=True)

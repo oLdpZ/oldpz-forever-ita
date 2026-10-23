@@ -179,3 +179,15 @@ def test_guarded_aborts_after_consecutive_failures() -> None:
     assert h(3, 0) == {"name": "X"}
     ok[0] = False
     h(4, 0), h(5, 0)  # the success reset the count
+
+
+def test_read_tsv_round_trips_and_refuses_another_shape(tmp_path):
+    rows = [(3, "name", "Flesh Eater", "Mangiatore di Carne", "wowhead"),
+            (12696, "subname", "Warsong Outriders", "Esploratori Cantaguerra", "db2")]
+    out = tmp_path / "c.tsv"
+    co.write_tsv(out, rows)
+    assert co.read_tsv(out) == rows
+    for bad in ("3\tname\tA\tB\tretail\n", "3\ttitle\tA\tB\tdb2\n", "x\tname\tA\tB\tdb2\n", "3\tname\tA\tB\n"):
+        out.write_text(co.HEADER + "\n" + bad, encoding="utf-8")
+        with pytest.raises(ValueError):
+            co.read_tsv(out)

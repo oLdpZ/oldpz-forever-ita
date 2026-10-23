@@ -219,3 +219,81 @@ def test_the_committed_curated_glossary_is_valid_and_adds_only_new_names():
     assert not {en for en, _ in curated} & others
     # common nouns are not names
     assert not {en for en, _ in curated} & {"furbolg", "moonkin", "voidwalker", "quilboar", "pet"}
+
+
+CREATURES = ("id\tfield\ten\tit\tfonte\n"
+             "448\tname\tHogger\tHogger il Bruto\tdb2\n"
+             "416\tname\tImp\tFolletto\tdb2\n"
+             "116\tname\tDefias Thug\tTeppista Defias\tdb2\n"
+             "117\tname\tDefias Thug Leader\tCapo dei Teppisti Defias\twowhead\n"
+             "118\tname\tOld Wording\tVecchia Formulazione\tdb2\n"
+             "12696\tname\tSenani Thunderheart\tSenani Cuore Tonante\tdb2\n"
+             "12696\tsubname\tWarsong Outriders\tEsploratori Cantaguerra\tdb2\n")
+
+
+def _creature_english(tmp_path: Path) -> tuple[Path, Path]:
+    data = _english(tmp_path)
+
+    def line(id_, field, text):
+        return english_line(id_, field, text, hash_key(normalize_for("item", text)), "vmangos@4641790")
+
+    Store(data, english=True).save("unit", [
+        line(448, "name", "Hogger"), line(416, "name", "Imp"), line(116, "name", "Defias Thug"),
+        line(117, "name", "Defias Thug Leader"), line(118, "name", "New Wording"),
+        line(12696, "name", "Senani Thunderheart"), line(12696, "subname", "Warsong Outriders"),
+    ])
+    # "imp" is a common word in the corpus; "hogger" never written lower case
+    Store(data, english=True).save("quest", [
+        {"id": 1, "field": "description", "en": "Kill Hogger and the imp.", "hash": "0" * 16,
+         "src": "vmangos@13b49dc"}])
+    tsv = tmp_path / "creature_official.tsv"
+    tsv.write_text(CREATURES, encoding="utf-8")
+    return data, tsv
+
+
+def test_glossary_reads_creatura(tmp_path):
+    data, tsv = _creature_english(tmp_path)
+    terms = gl.build_glossary(RETAIL, data / "english", FOREVER, creatures=tsv)
+    creatura = {(i, en, it) for k, i, en, it in terms if k == "creatura"}
+    assert (12696, "Senani Thunderheart", "Senani Cuore Tonante") in creatura
+    assert (448, "Hogger", "Hogger il Bruto") in creatura  # one word, never lower case: a proper name
+    assert not any(en == "Imp" for _, en, _ in creatura)  # one word the corpus writes lower case: dropped
+    assert not any(i == 118 for i, _, _ in creatura)  # the English is no longer Forever's
+    assert not any(en == "Warsong Outriders" for _, en, _ in creatura)  # only names, not subnames
+    out = tmp_path / "glossario_ufficiale.tsv"
+    gl.write_glossary(out, terms)
+    assert gl.read_glossary(out) == terms
+    m = gl.Matcher(gl.read_glossary(out))
+    assert m.find("Speak with Senani Thunderheart.") == [["Senani Thunderheart", "Senani Cuore Tonante", "creatura"]]
+
+
+def test_the_matcher_takes_the_longest_creature_name():
+    m = gl.Matcher([("creatura", 116, "Defias Thug", "Teppista Defias"),
+                    ("creatura", 117, "Defias Thug Leader", "Capo dei Teppisti Defias")])
+    assert m.find("Slay the Defias Thug Leader.") == [["Defias Thug Leader", "Capo dei Teppisti Defias", "creatura"]]
+    assert m.find("Slay a Defias Thug.") == [["Defias Thug", "Teppista Defias", "creatura"]]
+    assert m.find("Slay a defias thug.") == []  # case-sensitive
+
+
+def test_creatura_comes_after_zona_in_the_matcher_order():
+    assert gl.ORDER.index("zona") < gl.ORDER.index("creatura") < gl.ORDER.index("fazione")
+
+
+def test_lint_only_warns_for_a_creature_name():
+    # until the phase-2 realignment the existing texts keep many NPC names in English: a warning, not a failure
+    row = {"ref": "r1", "kind": "progress", "en": "Speak with Senani Thunderheart.", "targets": [[1, "progress"]],
+           "glossary": [["Senani Thunderheart", "Senani Cuore Tonante", "creatura"]]}
+    assert tl.glossary_errors(row, "Parla con Senani Thunderheart.") == []
+    assert tl.glossary_warnings(row, "Parla con Senani Thunderheart.") == [
+        "glossary_term:Senani Thunderheart→Senani Cuore Tonante"]
+    assert tl.glossary_warnings(row, "Parla con Senani Cuore Tonante.") == []
+
+
+def test_npc_names_do_not_count_as_capitalised_words(tmp_path):
+    # a title-cased NPC name ("Frenzy") says nothing about how prose writes the word
+    data, _ = _creature_english(tmp_path)
+    Store(data, english=True).save("unit", [
+        english_line(i, "name", "Frenzy", hash_key(normalize_for("item", "Frenzy")), "vmangos@4641790")
+        for i in range(1, 6)])
+    counts = gl.word_counts(Store(data, english=True))
+    assert counts["Frenzy"] == 0 and counts["Hogger"] == 1
