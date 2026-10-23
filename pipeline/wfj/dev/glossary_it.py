@@ -205,8 +205,30 @@ def npc_marker_forms(repo: Path) -> dict[str, str]:
     other = set()
     if (Path(repo) / "pipeline" / GLOSSARY).is_file():
         other = {en for kind, _, en, _ in load_terms(repo) if kind != CREATURE_KIND}
-    forms = unit_forms(Store(data), Store(data, english=True))
+    store, english = Store(data), Store(data, english=True)
+    rows = _unit_rows(store, english)
+    forms = {en: _chosen(found) for en, found in rows.items()}
+    forms.update((en, en) for en in kept_unit_names(repo, english, rows))
     return {en: names.strip_marks(it) for en, it in forms.items() if en not in other}
+
+
+def kept_unit_names(
+    repo: Path, english: Store, rows: dict[str, list[tuple[bool, str, int]]] | None = None
+) -> set[str]:
+    """English NPC names a creature id keeps in English on purpose (pipeline/keep_english.tsv, while the
+    decision's English is the current one: Blizzard's Italian is the English, `Imp`, or a lot kept a pure
+    name) and no id with that English has an official Italian (`rows`: `_unit_rows`). Their markers become
+    the bare English (`dev.remark_names.stale_marker`) and they are never marked."""
+    from wfj.dev.translate_batch import read_kept
+
+    if rows is None:
+        rows = _unit_rows(Store(Path(repo) / "data"), english)
+    lines = {ln["id"]: ln for ln in english.load("unit") if ln["field"] == "name"}
+    kept = {
+        lines[id_]["en"].strip() for (type_, id_, field), h in read_kept(Path(repo)).items()
+        if type_ == "unit" and field == "name" and id_ in lines and lines[id_]["hash"] == h
+    }
+    return {en for en in kept if not any(official for official, _, _ in rows.get(en, ()))}
 
 
 def unit_terms(data: Path, counts: Counter[str], conflicts: list[str] | None = None) -> list[GlossTerm]:
@@ -215,10 +237,12 @@ def unit_terms(data: Path, counts: Counter[str], conflicts: list[str] | None = N
     rules of `creature_terms` (a one-word name only where the corpus never writes it in lower case). One
     Italian per English: `_chosen` (the official one, else the most common, then the first in Italian order);
     each English that had more than one is appended to `conflicts`. `data`: the data/ folder."""
-    found = _unit_rows(Store(Path(data)), Store(Path(data), english=True))
+    english = Store(Path(data), english=True)
+    found = _unit_rows(Store(Path(data)), english)
+    kept = kept_unit_names(Path(data).parent, english, found)
     terms: list[GlossTerm] = []
     for en, all_rows in sorted(found.items()):
-        if len(en) < MIN_LEN or INTERNAL_TEXT.search(en) or any(c in en for c in "\t\n\r"):
+        if en in kept or len(en) < MIN_LEN or INTERNAL_TEXT.search(en) or any(c in en for c in "\t\n\r"):
             continue
         if len(WORD.findall(en)) < 2 and counts[en.lower()]:
             continue

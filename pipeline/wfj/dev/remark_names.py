@@ -28,6 +28,7 @@ from pathlib import Path
 from wfj.cmd.check import TYPES
 from wfj.cmd.import_draft import UNMARKED_TYPES
 from wfj.core import decisions, names
+from wfj.core.report import SHIPPED
 from wfj.dev import glossary_it
 from wfj.io.jsonl_store import Store
 from wfj.paths import data_root
@@ -57,18 +58,18 @@ def remark(
 
 
 def harmonise(data: Path) -> int:
-    """Spec §5b, one NPC one name: a trusted `unit` `name` line whose Italian is not its English's one form
-    (`glossary_it.unit_forms`: the official one, else the most common) takes that form when its Italian is a
-    MACHINE draft (a ruling on the old text is dropped). A line whose winning Italian is official or a
-    person's is left as it is: two such forms for one English need a person (`wfj validate` refuses them,
-    `rule_unit_names`). → lines changed"""
+    """Spec §5b, one NPC one name: a shipped `unit` `name` line (`SHIPPED`, the lines `wfj validate` counts)
+    whose Italian is not its English's one form (`glossary_it.unit_forms`: the official one, else the most
+    common) takes that form when its Italian is a MACHINE draft (a ruling on the old text is dropped). A line
+    whose winning Italian is official or a person's is left as it is: two such forms for one English need a
+    person (`wfj validate` refuses them, `rule_unit_names`). → lines changed"""
     store, english = Store(data), Store(data, english=True)
     forms = glossary_it.unit_forms(store, english)
     en_of = {ln["id"]: ln["en"].strip() for ln in english.load(UNIT_TYPE) if ln["field"] == "name"}
     lines = store.load(UNIT_TYPE)
     n = 0
     for ln in lines:
-        if ln["field"] != "name" or ln.get("status") != "trusted" or not isinstance(ln.get("it"), str):
+        if ln["field"] != "name" or ln.get("status") not in SHIPPED or not isinstance(ln.get("it"), str):
             continue
         form = forms.get(en_of.get(ln["id"], ""))
         if form is None or ln["it"].strip() == form or not decisions.is_machine(ln["provenance"]):

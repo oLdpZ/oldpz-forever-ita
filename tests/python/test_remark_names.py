@@ -219,3 +219,51 @@ def test_two_official_names_for_one_english_are_left_to_a_person(tmp_path):
     remark_names.remark(data)
     assert {ln["id"]: ln["it"] for ln in Store(data).load("unit")} == {1: "Gnoll Bruto", 2: "Bruto Gnoll"}
     assert len(_unit_problems(tmp_path, data)) == 1
+
+
+def _keep(tmp_path: Path, *rows: tuple[int, str]) -> None:
+    """pipeline/keep_english.tsv keeps the `unit` `name` of each (id, English) in English (hash as `_unit_repo`);
+    each id gets its English line, no Italian one."""
+    eng = Store(tmp_path / "data", english=True)
+    eng.save("unit", eng.load("unit") + [
+        {"id": i, "field": "name", "en": en, "hash": "b" * 16, "src": "vmangos@4641790"} for i, en in rows])
+    (tmp_path / "pipeline" / "keep_english.tsv").write_text(
+        "tipo\tid\tcampo\thash\ten\n" + "".join(f"unit\t{i}\tname\t{'b' * 16}\t{en}\n" for i, en in rows),
+        encoding="utf-8")
+
+
+def test_a_marker_of_a_name_kept_in_english_goes_back_to_the_english(tmp_path):
+    """A machine name was marked into a text, then the NPC is kept English (`Imp`, Blizzard's Italian is the
+    English): validate reports the old marker and the pass rewrites it to the bare English."""
+    data = _unit_repo(tmp_path, [(9, "Grell Imp", "Diavoletto Grell", "machine")], [
+        (1, "Kill the Grell Imp.", "Uccidi il ⟦Grell Imp=Diavoletto Grell⟧.")])
+    _keep(tmp_path, (10, "Grell Imp"))
+    problems = _unit_problems(tmp_path, data)
+    assert len(problems) == 1 and "quest 1" in problems[0]
+    assert remark_names.remark(data) >= 1
+    assert _it(data)[1] == "Uccidi il Grell Imp."
+    assert _unit_problems(tmp_path, data) == []
+    assert remark_names.remark(data) == 0
+
+
+def test_a_name_kept_in_english_is_not_marked_but_an_official_form_still_wins(tmp_path):
+    data = _unit_repo(tmp_path, [(9, "Grell Imp", "Diavoletto Grell", "machine")], [
+        (1, "Kill the Grell Imp.", "Uccidi il Grell Imp.")])
+    _keep(tmp_path, (10, "Grell Imp"))
+    remark_names.remark(data)
+    assert _it(data)[1] == "Uccidi il Grell Imp."
+    assert gl.kept_unit_names(tmp_path, Store(data, english=True)) == {"Grell Imp"}
+    _make_official(data, 9, "Diavoletto Grell")
+    assert gl.kept_unit_names(tmp_path, Store(data, english=True)) == set()
+
+
+def test_a_stale_machine_name_is_harmonised_too(tmp_path):
+    """`wfj validate` counts every shipped line (trusted, stale, unaligned): `harmonise` fixes the same ones."""
+    data = _unit_repo(tmp_path, [(1, "Gnoll Brute", "Gnoll Bruto", "official"),
+                                 (2, "Gnoll Brute", "Bruto Gnoll", "machine")], [])
+    store = Store(data)
+    lines = store.load("unit")
+    lines[1]["status"] = "stale"
+    store.save("unit", lines)
+    remark_names.remark(data)
+    assert {ln["id"]: ln["it"] for ln in Store(data).load("unit")} == {1: "Gnoll Bruto", 2: "Gnoll Bruto"}
