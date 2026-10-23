@@ -41,6 +41,7 @@ _LAST_WORD = re.compile(r"(?:[A-Za-z]|[^\x00-\x7f])+$")
 # never holds); every token is put back before the text is returned
 _HOLD_OPEN, _HOLD_CLOSE = "", ""
 _HOLD = re.compile(f"{_HOLD_OPEN}([0-9]+){_HOLD_CLOSE}")
+_ENGLISH_GOES_ON = r"(?!['’][A-Za-z])(?! [A-Z])"
 _TAKEN = re.compile(f"{MARK.pattern}|{_HOLD.pattern}", re.S)
 
 
@@ -117,12 +118,17 @@ def mark_names(it: str, glossary: Iterable[Sequence[str]], english_kinds: Collec
         return it
     # search text → its marker; an Italian form wins over an English one spelt the same
     search = {en: f"{OPEN}{en}{SEP}{form}{CLOSE}" for en, form in english.items() if en not in terms}
+    by_english = set(search)
     search.update({form: f"{OPEN}{en}{SEP}{form}{CLOSE}" for form, en in terms.items()})
+    by_english -= set(terms)
     # a held name is set aside as a token (private-use characters around its index), put back at the end
     kept = [en for en in held if en not in search]
     search.update({en: f"{_HOLD_OPEN}{i}{_HOLD_CLOSE}" for i, en in enumerate(kept)})
     for text in sorted(search, key=lambda f: (-len(f), -len(search[f]), f)):
-        word = re.compile(rf"(?<!{_WORD}){re.escape(text)}(?!{_WORD})")
+        # an English form is no name of its own where English goes on: a possessive or a longer English name
+        # (`Hogger's Claw`, `Stonefield Farm`); a longer name that is a term was searched (and marked) first
+        tail = _ENGLISH_GOES_ON if text in by_english else ""
+        word = re.compile(rf"(?<!{_WORD}){re.escape(text)}(?!{_WORD}){tail}")
         marker = search[text]
 
         def put(chunk: str, word: re.Pattern[str] = word, marker: str = marker) -> str:

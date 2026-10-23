@@ -215,12 +215,20 @@ describe("the UI errors frame", function()
     assert.are.equal("Guild を倒した: 1/2", _G.UIErrorsFrame.lines[4]:GetText())
   end)
 
-  it("the kill line names the mob as the unit table does (UIStrings.creatureName)", function()
-    local resolve = WFJ.UIStrings.creatureName
-    WFJ.UIStrings.creatureName = function(en) if en == "Kobold Vermin" then return "Coboldo Parassita" end end
+  it("the kill line names the mob as the unit table does (Core/UnitNames' index), the English under names = en",
+    function()
+    X.teardown(NAMES)
+    WFJ = X.load("UI/Errors.lua", UI, { before = install, files = { "Core/Names.lua", "Core/UnitNames.lua" } })
+    assert.is_true(WFJ.Errors.init())
+    local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+    WFJ.UnitNames.buildIndex({ [6] = { "Coboldo Parassita", nil, h1("Kobold Vermin"), nil, ".m" } })
     _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 3/10")
     assert.are.equal("Coboldo Parassita を倒した: 3/10", _G.UIErrorsFrame.lines[4]:GetText())
-    WFJ.UIStrings.creatureName = resolve
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Defias Thug slain: 1/2") -- no shipped name: as written
+    assert.are.equal("Defias Thug を倒した: 1/2", _G.UIErrorsFrame.lines[4]:GetText())
+    WFJ.Settings.set("names.style", "en")
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 4/10")
+    assert.are.equal("Kobold Vermin を倒した: 4/10", _G.UIErrorsFrame.lines[4]:GetText())
   end)
 
   it("the modifier shows the live English; releasing it shows the Japanese", function()
