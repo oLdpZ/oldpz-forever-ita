@@ -361,3 +361,27 @@ def test_without_the_creature_file_unit_lines_are_left_alone(tmp_path, monkeypat
     report = _run(data, tmp_path)
     assert _lines(data, "unit")[(12696, "name")]["it"] == "Senani Cuore Tonante"
     assert report.counts["unit"]["accepted"] == 0
+
+
+def test_a_machine_unit_name_then_the_official_import_resolves_to_the_official_italian(tmp_path, monkeypatch):
+    """Spec §5b: the official form always wins. Unit 3 was drafted by a lot (`Divoratore di Carne`, machine,
+    trusted); the official import then brings Blizzard's `Mangiatore di Carne`: after check the line's
+    winning Italian is the official one, and the generated Unit row ships it, not the machine draft."""
+    from wfj.cmd import generate
+
+    data = _setup(tmp_path, monkeypatch)
+    _units(data, tmp_path)
+    en = {(ln["id"], ln["field"]): ln for ln in Store(data, english=True).load("unit")}
+    machine = {"class": "machine", "model": "m", "source": "draft-n01-sg14@2026-10-23", "imported": "2026-10-23"}
+    line = entry(3, "name", "Divoratore di Carne", prov=machine)
+    line["english"] = {"hash": en[(3, "name")]["hash"], "src": FOREVER}
+    Store(data).save("unit", [line])
+    assert check.run([]) == 0
+    assert _lines(data, "unit")[(3, "name")]["status"] == "trusted"
+    _run(data, tmp_path)
+    assert check.run([]) == 0
+    line = _lines(data, "unit")[(3, "name")]
+    assert (line["it"], line["provenance"]["class"], line["status"]) == ("Mangiatore di Carne", "official", "trusted")
+    assert [v["it"] for v in line["conflicts"]] == ["Divoratore di Carne"]
+    shard = "".join(t for p, t in generate.plan(Store(data), []).items() if p.startswith("Data/Unit/"))
+    assert '"Mangiatore di Carne"' in shard and "Divoratore di Carne" not in shard
