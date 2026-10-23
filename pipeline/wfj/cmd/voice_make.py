@@ -35,7 +35,7 @@ import sys
 import time
 import wave
 from collections import Counter
-from collections.abc import Callable, Iterable, Mapping, Sequence
+from collections.abc import Callable, Collection, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from io import BytesIO
 from pathlib import Path
@@ -332,9 +332,15 @@ def file_sha(path: Path) -> str:
 # ---- plan ------------------------------------------------------------------------------------------------
 
 
-def plan(root: Path, cfg: Mapping[str, Any], scope: str, store: Path | None = None) -> dict[str, Any]:
-    """The files generate would make now (`work`), and why; the estimate; the silent lines."""
+def plan(
+    root: Path, cfg: Mapping[str, Any], scope: str, store: Path | None = None,
+    keys: Collection[str] | None = None,
+) -> dict[str, Any]:
+    """The files generate would make now (`work`), and why; the estimate; the silent lines. `keys` narrows
+    the scope to those lines (a trial of a few)."""
     sv = survey(root, cfg, scope)
+    if keys is not None:
+        sv = Survey([t for t in sv.takes if t.job.key in keys], sv.silent)
     audio = audio_record(root)
     blocked = read_blocked(store)
     # a recorded file gone from the store is made again only where the store is
@@ -432,11 +438,13 @@ def generate(  # noqa: PLR0913 - the engine, encoder, log and sleep are injected
     log: Callable[[str], None] = print,
     limit: int | None = None,
     sleep: Callable[[float], None] | None = None,
+    keys: Collection[str] | None = None,
 ) -> dict[str, Any]:
-    """Makes every file plan lists, up to `limit`; resumable. The record and the blocked list are written
-    after every file, and on the way out whatever stops the run. A busy or failing engine (or encoder) stops
-    it: → `stopped`, the reason. A blocked take is listed and the run goes on. → the run's numbers."""
-    p = plan(root, cfg, scope, store)
+    """Makes every file plan lists (for `keys` only, when given), up to `limit`; resumable. The record and the
+    blocked list are written after every file, and on the way out whatever stops the run. A busy or failing
+    engine (or encoder) stops it: → `stopped`, the reason. A blocked take is listed and the run goes on.
+    → the run's numbers."""
+    p = plan(root, cfg, scope, store, keys)
     work: list[Take] = p["work"]
     out: dict[str, Any] = {"made": 0, "files": p["files"], "blocked": 0, "chars_made": 0, "seconds_made": 0.0,
                            "elapsed": 0.0, "stopped": None, "left": len(work), "silent": p["silent"]}

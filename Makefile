@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-status voice-pack
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-status voice-audition voice-pack
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -540,6 +540,9 @@ voice-generate: ## make SCOPE's missing or changed audio with Gemini (paid: chec
 
 voice-status: ## the running or last voice-generate: done / total, rate, time left
 	cd pipeline && $(PY) -m wfj voice status --store "$(VOICE_STORE)"
+
+voice-audition: ## make the first lines of each speaker of SCOPE (paid, a few) and write VOICE_STORE/audition/index.html to listen to: [SCOPE=tirisfal] [PER=2] [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice audition --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(PER),--per $(PER))
 
 voice-pack: ## build the voice pack OldpZ_ForeverITA_Voce of SCOPE from VOICE_STORE into build/voice-pack: [SCOPE=tirisfal]
 	cd pipeline && $(PY) -m wfj voice pack --scope $(SCOPE) --store "$(VOICE_STORE)" --out "$(CURDIR)/build/voice-pack"

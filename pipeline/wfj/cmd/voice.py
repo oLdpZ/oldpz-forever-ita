@@ -12,6 +12,7 @@
   scope NAME --vmangos FILE                 see `voice_scope`
   plan, generate, status                    see `voice_make`
   spoken export|import                      see `voice_spoken`
+  audition                                  see `voice_audition`
 """
 
 from __future__ import annotations
@@ -207,6 +208,10 @@ def run(argv: Sequence[str]) -> int:
         from wfj.cmd import voice_make  # the audio files
 
         return voice_make.run(argv)
+    if verb == ["audition"]:
+        from wfj.cmd import voice_audition
+
+        return voice_audition.run(argv[1:])
     if verb == ["spoken"]:
         from wfj.cmd import voice_spoken
 
