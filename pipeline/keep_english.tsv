@@ -418,6 +418,15 @@ spell	1251986	aura	fa7853a338c651b9	Whenever you suffer Bleed damage, one dose i
 spell	1271412	description	84727607c217b635	Bounce Protection
 spell	1271565	description	84727607c217b635	Bounce Protection
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud
+unit	153	name	d385cc0e5180f0d0	Bethina
+unit	198	name	631817a39a7ed481	Khelden Bremen
+unit	235	name	c8876533935aa8af	Salma Saldean
+unit	247	name	57c3f162fec767d0	Billy Maclure
+unit	251	name	c3e93d6f12c8ce5c	Maybell Maclure
+unit	255	name	72dee6530297f3ed	Gerard Tiller
+unit	265	name	c8404cde056c857e	Madame Eva
+unit	268	name	4ce0bdfed9c0e1c7	Sirra Von'Indi
+unit	276	name	eb90a71397b85ec9	Viktori Prism'Antras
 unit	416	name	001355c821d8e557	Imp
 unit	2748	name	d84b54647a807364	Archaedas
 unit	7389	name	69a9f0c616d7d9b5	Senegal
