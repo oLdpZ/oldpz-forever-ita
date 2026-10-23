@@ -13,12 +13,14 @@
   plan, generate, status                    see `voice_make`
   spoken export|import                      see `voice_spoken`
   audition                                  see `voice_audition`
+  pack                                      see `voice_ship`
 """
 
 from __future__ import annotations
 
 import argparse
 import datetime
+import importlib
 import json
 import sys
 from collections.abc import Sequence
@@ -190,6 +192,11 @@ def run_speakers(a: argparse.Namespace) -> int:
     return 0
 
 
+OWN_MODULE = {
+    "scope": "voice_scope", "audition": "voice_audition", "spoken": "voice_spoken", "pack": "voice_ship",
+}
+
+
 def run(argv: Sequence[str]) -> int:
     verb = list(argv[:1])
     if verb == ["profiles"]:
@@ -200,23 +207,13 @@ def run(argv: Sequence[str]) -> int:
         from wfj.cmd import voice_cast
 
         return voice_cast.run_cast(argv[1:])
-    if verb == ["scope"]:
-        from wfj.cmd import voice_scope
-
-        return voice_scope.run(argv[1:])
     if verb and verb[0] in ("plan", "generate", "status"):
         from wfj.cmd import voice_make  # the audio files
 
         return voice_make.run(argv)
-    if verb == ["audition"]:
-        from wfj.cmd import voice_audition
-
-        return voice_audition.run(argv[1:])
-    if verb == ["spoken"]:
-        from wfj.cmd import voice_spoken
-
-        return voice_spoken.run(argv[1:])
-    p = argparse.ArgumentParser(prog="wfj voice")
+    if verb and verb[0] in OWN_MODULE:  # each of these lives in its own module, loaded only when asked for
+        return importlib.import_module(f"wfj.cmd.{OWN_MODULE[verb[0]]}").run(argv[1:])
+    p =argparse.ArgumentParser(prog="wfj voice")
     sub = p.add_subparsers(dest="cmd", required=True)
     sp = sub.add_parser("speakers")
     sp.add_argument("--vmangos", required=True)
