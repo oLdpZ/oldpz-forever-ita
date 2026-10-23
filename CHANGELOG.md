@@ -28,6 +28,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Righe degli obiettivi nel tracker delle missioni e obiettivi di esplorazione ed evento in italiano.
 - Nomi dei PNG e delle creature in italiano nel mondo: nel tooltip (con il titolo sotto il nome, es. «Venditore di Armi»), nei riquadri del bersaglio, del focus e dei boss e sulle targhette sopra la testa. Si usano i nomi del client italiano ufficiale (circa 7.200), gli altri sono tradotti nello stesso stile e i nomi propri senza significato restano come sono. Gli stessi nomi compaiono negli obiettivi, nel tracker e nei testi delle missioni. In combattimento le targhette restano in inglese e tornano italiane alla fine; `/fita nomi en` e il tasto Alt mostrano l'inglese.
 - Le segnalazioni dal gioco (una riga tradotta male, un errore o un'idea, l'inglese raccolto) aprono i moduli del progetto su GitHub: il link si copia dalla finestra e si apre nel browser.
+- Un personaggio femminile vede la reputazione al femminile: Odiata, Avversa, Onorata, Riverita, Osannata (nel pannello della reputazione, in quello della gilda e nei requisiti delle missioni).
 - Tooltip degli ultimi incantesimi rimasti in italiano: abilità delle creature e dei famigli, effetti di eventi, cavalcature e oggetti (circa 2.300 righe). Ora quasi tutti i tooltip delle abilità sono in italiano.
 
 ### Fixed
