@@ -10,6 +10,8 @@
       conflicts and the scoped lines with no Italian.
   profiles build|export|import, cast        see `voice_cast`
   scope NAME --vmangos FILE                 see `voice_scope`
+  plan, generate, status                    see `voice_make`
+  spoken export|import                      see `voice_spoken`
 """
 
 from __future__ import annotations
@@ -201,6 +203,14 @@ def run(argv: Sequence[str]) -> int:
         from wfj.cmd import voice_scope
 
         return voice_scope.run(argv[1:])
+    if verb and verb[0] in ("plan", "generate", "status"):
+        from wfj.cmd import voice_make  # the audio files
+
+        return voice_make.run(argv)
+    if verb == ["spoken"]:
+        from wfj.cmd import voice_spoken
+
+        return voice_spoken.run(argv[1:])
     p = argparse.ArgumentParser(prog="wfj voice")
     sub = p.add_subparsers(dest="cmd", required=True)
     sp = sub.add_parser("speakers")

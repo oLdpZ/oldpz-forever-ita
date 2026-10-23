@@ -12,6 +12,10 @@ model = "gemini-3.1-flash-tts-preview"
 # is not a known speaker
 narrator = "narrator"
 book_narrator = "booknarrator"
+# who the two narrators are, for the prompt's audio profile line (a creature's comes from its profile); English
+# only, like the notes
+narrator_profile = "The narrator of a fantasy adventure, telling what the hero sees and does"
+book_narrator_profile = "Someone reading aloud an old book, a letter or a sign in a fantasy world"
 
 # One table per voice: voice (the Gemini voice name), notes (how it reads), fits (what it is for).
 [roster.narrator]

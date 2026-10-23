@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-status voice-pack
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -513,6 +513,36 @@ release: ## start the Release workflow on GitHub and follow it to the end: [VERS
 	done; \
 	[ -n "$$id" ] || { echo "release: the run did not appear; see the Actions tab"; exit 1; }; \
 	echo "release: run $$id"; gh run watch "$$id" --exit-status
+
+# NPC voice over (pipeline/wfj/cmd/voice*.py). SCOPE is a voice scope (pipeline/voice_<scope>.txt). The audio
+# store lives outside the repository: VOICE_ROOT when set, else build/voice-store of the main checkout (a
+# worktree is removed with its branch, the takes are paid for). The Gemini key is GEMINI_API_KEY, from the
+# environment or VOICE_ENV (a .env file); LIMIT=n stops after n files.
+SCOPE       ?= tirisfal
+VOICE_STORE ?= $(or $(VOICE_ROOT),$(REPO_ROOT)/build/voice-store)
+VOICE_ENV   ?=
+LIMIT       ?=
+# the VMaNGOS dump the speakers come from, and its commit
+VOICE_DB     ?= $(VMANGOS_PRIORITY_DB)
+VOICE_DB_SHA ?= $(VMANGOS_UNIT_SHA)
+
+voice-speakers: ## write data/voice/speakers.jsonl (who says each line of SCOPE) from VMaNGOS and forever-vo: [SCOPE=tirisfal] [VOICE_DB=<mangos.sqlite>]
+	cd pipeline && $(PY) -m wfj voice speakers --vmangos "$(VOICE_DB)" --commit $(VOICE_DB_SHA) --scope $(SCOPE) --forever-vo "$(FOREVER_VO)" --forever-vo-commit $(FOREVER_VO_SHA)
+
+voice-cast: ## write data/voice/voices.jsonl (each speaking creature's roster voice) from the profiles and pipeline/voice.toml: [SCOPE=tirisfal]
+	cd pipeline && $(PY) -m wfj voice cast --scope $(SCOPE)
+
+voice-plan: ## what voice-generate would make for SCOPE: files, characters, hours of audio, cost; the silent lines by reason: [SCOPE=tirisfal]
+	cd pipeline && $(PY) -m wfj voice plan --scope $(SCOPE) --store "$(VOICE_STORE)"
+
+voice-generate: ## make SCOPE's missing or changed audio with Gemini (paid: check voice-plan first) into VOICE_STORE; resumable: [SCOPE=tirisfal] [LIMIT=n] [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice generate --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(LIMIT),--limit $(LIMIT))
+
+voice-status: ## the running or last voice-generate: done / total, rate, time left
+	cd pipeline && $(PY) -m wfj voice status --store "$(VOICE_STORE)"
+
+voice-pack: ## build the voice pack OldpZ_ForeverITA_Voce of SCOPE from VOICE_STORE into build/voice-pack: [SCOPE=tirisfal]
+	cd pipeline && $(PY) -m wfj voice pack --scope $(SCOPE) --store "$(VOICE_STORE)" --out "$(CURDIR)/build/voice-pack"
 
 # Local targets, when present.
 -include local.mk

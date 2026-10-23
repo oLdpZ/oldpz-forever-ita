@@ -371,9 +371,9 @@ ITALIAN_WORDS = frozenset((
 _WORD = re.compile(r"[a-z]+(?:[-'][a-z]+)*")
 
 
-def _not_english(notes: str) -> str | None:
-    """Why `notes` would be read aloud instead of taken as direction, or None. Whole words only: "lo-fi" and
-    "delicate" are English."""
+def not_english(notes: str) -> str | None:
+    """Why `notes` (direction, or a prompt's audio profile) would be read aloud instead of taken as direction,
+    or None. Whole words only: "lo-fi" and "delicate" are English."""
     accent = _ACCENTED.search(notes)
     if accent:
         return f"accented letter {accent.group(0)!r}"
@@ -400,7 +400,7 @@ def roster_problems(
         if not isinstance(notes, str) or not notes.strip():
             out.append(f"roster {vid}: notes must say how the voice reads (English director's notes)")
         else:
-            why = _not_english(notes)
+            why = not_english(notes)
             if why:
                 out.append(f"roster {vid}: notes must be English only, Gemini would read them aloud ({why})")
         extra = sorted(set(v) - set(ROSTER_FIELDS))

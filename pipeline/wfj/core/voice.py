@@ -149,6 +149,23 @@ def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken:
     return spoken_text
 
 
+# The bracketed tags a transcript may carry: short English cues Gemini performs instead of reading. Kept
+# short on purpose; any other bracket (an Italian cue, a stray bracket of the text) would be read aloud.
+SPEECH_TAGS = frozenset(("sigh", "laughing", "whispering", "cough", "shouting", "crying", "gasp", "groan"))
+_TAG = re.compile(r"\[([^\[\]]*)\]")
+
+
+def tag_problem(transcript: str) -> str | None:
+    """Why a transcript's brackets would be read aloud, or None: every `[...]` must be one of SPEECH_TAGS."""
+    for m in _TAG.finditer(transcript):
+        if m.group(1) not in SPEECH_TAGS:
+            return f"tag {m.group(0)!r} is not one of the English tags {', '.join(sorted(SPEECH_TAGS))}"
+    rest = _TAG.sub("", transcript)
+    if "[" in rest or "]" in rest:
+        return "a bracket that opens no tag would be read aloud"
+    return None
+
+
 def read_scope_file(path: Path) -> tuple[tuple[int, ...], tuple[str, ...]]:
     """(quest ids, book page keys) a scope file lists: one id per line, `b <key>` for a book page, `#` starts
     a comment. Each is sorted; a bad or repeated line is refused with the file's name and line."""

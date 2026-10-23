@@ -54,6 +54,7 @@ TYPE_NAMES = {
     10: "not specified",
 }
 LINES_PER_SPEAKER = 3
+NARRATOR_PROFILES = {"narrator_profile": "The narrator", "book_narrator_profile": "A reader of books"}
 
 
 def load_config(path: Path) -> dict[str, Any]:
@@ -66,6 +67,12 @@ def load_config(path: Path) -> dict[str, Any]:
     problems = casting.roster_problems(raw, cfg["cast"], *narrators)
     if not isinstance(cfg.get("model"), str) or not cfg["model"]:
         problems.append("model must name the Gemini TTS model")
+    # the audio profile line of a prompt the narrators read (a creature's comes from its profile)
+    for name, default in NARRATOR_PROFILES.items():
+        text = cfg.setdefault(name, default)
+        why = casting.not_english(text) if isinstance(text, str) and text.strip() else "empty"
+        if why:
+            problems.append(f"{name} must be English only, Gemini would read it aloud ({why})")
     if problems:
         raise ValueError(f"{path.name}: " + "; ".join(problems))
     cfg["roster"] = {
