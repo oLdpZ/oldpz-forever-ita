@@ -66,6 +66,16 @@ def _unit_repo(tmp_path: Path, units, quests) -> Path:
     return data
 
 
+def test_an_npc_name_is_never_marked_as_itself_only_the_names_inside_it(tmp_path):
+    data = _unit_repo(tmp_path, [(3, "Flesh Eater", "Mangiatore di Carne", "official"),
+                                 (213, "Hungry Dire Wolf", "Metalupo Affamato", "machine")], [])
+    gl.write_glossary(tmp_path / "pipeline" / gl.GLOSSARY, [
+        ("creatura", 3, "Flesh Eater", "Mangiatore di Carne"), ("creatura", 9, "Dire Wolf", "Metalupo")])
+    remark_names.remark(data)
+    assert {ln["id"]: ln["it"] for ln in Store(data).load("unit")} == {
+        3: "Mangiatore di Carne", 213: "⟦Dire Wolf=Metalupo⟧ Affamato"}
+
+
 def _it(data: Path) -> dict[int, str]:
     return {ln["id"]: ln["it"] for ln in Store(data).load("quest")}
 

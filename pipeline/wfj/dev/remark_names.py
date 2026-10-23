@@ -47,16 +47,23 @@ def remark(data: Path, conflicts: list[str] | None = None, counts: dict[str, int
         lines = store.load(type_)
         if not lines:
             continue
-        # an NPC name is the unit table's own line: only the glossary's names inside it are marked
-        matcher, kinds = (glossary_matcher, ()) if type_ == UNIT_TYPE else (names_matcher, ENGLISH_KINDS)
+        # an NPC name (the unit table's own line): only the glossary's names inside it are marked, never the
+        # whole name as itself (`Flesh Eater` stays as it is; `Hungry Dire Wolf` marks `Dire Wolf`)
+        unit = type_ == UNIT_TYPE
+        matcher, kinds = (glossary_matcher, ()) if unit else (names_matcher, ENGLISH_KINDS)
         en = {(ln["id"], ln["field"]): ln["en"] for ln in english.load(type_)}
         changed = False
         for ln in lines:
+            line_en = en.get((ln["id"], ln["field"]))
             for v in decisions.variant_dicts(ln):
                 it = v.get("it")
                 if not isinstance(it, str):
                     continue
-                marked = names.mark_from_english(it, en.get((ln["id"], ln["field"])), matcher, kinds)
+                if unit:
+                    found = matcher.find(line_en) if matcher is not None and line_en else []
+                    marked = names.mark_names(it, [t for t in found if t[0] != line_en.strip()])
+                else:
+                    marked = names.mark_from_english(it, line_en, matcher, kinds)
                 if marked != it:
                     n = marked.count(names.OPEN) - it.count(names.OPEN)
                     added += n
