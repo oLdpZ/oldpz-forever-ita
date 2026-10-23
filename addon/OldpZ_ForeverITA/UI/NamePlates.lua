@@ -173,12 +173,14 @@ end
 WFJ.State.on("names", function() NamePlates.refreshNames() end)
 
 -- PLAYER_REGEN_DISABLED (Main), still before the lockdown: every plate's English back, every record released.
+-- The hold is set whatever happens: a drop that raises still leaves combat held (the error goes on to Main's guard).
 -- → records whose widget needed a write
 function NamePlates.onCombatStart()
   combatHeld = false -- the drops' own writes happen now, before the hold
   for frame in pairs(written) do written[frame] = nil end
-  local n = SS.dropAll(SURFACE)
+  local ok, n = pcall(SS.dropAll, SURFACE)
   combatHeld = true
+  if not ok then error(n, 0) end
   WFJ.Render.updateBanner(SURFACE)
   return n
 end

@@ -92,6 +92,22 @@ describe("the NPC names on the nameplates", function()
     assert.are.equal("Senani Cuore Tonante", nameOf(a))
   end)
 
+  it("combat start holds every write even when putting the English back raises", function()
+    local a = add("nameplate1")
+    assert.are.equal("Senani Cuore Tonante", nameOf(a))
+    local dropAll = WFJ.SurfaceState.dropAll
+    WFJ.SurfaceState.dropAll = function() error("boom") end
+    local ok = pcall(WFJ.NamePlates.onCombatStart) -- the error still reaches Main's step guard
+    WFJ.SurfaceState.dropAll = dropAll
+    assert.is_false(ok)
+    -- InCombatLockdown() not yet true (the event comes first): only the hold keeps this plate unwritten
+    local c = add("nameplate2")
+    assert.are.equal("Hogger", nameOf(c))
+    assert.are.equal(0, addonWrites(c.name))
+    WFJ.NamePlates.onCombatEnd()
+    assert.are.equal("Hogger il Rosso", nameOf(c))
+  end)
+
   it("combat start gives every Italian plate its English back; nothing is written until combat ends", function()
     local a, b = add("nameplate1"), add("nameplate2")
     assert.are.equal("Senani Cuore Tonante", nameOf(a))
@@ -270,5 +286,23 @@ describe("Main routes the nameplate events", function()
     Stub.fireAll("NAME_PLATE_UNIT_REMOVED", "nameplate1")
     Stub.fireAll("PLAYER_REGEN_ENABLED")
     assert.are.same({ "onAdded:nameplate1", "onCombatStart:nil", "onRemoved:nameplate1", "onCombatEnd:nil" }, seen)
+  end)
+
+  it("a plate handler that raises is caught and logged once, never raised per plate event", function()
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installQuestAPI(); Stub.installTooltipAPI(); Stub.installGossipAPI(); Stub.installItemTextAPI()
+    local WFJ = Loader.load("OldpZ_ForeverITA")
+    Stub.fireAll("ADDON_LOADED", "OldpZ_ForeverITA")
+    local calls, logged = 0, {}
+    WFJ.NamePlates.onAdded = function() calls = calls + 1; error("plate boom") end
+    WFJ.NamePlates.onRemoved = function() calls = calls + 1; error("plate boom") end
+    WFJ.ErrorLog.recordCaught = function(msg) logged[#logged + 1] = tostring(msg) end
+    for i = 1, 3 do
+      assert.has_no.errors(function() Stub.fireAll("NAME_PLATE_UNIT_ADDED", "nameplate" .. i) end)
+      assert.has_no.errors(function() Stub.fireAll("NAME_PLATE_UNIT_REMOVED", "nameplate" .. i) end)
+    end
+    assert.are.equal(6, calls) -- every event still reaches the module
+    assert.are.equal(1, #logged)
+    assert.truthy(logged[1]:find("plate boom", 1, true))
   end)
 end)

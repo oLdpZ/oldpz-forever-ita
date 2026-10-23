@@ -175,6 +175,18 @@ end
 -- the same guard for work a module runs later than the event that asked for it (UI/IntroWindow)
 WFJ.step = step
 
+-- The nameplate events' guard (NAME_PLATE_UNIT_ADDED / _REMOVED, many per second in a crowd): a bare pcall, and only
+-- the first error of the session goes to the problem log (Core/ErrorLog) and /fita debug; the rest are dropped.
+local plateErrorLogged = false
+local function plateEvent(fn, token)
+  local ok, err = pcall(fn, token)
+  if ok or plateErrorLogged then return end
+  plateErrorLogged = true
+  WFJ.initErrors = WFJ.initErrors or {}
+  WFJ.initErrors[#WFJ.initErrors + 1] = { surface = "nameplates.event", err = tostring(err) }
+  if WFJ.ErrorLog then pcall(WFJ.ErrorLog.recordCaught, err) end
+end
+
 function WFJ.OnLoad()
   WFJ.initErrors = {}
   -- `or OFI_Log` for the same reason as OFI_DB below: a failed load never hands the client an empty global
@@ -464,11 +476,12 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
     -- the nameplates' NPC names: the Italian on every plate shown
     if WFJ.NamePlates then step("nameplates.combat", WFJ.NamePlates.onCombatEnd) end
   elseif event == "NAME_PLATE_UNIT_ADDED" then
-    -- many per second in a crowd: called directly (a guard's record per event would pile up); the module never raises
-    -- on client data (every value is type- and secret-checked) and does nothing until its init hooked the writer
-    if WFJ.NamePlates then WFJ.NamePlates.onAdded(name) end
+    -- many per second in a crowd: not through `step` (a record per event would pile up) but under a bare pcall whose
+    -- first error alone is logged (plateEvent). The module type- and secret-checks every client value and does
+    -- nothing until its init hooked the writer; the guard is for what that does not foresee.
+    if WFJ.NamePlates then plateEvent(WFJ.NamePlates.onAdded, name) end
   elseif event == "NAME_PLATE_UNIT_REMOVED" then
-    if WFJ.NamePlates then WFJ.NamePlates.onRemoved(name) end
+    if WFJ.NamePlates then plateEvent(WFJ.NamePlates.onRemoved, name) end
   elseif event == "MODIFIER_STATE_CHANGED" then
     WFJ.Modifier.refresh()
   elseif event == "PLAYER_ENTERING_WORLD" then
