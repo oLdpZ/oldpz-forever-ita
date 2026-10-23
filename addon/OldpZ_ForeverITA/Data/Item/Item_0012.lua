@@ -10,7 +10,7 @@ WFJ.Data.add("item", {
   [12162] = { "Ti insegna a creare una ⟦Hardened Iron Shortsword=Spada Corta di Ferro Indurito⟧.", 0x2e531291, "u" },
   [12163] = { "Ti insegna a creare uno ⟦Moonsteel Broadsword=Spadone d'Acciaio Lunare⟧.", 0xd6cc506d, "u" },
   [12164] = { "Ti insegna a creare un'⟦Massive Iron Axe=Ascia Massiva di Ferro⟧.", 0x3d049198, "u" },
-  [12185] = { "Clicca col pulsante destro per evocare e congedare il tuo Pappagallo di Sangue.", 0x679c4a2a, "u" },
+  [12185] = { "Clicca col pulsante destro per evocare e congedare il tuo ⟦Blood Parrot=Pappagallo di Sangue⟧.", 0x679c4a2a, "u" },
   [12187] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },
   [12188] = { "+$N1 Armatura.", 0x5e762e76, "u" },
   [12190] = { "Fa cadere chi la beve in un sonno senza sogni per $D1. Nel frattempo recupera $N2 salute e $N3 mana.", 0x6caebbed, "u" },
