@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["0b71157ddc9fcc66"] = { "Seguaci, servitori, soldati del freddo buio! Obbedite al richiamo di Kel'Thuzad!", "." },
   ["0b747af02ade31ab"] = { "Dov'è l'anziano Stonespire?", "." },
   ["0b7a3a3465548d4f"] = { "Forse sono stato troppo precipitoso nel giudicarti, {class}. Pare che la tua fede cieca in questa Luce abbia un qualche valore, dopotutto.\n\nDammi il tuo marchio e ne amplificherò il potere.", "." },
-  ["0b7c867f8e765823"] = { "Chaw Stronghide risiede nella grande tenda all'angolo nord-ovest del villaggio. Per ora ti insegnerà ciò che devi sapere sulla Conciatura.", "." },
+  ["0b7c867f8e765823"] = { "⟦Chaw Stronghide=Chaw Pelle Forte⟧ risiede nella grande tenda all'angolo nord-ovest del villaggio. Per ora ti insegnerà ciò che devi sapere sulla Conciatura.", "." },
   ["0b7ef27c8c743d18"] = { "Uff.", "." },
   ["0b8098cdf6933d19"] = { "Ecco fatto: ora puoi fabbricare una Lodestone tutta tua. Alla gente non piace granché vedere accampamenti montati in centro città, quindi dovrai andartene in mezzo alla natura selvaggia se vuoi provarla.\n\nAh, e ricorda: nessun accampamento è completo senza un fuoco da campo. Te ne servirà uno prima di montare il tuo accampamento. Quasi tutti i cuochi possono insegnarti ad accendere un fuoco. Se non l'hai già fatto, potresti fare un salto da qualcuno che ti istruisca nelle arti culinarie, per impararne le basi.", "." },
   ["0b834f3eaa746117"] = { "Come hai richiesto, il caporale Splithoof è arrivato, {name}.", "." },
@@ -51,5 +51,5 @@ WFJ.Data.add("gossip", {
   ["0bfa2ecee646b77f"] = { "Se intendi liberare Myzrael, te ne pentirai!", "." },
   ["0bfae3266a9e736d"] = { "Avanti!", "." },
   ["0bfcf142ebf9760a"] = { "Intrusi! Altre pedine dell'⟦Argent Dawn=Alba d'Argento⟧, senza dubbio. Già una di loro è tra i miei prigionieri. Ritiratevi dal mio dominio prima che venga giustiziata!", "." },
-  ["0bff3656b4d68b1f"] = { "Vuoi diventare erborista, eh? Allora dovresti far visita a Firodren Mooncaller nei Giardini del Tempio. Potrebbe avere qualche trucco del mestiere da insegnarti.", "." },
+  ["0bff3656b4d68b1f"] = { "Vuoi diventare erborista, eh? Allora dovresti far visita a ⟦Firodren Mooncaller=Firodren Vocaluna⟧ nei Giardini del Tempio. Potrebbe avere qualche trucco del mestiere da insegnarti.", "." },
 })

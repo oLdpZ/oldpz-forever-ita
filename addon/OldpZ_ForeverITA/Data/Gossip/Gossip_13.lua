@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["138840e7d893eb81"] = { "Ho abbastanza rifornimenti per promuovere le nostre truppe a esperte.", "." },
   ["13937a6223caf32e"] = { "Salve, Eitrigg. Porto notizie dai ⟦Blackrock Spire=Bastioni di Roccianera⟧.", "." },
   ["1394f37b3c195982"] = { "La professione dell'Incantamento mostra il ciclo di distruzione e creazione che sta al cuore della natura. Teg, alla Dawnstrider Enchanters sull'altura di mezzo, ti mostrerà come.", "." },
-  ["1396a7093460e1c4"] = { "Anche se in qualche modo riuscissi a liberarci senza sconfiggere C'thun, concentreremmo tutti i nostri poteri per ricacciare la bestia nell'inferno da cui è venuta, A QUALUNQUE COSTO.", "." },
+  ["1396a7093460e1c4"] = { "Anche se in qualche modo riuscissi a liberarci senza sconfiggere ⟦C'Thun=C'thun⟧, concentreremmo tutti i nostri poteri per ricacciare la bestia nell'inferno da cui è venuta, A QUALUNQUE COSTO.", "." },
   ["139b8a3314f9be51"] = { "⟦Icy Scale Gauntlets=Guanti Lunghi di Scaglie Ghiacciate⟧.", "." },
   ["139ff695d720382b"] = { "Là fuori nel buio si annidano molte cose, e oggi la luce serve più che mai. Se solo queste povere anime capissero che, anche se il nostro mondo è cambiato, non dobbiamo per forza essere i mostri che i vivi credono che siamo.", "." },
   ["13a4cdca92b47d61"] = { "Non bastò.\n\n<Fairbanks fa un breve sorrisetto, perso in un ricordo.>\n\nNe vennero mille e mille morirono. Per la Luce! Per la potenza di Mograine! Li abbatteva alla velocità con cui arrivavano. In mezzo al caos, notai che il Mograine minore era ancora lì, in lontananza. Lo chiamai: \"Aiutaci, Renault! Aiuta tuo padre, ragazzo!\"", "." },

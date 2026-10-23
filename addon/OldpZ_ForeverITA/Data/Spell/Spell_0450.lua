@@ -7,7 +7,7 @@ WFJ.Data.add("spell", {
   [450066] = { "..", nil, 0x000017b8, nil, "um" },
   [450083] = { "⟦Rapid Fire=Rapidità di Tiro⟧ ora aumenta anche la velocità d'attacco in mischia del $N1% per $D1.", nil, 0xba77c772, nil, "um" },
   [450084] = { "Aumenta la velocità d'attacco in mischia del $N1%.", "Aumenta la velocità d'attacco in mischia del $N1%.", 0xa4764cc8, 0xa4764cc8, "uu" },
-  [450085] = { nil, "Un tocco finale per un travestimento da Nano Ferroscuro.", nil, 0x79de3b54, "mu" },
+  [450085] = { nil, "Un tocco finale per un travestimento da ⟦Dark Iron Dwarf=Nano Ferroscuro⟧.", nil, 0x79de3b54, "mu" },
   [450086] = { "Un potere pervade il gruppo del bersaglio, aumentandone la Tempra di $N1 per $D1.", "Tempra aumentata di $N1.", 0xefc57601, 0x543f3a70, "uu" },
   [450098] = { "L'incantatore colpisce violentemente il terreno, infliggendo $N1 danni fisici a tutti i giocatori e respingendoli indietro.", nil, 0x0a79ce72, nil, "um" },
   [450105] = { "Tenta di rimuovere una maledizione, una malattia e un veleno da chi lo beve.", nil, 0x28825c19, nil, "um" },

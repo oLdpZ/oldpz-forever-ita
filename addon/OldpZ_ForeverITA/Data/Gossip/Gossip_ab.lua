@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["abafa51881bd6f33"] = { "Che ti serve?", "." },
   ["abb44b5c2b1c7a1d"] = { "<Questo/Questa> {class} si intromette nel nostro lavoro! Muori, <sciocco/sciocca>!", "." },
   ["abb6b6a9eaea17f7"] = { "<Signorino/Signorina>, se non ti conoscessi meglio, penserei che sei <uno/una> di quei tipi 'speciali'. Noi li chiamiamo Trogg.\n\nWindsor non aveva niente contro i ⟦Dark Iron=Ferroscuro⟧, dopotutto il miglior amico del suo trisnonno era un ⟦Dark Iron=Ferroscuro⟧. Ed è probabilmente anche per questo che quell'esercito di ⟦Dark Iron=Ferroscuro⟧ non l'ha ammazzato a vista.", "." },
-  ["abb79822aec3319f"] = { "Sono faccende da troll. Cerca Un'Thuwa al ⟦Sen'jin Village=Villaggio di Sen'jin⟧, giù a sud.", "." },
+  ["abb79822aec3319f"] = { "Sono faccende da troll. Cerca ⟦Un'Thuwa=Un'thuwa⟧ al ⟦Sen'jin Village=Villaggio di Sen'jin⟧, giù a sud.", "." },
   ["abb9c3573b6d1f47"] = { "Presto, giovani. Presto arriveranno gli eserciti dell'⟦Horde=Orda⟧. Marceremo. Marceremo verso i cancelli maledetti e schiacceremo chiunque si metta sulla nostra strada. Che sentano la potenza di Kalimdor!", "." },
   ["abca95fad1d0d43e"] = { "Perché...", "." },
   ["abd84debf0973229"] = { "Non puoi nulla contro la forza dell'⟦Horde=Orda⟧!", "." },

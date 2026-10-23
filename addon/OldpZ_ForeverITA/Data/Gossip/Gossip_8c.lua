@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["8c89ff6ba6642da6"] = { "Warg osserva l'acqua chiedendosi quanta fortuna avrà oggi.", "." },
   ["8c8c065f18754cc1"] = { "{name}, cosa aspetti? Trova il feldmaresciallo Teravaine nel ⟦Field of Strife=Pian della Discordia⟧ e consegnagli gli ordini d'assalto. Appena li riceverà, lui e le sue truppe caricheranno l'⟦Horde=Orda⟧ senza fare prigionieri!", "." },
   ["8c9156bcb9249047"] = { "Voglio diventare fabbro d'armi.", "." },
-  ["8c9325d178c8e816"] = { "Sei nel posto giusto, <ragazzo/ragazza>! La gente viene qui da tutto il mondo per imparare il mestiere del fabbro. Troverai Bengus Deepforge a martellare su un'incudine nel cuore della nostra bella città, proprio presso la ⟦Great Forge=Grande Forgia⟧.", "." },
+  ["8c9325d178c8e816"] = { "Sei nel posto giusto, <ragazzo/ragazza>! La gente viene qui da tutto il mondo per imparare il mestiere del fabbro. Troverai ⟦Bengus Deepforge=Bengus Forgiafonda⟧ a martellare su un'incudine nel cuore della nostra bella città, proprio presso la ⟦Great Forge=Grande Forgia⟧.", "." },
   ["8c94d7a1e6b34dc6"] = { "Ah, <amico/amica>, aiuto solo i cacciatori e i loro famigli.", "." },
   ["8c951e23d88c5bc5"] = { "Le benedizioni del Signore del Vento scorrono in me!", "." },
   ["8c9e5d1750a198ae"] = { "Vengono a prenderti, idiota!", "." },

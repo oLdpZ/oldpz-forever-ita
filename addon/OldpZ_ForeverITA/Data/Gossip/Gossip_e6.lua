@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["e60e9b9999bb49b0"] = { "Ci sono molti locali dove bere qualcosa a ⟦Stormwind=Roccavento⟧, ma solo uno ti permette di passare la notte. Va' al Gilded Rose nel ⟦Trade District=Quartiere del Commercio⟧. Ho sentito che il prezzo di una stanza è ragionevole e le lenzuola sono pulite.", "." },
   ["e61bfef12c52f424"] = { "Hamhock nei guai! Hamhock serve aiuto!", "." },
   ["e61c65437310ea10"] = { "Bale può insegnarti le vie della sopravvivenza. Cercalo sull'⟦Hunter Rise=Altura dei Cacciatori⟧.", "." },
-  ["e62aea1f1939dc0b"] = { "Cerca Sayoc e Hanashi nella ⟦Valley of Honor=Valle dell'Onore⟧, dentro Arms of Legend. Bada a come parli con loro, o Sayoc potrebbe decidere di dare un pezzo di te in pasto a Grinning Dog.", "." },
+  ["e62aea1f1939dc0b"] = { "Cerca Sayoc e Hanashi nella ⟦Valley of Honor=Valle dell'Onore⟧, dentro Arms of Legend. Bada a come parli con loro, o Sayoc potrebbe decidere di dare un pezzo di te in pasto a ⟦Grinning Dog=Cane Ringhiante⟧.", "." },
   ["e62b57f491acd04a"] = { "Ah sì, davvero? Allora, cos'hai per il nuovo pezzo grosso dei Gordok, Fengus?", "." },
   ["e63e7d0eaa10547d"] = { "Le tue abilità vanno oltre le mie, <straniero/straniera>. Parla con Hgarth al ⟦Sun Rock Retreat=Rifugio Roccia del Sole⟧, nelle ⟦Stonetalon Mountains=Vette di Petrartiglio⟧. Ti darà più conoscenze di quante possa dartene io.", "." },
   ["e64bcd8dcb4d2e31"] = { "Non c'è scampo!", "." },

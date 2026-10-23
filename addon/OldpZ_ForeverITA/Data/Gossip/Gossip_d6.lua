@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["d6d6363e88f53517"] = { "Non sopporto tutte queste risatine e risate diaboliche. Ancora un 'muhahaha' da Lydon e faccio saltare in aria tutti quanti.", "." },
   ["d6de6d0249929e34"] = { "Fucili, dinamite, bombe, pecore esplosive... come si fa a non amarli? Per imparare a costruire questi e molti altri entusiasmanti strumenti del mestiere, vai a ⟦Undercity=Sepulcra⟧, sotto le ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧, a sud di Brill. Prendi gli ascensori in fondo alle rovine. Quando arrivi, chiedi a uno degli Undercity Guardian dove si trova esattamente l'istruttore.", "." },
   ["d6dfc6cac0dcde4d"] = { "Le pareti della camera tremano. Sta succedendo qualcosa...", "." },
-  ["d6ea414fba50ea5a"] = { "Ciao, {name}! Sei qui per comprare qualcosa? O magari per vendere?\n\nPrezzi migliori non li troverai da nessuna parte, parola di Augustus the Touched!", "." },
+  ["d6ea414fba50ea5a"] = { "Ciao, {name}! Sei qui per comprare qualcosa? O magari per vendere?\n\nPrezzi migliori non li troverai da nessuna parte, parola di ⟦Augustus the Touched=Augustus lo Svitato⟧!", "." },
   ["d6f0d5b10d8341a3"] = { "Sei un buono a nulla, Ribbly. È ora di pagare per la tua malvagità!", "." },
   ["d6f339b4bd3ea03d"] = { "Stregoni, non dovreste giocare con una magia che non capite. Visto cosa succede?", "." },
   ["d6f6ac3bcfb964ec"] = { "Ora, se andate a pagina 34 del testo, vedrete l'illustrazione di un nano sottoposto a dissezione...", "." },

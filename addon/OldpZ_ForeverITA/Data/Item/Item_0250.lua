@@ -64,7 +64,7 @@ WFJ.Data.add("item", {
   [250354] = { "Bevi per aumentare l'Intelletto di $N1. Dura $D1.", 0x88488284, "u" },
   [250363] = { "Ti insegna a creare una Potion of Predatory Senses.", 0xbe247b8e, "u" },
   [250364] = { "Ti insegna a creare un Elixir of Cunning.", 0xc74ccbbc, "u" },
-  [250365] = { "Ti insegna a creare un Elixir of the Phalanx.", 0xc7d0e0c1, "u" },
+  [250365] = { "Ti insegna a creare un Elixir of the ⟦Phalanx=Falange⟧.", 0xc7d0e0c1, "u" },
   [250366] = { "Ti insegna a creare un Minor Cleric's Elixir.", 0xbd3a3bec, "u" },
   [250367] = { "Ti insegna a creare un Lesser Cleric's Elixir.", 0x7f44084f, "u" },
   [250368] = { "Ti insegna a creare un Cleric's Elixir.", 0xac2119c5, "u" },

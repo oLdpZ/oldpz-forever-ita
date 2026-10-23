@@ -12,7 +12,7 @@ WFJ.Data.add("gossip", {
   ["192fb6f4e9516da1"] = { "Grazie, {name}. Hai placato la fredda rabbia nel mio cuore.", "." },
   ["19308a28a0e728cb"] = { "Dov'è il tuo Medallion of Station, <piccolo/piccola>? Non puoi parlare con un duca senza una prova del tuo titolo...", "." },
   ["19311b09b6772789"] = { "%s emerge per proteggere la Fathom Stone!", "." },
-  ["193a86649c8b1e30"] = { "Mi hanno invitato a visitare Dalaran per conto del ⟦Cenarion Circle=Circolo Cenariano⟧. Trovo questo posto in egual misura meraviglioso... e inquietante.\r\n\nQuanto a te, giovane {class}: se non l'hai ancora fatto, cerca Sheldras Moontree a ⟦Stormwind=Roccavento⟧. Ti insegnerà a raggiungere l'enclave del ⟦Cenarion Circle=Circolo Cenariano⟧ a ⟦Moonglade=Radaluna⟧.", "." },
+  ["193a86649c8b1e30"] = { "Mi hanno invitato a visitare Dalaran per conto del ⟦Cenarion Circle=Circolo Cenariano⟧. Trovo questo posto in egual misura meraviglioso... e inquietante.\r\n\nQuanto a te, giovane {class}: se non l'hai ancora fatto, cerca ⟦Sheldras Moontree=Sheldras Quercialuna⟧ a ⟦Stormwind=Roccavento⟧. Ti insegnerà a raggiungere l'enclave del ⟦Cenarion Circle=Circolo Cenariano⟧ a ⟦Moonglade=Radaluna⟧.", "." },
   ["193cc5d66a3526ca"] = { "Buongiorno, <signore/signora>. Ti stringerei la mano, ma come vedi sono nel bel mezzo di qualcosa. Posso esserti utile?", "." },
   ["193d520777365b4d"] = { "Desidero essere il primo a darti il benvenuto, a pieno titolo, sul primo dei quattro sentieri che guideranno per sempre il tuo destino.\n\nSe hai la pietra che la terra ti ha dato, ti darò il totem che ti ha promesso.\n\nAltrimenti vattene, finché non avrai trovato la tua strada.", "." },
   ["19554cea2a9c2385"] = { "Una morte... onorevole.", "." },

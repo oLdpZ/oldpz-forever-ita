@@ -87,7 +87,7 @@ WFJ.Data.add("spell", {
   [29233] = { "Aumenta i danni inflitti dal famiglio del $N1%.", nil, 0xe2227b67, nil, "um" },
   [29235] = { "Aumenta la Tempra di 30 per $D1.", "Tempra aumentata di 30.", 0x3e3ea034, 0x4cdf2590, "uu" },
   [29236] = { "Rigenera $N1 mana.", nil, 0x09fdd6de, nil, "um" },
-  [29305] = { "Evoca un Elementale delle Braci che ti protegge per $D1.", nil, 0xf1360f59, nil, "um" },
+  [29305] = { "Evoca un ⟦Cinder Elemental=Elementale delle Braci⟧ che ti protegge per $D1.", nil, 0xf1360f59, nil, "um" },
   [29306] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },
   [29307] = { "Aumenta i danni fisici subiti da un nemico di $N1 per $D1.", "Danni fisici subiti aumentati di $N1.", 0x0c09c9e0, 0xa01a31bd, "uu" },
   [29310] = { "Colpisce un nemico con un dardo antimana. Per ogni punto di mana consumato dal dardo, il bersaglio subisce $N1 danni.", nil, 0x5ae7b2cb, nil, "um" },

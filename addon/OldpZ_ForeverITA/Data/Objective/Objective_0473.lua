@@ -28,5 +28,5 @@ WFJ.Data.add("objective", {
   [473818] = { "Impara la Cucina da Zerril Softbreeze a Shen'dar Village", 0x945a0bff, "." },
   [473835] = { "Impara la Cucina dal cuoco Torka a ⟦Razor Hill=Tranciacolle⟧", 0x4d4b53a4, "." },
   [473843] = { "Impara la Cucina da William Pickman a Brill", 0xe8fb15e7, "." },
-  [473847] = { "Impara la Cucina da Pyall Silentstride al ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧", 0xbf8d32f5, "." },
+  [473847] = { "Impara la Cucina da ⟦Pyall Silentstride=Pyall Passo Silente⟧ al ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧", 0xbf8d32f5, "." },
 })

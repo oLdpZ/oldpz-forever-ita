@@ -6,5 +6,5 @@ WFJ.Data.add("item", {
   [233200] = { "Evoca un fiorcanto che conferisce a tutti i membri del tuo gruppo o della tua incursione un aumento del $N1% della probabilità di critico in mischia, a distanza o magico e di $N2 a tutte le caratteristiche per $D1. Non si somma ad altri effetti globali simili. Non è influenzato dai Chronoboon.", 0xe9db065f, "u" },
   [233209] = { "Evoca per $D1 un calderone di acquavite, utilizzabile da tutti i membri del tuo gruppo o della tua incursione per aumentare la potenza d'attacco in mischia di $N2 e le dimensioni per $D2.", 0x0fcd9860, "u" },
   [233217] = { "Inalare questo incenso ti fa svanire nelle ombre e ti permette di muoverti furtivamente nell'⟦Hive'Ashi=Alveare Ashi⟧, nell'⟦Hive'Regal=Alveare Regal⟧ o nell'⟦Hive'Zora=Alveare Zora⟧, ma riduce la tua velocità del $N1%. Dura $D1.", 0x2b7ea238, "u" },
-  [233250] = { "Usa il ramo per chiamare un Ancient of War che ti aiuti a combattere i silitidi.", 0x65c2a94b, "u" },
+  [233250] = { "Usa il ramo per chiamare un ⟦Ancient of War=Antico della Guerra⟧ che ti aiuti a combattere i silitidi.", 0x65c2a94b, "u" },
 })

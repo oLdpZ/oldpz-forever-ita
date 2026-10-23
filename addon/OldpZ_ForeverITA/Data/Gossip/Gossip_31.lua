@@ -47,7 +47,7 @@ WFJ.Data.add("gossip", {
   ["31f0d4b295b6eaef"] = { "Dovrei avere qualche moneta in più da questa vendita. Magari mi compro il pranzo...", "." },
   ["31f40efc31f4c1d0"] = { "Pensare che il luogo dove il Capoguerra è nato e cresciuto è così vicino.", "." },
   ["31fbbc8422520224"] = { "Il bolide goblin ha parecchia grinta, ma gli gnomi hanno nascosto un asso o due nella loro auto...", "." },
-  ["31fdb3bfac56fa36"] = { "Non posso aiutarti! Sei pront<o/a> per qualcuno che ci lavora da più tempo di me! Vediamo... sei dell'⟦Alliance=Alleanza⟧, quindi devi parlare con Lilliam Sparkspindle a ⟦Stormwind=Roccavento⟧.", "." },
-  ["31fe28691409de7c"] = { "Lo Scortica Anime arriva!", "." },
+  ["31fdb3bfac56fa36"] = { "Non posso aiutarti! Sei pront<o/a> per qualcuno che ci lavora da più tempo di me! Vediamo... sei dell'⟦Alliance=Alleanza⟧, quindi devi parlare con ⟦Lilliam Sparkspindle=Lilliam Saldafresa⟧ a ⟦Stormwind=Roccavento⟧.", "." },
+  ["31fe28691409de7c"] = { "Lo ⟦Soulflayer=Scortica Anime⟧ arriva!", "." },
   ["31fec6e10867faa9"] = { "Non è tutto perduto, Kharan!", "." },
 })

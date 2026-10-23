@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["948ad9e989886ada"] = { "Tanto tempo fa, prima dell'ultima grande guerra, mio padre gestiva la ⟦Lumber Mill=Segheria⟧ di Cresta Nord. Era la sua vita, e vi si dedicava anima e corpo. Poi arrivò la guerra e, per quanto gli costasse, dovemmo fuggire a ⟦Stormwind=Roccavento⟧.\n\nIn quei giorni perdemmo parecchi amici e familiari, e mi addolora sapere che la ⟦Scarlet Crusade=Crociata Scarlatta⟧ si è presa la segheria per i propri scopi.\n\nEcco perché ho fatto ritorno.", "." },
   ["9490256d7c9e0c6d"] = { "%s guarda {name}, poi piange di gioia.", "." },
   ["94910dcf2ef35f4a"] = { "I nostri antenati ci insegnano che, se il singolo deve essere forte, nel numero c'è sicurezza. Vuoi difendere l'onore di ⟦Thunder Bluff=Picco del Tuono⟧ fondando una gilda?", "." },
-  ["94940f7139ec6315"] = { "Brek Stonehoof si trova alla Stonehoof Geology, sul livello inferiore, e può insegnarti il modo giusto di estrarre minerali e gemme preziose.", "." },
+  ["94940f7139ec6315"] = { "⟦Brek Stonehoof=Brek Zoccolo Granitico⟧ si trova alla Stonehoof Geology, sul livello inferiore, e può insegnarti il modo giusto di estrarre minerali e gemme preziose.", "." },
   ["949dd18551be2003"] = { "%s inizia a frugare nelle borse in cerca del componente giusto per l'incantesimo.", "." },
   ["94a44003124ddfae"] = { "Radnaal fornisce a Nadyia una buona scorta di cuoio, ricavato dagli animali che scuoia. Ti consiglio di parlare con lui, se vuoi imparare la professione.", "." },
   ["94a71a9488bb1ca6"] = { "Posso insegnarti i segreti di ⟦Raptor Riding=Cavalca-Raptor⟧, purché tu abbia abbastanza oro per pagare la lezione!", "." },

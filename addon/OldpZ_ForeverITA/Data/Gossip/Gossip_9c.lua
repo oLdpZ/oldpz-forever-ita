@@ -18,7 +18,7 @@ WFJ.Data.add("gossip", {
   ["9c487c9af5ed4344"] = { "Kelstrum è uno sbruffone e un fanfarone... e come se non bastasse è anche uno dei guerrieri più abili che incontrerai mai!\n\nTe lo dico io, se vuoi addestrarti nelle arti del guerriero, è con lui che devi parlare. Di sicuro lo trovi nel Salone delle Armi, a est dei ⟦Gates of Ironforge=Cancelli di Forgiardente⟧.", "." },
   ["9c600498a72eb54c"] = { "La prego... la prego... signorina Proudmore. Non volevo...", "." },
   ["9c61ed23104e9e0d"] = { "Buonanotte, buonanotte.", "." },
-  ["9c69bad5eeaae79d"] = { "Assicurati di dire a Greatfather Winter quale sorpresa segreta vorresti ricevere per questo Grande Inverno!", "." },
+  ["9c69bad5eeaae79d"] = { "Assicurati di dire a ⟦Greatfather Winter=Babbo Inverno⟧ quale sorpresa segreta vorresti ricevere per questo Grande Inverno!", "." },
   ["9c70f7cd5837b25c"] = { "Con questo distruggo questi strumenti del male! Per l'⟦Horde=Orda⟧!", "." },
   ["9c7a35637d68678f"] = { "Questo lavoro non vale di certo sedicimila e cinquecento all'anno.", "." },
   ["9c80476bad5905cc"] = { "Eccellente! Renderai un grande servizio alla Lega di Arathor liberando il ⟦Arathi Basin=Bacino d'Arathi⟧ dai ⟦The Defilers=Profanatori⟧ e dai loro scagnozzi dell'⟦Horde=Orda⟧. Cerca lady Hoteshem nella sala delle udienze reali del Castello di ⟦Stormwind=Roccavento⟧. Ti sta aspettando, {name}.", "." },

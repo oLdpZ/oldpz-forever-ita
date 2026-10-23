@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["28d7b0833113d524"] = { "Alcuni argomenti su cui posso aiutarti sono: | driver | comandi | lag | bot....zzzzzzzzttt!!", "." },
   ["28de61b30d49dee0"] = { "Le mie ossa sono deboli, i miei occhi vedono solo oscurità e il mio corpo sente solo dolore; ma va bene così, perché la mia volontà è mia.", "." },
   ["28e1c40960d1c573"] = { "Mortale incosciente!", "." },
-  ["28f3f62a99478c78"] = { "Azure Templar! Possiedo il tuo stemma di richiamo. Rispondi alla mia chiamata!", "." },
+  ["28f3f62a99478c78"] = { "⟦Azure Templar=Templare di Zaffiro⟧! Possiedo il tuo stemma di richiamo. Rispondi alla mia chiamata!", "." },
   ["28f4f57a46522564"] = { "Salute, {name}. Come procedono le tue ricerche nel demoniaco e nell'arcano? Hai scoperto qualche oscuro segreto di recente?", "." },
   ["28f65ef0f3de230e"] = { "Dov'è il mio filatoio? Ce l'avevo qui da qualche parte...", "." },
   ["28ff1fe89642aa2e"] = { "Sono Rutherford Twing, il principale fornitore dei Profanatori di stanza qui al ⟦Arathi Basin=Bacino d'Arathi⟧. Man mano che migliorerai la tua reputazione presso di noi, metterò a tua disposizione una bella selezione di merci che potrebbero tornarti utili. Se avessi bisogno di riparare qualche oggetto, offro anche quel servizio.", "." },

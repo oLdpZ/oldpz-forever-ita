@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["0f93f67c80f380ce"] = { "Il Pilastro Occidentale accetta cristalli rossi, verdi e blu.\n\nIl Pilastro si concentra sull'energia che si può creare usando i cristalli rossi come fonte principale di potere. Ci sono due effetti possibili: uno aumenta la tua protezione dai danni, l'altro indebolisce le difese di un nemico.\n\nDifesa del Cristallo richiede cristalli rossi e verdi. Ti fornirà un aumento dell'Armatura.\n\nResa del Cristallo richiede cristalli blu e rossi. Può ridurre l'Armatura di un bersaglio specifico.", "." },
   ["0f9a5148bda05fac"] = { "Pochi da queste parti maneggiano la lama come Lyria Du Lac. Cercala dietro la fucina e vedi se è dell'umore giusto per insegnarti qualcosa di nuovo.", "." },
   ["0f9b1075c5784262"] = { "<Benvenuto/Benvenuta> alla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, fondata dal mio caro vecchio papà, Arkilus Thunderbrew. Mando avanti io il posto da quando mio fratello maggiore, Grimbooze, è sparito in una nebbia alcolica qualche raccolto fa.", "." },
-  ["0fa60d446d622612"] = { "Vuoi aiutare i Reietti nella loro lotta contro gli umani nel ⟦Arathi Basin=Bacino d'Arathi⟧? Allora va' nella Hall of the Brave e parla con Deze Snowbane.", "." },
+  ["0fa60d446d622612"] = { "Vuoi aiutare i Reietti nella loro lotta contro gli umani nel ⟦Arathi Basin=Bacino d'Arathi⟧? Allora va' nella Hall of the Brave e parla con ⟦Deze Snowbane=Deze Freddaneve⟧.", "." },
   ["0fae1f40f585d017"] = { "Mortali sconsiderati! Nessuno può sfidare i Figli della Fiamma Vivente!", "." },
   ["0fb1cf1d4a2edda3"] = { "La banca", "." },
   ["0fc1fe54c2e3c342"] = { "Fate un banchetto di {name}, mie bellezze!", "." },

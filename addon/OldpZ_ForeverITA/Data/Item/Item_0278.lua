@@ -16,7 +16,7 @@ WFJ.Data.add("item", {
   [278120] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [278121] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [278122] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
-  [278162] = { "Lancia una Pietra del Ritorno a uno Slave Worker ferito, dopo averlo fatto rinsavire a suon di botte.", 0x2d946e0d, "u" },
+  [278162] = { "Lancia una Pietra del Ritorno a uno ⟦Slave Worker=Schiavo Lavoratore⟧ ferito, dopo averlo fatto rinsavire a suon di botte.", 0x2d946e0d, "u" },
   [278194] = { "Smaltisci i materiali pericolosi a distanza di sicurezza da ⟦Gadgetzan=Meccania⟧ e da altra spazzatura.", 0xc144223e, "u" },
   [278265] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [278515] = { "Contiene vari strumenti utili per l'avventura, compresi quelli necessari a fare calchi delle rocce!", 0x7ee77e29, "u" },

@@ -23,7 +23,7 @@ WFJ.Data.add("gossip", {
   ["827afb74d8322cbc"] = { "Questa terra è contaminata. Bisogna invocare Ivus!", "." },
   ["8284abcc195a1492"] = { "%s soffia via il fumo dalla canna del fucile..", "." },
   ["828dcc9011537129"] = { "Chiave... prendi la chiave... Gerstahn ha... chiave.", "." },
-  ["82902b43aeb26e51"] = { "È ora che tu passi a un maestro più esperto. Nella Roccaforte di Piumaluna di Feralas vive l'elfa della notte Kylanna Windwhisper. Ha una mente brillante; senza dubbio potrà addestrarti ancora.", "." },
+  ["82902b43aeb26e51"] = { "È ora che tu passi a un maestro più esperto. Nella Roccaforte di Piumaluna di Feralas vive l'elfa della notte ⟦Kylanna Windwhisper=Kylanna Parlavento⟧. Ha una mente brillante; senza dubbio potrà addestrarti ancora.", "." },
   ["82953d7fd5be8bb3"] = { "Tre teste ho, una quarta mi serve. Sarà quella di Mug'Thol, o sarà la tua, {name}. Questo te lo prometto.", "." },
   ["8296313023fb44c2"] = { "Lo scrigno risucchia %s!", "." },
   ["82997d78eae23952"] = { "Questa pelle non è ancora pronta per essere lavorata. Vorrei che non ci volesse così tanto a fare il cuoio. Dev'esserci un modo per ridurre tutta questa attesa. Non può far bene alla salute, sai?", "." },

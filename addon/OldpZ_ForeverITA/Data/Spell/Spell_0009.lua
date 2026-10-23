@@ -16,7 +16,7 @@ WFJ.Data.add("spell", {
   [9057] = { "Travolge il nemico, infliggendo $N1 danni da fuoco.", nil, 0x27fcb60f, nil, "um" },
   [9080] = { "Infligge i danni dell'arma più $N1 a un nemico, riducendone la velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x879135b5, 0x08fe79f0, "uu" },
   [9081] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
-  [9082] = { "Crea un Forziere di Contenimento per una Creatura della Faglia stordita.", nil, 0x42f3a1f3, nil, "um" },
+  [9082] = { "Crea un Forziere di Contenimento per una ⟦Rift Spawn=Creatura della Faglia⟧ stordita.", nil, 0x42f3a1f3, nil, "um" },
   [9092] = { "Applicato alla canna da pesca, aumenta la Pesca di $N1 per $N2 min.", nil, 0x9341a6ec, nil, "um" },
   [9093] = { nil, "Invisibilità inferiore.", nil, 0x64ad07e7, "mu" },
   [9103] = { "+$N1 Forza.", nil, 0x7dbddd01, nil, "um" },

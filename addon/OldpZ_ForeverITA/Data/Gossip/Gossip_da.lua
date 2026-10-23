@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["da142e9f9c6fdb16"] = { "Buongiorno, Corbett. Ecco il tuo formaggio, fatto fresco stamattina! E come vanno le cose al tuo negozio?", "." },
-  ["da153b0673709ca0"] = { "Krang Stonehoof domina il suo cerchio d'addestramento, nell'angolo sud-orientale del villaggio.", "." },
+  ["da153b0673709ca0"] = { "⟦Krang Stonehoof=Krang Zoccolo Granitico⟧ domina il suo cerchio d'addestramento, nell'angolo sud-orientale del villaggio.", "." },
   ["da183fa001e1e60a"] = { "%s indica la brocca d'acqua posata sul bordo del pozzo.", "." },
   ["da1a6b9dac130250"] = { "Sei <terminato/terminata>.", "." },
   ["da1e1948081dfb25"] = { "Oh, amore mio! No! Non lasciarmi morire senza di te...", "." },
@@ -43,5 +43,5 @@ WFJ.Data.add("gossip", {
   ["dae5130969d3a336"] = { "Per la barba di Thaurissan! Uccideteli!", "." },
   ["daedb2cf199e4571"] = { "Come il destino stabilì una vita fa a Karazhan, mostro, io vengo, e con me porto giustizia.", "." },
   ["daf55318be0d0070"] = { "Alt, {name}! Sto facendo la guardia a questi barili, quindi... guarda, ma non toccare!", "." },
-  ["daf9d3e62c171776"] = { "Dottor Herbert Halsey in The Apothecarium dove noi nati. Lui può ricucire te meglio come noi.", "." },
+  ["daf9d3e62c171776"] = { "⟦Doctor Herbert Halsey=Dottor Herbert Halsey⟧ in The Apothecarium dove noi nati. Lui può ricucire te meglio come noi.", "." },
 })

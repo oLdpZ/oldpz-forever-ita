@@ -13,7 +13,7 @@ WFJ.Data.add("objective", {
   [381321] = { "Ysida liberata", 0x19481639, "." },
   [381589] = { "Trova la renna Metzen e salvala", 0xa60c43d1, "." },
   [381845] = { "Riporta il Silithyst", 0x99f2356d, "." },
-  [381874] = { "Rabid Thistle Bear catturato", 0xb4020a0e, "." },
+  [381874] = { "⟦Rabid Thistle Bear=Orsocardo Rabbioso⟧ catturato", 0xb4020a0e, "." },
   [381915] = { "Cumuli Ju-Ju distrutti", 0x69be99a1, "." },
   [381953] = { "Consegna il Silithyst", 0x9a3d2bb8, "." },
   [381965] = { "Strutture del Flagello distrutte", 0x06b00cea, "." },

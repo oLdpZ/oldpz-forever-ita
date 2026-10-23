@@ -361,7 +361,7 @@ WFJ.Data.add("spell", {
   [21893] = { "Quando subisci un attacco in mischia, hai una probabilità del $N1% di ricevere protezione da attacchi fisici e incantesimi per $D1", nil, 0x8ca93723, nil, "um" },
   [21894] = { "Permette al $N1% della rigenerazione del mana di continuare durante il lancio di incantesimi.", nil, 0x86815c0c, nil, "um" },
   [21895] = { "Il raggio dei tuoi totem che influenzano bersagli amici aumenta a $N1 m.", nil, 0x22c32fcb, nil, "um" },
-  [21896] = { "Effetto visivo per l'evento di comparsa di Zaetar's Spirit.", nil, 0x807464e9, nil, "um" },
+  [21896] = { "Effetto visivo per l'evento di comparsa di ⟦Zaetar's Spirit=Spirito di Zaetar⟧.", nil, 0x807464e9, nil, "um" },
   [21897] = { "Quando subisci un attacco in mischia, l'attaccante ha una probabilità del $N1% di fuggire in preda al terrore per $D1.", nil, 0xb6931a23, nil, "um" },
   [21898] = { nil, "Impaurito.", nil, 0x5a2205f2, "mu" },
   [21899] = { "Aumenta le cure fornite da ⟦Chain Heal=Catena di Guarigione⟧ ai bersagli oltre al primo del $N1%.", nil, 0x1425e39b, nil, "um" },

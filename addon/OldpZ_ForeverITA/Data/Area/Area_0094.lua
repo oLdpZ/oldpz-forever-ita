@@ -5,9 +5,9 @@ WFJ.Data.add("area", {
   [94436] = { "Parla con il guardiamorte Billmuth a Tyr's Watch.", 0x0b39a5af, "." },
   [94438] = { "Prendi il ⟦Symbol of Life=Simbolo della Vita⟧ e usalo per resuscitare il guardiamorte Falgan nella ⟦Venomweb Vale=Valle Tela Venefica⟧.", 0x1b676ced, "." },
   [94568] = { "Osserva la conversazione", 0xc57efd0a, "." },
-  [94792] = { "Addomestica un Rockhide Boar", 0xace1ef75, "." },
-  [94863] = { "Addomestica un Gray Forest Wolf", 0xd616abc6, "." },
-  [94864] = { "Addomestica uno Young Forest Bear", 0x1940044d, "." },
+  [94792] = { "Addomestica un ⟦Rockhide Boar=Cinghiale Scagliadura⟧", 0xace1ef75, "." },
+  [94863] = { "Addomestica un ⟦Gray Forest Wolf=Lupo della Foresta Grigio⟧", 0xd616abc6, "." },
+  [94864] = { "Addomestica uno ⟦Young Forest Bear=Orso Giovane delle Foreste⟧", 0x1940044d, "." },
   [94978] = { "Addomestica un Windsong Crawler", 0xbed558cc, "." },
   [94979] = { "Addomestica un Ornery Galestrider", 0x71cb4c75, "." },
 })

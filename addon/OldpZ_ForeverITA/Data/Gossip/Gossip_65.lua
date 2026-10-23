@@ -11,7 +11,7 @@ WFJ.Data.add("gossip", {
   ["65242f6efac27b67"] = { "Sono Kilram, maestro dell'ascia.", "." },
   ["653248de7742106c"] = { "Sei finito, Mulv!", "." },
   ["6533e0b66f6a1536"] = { "Vieni a dare un'occhiata alla mia merce finché puoi. Restiamo qui tutta la settimana, e poi partiamo per qualche terra lontana.", "." },
-  ["65343d0ee23a4fc6"] = { "Purtroppo c'è poco che io possa insegnare a qualcuno con la tua esperienza, <amico/amica> <mio/mia>. Cerca l'elfa della notte Sylvanna Forestmoon, che risiede nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus.", "." },
+  ["65343d0ee23a4fc6"] = { "Purtroppo c'è poco che io possa insegnare a qualcuno con la tua esperienza, <amico/amica> <mio/mia>. Cerca l'elfa della notte ⟦Sylvanna Forestmoon=Sylvanna Erbaluna⟧, che risiede nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus.", "." },
   ["653b6d7a0b3e3c24"] = { "Le storie delle tue imprese si diffondono. Il tuo nome non ci è sconosciuto, {name}.", "." },
   ["653d3d8ee8bef3d1"] = { "Giù di morale", "." },
   ["654d69eb630c486c"] = { "{name} ha difeso la miniera!", "." },

@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["36118ba5cdd59ca7"] = { "Mi è sembrato di sentire qualcosa.", "." },
   ["361528efdab0b985"] = { "È tragico. Com'è potuto succedere?", "." },
   ["361f8a3b6527d903"] = { "È fatto, drago. Fai strada.", "." },
-  ["362d3a10495f9fac"] = { "Non lo ammetto alla leggera, ma alla forgia sei molto più abile di me. Se vuoi imparare più dei miei modesti insegnamenti, ti suggerisco di cercare un nano di nome Therum Deepforge a ⟦Stormwind=Roccavento⟧. Lo troverai nel Distretto dei Nani.", "." },
+  ["362d3a10495f9fac"] = { "Non lo ammetto alla leggera, ma alla forgia sei molto più abile di me. Se vuoi imparare più dei miei modesti insegnamenti, ti suggerisco di cercare un nano di nome ⟦Therum Deepforge=Therum Forgiafonda⟧ a ⟦Stormwind=Roccavento⟧. Lo troverai nel Distretto dei Nani.", "." },
   ["363d54232fa4daf7"] = { "Il diario di Jandice Barov è pieno di farneticazioni e deliri sui non morti. Verso la fine del libro c'è quello che sembra uno schema di sartoria per creare una specie di borsa. Le tue conoscenze di sartoria non bastano per decifrare lo schema.", "." },
   ["363d6fbae389fd86"] = { "Birra a buon mercato! Prendete qui la vostra birra a buon mercato!", "." },
   ["36462069c74e9166"] = { "Trogg?! I trogg di cui parli sono gli stessi che ci sono oggi nel mondo?", "." },

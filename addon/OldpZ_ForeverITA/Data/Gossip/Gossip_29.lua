@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["29038333f70701be"] = { "Ti do il benvenuto da Kibler's Exotic Pets! Come puoi aiutarmi oggi??", "." },
-  ["290e3817e57b2bcc"] = { "All'arcimago Allistarj degli Shadowsworn ne furono concesse tre. Anche a lady Sevine, strega degli Shadowsworn, ne furono concesse tre. Le restanti tre furono date a Grol il Distruttore, signore degli ogre Dreadmaul di queste terre devastate.\n\nVedi, {name}, senza un'anima il corpo non può essere ucciso. Ciò che resta dei miei uomini è ora un'unità combattente indistruttibile. Per fortuna, le pietre del vincolo limitano fin dove possono spingersi.", "." },
+  ["290e3817e57b2bcc"] = { "All'arcimago Allistarj degli Shadowsworn ne furono concesse tre. Anche a lady Sevine, strega degli Shadowsworn, ne furono concesse tre. Le restanti tre furono date a ⟦Grol the Destroyer=Grol il Distruttore⟧, signore degli ogre Dreadmaul di queste terre devastate.\n\nVedi, {name}, senza un'anima il corpo non può essere ucciso. Ciò che resta dei miei uomini è ora un'unità combattente indistruttibile. Per fortuna, le pietre del vincolo limitano fin dove possono spingersi.", "." },
   ["2913eeee29c23636"] = { "La West Frostwolf Tower è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ la distruggerà!", "." },
   ["291a94366a55e80b"] = { "Muori, <intruso/intrusa>!", "." },
   ["291c1771902e181c"] = { "La tua anima è mia, debole.", "." },
@@ -13,7 +13,7 @@ WFJ.Data.add("gossip", {
   ["2945c8980d5e9cd9"] = { "Quel cuore vuol dire che cerchi l'amore?", "." },
   ["2946733894bad4c6"] = { "Notizie da Bolvar?", "." },
   ["295a9ff295e80c6e"] = { "Attenzione! Sembra che ne arrivino altri!", "." },
-  ["295e24cd57e4154b"] = { "Il nostro generale, Vanndar Stormpike, è caduto in battaglia! La battaglia è perduta!\n\nParla con il nostro intendente e aiutaci a ricostruire le nostre forze.", "." },
+  ["295e24cd57e4154b"] = { "Il nostro generale, ⟦Vanndar Stormpike=Vanndar Piccatonante⟧, è caduto in battaglia! La battaglia è perduta!\n\nParla con il nostro intendente e aiutaci a ricostruire le nostre forze.", "." },
   ["296246800b8a70e6"] = { "Ok, voglio un bello scontro pulito. Ricorda di tenere la spada alta e lo scudo pronto.", "." },
   ["296d713966d1b1a7"] = { "Per me una pinta di birra ⟦Dark Iron=Ferroscuro⟧. Oh, non sei <il/la> <cameriere/cameriera>?", "." },
   ["296df46e7ae0a420"] = { "Ti chiedo scusa se non ti ho detto tutta la verità sulla mia identità. Dovevo avere la certezza di potermi fidare di te: poche persone avrebbero prestato aiuto con tanto altruismo a un vecchio eremita dimenticato.\n\nTu hai dimostrato di essere una di quelle persone: una persona integra e d'onore.", "." },

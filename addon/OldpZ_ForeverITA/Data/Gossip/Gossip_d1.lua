@@ -20,7 +20,7 @@ WFJ.Data.add("gossip", {
   ["d14195a1fefdcf8a"] = { "<La montanara ha chiaramente combattuto con coraggio prima di trovare la morte sotto le armi dei trogg.>", "." },
   ["d147f47efd7393a6"] = { "Non ho dubitato di te nemmeno per un secondo, {name}.\n\nEcco i tuoi ordini, {name}. So che non mi deluderai.", "." },
   ["d14900cc98a23317"] = { "Gli occhi di Metzen si illuminano di gioia da renna mentre gli spargi addosso la polvere. Scuote i palchi verso di te ed emette un profondo sospiro che sembra di sollievo.\n\nIntorno a te, l'energia magica comincia a crescere. Sembra che stia per succedere qualcosa!", "." },
-  ["d14f2db9464e82e6"] = { "Non hai ancora imparato le basi, viandante. Hai parlato con la mia assistente, Lalina Summermoon? Forse dovresti.", "." },
+  ["d14f2db9464e82e6"] = { "Non hai ancora imparato le basi, viandante. Hai parlato con la mia assistente, ⟦Lalina Summermoon=Lalina Lunestiva⟧? Forse dovresti.", "." },
   ["d150dad95418fa96"] = { "Co... cosa sta succedendo?", "." },
   ["d156903a02fccd9b"] = { "Anche tu sei <un/una> <ragazzo/ragazza> materialista, eh? Beh, se sei <ossessionato/ossessionata> dai tuoi preziosi oggetti, probabilmente vorrai custodirli alla banca di Darnassus, al centro della nostra città.", "." },
   ["d172757d4ea2762d"] = { "Oh, pazienza... Magari la prossima volta.", "." },

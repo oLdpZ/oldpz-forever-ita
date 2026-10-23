@@ -10,7 +10,7 @@ WFJ.Data.add("spell", {
   [1301036] = { "Riduce il tempo di recupero di ⟦Hammer of Justice=Martello della Giustizia⟧ di $D1.", nil, 0x9942fc67, nil, "um" },
   [1301041] = { "Riduce il tempo di recupero di Fear Ward di $D1.", nil, 0x801beaa7, nil, "um" },
   [1301045] = { "Aumenta la durata di ⟦Shackle Undead=Incatena Non Morto⟧ di $D1.", nil, 0xa54ca81c, nil, "um" },
-  [1301046] = { "Gli attacchi hanno una probabilità di conferirti $N1 attacchi extra al colpo successivo. Contro gli orchi, la probabilità di attivare questo effetto è $N2 volte maggiore.", "Pervaso dallo spirito di Franclorn Forgewright. Puoi parlare solo in nanico.", 0xeafe5bce, 0xbc49dc4f, "uu" },
+  [1301046] = { "Gli attacchi hanno una probabilità di conferirti $N1 attacchi extra al colpo successivo. Contro gli orchi, la probabilità di attivare questo effetto è $N2 volte maggiore.", "Pervaso dallo spirito di ⟦Franclorn Forgewright=Franclorn Forgiabruna⟧. Puoi parlare solo in nanico.", 0xeafe5bce, 0xbc49dc4f, "uu" },
   [1301047] = { "Riduce il tempo di recupero di ⟦Kidney Shot=Colpo ai Reni⟧ di $D1.", nil, 0xc9eb44f2, nil, "um" },
   [1301051] = { "Aumenta di $N1 m il raggio d'effetto dei tuoi totem benefici dell'aria e della terra.", nil, 0x57d04b7f, nil, "um" },
   [1301053] = { "Riduce il tempo di recupero di ⟦Earthbind Totem=Totem del Vincolo Terrestre⟧ di $D1.", nil, 0x37f1ca60, nil, "um" },

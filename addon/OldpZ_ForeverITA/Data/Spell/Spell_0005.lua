@@ -148,7 +148,7 @@ WFJ.Data.add("spell", {
   [5720] = { "Rigenera istantaneamente $N1 salute.", nil, 0xca0d20e6, nil, "um" },
   [5723] = { "Rigenera istantaneamente $N1 salute.", nil, 0xca0d20e6, nil, "um" },
   [5726] = { "Stordisce il bersaglio per $D1.", nil, 0xb330d181, nil, "um" },
-  [5730] = { "Evoca per $D1 ai piedi dell'incantatore uno Stoneclaw Totem con $N1 salute, che provoca le creature entro $N3 m costringendole ad attaccarlo.", nil, 0xdcc62495, nil, "um" },
+  [5730] = { "Evoca per $D1 ai piedi dell'incantatore uno ⟦Stoneclaw Totem=Totem dell'Artiglio di Pietra⟧ con $N1 salute, che provoca le creature entro $N3 m costringendole ad attaccarlo.", nil, 0xdcc62495, nil, "um" },
   [5740] = { "Fa piovere fuoco sull'area d'effetto, bruciando i nemici e infliggendo $N1 danni da fuoco in $D1.", "$N1 danni da fuoco ogni $N2 s.", 0xe5dbf37c, 0x941dbaed, "uu" },
   [5759] = { "Trasforma in un felino per $D1, aumentando la potenza d'attacco e permettendo l'uso di varie abilità feline.", "Trasformato in un felino.\nPotenza d'attacco in mischia aumentata.", 0xfe114907, 0x59bc0688, "uu" },
   [5761] = { "Ricopre un'arma con un veleno che dura $N1 min.\nOgni colpo ha il $N2% di probabilità di avvelenare il nemico, aumentandone il tempo di lancio del $N3% per $D1. $N5 cariche.", nil, 0x69cf6e71, nil, "um" },

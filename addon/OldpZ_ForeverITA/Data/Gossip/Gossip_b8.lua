@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["b8b3714a35e17b6c"] = { "C'è qualcuno?", "." },
   ["b8bd3f9f24a64ed3"] = { "Dov'è l'anziano Starsong?", "." },
   ["b8c27d15ec1e33a1"] = { "Per quanto ci proviate, alla fine le vostre strade si separeranno.", "." },
-  ["b8ca098436d51b36"] = { "La tua capacità di imparare ha superato la mia. Per altre lezioni dovrai parlare con Bena Winterhoof, laggiù. Però, ti prego, non rubarle troppo tempo. Ha bisogno di riposare.", "." },
+  ["b8ca098436d51b36"] = { "La tua capacità di imparare ha superato la mia. Per altre lezioni dovrai parlare con ⟦Bena Winterhoof=Bena Zoccolo Artico⟧, laggiù. Però, ti prego, non rubarle troppo tempo. Ha bisogno di riposare.", "." },
   ["b8d2d3f6f0c0383d"] = { "Come catturo le puzzole del fango per la tua esca?", "." },
   ["b8d3bf1a82465ebe"] = { "Di sicuro non sarà da nessuna parte nei Regni Orientali, questo è certo.\n\nDovrà trovarsi da qualche parte su Kalimdor, ma comunque abbastanza lontano dall'⟦Horde=Orda⟧ e dalle altre razze. Un posto che la Separazione non ha toccato... il che significa nemmeno vicino alla civiltà degli elfi della notte.\n\nDirei anche un posto protetto... come una valle, o un cratere. Non lo so. Ormai sto solo tirando a indovinare. Mi dispiace di non poterti aiutare di più.", "." },
   ["b8dd03ddf5a84caa"] = { "Che tristezza! È la Veglia delle Ombre, e io sto male. Non potrò fare dolcetto o scherzetto perché non posso uscire!", "." },

@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["4cc30fd829517ba4"] = { "Fantastico! Ma guarda quanta operosità! Bene, cominciamo, che ne dici?", "." },
   ["4cc4bf03df4fb9fd"] = { "Voglio lasciare il mio famiglio nella stalla.", "." },
   ["4cc4f5530bbf7b49"] = { "Continua, per favore...", "." },
-  ["4cd1eb827b53c596"] = { "Drek'Thar è il capo militare e spirituale del ⟦Frostwolf Clan=Clan Lupi Bianchi⟧ ad Alterac e guida i suoi fratelli dalla ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧.\n\nSe viene sconfitto, le forze dell'⟦Horde=Orda⟧ ad Alterac crolleranno.\n\nDrek'Thar è stato ucciso.", "." },
+  ["4cd1eb827b53c596"] = { "⟦Drek'Thar=Drek'thar⟧ è il capo militare e spirituale del ⟦Frostwolf Clan=Clan Lupi Bianchi⟧ ad Alterac e guida i suoi fratelli dalla ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧.\n\nSe viene sconfitto, le forze dell'⟦Horde=Orda⟧ ad Alterac crolleranno.\n\n⟦Drek'Thar=Drek'thar⟧ è stato ucciso.", "." },
   ["4cd38cb53377db60"] = { "Ti porto il ⟦Libram of Voracity=Compendio sulla Voracità⟧.", "." },
   ["4cd3a598ed80d997"] = { "Pane fresco in vendita!", "." },
   ["4cd6f88095cf5f6f"] = { "Voglio imparare l'alchimia, Serge.", "." },

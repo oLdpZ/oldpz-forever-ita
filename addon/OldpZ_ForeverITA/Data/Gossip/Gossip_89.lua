@@ -18,7 +18,7 @@ WFJ.Data.add("gossip", {
   ["8941b76aa793224c"] = { "Voi così piccoli e gracili... voi no fare buoni servi per Kormok!", "." },
   ["89422aa45650305d"] = { "L'ora della nostra vendetta è giunta! Che l'oscurità regni nel cuore dei nostri nemici!", "." },
   ["89470707bbacada5"] = { "%s prepara lo Shattered Salute! *ATTENZIONE!*", "." },
-  ["894e010f6b140893"] = { "Thorfin Stoneshield è venuto fin qui da ⟦Ironforge=Forgiardente⟧ per offrirci la sua esperienza nella caccia. Se non ti dispiace respirare l'aria piena di fumo del Distretto dei Nani, lo troverai a casa sua, nella zona nord-est del distretto.", "." },
+  ["894e010f6b140893"] = { "⟦Thorfin Stoneshield=Thorfin Scudosaldo⟧ è venuto fin qui da ⟦Ironforge=Forgiardente⟧ per offrirci la sua esperienza nella caccia. Se non ti dispiace respirare l'aria piena di fumo del Distretto dei Nani, lo troverai a casa sua, nella zona nord-est del distretto.", "." },
   ["89582086aa735f18"] = { "Ti do il benvenuto alla Locanda del Fiero Leone. Fai come se fossi a casa tua!", "." },
   ["8961ca8934e85fba"] = { "Ce n'è uno a Orgrimmar. Va' a nord e parla con uno dei loro grunt.", "." },
   ["896333d916d247f3"] = { "È mio...", "." },

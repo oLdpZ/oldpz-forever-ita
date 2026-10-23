@@ -4,7 +4,7 @@ WFJ.Data.add("spell", {
   [1325180] = { "Fruga in un Un'Goro Dirt Pile.", nil, 0x645bcd54, nil, "um" },
   [1325228] = { "Quando subisci un attacco, infligge $N1 danni fisici all'attaccante.", nil, 0x3ad296c3, nil, "um" },
   [1325229] = { "Punisce il bersaglio, infliggendo $N1 danni da sacro. I danni sono triplicati contro i Non Morti.", nil, 0x98c8d89a, nil, "um" },
-  [1325256] = { "Evoca ai piedi dell'incantatore un Totem della Marea di Mana con $N1 salute per $D1, che rigenera $N3 mana ogni $N4 s ai membri del gruppo entro $N5 m.", nil, 0xaf38377a, nil, "um" },
+  [1325256] = { "Evoca ai piedi dell'incantatore un ⟦Mana Tide Totem=Totem della Marea di Mana⟧ con $N1 salute per $D1, che rigenera $N3 mana ogni $N4 s ai membri del gruppo entro $N5 m.", nil, 0xaf38377a, nil, "um" },
   [1325499] = { "Rimuove Salvezza o Mass Salvation dal membro del gruppo o dell'incursione bersaglio.", nil, 0x69a8e34f, nil, "um" },
   [1325508] = { "Infligge $N1 danni fisici e aumenta tutti gli attributi di $N2.", "Attributi aumentati di $N1.", 0xaf56e2c6, 0x0a3cc847, "uu" },
   [1325509] = { "Ogni colpo in mischia ti conferisce un accumulo di Improving Form. A $N1 accumuli perfezioni la tua forma, infliggendo $N2 danni fisici al bersaglio attuale e aumentando tutti i tuoi attributi di $N3 per $D1.", "A ogni colpo, una lezione.", 0x50b174aa, 0x0274d48c, "uu" },

@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["40053c3efe322626"] = { "Se la rivuoi indietro dovrai implorare!", "." },
   ["4005921e513166be"] = { "Che gli spiriti ti proteggano, amico.", "." },
   ["401694ac603ac8e4"] = { "Vediamoci giù al frutteto: devo solo mettere via il fucile.", "." },
-  ["40174fc61ea69b1c"] = { "Se devi sistemare il tuo famiglio mentre ne addestri un altro, dovresti parlare con Jenova Stoneshield, laggiù nel Distretto dei Nani.", "." },
+  ["40174fc61ea69b1c"] = { "Se devi sistemare il tuo famiglio mentre ne addestri un altro, dovresti parlare con ⟦Jenova Stoneshield=Jenova Scudosaldo⟧, laggiù nel Distretto dei Nani.", "." },
   ["401894ac4206848d"] = { "Devi cercare il fabbro Argus. Di solito sorveglia la forgia di ⟦Goldshire=Borgodoro⟧, se ti serve un addestramento.", "." },
   ["402213ef32732bb4"] = { "%s esplode e libera diverse Fanghiglie di Bile!", "." },
   ["4022153c3b442371"] = { "Qualcosa mi dice che anche {name} vuole il fossile misterioso. Aiuto!", "." },

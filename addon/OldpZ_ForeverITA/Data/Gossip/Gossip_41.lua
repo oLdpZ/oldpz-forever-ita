@@ -46,7 +46,7 @@ WFJ.Data.add("gossip", {
   ["41df1882b13c1bb4"] = { "Tre minuti alla fine: sento l'energia che comincia ad accumularsi! Tenete salda la difesa!", "." },
   ["41dfbe0b2c3d9763"] = { "Addio, amico mio.", "." },
   ["41e3db8b69356c4d"] = { "L'avete vista? Io Darcy non l'ho vista. Chissà dov'è stasera.", "." },
-  ["41e715c90c4ca33b"] = { "Eroi della Stirpe? C'thun va bandito! Possiamo assisterti, mortale!", "." },
+  ["41e715c90c4ca33b"] = { "Eroi della Stirpe? ⟦C'Thun=C'thun⟧ va bandito! Possiamo assisterti, mortale!", "." },
   ["41e8c194ea85d39d"] = { "Ops!", "." },
   ["41edfcd55e90ace4"] = { "<Benvenuto/Benvenuta> allo ⟦Steelgrill's Depot=Scalo di Grigliafredda⟧!", "." },
   ["41f46cb4b9c62073"] = { "Conoscerai il rifugio che solo la morte può offrire...", "." },

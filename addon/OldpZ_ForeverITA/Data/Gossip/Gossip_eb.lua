@@ -4,7 +4,7 @@ WFJ.Data.add("gossip", {
   ["eb1026ad78f63987"] = { "%s spolvera la base del manufatto.", "." },
   ["eb176fca1ac4edc2"] = { "Capitani, mandate avanti i vostri primi combattenti.", "." },
   ["eb1ae571c9106b84"] = { "Venite, piccoli miei.", "." },
-  ["eb235fb4a9de967d"] = { "Nel Salone delle Armi trovi il nostro stalliere, Ulbrek Firehand. Si assicurerà che i tuoi famigli siano ben nutriti e curati come si deve.", "." },
+  ["eb235fb4a9de967d"] = { "Nel Salone delle Armi trovi il nostro stalliere, ⟦Ulbrek Firehand=Ulbrek Ardimano⟧. Si assicurerà che i tuoi famigli siano ben nutriti e curati come si deve.", "." },
   ["eb23cc9709e67051"] = { "Sarò con te fino al mio ultimo respiro.", "." },
   ["eb29e070903fca43"] = { "I miei... i miei poteri si sono indeboliti... Pagherai per questa insolenza!", "." },
   ["eb2c70fe16c2cc0e"] = { "Questa è una pietra luccicante, la metto nel secchio. Ok, me ne servono solo poche altre...", "." },

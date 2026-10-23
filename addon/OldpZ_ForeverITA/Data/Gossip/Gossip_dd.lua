@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["dd7c3475d0199a50"] = { "Remulos, qualcosa mi trascina indietro... Tyrande... dille che la amo... Dille che sono al sicuro. Dille... Dille che tornerò... Addio...", "." },
   ["dd7dd9b8d09c072a"] = { "Non avrei mai pensato che sarebbe arrivato il giorno in cui avrei lasciato la mia terra natale, le ⟦Westfall=Marche Occidentali⟧. . . .", "." },
   ["dd82a5794440a9f9"] = { "Queste grandi bestie conoscono sentieri che a piedi non troveresti: ti ci porteranno in fretta e magari, già che ci sono, ti mostreranno qualcosa di nuovo.", "." },
-  ["dd888c77707234cb"] = { "⟦First Aid=Primo Soccorso⟧? Be', a me non sembri <ferito/ferita>. Se t'interessa davvero imparare il ⟦First Aid=Primo Soccorso⟧, Nissa Firestone è quella da cui imparare. Va' a trovarla vicino alla ⟦Great Forge=Grande Forgia⟧, nella sua bottega, The Ironforge Physician.", "." },
+  ["dd888c77707234cb"] = { "⟦First Aid=Primo Soccorso⟧? Be', a me non sembri <ferito/ferita>. Se t'interessa davvero imparare il ⟦First Aid=Primo Soccorso⟧, ⟦Nissa Firestone=Nissa Pietrardente⟧ è quella da cui imparare. Va' a trovarla vicino alla ⟦Great Forge=Grande Forgia⟧, nella sua bottega, The Ironforge Physician.", "." },
   ["dd9a167b318efb4a"] = { "Coprimi le spalle! Vedo cosa riesco a trovare in tutta questa robaccia...", "." },
   ["dd9ad60117812c36"] = { "Almeno non saremmo in giro a doverlo ripulire.", "." },
   ["dda93b5001b331db"] = { "Cercalo in alto, sul lato ovest della ⟦Valley of Strength=Valle della Forza⟧. Ti fanno entrare solo se sei un ufficiale! Altrimenti parla con il sergente Ba'sha, qui fuori.", "." },

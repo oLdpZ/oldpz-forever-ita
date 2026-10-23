@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["599bcfdc037e4c94"] = { "Ehi Fizzer, ti ho mai raccontato di quella volta che cavalcavo lungo i canali e certi goblin dentro i loro trituratori hanno cercato di tendermi un'imboscata?", "." },
   ["599c5b8f86fc3cc7"] = { "Sei già di ritorno! Che rapidità, {name}!", "." },
   ["599e15672f0676fa"] = { "%s studia la pergamena del Twilight Tome...", "." },
-  ["599f5f16a2679a9e"] = { "Il Re dei Lich sta cercando di far sentire la sua presenza nel nostro mondo. Non dobbiamo permetterlo.", "." },
+  ["599f5f16a2679a9e"] = { "Il ⟦The Lich King=Re dei Lich⟧ sta cercando di far sentire la sua presenza nel nostro mondo. Non dobbiamo permetterlo.", "." },
   ["59a25643480f0dc8"] = { "%s comincia ad allontanarsi.", "." },
   ["59adeac29bde1994"] = { "Mi chiedo, eroi, cosa farete quando riuscirò a distruggere questo frammento? Il mondo sarà ormai oltre ogni salvezza?", "." },
   ["59ae62f0090d744f"] = { "Inserimento della scheda di sicurezza rossa riuscito. Erogazione della scheda dati con livello di sicurezza delta.\n\n00111100 01101001 01101110 01110011 01100101 01110010 01110100 00100000 01100110 01110101 01101110 01101110 01111001 00100000 01101101 01100101 01110011 01110011 01100001 01100111 01100101 00100000 01101000 01100101 01110010 01100101 00111110", "." },

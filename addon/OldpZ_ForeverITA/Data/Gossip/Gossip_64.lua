@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["649078b2dce9d490"] = { "La tua armatura è pronta, {name}.", "." },
   ["6493c1897cfe6a2b"] = { "Impara qual è il tuo posto, mortale!", "." },
   ["6495ca1b2ae31447"] = { "⟦Glacial Vest=Veste Glaciale⟧.", "." },
-  ["64a04bf0dab24e2d"] = { "Il capitano dell'⟦Horde=Orda⟧ Galvangar è caduto. Sconfiggete Drek'Thar e la vittoria sarà nostra!", "." },
+  ["64a04bf0dab24e2d"] = { "Il capitano dell'⟦Horde=Orda⟧ Galvangar è caduto. Sconfiggete ⟦Drek'Thar=Drek'thar⟧ e la vittoria sarà nostra!", "." },
   ["64a37d6313e15d51"] = { "%s si accomoda per leggere il ⟦Yagyin's Digest=Compendio di Yagyin⟧...", "." },
   ["64a7024245087508"] = { "Che cos'è questo?! Come osi!", "." },
   ["64ab4e309756a044"] = { "La ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧ si trova nell'angolo meridionale della ⟦Alterac Valley=Valle d'Alterac⟧ e protegge il ⟦Frostwolf Village=Villaggio dei Lupi Bianchi⟧, patria dell'omonimo clan di orchi. Tutti i territori dell'⟦Horde=Orda⟧ nella ⟦Alterac Valley=Valle d'Alterac⟧ dipendono da questo unico centro di potere.\n\nLa ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧ è intatta.", "." },

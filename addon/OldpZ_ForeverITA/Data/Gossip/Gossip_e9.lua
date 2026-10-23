@@ -16,7 +16,7 @@ WFJ.Data.add("gossip", {
   ["e959cf4b0f2cafb2"] = { "Cerca Miao'zan al ⟦Sen'jin Village=Villaggio di Sen'jin⟧, a sud.", "." },
   ["e95c1113ef4539df"] = { "{name} ha difeso la fattoria!", "." },
   ["e95dd430fede5438"] = { "UCCIDI!!!", "." },
-  ["e96c2914a093f591"] = { "Jubjub? Dove sei, Jubjub? Oh no! Dove sei andato stavolta!", "." },
+  ["e96c2914a093f591"] = { "⟦Jubjub=Pincopalla⟧? Dove sei, ⟦Jubjub=Pincopalla⟧? Oh no! Dove sei andato stavolta!", "." },
   ["e9709ba79dbf89f9"] = { "Benvenut<o/a> a Caer Darrow, <straniero/straniera>.", "." },
   ["e97ae1d9e9ff75fb"] = { "Ho la testa a posto quanto chiunque altro, <amico/amica>. Credi quello che vuoi, ma SONO in grado di realizzare questa armatura. Se ti interessa, forse possiamo metterci d'accordo. Prima esco dal giro degli assassinii, meglio è.", "." },
   ["e9963b6518819362"] = { "Buona gente di ⟦Goldshire=Borgodoro⟧, venite ad approfittare dei miei prezzi incredibili su merci rare. Non tornerò per un bel po'!", "." },
@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["e9c83d6931141639"] = { "Riesci a immaginarlo?", "." },
   ["e9d04f0447242330"] = { "Grazie! Grazie, <sacerdote/sacerdotessa>. Ora posso affrontare quei murloc con la Luce dalla mia parte!", "." },
   ["e9d5b17b46115db1"] = { "Buona fortuna, {name}!", "." },
-  ["e9e4e48936e4868d"] = { "Devi cominciare a imparare cose che vanno oltre la mia competenza! Parla con Lilliam Sparkspindle, davanti alla tenda laggiù. Ti metterà sulla strada giusta!", "." },
+  ["e9e4e48936e4868d"] = { "Devi cominciare a imparare cose che vanno oltre la mia competenza! Parla con ⟦Lilliam Sparkspindle=Lilliam Saldafresa⟧, davanti alla tenda laggiù. Ti metterà sulla strada giusta!", "." },
   ["e9ee99c1aa6ed833"] = { "La capitana Balinda Stonehearth guida le forze di prima linea dell'⟦Alliance=Alleanza⟧. Ha la sua base all'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧, nella parte settentrionale del ⟦Field of Strife=Pian della Discordia⟧.\n\nBalinda non è ancora tornata in battaglia.", "." },
   ["e9fdf2289c62ef04"] = { "Ma dai, non è vero.", "." },
 })

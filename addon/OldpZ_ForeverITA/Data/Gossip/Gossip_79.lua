@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["79c8d5fb7b05838d"] = { "La pesca è uno sport per i vecchi che non sono morti in battaglia! Va' a cercare Lumak sul lago, nella ⟦Valley of Honor=Valle dell'Onore⟧.", "." },
   ["79d5ffa9391e5cfe"] = { "È saggio che tu ti umili davanti a me, {name}, nel tuo desiderio di accrescere il tuo sapere di {class}.", "." },
   ["79da866f54df4ee1"] = { "Il contenuto delle pagine di questo tomo sembra mutare di continuo. Hai la sensazione che i tuoi pensieri vengano risucchiati dalla mente e divorati dal libro.", "." },
-  ["79e7727c2d690c4c"] = { "Be', <ragazzo/ragazza>, trovi Shelby Stoneflint proprio fuori dalla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, a Kharanos. Si prenderà cura di qualsiasi famiglio tu abbia.", "." },
+  ["79e7727c2d690c4c"] = { "Be', <ragazzo/ragazza>, trovi ⟦Shelby Stoneflint=Shelby Selcepietra⟧ proprio fuori dalla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, a Kharanos. Si prenderà cura di qualsiasi famiglio tu abbia.", "." },
   ["79ec1eb1f4361819"] = { "Addestro i cacciatori nelle vie e nelle tradizioni dei nostri antenati.", "." },
   ["79ed6806ab941a21"] = { "Qui le cose si fanno interessanti. Il mio piano è seguire la parete della montagna, tenendola alla nostra sinistra. Così non ci perderemo nella giungla e incontreremo meno ostili. Pronti?", "." },
   ["79edcaccd77f4158"] = { "18 gradi Kraklenheit. A dire il vero fa un po' freddo...", "." },

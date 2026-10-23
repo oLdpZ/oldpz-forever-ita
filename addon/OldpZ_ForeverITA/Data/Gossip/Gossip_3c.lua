@@ -41,7 +41,7 @@ WFJ.Data.add("gossip", {
   ["3ca3b8bf42efeea0"] = { "Ho appena ricevuto notizie in merito. Al momento abbiamo $2021w peacebloom su $2020w, $2050w firebloom su $2051w e $2054w fiori di loto purpureo su $2055w richiesti.", "." },
   ["3ca63548a3f31cba"] = { "Ciao, {name}. Senza rancore, d'accordo?", "." },
   ["3cae78b239930147"] = { "Cinque biglietti o duecentocinquanta, non importa, amico: vincono tutti!", "." },
-  ["3cbe49ee9b95d6e7"] = { "Kah Mistrunner, al Mountaintop Bait & Tackle sull'altura più alta, ti mostrerà come trovare la pace interiore e la serenità mentre peschi il tuo prossimo pasto.", "." },
+  ["3cbe49ee9b95d6e7"] = { "⟦Kah Mistrunner=Kah Cavalca Nebbia⟧, al Mountaintop Bait & Tackle sull'altura più alta, ti mostrerà come trovare la pace interiore e la serenità mentre peschi il tuo prossimo pasto.", "." },
   ["3cc2152a16f9178b"] = { "Gli spiriti del vento ci avranno anche lasciati, ma il potere degli elementi non è del tutto fuori portata per chi ha la pazienza di cercarlo.\r\n\nSe sei <un/una> {class} <iniziato/iniziata> a queste vie, posso aiutarti a comprenderle.", "." },
   ["3cc4f9b09cf0aba0"] = { "Karnik, amico mio, vorrei tanto rivederti con i miei occhi, ma dobbiamo parlare di Ragnaros. La sua influenza si sta diffondendo.", "." },
   ["3cc58c0c09937daf"] = { "%s si passa l'indice sulla gola, mimando un taglio.", "." },

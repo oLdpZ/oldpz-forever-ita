@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["ec5a069dfc189794"] = { "Boh. Tu cosa vuoi fare?", "." },
   ["ec5a6b1021abd151"] = { "Cos'è l'armatura del Predatore di Cripte?", "." },
   ["ec5db068f17c5fd9"] = { "Che gli spiriti siano con te.", "." },
-  ["ec5e830f300e9116"] = { "Fluffy! Fluffy, smettila di correre!", "." },
+  ["ec5e830f300e9116"] = { "⟦Fluffy=Morbidino⟧! ⟦Fluffy=Morbidino⟧, smettila di correre!", "." },
   ["ec6644b0ff61684b"] = { "Ti piace il tappeto? Ho ucciso e scuoiato la bestia con le mie mani. Possano tutti i centauri cadere con la stessa facilità.", "." },
   ["ec69ab2f09c48f3e"] = { "Il quartiermastro dei Piccatonante tiene le sue provviste sotto una tettoia, poco a ovest di qui.", "." },
   ["ec75aec630af6fec"] = { "%s riempie un contenitore con la tossina.", "." },

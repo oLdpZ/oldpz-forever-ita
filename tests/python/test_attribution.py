@@ -133,3 +133,12 @@ def test_official_italian_is_credited_to_blizzard_with_its_build(root):
     for source in official_sources(root / "data"):
         assert source.split("@", 1)[1] in committed.split("## Blizzard's Italian text", 1)[-1], source
     assert ("## Blizzard's Italian text" in committed) == bool(official_sources(root / "data"))
+
+
+def test_wowhead_npc_names_are_credited_apart_with_their_read_date():
+    # ADR-103: Wowhead's Italian NPC names are dated reads, never listed as a retail build
+    out = render([], set(), {"wago-itit@12.1.5.70448", "wowhead@2026-10-21"})
+    section = out.split("## Blizzard's Italian text", 1)[1].split("\n## ", 1)[0]
+    assert "Retail builds read: `12.1.5.70448`." in section
+    assert "Wowhead" in section and "`2026-10-21`" in section
+    assert "Wowhead" not in render([], set(), {"wago-itit@12.1.5.70448"})

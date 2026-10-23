@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["451e93114391235b"] = { "Per ora ti darò ciò che ti serve per concentrare i tuoi incantesimi e invocare gli spiriti dell'aria. Prendi questo totem e, quando sarai pront<o/a>, torna ad addestrarti con me.", "." },
   ["452047fe0c449e1d"] = { "Solo per i membri, pivello!", "." },
   ["452722a2722aacc4"] = { "Possedere le abilità necessarie per sopravvivere all'aperto è fondamentale. Un avventuriero ben riposato e ben preparato ha molte più probabilità di sopravvivere a questo stile di vita.", "." },
-  ["45289c55e39e21fe"] = { "Sono <pronto/pronta>, Anachronos. Ti prego, concedimi lo Scettro delle Sabbie Mutevoli.", "." },
+  ["45289c55e39e21fe"] = { "Sono <pronto/pronta>, ⟦Anachronos=Anacronos⟧. Ti prego, concedimi lo Scettro delle Sabbie Mutevoli.", "." },
   ["4534fadfe674fb7e"] = { "Ti ringrazio, {name}. E anche mio fratello ti ringrazia.", "." },
   ["454270c99b799a3e"] = { "Soldato semplice Thorsen di ritorno dalla pattuglia. Niente di nuovo da riferire: là fuori è tutto piuttosto tranquillo...", "." },
   ["4548b9009f849540"] = { "Sì, ti mostrerò qualcosa. Vediamo come te la cavi, magari mi sorprenderai!", "." },

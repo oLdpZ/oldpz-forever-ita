@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["235d92a861d61050"] = { "Cercavo materiali per costruire la mia ultima e più grande invenzione, l'unità shredder portatile a controllo remoto, quando questi troll mi sono saltati addosso con le clave, trascinandomi nelle profondità della loro caverna.\n\nRiportami al sicuro e darò il mio aiuto alla tua causa, {race}.", "." },
   ["235e7e9d4d50e360"] = { "Dov'è il primo maresciallo Teravaine?", "." },
   ["2366a96e95fa5ed1"] = { "Non vediamo di buon occhio i malfattori, {race}.", "." },
-  ["236cf5391ec0ce33"] = { "Oh, eccoti qui, Rockbiter! Scusa, lo so che non dovrei allontanarmi.", "." },
+  ["236cf5391ec0ce33"] = { "Oh, eccoti qui, ⟦Rockbiter=Roccia Dura⟧! Scusa, lo so che non dovrei allontanarmi.", "." },
   ["236db6eabe942c2f"] = { "Ora dobbiamo proseguire.", "." },
   ["23710c4e3f89e6ea"] = { "Ottimo addomesticamento, {name}! Stai già diventando <esperto/esperta>.", "." },
   ["2371df0931c01c0b"] = { "Certo, ti dirò la frase. Basta che non debba avvicinarmi a Tirth!", "." },

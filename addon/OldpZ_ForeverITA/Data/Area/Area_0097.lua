@@ -3,5 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("area", {
   [97288] = { "Consegna la Abominable Head a qualcuno a ⟦Undercity=Sepulcra⟧.", 0x45912d90, "." },
   [97331] = { "Scorta Zimmix Sputterspark in salvo", 0x35766eff, "." },
-  [97894] = { "Prendi la nave per Auberdine e trova Gorbold Steelhand.", 0x5d3337ff, "." },
+  [97894] = { "Prendi la nave per Auberdine e trova ⟦Gorbold Steelhand=Gorbold Mandacciaio⟧.", 0x5d3337ff, "." },
 })

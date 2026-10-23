@@ -6,7 +6,7 @@ WFJ.Data.add("spell", {
   [418236] = { "La tua abilità ⟦Tame Beast=Addomesticamento⟧ funziona anche sui conigli (come mascotte)", "La tua abilità ⟦Tame Beast=Addomesticamento⟧ funziona anche sui conigli (come mascotte)", 0x8940a015, 0x8940a015, "uu" },
   [418334] = { "Tornato alla sua forma normale.", "Tornato alla sua forma normale.", 0x55be6c21, 0x55be6c21, "uu" },
   [418347] = { "Combina $N1 Apothecary Notes per creare una nuova ricetta d'incisione.", nil, 0xe30a4cd8, nil, "um" },
-  [418441] = { nil, "Presto diventerà un Leper Gnome", nil, 0x59cb7a52, "mu" },
+  [418441] = { nil, "Presto diventerà un ⟦Leper Gnome=Gnomo Contaminato⟧", nil, 0x59cb7a52, "mu" },
   [418442] = { nil, "Inabilitato dai gas tossici di Gnomeregan", nil, 0x7aecc20e, "mu" },
   [418459] = { nil, "La meditazione ha espanso la tua mente, dandoti la lucidità per apprendere nuovi incantesimi dalle Memorie sparse per il mondo.", nil, 0x0f1e11e9, "mu" },
   [418460] = { nil, "Sussurri dall'aldilà indugiano qui vicino, calmando i tuoi pensieri. Puoi inginocchiarti qui per meditare.", nil, 0xd52eae2f, "mu" },

@@ -226,7 +226,7 @@ WFJ.Data.add("spell", {
   [20500] = { "⟦Berserker Rage=Furia del Berserker⟧ genera all'istante $N1 rabbia e ha il $N2% di probabilità di rimuovere tutti gli effetti di limitazione al movimento quando viene attivata.", nil, 0x7b4e735c, nil, "um" },
   [20502] = { "Riduce il costo in rabbia di Esecuzione di $N1.", nil, 0x7f0e02c9, nil, "um" },
   [20504] = { "Riduce il tempo di recupero di Intercettazione di $D1.", nil, 0xf2afc079, nil, "um" },
-  [20506] = { "Evoca $N1 Magmoide per aiutare l'incantatore in battaglia per $D1.", nil, 0x00b94faf, nil, "um" },
+  [20506] = { "Evoca $N1 ⟦Magmakin=Magmoide⟧ per aiutare l'incantatore in battaglia per $D1.", nil, 0x00b94faf, nil, "um" },
   [20508] = { "Carica un nemico, infliggendo $N1 danni da fuoco al bersaglio e ai nemici vicini, respingendoli indietro.", nil, 0x581efc78, nil, "um" },
   [20511] = { nil, "In preda alla paura.", nil, 0xc957ad86, "mu" },
   [20512] = { nil, "$N1 danni da natura inflitti ogni $N2 s.", nil, 0xc06cec1b, "mu" },

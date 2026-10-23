@@ -4,7 +4,7 @@ WFJ.Data.add("item", {
   [232312] = { "Applica il Blood of the Lightbringer per consacrare la tua arma.", 0x3fc70b31, "u" },
   [232324] = { "Richiama Pepe, che ti cavalcherà in testa mentre vivete avventure insieme.", 0x20e30ff2, "u" },
   [232343] = { "Incanta in modo permanente uno scudo per conferire +$N1% di probabilità di blocco.", 0x72a33c60, "u" },
-  [232344] = { "Entra in sintonia con la ⟦Blackwing Lair=Fortezza dell'Ala Nera⟧!\nSolo per gli amici intimi di lord Victor Nefarius!", 0xa6e3d80b, "u" },
+  [232344] = { "Entra in sintonia con la ⟦Blackwing Lair=Fortezza dell'Ala Nera⟧!\nSolo per gli amici intimi di lord ⟦Lord Victor Nefarius=Victor Nefarius⟧!", 0xa6e3d80b, "u" },
   [232414] = { "Ricava una scaglia dalla pelle di Nefarian. Utilizzabile solo quando Nefarian è stato gravemente indebolito in battaglia.", 0xc2204a7e, "u" },
   [232433] = { "Cura di $N1 in $D1.", 0xcb31688f, "u" },
   [232434] = { "Ti insegna a creare una Dense Runecloth Bandage.", 0xd9b36009, "u" },

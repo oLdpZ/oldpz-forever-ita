@@ -13,7 +13,7 @@ WFJ.Data.add("objective", {
   [380716] = { "Visita il nido di raptor blu", 0xcd62f5e5, "." },
   [380717] = { "Visita il nido di raptor giallo", 0xb7735c27, "." },
   [380718] = { "Visita il nido di raptor rosso", 0x00db008f, "." },
-  [380729] = { "Per chi lavora il Numero Due?", 0x4f98e3ab, "." },
+  [380729] = { "Per chi lavora il ⟦Number Two=Numero Due⟧?", 0x4f98e3ab, "." },
   [380816] = { "Chiudi la valvola di controllo principale", 0x389ed12a, "." },
   [380817] = { "Chiudi la valvola di controllo del carburante", 0x10893f0d, "." },
   [380818] = { "Chiudi la valvola di regolazione", 0xa4878914, "." },

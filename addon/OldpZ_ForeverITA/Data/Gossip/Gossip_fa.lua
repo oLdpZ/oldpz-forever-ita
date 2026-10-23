@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["fa722cfa8b32e5fe"] = { "Grazie! Grazie, <sacerdote/sacerdotessa>. Ora posso affrontare quei wendigo con la Luce dalla mia parte!", "." },
   ["fa7470b7748fc6a3"] = { "Le creature di ⟦Winterspring=Fontefredda⟧ sono un buon punto da cui cominciare.\n\nPerò potrebbero esserci anche altri posti dove cercare...", "." },
   ["fa78256740d0265c"] = { "Muori nel nome di Edwin Van Cleef!", "." },
-  ["fa7b202d074b641b"] = { "Pensare lui in Royal Quarter. Kurden Bloodclaw essere piccolo orco.", "." },
+  ["fa7b202d074b641b"] = { "Pensare lui in Royal Quarter. ⟦Kurden Bloodclaw=Kurden Graffiasangue⟧ essere piccolo orco.", "." },
   ["fa7c08639381673c"] = { "Il generale dei Piccatonante è caduto! La battaglia è vinta!\n\nOra ridi, mentre l'⟦Alliance=Alleanza⟧ si affanna a recuperare i possedimenti perduti.", "." },
   ["fa8502c6383fe520"] = { "Se il capitano lo scopre, per me è finita.", "." },
   ["fa927e8dd793b11d"] = { "Che cattivone! Chi ti ha messo su?", "." },

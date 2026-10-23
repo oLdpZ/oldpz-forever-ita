@@ -19,7 +19,7 @@ WFJ.Data.add("gossip", {
   ["244b13024cc9d3b0"] = { "Se usiamo la teoria suriana, allora sì, ma non se seguiamo l'approccio y'seriano.", "." },
   ["245addbc8ee08b5e"] = { "Ora che il generale dei Piccatonante è stato sconfitto, possiamo spostare qualche truppa a guardia del ⟦Winterax Hold=Covo degli Asciafredda⟧. Ma dobbiamo restare sempre vigili, {class}, perché l'⟦Alliance=Alleanza⟧ tornerà.\n\nQuando li trovi ad aggirarsi furtivi, da' loro un'altra lezione!", "." },
   ["2461e75c716dfd9b"] = { "Ecco del cibo per te, Trok! Trok? Perché corri qua e là come un umano spaventato?", "." },
-  ["2462d4cb214a4bde"] = { "Cerchi Urtrun Clanbringer nell'Ambasciata dell'⟦Horde=Orda⟧. La trovi sul lato ovest della ⟦Valley of Strength=Valle della Forza⟧.", "." },
+  ["2462d4cb214a4bde"] = { "Cerchi ⟦Urtrun Clanbringer=Urtrun Scovaclan⟧ nell'Ambasciata dell'⟦Horde=Orda⟧. La trovi sul lato ovest della ⟦Valley of Strength=Valle della Forza⟧.", "." },
   ["2463868fd665a7a7"] = { "%s avvista uno zombi da divorare!", "." },
   ["24692edd35a2914d"] = { "L'anziano Dawnstrider si trova a ⟦Flame Crest=Cimiero Ardente⟧, nelle ⟦Burning Steppes=Steppe Ardenti⟧.", "." },
   ["246db1f2d7aa84a4"] = { "Ho vestito dei re. Con l'addestramento giusto, potrai farlo anche tu.", "." },

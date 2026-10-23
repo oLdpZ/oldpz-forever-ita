@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("area", {
   [1086] = { "Piazza il ⟦Toxic Fogger=Nebulizzatore Tossico⟧", 0x84b38439, "." },
   [1090] = { "Proteggi Piznik mentre estrae il minerale misterioso", 0xd85325e0, "." },
-  [1144] = { "Aiuta Willix the Importer a fuggire dalle ⟦Razorfen Kraul=Gallerie di Lamaspina⟧", 0x4212ad82, "." },
+  [1144] = { "Aiuta ⟦Willix the Importer=Willix l'Importatore⟧ a fuggire dalle ⟦Razorfen Kraul=Gallerie di Lamaspina⟧", 0x4212ad82, "." },
   [1173] = { "Scaccia il supremo Mok'Morokk da ⟦Brackenwall Village=Felcimura⟧", 0xc7d01dc6, "." },
   [1222] = { "Aiuta Stinky a trovare le Bogbean Leaves", 0x82f55d1f, "." },
   [1249] = { "Sconfiggi Tapoke Jahn", 0x8784c5a7, "." },
@@ -13,7 +13,7 @@ WFJ.Data.add("area", {
   [1324] = { "Sottometti il soldato Hendel", 0x2797f797, "." },
   [1393] = { "Scorta Galen fuori dal ⟦Fallow Sanctuary=Santuario dei Perduti⟧.", 0x17e0f70e, "." },
   [1440] = { "Salva Dalinda Malem", 0x3d170760, "." },
-  [1447] = { "Sconfiggi Dashel Stonefist", 0xf984f72f, "." },
+  [1447] = { "Sconfiggi ⟦Dashel Stonefist=Dashel Pugnosaldo⟧", 0xf984f72f, "." },
   [1448] = { "Cerca il Tempio di Atal'Hakkar", 0x3888600b, "." },
   [1479] = { "Raggiungi la banca di Darnassus, conosciuta anche come Bough of the Eternals.", 0x528a1671, "." },
   [1558] = { "Raggiungi la cima della ⟦Stonewrought Dam=Diga di Pietrasalda⟧, a Loch Modan.", 0x87ee0ffc, "." },
@@ -26,5 +26,5 @@ WFJ.Data.add("area", {
   [1719] = { "Sali sulla grata per dare inizio alla rissa", 0x36bbc646, "." },
   [1800] = { "Raggiungi l'antica sala del trono di Lordaeron, appena prima della discesa a ⟦Undercity=Sepulcra⟧.", 0x1bb698e1, "." },
   [1950] = { "Frase segreta trovata", 0x915db56e, "." },
-  [1955] = { "Uccidi il Demone del Globo", 0x52d023cf, "." },
+  [1955] = { "Uccidi il ⟦Demon of the Orb=Demone del Globo⟧", 0x52d023cf, "." },
 })

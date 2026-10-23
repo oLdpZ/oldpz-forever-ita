@@ -3,10 +3,10 @@ local _, WFJ = ...
 WFJ.Data.add("area", {
   [7046] = { "Crea lo ⟦Scepter of Celebras=Scettro di Celebras⟧", 0x1713f5ed, "." },
   [7141] = { "Sconfiggi Drek'thar.", 0x2d57c617, "." },
-  [7142] = { "Sconfiggi Vanndar Stormpike.", 0xa26a7187, "." },
+  [7142] = { "Sconfiggi ⟦Vanndar Stormpike=Vanndar Piccatonante⟧.", 0xa26a7187, "." },
   [7481] = { "Maestro Telmius Dreamseeker trovato", 0x8a708df4, "." },
   [7482] = { "Maestro Telmius Dreamseeker trovato", 0x8a708df4, "." },
   [7622] = { "L'⟦Balance of Light and Shadow=Equilibrio di Luce e Ombra⟧", 0xf2986d90, "." },
   [7843] = { "Messaggio ai Granmartello consegnato", 0xf9a345ff, "." },
-  [7961] = { "Fulmina un Polymorphed Chicken", 0x31c9fbbd, "." },
+  [7961] = { "Fulmina un ⟦Polymorphed Chicken=Gallina Metamorfata⟧", 0x31c9fbbd, "." },
 })

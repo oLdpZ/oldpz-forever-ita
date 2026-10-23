@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["a0073f439388f3a2"] = { "Belgrom ci ha mandati qui da Orgrimmar per aiutarlo in un'⟦Alliance=Alleanza⟧ poco saggia, ma se la sua scommessa riuscirà, ne trarrà grande beneficio tutta l'⟦Horde=Orda⟧.\n\nTroppi orchi sono già morti per il suo desiderio di compiacere le donne, ma lui ci comanda ancora, e il nostro onore ci impone di trarre il meglio da questa situazione.", "." },
-  ["a00ca7c518d34d37"] = { "Hai ucciso Ghost Howl. Sei un mito!", "." },
+  ["a00ca7c518d34d37"] = { "Hai ucciso ⟦Ghost Howl=Lupo Fantasma⟧. Sei un mito!", "." },
   ["a013a43334a6ae8f"] = { "Aiutateci, vi prego! Il principe è impazzito!", "." },
   ["a013eaf26c2d83f6"] = { "Dai solo un'occhiata alla mia merce, o c'è qualcosa di specifico che posso aiutarti a trovare oggi?", "." },
   ["a019d99d39b1be0d"] = { "Sono <pronto/pronta> a scoprire dove si cela il mio destino!", "." },

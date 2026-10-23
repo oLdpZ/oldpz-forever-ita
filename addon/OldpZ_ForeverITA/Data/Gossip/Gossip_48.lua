@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["4803b7492c692f70"] = { "Non ho tempo per le chiacchiere, qui si lavora sul serio!", "." },
-  ["4808b76a34044f65"] = { "Mi dispiace, {name}, ma non ho tempo da dedicare ai novizi. Ti serve qualcuno più vicino al tuo livello. Prova con l'elfa della notte Milla Fairancora, nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus.", "." },
+  ["4808b76a34044f65"] = { "Mi dispiace, {name}, ma non ho tempo da dedicare ai novizi. Ti serve qualcuno più vicino al tuo livello. Prova con l'elfa della notte ⟦Milla Fairancora=Milla Ferancora⟧, nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus.", "." },
   ["4809cb3b24fa3321"] = { "Te lo dico io \"e poi cosa\". È corsa dritta verso l'alveare. E sai cosa c'è di ancora più folle? Nemmeno uno di quei maledetti insetti le si è messo davanti o ha provato a fermarla. È passata in mezzo a tutti quanti come se fossero amici suoi da secoli.", "." },
   ["480e4e49ab1aeae1"] = { "Maginor dice che torcere flussi alternati di energia positiva crea in realtà un flusso molto più stabile.", "." },
   ["480eaa49d30197e2"] = { "Lo ⟦The Scepter of the Shifting Sands=Scettro delle Sabbie Mutevoli⟧ è di nuovo integro, {name}.\n\nDevi essere tu a usare lo scettro. Devi essere tu ad annunciare la nuova era del tuo popolo.\n\nDevi aspettare che gli eserciti dell'⟦Horde=Orda⟧ e dell'⟦Alliance=Alleanza⟧ arrivino a ⟦Silithus=Silitus⟧ prima di poter suonare lo Scarab Gong. L'ora della guerra è vicina.", "." },
@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["484fe496de526f75"] = { "{name}, sei riuscit<o/a> a raccogliere qualche informazione? Hai trovato il messaggero?", "." },
   ["485b1f1faa992e08"] = { "Possiamo sconfiggere queste creature immonde!", "." },
   ["485cfdfcca7dbd34"] = { "Bene, ragazzi, la pausa pranzo è finita. Torniamo al lavoro. Se il resto della giornata va bene come stamattina, magari stacchiamo prima.", "." },
-  ["485cff7a35f578cb"] = { "Perché cucinare, quando tutto ha il sapore della cenere in bocca? Sempre che tu ce l'abbia ancora, una bocca. E va bene, vai a ⟦Undercity=Sepulcra⟧, a sud di Brill, e chiedi a un Undercity Guardian come raggiungere il loro istruttore di cucina. Per arrivarci puoi prendere gli ascensori che scendono dal retro delle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧.", "." },
+  ["485cff7a35f578cb"] = { "Perché cucinare, quando tutto ha il sapore della cenere in bocca? Sempre che tu ce l'abbia ancora, una bocca. E va bene, vai a ⟦Undercity=Sepulcra⟧, a sud di Brill, e chiedi a un ⟦Undercity Guardian=Guardiano di Sepulcra⟧ come raggiungere il loro istruttore di cucina. Per arrivarci puoi prendere gli ascensori che scendono dal retro delle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧.", "." },
   ["485fb40be5901451"] = { "Padrone, la tua saggezza è pari solo alla tua stazza!", "." },
   ["4860e91472de152d"] = { "|cffffff00La Torre della Corona è stata conquistata dall'⟦Horde=Orda⟧!|r", "." },
   ["48612b7d4a8dc9ed"] = { "Non hai ancora l'abilità per studiare con me. Va' a parlare con il dottor Martin Felben laggiù, oppure sali la rampa a sud-est e cerca il dottor Marsh. Sono Reietti che possono darti l'addestramento che ti serve.", "." },

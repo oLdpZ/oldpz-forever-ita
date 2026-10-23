@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["980cb689406c9bd8"] = { "Parla con Idraxis.", "." },
   ["98135c7392e504ee"] = { "Non fare del male a Betsy, <cattivone/cattivona>!", "." },
   ["98146ba46410b819"] = { "SQUAWK! Polly vuole spaccarti!", "." },
-  ["9818e04aa3072601"] = { "Ho visto un troll di nome Lau'Tiki pescare giù a sud, alla ⟦Darkspear Strand=Riva dei Lanciascura⟧. È proprio alla periferia del ⟦Sen'jin Village=Villaggio di Sen'jin⟧.", "." },
+  ["9818e04aa3072601"] = { "Ho visto un troll di nome ⟦Lau'Tiki=Lau'tiki⟧ pescare giù a sud, alla ⟦Darkspear Strand=Riva dei Lanciascura⟧. È proprio alla periferia del ⟦Sen'jin Village=Villaggio di Sen'jin⟧.", "." },
   ["981f90adcb2efe88"] = { "Avranno anche cacciato via tutti gli altri contadini, ma i Saldean non lasceranno mai le ⟦Westfall=Marche Occidentali⟧.", "." },
   ["98223f5fff687428"] = { "La forma fisica di %s si indebolisce. Noti che la Pietra del Vincolo vicino alla creatura brilla! Colpisci ora!", "." },
   ["98243b281a72ab9b"] = { "Quando la ⟦Darkmoon Faire=Fiera di Lunacupa⟧ sarà aperta, si troverà nella ⟦Elwynn Forest=Foresta di Elwynn⟧. Pianteremo le tende appena a sud di ⟦Goldshire=Borgodoro⟧!", "." },

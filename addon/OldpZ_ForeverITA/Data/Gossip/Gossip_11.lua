@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["1136a0ec6faf3f85"] = { "Tra un'ora sono di servizio, ma fino ad allora... cin cin!", "." },
   ["11383c07c9e04207"] = { "Salute, sono Baros Alexston, architetto cittadino di ⟦Stormwind=Roccavento⟧.", "." },
   ["1160118dd366a083"] = { "Non hai lo stomaco per il volo in grifone, eh? Be', per tua fortuna abbiamo un'alternativa che ti permette di tenere i piedi per terra... più o meno. È lo spostatore di persone gnomesco, il ⟦Deeprun Tram=Tram degli Abissi⟧. Comodamente situato in fondo al Distretto dei Nani.", "." },
-  ["116a9aeedca84590"] = { "Si dice che Vance Undergloom abbia preso una stanza fissa al piano di sopra della ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, all'estremità sud-orientale della città. Credo sia appena oltre la sala di lettura.", "." },
+  ["116a9aeedca84590"] = { "Si dice che ⟦Vance Undergloom=Vance Sottocupo⟧ abbia preso una stanza fissa al piano di sopra della ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, all'estremità sud-orientale della città. Credo sia appena oltre la sala di lettura.", "." },
   ["1185c09dddd658f0"] = { "La terra, l'acqua e il cielo sono una cosa sola. Sono i tuoi occhi a ingannarti con questa separazione. La Madre Terra è tutte queste cose e molto di più.", "." },
   ["1186c284f4ee0bf8"] = { "Ehi, di' al tuo amico Tongus che se non salda il suo conto qui, mi farò vivo con il vecchio Steelhead!", "." },
   ["118de952e0841ddd"] = { "Killian Hagey insegna scuoiatura nel ⟦Rogues' Quarter=Quartiere dei Ladri⟧, sull'anello interno.", "." },

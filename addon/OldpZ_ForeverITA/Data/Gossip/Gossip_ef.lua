@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["ef57d928618351df"] = { "%s porta il fucile alla spalla, prende la mira con cura e spara un colpo al bersaglio.", "." },
   ["ef6457b760044a05"] = { "Esatto, è lì vicino al letto. Eh, scusa per il disturbo!", "." },
   ["ef66a2c5f2f2c781"] = { "Lo spirito ti guarda con un senso di completezza e di consapevolezza che prima non aveva.\n\n«Sento come se un grande peso fosse stato tolto dalla mia anima. Presto riposerò in pace per sempre. Ora lo so, e attendo con pazienza quel momento.\n\nGrazie, <straniero/straniera>.»", "." },
-  ["ef736420f8abfda2"] = { "Ah, Braenna Flintcrag. Ha le mani magiche, quella. È Braenna la persona da cercare per le questioni da sacerdote.\n\nDovrai andare a nord dai cancelli di ⟦Ironforge=Forgiardente⟧ fino alla Hall of Mysteries. È lì che la troverai.", "." },
+  ["ef736420f8abfda2"] = { "Ah, ⟦Braenna Flintcrag=Braenna Selcenera⟧. Ha le mani magiche, quella. È Braenna la persona da cercare per le questioni da sacerdote.\n\nDovrai andare a nord dai cancelli di ⟦Ironforge=Forgiardente⟧ fino alla Hall of Mysteries. È lì che la troverai.", "." },
   ["ef7550ffd28d04d5"] = { "La ⟦Syndicate=Lega dei Tagliagole⟧ è fatta di un branco di mezze calzette: disorganizzati, incapaci e pigri...", "." },
   ["ef75b103c7e2fadc"] = { "Coraggio, Fizzule!", "." },
   ["ef8ca25944390962"] = { "Io non scappa da {class} come te!", "." },

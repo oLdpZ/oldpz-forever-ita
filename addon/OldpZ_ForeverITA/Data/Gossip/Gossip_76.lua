@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["7664152bfd02b784"] = { "È fatta...", "." },
   ["76699afbd14e4e74"] = { "%s si stiracchia e si lascia andare a un grosso sbadiglio.", "." },
   ["766c2a406794cd51"] = { "Sì, lo so, sembra che abbiamo già tutti i lingotti di mithril che ci servono per la guerra. Ma sai, qui intorno c'è ancora un sacco di gente a cui il tuo aiuto farebbe comodo proprio adesso. Grazie, amico.", "." },
-  ["7672666598ae19db"] = { "Vuoi dire che da qui non senti l'odore del fumo delle forge naniche? Beh, se vuoi imparare la forgiatura devi cercare Therum Deepforge. Si trova nel Distretto dei Nani, appena a nord della Cathedral Square.", "." },
+  ["7672666598ae19db"] = { "Vuoi dire che da qui non senti l'odore del fumo delle forge naniche? Beh, se vuoi imparare la forgiatura devi cercare ⟦Therum Deepforge=Therum Forgiafonda⟧. Si trova nel Distretto dei Nani, appena a nord della Cathedral Square.", "." },
   ["767e24f8cbdb6116"] = { "Rivendare! Vengo a prenderti!", "." },
   ["768fc89186c7ad10"] = { "Bene, bene. Continuate così e questo ponte sarà finito in un attimo.", "." },
   ["7691190654cab07f"] = { "Ehi! Sei qui per una commissione di Tirth? Fossi in te, starei il più lontano possibile da lui! Ha il cervello marinato dall'alcol, ma la sua magia è potente come sempre!", "." },

@@ -41,7 +41,7 @@ WFJ.Data.add("item", {
   [210708] = { "Permette a chi lo beve di parlare con il cadavere di qualcuno che ha questioni in sospeso nel mondo dei vivi. Potrebbe anche curare l'indigestione.", 0x440274f1, "u" },
   [210709] = { "Ti insegna a creare un Elixir of Coalesced Regret.", 0xbd3eb856, "u" },
   [210712] = { "Contempla una visione al falò di Je'neu.", 0x8f6faa55, "u" },
-  [210713] = { "Fai un Offering of Blood per liberare questa Tortured Soul.\nUn'anima maledetta che invoca un sacrificio.", 0x36ded89e, "u" },
+  [210713] = { "Fai un Offering of Blood per liberare questa ⟦Tortured Soul=Anima Torturata⟧.\nUn'anima maledetta che invoca un sacrificio.", 0x36ded89e, "u" },
   [210746] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [210763] = { "Un frammento scheggiato di potere. Sembra che un tempo fosse metà di una grande arma.", 0xbf29ef62, "u" },
   [210765] = { "Fiamme e magia oscura turbinano nel globo, ipnotiche ma profondamente inquietanti. Sembra che un tempo fosse metà di una grande arma.", 0x7638ee61, "u" },

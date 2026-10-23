@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["5c804a792ecdc88f"] = { "Buona Veglia delle Ombre! Ti piace la mia maschera? Fa tanta paura!", "." },
   ["5c885eed0ec0db01"] = { "La Torre di Brinarossa protegge il ⟦Iceblood Garrison=Presidio di Brinarossa⟧ da sud-est.\n\nÈ controllata dall'⟦Alliance=Alleanza⟧.", "." },
   ["5c8972ba7935274e"] = { "Non ho tempo da perdere, <straniero/straniera>. Di' cosa vuoi o vattene!", "." },
-  ["5c8ab96bfbfa6b5e"] = { "Salute, <onorato/onorata>. Turak Runetotem e gli altri druidi ti aspettano nella Hall of Elders, sull'⟦Elder Rise=Altura degli Anziani⟧.", "." },
+  ["5c8ab96bfbfa6b5e"] = { "Salute, <onorato/onorata>. ⟦Turak Runetotem=Turak Totem Runico⟧ e gli altri druidi ti aspettano nella Hall of Elders, sull'⟦Elder Rise=Altura degli Anziani⟧.", "." },
   ["5c9c51cb73f111f9"] = { "La ⟦Darkmoon Faire=Fiera di Lunacupa⟧ è l'evento più grandioso di tutta Azeroth!", "." },
   ["5ca9767a41bce8cd"] = { "Non c'è modo migliore per schiarirsi la mente che tessere.", "." },
   ["5cb0c4f5956f8223"] = { "⟦Blackfathom Deeps=Abissi di Fondocupo⟧", "." },

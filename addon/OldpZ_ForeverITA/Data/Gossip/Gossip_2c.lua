@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["2c8a4e7b862b7a0f"] = { "Come posso condividere i miei segreti con chi è alle prime armi? Prova prima a parlare con Victor Ward.", "." },
   ["2c8dcf1621c5c6e6"] = { "Bene, ci stiamo avvicinando al sito di scavo, quindi dobbiamo procedere con cautela. Attivare l'apparato di respirazione subacquea...", "." },
   ["2c9412305760c234"] = { "Sì, ce l'ho fatta a risigillare la reliquia, {name}.", "." },
-  ["2c9cead8b7942cff"] = { "La tua conoscenza del cuoio è più profonda della mia. Forse dovresti far visita ad Aayndia Floralwind, nella città di Astranaar, a ⟦Ashenvale=Valtetra⟧. Ha molto da offrire a chi ha il tuo talento.", "." },
+  ["2c9cead8b7942cff"] = { "La tua conoscenza del cuoio è più profonda della mia. Forse dovresti far visita ad ⟦Aayndia Floralwind=Ayandia Ariafresca⟧, nella città di Astranaar, a ⟦Ashenvale=Valtetra⟧. Ha molto da offrire a chi ha il tuo talento.", "." },
   ["2ca422394375cf50"] = { "Quanti ufficiali dei Lupi Bianchi sono vivi, Vanndar?", "." },
   ["2cab5e4ae8563c69"] = { "Dov'è l'anziano Bronzebeard?", "." },
   ["2cb3428831362260"] = { "Hanno liberato l'umano, Windsor, sire. Non ci vorrà molto prima che Onyxia venga smascherata.", "." },

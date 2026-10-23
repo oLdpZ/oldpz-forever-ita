@@ -12,7 +12,7 @@ WFJ.Data.add("gossip", {
   ["fc35dbd2eba05a2c"] = { "La Hall of Spirits è la casa dei nostri sciamani. La trovi sull'⟦Spirit Rise=Altura degli Spiriti⟧. Che i tuoi antenati veglino su di te.", "." },
   ["fc3a602c449b2f49"] = { "Ho sentito che i troll del ⟦Sen'jin Village=Villaggio di Sen'jin⟧ hanno un preparatore di pozioni di nome Miao'zan. Cerca lì.", "." },
   ["fc42ea199c54b608"] = { "Eunice Burch vendere pezzi avanzati. Tu trovare lei in ⟦Trade Quarter=Quartiere del Commercio⟧.", "." },
-  ["fc44303c0f91e104"] = { "Salute, <ragazzo/ragazza>. Sono Grelin Whitebeard. Sono qui per valutare la minaccia rappresentata dal numero crescente di troll nella ⟦Coldridge Valley=Valle Crestafredda⟧. Cosa ho scoperto? È un po' preoccupante...", "." },
+  ["fc44303c0f91e104"] = { "Salute, <ragazzo/ragazza>. Sono ⟦Grelin Whitebeard=Grelin Barbabianca⟧. Sono qui per valutare la minaccia rappresentata dal numero crescente di troll nella ⟦Coldridge Valley=Valle Crestafredda⟧. Cosa ho scoperto? È un po' preoccupante...", "." },
   ["fc4f3bba7130783c"] = { "Le macchine d'assedio sono l'orgoglio di ogni pilota!", "." },
   ["fc504de7d1b43afd"] = { "Proprio così. Nefarian, progenie di Alamorte, ora governa i Bastioni. Rend è agli ordini del drago.\n\nSe solo riuscissi in qualche modo a passare per le Halls of Ascension.\n\n<Eitrigg sospira.>\n\nAhimè, solo chi lo Stormo dei Draghi Neri ritiene degno ottiene il privilegio di ascendere.", "." },
   ["fc55f2c80130098c"] = { "Ottimo lavoro. Sei <pronto/pronta> a compiere una missione per conto mio? Non conosco nessuno più qualificato di te.", "." },

@@ -28,7 +28,7 @@ WFJ.Data.add("gossip", {
   ["9e9724bf4acb1424"] = { "Sì, corri! Così il sangue pompa più in fretta!", "." },
   ["9e98b22deb98ff64"] = { "Sei riuscit<o/a> a convincere Zzarc'Vul a prestarci il suo monocolo per il nostro esperimento?", "." },
   ["9e99adcf662d3e62"] = { "Ah, l'occasione di usare questa lama appena affilata.", "." },
-  ["9e9d1c0c62a88cff"] = { "Quel Granis Swiftaxe saprebbe bere più di un pesce, eppure la sua ascia colpisce ancora dritta. Comunque, se cerchi addestramento, faresti meglio a trovarlo finché riesci ancora a capire quello che dice.", "." },
+  ["9e9d1c0c62a88cff"] = { "Quel ⟦Granis Swiftaxe=Granis Ascialesta⟧ saprebbe bere più di un pesce, eppure la sua ascia colpisce ancora dritta. Comunque, se cerchi addestramento, faresti meglio a trovarlo finché riesci ancora a capire quello che dice.", "." },
   ["9ea30f0100610d14"] = { "Non ci posso credere, quel maledetto carro si è rotto. In questa terra non c'è un briciolo di fortuna. . . .", "." },
   ["9ea43558db576487"] = { "Assaggia la corruzione del tuo mondo!", "." },
   ["9eb1c58bf9618983"] = { "Ci vorrà solo un momento, {name}.", "." },

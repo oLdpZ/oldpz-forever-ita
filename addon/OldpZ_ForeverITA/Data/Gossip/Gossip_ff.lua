@@ -5,7 +5,7 @@ WFJ.Data.add("gossip", {
   ["ff05591d594254a9"] = { "Salute, {class}. Fai attenzione mentre viaggi verso est, verso la ⟦The Bulwark=Granbarricata⟧. Recenti rapporti di ricognizione indicano un aumento dell'attività del Flagello in quella zona, perciò sii prudente.", "." },
   ["ff09f93da2768327"] = { "Baciami.", "." },
   ["ff0ee181a9ec2557"] = { "Dov'è l'anziano Windtotem?", "." },
-  ["ff0fc61cde4b7a44"] = { "Da qui faccio prima a viaggiare per conto mio, {name}. Raggiungi Jessir Moonbow vicino a ⟦Ashenvale=Valtetra⟧. Dovrebbe essere con i druidi della ⟦Emerald Circle=Fede di Smeraldo⟧. Ti dirà lei cosa fare. Grazie di tutto il tuo aiuto!", "." },
+  ["ff0fc61cde4b7a44"] = { "Da qui faccio prima a viaggiare per conto mio, {name}. Raggiungi ⟦Jessir Moonbow=Jessir Arcoluna⟧ vicino a ⟦Ashenvale=Valtetra⟧. Dovrebbe essere con i druidi della ⟦Emerald Circle=Fede di Smeraldo⟧. Ti dirà lei cosa fare. Grazie di tutto il tuo aiuto!", "." },
   ["ff22287d83f87996"] = { "Uff! Credo di aver mangiato troppo. Devo allentare la cintura di qualche buco.", "." },
   ["ff2358fd57238ad3"] = { "No, il fossile non l'ho lasciato qui dietro!", "." },
   ["ff2485b95203d998"] = { "Non posso addestrarti, giovane.", "." },

@@ -8,7 +8,7 @@ WFJ.Data.add("gossip", {
   ["0d1ef41ca27a4de3"] = { "Salve, {name}. Hai un po' di tempo per fare due chiacchiere?", "." },
   ["0d2e908d17d1c72e"] = { "Istruttore di professione", "." },
   ["0d31620f1aa628d3"] = { "Allora, cosa posso fare per aiutare?", "." },
-  ["0d33ceafed973cea"] = { "Drek'Thar è il capo militare e spirituale del ⟦Frostwolf Clan=Clan Lupi Bianchi⟧ ad Alterac, e guida i suoi fratelli dalla ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧.\n\nSe verrà sconfitto, le forze dell'⟦Horde=Orda⟧ ad Alterac crolleranno.\n\nAl momento Drek'Thar non si trova nella ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
+  ["0d33ceafed973cea"] = { "⟦Drek'Thar=Drek'thar⟧ è il capo militare e spirituale del ⟦Frostwolf Clan=Clan Lupi Bianchi⟧ ad Alterac, e guida i suoi fratelli dalla ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧.\n\nSe verrà sconfitto, le forze dell'⟦Horde=Orda⟧ ad Alterac crolleranno.\n\nAl momento ⟦Drek'Thar=Drek'thar⟧ non si trova nella ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
   ["0d35eb60c9e52baa"] = { "Chi controlla il ⟦Frostwolf Graveyard=Cimitero dei Lupi Bianchi⟧?", "." },
   ["0d377456afaefc34"] = { "La mia anima non è un ninnolo! Mortale, devi liberarmi da queste catene!", "." },
   ["0d3cb3e88c1ccf20"] = { "Nessuno BUSSA più???!", "." },

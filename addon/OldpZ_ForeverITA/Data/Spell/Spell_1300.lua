@@ -31,7 +31,7 @@ WFJ.Data.add("spell", {
   [1300744] = { "Recupera l'anima perduta del destriero del cavaliere della morte, trasformandola in uno spirito del castigo.", nil, 0x775bfb52, nil, "um" },
   [1300752] = { "Aumenta l'Armatura di $N1 per $D1.", "Armatura aumentata di $N1.", 0x92291afa, 0x97d97089, "uu" },
   [1300753] = { "Travolge il bersaglio, infliggendo $N1 danni da fuoco.", nil, 0x9d8bd0af, nil, "um" },
-  [1300754] = { "Ammalia per $D1 un Nano Ferroscuro preso di mira.", "Ammaliato.", 0x0c9fa08a, 0xd83f67a3, "uu" },
+  [1300754] = { "Ammalia per $D1 un ⟦Dark Iron Dwarf=Nano Ferroscuro⟧ preso di mira.", "Ammaliato.", 0x0c9fa08a, 0xd83f67a3, "uu" },
   [1300755] = { "Riduce del $N1% la probabilità che gli effetti di sanguinamento ti colpiscano.", nil, 0xe30722cf, nil, "um" },
   [1300763] = { "Scuoia un bersaglio umanoide.", "Scuoia un bersaglio umanoide.", 0x583e970a, 0x4f21540f, "uu" },
   [1300764] = { "Non può essere scuoiato.", "Non può essere scuoiato.", 0x8fc0b3ba, 0x8fc0b3ba, "uu" },

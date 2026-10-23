@@ -11,7 +11,7 @@ WFJ.Data.add("gossip", {
   ["2a39be37e83cf87c"] = { "Cos'è l'armatura del Cuore Infetto?", "." },
   ["2a406c610e55e72e"] = { "Il cammino di chi intraprende una professione è lungo e gratificante. Quale cammino scegli di percorrere?", "." },
   ["2a4bf1990ab8376e"] = { "L'Order of the Shattered Hand esisteva prima di Thrall ed esisterà dopo Thrall.", "." },
-  ["2a4f54a738f0729c"] = { "Cerchi Lau'Tiki. Lo troverai sulla ⟦Darkspear Strand=Riva dei Lanciascura⟧, oltre il ⟦Sen'jin Village=Villaggio di Sen'jin⟧, a sud.", "." },
+  ["2a4f54a738f0729c"] = { "Cerchi ⟦Lau'Tiki=Lau'tiki⟧. Lo troverai sulla ⟦Darkspear Strand=Riva dei Lanciascura⟧, oltre il ⟦Sen'jin Village=Villaggio di Sen'jin⟧, a sud.", "." },
   ["2a6e8a9a730a7cf8"] = { "Maledetta neve... Ehi, tu sei {name}, vero? Ho appena ricevuto un messaggio per te.", "." },
   ["2a6f64eca493c568"] = { "TEST - riavvia campo di battaglia.", "." },
   ["2a719c6e92c3e1df"] = { "Ho mentito...", "." },

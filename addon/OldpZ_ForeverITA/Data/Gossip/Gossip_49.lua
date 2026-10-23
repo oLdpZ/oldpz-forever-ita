@@ -47,6 +47,6 @@ WFJ.Data.add("gossip", {
   ["49eef3288d3da435"] = { "Se mi tocchi ancora, sarà l'ultima cosa che toccherai!", "." },
   ["49f571bee726d514"] = { "Torno alla Colonia, Tinkee. Mi serve un Uovoscilloscopio!", "." },
   ["49f646642d40903e"] = { "Il futuro riserva molta morte e incertezza, non diversamente dal passato.", "." },
-  ["49f66c6d1cecc229"] = { "Ho pagato il tuo prezzo, Gloom'rel. Ora insegnami i tuoi segreti!", "." },
+  ["49f66c6d1cecc229"] = { "Ho pagato il tuo prezzo, ⟦Gloom'rel=Furien'rel⟧. Ora insegnami i tuoi segreti!", "." },
   ["49f9248ee79d3593"] = { "Quelle bestie schifose sono dappertutto.\n\nSe preferisci cacciare all'aperto, la maggior parte la troverai attorno a ⟦Plaguewood=Malaselva⟧ e ⟦Terrordale=Valterrore⟧, con una buona concentrazione nella Galleria dell'Orrore Brulicante. È probabile che compaiano anche in quasi ogni accampamento del Flagello nelle ⟦Eastern Plaguelands=Terre Infette Orientali⟧.\n\nSe invece ami esplorare i sotterranei con tenacia, ne troverai parecchie a Stratholme e alcune della varietà necrodemone a Scholomance.", "." },
 })

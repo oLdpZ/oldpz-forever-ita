@@ -84,6 +84,9 @@ read from its client tables (GlobalStrings, Faction, ItemSparse, Spell, ChrClass
 wago.tools DB2 exports, and kept only where the retail English is the English Forever shows
 (`wfj import official`). Its lines carry the provenance class `official`. Retail builds read: `12.1.5.70448`.
 
+NPC names the client tables lack are Blizzard's Italian as Wowhead's Italian tooltips show it
+(`make creature-official`, ADR-103): only the creature id and its name, read on `2026-10-21`.
+
 ## This project
 
 oLd_pZ Forever - Traduzione Italiana ships its own code and translations under GPL-2.0-or-later (see

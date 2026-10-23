@@ -42,6 +42,6 @@ WFJ.Data.add("gossip", {
   ["ace709999ebe92ba"] = { "Nemico in vista! Fuoco!", "." },
   ["acea16569fc9a6d1"] = { "%s sembra ritrovare la calma ora che ha divorato i resti di {name}.", "." },
   ["acf8ae4bc70e926d"] = { "Le migliori offerte di tutta ⟦Stormwind=Roccavento⟧, amico mio, non ne troverai di migliori. Allora, come posso aiutarti?", "." },
-  ["acfae3c155e15cef"] = { "Trovi Vance Undergloom al piano di sopra, in una stanza della ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, sul lato sud-est di Brill.", "." },
+  ["acfae3c155e15cef"] = { "Trovi ⟦Vance Undergloom=Vance Sottocupo⟧ al piano di sopra, in una stanza della ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, sul lato sud-est di Brill.", "." },
   ["acfc23662c31e685"] = { "Stai tirando troppo la corda, {name}.", "." },
 })

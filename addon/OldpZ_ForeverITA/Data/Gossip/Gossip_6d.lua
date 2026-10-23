@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["6d0fc9d772138ed0"] = { "Si dice in giro che abbiamo raccolto tutto quello che ci serve. Ora tutto dipende dall'⟦Horde=Orda⟧, che deve radunare la sua roba. Quando l'avrà fatto, potremo spedire tutte le nostre merci a ⟦Silithus=Silitus⟧ e la guerra potrà cominciare.", "." },
-  ["6d185d04c8b7e921"] = { "Ti insegnerei volentieri quando sarà il momento, ma quel momento non è ancora arrivato! Di certo Lalina Summermoon ti guiderà fino ad allora. La trovi alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧, a Darnassus.", "." },
+  ["6d185d04c8b7e921"] = { "Ti insegnerei volentieri quando sarà il momento, ma quel momento non è ancora arrivato! Di certo ⟦Lalina Summermoon=Lalina Lunestiva⟧ ti guiderà fino ad allora. La trovi alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧, a Darnassus.", "." },
   ["6d1e3c8a961e2cfa"] = { "PER IL RE! Ricacciateli indietro, soldati!", "." },
   ["6d1ea455107042f7"] = { "Stammi vicino...", "." },
   ["6d29a81feafdefea"] = { "Scalpellini. . .ehm. . Defias, state in guardia: l'ancora arrugginita affonda stanotte.", "." },
@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["6d529a58e771bbf4"] = { "Non credo che tu possieda l'acume mentale necessario per comprendere la natura della magia dei portali.", "." },
   ["6d57ef4634cbaab2"] = { "Sarai incarcerato e processato per tradimento, Windsor. Guarderò con gioia mentre emettono un verdetto di colpevolezza e ti condannano a morte per impiccagione...", "." },
   ["6d5beba3a23b48ee"] = { "Il Brandicenere...", "." },
-  ["6d5e7f124d94b543"] = { "Salute, {class}. Sono Tyrande Whisperwind, somma sacerdotessa di Elune.", "." },
+  ["6d5e7f124d94b543"] = { "Salute, {class}. Sono ⟦Tyrande Whisperwind=Tyrande Soffiabrezza⟧, somma sacerdotessa di Elune.", "." },
   ["6d62129e11a9210d"] = { "Nessuna creatura della foresta può sfuggire a Corand, tale è la sua abilità nel seguire le tracce. Faresti bene ad ascoltare i suoi insegnamenti, se vuoi avere anche solo la metà del suo successo.\n\nTi risparmierò la fatica di rintracciarlo e segnerò la sua posizione sulla tua mappa, là nell'⟦Cenarion Enclave=Enclave Cenariana⟧.", "." },
   ["6d6ca3c7a6619a28"] = { "Guerrieri, capitani, continuate a combattere!", "." },
   ["6d6e3503b283bd2b"] = { "Battere un martello su un'incudine non ti rende un fabbro. Dammi qua e lascia che ti insegni qualcosa prima che ci copri tutti di vergogna.", "." },
@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["6d807b9a6dc624ac"] = { "Il ponte viene su benissimo. Se manteniamo questo ritmo, sarà pronto per quando le prime forze d'espansione partiranno verso nord.", "." },
   ["6d829a49cfe653e9"] = { "Mmmm, solo un po' di attività in superficie, ma il sole è nel posto giusto. Potrebbe rivelarsi una bella giornata.", "." },
   ["6d86f08553b8d22b"] = { "{name} ha difeso la fattoria meridionale!", "." },
-  ["6d87e40578b8ecba"] = { "Forse un giorno Saru Steelfury ti insegnerà a fare un'ascia buona come la mia. Lo trovi alla Burning Anvil, nella ⟦Valley of Honor=Valle dell'Onore⟧, scendendo per il sentiero a destra dopo la Red Canyon Mining.", "." },
+  ["6d87e40578b8ecba"] = { "Forse un giorno ⟦Saru Steelfury=Saru Furiaferro⟧ ti insegnerà a fare un'ascia buona come la mia. Lo trovi alla Burning Anvil, nella ⟦Valley of Honor=Valle dell'Onore⟧, scendendo per il sentiero a destra dopo la Red Canyon Mining.", "." },
   ["6d8c179d320e5185"] = { "Leccapiedi, tutti quanti!", "." },
   ["6d8f15944a432a50"] = { "L'etichetta su questo regalo dice: \"Dai 10 anni in su.\"", "." },
   ["6d94a2b9ec51a58f"] = { "Il mastro mercante è ancora vivo?", "." },

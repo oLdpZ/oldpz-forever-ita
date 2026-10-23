@@ -82,7 +82,7 @@ WFJ.Data.add("item", {
   [3448] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare.", 0x043d7c8b, "u" },
   [3456] = { "Evoca un segugio da traccia che ti protegge per $D1.", 0xac478eb2, "u" },
   [3466] = { "Usato dai fabbri per rimuovere le impurità.", 0x077bc5cb, "u" },
-  [3468] = { "Le scoperte segrete dello Speziale Renferrel.", 0xc7df5ffc, "u" },
+  [3468] = { "Le scoperte segrete dello ⟦Apothecary Renferrel=Speziale Renferrel⟧.", 0xc7df5ffc, "u" },
   [3475] = { "Infligge $N1 danni da fuoco a chiunque ti colpisca con un attacco in mischia.", 0xdddae426, "u" },
   [3498] = { "Una mezzaluna crescente appesa a una catenina d'argento.", 0xc7c827e7, "u" },
   [3507] = { "Aumenta la tua velocità d'attacco del $N1% per $D1.", 0x7e4b2c7f, "u" },

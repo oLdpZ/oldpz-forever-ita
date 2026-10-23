@@ -135,7 +135,7 @@ WFJ.Data.add("item", {
   [23320] = { "Ti insegna l'abilità ⟦Flame Shock=Folgore del Fuoco⟧ (Grado $N1).", 0xb1c14582, "u" },
   [23326] = { "Aumenta fino a $N1 i danni degli incantesimi per $D1.", 0x9493fcf3, "u" },
   [23327] = { "Aumenta la probabilità d'impatto degli attacchi del $N1% per $D1.", 0x1ec673b1, "u" },
-  [23379] = { "Evoca un Cinder Elemental che ti protegge per $D1.", 0xf1360f59, "u" },
+  [23379] = { "Evoca un ⟦Cinder Elemental=Elementale delle Braci⟧ che ti protegge per $D1.", 0xf1360f59, "u" },
   [23435] = { "Aumenta la Difesa di $N1 per $D1.", 0xd0d42e0b, "u" },
   [23451] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici.\nAumenta la probabilità di critico magico del $N2%.", 0x36f37770, "u" },
   [23452] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },

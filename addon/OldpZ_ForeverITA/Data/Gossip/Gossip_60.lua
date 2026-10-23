@@ -7,7 +7,7 @@ WFJ.Data.add("gossip", {
   ["600cec5684480ff4"] = { "Lascia questo luogo sacro o muori!", "." },
   ["600df1dce5be9123"] = { "Il Grande ti schiaccerà!", "." },
   ["60167880216079d9"] = { "Elune-adore, <fratello/sorella> <mio/mia>. Qui sei <benvenuto/benvenuta>. Parla, e farò ciò che posso per aiutarti.", "." },
-  ["601aa2f7f1504b36"] = { "Tutti i tipi da furfanti bazzicano la Caverna degli Inganni, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧. Scommetto che ci troverai Fenthwick, di sicuro intento a contare le monete di un altro borseggiatore. Uno di questi giorni lo acchiappo!\n\nNel frattempo terrò d'occhio anche te, <ragazzo/ragazza>.", "." },
+  ["601aa2f7f1504b36"] = { "Tutti i tipi da furfanti bazzicano la Caverna degli Inganni, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧. Scommetto che ci troverai ⟦Fenthwick=Passoscuro⟧, di sicuro intento a contare le monete di un altro borseggiatore. Uno di questi giorni lo acchiappo!\n\nNel frattempo terrò d'occhio anche te, <ragazzo/ragazza>.", "." },
   ["601e4a2a98d50fbe"] = { "È stato raccolto tutto e lo stiamo spedendo a ⟦Silithus=Silitus⟧, {class}. L'ultima parte dovrebbe arrivare entro un giorno. Posso solo sperare che, quando il gong sarà suonato e i cancelli aperti, i nostri sforzi qui facciano la differenza e salvino molte vite.", "." },
   ["6025c5f1574ba394"] = { "Dov'è il tuo salvatore? Quanto pensi di resistere ai miei attacchi?", "." },
   ["602a5896f30eeefe"] = { "«Ottimo lavoro nel raccogliere risorse per la guerra», dicevano. «Ecco una promozione», dicevano. Quello che intendevano davvero era: «Sei di stanza davanti a un alveare di insetti a ⟦Silithus=Silitus⟧ con un branco di nani sudati, Carnes!»\n\nGrazie per la promozione, capitano!", "." },

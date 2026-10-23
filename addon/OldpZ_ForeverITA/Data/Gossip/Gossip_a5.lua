@@ -19,7 +19,7 @@ WFJ.Data.add("gossip", {
   ["a56708df7b0ff02f"] = { "Vieni a parlare con me se hai intenzione di andare a Gnomeregan, {name}!", "." },
   ["a56abe33a1052e48"] = { "La tua stessa forza mi nutre, {name}!", "." },
   ["a56fb7fbffc35698"] = { "Ecco qui, Relara. Prendi questo...", "." },
-  ["a574f288a8bd9ffb"] = { "Ciao! Sono appena di ritorno da un'esplorazione delle Rovine di Kel'Theril, a sud-ovest. Ora intendo studiare i silvagufi che vivono proprio in cima alla cresta, nella ⟦Owl Wing Thicket=Selva Ala di Gufo⟧.\n\nHai parlato con Erelas Ambersky a ⟦Rut'theran Village=Rut'theran⟧? È stato lui a chiedermi di venire qui, e forse ha un compito anche per te.", "." },
+  ["a574f288a8bd9ffb"] = { "Ciao! Sono appena di ritorno da un'esplorazione delle Rovine di Kel'Theril, a sud-ovest. Ora intendo studiare i silvagufi che vivono proprio in cima alla cresta, nella ⟦Owl Wing Thicket=Selva Ala di Gufo⟧.\n\nHai parlato con ⟦Erelas Ambersky=Erelas Cieloambrato⟧ a ⟦Rut'theran Village=Rut'theran⟧? È stato lui a chiedermi di venire qui, e forse ha un compito anche per te.", "." },
   ["a579164b914de452"] = { "Sta arrivando un vento feroce: me lo dice il dolore al ginocchio scoperto. Spero solo che non ci travolga.", "." },
   ["a57cdcf8d3d376db"] = { "Voglio vedere la tua merce.", "." },
   ["a5876f69a59e99b9"] = { "Salve, Rayne. Cosa porta il ⟦Cenarion Circle=Circolo Cenariano⟧ nelle ⟦Plaguelands=Terre Infette⟧?", "." },

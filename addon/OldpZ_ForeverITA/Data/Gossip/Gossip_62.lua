@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["628e4e289f9129f7"] = { "Nefarian aveva ordinato che i soggetti inadatti fossero distrutti immediatamente, ma queste bestie miserabili non lo facevano senza prima infliggere una quantità «abbondante» di torture.\n\nQuando eravamo completamente «spezzati», radunavano ciò che restava e ci gettavano a questi bruti. I nostri corpi usati come strumenti nel loro gioco perverso: gettati nella lava o peggio, tra le braccia aperte e in attesa della legione assetata di sangue là sotto.", "." },
   ["62974c4ff2c70279"] = { "Vorrei addestrarmi nell'uso delle armi.", "." },
   ["629ecdd06ca74237"] = { "E buona giornata a te, <coraggioso/coraggiosa> {class}. Lo so che cerchi un buon destriero. Non c'è destriero migliore di un raptor sotto le tue redini, te lo dico io, <fratello/sorella>! Dai un'occhiata a quelli che ho da offrire: allevati dalla razza più feroce che ci sia.", "." },
-  ["62a5c01dc1ed1301"] = { "Cerchi Uthan Stillwater. Lo troverai a ovest del villaggio, a pescare al ⟦Stonebull Lake=Lago Toro di Pietra⟧.", "." },
+  ["62a5c01dc1ed1301"] = { "Cerchi ⟦Uthan Stillwater=Uthan Acqua Ferma⟧. Lo troverai a ovest del villaggio, a pescare al ⟦Stonebull Lake=Lago Toro di Pietra⟧.", "." },
   ["62a9bed80ca53671"] = { "Psssst. Ci è appena arrivato un po' di Torcibudella. . . .", "." },
   ["62b260d33f05f42d"] = { "Come il vento delle pianure, qui sei sempre <il/la> <benvenuto/benvenuta>.", "." },
   ["62dcf008dc4e8c75"] = { "Va', {name}, e addomestica la più robusta delle bestie di Elwynn.", "." },

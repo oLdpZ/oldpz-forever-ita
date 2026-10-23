@@ -57,5 +57,5 @@ WFJ.Data.add("gossip", {
   ["b4edf195d8dbdd2f"] = { "Le nostre unità sono state promosse a campioni, ma posso ancora raccogliere altri rifornimenti.", "." },
   ["b4ef9550c59da1da"] = { "Ogni scarto riutilizzato ci rende meno spreconi e ci avvicina alla Madre Terra. Mooranta può mostrarti la via. Cercala appena fuori dagli armaioli di ⟦Thunder Bluff=Picco del Tuono⟧, sull'altura di mezzo.", "." },
   ["b4f4da810979ec90"] = { "Non puoi studiare le mie tecniche finché non hai imparato le basi. Parla con Kamari se ti interessa l'addestramento.", "." },
-  ["b4ff5060ac194d9e"] = { "Un'armatura come quella che fai tu potrebbe fermare anche l'ascia più affilata. Mi hai colpito, {name}, e non succede spesso. Cerca un'Orchessa di nome Shayis Steelfury: fa le armature migliori fuori da quella maledetta roccaforte dei nani.", "." },
+  ["b4ff5060ac194d9e"] = { "Un'armatura come quella che fai tu potrebbe fermare anche l'ascia più affilata. Mi hai colpito, {name}, e non succede spesso. Cerca un'Orchessa di nome ⟦Shayis Steelfury=Shayis Furiaferro⟧: fa le armature migliori fuori da quella maledetta roccaforte dei nani.", "." },
 })

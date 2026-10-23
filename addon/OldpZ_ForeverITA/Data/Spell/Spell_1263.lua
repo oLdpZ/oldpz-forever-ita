@@ -34,7 +34,7 @@ WFJ.Data.add("spell", {
   [1263261] = { "Infligge $N1 danni fisici e conficca delle spine nel bersaglio, facendo sì che gli attacchi in mischia che subisce infliggano $N2 danni fisici aggiuntivi.", nil, 0xca1293ef, nil, "um" },
   [1263284] = { "Aumenta le tue dimensioni e i danni inflitti ogni volta che lanci con successo ⟦Mana Burn=Combustione del Mana⟧.\n\nA $N1 accumuli, esploderai.", "Danni inflitti aumentati del $N1%.\n\nA $N2 accumuli, esploderai.", 0x59888ebe, 0x63c16344, "uu" },
   [1263333] = { "Trabocchi di mana ed esploderai, infliggendo ai nemici vicini danni da arcano pari al $N1% della loro salute massima e respingendoli.\n\nNel farlo morirai.", nil, 0x10289c01, nil, "um" },
-  [1263343] = { "Tenta di evocare un Undead Ravager che combatta al tuo fianco.", nil, 0x74bee9f4, nil, "um" },
+  [1263343] = { "Tenta di evocare un ⟦Undead Ravager=Devastatore Non Morto⟧ che combatta al tuo fianco.", nil, 0x74bee9f4, nil, "um" },
   [1263350] = { "Invoca la magia dell'ombra per curare un alleato.", nil, 0x4f09a8f7, nil, "um" },
   [1263425] = { "Crea un Faction Banner.", nil, 0xd67a2145, nil, "um" },
   [1263473] = { "Infligge danni da fuoco a un nemico.", nil, 0x6c371710, nil, "um" },

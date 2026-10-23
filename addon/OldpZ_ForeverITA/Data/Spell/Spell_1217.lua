@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1217084] = { "Aumenta del $N1% tutti i danni inflitti ai bersagli di ⟦Silithus=Silitus⟧, ⟦Ahn'Qiraj=Ahn'qiraj⟧, delle ⟦Eastern Plaguelands=Terre Infette Orientali⟧ e di Naxxramas e aumenta di un ulteriore $N2% i danni critici inflitti ai bersagli in queste zone.", "Danni contro i bersagli di ⟦Silithus=Silitus⟧, ⟦Ahn'Qiraj=Ahn'qiraj⟧, delle ⟦Eastern Plaguelands=Terre Infette Orientali⟧ e di Naxxramas aumentati del $N1%.\nAnche i danni critici contro i bersagli in queste zone sono aumentati del $N2%.", 0x4212319f, 0xf06a2af8, "uu" },
   [1217127] = { nil, nil, nil, 0x0000002e, "me" },
-  [1217130] = { "Purifica dalla corruzione dei satiri un Mosshoof Courser o un Thunderhead Skystormer indebolito.", nil, 0x421d941d, nil, "um" },
+  [1217130] = { "Purifica dalla corruzione dei satiri un ⟦Mosshoof Courser=Cervo Muschiato Corsiero⟧ o un ⟦Thunderhead Skystormer=Assalicieli Testatuono⟧ indebolito.", nil, 0x421d941d, nil, "um" },
   [1217141] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", nil, 0x46e67ef3, nil, "um" },
   [1217142] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x46e67ef3, 0x2195529a, "uu" },
   [1217143] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x46e67ef3, 0x2195529a, "uu" },

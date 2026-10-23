@@ -46,7 +46,7 @@ WFJ.Data.add("gossip", {
   ["17d17fec64329f1b"] = { "Sono passati così tanti anni dal mio noviziato che non credo di essere la persona più adatta a insegnarti. Prova a parlare con Tarn o Mak, proprio lì. Uno dei due dovrebbe saper rispondere alle tue domande.", "." },
   ["17d1eb4cd51d060d"] = { "Skwol! Possiedo il tuo scettro! Ti ordino di entrare in questo mondo!", "." },
   ["17d7d70c240756e6"] = { "Cos'è questa storia? Vuoi rovinarmi la reputazione? Io non insegno ai novellini, <amico/bella>. Prova a parlare con l'orco Whuut, nel Drag di Orgrimmar. È molto più vicino al tuo livello di abilità. E di cervello.", "." },
-  ["17dec6d041e6f2d6"] = { "Un Ash'ari Crystal è stato abbattuto! Ripristinate lo ziggurat prima che la Necropoli diventi vulnerabile!", "." },
+  ["17dec6d041e6f2d6"] = { "Un ⟦Ash'ari Crystal=Cristallo Ash'ari⟧ è stato abbattuto! Ripristinate lo ziggurat prima che la Necropoli diventi vulnerabile!", "." },
   ["17edb854d59e6e4a"] = { "Guarda questo campo devastato e comprendi il potere che gli elementi custodiscono, {race}.", "." },
   ["17f1fe9f73a623df"] = { "Ora cerchiamo l'erba.", "." },
   ["17fbaa9cce97c9e3"] = { "Plucky? Ho sentito che il maestro di corsa Kronkrider, su in cima alla torre, sa dove si trova.", "." },

@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["b1076bb568a06079"] = { "Sono Al'tabim l'Onniveggente, emissario di re Rastakhan.\n\nTratto con sacerdoti, maghi e stregoni.", "." },
-  ["b10a74683d01b9a3"] = { "Quanti dei nostri comandanti sono ancora vivi, Drek'Thar?", "." },
+  ["b10a74683d01b9a3"] = { "Quanti dei nostri comandanti sono ancora vivi, ⟦Drek'Thar=Drek'thar⟧?", "." },
   ["b114d47c7bec67c1"] = { "Il Signore della Foresta è consapevole della distruzione in questa valle, {name}. Presto dovremo raggiungere il Circolo del Richiamo. Preparati!", "." },
   ["b12044e3c2dbb12f"] = { "Ah, ehm, sì, <signore/signora>. Pare che abbiamo raccolto tutto il Cuoio Medio che l'⟦Alliance=Alleanza⟧ ritiene necessario per la guerra. Mi dicono però che qui potrebbe esserci qualcun altro che ha ancora bisogno del tuo aiuto per la raccolta.", "." },
   ["b1225c73911ee159"] = { "Dun Baldar è messa molto male, e abbiamo pochissimi rifornimenti per ricostruirla. L'⟦Alliance=Alleanza⟧ ha bisogno del tuo aiuto per raccogliere rifornimenti!", "." },
@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["b1d284ecb75f8f7c"] = { "In questo mondo in cui il tempo è tuo nemico, per me è il più grande alleato. Questo grande gioco della vita che credi di giocare in realtà gioca con te. E a questo io dico...", "." },
   ["b1d5cb94117a669f"] = { "Non sono qui a insegnare ai poppanti appena usciti dalla culla. Non hai neanche lontanamente l'abilità che pretendo dai miei allievi. Anzi, sei <un/una> <ragazzo/ragazza> che fa pena, e ti pregherei di non restare lì a blaterare.", "." },
   ["b1d72bf46d17dfdf"] = { "Va bene, va bene... mi alzo.", "." },
-  ["b1d89e3f2e8cc144"] = { "Davil Lightfire ha ceduto alle ferite!", "." },
+  ["b1d89e3f2e8cc144"] = { "⟦Davil Lightfire=Davil Fiocafiamma⟧ ha ceduto alle ferite!", "." },
   ["b1e0e1a6cb7cc7ce"] = { "No! Stammi lontano! Aiuto!!", "." },
   ["b1e239feb6d1bafd"] = { "Sono caduti in troppi, <sacerdote/sacerdotessa>. Devi concentrarti!", "." },
   ["b1e28e10f0881e99"] = { "Il mondo patirà crudeltà indicibili sotto il mio regno.", "." },

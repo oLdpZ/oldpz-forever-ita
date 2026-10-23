@@ -28,7 +28,7 @@ WFJ.Data.add("gossip", {
   ["c8a98ead1b48c396"] = { "Salute. Sono qui per addestrare ogni {class}, e tu sei <un/una> {class}.", "." },
   ["c8aba30bb2f6b9e3"] = { "Grazie, {name}. E buona fortuna.", "." },
   ["c8b4171e85086a60"] = { "Anche se me ne vado in pace, avete tutti la mia eterna gratitudine. Grazie per avermi tolto la maledizione della mia follia e della mia avidità.", "." },
-  ["c8b6f4d3d59c6462"] = { "La tua comprensione del cuoio è più profonda della mia. Forse dovresti far visita al tauren Krulmoo Fullmoon a Camp Taurajo, nelle ⟦Barrens=Savane⟧. Ha molte conoscenze da offrire a chi ha il tuo talento.", "." },
+  ["c8b6f4d3d59c6462"] = { "La tua comprensione del cuoio è più profonda della mia. Forse dovresti far visita al tauren ⟦Krulmoo Fullmoon=Krulmoo Luna Piena⟧ a Camp Taurajo, nelle ⟦Barrens=Savane⟧. Ha molte conoscenze da offrire a chi ha il tuo talento.", "." },
   ["c8bcac74562e8dda"] = { "I ⟦Razorfen Downs=Sotterranei di Lamaspina⟧ si trovano all'estremità meridionale delle ⟦Barrens=Savane⟧, sul lato est della strada.", "." },
   ["c8c52ccf44aecb19"] = { "Va' a cercare Zando'zan nel Cleft of Shadow. Ci sono un paio di tunnel che scendono in quella caverna, uno appena a sud della Valle della Saggezza e l'altro nel Varcolargo.", "." },
   ["c8c81d7696f41231"] = { "La mia qualifica è Specialista in Gestione dei Rifiuti.", "." },
@@ -37,6 +37,6 @@ WFJ.Data.add("gossip", {
   ["c8de062c58b11b9c"] = { "Avvicinati, giovane. Ai miei tempi sentivo il fremito del cuore di una preda che batteva, ma ora devi alzare la voce se vuoi che le tue parole siano ascoltate.", "." },
   ["c8e2459479e690fa"] = { "Hai la statuetta?", "." },
   ["c8f47f457aa6eb58"] = { "Venite, venite tutti! Benvenuti alla ⟦Darkmoon Faire=Fiera di Lunacupa⟧! Non siate timidi. Avvicinatevi a Lhara e compratevi un manufatto esotico da terre lontane. Se siete tra i pochi fortunati che hanno trovato delle Carte di Lunacupa, scambiate due parole con il professor Paleo. Fame? Sete? Siete fortunati! Qui ci sono rinfreschi da Sylannia e Stamp. Vi consiglio la ⟦Darkmoon Special Reserve=Riserva Speciale di Lunacupa⟧ per mandar giù un po' di ⟦Red Hot Wings=Alette Piccanti⟧. E se è il futuro che cercate, correte, non camminate, a parlare con Sayge.", "." },
-  ["c8fc9407be25d4d8"] = { "Sergente Hartman! Devo comprare un altro Purificatore per Bombe Puzzolenti!", "." },
+  ["c8fc9407be25d4d8"] = { "⟦Sergeant Hartman=Sergente Hartman⟧! Devo comprare un altro Purificatore per Bombe Puzzolenti!", "." },
   ["c8fd282844930669"] = { "Cerca Yelmak's Alchemy and Potions. La trovi in mezzo al Varcolargo, a ovest del grande albero.", "." },
 })

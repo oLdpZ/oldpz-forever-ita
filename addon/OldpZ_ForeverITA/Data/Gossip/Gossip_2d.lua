@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["2dd0ba474a2b35fd"] = { "Ti prego, dimmi di più.", "." },
   ["2dda6733be1468d6"] = { "Dov'è il quartiermastro dei Lupi Bianchi?", "." },
   ["2dda73b2079667ea"] = { "Salve, <buon/buona> <signore/signora>. Siediti, e mangia qualcosa se hai fame. Non badare al mio ricamo: ti sto ascoltando...", "." },
-  ["2ddb2c504bcae86d"] = { "Mi stai davvero chiedendo dov'è il fabbro? Non hai mai sentito parlare della ⟦Great Forge=Grande Forgia⟧!? Tutti i nostri migliori fabbri si riuniscono lì per forgiare armi e armature!\n\nSta proprio nel bel mezzo di ⟦Ironforge=Forgiardente⟧, ed è lì che troverai uno dei nostri fabbri più brillanti, Bengus Deepforge.", "." },
+  ["2ddb2c504bcae86d"] = { "Mi stai davvero chiedendo dov'è il fabbro? Non hai mai sentito parlare della ⟦Great Forge=Grande Forgia⟧!? Tutti i nostri migliori fabbri si riuniscono lì per forgiare armi e armature!\n\nSta proprio nel bel mezzo di ⟦Ironforge=Forgiardente⟧, ed è lì che troverai uno dei nostri fabbri più brillanti, ⟦Bengus Deepforge=Bengus Forgiafonda⟧.", "." },
   ["2ddd674aab64d2cb"] = { "%s prepara la sua siringa.", "." },
   ["2dddd33a79fbaeab"] = { "Che vuoi? *hic*", "." },
   ["2ddef0b309cef801"] = { "Finalmente un po' di pietà! Ci hanno dato qualcosa da bere!", "." },

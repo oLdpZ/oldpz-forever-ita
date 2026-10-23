@@ -14,7 +14,7 @@ WFJ.Data.add("item", {
   [235479] = { "Riduce del $N1% tutti i danni subiti dai giocatori e dai loro famigli. Questo effetto non si somma se proviene da più fonti.", 0x115db1dc, "u" },
   [235480] = { "Riduce del $N1% tutti i danni subiti dai giocatori e dai loro famigli. Questo effetto non si somma se proviene da più fonti.", 0x115db1dc, "u" },
   [235481] = { "Riduce del $N1% tutti i danni subiti dai giocatori e dai loro famigli. Questo effetto non si somma se proviene da più fonti.", 0x115db1dc, "u" },
-  [235509] = { "Purifica dalla corruzione dei satiri un Mosshoof Courser o un Thunderhead Skystormer indebolito.", 0x421d941d, "u" },
+  [235509] = { "Purifica dalla corruzione dei satiri un ⟦Mosshoof Courser=Cervo Muschiato Corsiero⟧ o un ⟦Thunderhead Skystormer=Assalicieli Testatuono⟧ indebolito.", 0x421d941d, "u" },
   [235518] = { "Chiama i rinforzi dei Mordilegno per affrontare il principe Halanox.", 0xad22882a, "u" },
   [235597] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [235598] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
@@ -29,5 +29,5 @@ WFJ.Data.add("item", {
   [235788] = { "Questa cosa non vuole proprio stare ferma...", 0xe0709d5c, "u" },
   [235790] = { "Solleva l'Enchanted Torch e tenta di dissipare l'oscurità vicino alle Karazhan Crypts.", 0xc5218775, "u" },
   [235852] = { "Questa piccola borsa reca il simbolo del Kirin Tor di Dalaran. Sembra contenere alcuni piccoli oggetti ma, stranamente, non riesci ad aprire la patta per vedere cosa c'è dentro.", 0x3babe234, "u" },
-  [235867] = { "Il pezzo di pergamena sembra strappato da un manifesto o da un volantino più grande. Le uniche parole leggibili sembrano essere un nome ...Arcimago Tarsis Kir-Moldir", 0xf6a40644, "u" },
+  [235867] = { "Il pezzo di pergamena sembra strappato da un manifesto o da un volantino più grande. Le uniche parole leggibili sembrano essere un nome ...⟦Archmage Tarsis Kir-Moldir=Arcimago Tarsis Kir-Moldir⟧", 0xf6a40644, "u" },
 })

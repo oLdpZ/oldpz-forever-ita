@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["b573151a80e975b2"] = { "La capitana Balinda Stonehearth guida le forze di prima linea dell'⟦Alliance=Alleanza⟧. Ha la sua base all'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧, nella parte settentrionale del ⟦Field of Strife=Pian della Discordia⟧.\n\nAl momento Balinda si trova all'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧.", "." },
   ["b575f8198261f81f"] = { "Devi avere una reputazione amichevole con i troll della tribù ⟦Darkspear=Lanciascura⟧ prima che io ti insegni a cavalcare, {class}.", "." },
   ["b580b68328f12661"] = { "Prima che arrivasse il Flagello, avevo un grande commercio. Compravo e vendevo di tutto. Di tutto!\n\nE i miei prezzi erano FOLLI!\n\nChiedi pure a chiunque. A chiunque non sia morto.", "." },
-  ["b582c73874ee3fc6"] = { "Elfi nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧ fare rumore croccante. Tu farli croccare bene. Parla con Kurden Bloodclaw nel Royal Quarter.", "." },
+  ["b582c73874ee3fc6"] = { "Elfi nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧ fare rumore croccante. Tu farli croccare bene. Parla con ⟦Kurden Bloodclaw=Kurden Graffiasangue⟧ nel Royal Quarter.", "." },
   ["b59c2b0cc999b393"] = { "Mostrerei al mio signore l'orecchio della bestia e rivendicherei la sua morte come mia: dopotutto, l'ho uccisa io. Poi offrirei parte della ricompensa al cavaliere caduto in miseria, per aiutare la sua famiglia.", "." },
   ["b5a255bc0dddc12c"] = { "Eccomi di nuovo al punto di partenza.", "." },
   ["b5a2aa091036d576"] = { "Ti ringrazio, {name}. I miei soci faranno grandi cose con questi...", "." },

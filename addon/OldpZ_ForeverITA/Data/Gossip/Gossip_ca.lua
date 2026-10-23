@@ -43,7 +43,7 @@ WFJ.Data.add("gossip", {
   ["cac0ba34d8e16695"] = { "Sei <pronto/pronta> per cose più grandi! Va' da Franklin Lloyd, alla mia destra. D'ora in poi sarà lui a guidarti.", "." },
   ["cac9143ba7d1e81d"] = { "Benvenut<o/a> al ⟦Revantusk Village=Villaggio degli Zannatorta⟧, <straniero/straniera>. Sono la primordiale Torntusk, capo dei troll Zannatorta.", "." },
   ["cacae57f231b9068"] = { "Poi non devi far altro che sederti vicino al fuoco e goderti il calore. Dopo qualche minuto di riposo otterrai vari benefici che ti aiuteranno nei tuoi viaggi.", "." },
-  ["cacdba3723384300"] = { "Torna qui, Fluffy!", "." },
+  ["cacdba3723384300"] = { "Torna qui, ⟦Fluffy=Morbidino⟧!", "." },
   ["caea5799997e5cf5"] = { "Certamente, <signore/signorina>. Un tempo eravamo servitori della casata Barov: quella che oggi è nota come Scholomance.\n\nIo ero la governante e Lucien era il maggiordomo di padron Barov.\n\nAvevamo lavorato per i Barov per decenni, finché...\n\n<Eva piange.>", "." },
   ["caea9833c6b48dfc"] = { "Non merito tanto, <signore/signora>.", "." },
   ["caf11a78a6b29f4e"] = { "Se c'è qualcosa che desideri da me...", "." },

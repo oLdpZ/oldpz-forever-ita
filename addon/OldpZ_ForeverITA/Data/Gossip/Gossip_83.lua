@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["8300a633d3e248f7"] = { "Sì, sì, tutto il materiale bellico dell'Orda e dell'Alleanza viene spedito a ⟦Silithus=Silitus⟧ e dovrebbe arrivare entro un giorno. Sai cosa succede allora, {class}? Ci sbrighiamo per poi aspettare. Speriamo che qualcuno stia raccogliendo i pezzi dello Scettro delle Sabbie Mutevoli, perché per aprire i cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧ bisogna percuoterlo contro il gong sull'Altare dello Scarabeo.", "." },
   ["830121f4680aba42"] = { "Il tempo delle parole è finito. Proteggi Kinelory, se ti sta a cuore la gente di ⟦Hillsbrad=Colletorto⟧.", "." },
-  ["830631a13f893833"] = { "Hai <sbuffo> aiutato Mangletooth più di quanto avrei mai sognato, {race}.\n\nGrazie.\n\nFinché resterò in prigionia qui, puoi portarmi i Frammenti di Sangue dei verrospini ⟦Bristleback=Mantotergo⟧ e ti benedirò con il potere di Agamaggan.", "." },
+  ["830631a13f893833"] = { "Hai <sbuffo> aiutato ⟦Mangletooth=Squarciadenti⟧ più di quanto avrei mai sognato, {race}.\n\nGrazie.\n\nFinché resterò in prigionia qui, puoi portarmi i Frammenti di Sangue dei verrospini ⟦Bristleback=Mantotergo⟧ e ti benedirò con il potere di Agamaggan.", "." },
   ["830ae28b240810dc"] = { "Quindi sei qui per le asce dei ⟦Warsong=Cantaguerra⟧. Be', era ora, {name}. Quella cassa è lì fuori da giorni, ormai.\n\nPortala via pure quando sei <pronto/pronta>.", "." },
   ["830af2f1c8b5db16"] = { "Ehi, ragazzi, proviamo dall'altra parte.", "." },
   ["830e700033d39854"] = { "L'Arcidruido crede che Ivus, il Signore della Foresta, verrà non appena sarà informato delle forze distruttive in questa valle.", "." },
@@ -18,7 +18,7 @@ WFJ.Data.add("gossip", {
   ["8339d54371ceb04b"] = { "Torna indietro! Non svegliare il sognatore!", "." },
   ["83444f5b85c19633"] = { "Adele Fielder si è fatta un nome come conciatrice in tutta Elwynn. La trovi a lavorare in casa sua, vicino al ⟦Crystal Lake=Lago di Cristallo⟧.", "." },
   ["8345272677ad076b"] = { "Ascolto e ascolto, ma non sento questi spiriti di cui parla Karn.", "." },
-  ["834643b0063eb8f6"] = { "Ahh, allora dovrai raggiungere la Hunter's Hall. Lì, sull'⟦Hunter Rise=Altura dei Cacciatori⟧, troverai diversi grandi cacciatori come Holt Thunderhorn.", "." },
+  ["834643b0063eb8f6"] = { "Ahh, allora dovrai raggiungere la Hunter's Hall. Lì, sull'⟦Hunter Rise=Altura dei Cacciatori⟧, troverai diversi grandi cacciatori come ⟦Holt Thunderhorn=Holt Corno Tonante⟧.", "." },
   ["8348bf7b8f2b45cc"] = { "Ottimo lavoro! Meriti davvero il sapere che ti concederò!", "." },
   ["834b33ff398b1768"] = { "Hai imparato tutto ciò che posso insegnarti, {name}. Che le benedizioni della Madre Terra ti guidino nella scelta di un famiglio.\n\nEcco a te, {name}. Ora ti darò il potere di addomesticare una bestia, e di richiamarla e congedarla come meglio credi. Usa le tue nuove abilità con orgoglio e onora la Madre Terra.", "." },
   ["834dc587955cdac7"] = { "Io contro cinquanta orchi? Non ci casco, {name}. Il mio paparino diceva sempre: «La discrezione è la parte migliore del biscotto», o qualcosa del genere, e io sapevo cosa voleva dire.", "." },

@@ -120,6 +120,11 @@ read from its client tables (GlobalStrings, Faction, ItemSparse, Spell, ChrClass
 wago.tools DB2 exports, and kept only where the retail English is the English Forever shows
 (`wfj import official`). Its lines carry the provenance class `official`. Retail builds read: <BUILDS>.
 """
+WOWHEAD = "wowhead"
+WOWHEAD_NAMES = """
+NPC names the client tables lack are Blizzard's Italian as Wowhead's Italian tooltips show it
+(`make creature-official`, ADR-103): only the creature id and its name, read on <DATES>.
+"""
 
 
 def english_sources(root: Path) -> set[str]:
@@ -214,9 +219,15 @@ def render(
     if official:
         # after Lineage, beside the English source credit: the part above Lineage never reads "official"
         # (no claim that the project is Blizzard's; test_public_docs)
-        builds = ", ".join(f"`{s.split('@', 1)[-1]}`" for s in sorted(set(official)))
+        # Wowhead's NPC names (ADR-103) are dated reads, not retail builds: credited apart
+        wowhead = sorted(s.split("@", 1)[-1] for s in set(official) if s.startswith(WOWHEAD + "@"))
+        tables = sorted(s for s in set(official) if not s.startswith(WOWHEAD + "@"))
+        builds = ", ".join(f"`{s.split('@', 1)[-1]}`" for s in tables)
+        text = OFFICIAL.replace("<BUILDS>", builds or "none")
+        if wowhead:
+            text += WOWHEAD_NAMES.replace("<DATES>", ", ".join(f"`{d}`" for d in wowhead))
         at = lineage.index("## This project")
-        lineage = lineage[:at] + OFFICIAL.replace("<BUILDS>", builds) + "\n" + lineage[at:]
+        lineage = lineage[:at] + text + "\n" + lineage[at:]
     lines += ["", lineage]
     return "\n".join(lines)
 

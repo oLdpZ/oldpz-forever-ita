@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["1ca593264a65e7e2"] = { "Il ⟦Icewing Bunker=Fortilizio di Algidala⟧ è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ lo distruggerà!", "." },
   ["1ca766ec6586f8cc"] = { "Aku'mai è morto! Finalmente posso lasciare questo posto maledetto.", "." },
   ["1cc005467bba384a"] = { "{name} ha catturato la Bandiera dell'⟦Alliance=Alleanza⟧!", "." },
-  ["1cc47f2d9711f5dd"] = { "Yonn Deepcut si trova nella grande tenda nell'angolo nord-occidentale del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧.", "." },
+  ["1cc47f2d9711f5dd"] = { "⟦Yonn Deepcut=Yonn Taglio Fondo⟧ si trova nella grande tenda nell'angolo nord-occidentale del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧.", "." },
   ["1cc5264429fd13ab"] = { "Grark Lorkrub, sei stato accusato e giudicato colpevole di tradimento contro l'⟦Horde=Orda⟧. Come ti dichiari non ha importanza. Sommo carnefice Nuzrak, fatti avanti.", "." },
   ["1cc81bbfefa2146f"] = { "Tu controlla davanti!", "." },
   ["1cd1ae3d8c60a0b7"] = { "Non sembra... giusto. Guarda quanto è alieno questo deserto! Passare di qui potrebbe essere un terribile errore.", "." },

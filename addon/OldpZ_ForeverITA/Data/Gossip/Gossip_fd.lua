@@ -18,7 +18,7 @@ WFJ.Data.add("gossip", {
   ["fd49e921d8ec5aae"] = { "Chi controlla il ⟦Stonehearth Bunker=Fortilizio di Cordipietra⟧?", "." },
   ["fd4c127dab4f13a3"] = { "Perché il nostro popolo sopravviva, dobbiamo studiare le vie della natura e apprenderne i segreti.", "." },
   ["fd4f2ee463dfd54c"] = { "Ah, cerchi il chierico oscuro Beryl. È al piano di sopra, nella sala di lettura della ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧. Legge, prega, chissà cosa combina... e chi oserebbe chiederglielo?", "." },
-  ["fd518631c1b3ea21"] = { "Ah, che sfortuna! Le mie capacità non bastano per esserti utili. Pazienza. Parla con Fimble Finespindle, laggiù vicino al telaio. Lavora il cuoio da più tempo di me.", "." },
+  ["fd518631c1b3ea21"] = { "Ah, che sfortuna! Le mie capacità non bastano per esserti utili. Pazienza. Parla con ⟦Fimble Finespindle=Fimble Filofino⟧, laggiù vicino al telaio. Lavora il cuoio da più tempo di me.", "." },
   ["fd5702fdd5dfaaec"] = { "Spero che tu non sia venut<o/a> fino alla ⟦Great Forge=Grande Forgia⟧ solo per stare al caldo. Parla, <ragazzo/ragazza>: cosa posso fare per te?", "." },
   ["fd705848a68cd3cd"] = { "Non ci sconfiggerete mai!", "." },
   ["fd70a77ce8af287c"] = { "È saggio che tu ti umili davanti a me, {name}, nel tuo desiderio di altro sapere da stregone.", "." },

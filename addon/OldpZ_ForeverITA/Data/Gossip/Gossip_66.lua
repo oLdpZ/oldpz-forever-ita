@@ -9,7 +9,7 @@ WFJ.Data.add("gossip", {
   ["6616e74c187a7166"] = { "Vedo del potenziale in te, {name}. Ora prendi un martello e un po' di quei rottami: ti serve un sacco di pratica.", "." },
   ["661dcc2dc3e14f2f"] = { "È la mia fine! Evocate Verog!", "." },
   ["662461e3c0b16b41"] = { "Ah, come dice il titolo, faccio l'assassino per la ⟦Scarlet Crusade=Crociata Scarlatta⟧. Passo le giornate a sterminare bersagli di alta priorità e le notti nella discoteca di ⟦Gadgetzan=Meccania⟧. Ballare è la mia vera vocazione. Assassinare serve solo a pagare i conti.", "." },
-  ["6627ff465d91cdbf"] = { "Lui nome è Grizzle Halfmane. Lui in Royal Quarter con Regina Banshee e Dread Lord.", "." },
+  ["6627ff465d91cdbf"] = { "Lui nome è ⟦Grizzle Halfmane=Grizzle Mezzachioma⟧. Lui in Royal Quarter con Regina Banshee e Dread Lord.", "." },
   ["66306e06def4f901"] = { "Che succede? Guarda!", "." },
   ["6669a1858bab991c"] = { "Uccideteli, fratelli miei! Per il Flagello!", "." },
   ["666a6c781bb8fae4"] = { "Direi che avevi fame! Trok avrebbe dovuto darti da mangiare prima... Cosa avrà combinato per tutto questo tempo?", "." },

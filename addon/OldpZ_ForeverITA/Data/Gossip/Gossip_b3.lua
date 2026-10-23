@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["b30228e0fd6cb3a4"] = { "FINISCI L'INCANTESIMO, STAGHELM! NON POSSO TENERE AL LORO POSTO I GLIFI DI PROTEZIONE ANCORA A LUNGO! INVOCA LE RADICI!", "." },
   ["b30934ed36d1f0f7"] = { "Mmmm... hai proprio un aspetto appetitoso.", "." },
-  ["b318c3d5db4cb7a7"] = { "Porta questo registro a una mia vecchia conoscenza a Tanaris. Si chiama Narain Soothfancy: un sensitivo terribile, terribile, ma un ingegnere straordinario! Dovrebbe riuscire a capirci qualcosa.\n\nNon serve ringraziarmi, {name}. È il minimo che potessi fare.\n\nBuona giornata!", "." },
+  ["b318c3d5db4cb7a7"] = { "Porta questo registro a una mia vecchia conoscenza a Tanaris. Si chiama ⟦Narain Soothfancy=Narain Veravite⟧: un sensitivo terribile, terribile, ma un ingegnere straordinario! Dovrebbe riuscire a capirci qualcosa.\n\nNon serve ringraziarmi, {name}. È il minimo che potessi fare.\n\nBuona giornata!", "." },
   ["b31a65cb6e5c35c7"] = { "<Patetico/Patetica> <rammollito/rammollita> dei Reietti. Vuoi vedere il mio padrone? E sia.", "." },
   ["b334b704d30b05a5"] = { "I Maneweaver praticano le loro professioni nella loro casa sulla strada per Darnassus. Nadyia è un'ottima insegnante di Conciatura. Dovresti vedere cosa può insegnarti.", "." },
   ["b3385d446b9a389e"] = { "Come, amore mio? Come troverò la forza di affrontare le ere del mondo senza te al mio fianco...", "." },

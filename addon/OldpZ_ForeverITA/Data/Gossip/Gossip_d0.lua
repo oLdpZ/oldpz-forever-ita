@@ -17,7 +17,7 @@ WFJ.Data.add("gossip", {
   ["d046cc7d2b696be5"] = { "Salve, {class}, gentile da parte tua farti vedere. Sarò breve: stiamo raccogliendo rifornimenti per lo sforzo bellico di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Non vorremmo più vittime del necessario, vero? Ho la responsabilità di coordinare la raccolta di $2086w bende di telamagica. Finora ne abbiamo raccolte $2085w. Vuoi dare una mano?", "." },
   ["d0494aa268658121"] = { "Forse esiste un modo?", "." },
   ["d050b10c220eecfc"] = { "Un'altra bella giornata sulla nostra splendida isola.", "." },
-  ["d0539fa5b1c23757"] = { "%s chiama in suo aiuto un Blackhand Dreadweaver!", "." },
+  ["d0539fa5b1c23757"] = { "%s chiama in suo aiuto un ⟦Blackhand Dreadweaver=Mistico del Terrore Manonera⟧!", "." },
   ["d054b9b435ca03d0"] = { "Venite, fratelli.", "." },
   ["d055916d277be635"] = { "Ho meno di un terzo dei rifornimenti necessari per passare alle unità veterane.", "." },
   ["d05a516c75398c9f"] = { "La Frostwolf Relief Hut si trova nella ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧, a sud delle Torri dei Lupi Bianchi.\n\nÈ sotto il controllo dell'⟦Horde=Orda⟧.", "." },

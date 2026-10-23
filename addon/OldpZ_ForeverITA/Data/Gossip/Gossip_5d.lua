@@ -13,7 +13,7 @@ WFJ.Data.add("gossip", {
   ["5d3bbd817ccdbb54"] = { "Faresti meglio a darmi man forte stavolta!", "." },
   ["5d3c66495e000d78"] = { "%s cammina avanti e indietro in attesa della battaglia.", "." },
   ["5d44fada69a5a13a"] = { "«Un'abilità per chi desidera superare gli ostacoli.» Credo sia così che Faelyssa descrive le sue competenze.\n\nSe la pensi come lei, raggiungi l'⟦Cenarion Enclave=Enclave Cenariana⟧ nella parte settentrionale di Darnassus, dove tiene le sue lezioni.", "." },
-  ["5d49e37eb03c2114"] = { "Gloom'rel, svelami i tuoi segreti!", "." },
+  ["5d49e37eb03c2114"] = { "⟦Gloom'rel=Furien'rel⟧, svelami i tuoi segreti!", "." },
   ["5d4c2d887ac1692e"] = { "Salute, <ragazzo/ragazza>! Se cerchi i migliori affari che troverai fuori da ⟦Ironforge=Forgiardente⟧, sei nel posto giusto.", "." },
   ["5d4ed0b350341580"] = { "Chiudi gli occhi. Dormi.", "." },
   ["5d50a6cde272423c"] = { "Ora cerchiamo un'Arpia ignara!", "." },

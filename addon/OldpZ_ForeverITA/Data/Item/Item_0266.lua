@@ -2,11 +2,11 @@
 local _, WFJ = ...
 WFJ.Data.add("item", {
   [266156] = { "Maneggiare con cura.", 0x50bc26a8, "u" },
-  [266158] = { "Inizia ad addomesticare un Rockhide Boar che sarà tuo compagno per $D1. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0x2f79cf82, "u" },
+  [266158] = { "Inizia ad addomesticare un ⟦Rockhide Boar=Cinghiale Scagliadura⟧ che sarà tuo compagno per $D1. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0x2f79cf82, "u" },
   [266161] = { "Pianta un germoglio.", 0x312e4f4d, "u" },
   [266252] = { "Il medaglione è sigillato da un fermaglio rotto.", 0xc2508cfb, "u" },
-  [266253] = { "Inizia ad addomesticare un Gray Forest Wolf che sarà tuo compagno per $D1. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xbc523dae, "u" },
-  [266254] = { "Inizia ad addomesticare uno Young Forest Bear che sarà tuo compagno per $D1. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xf0dcdeeb, "u" },
+  [266253] = { "Inizia ad addomesticare un ⟦Gray Forest Wolf=Lupo della Foresta Grigio⟧ che sarà tuo compagno per $D1. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xbc523dae, "u" },
+  [266254] = { "Inizia ad addomesticare uno ⟦Young Forest Bear=Orso Giovane delle Foreste⟧ che sarà tuo compagno per $D1. Se perdi l'attenzione della bestia per qualsiasi motivo, l'addomesticamento fallirà.", 0xf0dcdeeb, "u" },
   [266427] = { "Un registro con il sigillo ufficiale di Farholde, trovato addosso a un cultista del ⟦Twilight's Hammer=Martello del Crepuscolo⟧.", 0x82620460, "u" },
   [266433] = { "Casse e cesti da cui cadono effetti personali impacchettati a metà. Chi li ha raccolti se n'è andato in fretta.", 0xa0a6f92e, "u" },
 })

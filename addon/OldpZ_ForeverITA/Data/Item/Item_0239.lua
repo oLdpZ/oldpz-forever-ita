@@ -15,7 +15,7 @@ WFJ.Data.add("item", {
   [239223] = { "Incredibilmente convincente, nel contesto di un'opera lirica o di uno spettacolo teatrale.", 0x52ee0f5c, "u" },
   [239225] = { "Puoi solo immaginare la soddisfazione di apporre la tua firma con questo strumento.", 0xdc6f9e2e, "u" },
   [239246] = { "Un elenco di oggetti scarabocchiato in fretta ogni volta che passava per la mente dell'autore.", 0x773643e5, "u" },
-  [239292] = { "Contiene i pensieri e le opere raccolti di Franclorn Forgewright.", 0x1cd229fb, "u" },
+  [239292] = { "Contiene i pensieri e le opere raccolti di ⟦Franclorn Forgewright=Franclorn Forgiabruna⟧.", 0x1cd229fb, "u" },
   [239302] = { "Una spessa cinghia di cuoio con una pesante fibbia d'acciaio. Un vero capolavoro di cintura, pronto a essere rovinato da qualche armeggio sconsiderato.", 0xe9e2ed7f, "u" },
   [239316] = { "Usa il dispositivo in un punto di triangolazione designato per aiutare Fizzlefuse a calibrare il suo teletrasportatore.", 0x3fe0358d, "u" },
   [239512] = { "Aumenta la probabilità d'impatto con tutti gli incantesimi e gli attacchi del $N1%.\nAumenta la velocità d'attacco del $N2%.", 0x2a496c46, "u" },

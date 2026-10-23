@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["1f22d4c9d2af565a"] = { "Nessuna traccia nemmeno dell'ultimo carico di esplosivi a ovest. Dove sono finiti quei perdigiorno?", "." },
   ["1f28523e50223097"] = { "Tieni la porta chiusa, {class}. Non si sa mai quando i Dark Riders torneranno a passare di qui.", "." },
-  ["1f2a6d62bdea223b"] = { "Vedo che del segreto dell'acciaio ne sai più di me. Questo è un bene, perché è fatto per essere appreso. Ora devi recarti nella giungla a sud delle terre degli umani, nella città goblin di ⟦Booty Bay=Baia del Bottino⟧. Lì troverai un goblin di nome Brikk Keencraft. Non amo i goblin, ma nessuno di quelli che conosco eguaglia la sua conoscenza del segreto dell'acciaio.", "." },
+  ["1f2a6d62bdea223b"] = { "Vedo che del segreto dell'acciaio ne sai più di me. Questo è un bene, perché è fatto per essere appreso. Ora devi recarti nella giungla a sud delle terre degli umani, nella città goblin di ⟦Booty Bay=Baia del Bottino⟧. Lì troverai un goblin di nome ⟦Brikk Keencraft=Brikk Piegaferro⟧. Non amo i goblin, ma nessuno di quelli che conosco eguaglia la sua conoscenza del segreto dell'acciaio.", "." },
   ["1f31b2bdf9c47076"] = { "Salute, {class}.", "." },
   ["1f353b657d0d6662"] = { "Abbiamo passato così tanto della nostra vita in fuga che i ricordi dei tempi di pace si fanno sempre più lontani.", "." },
   ["1f377cf6495e567b"] = { "Gli metto un'etichetta per riferimento e poi lo dissotterro.", "." },
@@ -47,7 +47,7 @@ WFJ.Data.add("gossip", {
   ["1fdb9fbce7b237c3"] = { "Godetevi la vostra piccola vittoria finché potete, mortali. Non fermerà il nostro trionfo finale su questa terra!", "." },
   ["1fddf83b76098c88"] = { "Unisciti alla lotta contro il male! Accetta oggi un incarico nell'⟦Argent Dawn=Alba d'Argento⟧!", "." },
   ["1fe254d51b1a1174"] = { "Fa piacere vedere un ingegnere con il coraggio di costruire il congegno. Noi ingegneri goblin ridiamo in faccia al pericolo!", "." },
-  ["1fe91a6934b5305b"] = { "La nostra libertà non avrebbe avuto alcun senso se C'thun fosse sopravvissuto. Sei davvero <un/una> <campione/campionessa> della profezia.", "." },
+  ["1fe91a6934b5305b"] = { "La nostra libertà non avrebbe avuto alcun senso se ⟦C'Thun=C'thun⟧ fosse sopravvissuto. Sei davvero <un/una> <campione/campionessa> della profezia.", "." },
   ["1fe98dcba8c772e0"] = { "Non costringermi a passare alle maniere forti.", "." },
   ["1fea9bcc67c43b56"] = { "Vuoi imparare a usare una nuova arma, eh? Beh, allora dovresti parlare con Bixi o Buliwyf alla bottega d'armi Timberline Arms, <ragazzo/ragazza>. Conoscono le armi, dalle asce agli... ehm... zweihander.", "." },
   ["1ff5cac0e08be16f"] = { "Non morirò di nuovo! Non per mano di gente come te!!", "." },

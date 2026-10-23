@@ -38,8 +38,8 @@ WFJ.Data.add("spell", {
   [1303598] = { "Trasforma i nemici vicini in un animale, costringendoli a vagare per un massimo di $D1. Mentre vagano non possono attaccare né lanciare incantesimi.", "Impossibile attaccare o lanciare incantesimi.", 0xb8524f66, 0x03c3096f, "uu" },
   [1303599] = { "Mentre canalizzi questo incantesimo, il tuo mana si rigenera più rapidamente.", "Rigenerazione del mana aumentata.", 0xe99d7c7c, 0x3a24120a, "uu" },
   [1303634] = { "Cura il bersaglio dai malanni.", "Cura dei malanni in corso.", 0xb7bf7abb, 0x8be991aa, "uu" },
-  [1303755] = { "Lancia una Pietra del Ritorno a uno Slave Worker ferito.", "Tenta una fuga audace!", 0x234cc09d, 0x105909c3, "uu" },
+  [1303755] = { "Lancia una Pietra del Ritorno a uno ⟦Slave Worker=Schiavo Lavoratore⟧ ferito.", "Tenta una fuga audace!", 0x234cc09d, 0x105909c3, "uu" },
   [1303853] = { "Smaltisci i materiali pericolosi a distanza di sicurezza da ⟦Gadgetzan=Meccania⟧ e da altra spazzatura.", nil, 0xc144223e, nil, "um" },
-  [1303869] = { "Lancia una Pietra del Ritorno a uno Slave Worker ferito, dopo averlo fatto rinsavire a suon di botte.", "Tenta una fuga audace!", 0x2d946e0d, 0x105909c3, "uu" },
+  [1303869] = { "Lancia una Pietra del Ritorno a uno ⟦Slave Worker=Schiavo Lavoratore⟧ ferito, dopo averlo fatto rinsavire a suon di botte.", "Tenta una fuga audace!", 0x2d946e0d, 0x105909c3, "uu" },
   [1303979] = { "Aumenta la velocità d'attacco del $N1% e i danni fisici che infliggi di $N2 per $D1.", "Danni fisici inflitti aumentati di $N1.\nVelocità d'attacco aumentata del $N2%.", 0x0aff43f6, 0xbc6c8e1d, "uu" },
 })

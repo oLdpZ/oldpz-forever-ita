@@ -18,7 +18,7 @@ WFJ.Data.add("item", {
   [282637] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [282639] = { "Gli ogre ti schiacciano con qualunque cosa.", 0x397b0b4c, "u" },
   [282703] = { "Trafigge il bersaglio, infliggendo $N1 danni fisici.", 0x970d45f0, "u" },
-  [282706] = { "Non c'è dubbio su come Foulbelly si sia guadagnato quel nome.", 0x5f900395, "u" },
+  [282706] = { "Non c'è dubbio su come ⟦Foulbelly=Panciamarcia⟧ si sia guadagnato quel nome.", 0x5f900395, "u" },
   [282720] = { "Evoca uno sciame di ragni che ti protegge per $D1.", 0x08920823, "u" },
   [282778] = { "Assorbe $N1 danni da fuoco, curandoti di tutti i danni assorbiti.", 0x79a94f06, "u" },
 })

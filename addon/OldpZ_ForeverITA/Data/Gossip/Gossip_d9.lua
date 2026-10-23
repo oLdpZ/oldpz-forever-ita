@@ -41,7 +41,7 @@ WFJ.Data.add("gossip", {
   ["d9c80f835ecd2109"] = { "Se resti qui a riposare ancora qualche istante, otterrai un beneficio dal riposo vicino alla tenda che ho montato alle mie spalle.", "." },
   ["d9d137f07bea6027"] = { "Un orco, un vero guerriero orco, desidera una cosa sola: morire nella gloria della battaglia contro un nemico odiato.", "." },
   ["d9d1441aab22e71d"] = { "{name}, le mie ferite sono gravi. Perdona la mia lentezza, ma le ferite non mi permettono di camminare più in fretta.", "." },
-  ["d9d1c177441e32ac"] = { "Ah, non c'è niente di meglio di un sacerdote per curare i tuoi mali. Certo, anche una bella pinta alta cura un sacco di mali, ma non credo che Braenna Flintcrag insegni a fare la birra. Immagino che dovrai accontentarti di un po' di addestramento da sacerdote nella Hall of Mysteries.", "." },
+  ["d9d1c177441e32ac"] = { "Ah, non c'è niente di meglio di un sacerdote per curare i tuoi mali. Certo, anche una bella pinta alta cura un sacco di mali, ma non credo che ⟦Braenna Flintcrag=Braenna Selcenera⟧ insegni a fare la birra. Immagino che dovrai accontentarti di un po' di addestramento da sacerdote nella Hall of Mysteries.", "." },
   ["d9dbc126354c5ac8"] = { "Cadi!", "." },
   ["d9e0c375d64185c9"] = { "Ci condanneresti tutti...", "." },
   ["d9e374f31ce5b711"] = { "<Signore/Signora>, sì, <signore/signora>! Il soldato semplice Porter a rapporto, a tua disposizione per raccogliere il cuoio medio che ti serve. La Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧ si avvicina e dobbiamo essere preparati il più possibile.\n\nCome vedi, abbiamo raccolto esattamente $2063w pezzi di cuoio medio, e mi hanno incaricato di raccoglierne in totale $2064w.", "." },

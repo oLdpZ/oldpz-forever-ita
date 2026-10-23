@@ -51,7 +51,7 @@ WFJ.Data.add("spell", {
   [426640] = { nil, "È stato compiuto un sacrificio adeguato.", nil, 0x8a285689, "mu" },
   [426668] = { "Evoca $N1 Stone Rumblers che affiancano l'incantatore fino al congedo.", nil, 0x36bf232d, nil, "um" },
   [426694] = { "Assume la forma d'orso per $D1, aumentando l'Armatura e la salute e permettendo di usare varie abilità dell'orso.", "In forma d'orso.\nArmatura aumentata del $N1%, salute aumentata di $N2 e potenza d'attacco aumentata di $N3.", 0x827ae877, 0xa64e022f, "uu" },
-  [426754] = { "Fai un'offerta di sangue per liberare questa Tortured Soul.", nil, 0x72038d21, nil, "um" },
+  [426754] = { "Fai un'offerta di sangue per liberare questa ⟦Tortured Soul=Anima Torturata⟧.", nil, 0x72038d21, nil, "um" },
   [426764] = { nil, "Demotivato... Senza fatica non si ottiene nulla.", nil, 0xa0ac7857, "mu" },
   [426811] = { nil, "Gli alleati entro $N1 m da un comandante sul campo di battaglia ottengono il $N2% di salute in più e il $N3% di danni in più.", nil, 0x5a25079a, "mu" },
   [426821] = { "Si affida alla magia della natura per curare un alleato.", nil, 0xa861c49b, nil, "um" },

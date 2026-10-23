@@ -7,7 +7,7 @@ WFJ.Data.add("spell", {
   [470078] = { "Il tuo incantesimo ⟦Crusader Strike=Assalto del Crociato⟧ rigenera un ulteriore $N1% del tuo mana massimo.", nil, 0xe7ed3766, nil, "um" },
   [470079] = { "Aumenta del $N1% i danni inflitti da Pioggia di Stelle, ma ne riduce il raggio del $N2%.", nil, 0x57f4abd8, nil, "um" },
   [470080] = { "La tua abilità ⟦Ferocious Bite=Morso Feroce⟧ non converte più l'energia aggiuntiva in danni e restituisce $N1 energia in caso di schivata, mancato colpo o parata.", nil, 0xd8d1e9ae, nil, "um" },
-  [470081] = { "Con uno scudo equipaggiato, i tuoi attacchi in mischia con Arma della Roccia Dura attivano la tua runa Arma del Maelstrom il $N1% più spesso.", nil, 0x6514c9b2, nil, "um" },
+  [470081] = { "Con uno scudo equipaggiato, i tuoi attacchi in mischia con Arma della ⟦Rockbiter=Roccia Dura⟧ attivano la tua runa Arma del Maelstrom il $N1% più spesso.", nil, 0x6514c9b2, nil, "um" },
   [470082] = { "Aumenta del $N1% la frequenza di attivazione di Arma del Maelstrom.", nil, 0x563a849b, nil, "um" },
   [470085] = { nil, "Impossibile beneficiare di Blessing of Shirvallah.", nil, 0x645e640b, "mu" },
   [470104] = { "Se hai inciso Rombo del Tuono, i lanci di ⟦Lava Burst=Getto di Lava⟧ hanno una probabilità del $N1% di aggiungere una carica al tuo ⟦Lightning Shield=Scudo di Fulmini⟧ attivo.", nil, 0xb7f50c12, nil, "um" },

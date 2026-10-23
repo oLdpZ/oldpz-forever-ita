@@ -174,7 +174,7 @@ WFJ.Data.add("spell", {
   [22783] = { "Aumenta la resistenza a tutte le scuole di magia di $N1 e permette di mantenere il $N2% della rigenerazione del mana durante il lancio. Sul Mago può essere attivo un solo tipo di incantesimo di armatura alla volta. Dura $D1.", "Resistenza a tutte le scuole di magia aumentata di $N1; il $N2% della rigenerazione del mana continua durante il lancio.", 0xc02d2a99, 0x191f55a6, "uu" },
   [22789] = { "Aumenta la Tempra di $N1 per $D1 e genera un'ubriachezza non comune. Verde significa Buono!", "Tempra aumentata di $N1.", 0xe2b4410d, 0x4e3b423b, "uu" },
   [22790] = { "Aumenta lo Spirito di $N1, ma riduce l'Intelletto di $N2 per $D1. Morbidoooo.", "Spirito aumentato di $N1 e Intelletto ridotto di $N2.", 0x8ea9f381, 0xb265e3f0, "uu" },
-  [22792] = { "Pianta uno Spinino che attira i nemici vicini.", nil, 0xf4e5247b, nil, "um" },
+  [22792] = { "Pianta uno ⟦Thornling=Spinino⟧ che attira i nemici vicini.", nil, 0xf4e5247b, nil, "um" },
   [22799] = { "Se il re degli Ogre Gordok ! È bello essere il re...", "Se il re degli Ogre Gordok ! È bello essere il re...", 0xfb888d23, 0xfb888d23, "uu" },
   [22800] = { nil, "Impossibile muoversi.\nVelocità di movimento ridotta.", nil, 0xef40ac0d, "mu" },
   [22801] = { "Aumenta la velocità della tua abilità ⟦Ghost Wolf=Lupo Spettrale⟧ del $N1%.", nil, 0xfb6a1db0, nil, "um" },

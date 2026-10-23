@@ -30,7 +30,7 @@ WFJ.Data.add("spell", {
   [457534] = { nil, "Indebolimento dovuto al congelamento. Il soccombere avverrà tra $D1.", nil, 0x76c98d42, "mu" },
   [457540] = { "Aumenta del $N1% la tua velocità d'attacco per i tuoi prossimi $N2 colpi dopo aver parato, schivato o bloccato.", nil, 0x1f104b25, nil, "um" },
   [457541] = { "Le tue parate e schivate attivano anche l'abilità della runa Maestria nello Scudo.", nil, 0x8df856b8, nil, "um" },
-  [457544] = { "Il tuo Totem della Pelle di Pietra riduce anche del $N1% i danni fisici subiti e il tuo Windwall Totem riduce anche del $N2% i danni magici subiti.", nil, 0xfc736365, nil, "um" },
+  [457544] = { "Il tuo ⟦Stoneskin Totem=Totem della Pelle di Pietra⟧ riduce anche del $N1% i danni fisici subiti e il tuo Windwall Totem riduce anche del $N2% i danni magici subiti.", nil, 0xfc736365, nil, "um" },
   [457548] = { "Conversione Vitale genera il $N1% di mana in più e il $N2% di minaccia in meno.", nil, 0xd6c93698, nil, "um" },
   [457549] = { "Aumenta del $N1% la tua probabilità di critico con incantesimi e attacchi.", nil, 0x436f0749, nil, "um" },
   [457553] = { "La probabilità di attivazione del tuo talento Notte Fonda aumenta del $N1%. Il tuo Incenerimento ha una probabilità del $N2% di attivare Decimazione indipendentemente dalla salute del bersaglio.", nil, 0x13e64d16, nil, "um" },

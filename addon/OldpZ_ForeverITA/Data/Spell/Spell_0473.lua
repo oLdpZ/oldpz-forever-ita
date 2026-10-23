@@ -19,7 +19,7 @@ WFJ.Data.add("spell", {
   [473570] = { nil, "Immune agli effetti di stordimento.", nil, 0xfd2ef3a2, "mu" },
   [473687] = { nil, "Finché uno scudiero argenteo è presente nel tuo gruppo o nella tua incursione, uccidere silitidi nell'⟦Hive'Ashi=Alveare Ashi⟧, nell'⟦Hive'Regal=Alveare Regal⟧ e nell'⟦Hive'Zora=Alveare Zora⟧ conferisce reputazione con l'⟦Argent Dawn=Alba d'Argento⟧.", nil, 0x3775c508, "mu" },
   [473701] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", "Provocato.", 0x71de38fd, 0x36f56123, "uu" },
-  [473702] = { "Usa il ramo per chiamare un Ancient of War che ti aiuti a combattere i silitidi.", nil, 0x65c2a94b, nil, "um" },
+  [473702] = { "Usa il ramo per chiamare un ⟦Ancient of War=Antico della Guerra⟧ che ti aiuti a combattere i silitidi.", nil, 0x65c2a94b, nil, "um" },
   [473847] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", nil, 0x46e67ef3, nil, "um" },
   [473848] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x46e67ef3, 0x2195529a, "uu" },
   [473853] = { "Evoca e congeda un carro da battaglia qiraji cavalcabile. È una cavalcatura molto veloce.", { "Velocità a terra aumentata del $N1%. ", shape = { "1/0" } }, 0x46e67ef3, 0x2195529a, "uu" },

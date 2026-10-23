@@ -46,7 +46,7 @@ WFJ.Data.add("gossip", {
   ["a1b0ce99d5589569"] = { "Continua, ti prego, Bodley.", "." },
   ["a1b21c6e4c725e30"] = { "Non lasciateli scappare!", "." },
   ["a1b3694d2eea9359"] = { "Be', che <saputello/saputella>! Ne sai più di me, te lo dico io! Non montarti la testa, ma se vuoi continuare a imparare, fai due chiacchiere con Georgio Bolero a ⟦Stormwind=Roccavento⟧. Dicono che in sartoria sappia il fatto suo!", "." },
-  ["a1b8347a468c71db"] = { "Allora, vediamo se ho capito bene. Hai messo il frammento dello scettro che Anachronos aveva affidato al tuo Stormo dentro un pesciolino creato da te, e adesso ti aspetti che io costruisca una... una boa di arcanite o qualcosa del genere... per stanare il tuo pesciolino? E magari attirarmi l'ira di un Signore degli Elementi? Mi sfugge qualcosa? Magari devo farlo senza vestiti, durante un'eclissi di sole, in un anno bisestile?", "." },
+  ["a1b8347a468c71db"] = { "Allora, vediamo se ho capito bene. Hai messo il frammento dello scettro che ⟦Anachronos=Anacronos⟧ aveva affidato al tuo Stormo dentro un pesciolino creato da te, e adesso ti aspetti che io costruisca una... una boa di arcanite o qualcosa del genere... per stanare il tuo pesciolino? E magari attirarmi l'ira di un Signore degli Elementi? Mi sfugge qualcosa? Magari devo farlo senza vestiti, durante un'eclissi di sole, in un anno bisestile?", "." },
   ["a1bb0a9ca31ec3b7"] = { "%s pianta i semi del frutto.", "." },
   ["a1bbaddf51e96718"] = { "Ah, salve. Hai l'aria di chi ha una domanda per me.", "." },
   ["a1bf13b43157a5aa"] = { "Le ⟦The Barrens=Savane⟧, con il loro sole cocente e gli abitanti ostili, sono il posto perfetto per mettere alla prova la tua forza e la tua tempra.", "." },

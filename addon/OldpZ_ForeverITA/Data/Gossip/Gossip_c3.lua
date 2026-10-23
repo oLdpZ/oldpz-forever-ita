@@ -40,7 +40,7 @@ WFJ.Data.add("gossip", {
   ["c3b52a825a1fc3c3"] = { "Vuoi conoscere la pietra? Seguimi.", "." },
   ["c3ba5ee70ad05e70"] = { "Vendi colonia e profumo?", "." },
   ["c3c236b608ed7ff2"] = { "Con le loro forme manifeste indebolite da eoni di battaglia, prigionieri sotto il mondo, quel mondo che loro stessi avevano creato, la corruzione dei Titani Plasmatori sarebbe filtrata fino in superficie, contaminando gli Dei Antichi.\n\nFu allora e lì che i fratelli si voltarono. Per cinque millenni si combatté una battaglia nel cuore di questo mondo.", "." },
-  ["c3d2c7665577e9f4"] = { "L'istruttore di ingegneria di Roccavento è uno gnomo geniale di nome Lilliam Sparkspindle. Lo trovi in fondo al Distretto dei Nani.", "." },
+  ["c3d2c7665577e9f4"] = { "L'istruttore di ingegneria di Roccavento è uno gnomo geniale di nome ⟦Lilliam Sparkspindle=Lilliam Saldafresa⟧. Lo trovi in fondo al Distretto dei Nani.", "." },
   ["c3da5537d3b76820"] = { "Ottimo lavoro, {name}. Troviamo l'uscita. Credo di conoscere la strada. Seguimi!", "." },
   ["c3e99a4eb93874cb"] = { "Vediamo se stavolta riesco a fare centro.", "." },
   ["c3ea87ba00370380"] = { "A lavorare con le macchine così a lungo, a volte ti dimentichi dei cuori veri.", "." },

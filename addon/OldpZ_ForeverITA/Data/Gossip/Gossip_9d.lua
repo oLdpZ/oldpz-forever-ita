@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["9d7e67886611fdad"] = { "Non allontanarti troppo. Di sicuro ce ne sono altri là fuori.", "." },
   ["9d83db4e0ac26a41"] = { "Un applauso per {name}!", "." },
   ["9d849b0f30a299ea"] = { "Non temere! Ogni destino può essere svelato da chi conosce la via.", "." },
-  ["9d8bc9d4aec93208"] = { "Insegnarti le arti dell'ingegneria gnomesca? Non se ne parla! Non da questo gnomo, almeno. Hai un fetore addosso, {name}. Forse parla la pietà, ma ti darò un consiglio.\n\nNel deserto di Tanaris troverai una capanna che appartiene a Narain Soothfancy. In quella capanna c'è un libro magico noto per compiere prodigi. Trova quel libro e potresti ancora imparare la via degli gnomi.", "." },
+  ["9d8bc9d4aec93208"] = { "Insegnarti le arti dell'ingegneria gnomesca? Non se ne parla! Non da questo gnomo, almeno. Hai un fetore addosso, {name}. Forse parla la pietà, ma ti darò un consiglio.\n\nNel deserto di Tanaris troverai una capanna che appartiene a ⟦Narain Soothfancy=Narain Veravite⟧. In quella capanna c'è un libro magico noto per compiere prodigi. Trova quel libro e potresti ancora imparare la via degli gnomi.", "." },
   ["9d9ab5db1b0ed918"] = { "Il tuo spirito è debole, e i tuoi colpi lo sono ancora di più!", "." },
   ["9d9d3506eb9f39dd"] = { "Gli aggressori sono fuggiti! Forza e onore all'⟦Horde=Orda⟧!", "." },
   ["9da4aa503064c765"] = { "Dove sono i rinforzi da ⟦Stormwind=Roccavento⟧? Ci segnalano una forte attività dei ⟦Blackrock=Roccianera⟧ a est.", "." },

@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["270a95af294af7ad"] = { "Una taverna calda e una birra fredda. Cosa potremmo chiedere di più?", "." },
-  ["27153e8ceddff740"] = { "Lo spirito di Lunaclaw, abbattuto, ti fissa intensamente, come se volesse qualcosa da te.", "." },
+  ["27153e8ceddff740"] = { "Lo spirito di ⟦Lunaclaw=Lunagrinfia⟧, abbattuto, ti fissa intensamente, come se volesse qualcosa da te.", "." },
   ["271564db072f8fe7"] = { "Un goccio di tè, capo?", "." },
   ["27294ddfba48d943"] = { "I tuoi sforzi saranno vani. Nessuno ci sbarrerà la strada!", "." },
   ["272d9c3827333dec"] = { "Non era la sera in cui abbiamo dovuto raccogliere il mio pollice e portarlo nella tua borsa del tabacco?", "." },
@@ -12,13 +12,13 @@ WFJ.Data.add("gossip", {
   ["2736d03972fd18ea"] = { "Cos'hai lì, {name}? Prove dalle rovine della ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["273a689113bcea82"] = { "Salute, giovane <ladro/ladra>. Cosa cerchi?", "." },
   ["27463deacfa5f806"] = { "Andiamo avanti!", "." },
-  ["2747281375704543"] = { "Questo sì che è un pezzo d'acciaio degno di essere indossato. Forma e funzione, <ragazzo/ragazza>, mi hai impressionato. Ne ho visto uno alla sua altezza una sola volta, opera di un maestro della ⟦Great Forge=Grande Forgia⟧ di nome Grumnus Steelshaper. Scommetto che da allora ha imparato qualcosa di nuovo, e probabilmente potrebbe insegnartelo.", "." },
+  ["2747281375704543"] = { "Questo sì che è un pezzo d'acciaio degno di essere indossato. Forma e funzione, <ragazzo/ragazza>, mi hai impressionato. Ne ho visto uno alla sua altezza una sola volta, opera di un maestro della ⟦Great Forge=Grande Forgia⟧ di nome ⟦Grumnus Steelshaper=Grumnus Plasmacciaio⟧. Scommetto che da allora ha imparato qualcosa di nuovo, e probabilmente potrebbe insegnartelo.", "." },
   ["274991aaf798ae3b"] = { "Remulos, guarda come cadono facilmente davanti a me! Puoi fermare tutto questo, sciocco. Consegnami il druido e sarà tutto finito...", "." },
   ["274c5113a6c602b0"] = { "Ancora qualcuno da istruire, eh? E va bene. Vedrò cosa posso fare per aiutarti.", "." },
   ["2755abfd6c62ca2c"] = { "Ma questo lo so: l'amore rende deboli il cuore e il corpo. Si può sfruttare. Senza il tuo amore mi resta solo il mio lavoro, Annalise.", "." },
   ["2759ef37893bb6b8"] = { "Preparati, {name}, perché il demone in questo globo è una vile bestia.", "." },
   ["275bf9bd610f7e32"] = { "%s si guarda intorno nervosamente.", "." },
-  ["275fad45903ccc77"] = { "Non posso insegnarti la Conciatura delle Scaglie di Drago, {name}. Devi andare a Tanaris e trovare la casa di Narain Soothfancy. Una volta lì, consulta il libro \"Soothsaying for Dummies\".", "." },
+  ["275fad45903ccc77"] = { "Non posso insegnarti la Conciatura delle Scaglie di Drago, {name}. Devi andare a Tanaris e trovare la casa di ⟦Narain Soothfancy=Narain Veravite⟧. Una volta lì, consulta il libro \"Soothsaying for Dummies\".", "." },
   ["276f55e7fca0122d"] = { "Voglio vedere la tua merce, Dirge.", "." },
   ["2775e759e862deaf"] = { "La ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧ è rasa al suolo! Ci servono rifornimenti per ripararla e ricostruirla!", "." },
   ["277d728e62f6ea6a"] = { "Avvicinatevi! La migliore scelta di armi da questa parte di ⟦Ashenvale=Valtetra⟧!", "." },
@@ -43,5 +43,5 @@ WFJ.Data.add("gossip", {
   ["27f46cda551c794d"] = { "Noi occupati con cose importanti!", "." },
   ["27f57043b5856aa3"] = { "Cosa sto facendo? Ti manca forse l'immaginazione? Io sogno, <buon/buona> <signore/signora>, e sogno un futuro migliore per tutti noi. È chiaro: la mia è una mente visionaria.\n\nCi sono però quelli che vogliono tenerci impantanati nella banalità. Gli ho detto che sognavo, e l'Arcidruido Staghelm mi ha risposto: «Beh, il mondo ha bisogno anche di chi scava i fossi».\n\nFinché non ci strapperemo di dosso le catene della banalità, aiuterò il ⟦Cenarion Circle=Circolo Cenariano⟧ spostando questi mucchi di terra.", "." },
   ["27fa866940e0216f"] = { "Ci penserò la prossima volta che mi imbatterò in una di queste cose.", "." },
-  ["27fc745eac042bea"] = { "Fai dell'equipaggiamento davvero ottimo, davvero ottimo. Va' a Orgrimmar, la patria degli orchi, e cerca un fabbro di nome Saru Steelfury. Bisogna riconoscerlo agli orchi: creano splendidi strumenti di morte.", "." },
+  ["27fc745eac042bea"] = { "Fai dell'equipaggiamento davvero ottimo, davvero ottimo. Va' a Orgrimmar, la patria degli orchi, e cerca un fabbro di nome ⟦Saru Steelfury=Saru Furiaferro⟧. Bisogna riconoscerlo agli orchi: creano splendidi strumenti di morte.", "." },
 })

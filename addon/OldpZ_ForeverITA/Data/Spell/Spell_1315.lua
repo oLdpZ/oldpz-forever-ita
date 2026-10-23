@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1315077] = { "Probabilità, con un attacco in mischia, di sferzare il bersaglio, infliggendo $N1 danni da ombra.", nil, 0xe715b1ba, nil, "um" },
   [1315080] = { "Aumenta la velocità su cavalcatura del $N1% nelle Terre Infette Orientali e nelle ⟦Western Plaguelands=Terre Infette Occidentali⟧.", "Velocità di movimento aumentata del $N1% in sella.", 0x2f341e73, 0x939516e9, "uu" },
-  [1315190] = { "Richiama un Black Dragon Whelp che ti protegga in battaglia per un breve periodo di tempo.", nil, 0x06da34e8, nil, "um" },
+  [1315190] = { "Richiama un ⟦Black Dragon Whelp=Draghetto Nero⟧ che ti protegga in battaglia per un breve periodo di tempo.", nil, 0x06da34e8, nil, "um" },
   [1315212] = { "Bruciati tra le fiamme scarlatte per tornare alla tua dimora. Parla con un locandiere in un altro luogo per cambiare la tua dimora.", nil, 0x0ceecbf8, nil, "um" },
   [1315213] = { "Crea una Scarlet Hearthstone.", nil, 0x27ea7a0d, nil, "um" },
   [1315217] = { "Infonde nel bersaglio la gioia della festività.", nil, 0x0d3345d6, nil, "um" },

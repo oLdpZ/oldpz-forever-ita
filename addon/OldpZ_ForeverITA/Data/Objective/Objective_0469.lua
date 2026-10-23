@@ -3,5 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("objective", {
   [469647] = { "Parla con Lumina Windsinger", 0xce24a8cc, "." },
   [469963] = { "Prendi il biglietto da Trevan", 0x51dd770a, "." },
-  [469964] = { "Guarda Ott forgiare la lama", 0xa107c44d, "." },
+  [469964] = { "Guarda ⟦Ott=Nov⟧ forgiare la lama", 0xa107c44d, "." },
 })

@@ -32,7 +32,7 @@ WFJ.Data.add("gossip", {
   ["5bbe908fb91a284b"] = { "Ah, eccone uno!", "." },
   ["5bcedff68aae0fcb"] = { "La West Frostwolf Tower è stata distrutta dall'⟦Alliance=Alleanza⟧!", "." },
   ["5bd2346ae2ff53ef"] = { "Siamo tutti attirati qui per ragioni diverse, {class}.\n\n<Rayne sorride.>\n\nSono qui per incontrare Rimblat del Circolo della Terra. Ha delle teorie interessanti su come purificare queste terre.", "." },
-  ["5be514e3744f9282"] = { "Ce l'abbiamo fatta! L'Ash'ari Crystal è stato ripristinato!", "." },
+  ["5be514e3744f9282"] = { "Ce l'abbiamo fatta! L'⟦Ash'ari Crystal=Cristallo Ash'ari⟧ è stato ripristinato!", "." },
   ["5beca969ba6588e9"] = { "Prendi il Sapta d'Acqua e trova la pozza d'acqua corrotta a ⟦Silverpine=Pinargento⟧, {name}. Ho grande fiducia nelle tue capacità.", "." },
   ["5bf73c6849dd858d"] = { "Prima che arrivasse la Piaga, non sapevo nulla del cuoio. Ora ne so abbastanza da insegnarlo agli altri. La morte mi ha lasciato un sacco di tempo libero.", "." },
 })
