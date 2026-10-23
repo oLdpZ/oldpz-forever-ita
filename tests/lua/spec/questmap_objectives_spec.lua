@@ -107,6 +107,22 @@ describe("UI/QuestMap: objective lines", function()
         QM.objectiveJapanese("0/4 Young Thistle Boar slain", "t"))
     end)
 
+    it("the index's memo never keeps a name of the old style past /fita nomi", function()
+      local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+      WFJ.UnitNames.buildIndex({ [1984] = { "Giovane Cinghiale Spinoso", nil, h1("Young Thistle Boar"), nil, ".m" } })
+      -- the kill templates are key-only today (match memoises no key for them), but a memoised result is the
+      -- arguments after the creatureName substitution: the "names" event drops the memo, whatever it holds
+      local line = "0/4 Young Thistle Boar slain"
+      WFJ.UIIndex:match(line)
+      assert.is_not_nil(WFJ.UIIndex.memo[line])
+      WFJ.Settings.set("names.style", "en")
+      assert.is_nil(WFJ.UIIndex.memo[line])
+      assert.are.equal(0, WFJ.UIIndex.memoCount)
+      assert.are.equal("Young Thistle Boarを倒す: 0/4", QM.objectiveJapanese(line, "t"))
+      WFJ.Settings.set("names.style", "it")
+      assert.are.equal("Giovane Cinghiale Spinosoを倒す: 0/4", QM.objectiveJapanese(line, "t"))
+    end)
+
     it("a faction line shows the standings in Japanese and the faction as written", function()
       Q.quests[9].leaderboard = { { text = "Neutral / Friendly Darnassus" } }
       local _, lines = trackerLines()

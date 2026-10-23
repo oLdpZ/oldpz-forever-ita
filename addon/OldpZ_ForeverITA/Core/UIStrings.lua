@@ -422,6 +422,12 @@ function Index:match(text)
   return key, args
 end
 
+-- Drops the memo: a memoised result holds its arguments after the creatureName substitution (the names style of
+-- that moment), so the "names" State event (/fita nomi) calls this (Core/UnitNames).
+function Index:resetMemo()
+  self.memo, self.memoCount = {}, 0
+end
+
 -- A form granted to `key` or to any key sharing its English (the index names the first of them).
 function Index:has(key, form)
   for _, k in ipairs(self.synonyms[key] or { key }) do

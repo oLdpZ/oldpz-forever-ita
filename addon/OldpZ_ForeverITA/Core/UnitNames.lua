@@ -122,4 +122,9 @@ end
 WFJ.UIStrings = WFJ.UIStrings or {}
 WFJ.UIStrings.creatureName = UnitNames.byEnglish
 
-WFJ.State.on("names", UnitNames.reset)
+-- /fita nomi: the GUID cache and the UI index's memo (its matches hold the creatureName of the old style)
+WFJ.State.on("names", function()
+  UnitNames.reset()
+  local index = WFJ.UIIndex
+  if index and type(index.resetMemo) == "function" then index:resetMemo() end
+end)
