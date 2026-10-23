@@ -18,7 +18,7 @@ from wfj.emit.lua_writer import shipped
 VERSION = "1"
 HEADER = "OFI-REPORT"
 # the types a fix may address, in the order the grammar lists them
-TYPES = ("quest", "item", "spell", "gossip", "ui", "book", "objective", "area")
+TYPES = ("quest", "item", "spell", "gossip", "ui", "book", "objective", "area", "unit")
 REASONS = ("wrong", "awkward", "typo", "name", "other")
 NOTE_MAX = 200  # bytes of UTF-8, before escaping
 IT_MAX = 8000  # the longest shipped line is 6,416 bytes (quest 10211 description)

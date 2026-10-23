@@ -56,6 +56,7 @@ SURFACE_FIELDS: dict[str, tuple[str, ...]] = {
     "item": ("description",),
     "spell": ("description", "aura"),
     "ui": ("text",),
+    "unit": ("name", "subname"),
 }
 LABELS = {
     "quest": "Quest text",
@@ -66,6 +67,7 @@ LABELS = {
     "item": "Item descriptions",
     "spell": "Spell tooltips + auras",
     "ui": "Interface strings",
+    "unit": "NPC names",
 }
 NAMES_LISTS = {"objective": OBJECTIVE_NAMES, "area": AREA_NAMES}
 _TAG = re.compile(r"<[^>]*>")

@@ -75,6 +75,7 @@ CASES: list[tuple[str, str, str, list[dict]]] = [
             _fix("spell", 133, "aura", "炎上中。", "wrong"),
             _fix("objective", 4021, "text", "Drullを救出", "name"),
             _fix("area", 76, "text", "Fargodeep Mineを調査する", "other"),
+            _fix("unit", 12696, "name", "セナニ・サンダーハート", "name"),
         ],
     ),
     (

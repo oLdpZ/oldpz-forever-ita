@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.meta = {
   schema = 1,
-  english = { db2 = "1.60.1.70450", vmangos = "13b49dc", wdb = "1.15.9.69722+1.60.1.70450" },
-  counts = { quest = 4, item = 1, spell = 2, objective = 0, area = 0, gossip = 2, book = 0, ui = 23 },
-  fields = { quest = { "title", "objectives", "description", "progress", "completion" }, item = { "description" }, spell = { "description", "aura" }, objective = { "text" }, area = { "text" } },
+  english = { db2 = "1.60.1.70450", vmangos = "13b49dc+4641790", wdb = "1.15.9.69722+1.60.1.70450" },
+  counts = { quest = 4, item = 1, spell = 2, objective = 0, area = 0, unit = 2, gossip = 2, book = 0, ui = 23 },
+  fields = { quest = { "title", "objectives", "description", "progress", "completion" }, item = { "description" }, spell = { "description", "aura" }, objective = { "text" }, area = { "text" }, unit = { "name", "subname" } },
 }

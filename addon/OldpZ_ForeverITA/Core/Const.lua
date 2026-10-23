@@ -38,6 +38,8 @@ WFJ.SLOTS = {
   objective = { fields = { "text" }, hash = 1, status = 3 },
   -- A quest's exploration / event objective text (quest cache), keyed by quest id; indexed with objective
   area = { fields = { "text" }, hash = 1, status = 3 },
+  -- An NPC's name and its subtitle ("<Arathi Basin Battlemaster>"), keyed by creature id: text,text,h1,h1,status
+  unit = { fields = { "name", "subname" }, hash = 2, status = 5 },
 }
 for _, slots in pairs(WFJ.SLOTS) do
   slots.index = {}

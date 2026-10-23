@@ -46,11 +46,12 @@ SLOTS: dict[str, dict] = {
     "ui": _flat("ui"),
     "objective": _flat("objective"),
     "area": _flat("area"),
+    "unit": _flat("unit"),  # an NPC's name and subtitle, keyed by creature id
 }
 GOSSIP_FIELD = FIELDS["gossip"][0]
 
 # numeric-id types, shard by id range
-TYPES = ("quest", "item", "spell", "objective", "area")
+TYPES = ("quest", "item", "spell", "objective", "area", "unit")
 # Keyed by a 16-hex English hash, sharded by its first two hex chars (gossip and book pages). A book
 # is keyed in data/ by its page id but in the addon by its English hash: the client exposes no page id.
 KEYED_TYPES = ("gossip", "book")
@@ -60,6 +61,7 @@ FILE_PREFIX = {
     "spell": "Spell",
     "objective": "Objective",
     "area": "Area",
+    "unit": "Unit",
     "gossip": "Gossip",
     "book": "Book",
     "ui": "UI",
@@ -78,7 +80,9 @@ FILE_PREFIX = {
 # keeps the rows the new build dropped at the old one; refusing them would block the build with no import
 # able to clear it.
 # the collector records what the client showed at the build it ran on; dumps add up across builds (ADR-053)
-MULTI_VERSION_SOURCES = frozenset({"wdb", "db2", "wago", "collector"})
+# `vmangos` too: quest, gossip and book English is a database snapshot (`db-13b49dc`), the NPC names and titles
+# (`dev.unit_english`) a core commit (`4641790`), each replaced as a set by its own script, so the two pins differ.
+MULTI_VERSION_SOURCES = frozenset({"wdb", "db2", "wago", "collector", "vmangos"})
 GENERATED_TYPES = (*TYPES, *KEYED_TYPES, "ui")
 # TOC load order: the translation types.
 TOC_ORDER = GENERATED_TYPES

@@ -41,7 +41,14 @@ describe("Core/Data.add", function()
     local ns = coreNS()
     ns.Data.add("item", { [117] = { "x", 0x1, "u" } })
     assert.has_error(function() ns.Data.add("item", { [117] = { "y", 0x1, "u" } }) end)
-    assert.has_error(function() ns.Data.add("unit", { [1] = { "x" } }) end)
+    assert.has_error(function() ns.Data.add("npc", { [1] = { "x" } }) end)
+  end)
+
+  it("accepts unit rows (NPC names)", function()
+    local ns = coreNS()
+    ns.Data.add("unit", { [12696] = { "Senani Cuore Tonante", nil, 0x1, nil, "." } })
+    assert.are.equal(1, ns.Data.count("unit"))
+    assert.are.equal("Senani Cuore Tonante", ns.Data.unit[12696][1])
   end)
 
   it("round-trips the escaping fixture written by the Python writer", function()
@@ -68,7 +75,7 @@ describe("generated layout matches Core/Const.lua", function()
 
   it("Meta.fields equals SLOTS.fields for every type, and rows have the status slot", function()
     assert.is_table(WFJ.Data.meta)
-    for _, t in ipairs({ "quest", "item", "spell" }) do
+    for _, t in ipairs({ "quest", "item", "spell", "unit" }) do
       assert.are.same(WFJ.SLOTS[t].fields, WFJ.Data.meta.fields[t], t)
       assert.are.equal(WFJ.Data.meta.counts[t], WFJ.Data.count(t), t)
       local _, row = next(WFJ.Data[t])
@@ -79,7 +86,7 @@ describe("generated layout matches Core/Const.lua", function()
     assert.is_nil(WFJ.SLOTS.item.female); assert.is_nil(WFJ.SLOTS.spell.female)
     assert.are.equal(1, WFJ.Data.meta.schema)
     assert.are.equal(WFJ.SCHEMA, WFJ.Data.meta.schema)
-    assert.are.equal("13b49dc", WFJ.Data.meta.english.vmangos)
+    assert.are.equal("13b49dc+4641790", WFJ.Data.meta.english.vmangos) -- the database snapshot and the NPC-name commit
   end)
 
   it("area is laid out as objective is ({ text, h1, status }), in Meta and Const alike", function()

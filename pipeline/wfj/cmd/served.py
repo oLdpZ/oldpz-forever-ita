@@ -49,7 +49,7 @@ from wfj.io import tables_stamp, wago, wdb
 from wfj.io.jsonl_store import Store
 from wfj.paths import data_root
 
-KINDS = ("quest", "area", "objective", "item", "spell", "ui")
+KINDS = ("quest", "area", "objective", "item", "spell", "ui", "unit")
 # The kinds the served record keeps. area follows its quest and objective its quest's id, so they use quest's.
 RECORDED = ("quest", "item", "spell", "ui")
 # Classic Era's own line stays 1.15.x; every other client stamp is a Forever build, whatever its number
@@ -218,6 +218,7 @@ def run_served(a: argparse.Namespace) -> int:
         "item": lambda ln: ln["id"] in ever["item"],
         "spell": lambda ln: ln["id"] in ever["spell"],
         "ui": lambda ln: ln["id"] in ever["ui"],
+        "unit": lambda ln: True,  # creature names come from the server database: no client cache narrows them
     }
     result: dict[str, list[dict[str, Any]]] = {}
     removed: dict[str, int] = {}
