@@ -74,6 +74,7 @@ WFJ.Data.add("spell", {
   [1309728] = { "Aumenta la velocità di movimento del $N1% per $D1.", "Aumenta la velocità di movimento del $N1%", 0x5ce3b122, 0xea644ada, "uu" },
   [1309730] = { "Clicca col pulsante destro per evocare e congedare il tuo scoiattolo di terra.", nil, 0xe54eb853, nil, "um" },
   [1309736] = { "Clicca col pulsante destro per evocare e congedare il tuo scoiattolo di terra.", nil, 0xe54eb853, nil, "um" },
+  [1309752] = { "Clicca col pulsante destro per evocare e congedare il tuo coniglio.", nil, 0x2fcb8396, nil, "um" },
   [1309761] = { "Aumenta la velocità d'attacco a distanza del $N1%.", "Velocità d'attacco con le bacchette aumentata del $N1%.", 0x3009bf39, 0xd652b56d, "uu" },
   [1309763] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici in un cono frontale, respingendoli indietro.", nil, 0xb5e00217, nil, "um" },
   [1309765] = { "Gli incantesimi andati a segno hanno una probabilità di aumentare la velocità d'attacco della tua bacchetta.", nil, 0xb784eabd, nil, "um" },

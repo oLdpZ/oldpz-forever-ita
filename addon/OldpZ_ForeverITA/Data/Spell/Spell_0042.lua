@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [42609] = { "Clicca col pulsante destro per evocare e congedare una Zucca Malefica.", nil, 0x53b9546c, nil, "um" },
+  [42896] = { "Investe il bersaglio con un'esplosione di energia, infliggendo $N1 danni da arcano. Ogni volta che lanci ⟦Arcane Blast=Detonazione Arcana⟧, i danni di tutti gli incantesimi arcani aumentano del $N2% e il costo in mana di ⟦Arcane Blast=Detonazione Arcana⟧ aumenta del $N3%. L'effetto si accumula fino a $N4 volte e dura $D1 o finché non viene lanciato un incantesimo arcano che infligge danni diverso da ⟦Arcane Blast=Detonazione Arcana⟧.", nil, 0xb0e80e08, nil, "um" },
 })

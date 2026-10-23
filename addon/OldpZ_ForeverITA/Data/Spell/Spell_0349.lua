@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [349858] = { "Altera il tessuto del tempo, sospendendo gli effetti benefici globali dell'uccisione dei draghi, di ⟦Dire Maul=Maglio Infausto⟧, di ⟦Zul'Gurub=Zul'gurub⟧ e di ⟦Felwood=Vilbosco⟧.", nil, 0x51f8d523, nil, "um" },
+  [349863] = { "Ripristina i tuoi effetti globali sospesi.", nil, 0x89976410, nil, "um" },
 })

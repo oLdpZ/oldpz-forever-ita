@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [43308] = { "Indica sulla minimappa la posizione dei banchi di pesci vicini.", "Alla ricerca di pesci.", 0xdd2472bd, 0xe5f3a7f3, "uu" },
+  [43680] = { "I tuoi compagni di squadra ti hanno segnalato per inattività! Entra in combattimento PvP o verrai segnato come Inattivo e non potrai ricevere Punti Onore.", "I tuoi compagni di squadra ti hanno segnalato per inattività! Entra in combattimento PvP o verrai segnato come Inattivo e non potrai ricevere Punti Onore.", 0xbce38590, 0xbce38590, "uu" },
   [43681] = { "Non guadagnerai Punti Onore finché non entrerai in combattimento PvP.\nVerrai espulso dal campo di battaglia se resterai Inattivo.", "Non guadagnerai Punti Onore finché non entrerai in combattimento PvP.\nVerrai espulso dal campo di battaglia se resterai Inattivo.", 0x152fece1, 0x152fece1, "uu" },
 })

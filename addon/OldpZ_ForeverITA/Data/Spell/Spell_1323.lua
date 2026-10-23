@@ -13,6 +13,7 @@ WFJ.Data.add("spell", {
   [1323410] = { nil, "Probabilità di colpo critico del tuo prossimo incantesimo non periodico aumentata del $N1%.", nil, 0xb0c893a2, "mu" },
   [1323418] = { nil, "Probabilità di colpo critico del tuo prossimo incantesimo non periodico aumentata del $N1%.", nil, 0xb0c893a2, "mu" },
   [1323419] = { nil, "Probabilità di colpo critico del tuo prossimo incantesimo non periodico aumentata del $N1%.", nil, 0xb0c893a2, "mu" },
+  [1323420] = { "Restituisce i tuoi totem alla terra, fornendoti il $N1% del mana necessario a evocare ogni totem distrutto da Richiamo dei Totem.", nil, 0x7e7acb66, nil, "um" },
   [1323500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [1323522] = { "Infondi nel Paladino vari potenziamenti divini.\n\nAttualmente hai accesso a:$T", nil, 0x407037e6, nil, "um" },
   [1323651] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", "$N1 danni da arcano inflitti ogni $D1.", 0xba2c738b, 0x1e69ddb3, "uu" },

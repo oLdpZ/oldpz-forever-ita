@@ -2,13 +2,19 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [367062] = { "Lancia una torcia nel punto bersaglio, appiccando un incendio.", nil, 0x069f4ed7, nil, "um" },
+  [367068] = { "Lancia una torcia da esercitazione nell'area bersaglio.", nil, 0xc2a776e0, nil, "um" },
+  [367671] = { nil, "Al riparo dietro un ⟦Ice Block=Blocco di Ghiaccio⟧ da ⟦Chromaggus=Cromaggus⟧.", nil, 0xbaf588ac, "mu" },
   [367701] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [367724] = { nil, "Velocità di movimento ridotta del $N1%.\n\nChe sonno...", nil, 0x162b6e71, "mu" },
   [367728] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [367740] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0x79a226e8, "mu" },
   [367741] = { "Congelato.", "Congelato.", 0x91935cc1, 0x91935cc1, "uu" },
+  [367756] = { "Velocità di movimento aumentata del $N1%.\nVelocità d'attacco aumentata del $N2%.\nTempo di lancio ridotto del $N3%.", "Velocità di movimento aumentata del $N1%.\nVelocità d'attacco aumentata del $N2%.\nTempo di lancio ridotto del $N3%.", 0x76f7b646, 0x76f7b646, "uu" },
+  [367792] = { "Velocità di movimento aumentata del $N1%.\nCelerità in mischia, a distanza e degli incantesimi aumentata del $N2%.", "Velocità di movimento aumentata del $N1%.\nCelerità in mischia, a distanza e degli incantesimi aumentata del $N2%.", 0xebf9077b, 0x9725d4c2, "uu" },
+  [367873] = { "Infligge $N1 danni da ombra ogni $D1.\nRiduce del $N3% la tua probabilità d'impatto con incantesimi e attacchi in mischia.", "Infligge $N1 danni da ombra ogni $D1.\nRiduce del $N3% la tua probabilità d'impatto con incantesimi e attacchi in mischia.", 0xea55b580, 0xea55b580, "uu" },
   [367888] = { nil, "Addormentato.", nil, 0x5339954e, "mu" },
   [367897] = { nil, "Velocità di movimento ridotta del $N1%.\n\nChe sonno...", nil, 0x162b6e71, "mu" },
   [367928] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [367968] = { "Distrugge un uovo vicino.", nil, 0x10a0ae27, nil, "um" },
+  [367987] = { nil, "Danni aumentati del $N1%.\nCelerità aumentata del $N2%.\nInfligge danni pari al $N3% della salute massima ogni $D1.\nAlla morte infligge $N5 danni agli alleati circostanti.", nil, 0xcac3e1d6, "mu" },
 })

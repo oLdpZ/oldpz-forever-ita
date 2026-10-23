@@ -400,6 +400,12 @@ quest	98326	title	08b6e05feae7de2c	Frosthowl
 quest	98338	title	33acc140a20dbd02	REUSE ME
 quest	99079	title	0e88eacac3e99e26	Longwalker Malah
 quest	99142	title	739d084a832a3a9f	Tomb Weed
+spell	5306	description	0b5c24b6f71d2077	Test
+spell	11365	description	704aff9f1c73b339	Returns you to your home. Your home is currently $z.
+spell	19410	aura	59e184e0096919c0	zzOldStunned.
+spell	21052	description	0011f6920dfbb627	DND
+spell	21078	description	0011f6920dfbb627	DND
+spell	25199	aura	4ce66effb8a4309d	Frogger.
 spell	407580	description	5c0f8e85760b141c	Summon Soboz
 spell	417056	description	5c0f8e85760b141c	Summon Soboz
 spell	417315	description	5c0f8e85760b141c	Summon Soboz
@@ -418,6 +424,7 @@ spell	1251986	aura	fa7853a338c651b9	Whenever you suffer Bleed damage, one dose i
 spell	1271412	description	84727607c217b635	Bounce Protection
 spell	1271565	description	84727607c217b635	Bounce Protection
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud
+spell	1324511	aura	45413a35ab5277a2	$@spellaura19410
 unit	1	name	1a3650769998e6ac	Waypoint (Only GM can see it)
 unit	1	subname	c118e0df28a31629	Visual
 unit	2	name	80c9db9498a04230	Spawn Point (Only GM can see it)

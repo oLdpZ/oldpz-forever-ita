@@ -5,6 +5,7 @@ WFJ.Data.add("spell", {
   [1314040] = { "Colpisce il bersaglio con un ⟦Flaming Shell=Bossolo Fiammeggiante⟧, infliggendo $N1 danni da fuoco ogni $D1 per $D2.", "$N1 danni da fuoco subiti ogni $D1.", 0xf008d9b8, 0xf8ebdcaf, "uu" },
   [1314065] = { "Aumenta la velocità su cavalcatura del $N1%. Questo effetto non è cumulabile con effetti simili.", "Velocità di movimento aumentata del $N1% in sella.", 0xaacb8fe4, 0x939516e9, "uu" },
   [1314069] = { "Colpisce il nemico con una detonazione, infliggendo $N1 danni da fuoco.", nil, 0x52ed7264, nil, "um" },
+  [1314102] = { "Rigenera $N1 energia.", nil, 0xb74f8452, nil, "um" },
   [1314103] = { "Quando lo scudo di Seal of Fury viene assorbito del tutto, rigeneri $N1 mana, aumentati del $N2% per ogni livello di cui l'aggressore ti supera, fino a un massimo del $N3%.", nil, 0xe595b564, nil, "um" },
   [1314104] = { "Quando lo scudo di Seal of Fury viene assorbito del tutto, rigeneri $N1 mana, aumentati del $N2% per ogni livello di cui l'aggressore ti supera, fino a un massimo del $N3%.", "Rigenera mana.", 0x353b2939, 0x52547f1d, "uu" },
   [1314120] = { "Clicca col pulsante destro per evocare e congedare il tuo cucciolo di condor.", nil, 0x6697ca6a, nil, "um" },

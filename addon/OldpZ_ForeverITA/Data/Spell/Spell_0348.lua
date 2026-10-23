@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [348005] = { "Infligge danni da natura a un nemico ogni $D1 per $D2.", "Danni da natura inflitti ogni $D1.", 0x05ece599, 0xaf62b13e, "uu" },
+  [348191] = { "Infligge $N1 danni da gelo al secondo.", "Infligge $N1 danni da gelo al secondo.", 0xeb1e7372, 0xeb1e7372, "uu" },
   [348789] = { "Colpisce un nemico con un dardo antimana. Per ogni punto di mana consumato dal dardo, il bersaglio subisce $N1 danni.", nil, 0x5ae7b2cb, nil, "um" },
 })

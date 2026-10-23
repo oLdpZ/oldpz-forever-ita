@@ -10,6 +10,7 @@ WFJ.Data.add("spell", {
   [1305400] = { "Scassina una serratura difficile.", nil, 0x66957a86, nil, "um" },
   [1305416] = { "Inganna i nemici con un sosia, spingendo le creature vicine ad attaccarlo per $D1.", nil, 0x96d3cac5, nil, "um" },
   [1305418] = { nil, "Inganna i nemici vicini.", nil, 0x60683e13, "mu" },
+  [1305419] = { "Induce i mostri vicini ad attaccare l'incantatore.", nil, 0xdb048e37, nil, "um" },
   [1305422] = { nil, "Provocato.", nil, 0x36f56123, "mu" },
   [1305424] = { "Rigenera $N1 mana quando uccidi un dragoide che fa guadagnare esperienza. L'effetto non può verificarsi più di una volta ogni $N2 s.", nil, 0xa1ad9f9e, nil, "um" },
   [1305426] = { "$N1 mana rigenerato.", "$N1 mana rigenerato.", 0x35080e3c, 0x35080e3c, "uu" },

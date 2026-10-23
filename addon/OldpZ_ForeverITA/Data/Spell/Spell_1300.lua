@@ -40,7 +40,7 @@ WFJ.Data.add("spell", {
   [1300783] = { "Infligge $N1 danni fisici. Troll e orchi subiscono $N2 volte tanti danni e restano terrorizzati per $D1.", nil, 0x0fde884b, nil, "um" },
   [1300784] = { "Terrorizzato.\nI danni possono interrompere questo effetto.", "Terrorizzato.\nI danni possono interrompere questo effetto.", 0x2f4c15ea, 0x2f4c15ea, "uu" },
   [1300787] = { "Ferisce il bersaglio facendolo sanguinare per $N1 danni in $D1. Infligge $N3 volte tanti danni se applicato alle spalle del bersaglio.", "$N1 danni da sanguinamento subiti ogni $D1.", 0x83cd3efa, 0x980052f1, "uu" },
-  [1300821] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", nil, 0xba2c738b, nil, "um" },
+  [1300821] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", "Danni da arcano inflitti ogni $D1.", 0xba2c738b, 0x91a112e8, "uu" },
   [1300844] = { nil, "La luce di Elune sta potenziando il primo sigillo.", nil, 0x8bffee44, "mu" },
   [1300875] = { nil, "La luce di Elune è completamente satura.", nil, 0x3b7900aa, "mu" },
   [1300890] = { "Alla morte, tutti i membri del gruppo entro $N1 m recuperano $N2 salute.", "Morendo cura di $N2 tutti i membri del gruppo entro $N1 m.", 0xa30edc96, 0xa30edc96, "uu" },
