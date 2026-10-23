@@ -1,5 +1,125 @@
-# Runbook: the voice (removed)
+# Runbook: the Italian voice over
 
-> oLd_pZ Forever - Traduzione Italiana has no voice over. The upstream project, WoW Forever Japanese, made Japanese audio from the text it shipped and released it as separate voice packs; this fork removed that, together with its release job (`voice` in `.github/workflows/release.yml`), the `VOICE_REPO_KEY` secret and the `wfj voice` commands. The release is the addon alone: [Release](release.md).
+> Make the NPC voices from the shipped Italian, build the pack, install it and try it in game. How it works: [Voice over](../systems/voice.md). Why: [ADR-104](../adr/104-voce-italiana-con-gemini.md).
 
-The upstream design is kept as history in [Voice over](../systems/voice.md) and in [ADR-061](../adr/061-voice-over-from-a-separate-pack.md), [ADR-062](../adr/062-voice-cast-per-speaker-in-step-with-the-text.md) and [ADR-063](../adr/063-the-voice-panel.md). Nothing in them is built, tested or released here.
+## Goal
+A pack folder, `OldpZ_ForeverITA_Voce`, and its zip, holding the audio of one scope (today the undead starting area, `tirisfal`), in step with the Italian the addon ships now, ready to install beside the main addon.
+
+The work runs from the repository root through `make voice-*` targets, or `cd pipeline && python -m wfj voice <verb>` for the verbs that have no target. `SCOPE` defaults to `tirisfal`.
+
+## One-time setup
+- **`lame`** on the path: it encodes the MP3s. `generate` checks before the first paid take and stops if it is missing.
+- **The Gemini key.** The key belongs to the maintainer's Google account and is billed there; it never enters the repository. Give it to the run one of two ways:
+  - the environment: `export GEMINI_API_KEY=…`;
+  - a `.env` file kept **outside the checkout**, a line `GEMINI_API_KEY=…`, named with `VOICE_ENV=<file>` (`--env-file`).
+
+  The key travels only in the request header; the tools print no key. Billing and quota are managed in the Google account, not here: check the account's quota and spend before a long run.
+- **The audio store**: a folder outside the repository, `VOICE_STORE` (default `voce-store` in the home folder; `VOICE_ROOT` in the environment sets it). It holds the paid takes (`wav/`), the MP3s (`mp3/`), `blocked.jsonl`, `status.json` and the audition page. Never put it under the checkout: a worktree's removal or a `git clean` would lose takes that were paid for. Back it up like any paid work.
+- **The inputs** (the VMaNGOS database, forever-vo, the client's display tables) are the ones the import already uses: [Local setup](local-setup.md).
+
+## Steps
+Each step reads the data of the one before. A step that only reads (`plan`, `status`) costs nothing; the paid ones are `audition` and `generate`.
+
+### 1. Scope
+```
+cd pipeline && python -m wfj voice scope tirisfal --vmangos <mangos.sqlite> --forever-vo <forever-vo>
+```
+Writes `pipeline/voice_tirisfal.txt`: the zone's quests and book pages. It prints how many Forever quests it could not place (no giver captured, given by an object, given by a creature the database never spawns); `--list` names them. Commit the file when it changes.
+
+### 2. Speakers
+```
+make voice-speakers SCOPE=tirisfal
+```
+Writes `data/voice/speakers.jsonl`: who says each line. It prints the lines read by a narrator, the quests the database lacks, the lines with several speakers and the scoped lines with no Italian. Look at the narrator lines: a quest started by a creature that is not known should not be a narrator.
+
+### 3. Profiles
+```
+cd pipeline && python -m wfj voice profiles build --vmangos <mangos.sqlite> --commit <sha> --client <client tables folder>
+```
+Writes `data/voice/profiles.jsonl`: race, gender, kind of being and role from the client's tables and VMaNGOS. Age, and what the tables do not say, comes from a casting pass:
+
+```
+python -m wfj voice profiles export --vmangos <mangos.sqlite> --out <folder>      # part-NN.jsonl of what needs judgement
+python -m wfj voice profiles import --drafts <draft files> --model <id> --batch <name>
+```
+A draft never replaces a table value or a ruling; the import prints the speakers still owed an age. A ruling of the maintainer is written into the profile row with a `maintainer` provenance. `make validate` checks the file.
+
+### 4. Cast
+Edit `pipeline/voice.toml` if a kind of speaker needs another voice (the roster is the prebuilt Gemini voices; the notes are **English only**: loading `voice.toml` and the prompt builder refuse an accented letter or a common Italian word). Then:
+```
+make voice-cast SCOPE=tirisfal
+```
+Writes `data/voice/voices.jsonl`; it prints how many creatures each row got. One creature's voice, by a ruling, goes in `data/voice/overrides.jsonl` (`{"creature": id, "voice": "<roster id>"}`). Recasting a kind of speaker remakes only its lines.
+
+### 5. Plan
+```
+make voice-plan SCOPE=tirisfal
+```
+Prints the files to make (new, changed, gone from the store), the characters, hours of audio and an estimated cost, the files per voice, and the **silent lines** by reason: no voice cast, no spoken version, a stale spoken version, a line the voice cannot read. Add `cd pipeline && python -m wfj voice plan --scope tirisfal --list` to name each silent line. Fix what can be fixed (a missing profile, a refused line) before paying.
+
+### 6. Audition
+```
+make voice-audition SCOPE=tirisfal PER=2 VOICE_ENV=<.env>
+```
+Paid, a few files: it makes the first lines of each speaker (both sexes' files where a line has them) and writes `<store>/audition/index.html`: a row per speaker with its audio profile, the Gemini voice, the notes and a player for each file, then the spoken versions and the blocked takes. The owner listens and approves or rejects each voice. A rejected voice is changed in `voice.toml` (or an override) and the audition run again: only the changed files are made.
+
+### 7. Spoken versions
+```
+cd pipeline && python -m wfj voice spoken export --scope tirisfal --out <file> --store <store>
+```
+Lists the lines that need a spoken version: those naming the player's class or race, and the takes the filter blocked (read from the store's `blocked.jsonl`), with a stale version offered again to revise. Each row: `{key, sex, it_hash, it, spoken, reason}`. Write `spoken` for each row: the same sense, lightly reworded, no `{class}` or `{race}`, English tags only. A line with no acceptable spoken version stays silent. Then:
+```
+python -m wfj voice spoken import <file> [--source <who wrote them>]
+```
+Checks every written row and writes `data/voice/spoken.jsonl`; one bad row and nothing is written. If the Italian changed since the export, export again. The owner listens to the spoken versions at the next audition.
+
+### 8. Generate
+```
+make voice-generate SCOPE=tirisfal VOICE_ENV=<.env>
+make voice-status
+```
+Paid. `LIMIT=n` stops after n files, a trial at a known cost: do `LIMIT=20` first and listen. Run it in the background for the whole scope; `make voice-status` shows done / total, the rate and the time left, and whether the process is alive. Every made file is recorded in `data/voice/audio.jsonl` as soon as it exists. Commit the record with the data it belongs to.
+
+**Costs.** `plan` estimates from the text: about 11 characters of Italian a second, 25 audio tokens a second, 20 dollars a million tokens: about 1.80 dollars per hour of audio at the standard rate. It is an estimate: the real duration of a take varies (the same line took 30 to 37 seconds in three tries) and is measured on the WAV. A line re-made for a changed voice, note or profile is paid again; `plan` shows how many.
+
+**Blocked lines.** The safety filter is random. A take is asked up to four times; a take blocked four times goes to `<store>/blocked.jsonl` and is not asked again until its line, spoken version, voice or profile changes. `generate` prints how many, and the next step is step 7: give them a spoken version, or leave them silent.
+
+**Resume.** If the run stops it says why and how many files are left. Run the same command again: it continues from the record. After the engine answered busy (429, 503) the run already waited 5, 15, 45 and 120 seconds without spending a take; if it still stops, wait (evenings are busy) and run it again. A paid take whose MP3 was not written is encoded again from its kept WAV, not asked of the engine again. A missing `lame` or an unreadable take stops the run before more is spent.
+
+### 9. Pack
+```
+make voice-pack SCOPE=tirisfal
+```
+Writes `build/voice-pack/OldpZ_ForeverITA_Voce/` (TOC, `Register.lua`, `LEGGIMI.txt`, `Sound/*.mp3`) and `build/OldpZ_ForeverITA_Voce-<version>.zip` (`--version`, default today's date). It prints the lines and files shipped, their size, and what it left out by reason: `blocked`, `missing`, `stale` (the Italian or the voice changed since the file), `damaged` (the file in the store is not the recorded one). A silent line is not an error; a file left out for `stale` means run `plan` and `generate` again. It refuses over 420 MB and writes nothing.
+
+## Install and test in game
+1. Install the main addon `OldpZ_ForeverITA` as usual.
+2. Unzip `OldpZ_ForeverITA_Voce-<version>.zip` into `Interface\AddOns\`, beside it. Restart the client fully (a new folder is not seen by `/reload`).
+3. Log in with an undead character and check the **Voce** page appears in the addon's options (it exists only with a pack). `/fita debug` shows `voice: OldpZ_ForeverITA_Voce N lines`.
+4. In Deathknell take a quest from an NPC in the scope. The line is heard in Italian, the small panel shows the NPC's head and name beside the window, the NPC's English voice is silent. Try ■ (stop), ⏭ (skip), a second quest while one plays (`+1`), closing the window (the line goes on), holding Alt (the playing line goes on; a new one waits), a loading screen (stops). Do it with a female and a male character: a line that says `{name}` is said **eroina** / **eroe**.
+5. Open a book or sign in the scope, and the quest log's play button on a quest.
+6. After `/reload`, and after logout, the game's NPC voices are back on. The facts this settles are listed in [Voice over → Unverified in game](../systems/voice.md#unverified-in-game); record what you see.
+7. Without the folder the addon behaves as before: no Voce page, no panel.
+
+To remove the voice, delete the folder; the main addon is unchanged.
+
+## Verify
+- `make validate`: the voice tables are well formed (speakers, profiles, voices).
+- `make test`, `make lint`: the voice tests use a fake engine and never call Gemini.
+- `make voice-plan`: no file to make and no silent line you did not expect.
+
+## Troubleshooting
+| Symptom | Cause and fix |
+|---|---|
+| `no GEMINI_API_KEY in the environment` | export it, or give `VOICE_ENV=<.env>` |
+| `generate` stops with `HTTP 429` or `503` | the engine is busy or over quota: wait, run it again |
+| `generate` stops with `lame is not installed` | install `lame`; nothing was spent |
+| a line is silent in game and `/fita debug` counts it as `stale` | its Italian changed after the audio was made: `make voice-plan`, `make voice-generate`, `make voice-pack` |
+| a line is silent and counted `missing` | the pack has no file for it: it is silent in `plan` (no voice, no spoken version, blocked) |
+| a female character hears nothing for a line | the pack has no female take (`nofemale`): the line needs `<key>_f` made |
+| a voice reads the direction aloud | the notes or profile carry Italian; every verb that reads `voice.toml` names the voice and refuses to run |
+| the pack is over 420 MB | narrow the scope or split it; nothing was written |
+| the NPC's English voice stays off after a crash | it is put back at the next login; `Sound_EnableDialog 1` by hand otherwise |
+
+## Related
+- [Voice over](../systems/voice.md) · [ADR-104](../adr/104-voce-italiana-con-gemini.md) · [Local setup](local-setup.md) · [Release](release.md)
