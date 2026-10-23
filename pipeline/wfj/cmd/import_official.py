@@ -53,7 +53,7 @@ from wfj.core.hashing import key as hash_key
 from wfj.core.model import entry, validate_line
 from wfj.core.names import mark_from_english
 from wfj.core.normalize import normalize_for
-from wfj.dev import creature_official, glossary_it
+from wfj.dev import creature_official, glossary_it, translate_batch
 from wfj.dev.translate_lint import check_row
 from wfj.io import retail, tables_stamp, wago
 from wfj.io.jsonl_store import Store
@@ -397,6 +397,7 @@ def run_official(
     report = OfficialReport()
     review: list[tuple[str, str, str]] = []
     planned: dict[str, list[dict[str, Any]]] = {}
+    same: dict[Any, tuple[str, str]] = {}  # a unit line Blizzard leaves as its English: kept English
     for type_ in types:
         c = report.counts[type_]
         taken: dict[tuple[Any, str], str] = {}
@@ -408,6 +409,8 @@ def run_official(
             it, why = _verdict(type_, ln, *texts[type_][k])
             if it is None:
                 c[str(why)] += 1
+                if type_ == "unit" and why == "same_as_english":
+                    same[(type_, k[0], k[1])] = (ln["hash"], " ".join(ln["en"].split()))
                 continue
             # spec §8: the names the English holds, marked; interface text never is, and a unit line is the
             # name itself
@@ -423,6 +426,8 @@ def run_official(
         if type_ == "ui":
             review = settle_ui(taken, english_of, addon_dir, c)
         planned[type_], report.dropped[type_] = merge_official(data.load(type_), taken, prov, prov_of)
+    if same:  # nothing ships, but `translate_batch cut` must not hand the name to a machine draft
+        translate_batch.record_found(Path(store), same)
     names, report.absent_names = retail.read_placeholder_names(folder, placeholders.TOKENS)
     for type_ in types:
         data.save(type_, planned[type_], allow_empty=True)

@@ -325,6 +325,25 @@ def test_import_official_unit_rows(tmp_path, monkeypatch):
     assert (line["status"], line["provenance"]["class"]) == ("trusted", "official")
 
 
+def test_an_official_name_equal_to_the_english_is_recorded_as_keep_english(tmp_path, monkeypatch):
+    # `Imp` → `Imp` ships nothing, but cut must not hand the name to a machine draft that could contradict
+    # Blizzard: the row goes to pipeline/keep_english.tsv on the English hash the import saw
+    from wfj.dev import translate_batch as tb
+
+    data = _setup(tmp_path, monkeypatch)
+    _units(data, tmp_path)
+    _run(data, tmp_path)
+    en = {(ln["id"], ln["field"]): ln for ln in Store(data, english=True).load("unit")}
+    kept = tb.read_kept(tmp_path)
+    assert kept == {("unit", 416, "name"): en[(416, "name")]["hash"]}  # not 500 (mismatch), not the accepted
+    _run(data, tmp_path)  # idempotent
+    assert tb.read_kept(tmp_path) == kept
+    (tmp_path / "docs" / "content").mkdir(parents=True)
+    (tmp_path / "docs" / "content" / "translation-style-guide.md").write_text("version: sg1\n")
+    rows = tb.cut(data, "unit_name", 10, tmp_path / "b.jsonl")
+    assert [r["targets"] for r in rows] == [[[500, "name"]]]  # the rest has Italian or is kept English
+
+
 def test_unit_names_are_never_marked(tmp_path, monkeypatch):
     data = _setup(tmp_path, monkeypatch)
     _units(data, tmp_path)

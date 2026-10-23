@@ -23,6 +23,7 @@ STYLED_FIELDS: dict[str, frozenset[str]] = {
     "book": frozenset({"text"}),
     "objective": frozenset({"text"}),  # server-written objective text
     "area": frozenset({"text"}),  # the quest cache's exploration / event objective text
+    "unit": frozenset({"name", "subname"}),  # NPC names and titles (sg14, «Nomi dei PNG»)
 }
 DRAFT_NAME = re.compile(r"^[a-z0-9][a-z0-9-]{0,30}$")  # `wfj import draft --name`
 NAME_VERSION = re.compile(r"-sg(\d+)$")  # a draft name's style version: `progress-sg3`

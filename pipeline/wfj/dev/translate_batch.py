@@ -92,7 +92,13 @@ KINDS: dict[str, tuple[str, str]] = {  # kind → (data type, field)
     "item_description": ("item", "description"),
     "spell_description": ("spell", "description"),
     "spell_aura": ("spell", "aura"),
+    # NPC names and titles (`data/english/unit`, VMaNGOS / the client cache). Where Blizzard published an
+    # Italian form the line is `official` and never cut; the rest is drafted in Blizzard's itIT style
+    # (style guide, «Nomi dei PNG»).
+    "unit_name": ("unit", "name"),
+    "unit_subname": ("unit", "subname"),
 }
+UNIT_KINDS = frozenset({"unit_name", "unit_subname"})
 # The kinds whose English is a client TEMPLATE: the `$n`/`$c`/`$r` in one are values, not the player, and a
 # ruling can let the model redraft over hand-written text there (below).
 TEMPLATE_KINDS = frozenset({"item_description", "spell_description", "spell_aura"})
@@ -105,7 +111,9 @@ SLOT_KINDS = TEMPLATE_KINDS | {"quest_title", "quest_objectives", "quest_descrip
 # finds (title_names) and the lint checks those instead of every capitalised word. An objective's
 # own text ("Eastern Tower Ablaze", "Archive Burned") is one, and every row is cut: a title-case event line
 # is not a bare label; one that IS only a name is recorded in pipeline/objective_names.txt, not drafted.
-TITLE_CASE_KINDS = frozenset({"quest_title", "objective", "area"})
+# An NPC name or title is one too (`Defias Pillager`, `Weapon Merchant`), but it is translated: its own
+# words are not names to keep (`_annotate_names`).
+TITLE_CASE_KINDS = frozenset({"quest_title", "objective", "area"}) | UNIT_KINDS
 REF_LEN = 10
 # The kinds a recorded ruling lets the model redraft over hand-written text: quest completion, where no
 # hand-written variant ships at all; the tooltip kinds, where the hand-written text has a number baked into
@@ -317,6 +325,12 @@ def record_kept(data: Path, keep_files: Iterable[Path]) -> int:
                 if ln is None:
                     raise SystemExit(f"translate_batch: keep: no English for {type_} {id_} {field}")
                 found[(type_, id_, field)] = (ln["hash"], " ".join(ln["en"].split()))
+    return record_found(data, found)
+
+
+def record_found(data: Path, found: dict[KeepKey, tuple[str, str]]) -> int:
+    """Write `found` ((type, id, field) → (English hash, English)) into `pipeline/keep_english.tsv`, dropping
+    every row whose line has an Italian translation in data/. → len(found)."""
     old = _keep_table(data.parent)
     translated = {
         (t, ln["id"], ln["field"])
@@ -493,6 +507,8 @@ def _name_only(en: str, all_names: set[str]) -> bool:
 
 
 def _annotate_names(rows: list[dict[str, Any]], data: Path, kind: str) -> None:
+    if kind in UNIT_KINDS:  # the name is the text to translate; the glossary carries the official forms
+        return
     rows = _title_case_rows(kind, rows)
     if not rows:
         return
@@ -701,7 +717,7 @@ def expand(ok_file: Path, name: str, out_dir: Path, version: int) -> dict[str, i
     return counts
 
 
-STORE_TYPES = ("quest", "item", "spell", "ui", "gossip", "book", "objective", "area")
+STORE_TYPES = ("quest", "item", "spell", "ui", "gossip", "book", "objective", "area", "unit")
 
 
 def rejected_counts(data: Path) -> tuple[int, int]:

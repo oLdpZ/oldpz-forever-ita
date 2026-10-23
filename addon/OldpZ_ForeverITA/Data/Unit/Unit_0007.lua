@@ -5,6 +5,7 @@ WFJ.Data.add("unit", {
   [7386] = { "Micio Bianco", nil, 0x418f9fe4, nil, ".m" },
   [7387] = { "Macao Ala Verde", nil, 0x58956059, nil, ".m" },
   [7388] = { "Cacatua", nil, 0x43b336a1, nil, ".m" },
+  [7389] = { nil, nil, 0x69a9f0c6, nil, "em" },
   [7390] = { "Calopsite", nil, 0xa4b35e25, nil, ".m" },
   [7391] = { "Macao Giacinto", nil, 0x5c721aa2, nil, ".m" },
   [7392] = { "Gallina delle Praterie", nil, 0x5e7147ef, nil, ".m" },
@@ -34,5 +35,5 @@ WFJ.Data.add("unit", {
   [7568] = { "Serpente Aliante", nil, 0xc5d7bbd2, nil, ".m" },
   [7569] = { "Serpente d'Acqua Verde", nil, 0x95148222, nil, ".m" },
   [7570] = { "Fuoco Fatuo Elfico", nil, 0x5cfffb09, nil, ".m" },
-  [7952] = { nil, "Addestratore di Raptor", nil, 0x9832cfb6, "m." },
+  [7952] = { nil, "Addestratore di Raptor", 0x56a1fda1, 0x9832cfb6, "e." },
 })
