@@ -1,5 +1,6 @@
 -- The unit mouseover lines the client composes, through the TooltipDataProcessor Unit post-call
--- (UI/TooltipUnit.lua). Line 1 (the unit's name), a guild line and any line outside the unit keys stay as written.
+-- (UI/TooltipUnit.lua). Line 1 (the unit's name) changes only for an NPC with a `unit` row (the last block); a guild
+-- line and any line outside the unit keys stay as written.
 local H = require("tests.lua.spec.helpers")
 local Stub = require("tests.lua.spec.wow_stub")
 
@@ -186,5 +187,128 @@ describe("UI/TooltipUnit: the creature type", function()
     assert.are.equal("レベル10 Magic", left(2))
     hover({ "Raid Boss", "Level 10 Raid" })
     assert.are.equal("レベル10 Raid", left(2))
+  end)
+end)
+
+-- ADR-103: a creature's name (line 1) and its subtitle (the line right after it, "<Weapon Merchant>") take the
+-- Italian of its `unit` row (Core/UnitNames: the GUID's creature id, and only when the shown English is the row's);
+-- brackets and colour codes stay around the Italian; players, pets, objects and any other English stay as written.
+describe("UI/TooltipUnit: an NPC's name and subtitle", function()
+  local WFJ, tt
+  local SENANI = "Creature-0-1-2-3-12696-0000"
+  local UNIT = {}
+
+  local ROWS = {
+    UNIT_TYPE_LEVEL_TEMPLATE = { "Level %d %s", "Livello %d %s" },
+  }
+  local function left(i) return _G["GameTooltipTextLeft" .. i]:GetText() end
+  local function hover(lines, data)
+    tt:SetOwner(_G.UIParent, "ANCHOR_CURSOR")
+    tt:SetText(lines[1])
+    for i = 2, #lines do tt:AddLine(lines[i]) end
+    for _, fn in ipairs(Stub.tooltipPostCalls[2] or {}) do fn(tt, data) end
+    tt:Show()
+  end
+
+  before_each(function()
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installTooltipAPI()
+    _G.UIParent = _G.UIParent or CreateFrame("Frame", "UIParent")
+    local files = {}
+    for _, f in ipairs(FILES) do files[#files + 1] = f end
+    files[#files + 1] = "Core/UnitNames.lua"
+    WFJ = H.loadChunks(files)
+    local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+    -- the shipped row of Senani (lookup_spec) and a test subtitle row on the same creature
+    UNIT = {
+      ["unit.name"] = { [12696] = { ja = "Senani Cuore Tonante", status = ".", h1 = h1("Senani Thunderheart") } },
+      ["unit.subname"] = { [12696] = { ja = "Venditore di armi", status = ".", h1 = h1("Weapon Merchant") } },
+    }
+    local function lookup(kind, id) return UNIT[kind] and UNIT[kind][id] or nil end
+    WFJ.Lookup = { get = lookup }
+    H.uiSetup(WFJ, ROWS, { lookup = lookup })
+    WFJ.HelpTooltip.init()
+    tt = _G.GameTooltip
+    assert.is_true(WFJ.TooltipUnit.init())
+  end)
+
+  after_each(function()
+    H.uiTeardown(); Stub.keys.alt = false; _G.issecretvalue = nil; _G.C_PlayerInfo = nil
+  end)
+
+  it("the name and the subtitle are Italian, the brackets kept; the level line still translates", function()
+    hover({ "Senani Thunderheart", "<Weapon Merchant>", "Level 60 Humanoid" }, { guid = SENANI })
+    assert.are.equal("Senani Cuore Tonante", left(1))
+    assert.are.equal("<Venditore di armi>", left(2))
+    assert.are.equal("Livello 60 Humanoid", left(3))
+    tt:Show() -- the client's own refresh: still ours
+    assert.are.equal("Senani Cuore Tonante", left(1))
+  end)
+
+  it("Alt shows the English name and subtitle, releasing it the Italian", function()
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = SENANI })
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    assert.are.equal("Senani Thunderheart", left(1))
+    assert.are.equal("<Weapon Merchant>", left(2))
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    assert.are.equal("Senani Cuore Tonante", left(1))
+    assert.are.equal("<Venditore di armi>", left(2))
+  end)
+
+  it("a colour code around the line stays around the Italian; a subtitle without brackets stays without", function()
+    hover({ "|cffff2020Senani Thunderheart|r", "Weapon Merchant" }, { guid = SENANI })
+    assert.are.equal("|cffff2020Senani Cuore Tonante|r", left(1))
+    assert.are.equal("Venditore di armi", left(2))
+    hover({ "Senani Thunderheart", "|cffffd100<Weapon Merchant>|r" }, { guid = SENANI })
+    assert.are.equal("|cffffd100<Venditore di armi>|r", left(2))
+  end)
+
+  it("a player, a pet, a game object, no tooltip data or another English keep every line", function()
+    _G.C_PlayerInfo = { GUIDIsPlayer = function(guid) return guid:find("^Player%-") ~= nil end }
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = "Player-1-0ABCDEF0" })
+    assert.are.equal("Senani Thunderheart", left(1))
+    assert.are.equal("<Weapon Merchant>", left(2))
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = "Pet-0-1-2-3-12696-0000" })
+    assert.are.equal("Senani Thunderheart", left(1))
+    hover({ "Senani Thunderheart" }, { guid = "GameObject-0-1-2-3-12696-0000" })
+    assert.are.equal("Senani Thunderheart", left(1))
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" })
+    assert.are.equal("Senani Thunderheart", left(1))
+    assert.are.equal("<Weapon Merchant>", left(2))
+    hover({ "Senani Stormheart", "<Armor Merchant>" }, { guid = SENANI }) -- a Forever rename: its own text
+    assert.are.equal("Senani Stormheart", left(1))
+    assert.are.equal("<Armor Merchant>", left(2))
+  end)
+
+  it("a line that is a secret value is never read", function()
+    _G.issecretvalue = function(v) return v == "Senani Thunderheart" end
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = SENANI })
+    assert.are.equal("Senani Thunderheart", left(1))
+    assert.are.equal("<Venditore di armi>", left(2))
+  end)
+
+  it("names in English (/fita nomi en) leave the name; switching while shown gives the English back", function()
+    local style = "en"
+    WFJ.Names = { style = function() return style end }
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = SENANI })
+    assert.are.equal("Senani Thunderheart", left(1))
+    style = "it"; WFJ.State.fire("names")
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = SENANI })
+    assert.are.equal("Senani Cuore Tonante", left(1))
+    style = "en"; WFJ.State.fire("names")
+    assert.are.equal("Senani Thunderheart", left(1))
+    assert.are.equal("<Weapon Merchant>", left(2))
+  end)
+
+  it("a later hover over another unit drops the name record; hiding the tooltip releases them", function()
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = SENANI })
+    hover({ "Kobold Vermin", "Level 1 Humanoid" }, { guid = "Creature-0-1-2-3-6-0000" })
+    assert.are.equal("Kobold Vermin", left(1))
+    assert.are.equal("Livello 1 Humanoid", left(2))
+    assert.is_nil(WFJ.SurfaceState.get(WFJ.TooltipUnit.SURFACE, "N"))
+    assert.is_nil(WFJ.SurfaceState.get(WFJ.TooltipUnit.SURFACE, "S"))
+    hover({ "Senani Thunderheart", "<Weapon Merchant>" }, { guid = SENANI })
+    tt:Hide()
+    assert.are.equal(0, WFJ.SurfaceState.count(WFJ.TooltipUnit.SURFACE))
   end)
 end)
