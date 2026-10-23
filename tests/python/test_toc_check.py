@@ -19,6 +19,7 @@ def test_real_toc_fields_and_load_order(root):
     tail = [
         "Core/Lookup.lua",
         "Core/Names.lua",  # marked names, read by Lookup at call time (spec §8)
+        "Core/Voice.lua", "Core/VoiceQueue.lua",  # the voice pack's registry and decision, the lines' order
         "Core/Align.lua", "Core/State.lua",
         "Core/UnitNames.lua",  # NPC names by GUID; registers on State's "names" event at load
         "Core/Settings.lua",

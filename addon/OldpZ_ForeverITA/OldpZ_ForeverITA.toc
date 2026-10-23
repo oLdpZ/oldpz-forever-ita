@@ -1056,6 +1056,8 @@ Data\UI\UI_Z.lua
 # >>>
 Core\Lookup.lua
 Core\Names.lua
+Core\Voice.lua
+Core\VoiceQueue.lua
 Core\Align.lua
 Core\State.lua
 Core\UnitNames.lua

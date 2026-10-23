@@ -1,7 +1,8 @@
 -- Core/State.lua: the addon's runtime state and the one channel back to UI (pub/sub). No frame access.
 -- Events: "enabled"(bool) · "area"(id, bool) · "modifier"(bool) · "markers"() (each fired only on change);
 -- "names"(style), fired by the `names.style` setting on every apply (Core/Names);
--- and "revealKey"(key), fired by Modifier.setKey on every apply so UI/RevealBinding re-applies.
+-- "revealKey"(key), fired by Modifier.setKey on every apply so UI/RevealBinding re-applies;
+-- and "voice"(), fired by every voice.* setting on apply (Core/Settings) so the voice player re-reads them.
 local _, WFJ = ...
 local State = { enabled = true, modifierHeld = false, areas = {} }
 WFJ.State = State

@@ -3,7 +3,10 @@ local Stub = require("tests.lua.spec.wow_stub")
 
 local CORE = { "Core/Const.lua", "Core/State.lua", "Core/Settings.lua", "Core/Modifier.lua" }
 local IDS = { "enabled", "modifier", "area.quests", "area.gossip", "area.itemTooltips", "area.spellTooltips",
-  "area.interface", "area.books", "marker.stale", "marker.missing", "names.style", "minimapButton" }
+  "area.interface", "area.books", "marker.stale", "marker.missing", "names.style", "minimapButton",
+  -- the voice settings, hidden until a voice pack registers (voice_spec.lua)
+  "voice.enabled", "voice.offer", "voice.progress", "voice.turnin", "voice.greeting", "voice.books",
+  "voice.muteDialog" }
 local DEFAULTS = { enabled = true, modifier = "alt", ["area.quests"] = true, ["area.gossip"] = true,
   ["area.itemTooltips"] = true, ["area.spellTooltips"] = true, ["area.interface"] = true, ["area.books"] = true,
   ["marker.stale"] = true,
@@ -19,12 +22,12 @@ describe("Settings registry", function()
     S = WFJ.Settings
   end)
 
-  -- every setting has an Options row, so none is hidden
-  it("defines exactly these ids, in order; none is hidden", function()
+  -- every setting has an Options row, so none is hidden but the voice settings while no voice pack is loaded
+  it("defines exactly these ids, in order; none is hidden but the voice settings", function()
     local ids = {}
     for i, d in ipairs(S.list()) do
       ids[i] = d.id
-      assert.is_nil(d.hidden, d.id)
+      if d.id:find("^voice%.") then assert.is_function(d.hidden, d.id) else assert.is_nil(d.hidden, d.id) end
     end
     assert.are.same(IDS, ids)
   end)

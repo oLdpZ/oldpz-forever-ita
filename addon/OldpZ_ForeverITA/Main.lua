@@ -32,6 +32,12 @@ function OFI_OnAddonCompartmentLeave()
   WFJ.MinimapButton.hideTooltip()
 end
 
+-- Global entry point for the voice pack: its Register.lua runs in its own addon's chunk and cannot see this
+-- namespace. The pack lists this addon as a dependency, so it loads after it. → registered, invalid (Core/Voice)
+function OldpZ_ForeverITA_RegisterVoice(tbl)
+  return WFJ.Voice.register(tbl)
+end
+
 -- The one reader of the player's own name / class / race / sex, shared by Core/Placeholders (the corpus tokens)
 -- and Core/Collector (English normalization). Read at call time rather than cached at load. Each API
 -- is guarded: a client without one leaves that token literal and makes the collector refuse (no_player) instead of
@@ -286,6 +292,16 @@ function WFJ.OnLoad()
   step("objectiveindex", WFJ.BuildObjectiveIndex)
   -- an NPC's name with no GUID (an objective line's mob) by its English: Core/UnitNames.byEnglish
   step("creaturenames", function() WFJ.UnitNames.buildIndex(WFJ.Data.unit) end)
+  -- voice over: a pack's line plays only while its hash is the hash of the shipped Italian, raw (names unresolved,
+  -- tokens unfilled), so the match never depends on names.style or on the player
+  step("voice", function() WFJ.Voice.init({
+    lookup = WFJ.Lookup.raw,
+    hash = WFJ.Hash.key,
+    setting = WFJ.Settings.get,
+    revealed = WFJ.Modifier.isDown,
+    enabled = function() return WFJ.State.enabled end,
+    db = OFI_DB, -- greetings heard once: OFI_DB.voiceHeard
+  }) end)
   step("render", function() WFJ.Render.init(WFJ.Translator.new({
     enabled = function() return WFJ.State.enabled end,
     areaEnabled = WFJ.State.areaEnabled,
