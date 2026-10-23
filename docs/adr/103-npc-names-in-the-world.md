@@ -52,6 +52,17 @@
   nuova è una nuova versione, quindi i nomi delle bozze finiscono con `-sg14`.
 - Le coppie id → nome da Wowhead entrano in `data/unit` e nello zip del rilascio.
 - Plater, ElvUI e simili che sostituiscono targhette e riquadri non sono coperti in questa fase.
+- I nomi dei PNG nel mondo (tooltip dell'unità, riquadri del bersaglio, targhette) passano per l'area «ui»:
+  con l'area «ui» spenta il mondo mostra i nomi inglesi, mentre i marcatori nel testo delle missioni seguono
+  solo `/fita nomi`. Con «ui» spenta e `/fita nomi it` lo stesso PNG può quindi leggersi inglese sulla
+  targhetta e italiano nel testo: è una scelta del giocatore, non un difetto dei dati.
+- Un PNG, un nome: i nomi con lo stesso inglese escono con una sola forma (quella ufficiale, altrimenti la più
+  comune) e ogni marcatore nel testo porta quella forma. `python -m wfj.dev.remark_names` uniforma le bozze
+  machine e riscrive i marcatori superati; `wfj validate` rifiuta i dati dove non vale (due forme ufficiali o
+  umane diverse per lo stesso inglese chiedono una decisione a mano).
+- **Vincolo di rilascio:** la prova in gioco del Task 12 (taint con boss e istanze: `/fita taint` dopo un
+  combattimento con le targhette visibili, un'istanza con le targhette amiche proibite, un PNG rinominato) è
+  un cancello obbligatorio: nessun rilascio con i nomi nel mondo prima che passi.
 
 ## Alternative scartate
 
