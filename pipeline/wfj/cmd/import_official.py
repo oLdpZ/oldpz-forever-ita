@@ -19,6 +19,10 @@ re-numbers. Then, per type:
   (`translate_lint.check_row`). A code the Italian drops, adds or swaps is `rejected_slots`; a template with
   conditionals, inclusions or a name-list tail has no fixed slots and is `rejected_uncountable`. An item whose
   Forever English joins its Use / Equip spells before the flavour is not the flavour alone: a mismatch.
+- `unit` `name` / `subname` (NPC names and titles): from `pipeline/creature_official.tsv` (`make
+  creature-official`: Creature.db2 itIT, else the Wowhead tooltip), not the retail folder. A row is taken
+  where its English is the data/english/unit English for that (id, field), as plain text; its source is
+  `wago-itit@<build>` or `wowhead@<import date>`. A unit line is the name itself: never marked.
 
 An accepted item / spell description gets the official glossary's names its English holds marked
 `⟦en=it⟧` (spec §8, `core/names.mark_from_english`, the glossary beside data/ in pipeline/); UI text is
@@ -49,12 +53,15 @@ from wfj.core.hashing import key as hash_key
 from wfj.core.model import entry, validate_line
 from wfj.core.names import mark_from_english
 from wfj.core.normalize import normalize_for
-from wfj.dev import glossary_it
+from wfj.dev import creature_official, glossary_it, translate_batch
 from wfj.dev.translate_lint import check_row
 from wfj.io import retail, tables_stamp, wago
 from wfj.io.jsonl_store import Store
 
-TYPES = ("ui", "item", "spell")
+TYPES = ("ui", "item", "spell", "unit")
+# unit: not from the retail folder but from `make creature-official` (Creature.db2 itIT, else Wowhead)
+CREATURE_FILE = Path("pipeline") / creature_official.OUT.name
+WOWHEAD = "wowhead"
 TABLES = ("GlobalStrings", "ItemSparse", "Spell", "ChrClasses", "ChrRaces")
 # Read when the folder has them: the UI text families whose table the retail fetch carries
 FAMILY_TABLES = {"FactionDescription": "Faction"}
@@ -160,6 +167,15 @@ def _ui_verdict(en: str, it: str) -> tuple[str | None, str | None]:
     return it, None
 
 
+def _name_verdict(en: str, it: str) -> tuple[str | None, str | None]:
+    """An NPC name or title: shipped as Blizzard wrote it, unless it reads as its English (`Imp`, `Ragnaros`:
+    nothing to show, and `check` would reject it as not Italian)."""
+    it = it.strip()
+    if not language.is_italian(it, en.strip()):
+        return None, "same_as_english"
+    return it, None
+
+
 _REASON = {
     "specifiers": "rejected_specifiers",
     "markup": "rejected_markup",
@@ -258,12 +274,17 @@ def _retail_texts(folder: Path) -> dict[str, dict[tuple[Any, str], tuple[str, st
 
 
 def merge_official(
-    lines: list[dict[str, Any]], taken: dict[tuple[Any, str], str], prov: dict[str, Any]
+    lines: list[dict[str, Any]],
+    taken: dict[tuple[Any, str], str],
+    prov: dict[str, Any],
+    prov_of: dict[tuple[Any, str], dict[str, Any]] | None = None,
 ) -> tuple[list[dict[str, Any]], int]:
     """The import's `official` variants into a type's lines: per taken (id, field), the line's official
     variant is replaced (its ruling dropped when the text changed), else one is added (a new `pending` line
     when there is none); every other official variant is dropped, and a line left with no variant goes.
-    Other variants are never edited. → (lines, official variants dropped)."""
+    Other variants are never edited. `prov_of`: a row's own provenance where it is not `prov` (a unit name
+    from Wowhead). → (lines, official variants dropped)."""
+    prov_of = prov_of or {}
     by = {(ln["id"], ln["field"]): ln for ln in lines}
     dropped = 0
     for k, line in list(by.items()):
@@ -289,20 +310,54 @@ def merge_official(
         else:
             line["conflicts"] = keep[1:]
     for k, it in taken.items():
+        p = prov_of.get(k, prov)
         if k not in by:
-            by[k] = entry(k[0], k[1], it, prov=dict(prov))
+            by[k] = entry(k[0], k[1], it, prov=dict(p))
             continue
         line = by[k]
         official = [v for v in decisions.variant_dicts(line) if decisions.is_official(v["provenance"])]
         mine = official[0] if official else None
         if mine is None:
-            line["conflicts"].append({"it": it, "provenance": dict(prov)})
+            line["conflicts"].append({"it": it, "provenance": dict(p)})
             continue
         if mine["it"] != it:
             mine["it"] = it
             mine.pop("ruling", None)
-        mine["provenance"] = dict(prov)
+        mine["provenance"] = dict(p)
     return list(by.values()), dropped
+
+
+def _creature_texts(
+    path: Path, prov: dict[str, Any], date: str
+) -> tuple[dict[tuple[Any, str], tuple[str, str]], dict[tuple[Any, str], dict[str, Any]]]:
+    """pipeline/creature_official.tsv as (id, field) → (English, Italian), and the provenance of each row
+    that is not `prov`'s (a Wowhead row: `wowhead@<date>`)."""
+    texts: dict[tuple[Any, str], tuple[str, str]] = {}
+    prov_of: dict[tuple[Any, str], dict[str, Any]] = {}
+    wowhead = {**prov, "source": f"{WOWHEAD}@{date}"}
+    for id_, field, en, it, fonte in creature_official.read_tsv(path):
+        texts[(id_, field)] = (en, it)
+        if fonte == WOWHEAD:
+            prov_of[(id_, field)] = wowhead
+    return texts, prov_of
+
+
+def _verdict(type_: str, ln: dict[str, Any], r_en: str, r_it: str) -> tuple[str | None, str | None]:
+    """The Italian a Forever English line `ln` takes from the official (English, Italian) pair → (it, None),
+    or (None, the report counter)."""
+    if not r_it.strip():
+        return None, "no_italian"
+    # a unit name is plain text, compared as it is (creature_official kept it the same way)
+    same = r_en == ln["en"].strip() if type_ == "unit" else _hash(r_en) == ln["hash"]
+    if not same:
+        return None, "rejected_english_mismatch"
+    if type_ == "ui":
+        it, why = _ui_verdict(ln["en"], r_it)
+    elif type_ == "unit":
+        it, why = _name_verdict(ln["en"], r_it)
+    else:
+        it, why = convert_template(ln["en"], r_it)
+    return (it, None) if it is not None else (None, _REASON[str(why)])
 
 
 def run_official(
@@ -314,11 +369,14 @@ def run_official(
     placeholders_out: Path | None = None,
     addon_dir: Path | None = None,
     ambiguous_out: Path | None = None,
+    creatures_file: Path | None = None,
 ) -> OfficialReport:
     """Import every type (read and judged before anything is written); the class / race words go to
     `placeholders_out` (default `placeholders.NAMES_FILE`), the UI groups left English for a ruling to
     `ambiguous_out` (default `AMBIGUOUS_FILE`, pipeline/ui_ambiguous.tsv). `addon_dir` (default: the
-    repo's addon beside `store`) gives the UI keys' argument kinds and owned keys (`settle_ui`)."""
+    repo's addon beside `store`) gives the UI keys' argument kinds and owned keys (`settle_ui`). The NPC
+    names come from `creatures_file` (default pipeline/creature_official.tsv beside `store`); without it the
+    unit lines are not touched."""
     if addon_dir is None:
         addon_dir = generate.default_addon_dir(Path(store))
     folder = Path(retail_dir)
@@ -327,12 +385,20 @@ def run_official(
     tables_stamp.check(retail.files(folder, present), "wago", build)
     prov = {"class": decisions.OFFICIAL, "source": f"{SOURCE}@{build}", "imported": date}
     texts = _retail_texts(folder)
+    creatures = Path(creatures_file) if creatures_file else Path(store).parent / CREATURE_FILE
+    types = list(TYPES)
+    prov_of: dict[tuple[Any, str], dict[str, Any]] = {}
+    if creatures.is_file():
+        texts["unit"], prov_of = _creature_texts(creatures, prov, date)
+    else:  # no creature file: the unit lines are left as they are, not emptied
+        types.remove("unit")
     matcher = glossary_it.load_matcher(Path(store).parent)
     english, data = Store(store, english=True), Store(store)
     report = OfficialReport()
     review: list[tuple[str, str, str]] = []
     planned: dict[str, list[dict[str, Any]]] = {}
-    for type_ in TYPES:
+    same: dict[Any, tuple[str, str]] = {}  # a unit line Blizzard leaves as its English: kept English
+    for type_ in types:
         c = report.counts[type_]
         taken: dict[tuple[Any, str], str] = {}
         english_of: dict[Any, str] = {}
@@ -340,21 +406,15 @@ def run_official(
             k = (ln["id"], ln["field"])
             if k not in texts[type_]:
                 continue
-            r_en, r_it = texts[type_][k]
-            if not r_it.strip():
-                c["no_italian"] += 1
-                continue
-            if _hash(r_en) != ln["hash"]:
-                c["rejected_english_mismatch"] += 1
-                continue
-            if type_ == "ui":
-                it, why = _ui_verdict(ln["en"], r_it)
-            else:
-                it, why = convert_template(ln["en"], r_it)
+            it, why = _verdict(type_, ln, *texts[type_][k])
             if it is None:
-                c[_REASON[str(why)]] += 1
+                c[str(why)] += 1
+                if type_ == "unit" and why == "same_as_english":
+                    same[(type_, k[0], k[1])] = (ln["hash"], " ".join(ln["en"].split()))
                 continue
-            if type_ != "ui":  # spec §8: the names the English holds, marked; interface text never is
+            # spec §8: the names the English holds, marked; interface text never is, and a unit line is the
+            # name itself
+            if type_ not in ("ui", "unit"):
                 it = mark_from_english(it, ln["en"], matcher)
             new = entry(k[0], k[1], it, prov=dict(prov))
             problems = validate_line(type_, new)
@@ -365,9 +425,11 @@ def run_official(
             c["accepted"] += 1
         if type_ == "ui":
             review = settle_ui(taken, english_of, addon_dir, c)
-        planned[type_], report.dropped[type_] = merge_official(data.load(type_), taken, prov)
+        planned[type_], report.dropped[type_] = merge_official(data.load(type_), taken, prov, prov_of)
+    if same:  # nothing ships, but `translate_batch cut` must not hand the name to a machine draft
+        translate_batch.record_found(Path(store), same)
     names, report.absent_names = retail.read_placeholder_names(folder, placeholders.TOKENS)
-    for type_ in TYPES:
+    for type_ in types:
         data.save(type_, planned[type_], allow_empty=True)
     out = Path(placeholders_out) if placeholders_out else placeholders.NAMES_FILE
     out.write_text(placeholders.names_text(names, prov["source"]), encoding="utf-8")

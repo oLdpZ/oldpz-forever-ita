@@ -92,7 +92,13 @@ KINDS: dict[str, tuple[str, str]] = {  # kind → (data type, field)
     "item_description": ("item", "description"),
     "spell_description": ("spell", "description"),
     "spell_aura": ("spell", "aura"),
+    # NPC names and titles (`data/english/unit`, VMaNGOS / the client cache). Where Blizzard published an
+    # Italian form the line is `official` and never cut; the rest is drafted in Blizzard's itIT style
+    # (style guide, «Nomi dei PNG»).
+    "unit_name": ("unit", "name"),
+    "unit_subname": ("unit", "subname"),
 }
+UNIT_KINDS = frozenset({"unit_name", "unit_subname"})
 # The kinds whose English is a client TEMPLATE: the `$n`/`$c`/`$r` in one are values, not the player, and a
 # ruling can let the model redraft over hand-written text there (below).
 TEMPLATE_KINDS = frozenset({"item_description", "spell_description", "spell_aura"})
@@ -105,7 +111,9 @@ SLOT_KINDS = TEMPLATE_KINDS | {"quest_title", "quest_objectives", "quest_descrip
 # finds (title_names) and the lint checks those instead of every capitalised word. An objective's
 # own text ("Eastern Tower Ablaze", "Archive Burned") is one, and every row is cut: a title-case event line
 # is not a bare label; one that IS only a name is recorded in pipeline/objective_names.txt, not drafted.
-TITLE_CASE_KINDS = frozenset({"quest_title", "objective", "area"})
+# An NPC name or title is one too (`Defias Pillager`, `Weapon Merchant`), but it is translated: its own
+# words are not names to keep (`_annotate_names`).
+TITLE_CASE_KINDS = frozenset({"quest_title", "objective", "area"}) | UNIT_KINDS
 REF_LEN = 10
 # The kinds a recorded ruling lets the model redraft over hand-written text: quest completion, where no
 # hand-written variant ships at all; the tooltip kinds, where the hand-written text has a number baked into
@@ -303,8 +311,10 @@ def read_kept(repo: Path) -> dict[KeepKey, str]:
 
 def record_kept(data: Path, keep_files: Iterable[Path]) -> int:
     """Record the kept-English rows of `translate_lint` (`<draft>.keep.jsonl`) in `pipeline/keep_english.tsv`
-    with each target's current English hash (a row already there is updated). A row whose line has an Italian
-    translation in data/ now is dropped: the decision no longer applies. → the targets recorded."""
+    with each target's current English hash (a row already there is updated). A kept target's machine
+    variants are dropped first (`drop_machine_for_kept`: a redraft to keep-English replaces the old draft); a
+    row whose line still has an Italian translation in data/ (official, human) is dropped: the decision no
+    longer applies. → the targets recorded."""
     english: dict[str, dict[tuple[Any, str], dict[str, Any]]] = {}
     found: dict[KeepKey, tuple[str, str]] = {}
     for path in keep_files:
@@ -317,10 +327,63 @@ def record_kept(data: Path, keep_files: Iterable[Path]) -> int:
                 if ln is None:
                     raise SystemExit(f"translate_batch: keep: no English for {type_} {id_} {field}")
                 found[(type_, id_, field)] = (ln["hash"], " ".join(ln["en"].split()))
+    dropped = drop_machine_for_kept(data, found)
+    if dropped:
+        print(f"keep: {dropped} machine variants dropped (a redraft keeps those lines English)")
+    return record_found(data, found)
+
+
+_VARIANT_KEYS = ("it", "provenance", "ruling")
+
+
+def drop_machine_for_kept(data: Path, kept: Iterable[KeepKey]) -> int:
+    """A redraft to keep-English (`{"it": null}`) on a line that already has Italian: its MACHINE variants are
+    dropped (the line goes when nothing is left), so the keep `record_found` writes next holds and the old
+    draft stops shipping. An official, human or correction variant is never dropped: the line keeps it (it
+    wins over any keep) and a warning names the line on stderr. → machine variants dropped"""
+    by_type: dict[str, set[tuple[Any, str]]] = {}
+    for type_, id_, field in kept:
+        by_type.setdefault(type_, set()).add((id_, field))
+    store, n = Store(data), 0
+    for type_, keys in sorted(by_type.items()):
+        lines = store.load(type_)
+        out: list[dict[str, Any]] = []
+        changed = False
+        for ln in lines:
+            if (ln["id"], ln["field"]) not in keys:
+                out.append(ln)
+                continue
+            variants = decisions.variant_dicts(ln)
+            others = [v for v in variants if not decisions.is_machine(v["provenance"])]
+            n += len(variants) - len(others)
+            changed |= len(others) != len(variants)
+            if others:
+                print(f"translate_batch: keep: {type_} {ln['id']} {ln['field']} has a "
+                      f"{others[0]['provenance'].get('class')} Italian: it stays, the keep is not recorded",
+                      file=sys.stderr)
+            if not others:
+                continue
+            if others[0] is not ln:
+                top = others[0]
+                for key in _VARIANT_KEYS:
+                    if key in top:
+                        ln[key] = top[key]
+                    else:
+                        ln.pop(key, None)
+            ln["conflicts"] = others[1:]
+            out.append(ln)
+        if changed:
+            store.save(type_, out, allow_empty=True)  # every line of the type dropped: deliberate
+    return n
+
+
+def record_found(data: Path, found: dict[KeepKey, tuple[str, str]]) -> int:
+    """Write `found` ((type, id, field) → (English hash, English)) into `pipeline/keep_english.tsv`, dropping
+    every row whose line has an Italian translation in data/. → len(found)."""
     old = _keep_table(data.parent)
     translated = {
         (t, ln["id"], ln["field"])
-        for t in {k[0] for k in old}
+        for t in {k[0] for k in {**old, **found}}
         for ln in Store(data).load(t)
         if any(str(v.get("it") or "").strip() for v in decisions.variant_dicts(ln))
     }
@@ -493,6 +556,8 @@ def _name_only(en: str, all_names: set[str]) -> bool:
 
 
 def _annotate_names(rows: list[dict[str, Any]], data: Path, kind: str) -> None:
+    if kind in UNIT_KINDS:  # the name is the text to translate; the glossary carries the official forms
+        return
     rows = _title_case_rows(kind, rows)
     if not rows:
         return
@@ -701,7 +766,7 @@ def expand(ok_file: Path, name: str, out_dir: Path, version: int) -> dict[str, i
     return counts
 
 
-STORE_TYPES = ("quest", "item", "spell", "ui", "gossip", "book", "objective", "area")
+STORE_TYPES = ("quest", "item", "spell", "ui", "gossip", "book", "objective", "area", "unit")
 
 
 def rejected_counts(data: Path) -> tuple[int, int]:

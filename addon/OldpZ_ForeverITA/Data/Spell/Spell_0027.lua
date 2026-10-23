@@ -74,7 +74,7 @@ WFJ.Data.add("spell", {
   [27564] = { "Fornisce all'incantatore una probabilità del $N1% di riflettere gli incantesimi d'attacco per $D1.", "Probabilità del $N1% di riflettere gli incantesimi.", 0x2114ea57, 0x374c4ab7, "uu" },
   [27565] = { "Esilia un nemico, impedendogli di compiere qualsiasi azione ma rendendolo invulnerabile per un massimo di $D1. Può essere esiliato solo un bersaglio alla volta.", "Immune ad attacchi e incantesimi, ma impossibilitato ad agire.", 0x0bf23a74, 0xfec93755, "uu" },
   [27567] = { "Colpisce un nemico con un fulmine che danneggia nemici aggiuntivi vicini. L'incantesimo colpisce fino a un massimo di $N1 bersagli, infliggendo danni da natura a ogni bersaglio.", nil, 0x91b98b1a, nil, "um" },
-  [27570] = { "Clicca col pulsante destro per evocare e congedare Stupìdo.", nil, 0xc920e632, nil, "um" },
+  [27570] = { "Clicca col pulsante destro per evocare e congedare ⟦Peddlefeet=Stupìdo⟧.", nil, 0xc920e632, nil, "um" },
   [27571] = { "Ricopre un bersaglio vicino con una cascata di petali di rosa!", nil, 0x70b1b6bd, nil, "um" },
   [27577] = { "Carica un nemico, infliggendo $N1 danni e stordendolo per $D1.", nil, 0xaacc99e1, nil, "um" },
   [27579] = { "Riduce la potenza d'attacco dei nemici entro $N1 m di $N2 per $D1.", "Potenza d'attacco ridotta di $N1.", 0x058d9b9c, 0xd93bea74, "uu" },

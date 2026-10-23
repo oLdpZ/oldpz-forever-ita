@@ -423,6 +423,6 @@ WFJ.Data.add("spell", {
   [15980] = { "Colpisce un nemico con un dardo antimana. Per ogni punto di mana consumato, il bersaglio subisce $N1 danni.", nil, 0x5ae7b2cb, nil, "um" },
   [15981] = { "Cura un alleato ogni $N1 s per $D2.", "Danni curati ogni $N1 s.", 0x61f0e6eb, 0x7668097c, "uu" },
   [15982] = { "Si affida alla magia della natura per curare un alleato.", nil, 0xa861c49b, nil, "um" },
-  [15998] = { "Da usare vicino a un Cucciolo di Worg della Scure Rossa. Non temere, è approvata dalla G.E.T.A.", nil, 0x31deef2c, nil, "um" },
+  [15998] = { "Da usare vicino a un ⟦Worg Pup=Cucciolo di Worg⟧ della Scure Rossa. Non temere, è approvata dalla G.E.T.A.", nil, 0x31deef2c, nil, "um" },
   [15999] = { "Clicca col pulsante destro per evocare e congedare un Cucciolo di Worg.", nil, 0x481c18db, nil, "um" },
 })

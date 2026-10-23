@@ -93,3 +93,36 @@ def test_english_style_drops_the_after_an_italian_article(text, en):
     loses its "The " ("la The Bulwark" → "la Bulwark"); the Italian style is untouched."""
     assert names.resolve(text, "en") == en
     assert names.resolve(text, "it") == names.MARK.sub(lambda m: m.group(2), text)
+
+
+def test_english_kinds_mark_the_english_left_in_the_italian():
+    """`english_kinds`: an NPC name the Italian left in English is marked too (the unit table's Italian as the
+    form), longest first across both forms, and never inside a marker."""
+    g = [("Defias Thug", "Brigante Defias", "creatura"), ("Defias Thug Leader", "Capo dei Briganti", "creatura"),
+         SW]
+    it = "Il Defias Thug Leader e un Brigante Defias a Stormwind City."
+    assert names.mark_names(it, g, english_kinds={"creatura"}) == (
+        "Il ⟦Defias Thug Leader=Capo dei Briganti⟧ e un ⟦Defias Thug=Brigante Defias⟧ a Stormwind City."
+    )
+    assert names.mark_names(it, g) == "Il Defias Thug Leader e un ⟦Defias Thug=Brigante Defias⟧ a Stormwind City."
+    once = names.mark_names(it, g, english_kinds={"creatura"})
+    assert names.mark_names(once, g, english_kinds={"creatura"}) == once
+
+
+def test_an_english_form_inside_more_english_is_not_marked():
+    """The English form of a name is no name of its own in a possessive (`Hogger's Claw`, an item left in
+    English) or before another capitalised English word (`Stonefield Farm`); a longer name that is a term is
+    marked whole, and the Italian form is searched as before."""
+    g = [("Hogger", "Hoggerino", "creatura"), ("Stonefield", "Pietradura", "creatura"),
+         ("Ma Stonefield", "Mamma Pietradura", "creatura")]
+    kinds = {"creatura"}
+    assert names.mark_names("Uccidi Hogger e porta il Hogger's Claw.", g, english_kinds=kinds) == (
+        "Uccidi ⟦Hogger=Hoggerino⟧ e porta il Hogger's Claw.")
+    assert names.mark_names("Uccidi Hogger’s Claw e Hogger.", g, english_kinds=kinds) == (
+        "Uccidi Hogger’s Claw e ⟦Hogger=Hoggerino⟧.")
+    assert names.mark_names("Vai alla Stonefield Farm da Ma Stonefield, poi da Stonefield.", g,
+                            english_kinds=kinds) == (
+        "Vai alla Stonefield Farm da ⟦Ma Stonefield=Mamma Pietradura⟧, poi da ⟦Stonefield=Pietradura⟧.")
+    assert names.mark_names("Parla con Hogger. Poi torna.", g, english_kinds=kinds) == (
+        "Parla con ⟦Hogger=Hoggerino⟧. Poi torna.")
+    assert names.mark_names("Il Pietradura Farm.", g, english_kinds=kinds) == "Il ⟦Stonefield=Pietradura⟧ Farm."

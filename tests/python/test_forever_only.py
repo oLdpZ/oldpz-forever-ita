@@ -71,7 +71,9 @@ def test_no_trainer_greeting(root):
 def test_no_generated_folder_outlives_its_kind(root):
     """`generate` deletes only shards of the kinds it knows: a removed kind's folder must go with it."""
     dirs = {p.name for p in (root / ADDON / "Data").iterdir() if p.is_dir()}
-    assert dirs == set(schema.FILE_PREFIX.values())
+    # a kind with no shipped row has no folder yet (unit, until its first Italian name)
+    assert dirs <= set(schema.FILE_PREFIX.values())
+    assert dirs >= set(schema.FILE_PREFIX.values()) - {"Unit"}
 
 
 def _forever_dir(root) -> Path | None:

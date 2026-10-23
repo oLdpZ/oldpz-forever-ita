@@ -29,7 +29,7 @@ from wfj.io.git_store import load_english_at, load_lines_at
 from wfj.io.jsonl_store import Store
 from wfj.paths import data_root
 
-DELTA_TYPES = ("quest", "item", "spell", "ui", "gossip", "objective", "area", "book")
+DELTA_TYPES = ("quest", "item", "spell", "ui", "gossip", "objective", "area", "book", "unit")
 
 
 def dump_english(path: Path) -> list[dict]:

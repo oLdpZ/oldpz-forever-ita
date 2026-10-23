@@ -93,7 +93,9 @@ UI = {
     "SELL_PRICE": "Prezzo di vendita", "YES": "Sì",
     "ItemSubClass:4:1": "Stoffa",  # a client-table key: the index finds it by its English fingerprint
 }
-STATUS = {"quest": "trusted", "item": "unaligned", "spell": "unaligned", "gossip": "trusted", "ui": "trusted"}
+UNIT = {12696: {"name": "Senani Cuore Tonante"}, 15006: {"subname": "Maestro di battaglia del Bacino Arathi"}}
+STATUS = {"quest": "trusted", "item": "unaligned", "spell": "unaligned", "gossip": "trusted", "ui": "trusted",
+          "unit": "trusted"}
 
 
 def _prov(type_: str) -> dict[str, Any]:
@@ -127,7 +129,7 @@ def write(repo: Path = REPO, fixture: Path = FIXTURE) -> None:
     (fixture / "pipeline" / "allowlist.txt").write_bytes(allowlist)
     wanted = {"quest": QUEST, "item": ITEM, "spell": SPELL,
               "gossip": {k: {"text": v} for k, v in GOSSIP.items()},
-              "ui": {k: {"text": v} for k, v in UI.items()}}
+              "ui": {k: {"text": v} for k, v in UI.items()}, "unit": UNIT}
     for type_, rows in wanted.items():
         ids = set(rows)
         english = [ln for ln in src.load(type_) if ln["id"] in ids]

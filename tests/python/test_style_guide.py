@@ -1,4 +1,4 @@
-"""The Italian style guide (sg13): its version, the rules the plan fixes, the interface section's six rules, and
+"""The Italian style guide (sg14): its version, the rules the plan fixes, the interface section's six rules, and
 interface terms that hold on every shipped UI line."""
 
 import re
@@ -20,7 +20,7 @@ def guide(root: Path) -> str:
 
 
 def test_guide_has_a_version(root: Path):
-    assert style_version(root) == 13
+    assert style_version(root) == 14
 
 
 def test_guide_states_the_italian_rules(guide):
@@ -35,11 +35,11 @@ def test_guide_states_the_italian_rules(guide):
 
 
 def test_guide_carries_the_fixed_lexicon(guide):
-    section = guide.split("## Lessico fissato (sg13)", 1)
+    section = guide.split("## Lessico fissato (sg14)", 1)
     assert len(section) == 2, "no fixed lexicon section"
     body = section[1].split("\n## ", 1)[0]
     for term in ("| People's Militia | Milizia del Popolo |", "| SI:7 | IR:7 |", "Brigata del Popolo",
-                 "Cognomi dei PNG restano inglesi", "Tribù, clan e gruppi",
+                 "Tribù, clan e gruppi",
                  "| Lunar Festival | Celebrazione della Luna |", "forma ufficiale verificabile resta inglese",
                  "| High Executor | alto esecutore / alta esecutrice", "| Lady Sylvanas | Lady Sylvanas", "Fauci di Drago",
                  "| felhunter | vilsegugio", "Abissi di Fondocupo", "Il titolo concorda con il genere",
@@ -56,9 +56,12 @@ def test_guide_carries_the_fixed_lexicon(guide):
                  "i Pacificatori", "linee di potere", "magistro supremo", "il guardiamorte X",
                  "Incursione / Incursioni dell'Incubo", "capitano / capitana di campo", "Radura dell'Oracolo",
                  "Isole dei Lanciascura", "Grande Spirito Ursino", "dragoide / dragoidi", "Pellemarcia",
-                 "cavalcatore di pipistrelli", "Campeggio 101", "`Scarlet Magi`", "spirito del thane Forgiamara",
-                 "Gilda dei Tagliapietre", "Uther l'Araldo della Luce", "Sbocciafuoco", "Lunargenta", "Grande Oscurità (dell'Oltre)"):
+                 "cavalcatore di pipistrelli", "Campeggio 101", "spirito del thane Forgiamara",
+                 "Gilda dei Tagliapietre", "Uther l'Araldo della Luce", "Sbocciafuoco", "Lunargenta", "Grande Oscurità (dell'Oltre)",
+                 "Nomi dei PNG", "Senani Cuore Tonante"):
         assert term in body, term
+    assert "Cognomi dei PNG restano inglesi" not in body  # sg14: the PNG-names rule replaces it
+    assert "Se non c'è né l'una né l'altra" in body  # the fallback when neither official nor unit form exists
 
 
 UI_RULES = ("1. Significato nel contesto", "2. Lunghezza che ci stia", "3. Registro", "4. Coerenza",

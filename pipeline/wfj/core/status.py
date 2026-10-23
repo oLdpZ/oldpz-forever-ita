@@ -260,7 +260,9 @@ def decide(
     if reasons:
         return Decision("rejected", reasons, checks, winner)
     prior = (line.get("english") or {}).get("hash")
-    if scope.kind not in (*PROSE_KINDS, "ui", "gossip"):
+    # an NPC name or title (`unit`) is plain text checked against its own English, with no client template or
+    # live value to gate: trusted like a UI string
+    if scope.kind not in (*PROSE_KINDS, "ui", "gossip", "unit"):
         # Item / spell (ADR-007): never checked offline, so never trusted. Once the English it was
         # checked against changes, it is stale: shipped, still gated in-game, shown with the stale marker.
         if (prior and current_hash and prior != current_hash) or includes_changed:

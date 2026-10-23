@@ -1,0 +1,115 @@
+id	field	en	it	fonte
+3	name	Flesh Eater	Mangiatore di Carne	db2
+89	name	Infernal	Infernale	db2
+416	name	Imp	Imp	db2
+417	name	Felhunter	Vilsegugio	db2
+620	name	Chicken	Gallina	db2
+721	name	Rabbit	Coniglio	db2
+1748	name	Highlord Bolvar Fordragon	Gran Signore Bolvar Domadraghi	db2
+1860	name	Voidwalker	Ombra del Vuoto	db2
+1863	name	Succubus	Succube	db2
+2671	name	Mechanical Squirrel	Scoiattolo Meccanico	db2
+2748	name	Archaedas	Archaedas	db2
+2748	subname	Ancient Stone Watcher	Guardiano di Pietra Antico	db2
+3524	name	Spirit Wolf	Lupo Spirituale	db2
+3771	name	Bleakheart Hellcaller	Invocatore Infernale Cuorcupo	db2
+3823	name	Ghostpaw Runner	Zampachiara Scattante	db2
+3956	name	Harklan Moongrove	Harklan Selvaluna	db2
+3956	subname	Alchemy Supplies	Mercante di Forniture d'Alchimia	db2
+4075	name	Rat	Ratto	db2
+4274	name	Fenrus the Devourer	Fenrus il Divoratore	db2
+4275	name	Archmage Arugal	Arcimago Arugal	db2
+5198	name	Arctic Riding Wolf	Lupo Artico Cavalcabile	db2
+7109	name	Jadefire Felsworn	Vilfedele Giadafulgida	db2
+7386	name	White Kitten	Micio Bianco	db2
+7387	name	Green Wing Macaw	Macao Ala Verde	db2
+7388	name	Cockatoo	Cacatua	db2
+7389	name	Senegal	Senegal	db2
+7390	name	Cockatiel	Calopsite	db2
+7391	name	Hyacinth Macaw	Macao Giacinto	db2
+7392	name	Prairie Chicken	Gallina delle Praterie	db2
+7393	name	White Plymouth Rock	Polverara Bianca	db2
+7394	name	Ancona Chicken	Pollo Ancona	db2
+7543	name	Dark Whelpling	Draghetto Oscuro	db2
+7544	name	Crimson Whelpling	Draghetto Cremisi	db2
+7545	name	Emerald Whelpling	Draghetto di Smeraldo	db2
+7546	name	Bronze Whelpling	Draghetto Bronzeo	db2
+7547	name	Azure Whelpling	Draghetto di Zaffiro	db2
+7548	name	Faeling	Fatatino	db2
+7549	name	Tree Frog	Rana degli Alberi	db2
+7550	name	Wood Frog	Rana del Legno	db2
+7551	name	Dart Frog	Rana Velenosa	db2
+7552	name	Island Frog	Rana Insulare	db2
+7553	name	Great Horned Owl	Gufo Cornuto Grande	db2
+7554	name	Snowy Owl	Gufo Nevoso	db2
+7555	name	Hawk Owl	Gufo Reale	db2
+7556	name	Eagle Owl	Gufo Reale	db2
+7560	name	Snowshoe Rabbit	Coniglio delle Nevi	db2
+7561	name	Albino Snake	Serpente Albino	db2
+7562	name	Brown Snake	Serpente Bruno	db2
+7563	name	Blue Racer	Colubro Blu	db2
+7565	name	Black Kingsnake	Re Serpente Nero	db2
+7566	name	Scarlet Snake	Serpente Scarlatto	db2
+7567	name	Crimson Snake	Serpente Cremisi	db2
+7568	name	Ribbon Snake	Serpente Aliante	db2
+7569	name	Green Water Snake	Serpente d'Acqua Verde	db2
+7570	name	Elven Wisp	Fuoco Fatuo Elfico	db2
+7952	name	Zjolnir	Zjolnir	db2
+7952	subname	Raptor Handler	Addestratore di Raptor	db2
+8376	name	Mechanical Chicken	Gallina Meccanica	db2
+9657	name	Lil' Smoky	Fumetto Furbetto	db2
+9662	name	Sprite Darter Hatchling	Cucciolo di Drago Fatato	db2
+9936	name	Corrupted Kitten	Micio Corrotto	db2
+10259	name	Worg Pup	Cucciolo di Worg	db2
+10261	name	Burning Felhound	Vilsegugio Ardente	db2
+10414	name	Patchwork Horror	Orrore di Carne	db2
+10578	name	Bom'bay	Bom'bay	db2
+10578	subname	Witch Doctor in Training	Taumaturgo Principiante	db2
+10598	name	Smolderweb Hatchling	Ragnetto Bruciatela	db2
+11236	name	Blood Parrot	Pappagallo di Sangue	db2
+11325	name	Panda Cub	Cucciolo di Panda	db2
+11326	name	Mini Diablo	Mini Diablo	db2
+11326	subname	Lord of Terror	Signore del Terrore	db2
+11327	name	Zergling	Zergling	db2
+11502	name	Ragnaros	Ragnaros	db2
+11822	name	Moonglade Warden	Custode di Radaluna	db2
+11859	name	Doomguard	Demone Guardiano	db2
+12222	name	Creeping Sludge	Poltiglia Strisciante	db2
+12419	name	Lifelike Toad	Rospo Meccanico	db2
+14042	name	Rytama	Rytama	db2
+14042	subname	Binder of the Moro'gai	Vincolatore dei Moro'gai	db2
+14143	name	Ar'lia	Ar'lia	db2
+14143	subname	The Moro'gai	Moro'gai	db2
+14305	name	Human Orphan	Orfano Umano	db2
+14421	name	Brown Prairie Dog	Cane della Prateria Bruno	db2
+14444	name	Orcish Orphan	Orfano Orco	db2
+14629	name	Loggerhead Snapjaw	Tartarabbia Marina	db2
+14630	name	Leatherback Snapjaw	Tartarabbia dal Guscio Molle	db2
+14631	name	Olive Snapjaw	Tartarabbia Oliva	db2
+14632	name	Hawksbill Snapjaw	Tartarabbia Embricata	db2
+14633	name	Albino Snapjaw	Tartarabbia Albina	db2
+14755	name	Tiny Green Dragon	Piccola Serpe Verde	db2
+14756	name	Tiny Red Dragon	Piccola Serpe Rossa	db2
+14878	name	Jubling	Pincopallina	db2
+15186	name	Murky	Fosky	db2
+15356	name	Blue Baby Murloc	Piccolo Murloc Blu	db2
+15357	name	Purple Baby Murloc	Piccolo Murloc Viola	db2
+15359	name	Pink Baby Murloc	Piccolo Murloc Rosa	db2
+15360	name	Green Baby Murloc	Piccolo Murloc Verde	db2
+15361	name	Murki	Foski	db2
+15429	name	Disgusting Oozeling	Melmina Disgustosa	db2
+15661	name	Baby Shark	Piccolo Squalo	db2
+15698	name	Father Winter's Helper	Aiutante di Babbo Inverno	db2
+15699	name	Tranquil Mechanical Yeti	Yeti Meccanico Pacifico	db2
+15705	name	Winter's Little Helper	Piccola Aiutante di Babbo Inverno	db2
+15706	name	Winter Reindeer	Renna Invernale	db2
+15710	name	Tiny Snowman	Pupazzo di Neve Piccino	db2
+16069	name	Gurky	Gurky	db2
+16085	name	Peddlefeet	Stupìdo	db2
+16445	name	Terky	Terky	db2
+16456	name	Poley	Poley	db2
+16547	name	Speedy	Rapidino	db2
+16548	name	Mr. Wiggles	Ser Pancetta	db2
+16549	name	Whiskers the Rat	Baffo il Ratto	db2
+16701	name	Spirit of Summer	Spirito dell'Estate	db2
+17255	name	Hippogryph Hatchling	Cucciolo di Ippogrifo	db2

@@ -25,7 +25,7 @@ WFJ.Data.add("gossip", {
   ["e865d0fa4a471d0b"] = { "Che bello rivederti, {name}! Non so davvero come ringraziarti per aver consegnato quel messaggio al mio caro piccolo gnomo.\n\nTi va di ascoltare una canzone? Renderà molto più facile viaggiare nei mari in tempesta!", "." },
   ["e8677fe1ec32953c"] = { "Ora taci e ricorda dove ti trovi, o informerò lord Fordring e i suoi cavalieri che non sei più qui in termini amichevoli. Non ho dubbi che proverebbe un gran piacere nell'occuparsi della tua «espiazione».", "." },
   ["e869997534a32420"] = { "Che la Luce guidi il tuo cammino e ti aiuti nei tuoi viaggi. Se ti serve aiuto mentre dai un'occhiata, sono proprio qui.", "." },
-  ["e86dbe4bb06d9d31"] = { "Vorrei sussurrarti il mio codice segreto per ricevere il mio Panda Cub.", "." },
+  ["e86dbe4bb06d9d31"] = { "Vorrei sussurrarti il mio codice segreto per ricevere il mio ⟦Panda Cub=Cucciolo di Panda⟧.", "." },
   ["e8738bbe6b7606b2"] = { "Con la morte di Ouro, la via verso la camera finale è libera. Posso trasportarti lì, se lo desideri.", "." },
   ["e877f3e7f5c00ea3"] = { "Per il momento quella zona è libera dall'influenza del Flagello. Temo sia solo questione di tempo prima che ritorni.", "." },
   ["e88413e700a0b553"] = { "I segni su questa tavoletta mostrano antichi diagrammi e contengono terribili parole di potere.\n\nCredi che si tratti di una ricetta alchemica, ma va oltre le tue capacità...", "." },

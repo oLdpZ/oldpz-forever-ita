@@ -20,11 +20,21 @@ describe("Lookup.get / Lookup.gossip on the shipped data", function()
     assert.is_nil(L.get("quest.objectives", 78307))
     assert.is_nil(L.get("quest.progress", 5)) -- no progress English for this quest, so no Japanese ever ships
     assert.is_nil(L.get("quest.title", 999999))
-    assert.is_nil(L.get("unit", 1))
+    assert.is_nil(L.get("unit", 1)) -- two fields: a bare unit kind names no line
+    assert.is_nil(L.get("npc", 1))
     assert.is_nil(L.get("quest.name", 2))
     assert.is_nil(L.get("quest", 2)) -- quests need a field
     assert.is_nil(L.get(nil, 2))
     assert.is_nil(L.get(42, 2))
+  end)
+
+  it("returns an NPC name by creature id", function()
+    local e = L.get("unit.name", 12696)
+    assert.are.equal("Senani Cuore Tonante", e.ja)
+    assert.are.equal(".", e.status)
+    assert.is_number(e.h1)
+    assert.is_nil(L.get("unit.subname", 12696))
+    assert.are.equal("Maestro di battaglia del Bacino Arathi", L.get("unit.subname", 15006).ja)
   end)
 
   it("items and spells ship unaligned (ADR-007) under their single-field kind", function()

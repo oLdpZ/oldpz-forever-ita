@@ -1,11 +1,11 @@
 -- Core/Data.lua: the one function generated files call, WFJ.Data.add(type, tbl).
 -- Rows are keyed by game id (gossip: by key; book: by the hash of the page's English; ui: by global-string name;
--- objective: by QuestObjective id; area: by quest id) and
+-- objective: by QuestObjective id; area: by quest id; unit: by creature id) and
 -- copied in. The same id from two shards is a generator bug and raises at load. Pure: no globals, no frames.
 -- Layout: Core/Const.lua (WFJ.SLOTS), ADR-008.
 local _, WFJ = ...
-local Data = { quest = {}, item = {}, spell = {}, gossip = {}, book = {}, ui = {}, objective = {}, area = {},
-  counts = { quest = 0, item = 0, spell = 0, gossip = 0, book = 0, ui = 0, objective = 0, area = 0 } }
+local Data = { quest = {}, item = {}, spell = {}, gossip = {}, book = {}, ui = {}, objective = {}, area = {}, unit = {},
+  counts = { quest = 0, item = 0, spell = 0, gossip = 0, book = 0, ui = 0, objective = 0, area = 0, unit = 0 } }
 WFJ.Data = Data
 
 function Data.add(type_, tbl)

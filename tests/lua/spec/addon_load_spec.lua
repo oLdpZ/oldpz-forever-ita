@@ -6,7 +6,7 @@ local Loader = require("tests.lua.spec.loader")
 local HEAD = { "Core/ErrorLog.lua", "Core/Const.lua", "Core/Compat.lua", "Core/Normalize.lua", "Core/Hash.lua",
   "Core/Data.lua" }
 local TAIL = {
-  "Core/Lookup.lua", "Core/Names.lua", "Core/Align.lua", "Core/State.lua", "Core/Settings.lua",
+  "Core/Lookup.lua", "Core/Names.lua", "Core/Align.lua", "Core/State.lua", "Core/UnitNames.lua", "Core/Settings.lua",
   "Core/Modifier.lua",
   "Core/Placeholders.lua", "Core/Translator.lua", "Core/UIStringKeys.lua",
   "Core/UIStrings.lua", "Core/Objectives.lua", "Core/SurfaceState.lua",
@@ -49,7 +49,8 @@ local TAIL = {
   "UI/Macro.lua",
   "UI/SpellSearch.lua", "UI/TimeManager.lua", "UI/CombatText.lua", "UI/CooldownViewer.lua", "UI/DamageMeter.lua",
   "UI/DeathRecap.lua", "UI/GamepadEdit.lua", "UI/HudLabels.lua", "UI/HudTips.lua", "UI/Minimap.lua",
-  "UI/PvPMatch.lua", "UI/QueueStatus.lua", "UI/RaidManager.lua", "UI/UnitFrames.lua", "UI/GroupFinder.lua",
+  "UI/PvPMatch.lua", "UI/QueueStatus.lua", "UI/RaidManager.lua", "UI/UnitFrames.lua", "UI/NamePlates.lua",
+  "UI/GroupFinder.lua",
   "UI/Channels.lua", "UI/QuickJoin.lua", "UI/RecentAllies.lua", "UI/RecruitAFriend.lua", "UI/ReportFrame.lua",
   "UI/HelpFrame.lua", "UI/StatusNotices.lua", "UI/BNetToast.lua", "UI/SettingsPanel.lua",
   "UI/SettingsTutorials.lua", "UI/EditMode.lua", "UI/QuickKeybind.lua", "UI/ColorPicker.lua", "UI/ChatConfig.lua",
@@ -88,7 +89,7 @@ local WINDOW_NAMESPACES = { "character", "reputation", "skills", "spellbook", "t
   "spellsearch",
   "timemanager", "combattext", "cooldownviewer", "damagemeter", "deathrecap", "gamepadedit",
   "gamepad", "hudlabels", "help",
-  "help.hudtips", "help.minimap", "pvpmatch", "queuestatus", "raidmanager", "unitframes", "groupfinder",
+  "help.hudtips", "help.minimap", "pvpmatch", "queuestatus", "raidmanager", "unitframes", "nameplates", "groupfinder",
   "channels", "quickjoin", "recentallies", "recruitafriend", "reportframe", "helpframe", "statusnotices",
   "bnettoast", "settingspanel", "settingstutorials", "editmode", "quickkeybind", "colorpicker", "chatconfig",
   "texttospeech", "chattabs", "combatlog", "addonlist", "scripterrors", "splash", "eventtrace", "chromietime",

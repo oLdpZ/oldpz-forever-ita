@@ -126,3 +126,54 @@ def test_keep_drops_a_kept_line_that_now_has_a_translation(tmp_path):
     tb.record_kept(data, [])
     table = (tmp_path / "pipeline" / "keep_english.tsv").read_text(encoding="utf-8").splitlines()
     assert table == [tb.KEEP_HEADER, f"quest\t1\ttitle\t{'a' * 16}\tMilly Osworth"]
+
+
+# ── a redraft to keep-English (`{"it": null}`) on a line that already has a machine Italian ─────────────────
+
+_MACHINE = {"class": "machine", "model": "m", "source": "draft-n01-sg14@2026-10-23", "imported": "2026-10-23"}
+_OFFICIAL = {"class": "official", "source": "wowhead@2026-10-23", "imported": "2026-10-23"}
+
+
+def _line(id_, it, prov, conflicts=()):
+    return {"id": id_, "field": "title", "it": it, "status": "trusted", "checks": [], "reasons": [],
+            "english": {"hash": "a" * 16, "src": "wdb@1.60.1.70450"}, "provenance": prov,
+            "conflicts": [{"it": c, "provenance": p} for c, p in conflicts]}
+
+
+def _keep_file(tmp_path, *ids):
+    keep = tmp_path / "redraft.keep.jsonl"
+    tb.write_jsonl(keep, [{"ref": f"r{i}", "kind": "quest_title", "en": "x", "targets": [[i, "title"]]}
+                          for i in ids])
+    return keep
+
+
+def test_keep_drops_the_machine_italian_a_redraft_kept_english(tmp_path, capsys):
+    """Quest 1 was drafted `Milly Osvalda` by a machine; a redraft says it stays English: the machine variant
+    goes (it would otherwise ship silently, the keep dropped as "translated") and the keep is recorded."""
+    data = _repo(tmp_path)
+    Store(data).save("quest", [_line(1, "Milly Osvalda", _MACHINE)])
+    assert tb.record_kept(data, [_keep_file(tmp_path, 1)]) == 1
+    assert Store(data).load("quest") == []
+    table = (tmp_path / "pipeline" / "keep_english.tsv").read_text(encoding="utf-8").splitlines()
+    assert table == [tb.KEEP_HEADER, f"quest\t1\ttitle\t{'a' * 16}\tMilly Osworth"]
+    assert "1 machine" in capsys.readouterr().out
+
+
+def test_keep_never_drops_an_official_or_human_variant_and_warns(tmp_path, capsys):
+    """Quest 1: a machine variant over Blizzard's Italian; quest 2: a person's. The machine one goes, the
+    official and human ones stay (they win anyway) and the keep is not recorded: a warning says so."""
+    data = _repo(tmp_path)
+    human = {"class": "human", "translator": "t", "source": "x@1", "imported": "2026-10-23"}
+    Store(data).save("quest", [
+        _line(1, "Milly Osvalda", _MACHINE, [("Milly Osworth la Bella", _OFFICIAL)]),
+        _line(2, "La miniera di Fargodeep", human),
+    ])
+    tb.record_kept(data, [_keep_file(tmp_path, 1, 2)])
+    lines = {ln["id"]: ln for ln in Store(data).load("quest")}
+    assert lines[1]["it"] == "Milly Osworth la Bella" and lines[1]["provenance"] == _OFFICIAL
+    assert lines[1]["conflicts"] == []
+    assert lines[2]["it"] == "La miniera di Fargodeep" and lines[2]["provenance"] == human
+    table = (tmp_path / "pipeline" / "keep_english.tsv").read_text(encoding="utf-8").splitlines()
+    assert table == [tb.KEEP_HEADER]
+    err = capsys.readouterr().err
+    assert "quest 1 title" in err and "quest 2 title" in err

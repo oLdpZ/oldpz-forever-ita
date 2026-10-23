@@ -91,4 +91,4 @@ held 577 submissions with about 27,000 quest lines from builds 69913 to 70205.
 - **Let forever-vo replace VMaNGOS where they differ.** Most differences are form, not wording, and each would mark
   an existing translation stale.
 - **Take single submissions.** One mistaken or tampered submission would decide a line nobody else confirmed.
-- **Wowhead's Forever pages.** Their terms forbid it as a data source.
+- **Wowhead's Forever pages.** Their terms forbid it as a data source (except the names of creatures, ADR-103).

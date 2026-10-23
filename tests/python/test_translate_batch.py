@@ -791,3 +791,67 @@ def test_cut_takes_the_templates_the_first_pass_could_not_place(client, capsys):
         (8, "description"): "unsupported_code:$@auracaster",
         (9, "description"): "branches_indistinguishable",
     }
+
+
+@pytest.fixture
+def units(tmp_path):
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "SCHEMA").write_text("1\n")
+    (tmp_path / "docs" / "content").mkdir(parents=True)
+    (tmp_path / "docs" / "content" / "translation-style-guide.md").write_text("version: sg1\n")
+    (tmp_path / "pipeline").mkdir()
+    data = tmp_path / "data"
+    Store(data, english=True).save("unit", [
+        _en(1, "name", "Defias Pillager"),      # no Italian → selected
+        _en(1, "subname", "Weapon Merchant"),   # selected by unit_subname only
+        _en(2, "name", "Flesh Eater"),          # official Italian → never cut
+        _en(3, "name", "Imp"),                  # official Italian == English: kept English → never cut
+        _en(4, "name", "Hogger"),               # drafted by a machine already → not cut
+    ])
+    Store(data).save("unit", [
+        _ja(2, "name", "trusted", {"class": "official", "source": "wago-itit@12", "imported": "2026-10-21"}),
+        _ja(4, "name", "trusted", _machine("draft-n01-sg1@2026-10-23")),
+    ])
+    (tmp_path / "pipeline" / "keep_english.tsv").write_text(
+        tb.KEEP_HEADER + "\nunit\t3\tname\t" + "0" * 16 + "\tImp\n", encoding="utf-8")
+    return tmp_path
+
+
+def test_cut_unit_name_skips_official(units):
+    rows = tb.cut(units / "data", "unit_name", 10, units / "b.jsonl")
+    assert [r["targets"] for r in rows] == [[[1, "name"]]]  # 2 official, 3 kept English, 4 drafted
+    assert rows[0]["kind"] == "unit_name"
+    # an NPC name is translated, not kept in English letters: its own text is not one of its `names`
+    assert "Defias Pillager" not in rows[0].get("names", [])
+
+
+def test_cut_unit_subname_takes_the_titles(units):
+    rows = tb.cut(units / "data", "unit_subname", 10, units / "b.jsonl")
+    assert [r["targets"] for r in rows] == [[[1, "subname"]]]
+
+
+def test_cut_unit_name_ids_filter(units):
+    ids = units / "ids.txt"
+    ids.write_text("99\n")
+    assert tb.cut(units / "data", "unit_name", 10, units / "b.jsonl", ids=ids) == []
+
+
+def test_a_reworded_english_cuts_a_kept_unit_again(units):
+    (units / "pipeline" / "keep_english.tsv").write_text(
+        tb.KEEP_HEADER + "\nunit\t3\tname\t" + "f" * 16 + "\tImp\n", encoding="utf-8")
+    rows = tb.cut(units / "data", "unit_name", 10, units / "b.jsonl")
+    assert [r["targets"] for r in rows] == [[[1, "name"]], [[3, "name"]]]
+
+
+def test_expand_unit_name_draft(tmp_path):
+    ok = _ok(tmp_path, [
+        {"ref": "a", "kind": "unit_name", "it": "Predone Defias", "targets": [[1, "name"]]},
+        {"ref": "b", "kind": "unit_subname", "it": "Venditore di armi", "targets": [[1, "subname"]]},
+    ])
+    assert tb.expand(ok, "n01-sg1", tmp_path / "out", version=1) == {"unit": 2}
+    assert tb.read_jsonl(tmp_path / "out" / "n01-sg1.unit.jsonl") == [
+        {"id": 1, "field": "name", "it": "Predone Defias"},
+        {"id": 1, "field": "subname", "it": "Venditore di armi"},
+    ]
+    assert "unit" in tb.STORE_TYPES
+    assert style.STYLED_FIELDS["unit"] == frozenset({"name", "subname"})

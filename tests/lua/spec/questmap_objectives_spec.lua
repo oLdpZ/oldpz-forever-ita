@@ -8,6 +8,8 @@ local QStub = require("tests.lua.spec.stub_questmap")
 local FILES = {}
 for _, f in ipairs(H.UI_FILES) do FILES[#FILES + 1] = f end
 FILES[#FILES + 1] = "Core/Objectives.lua"
+FILES[#FILES + 1] = "Core/Names.lua"
+FILES[#FILES + 1] = "Core/UnitNames.lua"
 FILES[#FILES + 1] = "UI/QuestFrame.lua"
 FILES[#FILES + 1] = "UI/QuestMap.lua"
 
@@ -85,6 +87,40 @@ describe("UI/QuestMap: objective lines", function()
     it("a kill line keeps the mob name and both counts", function()
       local _, lines = trackerLines()
       assert.are.equal("Kobold Verminを倒す: 3/10", lines[1].Text:GetText())
+    end)
+
+    it("a kill line names the mob as the unit table does (the world's name), the English under names = en",
+      function()
+      local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+      WFJ.UnitNames.buildIndex({ [1984] = { "Giovane Cinghiale Spinoso", nil, h1("Young Thistle Boar"), nil, ".m" } })
+      Q.quests[9].leaderboard = { { text = "0/4 Young Thistle Boar slain" }, { text = "3/10 Kobold Vermin slain" } }
+      local _, lines = trackerLines()
+      assert.are.equal("Giovane Cinghiale Spinosoを倒す: 0/4", lines[1].Text:GetText())
+      assert.are.equal("Kobold Verminを倒す: 3/10", lines[2].Text:GetText()) -- no shipped name: as written
+      Stub.keys.alt = true; WFJ.Modifier.refresh()
+      assert.are.equal("0/4 Young Thistle Boar slain", lines[1].Text:GetText())
+      Stub.keys.alt = false; WFJ.Modifier.refresh()
+      WFJ.Settings.set("names.style", "en")
+      assert.are.equal("Young Thistle Boarを倒す: 0/4", QM.objectiveJapanese("0/4 Young Thistle Boar slain", "t"))
+      WFJ.Settings.set("names.style", "it")
+      assert.are.equal("Giovane Cinghiale Spinosoを倒す: 0/4",
+        QM.objectiveJapanese("0/4 Young Thistle Boar slain", "t"))
+    end)
+
+    it("the index's memo never keeps a name of the old style past /fita nomi", function()
+      local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+      WFJ.UnitNames.buildIndex({ [1984] = { "Giovane Cinghiale Spinoso", nil, h1("Young Thistle Boar"), nil, ".m" } })
+      -- the kill templates are key-only today (match memoises no key for them), but a memoised result is the
+      -- arguments after the creatureName substitution: the "names" event drops the memo, whatever it holds
+      local line = "0/4 Young Thistle Boar slain"
+      WFJ.UIIndex:match(line)
+      assert.is_not_nil(WFJ.UIIndex.memo[line])
+      WFJ.Settings.set("names.style", "en")
+      assert.is_nil(WFJ.UIIndex.memo[line])
+      assert.are.equal(0, WFJ.UIIndex.memoCount)
+      assert.are.equal("Young Thistle Boarを倒す: 0/4", QM.objectiveJapanese(line, "t"))
+      WFJ.Settings.set("names.style", "it")
+      assert.are.equal("Giovane Cinghiale Spinosoを倒す: 0/4", QM.objectiveJapanese(line, "t"))
     end)
 
     it("a faction line shows the standings in Japanese and the faction as written", function()

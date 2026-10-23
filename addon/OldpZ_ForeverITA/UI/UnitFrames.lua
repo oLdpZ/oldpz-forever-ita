@@ -27,6 +27,20 @@
 --     keys (a phased reason is client-built text and never matches): the party frames from PartyFrame's pool at init,
 --     a compact frame's icon from the post-hook of CompactUnitFrame_UpdateCenterStatusIcon (registering is a table
 --     write, repeated harmlessly).
+-- One kind of NAME is written (ADR-103): an NPC's name on TargetFrame, FocusFrame, Boss1..5TargetFrame and their
+--   target-of-target (`frame.name`, set by UnitFrame_Initialize). The client writes it in UnitFrame_Update
+--   (self.name:SetText(GetUnitName(self.overrideName or self.unit)), mainline/unitframe.lua; TargetFrameMixin:Update
+--   and the target-of-target's Update call it by its global name) and in UnitFrame_OnEvent's UNIT_NAME_UPDATE branch.
+--   Both globals are post-hooked; the name is replaced only when Core/UnitNames answers for the English just read
+--   (a creature's GUID, the row's English), through Render (Alt shows the English; /fita nomi en and back re-run
+--   every frame: refreshNames). Player, pet, party and compact frames are never written (a vehicle's name in
+--   PlayerFrame neither). In combat too by default; NAMES_OUT_OF_COMBAT (below) is the one switch to stop that.
+--   ADR-058 check [from the mainline code as cited in this header and the retail family it shares, NOT re-read
+--   against a Forever 1.60.1 extract: none is on this machine]: the name FontString has a fixed size in the XML;
+--   no Blizzard code calls GetText / GetStringWidth / GetStringHeight on it or lays anything out from it, and no
+--   protected call (the secure unit button's Show/Hide by its unit watch, SetPoint by edit mode) reads it. Not found
+--   measured on a protected path, so it is written. UI/TaintWatch would name it on the first block; Task 12 checks it
+--   in game, in combat, with the boss frames up.
 -- Not here (stay English): a TextStatusBar's zero text (SetBarTextZeroText(DEAD), targetframe.lua:744,
 --   partymemberframe.lua:359, 809), written inside the health text update on every health event, beside values that
 --   can be secret; unit popup menu titles (RAID_TARGET_ICON, SET_FOCUS: the menu system's); HelpTips; edit-mode
@@ -40,12 +54,28 @@ UnitFrames.SURFACE = SURFACE
 local Compat = WFJ.Compat
 
 -- Names: every unit name widget of the named frames (the compact frames' `name` is pooled and never addressed here).
+-- NEVER_TOUCH is the DICTIONARY's refusal (Labels.show refuses these widgets on any surface, so a unit named like a UI
+-- word, "Raid", is never translated as one). The NPC names below are written through Render, which does not consult
+-- that list, so the target / focus / target-of-target / boss names stay listed here: the dictionary keeps away from
+-- them while the name writer owns them. PlayerName and PetName are never written by anything.
 UnitFrames.NEVER_TOUCH = {
   "PlayerFrame.PlayerFrameContent.PlayerFrameContentMain.PlayerName", "PlayerName",
   "TargetFrame.TargetFrameContent.TargetFrameContentMain.Name",
   "FocusFrame.TargetFrameContent.TargetFrameContentMain.Name",
   "TargetFrameToT.Name", "FocusFrameToT.Name", "PetName",
 }
+for i = 1, 5 do
+  UnitFrames.NEVER_TOUCH[#UnitFrames.NEVER_TOUCH + 1] = "Boss" .. i .. "TargetFrame.TargetFrameContent"
+    .. ".TargetFrameContentMain.Name"
+end
+
+-- The one switch for the NPC names on the target-style frames (ADR-103, Task 9): false (the default) writes them in
+-- combat too; true makes combat write-free for these FontStrings: on PLAYER_REGEN_DISABLED (Main →
+-- UnitFrames.onCombatStart, before the lockdown) the English goes back and the records are released, then nothing
+-- of this addon writes them (no Alt, no /fita nomi, no client update) until PLAYER_REGEN_ENABLED (Main →
+-- UnitFrames.onCombatEnd) puts the Italian back. Meant for the in-game check (Task 12): flip it here if the taint
+-- watch ever traces a block to these FontStrings.
+UnitFrames.NAMES_OUT_OF_COMBAT = false
 
 local TARGET_STYLE = { "TargetFrame", "FocusFrame", "Boss1TargetFrame", "Boss2TargetFrame", "Boss3TargetFrame",
   "Boss4TargetFrame", "Boss5TargetFrame" }
@@ -64,6 +94,8 @@ local GLOBAL_HOOKS = {
   { "CompactRaidGroup_InitializeForGroup", "onGroupInit" },
   { "CompactPartyFrame_Generate", "onPartyGenerate" },
   { "UnitFrame_UpdateTooltip", "onUnitTooltip" },
+  { "UnitFrame_Update", "onName" },
+  { "UnitFrame_OnEvent", "onUnitEvent" },
 }
 
 local function declareAll()
@@ -72,6 +104,8 @@ local function declareAll()
   Compat.declare(SURFACE, "compactParty", { "CompactPartyFrame" })
   Compat.declare(SURFACE, "tooltip", { "GameTooltip" })
   Compat.declare(SURFACE, "isSecret", { "issecretvalue" })
+  Compat.declare(SURFACE, "inCombat", { "InCombatLockdown" })
+  Compat.declare(SURFACE, "unitGUID", { "UnitGUID" })
   for _, hook in ipairs(GLOBAL_HOOKS) do Compat.declare(SURFACE, hook[1], { hook[1] }) end
   Compat.declare(SURFACE, "enDead", { "DEAD" })
   Compat.declare(SURFACE, "enOffline", { "PLAYER_OFFLINE" })
@@ -157,6 +191,117 @@ function UnitFrames.onUnitTooltip(frame)
   return WFJ.HelpTooltip.walkAs(tt, RIGHT_CLICK)
 end
 
+-- The frames whose `name` this surface may write: the target-style frames and their target-of-target, found at init.
+-- Weak-keyed: { [frame] = record key }. UnitFrame_Update also runs for the player, pet and party frames (a vehicle's
+-- name in the player frame has a Vehicle- GUID): none of them is here, so none is ever written.
+local nameFrames = setmetatable({}, { __mode = "k" })
+
+local function registerNameFrames()
+  for _, name in ipairs(TARGET_STYLE) do
+    local frame = get(name)
+    if type(frame) == "table" then
+      nameFrames[frame] = "name." .. name
+      if type(frame.totFrame) == "table" then nameFrames[frame.totFrame] = "name." .. name .. ".tot" end
+    end
+  end
+end
+
+local function inCombat()
+  local fn = get("inCombat")
+  return type(fn) == "function" and fn() and true or false
+end
+
+-- Out-of-combat mode: from PLAYER_REGEN_DISABLED to PLAYER_REGEN_ENABLED (or while InCombatLockdown() says so) the
+-- name FontStrings get NO write at all from this addon: no Italian, no English put back, no font.
+local combatHeld = false
+local function quiet()
+  return UnitFrames.NAMES_OUT_OF_COMBAT and (combatHeld or inCombat())
+end
+
+-- Forgets a name record without reading or writing its widget (so Render's refresh, on Alt, has nothing to sync).
+local function forget(key)
+  WFJ.SurfaceState.records(SURFACE)[key] = nil
+end
+
+-- hooksecurefunc target (UnitFrame_Update; also called for UNIT_NAME_UPDATE and the names / combat refreshes): an
+-- NPC's name on one of the target-style frames takes its `unit` row's Italian (Core/UnitNames: a creature's GUID,
+-- the English shown hashing to the row's). Written only over the English just read; our own text still showing (an
+-- event for another unit) is left alone; anything else drops this frame's record without writing over the client.
+-- → true when the name was written
+function UnitFrames.onName(frame)
+  local key = frame ~= nil and nameFrames[frame] or nil
+  local fs = key and frame.name or nil
+  if type(fs) ~= "table" or type(fs.GetText) ~= "function" then return false end
+  if quiet() then -- normally released at PLAYER_REGEN_DISABLED already; a record left over is forgotten unwritten
+    forget(key)
+    return false
+  end
+  local text = fs:GetText()
+  if secret(text) then
+    WFJ.SurfaceState.drop(SURFACE, key)
+    return false
+  end
+  local rec = WFJ.SurfaceState.get(SURFACE, key)
+  if rec and rec.fs == fs and rec.applied ~= nil and text == rec.applied then return false end
+  local unit = frame.overrideName or frame.unit
+  local U = WFJ.UnitNames
+  local ja = U and type(text) == "string" and U.forUnit(unit, text) or nil
+  local unitGUID = get("unitGUID")
+  local id = ja and type(unitGUID) == "function" and WFJ.Collector.creatureId(unitGUID(unit)) or nil
+  if not id then
+    WFJ.SurfaceState.drop(SURFACE, key)
+    return false
+  end
+  return WFJ.Render.show(SURFACE, key, fs, text, "ui", "unit.name", id)
+end
+
+-- hooksecurefunc target (UnitFrame_OnEvent, every unit event of every unit frame): only UNIT_NAME_UPDATE rewrites
+-- the name (mainline/unitframe.lua), so only it is looked at.
+function UnitFrames.onUnitEvent(frame, event)
+  if event == "UNIT_NAME_UPDATE" then return UnitFrames.onName(frame) end
+  return false
+end
+
+-- Every name frame again: the English back where our text still shows, then the Italian if the style asks for it.
+-- → the number of names written
+function UnitFrames.refreshNames()
+  local n = 0
+  if quiet() then return 0 end -- out-of-combat mode in combat: onCombatEnd runs this again
+  for frame, key in pairs(nameFrames) do
+    WFJ.SurfaceState.drop(SURFACE, key)
+    if UnitFrames.onName(frame) then n = n + 1 end
+  end
+  return n
+end
+-- The State "names" event (/fita nomi): Render's refresh does not consult the names style, so this surface does.
+WFJ.State.on("names", function() UnitFrames.refreshNames() end)
+
+-- PLAYER_REGEN_DISABLED (Main), still before the lockdown: in out-of-combat mode every name goes back to the
+-- client's English and its record is released, so nothing (Alt, /fita nomi, a client update) writes it in combat.
+-- → records released
+function UnitFrames.onCombatStart()
+  if not UnitFrames.NAMES_OUT_OF_COMBAT then return 0 end
+  combatHeld = false -- drop's own write happens now, before the hold
+  local n = 0
+  for _, key in pairs(nameFrames) do
+    if WFJ.SurfaceState.get(SURFACE, key) then
+      WFJ.SurfaceState.drop(SURFACE, key)
+      n = n + 1
+    end
+  end
+  combatHeld = true
+  WFJ.Render.updateBanner(SURFACE)
+  return n
+end
+
+-- PLAYER_REGEN_ENABLED (Main): in out-of-combat mode, the Italian over the names the client wrote during combat.
+-- → names written
+function UnitFrames.onCombatEnd()
+  combatHeld = false
+  if not UnitFrames.NAMES_OUT_OF_COMBAT then return 0 end
+  return UnitFrames.refreshNames()
+end
+
 -- The party member frames PartyFrame's pool holds now. → the number of icons registered
 local function registerPartyIcons()
   local party = get("partyFrame")
@@ -182,6 +327,7 @@ function UnitFrames.init()
   local target = get("TargetFrame")
   if hooked or type(target) ~= "table" or type(target.TargetFrameContent) ~= "table" then return false end
   hooked = true
+  registerNameFrames()
   for _, hook in ipairs(GLOBAL_HOOKS) do
     local name, handler = hook[1], hook[2]
     if type(get(name)) == "function" then

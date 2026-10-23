@@ -15,6 +15,8 @@ QUEST = Scope(
     "pfquest@1",
 )
 ITEM = Scope("item", {"name": "Tough Jerky"}, "wago@1")
+UNIT = Scope("unit", {"name": "Defias Pillager", "subname": "Weapon Merchant"}, "vmangos@4641790")
+MACHINE = {"class": "machine", "model": "m", "source": "draft-n01-sg14@2026-10-23", "imported": "2026-10-23"}
 
 
 def line(it, field="description", **kw):
@@ -85,6 +87,15 @@ CASES = [
         [],
     ),
     ("item chinese", line("见鬼"), ITEM, "h", "rejected", ["not_italian"], []),
+    (
+        "a machine NPC name ships trusted",
+        line("Predone Defias", field="name", provenance=MACHINE),
+        UNIT,
+        "h",
+        "trusted",
+        [],
+        [],
+    ),
     (
         "stale on hash change",
         line("Sì, è lì.", english={"hash": "old", "src": "pfquest@0"}),

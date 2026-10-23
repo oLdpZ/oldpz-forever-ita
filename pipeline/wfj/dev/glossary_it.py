@@ -10,6 +10,10 @@
   same name (`<table>.csv` in the `--forever` folder, `make wago-fetch-forever-names`);
 - `oggetto` (ItemSparse `Display_lang`) and `abilita` (SpellName `Name_lang`): compared with the item / spell
   names in data/english.
+- `creatura` (NPC names): the `name` rows of `pipeline/creature_official.tsv` (`make creature-official`,
+  Creature.db2 or Wowhead, already checked against data/english/unit), kept while their English is still the
+  unit name in data/english. A one-word NPC name is kept only where the English corpus never writes the word
+  in lower case (`Hogger` yes, `Imp` / `Wolf` no: `creature_terms`).
 
 A row is kept only where the retail English for the id is Forever's English, the Italian differs from it, and
 the name is no developer text (`wago.INTERNAL_TEXT`). A one-word item or spell name ("Charge", "Food",
@@ -34,7 +38,7 @@ term already has: they are marked like any name, but the lint only warns when a 
 longest first and without overlap ("Stormwind City" → Roccavento, not the faction "Stormwind").
 `translate_batch cut` attaches them to a row as `glossary` (`[en, it, kind]`); `translate_lint` reports
 `glossary_term` when a draft carries none of a term's Italian forms: an error for a `zona`, `fazione`,
-`classe` or `razza` name, a warning for an `oggetto` or `abilita` one.
+`classe` or `razza` name, a warning for an `oggetto`, `abilita` or (for now) `creatura` one.
 """
 
 from __future__ import annotations
@@ -47,6 +51,7 @@ from collections import Counter
 from collections.abc import Iterable
 from pathlib import Path
 
+from wfj.dev import creature_official
 from wfj.io import retail, tables_stamp
 from wfj.io.jsonl_store import Store
 from wfj.io.wago import INTERNAL_TEXT
@@ -61,9 +66,11 @@ CURATED_KIND = "curato"
 # what a curated row may name (`tipo`): documentation for the reader, all loaded as CURATED_KIND
 CURATED_TYPES = ("zona", "luogo", "fazione", "organizzazione", "popolo", "tribù")
 GlossTerm = tuple[str, int, str, str]  # (kind, id, en, it)
-KINDS = ("zona", "fazione", "classe", "razza", "oggetto", "abilita")
-# Matcher order: an official kind before a curated one
-ORDER = (*KINDS, CURATED_KIND)
+KINDS = ("zona", "fazione", "classe", "razza", "oggetto", "abilita", "creatura")
+CREATURE_KIND = "creatura"
+# Matcher order (an (en, it) pair listed under two kinds keeps the first): an NPC name right after a zone,
+# every official kind before a curated one
+ORDER = ("zona", CREATURE_KIND, "fazione", "classe", "razza", "oggetto", "abilita", CURATED_KIND)
 # kind → (table, English column, Italian columns: male first, then female when the kind has one)
 TABLES: dict[str, tuple[str, str, tuple[str, ...]]] = {
     "zona": ("AreaTable", "AreaName_lang", ("AreaName_lang",)),
@@ -74,7 +81,9 @@ TABLES: dict[str, tuple[str, str, tuple[str, ...]]] = {
     "abilita": ("SpellName", "Name_lang", ("Name_lang",)),
 }
 # the kinds whose Forever English is the data/english name line, by type
-STORE_TYPES = {"oggetto": "item", "abilita": "spell"}
+STORE_TYPES = {"oggetto": "item", "abilita": "spell", CREATURE_KIND: "unit"}
+# `creatura` has no retail table here: its rows are pipeline/creature_official.tsv's `name` rows
+CREATURES = "creature_official.tsv"
 # the kinds whose one-word names are kept
 ONE_WORD = frozenset({"zona", "fazione", "classe", "razza"})
 WORD = re.compile(r"[A-Za-z0-9À-ÿ]+(?:['’\-][A-Za-z0-9À-ÿ]+)*")
@@ -82,7 +91,9 @@ MIN_LEN = 3
 # a one-word zone / faction name is a common word when the corpus writes it lower case this often (×) or more
 COMMON_RATIO = 5
 COMMON_KINDS = frozenset({"zona", "fazione"})
-CORPUS_TYPES = ("quest", "gossip", "book", "objective", "area", "item", "spell", "unit", "ui")
+# Not `unit`: an NPC name is a title-cased label (`Frenzy`, `Basilisk`), so it would count a common word as
+# capitalised and turn it into a name (`Frenzy` → the faction "Piranha")
+CORPUS_TYPES = ("quest", "gossip", "book", "objective", "area", "item", "spell", "ui")
 
 
 def _column(path: Path, id_col: str, cols: Iterable[str]) -> dict[int, list[str]]:
@@ -128,17 +139,125 @@ def _usable(kind: str, en: str, it: str, counts: Counter[str]) -> bool:
     return kind in ONE_WORD
 
 
+def creature_terms(
+    path: Path, forever: dict[int, str], counts: Counter[str]
+) -> tuple[list[GlossTerm], list[str]]:
+    """The `creatura` terms: the `name` rows of pipeline/creature_official.tsv whose English is still
+    Forever's (`forever`, data/english/unit) and whose Italian differs. A one-word name is kept only where
+    the English corpus never writes that word in lower case (`Hogger`): `Imp`, `Wolf`, `Defender` are also
+    ordinary words, and every line saying "the imp" would carry a name the draft must not use. → (terms,
+    the one-word names dropped)."""
+    terms: list[GlossTerm] = []
+    dropped: list[str] = []
+    for id_, field, en, it, _ in creature_official.read_tsv(path):
+        if field != "name" or forever.get(id_) != en:
+            continue
+        if not en or not it or it == en or len(en) < MIN_LEN or INTERNAL_TEXT.search(en):
+            continue
+        if any(c in en + it for c in "\t\n\r"):
+            continue
+        if len(WORD.findall(en)) < 2 and counts[en.lower()]:
+            dropped.append(en)
+            continue
+        terms.append((CREATURE_KIND, id_, en, it))
+    return terms, dropped
+
+
+def _unit_rows(store: Store, english: Store) -> dict[str, list[tuple[bool, str, int]]]:
+    """Every trusted `unit` `name` line with Italian, by its English: [(official, Italian, id)]."""
+    en_of = {ln["id"]: ln["en"].strip() for ln in english.load("unit") if ln["field"] == "name"}
+    found: dict[str, list[tuple[bool, str, int]]] = {}
+    for ln in store.load("unit"):
+        if ln["field"] != "name" or ln.get("status") != "trusted" or not isinstance(ln.get("it"), str):
+            continue
+        en, it = en_of.get(ln["id"]), ln["it"].strip()
+        if not en or not it:
+            continue
+        official = (ln.get("provenance") or {}).get("class") == "official"
+        found.setdefault(en, []).append((official, it, ln["id"]))
+    return found
+
+
+def _chosen(rows: list[tuple[bool, str, int]]) -> str:
+    """One Italian for an English name (spec §5b): the official one, else the most common, then the first in
+    Italian order."""
+    tally = Counter(it for _, it, _ in rows)
+    official = Counter(it for o, it, _ in rows if o)
+    pool = official or tally
+    return sorted(pool, key=lambda f: (-pool[f], f))[0]
+
+
+def unit_forms(store: Store, english: Store) -> dict[str, str]:
+    """English NPC name → the one Italian every place shows for it (`_chosen`): the unit table's trusted
+    `name` lines, every creature id with that English. `dev.remark_names` makes every id ship it and every
+    NPC-name marker carry it; `wfj validate` (`rule_unit_names`) refuses data where they do not."""
+    return {en: _chosen(rows) for en, rows in _unit_rows(store, english).items()}
+
+
+def npc_marker_forms(repo: Path) -> dict[str, str]:
+    """English NPC name → the Italian half its marker must carry: `unit_forms` with the markers inside the
+    name resolved to Italian (`⟦Dire Wolf=Metalupo⟧ Affamato` → `Metalupo Affamato`), leaving out an English
+    that is a glossary term of another kind than `creatura` (it keeps its own forms, `load_marker_matcher`).
+    `repo`: the folder holding data/ and pipeline/."""
+    from wfj.core import names
+
+    data = Path(repo) / "data"
+    other = set()
+    if (Path(repo) / "pipeline" / GLOSSARY).is_file():
+        other = {en for kind, _, en, _ in load_terms(repo) if kind != CREATURE_KIND}
+    forms = unit_forms(Store(data), Store(data, english=True))
+    return {en: names.strip_marks(it) for en, it in forms.items() if en not in other}
+
+
+def unit_terms(data: Path, counts: Counter[str], conflicts: list[str] | None = None) -> list[GlossTerm]:
+    """The NPC names of the `unit` table as `creatura` terms, for the marker pass (`dev.remark_names`): every
+    trusted `name` row, official or machine, so a name drafted by a lot is the one the text shows too. The
+    rules of `creature_terms` (a one-word name only where the corpus never writes it in lower case). One
+    Italian per English: `_chosen` (the official one, else the most common, then the first in Italian order);
+    each English that had more than one is appended to `conflicts`. `data`: the data/ folder."""
+    found = _unit_rows(Store(Path(data)), Store(Path(data), english=True))
+    terms: list[GlossTerm] = []
+    for en, all_rows in sorted(found.items()):
+        if len(en) < MIN_LEN or INTERNAL_TEXT.search(en) or any(c in en for c in "\t\n\r"):
+            continue
+        if len(WORD.findall(en)) < 2 and counts[en.lower()]:
+            continue
+        rows = [r for r in all_rows if r[1] != en and not any(c in r[1] for c in "\t\n\r")]
+        if not rows:
+            continue
+        it = _chosen(rows)
+        tally = Counter(f for _, f, _ in rows)
+        if len(tally) > 1 and conflicts is not None:
+            shown = ", ".join(f"{f} ×{n}" for f, n in sorted(tally.items()))
+            conflicts.append(f"{en}: {shown} → {it}")
+        terms.append((CREATURE_KIND, min(i for _, f, i in rows if f == it), en, it))
+    return terms
+
+
 def build_glossary(
-    retail_dir: Path, english_store: Path, forever_dir: Path | None = None
+    retail_dir: Path,
+    english_store: Path,
+    forever_dir: Path | None = None,
+    creatures: Path | None = None,
+    dropped: list[str] | None = None,
 ) -> list[GlossTerm]:
     """Every term of the glossary, sorted by kind (KINDS), id, Italian. `english_store` is data/english; a
-    kind whose Forever table is not in `forever_dir` is left out (`missing_kinds` says which)."""
+    kind whose Forever table is not in `forever_dir` is left out (`missing_kinds` says which); `creatura`
+    only with `creatures` (pipeline/creature_official.tsv), its one-word names left out appended to
+    `dropped`."""
     english = Store(Path(english_store).parent, english=True)
     counts = word_counts(english)
     terms: set[GlossTerm] = set()
     for kind in KINDS:
         forever = _forever_english(kind, english, forever_dir)
         if forever is None:
+            continue
+        if kind == CREATURE_KIND:
+            if creatures is not None:
+                kept, left_out = creature_terms(creatures, forever, counts)
+                terms.update(kept)
+                if dropped is not None:
+                    dropped += left_out
             continue
         table, en_col, it_cols = TABLES[kind]
         r_en = _column(retail.csv_path(retail_dir, table, "enUS"), "ID", [en_col])
@@ -290,6 +409,28 @@ def load_matcher(repo: Path) -> Matcher | None:
     return Matcher(load_terms(repo)) if path.is_file() else None
 
 
+def load_marker_matcher(repo: Path, conflicts: list[str] | None = None) -> Matcher | None:
+    """`load_matcher` plus the `unit` table's NPC names (`unit_terms`, data/ in `repo`): the terms the marker
+    pass (`dev.remark_names`) marks. A glossary term keeps its English: a unit name spelt like one is left
+    out. Every other NPC name of several words (data/english/unit, no Italian yet) is a term of its own
+    English: never marked (`names` skips a term whose two forms agree), it only keeps a shorter name inside
+    it from being marked on its own (`Peddlefeet` in `Kwee Q. Peddlefeet`). None when the repository has no
+    glossary."""
+    path = Path(repo) / "pipeline" / GLOSSARY
+    if not path.is_file():
+        return None
+    terms = load_terms(repo)
+    taken = {en for _, _, en, _ in terms}
+    data = Path(repo) / "data"
+    english = Store(data, english=True)
+    units = [t for t in unit_terms(data, word_counts(english), conflicts) if t[2] not in taken]
+    taken |= {en for _, _, en, _ in units}
+    whole = {ln["en"].strip(): ln["id"] for ln in english.load("unit") if ln["field"] == "name"}
+    held = [(CREATURE_KIND, id_, en, en) for en, id_ in sorted(whole.items())
+            if en not in taken and len(WORD.findall(en)) >= 2]
+    return Matcher(terms + units + held)
+
+
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="glossary_it", description=__doc__.split("\n\n")[0])
     ap.add_argument("--retail", type=Path, required=True)
@@ -304,7 +445,10 @@ def main(argv: list[str]) -> int:
         tables_stamp.check(retail.files(a.retail, tables), "wago", a.build)
         named = [a.forever / f"{TABLES[k][0]}.csv" for k in KINDS if k not in STORE_TYPES]
         tables_stamp.check(named, "wago", a.forever_build)
-        terms = build_glossary(a.retail, a.data / "english", a.forever)
+        creatures = a.out.with_name(CREATURES)
+        one_word: list[str] = []
+        terms = build_glossary(a.retail, a.data / "english", a.forever,
+                               creatures if creatures.is_file() else None, one_word)
         derived_file = a.out.with_name(DERIVED)
         derived = derived_terms(derived_file, terms) if derived_file.is_file() else []
     except (OSError, ValueError) as e:
@@ -315,6 +459,9 @@ def main(argv: list[str]) -> int:
     counts = {k: sum(1 for t in terms if t[0] == k) for k in KINDS}
     shown = ", ".join(f"{k} {n}" for k, n in counts.items())
     print(f"glossary_it: {len(terms)} terms → {a.out.name} ({shown})")
+    if not creatures.is_file():
+        print(f"glossary_it: no {CREATURES}: no creatura terms (make creature-official)")
+    print(f"glossary_it: creatura: {len(one_word)} one-word names left out (lower case in the corpus)")
     return 0
 
 

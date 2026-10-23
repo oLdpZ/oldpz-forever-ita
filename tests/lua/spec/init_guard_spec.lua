@@ -48,6 +48,7 @@ local ORDER = {
   { "damagemeter", "DamageMeter" }, { "deathrecap", "DeathRecap" }, { "gamepadedit", "GamepadEdit" },
   { "hudlabels", "HudLabels" }, { "hudtips", "HudTips" }, { "minimap", "Minimap" }, { "pvpmatch", "PvPMatch" },
   { "queuestatus", "QueueStatus" }, { "raidmanager", "RaidManager" }, { "unitframes", "UnitFrames" },
+  { "nameplates", "NamePlates" },
   { "groupfinder", "GroupFinder" }, { "channels", "Channels" }, { "quickjoin", "QuickJoin" }, { "recentallies",
   "RecentAllies" }, { "recruitafriend", "RecruitAFriend" }, { "reportframe", "ReportFrame" }, { "helpframe",
   "HelpFrame" }, { "statusnotices", "StatusNotices" }, { "bnettoast", "BNetToast" }, { "settingspanel",

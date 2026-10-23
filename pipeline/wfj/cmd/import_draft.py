@@ -89,7 +89,7 @@ def merge_draft(
 # the types a client build rewords, so a machine redraft of a stale line is judged fresh
 # (ADR-003). Gossip is keyed by its English hash (a rewording is a new key, never stale); books come from
 # VMaNGOS, not the client.
-REVERIFY_TYPES = ("ui", "quest", "objective", "area", "item", "spell")
+REVERIFY_TYPES = ("ui", "quest", "objective", "area", "item", "spell", "unit")
 
 
 def reverify(

@@ -233,7 +233,7 @@ WFJ.Data.add("spell", {
   [17564] = { "Contamina un'⟦Essence of Water=Essenza d'Acqua⟧, trasmutandola in un'⟦Essence of Undeath=Essenza di Non Morte⟧.", nil, 0xe630d387, nil, "um" },
   [17565] = { "Trasmuta un'⟦Living Essence=Essenza Vivente⟧ in un'⟦Essence of Earth=Essenza di Terra⟧.", nil, 0xf6f46a89, nil, "um" },
   [17566] = { "Trasmuta un'⟦Essence of Earth=Essenza di Terra⟧ in un'⟦Living Essence=Essenza Vivente⟧.", nil, 0xee3a0ff9, nil, "um" },
-  [17567] = { "Clicca col pulsante destro per evocare e congedare il tuo Blood Parrot.", nil, 0x679c4a2a, nil, "um" },
+  [17567] = { "Clicca col pulsante destro per evocare e congedare il tuo ⟦Blood Parrot=Pappagallo di Sangue⟧.", nil, 0x679c4a2a, nil, "um" },
   [17586] = { "Ti insegna a creare una ⟦Major Healing Potion=Pozione Maggiore di Cura⟧.", nil, 0x7f29d9e0, nil, "um" },
   [17613] = { "Cura un alleato con magia oscura.", nil, 0xf7e48e1f, nil, "um" },
   [17615] = { "Colpisce un nemico con un dardo antimana. Per ogni punto di mana consumato, il bersaglio subisce $N1 danni.", nil, 0x5ae7b2cb, nil, "um" },

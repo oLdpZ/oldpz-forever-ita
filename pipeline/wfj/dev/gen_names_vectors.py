@@ -32,6 +32,9 @@ CASES: list[tuple[str, str]] = [
     ("the_elided", "Torna dall'⟦The Den=Antro del Tirocinio⟧ e nell’⟦The Den=Antro del Tirocinio⟧."),
     ("the_kept",
      "Vai verso ⟦The Barrens=Savane⟧, poi Isola ⟦The Barrens=Savane⟧; ⟦The Den=Antro del Tirocinio⟧."),
+    # NPC names (the unit table's Italian), a name inside a longer one marked as the longer whole name
+    ("creature", "Parla con ⟦Senani Thunderheart=Senani Cuore Tonante⟧, poi uccidi il "
+     "⟦Defias Thug Leader=Capo dei Briganti Defias⟧ e un ⟦Defias Thug=Brigante Defias⟧."),
 ]
 
 

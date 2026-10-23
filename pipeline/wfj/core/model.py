@@ -25,7 +25,7 @@ FIELDS: dict[str, list[str]] = {
     # string from the tooltip `description` under the same spell id.
     "spell": ["description", "aura"],
     "gossip": ["text"],
-    "unit": ["name"],
+    "unit": ["name", "subname"],
     "ui": ["text"],
     # book pages (id = the page_text entry). There is no trainer greeting kind: Forever's trainer UI has no
     # greeting.
@@ -42,7 +42,7 @@ ENGLISH_FIELDS: dict[str, list[str]] = {
     "item": ["name", "description"],
     "spell": ["name", "description", "aura"],
     "gossip": ["text"],
-    "unit": ["name"],
+    "unit": ["name", "subname"],
     "ui": ["text"],
     # objective: id = the QuestObjective id, from the quest cache. book: id = the page_text entry.
     "objective": ["text"],

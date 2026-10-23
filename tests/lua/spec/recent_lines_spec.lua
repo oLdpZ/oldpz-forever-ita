@@ -38,7 +38,9 @@ describe("Core/RecentLines", function()
     assert.are.same({ "area", "text" }, { R.address("area") })
     assert.is_nil(R.address("quest")) -- five fields: a bare quest kind names no line
     assert.is_nil(R.address("quest.nope"))
-    assert.is_nil(R.address("unit"))
+    assert.are.same({ "unit", "name" }, { R.address("unit.name") })
+    assert.are.same({ "unit", "subname" }, { R.address("unit.subname") })
+    assert.is_nil(R.address("unit")) -- two fields: a bare unit kind names no line
   end)
 
   it("records the address, the hash of the stored Japanese, the surface and the Japanese, never English",
@@ -54,6 +56,7 @@ describe("Core/RecentLines", function()
     assert.is_nil(R.note("item.description", 25, "tooltip"))
     assert.is_nil(R.note("quest.title", 999, "questframe"))
     assert.is_nil(R.note("unit", 1, "tooltip"))
+    assert.is_nil(R.note("unit.name", 999999999, "tooltip"))
     assert.are.equal(0, #R.list())
   end)
 
@@ -201,6 +204,8 @@ describe("every Render.show caller records a store line or nothing", function()
     ["UI/CombatText.lua"] = { "ui" },
     ["UI/Gossip.lua"] = { "gossip" },
     ["UI/TooltipUnit.lua"] = { "quest.title" },
+    ["UI/UnitFrames.lua"] = { "unit.name" }, -- an NPC's name on the target-style frames
+    ["UI/NamePlates.lua"] = { "unit.name" }, -- an NPC's name on its nameplate
   }
 
   it("lists exactly the files that call Render.show (directly or passed on, as UI/Gossip does)", function()

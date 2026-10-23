@@ -19,7 +19,9 @@ def test_real_toc_fields_and_load_order(root):
     tail = [
         "Core/Lookup.lua",
         "Core/Names.lua",  # marked names, read by Lookup at call time (spec §8)
-        "Core/Align.lua", "Core/State.lua", "Core/Settings.lua",
+        "Core/Align.lua", "Core/State.lua",
+        "Core/UnitNames.lua",  # NPC names by GUID; registers on State's "names" event at load
+        "Core/Settings.lua",
         "Core/Modifier.lua",
         "Core/Placeholders.lua", "Core/Translator.lua", "Core/UIStringKeys.lua", "Core/UIStrings.lua",
         "Core/Objectives.lua",  # objective lines
@@ -66,7 +68,8 @@ def test_real_toc_fields_and_load_order(root):
         "UI/Wardrobe.lua", "UI/Inspect.lua", "UI/Legacy.lua", "UI/Statistics.lua", "UI/Widgets.lua", "UI/Macro.lua", "UI/SpellSearch.lua",
         "UI/TimeManager.lua", "UI/CombatText.lua", "UI/CooldownViewer.lua", "UI/DamageMeter.lua",
         "UI/DeathRecap.lua", "UI/GamepadEdit.lua", "UI/HudLabels.lua", "UI/HudTips.lua", "UI/Minimap.lua",
-        "UI/PvPMatch.lua", "UI/QueueStatus.lua", "UI/RaidManager.lua", "UI/UnitFrames.lua", "UI/GroupFinder.lua",
+        "UI/PvPMatch.lua", "UI/QueueStatus.lua", "UI/RaidManager.lua", "UI/UnitFrames.lua", "UI/NamePlates.lua",
+        "UI/GroupFinder.lua",
         "UI/Channels.lua", "UI/QuickJoin.lua", "UI/RecentAllies.lua", "UI/RecruitAFriend.lua",
         "UI/ReportFrame.lua", "UI/HelpFrame.lua", "UI/StatusNotices.lua", "UI/BNetToast.lua",
         "UI/SettingsPanel.lua", "UI/SettingsTutorials.lua", "UI/EditMode.lua", "UI/QuickKeybind.lua",
@@ -97,7 +100,7 @@ def test_real_toc_fields_and_load_order(root):
     assert generated == sorted(
         generated,
         key=lambda f: (
-            ["Meta", "Vectors", "Placeholders", "Quest", "Item", "Spell", "Objective", "Area", "Gossip", "Book", "UI", "Reading", "Gloss"].index(
+            ["Meta", "Vectors", "Placeholders", "Quest", "Item", "Spell", "Objective", "Area", "Unit", "Gossip", "Book", "UI", "Reading", "Gloss"].index(
                 f.split("/")[1].split("_")[0].replace(".lua", "")
             ),
             f,

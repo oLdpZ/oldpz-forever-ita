@@ -237,3 +237,37 @@ def test_the_committed_store_is_planned_once_per_session(root):
     committed_plan = "generate.plan(" + 'Store(root / "data")'  # joined so this file does not match itself
     for path in sorted((root / "tests/python").glob("test_*.py")):
         assert committed_plan not in path.read_text(encoding="utf-8"), path.name
+
+
+def test_generate_writes_unit_rows(root, tmp_path):
+    """A shipped NPC name generates `Data/Unit/Unit_0012.lua` rows `{ name, subname, h1, h1, status }` keyed by the
+    creature id (id // 1000 shards); Const.lua lays unit out as schema.SLOTS does."""
+    import re
+
+    from wfj.core.hashing import key
+    from wfj.core.model import english_line, entry
+    from wfj.core.normalize import normalize_v1
+    from wfj.emit import lua_writer
+
+    en = "Senani Thunderheart"
+    data = tmp_path / "data"
+    data.mkdir()
+    (data / "SCHEMA").write_text("1\n", encoding="utf-8")
+    Store(data, english=True).save("unit", [english_line(12696, "name", en, key(normalize_v1(en)), "vmangos@4641790")])
+    ln = entry(12696, "name", "Senani Cuore Tonante", prov={"class": "machine", "model": "m",
+                                                            "source": "draft-unit-sg1@2026-10-23",
+                                                            "imported": "2026-10-23"})
+    ln["status"], ln["english"] = "trusted", {"hash": key(normalize_v1(en)), "src": "vmangos@4641790"}
+    Store(data).save("unit", [ln])
+    planned = generate.plan(Store(data), generate.vectors_rows(root / "data"))
+    shard = planned["Data/Unit/Unit_0012.lua"]
+    h1 = lua_writer.h1_literal(key(normalize_v1(en)))
+    assert 'WFJ.Data.add("unit", {' in shard
+    assert '"Senani Cuore Tonante"' in shard and h1 in shard and "[12696]" in shard
+    assert "Data/Unit/Unit_0012.lua" in generate.toc_files(planned)
+    meta = planned["Data/Meta.lua"]
+    assert "unit = 1" in meta and 'unit = { "name", "subname" }' in meta
+    const = (root / ADDON / "Core/Const.lua").read_text(encoding="utf-8")
+    m = re.search(r"^  unit = \{ fields = \{ \"name\", \"subname\" \}, hash = (\d+), status = (\d+) \},$", const, re.M)
+    assert m
+    assert schema.SLOTS["unit"] == {"fields": ["name", "subname"], "hash": int(m.group(1)), "status": int(m.group(2))}

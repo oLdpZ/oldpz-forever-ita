@@ -13,11 +13,14 @@
 -- tooltip whose owner it does not have registered as foreign, forgetting every record on its surface, which put the
 -- client's English straight back over these lines. Records here are keyed by line, re-rendered on a modifier change
 -- like every surface's, and released on the tooltip's OnHide so a later item or spell tooltip never inherits them.
--- Only lines 2 and below are read, and only against the keys below: line 1 is the unit's name, and a guild line
--- ("<Guild>"), a title or any server line matches none of them, so it stays as the client wrote it (names stay
--- in English). A race, class or pet family inside a level line is kept as shown; a creature type ("Humanoid") takes
--- its CreatureType row. A player's tooltip never takes the creature-type templates: "Level 60 Undead" is the same
--- text for an Undead player (race, stays English) and an undead creature, and only the unit tells them apart
+-- Line 1 is the unit's name: an NPC's takes the Italian of its `unit` row, and so does its subtitle on the line after
+-- it ("<Weapon Merchant>"), through Core/UnitNames (ADR-103: only a creature's GUID, only when the English shown is
+-- the row's; brackets and colour codes kept); a player's, a pet's or an object's name stays as written. The other
+-- lines are read only against the keys below: a guild line ("<Guild>"), a player's title or any server line
+-- matches none of them, so it stays as the client wrote it. A race, class or pet family inside a level line is
+-- kept as shown; a creature type ("Humanoid") takes its CreatureType row. A player's tooltip never takes the
+-- creature-type templates: "Level 60 Undead" is the same text for an Undead player (race, stays English) and an
+-- undead creature, and only the unit tells them apart
 -- (C_PlayerInfo.GUIDIsPlayer on the tooltip data's guid, as blizzard_objectapi/mainline/playerlocation.lua:59 does).
 -- A client with no tooltip data processor is left untouched (init returns false).
 local _, WFJ = ...
@@ -206,6 +209,46 @@ function TooltipUnit.minimapBlock(text, single)
   return block, notes
 end
 
+-- A line's decoration around its words: a leading colour code, a trailing |r and, for a subtitle, the "<" ">" the
+-- client may draw around it. → before, words, after
+local function decoration(text, brackets)
+  local before = text:match("^|c%x%x%x%x%x%x%x%x") or ""
+  local rest = text:sub(#before + 1)
+  local after = rest:match("|r$") or ""
+  local words = rest:sub(1, #rest - #after)
+  local inner = brackets and words:match("^<(.+)>$")
+  if inner then before, words, after = before .. "<", inner, ">" .. after end
+  return before, words, after
+end
+TooltipUnit.decoration = decoration
+
+-- An NPC's name (line 1, record "N") or subtitle (the line after it, record "S") from its `unit` row (ADR-103):
+-- Core/UnitNames answers only for a creature's GUID whose row translates the English shown, so a player, a pet, an
+-- object, a level line or a Forever rename keeps its text. A secret line is never read. → answered, changed
+local function showUnitName(fs, guid, field, key, refit)
+  local text = fs:GetText()
+  local isSecret = Compat.resolve("issecretvalue")
+  local U = WFJ.UnitNames
+  if U and type(text) == "string" and not (type(isSecret) == "function" and isSecret(text)) and text ~= "" then
+    local before, words, after = decoration(text, field == "subname")
+    if U[field](guid, words) then
+      local id = WFJ.Collector.creatureId(guid)
+      return true, WFJ.Render.show(SURFACE, key, fs, text, "ui", "unit." .. field, id,
+        { refit = refit, wrap = { before, after } })
+    end
+  end
+  WFJ.SurfaceState.drop(SURFACE, key) -- an earlier tooltip's record on this line
+  return false, false
+end
+
+-- The State "names" event (/fita nomi): the shown name and subtitle go back to the client's English; the next hover
+-- asks Core/UnitNames again under the new style.
+function TooltipUnit.dropNames()
+  WFJ.SurfaceState.drop(SURFACE, "N")
+  WFJ.SurfaceState.drop(SURFACE, "S")
+end
+WFJ.State.on("names", TooltipUnit.dropNames)
+
 -- The widget the minimap block was written on, to give it the client's face back when the tooltip hides.
 local blockWidget
 -- Enum.TooltipDataType.MinimapMouseover on this client (set by init), to tell its one-line block from a unit's name
@@ -236,11 +279,34 @@ function TooltipUnit.onUnit(tt, data)
       return 1
     end
   end
-  -- line 1 is the unit's or object's name: never read, never written; a minimap mouseover starts with a quest title
+  -- line 1 is the unit's or object's name: only an NPC's is written (its `unit` row); a minimap mouseover starts with
+  -- a quest title. The line after an NPC's name may be its subtitle ("<Weapon Merchant>": an untagged line, the
+  -- client has no line kind of its own for it); anything its row does not translate goes on to the keys below.
   local first = kinds[1] == "QuestTitle" and 1 or 2
+  local guid = type(data) == "table" and data.guid or nil
+  if first == 2 then
+    local fs = Compat.resolve(name .. "TextLeft1")
+    if type(fs) == "table" then
+      local answered, changed = showUnitName(fs, guid, "name", "N", refit)
+      if changed then n = n + 1 end
+      if answered then notes[#notes + 1] = "row 1 unit name" end
+    end
+  else
+    WFJ.SurfaceState.drop(SURFACE, "N")
+  end
+  if lines < 2 then WFJ.SurfaceState.drop(SURFACE, "S") end
   for i = first, lines do
     local fs = Compat.resolve(name .. "TextLeft" .. i)
-    if type(fs) == "table" then
+    local subtitle = false
+    if type(fs) == "table" and i == 2 and first == 2 and (kinds[2] == nil or kinds[2] == "None") then
+      local changed
+      subtitle, changed = showUnitName(fs, guid, "subname", "S", refit)
+      if changed then n = n + 1 end
+      if subtitle then notes[#notes + 1] = "row 2 unit subtitle" end
+    elseif i == 2 then
+      WFJ.SurfaceState.drop(SURFACE, "S")
+    end
+    if type(fs) == "table" and not subtitle then
       if kinds[i] == "QuestTitle" then
         local title = fs:GetText()
         local id, why = TooltipUnit.questFor(title)

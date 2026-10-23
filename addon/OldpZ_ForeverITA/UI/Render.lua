@@ -163,6 +163,7 @@ local function desiredOf(rec)
     local ja = payload.ja
     if m.ctx and m.ctx.partColors then ja = colourParts(ja, m.ctx.partColors) end
     if m.ctx and m.ctx.runColours then ja = colourRuns(ja, m.ctx.runColours) end
+    if m.ctx and m.ctx.wrap then ja = m.ctx.wrap[1] .. ja .. m.ctx.wrap[2] end
     return prefix .. ja, WFJ.Font.bundled(rec.font), action, payload.marker
   elseif action == "none" and payload and payload.marker then
     -- A compact row (a quest list title, a tracker header or objective) never carries the missing marker:
@@ -295,7 +296,9 @@ end
 -- Called by a surface with the API-returned English for one logical element.
 -- ctx: { lines = {...} (tooltip align gate), nameScope = <the name line>, refit = function() tooltip:Show() end,
 --        follow = <primary key>, live = <the API English> (quest surfaces: the live check),
---        args, compact = true for a row or fixed-size widget that never carries the missing marker } (all optional)
+--        args, compact = true for a row or fixed-size widget that never carries the missing marker,
+--        wrap = { before, after }: what the line shows around the translated text, kept around it (a unit's
+--        colour code, a subtitle's "<" ">") } (all optional)
 function Render.show(surface, key, fs, en, area, kind, id, ctx)
   -- Main guards each init step, so surfaces install their hooks even when Render.init failed. Asserting here would
   -- turn one load failure into an error on every hover and window open; nothing to render against renders nothing.

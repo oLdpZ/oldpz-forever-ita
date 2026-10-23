@@ -6,6 +6,8 @@ Data/Quest/Quest_0008.lua
 Data/Item/Item_0000.lua
 Data/Spell/Spell_0000.lua
 Data/Spell/Spell_1229.lua
+Data/Unit/Unit_0012.lua
+Data/Unit/Unit_0015.lua
 Data/Gossip/Gossip_00.lua
 Data/Gossip/Gossip_33.lua
 Data/UI/UI_A.lua

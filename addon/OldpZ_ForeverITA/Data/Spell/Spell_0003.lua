@@ -91,7 +91,7 @@ WFJ.Data.add("spell", {
   [3271] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [3273] = { "Permette la creazione e l'uso di bendaggi. Puoi salire di competenza fino a un massimo di 75. Richiede stoffe ottenibili dagli umanoidi.", nil, 0x7fc36438, nil, "um" },
   [3274] = { "Permette la creazione e l'uso di bendaggi. Puoi salire di competenza fino a un massimo di 150. Richiede stoffe ottenibili dagli umanoidi.", nil, 0x367c04b2, nil, "um" },
-  [3287] = { nil, "Trasformato in un Mangiatore di Carne.", nil, 0x5328b35c, "mu" },
+  [3287] = { nil, "Trasformato in un ⟦Flesh Eater=Mangiatore di Carne⟧.", nil, 0x5328b35c, "mu" },
   [3288] = { nil, "Protezione contro danni fisici.", nil, 0xc7f065fd, "mu" },
   [3304] = { "Permette a un minatore di fondere Minerali di Stagno per creare un Lingotto di Stagno. Richiede una forgia.", nil, 0x5364b0cd, nil, "um" },
   [3307] = { "Permette a un minatore di fondere Minerali di Ferro per creare un Lingotto di Ferro. Richiede una forgia.", nil, 0x99cc61aa, nil, "um" },

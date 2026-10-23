@@ -236,7 +236,9 @@ local KIND_CAPTURE = { word = "(%a+)", standing = "(%a+)", words = "(%a[%a ]-)",
   -- written (UIStrings.FAMILY_KINDS), never any other entry, so a class, spec or pet-family name stays English
   creatureType = "([^%.]-)", holidayDescription = "(.-)", customizationChoice = "(.-)",
   customizationSource = "(.-)", restState = "([^%.]-)", itemSubClassMask = "([^%.]-)", petLoyalty = "(.-)",
-  petFoodList = "([^%.]-)", questTitle = "(.-)" }
+  petFoodList = "([^%.]-)", questTitle = "(.-)",
+  -- an NPC's English name, shown as the unit table names it (UIStrings.creatureName, set by Core/UnitNames)
+  creatureName = "([^%.]-)" }
 -- a template with more `|4` groups is not indexed (counted `unsupported`). 4 for TIME_DAYHOURMINUTESECOND
 -- (the /played duration, the only listed key with 4): the chat line holds its raw form, which is always matched
 local MAX_PLURAL_GROUPS = 4
@@ -420,6 +422,12 @@ function Index:match(text)
   return key, args
 end
 
+-- Drops the memo: a memoised result holds its arguments after the creatureName substitution (the names style of
+-- that moment), so the "names" State event (/fita nomi) calls this (Core/UnitNames).
+function Index:resetMemo()
+  self.memo, self.memoCount = {}, 0
+end
+
 -- A form granted to `key` or to any key sharing its English (the index names the first of them).
 function Index:has(key, form)
   for _, k in ipairs(self.synonyms[key] or { key }) do
@@ -467,6 +475,9 @@ function Index:core(text, allow)
           elseif kinds[argIndex] == "questTitle" then
             local resolve = UIStrings.questTitle
             args[argIndex] = type(resolve) == "function" and resolve(caps[i]) or caps[i]
+          elseif kinds[argIndex] == "creatureName" then
+            local resolve = UIStrings.creatureName
+            args[argIndex] = type(resolve) == "function" and resolve(caps[i]) or caps[i]
           elseif UIStrings.FAMILY_LIST_KINDS[kinds[argIndex]] then
             args[argIndex] = self:familyList(caps[i], UIStrings.FAMILY_LIST_KINDS[kinds[argIndex]])
           elseif kinds[argIndex] == "entryList" then
@@ -486,7 +497,7 @@ end
 local TEXT_KINDS = { text = true, words = true, skill = true, entry = true, entryOrText = true, entryList = true,
   verbatim = true, creatureType = true, holidayDescription = true, customizationChoice = true,
   customizationSource = true, restState = true, itemSubClassMask = true, petLoyalty = true,
-  petFoodList = true, questTitle = true }
+  petFoodList = true, questTitle = true, creatureName = true }
   -- a family argument is free text too
 -- The enclosing keys whose `entry` argument may itself be a template that carries text (none yet): every other
 -- `entry` is an exact entry or a template whose arguments are numbers, times, percentages or dictionary words, so
@@ -752,11 +763,14 @@ function Index.formatArgs(_, key, en, ...) -- called as index:formatArgs; the in
       args[p.arg] = text
     end
   end
-  -- a quest's title shows in Japanese here too, as on the chat line the same template writes
+  -- a quest's title and an NPC's name show in Japanese here too, as on the chat line the same template writes
   local kinds = argKinds(key)
   for i, kind in pairs(kinds or {}) do
     if kind == "questTitle" and type(args[i]) == "string" and type(UIStrings.questTitle) == "function" then
       args[i] = UIStrings.questTitle(args[i]) or args[i]
+    end
+    if kind == "creatureName" and type(args[i]) == "string" and type(UIStrings.creatureName) == "function" then
+      args[i] = UIStrings.creatureName(args[i]) or args[i]
     end
   end
   return args

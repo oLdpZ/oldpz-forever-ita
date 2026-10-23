@@ -215,6 +215,38 @@ describe("the UI errors frame", function()
     assert.are.equal("Guild を倒した: 1/2", _G.UIErrorsFrame.lines[4]:GetText())
   end)
 
+  it("the kill line names the mob as the unit table does (Core/UnitNames' index), the English under names = en",
+    function()
+    X.teardown(NAMES)
+    WFJ = X.load("UI/Errors.lua", UI, { before = install, files = { "Core/Names.lua", "Core/UnitNames.lua" } })
+    assert.is_true(WFJ.Errors.init())
+    local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+    WFJ.UnitNames.buildIndex({ [6] = { "Coboldo Parassita", nil, h1("Kobold Vermin"), nil, ".m" } })
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 3/10")
+    assert.are.equal("Coboldo Parassita を倒した: 3/10", _G.UIErrorsFrame.lines[4]:GetText())
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Defias Thug slain: 1/2") -- no shipped name: as written
+    assert.are.equal("Defias Thug を倒した: 1/2", _G.UIErrorsFrame.lines[4]:GetText())
+    WFJ.Settings.set("names.style", "en")
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 4/10")
+    assert.are.equal("Kobold Vermin を倒した: 4/10", _G.UIErrorsFrame.lines[4]:GetText())
+  end)
+
+  it("the same kill line after /fita nomi shows the name of the new style (the match memo is dropped)", function()
+    X.teardown(NAMES)
+    WFJ = X.load("UI/Errors.lua", UI, { before = install, files = { "Core/Names.lua", "Core/UnitNames.lua" } })
+    assert.is_true(WFJ.Errors.init())
+    local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+    WFJ.UnitNames.buildIndex({ [6] = { "Coboldo Parassita", nil, h1("Kobold Vermin"), nil, ".m" } })
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 3/10")
+    assert.are.equal("Coboldo Parassita を倒した: 3/10", _G.UIErrorsFrame.lines[4]:GetText())
+    WFJ.Settings.set("names.style", "en")
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 3/10")
+    assert.are.equal("Kobold Vermin を倒した: 3/10", _G.UIErrorsFrame.lines[4]:GetText())
+    WFJ.Settings.set("names.style", "it")
+    _G.UIErrorsFrame:TryDisplayMessage(4, "Kobold Vermin slain: 3/10")
+    assert.are.equal("Coboldo Parassita を倒した: 3/10", _G.UIErrorsFrame.lines[4]:GetText())
+  end)
+
   it("the modifier shows the live English; releasing it shows the Japanese", function()
     _G.UIErrorsFrame:TryDisplayMessage(1, "Out of range.")
     X.alt(WFJ, true)

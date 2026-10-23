@@ -6,7 +6,8 @@ local M = {}
 
 -- → WFJ. `opts`: { args = { KEY = { [n] = kind } } → UIStrings.ARGS
 -- entries this surface needs (Core/UIStrings carries them; a key already
--- there is left as it is), before = function() … end → builds the client frames before uiSetup }.
+-- there is left as it is), before = function() … end → builds the client frames before uiSetup,
+-- files = { "Core/…" } → more addon files loaded after H.UI_FILES, before the surface }.
 function M.load(surfaceFile, ui, opts)
   opts = opts or {}
   Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
@@ -14,6 +15,7 @@ function M.load(surfaceFile, ui, opts)
   Stub.installScrollUtil()
   local files = {}
   for i, f in ipairs(H.UI_FILES) do files[i] = f end
+  for _, f in ipairs(opts.files or {}) do files[#files + 1] = f end
   files[#files + 1] = surfaceFile
   local WFJ = H.loadChunks(files)
   for key, kinds in pairs(opts.args or {}) do

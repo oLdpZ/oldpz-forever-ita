@@ -23,6 +23,8 @@ CASES: list[tuple[str, str, Player | None]] = [
     ("ascii-02", "Bring Sharptalon's Claw to Senani Thunderheart at Splintertree Post, Ashenvale.", None),
     ("ascii-03", "Hello there.", None),
     ("ascii-04", "Hello there", None),
+    # an NPC name as Core/UnitNames hashes it (normalize_for("unit", …) = the default canon)
+    ("unit-01", "Senani Thunderheart", None),
     ("ja-01", "大いなるヒポグリフSharptalonは倒され、死んだ獣の鉤爪が勝利の証となった。", None),
     ("ja-02", "Kobold Verminを10匹殺して、Marshal McBrideへ報告してください。", None),
     ("color-01", "|cffffd100Quest|r text here", None),

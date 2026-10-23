@@ -115,7 +115,7 @@ def test_meta_text_is_content_only():
     )
     assert 'english = { pfquest = "7786596", wago = "1.15.9.69722" }' in text
     # the objective type joins the numeric-id types (counted after spell), then area
-    assert ("counts = { quest = 2468, item = 2664, spell = 1009, objective = 0, area = 0, gossip = 0, book = 0,"
+    assert ("counts = { quest = 2468, item = 2664, spell = 1009, objective = 0, area = 0, unit = 0, gossip = 0, book = 0,"
             " ui = 0 }") in text
     assert 'objective = { "text" }, area = { "text" }' in text
     assert 'quest = { "title", "objectives", "description", "progress", "completion" }' in text

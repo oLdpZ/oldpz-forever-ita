@@ -174,9 +174,11 @@ UIStrings.ARGS = {
   NPEV2_PRESS_KEY_TO_USE_ABILITY = { [1] = "text", [2] = "text" },
   NPEV2_PLACE_ABILITY_BACK_ON_ACTION_BAR = { [1] = "text" },
   COMMUNITY_MEMBER_CHARACTER_INFO_FORMAT = { [2] = "text", [3] = "text" },
-  -- objective lines ("3/10 Kobold Vermin slain", "Neutral / Friendly Darnassus"): the mob, the faction
-  -- and the player group are names, kept as written; a standing is a dictionary word, shown in Japanese
-  QUEST_MONSTERS_KILLED = { [1] = "text" }, QUEST_PLAYERS_KILLED = { [3] = "text" },
+  -- objective lines ("3/10 Kobold Vermin slain", "Neutral / Friendly Darnassus"): the mob is shown as the unit table
+  -- names it (creatureName: the world's name, the English under names = en), the faction and the player group are
+  -- names kept as written; a standing is a dictionary word, shown in Japanese. The kill's error line names the mob too.
+  QUEST_MONSTERS_KILLED = { [1] = "creatureName" }, QUEST_PLAYERS_KILLED = { [3] = "text" },
+  ERR_QUEST_ADD_KILL_SII = { [1] = "creatureName" },
   QUEST_PLAYERS_KILLED_NOPROGRESS = { [2] = "text" },
   QUEST_FACTION_NEEDED = { [1] = "text", [2] = "standing", [3] = "standing" },
   QUEST_FACTION_NEEDED_NOPROGRESS = { [1] = "text", [2] = "standing" },

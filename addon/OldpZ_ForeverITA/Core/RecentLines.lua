@@ -45,7 +45,7 @@ local last -- { surface, at } of the previous note
 
 RecentLines.GROUPS = { "story", "tooltips", "windows" }
 local GROUP = { quest = "story", gossip = "story", book = "story", objective = "story", area = "story",
-  item = "tooltips", spell = "tooltips", ui = "windows" }
+  unit = "story", item = "tooltips", spell = "tooltips", ui = "windows" }
 function RecentLines.group(type_)
   return GROUP[type_] or "windows"
 end

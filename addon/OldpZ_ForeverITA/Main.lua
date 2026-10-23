@@ -175,6 +175,18 @@ end
 -- the same guard for work a module runs later than the event that asked for it (UI/IntroWindow)
 WFJ.step = step
 
+-- The nameplate events' guard (NAME_PLATE_UNIT_ADDED / _REMOVED, many per second in a crowd): a bare pcall, and only
+-- the first error of the session goes to the problem log (Core/ErrorLog) and /fita debug; the rest are dropped.
+local plateErrorLogged = false
+local function plateEvent(fn, token)
+  local ok, err = pcall(fn, token)
+  if ok or plateErrorLogged then return end
+  plateErrorLogged = true
+  WFJ.initErrors = WFJ.initErrors or {}
+  WFJ.initErrors[#WFJ.initErrors + 1] = { surface = "nameplates.event", err = tostring(err) }
+  if WFJ.ErrorLog then pcall(WFJ.ErrorLog.recordCaught, err) end
+end
+
 function WFJ.OnLoad()
   WFJ.initErrors = {}
   -- `or OFI_Log` for the same reason as OFI_DB below: a failed load never hands the client an empty global
@@ -271,6 +283,8 @@ function WFJ.OnLoad()
   -- lines a newer addon covers leave the collector file; the tooltip gate needs the UI index's duration strings
   step("collectorprune", function() WFJ.Collector.prune() end)
   step("objectiveindex", WFJ.BuildObjectiveIndex)
+  -- an NPC's name with no GUID (an objective line's mob) by its English: Core/UnitNames.byEnglish
+  step("creaturenames", function() WFJ.UnitNames.buildIndex(WFJ.Data.unit) end)
   step("render", function() WFJ.Render.init(WFJ.Translator.new({
     enabled = function() return WFJ.State.enabled end,
     areaEnabled = WFJ.State.areaEnabled,
@@ -345,6 +359,7 @@ function WFJ.OnLoad()
     "Statistics", "Widgets",
     "Macro", "SpellSearch", "TimeManager", "CombatText", "CooldownViewer", "DamageMeter", "DeathRecap",
     "GamepadEdit", "Gamepad", "HudLabels", "HudTips", "Minimap", "PvPMatch", "QueueStatus", "RaidManager", "UnitFrames",
+    "NamePlates",
     "GroupFinder", "Channels", "QuickJoin", "RecentAllies", "RecruitAFriend", "ReportFrame", "HelpFrame",
     "StatusNotices", "BNetToast", "SettingsPanel", "SettingsTutorials", "EditMode", "QuickKeybind", "ColorPicker",
     "ChatConfig", "TextToSpeech", "ChatTabs", "CombatLog", "AddonList", "ScriptErrors", "Splash", "EventTrace",
@@ -431,6 +446,8 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
       self:RegisterEvent("PLAYER_ENTERING_WORLD")
       self:RegisterEvent("PLAYER_REGEN_DISABLED")
       self:RegisterEvent("PLAYER_REGEN_ENABLED")
+      self:RegisterEvent("NAME_PLATE_UNIT_ADDED") -- UI/NamePlates (frames are Main's, ADR-016)
+      self:RegisterEvent("NAME_PLATE_UNIT_REMOVED")
       for _, blocked in ipairs(WFJ.Diag.BLOCK_EVENTS) do self:RegisterEvent(blocked) end
     else
       -- Guarded like the load sequence. These run the deferred setup for the talent frame, the trainer and the
@@ -447,9 +464,24 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
     if WFJ.Diag.onBlocked(event, name, ..., ADDON) then WFJ.TaintWatch.onBlocked() end
   elseif event == "PLAYER_REGEN_DISABLED" then
     WFJ.Options.setCombat(true)
+    -- a surface module, guarded like the load-on-demand calls: its failure must not reach the combat handling
+    if WFJ.UnitFrames then step("unitframes.combat", WFJ.UnitFrames.onCombatStart) end
+    -- the nameplates' NPC names: always English in combat (their English back now, before the lockdown)
+    if WFJ.NamePlates then step("nameplates.combat", WFJ.NamePlates.onCombatStart) end
   elseif event == "PLAYER_REGEN_ENABLED" then
     WFJ.RevealBinding.flush() -- a modifier change made in combat
     WFJ.Options.setCombat(false)
+    -- the target frames' NPC names, in out-of-combat mode only (guarded as above)
+    if WFJ.UnitFrames then step("unitframes.combat", WFJ.UnitFrames.onCombatEnd) end
+    -- the nameplates' NPC names: the Italian on every plate shown
+    if WFJ.NamePlates then step("nameplates.combat", WFJ.NamePlates.onCombatEnd) end
+  elseif event == "NAME_PLATE_UNIT_ADDED" then
+    -- many per second in a crowd: not through `step` (a record per event would pile up) but under a bare pcall whose
+    -- first error alone is logged (plateEvent). The module type- and secret-checks every client value and does
+    -- nothing until its init hooked the writer; the guard is for what that does not foresee.
+    if WFJ.NamePlates then plateEvent(WFJ.NamePlates.onAdded, name) end
+  elseif event == "NAME_PLATE_UNIT_REMOVED" then
+    if WFJ.NamePlates then plateEvent(WFJ.NamePlates.onRemoved, name) end
   elseif event == "MODIFIER_STATE_CHANGED" then
     WFJ.Modifier.refresh()
   elseif event == "PLAYER_ENTERING_WORLD" then

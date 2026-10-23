@@ -234,7 +234,7 @@ WFJ.Data.add("item", {
   [19452] = { "La tua fortuna ti attende fuori la ⟦Palemane Rock=Roccia dei Mantopallido⟧.", 0xcce12a2c, "u" },
   [19453] = { "I Cacciatori specializzati in Sopravvivenza non hanno nessuna garanzia di sopravvivere.", 0x2a41f1a3, "u" },
   [19454] = { "Dietro di te! Una scimmia a tre teste!", 0xbf354d9e, "u" },
-  [19462] = { "L'uovo si schiude e genera una Pincopallina. È necessario aspettare un po' di tempo prima che l'uovo si schiuda.", 0x677d8716, "u" },
+  [19462] = { "L'uovo si schiude e genera una ⟦Jubling=Pincopallina⟧. È necessario aspettare un po' di tempo prima che l'uovo si schiuda.", 0x677d8716, "u" },
   [19483] = { "Guida su come annientare i Piccatonante - Scritta da Drek'thar.", 0x5c4b116d, "u" },
   [19484] = { "Racconti Gloriosi sui Piccatonante - Scritto da Vanndar Piccatonante.", 0xb5130e67, "u" },
   [19507] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
