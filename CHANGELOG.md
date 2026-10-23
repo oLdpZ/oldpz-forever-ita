@@ -26,6 +26,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Glossario derivato dai nomi ufficiali, usato per tenere coerenti i nomi in tutte le traduzioni.
 - Dialoghi dei PNG in italiano: quasi tutto ciò che dicono i personaggi quando parli con loro, le opzioni di dialogo, i saluti, le urla e le frasi in chat (circa 10.800 righe).
 - Righe degli obiettivi nel tracker delle missioni e obiettivi di esplorazione ed evento in italiano.
+- Nomi dei PNG e delle creature in italiano nel mondo: nel tooltip (con il titolo sotto il nome, es. «Venditore di Armi»), nei riquadri del bersaglio, del focus e dei boss e sulle targhette sopra la testa. Si usano i nomi del client italiano ufficiale (circa 7.200), gli altri sono tradotti nello stesso stile e i nomi propri senza significato restano come sono. Gli stessi nomi compaiono negli obiettivi, nel tracker e nei testi delle missioni. In combattimento le targhette restano in inglese e tornano italiane alla fine; `/fita nomi en` e il tasto Alt mostrano l'inglese.
 - Le segnalazioni dal gioco (una riga tradotta male, un errore o un'idea, l'inglese raccolto) aprono i moduli del progetto su GitHub: il link si copia dalla finestra e si apre nel browser.
 
 ### Fixed
