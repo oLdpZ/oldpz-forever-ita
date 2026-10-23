@@ -144,3 +144,78 @@ def test_unit_terms_prefer_official_then_the_most_common_and_skip_common_words(t
     assert len(conflicts) == 2 and all("Gnoll Brute" in c or "Kobold Miner" in c for c in conflicts)
     remark_names.remark(data)
     assert _it(data)[1] == "Il lupo e ⟦Gruff=Burbero⟧."
+
+
+# ── stale NPC-name markers and one Italian per English (final review) ─────────────────────────────────────
+
+
+def _unit_problems(tmp_path: Path, data: Path) -> list[str]:
+    from wfj.cmd import validate
+
+    return validate.rule_unit_names(Store(data), Store(data, english=True), tmp_path)
+
+
+def _make_official(data: Path, id_: int, it: str) -> None:
+    """An official row arrives for unit `id_` (as `import official` + `check` leave it: the official text wins,
+    the machine draft becomes a conflict)."""
+    store = Store(data)
+    lines = store.load("unit")
+    for ln in lines:
+        if ln["id"] == id_:
+            ln["conflicts"].append({"it": ln["it"], "provenance": ln["provenance"]})
+            ln["it"], ln["provenance"] = it, UNIT_PROV["official"]
+    store.save("unit", lines)
+
+
+def test_a_marker_of_a_machine_form_is_rewritten_when_the_official_name_arrives(tmp_path):
+    data = _unit_repo(tmp_path, [(12696, "Senani Thunderheart", "Senani Cuor di Tuono", "machine")], [
+        (1, "Speak with Senani Thunderheart.", "Parla con Senani Thunderheart."),
+        (2, "Senani Thunderheart waits in Stormwind City.", "Senani Cuor di Tuono ti aspetta a Roccavento."),
+    ])
+    remark_names.remark(data)
+    assert _it(data)[1] == "Parla con ⟦Senani Thunderheart=Senani Cuor di Tuono⟧."
+    assert _unit_problems(tmp_path, data) == []
+    _make_official(data, 12696, "Senani Cuore Tonante")  # spec §5b: the official form wins and rewrites the texts
+    problems = _unit_problems(tmp_path, data)
+    assert len(problems) == 2 and all("Senani Thunderheart" in p and "Senani Cuore Tonante" in p for p in problems)
+    stats: dict[str, int] = {}
+    assert remark_names.remark(data, stats=stats) == 2
+    assert stats["rewritten"] == 2
+    it = _it(data)
+    assert it[1] == "Parla con ⟦Senani Thunderheart=Senani Cuore Tonante⟧."
+    assert it[2] == "⟦Senani Thunderheart=Senani Cuore Tonante⟧ ti aspetta a ⟦Stormwind City=Roccavento⟧."
+    assert _unit_problems(tmp_path, data) == []
+    assert remark_names.remark(data) == 0  # idempotent
+
+
+def test_a_glossary_marker_is_left_as_it_is(tmp_path):
+    """Only NPC-name markers follow the unit table: a glossary term may have several right Italian forms
+    (male / female, a derived short form), so its marker is never rewritten here."""
+    data = _unit_repo(tmp_path, [], [(1, "Go to Stormwind City.", "Vai a ⟦Stormwind City=Città di Roccavento⟧.")])
+    assert remark_names.remark(data) == 0
+    assert _it(data)[1] == "Vai a ⟦Stormwind City=Città di Roccavento⟧."
+    assert _unit_problems(tmp_path, data) == []
+
+
+def test_ids_sharing_an_english_name_ship_one_italian(tmp_path):
+    """Two creature ids named `Gnoll Brute`: the official form wins for both (the addon's objective index, keyed
+    by the English, would otherwise answer nothing on a tie or the wrong name on a majority)."""
+    data = _unit_repo(tmp_path, [(1, "Gnoll Brute", "Gnoll Bruto", "official"),
+                                 (2, "Gnoll Brute", "Bruto Gnoll", "machine"),
+                                 (3, "Gnoll Brute", "Bruto Gnoll", "machine")], [])
+    problems = _unit_problems(tmp_path, data)
+    assert len(problems) == 1 and "Gnoll Brute" in problems[0] and "unit 2" in problems[0]
+    stats: dict[str, int] = {}
+    remark_names.remark(data, stats=stats)
+    assert stats["harmonised"] == 2
+    assert {ln["id"]: ln["it"] for ln in Store(data).load("unit")} == {1: "Gnoll Bruto", 2: "Gnoll Bruto",
+                                                                       3: "Gnoll Bruto"}
+    assert _unit_problems(tmp_path, data) == []
+
+
+def test_two_official_names_for_one_english_are_left_to_a_person(tmp_path):
+    data = _unit_repo(tmp_path, [(1, "Gnoll Brute", "Gnoll Bruto", "official"),
+                                 (2, "Gnoll Brute", "Bruto Gnoll", "official")], [])
+    remark_names.remark(data)
+    assert {ln["id"]: ln["it"] for ln in Store(data).load("unit")} == {1: "Gnoll Bruto", 2: "Bruto Gnoll"}
+    assert len(_unit_problems(tmp_path, data)) == 1

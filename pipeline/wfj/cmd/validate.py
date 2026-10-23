@@ -18,6 +18,9 @@ Rules, each a function returning problems:
      the English separates only by whitespace ("Level %d %s %s": a race may be two words) keep their order
      in the Italian. The addon splits such a line lazily, which is safe only when fill restores the same
      order.
+  8. objective index: objective and area rows sharing one English fingerprint ship one Italian.
+  9. unit names (spec §5b): unit `name` rows sharing one English ship one Italian, and every NPC-name marker
+     carries the name's current form (`dev.remark_names` fixes both for machine drafts).
 `luac -p` over the generated files is `make luac` (part of `make validate`); the pipeline runs no Lua.
 """
 
@@ -386,6 +389,54 @@ def rule_objective(store: Store) -> list[str]:
     ]
 
 
+def rule_unit_names(store: Store, english: Store, repo: Path) -> list[str]:
+    """Spec §5b, one NPC one Italian name. (a) The addon finds an NPC's name by its English alone in an
+    objective or a kill line (Core/UnitNames' index, keyed by the English's h1, markers resolved to Italian):
+    shipped `unit` `name` lines with one English fingerprint must ship one Italian, else the index answers the
+    most common or, on a tie, nothing, while each creature's own GUID shows its own. (b) Every NPC-name marker
+    in the stored Italian (every variant of every type but `ui`) carries the name's current form
+    (`dev.remark_names.stale_marker`): a marker is never searched again, so an official name arriving after
+    a machine one leaves the old name in the texts until `python -m wfj.dev.remark_names` rewrites it."""
+    from wfj.cmd.import_draft import UNMARKED_TYPES
+    from wfj.core import names
+    from wfj.dev import glossary_it, remark_names
+
+    problems: list[str] = []
+    en_of = {ln["id"]: ln for ln in english.load("unit") if ln["field"] == "name"}
+    by_h1: dict[str, dict[int, str]] = {}
+    for ln in store.load("unit"):
+        if ln["field"] != "name" or ln["status"] not in SHIPPED_STATUS or not lua_writer.shipped(ln):
+            continue
+        en = en_of.get(ln["id"])
+        if en is not None:
+            by_h1.setdefault(en["hash"][:8], {})[ln["id"]] = names.strip_marks(ln["it"])
+    for _, rows in sorted(by_h1.items()):
+        if len(set(rows.values())) > 1:
+            shown = ", ".join(f"unit {i} {it!r}" for i, it in sorted(rows.items()))
+            problems.append(
+                f"unit names: {en_of[min(rows)]['en'].strip()!r} ships different Italian ({shown}): run "
+                "`python -m wfj.dev.remark_names` (machine drafts take the official form); two official or "
+                "human forms need a person"
+            )
+    forms = glossary_it.npc_marker_forms(repo)
+    for type_ in check.TYPES:
+        if type_ in UNMARKED_TYPES:
+            continue
+        for ln in store.load(type_):
+            for v in decisions.variant_dicts(ln):
+                it = v.get("it")
+                if not isinstance(it, str) or names.OPEN not in it:
+                    continue
+                for m in names.MARK.finditer(it):
+                    new = remark_names.stale_marker(forms, m.group(1), m.group(2))
+                    if new is not None:
+                        problems.append(
+                            f"{type_} {ln['id']}/{ln['field']}: marker {m.group(0)} is not the NPC's "
+                            f"current name {new}: run `python -m wfj.dev.remark_names`"
+                        )
+    return problems
+
+
 def _row_order(row: str) -> tuple[str, int]:
     type_, id_ = row.split(" ", 1)
     return type_, int(id_)
@@ -447,6 +498,7 @@ def validate(
         store, english, ui_arg_kinds(addon_dir), ui_chat_families(addon_dir), ui_own(addon_dir)
     )
     problems += rule_objective(store)
+    problems += rule_unit_names(store, english, root.parent)
     return problems
 
 

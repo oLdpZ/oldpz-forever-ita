@@ -163,33 +163,70 @@ def creature_terms(
     return terms, dropped
 
 
+def _unit_rows(store: Store, english: Store) -> dict[str, list[tuple[bool, str, int]]]:
+    """Every trusted `unit` `name` line with Italian, by its English: [(official, Italian, id)]."""
+    en_of = {ln["id"]: ln["en"].strip() for ln in english.load("unit") if ln["field"] == "name"}
+    found: dict[str, list[tuple[bool, str, int]]] = {}
+    for ln in store.load("unit"):
+        if ln["field"] != "name" or ln.get("status") != "trusted" or not isinstance(ln.get("it"), str):
+            continue
+        en, it = en_of.get(ln["id"]), ln["it"].strip()
+        if not en or not it:
+            continue
+        official = (ln.get("provenance") or {}).get("class") == "official"
+        found.setdefault(en, []).append((official, it, ln["id"]))
+    return found
+
+
+def _chosen(rows: list[tuple[bool, str, int]]) -> str:
+    """One Italian for an English name (spec §5b): the official one, else the most common, then the first in
+    Italian order."""
+    tally = Counter(it for _, it, _ in rows)
+    official = Counter(it for o, it, _ in rows if o)
+    pool = official or tally
+    return sorted(pool, key=lambda f: (-pool[f], f))[0]
+
+
+def unit_forms(store: Store, english: Store) -> dict[str, str]:
+    """English NPC name → the one Italian every place shows for it (`_chosen`): the unit table's trusted
+    `name` lines, every creature id with that English. `dev.remark_names` makes every id ship it and every
+    NPC-name marker carry it; `wfj validate` (`rule_unit_names`) refuses data where they do not."""
+    return {en: _chosen(rows) for en, rows in _unit_rows(store, english).items()}
+
+
+def npc_marker_forms(repo: Path) -> dict[str, str]:
+    """English NPC name → the Italian half its marker must carry: `unit_forms` with the markers inside the
+    name resolved to Italian (`⟦Dire Wolf=Metalupo⟧ Affamato` → `Metalupo Affamato`), leaving out an English
+    that is a glossary term of another kind than `creatura` (it keeps its own forms, `load_marker_matcher`).
+    `repo`: the folder holding data/ and pipeline/."""
+    from wfj.core import names
+
+    data = Path(repo) / "data"
+    other = set()
+    if (Path(repo) / "pipeline" / GLOSSARY).is_file():
+        other = {en for kind, _, en, _ in load_terms(repo) if kind != CREATURE_KIND}
+    forms = unit_forms(Store(data), Store(data, english=True))
+    return {en: names.strip_marks(it) for en, it in forms.items() if en not in other}
+
+
 def unit_terms(data: Path, counts: Counter[str], conflicts: list[str] | None = None) -> list[GlossTerm]:
     """The NPC names of the `unit` table as `creatura` terms, for the marker pass (`dev.remark_names`): every
     trusted `name` row, official or machine, so a name drafted by a lot is the one the text shows too. The
     rules of `creature_terms` (a one-word name only where the corpus never writes it in lower case). One
-    Italian per English: the official one, else the most common (then the first in Italian order); each
-    English that had more than one is appended to `conflicts`. `data`: the data/ folder."""
-    english = {ln["id"]: ln["en"].strip() for ln in Store(Path(data), english=True).load("unit")
-               if ln["field"] == "name"}
-    found: dict[str, list[tuple[bool, str, int]]] = {}
-    for ln in Store(Path(data)).load("unit"):
-        if ln["field"] != "name" or ln.get("status") != "trusted" or not isinstance(ln.get("it"), str):
-            continue
-        en, it = english.get(ln["id"]), ln["it"].strip()
-        if not en or not it or it == en or len(en) < MIN_LEN or INTERNAL_TEXT.search(en):
-            continue
-        if any(c in en + it for c in "\t\n\r"):
+    Italian per English: `_chosen` (the official one, else the most common, then the first in Italian order);
+    each English that had more than one is appended to `conflicts`. `data`: the data/ folder."""
+    found = _unit_rows(Store(Path(data)), Store(Path(data), english=True))
+    terms: list[GlossTerm] = []
+    for en, all_rows in sorted(found.items()):
+        if len(en) < MIN_LEN or INTERNAL_TEXT.search(en) or any(c in en for c in "\t\n\r"):
             continue
         if len(WORD.findall(en)) < 2 and counts[en.lower()]:
             continue
-        official = (ln.get("provenance") or {}).get("class") == "official"
-        found.setdefault(en, []).append((official, it, ln["id"]))
-    terms: list[GlossTerm] = []
-    for en, rows in sorted(found.items()):
-        tally = Counter(it for _, it, _ in rows)
-        official = Counter(it for o, it, _ in rows if o)
-        pool = official or tally
-        it = sorted(pool, key=lambda f: (-pool[f], f))[0]
+        rows = [r for r in all_rows if r[1] != en and not any(c in r[1] for c in "\t\n\r")]
+        if not rows:
+            continue
+        it = _chosen(rows)
+        tally = Counter(f for _, f, _ in rows)
         if len(tally) > 1 and conflicts is not None:
             shown = ", ".join(f"{f} ×{n}" for f, n in sorted(tally.items()))
             conflicts.append(f"{en}: {shown} → {it}")
