@@ -450,6 +450,7 @@ frame:SetScript("OnEvent", function(self, event, name, ...)
   elseif event == "PLAYER_REGEN_ENABLED" then
     WFJ.RevealBinding.flush() -- a modifier change made in combat
     WFJ.Options.setCombat(false)
+    WFJ.UnitFrames.onCombatEnd() -- the target frames' NPC names, in out-of-combat mode only
   elseif event == "MODIFIER_STATE_CHANGED" then
     WFJ.Modifier.refresh()
   elseif event == "PLAYER_ENTERING_WORLD" then

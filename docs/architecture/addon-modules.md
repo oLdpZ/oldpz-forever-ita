@@ -258,7 +258,7 @@ Modules, in Main's `forever` order (load-on-demand addon in the last column; bla
 | `PvPMatch` | `pvpmatch` | PvP match results and scoreboard | |
 | `QueueStatus` | `queuestatus` | queue status panel | |
 | `RaidManager` | `raidmanager` | group manager panel | |
-| `UnitFrames` | `unitframes` | unit frame status words, group titles, tooltip line | |
+| `UnitFrames` | `unitframes` | unit frame status words, group titles, tooltip line; NPC names on the target, focus, target-of-target and boss frames (ADR-103, `NAMES_OUT_OF_COMBAT` switch) | |
 | `GroupFinder` | `groupfinder` | Vanilla-style group finder (listing, browser) | `Blizzard_GroupFinder_VanillaStyle` |
 | `Channels` | `channels` | chat channels window and voice prompts | |
 | `QuickJoin` · `RecentAllies` · `RecruitAFriend` | one each | Friends-frame tabs | |

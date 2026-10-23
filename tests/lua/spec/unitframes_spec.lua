@@ -9,6 +9,7 @@ local Stub = require("tests.lua.spec.wow_stub")
 
 local FILES = {}
 for i, f in ipairs(H.UI_FILES) do FILES[i] = f end
+FILES[#FILES + 1] = "Core/UnitNames.lua"
 FILES[#FILES + 1] = "UI/UnitFrames.lua"
 
 local UI = {
@@ -101,6 +102,7 @@ describe("the unit frames' fixed words on Forever", function()
 
   local function load()
     local ns = H.loadChunks(FILES)
+    ns.Lookup = { get = function() return nil end }
     H.uiSetup(ns, UI)
     return ns
   end
@@ -226,5 +228,167 @@ describe("the unit frames' fixed words on Forever", function()
     local bare = load()
     _G.TargetFrame = CreateFrame("Button", "TargetFrame") -- no TargetFrameContent
     assert.has_no.errors(function() assert.is_false(bare.UnitFrames.init()) end)
+  end)
+end)
+
+-- ADR-103 / Task 9: an NPC's name on the target, focus, target-of-target and boss frames takes the Italian of its
+-- `unit` row (Core/UnitNames), written after the client's own UnitFrame_Update (mainline/unitframe.lua:
+-- self.name:SetText(GetUnitName(self.unit))) and the UNIT_NAME_UPDATE branch of UnitFrame_OnEvent. A player's name,
+-- the player frame, a secret text and another English stay as written; Alt and /fita nomi en give the English
+-- back; the dictionary surface still refuses those widgets.
+describe("the NPC names on the target-style frames", function()
+  local WFJ
+  local SENANI = "Creature-0-1-2-3-12696-0000"
+  local HOGGER = "Creature-0-1-2-3-448-0000"
+  local GLOBALS2 = { "TargetFrame", "FocusFrame", "Boss1TargetFrame", "PlayerFrame", "UnitFrame_Update",
+    "UnitFrame_OnEvent", "issecretvalue", "UnitFrame_UpdateTooltip" }
+  local ROWS = { RAID = { "Raid", "Incursione" } }
+
+  local function frame(name, unit)
+    local f = CreateFrame("Button", name)
+    f.unit = unit
+    f.name = Stub.fontString("")
+    f.TargetFrameContent = { TargetFrameContentMain = { Name = f.name, HealthBarsContainer = {} } }
+    f.totFrame = CreateFrame("Button")
+    f.totFrame.unit = unit .. "target"
+    f.totFrame.name = Stub.fontString("")
+    f.totFrame.Name = f.totFrame.name
+    return f
+  end
+
+  local function update(f) _G.UnitFrame_Update(f) end
+  local function nameOf(f) return f.name:GetText() end
+
+  before_each(function()
+    H.uiTeardown()
+    for _, n in ipairs(GLOBALS2) do _G[n] = nil end
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installTooltipAPI()
+    Stub.installKeyAPI()
+    WFJ = H.loadChunks(FILES)
+    local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+    local UNIT = { ["unit.name"] = {
+      [12696] = { ja = "Senani Cuore Tonante", status = ".", h1 = h1("Senani Thunderheart") },
+      [448] = { ja = "Hogger il Rosso", status = ".", h1 = h1("Hogger") },
+    } }
+    local function lookup(kind, id) return UNIT[kind] and UNIT[kind][id] or nil end
+    WFJ.Lookup = { get = lookup }
+    H.uiSetup(WFJ, ROWS, { lookup = lookup })
+    -- the client's writers, as mainline/unitframe.lua writes the name
+    _G.UnitFrame_Update = function(self) self.name:SetText(_G.UnitName(self.unit)) end
+    _G.UnitFrame_OnEvent = function(self, event)
+      if event == "UNIT_NAME_UPDATE" then self.name:SetText(_G.UnitName(self.unit)) end
+    end
+    frame("TargetFrame", "target")
+    frame("FocusFrame", "focus")
+    frame("Boss1TargetFrame", "boss1")
+    local player = CreateFrame("Button", "PlayerFrame")
+    player.unit = "vehicle"
+    player.name = Stub.fontString("")
+    Stub.units.target = { name = "Senani Thunderheart", guid = SENANI }
+    Stub.units.focus = { name = "Hogger", guid = HOGGER }
+    Stub.units.boss1 = { name = "Senani Thunderheart", guid = SENANI }
+    Stub.units.targettarget = { name = "Hogger", guid = HOGGER }
+    Stub.units.vehicle = { name = "Senani Thunderheart", guid = "Vehicle-0-1-2-3-12696-0000" }
+    WFJ.Labels.forbidNames(WFJ.UnitFrames.NEVER_TOUCH)
+    assert.is_true(WFJ.UnitFrames.init())
+  end)
+
+  after_each(function()
+    H.uiTeardown()
+    Stub.keys.alt = false
+    Stub.combat = false
+    Stub.units = {}
+    WFJ.UnitFrames.NAMES_OUT_OF_COMBAT = false
+    for _, n in ipairs(GLOBALS2) do _G[n] = nil end
+  end)
+
+  it("a creature on the target, focus, boss and target-of-target frames shows its Italian name", function()
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    update(_G.FocusFrame)
+    assert.are.equal("Hogger il Rosso", nameOf(_G.FocusFrame))
+    update(_G.Boss1TargetFrame)
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.Boss1TargetFrame))
+    update(_G.TargetFrame.totFrame)
+    assert.are.equal("Hogger il Rosso", nameOf(_G.TargetFrame.totFrame))
+  end)
+
+  it("a player, another English and the player frame stay as written", function()
+    Stub.units.target = { name = "Senani Thunderheart", guid = "Player-1-0ABCDEF0" }
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    Stub.units.target = { name = "Senani Stormheart", guid = SENANI } -- a Forever rename
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Stormheart", nameOf(_G.TargetFrame))
+    update(_G.PlayerFrame) -- a vehicle's name in the player frame: never ours
+    assert.are.equal("Senani Thunderheart", nameOf(_G.PlayerFrame))
+  end)
+
+  it("a new target replaces the Italian with its own name; UNIT_NAME_UPDATE gets the Italian again", function()
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    Stub.units.target = { name = "Kobold Vermin", guid = "Creature-0-1-2-3-6-0000" }
+    update(_G.TargetFrame)
+    assert.are.equal("Kobold Vermin", nameOf(_G.TargetFrame))
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    assert.are.equal("Kobold Vermin", nameOf(_G.TargetFrame)) -- no stale name written back
+    Stub.units.target = { name = "Senani Thunderheart", guid = SENANI }
+    _G.UnitFrame_OnEvent(_G.TargetFrame, "UNIT_NAME_UPDATE", "target")
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    _G.UnitFrame_OnEvent(_G.TargetFrame, "UNIT_HEALTH", "target") -- any other event: nothing read
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    update(_G.TargetFrame) -- the same unit again: still Italian
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+  end)
+
+  it("Alt shows the English name; releasing it the Italian", function()
+    update(_G.Boss1TargetFrame)
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    assert.are.equal("Senani Thunderheart", nameOf(_G.Boss1TargetFrame))
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.Boss1TargetFrame))
+  end)
+
+  it("names in English (/fita nomi en) give the English back at once, and the Italian on the way back", function()
+    local style = "it"
+    WFJ.Names = { style = function() return style end }
+    update(_G.TargetFrame)
+    update(_G.FocusFrame)
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    style = "en"; WFJ.State.fire("names")
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    assert.are.equal("Hogger", nameOf(_G.FocusFrame))
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    style = "it"; WFJ.State.fire("names")
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    assert.are.equal("Hogger il Rosso", nameOf(_G.FocusFrame))
+  end)
+
+  it("a secret name is never read; the dictionary surface still refuses the name widgets", function()
+    _G.issecretvalue = function(v) return v == "Senani Thunderheart" end
+    assert.has_no.errors(function() update(_G.TargetFrame) end)
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    _G.issecretvalue = nil
+    _G.TargetFrame.name:SetText("Raid") -- a unit named like a dictionary word
+    assert.are.equal(0, WFJ.Labels.show(WFJ.UnitFrames.SURFACE, "probe", _G.TargetFrame.name))
+    assert.are.equal("Raid", nameOf(_G.TargetFrame))
+  end)
+
+  it("out-of-combat mode: in combat the English stays, the Italian comes back when combat ends", function()
+    WFJ.UnitFrames.NAMES_OUT_OF_COMBAT = true
+    Stub.combat = true
+    update(_G.TargetFrame)
+    assert.are.equal("Senani Thunderheart", nameOf(_G.TargetFrame))
+    Stub.combat = false
+    WFJ.UnitFrames.onCombatEnd()
+    assert.are.equal("Senani Cuore Tonante", nameOf(_G.TargetFrame))
+    WFJ.UnitFrames.NAMES_OUT_OF_COMBAT = false -- the default: written in combat too
+    Stub.combat = true
+    Stub.units.target = { name = "Hogger", guid = HOGGER }
+    update(_G.TargetFrame)
+    assert.are.equal("Hogger il Rosso", nameOf(_G.TargetFrame))
   end)
 end)
