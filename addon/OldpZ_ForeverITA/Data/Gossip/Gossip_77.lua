@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["774978a90b7a5caa"] = { "Qui finisce la corsa, per chi amico mio non è!", "." },
   ["774a10465a6cb8d9"] = { "Maledetto te, Halyndor! Ci hai condotti alla rovina!", "." },
   ["77672d8b2edf15c8"] = { "borbotta borbotta...", "." },
-  ["7768b2f028e7a237"] = { "Noi paladini dobbiamo guadagnarci ogni giorno il nostro posto tra i nostri fratelli Reietti, per non essere giudicati dei fanatici come la ⟦Scarlet Crusade=Crociata Scarlatta⟧. La luce non è soltanto uno strumento dei nostri nemici, ma un canale per la nostra giusta furia! È nella devozione alla Dama Oscura e nell'amore per la nostra casa che possiamo incanalare la luce per portare giustizia ai nostri nemici.\n\nLa Regina Banshee ci tiene d'occhio. Che lo faccia pure. Vedrà che la nostra risolutezza non vacillerà mai. Noi siamo Reietti!", "." },
+  ["7768b2f028e7a237"] = { "Noi paladini dobbiamo guadagnarci ogni giorno il nostro posto tra i nostri fratelli Reietti, per non essere giudicati dei fanatici come la ⟦Scarlet Crusade=Crociata Scarlatta⟧. La luce non è soltanto uno strumento dei nostri nemici, ma un canale per la nostra giusta furia! È nella devozione alla Dama Oscura e nell'amore per la nostra casa che possiamo incanalare la luce per portare giustizia ai nostri nemici.\n\n⟦The Banshee Queen=La Regina Banshee⟧ ci tiene d'occhio. Che lo faccia pure. Vedrà che la nostra risolutezza non vacillerà mai. Noi siamo Reietti!", "." },
   ["7773ec127574d494"] = { "Farò del mio meglio per tradurre e descrivere ciò che vedo.", "." },
   ["77786960a07dbdf8"] = { "Che storia incredibile. E come è morto?", "." },
   ["77798fe85232ef04"] = { "Sparisci dalla mia vista, mortale. Basta la tua sola presenza a spingermi alla violenza.", "." },

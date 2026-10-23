@@ -116,7 +116,7 @@ WFJ.Data.add("spell", {
   [5264] = { "Travestiti da South Seas Pirate.", nil, 0x78b12fc1, nil, "um" },
   [5265] = { "Travestiti da ⟦Stonesplinter Trogg=Trogg Scheggiadura⟧.", nil, 0x20d4de19, nil, "um" },
   [5266] = { "Travestiti da ⟦Syndicate Highwayman=Sciacallo della Lega dei Tagliagole⟧.", nil, 0x66c75688, nil, "um" },
-  [5267] = { "Travestiti da Dalaran Wizard.", nil, 0xa34c4926, nil, "um" },
+  [5267] = { "Travestiti da ⟦Dalaran Wizard=Mago di Dalaran⟧.", nil, 0xa34c4926, nil, "um" },
   [5268] = { "Travestiti da ⟦Dark Iron Dwarf=Nano Ferroscuro⟧.", nil, 0x583694b6, nil, "um" },
   [5271] = { "Aumenta l'intervallo tra gli attacchi di un nemico del $N1% per $D1.", "Intervallo tra gli attacchi aumentato del $N1%.", 0xf5860fae, 0x4f44ab25, "uu" },
   [5276] = { "Infligge $N1 danni da gelo a un nemico ogni $N2 s, stordendolo per $D2.", "Stordito.\n$N1 danni da gelo inflitti ogni $N2 s.", 0x6bef303d, 0xe80c632d, "uu" },

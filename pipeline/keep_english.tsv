@@ -824,6 +824,7 @@ unit	1494	name	8c553e6929744da7	Negolash
 unit	1497	name	d4c217b2df4375ef	Gunther Arcanus
 unit	1500	name	e96579dde8e4dac1	Coleman Farthing
 unit	1516	name	33811174537fb952	Konda
+unit	1518	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	1521	name	09a3783a6cd861a7	Gretchen Dedmar
 unit	1546	name	15b7a58ae3820b97	[UNUSED] Kegnar Thraln
 unit	1560	name	cd3e6a7f5d48a63b	Yvette Farthing
@@ -832,6 +833,49 @@ unit	1567	subname	33440aae25142bb6	Miner <Temp>
 unit	1571	name	27c02c76d3a9e8f4	Shellei Brondir
 unit	1572	name	c1a5bfd5cf95b289	Thorgrum Borrelson
 unit	1573	name	3b5086d23620ac74	Gryth Thurden
+unit	1574	name	5b649065730c5aec	Mage 1
+unit	1575	name	5b649069730c5af0	Mage 5
+unit	1576	name	c475e4c59cdf711f	Mage 10
+unit	1577	name	c475e4ca9cdf7124	Mage 15
+unit	1578	name	c475e5489cdf9100	Mage 20
+unit	1579	name	c475e5cb9cdfb0e1	Mage 30
+unit	1580	name	c475e64e9cdfd0c2	Mage 40
+unit	1581	name	0faa63fd30d71e7c	Warlock 1
+unit	1582	name	0faa640130d71e80	Warlock 5
+unit	1583	name	04312acff9c33680	Warlock 10
+unit	1584	name	04312ad4f9c33685	Warlock 15
+unit	1585	name	04312b52f9c35661	Warlock 20
+unit	1586	name	04312bd5f9c37642	Warlock 30
+unit	1587	name	04312c58f9c39623	Warlock 40
+unit	1588	name	f5f99965ee4fcdc2	Shaman 1
+unit	1589	name	f5f99969ee4fcdc6	Shaman 5
+unit	1590	name	deb981501e104e2f	Shaman 10
+unit	1591	name	deb981551e104e34	Shaman 15
+unit	1592	name	deb981d31e106e10	Shaman 20
+unit	1593	name	deb982561e108df1	Shaman 30
+unit	1594	name	deb982d91e10add2	Shaman 40
+unit	1595	name	0f666819a6bf0d8b	Rogue 1
+unit	1596	name	0f66681da6bf0d8f	Rogue 5
+unit	1597	name	e167451eb0901d4e	Rogue 10
+unit	1598	name	e1674523b0901d53	Rogue 15
+unit	1599	name	e16745a1b0903d2f	Rogue 20
+unit	1600	name	e1674624b0905d10	Rogue 30
+unit	1601	name	e16746a7b0907cf1	Rogue 40
+unit	1602	name	6ae959d9177bf264	Paladin 1
+unit	1603	name	6ae959dd177bf268	Paladin 5
+unit	1605	name	b568fb49a64a57c0	Paladin 10
+unit	1606	name	b568fb4ea64a57c5	Paladin 15
+unit	1613	name	b568fbcca64a77a1	Paladin 20
+unit	1614	name	b568fc4fa64a9782	Paladin 30
+unit	1615	name	b568fcd2a64ab763	Paladin 40
+unit	1618	name	424e25cdbd5a1dbe	Hunter 1
+unit	1620	name	424e25d1bd5a1dc2	Hunter 5
+unit	1621	name	edfd58bc55cfb702	Hunter 10
+unit	1622	name	f0bfbeff8410a36b	Priest 1
+unit	1623	name	edfd58c155cfb707	Hunter 15
+unit	1624	name	f0bfbf038410a36f	Priest 5
+unit	1625	name	edfd593f55cfd6e3	Hunter 20
+unit	1626	name	321ebf14166aadcd	Priest 10
 unit	1627	name	321ebf19166aadd2	Priest 15
 unit	1628	name	edfd59c255cff6c4	Hunter 30
 unit	1629	name	321ebf97166acdae	Priest 20
@@ -917,6 +961,7 @@ unit	1927	name	07e6e197c2e99113	Good Miser
 unit	1928	name	a1cfe3fb0546c22f	Bad Miser
 unit	1929	name	343effb1a33ffb22	Earth Miser
 unit	1930	name	438ef0668b8dc678	Steel Miser
+unit	1937	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	1945	name	3f63226578b00692	Tree Form 0.33
 unit	1946	name	1f3af233e35639e8	Lillith Nefara
 unit	1950	name	fcfed72c8a315585	Rane Yorick
@@ -933,6 +978,7 @@ unit	2046	name	7a97a24050991c8f	Andrew Krighton
 unit	2050	name	03cf4ca084daeab6	Raleigh Andrean
 unit	2051	name	509f02bcc76a24a5	Twain The Tester FOO
 unit	2051	subname	9b2b3ed02650ed4f	Model and Texture
+unit	2055	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	2057	name	d18cb72004c596d7	Huldar
 unit	2080	name	d2a98f13f13e9eeb	Denalan
 unit	2087	name	a5e3f7a13dd30de7	[UNUSED] Ambermill Citizen
@@ -967,6 +1013,7 @@ unit	2191	name	18dc6c1e41009bd2	Licillin
 unit	2197	name	8ef6686235a42346	[UNUSED] Crier Kirton
 unit	2199	name	28dd28ebf3a83dd8	[UNUSED] Crier Backus
 unit	2200	name	76cd6564971b0b12	[UNUSED] Crier Pierce
+unit	2216	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	2220	name	adc0a38c063c290f	[UNUSED] Undead Blacksmith Trainer
 unit	2223	name	bf67ec1357dc1efd	[UNUSED] Undead Cooking Trainer
 unit	2225	name	4ad5f881dcac6be1	Zora Guthrek
@@ -1335,6 +1382,7 @@ unit	3410	name	73109266486597e1	Jin'sora
 unit	3411	name	b08060ef60bb0437	Denni'ka
 unit	3412	name	0a90eb3dce5e8f3b	Nogg
 unit	3413	name	bff0dedd6a967290	Sovik
+unit	3419	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	3420	name	bfcd9c2ea690c0e9	[UNUSED] Ancestral Watcher
 unit	3427	name	eb04f3379817fd40	[UNUSED] Kendur
 unit	3428	name	5b98d03647e704f2	Korran
@@ -1465,7 +1513,6 @@ unit	3888	name	338224c2636286a4	Korra
 unit	3897	name	33e8416cffb0d82f	Krolg
 unit	3901	name	aa01b6f2c1fd5e7f	Illiyana
 unit	3915	name	b6bf08b1639ec89b	Dagri
-unit	3915	subname	e7be206f6b7952e3	Raene's Pet
 unit	3916	name	4ce70f12f8a810c0	Shael'dryn
 unit	3920	name	75a9dd072923b4f5	Anilia
 unit	3933	name	57dcb1b1d4e43899	Hai'zan
@@ -1574,11 +1621,6 @@ unit	4236	name	0b93f296c190d33e	Cyridan
 unit	4237	name	3cd56d529b59cfb3	Urthoniir
 unit	4240	name	f2bc10932fb05448	Caynrus
 unit	4241	name	1a81dcf642031b6d	Mydrannul
-unit	4243	subname	e2259679a1286681	Jeen'ra's Pet
-unit	4244	subname	42d8954ce99b32a9	Dorion's Pet
-unit	4245	subname	c68ff0f2385d8f38	Valyen's Pet
-unit	4246	subname	8a73210faf73366b	Kysandia's Pet
-unit	4247	subname	851e3613b38da548	Talar's Pet
 unit	4265	name	698184197a4822b8	Nyoma
 unit	4266	name	e61521bcf22be2cd	Danlyia
 unit	4267	name	45a45ac90c7c1df0	Daelyshia
@@ -1767,6 +1809,7 @@ unit	5190	name	8ebf0bc9ad9278bf	Merill Pleasance
 unit	5192	name	9a57afccc39bc9da	[UNUSED] Nils Stonebrow
 unit	5193	name	8f50ebc639d90172	Rebecca Laughlin
 unit	5201	name	d90b74f68a537750	Pat's Test Human
+unit	5204	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	5312	name	e2818ae1b549f149	Lethlas
 unit	5350	name	9c0697904c716bb8	Qirot
 unit	5353	name	d42a693d7322b4c6	Itharius
@@ -1777,6 +1820,7 @@ unit	5400	name	67de2f08602e79c7	Zekkis
 unit	5402	name	a9d55f09bf36ff26	Khan Hratha
 unit	5405	name	8a77d7a55da67c99	Pinto
 unit	5406	name	9227561402c5c9f8	Palomino
+unit	5414	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	5479	name	9922b97ead039346	Wu Shen
 unit	5480	name	a6017268fe1c5586	Ilsa Corbin
 unit	5482	name	7c589b94b4cbb855	Stephen Ryback
@@ -1890,6 +1934,10 @@ unit	5718	name	3c78e5a175c9ac40	Rothos
 unit	5719	name	48552610d7cabd71	Morphaz
 unit	5722	name	74607a08ad78cc6e	Hazzas
 unit	5724	name	6a3a0d9ea258b4b3	Ageron Kargal
+unit	5731	subname	ff871454bf89fff5	Royal Apothecary Society
+unit	5732	subname	ff871454bf89fff5	Royal Apothecary Society
+unit	5733	subname	ff871454bf89fff5	Royal Apothecary Society
+unit	5734	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	5744	name	3cacf636fde350a2	Cedric Stumpel
 unit	5745	name	2cce90e6f0fdd33c	Lazlow Ashby
 unit	5746	name	96016953e925cd59	Appolonia Kimble
@@ -1905,7 +1953,6 @@ unit	5767	name	579762ecb350cacc	Nalpak
 unit	5768	name	0958cf04a21ce8db	Ebru
 unit	5782	name	8d61685758c84bf7	Crildor
 unit	5784	name	2f3aee51618656b4	Waldor
-unit	5792	name	4c4be6f61e8e02e8	Drag Master Miglen
 unit	5796	name	00117c6f060e0c06	Ben
 unit	5800	name	8bbc5ccacd8d6306	Marcus Bel
 unit	5801	name	7ca017d33fab14a1	[PH] Party Bot
@@ -2090,8 +2137,13 @@ unit	7780	name	d247c632e9d123b0	Rin'ji
 unit	7783	name	b60ce987497592d4	Loramus Thalipedes
 unit	7790	name	96a914fdae6eb9d2	Orokk Omosh
 unit	7793	name	000028e50009d6e7	Ox
+unit	7793	subname	569a9c647597cb06	The Mithril Order
 unit	7794	name	89551943826fc363	McGavan
+unit	7794	subname	569a9c647597cb06	The Mithril Order
 unit	7797	name	a5f22e3d84250112	Ruuzlu
+unit	7798	subname	569a9c647597cb06	The Mithril Order
+unit	7802	subname	2aa03d31093f67d0	Artisan Blacksmith of the Mithril Order
+unit	7804	subname	569a9c647597cb06	The Mithril Order
 unit	7852	name	72c22cedff12810c	Pratt McGrubben
 unit	7866	name	d14166a4010c80be	Peter Galen
 unit	7868	name	9f61f70c6ed1b949	Sarah Tanner
@@ -2174,7 +2226,15 @@ unit	8502	name	9838f23e52e466ea	TEST Uber Human
 unit	8507	name	d2d34504abd6d7da	Tymor
 unit	8508	name	f98f90c26a7f882d	Gretta Ganter
 unit	8516	name	c11661d6003e8184	Belnistrasz
+unit	8546	subname	2bf5f62cbc01849a	Cult of the Damned
+unit	8547	subname	2bf5f62cbc01849a	Cult of the Damned
+unit	8548	subname	2bf5f62cbc01849a	Cult of the Damned
 unit	8549	name	502614a8f3d7de58	[UNUSED] Acolyte
+unit	8549	subname	2bf5f62cbc01849a	Cult of the Damned
+unit	8550	subname	2bf5f62cbc01849a	Cult of the Damned
+unit	8551	subname	2bf5f62cbc01849a	Cult of the Damned
+unit	8552	subname	2bf5f62cbc01849a	Cult of the Damned
+unit	8553	subname	2bf5f62cbc01849a	Cult of the Damned
 unit	8578	name	0298ba9c99ca0eb4	Magus Rimtori
 unit	8579	name	0c90d1ab67456928	Yeh'kinya
 unit	8580	name	20d2f84494af95d9	Atal'alarion
@@ -2367,6 +2427,7 @@ unit	10620	name	ca21f62d7462d46b	TEST NPC - DBUCKLER
 unit	10639	name	cf0d63bbfa9edfb2	Rorgish Jowl
 unit	10642	name	ecb1b14409fba98d	Eck'alom
 unit	10648	name	8efda1fd6a022f27	Xavaric
+unit	10665	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	10666	name	ed4b445de7b6ca78	Gordo
 unit	10718	name	786e5bb98d6f2427	Shahram
 unit	10736	name	db439b5ac998e4a0	Unkillable Test Dummy 60 Mage
@@ -2379,6 +2440,7 @@ unit	10806	name	638ce3f47db737dd	Ursius
 unit	10807	name	bd4b336b1e827d28	Brumeran
 unit	10810	name	1ef210dd8d98ec78	[UNUSED] Deathcaller Majestis
 unit	10813	name	4b0fbe3373efc17f	Balnazzar
+unit	10827	subname	2bf5f62cbc01849a	Cult of the Damned
 unit	10882	name	23d8ed72144ac1f0	Arikara
 unit	10897	name	d4aca819c1fc63c3	Sindrayl
 unit	10917	name	f1bdd0cc2e4d78e8	Aurius
@@ -2656,6 +2718,7 @@ unit	12804	name	bdb673869d47bb9a	[PH] TEST Fire God
 unit	12807	name	1ae683aa2130de65	Greshka
 unit	12857	name	416c216dee0bc3bb	Elogit
 unit	12858	name	d17d86fe399f6383	Torek
+unit	12861	name	29dd5214269ab56d	Wisp (Ghost Visual Only)
 unit	12867	name	c84f29265cec37e7	Kuray'bin
 unit	12899	name	26ade740099681f2	Axtroz
 unit	12900	name	370ea74c014dffec	Somnus
@@ -2953,6 +3016,11 @@ unit	15348	name	ecddfb518904570a	Kurinnaxx
 unit	15349	name	30af1b5b54350ab4	RC Blimp <PH>
 unit	15354	name	be34f5cd8b850ca2	Rachelle Gothena
 unit	15364	name	dcbaa4eef500af64	RC Mortar Tank <PH>
+unit	15373	name	dd4f07828dfa0289	Halloween Pirate Captain
+unit	15374	name	1c0356a58795fd53	Halloween Undead Pirate
+unit	15375	name	3bfca0ca502cd42a	Halloween Pirate Female
+unit	15376	name	f8b4a140b0495465	Halloween Male Ghost
+unit	15377	name	760c4a354786e76d	Halloween Female Ghost
 unit	15379	name	58b20d28b1d856e8	Caelestrasz
 unit	15380	name	be0443f267745fec	Arygos
 unit	15384	name	7b89de35f5e95745	World Trigger
@@ -3090,9 +3158,14 @@ unit	16101	name	6a5232dea1d07ff8	Jarien
 unit	16102	name	37fd3141c753564c	Sothos
 unit	16105	name	cbce94f6e23228f4	Aristan Mottar
 unit	16106	name	94d914cd838f8169	Evert Sorisam
+unit	16107	subname	ff871454bf89fff5	Royal Apothecary Society
 unit	16108	name	91464cd8a3c7a139	Fenstad Argyle
 unit	16109	name	d43b6b178f609865	Mara Rennick
 unit	16110	name	e1d49a3505cd745f	Annalise Lerent
+unit	16112	subname	165b5f2a5ea1d622	Brotherhood of the Light
+unit	16113	subname	165b5f2a5ea1d622	Brotherhood of the Light
+unit	16115	subname	165b5f2a5ea1d622	Brotherhood of the Light
+unit	16116	subname	165b5f2a5ea1d622	Brotherhood of the Light
 unit	16118	name	5b978830340f7078	Kormok
 unit	16128	name	c0eef47db2294301	Rhonin
 unit	16135	name	ac83b5b6dbe6053d	Rayne
@@ -3101,12 +3174,16 @@ unit	16138	name	ffc4afe4626efd0b	[UNUSED] Scourge Invasion Guardian
 unit	16140	name	c3dd2156eaad2c4d	[UNUSED] Necropolis Crystal, Buttress
 unit	16166	name	c2bd5f3cfeb641b1	Theldren Kill Credit
 unit	16188	name	73fcfc2235ac0ee8	[UNUSED] Buttress Channeler
+unit	16226	subname	165b5f2a5ea1d622	Brotherhood of the Light
 unit	16227	name	b6514902773f292b	Bragok
 unit	16256	name	6f871657fbc04c3a	Jessica Chambers
+unit	16283	subname	165b5f2a5ea1d622	Brotherhood of the Light
 unit	16306	name	4a0a585ebe864128	Scourge Invasion Minion, spawner, Ghost/Ghoul
 unit	16336	name	f2f7b882de83e7e9	Scourge Invasion Minion, spawner, Ghost/Skeleton
 unit	16338	name	58bd6ddb826d2336	Scourge Invasion Minion, spawner, Ghoul/Skeleton
 unit	16356	name	5541e42af012656a	Scourge Invasion Minion, finder
+unit	16365	subname	165b5f2a5ea1d622	Brotherhood of the Light
+unit	16376	subname	165b5f2a5ea1d622	Brotherhood of the Light
 unit	16387	name	defa52d346da1650	Atiesh
 unit	16398	name	d34e89d2753a8703	Necropolis Proxy
 unit	16430	name	e97248499a1dbc36	Ashbringer Trigger

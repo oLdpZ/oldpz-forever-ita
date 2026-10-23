@@ -26,7 +26,7 @@ WFJ.Data.add("unit", {
   [17082] = { "Fuciliere Torrig", nil, 0x12b1a448, nil, ".m" },
   [17090] = { nil, nil, 0x1c337226, nil, "em" },
   [17163] = { nil, nil, 0xf2711e23, nil, "em" },
-  [17209] = { nil, "Maestro del ⟦Spectral Gryphon=Grifone Spettrale⟧", 0xb19c1b3f, 0xe4bf9182, "e." },
+  [17209] = { nil, "Maestro dei Grifoni Spettrali", 0xb19c1b3f, 0xe4bf9182, "e." },
   [17231] = { "Gas del Giardino", nil, 0xbf21e697, nil, ".m" },
   [17239] = { nil, nil, 0x86bcf33d, nil, "em" },
   [17249] = { nil, nil, 0x60d04b2d, nil, "em" },
