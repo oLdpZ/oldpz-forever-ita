@@ -338,9 +338,9 @@ _VARIANT_KEYS = ("it", "provenance", "ruling")
 
 def drop_machine_for_kept(data: Path, kept: Iterable[KeepKey]) -> int:
     """A redraft to keep-English (`{"it": null}`) on a line that already has Italian: its MACHINE variants are
-    dropped (the line goes when nothing is left), so the keep `record_found` writes next holds and the old draft
-    stops shipping. An official, human or correction variant is never dropped: the line keeps it (it wins
-    over any keep) and a warning names the line on stderr. → machine variants dropped"""
+    dropped (the line goes when nothing is left), so the keep `record_found` writes next holds and the old
+    draft stops shipping. An official, human or correction variant is never dropped: the line keeps it (it
+    wins over any keep) and a warning names the line on stderr. → machine variants dropped"""
     by_type: dict[str, set[tuple[Any, str]]] = {}
     for type_, id_, field in kept:
         by_type.setdefault(type_, set()).add((id_, field))
