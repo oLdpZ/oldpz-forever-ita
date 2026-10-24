@@ -280,8 +280,15 @@ def kept_take(store: Path, t: Take) -> bytes | None:
 
 def keep_take(store: Path, t: Take, wav: bytes) -> None:
     """The paid take first, then what it was made for: a resume encodes it again from here."""
-    _write_bytes(wav_file(store, t.job.stem), wav)
-    _write_bytes(take_file(store, t.job.stem), (json.dumps({"fingerprint": t.fingerprint}) + "\n").encode())
+    keep_wav(store, t.job.stem, t.fingerprint, wav)
+
+
+def keep_wav(store: Path, stem: str, fingerprint: str, wav: bytes) -> None:
+    """`keep_take` by stem and fingerprint (a batch's results carry no Take, only what the job was sent
+    for)."""
+    (store / "wav").mkdir(parents=True, exist_ok=True)
+    _write_bytes(wav_file(store, stem), wav)
+    _write_bytes(take_file(store, stem), (json.dumps({"fingerprint": fingerprint}) + "\n").encode())
 
 
 def record_row(t: Take, mp3: Path, seconds: float, provenance: Mapping[str, str]) -> dict[str, Any]:
@@ -428,7 +435,7 @@ def _status(path: Path, **fields: Any) -> None:
     tmp.replace(path)
 
 
-def generate(  # noqa: PLR0913 - the engine, encoder, log and sleep are injected for the tests
+def generate(  # noqa: PLR0913, PLR0915 - the engine, encoder, log and sleep are injected for the tests
     root: Path,
     cfg: Mapping[str, Any],
     scope: str,
@@ -439,13 +446,17 @@ def generate(  # noqa: PLR0913 - the engine, encoder, log and sleep are injected
     limit: int | None = None,
     sleep: Callable[[float], None] | None = None,
     keys: Collection[str] | None = None,
+    kept_only: bool = False,
 ) -> dict[str, Any]:
     """Makes every file plan lists (for `keys` only, when given), up to `limit`; resumable. The record and the
     blocked list are written after every file, and on the way out whatever stops the run. A busy or failing
     engine (or encoder) stops it: → `stopped`, the reason. A blocked take is listed and the run goes on.
+    `kept_only`: only the takes the store already holds (a batch's results), so the engine is never asked.
     → the run's numbers."""
     p = plan(root, cfg, scope, store, keys)
     work: list[Take] = p["work"]
+    if kept_only:
+        work = [t for t in work if kept_take(store, t) is not None]
     out: dict[str, Any] = {"made": 0, "files": p["files"], "blocked": 0, "chars_made": 0, "seconds_made": 0.0,
                            "elapsed": 0.0, "stopped": None, "left": len(work), "silent": p["silent"]}
     if not work:

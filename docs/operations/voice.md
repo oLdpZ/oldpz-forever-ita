@@ -88,6 +88,15 @@ Paid. `LIMIT=n` stops after n files, a trial at a known cost: do `LIMIT=20` firs
 
 **Resume.** If the run stops it says why and how many files are left. Run the same command again: it continues from the record. After the engine answered busy (429, 503) the run already waited 5, 15, 45 and 120 seconds without spending a take; if it still stops, wait (evenings are busy) and run it again. A paid take whose MP3 was not written is encoded again from its kept WAV, not asked of the engine again. A missing `lame` or an unreadable take stops the run before more is spent.
 
+**Daily cap.** On the owner's tier the TTS models take 100 requests a day each (reset at midnight Pacific time) and 10 a minute; `generate` asks one request per file, so it fits auditions, fixes and a pilot, not a whole game. For more, use batch mode (below).
+
+### 8b. Generate in batch mode
+```
+make voice-batch-submit SCOPE=tirisfal VOICE_ENV=<.env>
+make voice-batch-fetch VOICE_ENV=<.env>
+```
+Paid, at half the standard price, outside the daily request cap (batch has limits of its own, in enqueued tokens). `submit` sends every take `plan` lists, as one job (a JSONL file of `{key, request}` lines uploaded through the File API), and records it in `<store>/batches/<time>.json` with the fingerprint each take was sent for; a take the store holds or a waiting job was sent for is not sent again. Gemini targets a day; a job not done in 48 hours expires. `fetch` asks after every job not fetched yet: a finished job's takes are kept in the store's `wav/` and encoded and recorded exactly as `generate` does with a take it already holds, without asking the engine for anything. A take the filter blocked, or that failed, is listed and goes into the next `submit`; a line changed after sending is not shipped and is sent again. `wfj voice batch cancel` cancels the waiting jobs. `LIMIT=n` sends the first n (a trial).
+
 ### 9. Pack
 ```
 make voice-pack SCOPE=tirisfal

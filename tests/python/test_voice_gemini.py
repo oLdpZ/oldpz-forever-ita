@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import io
+import json
 import wave
 
 import fake_gemini
@@ -183,3 +184,82 @@ def test_repr_has_no_key():
     eng = Engine(KEY)
     assert KEY not in repr(eng)
     assert KEY not in str(eng)
+
+
+# ---- batch mode ------------------------------------------------------------------------------------------
+
+
+def _lines(*texts):
+    return "".join(
+        json.dumps({"key": f"k{i}", "request": gemini.request_body(t, "voice_abc")}) + "\n"
+        for i, t in enumerate(texts)
+    ).encode()
+
+
+def test_batch_upload_create_poll_download(tmp_path):
+    server = fake_gemini.serve("ok", running_polls=1)
+    try:
+        eng = Engine(KEY, model="gemini-3.8-flash-tts", base=fake_gemini.url(server), timeout=5)
+        name = eng.upload("ofi-voce", _lines("Ciao.", "BLOCK"))
+        assert name == "files/in1"
+        start, send = server.calls[0], server.calls[1]
+        assert start["path"] == "/upload/v1beta/files" and start["key"] == KEY
+        assert start["headers"]["X-Goog-Upload-Command"] == "start"
+        assert start["headers"]["X-Goog-Upload-Header-Content-Type"] == "application/jsonl"
+        assert send["headers"]["X-Goog-Upload-Command"] == "upload, finalize"
+        job = eng.create_batch("ofi-tirisfal", name)
+        assert job == "batches/b1"
+        create = server.calls[2]
+        assert create["path"] == "/v1beta/models/gemini-3.8-flash-tts:batchGenerateContent"
+        assert create["body"] == {"batch": {"display_name": "ofi-tirisfal", "input_config": {"file_name": name}}}
+        first = eng.get_batch(job)
+        assert gemini.batch_state(first) == "RUNNING" and gemini.batch_results_file(first) is None
+        done = eng.get_batch(job)
+        assert gemini.batch_state(done) == "SUCCEEDED"
+        out = tmp_path / "out.jsonl"
+        eng.download(gemini.batch_results_file(done), out)
+        rows = {r["key"]: r for r in map(json.loads, out.read_text().splitlines())}
+        assert set(rows) == {"k0", "k1"}
+        with wave.open(io.BytesIO(gemini.answer_wav(rows["k0"]["response"]))) as w:
+            assert w.getframerate() == 48000 and w.readframes(w.getnframes()) == fake_gemini.PCM
+        with pytest.raises(Blocked):
+            gemini.answer_wav(rows["k1"]["response"])
+        assert all(c["key"] == KEY for c in server.calls if "upload-session" not in c["path"])
+        assert all("key=" not in c["path"] for c in server.calls)
+    finally:
+        server.shutdown()
+        server.server_close()
+
+
+def test_batch_cancel(tmp_path):
+    server = fake_gemini.serve("ok", running_polls=5)
+    try:
+        eng = Engine(KEY, base=fake_gemini.url(server), timeout=5)
+        job = eng.create_batch("x", eng.upload("x", _lines("Ciao.")))
+        eng.cancel_batch(job)
+        assert gemini.batch_state(eng.get_batch(job)) == "CANCELLED"
+    finally:
+        server.shutdown()
+        server.server_close()
+
+
+def test_a_busy_upload_is_busy():
+    server = fake_gemini.serve("batch-busy")
+    try:
+        with pytest.raises(Busy):
+            Engine(KEY, base=fake_gemini.url(server), timeout=5).upload("x", b"{}\n")
+    finally:
+        server.shutdown()
+        server.server_close()
+
+
+@pytest.mark.parametrize(("job", "state", "results"), [
+    ({"metadata": {"state": "JOB_STATE_SUCCEEDED"}, "response": {"responsesFile": "files/a"}}, "SUCCEEDED", "files/a"),
+    ({"state": "BATCH_STATE_RUNNING"}, "RUNNING", None),
+    ({"state": "JOB_STATE_SUCCEEDED", "dest": {"fileName": "files/b"}}, "SUCCEEDED", "files/b"),
+    ({"metadata": {"state": "BATCH_STATE_SUCCEEDED", "output": {"responsesFile": "files/c"}}}, "SUCCEEDED", "files/c"),
+    ({}, "UNKNOWN", None),
+])
+def test_batch_state_and_results_in_every_documented_place(job, state, results):
+    assert gemini.batch_state(job) == state
+    assert gemini.batch_results_file(job) == results

@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-status voice-audition voice-pack
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-batch-submit voice-batch-fetch voice-status voice-audition voice-pack
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -537,6 +537,12 @@ voice-plan: ## what voice-generate would make for SCOPE: files, characters, hour
 
 voice-generate: ## make SCOPE's missing or changed audio with Gemini (paid: check voice-plan first) into VOICE_STORE; resumable: [SCOPE=tirisfal] [LIMIT=n] [VOICE_ENV=<.env>]
 	cd pipeline && $(PY) -m wfj voice generate --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(LIMIT),--limit $(LIMIT))
+
+voice-batch-submit: ## send SCOPE's missing or changed audio as one Gemini batch job (paid, half price, no daily cap; results within a day): [SCOPE=tirisfal] [LIMIT=n] [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice batch submit --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(LIMIT),--limit $(LIMIT))
+
+voice-batch-fetch: ## ask after the batch jobs sent; keep, encode and record the takes of the finished ones: [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice batch fetch --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)")
 
 voice-status: ## the running or last voice-generate: done / total, rate, time left
 	cd pipeline && $(PY) -m wfj voice status --store "$(VOICE_STORE)"
