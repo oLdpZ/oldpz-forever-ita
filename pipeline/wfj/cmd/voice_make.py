@@ -227,15 +227,15 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
                 stem = (key if n == 0 else f"{key}_{vid}") + tail
                 r = cfg["roster"][vid]
                 try:
-                    text = voice.speech_text(it, key, sex, vals, said)
+                    plain = voice.speech_text(it, key, sex, vals, said)
+                    text = voice.respell(plain, cfg.get("pronounce", {}))
                     prompt = build_prompt(stem, profile, r["notes"], text)
                 except voice.VoiceError as e:
                     silent.append((stem, "refused", str(e)))
                     continue
-                fp = voice.fingerprint(
-                    voice.text_hash(it, vals, said), vid, r["gemini_voice"], r["model"], r["notes"], sex,
-                    profile,
-                )
+                respelled = text if text != plain else None
+                words = voice.text_hash(it, vals, said, respelled)
+                fp = voice.fingerprint(words, vid, r["gemini_voice"], r["model"], r["notes"], sex, profile)
                 takes.append(Take(voice.Job(stem, key, vid, sex), it, text, prompt, r["gemini_voice"], fp))
     return Survey(takes, silent)
 

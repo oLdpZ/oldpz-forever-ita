@@ -261,6 +261,26 @@ def test_a_rerun_makes_nothing_and_changed_italian_remakes_only_its_line(world):
     assert engine.said() == ["Prega al santuario, presto."]
 
 
+def test_a_pronunciation_respells_only_the_spoken_words_and_remakes_only_its_lines(world):
+    _gen(world, FakeEngine())
+    before = _audio(world)
+    world.cfg["pronounce"] = {"santuario": "santuàrio"}
+    engine = FakeEngine()
+    assert _gen(world, engine)["made"] == 1
+    assert engine.said() == ["Prega al santuàrio."]
+    after = _audio(world)
+    assert after["459-description"]["it_hash"] == before["459-description"]["it_hash"]  # the Italian is the same
+    assert after["459-description"]["fingerprint"] != before["459-description"]["fingerprint"]
+    assert after["456-completion"]["fingerprint"] == before["456-completion"]["fingerprint"]
+
+
+def test_respell_takes_whole_words_only():
+    table = {"Lich": "Litch", "lich": "litch"}
+    assert voice.respell("il Re dei Lich e un lich, non Lichen né Lich's", table) == (
+        "il Re dei Litch e un litch, non Lichen né Litch's")
+    assert voice.respell("niente", {}) == "niente"
+
+
 def test_a_file_gone_from_the_store_is_made_again(world):
     _gen(world, FakeEngine())
     (world.store / "mp3" / "457-description.mp3").unlink()

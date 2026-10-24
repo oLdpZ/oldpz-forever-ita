@@ -20,6 +20,12 @@ book_narrator = "booknarrator"
 narrator_profile = "The narrator of a fantasy adventure, telling what the hero sees and does"
 book_narrator_profile = "Someone reading aloud an old book, a letter or a sign in a fantasy world"
 
+# Words the voice says wrong, written as it must say them: only what is read aloud changes (`voice.respell`,
+# whole words, case as written), never the Italian on screen; a line with such a word is made again.
+[pronounce]
+Lich = "Litch"   # Re dei Lich: read as in English, with a soft ch, not "lik"
+lich = "litch"
+
 # One table per voice: voice (the Gemini voice name), notes (how it reads), fits (what it is for).
 # Every note asks for a natural, lively pace: the first audition sounded too slow.
 

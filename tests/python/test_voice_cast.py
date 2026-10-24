@@ -242,6 +242,12 @@ def test_load_config_gives_the_roster_the_engine_reads(tmp_path):
     bad = _toml(tmp_path / "bad.toml", '[roster.it]\nvoice = "Kore"\nnotes = "Voce calma."\nfits = "x"\n')
     with pytest.raises(ValueError, match="notes must be English"):
         voice_cast.load_config(bad)
+    assert cfg["pronounce"] == {}
+    said = _toml(tmp_path / "p.toml", '[pronounce]\nLich = "Litch"\n')
+    assert voice_cast.load_config(said)["pronounce"] == {"Lich": "Litch"}
+    empty = _toml(tmp_path / "e.toml", '[pronounce]\nLich = ""\n')
+    with pytest.raises(ValueError, match="pronounce 'Lich'"):
+        voice_cast.load_config(empty)
 
 
 def test_the_committed_voice_toml_is_a_valid_gemini_roster():

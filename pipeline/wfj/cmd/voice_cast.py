@@ -67,6 +67,11 @@ def load_config(path: Path) -> dict[str, Any]:
     problems = casting.roster_problems(raw, cfg["cast"], *narrators)
     if not isinstance(cfg.get("model"), str) or not cfg["model"]:
         problems.append("model must name the Gemini TTS model")
+    # words the voice says wrong, written as it must say them (`voice.respell`)
+    pronounce = cfg.setdefault("pronounce", {})
+    for word, said in pronounce.items():
+        if not word.strip() or not isinstance(said, str) or not said.strip():
+            problems.append(f"pronounce {word!r}: a word and how it is said, both non-empty")
     # the audio profile line of a prompt the narrators read (a creature's comes from its profile)
     for name, default in NARRATOR_PROFILES.items():
         text = cfg.setdefault(name, default)

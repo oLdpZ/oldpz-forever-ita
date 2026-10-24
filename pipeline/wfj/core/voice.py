@@ -105,14 +105,27 @@ def live_values(en: str) -> list[str]:
     return out
 
 
-def text_hash(it: str, values: Sequence[str] = (), spoken: str | None = None) -> str:
-    """What a file's words were made from: the shipped Italian, the numbers filled into it and the spoken
-    version, when the line has one."""
+def respell(text: str, table: Mapping[str, str]) -> str:
+    """`text` with each whole word of `table` written as the voice must say it (voice.toml `[pronounce]`:
+    "Lich" is read "lik" in Italian, "Litch" gives the soft ch). Only the transcript changes, never the
+    shipped Italian."""
+    for word, said in table.items():
+        text = re.sub(rf"(?<!\w){re.escape(word)}(?!\w)", said, text)
+    return text
+
+
+def text_hash(
+    it: str, values: Sequence[str] = (), spoken: str | None = None, respelled: str | None = None
+) -> str:
+    """What a file's words were made from: the shipped Italian, the numbers filled into it, the spoken
+    version, when the line has one, and the transcript, when a pronunciation respelled it."""
     payload = it
     if values:
         payload += "\x00" + ",".join(values)
     if spoken is not None:
         payload += "\x01" + spoken
+    if respelled is not None:
+        payload += "\x02" + respelled
     return it_hash(payload)
 
 
