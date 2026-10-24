@@ -12,6 +12,7 @@ import voice_fixture as vf
 from wfj.cmd import validate
 from wfj.cmd import voice as cmd
 from wfj.core import voice
+from wfj.io.jsonl_store import Store
 
 TODAY = "2026-10-23"
 G = voice.gossip_key
@@ -187,3 +188,12 @@ def test_validate_reads_data_voice(world):
     vf.write_rows(world.data / "voice" / "speakers.jsonl", [_row("1-description", 10)])
     problems = validate.rule_voice(world.data, Path("absent.toml"))
     assert problems == ["voice speakers 1-description: creature 10 has no voice row"]
+
+
+def test_book_pages_sharing_one_english_ship_the_lowest_pages_italian(world):
+    # the addon ships the lowest page id under a shared English (`lua_writer.keyed_rows`); the voice must hash
+    # that same Italian, or the take never matches the page
+    english, store = Store(world.data, english=True), Store(world.data)
+    english.save("book", [*english.load("book"), vf._en(31, "text", "Hello Morgan,$B$B-Baelog", hash=vf.SIGNED)])
+    store.save("book", [*store.load("book"), vf._it(31, "text", "Caro  Morgan.", english={"hash": vf.SIGNED})])
+    assert cmd.shipped_lines(world.data, [], [vf.SIGNED])[f"b-{vf.SIGNED}"] == "Caro Morgan."

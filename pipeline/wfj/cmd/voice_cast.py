@@ -59,7 +59,7 @@ NARRATOR_PROFILES = {"narrator_profile": "The narrator", "book_narrator_profile"
 
 def load_config(path: Path) -> dict[str, Any]:
     """voice.toml, checked (`casting.roster_problems`), with each roster voice as the engine and
-    `voice.in_step` read it: {gemini_voice, model, notes, fits}. Raises ValueError listing every problem."""
+    `voice_make.plan` read it: {gemini_voice, model, notes, fits}. Raises ValueError listing every problem."""
     with path.open("rb") as f:
         cfg = tomllib.load(f)
     raw, cfg["cast"] = cfg.get("roster", {}), cfg.get("cast", [])

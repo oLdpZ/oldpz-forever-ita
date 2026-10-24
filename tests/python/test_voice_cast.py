@@ -221,10 +221,6 @@ def test_load_config_gives_the_roster_the_engine_reads(tmp_path):
     assert cfg["roster"]["um"] == {"gemini_voice": "Algenib", "model": "gemini-3.1-flash-tts-preview",
                                    "notes": "Raspy and dry.", "fits": "undead male"}
     assert [r["name"] for r in cfg["cast"]] == ["undead, female", "undead"]
-    # the roster is what voice.in_step reads
-    job = voice.Job("1-description", "1-description", "um", "m")
-    assert voice.in_step([job], {"1-description": "Ciao."}, cfg["roster"], {}) == {
-        "missing": ["1-description"], "stale": []}
     bad = _toml(tmp_path / "bad.toml", '[roster.it]\nvoice = "Kore"\nnotes = "Voce calma."\nfits = "x"\n')
     with pytest.raises(ValueError, match="notes must be English"):
         voice_cast.load_config(bad)

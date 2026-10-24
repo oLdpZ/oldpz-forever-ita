@@ -124,7 +124,7 @@ def test_a_missing_or_damaged_take_is_left_out(made, capsys):
     out = capsys.readouterr().out
     assert "456-completion: damaged" in out and "459-description: damaged" in out
     # the other voice's take has no main take to hang on
-    assert "459-description_um: no take of the main voice" in out
+    assert "459-description_um: incomplete" in out
     lua = register(made)
     assert "459-description" not in lua and "456-completion" not in lua
 
@@ -132,7 +132,27 @@ def test_a_missing_or_damaged_take_is_left_out(made, capsys):
 def test_a_female_take_without_its_male_one_is_left_out(made, capsys):
     (made.store / "mp3" / "456-description.mp3").write_bytes(b"MP3 other")
     pack(made)
-    assert "456-description_f: no male take" in capsys.readouterr().out
+    assert "456-description_f: incomplete" in capsys.readouterr().out
+    assert "456-description" not in register(made)
+
+
+def test_a_left_out_other_voice_leaves_out_the_whole_line(made, capsys):
+    # shipped alone, the main take would speak for the creature cast to the other voice: one NPC, two voices
+    (made.store / "mp3" / "459-description_um.mp3").write_bytes(b"MP3 other")
+    pack(made)
+    out = capsys.readouterr().out
+    assert "459-description_um: damaged" in out and "459-description: incomplete" in out
+    assert "left out, incomplete: 1" in out
+    assert "459-description" not in register(made)
+    assert not (made.out / "OldpZ_ForeverITA_Voce" / "Sound" / "459-description.mp3").exists()
+
+
+def test_a_left_out_female_take_leaves_out_the_whole_line(made, capsys):
+    # shipped alone, the male take would call a female character "eroe"
+    (made.store / "mp3" / "456-description_f.mp3").write_bytes(b"MP3 other")
+    pack(made)
+    out = capsys.readouterr().out
+    assert "456-description_f: damaged" in out and "456-description: incomplete" in out
     assert "456-description" not in register(made)
 
 

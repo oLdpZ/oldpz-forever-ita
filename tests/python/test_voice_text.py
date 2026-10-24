@@ -4,12 +4,10 @@ import pytest
 
 from wfj.core import hashing, voice
 from wfj.core.voice import (
-    Job,
     VoiceError,
     book_key,
     fingerprint,
     gossip_key,
-    in_step,
     it_hash,
     live_values,
     needs_spoken,
@@ -69,10 +67,13 @@ def test_stage_directions_and_markup_are_dropped():
     assert speech_text("<sbuffa> Ancora tu?$B$BVattene.", "g-0123456789abcdef", "m") == "Ancora tu?\n\nVattene."
 
 
-def test_a_line_that_is_all_stage_direction_is_read_without_its_brackets():
-    assert speech_text("<Trevan annuisce lentamente.>", "g-0123456789abcdef", "m") == "Trevan annuisce lentamente."
+def test_a_line_that_is_all_stage_direction_is_silent():
+    # read without its brackets the direction would be spoken as a line; it is reported, never sent
+    with pytest.raises(VoiceError, match="g-0123456789abcdef: only a stage direction"):
+        speech_text("<Trevan annuisce lentamente.>", "g-0123456789abcdef", "m")
     text = "<In presenza della pietra, l'anima si agita.\n\nSembra che tu sia più vicin<o/a>.>"
-    assert speech_text(text, "95883-completion", "f") == "In presenza della pietra, l'anima si agita.\n\nSembra che tu sia più vicina."
+    with pytest.raises(VoiceError, match="95883-completion: only a stage direction"):
+        speech_text(text, "95883-completion", "f")
 
 
 def test_html_tags_of_a_page_are_not_read():
@@ -134,41 +135,6 @@ def test_fingerprint_changes_with_each_ingredient():
         changed = list(base)
         changed[i] = other
         assert fingerprint(*changed) != fingerprint(*base), i
-
-
-ROSTER = {"m1": {"gemini_voice": "Charon", "model": "mod", "notes": "nota"}}
-
-
-def _fp(it, voice_id="m1", sex="m", values=()):
-    r = ROSTER[voice_id]
-    return fingerprint(text_hash(it, values), voice_id, r["gemini_voice"], r["model"], r["notes"], sex)
-
-
-def test_in_step_reports_missing_and_stale_files():
-    lines = {"1-description": "Nuovo testo.", "1-progress": "Altro."}
-    jobs = [Job("1-description", "1-description", "m1", "m"), Job("1-progress", "1-progress", "m1", "m")]
-    audio = {"1-description": {"fingerprint": _fp("Vecchio testo.")}}
-    assert in_step(jobs, lines, ROSTER, audio) == {"missing": ["1-progress"], "stale": ["1-description"]}
-
-
-def test_in_step_is_empty_when_the_files_match():
-    lines = {"1-description": "Ben fatto, {name}!"}
-    jobs = [Job("1-description", "1-description", "m1", "m"), Job("1-description_f", "1-description", "m1", "f")]
-    audio = {"1-description": {"fingerprint": _fp(lines["1-description"])},
-             "1-description_f": {"fingerprint": _fp(lines["1-description"], sex="f")}}
-    assert in_step(jobs, lines, ROSTER, audio) == {"missing": [], "stale": []}
-    audio["1-description_f"] = {"fingerprint": _fp(lines["1-description"], sex="m")}
-    assert in_step(jobs, lines, ROSTER, audio)["stale"] == ["1-description_f"]
-
-
-def test_in_step_reads_numbers_and_spoken_versions():
-    lines = {"1-description": "Porta $N1 pelli, {class}."}
-    jobs = [Job("1-description", "1-description", "m1", "m")]
-    spoken = {"1-description": "Porta $N1 pelli, campione."}
-    audio = {"1-description": {"fingerprint": fingerprint(
-        text_hash(lines["1-description"], ("3",), spoken["1-description"]), "m1", "Charon", "mod", "nota", "m")}}
-    assert in_step(jobs, lines, ROSTER, audio, {"1-description": ("3",)}, spoken) == {"missing": [], "stale": []}
-    assert in_step(jobs, lines, ROSTER, audio, {"1-description": ("4",)}, spoken)["stale"] == ["1-description"]
 
 
 def test_scopes_and_fields():

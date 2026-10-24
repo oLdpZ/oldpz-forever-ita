@@ -49,7 +49,8 @@ def select(
     root: Path, cfg: Mapping[str, Any], scope: str, store: Path
 ) -> tuple[list[voice_make.Take], list[tuple[str, str]], list[tuple[str, str, str]]]:
     """(takes to ship, [(stem, why left out)], the survey's silent lines). A take ships when the audio record
-    holds its current fingerprint and the store holds exactly the recorded file."""
+    holds its current fingerprint and the store holds exactly the recorded file, and only with every other
+    take of its line: one left out leaves the line's others out as "incomplete"."""
     sv = voice_make.survey(root, cfg, scope)
     audio, blocked = voice_make.audio_record(root), voice_make.read_blocked(store)
     ship: list[voice_make.Take] = []
@@ -68,7 +69,12 @@ def select(
             left.append((stem, "damaged"))
         else:
             ship.append(t)
-    return ship, left, sv.silent
+    # a line ships whole or not at all: without its other voice's take a creature would speak with the main
+    # voice (one NPC, two voices), without its female take a female character would hear "eroe"
+    out_stems = {stem for stem, _ in left}
+    broken = {t.job.key for t in sv.takes if t.job.stem in out_stems}
+    left += [(t.job.stem, "incomplete") for t in ship if t.job.key in broken]
+    return [t for t in ship if t.job.key not in broken], left, sv.silent
 
 
 def entries(

@@ -120,9 +120,10 @@ def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken:
     """The text the voice reads, for a player of `sex` ("m" or "f"). A marked name becomes its Italian form,
     a `<a/b>` pair the form for `sex`, `{name}` the hero, `$B` a line break, `$N<k>` the k-th number of the
     line's English (`values`); a number only the game knows reads as "alcuni". Stage directions, colour codes,
-    `%s` and page markup are dropped (a line that is nothing but a stage direction is read without its
-    brackets). A line naming the player's class or race is read only from `spoken`, its spoken version. Any
-    other markup is refused with the line's key: it would be read aloud as symbols."""
+    `%s` and page markup are dropped; a line that is nothing but a stage direction is refused: read without
+    its brackets the direction would be spoken as a line. A line naming the player's class or race is read
+    only from `spoken`, its spoken version. Any other markup is refused with the line's key: it would be read
+    aloud as symbols."""
     if sex not in SEXES:
         raise VoiceError(f"{key}: sex must be one of {SEXES}, not {sex!r}")
     if spoken is None and needs_spoken(it):
@@ -138,8 +139,8 @@ def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken:
     text = _WORLD_STATE.sub(_UNKNOWN_NUMBER, _FILL.sub(number, _BREAK.sub("\n", text)))
     text = _ENTITY.sub("", _COLOUR.sub("", _HTML.sub("", text)))
     spoken_text = _STAGE.sub("", text)
-    if not _MARKUP.sub("", spoken_text).strip():
-        spoken_text = re.sub(r"[<>]", "", text)
+    if not _MARKUP.sub("", spoken_text).strip() and _MARKUP.sub("", text).strip():
+        raise VoiceError(f"{key}: only a stage direction")
     bad = _MARKUP.search(spoken_text)
     if bad:
         raise VoiceError(f"{key}: markup {bad.group(0)!r} the voice cannot read")
@@ -209,30 +210,6 @@ class Job:
     key: str
     voice: str
     sex: str
-
-
-def in_step(
-    file_jobs: Iterable[Job], lines: Mapping[str, str], roster: Mapping[str, Mapping[str, str]],
-    audio: Mapping[str, Mapping[str, str]], values: Mapping[str, Sequence[str]] | None = None,
-    spoken: Mapping[str, str] | None = None,
-) -> dict[str, list[str]]:
-    """The audio record against what the files must be now: `missing` (no record), `stale` (made from other
-    Italian, another voice or other notes). Empty lists: voice is in step with the translation. `roster` maps
-    a voice id to its `gemini_voice`, `model` and `notes`; `values` and `spoken` are per line key."""
-    out: dict[str, list[str]] = {"missing": [], "stale": []}
-    for j in file_jobs:
-        rec = audio.get(j.stem)
-        if rec is None:
-            out["missing"].append(j.stem)
-            continue
-        r = roster[j.voice]
-        want = fingerprint(
-            text_hash(lines[j.key], (values or {}).get(j.key, ()), (spoken or {}).get(j.key)),
-            j.voice, r["gemini_voice"], r["model"], r["notes"], j.sex,
-        )
-        if rec.get("fingerprint") != want:
-            out["stale"].append(j.stem)
-    return out
 
 
 # ---- who speaks a line -----------------------------------------------------------------------------------

@@ -89,11 +89,10 @@ def shipped_lines(root: Path, quests: Sequence[int], books: Sequence[str]) -> di
     }
     out.update({voice.gossip_key(ln["id"]): ln["it"] for ln in store.load("gossip") if shipped(ln)})
     hashes, pages = book_hashes(root), set(books)
-    out.update({
-        voice.book_key(hashes[ln["id"]]): ln["it"]
-        for ln in store.load("book")
-        if shipped(ln) and hashes.get(ln["id"]) in pages
-    })
+    # pages sharing one English: the addon ships the lowest page id's Italian (`lua_writer.keyed_rows`)
+    for ln in sorted(store.load("book"), key=lambda ln: ln["id"]):
+        if shipped(ln) and hashes.get(ln["id"]) in pages:
+            out.setdefault(voice.book_key(hashes[ln["id"]]), ln["it"])
     return out
 
 
