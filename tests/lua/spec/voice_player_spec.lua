@@ -157,13 +157,49 @@ describe("UI/VoicePlayer", function()
     assert.are.equal(0, #v.sounds)
     assert.are.equal(1, Q.size())
     assert.is_false(P.state().playing)
-    gossip() -- a second line held back too
+    -- a second line held back too: the gossip window's greeting, through Render as UI/Gossip shows it
+    WFJ.Render.show("gossip", "greeting", Stub.fontString("Greetings, traveler."), "Greetings, traveler.", "gossip",
+      "gossip", E.GOSSIP)
     assert.are.equal(2, Q.size())
     alt(false)
     assert.are.equal("Uccidi Sharptalon al Rifugio di Ventargento.", QuestInfoDescriptionText:GetText())
     assert.are.equal(1, #v.sounds)
     assert.are.equal(E.path("2-description"), v.sounds[1].path)
     assert.are.equal(1, P.state().waiting)
+  end)
+
+  it("a line shown while the reveal key is held that stays English when it is let go does not play", function()
+    local entry = E.DATA["quest.description"][2]
+    entry.status = "u" -- unaligned: the window keeps the English once the key is up
+    local ok, err = pcall(function()
+      alt(true)
+      Stub.showDetail()
+      assert.are.equal(1, Q.size())
+      alt(false)
+      assert.are.equal("Kill Sharptalon at Silverwind Refuge.", QuestInfoDescriptionText:GetText())
+      assert.are.equal(0, #v.sounds)
+      assert.are.equal(0, Q.size())
+      assert.are.equal("1", v.cvars.Sound_EnableDialog)
+    end)
+    entry.status = "."
+    assert(ok, err)
+  end)
+
+  it("a held line that waits behind another and stays English is dropped when its turn comes", function()
+    local entry = E.DATA["quest.description"][2]
+    local ok, err = pcall(function()
+      gossip()
+      alt(true)
+      entry.status = "u"
+      Stub.showDetail()
+      assert.are.equal(2, Q.size())
+      alt(false)
+      Stub.fireTimers(3.5) -- the greeting ends: the quest line, still English, is not played
+      assert.are.equal(1, #v.sounds)
+      assert.are.equal(0, Q.size())
+    end)
+    entry.status = "."
+    assert(ok, err)
   end)
 
   it("a line ending while the reveal key is held: the next one waits for the key, then starts", function()

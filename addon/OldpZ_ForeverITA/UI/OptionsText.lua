@@ -332,7 +332,7 @@ Text.SLASH = {
   "/fita nomi [it | en]  (official Italian or original English names)",
   "/fita config [collector | about]  ·  /fita fix  (report a line)",
   "/fita bug  (report a bug or an idea)",
-  "/fita voce stop  (stop the Italian voice and drop the lines waiting)",
+  "/fita voce stop  (with a voice pack: stop the voice and the lines waiting)",
   "/fita collector [on | off | status | path | clear | send [all]]",
   "/fita log [<n>]  (the problem log)  ·  /fita taint  (action-bar taint scan)",
   "/fita debug [hash | quest <id> | item <id> | spell <id>]",

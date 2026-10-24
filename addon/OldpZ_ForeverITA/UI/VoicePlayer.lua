@@ -7,7 +7,8 @@
 --   * The window closing does not stop its line: it plays to its end, and the lines waiting after it.
 --   * The reveal key (Alt) never stops a line already playing: a player holds it to compare the English while
 --     listening. While it is held no line starts: a line shown then (UI/Render fires "lineShown" for a line the key
---     kept English) or the next one in the queue waits, and starts when the key is let go.
+--     kept English) or the next one in the queue waits, and starts when the key is let go. A line shown while it was
+--     held that the window still shows in English once it is let go (unaligned, a value not filled) never plays.
 --   * Stop (the queue emptied): the panel's stop button, /fita voce stop, translation or voice switched off, a
 --     loading screen, logout. Skip: the next waiting line now.
 --   * Channel "Master", so silencing the dialog channel never silences our own line. PlaySoundFile(path, channel) →
@@ -234,9 +235,35 @@ function VoicePlayer.skip()
   return advance()
 end
 
--- The reveal key let go: the line that waited for it starts.
+-- The lines shown while the reveal key was held, once it is let go: UI/Render's refresh (a "modifier" listener added
+-- before ours) has written each one again, so a line whose record now shows the Italian keeps its place and one the
+-- window left English (unaligned, a value it could not fill, kept English) is dropped: its voice would read Italian
+-- over an English window. → the number dropped
+local function settleHeld()
+  local SS, dropped = WFJ.SurfaceState, 0
+  for i = #Q.items, 1, -1 do
+    local item = Q.items[i]
+    if item.heldKey then
+      local rec = SS and SS.get(item.surface, item.heldKey)
+      if rec and rec.applied ~= nil then
+        item.heldKey = nil
+      else
+        table.remove(Q.items, i)
+        dropped = dropped + 1
+      end
+    end
+  end
+  return dropped
+end
+
+-- The reveal key let go: the line that waited for it starts, when its window now shows it in Italian.
 local function released()
-  if playing or not Q.current() or not allowed() or held() then return false end
+  if not allowed() or held() then return false end
+  if settleHeld() > 0 and (playing or not Q.current()) then
+    if not playing then VoicePlayer.restoreDialog() end
+    notify(Q.current() and "queued" or "ended")
+  end
+  if playing or not Q.current() then return false end
   return startHead()
 end
 
@@ -249,9 +276,11 @@ function VoicePlayer.onShown(surface, recKey, kind, id)
   local who = VoicePlayer.speaker(window)
   local path, seconds = WFJ.Voice.decide(surface, recKey, kind, id, who, playerSex())
   if not path then return false end
+  -- shown while the reveal key is held, the line is still English: `heldKey` names its record, read when the key
+  -- is let go (settleHeld)
   return VoicePlayer.enqueue({ key = WFJ.Voice.packKey(kind, id), path = path, seconds = seconds, window = window,
     surface = surface, speaker = who, name = VoicePlayer.nameOf(window),
-    greeting = byKey[recKey] == "voice.greeting" })
+    greeting = byKey[recKey] == "voice.greeting", heldKey = held() and recKey or nil })
 end
 
 -- → { item = the line playing (the queue's head), playing, waiting = the number of lines after it } for the panel

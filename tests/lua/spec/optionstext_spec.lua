@@ -57,4 +57,11 @@ describe("UI/OptionsText.SLASH names every command", function()
       assert.is_truthy(subs:find(sub, 1, true), sub)
     end
   end)
+
+  it("says the voice command needs a voice pack: without one it has nothing to stop", function()
+    local Text = H.loadChunks({ "UI/OptionsText.lua" }).OptionsText
+    for _, line in ipairs(Text.SLASH) do
+      if line:find("/fita voce", 1, true) then assert.is_truthy(line:find("with a voice pack", 1, true), line) end
+    end
+  end)
 end)
