@@ -1,41 +1,41 @@
-{"creature": 1495, "voice": "undeadfemalesoft", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1495, "voice": "undeadfemalebitter", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1496, "voice": "undeaddeep", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1497, "voice": "undeadhollow", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1497, "voice": "undeadsepulchral", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1498, "voice": "undeadsly", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1499, "voice": "undeadwry", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1500, "voice": "undeadmale", "row": "undead", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1499, "voice": "undeadgrim", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1500, "voice": "undeadweary", "row": "undead, elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1515, "voice": "undeadwry", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1518, "voice": "undeadhollow", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1519, "voice": "undeadmale", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1521, "voice": "undeadfemalesharp", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1560, "voice": "undeadfemalesharp", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1518, "voice": "undeadsepulchral", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1519, "voice": "undeaddeep", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1521, "voice": "undeadfemaleproud", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1560, "voice": "undeadfemaleproud", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1568, "voice": "undeadmale", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1569, "voice": "undeadsly", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1569, "voice": "undeadhollow", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1570, "voice": "undeaddeep", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1652, "voice": "undeadstern", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1661, "voice": "undeadfemale", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1738, "voice": "undeaddeep", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1652, "voice": "undeadwry", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1661, "voice": "undeadfemaleghost", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1738, "voice": "undeadcroak", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1740, "voice": "undeadwry", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1742, "voice": "undeadwry", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1931, "voice": "malefirm", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1937, "voice": "undeadsly", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 1951, "voice": "undeaddeep", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 2132, "voice": "undeadfemale", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 2211, "voice": "malerough", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1937, "voice": "undeadnoble", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1951, "voice": "undeadmale", "row": "undead, officer", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 2132, "voice": "undeadfemaleghost", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 2211, "voice": "malecasual", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 3549, "voice": "undeadfemalesharp", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 4047, "voice": "elderman", "row": "elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 5688, "voice": "undeadfemalesoft", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 6784, "voice": "undeaddeep", "row": "undead", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 10665, "voice": "undeadsly", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 10666, "voice": "undeadmale", "row": "undead", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 10665, "voice": "undeadnoble", "row": "undead, scholar", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 10666, "voice": "undeadhiss", "row": "undead", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 11615, "voice": "undeadfemale", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 11832, "voice": "elderman", "row": "elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 11832, "voice": "elderwry", "row": "elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 11945, "voice": "undeadfemalesoft", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 244808, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 246152, "voice": "malewarm", "row": "male", "female": "femalewarm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 263664, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 265810, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 246152, "voice": "malebright", "row": "male", "female": "femalesteady", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 263664, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 265810, "voice": "malecasual", "row": "male", "female": "femaleeasy", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 265811, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 265812, "voice": "undeadfemale", "row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 265813, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
-{"creature": 267009, "voice": "undeadstern", "row": "undead, officer", "female": "undeadfemalesharp", "female_row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 267009, "voice": "undeadgrim", "row": "undead, officer", "female": "undeadfemaleproud", "female_row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}

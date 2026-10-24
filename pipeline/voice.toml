@@ -1,8 +1,10 @@
 # Voice over: the voices we may use (the roster) and which kind of speaker each one reads (the cast rows).
 # Every voice is one of the Gemini TTS prebuilt voices; `notes` is the director's note the prompt carries for
 # it, in English only (Gemini reads Italian direction aloud: `wfj validate` refuses accented letters and
-# common Italian words). A cast row lists several voices so that speakers of one kind do not all sound alike:
-# a creature keeps the one it is given.
+# common Italian words). One Gemini voice may appear in several roster entries with different notes: the
+# direction changes age, pitch and timbre enough to make another character, so the 30 prebuilt voices give
+# many more. A cast row lists several voices so that speakers of one kind do not all sound alike; a creature
+# keeps the one it is given.
 #
 # To recast a kind of speaker, change the voices of its cast row and run `wfj voice cast`: a file's
 # fingerprint holds its voice and notes, so only that row's lines are made again.
@@ -20,6 +22,8 @@ book_narrator_profile = "Someone reading aloud an old book, a letter or a sign i
 
 # One table per voice: voice (the Gemini voice name), notes (how it reads), fits (what it is for).
 # Every note asks for a natural, lively pace: the first audition sounded too slow.
+
+# --- narrators
 [roster.narrator]
 voice = "Charon"
 notes = "A calm storyteller with clear diction and a hint of gravity. Natural, flowing pace, never dragging."
@@ -30,15 +34,26 @@ voice = "Vindemiatrix"
 notes = "Reading a written page aloud: attentive and warm. Natural reading pace, never sleepy."
 fits = "book narrator: unsigned pages, signs and plaques"
 
+# --- undead men
 [roster.undeadmale]
 voice = "Algenib"
 notes = "A Forsaken man: raspy, gravelly and dry, with a cold, sardonic edge. Brisk, natural pace."
 fits = "undead male (Undertaker Mordo)"
 
+[roster.undeadcackle]
+voice = "Algenib"
+notes = "A Forsaken man: higher and thinner, giggling and unhinged, enjoying the horror. Quick, jittery pace."
+fits = "undead male: mad or gleeful"
+
 [roster.undeadhollow]
 voice = "Enceladus"
 notes = "A Forsaken man: breathy and hollow, a whisper of decay under the words. Steady pace, not slow."
 fits = "undead male"
+
+[roster.undeadhiss]
+voice = "Enceladus"
+notes = "A Forsaken man: sibilant and hissing, every s drawn out like a snake, sly and secretive. Natural pace."
+fits = "undead male: plotters, rogues"
 
 [roster.undeadstern]
 voice = "Alnilam"
@@ -50,20 +65,51 @@ voice = "Umbriel"
 notes = "A Forsaken man: smooth, cunning and faintly mocking, a cold smile in the voice. Lively pace."
 fits = "undead male: apothecaries, schemers"
 
+[roster.undeadnoble]
+voice = "Umbriel"
+notes = "A Forsaken aristocrat: cultured, precise and condescending, every word polished. Natural pace."
+fits = "undead male: magistrates, mages"
+
 [roster.undeaddeep]
 voice = "Iapetus"
 notes = "A Forsaken man: deep, dark and resonant, grim and weary. Measured but never slow."
 fits = "undead male"
+
+[roster.undeadweary]
+voice = "Iapetus"
+notes = "An old Forsaken man: tired, slightly slurred, as if his jaw were loose, grumbling. Natural pace."
+fits = "undead male: old, worn out"
 
 [roster.undeadwry]
 voice = "Rasalgethi"
 notes = "A Forsaken man: dry, wry and a little nasal, bitter humour. Brisk, conversational."
 fits = "undead male"
 
+[roster.undeadgrim]
+voice = "Zubenelgenubi"
+notes = "A Forsaken soldier: blunt, rough and battle-worn, a growl at the edge of every sentence. Quick pace."
+fits = "undead male: soldiers"
+
+[roster.undeadsepulchral]
+voice = "Charon"
+notes = "A Forsaken man: low and sepulchral, as if speaking from inside a tomb, an icy calm. Steady pace."
+fits = "undead male: priests, ominous figures"
+
+[roster.undeadcroak]
+voice = "Algieba"
+notes = "A Forsaken man: croaking and cracked, the voice of a dried-out throat, irritable. Brisk pace."
+fits = "undead male"
+
+# --- undead women
 [roster.undeadfemale]
 voice = "Gacrux"
 notes = "A Forsaken woman: mature, cold and dry, a faint rasp, quietly menacing. Natural pace."
 fits = "undead female"
+
+[roster.undeadcrone]
+voice = "Gacrux"
+notes = "An old Forsaken woman: a raspy crone, cackling and bitter. Natural pace."
+fits = "undead female: old"
 
 [roster.undeadfemalesharp]
 voice = "Despina"
@@ -75,6 +121,22 @@ voice = "Erinome"
 notes = "A Forsaken woman: soft, sad and distant, a hollow echo of who she was. Steady pace, not slow."
 fits = "undead female"
 
+[roster.undeadfemaleghost]
+voice = "Achernar"
+notes = "A Forsaken woman: thin, airy and ethereal, almost a ghost, eerie. Natural pace."
+fits = "undead female"
+
+[roster.undeadfemaleproud]
+voice = "Pulcherrima"
+notes = "A Forsaken woman: proud, forthright and cutting, contempt for the living. Lively pace."
+fits = "undead female"
+
+[roster.undeadfemalebitter]
+voice = "Laomedeia"
+notes = "A Forsaken woman: bitter and sardonic, a tired sneer in the voice. Brisk pace."
+fits = "undead female"
+
+# --- living men
 [roster.malefirm]
 voice = "Orus"
 notes = "A grown man of the living: firm, steady, plain-spoken. Natural pace."
@@ -90,6 +152,22 @@ voice = "Schedar"
 notes = "A grown man of the living: rough, gruff and stubborn. Quick, punchy delivery."
 fits = "adult male: soldiers, prisoners"
 
+[roster.malecasual]
+voice = "Zubenelgenubi"
+notes = "A grown man of the living: casual, easygoing, a bit cheeky. Lively pace."
+fits = "adult male"
+
+[roster.malebright]
+voice = "Sadachbia"
+notes = "A grown man of the living: bright, energetic and talkative. Quick pace."
+fits = "adult male"
+
+[roster.malesmooth]
+voice = "Algieba"
+notes = "A grown man of the living: smooth and polite, a merchant's charm. Natural pace."
+fits = "adult male: merchants"
+
+# --- living women
 [roster.femalefirm]
 voice = "Kore"
 notes = "A grown woman of the living: firm, confident, clear. Natural pace."
@@ -100,14 +178,40 @@ voice = "Aoede"
 notes = "A grown woman of the living: warm, breezy and friendly. Lively pace."
 fits = "adult female"
 
+[roster.femaleeasy]
+voice = "Callirrhoe"
+notes = "A grown woman of the living: easygoing, kind and relaxed. Natural pace."
+fits = "adult female"
+
+[roster.femalesteady]
+voice = "Autonoe"
+notes = "A grown woman of the living: steady, thoughtful and precise. Natural pace."
+fits = "adult female"
+
+# --- elders and the young
 [roster.elderman]
 voice = "Sadaltager"
 notes = "An elderly man: knowledgeable, a gentle crackle of age, unhurried but never slow."
 fits = "elderly male"
 
+[roster.elderwry]
+voice = "Rasalgethi"
+notes = "An elderly man: wry and grumpy, an old cough in the voice. Natural pace."
+fits = "elderly male"
+
+[roster.eldersage]
+voice = "Iapetus"
+notes = "An elderly man: wise and solemn, a deep voice worn by the years. Measured, not slow."
+fits = "elderly male: elders, seers"
+
 [roster.elderwoman]
 voice = "Sulafat"
 notes = "An elderly woman: warm and patient, a soft tremor of age, natural pace."
+fits = "elderly female"
+
+[roster.elderwomandry]
+voice = "Gacrux"
+notes = "An elderly woman: dry, shrewd and a little stern. Natural pace."
 fits = "elderly female"
 
 [roster.youngman]
@@ -115,75 +219,112 @@ voice = "Puck"
 notes = "A young man: upbeat, eager, quick."
 fits = "young male, boy"
 
+[roster.youngmanshy]
+voice = "Achird"
+notes = "A young man: lighter and a bit unsure, polite. Natural pace."
+fits = "young male"
+
 [roster.youngwoman]
 voice = "Leda"
 notes = "A young woman: youthful, bright, light, natural pace."
 fits = "young female, girl"
 
+[roster.youngwomanlively]
+voice = "Zephyr"
+notes = "A young woman: lively, curious and a bit cheeky. Quick pace."
+fits = "young female"
+
+# --- creatures
 [roster.creature]
 voice = "Fenrir"
 notes = "A creature that is not human: rough, growling, intense, barely held back. Punchy delivery."
 fits = "beasts, demons, dragons, elementals, giants, constructs"
 
+[roster.creaturebrute]
+voice = "Schedar"
+notes = "A huge brute: deep, slow-witted and booming, simple words. Natural pace."
+fits = "giants, ogres, brutes"
+
+[roster.creaturehiss]
+voice = "Enceladus"
+notes = "A strange creature: hissing, whispering and alien. Natural pace."
+fits = "demons, spirits, naga"
+
 # Cast rows, first match wins: `when` holds profile fields (core/casting: race, gender, age, archetype,
 # role), each a value or a list of values; a creature gets one voice from `voices` and keeps it.
 
 [[cast]]
+name = "undead, female, elder"
+when = { archetype = ["undead", "ghost"], gender = "female", age = "elder" }
+voices = ["undeadcrone", "undeadfemalebitter"]
+
+[[cast]]
 name = "undead, female"
 when = { archetype = ["undead", "ghost"], gender = "female" }
-voices = ["undeadfemale", "undeadfemalesharp", "undeadfemalesoft"]
+voices = ["undeadfemale", "undeadfemalesharp", "undeadfemalesoft", "undeadfemaleghost", "undeadfemaleproud",
+    "undeadfemalebitter"]
+
+[[cast]]
+name = "undead, elder"
+when = { archetype = ["undead", "ghost"], age = "elder" }
+voices = ["undeadweary", "undeadcroak"]
 
 [[cast]]
 name = "undead, officer"
 when = { archetype = ["undead", "ghost"], role = ["leader", "guard", "soldier"] }
-voices = ["undeadstern", "undeadmale", "undeadwry", "undeaddeep"]
+voices = ["undeadstern", "undeadmale", "undeadwry", "undeaddeep", "undeadgrim", "undeadcroak"]
 
 [[cast]]
 name = "undead, scholar"
 when = { archetype = ["undead", "ghost"], role = ["scholar", "mage", "priest"] }
-voices = ["undeadsly", "undeadhollow"]
+voices = ["undeadsly", "undeadhollow", "undeadnoble", "undeadsepulchral", "undeadhiss"]
 
 [[cast]]
 name = "undead"
 when = { archetype = ["undead", "ghost"] }
-voices = ["undeadmale", "undeadhollow", "undeaddeep", "undeadwry"]
+voices = ["undeadmale", "undeadhollow", "undeaddeep", "undeadwry", "undeadcackle", "undeadweary", "undeadhiss"]
 
 [[cast]]
 name = "creature"
 when = { archetype = ["demon", "dragon", "elemental", "mechanical", "beast-kin", "giant"] }
-voices = ["creature"]
+voices = ["creature", "creaturebrute", "creaturehiss"]
 
 [[cast]]
 name = "elder, female"
 when = { age = "elder", gender = "female" }
-voices = ["elderwoman"]
+voices = ["elderwoman", "elderwomandry"]
 
 [[cast]]
 name = "elder"
 when = { age = "elder" }
-voices = ["elderman"]
+voices = ["elderman", "elderwry", "eldersage"]
 
 [[cast]]
 name = "young, female"
 when = { age = ["child", "young"], gender = "female" }
-voices = ["youngwoman"]
+voices = ["youngwoman", "youngwomanlively"]
 
 [[cast]]
 name = "young"
 when = { age = ["child", "young"] }
-voices = ["youngman"]
+voices = ["youngman", "youngmanshy"]
 
 [[cast]]
 name = "female"
 when = { gender = "female" }
-voices = ["femalefirm", "femalewarm"]
+voices = ["femalefirm", "femalewarm", "femaleeasy", "femalesteady"]
 
 [[cast]]
 name = "soldier"
 when = { role = ["soldier", "guard"] }
-voices = ["malerough", "malefirm"]
+voices = ["malerough", "malefirm", "malecasual"]
+
+[[cast]]
+name = "merchant"
+when = { role = ["merchant", "innkeeper"] }
+voices = ["malesmooth", "malewarm"]
 
 [[cast]]
 name = "male"
 when = { gender = ["male", "none"] }
-voices = ["malefirm", "malewarm"]
+voices = ["malefirm", "malewarm", "malecasual", "malebright"]
