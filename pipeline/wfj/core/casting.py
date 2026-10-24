@@ -21,7 +21,7 @@ from collections.abc import Iterable, Mapping, Sequence
 from typing import Any
 
 # a constant, no I/O: the roster may name no voice but the engine's own
-from wfj.io.gemini import GEMINI_VOICES
+from wfj.io.gemini import voice_kind
 
 GENDERS = ("male", "female", "none", "mixed")
 AGES = ("child", "young", "adult", "elder")
@@ -359,7 +359,7 @@ def cast(
     return out
 
 
-ROSTER_FIELDS = ("voice", "notes", "fits")
+ROSTER_FIELDS = ("voice", "design", "notes", "fits")
 # Gemini reads direction it does not take for English aloud, so a voice's notes are English only: no accented
 # letter, and none of these common Italian words (articles, prepositions, and the words direction would use).
 _ACCENTED = re.compile(r"[àèéìíòóùú]", re.I)
@@ -387,15 +387,24 @@ def roster_problems(
     narrator: str,
     book_narrator: str,
 ) -> list[str]:
-    """voice.toml's roster and casting rows: ids well formed, each voice a prebuilt Gemini voice with English
-    director's notes, every voice a row names is in the roster, every `when` field and value one the profiles
-    can hold, names unique."""
+    """voice.toml's roster and casting rows: ids well formed, each voice a Gemini voice (prebuilt, library, or
+    designed, keeping its English design) with English director's notes, every voice a row names is in the
+    roster, every `when` field and value one the profiles can hold, names unique."""
     out: list[str] = []
     for vid, v in roster.items():
         if not _VOICE_ID.fullmatch(vid):
             out.append(f"roster {vid!r}: an id is lowercase letters and digits")
-        if v.get("voice") not in GEMINI_VOICES:
+        design = v.get("design")
+        if design is not None:
+            why = "empty" if not isinstance(design, str) or not design.strip() else not_english(design)
+            if why:
+                out.append(f"roster {vid}: design must describe the voice in English ({why})")
+        if v.get("voice") is None and design is not None:
+            out.append(f"roster {vid}: the designed voice is not made yet (run `wfj voice design`)")
+        elif not isinstance(v.get("voice"), str) or voice_kind(v["voice"]) is None:
             out.append(f"roster {vid}: voice {v.get('voice')!r} is not a Gemini voice")
+        elif voice_kind(v["voice"]) == "designed" and design is None:
+            out.append(f"roster {vid}: a designed voice keeps the design it was made from")
         notes = v.get("notes")
         if not isinstance(notes, str) or not notes.strip():
             out.append(f"roster {vid}: notes must say how the voice reads (English director's notes)")

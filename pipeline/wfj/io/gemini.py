@@ -1,7 +1,11 @@
 """The Google Gemini TTS engine over HTTPS (stdlib only): one line's prompt in, one WAV out.
 
 A line is one `generateContent` call on a TTS model. The key travels only in the `x-goog-api-key` header:
-it is never part of a URL, a message or a repr. The audio comes back as base64 PCM (s16le, mono, 24 kHz).
+it is never part of a URL, a message or a repr. The audio comes back as base64 PCM (s16le, mono, 24 kHz),
+or (3.8) as a whole WAV whose data chunk is followed by a metadata chunk: only its frames are kept.
+
+A voice is a prebuilt name (`Algenib`), a library voice (`it-it-…`) or a designed voice (`voice_…`, made
+from an English description with `create_voice` and kept by the API).
 """
 
 from __future__ import annotations
@@ -10,6 +14,7 @@ import base64
 import io
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -30,6 +35,20 @@ GEMINI_VOICES = (
     "Laomedeia", "Achernar", "Alnilam", "Schedar", "Gacrux", "Pulcherrima", "Achird", "Zubenelgenubi",
     "Vindemiatrix", "Sadachbia", "Sadaltager", "Sulafat",
 )  # fmt: skip
+_DESIGNED = re.compile(r"voice_[a-z0-9]+")
+_LIBRARY = re.compile(r"[a-z]{2}-[a-z]{2}-[a-z0-9]+(?:-[a-z0-9]+)*")
+
+
+def voice_kind(voice: str) -> str | None:
+    """`prebuilt`, `library` or `designed`, or None when `voice` is none of them."""
+    if voice in GEMINI_VOICES:
+        return "prebuilt"
+    if _DESIGNED.fullmatch(voice):
+        return "designed"
+    if _LIBRARY.fullmatch(voice):
+        return "library"
+    return None
+
 
 # finish reasons of a take the safety filter stopped (random: the same line often passes on another try)
 _BLOCKED = ("SAFETY", "PROHIBITED_CONTENT", "BLOCKLIST", "SPII", "IMAGE_SAFETY")
@@ -60,6 +79,26 @@ def pcm_to_wav(pcm: bytes, rate: int = RATE) -> bytes:
         w.setsampwidth(2)
         w.setframerate(rate)
         w.writeframes(pcm)
+    return buf.getvalue()
+
+
+def audio_to_wav(raw: bytes) -> bytes:
+    """The engine's audio as a clean WAV: raw PCM is wrapped; a WAV keeps only its audio frames (the chunk
+    3.8 adds after them is metadata, read as sound it is a loud noise at the end)."""
+    if raw[:4] != b"RIFF":
+        return pcm_to_wav(raw)
+    try:
+        with wave.open(io.BytesIO(raw), "rb") as r:
+            channels, width, rate = r.getnchannels(), r.getsampwidth(), r.getframerate()
+            frames = r.readframes(r.getnframes())
+    except (wave.Error, EOFError):
+        raise EngineError("the audio is not a valid WAV") from None
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(channels)
+        w.setsampwidth(width)
+        w.setframerate(rate)
+        w.writeframes(frames)
     return buf.getvalue()
 
 
@@ -98,8 +137,8 @@ class Engine:
     def _scrub(self, text: str) -> str:
         return text.replace(self._key, "***")
 
-    def _post(self, body: dict[str, Any]) -> Any:
-        url = f"{self.base}/models/{self.model}:generateContent"
+    def _post(self, body: dict[str, Any], path: str | None = None) -> Any:
+        url = f"{self.base}/{path or f'models/{self.model}:generateContent'}"
         req = urllib.request.Request(
             url,
             data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
@@ -120,12 +159,16 @@ class Engine:
             raise EngineError("the answer is not JSON") from None
 
     def synthesize(self, prompt: str, voice: str) -> bytes:
-        """One take as a WAV (mono, 24 kHz). `Blocked` when the filter stopped it or no audio came."""
+        """One take as a WAV (mono). `Blocked` when the filter stopped it or no audio came."""
+        if voice_kind(voice) == "prebuilt":
+            voice_config: dict[str, Any] = {"prebuiltVoiceConfig": {"voiceName": voice}}
+        else:
+            voice_config = {"voice": voice}
         body = {
             "contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {
                 "responseModalities": ["AUDIO"],
-                "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}},
+                "speechConfig": {"voiceConfig": voice_config},
             },
         }
         answer = self._post(body)
@@ -143,10 +186,26 @@ class Engine:
         if cand.get("finishReason") in _BLOCKED:
             raise Blocked(f"stopped ({cand['finishReason']})")
         try:
-            pcm = base64.b64decode(data, validate=True)
+            raw = base64.b64decode(data, validate=True)
         except ValueError:
             raise EngineError("the audio is not valid base64") from None
-        return pcm_to_wav(pcm)
+        return audio_to_wav(raw)
+
+    def create_voice(self, name: str, description: str, language: str = "it-IT") -> str:
+        """A designed voice made from an English description and kept by the API (it lasts a year from its
+        last use, up to 200 per project): its `voice_…` id."""
+        body = {
+            "store": True,
+            "voice": {"type": "prompted", "display_name": name, "language_code": language,
+                      "prompted": {"input": description}},
+        }
+        answer = self._post(body, "voices")
+        vid = ""
+        if isinstance(answer, dict):
+            vid = answer.get("id") or str(answer.get("name", "")).rsplit("/", 1)[-1]
+        if voice_kind(vid) != "designed":
+            raise EngineError(f"no voice id in the answer ({str(vid)[:40]!r})")
+        return vid
 
 
 def synthesize_retry(

@@ -9,7 +9,7 @@
 # To recast a kind of speaker, change the voices of its cast row and run `wfj voice cast`: a file's
 # fingerprint holds its voice and notes, so only that row's lines are made again.
 
-model = "gemini-3.1-flash-tts-preview"
+model = "gemini-3.8-flash-tts"
 
 # the voice of a line no creature says (a quest an item or object starts), and of a book page whose author
 # is not a known speaker
@@ -24,16 +24,6 @@ book_narrator_profile = "Someone reading aloud an old book, a letter or a sign i
 # Every note asks for a natural, lively pace: the first audition sounded too slow.
 
 # --- narrators
-[roster.narrator]
-voice = "Charon"
-notes = "A calm storyteller with clear diction and a hint of gravity. Natural, flowing pace, never dragging."
-fits = "narrator: object and item quests"
-
-[roster.booknarrator]
-voice = "Vindemiatrix"
-notes = "Reading a written page aloud: attentive and warm. Natural reading pace, never sleepy."
-fits = "book narrator: unsigned pages, signs and plaques"
-
 # --- undead men
 [roster.undeadmale]
 voice = "Algenib"
@@ -252,6 +242,213 @@ fits = "demons, spirits, naga"
 
 # Cast rows, first match wins: `when` holds profile fields (core/casting: race, gender, age, archetype,
 # role), each a value or a list of values; a creature gets one voice from `voices` and keeps it.
+
+# --- designed voices (3.8): one per speaker of the pilot and the two narrators. `design` is the
+# English description the voice was made from (`wfj voice design`); delete `voice` to remake it.
+
+[roster.narrator]
+voice = "voice_om8pgpqf9x5w"
+design = "A mature storyteller, speaks Italian: calm, clear and warm, a hint of gravity, the narrator of a dark fantasy adventure."
+notes = "A calm storyteller with clear diction. Natural, flowing pace, never dragging."
+fits = "narrator: object and item quests"
+
+[roster.booknarrator]
+voice = "voice_3ozqnuv31wpp"
+design = "A thoughtful reader, speaks Italian: attentive, warm and slightly hushed, as if reading an old book aloud in a quiet library, dark fantasy."
+notes = "Reading a written page aloud: attentive and warm. Natural reading pace, never sleepy."
+fits = "book narrator: unsigned pages, signs and plaques"
+
+[roster.mordo]
+voice = "voice_a74s310i6qa0"
+design = "An undead man risen from the grave, Italian speaker: raspy, gravelly, dry throat, cold and sardonic, middle-aged, a dark fantasy undertaker."
+notes = "Raspy and sardonic, brisk natural pace."
+fits = "Undertaker Mordo"
+
+[roster.coleman]
+voice = "voice_urap7s1t35g6"
+design = "An old undead man, Italian speaker: bitter, croaking, a cracked voice worn by age and grief, a former mill worker in a dark fantasy world."
+notes = "Bitter and grim, natural pace."
+fits = "Coleman Farthing"
+
+[roster.sevren]
+voice = "voice_bikj7g787wol"
+design = "An undead magistrate, Italian speaker: cultured, precise, cold authority, a dry rasp under a refined voice, dark fantasy."
+notes = "Authoritative and precise, natural pace."
+fits = "Magistrate Sevren"
+
+[roster.linnea]
+voice = "voice_dw0z7gpvbcu3"
+design = "An undead female soldier, Italian speaker: firm, cold and clipped, a faint rasp, a guard on patrol in a dark fantasy world."
+notes = "Firm and alert, quick natural pace."
+fits = "Deathguard Linnea"
+
+[roster.yvette]
+voice = "voice_hwedwt2upmpl"
+design = "A young undead woman, Italian speaker: once sweet, now hollow and grieving, a voice that turns cold and hard, dark fantasy."
+notes = "Grieving, then cold, natural pace."
+fits = "Yvette Farthing"
+
+[roster.dillinger]
+voice = "voice_rtlo5ou73h7w"
+design = "An undead soldier, speaks Italian: deep, gruff and gravelly, a battle-worn veteran of the Deathguard, blunt and unimpressed, dark fantasy."
+notes = "Gruff and blunt, steady natural pace."
+fits = "Deathguard Dillinger"
+
+[roster.gunther]
+voice = "voice_ns1145xcq91d"
+design = "An undead mage, speaks Italian: soft, dry and eerie, a reclusive arcane scholar with a secret, polite on the surface and obsessive underneath, dark fantasy."
+notes = "Quiet and intense, a little conspiratorial. Natural pace."
+fits = "Gunther Arcanus"
+
+[roster.bethor]
+voice = "voice_z9palxxypfmo"
+design = "An undead mage of the Undercity, speaks Italian: haughty, icy and precise, a proud sorcerer who holds a grudge, a thin cold rasp, dark fantasy."
+notes = "Haughty and cold, crisp natural pace."
+fits = "Bethor Iceshard"
+
+[roster.zygand]
+voice = "voice_6pea5e0hg62a"
+design = "An undead military commander, speaks Italian: hard, resonant and authoritative, a cold executor who gives orders and expects results, a grave rasp, dark fantasy."
+notes = "Commanding and stern, firm natural pace."
+fits = "Executor Zygand"
+
+[roster.johaan]
+voice = "voice_lduiiredsaoq"
+design = "An undead alchemist, speaks Italian: nasal, quick and clinical, an eager scientist of plagues with a hint of glee at his own work, dark fantasy."
+notes = "Eager and clinical, quick natural pace."
+fits = "Apothecary Johaan"
+
+[roster.simmer]
+voice = "voice_c2kge1hfknh4"
+design = "An undead guard, speaks Italian: flat, dry and bored, a young soldier standing watch, a faint hollow rasp, dark fantasy."
+notes = "Dry and matter-of-fact, natural pace."
+fits = "Deathguard Simmer"
+
+[roster.gretchen]
+voice = "voice_req63fzgrhf7"
+design = "An undead woman, speaks Italian: practical, brisk and earthy, a former farm wife who does not waste words, a light rasp, dark fantasy."
+notes = "Brisk and practical, natural pace."
+fits = "Gretchen Dedmar"
+
+[roster.sarvis]
+voice = "voice_ti42vdhugcvw"
+design = "An undead priest of shadow, speaks Italian: low, smooth and solemn, a measured teacher with a menacing calm, a whispery rasp, dark fantasy."
+notes = "Solemn and measured, natural pace, not slow."
+fits = "Shadow Priest Sarvis"
+
+[roster.arren]
+voice = "voice_ydf9seb71xqt"
+design = "An undead commander, speaks Italian: gravelly, curt and weary, an officer who has seen too many deaths, gruff but fair, dark fantasy."
+notes = "Curt and weary, natural pace."
+fits = "Executor Arren"
+
+[roster.terrence]
+voice = "voice_8jwbii1y2hel"
+design = "An undead guard, speaks Italian: croaking, rough and nervous, a soldier on a lonely post, dark fantasy."
+notes = "Rough and a little uneasy, natural pace."
+fits = "Deathguard Terrence"
+
+[roster.burgess]
+voice = "voice_d5r8l8j6ru06"
+design = "An undead guard, speaks Italian: wry, dry and sarcastic, a mid-ranking soldier with a gallows humour, a light rasp, dark fantasy."
+notes = "Wry and dry, natural pace."
+fits = "Deathguard Burgess"
+
+[roster.saltain]
+voice = "voice_eeya4d70bysl"
+design = "An undead guard, speaks Italian: hoarse, irritable and loud, a soldier fed up with the Scourge and with his duties, dark fantasy."
+notes = "Irritable and hoarse, brisk pace."
+fits = "Deathguard Saltain"
+
+[roster.bartholomew]
+voice = "voice_1bpm375ccxew"
+design = "An undead guard, speaks Italian: deep, slow-spoken and steady, a sturdy soldier, calm and reliable, a dull rasp, dark fantasy."
+notes = "Steady and calm, natural pace."
+fits = "Deathguard Bartholomew"
+
+[roster.elreth]
+voice = "voice_ltiubht2afe2"
+design = "A young undead woman, speaks Italian: soft, earnest and slightly breathy, a novice priestess eager to help, a faint ghostly echo, dark fantasy."
+notes = "Earnest and gentle, natural pace."
+fits = "Novice Elreth"
+
+[roster.zealot]
+voice = "voice_3hdlq3404ra1"
+design = "A living human man, speaks Italian: fervent, defiant and contemptuous, a captured religious fanatic of the Scarlet Crusade, a clear strong voice, dark fantasy."
+notes = "Defiant and scornful, intense natural pace."
+fits = "Captured Scarlet Zealot"
+
+[roster.renferrel]
+voice = "voice_htn9e56wqlnm"
+design = "An undead alchemist, speaks Italian: refined, aloof and precise, a senior scholar of the Royal Apothecary Society, a smooth dry rasp, dark fantasy."
+notes = "Aloof and precise, natural pace."
+fits = "Apothecary Renferrel"
+
+[roster.quinn]
+voice = "voice_s3zwzb03hr5n"
+design = "An undead assassin, speaks Italian: low, quiet and sly, a deathstalker who speaks almost in a whisper, sharp and watchful, dark fantasy."
+notes = "Low and sly, natural pace."
+fits = "Quinn Yorick"
+
+[roster.carolai]
+voice = "voice_f5ur3qgd081l"
+design = "An undead woman alchemist, speaks Italian: brisk, knowing and slightly sharp, a skilled craftswoman, a light hollow rasp, dark fantasy."
+notes = "Brisk and knowing, natural pace."
+fits = "Carolai Anise"
+
+[roster.mountaineer]
+voice = "voice_erymkp55q7up"
+design = "A dwarf man, speaks Italian: stout, rough and hearty, a captured mountaineer, stubborn and proud even in chains, a deep chesty voice, fantasy."
+notes = "Gruff and defiant, natural pace."
+fits = "Captured Mountaineer"
+
+[roster.shelene]
+voice = "voice_xm3mpx5h78td"
+design = "An undead woman, speaks Italian: sharp, businesslike and confident, a leatherworker who teaches her trade, a dry rasp, dark fantasy."
+notes = "Businesslike and confident, natural pace."
+fits = "Shelene Rhobart"
+
+[roster.renee]
+voice = "voice_jfxtszr6alqt"
+design = "An undead woman, speaks Italian: warm, hospitable and a little weary, an innkeeper who has heard every story, a soft rasp, dark fantasy."
+notes = "Warm and welcoming, natural pace."
+fits = "Innkeeper Renee"
+
+[roster.calvin]
+voice = "voice_yf36ckyny2c3"
+design = "A young undead man, speaks Italian: cocky, defensive and restless, newly risen and not yet at peace with it, a thin rasp, dark fantasy."
+notes = "Cocky and edgy, quick natural pace."
+fits = "Calvin Montague"
+
+[roster.holland]
+voice = "voice_cbhgunxgbz2e"
+design = "A young undead man, speaks Italian: eager, nervous and talkative, a junior alchemist keen to prove himself, a light rasp, dark fantasy."
+notes = "Eager and a little nervous, quick pace."
+fits = "Junior Apothecary Holland"
+
+[roster.gordo]
+voice = "voice_t5lyabqhtt7v"
+design = "A very large gentle giant, speaks Italian: very deep, thick and booming, simple and friendly, speaking in short plain sentences, a fantasy character."
+notes = "Deep, slow-witted and simple, unhurried but not dragging."
+fits = "Gordo"
+
+[roster.mickey]
+voice = "voice_59jh2dimnz7h"
+design = "An undead woman, speaks Italian: casual, wry and streetwise, a townsfolk of Brill with a dry sense of humour, a light rasp, dark fantasy."
+notes = "Casual and wry, natural pace."
+fits = "Mickey Levine"
+
+[roster.claire]
+voice = "voice_ntjiwy7jiaf0"
+design = "An undead woman, speaks Italian: soft, gentle and polite, a merchant with a quiet sadness, a faint hollow rasp, dark fantasy."
+notes = "Gentle and polite, natural pace."
+fits = "Claire Willower"
+
+[roster.png265812]
+voice = "voice_dmr793yq3mgx"
+design = "An undead woman, speaks Italian: weary, low and grave, a Forsaken who has lost much, a dry rasp, dark fantasy."
+notes = "Weary and grave, natural pace."
+fits = "creature 265812 (Forever)"
 
 [[cast]]
 name = "undead, female, elder"

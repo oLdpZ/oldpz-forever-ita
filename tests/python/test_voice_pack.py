@@ -165,7 +165,8 @@ def test_over_420_mb_fails_and_writes_nothing(made, monkeypatch, capsys):
     assert not made.out.exists()
 
 
-def test_the_verb_is_reached_through_wfj_voice(made):
+def test_the_verb_is_reached_through_wfj_voice(made, monkeypatch):
+    monkeypatch.setattr(voice_ship, "data_root", lambda: made.data)  # the fixture world, not the repo data
     assert voice.run(["pack", "--scope", "tirisfal", "--store", str(made.store), "--out", str(made.out),
                       "--config", str(made.config)]) == 0
 

@@ -46,6 +46,50 @@ def test_synthesize_request_and_wav(fake):
         assert w.readframes(w.getnframes()) == fake_gemini.PCM
 
 
+def test_whole_wav_answer_keeps_only_its_frames(fake):
+    _, eng = fake("wav")
+    wav = eng.synthesize("prompt", "Algenib")
+    with wave.open(io.BytesIO(wav)) as w:
+        assert (w.getnchannels(), w.getsampwidth(), w.getframerate()) == (1, 2, 48000)
+        assert w.readframes(w.getnframes()) == fake_gemini.PCM
+    assert b"C2PA" not in wav
+
+
+@pytest.mark.parametrize("voice", ["voice_a74s310i6qa0", "it-it-advisor-1"])
+def test_designed_and_library_voices_go_in_the_voice_field(fake, voice):
+    server, eng = fake("ok")
+    eng.synthesize("prompt", voice)
+    assert server.calls[0]["body"]["generationConfig"]["speechConfig"]["voiceConfig"] == {"voice": voice}
+
+
+def test_create_voice(fake):
+    server, eng = fake("ok")
+    assert eng.create_voice("ofi-mordo", "A raspy undead man.") == "voice_test123"
+    call = server.calls[0]
+    assert call["path"] == "/v1beta/voices"
+    assert call["key"] == KEY
+    assert call["body"] == {
+        "store": True,
+        "voice": {"type": "prompted", "display_name": "ofi-mordo", "language_code": "it-IT",
+                  "prompted": {"input": "A raspy undead man."}},
+    }
+
+
+def test_create_voice_error_without_key(fake):
+    _, eng = fake("http400")
+    with pytest.raises(EngineError) as e:
+        eng.create_voice("ofi-x", "A voice.")
+    assert KEY not in str(e.value)
+
+
+def test_voice_kinds():
+    assert gemini.voice_kind("Algenib") == "prebuilt"
+    assert gemini.voice_kind("voice_a74s310i6qa0") == "designed"
+    assert gemini.voice_kind("it-it-advisor-1") == "library"
+    assert gemini.voice_kind("algenib") is None
+    assert gemini.voice_kind("voice_") is None
+
+
 @pytest.mark.parametrize("mode", ["safety", "noaudio"])
 def test_blocked_take(fake, mode):
     _, eng = fake(mode)

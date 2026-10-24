@@ -14,6 +14,7 @@
   spoken export|import                      see `voice_spoken`
   audition                                  see `voice_audition`
   pack                                      see `voice_ship`
+  design                                    see `voice_design`
 """
 
 from __future__ import annotations
@@ -193,6 +194,7 @@ def run_speakers(a: argparse.Namespace) -> int:
 
 OWN_MODULE = {
     "scope": "voice_scope", "audition": "voice_audition", "spoken": "voice_spoken", "pack": "voice_ship",
+    "design": "voice_design",
 }
 
 

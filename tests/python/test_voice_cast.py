@@ -14,7 +14,7 @@ import voice_fixture as vf
 
 from wfj.cmd import voice_cast
 from wfj.core import casting, voice
-from wfj.io import client_tables, tables_stamp
+from wfj.io import client_tables, gemini, tables_stamp
 from wfj.io.client_tables import Display
 from wfj.io.gemini import GEMINI_VOICES
 
@@ -203,6 +203,24 @@ def test_english_notes_with_italian_looking_pieces_pass(notes):
     assert casting.roster_problems({"m": _voice(notes=notes)}, [], "m", "m") == []
 
 
+def test_roster_designed_and_library_voices():
+    design = "An undead man, raspy and dry."
+    ok = {
+        "d": _voice(gemini="voice_a74s310i6qa0", design=design),
+        "l": _voice(gemini="it-it-advisor-1"),
+    }
+    assert casting.roster_problems(ok, [], "d", "l") == []
+    bad = {
+        "todo": {"design": design, "notes": "Dry.", "fits": "x"},
+        "nodesign": _voice(gemini="voice_a74s310i6qa0"),
+        "itdesign": _voice(gemini="voice_a74s310i6qa0", design="Una voce roca."),
+    }
+    problems = " | ".join(casting.roster_problems(bad, [], "todo", "todo"))
+    for want in ("todo: the designed voice is not made yet", "nodesign: a designed voice keeps the design",
+                 "itdesign: design must describe the voice in English"):
+        assert want in problems
+
+
 def _toml(path: Path, body: str = "") -> Path:
     path.write_text(
         'model = "gemini-3.1-flash-tts-preview"\nnarrator = "nar"\nbook_narrator = "nar"\n'
@@ -229,12 +247,16 @@ def test_load_config_gives_the_roster_the_engine_reads(tmp_path):
 def test_the_committed_voice_toml_is_a_valid_gemini_roster():
     cfg = voice_cast.load_config(ROOT / "pipeline" / "voice.toml")
     assert cfg["narrator"] in cfg["roster"] and cfg["book_narrator"] in cfg["roster"]
-    assert cfg["model"] == "gemini-3.1-flash-tts-preview"
-    assert all(v["gemini_voice"] in GEMINI_VOICES for v in cfg["roster"].values())
-    # the raspy undead male the owner liked for Undertaker Mordo (1568)
-    mordo = {"creature": 1568, "race": "scourge", "gender": "male", "age": "adult", "archetype": "undead"}
-    got = casting.cast([mordo], cfg["cast"], cfg["narrator"], {})[1568]
-    assert cfg["roster"][got["voice"]]["gemini_voice"] == "Algenib"
+    assert cfg["model"] == "gemini-3.8-flash-tts"
+    assert all(gemini.voice_kind(v["gemini_voice"]) for v in cfg["roster"].values())
+    # the cast rows still give an undead male one of the prebuilt raspy voices
+    undead = {"creature": 1, "race": "scourge", "gender": "male", "age": "adult", "archetype": "undead"}
+    got = casting.cast([undead], cfg["cast"], cfg["narrator"], {})[1]
+    assert cfg["roster"][got["voice"]]["gemini_voice"] in GEMINI_VOICES
+    # Undertaker Mordo (1568) keeps the designed voice the owner heard in the 3.8 comparison
+    overrides = [json.loads(ln) for ln in (ROOT / "data" / "voice" / "overrides.jsonl").read_text().splitlines()]
+    mordo = next(r["voice"] for r in overrides if r["creature"] == 1568)
+    assert cfg["roster"][mordo]["gemini_voice"] == "voice_a74s310i6qa0"
 
 
 # ---- wfj voice profiles build|export|import and wfj voice cast -------------------------------------------
