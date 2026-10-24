@@ -56,7 +56,7 @@ sequenceDiagram
 ### The scope
 A scope is a list of ids in `pipeline/voice_<scope>.txt`, written by `wfj voice scope` and committed: the database's quests of the zone's areas plus Forever's own quests whose captured giver stands inside the zone's map bounds, and `b <key>` for each page of a sign or book standing there. What cannot be placed (no giver captured, given by an object, given by a creature the database never spawns) is counted and left out, never guessed. Only the `tirisfal` scope exists.
 
-### What the voice reads (`core/voice.speech_text`)
+### What the voice reads
 The text sent to the engine is the shipped Italian, for a player of one sex:
 
 - A marked name (`⟦en=it⟧`) is read in its Italian form, as the player sees it with `names.style = it`.
@@ -72,7 +72,7 @@ A line said differently for each sex (`{name}` or a `<a/b>` pair, in the written
 ### Spoken versions
 A line cannot always be said as written: it names the player's class or race (a fixed word would break the grammar), or the safety filter blocked every take of it. Its **spoken version** says the same thing, lightly reworded, and is the one deliberate exception to "what is heard is what is read". It is kept in `data/voice/spoken.jsonl` per line and sex (`m`, `f`, or `any` for one both sexes hear) beside the hash of the written Italian, with a reason and a provenance. `wfj voice spoken export` lists the lines that need one; `import` checks every row (a line of a scope, Italian unchanged since the export, a text the voice can read for each sex, English tags only) and writes none if one row is bad. A spoken version made from other Italian is stale and never read; the owner hears the spoken versions at the audition.
 
-### The prompt (`io/gemini.prompt_text`, `cmd/voice_make.build_prompt`)
+### The prompt
 One take is one `generateContent` call. The prompt has three sections, `# AUDIO PROFILE:` (who speaks: the creature's English name and its profile fields), `### DIRECTOR'S NOTES` (the roster voice's notes) and `#### TRANSCRIPT` (the speech text). Direction is English only, because Gemini reads direction it does not take for English aloud: the audio profile and the notes are refused when they carry an accented letter or a common Italian word (`casting.not_english`). The transcript is Italian with English tags only. The tags allowed are the `SPEECH_TAGS` of `core/voice.py`: `[sigh]`, `[laughing]`, `[whispering]`, `[cough]`, `[shouting]`, `[crying]`, `[gasp]` and `[groan]`; any other bracket would be read aloud, and the line is refused. There is no `systemInstruction`: the direction travels in the text.
 
 ### Casting
@@ -80,14 +80,14 @@ One take is one `generateContent` call. The prompt has three sections, `# AUDIO 
 
 `pipeline/voice.toml` holds the **roster** (a voice id, the Gemini prebuilt voice, the director's notes, what it is for) and the **cast rows**, first match wins, each with a `when` (profile fields) and a list of `voices`. A creature gets one voice from its row's list, chosen by a stable hash of its id: the same creature always gets the same voice, and neighbours spread over the list. `data/voice/overrides.jsonl` names a voice for one creature and wins over the rows. A creature the game shows as both sexes (`mixed`) is cast twice, male and female, and the addon picks by the NPC on screen. No match falls to the narrator. `wfj voice cast` writes `data/voice/voices.jsonl`.
 
-### The engine (`io/gemini.py`)
+### The engine
 `POST https://generativelanguage.googleapis.com/v1beta/models/<model>:generateContent` with the key in the `x-goog-api-key` header, read from `GEMINI_API_KEY` or from a `.env` file (`--env-file`). The key is never part of a URL, a message, a log or a repr. The audio comes back as base64 PCM s16le, mono, 24 kHz, and is wrapped as a WAV.
 
 - A take the safety filter stops (`finishReason` `SAFETY`, `PROHIBITED_CONTENT`, `BLOCKLIST`, `SPII`, `IMAGE_SAFETY`, or no audio) raises `Blocked`. The filter is random: the same line often passes on another try. `synthesize_retry` asks again up to four takes in all, then raises `Blocked`.
 - HTTP 429 and 503 raise `Busy`: the engine waits 5, 15, 45 and 120 seconds in turn without using up a take, then raises `Busy` and the run stops.
 - Any other failure raises `EngineError` and stops the run.
 
-### Making the audio (`cmd/voice_make.py`)
+### Making the audio
 `plan` lists what `generate` would make now, without calling the engine: files missing, files whose Italian, spoken version, voice, notes or profile changed, files gone from the store, by voice, with characters, hours of audio and an estimated cost, and the **silent lines** by reason (no voice cast, no spoken version, a stale spoken version, a line the voice cannot read). `generate` makes them.
 
 - **The store** is a folder outside the repository (`VOICE_ROOT`, or `--store`). `wav/` keeps each paid take as the engine returned it, with the fingerprint it was made for; `mp3/` holds what the pack ships; `blocked.jsonl` lists the takes the filter blocked four times; `status.json` is the run's progress.
@@ -97,7 +97,7 @@ One take is one `generateContent` call. The prompt has three sections, `# AUDIO 
 - **Resume**: a stopped run starts again from the record. A paid take whose MP3 or record row was never written (the encoder failed, the process died) is encoded again from its kept WAV, not asked of the engine again. A take blocked four times is not asked again until its line, spoken version, voice or profile changes.
 - **A busy or failing engine, a missing `lame`, or an unreadable take stops the run** and says how many files are left; running it again resumes. A blocked take only goes on the list and the run goes on.
 
-### The pack (`cmd/voice_ship.py`, `emit/voice_pack.py`)
+### The pack
 `wfj voice pack` writes `build/voice-pack/OldpZ_ForeverITA_Voce/` and the zip `OldpZ_ForeverITA_Voce-<version>.zip`:
 
 ```
@@ -112,10 +112,10 @@ Format 3: each `lines` entry is `[<pack key>] = { <file>, <Italian hash>, <secon
 
 The pack ships only the takes whose recorded fingerprint is the current one and whose MP3 in the store is exactly the recorded file (size and SHA-256); the others are left out and listed by reason (blocked, missing, stale, damaged). It is refused, writing nothing, over 420 MB (CurseForge refuses an upload over about 500 MB). The zip is checked to hold nothing `Register.lua` does not list.
 
-### Registration (`Core/Voice.lua`, `Main.lua`)
+### Registration
 The pack's `Register.lua` runs in its own addon, so it cannot see the main addon's namespace; it calls the global `OldpZ_ForeverITA_RegisterVoice`, which `Main.lua` defines before any pack loads (the pack depends on the main addon). `Voice.register` accepts format 3 and a folder name that starts with `OldpZ_ForeverITA_Voce`; it checks each entry's shape (a file name `^[%w%-_]+%.mp3$`, a 16-hex hash, numbers for lengths) and drops and counts the malformed ones. A file name outside the pack's `Sound` folder would play another addon's file, so none is built from anything else. Packs merge: each line remembers its folder, and a pack that registers again replaces only what it brought. A pack that brought at least one line fires State `voicePack`: the settings get their **Voce** page and the quest log its button.
 
-### The decision (`Voice.decide`)
+### The decision
 `decide(surface, record key, kind, id, speaker, sex, peek)` returns a file and its length, or nil and a reason:
 
 | Reason | Meaning |
@@ -131,7 +131,7 @@ The pack's `Register.lua` runs in its own addon, so it cannot see the main addon
 
 A female character never hears the male take of a line that names the player or picks a word by sex. The take is the one of the speaker's voice when the line has one for it, else the line's main take. `decide` only reads; the player calls `Voice.markHeard` when a greeting starts playing. `peek` asks without counting and ignores the greeting memory (the quest log's button).
 
-### Playing (`UI/VoicePlayer.lua`)
+### Playing
 - The start is State `lineShown`, fired by `UI/Render` after a write the client asked for, never on a refresh. The speaker is the creature of `questnpc` (quest window) or `npc` (talk window), with its sex; a book has none.
 - A line shown while another plays waits in `Core/VoiceQueue`; the same key is never queued twice (the talk window lays its first page out twice). The next line starts when the one before it ends.
 - `PlaySoundFile(path, "Master")`. The client reports no end, so a line ends at the pack's length plus 0.5 seconds (30 seconds when the entry has no length), on a timer carrying a token: an old timer never closes a newer line.
@@ -141,12 +141,12 @@ A female character never hears the male take of a line that names the player or 
 - A greeting set to once per creature is remembered in `OFI_DB.voiceHeard[creature id]` when it starts playing, not when it is queued. A file the client refuses is dropped and the next one plays.
 - Without a pack `onShown` returns at once: no frame, no sound call.
 
-### The panel (`UI/VoicePanel.lua`, `UI/VoicePanelHead.lua`)
+### The panel
 A small frame, `WFJVoicePanel`, about 220 × 64, a child of `UIParent` and never of a Blizzard frame, built by the first line that plays. Its `TOPLEFT` is anchored 4 pixels right of the `TOPRIGHT` of the quest, talk or book window that showed the line. It holds the speaker's 3D head, its name (Italian from `UnitNames` when `names.style = it` and the unit's name ships, otherwise the client's; a book's own title for a page), a stop button, a skip button and "+N" while N lines wait. No text: the window already shows it.
 
 The head is loaded from the NPC's unit (`SetUnit`) while the unit is still the line's speaker, otherwise from its creature id (`SetCreature`); the talking animation plays while the line does. A book, a narrator line or a creature the client cannot show gets an icon of the client's own art. A window that closes leaves the panel where it was; once nothing plays it goes after 3 seconds; the stop button hides it at once.
 
-### The quest log button (`UI/VoiceQuestLog.lua`)
+### The quest log button
 The addon remembers who spoke each quest field the window showed (`OFI_DB.voiceSpeakers["<id>-<field>"]`, kept only with a pack). In the quest log's details a play button appears on a quest whose description has a file; a click queues it like an offer, with the head and name remembered. The hook on `QuestMapFrame_ShowQuestDetails` is installed only when the pack arrives.
 
 ### Settings and diagnostics
@@ -196,7 +196,7 @@ The **Voce** page exists only once a pack has registered: `voice.enabled`, one s
 - **A page the client lays out twice** queues once.
 
 ## Unverified in game
-These facts come from the code and the stubs, not from a run in the Forever client; the in-game check is [Testing → Voice over](../testing/strategy.md).
+These facts come from the code and the stubs, not from a run in the Forever client; the in-game check is [Testing → Voice over checklist](../testing/strategy.md#voice-over-checklist).
 
 - `PlaySoundFile(path, "Master")` returns `willPlay, handle`, `StopSound(handle)` stops the file, and the length plus 0.5 seconds does not cut the end.
 - `Sound_EnableDialog` set through `C_CVar` silences the NPCs' English voices and comes back after `/reload` and logout.

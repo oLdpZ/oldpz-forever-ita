@@ -37,9 +37,9 @@
 
 ## Alternative scartate
 
-- **ElevenLabs, un motore locale o motori ibridi.** Fuori da questa fase: il proprietario ha scelto Gemini dopo le prove della sessione voci. Il motore sta dietro un adattatore, quindi cambiarlo resta possibile.
+- **ElevenLabs, un motore locale o motori ibridi.** Fuori da questa fase. Il motore sta dietro un adattatore, quindi cambiarlo resta possibile.
 - **Audio dentro la mod principale.** Gigabyte per tutti, e ogni correzione di testo costringerebbe a riscaricarli.
 - **Un progetto CurseForge e un repository dell'audio per il pilota.** Il pilota è uno zip passato alla gilda; la catena di rilascio (progetto, caricamento automatico, spillo sull'audio) si porta dopo, quando il pacchetto si allarga.
 - **Leggere il nome, la classe o la razza del giocatore.** Il pacchetto si fa in anticipo e il nome dei giocatori della gilda non deve finire in un file; per la classe e la razza la grammatica non regge con una parola neutra.
 - **Rendere sempre fedele ogni battuta.** Una battuta bloccata dal filtro, o con `{class}` o `{race}`, resterebbe muta in un gran numero di casi: una versione parlata costa meno del silenzio, purché resti un'eccezione dichiarata.
-- **Il pannello con il testo, a righe, del sistema giapponese.** Il testo è già nella finestra; il riquadro piccolo non lo ripete.
+- **Un pannello con il testo.** Il testo è già nella finestra; il riquadro piccolo non lo ripete.

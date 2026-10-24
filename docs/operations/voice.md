@@ -30,6 +30,8 @@ Writes `pipeline/voice_tirisfal.txt`: the zone's quests and book pages. It print
 ```
 make voice-speakers SCOPE=tirisfal
 ```
+Its inputs are variables with defaults under `predecessors/` (the import's inputs folder, not tracked; a worktree reads the main checkout's): `VOICE_DB` is the VMaNGOS database (default: `VMANGOS_PRIORITY_DB`, `predecessors/vmangos-priority/mangos.sqlite`) and `VOICE_DB_SHA` the commit its provenance names (default: `VMANGOS_UNIT_SHA`); `FOREVER_VO` is the forever-vo checkout (default `predecessors/forever-vo`) at `FOREVER_VO_SHA`, the pinned commit, which names the speakers of the quests the database lacks. Override any of them on the command line. The scope step takes the same database and forever-vo folder.
+
 Writes `data/voice/speakers.jsonl`: who says each line. It prints the lines read by a narrator, the quests the database lacks, the lines with several speakers and the scoped lines with no Italian. Look at the narrator lines: a quest started by a creature that is not known should not be a narrator.
 
 ### 3. Profiles
@@ -95,11 +97,8 @@ Writes `build/voice-pack/OldpZ_ForeverITA_Voce/` (TOC, `Register.lua`, `LEGGIMI.
 ## Install and test in game
 1. Install the main addon `OldpZ_ForeverITA` as usual.
 2. Unzip `OldpZ_ForeverITA_Voce-<version>.zip` into `Interface\AddOns\`, beside it. Restart the client fully (a new folder is not seen by `/reload`).
-3. Log in with an undead character and check the **Voce** page appears in the addon's options (it exists only with a pack). `/fita debug` shows `voice: OldpZ_ForeverITA_Voce N lines`.
-4. In Deathknell take a quest from an NPC in the scope. The line is heard in Italian, the small panel shows the NPC's head and name beside the window, the NPC's English voice is silent. Try ■ (stop), ⏭ (skip), a second quest while one plays (`+1`), closing the window (the line goes on), holding Alt (the playing line goes on; a new one waits), a loading screen (stops). Do it with a female and a male character: a line that says `{name}` is said **eroina** / **eroe**.
-5. Open a book or sign in the scope, and the quest log's play button on a quest.
-6. After `/reload`, and after logout, the game's NPC voices are back on. The facts this settles are listed in [Voice over → Unverified in game](../systems/voice.md#unverified-in-game); record what you see.
-7. Without the folder the addon behaves as before: no Voce page, no panel.
+3. Run the [Voice over checklist](../testing/strategy.md#voice-over-checklist): it walks the pack loading, the Voce page, an offer, Alt, stop and skip, the queue, a female and a male character, books, the quest log button and the game's English voice coming back. The facts it settles are listed in [Voice over → Unverified in game](../systems/voice.md#unverified-in-game); record what you see.
+4. Without the folder the addon behaves as before: no Voce page, no panel.
 
 To remove the voice, delete the folder; the main addon is unchanged.
 
