@@ -77,8 +77,25 @@ def test_a_busy_engine_stops_the_run(tmp_path):
     def create(name, description):
         raise Busy("HTTP 429")
 
+    waits = []
     with pytest.raises(Busy):
-        voice_design.design(path, create, say=lambda _: None)
+        voice_design.design(path, create, say=lambda _: None, sleep=waits.append)
+    assert waits == [5, 15, 45]
+
+
+def test_a_failure_inside_the_engine_is_asked_again(tmp_path):
+    path = tmp_path / "voice.toml"
+    path.write_text(TOML, encoding="utf-8")
+    asked = []
+
+    def create(name, description):
+        asked.append(name)
+        if len(asked) == 1:
+            raise Busy("HTTP 500: Voice synthesis service failed to process the request.")
+        return "voice_ok"
+
+    assert voice_design.design(path, create, say=lambda _: None, sleep=lambda _: None) == (2, {})
+    assert asked == ["ofi-mordo", "ofi-mordo", "ofi-mordo2"]
 
 
 def test_design_through_the_engine(tmp_path):

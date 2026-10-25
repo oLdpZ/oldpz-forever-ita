@@ -13,8 +13,10 @@ The API keeps a designed voice a year from its last use, up to 200 per project.
 from __future__ import annotations
 
 import argparse
+import functools
 import re
 import sys
+import time
 import tomllib
 from collections.abc import Callable, Sequence
 from pathlib import Path
@@ -24,6 +26,7 @@ from wfj.io import gemini
 from wfj.paths import data_root
 
 NAME_PREFIX = "ofi-"
+WAITS = (5, 15, 45)
 
 
 def to_design(text: str) -> list[tuple[str, str]]:
@@ -41,15 +44,26 @@ def with_voice(text: str, vid: str, voice_id: str) -> str:
     return f'{text[: m.end()]}\nvoice = "{voice_id}"{text[m.end():]}'
 
 
+def _patiently(call: Callable[[], str], sleep: Callable[[float], None]) -> str:
+    """`call`, asked again after 5, 15 and 45 seconds while the engine is busy or failed inside."""
+    for wait in WAITS:
+        try:
+            return call()
+        except gemini.Busy:
+            sleep(wait)
+    return call()
+
+
 def design(
-    path: Path, create: Callable[[str, str], str], say: Callable[[str], None] = print
+    path: Path, create: Callable[[str, str], str], say: Callable[[str], None] = print,
+    sleep: Callable[[float], None] = time.sleep,
 ) -> tuple[int, dict[str, str]]:
     """Makes the missing designed voices, writing voice.toml after each one: (count made, {roster id: why}
     for each the engine refused, e.g. a description the safety filter blocked; the others are still made)."""
     made, refused = 0, {}
     for vid, description in to_design(path.read_text(encoding="utf-8")):
         try:
-            voice_id = create(f"{NAME_PREFIX}{vid}", description)
+            voice_id = _patiently(functools.partial(create, f"{NAME_PREFIX}{vid}", description), sleep)
         except gemini.Busy:
             raise
         except gemini.EngineError as e:

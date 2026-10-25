@@ -32,17 +32,38 @@ class Zone:
     x: tuple[float, float]  # south, north
     y: tuple[float, float]  # east, west
     floor: float  # a spawn below it stands in a city under the zone, not in the zone
+    # a city on the zone's map, inside its rectangle: (x range, y range) each, left out
+    cut: tuple[tuple[tuple[float, float], tuple[float, float]], ...] = ()
 
     def holds(self, map_id: int, x: float, y: float, z: float) -> bool:
+        if any(cx[0] <= x <= cx[1] and cy[0] <= y <= cy[1] for cx, cy in self.cut):
+            return False
         return (map_id == self.map and self.x[0] <= x <= self.x[1] and self.y[0] <= y <= self.y[1]
                 and z >= self.floor)
 
 
-# The world map's bounds of each zone (WorldMapArea: LocBottom/LocTop are x, LocRight/LocLeft are y).
-ZONES = {
-    # Tirisfal Glades (area 85; WorldMapArea 20, map 0) and Deathknell (area 154), its starting area, which
-    # the database files as a zone of its own. Undercity lies under the glades, below sea level.
-    "tirisfal": Zone((85, 154), 0, (829.1666, 3837.4999), (-1485.4166, 3033.3333), 0.0),
+# The world map's bounds of each zone (WorldMapArea: LocBottom/LocTop are x, LocRight/LocLeft are y; on
+# 1.60.1 UiMapAssignment's Region_0/3 are x, Region_1/4 y).
+# Tirisfal Glades (area 85; WorldMapArea 20, map 0) and Deathknell (area 154), its starting area, which the
+# database files as a zone of its own. Undercity lies under the glades, below sea level.
+TIRISFAL = Zone((85, 154), 0, (829.1666, 3837.4999), (-1485.4166, 3033.3333), 0.0)
+# On Kalimdor a map rectangle (UiMapAssignment) spans the neighbours too: Durotar's (x -1716..1808,
+# y -7250..-1962) holds Ratchet, the Barrens' edge and part of Ashenvale, Mulgore's (x -3835..267,
+# y -3675..2479) Camp Taurajo and the Barrens. So these boxes are the zones' land: the spawns of the NPCs of
+# their quests (those inside the zone) with a margin, the coast and the river borders.
+# Durotar (area 14, map 1) and the Valley of Trials (363), up to the Southfury river (Ratchet and the
+# Barrens are west of it). Orgrimmar (UiMap 1454) is cut out.
+DUROTAR = Zone((14, 363), 1, (-1400.0, 1400.0), (-5600.0, -3850.0), -1000.0,
+               (((1338.4606, 2273.8772), (-5083.2056, -3680.6010)),))
+# Mulgore (area 215, map 1), Red Cloud Mesa (220, Camp Narache) and Palemane Rock (221), north of the
+# Barrens (Camp Taurajo). Thunder Bluff (UiMap 1456) is cut out.
+MULGORE = Zone((215, 220, 221), 1, (-3500.0, -600.0), (-1300.0, 600.0), -1000.0,
+               (((-1545.8333, -850.0), (-527.0833, 516.6666)),))
+# A scope is one or more zones: one voice pack holds a scope.
+ZONES: dict[str, tuple[Zone, ...]] = {
+    "tirisfal": (TIRISFAL,),
+    # the Horde's starting zones: the undead, the orcs and trolls, the tauren
+    "orda": (TIRISFAL, DUROTAR, MULGORE),
 }
 
 
@@ -53,12 +74,12 @@ def build(
     inside), `outside` (those whose giver stands elsewhere), `unplaced` (those that could not be placed:
     no giver captured, an object, or a creature the database never spawns) and `pages` (pages with no
     English)."""
-    zone = ZONES[scope]
+    parts = ZONES[scope]
     report: dict[str, list[str]] = {"forever": [], "outside": [], "unplaced": [], "pages": []}
     zones = vmangos.read_quest_zones(db)
-    quests = {q for q, z in zones.items() if z in zone.zones}
+    quests = {q for q, z in zones.items() if any(z in zone.zones for zone in parts)}
     spawns = vmangos.read_creature_spawns(db)
-    inside = {c for c, points in spawns.items() if any(zone.holds(*p) for p in points)}
+    inside = {c for c, points in spawns.items() if any(zone.holds(*p) for p in points for zone in parts)}
     seen = forever_vo.read_quest_speakers(captures) if captures is not None else {}
     forever = sorted({int(ln["id"]) for ln in Store(root, english=True).load("quest")} - set(zones))
     for q in forever:
@@ -76,7 +97,8 @@ def build(
             report["unplaced"].append(f"{q}: given by {giver}, whom the database never spawns")
     hashes, after = book_hashes(root), vmangos.read_next_pages(db)
     pages: set[str] = set()
-    for first, x, y, z in vmangos.read_text_objects(db, zone.map):
+    objects = [(zone, obj) for zone in parts for obj in vmangos.read_text_objects(db, zone.map)]
+    for zone, (first, x, y, z) in objects:
         if not zone.holds(zone.map, x, y, z):
             continue
         page, walked = first, set()
@@ -92,14 +114,17 @@ def build(
 
 
 def text(scope: str, quests: Sequence[int], books: Sequence[str]) -> str:
-    zone = ZONES[scope]
-    zones = ", ".join(str(z) for z in zone.zones)
-    head = [
-        f"# The {scope} voice scope: written by `wfj voice scope {scope}`; do not edit.",
-        f"# Quests: the database's quests of zones {zones}, and Forever's quests whose",
-        f"# captured giver stands on map {zone.map} inside the zone's map bounds, above z {zone.floor:g}.",
-        "# `b <key>`: a page of a sign or a book standing there.",
-    ]
+    parts = ZONES[scope]
+    head = [f"# The {scope} voice scope: written by `wfj voice scope {scope}`; do not edit."]
+    for zone in parts:
+        zones = ", ".join(str(z) for z in zone.zones)
+        cut = f", less {len(zone.cut)} city area(s)" if zone.cut else ""
+        head += [
+            f"# Quests: the database's quests of zones {zones}, and Forever's quests whose",
+            f"# captured giver stands on map {zone.map} inside the zone's map bounds{cut},"
+            f" above z {zone.floor:g}.",
+        ]
+    head.append("# `b <key>`: a page of a sign or a book standing there.")
     return "\n".join([*head, *map(str, quests), *(f"b {b}" for b in books)]) + "\n"
 
 

@@ -63,7 +63,7 @@ class Blocked(EngineError):
 
 
 class Busy(EngineError):
-    """The engine is overloaded or over quota (429, 503): wait and ask again."""
+    """The engine is overloaded or over quota or failed inside (429, 500, 503): wait and ask again."""
 
 
 def prompt_text(profile: str, notes: str, transcript: str) -> str:
@@ -202,7 +202,7 @@ class Engine:
                 return r.read(), r.headers
         except urllib.error.HTTPError as e:
             detail = self._scrub(e.read().decode("utf-8", "replace"))[:300]
-            if e.code in (429, 503):
+            if e.code in (429, 500, 503):
                 raise Busy(f"HTTP {e.code}: {detail}") from None
             raise EngineError(f"HTTP {e.code}: {detail}") from None
         except (urllib.error.URLError, OSError) as e:

@@ -456,6 +456,374 @@ design = "An undead woman, speaks Italian: weary, low and grave, a Forsaken who 
 notes = "Weary and grave, natural pace."
 fits = "creature 265812 (Forever)"
 
+# --- designed voices (3.8) of the Horde starting zones: Durotar, Mulgore and the Barrens' edge
+
+[roster.harken]
+voice = "voice_a075adliahyl"
+design = "A tauren man, speaks Italian: deep, warm and steady, a patient hunter of the plains, fantasy."
+notes = "Calm and encouraging, natural pace."
+fits = "tauren hunter of Bloodhoof, proud of the hunt"
+
+[roster.mull]
+voice = "voice_k7ka69yxod35"
+design = "A tauren man, speaks Italian: deep and earnest, a spiritual guardian of sacred wells, fantasy."
+notes = "Earnest and determined, natural pace."
+fits = "tauren who purifies the sacred wells, earnest"
+
+[roster.grull]
+voice = "voice_dxwb01tu0mnt"
+design = "A young adult tauren man, speaks Italian: strong, open and friendly, a brave of the tribe, fantasy."
+notes = "Friendly and encouraging, natural pace."
+fits = "tauren brave of Camp Narache, encouraging"
+
+[roster.hawkwind]
+voice = "voice_j6wwkom43q82"
+design = "A tauren chieftain, speaks Italian: deep, grave and kind, a wise leader guiding the young, fantasy."
+notes = "Grave and kind, measured natural pace."
+fits = "chief of Camp Narache, guides the Rites"
+
+[roster.graytongue]
+voice = "voice_ty2wzxt3ay86"
+design = "An old tauren seer, speaks Italian: low, slow-spoken and mystical, a soft gravelly warmth, fantasy."
+notes = "Mystical and calm, unhurried but not dragging."
+fits = "old seer explaining the Rites of the Earthmother"
+
+[roster.wiserunner]
+voice = "voice_ww2nvcb1aqd7"
+design = "An elderly tauren man, speaks Italian: a gentle, soft and thoughtful voice, a wise teacher."
+notes = "Thoughtful and gentle, natural pace."
+fits = "old seer of the Rite of Wisdom"
+
+[roster.ruul]
+voice = "voice_e47tesks0lo5"
+design = "A tauren man, speaks Italian: a deep, firm and confident voice, an experienced mentor."
+notes = "Firm and confident, natural pace."
+fits = "tauren warrior and teacher"
+
+[roster.morin]
+voice = "voice_ilf59e12cxpu"
+design = "A tauren scout, speaks Italian: resonant and alert, practical and direct, fantasy."
+notes = "Alert and direct, natural pace."
+fits = "tauren scout reporting on goblin caravans"
+
+[roster.greatmother]
+voice = "voice_yapg6dqeunxc"
+design = "A very old tauren woman, speaks Italian: warm, deep for a woman, slow and loving, a grandmother of the tribe, fantasy."
+notes = "Warm and loving, unhurried but not dragging."
+fits = "old grandmother of the tribe, tired legs"
+
+[roster.baine]
+voice = "voice_ferukw1timrl"
+design = "A young tauren prince, speaks Italian: deep but youthful, noble, earnest and respectful, fantasy."
+notes = "Noble and earnest, natural pace."
+fits = "Baine, young son of Cairne, noble and earnest"
+
+[roster.ancestral]
+voice = "voice_w09u1vl02xid"
+design = "An ancestral spirit of the tauren, speaks Italian: deep, echoing and serene, an ancient voice from beyond, fantasy."
+notes = "Serene and solemn, measured pace."
+fits = "spirit of the tauren ancestors, solemn"
+
+[roster.skorn]
+voice = "voice_zle8ahs1enc1"
+design = "An old tauren hunter, speaks Italian: weathered, warm and nostalgic, a deep slightly rough voice, fantasy."
+notes = "Nostalgic and warm, natural pace."
+fits = "old hunter, nostalgic about wandering"
+
+[roster.zarlman]
+voice = "voice_djudqfown24f"
+design = "A tauren mystic, speaks Italian: calm, deep and dreamy, a seer of visions, fantasy."
+notes = "Calm and dreamy, natural pace."
+fits = "seer gathering reagents for the Rite of Vision"
+
+[roster.maur]
+voice = "voice_opfkefzqbnsz"
+design = "A tauren man, speaks Italian: lively storyteller, deep and animated, fantasy."
+notes = "Lively and animated, natural pace."
+fits = "tauren telling his grandfather's hunting tales"
+
+[roster.cairne]
+voice = "voice_56vgytm2bwqq"
+design = "An old tauren high chieftain, speaks Italian: very deep, majestic and wise, calm authority and great warmth, fantasy."
+notes = "Majestic and wise, measured natural pace."
+fits = "Cairne Bloodhoof, High Chieftain of the tauren"
+
+[roster.krang]
+voice = "voice_e6oa7uft6jfv"
+design = "A tauren warrior trainer, speaks Italian: deep, gruff and blunt, a drill instructor, fantasy."
+notes = "Gruff and blunt, firm natural pace."
+fits = "warrior trainer"
+
+[roster.yaw]
+voice = "voice_a6k182slgp9a"
+design = "A tauren hunter trainer, speaks Italian: low, focused and quiet, a tracker, fantasy."
+notes = "Quiet and focused, natural pace."
+fits = "hunter trainer, tells of a dangerous wolf"
+
+[roster.garthok]
+voice = "voice_y8zaetopluup"
+design = "An orc commander, speaks Italian: deep, guttural and commanding, a hardened war leader, fantasy."
+notes = "Commanding and stern, firm natural pace."
+fits = "commander of Razor Hill, angry at Kul Tiras"
+
+[roster.lar]
+voice = "voice_cq24mxtizb81"
+design = "A troll scout, speaks Italian: hushed, sly and sing-song, a lilting rhythm, fantasy."
+notes = "Hushed and sly, quick natural pace."
+fits = "troll scout whispering near the centaurs"
+
+[roster.orgnil]
+voice = "voice_kknok2qekxy5"
+design = "An orc warrior, speaks Italian: hoarse, grim and resolute, a scarred veteran, fantasy."
+notes = "Grim and resolute, natural pace."
+fits = "orc officer hunting the Burning Blade"
+
+[roster.gornek]
+voice = "voice_cv7rfxll53d8"
+design = "An orc overseer, speaks Italian: deep, rough and businesslike, a tough trainer of recruits, fantasy."
+notes = "Rough and businesslike, natural pace."
+fits = "orc in charge of the Valley of Trials recruits"
+
+[roster.eitrigg]
+voice = "voice_ph4434ppbrcn"
+design = "An old orc veteran, speaks Italian: deep, weathered and dignified, a wise old warrior, fantasy."
+notes = "Dignified and wise, measured natural pace."
+fits = "Eitrigg, old veteran sent by Thrall"
+
+[roster.zureetha]
+voice = "voice_bgv3f49i3sa9"
+design = "An orc woman seer, speaks Italian: low, strong and composed, a shaman with authority, fantasy."
+notes = "Composed and authoritative, natural pace."
+fits = "orc seer of the Valley, sends reports to Razor Hill"
+
+[roster.furl]
+voice = "voice_7y9mumkrgqdp"
+design = "An old orc watchman, speaks Italian: gravelly, dry and a little bitter, fantasy."
+notes = "Dry and a little bitter, natural pace."
+fits = "old orc watchman, useless in battle now"
+
+[roster.kzan]
+voice = "voice_pbxakxryxx4y"
+design = "An orc blacksmith, speaks Italian: booming, hearty and cheerful, fantasy."
+notes = "Hearty and cheerful, natural pace."
+fits = "orc weaponsmith, cheerful"
+
+[roster.gadrin]
+voice = "voice_w3w011qecgcy"
+design = "An old troll elder, speaks Italian: deep, mystical and sing-song, a lilting rhythm, a witch doctor, fantasy."
+notes = "Mystical and grave, natural pace."
+fits = "troll elder, brother taken by Zalazane"
+
+[roster.korghan]
+voice = "voice_c68n0hni0t89"
+design = "A troll man, speaks Italian: relaxed, wry and sing-song, a lilting rhythm, fantasy."
+notes = "Relaxed and wry, natural pace."
+fits = "troll with an antidote, wry"
+
+[roster.rhinag]
+voice = "voice_3q93crfd8wsu"
+design = "A troll hunter, speaks Italian: strained and breathy, proud, a lilting rhythm, fantasy."
+notes = "Strained but proud, natural pace."
+fits = "poisoned troll hunter, weak but proud"
+
+[roster.torka]
+voice = "voice_zar28vatzm8s"
+design = "An orc cook, speaks Italian: gruff, grumpy and loud, comic, fantasy."
+notes = "Grumpy and loud, quick natural pace."
+fits = "grumpy orc cook"
+
+[roster.misha]
+voice = "voice_y70xwej5skvy"
+design = "An orc woman, speaks Italian: low and worried, a mother pleading for help, fantasy."
+notes = "Worried and pleading, natural pace."
+fits = "orc mother worried for her son"
+
+[roster.velrin]
+voice = "voice_w4rndgguqvs5"
+design = "A troll hunter, speaks Italian: easygoing, smooth and sing-song, a lilting rhythm, fantasy."
+notes = "Easygoing, natural pace."
+fits = "troll tiger hunter"
+
+[roster.margoz]
+voice = "voice_s54j7nlkpoij"
+design = "An orc shaman, speaks Italian: calm, deep and thoughtful, a careful spiritual man, fantasy."
+notes = "Thoughtful and calm, natural pace."
+fits = "orc shaman studying demonic collars"
+
+[roster.windfeather]
+voice = "voice_iplrc3d1biv3"
+design = "A tauren woman warrior, speaks Italian: strong, warm and hopeful, a brave of the tribe, fantasy."
+notes = "Hopeful and strong, natural pace."
+fits = "tauren woman brave, hopeful"
+
+[roster.neeru]
+voice = "voice_jo3dhhn6l2v4"
+design = "An orc warlock, speaks Italian: smooth, low and secretive, cultured and ominous, fantasy."
+notes = "Smooth and secretive, natural pace."
+fits = "orc warlock hunting demonic corruption"
+
+[roster.wildrunner]
+voice = "voice_vbzy2r56oxgn"
+design = "A tauren brave, speaks Italian: clear, deep and loyal, a scout, fantasy."
+notes = "Clear and loyal, natural pace."
+fits = "tauren brave, scout of the Longwalkers"
+
+[roster.nazgrel]
+voice = "voice_koe4q83ekkck"
+design = "An orc advisor, speaks Italian: deep, severe and suspicious, a security chief, fantasy."
+notes = "Severe and suspicious, natural pace."
+fits = "Nazgrel, Thrall's advisor, distrusts humans"
+
+[roster.raintotem]
+voice = "voice_gdwehryzs9eg"
+design = "An old tauren lorekeeper, speaks Italian: reverent, deep and soft, a keeper of tradition, fantasy."
+notes = "Reverent and soft, measured pace."
+fits = "tauren lorekeeper of the burial grounds"
+
+[roster.hanazua]
+voice = "voice_4qe2agc0hq12"
+design = "A wounded troll, speaks Italian: weak, relieved and breathy, a lilting rhythm, fantasy."
+notes = "Weak and relieved, natural pace."
+fits = "wounded troll, relieved to be found"
+
+[roster.rezlak]
+voice = "voice_1ynt1rbuwm81"
+design = "A goblin man, speaks Italian: fast, nasal and scheming, a fast-talking engineer, fantasy."
+notes = "Fast and scheming, quick pace."
+fits = "goblin tinker, fast talker"
+
+[roster.vornal]
+voice = "voice_fbxr4yha1jb4"
+design = "An old troll mystic, speaks Italian: raspy, slow and sing-song, a lilting rhythm, fantasy."
+notes = "Raspy and mystical, natural pace."
+fits = "troll elder about the lost idols"
+
+[roster.takrin]
+voice = "voice_mkzubifiyrna"
+design = "An orc recruiter, speaks Italian: friendly, rough and persuasive, fantasy."
+notes = "Persuasive, natural pace."
+fits = "orc recruiter for the Barrens"
+
+[roster.kargal]
+voice = "voice_gsbj9lx0m9xe"
+design = "An orc officer, speaks Italian: gravelly, sarcastic and tired, fantasy."
+notes = "Sarcastic and tired, natural pace."
+fits = "scarred orc officer, sarcastic about Sergra"
+
+[roster.sergra]
+voice = "voice_4dptyre59oqz"
+design = "An orc woman commander, speaks Italian: sharp, brusque and authoritative, fantasy."
+notes = "Brusque and authoritative, quick natural pace."
+fits = "orc shaman in command at the Crossroads, brusque"
+
+[roster.kirge]
+voice = "voice_mfyq2elre0jg"
+design = "An old tauren elder, speaks Italian: deep, prophetic and calm, fantasy."
+notes = "Prophetic and calm, measured pace."
+fits = "tauren elder of Camp Taurajo, foresaw the hero"
+
+[roster.thork]
+voice = "voice_hsc9ebsnvm3q"
+design = "An orc commander, speaks Italian: deep, courteous and firm, fantasy."
+notes = "Courteous and firm, natural pace."
+fits = "orc commander of the Crossroads, welcoming"
+
+[roster.melor]
+voice = "voice_g9tnhwud5qfg"
+design = "A tauren man, speaks Italian: warm, deep and respectful, fantasy."
+notes = "Warm and respectful, natural pace."
+fits = "tauren who admires Skorn Whitecloud"
+
+[roster.akzeloth]
+voice = "voice_mt4wclo7iek0"
+design = "An old orc warlock, speaks Italian: dry, raspy and grave, fantasy."
+notes = "Grave and dry, natural pace."
+fits = "orc demonologist about the Demon Seed"
+
+[roster.hamuul]
+voice = "voice_xiqnfoflpbc3"
+design = "An old tauren archdruid, speaks Italian: deep, gentle and joyful, a wise healer of nature, fantasy."
+notes = "Gentle and joyful, natural pace."
+fits = "Arch Druid Hamuul Runetotem, joyful about the springs"
+
+[roster.maiah]
+voice = "voice_0fq7gcd2x2tz"
+design = "A troll woman mage, speaks Italian: smooth, cryptic and sing-song, a lilting rhythm, fantasy."
+notes = "Cryptic and smooth, natural pace."
+fits = "troll mage trainer, cryptic"
+
+[roster.earth]
+voice = "voice_eksgiyacvckf"
+design = "A spirit of the earth, speaks Italian: very deep, slow and rumbling like stone, fantasy."
+notes = "Deep and rumbling, unhurried but not dragging."
+fits = "minor earth elemental, a shaman's trial"
+
+[roster.kauth]
+voice = "voice_1z8azy3l4qbk"
+design = "A tauren innkeeper, speaks Italian: deep, warm and hospitable, fantasy."
+notes = "Warm and hospitable, natural pace."
+fits = "tauren innkeeper of Bloodhoof"
+
+[roster.antur]
+voice = "voice_yyrfknqakass"
+design = "A young tauren woman, speaks Italian: earnest, anxious and pleading, fantasy."
+notes = "Anxious and pleading, natural pace."
+fits = "young tauren woman halfway through her Rite"
+
+[roster.ukor]
+voice = "voice_l045zhjz9zbn"
+design = "An orc courier, speaks Italian: exasperated, rough and talkative, fantasy."
+notes = "Exasperated, quick natural pace."
+fits = "orc courier with a food cart, exasperated"
+
+[roster.grosk]
+voice = "voice_jkljbcs2npao"
+design = "An orc man who runs an inn, speaks Italian: a deep, dry and humorous voice."
+notes = "Sarcastic and good-humoured, natural pace."
+fits = "orc innkeeper of Razor Hill, sarcastic"
+
+[roster.zjolnir]
+voice = "voice_2e5h74fdi5yk"
+design = "A troll man, speaks Italian: cheerful, smooth and sing-song, a proud salesman, fantasy."
+notes = "Cheerful and proud, natural pace."
+fits = "troll raptor handler, salesman"
+
+[roster.xarti]
+voice = "voice_wog8c5exjjtg"
+design = "A troll woman, speaks Italian: confident, lively and sing-song, a raptor trainer, fantasy."
+notes = "Confident and lively, natural pace."
+fits = "troll riding trainer, proud of her raptors"
+
+[roster.galgar]
+voice = "voice_708yymq1r7fu"
+design = "An orc man, speaks Italian: laid-back, hoarse and friendly, fantasy."
+notes = "Laid-back and friendly, natural pace."
+fits = "orc cook sweating in the heat"
+
+[roster.kaltunk]
+voice = "voice_h7wmpyshvyvp"
+design = "An orc warrior, speaks Italian: deep, proud and stirring, fantasy."
+notes = "Proud and stirring, natural pace."
+fits = "orc officer welcoming new recruits"
+
+[roster.thazzril]
+voice = "voice_csyw27qyxwdb"
+design = "An orc foreman, speaks Italian: gravelly, practical and impatient, fantasy."
+notes = "Practical and impatient, natural pace."
+fits = "orc foreman of the mine"
+
+[roster.magga]
+voice = "voice_qhncmrr09sto"
+design = "An orc woman, speaks Italian: warm, cheerful and welcoming, fantasy."
+notes = "Cheerful and welcoming, natural pace."
+fits = "orc greeter giving gifts"
+
+[roster.vorn]
+voice = "voice_k2e2nwxm21b3"
+design = "A tauren man, speaks Italian: deep, warm and welcoming, fantasy."
+notes = "Warm and welcoming, natural pace."
+fits = "tauren greeter giving gifts"
+
 [[cast]]
 name = "undead, female, elder"
 when = { archetype = ["undead", "ghost"], gender = "female", age = "elder" }

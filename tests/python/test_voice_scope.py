@@ -30,9 +30,20 @@ def test_the_zone_quests_forever_quests_given_inside_and_signs_standing_inside(t
 
 
 def test_the_zone_is_its_map_rectangle_above_the_city_under_it():
-    z = voice_scope.ZONES["tirisfal"]
+    (z,) = voice_scope.ZONES["tirisfal"]
     assert z.holds(0, *vf.IN)
     assert not z.holds(1, *vf.IN) and not z.holds(0, *vf.OUT) and not z.holds(0, *vf.UNDER)
+
+
+def test_a_city_inside_a_zone_rectangle_is_cut_out():
+    # Orgrimmar stands inside Durotar's box, Thunder Bluff inside Mulgore's; Ratchet is past Durotar's river
+    _, durotar, mulgore = voice_scope.ZONES["orda"]
+    assert durotar.holds(1, 300.0, -4700.0, 10.0)  # Razor Hill
+    assert not durotar.holds(1, 1600.0, -4400.0, 30.0)  # Orgrimmar
+    assert not durotar.holds(1, -956.0, -3754.0, 5.0)  # Ratchet
+    assert mulgore.holds(1, -2300.0, -400.0, -9.0)  # Bloodhoof Village
+    assert not mulgore.holds(1, -1200.0, 0.0, 100.0)  # Thunder Bluff
+    assert not mulgore.holds(1, -2350.0, -1925.0, 90.0)  # Camp Taurajo, in the Barrens
 
 
 def test_a_giver_the_database_never_spawns_is_reported(tmp_path):
