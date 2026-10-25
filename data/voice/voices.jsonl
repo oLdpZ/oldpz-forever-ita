@@ -1,3 +1,56 @@
+{"creature": 167, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 196, "voice": "eagan", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 197, "voice": "mcbride", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 233, "voice": "saldean", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 234, "voice": "gryan", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 237, "voice": "furlbrow", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 240, "voice": "dughan", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 241, "voice": "remy", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 244, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 246, "voice": "bernice", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 247, "voice": "youngman", "row": "young", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 248, "voice": "gramma", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 251, "voice": "maybell", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 252, "voice": "tommyjoe", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 253, "voice": "william", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 255, "voice": "gerard", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 261, "voice": "thomas", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 278, "voice": "sara", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 279, "voice": "morgan", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 294, "voice": "haggard", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 295, "voice": "farley", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 377, "voice": "josetta", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 383, "voice": "jason", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 384, "voice": "katie", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 658, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 713, "voice": "malecasual", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 714, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 786, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 823, "voice": "willem", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 836, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 837, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 951, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 952, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 963, "voice": "malecasual", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1226, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1241, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1243, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1252, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1253, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1254, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1256, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1261, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1265, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1266, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1269, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1274, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1340, "voice": "malerough", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1373, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1374, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1375, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1376, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1377, "voice": "malerough", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1378, "voice": "malefirm", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 1495, "voice": "linnea", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1496, "voice": "dillinger", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1497, "voice": "gunther", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
@@ -12,15 +65,36 @@
 {"creature": 1568, "voice": "mordo", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1569, "voice": "sarvis", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1570, "voice": "arren", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1651, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 1652, "voice": "burgess", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1661, "voice": "elreth", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1694, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1698, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 1738, "voice": "terrence", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1740, "voice": "saltain", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1742, "voice": "bartholomew", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1872, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 1931, "voice": "zealot", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1937, "voice": "renferrel", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 1951, "voice": "quinn", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 1959, "voice": "malecasual", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1960, "voice": "malefirm", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1965, "voice": "malefirm", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1977, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 1992, "voice": "femalewarm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2077, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2078, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2079, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2080, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2081, "voice": "femalesteady", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2082, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2083, "voice": "femalesteady", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2092, "voice": "malecasual", "row": "soldier", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2107, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 2132, "voice": "carolai", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 2150, "voice": "creaturehiss", "row": "creature", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2151, "voice": "femalewarm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 2155, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 2211, "voice": "mountaineer", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 2947, "voice": "harken", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 2948, "voice": "mull", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
@@ -33,6 +107,7 @@
 {"creature": 2991, "voice": "greatmother", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 2993, "voice": "baine", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 2994, "voice": "ancestral", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3001, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3052, "voice": "skorn", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3054, "voice": "zarlman", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3055, "voice": "maur", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
@@ -68,38 +143,86 @@
 {"creature": 3418, "voice": "kirge", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3429, "voice": "thork", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3441, "voice": "melor", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3514, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3515, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3516, "voice": "elderman", "row": "elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3517, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3519, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3521, "voice": "akzeloth", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 3549, "voice": "shelene", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 3567, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3568, "voice": "narrator", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3595, "voice": "femalewarm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3600, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3608, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 3955, "voice": "femalewarm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 4047, "voice": "elderman", "row": "elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 4598, "voice": "undeadcackle", "row": "undead", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 5688, "voice": "renee", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 5769, "voice": "hamuul", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 5884, "voice": "maiah", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 5891, "voice": "earth", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6094, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6297, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6306, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6736, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 6747, "voice": "kauth", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6774, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 6775, "voice": "antur", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6780, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6782, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 6784, "voice": "calvin", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 6786, "voice": "ukor", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 6806, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 6928, "voice": "grosk", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 7316, "voice": "youngwoman", "row": "young, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 7317, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 7952, "voice": "zjolnir", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 7953, "voice": "xarti", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 7955, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 8416, "voice": "malewarm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 8508, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 8583, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 8584, "voice": "youngmanshy", "row": "young", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 9296, "voice": "femaleeasy", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 9796, "voice": "galgar", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 10176, "voice": "kaltunk", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 10616, "voice": "femalesteady", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 10665, "voice": "holland", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 10666, "voice": "gordo", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 11072, "voice": "femalesteady", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 11378, "voice": "thazzril", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 11615, "voice": "mickey", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 11832, "voice": "elderwry", "row": "elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 11941, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 11942, "voice": "malewarm", "row": "merchant", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 11943, "voice": "magga", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 11944, "voice": "vorn", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 11945, "voice": "claire", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 12738, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 15624, "voice": "undeadweary", "row": "undead, elder", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 244808, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 246152, "voice": "malebright", "row": "male", "female": "femalesteady", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 247226, "voice": "youngwomanlively", "row": "young, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 247229, "voice": "youngman", "row": "young", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 248415, "voice": "malefirm", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 257446, "voice": "malewarm", "row": "male", "female": "femalewarm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 263399, "voice": "malebright", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 263664, "voice": "malecasual", "row": "male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 264936, "voice": "malebright", "row": "male", "female": "femalesteady", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 265810, "voice": "malecasual", "row": "male", "female": "femaleeasy", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 265811, "voice": "femalefirm", "row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 265812, "voice": "png265812", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 265813, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
 {"creature": 267009, "voice": "undeadgrim", "row": "undead, officer", "female": "undeadfemaleproud", "female_row": "undead, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-24"}}
+{"creature": 267287, "voice": "malewarm", "row": "male", "female": "femalewarm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 267321, "voice": "malewarm", "row": "male", "female": "femalewarm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 267323, "voice": "malewarm", "row": "male", "female": "femalewarm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 267325, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 267331, "voice": "malefirm", "row": "male", "female": "femalefirm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 267334, "voice": "malebright", "row": "male", "female": "femalesteady", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 267337, "voice": "malewarm", "row": "male", "female": "femalewarm", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 271546, "voice": "malecasual", "row": "male", "female": "femaleeasy", "female_row": "female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 275657, "voice": "narrator", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
+{"creature": 275683, "voice": "narrator", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 275789, "voice": "narrator", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
