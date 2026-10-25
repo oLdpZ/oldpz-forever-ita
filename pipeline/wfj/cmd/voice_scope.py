@@ -59,11 +59,30 @@ DUROTAR = Zone((14, 363), 1, (-1400.0, 1400.0), (-5600.0, -3850.0), -1000.0,
 # Barrens (Camp Taurajo). Thunder Bluff (UiMap 1456) is cut out.
 MULGORE = Zone((215, 220, 221), 1, (-3500.0, -600.0), (-1300.0, 600.0), -1000.0,
                (((-1545.8333, -850.0), (-527.0833, 516.6666)),))
+# On the Eastern Kingdoms and Teldrassil too the map rectangles span the neighbours (Elwynn's holds the north
+# of Westfall and Duskwood, Dun Morogh's the west of Loch Modan, Teldrassil's the sea down to Darkshore), so
+# these boxes are again the zones' land, from the spawns of their quests' NPCs with a margin.
+# Elwynn Forest (area 12, map 0) and Northshire (9); Westfall and Duskwood lie south of it. Stormwind
+# (UiMap 1453) is cut out.
+ELWYNN = Zone((12, 9), 0, (-10050.0, -8550.0), (-1550.0, 950.0), -1000.0,
+              (((-9154.1699, -7995.8301), (-14.5840, 1722.9200)),))
+# Dun Morogh (area 1, map 0) and Coldridge Valley (132), up to the South Gate (Loch Modan is east of it).
+# Ironforge (UiMap 1455) is cut out.
+DUN_MOROGH = Zone((1, 132), 0, (-6700.0, -4700.0), (-2650.0, 1300.0), -1000.0,
+                  (((-5096.8457, -4569.2412), (-1504.2164, -713.5914)),))
+# Teldrassil (area 141, map 1), Shadowglen (188) and Rut'theran Village by the sea; Darkshore is south of it.
+# Darnassus (UiMap 1457) is cut out.
+TELDRASSIL = Zone((141, 188), 1, (8350.0, 11200.0), (-200.0, 2950.0), -1000.0,
+                  (((9532.5869, 10238.3164), (1880.0295, 2938.3628)),))
 # A scope is one or more zones: one voice pack holds a scope.
 ZONES: dict[str, tuple[Zone, ...]] = {
     "tirisfal": (TIRISFAL,),
     # the Horde's starting zones: the undead, the orcs and trolls, the tauren
     "orda": (TIRISFAL, DUROTAR, MULGORE),
+    # the Alliance's starting zones: the humans, the dwarves and gnomes, the night elves
+    "alleanza": (ELWYNN, DUN_MOROGH, TELDRASSIL),
+    # both: one pack for every starting zone
+    "iniziali": (TIRISFAL, DUROTAR, MULGORE, ELWYNN, DUN_MOROGH, TELDRASSIL),
 }
 
 

@@ -20,7 +20,12 @@ from wfj.core.hashing import key as hash_key
 from wfj.core.normalize import normalize_v1
 
 # A scope names the file that lists its ids: quest ids, and `b <book key>` for a page of a book or a sign.
-SCOPES: dict[str, str] = {"tirisfal": "pipeline/voice_tirisfal.txt", "orda": "pipeline/voice_orda.txt"}
+SCOPES: dict[str, str] = {
+    "tirisfal": "pipeline/voice_tirisfal.txt",
+    "orda": "pipeline/voice_orda.txt",
+    "alleanza": "pipeline/voice_alleanza.txt",
+    "iniziali": "pipeline/voice_iniziali.txt",
+}
 # description is the offer the quest giver reads, progress and completion the turn-in NPC's lines
 FIELDS = ("description", "progress", "completion")
 NARRATOR = "narrator"

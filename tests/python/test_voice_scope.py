@@ -46,6 +46,21 @@ def test_a_city_inside_a_zone_rectangle_is_cut_out():
     assert not mulgore.holds(1, -2350.0, -1925.0, 90.0)  # Camp Taurajo, in the Barrens
 
 
+def test_the_alliance_cities_and_neighbours_are_left_out():
+    elwynn, dun_morogh, teldrassil = voice_scope.ZONES["alleanza"]
+    assert elwynn.holds(0, -9466.0, 74.0, 57.0)  # Goldshire
+    assert elwynn.holds(0, -8903.0, -163.0, 82.0)  # Northshire Abbey
+    assert not elwynn.holds(0, -8858.0, 625.0, 96.0)  # Stormwind
+    assert not elwynn.holds(0, -10509.0, 1045.0, 61.0)  # Sentinel Hill, in Westfall
+    assert dun_morogh.holds(0, -5606.0, -544.0, 392.0)  # Kharanos
+    assert not dun_morogh.holds(0, -4900.0, -1000.0, 506.0)  # Ironforge
+    assert not dun_morogh.holds(0, -5402.0, -2895.0, 342.0)  # Thelsamar, in Loch Modan
+    assert teldrassil.holds(1, 9837.0, 966.0, 1308.0)  # Dolanaar
+    assert not teldrassil.holds(1, 10173.0, 2570.0, 1367.0)  # Darnassus
+    assert not teldrassil.holds(1, 7848.0, -2216.0, 471.0)  # Moonglade
+    assert voice_scope.ZONES["iniziali"] == voice_scope.ZONES["orda"] + voice_scope.ZONES["alleanza"]
+
+
 def test_a_giver_the_database_never_spawns_is_reported(tmp_path):
     data = vf.make_data(tmp_path)
     db = vf.make_speaker_db(tmp_path / "mangos.sqlite")
