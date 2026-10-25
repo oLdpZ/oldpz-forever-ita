@@ -157,3 +157,11 @@ def test_scope_file_refuses_a_bad_line(tmp_path, body):
     f.write_text(body, encoding="utf-8")
     with pytest.raises(VoiceError, match="voice_tirisfal.txt"):
         read_scope_file(f)
+
+
+def test_a_pair_of_several_words_is_refused_not_dropped():
+    # "<giovane eroe/giovane eroina>" is no pair: taken for a stage direction it would vanish unread
+    with pytest.raises(VoiceError, match="1-completion: .*one word on each side"):
+        voice.speech_text("Salute, <giovane eroe/giovane eroina>.", "1-completion", "m")
+    assert voice.speech_text("Salute, giovane <eroe/eroina>.", "1-completion", "f") == "Salute, giovane eroina."
+    assert voice.speech_text("<Kaltunk ride.> Bene.", "1-completion", "m") == "Bene."

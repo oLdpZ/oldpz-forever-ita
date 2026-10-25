@@ -38,6 +38,7 @@ _PAIR = re.compile(r"<([^<>/\s\"=]+)/([^<>/\s\"=]+)>")
 _HTML = re.compile(r"</?(?:IMG|P|BR|H[1-6])\b[^<>]*>", re.I)
 # What is left between angle brackets once the pairs are resolved is a stage direction ("<Trevan sorride.>")
 _STAGE = re.compile(r"<[^<>]*>")
+_SPLIT_PAIR = re.compile(r"<[^<>/]*/[^<>]*>")  # left after the pairs are resolved: words with spaces
 _COLOUR = re.compile(r"\|c[0-9A-Fa-f]{8}|\|r")
 _ENTITY = re.compile(r"%s")
 _BREAK = re.compile(r"\$[bB]")
@@ -151,6 +152,10 @@ def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken:
     text = _NAME.sub(HERO[sex], text)
     text = _WORLD_STATE.sub(_UNKNOWN_NUMBER, _FILL.sub(number, _BREAK.sub("\n", text)))
     text = _ENTITY.sub("", _COLOUR.sub("", _HTML.sub("", text)))
+    # a pair of several words is not a pair: it would be taken for a stage direction and dropped unread
+    split = _SPLIT_PAIR.search(text)
+    if split:
+        raise VoiceError(f"{key}: {split.group(0)!r}: a <male/female> pair takes one word on each side")
     spoken_text = _STAGE.sub("", text)
     if not _MARKUP.sub("", spoken_text).strip() and _MARKUP.sub("", text).strip():
         raise VoiceError(f"{key}: only a stage direction")
