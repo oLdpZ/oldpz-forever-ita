@@ -2,24 +2,96 @@
 {"creature": 197, "voice": "mcbride", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 233, "voice": "saldean", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 234, "voice": "gryan", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 235, "voice": "salma", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 237, "voice": "furlbrow", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 239, "voice": "grimbooze", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 240, "voice": "dughan", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 241, "voice": "remy", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 244, "voice": "mastonefield", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 246, "voice": "bernice", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 247, "voice": "billy", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 248, "voice": "gramma", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 251, "voice": "maybell", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 252, "voice": "tommyjoe", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 253, "voice": "william", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 255, "voice": "gerard", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 261, "voice": "thomas", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 263, "voice": "ello", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 264, "voice": "althea", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 265, "voice": "madameeva", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 267, "voice": "daltry", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 268, "voice": "sirra", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 272, "voice": "grual", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 273, "voice": "smitts", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 276, "voice": "viktori", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 278, "voice": "sara", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 279, "voice": "morgan", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 289, "voice": "abercrombie", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 294, "voice": "haggard", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 295, "voice": "farley", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 311, "voice": "sven", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 332, "voice": "shaw", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 341, "voice": "oslow", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 344, "voice": "solomon", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 376, "voice": "laurena", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 377, "voice": "josetta", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 382, "voice": "marris", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 383, "voice": "jason", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 384, "voice": "katie", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 392, "voice": "captaingrayson", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 415, "voice": "verner", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 469, "voice": "doren", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 482, "voice": "elling", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 658, "voice": "sten", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 663, "voice": "calor", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 713, "voice": "balir", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 714, "voice": "talin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 715, "voice": "nesingwary", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 716, "voice": "barnil", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 717, "voice": "ajeck", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 718, "voice": "erlgadin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 737, "voice": "kebok", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 739, "voice": "nimetz", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 773, "voice": "krazek", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 786, "voice": "grelin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 823, "voice": "willem", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 836, "voice": "durnan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 928, "voice": "shadowbreaker", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 951, "voice": "paxton", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 952, "voice": "neals", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 963, "voice": "rainer", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1078, "voice": "ormer", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1092, "voice": "rugelfuss", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1093, "voice": "hinderweir", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1187, "voice": "daryl", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1217, "voice": "glorin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1226, "voice": "maxan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1231, "voice": "grif", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1239, "voice": "fitzsimmons", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1241, "voice": "tognus", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1243, "voice": "hegnar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1244, "voice": "rethiel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1252, "voice": "senir", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1253, "voice": "gavin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1254, "voice": "stonebrow", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1256, "voice": "thesten", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1261, "voice": "veron", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1265, "voice": "rudra", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1266, "voice": "tundra", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1269, "voice": "razzle", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1274, "voice": "barin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1340, "voice": "kadrell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1344, "voice": "ironband", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1356, "voice": "stormpike", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1373, "voice": "jarven", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1374, "voice": "rejold", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1375, "voice": "marleth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1376, "voice": "beldin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1377, "voice": "stonegear", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1378, "voice": "bellowfiz", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1416, "voice": "grimand", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1443, "voice": "felzerul", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1470, "voice": "ghak", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 1495, "voice": "linnea", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1496, "voice": "dillinger", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1497, "voice": "gunther", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
@@ -34,16 +106,85 @@
 {"creature": 1568, "voice": "mordo", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1569, "voice": "sarvis", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1570, "voice": "arren", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 1646, "voice": "baros", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1651, "voice": "leebrown", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 1652, "voice": "burgess", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1661, "voice": "elreth", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 1694, "voice": "loslor", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1698, "voice": "frast", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1719, "voice": "thelwater", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 1738, "voice": "terrence", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1740, "voice": "saltain", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1742, "voice": "bartholomew", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 1748, "voice": "bolvar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1855, "voice": "tirion", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1872, "voice": "tharek", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 1931, "voice": "zealot", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 1937, "voice": "renferrel", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 1938, "voice": "dalar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1950, "voice": "rane", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 1951, "voice": "quinn", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 1952, "voice": "hadrec", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1959, "voice": "mbarleybrew", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1960, "voice": "hammerfoot", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1965, "voice": "thalos", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1977, "voice": "mehr", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 1992, "voice": "tarindrella", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2055, "voice": "faranell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2077, "voice": "melithar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2078, "voice": "athridas", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2079, "voice": "ilthalaine", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2080, "voice": "denalan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2081, "voice": "kyra", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2082, "voice": "gilshalan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2083, "voice": "syral", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2092, "voice": "longbeard", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2094, "voice": "halloran", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2104, "voice": "stoutfist", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2107, "voice": "gaerolas", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2121, "voice": "allister", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 2132, "voice": "carolai", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 2150, "voice": "zenn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2151, "voice": "amara", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2155, "voice": "shayla", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 2211, "voice": "mountaineer", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 2215, "voice": "darthalia", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2216, "voice": "lydon", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2228, "voice": "farren", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2229, "voice": "krusk", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2263, "voice": "redpath", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2276, "voice": "maleb", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2277, "voice": "dibbs", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2278, "voice": "melisara", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2425, "voice": "varimathras", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2465, "voice": "mokthardin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2487, "voice": "seahorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2495, "voice": "drizzlik", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2496, "voice": "revilgaz", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2497, "voice": "nimboya", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2498, "voice": "crank", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2500, "voice": "smotts", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2501, "voice": "mackinley", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2519, "voice": "kinweelay", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2610, "voice": "shakes", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2700, "voice": "nials", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2703, "voice": "zengu", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2706, "voice": "torgan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2712, "voice": "quae", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2771, "voice": "drumfel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2784, "voice": "magni", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2785, "voice": "theldurin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2786, "voice": "gerrig", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2789, "voice": "skuerto", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2817, "voice": "rigglefuzz", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2860, "voice": "sigrun", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2910, "voice": "ryedol", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2916, "voice": "karnik", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2918, "voice": "belgrum", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2920, "voice": "lucien", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2921, "voice": "lotwil", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2930, "voice": "glynda", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 2934, "voice": "beldugur", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 2947, "voice": "harken", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2948, "voice": "mull", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2980, "voice": "grull", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
@@ -51,10 +192,12 @@
 {"creature": 2982, "voice": "graytongue", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2984, "voice": "wiserunner", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2985, "voice": "ruul", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 2986, "voice": "dorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 2988, "voice": "morin", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2991, "voice": "greatmother", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2993, "voice": "baine", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 2994, "voice": "ancestral", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3033, "voice": "turak", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3052, "voice": "skorn", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3054, "voice": "zarlman", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3055, "voice": "maur", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
@@ -69,6 +212,7 @@
 {"creature": 3145, "voice": "zureetha", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3147, "voice": "furl", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3159, "voice": "kzan", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3171, "voice": "thotar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3188, "voice": "gadrin", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3189, "voice": "korghan", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3190, "voice": "rhinag", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
@@ -82,38 +226,350 @@
 {"creature": 3230, "voice": "nazgrel", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3233, "voice": "raintotem", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3287, "voice": "hanazua", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3292, "voice": "drohn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3293, "voice": "rezlak", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3304, "voice": "vornal", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3336, "voice": "takrin", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3337, "voice": "kargal", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3338, "voice": "sergra", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3341, "voice": "gann", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3387, "voice": "jorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3389, "voice": "regthar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3391, "voice": "gazlowe", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3401, "voice": "shenthul", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3412, "voice": "nogg", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3418, "voice": "kirge", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3419, "voice": "zamah", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3429, "voice": "thork", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3430, "voice": "mangletooth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3432, "voice": "mankrik", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3441, "voice": "melor", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3442, "voice": "sputtervalve", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3446, "voice": "mebok", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3448, "voice": "tonga", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3449, "voice": "darsok", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3453, "voice": "dizzywig", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3464, "voice": "gazrog", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3514, "voice": "tenaron", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3515, "voice": "corithras", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3516, "voice": "fandral", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3517, "voice": "rellian", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3519, "voice": "arynia", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3521, "voice": "akzeloth", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 3549, "voice": "shelene", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 3567, "voice": "tallonkai", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 3568, "voice": "narrator", "reason": "a wounded sabre-tooth: the line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 3595, "voice": "shanda", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3600, "voice": "laurna", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3601, "voice": "dazalar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3608, "voice": "aldia", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3616, "voice": "onu", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3649, "voice": "thundris", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3650, "voice": "asterion", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3661, "voice": "balthule", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3663, "voice": "delgren", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3691, "voice": "raene", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3693, "voice": "terenthis", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3701, "voice": "tharnariun", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3702, "voice": "alanndarian", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3845, "voice": "shindrell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3848, "voice": "kayneth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3894, "voice": "pelturas", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3916, "voice": "shaeldryn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 3978, "voice": "truthseeker", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4046, "voice": "magatha", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4048, "voice": "falfindel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4049, "voice": "seereth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4077, "voice": "gaxim", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4078, "voice": "collin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4080, "voice": "kaela", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4088, "voice": "elanaria", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4201, "voice": "ziz", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4217, "voice": "mathrengyl", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4452, "voice": "kravel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4453, "voice": "wizzle", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4485, "voice": "belgrom", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4488, "voice": "parqual", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4489, "voice": "braug", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4498, "voice": "maurin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4501, "voice": "drazzilb", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4568, "voice": "anastasia", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4606, "voice": "aelthalyste", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4630, "voice": "pozzik", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4791, "voice": "nazeer", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4792, "voice": "swampeye", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4794, "voice": "morganstern", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4926, "voice": "krog", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4944, "voice": "vimes", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4949, "voice": "thrall", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 4967, "voice": "tervosh", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5204, "voice": "zinge", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5384, "voice": "brohann", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5397, "voice": "uthek", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5398, "voice": "warug", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5411, "voice": "krinkle", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5413, "voice": "furen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5476, "voice": "biggs", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5497, "voice": "jennea", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5593, "voice": "katar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5594, "voice": "pestlezugg", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5636, "voice": "talonaxe", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5638, "voice": "kreldig", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5641, "voice": "takata", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5675, "voice": "carendin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 5688, "voice": "renee", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 5769, "voice": "hamuul", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 5770, "voice": "narawildmane", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5875, "voice": "ganrul", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5878, "voice": "thungrim", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 5884, "voice": "maiah", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 5891, "voice": "earth", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 5899, "voice": "brine", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 5901, "voice": "islen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6018, "voice": "urkyo", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6094, "voice": "byancie", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6122, "voice": "gakin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6142, "voice": "mathiel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6169, "voice": "klockmort", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6171, "voice": "duthorian", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6176, "voice": "bathrah", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6179, "voice": "tiza", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6251, "voice": "strahad", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6266, "voice": "menara", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6294, "voice": "krom", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6306, "voice": "helene", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6467, "voice": "mennet", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6546, "voice": "tabetha", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6736, "voice": "keldamyr", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 6747, "voice": "kauth", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 6774, "voice": "falkhaan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 6775, "voice": "antur", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 6780, "voice": "porthannius", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6782, "voice": "hands", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 6784, "voice": "calvin", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 6786, "voice": "ukor", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 6806, "voice": "tannok", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6826, "voice": "talvash", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 6868, "voice": "jarkal", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 6928, "voice": "grosk", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 6986, "voice": "dran", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7010, "voice": "zilzibin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7316, "voice": "aquinne", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7317, "voice": "oben", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7406, "voice": "oglethorpe", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7407, "voice": "bilgewhizzle", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7505, "voice": "drazial", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7564, "voice": "noggenfogger", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7572, "voice": "fallenhero", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7724, "voice": "fizzledowser", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7740, "voice": "gracina", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7771, "voice": "marvon", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7776, "voice": "talo", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7777, "voice": "rokorhan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7783, "voice": "loramus", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7790, "voice": "orokk", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7802, "voice": "galvan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7804, "voice": "trenton", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7825, "voice": "oran", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7852, "voice": "pratt", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7854, "voice": "jangdor", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7875, "voice": "hadoken", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7876, "voice": "tranrek", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7877, "voice": "latronicus", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7879, "voice": "quintis", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7880, "voice": "ginro", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7916, "voice": "erelas", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 7944, "voice": "overspark", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 7952, "voice": "zjolnir", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 7953, "voice": "xarti", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 7955, "voice": "milli", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8022, "voice": "thadius", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8115, "voice": "uzeri", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8125, "voice": "dirge", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8126, "voice": "nixx", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8256, "voice": "thorius", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8379, "voice": "xylem", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8405, "voice": "ogtinc", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8416, "voice": "felix", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8479, "voice": "kalaran", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8508, "voice": "gretta", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8579, "voice": "yehkinya", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8582, "voice": "kadrak", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8583, "voice": "dirania", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8584, "voice": "iverron", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8587, "voice": "jediga", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 8737, "voice": "linken", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9023, "voice": "windsor", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9077, "voice": "goretooth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9078, "voice": "lagrave", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9116, "voice": "eridan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9117, "voice": "jdcollie", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9118, "voice": "larion", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9119, "voice": "muigin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9177, "voice": "oralius", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9296, "voice": "milly", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9298, "voice": "donova", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9459, "voice": "cyrus", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9528, "voice": "arathandris", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9529, "voice": "maybess", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9560, "voice": "maxwell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9619, "voice": "torwa", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 9796, "voice": "galgar", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 10136, "voice": "fuely", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10176, "voice": "kaltunk", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 10219, "voice": "gwennyth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10257, "voice": "bijou", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10267, "voice": "tinkee", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10303, "voice": "stormshadow", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10304, "voice": "aurora", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10305, "voice": "umi", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10306, "voice": "trull", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10321, "voice": "emberstrife", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10460, "voice": "ironboot", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10537, "voice": "longhorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10616, "voice": "raelen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10665, "voice": "holland", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 10666, "voice": "gordo", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 10667, "voice": "chromie", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10739, "voice": "narrator", "reason": "body of a dead tauren druid holding his last message: narration", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10837, "voice": "derrington", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10838, "voice": "valorfist", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10922, "voice": "greta", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10926, "voice": "pamela", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10929, "voice": "haleh", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11033, "voice": "smokey", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11035, "voice": "betina", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11036, "voice": "leonid", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11039, "voice": "zverenhoff", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11053, "voice": "macdonnell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11055, "voice": "vandis", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11056, "voice": "arbington", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11057, "voice": "dithers", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11063, "voice": "carlin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11072, "voice": "kitta", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11216, "voice": "evasarkhoff", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11286, "voice": "marduke", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 11378, "voice": "thazzril", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 11401, "voice": "alathea", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11406, "voice": "rohan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11610, "voice": "kirsta", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 11615, "voice": "mickey", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 11801, "voice": "rabine", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11802, "voice": "dendrite", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11811, "voice": "narain", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11832, "voice": "remulos", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11857, "voice": "makaba", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11860, "voice": "maggran", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11872, "voice": "myranda", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11878, "voice": "nathanos", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11941, "voice": "yori", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 11942, "voice": "orenthil", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 11943, "voice": "magga", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 11944, "voice": "vorn", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 11945, "voice": "claire", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 12696, "voice": "senani", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 12736, "voice": "jeneu", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 12738, "voice": "nori", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13220, "voice": "layo", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13278, "voice": "hydraxis", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13417, "voice": "sagorne", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13418, "voice": "kaymard", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13433, "voice": "wulmort", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13445, "voice": "greatfather", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13776, "voice": "teeka", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13777, "voice": "durgen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13840, "voice": "laggrond", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 13841, "voice": "haggerdin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14305, "voice": "humanorphan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14368, "voice": "lydros", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14436, "voice": "morzul", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14437, "voice": "gorzeeki", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14444, "voice": "orcishorphan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14463, "voice": "daio", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14470, "voice": "impsy", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14567, "voice": "derotain", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14627, "voice": "hansel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14722, "voice": "clavicus", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14723, "voice": "mistina", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14724, "voice": "bubulo", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14725, "voice": "raedon", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14726, "voice": "rashona", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14727, "voice": "vehena", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14728, "voice": "rumstag", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14729, "voice": "ralston", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14733, "voice": "farsong", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14736, "voice": "torntusk", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14738, "voice": "otho", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14741, "voice": "markhor", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14781, "voice": "shatterskull", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14847, "voice": "paleo", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14902, "voice": "jinrokh", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14903, "voice": "altabim", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14904, "voice": "maywiki", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14905, "voice": "falthir", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14983, "voice": "oslight", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14984, "voice": "maclear", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15021, "voice": "dwire", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15022, "voice": "mortis", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15180, "voice": "baristolth", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15181, "voice": "maralith", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15183, "voice": "larksbane", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15191, "voice": "proudhorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15192, "voice": "anachronos", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15194, "voice": "ortell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15270, "voice": "huum", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15282, "voice": "aurel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15306, "voice": "bor", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15350, "voice": "warbringer", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15351, "voice": "brigadier", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15498, "voice": "yessendra", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15499, "voice": "haro", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15500, "voice": "keyl", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15624, "voice": "wisp", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 15895, "voice": "lunarharbinger", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16012, "voice": "mokvar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16013, "voice": "deliana", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16014, "voice": "mux", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16016, "voice": "anthion", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16032, "voice": "falrin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16033, "voice": "bodley", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16112, "voice": "korfax", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16116, "voice": "dosantos", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16281, "voice": "keeperrolls", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16376, "voice": "wilhelm", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16788, "voice": "festflamekeeper", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16817, "voice": "festloremaster", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 16818, "voice": "festtalespinner", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 211022, "voice": "archivistsw", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 211033, "voice": "archivistuc", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 244808, "voice": "deadpaladin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 246378, "voice": "lightforsaken", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 247226, "voice": "kelsey", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 247229, "voice": "daniel", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 248415, "voice": "tordrin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 251361, "voice": "rorian", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 251374, "voice": "zephrasshaman", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 251507, "voice": "elwynnhunter", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 251523, "voice": "aonda", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 251684, "voice": "shytinker", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 251968, "voice": "windshaperelder", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 252383, "voice": "valennia", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 252389, "voice": "zephrashunter", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 252475, "voice": "highorder", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 252476, "voice": "talaanis", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 252800, "voice": "orchardfarmer", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 253092, "voice": "westfallscholar", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 257446, "voice": "dwarfshaman", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 257944, "voice": "elegael", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 263399, "voice": "sarsaparilla", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 263664, "voice": "raan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 264936, "voice": "farsen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 265809, "voice": "orcsurvivalist", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 265810, "voice": "dwarfsurvivalist", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 265811, "voice": "lyreena", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 265812, "voice": "png265812", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
+{"creature": 265813, "voice": "gnomesurvivalist", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 268592, "voice": "flamewarden", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 275657, "voice": "narrator", "reason": "a corpse: its line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 275683, "voice": "narrator", "reason": "Eralya dying: the lines are stage directions, narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 275789, "voice": "narrator", "reason": "a corpse: its line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}

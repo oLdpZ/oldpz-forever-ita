@@ -86,6 +86,21 @@ ZONES: dict[str, tuple[Zone, ...]] = {
 }
 
 
+# The whole game: every quest with a voiced field and every book page, wherever it stands.
+ALL = "tutto"
+
+
+def everything(
+    root: Path, report: dict[str, list[str]]
+) -> tuple[tuple[int, ...], tuple[str, ...], dict[str, list[str]]]:
+    """(quest ids, book keys, report) of the whole game: the English store's quests that have a voiced field
+    and all its book pages. Nothing is placed, so the report stays empty."""
+    english = Store(root, english=True).load("quest")
+    quests = {int(ln["id"]) for ln in english if ln.get("field") in voice.FIELDS}
+    pages = set(book_hashes(root).values())
+    return tuple(sorted(quests)), tuple(sorted(pages)), report
+
+
 def build(
     root: Path, db: Path, scope: str, captures: Path | None
 ) -> tuple[tuple[int, ...], tuple[str, ...], dict[str, list[str]]]:
@@ -93,8 +108,10 @@ def build(
     inside), `outside` (those whose giver stands elsewhere), `unplaced` (those that could not be placed:
     no giver captured, an object, or a creature the database never spawns) and `pages` (pages with no
     English)."""
-    parts = ZONES[scope]
     report: dict[str, list[str]] = {"forever": [], "outside": [], "unplaced": [], "pages": []}
+    if scope == ALL:
+        return everything(root, report)
+    parts = ZONES[scope]
     zones = vmangos.read_quest_zones(db)
     quests = {q for q, z in zones.items() if any(z in zone.zones for zone in parts)}
     spawns = vmangos.read_creature_spawns(db)
@@ -133,8 +150,11 @@ def build(
 
 
 def text(scope: str, quests: Sequence[int], books: Sequence[str]) -> str:
-    parts = ZONES[scope]
     head = [f"# The {scope} voice scope: written by `wfj voice scope {scope}`; do not edit."]
+    if scope == ALL:
+        head.append("# Quests: every quest with a voiced field. `b <key>`: every book page.")
+        return "\n".join([*head, *map(str, quests), *(f"b {b}" for b in books)]) + "\n"
+    parts = ZONES[scope]
     for zone in parts:
         zones = ", ".join(str(z) for z in zone.zones)
         cut = f", less {len(zone.cut)} city area(s)" if zone.cut else ""
@@ -149,7 +169,7 @@ def text(scope: str, quests: Sequence[int], books: Sequence[str]) -> str:
 
 def run(argv: Sequence[str]) -> int:
     p = argparse.ArgumentParser(prog="wfj voice scope")
-    p.add_argument("scope", choices=sorted(ZONES))
+    p.add_argument("scope", choices=sorted([*ZONES, ALL]))
     p.add_argument("--vmangos", required=True)
     p.add_argument("--forever-vo", help="forever-vo, pinned: who gives the quests the database lacks")
     p.add_argument("--out", help="default: the scope's file under pipeline/")

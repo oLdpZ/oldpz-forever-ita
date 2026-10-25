@@ -25,6 +25,7 @@ SCOPES: dict[str, str] = {
     "orda": "pipeline/voice_orda.txt",
     "alleanza": "pipeline/voice_alleanza.txt",
     "iniziali": "pipeline/voice_iniziali.txt",
+    "tutto": "pipeline/voice_tutto.txt",
 }
 # description is the offer the quest giver reads, progress and completion the turn-in NPC's lines
 FIELDS = ("description", "progress", "completion")

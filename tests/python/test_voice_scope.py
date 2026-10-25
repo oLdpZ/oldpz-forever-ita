@@ -6,7 +6,6 @@ from __future__ import annotations
 from pathlib import Path
 
 import voice_fixture as vf
-
 from wfj.cmd import voice as cmd
 from wfj.cmd import voice_scope
 from wfj.core import voice
@@ -59,6 +58,16 @@ def test_the_alliance_cities_and_neighbours_are_left_out():
     assert not teldrassil.holds(1, 10173.0, 2570.0, 1367.0)  # Darnassus
     assert not teldrassil.holds(1, 7848.0, -2216.0, 471.0)  # Moonglade
     assert voice_scope.ZONES["iniziali"] == voice_scope.ZONES["orda"] + voice_scope.ZONES["alleanza"]
+
+
+def test_the_whole_game_lists_every_quest_and_page(tmp_path):
+    data = vf.make_data(tmp_path)
+    db = vf.make_speaker_db(tmp_path / "mangos.sqlite")
+    quests, books, report = voice_scope.build(data, db, "tutto", None)
+    _, zbooks, _ = voice_scope.build(data, db, "tirisfal", None)
+    assert quests == (457, 458, 459, 461, 462)  # the English store's quests, Forever's too, placed or not
+    assert set(zbooks) <= set(books)  # a sign standing far away is listed too
+    assert report == {"forever": [], "outside": [], "unplaced": [], "pages": []}
 
 
 def test_a_giver_the_database_never_spawns_is_reported(tmp_path):
