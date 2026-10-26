@@ -221,6 +221,20 @@ def test_roster_designed_and_library_voices():
         assert want in problems
 
 
+def test_roster_project_names_the_project_of_a_designed_voice():
+    design = "An undead man, raspy and dry."
+    ok = {"d": _voice(gemini="voice_a74s310i6qa0", design=design, project=2),
+          "todo": {"design": design, "project": 3, "notes": "Dry.", "fits": "x"}}
+    assert [p for p in casting.roster_problems(ok, [], "d", "d") if "not made yet" not in p] == []
+    bad = {f"b{i}": _voice(gemini="voice_a74s310i6qa0", design=design, project=p)
+           for i, p in enumerate((0, "2", True, 1.5))}
+    bad["prebuilt"] = _voice(project=2)
+    problems = casting.roster_problems(bad, [], "prebuilt", "prebuilt")
+    for vid in ("b0", "b1", "b2", "b3"):
+        assert f"roster {vid}: project must be a whole number from 1" in " | ".join(problems), vid
+    assert "roster prebuilt: project is for a designed voice" in " | ".join(problems)
+
+
 def _toml(path: Path, body: str = "") -> Path:
     path.write_text(
         'model = "gemini-3.1-flash-tts-preview"\nnarrator = "nar"\nbook_narrator = "nar"\n'
@@ -237,7 +251,10 @@ def _toml(path: Path, body: str = "") -> Path:
 def test_load_config_gives_the_roster_the_engine_reads(tmp_path):
     cfg = voice_cast.load_config(_toml(tmp_path / "voice.toml"))
     assert cfg["roster"]["um"] == {"gemini_voice": "Algenib", "model": "gemini-3.1-flash-tts-preview",
-                                   "notes": "Raspy and dry.", "fits": "undead male"}
+                                   "notes": "Raspy and dry.", "fits": "undead male", "project": 1}
+    two = _toml(tmp_path / "two.toml", '[roster.d]\nvoice = "voice_abc"\ndesign = "An old man."\nproject = 2\n'
+                                       'notes = "Slow."\n')
+    assert voice_cast.load_config(two)["roster"]["d"]["project"] == 2
     assert [r["name"] for r in cfg["cast"]] == ["undead, female", "undead"]
     bad = _toml(tmp_path / "bad.toml", '[roster.it]\nvoice = "Kore"\nnotes = "Voce calma."\nfits = "x"\n')
     with pytest.raises(ValueError, match="notes must be English"):

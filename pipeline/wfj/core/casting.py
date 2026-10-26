@@ -359,7 +359,7 @@ def cast(
     return out
 
 
-ROSTER_FIELDS = ("voice", "design", "notes", "fits")
+ROSTER_FIELDS = ("voice", "design", "project", "notes", "fits")
 # Gemini reads direction it does not take for English aloud, so a voice's notes are English only: no accented
 # letter, and none of these common Italian words (articles, prepositions, and the words direction would use).
 _ACCENTED = re.compile(r"[àèéìíòóùú]", re.I)
@@ -389,7 +389,8 @@ def roster_problems(
 ) -> list[str]:
     """voice.toml's roster and casting rows: ids well formed, each voice a Gemini voice (prebuilt, library, or
     designed, keeping its English design) with English director's notes, every voice a row names is in the
-    roster, every `when` field and value one the profiles can hold, names unique."""
+    roster, every `when` field and value one the profiles can hold, names unique. A designed voice may
+    name the project that made it (`project`, from 1; none is project 1): only that project's key uses it."""
     out: list[str] = []
     for vid, v in roster.items():
         if not _VOICE_ID.fullmatch(vid):
@@ -405,6 +406,7 @@ def roster_problems(
             out.append(f"roster {vid}: voice {v.get('voice')!r} is not a Gemini voice")
         elif voice_kind(v["voice"]) == "designed" and design is None:
             out.append(f"roster {vid}: a designed voice keeps the design it was made from")
+        out += _project_problems(vid, v)
         notes = v.get("notes")
         if not isinstance(notes, str) or not notes.strip():
             out.append(f"roster {vid}: notes must say how the voice reads (English director's notes)")
@@ -426,6 +428,18 @@ def roster_problems(
         names.add(str(name))
         out += _row_problems(row, str(name), roster)
     return out
+
+
+def _project_problems(vid: str, v: Mapping[str, Any]) -> list[str]:
+    """A roster voice's `project`: a whole number from 1, on a designed voice only."""
+    project = v.get("project")
+    if project is None:
+        return []
+    if isinstance(project, bool) or not isinstance(project, int) or project < 1:
+        return [f"roster {vid}: project must be a whole number from 1 (got {project!r})"]
+    if v.get("design") is None:
+        return [f"roster {vid}: project is for a designed voice (the project that made it)"]
+    return []
 
 
 def _row_problems(row: Mapping[str, Any], name: str, roster: Mapping[str, Any]) -> list[str]:

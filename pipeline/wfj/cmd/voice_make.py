@@ -6,7 +6,8 @@
       they come to; and the lines that stay silent, by reason (no voice cast, no spoken version, a line the
       voice cannot read). --list names each silent line.
   generate --scope S --store DIR [--env-file F] [--limit N] [--config F]
-      Makes them through Gemini (the key is GEMINI_API_KEY, from the environment or --env-file) into DIR, the
+      Makes them through Gemini (the key is GEMINI_API_KEY, from the environment or --env-file; a designed
+      voice made in project N goes through GEMINI_API_KEY_N, see `gemini.Projects`) into DIR, the
       audio store: mp3/ holds what the pack ships (mono, 22.05 kHz, 32 kbps, no Xing / Info frame), wav/ the
       original take with the fingerprint it was made for (a take paid for but never encoded is encoded from
       it on the next run, not asked again). Each file is recorded in data/voice/audio.jsonl as soon as it is
@@ -65,7 +66,7 @@ DOLLARS_PER_MILLION_TOKENS = 20.0
 
 @dataclass(frozen=True)
 class Take:
-    """One file to make, and the prompt that makes it."""
+    """One file to make, and the prompt that makes it. `project` is the one whose key reaches its voice."""
 
     job: voice.Job
     it: str
@@ -73,6 +74,7 @@ class Take:
     prompt: str
     gemini_voice: str
     fingerprint: str
+    project: int = 1
 
 
 @dataclass
@@ -236,7 +238,8 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
                 respelled = text if text != plain else None
                 words = voice.text_hash(it, vals, said, respelled)
                 fp = voice.fingerprint(words, vid, r["gemini_voice"], r["model"], r["notes"], sex, profile)
-                takes.append(Take(voice.Job(stem, key, vid, sex), it, text, prompt, r["gemini_voice"], fp))
+                takes.append(Take(voice.Job(stem, key, vid, sex), it, text, prompt, r["gemini_voice"], fp,
+                                  r.get("project", 1)))
     return Survey(takes, silent)
 
 
@@ -429,6 +432,17 @@ def make_engine(key: str, model: str) -> gemini.Engine:
     return gemini.Engine(key, model)
 
 
+def projects(cfg: Mapping[str, Any], env_file: Path | None) -> gemini.Projects:
+    """The engines of the roster's projects (each made by `make_engine` when first needed): a take in a
+    designed voice goes through the key of the project that made it, every other take through project 1."""
+    voices = {
+        r["gemini_voice"]: r.get("project", 1)
+        for r in cfg["roster"].values()
+        if gemini.voice_kind(r["gemini_voice"]) == "designed"
+    }
+    return gemini.Projects(cfg["model"], env_file, voices, make=make_engine)
+
+
 def _status(path: Path, **fields: Any) -> None:
     tmp = path.with_name(path.name + ".part")
     tmp.write_text(json.dumps(fields, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -534,8 +548,9 @@ def generate(  # noqa: PLR0913, PLR0915 - the engine, encoder, log and sleep are
 def run_generate(
     cfg: Mapping[str, Any], root: Path, scope: str, store: Path, env_file: Path | None, limit: int | None
 ) -> int:
+    engine = projects(cfg, env_file)
     try:
-        engine = make_engine(gemini.read_key(env_file), cfg["model"])
+        engine.engine(1)  # project 1's key, read before anything is made (another's when first needed)
     except gemini.EngineError as e:
         print(f"voice generate: {e}", file=sys.stderr)
         return 1
@@ -599,7 +614,7 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
         if name == "plan":
             sp.add_argument("--list", action="store_true", help="name each silent line")
         else:
-            sp.add_argument("--env-file", help="a .env file holding GEMINI_API_KEY")
+            sp.add_argument("--env-file", help="a .env file holding GEMINI_API_KEY (and _2, … by project)")
             sp.add_argument("--limit", type=int, help="stop after this many files")
     a = p.parse_args(list(argv))
     store = store_dir(a.store)

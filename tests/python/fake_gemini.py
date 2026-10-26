@@ -3,7 +3,8 @@
 `serve(mode)` listens on a free local port and keeps what it was asked in `server.calls`. Modes: `ok`,
 `safety` (finishReason SAFETY, no audio), `busy-then-ok` (503 once, then ok), `noaudio` (a candidate with
 no inlineData), `http400`, `wav` (a whole WAV at 48 kHz with a trailing metadata chunk, as 3.8 answers).
-A POST to `/voices` (making a designed voice) answers with the id `voice_test123`.
+A POST to `/voices` (making a designed voice) answers with the id `voice_test123`, or, sent with a key in
+`server.full_keys`, with the 429 of a project that holds all the designed voices it may.
 """
 
 from __future__ import annotations
@@ -103,6 +104,9 @@ class Handler(BaseHTTPRequestHandler):
         if "key=" in self.path:
             return self._send(400, {"error": {"message": "key in the URL"}})
         mode = srv.mode
+        if self.path.endswith("/voices") and self.headers.get("x-goog-api-key") in srv.full_keys:
+            return self._send(429, {"error": {"code": 429, "status": "RESOURCE_EXHAUSTED",
+                                              "message": "Project has reached the maximum number of voices."}})
         if self.path.endswith("/voices") and mode != "http400":
             return self._send(200, {"id": "voice_test123", "type": "prompted"})
         if mode == "http400":
@@ -161,6 +165,7 @@ def serve(mode: str = "ok", running_polls: int = 0) -> HTTPServer:
     server.calls = []  # type: ignore[attr-defined]
     server.uploads, server.batches, server.outputs = {}, {}, {}  # type: ignore[attr-defined]
     server.running_polls = running_polls  # type: ignore[attr-defined]
+    server.full_keys = set()  # type: ignore[attr-defined]
     threading.Thread(target=server.serve_forever, daemon=True).start()
     return server
 

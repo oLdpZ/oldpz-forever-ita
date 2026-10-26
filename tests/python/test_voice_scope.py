@@ -6,6 +6,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import voice_fixture as vf
+
 from wfj.cmd import voice as cmd
 from wfj.cmd import voice_scope
 from wfj.core import voice

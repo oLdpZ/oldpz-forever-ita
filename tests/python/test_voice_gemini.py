@@ -180,6 +180,60 @@ def test_read_key_missing_message_has_no_key(monkeypatch, tmp_path):
         assert KEY not in str(e.value)
 
 
+def test_read_key_per_project(monkeypatch, tmp_path):
+    for n in ("", "_2", "_3", "_4"):
+        monkeypatch.delenv(f"GEMINI_API_KEY{n}", raising=False)
+    monkeypatch.setenv("GEMINI_API_KEY_2", "two")
+    f = tmp_path / ".env"
+    f.write_text("GEMINI_API_KEY=one\nGEMINI_API_KEY_2=not-this\nexport GEMINI_API_KEY_3='three'\n")
+    assert [gemini.read_key(f, n) for n in (1, 2, 3)] == ["one", "two", "three"]
+    assert gemini.read_key(f) == "one"
+    with pytest.raises(EngineError, match="no GEMINI_API_KEY_4 in the environment or in"):
+        gemini.read_key(f, 4)
+    with pytest.raises(EngineError, match="no project 0"):
+        gemini.read_key(f, 0)
+
+
+def test_projects_route_each_voice_through_its_projects_key(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "k1")
+    monkeypatch.setenv("GEMINI_API_KEY_2", "k2")
+    monkeypatch.delenv("GEMINI_API_KEY_3", raising=False)
+    server = fake_gemini.serve("ok")
+    try:
+        made = []
+
+        def make(key, model):
+            made.append(key)
+            return Engine(key, model, base=fake_gemini.url(server), timeout=5)
+
+        projects = gemini.Projects("gemini-3.8-flash-tts", None, {"voice_b": 2, "voice_c": 3}, make=make)
+        assert made == []  # no key is read before its project is needed
+        for voice in ("voice_b", "Algenib", "voice_unknown", "it-it-advisor-1"):
+            projects.synthesize("prompt", voice)
+        assert [c["key"] for c in server.calls] == ["k2", "k1", "k1", "k1"]
+        assert made == ["k2", "k1"]  # an engine per project, made once
+        assert [projects.project_of(v) for v in ("voice_b", "voice_c", "Charon", "voice_x")] == [2, 3, 1, 1]
+        assert projects.has_key(2) and not projects.has_key(3)
+        # a project whose key is missing fails only when a take needs it
+        with pytest.raises(EngineError, match="no GEMINI_API_KEY_3"):
+            projects.synthesize("prompt", "voice_c")
+        assert "k1" not in repr(projects) and "k2" not in repr(projects)
+    finally:
+        server.shutdown()
+        server.server_close()
+
+
+def test_a_full_project_is_told_apart_from_the_daily_quota(fake):
+    server, eng = fake("ok")
+    server.full_keys.add(KEY)
+    with pytest.raises(Busy) as e:
+        eng.create_voice("ofi-x", "An old man.")
+    assert gemini.voices_full(e.value)
+    assert not gemini.voices_full(Busy("HTTP 429: Resource has been exhausted (e.g. check quota)."))
+    assert not gemini.voices_full(Busy("HTTP 500: the maximum number of voices"))
+    assert not gemini.voices_full(EngineError("HTTP 429: maximum number of voices"))
+
+
 def test_repr_has_no_key():
     eng = Engine(KEY)
     assert KEY not in repr(eng)

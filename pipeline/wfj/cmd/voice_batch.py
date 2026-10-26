@@ -2,17 +2,18 @@
 within a day).
 
   batch submit --scope S --store DIR [--limit N] [--env-file F] [--config F]
-      Sends, as one batch job, every take `wfj voice plan` would make that the store does not hold yet and no
-      batch still waiting was sent for (the same take is never paid twice): a JSONL file of `{key, request}`
-      lines, the key being the file's stem, uploaded through the File API. The job is recorded in
-      DIR/batches/<id>.json with the fingerprint each take was sent for.
-      --limit N sends the first N (a trial).
+      Sends, as one batch job per project, every take `wfj voice plan` would make that the store does not
+      hold yet and no batch still waiting was sent for (the same take is never paid twice): a JSONL file of
+      `{key, request}` lines, the key being the file's stem, uploaded through the File API with the key of
+      the project its voices live in (`gemini.Projects`). Each job is recorded in DIR/batches/<id>.json
+      (<id>-p<n>.json for project n after the first) with its project and the fingerprint each take was
+      sent for. --limit N sends the first N (a trial).
   batch fetch [--store DIR] [--env-file F] [--config F]
-      Asks after every job not fetched yet. A finished one's results are downloaded and each take is kept in
-      the store (wav/, with the fingerprint it was sent for), then encoded and recorded exactly as `generate`
-      does with a take it already holds: the engine is not asked for anything. A take
-      the filter blocked, or that failed, is left out and goes into the next submit. A job still pending or
-      running is reported and asked after again on the next fetch.
+      Asks after every job not fetched yet, with the key of the project it was sent with. A finished one's
+      results are downloaded and each take is kept in the store (wav/, with the fingerprint it was sent for),
+      then encoded and recorded exactly as `generate` does with a take it already holds: the engine is not
+      asked for anything. A take the filter blocked, or that failed, is left out and goes into the next
+      submit. A job still pending or running is reported and asked after again on the next fetch.
   batch cancel --store DIR [--env-file F]
       Cancels every job not finished yet (a take it already made is not lost: fetch it first).
 
@@ -26,6 +27,7 @@ import argparse
 import datetime
 import json
 import sys
+from collections import defaultdict
 from collections.abc import Callable, Mapping, Sequence
 from pathlib import Path
 from typing import Any
@@ -70,11 +72,12 @@ def submit(  # noqa: PLR0913 - the clock is injected for the tests
     cfg: Mapping[str, Any],
     scope: str,
     store: Path,
-    engine: Any,
+    engines: gemini.Projects,
     limit: int | None = None,
     now: Callable[[], datetime.datetime] = lambda: datetime.datetime.now(datetime.UTC),
-) -> dict[str, Any] | None:
-    """Sends the takes to make as one batch job and records it; None when there is nothing to send."""
+) -> list[dict[str, Any]]:
+    """Sends the takes to make as one batch job per project (a designed voice is reached only through the
+    key of the project that made it) and records each; [] when there is nothing to send."""
     sent = waiting(store)
     work = [
         t for t in voice_make.plan(root, cfg, scope, store)["work"]
@@ -82,24 +85,33 @@ def submit(  # noqa: PLR0913 - the clock is injected for the tests
     ]
     if limit is not None:
         work = work[:limit]
-    if not work:
-        return None
+    by_project: dict[int, list[voice_make.Take]] = defaultdict(list)
+    for t in work:
+        by_project[t.project].append(t)
+    # every key read before anything is sent: a missing one stops the submit with nothing half sent
+    for n in by_project:
+        engines.engine(n)
     stamp = now().strftime("%Y%m%dT%H%M%SZ")
-    lines = "".join(
-        json.dumps({"key": t.job.stem, "request": gemini.request_body(t.prompt, t.gemini_voice)},
-                   ensure_ascii=False) + "\n"
-        for t in work
-    )
-    display = f"ofi-{scope}-{stamp}"
-    file_name = engine.upload(display, lines.encode("utf-8"))
-    name = engine.create_batch(display, file_name)
-    job = {
-        "name": name, "scope": scope, "model": cfg["model"], "submitted": stamp, "input": file_name,
-        "takes": {t.job.stem: t.fingerprint for t in work},
-        "chars": sum(len(t.transcript) for t in work), "fetched": False,
-    }
-    _write_job(jobs_dir(store) / f"{stamp}.json", job)
-    return job
+    jobs = []
+    for n, takes in sorted(by_project.items()):
+        engine = engines.engine(n)
+        lines = "".join(
+            json.dumps({"key": t.job.stem, "request": gemini.request_body(t.prompt, t.gemini_voice)},
+                       ensure_ascii=False) + "\n"
+            for t in takes
+        )
+        tail = f"-p{n}" if n > 1 else ""
+        display = f"ofi-{scope}-{stamp}{tail}"
+        file_name = engine.upload(display, lines.encode("utf-8"))
+        name = engine.create_batch(display, file_name)
+        job = {
+            "name": name, "scope": scope, "model": cfg["model"], "project": n, "submitted": stamp,
+            "input": file_name, "takes": {t.job.stem: t.fingerprint for t in takes},
+            "chars": sum(len(t.transcript) for t in takes), "fetched": False,
+        }
+        _write_job(jobs_dir(store) / f"{stamp}{tail}.json", job)
+        jobs.append(job)
+    return jobs
 
 
 def _results(path: Path) -> Sequence[dict[str, Any]]:
@@ -107,8 +119,11 @@ def _results(path: Path) -> Sequence[dict[str, Any]]:
         return [json.loads(line) for line in f if line.strip()]
 
 
-def fetch_one(store: Path, record: Path, job: dict[str, Any], engine: Any) -> dict[str, Any]:
-    """Asks after one job; a finished one's takes are kept in the store. → {state, kept, blocked, failed}."""
+def fetch_one(store: Path, record: Path, job: dict[str, Any], engines: gemini.Projects) -> dict[str, Any]:
+    """Asks after one job, through the engine of the project it was sent with (a job recorded before there
+    were projects was sent with project 1's); a finished one's takes are kept in the store.
+    → {state, kept, blocked, failed}."""
+    engine = engines.engine(job.get("project", 1))
     answer = engine.get_batch(job["name"])
     state = gemini.batch_state(answer)
     out: dict[str, Any] = {"state": state, "kept": 0, "blocked": [], "failed": []}
@@ -155,8 +170,8 @@ class _NoEngine:
 
 
 def fetch(
-    root: Path, cfg: Mapping[str, Any], store: Path, engine: Any, log: Callable[[str], None] = print,
-    encode: Callable[[Path, Path], None] | None = None,
+    root: Path, cfg: Mapping[str, Any], store: Path, engines: gemini.Projects,
+    log: Callable[[str], None] = print, encode: Callable[[Path, Path], None] | None = None,
 ) -> dict[str, Any]:
     """Every job not fetched yet: asked after, its takes kept, then the kept takes of its scope encoded and
     recorded. → {"pending": n, "kept": n, "made": n, "stopped": reason or None}."""
@@ -165,7 +180,7 @@ def fetch(
     for record, job in read_jobs(store):
         if job.get("fetched"):
             continue
-        r = fetch_one(store, record, job, engine)
+        r = fetch_one(store, record, job, engines)
         if r["state"] not in gemini.BATCH_DONE:
             out["pending"] += 1
             log(f"voice batch: {job['name']} ({len(job['takes'])} takes): {r['state'].lower()}")
@@ -185,11 +200,11 @@ def fetch(
     return out
 
 
-def cancel(store: Path, engine: Any, log: Callable[[str], None] = print) -> int:
+def cancel(store: Path, engines: gemini.Projects, log: Callable[[str], None] = print) -> int:
     n = 0
     for _, job in read_jobs(store):
         if not job.get("fetched"):
-            engine.cancel_batch(job["name"])
+            engines.engine(job.get("project", 1)).cancel_batch(job["name"])
             log(f"voice batch: {job['name']}: cancel asked (fetch to keep what it made)")
             n += 1
     return n
@@ -201,7 +216,7 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
     for name in ("submit", "fetch", "cancel"):
         sp = sub.add_parser(name)
         sp.add_argument("--store", help="the audio store (default: $VOICE_ROOT)")
-        sp.add_argument("--env-file", help="a .env file holding GEMINI_API_KEY")
+        sp.add_argument("--env-file", help="a .env file holding GEMINI_API_KEY (and _2, … by project)")
         sp.add_argument("--config", help="voice.toml (default: pipeline/voice.toml)")
         if name == "submit":
             sp.add_argument("--scope", required=True, choices=sorted(voice.SCOPES))
@@ -215,20 +230,21 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
     root = root or data_root()
     try:
         cfg = load_config(Path(a.config) if a.config else root.parent / CONFIG)
-        key = gemini.read_key(Path(a.env_file) if a.env_file else None)
-        engine = voice_make.make_engine(key, cfg["model"])
+        engines = voice_make.projects(cfg, Path(a.env_file) if a.env_file else None)
+        engines.engine(1)  # project 1's key, read up front (another's when a job of its project needs it)
         if a.cmd == "submit":
-            job = submit(root, cfg, a.scope, store, engine, a.limit)
-            if job is None:
+            jobs = submit(root, cfg, a.scope, store, engines, a.limit)
+            if not jobs:
                 print("voice batch: nothing to send")
-            else:
+            for job in jobs:
                 print(f"voice batch: sent {len(job['takes'])} take(s), {job['chars']:,} characters, as "
-                      f"{job['name']}; results within a day: wfj voice batch fetch")
+                      f"{job['name']} (project {job['project']}); results within a day: wfj voice batch"
+                      " fetch")
             return 0
         if a.cmd == "cancel":
-            print(f"voice batch: {cancel(store, engine)} job(s) cancelled")
+            print(f"voice batch: {cancel(store, engines)} job(s) cancelled")
             return 0
-        r = fetch(root, cfg, store, engine)
+        r = fetch(root, cfg, store, engines)
     except (ValueError, KeyError, FileNotFoundError, gemini.EngineError) as e:
         print(f"voice batch: {e}", file=sys.stderr)
         return 1

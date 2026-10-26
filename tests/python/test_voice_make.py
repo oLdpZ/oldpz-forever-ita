@@ -491,6 +491,26 @@ def test_generate_reads_the_key_and_never_prints_it(world, monkeypatch, capsys):
     assert "made 1 of 5 files" in out.out
 
 
+def test_generate_sends_a_designed_voice_through_its_projects_key(world, monkeypatch):
+    two = world.tmp / "two.toml"
+    two.write_text(TOML.replace('[roster.uf]\nvoice = "Gacrux"\n',
+                                '[roster.uf]\nvoice = "voice_uf1"\ndesign = "A cold undead woman."\nproject = 2\n'),
+                   encoding="utf-8")
+    world.cfg = voice_cast.load_config(two)
+    monkeypatch.setenv(gemini.KEY_VAR, "k1")
+    monkeypatch.setenv(f"{gemini.KEY_VAR}_2", "k2")
+    engines = {"k1": FakeEngine(), "k2": FakeEngine()}
+    monkeypatch.setattr(voice_make, "make_engine", lambda key, model: engines[key])
+    assert _gen(world, voice_make.projects(world.cfg, None))["made"] == 5
+    assert [v for _, v in engines["k2"].calls] == ["voice_uf1"]
+    assert "voice_uf1" not in [v for _, v in engines["k1"].calls] and len(engines["k1"].calls) == 4
+    # a take whose project has no key stops the run there, keeping what was made
+    monkeypatch.delenv(f"{gemini.KEY_VAR}_2")
+    write_quests(world.data, **{"459_description": "Prega al santuario, presto."})
+    r = _gen(world, voice_make.projects(world.cfg, None))
+    assert "no GEMINI_API_KEY_2" in r["stopped"]
+
+
 def test_generate_stopped_by_the_engine_exits_with_a_resume_hint(world, monkeypatch, capsys):
     monkeypatch.setenv(gemini.KEY_VAR, "k")
     monkeypatch.setattr(voice_make, "make_engine", lambda key, model: FakeEngine(busy=True))

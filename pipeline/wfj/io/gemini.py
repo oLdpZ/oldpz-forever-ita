@@ -6,6 +6,10 @@ or (3.8) as a whole WAV whose data chunk is followed by a metadata chunk: only i
 
 A voice is a prebuilt name (`Algenib`), a library voice (`it-it-…`) or a designed voice (`voice_…`, made
 from an English description with `create_voice` and kept by the API).
+
+A Google Cloud project keeps at most 200 designed voices, so the roster's are spread over several projects,
+each with its own key: `GEMINI_API_KEY` for project 1, `GEMINI_API_KEY_<n>` for project n. A designed voice is
+used only through the key of the project that made it (`Projects` routes each take there).
 """
 
 from __future__ import annotations
@@ -64,6 +68,17 @@ class Blocked(EngineError):
 
 class Busy(EngineError):
     """The engine is overloaded or over quota or failed inside (429, 500, 503): wait and ask again."""
+
+
+# what a 429 from `create_voice` says when the project holds all the designed voices it may (no use waiting)
+_VOICES_FULL = "maximum number of voices"
+
+
+def voices_full(e: Exception) -> bool:
+    """Whether `e` is the engine saying the project already holds as many designed voices as it may: a 429
+    like the daily quota's, but only another project's key can go on."""
+    text = str(e)
+    return isinstance(e, Busy) and text.startswith("HTTP 429") and _VOICES_FULL in text.lower()
 
 
 def prompt_text(profile: str, notes: str, transcript: str) -> str:
@@ -159,9 +174,17 @@ def batch_results_file(job: Mapping[str, Any]) -> str | None:
     return None
 
 
-def read_key(env_file: Path | None = None) -> str:
-    """The API key: `GEMINI_API_KEY` from the environment, else from a `.env` file (`NAME=value` lines)."""
-    key = os.environ.get(KEY_VAR, "").strip()
+def key_var(project: int = 1) -> str:
+    """The variable holding a project's key: `GEMINI_API_KEY` for project 1, `GEMINI_API_KEY_<n>` after."""
+    if project < 1:
+        raise EngineError(f"no project {project}: projects count from 1")
+    return KEY_VAR if project == 1 else f"{KEY_VAR}_{project}"
+
+
+def read_key(env_file: Path | None = None, project: int = 1) -> str:
+    """A project's API key (`key_var`): from the environment, else from a `.env` file (`NAME=value` lines)."""
+    var = key_var(project)
+    key = os.environ.get(var, "").strip()
     if key:
         return key
     if env_file is not None:
@@ -171,12 +194,12 @@ def read_key(env_file: Path | None = None) -> str:
             raise EngineError(f"cannot read {env_file}: {e.strerror or type(e).__name__}") from None
         for raw in lines:
             name, sep, value = raw.strip().removeprefix("export ").partition("=")
-            if sep and name.strip() == KEY_VAR:
+            if sep and name.strip() == var:
                 value = value.strip().strip("'\"").strip()
                 if value:
                     return value
     where = f" or in {env_file}" if env_file is not None else ""
-    raise EngineError(f"no {KEY_VAR} in the environment{where}")
+    raise EngineError(f"no {var} in the environment{where}")
 
 
 class Engine:
@@ -315,6 +338,53 @@ class Engine:
         if voice_kind(vid) != "designed":
             raise EngineError(f"no voice id in the answer ({str(vid)[:40]!r})")
         return vid
+
+
+class Projects:
+    """The engines of the projects the roster's designed voices live in, one per project, each made (its key
+    read) only when that project is first needed: a key missing for a project no take uses is never missed.
+    `voices` maps a designed voice to its project; any other voice (prebuilt, library, or one it does not
+    know) goes through project 1. `make(key, model)` makes an engine (the tests give a stand-in)."""
+
+    def __init__(
+        self,
+        model: str = MODEL,
+        env_file: Path | None = None,
+        voices: Mapping[str, int] | None = None,
+        make: Callable[[str, str], Any] | None = None,
+    ):
+        self.model = model
+        self.env_file = env_file
+        self._voices = dict(voices or {})
+        self._make = make or Engine
+        self._engines: dict[int, Any] = {}
+
+    def __repr__(self) -> str:
+        return f"Projects(model={self.model!r}, made={sorted(self._engines)})"
+
+    def project_of(self, voice: str) -> int:
+        """The project whose key a take in `voice` goes through."""
+        return self._voices.get(voice, 1) if voice_kind(voice) == "designed" else 1
+
+    def has_key(self, project: int) -> bool:
+        """Whether a key for `project` is in the environment or the .env file."""
+        if project in self._engines:
+            return True
+        try:
+            read_key(self.env_file, project)
+        except EngineError:
+            return False
+        return True
+
+    def engine(self, project: int = 1) -> Any:
+        """The engine of `project`, made on first use. `EngineError` when its key is missing."""
+        if project not in self._engines:
+            self._engines[project] = self._make(read_key(self.env_file, project), self.model)
+        return self._engines[project]
+
+    def synthesize(self, prompt: str, voice: str) -> bytes:
+        """`Engine.synthesize` through the engine of the voice's project."""
+        return self.engine(self.project_of(voice)).synthesize(prompt, voice)
 
 
 def synthesize_retry(

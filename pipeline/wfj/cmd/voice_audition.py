@@ -185,7 +185,7 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
     p.add_argument("--scope", required=True, choices=sorted(voice.SCOPES))
     p.add_argument("--per", type=int, default=PER, help="lines of each speaker (default: %(default)s)")
     p.add_argument("--store", help="the audio store (default: $VOICE_ROOT)")
-    p.add_argument("--env-file", help="a .env file holding GEMINI_API_KEY")
+    p.add_argument("--env-file", help="a .env file holding GEMINI_API_KEY (and _2, … by project)")
     p.add_argument("--config", help="voice.toml (default: pipeline/voice.toml)")
     a = p.parse_args(list(argv))
     if a.per < 1:
@@ -196,8 +196,8 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
     root = root or data_root()
     try:
         cfg = load_config(Path(a.config) if a.config else root.parent / CONFIG)
-        key = gemini.read_key(Path(a.env_file) if a.env_file else None)
-        engine = voice_make.make_engine(key, cfg["model"])
+        engine = voice_make.projects(cfg, Path(a.env_file) if a.env_file else None)
+        engine.engine(1)  # project 1's key, read before anything is made (another's when first needed)
         out, r = audition(root, cfg, a.scope, store, engine, a.per, encode=voice_make.to_mp3)
     except (ValueError, KeyError, FileNotFoundError, gemini.EngineError) as e:
         print(f"voice audition: {e}", file=sys.stderr)
