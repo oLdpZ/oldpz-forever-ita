@@ -2694,6 +2694,8 @@ notes = "Blustering and jovial, natural pace."
 fits = "ancient dwarf artisan blacksmith of the Mithril Order"
 
 [roster.trenton]
+voice = "voice_eazj0298oh84"
+project = 2
 design = "A young night elf man, a smith, speaks Italian: light, breezy and boastful, a cocky charm, fantasy."
 notes = "Cocky then secretive, natural pace."
 fits = "young smith of the Mithril Order known as the Mithril Kid"
@@ -2895,6 +2897,8 @@ notes = "Huffy and indignant, natural pace."
 fits = "stubborn dwarf lost in Un'Goro, feuding with Muigin"
 
 [roster.muigin]
+voice = "voice_nsohg0m361o8"
+project = 2
 design = "A human man, a lost traveller, speaks Italian: nasal, sly and petulant, mischievous and spiteful, fantasy."
 notes = "Petulant and mischievous, natural pace."
 fits = "vindictive human lost in Un'Goro, feuding with Larion"
@@ -3012,6 +3016,8 @@ notes = "Menacing and proud, measured natural pace."
 fits = "black dragon testing those who seek to join Deathwing's flight"
 
 [roster.ironboot]
+voice = "voice_t4c7idzcy6ex"
+project = 2
 design = "An old dwarf prospector, speaks Italian: craggy, earnest and urgent, a scholarly brogue, fantasy."
 notes = "Urgent and earnest, natural pace."
 fits = "dwarf prospector in Tanaris studying the tablets of Mosh'aru"
@@ -3045,6 +3051,8 @@ notes = "Steadfast and noble, natural pace."
 fits = "human commander of the Argent Dawn at Chillwind Camp"
 
 [roster.greta]
+voice = "voice_34405jxnzm4o"
+project = 2
 design = "An older tauren woman, a druid, speaks Italian: low, grainy and firm, resolute and protective, fantasy."
 notes = "Resolute and firm, natural pace."
 fits = "tauren druid of the Emerald Circle in Felwood"
@@ -3360,51 +3368,71 @@ notes = "Polite and businesslike, natural pace."
 fits = "cloth quartermaster of Stormwind"
 
 [roster.mistina]
+voice = "voice_de8wn0z4lc6j"
+project = 2
 design = "A dwarf woman quartermaster, speaks Italian: hearty, firm and brisk, fantasy."
 notes = "Hearty and brisk, natural pace."
 fits = "cloth quartermaster of Ironforge"
 
 [roster.bubulo]
+voice = "voice_7ejehlcwavyv"
+project = 2
 design = "A gnome quartermaster, speaks Italian: bright, fussy and precise, fantasy."
 notes = "Fussy and polite, natural pace."
 fits = "cloth quartermaster of the Gnomeregan Exiles"
 
 [roster.raedon]
+voice = "voice_3nxu9di8lwwj"
+project = 2
 design = "A night elf quartermaster, speaks Italian: smooth, cool and courteous, fantasy."
 notes = "Courteous and calm, natural pace."
 fits = "cloth quartermaster of Darnassus"
 
 [roster.rashona]
+voice = "voice_x28alnbzu25v"
+project = 2
 design = "An orc woman quartermaster, speaks Italian: husky, blunt and practical, fantasy."
 notes = "Blunt and practical, natural pace."
 fits = "cloth quartermaster of Orgrimmar"
 
 [roster.vehena]
+voice = "voice_88re99n564s6"
+project = 2
 design = "A troll woman quartermaster, speaks Italian: lilting, smoky and laid-back, fantasy."
 notes = "Relaxed and friendly, natural pace."
 fits = "cloth quartermaster of the Darkspear trolls"
 
 [roster.rumstag]
+voice = "voice_8hc7qg6vxvvd"
+project = 2
 design = "A tauren quartermaster, speaks Italian: deep, mellow and courteous, fantasy."
 notes = "Mellow and courteous, natural pace."
 fits = "cloth quartermaster of Thunder Bluff"
 
 [roster.ralston]
+voice = "voice_flc1qw3i5q7c"
+project = 2
 design = "A Forsaken quartermaster, speaks Italian: dry, raspy and prim, fantasy."
 notes = "Prim and dry, natural pace."
 fits = "cloth quartermaster of the Undercity"
 
 [roster.farsong]
+voice = "voice_20uf1ckijkjf"
+project = 2
 design = "A night elf sentinel, speaks Italian: cool, clear and resolute, fantasy."
 notes = "Resolute and steady, natural pace."
 fits = "Silverwing sentinel sending fighters into Warsong Gulch"
 
 [roster.torntusk]
+voice = "voice_6mfm7h27l3x9"
+project = 2
 design = "A forest troll matriarch, speaks Italian: fierce, husky and commanding, fantasy."
 notes = "Fierce and urgent, natural pace."
 fits = "forest troll leader of Revantusk Village whose mate was taken"
 
 [roster.otho]
+voice = "voice_02ua6xtfi0xi"
+project = 2
 design = "A forest troll man, speaks Italian: hissing, spiteful and gleeful, a thick island lilt, fantasy."
 notes = "Spiteful and gleeful, natural pace."
 fits = "spiteful forest troll cook of Revantusk who hates the Wildhammer"
@@ -3420,41 +3448,57 @@ notes = "Arrogant and fierce, natural pace."
 fits = "Warsong Outrider captain at Warsong Gulch"
 
 [roster.paleo]
+voice = "voice_pir184gfr0q2"
+project = 2
 design = "A human showman scholar, speaks Italian: theatrical, polished and genial, fantasy."
 notes = "Genial and theatrical, natural pace."
 fits = "Darkmoon Faire showman who trades in cards and exotic goods"
 
 [roster.jinrokh]
+voice = "voice_h42uu4ajbp3h"
+project = 2
 design = "A towering Zandalari troll warrior, speaks Italian: deep, terse and ominous, fantasy."
 notes = "Terse and grave, natural pace."
 fits = "Zandalari troll warrior at Yojamba Isle"
 
 [roster.altabim]
+voice = "voice_rpzrm4n14cgx"
+project = 2
 design = "An old Zandalari troll seer, speaks Italian: dry, raspy and knowing, fantasy."
 notes = "Knowing and calm, natural pace."
 fits = "old Zandalari seer at Yojamba Isle"
 
 [roster.maywiki]
+voice = "voice_y7cmot5urv65"
+project = 2
 design = "A Zandalari troll prophetess, speaks Italian: warm, lilting and mystical, fantasy."
 notes = "Warm and mystical, natural pace."
 fits = "Zandalari prophetess at Yojamba Isle"
 
 [roster.falthir]
+voice = "voice_5aj2oj1brs4n"
+project = 2
 design = "A blind old Zandalari troll, speaks Italian: whispery, eerie and sly, fantasy."
 notes = "Eerie and sly, natural pace."
 fits = "blind old Zandalari mystic at Yojamba Isle"
 
 [roster.oslight]
+voice = "voice_iz34hvqoy8o2"
+project = 2
 design = "A human field marshal, speaks Italian: crisp, commanding and stern, fantasy."
 notes = "Stern and commanding, natural pace."
 fits = "League of Arathor field marshal at Arathi Basin"
 
 [roster.maclear]
+voice = "voice_2v96n4onl0gs"
+project = 2
 design = "A human woman sergeant, speaks Italian: brisk, sturdy and plainspoken, fantasy."
 notes = "Brisk and plainspoken, natural pace."
 fits = "League of Arathor sergeant at Arathi Basin"
 
 [roster.dwire]
+voice = "voice_s65bncipya55"
+project = 2
 design = "A Forsaken commander, speaks Italian: icy, rasping and venomous, fantasy."
 notes = "Icy and venomous, natural pace."
 fits = "Forsaken Defiler commander at Arathi Basin"
