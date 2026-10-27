@@ -392,6 +392,13 @@ def test_an_english_tag_is_sent_and_any_other_bracket_is_refused():
         voice_make.build_prompt("k", "Mordo", "Voce calma.", "Ciao.")
 
 
+def test_a_creature_name_is_not_taken_for_italian_direction():
+    profile = "Drusilla La Salle; gender: female; role: commoner"
+    assert voice_make.build_prompt("k", profile, "Warm.", "Ciao.", "Drusilla La Salle").endswith("Ciao.")
+    with pytest.raises(voice.VoiceError):
+        voice_make.build_prompt("k", profile, "Warm.", "Ciao.")
+
+
 def test_a_speaker_with_no_voice_is_silent_and_named(world):
     p = voice_make.plan(world.data, world.cfg, "tirisfal", world.store)
     silent = {s: (k, why) for s, k, why in p["silent"]}

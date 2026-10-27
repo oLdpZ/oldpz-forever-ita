@@ -167,11 +167,13 @@ def line_voices(
     return list(out.items())
 
 
-def build_prompt(key: str, profile: str, notes: str, transcript: str) -> str:
+def build_prompt(key: str, profile: str, notes: str, transcript: str, name: str = "") -> str:
     """The prompt for one take. The profile and the notes are direction, so English only (Gemini reads
     anything else aloud); the transcript is Italian with English tags only (`voice.SPEECH_TAGS`). Raises
-    VoiceError with the key otherwise: such a line is reported, never sent."""
-    why = casting.not_english(f"{profile}\n{notes}")
+    VoiceError with the key otherwise: such a line is reported, never sent. `name`, the creature's English
+    name the profile starts with, is left out of the check: "Drusilla La Salle" and "Una" are names."""
+    direction = profile.removeprefix(name) if name else profile
+    why = casting.not_english(f"{direction}\n{notes}")
     if why:
         raise voice.VoiceError(
             f"{key}: the audio profile and the director's notes must be English only, Gemini would read them"
@@ -231,7 +233,8 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
                 try:
                     plain = voice.speech_text(it, key, sex, vals, said)
                     text = voice.respell(plain, cfg.get("pronounce", {}))
-                    prompt = build_prompt(stem, profile, r["notes"], text)
+                    named = profile.split("; ", 1)[0] if isinstance(sp, int) else ""
+                    prompt = build_prompt(stem, profile, r["notes"], text, named)
                 except voice.VoiceError as e:
                     silent.append((stem, "refused", str(e)))
                     continue
