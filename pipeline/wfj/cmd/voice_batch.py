@@ -8,6 +8,9 @@ within a day).
       the project its voices live in (`gemini.Projects`). Each job is recorded in DIR/batches/<id>.json
       (<id>-p<n>.json for project n after the first) with its project and the fingerprint each take was
       sent for. --limit N sends the first N (a trial).
+      --max-tokens N sends, for each project with no job still waiting, one job of at most about N prompt
+      tokens (a project's batch jobs still running may hold only so many: 100,000 on Tier 1), and leaves
+      the rest for the next submit; a project whose job is refused is reported and the others still go.
   batch fetch [--store DIR] [--env-file F] [--config F]
       Asks after every job not fetched yet, with the key of the project it was sent with. A finished one's
       results are downloaded and each take is kept in the store (wav/, with the fingerprint it was sent for),
@@ -67,7 +70,29 @@ def waiting(store: Path) -> dict[str, str]:
     return out
 
 
-def submit(  # noqa: PLR0913 - the clock is injected for the tests
+def prompt_tokens(t: voice_make.Take) -> int:
+    """A generous guess of a take's prompt tokens: Italian and the English direction run about four
+    characters a token, counted here as three."""
+    return len(t.prompt) // 3 + 1
+
+
+def busy_projects(store: Path) -> set[int]:
+    """The projects with a job not fetched yet (an old record without a project is project 1's)."""
+    return {job.get("project", 1) for _, job in read_jobs(store) if not job.get("fetched")}
+
+
+def _within(takes: Sequence[voice_make.Take], budget: int) -> list[voice_make.Take]:
+    """The first takes whose prompt tokens fit in `budget` (always the first one)."""
+    out, used = [], 0
+    for t in takes:
+        if out and used + prompt_tokens(t) > budget:
+            break
+        out.append(t)
+        used += prompt_tokens(t)
+    return out
+
+
+def submit(  # noqa: PLR0913 - the clock and log are injected for the tests
     root: Path,
     cfg: Mapping[str, Any],
     scope: str,
@@ -75,9 +100,13 @@ def submit(  # noqa: PLR0913 - the clock is injected for the tests
     engines: gemini.Projects,
     limit: int | None = None,
     now: Callable[[], datetime.datetime] = lambda: datetime.datetime.now(datetime.UTC),
+    max_tokens: int | None = None,
+    log: Callable[[str], None] = print,
 ) -> list[dict[str, Any]]:
     """Sends the takes to make as one batch job per project (a designed voice is reached only through the
-    key of the project that made it) and records each; [] when there is nothing to send."""
+    key of the project that made it) and records each; [] when there is nothing to send. With `max_tokens`,
+    a project with a job still waiting sends nothing, the others one job of about that many prompt tokens
+    at most, and a project the engine refuses is logged while the others still go."""
     sent = waiting(store)
     work = [
         t for t in voice_make.plan(root, cfg, scope, store)["work"]
@@ -88,6 +117,12 @@ def submit(  # noqa: PLR0913 - the clock is injected for the tests
     by_project: dict[int, list[voice_make.Take]] = defaultdict(list)
     for t in work:
         by_project[t.project].append(t)
+    if max_tokens is not None:
+        busy = busy_projects(store)
+        for n in busy & set(by_project):
+            log(f"voice batch: project {n} has a job still waiting, nothing more sent for it")
+        by_project = defaultdict(list, {n: _within(ts, max_tokens) for n, ts in by_project.items()
+                                        if n not in busy})
     # every key read before anything is sent: a missing one stops the submit with nothing half sent
     for n in by_project:
         engines.engine(n)
@@ -102,8 +137,14 @@ def submit(  # noqa: PLR0913 - the clock is injected for the tests
         )
         tail = f"-p{n}" if n > 1 else ""
         display = f"ofi-{scope}-{stamp}{tail}"
-        file_name = engine.upload(display, lines.encode("utf-8"))
-        name = engine.create_batch(display, file_name)
+        try:
+            file_name = engine.upload(display, lines.encode("utf-8"))
+            name = engine.create_batch(display, file_name)
+        except gemini.EngineError as e:
+            if max_tokens is None:
+                raise
+            log(f"voice batch: project {n} refused: {' '.join(str(e).split())[:200]}")
+            continue
         job = {
             "name": name, "scope": scope, "model": cfg["model"], "project": n, "submitted": stamp,
             "input": file_name, "takes": {t.job.stem: t.fingerprint for t in takes},
@@ -221,6 +262,8 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
         if name == "submit":
             sp.add_argument("--scope", required=True, choices=sorted(voice.SCOPES))
             sp.add_argument("--limit", type=int, help="send only the first N takes")
+            sp.add_argument("--max-tokens", type=int,
+                            help="one job of about N prompt tokens per project with none waiting")
     a = p.parse_args(list(argv))
     store = voice_make.store_dir(a.store)
     if store is None:
@@ -233,7 +276,7 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
         engines = voice_make.projects(cfg, Path(a.env_file) if a.env_file else None)
         engines.engine(1)  # project 1's key, read up front (another's when a job of its project needs it)
         if a.cmd == "submit":
-            jobs = submit(root, cfg, a.scope, store, engines, a.limit)
+            jobs = submit(root, cfg, a.scope, store, engines, a.limit, max_tokens=a.max_tokens)
             if not jobs:
                 print("voice batch: nothing to send")
             for job in jobs:

@@ -182,3 +182,13 @@ def test_the_verb_is_reached_through_wfj_voice(w, monkeypatch, capsys):
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     assert voice.run(["batch", "fetch", "--store", str(w.store), "--config", str(w.config)]) == 1
     assert "GEMINI_API_KEY" in capsys.readouterr().err
+
+
+def test_max_tokens_sends_one_small_job_per_free_project_and_the_rest_later(w, api):
+    s, engine = api()
+    one = _submit(w, engine, max_tokens=1)
+    assert [len(j["takes"]) for j in one] == [1]
+    assert _submit(w, engine, minute=1, max_tokens=10**6) == []  # project 1 still has a job waiting
+    _fetch(w, engine)
+    rest = _submit(w, engine, minute=2, max_tokens=10**6)
+    assert len(rest[0]["takes"]) == len(ALL) - 1
