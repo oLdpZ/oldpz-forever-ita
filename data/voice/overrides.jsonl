@@ -9,7 +9,7 @@
 {"creature": 241, "voice": "remy", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 244, "voice": "mastonefield", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 246, "voice": "bernice", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
-{"creature": 247, "voice": "billy", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 247, "voice": "genhumanf3", "reason": "a child: a young woman's voice of its race (the voice design refuses children)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 248, "voice": "gramma", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 251, "voice": "maybell", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 252, "voice": "tommyjoe", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
@@ -435,7 +435,7 @@
 {"creature": 10837, "voice": "derrington", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10838, "voice": "valorfist", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10922, "voice": "greta", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
-{"creature": 10926, "voice": "pamela", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10926, "voice": "genhumanf3", "reason": "a child: a young woman's voice of its race (the voice design refuses children)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10929, "voice": "haleh", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 11033, "voice": "smokey", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 11035, "voice": "betina", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
@@ -480,11 +480,11 @@
 {"creature": 13777, "voice": "durgen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 13840, "voice": "laggrond", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 13841, "voice": "haggerdin", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
-{"creature": 14305, "voice": "humanorphan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14305, "voice": "genhumanf3", "reason": "a child: a young woman's voice of its race (the voice design refuses children)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 14368, "voice": "lydros", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 14436, "voice": "morzul", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 14437, "voice": "gorzeeki", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
-{"creature": 14444, "voice": "orcishorphan", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 14444, "voice": "genorcf2", "reason": "a child: a young woman's voice of its race (the voice design refuses children)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 14463, "voice": "daio", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 14470, "voice": "impsy", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 14567, "voice": "derotain", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
