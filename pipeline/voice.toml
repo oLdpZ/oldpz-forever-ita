@@ -3280,6 +3280,8 @@ notes = "Merry and warm, natural pace."
 fits = "jolly gift-giver of the Winter Veil festival in Orgrimmar"
 
 [roster.teeka]
+voice = "voice_d4s2zrtaf1xv"
+project = 2
 design = "An orc woman corporal, speaks Italian: harsh, punchy and fierce, fantasy."
 notes = "Fierce and urgent, natural pace."
 fits = "Frostwolf corporal in Alterac Valley"
@@ -3438,6 +3440,8 @@ notes = "Spiteful and gleeful, natural pace."
 fits = "spiteful forest troll cook of Revantusk who hates the Wildhammer"
 
 [roster.markhor]
+voice = "voice_fznrmd2vauvu"
+project = 2
 design = "A forest troll huntsman, speaks Italian: low, gravelly and grim, fantasy."
 notes = "Grim and vengeful, natural pace."
 fits = "forest troll huntsman and stable master of Revantusk"
@@ -3504,276 +3508,386 @@ notes = "Icy and venomous, natural pace."
 fits = "Forsaken Defiler commander at Arathi Basin"
 
 [roster.mortis]
+voice = "voice_cfd4frk6ag9p"
+project = 2
 design = "A Forsaken deathstalker, speaks Italian: low, smooth and sinister, fantasy."
 notes = "Smooth and sinister, natural pace."
 fits = "Forsaken deathstalker of the Defilers at Arathi Basin"
 
 [roster.baristolth]
+voice = "voice_hiqjyj99a3yn"
+project = 2
 design = "An ageless night elf guardian, speaks Italian: deep, urgent and timeworn, fantasy."
 notes = "Urgent and grave, natural pace."
 fits = "ageless guardian of the Brood of Nozdormu in Silithus"
 
 [roster.maralith]
+voice = "voice_bbzo0kdzjlof"
+project = 2
 design = "A night elf commander, speaks Italian: firm, warm baritone, anxious and tender, fantasy."
 notes = "Worried and tender, natural pace."
 fits = "night elf commander of Cenarion Hold searching for his beloved"
 
 [roster.larksbane]
+voice = "voice_3ed34exah4mp"
+project = 2
 design = "A dwarf woman geologist, speaks Italian: sharp, quick and analytical, fantasy."
 notes = "Analytical and keen, natural pace."
 fits = "dwarf geologist deciphering Qiraji glyphs in Silithus"
 
 [roster.proudhorn]
+voice = "voice_6u9prjo11gpq"
+project = 2
 design = "A tauren windcaller, speaks Italian: strong, resonant and authoritative, fantasy."
 notes = "Authoritative and steady, natural pace."
 fits = "tauren windcaller securing the supply lines of Cenarion Hold"
 
 [roster.anachronos]
+voice = "voice_wi4fq2babub5"
+project = 2
 design = "An ancient bronze dragon, speaks Italian: vast, deep and timeless, a calm echoing resonance, fantasy."
 notes = "Grave and enigmatic, measured natural pace."
 fits = "ancient bronze dragon guarding the Caverns of Time and the scepter"
 
 [roster.ortell]
+voice = "voice_x40q93aqkx6o"
+project = 2
 design = "An old human hermit, speaks Italian: jittery, scratchy and paranoid, fantasy."
 notes = "Nervous and paranoid, natural pace."
 fits = "paranoid hermit who fled the Twilight's Hammer"
 
 [roster.huum]
+voice = "voice_ooyavbne76cg"
+project = 2
 design = "A tauren druid, speaks Italian: deep, measured and earnest, fantasy."
 notes = "Earnest and grave, natural pace."
 fits = "tauren druid leading the fight against the Twilight's Hammer"
 
 [roster.aurel]
+voice = "voice_k3iim4a7ok2t"
+project = 2
 design = "A night elf woman artisan, speaks Italian: soft, clever and confident, fantasy."
 notes = "Clever and confident, natural pace."
 fits = "night elf artisan forging cultist disguises in Cenarion Hold"
 
 [roster.bor]
+voice = "voice_yua961d6kxhz"
+project = 2
 design = "A tauren warrior, speaks Italian: booming, boisterous and hearty, fantasy."
 notes = "Boisterous and eager, natural pace."
 fits = "boisterous tauren warrior hunting Twilight's Hammer cultists"
 
 [roster.warbringer]
+voice = "voice_e8wf25limfgd"
+project = 2
 design = "An orc warbringer, speaks Italian: thunderous, rough and rousing, fantasy."
 notes = "Rousing and fierce, natural pace."
 fits = "Horde warbringer recruiting for every battleground"
 
 [roster.brigadier]
+voice = "voice_a6bvrohvl8m7"
+project = 2
 design = "A dwarf general, speaks Italian: deep, booming and strategic, fantasy."
 notes = "Commanding and measured, natural pace."
 fits = "Alliance brigadier general recruiting for every battleground"
 
 [roster.yessendra]
+voice = "voice_g288po9gqcy1"
+project = 2
 design = "A night elf windcaller, speaks Italian: airy, calm and graceful, fantasy."
 notes = "Calm and graceful, natural pace."
 fits = "night elf windcaller of the Cenarion Circle crafting rings from Qiraji relics"
 
 [roster.haro]
+voice = "voice_susvvp4f8h8l"
+project = 2
 design = "A tauren weaponsmith, speaks Italian: deep, warm and craftsmanlike, fantasy."
 notes = "Warm and proud, natural pace."
 fits = "tauren druid weaponsmith of the Cenarion Circle in Silithus"
 
 [roster.keyl]
+voice = "voice_vrujv44vlxwl"
+project = 2
 design = "A night elf tailor, speaks Italian: light, lively and confident, fantasy."
 notes = "Lively and confident, natural pace."
 fits = "night elf tailor of the Cenarion Circle in Silithus"
 
 [roster.lunarharbinger]
+voice = "voice_34v644in3kgx"
+project = 2
 design = "A tauren woman herald, speaks Italian: warm, festive and gentle, fantasy."
 notes = "Festive and warm, natural pace."
 fits = "herald of the Lunar Festival"
 
 [roster.mokvar]
+voice = "voice_5s72u3ylq2jn"
+project = 2
 design = "An orc armor dealer, speaks Italian: gravelly, shrewd and grudging, fantasy."
 notes = "Shrewd and gruff, natural pace."
 fits = "orc armor dealer caught up in the curse of Valthalak"
 
 [roster.deliana]
+voice = "voice_jz0gqegxuoyl"
+project = 2
 design = "A human woman armor dealer, speaks Italian: smooth, composed and businesslike, fantasy."
 notes = "Composed and businesslike, natural pace."
 fits = "human armor dealer caught up in the curse of Valthalak"
 
 [roster.mux]
+voice = "voice_1w3nz0q845vk"
+project = 2
 design = "A goblin engineer, speaks Italian: zippy, boastful and manic, fantasy."
 notes = "Manic and boastful, natural pace."
 fits = "goblin engineer building a ghost-seeing device"
 
 [roster.anthion]
+voice = "voice_bbo8sj0yfhl0"
+project = 2
 design = "A ghostly human adventurer, speaks Italian: hollow, regretful and distant, fantasy."
 notes = "Regretful and haunted, natural pace."
 fits = "ghost of an adventurer cursed by Valthalak's amulet"
 
 [roster.falrin]
+voice = "voice_0tzq8klvzsg0"
+project = 2
 design = "A night elf enchanter, speaks Italian: haughty, cold and bitter, fantasy."
 notes = "Haughty and bitter, natural pace."
 fits = "bitter night elf enchanter of Dire Maul who hates the ogres"
 
 [roster.bodley]
+voice = "voice_movo6nqnojk3"
+project = 2
 design = "A ghostly gnome, speaks Italian: thin, echoing and earnest, fantasy."
 notes = "Earnest and urgent, natural pace."
 fits = "ghost of a gnome adventurer in Blackrock Mountain"
 
 [roster.korfax]
+voice = "voice_tvrh0m0f166w"
+project = 2
 design = "A human champion paladin, speaks Italian: brash, booming and condescending, fantasy."
 notes = "Brash and condescending, natural pace."
 fits = "arrogant champion of the Brotherhood of the Light"
 
 [roster.dosantos]
+voice = "voice_h83rvtrxuy5v"
+project = 2
 design = "A human archmage, speaks Italian: poised, clear and urgent, fantasy."
 notes = "Poised and urgent, natural pace."
 fits = "archmage of the Brotherhood of the Light opening the way to Naxxramas"
 
 [roster.keeperrolls]
+voice = "voice_hpcsjdcxgg9o"
+project = 2
 design = "A human archivist, speaks Italian: gentle, careful and solemn, fantasy."
 notes = "Gentle and solemn, natural pace."
 fits = "Argent Dawn archivist keeping the rolls of the fallen"
 
 [roster.wilhelm]
+voice = "voice_97z29hozuqpy"
+project = 2
 design = "A dwarf master craftsman, speaks Italian: grumpy, coarse and sardonic, fantasy."
 notes = "Grumpy and sardonic, natural pace."
 fits = "grumpy dwarf craftsman of the Brotherhood of the Light"
 
 [roster.festflamekeeper]
+voice = "voice_6tvo7fo7vubs"
+project = 2
 design = "A tauren man of middle age, speaks Italian: deep, warm and resonant, a festive glow in a gentle rumbling voice, fantasy."
 notes = "Warm and inviting, natural pace."
 fits = "tauren flamekeeper of the Midsummer Fire Festival"
 
 [roster.festloremaster]
+voice = "voice_vgg3ox8asaqs"
+project = 2
 design = "A dwarf man of middle age, speaks Italian: hearty, burred and bookish, a jovial storyteller, fantasy."
 notes = "Jovial and knowing, natural pace."
 fits = "dwarf loremaster chronicling the Midsummer Fire Festival"
 
 [roster.festtalespinner]
+voice = "voice_ohcw8ashr9r2"
+project = 2
 design = "An undead man, speaks Italian: dry, hollow and raspy, with a wry, theatrical storyteller charm, fantasy."
 notes = "Wry and amused, natural pace."
 fits = "Forsaken talespinner keeping the memory of past Midsummer festivals"
 
 [roster.archivistsw]
+voice = "voice_88i9qqidke1o"
+project = 2
 design = "A human woman of middle age, speaks Italian: precise, cultured and calm, a soft scholarly warmth, fantasy."
 notes = "Gracious and measured, natural pace."
 fits = "librarian collecting magical tomes for the library"
 
 [roster.archivistuc]
+voice = "voice_wpyhojdv8u34"
+project = 2
 design = "An undead man, speaks Italian: thin, whispery and dryly sardonic, a scholarly rasp, fantasy."
 notes = "Dry and sly, natural pace."
 fits = "Forsaken librarian gathering magical works, not above stolen books"
 
 [roster.deadpaladin]
+voice = "voice_jlsci8pz196i"
+project = 2
 design = "An undead man, speaks Italian: hollow yet steady and noble, a rasping voice with quiet conviction, fantasy."
 notes = "Earnest and steadfast, natural pace."
 fits = "Forsaken paladin trainer who still serves the Light"
 
 [roster.lightforsaken]
+voice = "voice_2ppeazu0a2md"
+project = 2
 design = "An undead woman, speaks Italian: cool, resonant and resolute, a faint echoing rasp with dignified strength, fantasy."
 notes = "Resolute and proud, natural pace."
 fits = "Forsaken paladin leader proving their order's worth to the Horde"
 
 [roster.rorian]
+voice = "voice_06x93ufnlsgf"
+project = 2
 design = "An elderly elf man, speaks Italian: airy, mellow and serene, a ceremonial gentleness, fantasy."
 notes = "Serene and ceremonial, measured natural pace."
 fits = "elder shen'dorei who grants coming-of-age relics at Thendal Grove"
 
 [roster.zephrasshaman]
+voice = "voice_q9c6xumkqkk5"
+project = 2
 design = "An elf woman of middle age, speaks Italian: breathy, earnest and mystical, a wistful calm, fantasy."
 notes = "Wistful and earnest, natural pace."
 fits = "shen'dorei shaman trainer who teaches the trials of the four elements"
 
 [roster.elwynnhunter]
+voice = "voice_541186j4ewvw"
+project = 2
 design = "A human woodsman, speaks Italian: calm, grounded and patient, a weathered outdoors voice, fantasy."
 notes = "Patient and encouraging, natural pace."
 fits = "hunter trainer in Elwynn teaching how to tame beasts"
 
 [roster.aonda]
+voice = "voice_xcmsimdmzkde"
+project = 2
 design = "An elf man, speaks Italian: crisp, tense and determined, a watchful lawman, fantasy."
 notes = "Tense and determined, natural pace."
 fits = "shen'dorei constable of the Peacekeepers facing the Al'Aketh cult"
 
 [roster.shytinker]
+voice = "voice_tthzzo7a4zly"
+project = 3
 design = "A young gnome man, speaks Italian: light, nervous and stammering, a shy, lonely sweetness, fantasy."
 notes = "Shy and hesitant, natural pace."
 fits = "shy, stammering hermit tinkerer living in the haunted woods"
 
 [roster.windshaperelder]
+voice = "voice_953s93tp5hzd"
+project = 2
 design = "An elderly elf man, speaks Italian: dignified, clear and thoughtful, with a worried undertone, fantasy."
 notes = "Thoughtful and concerned, natural pace."
 fits = "senior Windshaper who tends the wind-spirit constructs of Valanaar"
 
 [roster.valennia]
+voice = "voice_ev0xo1lkj7wi"
+project = 2
 design = "An elf woman, speaks Italian: firm, low and commanding, a guarded warrior's voice, fantasy."
 notes = "Urgent and guarded, natural pace."
 fits = "Valennia Stormfist, head of the Peacekeepers of Zephras"
 
 [roster.zephrashunter]
+voice = "voice_j2q8t3m6mcb4"
+project = 2
 design = "An elf woman, speaks Italian: bright, lithe and confident, a free spirited huntress, fantasy."
 notes = "Confident and encouraging, natural pace."
 fits = "shen'dorei hunter trainer teaching taming on Zephras"
 
 [roster.highorder]
+voice = "voice_zgrqnetjve5e"
+project = 2
 design = "An elf woman, speaks Italian: sharp, articulate and cool, an intellectual with a bitter edge, fantasy."
 notes = "Cool and pointed, natural pace."
 fits = "shen'dorei mage of the High Order who favours dialogue over force"
 
 [roster.talaanis]
+voice = "voice_pzwjsaoql359"
+project = 2
 design = "An elderly elf man, speaks Italian: deep, wise and measured, a venerable gravity, fantasy."
 notes = "Wise and reflective, measured natural pace."
 fits = "Talaanis Shadowsong, high elder of the shen'dorei of Zephras"
 
 [roster.orchardfarmer]
+voice = "voice_2jicg2hlxufz"
+project = 2
 design = "An elf farm woman, speaks Italian: warm, practical and a little weary, motherly, fantasy."
 notes = "Weary but grateful, natural pace."
 fits = "shen'dorei orchard farmer troubled by galestriders and an old construct"
 
 [roster.westfallscholar]
+voice = "voice_6hbl11481tbc"
+project = 2
 design = "A human man of middle age, speaks Italian: precise, earnest and anxious, an educated voice, fantasy."
 notes = "Concerned and analytical, natural pace."
 fits = "investigator of the poisoned crops of Westfall"
 
 [roster.dwarfshaman]
+voice = "voice_p652zzpvhgz8"
+project = 2
 design = "An old dwarf man, speaks Italian: gravelly, low and steady as stone, a stern patience, fantasy."
 notes = "Stern and wise, natural pace."
 fits = "dwarf shaman who teaches the path of earth"
 
 [roster.elegael]
+voice = "voice_y1viedet63xr"
+project = 2
 design = "An elf woman, speaks Italian: husky, terse and fierce, a battle hardened scout, fantasy."
 notes = "Angry and resolute, natural pace."
 fits = "shen'dorei scout Elegael, ambushed by the cult and tending wounded comrades"
 
 [roster.sarsaparilla]
+voice = "voice_wzlhgqdu1jdw"
+project = 3
 design = "A human frontiersman, speaks Italian: folksy, easygoing and twangy, a friendly campfire drawl, fantasy."
 notes = "Easygoing and friendly, natural pace."
 fits = "folksy wilderness survival teacher by the campfire"
 
 [roster.raan]
+voice = "voice_v91ig6d0an9z"
+project = 3
 design = "A tauren man, speaks Italian: deep, easy and earthy, a calm outdoorsman, fantasy."
 notes = "Relaxed and friendly, natural pace."
 fits = "tauren wilderness survival teacher"
 
 [roster.farsen]
+voice = "voice_lndsugkftnq5"
+project = 3
 design = "A dwarf man, speaks Italian: lilting, mellow and friendly, a hint of mysticism, fantasy."
 notes = "Friendly and curious, natural pace."
 fits = "Farsen, Wildhammer earthseer visiting Dun Morogh"
 
 [roster.orcsurvivalist]
+voice = "voice_tf3l6wt6e000"
+project = 3
 design = "An orc man, speaks Italian: rough, low and good natured, a gruff outdoorsman, fantasy."
 notes = "Gruff but friendly, natural pace."
 fits = "orc wilderness survival teacher"
 
 [roster.dwarfsurvivalist]
+voice = "voice_vexddo369lyb"
+project = 3
 design = "A dwarf woman, speaks Italian: brisk, ruddy and cheerful, a sturdy outdoors voice, fantasy."
 notes = "Cheerful and practical, natural pace."
 fits = "dwarf wilderness survival teacher"
 
 [roster.lyreena]
+voice = "voice_e7yppr2hpg52"
+project = 3
 design = "A night elf woman, speaks Italian: smooth, low and composed, a quiet ranger's poise, fantasy."
 notes = "Calm and friendly, natural pace."
 fits = "night elf wilderness survival teacher"
 
 [roster.gnomesurvivalist]
+voice = "voice_cu9k0pglqyfk"
+project = 3
 design = "A gnome man, speaks Italian: chirpy, quick and upbeat, a nasal enthusiasm, fantasy."
 notes = "Upbeat and chatty, natural pace."
 fits = "gnome wilderness survival teacher"
 
 [roster.flamewarden]
+voice = "voice_gs5e42nz4v52"
+project = 3
 design = "An elf man, speaks Italian: intense, warm and sonorous, a fervent ritualist, fantasy."
 notes = "Intense and solemn, measured natural pace."
 fits = "shen'dorei flame invoker who leads the ritual of the Eternal Flame"
@@ -3789,116 +3903,162 @@ notes = "Cheeky and evasive, natural pace."
 fits = "mischievous farm boy"
 
 [roster.neals]
+voice = "voice_xb91zap66wkd"
+project = 3
 design = "A human monk, speaks Italian: jovial, round and merry, fond of wine, fantasy."
 notes = "Jovial and merry, natural pace."
 fits = "jovial monk in charge of food and wine"
 
 [roster.rainer]
+voice = "voice_3zfthbhgsoy0"
+project = 3
 design = "A human deputy, speaks Italian: crisp, alert and dutiful, fantasy."
 notes = "Crisp and alert, natural pace."
 fits = "deputy at Westbrook, bounty on gnolls"
 
 [roster.leebrown]
+voice = "voice_lq3tn9geeedz"
+project = 3
 design = "A human fisherman, speaks Italian: relaxed, folksy and talkative, fantasy."
 notes = "Relaxed and folksy, natural pace."
 fits = "fisherman at Crystal Lake"
 
 [roster.helene]
+voice = "voice_kylb1duuq1oq"
+project = 3
 design = "A human woman, speaks Italian: lively, outdoorsy and frank, a huntress and skinner, fantasy."
 notes = "Lively and frank, natural pace."
 fits = "skinner, Eagan's wife"
 
 [roster.falkhaan]
+voice = "voice_9v15nvwdjhci"
+project = 3
 design = "A human adventurer, speaks Italian: friendly, worldly and relaxed, fantasy."
 notes = "Friendly and relaxed, natural pace."
 fits = "travelling adventurer recommending the inn"
 
 [roster.milly]
+voice = "voice_blq3ihyzdazs"
+project = 3
 design = "A human woman, speaks Italian: anxious, earnest and kind, a vineyard keeper, fantasy."
 notes = "Anxious then relieved, natural pace."
 fits = "vineyard keeper robbed by the Defias"
 
 [roster.raelen]
+voice = "voice_q470f4rshu9v"
+project = 3
 design = "A human woman supervisor, speaks Italian: brisk, stressed and practical, fantasy."
 notes = "Brisk and practical, natural pace."
 fits = "lumber camp supervisor under a deadline"
 
 [roster.kitta]
+voice = "voice_ehkqvkppjkab"
+project = 3
 design = "A human enchantress, speaks Italian: precise, scholarly and poised, fantasy."
 notes = "Precise and poised, natural pace."
 fits = "artisan enchanter, academic"
 
 [roster.kelsey]
+voice = "voice_v58hdk0y2m90"
+project = 3
 design = "A young human woman, speaks Italian: spirited, exasperated and plucky, an apprentice miner, fantasy."
 notes = "Exasperated and plucky, natural pace."
 fits = "apprentice miner annoyed by kobolds"
 
 [roster.daniel]
+voice = "voice_o994fho0p8vo"
+project = 3
 design = "A young human man, speaks Italian: eager, helpful and a little nervous, a library assistant, fantasy."
 notes = "Eager and helpful, natural pace."
 fits = "Paxton's assistant explaining the professions"
 
 [roster.balir]
+voice = "voice_5d856ikgljz7"
+project = 3
 design = "A dwarf soldier, speaks Italian: deep, stern and worried, fantasy."
 notes = "Stern and worried, natural pace."
 fits = "dwarf defending Coldridge from the troggs"
 
 [roster.talin]
+voice = "voice_19z96m21bnqo"
+project = 3
 design = "A dwarf hunter, speaks Italian: hearty, cheerful and rough, fantasy."
 notes = "Hearty and cheerful, natural pace."
 fits = "boar-hunting dwarf of Coldridge"
 
 [roster.durnan]
+voice = "voice_w3rutc8guol6"
+project = 3
 design = "A dwarf merchant, speaks Italian: warm, jovial and gravelly, fantasy."
 notes = "Warm and jovial, natural pace."
 fits = "armour merchant who loves hot mornbrew"
 
 [roster.maxan]
+voice = "voice_4489nwvj393n"
+project = 3
 design = "A dwarf priest, speaks Italian: deep, gentle and solemn, fantasy."
 notes = "Gentle and solemn, natural pace."
 fits = "priest trainer in Kharanos"
 
 [roster.tognus]
+voice = "voice_i8oipzyp8u95"
+project = 3
 design = "A dwarf blacksmith, speaks Italian: loud, hearty and practical, fantasy."
 notes = "Hearty and practical, natural pace."
 fits = "journeyman blacksmith"
 
 [roster.hegnar]
+voice = "voice_objovbwypjt4"
+project = 3
 design = "A dwarf gunsmith, speaks Italian: booming, cheerful and rough, fantasy."
 notes = "Booming and cheerful, natural pace."
 fits = "gunsmith short of ammunition"
 
 [roster.stonebrow]
+voice = "voice_gz317x1ruvno"
+project = 3
 design = "A dwarf foreman, speaks Italian: explosive, cranky and loud, fantasy."
 notes = "Exasperated and loud, natural pace."
 fits = "foreman cursing the troggs at the quarry"
 
 [roster.thesten]
+voice = "voice_bvmt1bhs5ucs"
+project = 3
 design = "A dwarf quarrymaster, speaks Italian: gruff, serious and anxious, fantasy."
 notes = "Serious and anxious, natural pace."
 fits = "quarrymaster worried about the stolen powder"
 
 [roster.veron]
+voice = "voice_8kt28o70z6g7"
+project = 3
 design = "A dwarf ram breeder, speaks Italian: proud, hearty and warm, fantasy."
 notes = "Proud and warm, natural pace."
 fits = "ram breeder"
 
 [roster.rudra]
+voice = "voice_zpqsjw2a2zct"
+project = 3
 design = "A dwarf woman, speaks Italian: strong, warm and determined, fantasy."
 notes = "Determined and warm, natural pace."
 fits = "dwarf woman of the ram farm"
 
 [roster.tundra]
+voice = "voice_exx14voo06gs"
+project = 3
 design = "A dwarf hunter, speaks Italian: gravelly, rough and dramatic, fantasy."
 notes = "Dramatic and rough, natural pace."
 fits = "hunter whose winter meat was stolen"
 
 [roster.razzle]
+voice = "voice_rd0xf7mobf9c"
+project = 3
 design = "A gnome engineer, speaks Italian: high, quick and nerdy, full of technical enthusiasm, fantasy."
 notes = "Quick and enthusiastic, natural pace."
 fits = "gnome tinker full of technical jargon"
 
 [roster.barin]
+voice = "voice_bd889zxnc4vm"
+project = 3
 design = "A dwarf senator, speaks Italian: deep, haughty and irritable, fantasy."
 notes = "Irritable and haughty, natural pace."
 fits = "grumpy dwarf senator"
@@ -3909,11 +4069,15 @@ notes = "Wistful and comical, natural pace."
 fits = "thirsty dwarf guarding the ale"
 
 [roster.marleth]
+voice = "voice_wbd5lug0v68w"
+project = 3
 design = "A dwarf woman brewer, speaks Italian: sly, competitive and cheerful, fantasy."
 notes = "Sly and cheerful, natural pace."
 fits = "competitive brewer"
 
 [roster.beldin]
+voice = "voice_0wyctb8opqwr"
+project = 3
 design = "A dwarf mechanic, speaks Italian: busy, gruff and good-humoured, fantasy."
 notes = "Busy and good-humoured, natural pace."
 fits = "siege engine mechanic"
