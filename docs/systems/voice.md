@@ -1,6 +1,6 @@
 # Voice over
 
-> Italian voices for the NPCs: a quest offer, progress or turn-in, an NPC's greeting, a book or letter page is read aloud, in the Italian the addon ships, by a voice cast for whoever says it. A small panel beside the window shows the speaker's 3D head, name, a stop and a skip button. The audio lives in a separate addon folder (`OldpZ_ForeverITA_Voce`); the main addon holds the player and the panel and plays nothing without it. Code: `Core/Voice.lua`, `Core/VoiceQueue.lua`, `UI/VoicePlayer.lua`, `UI/VoicePanel.lua`, `UI/VoicePanelHead.lua`, `UI/VoiceQuestLog.lua`, the `OldpZ_ForeverITA_RegisterVoice` global in `Main.lua`, the `voice.*` settings, `pipeline/wfj/cmd/voice.py` (and `voice_cast.py`, `voice_scope.py`, `voice_make.py`, `voice_spoken.py`, `voice_audition.py`, `voice_ship.py`), `pipeline/wfj/core/voice.py`, `pipeline/wfj/core/casting.py`, `pipeline/wfj/io/gemini.py`, `pipeline/wfj/emit/voice_pack.py`, `pipeline/voice.toml`, `pipeline/voice_tirisfal.txt`, `data/voice/`. Decision: [ADR-104](../adr/104-voce-italiana-con-gemini.md). Runbook: [Voice over](../operations/voice.md).
+> Italian voices for the NPCs: a quest offer, progress or turn-in, an NPC's greeting, a book or letter page is read aloud, in the Italian the addon ships, by a voice cast for whoever says it. A small panel beside the window shows the speaker's 3D head, name, a stop and a skip button. The audio lives in a separate addon folder (`OldpZ_ForeverITA_Voce`, or for the whole game one folder per level band, `OldpZ_ForeverITA_Voce_<suffix>`); the main addon holds the player and the panel and plays nothing without it. Code: `Core/Voice.lua`, `Core/VoiceQueue.lua`, `UI/VoicePlayer.lua`, `UI/VoicePanel.lua`, `UI/VoicePanelHead.lua`, `UI/VoiceQuestLog.lua`, the `OldpZ_ForeverITA_RegisterVoice` global in `Main.lua`, the `voice.*` settings, `pipeline/wfj/cmd/voice.py` (and `voice_cast.py`, `voice_scope.py`, `voice_make.py`, `voice_spoken.py`, `voice_audition.py`, `voice_ship.py`), `pipeline/wfj/core/voice.py`, `pipeline/wfj/core/voice_packs.py`, `pipeline/wfj/core/casting.py`, `pipeline/wfj/io/gemini.py`, `pipeline/wfj/emit/voice_pack.py`, `pipeline/voice.toml`, `pipeline/voice-packs.toml`, `pipeline/voice_tirisfal.txt`, `data/voice/`. Decision: [ADR-104](../adr/104-voce-italiana-con-gemini.md). Runbook: [Voice over](../operations/voice.md).
 
 ## Purpose
 A guild member takes a quest in Tirisfal Glades, hears the NPC in a voice that fits it (race, sex, age, character), always the same voice for that NPC, sees its portrait talk in a small panel, and can stop or skip the line. What is heard is what is read: the audio is made from the Italian the addon ships, and each file carries the hash of that Italian, so a line whose translation changed after the recording stays silent until it is made again.
@@ -112,6 +112,23 @@ Format 3: each `lines` entry is `[<pack key>] = { <file>, <Italian hash>, <secon
 
 The pack ships only the takes whose recorded fingerprint is the current one and whose MP3 in the store is exactly the recorded file (size and SHA-256); the others are left out and listed by reason (blocked, missing, stale, damaged). A line ships whole or not at all: when one of its takes (another voice's, the female one) is left out, its other takes are left out too, listed as `incomplete`, so no creature falls back to the main voice and no female character hears "eroe". It is refused, writing nothing, over 420 MB (CurseForge refuses an upload over about 500 MB). The zip is checked to hold nothing `Register.lua` does not list.
 
+### The packs
+The whole game (`--scope tutto`, about 17,400 files, 1.25 GB) does not fit one pack, so it ships split by quest level band plus one pack for the rest, as the committed table `pipeline/voice-packs.toml` says (`wfj.core.voice_packs`). `wfj voice pack --pack <suffix>` builds one pack, `--pack all` every pack; without `--pack` the one folder `OldpZ_ForeverITA_Voce` holds the whole scope (a zone, for trying it in game).
+
+| Pack folder | Holds | Estimate on `tutto` |
+|---|---|---|
+| `OldpZ_ForeverITA_Voce_01_20` | quests of level 1-20 | 2,364 lines, 3,630 files, 19.4 h, ~267 MB |
+| `OldpZ_ForeverITA_Voce_21_40` | quests of level 21-40 | 2,224 lines, 3,293 files, 17.4 h, ~240 MB |
+| `OldpZ_ForeverITA_Voce_41_55` | quests of level 41-55 | 1,883 lines, 2,754 files, 15.6 h, ~214 MB |
+| `OldpZ_ForeverITA_Voce_56_60` | quests of level 56 and up (level 60 alone is ~180 MB) | 2,221 lines, 3,433 files, 17.0 h, ~235 MB |
+| `OldpZ_ForeverITA_Voce_Altro` | book pages (`b-…`, ~120 MB), gossip (`g-…`, ~62 MB), quests with no known level (~147 MB) | 3,326 lines, 4,252 files, 23.8 h, ~328 MB |
+
+The estimate is the plan's transcripts at 290 bytes per character (13.8 characters a second at 4,016 bytes a second, measured on the 1,700 files of `data/voice/audio.jsonl`), every take counted: female and other-voice takes too.
+
+- **A line's pack depends only on the line**: a quest field goes to the band of its quest's level (`pipeline/quest_levels.tsv`: `lvl`, else `min`); a book page, a gossip line and a quest the table has no level for (`assente`, Forever's own quests) go to the pack marked `other = true`. A fix re-releases one pack; moving a band boundary re-releases the two packs it touches. A level under the first band goes to the first, over the last band to the last.
+- **Gossip is not split by zone**: its key is a hash, so its level would come from the speaker's spawn, which a recast or a new spawn would move between packs. All of it fits in `Altro` (~62 MB). When a level is found for the `assente` quests (the Forever quest cache holds one, see `wfj.dev.quest_levels`), they move from `Altro` into their bands.
+- **The table is checked**: suffixes of letters, digits and `_` only (the addon refuses a folder name with `-`), no suffix twice, bands that follow each other without gap or overlap, exactly one `other` pack. Each pack has its own TOC title (`oLd_pZ Forever - Voci italiane (livelli 1-20)`), `Register.lua` with its own `folder`, `LEGGIMI.txt` and zip `<folder>-<version>.zip`; a creature cast to another voice goes into the `creatures` of each pack whose lines need it. With `--pack all` a pack over 420 MB stops the run before anything is written; a pack with no line of the scope is not built.
+
 ### Registration
 The pack's `Register.lua` runs in its own addon, so it cannot see the main addon's namespace; it calls the global `OldpZ_ForeverITA_RegisterVoice`, which `Main.lua` defines before any pack loads (the pack depends on the main addon). `Voice.register` accepts format 3 and a folder name that starts with `OldpZ_ForeverITA_Voce`; it checks each entry's shape (a file name `^[%w%-_]+%.mp3$`, a 16-hex hash, numbers for lengths) and drops and counts the malformed ones. A file name outside the pack's `Sound` folder would play another addon's file, so none is built from anything else. Packs merge: each line remembers its folder, and a pack that registers again replaces only what it brought. A pack that brought at least one line fires State `voicePack`: the settings get their **Voce** page and the quest log its button.
 
@@ -164,7 +181,8 @@ The **Voce** page exists only once a pack has registered: `voice.enabled`, one s
 | `pipeline/wfj/cmd/voice_make.py` | `plan`, `generate`, `status`, the store, the record, the blocked list |
 | `pipeline/wfj/cmd/voice_spoken.py` | spoken versions: `export`, `import` |
 | `pipeline/wfj/cmd/voice_audition.py` | the audition page |
-| `pipeline/wfj/cmd/voice_ship.py`, `emit/voice_pack.py` | the pack folder and zip |
+| `pipeline/wfj/cmd/voice_ship.py`, `emit/voice_pack.py` | the pack folders and zips |
+| `pipeline/wfj/core/voice_packs.py`, `pipeline/voice-packs.toml` | the packs by level band, the pack of a line |
 | `pipeline/voice.toml`, `pipeline/voice_tirisfal.txt` | the roster and cast rows, the scope |
 | `data/voice/` | `speakers`, `profiles`, `voices`, `overrides`, `spoken`, `audio` (JSONL) |
 | `addon/OldpZ_ForeverITA/Core/Voice.lua`, `Core/VoiceQueue.lua` | the registry, the decision, the order |
@@ -179,7 +197,7 @@ The **Voce** page exists only once a pack has registered: `voice.enabled`, one s
 - Direction (audio profile and notes) is English only and the transcript carries only the `SPEECH_TAGS`; a prompt that breaks either is never sent.
 - The API key is never in a URL, a log, a message or the repository; the audio store is outside the repository.
 - Only post-hooks and our own frames: no Blizzard frame is written, no protected function replaced (no taint).
-- The MP3 is mono, 22.05 kHz, 32 kbps CBR, without a Xing header; the pack stays under 420 MB.
+- The MP3 is mono, 22.05 kHz, 32 kbps CBR, without a Xing header; each pack stays under 420 MB.
 
 ## Edge cases
 - **The filter blocks a line**: after four takes it goes to `blocked.jsonl` and is not asked again until its line, voice or profile changes; it is silent until it has a spoken version.
@@ -191,7 +209,7 @@ The **Voce** page exists only once a pack has registered: `voice.enabled`, one s
 - **A quest started by an object**: the narrator reads the offer; the turn-in is read by the creature that ends it.
 - **A book page with no signer, or a name no speaker has**: the book narrator.
 - **A greeting heard once** is not asked again for that creature unless the setting is "always"; the quest log button ignores that.
-- **Two packs** registering lines for the same key: the later one wins and replaces only what it brought.
+- **Two packs** registering lines for the same key: the later one wins and replaces only what it brought. The level-band packs never share a key; the old single `OldpZ_ForeverITA_Voce` beside them would, harmlessly, and is best removed.
 - **A client that refuses a file**: counted as refused in `/fita debug`, the next line plays.
 - **A page the client lays out twice** queues once.
 

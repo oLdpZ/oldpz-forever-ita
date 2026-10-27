@@ -1,6 +1,7 @@
 """The voice addon's own files (ADR-061). Deterministic text.
 
-The pack folder holds its TOC, Register.lua, LEGGIMI.txt and Sound/. It depends on the main addon and hands
+The pack folder (OldpZ_ForeverITA_Voce, or a pack of voice-packs.toml, OldpZ_ForeverITA_Voce_<suffix>)
+holds its TOC, Register.lua, LEGGIMI.txt and Sound/. It depends on the main addon and hands
 it one table through the main addon's single global, `OldpZ_ForeverITA_RegisterVoice`. Format 3: each line is
 { file name, Italian hash, seconds, f = { file name, seconds }, v = { [voice id] = { file name, seconds } } };
 `f` is the take for a female character (a line that names the player or picks a word by sex), `v` is there
@@ -33,6 +34,11 @@ class Entry:
     seconds: float
     female: tuple[str, float] | None = None
     voices: dict[str, tuple[str, float, tuple[str, float] | None]] = field(default_factory=dict)
+
+
+def title_of(words: str | None = None) -> str:
+    """The pack's title: the voice's, with what the pack holds in brackets ("livelli 1-20")."""
+    return f"{TITLE} ({words})" if words else TITLE
 
 
 def toc_text(interface: str, version: str, title: str = TITLE) -> str:
@@ -99,14 +105,21 @@ def register_text(
     ])
 
 
-def readme_text(count: int, version: str) -> str:
+def readme_text(count: int, version: str, folder: str = FOLDER, title: str = TITLE) -> str:
+    split = [] if folder == FOLDER else [
+        "Le voci sono divise in più pacchetti (OldpZ_ForeverITA_Voce_...): uno per fascia di livello delle",
+        "missioni e uno per libri, dialoghi e missioni senza livello. Installa quelli che vuoi: insieme",
+        "funzionano come uno solo.",
+        "",
+    ]
     return "\n".join([
-        "oLd_pZ Forever - Voci italiane",
+        title,
         "",
         "Le voci italiane dei PNG per oLd_pZ Forever - Traduzione Italiana (OldpZ_ForeverITA), l'addon",
         "principale: senza di esso questo pacchetto non suona nulla. Installa la cartella",
-        "OldpZ_ForeverITA_Voce in Interface\\AddOns accanto a OldpZ_ForeverITA.",
+        f"{folder} in Interface\\AddOns accanto a OldpZ_ForeverITA.",
         "",
+        *split,
         f"Versione {version}. Contiene {count} battute, dette dal testo italiano che l'addon mostra: se il",
         "testo di una battuta cambia, quella battuta resta muta finché non esce una voce nuova.",
         "",

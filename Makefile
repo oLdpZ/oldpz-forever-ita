@@ -522,6 +522,8 @@ SCOPE       ?= tirisfal
 VOICE_STORE ?= $(or $(VOICE_ROOT),$(HOME)/voce-store)
 VOICE_ENV   ?=
 LIMIT       ?=
+# a voice pack of pipeline/voice-packs.toml (its suffix, e.g. 01_20), or all; empty: the one OldpZ_ForeverITA_Voce
+PACK        ?=
 # the VMaNGOS dump the speakers come from, and its commit
 VOICE_DB     ?= $(VMANGOS_PRIORITY_DB)
 VOICE_DB_SHA ?= $(VMANGOS_UNIT_SHA)
@@ -550,8 +552,8 @@ voice-status: ## the running or last voice-generate: done / total, rate, time le
 voice-audition: ## make the first lines of each speaker of SCOPE (paid, a few) and write VOICE_STORE/audition/index.html to listen to: [SCOPE=tirisfal] [PER=2] [VOICE_ENV=<.env>]
 	cd pipeline && $(PY) -m wfj voice audition --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(PER),--per $(PER))
 
-voice-pack: ## build the voice pack OldpZ_ForeverITA_Voce of SCOPE from VOICE_STORE into build/voice-pack: [SCOPE=tirisfal]
-	cd pipeline && $(PY) -m wfj voice pack --scope $(SCOPE) --store "$(VOICE_STORE)" --out "$(CURDIR)/build/voice-pack"
+voice-pack: ## build SCOPE's voice pack from VOICE_STORE into build/voice-pack: OldpZ_ForeverITA_Voce, or PACK of pipeline/voice-packs.toml (a suffix, or all): [SCOPE=tirisfal] [PACK=01_20|all]
+	cd pipeline && $(PY) -m wfj voice pack --scope $(SCOPE) --store "$(VOICE_STORE)" --out "$(CURDIR)/build/voice-pack" $(if $(PACK),--pack $(PACK))
 
 # Local targets, when present.
 -include local.mk

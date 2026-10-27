@@ -1,0 +1,34 @@
+# The voice packs the whole game ships as (wfj voice pack --pack NAME|all; docs/systems/voice.md#the-packs).
+# A quest field goes to the band of its quest's level (pipeline/quest_levels.tsv: `lvl`, else `min`); a book
+# page, a gossip line and a quest with no known level go to the pack marked `other`. A level under the first
+# band goes to the first, over the last to the last. The bands follow each other without gap or overlap.
+#
+# Each pack is the folder OldpZ_ForeverITA_Voce_<suffix> (letters, digits and `_`: the addon refuses a `-`),
+# titled "oLd_pZ Forever - Voci italiane (<title>)", refused over 420 MB. Sized on scope `tutto` (2026-10-27:
+# 17,362 files, about 1.25 GB at 290 bytes per character of transcript) for each to stay under about 330 MB.
+# Moving a band boundary moves lines between two packs: both are released again.
+
+[[pack]]
+suffix = "01_20"
+title = "livelli 1-20"
+levels = [1, 20]
+
+[[pack]]
+suffix = "21_40"
+title = "livelli 21-40"
+levels = [21, 40]
+
+[[pack]]
+suffix = "41_55"
+title = "livelli 41-55"
+levels = [41, 55]
+
+[[pack]]
+suffix = "56_60"
+title = "livelli 56-60"
+levels = [56, 60]
+
+[[pack]]
+suffix = "Altro"
+title = "libri, dialoghi e missioni senza livello"
+other = true

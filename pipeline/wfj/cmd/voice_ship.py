@@ -1,11 +1,15 @@
-"""wfj voice pack: the voice addon OldpZ_ForeverITA_Voce, built from the audio store.
+"""wfj voice pack: the voice addon OldpZ_ForeverITA_Voce, or the packs it is split into, built from the store.
 
-  pack --scope S --store DIR [--out build/voice-pack] [--version V] [--config F]
-      Writes OUT/OldpZ_ForeverITA_Voce/ (TOC, Register.lua, LEGGIMI.txt, Sound/*.mp3) and, beside OUT, the zip
-      OldpZ_ForeverITA_Voce-<version>.zip holding that one folder. Ships only the takes in step with the
-      Italian the addon ships now (the recorded fingerprint is the take's current one) and whose file in the
-      store is the recorded one; the others are left out and listed, with counts. Fails, writing nothing,
-      when the audio comes to more than 420 MB. --version defaults to today's date.
+  pack --scope S --store DIR [--pack NAME|all] [--out build/voice-pack] [--version V] [--config F]
+       [--packs pipeline/voice-packs.toml] [--levels pipeline/quest_levels.tsv]
+      Writes OUT/<folder>/ (TOC, Register.lua, LEGGIMI.txt, Sound/*.mp3) and, beside OUT, the zip
+      <folder>-<version>.zip holding that one folder. Without --pack the folder is OldpZ_ForeverITA_Voce and
+      holds the whole scope; --pack NAME builds only that pack of the table (its suffix or its folder name,
+      OldpZ_ForeverITA_Voce_<suffix>, with the scope's lines of that pack: wfj.core.voice_packs), --pack all
+      every pack (one with no line of the scope is not built). Ships only the takes in step with the Italian
+      the addon ships now (the recorded fingerprint is the take's current one) and whose file in the store is
+      the recorded one; the others are left out and listed, with counts. Fails, writing nothing, when a pack's
+      audio comes to more than 420 MB. --version defaults to today's date.
 
 The store is --store, else $VOICE_ROOT.
 """
@@ -21,19 +25,22 @@ import sys
 import zipfile
 from collections import Counter
 from collections.abc import Mapping, Sequence
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 from wfj.cmd import voice_make
 from wfj.cmd.voice import read_rows, scope_path
 from wfj.cmd.voice_cast import CONFIG, VOICES, in_scope, load_config
-from wfj.core import voice
+from wfj.core import voice, voice_packs
 from wfj.emit import voice_pack
 from wfj.emit.voice_pack import FOLDER, Entry
 from wfj.paths import data_root
 
 LIMIT = 420 * 1024 * 1024  # bytes of audio: the pack's ceiling
 STEM = re.compile(r"^[A-Za-z0-9_-]+$")  # what the addon accepts of a file name (`^[%w%-_]+%.mp3$`)
+PACKS = Path("pipeline") / "voice-packs.toml"  # the packs the whole game is split into
+LEVELS = Path("pipeline") / "quest_levels.tsv"  # the quest levels the packs are split by
 
 
 def interface_of(root: Path) -> str:
@@ -150,11 +157,11 @@ def _place(src: Path, dest: Path) -> None:
         shutil.copyfile(src, dest)
 
 
-def check_zip(path: Path, files: Sequence[str]) -> list[str]:
+def check_zip(path: Path, files: Sequence[str], folder: str = FOLDER) -> list[str]:
     """What is wrong with the zip: anything but the TOC, Register.lua, LEGGIMI.txt and the listed Sound files,
     or one of those missing."""
-    want = {f"{FOLDER}/{n}" for n in (f"{FOLDER}.toc", "Register.lua", "LEGGIMI.txt")}
-    want |= {f"{FOLDER}/Sound/{f}" for f in files}
+    want = {f"{folder}/{n}" for n in (f"{folder}.toc", "Register.lua", "LEGGIMI.txt")}
+    want |= {f"{folder}/Sound/{f}" for f in files}
     with zipfile.ZipFile(path) as z:
         have = {n for n in z.namelist() if not n.endswith("/")}
     return [f"{path.name}: contiene {n}, che Register.lua non elenca" for n in sorted(have - want)] + [
@@ -162,53 +169,103 @@ def check_zip(path: Path, files: Sequence[str]) -> list[str]:
     ]
 
 
-def zip_folder(base: Path, dest: Path) -> None:
-    """FOLDER under `base`, at the top of the zip. MP3s are stored as they are (already compressed)."""
+def zip_folder(base: Path, dest: Path, folder: str = FOLDER) -> None:
+    """`folder` under `base`, at the top of the zip. MP3s are stored as they are (already compressed)."""
     with zipfile.ZipFile(dest, "w") as z:
-        for f in sorted((base / FOLDER).rglob("*")):
+        for f in sorted((base / folder).rglob("*")):
             if f.is_file():
                 kind = zipfile.ZIP_STORED if f.suffix == ".mp3" else zipfile.ZIP_DEFLATED
                 z.write(f, f.relative_to(base).as_posix(), compress_type=kind)
 
 
-def build(root: Path, cfg: Mapping[str, Any], scope: str, store: Path, out: Path, version: str) -> int:
+@dataclass
+class Target:
+    """One pack folder to write: its name, its title and its lines."""
+
+    folder: str
+    title: str
+    lines: dict[str, Entry]
+
+
+def targets(
+    lines: Mapping[str, Entry], pack: str | None, packs_file: Path, levels_file: Path
+) -> list[Target]:
+    """The folders to write: the one OldpZ_ForeverITA_Voce with every line when `pack` is None, else the
+    named pack of the table (or every pack, for "all") with its lines."""
+    if pack is None:
+        return [Target(FOLDER, voice_pack.TITLE, dict(lines))]
+    packs = voice_packs.parse_packs(packs_file.read_text(encoding="utf-8"), str(packs_file))
+    levels = voice_packs.parse_levels(levels_file.read_text(encoding="utf-8"))
+    chosen = packs if pack.lower() == "all" else [voice_packs.find(packs, pack)]
+    out = {p.folder: Target(p.folder, voice_pack.title_of(p.title), {}) for p in chosen}
+    for key, e in lines.items():
+        t = out.get(voice_packs.pack_of(key, packs, levels).folder)
+        if t is not None:
+            t.lines[key] = e
+    return list(out.values())
+
+
+def write_pack(root: Path, scope: str, store: Path, out: Path, version: str, t: Target) -> int:
+    """Writes OUT/<folder>/ and its zip beside OUT; 1 when the zip is not what Register.lua lists."""
+    files = files_of(t.lines)
+    dest = out / t.folder
+    if dest.exists():
+        shutil.rmtree(dest)
+    (dest / "Sound").mkdir(parents=True)
+    (dest / f"{t.folder}.toc").write_text(
+        voice_pack.toc_text(interface_of(root), version, t.title), encoding="utf-8")
+    (dest / "Register.lua").write_text(
+        voice_pack.register_text(t.lines, creature_voices(root, scope, t.lines), t.folder), encoding="utf-8"
+    )
+    (dest / "LEGGIMI.txt").write_text(
+        voice_pack.readme_text(len(t.lines), version, t.folder, t.title), encoding="utf-8")
+    for f in files:
+        _place(voice_make.mp3_file(store, f.removesuffix(".mp3")), dest / "Sound" / f)
+    zip_path = out.parent / f"{t.folder}-{version}.zip"
+    zip_folder(out, zip_path, t.folder)
+    if problems := check_zip(zip_path, files, t.folder):
+        print("\n".join(f"voice pack: {p}" for p in problems), file=sys.stderr)
+        return 1
+    print(f"voice pack: {dest}\nvoice pack: {zip_path} ({zip_path.stat().st_size / 1024**2:.1f} MB)")
+    return 0
+
+
+def build(  # noqa: PLR0913 - the table and the levels are injected for the tests
+    root: Path, cfg: Mapping[str, Any], scope: str, store: Path, out: Path, version: str,
+    pack: str | None = None, packs_file: Path | None = None, levels_file: Path | None = None,
+) -> int:
     ship, left, silent = select(root, cfg, scope, store)
     lines, orphans = entries(ship, voice_make.audio_record(root))
     left += orphans
-    files = files_of(lines)
-    for f in files:
+    for f in files_of(lines):
         if not STEM.match(f.removesuffix(".mp3")):
             raise ValueError(f"file name the addon would refuse: {f}")
-    total = sum(voice_make.mp3_file(store, f.removesuffix(".mp3")).stat().st_size for f in files)
+    todo = targets(lines, pack, packs_file or root.parent / PACKS, levels_file or root.parent / LEVELS)
     for kind, n in sorted(Counter(k for _, k in left).items()):
         print(f"voice pack: left out, {kind}: {n}")
     for stem, kind in sorted(left):
         print(f"voice pack: left out: {stem}: {kind}")
     for kind, n in sorted(Counter(k for _, k, _ in silent).items()):
         print(f"voice pack: silent, {kind}: {n}")
-    print(f"voice pack: {len(lines)} lines, {len(files)} files, {total / 1024**2:.1f} MB")
-    if total > LIMIT:
-        print(f"voice pack: {total / 1024**2:.1f} MB is over the {LIMIT // 1024**2} MB limit: nothing"
-              " written", file=sys.stderr)
+    over = []
+    for t in todo:
+        files = files_of(t.lines)
+        total = sum(voice_make.mp3_file(store, f.removesuffix(".mp3")).stat().st_size for f in files)
+        where = "" if t.folder == FOLDER else f"{t.folder}: "
+        print(f"voice pack: {where}{len(t.lines)} lines, {len(files)} files, {total / 1024**2:.1f} MB")
+        if total > LIMIT:
+            over.append(f"voice pack: {where}{total / 1024**2:.1f} MB is over the {LIMIT // 1024**2} MB"
+                        " limit")
+    if over:
+        print("\n".join(over) + "\nvoice pack: nothing written", file=sys.stderr)
         return 1
-    dest = out / FOLDER
-    if dest.exists():
-        shutil.rmtree(dest)
-    (dest / "Sound").mkdir(parents=True)
-    (dest / f"{FOLDER}.toc").write_text(voice_pack.toc_text(interface_of(root), version), encoding="utf-8")
-    (dest / "Register.lua").write_text(
-        voice_pack.register_text(lines, creature_voices(root, scope, lines)), encoding="utf-8"
-    )
-    (dest / "LEGGIMI.txt").write_text(voice_pack.readme_text(len(lines), version), encoding="utf-8")
-    for f in files:
-        _place(voice_make.mp3_file(store, f.removesuffix(".mp3")), dest / "Sound" / f)
-    zip_path = out.parent / f"{FOLDER}-{version}.zip"
-    zip_folder(out, zip_path)
-    if problems := check_zip(zip_path, files):
-        print("\n".join(f"voice pack: {p}" for p in problems), file=sys.stderr)
-        return 1
-    print(f"voice pack: {dest}\nvoice pack: {zip_path} ({zip_path.stat().st_size / 1024**2:.1f} MB)")
-    return 0
+    status = 0
+    for t in todo:
+        if not t.lines and t.folder != FOLDER:
+            print(f"voice pack: {t.folder}: no line of scope {scope}, not built")
+            continue
+        status |= write_pack(root, scope, store, out, version, t)
+    return status
 
 
 def run(argv: Sequence[str], root: Path | None = None) -> int:
@@ -218,6 +275,10 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
     p.add_argument("--out", default="build/voice-pack", help="where the pack folder is written")
     p.add_argument("--version", default=datetime.date.today().isoformat())
     p.add_argument("--config", help="voice.toml (default: pipeline/voice.toml)")
+    p.add_argument("--pack", help="a pack of the table (its suffix or folder), or all (default: the one"
+                   " OldpZ_ForeverITA_Voce with the whole scope)")
+    p.add_argument("--packs", help="the pack table (default: pipeline/voice-packs.toml)")
+    p.add_argument("--levels", help="the quest levels (default: pipeline/quest_levels.tsv)")
     a = p.parse_args(list(argv))
     store = voice_make.store_dir(a.store)
     if store is None:
@@ -225,7 +286,8 @@ def run(argv: Sequence[str], root: Path | None = None) -> int:
     root = root or data_root()
     try:
         cfg = load_config(Path(a.config) if a.config else root.parent / CONFIG)
-        return build(root, cfg, a.scope, store, Path(a.out), a.version)
+        return build(root, cfg, a.scope, store, Path(a.out), a.version, a.pack,
+                     Path(a.packs) if a.packs else None, Path(a.levels) if a.levels else None)
     except (ValueError, KeyError, FileNotFoundError) as e:
         print(f"voice pack: {e}", file=sys.stderr)
         return 1

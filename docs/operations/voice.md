@@ -3,7 +3,7 @@
 > Make the NPC voices from the shipped Italian, build the pack, install it and try it in game. How it works: [Voice over](../systems/voice.md). Why: [ADR-104](../adr/104-voce-italiana-con-gemini.md).
 
 ## Goal
-A pack folder, `OldpZ_ForeverITA_Voce`, and its zip, holding the audio of one scope (today the undead starting area, `tirisfal`), in step with the Italian the addon ships now, ready to install beside the main addon.
+A pack folder, `OldpZ_ForeverITA_Voce`, and its zip, holding the audio of one scope (today the undead starting area, `tirisfal`), in step with the Italian the addon ships now, ready to install beside the main addon. For the whole game (`SCOPE=tutto`), one pack per quest level band plus `OldpZ_ForeverITA_Voce_Altro` ([The packs](../systems/voice.md#the-packs)), each under 420 MB.
 
 The work runs from the repository root through `make voice-*` targets, or `cd pipeline && python -m wfj voice <verb>` for the verbs that have no target. `SCOPE` defaults to `tirisfal`.
 
@@ -103,6 +103,13 @@ make voice-pack SCOPE=tirisfal
 ```
 Writes `build/voice-pack/OldpZ_ForeverITA_Voce/` (TOC, `Register.lua`, `LEGGIMI.txt`, `Sound/*.mp3`) and `build/OldpZ_ForeverITA_Voce-<version>.zip` (`--version`, default today's date). It prints the lines and files shipped, their size, and what it left out by reason: `blocked`, `missing`, `stale` (the Italian or the voice changed since the file), `damaged` (the file in the store is not the recorded one). A silent line is not an error; a file left out for `stale` means run `plan` and `generate` again. It refuses over 420 MB and writes nothing.
 
+For the whole game, build the packs of `pipeline/voice-packs.toml`:
+```
+make voice-pack SCOPE=tutto PACK=all       # every pack
+make voice-pack SCOPE=tutto PACK=21_40     # one pack, after a fix to its lines
+```
+Each pack is `build/voice-pack/OldpZ_ForeverITA_Voce_<suffix>/` and `build/OldpZ_ForeverITA_Voce_<suffix>-<version>.zip`, with the counts printed per pack; a pack with no line of the scope is not built. Any pack over 420 MB stops the run before anything is written: move a band boundary in the table (both packs it touches are released again). Install the zips beside the main addon like the single pack; remove an old `OldpZ_ForeverITA_Voce` folder.
+
 ## Install and test in game
 1. Install the main addon `OldpZ_ForeverITA` as usual.
 2. Unzip `OldpZ_ForeverITA_Voce-<version>.zip` into `Interface\AddOns\`, beside it. Restart the client fully (a new folder is not seen by `/reload`).
@@ -126,7 +133,8 @@ To remove the voice, delete the folder; the main addon is unchanged.
 | a line is silent and counted `missing` | the pack has no file for it: it is silent in `plan` (no voice, no spoken version, blocked) |
 | a female character hears nothing for a line | the pack has no female take (`nofemale`): the line needs `<key>_f` made |
 | a voice reads the direction aloud | the notes or profile carry Italian; every verb that reads `voice.toml` names the voice and refuses to run |
-| the pack is over 420 MB | narrow the scope or split it; nothing was written |
+| the pack is over 420 MB | narrow the scope, or build the level-band packs (`PACK=all`) and, if one is still over, split its band in `pipeline/voice-packs.toml`; nothing was written |
+| `no voice pack '…'` | `PACK` is a suffix of `pipeline/voice-packs.toml` (`01_20`), a folder name, or `all` |
 | the NPC's English voice stays off after a crash | it is put back at the next login; `Sound_EnableDialog 1` by hand otherwise |
 
 ## Related

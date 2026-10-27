@@ -6,11 +6,13 @@ import re
 import shutil
 import subprocess
 import zipfile
+from pathlib import Path
 
 import pytest
 from test_voice_make import FakeEngine, _gen, world, write_quests  # noqa: F401 - world is a fixture
 
 from wfj.cmd import voice, voice_ship
+from wfj.core import voice_packs
 from wfj.emit import voice_pack
 from wfj.emit.voice_pack import Entry
 
@@ -178,3 +180,141 @@ def test_register_text_with_a_mixed_creature_and_a_female_other_voice():
     assert '["g-1"] = { "g-1.mp3", "aaaaaaaaaaaaaaaa", 1.2, f = { "g-1_f.mp3", 1.5 }, v = { ["x"] = '\
         '{ "g-1_x.mp3", 2.0, f = { "g-1_x_f.mp3", 2.5 } } } },' in lua
     assert lua.index("[3] =") < lua.index('[7] = { m = "a", f = "b" },')
+
+
+# ---- packs by level band (pipeline/voice-packs.toml) -----------------------------------------------------
+
+PACKS = """
+[[pack]]
+suffix = "01_10"
+title = "livelli 1-10"
+levels = [1, 10]
+
+[[pack]]
+suffix = "11_20"
+title = "livelli 11-20"
+levels = [11, 20]
+
+[[pack]]
+suffix = "21_60"
+title = "livelli 21-60"
+levels = [21, 60]
+
+[[pack]]
+suffix = "Altro"
+title = "libri, dialoghi e missioni senza livello"
+other = true
+"""
+# 456 has its own level, 457 only the level it is offered at, 459 none (a quest pfQuest lacks)
+LEVELS = "id\tmin\tlvl\tfonte\n456\t1\t3\tpfquest@x\n457\t12\t\tpfquest@x\n459\t\t\tassente\n"
+ADDON_FOLDER = re.compile(r"^[A-Za-z0-9_]+$")  # Core/Voice.lua: tbl.folder:match("^[%w_]+$")
+
+
+@pytest.fixture
+def split(made):
+    (made.tmp / "pipeline" / "voice-packs.toml").write_text(PACKS, encoding="utf-8")
+    (made.tmp / "pipeline" / "quest_levels.tsv").write_text(LEVELS, encoding="utf-8")
+    return made
+
+
+def folder_files(w, folder: str) -> set[str]:
+    return {p.name for p in (w.out / folder / "Sound").iterdir()}
+
+
+def test_a_line_goes_to_the_band_of_its_quest_level_else_to_the_other_pack():
+    packs = voice_packs.parse_packs(PACKS)
+    levels = voice_packs.parse_levels(LEVELS + "600\t70\t\tpfquest@x\n700\t0\t0\tpfquest@x\n")
+    assert levels == {456: 3, 457: 12, 600: 70, 700: 0}
+
+    def of(key: str) -> str:
+        return voice_packs.pack_of(key, packs, levels).suffix
+
+    assert of("456-description") == "01_10" and of("456-completion") == "01_10"
+    assert of("457-progress") == "11_20"  # no `lvl`: its `min`
+    assert of("459-description") == "Altro"  # `assente`
+    assert of("999-description") == "Altro"  # not in the table
+    assert of("g-006921c124c689f8") == "Altro" and of("b-0105829b41883dcf") == "Altro"
+    assert of("600-description") == "21_60" and of("700-description") == "01_10"  # past the ends: the end bands
+    assert [p.folder for p in packs][-1] == "OldpZ_ForeverITA_Voce_Altro"
+
+
+@pytest.mark.parametrize(("change", "why"), [
+    (('suffix = "01_10"', 'suffix = "01-10"'), "suffix"),  # the addon refuses a '-' in a folder name
+    (('levels = [11, 20]', 'levels = [12, 20]'), "gap"),
+    (('levels = [11, 20]', 'levels = [10, 20]'), "overlap"),
+    (('levels = [21, 60]', 'levels = [60, 21]'), "levels"),
+    (('levels = [21, 60]', 'other = true'), "exactly one"),
+    (('other = true', 'levels = [61, 99]'), "exactly one"),
+    (('suffix = "21_60"', 'suffix = "11_20"'), "twice"),
+    (('title = "livelli 1-10"', 'title = ""'), "title"),
+])
+def test_a_bad_pack_table_is_refused(change, why):
+    with pytest.raises(ValueError, match=why):
+        voice_packs.parse_packs(PACKS.replace(*change))
+
+
+def test_the_committed_pack_table_is_valid_and_every_folder_is_one_the_addon_accepts():
+    pipeline = Path(__file__).resolve().parents[2] / "pipeline"
+    packs = voice_packs.parse_packs((pipeline / "voice-packs.toml").read_text(encoding="utf-8"))
+    for p in packs:
+        assert ADDON_FOLDER.match(p.folder) and p.folder.startswith(voice_pack.FOLDER)
+    levels = voice_packs.parse_levels((pipeline / "quest_levels.tsv").read_text(encoding="utf-8"))
+    assert levels and all(voice_packs.pack_of(f"{q}-description", packs, levels).levels for q in levels)
+
+
+def test_pack_all_builds_each_band_with_its_own_lines_title_and_zip(split, capsys):
+    assert pack(split, "--pack", "all") == 0
+    out = capsys.readouterr().out
+    low, mid, other = (f"OldpZ_ForeverITA_Voce_{s}" for s in ("01_10", "11_20", "Altro"))
+    assert folder_files(split, low) == {"456-completion.mp3", "456-description.mp3", "456-description_f.mp3"}
+    assert folder_files(split, mid) == {"457-description.mp3"}
+    assert folder_files(split, other) == {"459-description.mp3", "459-description_um.mp3"}
+    # a band with no line of the scope is not built
+    assert "OldpZ_ForeverITA_Voce_21_60: no line of scope tirisfal, not built" in out
+    assert not (split.out / "OldpZ_ForeverITA_Voce_21_60").exists()
+    assert not (split.out / "OldpZ_ForeverITA_Voce").exists()
+    for folder in (low, mid, other):
+        z = split.out.parent / f"{folder}-2026-10-24.zip"
+        assert voice_ship.check_zip(z, sorted(folder_files(split, folder)), folder) == []
+        assert {n.split("/")[0] for n in zipfile.ZipFile(z).namelist()} == {folder}
+        assert f'folder = "{folder}",' in (split.out / folder / "Register.lua").read_text(encoding="utf-8")
+    toc = (split.out / mid / f"{mid}.toc").read_text(encoding="utf-8")
+    assert "## Title: oLd_pZ Forever - Voci italiane (livelli 11-20)" in toc.splitlines()
+    readme = (split.out / mid / "LEGGIMI.txt").read_text(encoding="utf-8")
+    assert readme.startswith("oLd_pZ Forever - Voci italiane (livelli 11-20)") and mid in readme
+    assert "1 battute" in readme
+    # the creature cast to another voice travels with the line that needs it
+    assert "[2079]" in register_of(split, other) and "[2079]" not in register_of(split, low)
+    assert f"voice pack: {low}: 2 lines, 3 files" in out
+
+
+def register_of(w, folder: str) -> str:
+    return (w.out / folder / "Register.lua").read_text(encoding="utf-8")
+
+
+def test_pack_name_builds_only_that_pack_by_suffix_or_folder(split):
+    assert pack(split, "--pack", "11_20") == 0
+    assert [p.name for p in split.out.iterdir()] == ["OldpZ_ForeverITA_Voce_11_20"]
+    shutil.rmtree(split.out)
+    assert pack(split, "--pack", "OldpZ_ForeverITA_Voce_Altro") == 0
+    assert [p.name for p in split.out.iterdir()] == ["OldpZ_ForeverITA_Voce_Altro"]
+
+
+def test_an_unknown_pack_is_refused(split, capsys):
+    assert pack(split, "--pack", "61_70") == 1
+    assert "no voice pack '61_70'" in capsys.readouterr().err
+    assert not split.out.exists()
+
+
+def test_one_pack_over_420_mb_writes_none(split, monkeypatch, capsys):
+    def size(*stems: str) -> int:
+        return sum((split.store / "mp3" / f"{s}.mp3").stat().st_size for s in stems)
+
+    other = size("459-description", "459-description_um")
+    low = size("456-completion", "456-description", "456-description_f")
+    assert low > other  # only the first band is over
+    monkeypatch.setattr(voice_ship, "LIMIT", other)
+    assert pack(split, "--pack", "all") == 1
+    err = capsys.readouterr().err
+    assert "OldpZ_ForeverITA_Voce_01_10:" in err and "Altro" not in err and "nothing written" in err
+    assert not split.out.exists()
