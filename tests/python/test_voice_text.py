@@ -80,6 +80,26 @@ def test_html_tags_of_a_page_are_not_read():
     assert speech_text('<IMG src="x" align="left"/>Salve.', "b-0123456789abcdef", "m") == "Salve."
 
 
+def test_the_html_and_body_wrapping_of_a_page_is_not_read():
+    page = "<HTML><BODY>\n<P>Salve.</P>\n</BODY></HTML>"
+    assert speech_text(page, "b-0123456789abcdef", "m") == "Salve."
+    # the client's own page that ends in "</HTML." with no ">"
+    assert speech_text("<HTML><BODY><P>Salve.</P></BODY> </HTML.", "b-0123456789abcdef", "m") == "Salve."
+
+
+def test_a_bracketed_note_of_a_page_is_read_as_narration():
+    # an Italian note in brackets would be taken for a performance tag: the narrator reads its words
+    it = "[Le parole qui sotto sono scarabocchiate]\n\nAbbiamo l'atto. [...La fine era leggibile...]"
+    said = speech_text(it, "b-0123456789abcdef", "m")
+    assert said == "Le parole qui sotto sono scarabocchiate\n\nAbbiamo l'atto. ...La fine era leggibile..."
+    assert voice.tag_problem(said) is None
+
+
+def test_a_one_word_bracket_is_left_for_the_tag_check():
+    # "[PH]" marks a placeholder quest: not a note to read, still refused before it is sent
+    assert voice.tag_problem(speech_text("[PH] Raccogli rane", "94901-description", "m")) is not None
+
+
 def test_colour_codes_and_the_entity_name_are_removed():
     assert speech_text("|cff33ccffTutte e quattro le torri|r cadono.", "g-0123456789abcdef", "m") == "Tutte e quattro le torri cadono."
     assert speech_text("%s comincia a battere più in fretta.", "g-0123456789abcdef", "m") == "comincia a battere più in fretta."

@@ -41,8 +41,12 @@ _SPOKEN_ONLY = re.compile(r"\{(?:class|race)\}")
 # `schiav<o/a>`, `<un/una>`, `<eroe/eroina>`: the masculine, then the feminine form. No spaces and no quotes,
 # so an HTML tag with a slash (`<IMG src="x"/>`) is not a pair.
 _PAIR = re.compile(r"<([^<>/\s\"=]+)/([^<>/\s\"=]+)>")
-# Page markup a book carries (`<IMG .../>`, `<P>`): drawn, not read.
-_HTML = re.compile(r"</?(?:IMG|P|BR|H[1-6])\b[^<>]*>", re.I)
+# Page markup a book carries (`<HTML><BODY>`, `<IMG .../>`, `<P>`): drawn, not read. A tag the page ends
+# without closing (one page of the client ends in `</HTML.`) is markup too.
+_HTML = re.compile(r"</?(?:HTML|BODY|IMG|P|BR|H[1-6])\b[^<>]*(?:>|$)", re.I)
+# A bracketed note of several words ("[Le parole qui sotto sono scarabocchiate]"): read as narration, its
+# brackets dropped. A one-word bracket ("[PH]") is left for the tag check, which refuses it.
+_NOTE = re.compile(r"\[([^\[\]]*\s[^\[\]]*)\]")
 # What is left between angle brackets once the pairs are resolved is a stage direction ("<Trevan sorride.>")
 _STAGE = re.compile(r"<[^<>]*>")
 _SPLIT_PAIR = re.compile(r"<[^<>/]*/[^<>]*>")  # left after the pairs are resolved: words with spaces
@@ -141,8 +145,8 @@ def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken:
     """The text the voice reads, for a player of `sex` ("m" or "f"). A marked name becomes its Italian form,
     a `<a/b>` pair the form for `sex`, `{name}` the hero, `$B` a line break, `$N<k>` the k-th number of the
     line's English (`values`); a number only the game knows reads as "alcuni". Stage directions, colour codes,
-    `%s` and page markup are dropped; a line that is nothing but a stage direction is refused: read without
-    its brackets the direction would be spoken as a line. A line naming the player's class or race is read
+    `%s` and page markup are dropped, and a bracketed note loses its brackets; a line that is nothing but a
+    stage direction is refused: read without its brackets the direction would be spoken as a line. A line naming the player's class or race is read
     only from `spoken`, its spoken version. Any other markup is refused with the line's key: it would be read
     aloud as symbols."""
     if sex not in SEXES:
@@ -159,6 +163,7 @@ def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken:
     text = _NAME.sub(HERO[sex], text)
     text = _WORLD_STATE.sub(_UNKNOWN_NUMBER, _FILL.sub(number, _BREAK.sub("\n", text)))
     text = _ENTITY.sub("", _COLOUR.sub("", _HTML.sub("", text)))
+    text = _NOTE.sub(r"\1", text)
     # a pair of several words is not a pair: it would be taken for a stage direction and dropped unread
     split = _SPLIT_PAIR.search(text)
     if split:
