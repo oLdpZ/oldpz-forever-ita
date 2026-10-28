@@ -565,6 +565,7 @@ voice = "voice_y8zaetopluup"
 design = "An orc commander, speaks Italian: deep, guttural and commanding, a hardened war leader, fantasy."
 notes = "Commanding and stern, firm natural pace."
 fits = "commander of Razor Hill, angry at Kul Tiras"
+pitch = -2
 
 [roster.lar]
 voice = "voice_cq24mxtizb81"
@@ -577,36 +578,42 @@ voice = "voice_kknok2qekxy5"
 design = "An orc warrior, speaks Italian: hoarse, grim and resolute, a scarred veteran, fantasy."
 notes = "Grim and resolute, natural pace."
 fits = "orc officer hunting the Burning Blade"
+pitch = -2
 
 [roster.gornek]
 voice = "voice_cv7rfxll53d8"
 design = "An orc overseer, speaks Italian: deep, rough and businesslike, a tough trainer of recruits, fantasy."
 notes = "Rough and businesslike, natural pace."
 fits = "orc in charge of the Valley of Trials recruits"
+pitch = -2
 
 [roster.eitrigg]
 voice = "voice_ph4434ppbrcn"
 design = "An old orc veteran, speaks Italian: deep, weathered and dignified, a wise old warrior, fantasy."
 notes = "Dignified and wise, measured natural pace."
 fits = "Eitrigg, old veteran sent by Thrall"
+pitch = -2
 
 [roster.zureetha]
 voice = "voice_bgv3f49i3sa9"
 design = "An orc woman seer, speaks Italian: low, strong and composed, a shaman with authority, fantasy."
 notes = "Composed and authoritative, natural pace."
 fits = "orc seer of the Valley, sends reports to Razor Hill"
+pitch = -1
 
 [roster.furl]
 voice = "voice_7y9mumkrgqdp"
 design = "An old orc watchman, speaks Italian: gravelly, dry and a little bitter, fantasy."
 notes = "Dry and a little bitter, natural pace."
 fits = "old orc watchman, useless in battle now"
+pitch = -2
 
 [roster.kzan]
 voice = "voice_pbxakxryxx4y"
 design = "An orc blacksmith, speaks Italian: booming, hearty and cheerful, fantasy."
 notes = "Hearty and cheerful, natural pace."
 fits = "orc weaponsmith, cheerful"
+pitch = -2
 
 [roster.gadrin]
 voice = "voice_w3w011qecgcy"
@@ -631,12 +638,14 @@ voice = "voice_zar28vatzm8s"
 design = "An orc cook, speaks Italian: gruff, grumpy and loud, comic, fantasy."
 notes = "Grumpy and loud, quick natural pace."
 fits = "grumpy orc cook"
+pitch = -2
 
 [roster.misha]
 voice = "voice_y70xwej5skvy"
 design = "An orc woman, speaks Italian: low and worried, a mother pleading for help, fantasy."
 notes = "Worried and pleading, natural pace."
 fits = "orc mother worried for her son"
+pitch = -1
 
 [roster.velrin]
 voice = "voice_w4rndgguqvs5"
@@ -649,6 +658,7 @@ voice = "voice_s54j7nlkpoij"
 design = "An orc shaman, speaks Italian: calm, deep and thoughtful, a careful spiritual man, fantasy."
 notes = "Thoughtful and calm, natural pace."
 fits = "orc shaman studying demonic collars"
+pitch = -2
 
 [roster.windfeather]
 voice = "voice_iplrc3d1biv3"
@@ -661,6 +671,7 @@ voice = "voice_jo3dhhn6l2v4"
 design = "An orc warlock, speaks Italian: smooth, low and secretive, cultured and ominous, fantasy."
 notes = "Smooth and secretive, natural pace."
 fits = "orc warlock hunting demonic corruption"
+pitch = -2
 
 [roster.wildrunner]
 voice = "voice_vbzy2r56oxgn"
@@ -673,6 +684,7 @@ voice = "voice_koe4q83ekkck"
 design = "An orc advisor, speaks Italian: deep, severe and suspicious, a security chief, fantasy."
 notes = "Severe and suspicious, natural pace."
 fits = "Nazgrel, Thrall's advisor, distrusts humans"
+pitch = -2
 
 [roster.raintotem]
 voice = "voice_gdwehryzs9eg"
@@ -703,18 +715,21 @@ voice = "voice_mkzubifiyrna"
 design = "An orc recruiter, speaks Italian: friendly, rough and persuasive, fantasy."
 notes = "Persuasive, natural pace."
 fits = "orc recruiter for the Barrens"
+pitch = -2
 
 [roster.kargal]
 voice = "voice_gsbj9lx0m9xe"
 design = "An orc officer, speaks Italian: gravelly, sarcastic and tired, fantasy."
 notes = "Sarcastic and tired, natural pace."
 fits = "scarred orc officer, sarcastic about Sergra"
+pitch = -2
 
 [roster.sergra]
 voice = "voice_4dptyre59oqz"
 design = "An orc woman commander, speaks Italian: sharp, brusque and authoritative, fantasy."
 notes = "Brusque and authoritative, quick natural pace."
 fits = "orc shaman in command at the Crossroads, brusque"
+pitch = -1
 
 [roster.kirge]
 voice = "voice_mfyq2elre0jg"
@@ -727,6 +742,7 @@ voice = "voice_hsc9ebsnvm3q"
 design = "An orc commander, speaks Italian: deep, courteous and firm, fantasy."
 notes = "Courteous and firm, natural pace."
 fits = "orc commander of the Crossroads, welcoming"
+pitch = -2
 
 [roster.melor]
 voice = "voice_g9tnhwud5qfg"
@@ -739,6 +755,7 @@ voice = "voice_mt4wclo7iek0"
 design = "An old orc warlock, speaks Italian: dry, raspy and grave, fantasy."
 notes = "Grave and dry, natural pace."
 fits = "orc demonologist about the Demon Seed"
+pitch = -2
 
 [roster.hamuul]
 voice = "voice_xiqnfoflpbc3"
@@ -775,12 +792,14 @@ voice = "voice_l045zhjz9zbn"
 design = "An orc courier, speaks Italian: exasperated, rough and talkative, fantasy."
 notes = "Exasperated, quick natural pace."
 fits = "orc courier with a food cart, exasperated"
+pitch = -2
 
 [roster.grosk]
 voice = "voice_jkljbcs2npao"
 design = "An orc man who runs an inn, speaks Italian: a deep, dry and humorous voice."
 notes = "Sarcastic and good-humoured, natural pace."
 fits = "orc innkeeper of Razor Hill, sarcastic"
+pitch = -2
 
 [roster.zjolnir]
 voice = "voice_2e5h74fdi5yk"
@@ -799,24 +818,28 @@ voice = "voice_708yymq1r7fu"
 design = "An orc man, speaks Italian: laid-back, hoarse and friendly, fantasy."
 notes = "Laid-back and friendly, natural pace."
 fits = "orc cook sweating in the heat"
+pitch = -2
 
 [roster.kaltunk]
 voice = "voice_h7wmpyshvyvp"
 design = "An orc warrior, speaks Italian: deep, proud and stirring, fantasy."
 notes = "Proud and stirring, natural pace."
 fits = "orc officer welcoming new recruits"
+pitch = -2
 
 [roster.thazzril]
 voice = "voice_csyw27qyxwdb"
 design = "An orc foreman, speaks Italian: gravelly, practical and impatient, fantasy."
 notes = "Practical and impatient, natural pace."
 fits = "orc foreman of the mine"
+pitch = -2
 
 [roster.magga]
 voice = "voice_qhncmrr09sto"
 design = "An orc woman, speaks Italian: warm, cheerful and welcoming, fantasy."
 notes = "Cheerful and welcoming, natural pace."
 fits = "orc greeter giving gifts"
+pitch = -1
 
 [roster.vorn]
 voice = "voice_k2e2nwxm21b3"
@@ -1064,12 +1087,14 @@ voice = "voice_jberl9k5qk7v"
 design = "An orc woman, speaks Italian: low, strong and fierce, fantasy."
 notes = "Fierce and strong, natural pace."
 fits = "any orc female"
+pitch = -1
 
 [roster.genorcf2]
 voice = "voice_5afno16u6ki4"
 design = "An orc woman, speaks Italian: husky, practical and warm, fantasy."
 notes = "Practical and warm, natural pace."
 fits = "any orc female"
+pitch = -1
 
 [roster.gennightelfm1]
 voice = "voice_7a60p3glduru"
@@ -1537,6 +1562,7 @@ project = 2
 design = "An orc warrior man, speaks Italian: deep, rough and serious, a growling measured voice, fantasy."
 notes = "Serious and wary, natural pace."
 fits = "orc envoy of the Warchief investigating the Sunken Temple"
+pitch = -2
 
 [roster.ghak]
 voice = "voice_989geysvtsfu"
@@ -1677,6 +1703,7 @@ project = 2
 design = "An orc warrior man, speaks Italian: gravelly, blunt and fierce, a heavy rasping bass, fantasy."
 notes = "Blunt and fierce, natural pace."
 fits = "orc warrior of the Warchief investigating the Syndicate"
+pitch = -2
 
 [roster.redpath]
 voice = "voice_nbgf1qfcw19g"
@@ -1719,6 +1746,7 @@ project = 2
 design = "An old orc seer, speaks Italian: low, mystical and gravelly, a weighty shamanic rumble, fantasy."
 notes = "Mystical and serious, natural pace."
 fits = "orc far seer at Grom'gol studying jungle magic"
+pitch = -2
 
 [roster.seahorn]
 voice = "voice_war4dcouj7nh"
@@ -1817,6 +1845,7 @@ project = 2
 design = "An orc commander, speaks Italian: hard, gruff and defiant, a deep barking growl, fantasy."
 notes = "Defiant and testing, natural pace."
 fits = "orc commander defending Hammerfall"
+pitch = -2
 
 [roster.magni]
 voice = "voice_29n4rayuhgde"
@@ -1929,6 +1958,7 @@ project = 2
 design = "An orc hunter, speaks Italian: rough, commanding and gritty, a growling instructor, fantasy."
 notes = "Stern and proud, natural pace."
 fits = "orc hunter trainer of the Barrens"
+pitch = -2
 
 [roster.drohn]
 voice = "voice_xfnosh5hv559"
@@ -1936,6 +1966,7 @@ project = 3
 design = "An orc brewmaster, speaks Italian: hearty, husky and jovial, a beer-warmed rumble, fantasy."
 notes = "Jovial and nostalgic, natural pace."
 fits = "orc brewmaster who learned recipes from Chen Stormstout"
+pitch = -2
 
 [roster.gann]
 voice = "voice_bx3it4avabkz"
@@ -1957,6 +1988,7 @@ project = 2
 design = "An orc military commander, speaks Italian: harsh, deep and authoritative, a battle-hardened bark, fantasy."
 notes = "Stern and commanding, natural pace."
 fits = "orc commander at Camp Taurajo fighting the Kolkar centaurs"
+pitch = -2
 
 [roster.gazlowe]
 voice = "voice_q4jpx0a8d25i"
@@ -1999,6 +2031,7 @@ project = 2
 design = "An orc warrior, speaks Italian: heavy, bitter and grieving, a deep worn voice, fantasy."
 notes = "Grieving and bitter, natural pace."
 fits = "grieving orc warrior searching for his lost wife"
+pitch = -2
 
 [roster.sputtervalve]
 voice = "voice_1a512jl81sx9"
@@ -2027,6 +2060,7 @@ project = 2
 design = "An orc warrior, speaks Italian: gruff, laughing and rowdy, a rough barking voice, fantasy."
 notes = "Rowdy and pleased, natural pace."
 fits = "orc at the Crossroads hunting the harpies"
+pitch = -2
 
 [roster.dizzywig]
 voice = "voice_5h4jwnhj90gc"
@@ -2041,6 +2075,7 @@ project = 2
 design = "An orc guard officer, speaks Italian: blunt, gravelly and dutiful, a level barking voice, fantasy."
 notes = "Dutiful and blunt, natural pace."
 fits = "orc officer of the Crossroads watch"
+pitch = -2
 
 [roster.corithras]
 voice = "voice_xyn4dp7k469v"
@@ -2202,6 +2237,7 @@ project = 3
 design = "An orc woman shaman, speaks Italian: husky, grounded and solemn, a strong earthy voice, fantasy."
 notes = "Solemn and determined, natural pace."
 fits = "orc shaman hearing the spirits of Stonetalon"
+pitch = -1
 
 [roster.gaxim]
 voice = "voice_1m9phrwn12on"
@@ -2265,6 +2301,7 @@ project = 2
 design = "An orc warrior, speaks Italian: thunderous, coarse and fiery, a booming voice, fantasy."
 notes = "Furious then triumphant, natural pace."
 fits = "orc in Ashenvale betrayed by a blood elf, hot-tempered"
+pitch = -2
 
 [roster.parqual]
 voice = "voice_8tobjemqh5n5"
@@ -2321,6 +2358,7 @@ project = 2
 design = "An orc spymaster, speaks Italian: low, calculating and rough, a guarded smoky voice, fantasy."
 notes = "Calculating and serious, natural pace."
 fits = "orc spymaster at Brackenwall overseeing covert operations"
+pitch = -2
 
 [roster.swampeye]
 voice = "voice_32llo355x9pb"
@@ -2342,6 +2380,7 @@ project = 3
 design = "An orc man, speaks Italian: deep, terse and contemptuous, a heavy measured voice, fantasy."
 notes = "Terse and watchful, natural pace."
 fits = "orc agent of Thrall watching Theramore from Dustwallow"
+pitch = -2
 
 [roster.vimes]
 voice = "voice_neb3x9h6f44l"
@@ -2427,6 +2466,7 @@ project = 3
 design = "An old orc warrior, speaks Italian: slow-burning, deep and stony, a grim patient voice, fantasy."
 notes = "Grim and patient, natural pace."
 fits = "old orc sentinel guarding the coast against murlocs"
+pitch = -2
 
 [roster.pestlezugg]
 voice = "voice_p0copiz6uuim"
@@ -2455,6 +2495,7 @@ project = 3
 design = "An orc warrior, speaks Italian: hard, gravelly and focused, a disciplined low voice, fantasy."
 notes = "Focused and grim, natural pace."
 fits = "orc warrior in Desolace battling demonic infestation"
+pitch = -2
 
 [roster.carendin]
 voice = "voice_vhr9s1iniamu"
@@ -2476,6 +2517,7 @@ project = 2
 design = "An orc man, a warlock mentor, speaks Italian: low, gravelly and smouldering, stern but quietly proud, fantasy."
 notes = "Stern and demanding, natural pace."
 fits = "orc warlock trainer of Orgrimmar, stern mentor"
+pitch = -2
 
 [roster.thungrim]
 voice = "voice_hf3g0sqiwq6i"
@@ -2483,6 +2525,7 @@ project = 3
 design = "An old orc blacksmith, speaks Italian: rough, smoky and booming, gruff with a craftsman's pride, fantasy."
 notes = "Gruff and proud, natural pace."
 fits = "old half-blind orc master blacksmith of the Horde"
+pitch = -2
 
 [roster.brine]
 voice = "voice_j6tmm13x0m1o"
@@ -2490,6 +2533,7 @@ project = 2
 design = "An orc woman, a shaman, speaks Italian: husky, smooth and flowing, thoughtful and hopeful, fantasy."
 notes = "Reflective and hopeful, natural pace."
 fits = "orc shaman who teaches the lessons of water, hopeful"
+pitch = -1
 
 [roster.islen]
 voice = "voice_rbm7hhan2po9"
@@ -2602,6 +2646,7 @@ project = 2
 design = "An orc man, a salvage trader, speaks Italian: coarse, loud and brash, mocking and greedy, fantasy."
 notes = "Brash and mocking, natural pace."
 fits = "orc salvage trader of Droffers and Son, rude and greedy"
+pitch = -2
 
 [roster.zilzibin]
 voice = "voice_deiejpppjvga"
@@ -2644,6 +2689,7 @@ project = 2
 design = "The ghost of an orc warrior, speaks Italian: deep, hollow and echoing, weary and haunted by regret, fantasy."
 notes = "Haunted and solemn, measured natural pace."
 fits = "ghost of a fallen Horde hero in the Blasted Lands, seeking redemption"
+pitch = -2
 
 [roster.fizzledowser]
 voice = "voice_yyjtrphe282x"
@@ -2679,6 +2725,7 @@ project = 4
 design = "An orc woman, a warrior, speaks Italian: strong, husky and direct, fierce and resolute, fantasy."
 notes = "Fierce and resolute, natural pace."
 fits = "orc warrior at Camp Mojache fighting the Gordunni ogres"
+pitch = -1
 
 [roster.loramus]
 voice = "voice_9ihj87c5ls7d"
@@ -2693,6 +2740,7 @@ project = 4
 design = "An orc man, a smith, speaks Italian: booming, coarse and heavy, simple and proud, fantasy."
 notes = "Proud and blunt, natural pace."
 fits = "last orc smith of the Omosh line, speaks of himself in third person"
+pitch = -2
 
 [roster.galvan]
 voice = "voice_djyqxkvwxiy8"
@@ -2847,6 +2895,7 @@ project = 4
 design = "An orc man, a rampart commander, speaks Italian: hard, gravelly and clipped, stern and soldierly, fantasy."
 notes = "Stern and clipped, natural pace."
 fits = "orc commander of the Mor'shan Rampart in the Barrens"
+pitch = -2
 
 [roster.jediga]
 voice = "voice_ax3rrpqwriym"
@@ -2854,6 +2903,7 @@ project = 4
 design = "An orc woman, a courier and trader, speaks Italian: smoky, wry and streetwise, guarded and shrewd, fantasy."
 notes = "Wry and guarded, natural pace."
 fits = "exiled orc courier and dealer in Azshara"
+pitch = -1
 
 [roster.linken]
 voice = "voice_34nprvp79hp6"
@@ -2875,6 +2925,7 @@ project = 4
 design = "An orc man, a warlord, speaks Italian: deep, harsh and thunderous, proud and seething, fantasy."
 notes = "Proud and seething, natural pace."
 fits = "orc warlord of the Kargath Expeditionary Force"
+pitch = -2
 
 [roster.lagrave]
 voice = "voice_xbs90dwf3jok"
@@ -3015,6 +3066,7 @@ project = 4
 design = "An orc man, a wanderer, speaks Italian: rough, mellow and plain-spoken, curious and candid, fantasy."
 notes = "Candid and curious, natural pace."
 fits = "orc in Felwood interested in owlbeast secrets"
+pitch = -2
 
 [roster.emberstrife]
 voice = "voice_8627ozcbbbho"
@@ -3281,6 +3333,7 @@ project = 4
 design = "A jolly old orc in a festive role, speaks Italian: deep, booming and merry, a warm chuckle, fantasy."
 notes = "Merry and warm, natural pace."
 fits = "jolly gift-giver of the Winter Veil festival in Orgrimmar"
+pitch = -2
 
 [roster.teeka]
 voice = "voice_d4s2zrtaf1xv"
@@ -3288,6 +3341,7 @@ project = 2
 design = "An orc woman corporal, speaks Italian: harsh, punchy and fierce, fantasy."
 notes = "Fierce and urgent, natural pace."
 fits = "Frostwolf corporal in Alterac Valley"
+pitch = -1
 
 [roster.durgen]
 voice = "voice_ypqqxtlx2cu8"
@@ -3302,6 +3356,7 @@ project = 4
 design = "A veteran orc warmaster, speaks Italian: deep, rough and stirring, fantasy."
 notes = "Fierce and stirring, natural pace."
 fits = "Frostwolf warmaster rallying recruits in Alterac Valley"
+pitch = -2
 
 [roster.haggerdin]
 voice = "voice_83p7g1w4koo1"
@@ -3393,6 +3448,7 @@ project = 2
 design = "An orc woman quartermaster, speaks Italian: husky, blunt and practical, fantasy."
 notes = "Blunt and practical, natural pace."
 fits = "cloth quartermaster of Orgrimmar"
+pitch = -1
 
 [roster.vehena]
 voice = "voice_88re99n564s6"
@@ -3449,6 +3505,7 @@ project = 4
 design = "An orc captain, speaks Italian: loud, rough and proud, fantasy."
 notes = "Arrogant and fierce, natural pace."
 fits = "Warsong Outrider captain at Warsong Gulch"
+pitch = -2
 
 [roster.paleo]
 voice = "voice_pir184gfr0q2"
@@ -3582,6 +3639,7 @@ project = 2
 design = "An orc warbringer, speaks Italian: thunderous, rough and rousing, fantasy."
 notes = "Rousing and fierce, natural pace."
 fits = "Horde warbringer recruiting for every battleground"
+pitch = -2
 
 [roster.brigadier]
 voice = "voice_a6bvrohvl8m7"
@@ -3624,6 +3682,7 @@ project = 2
 design = "An orc armor dealer, speaks Italian: gravelly, shrewd and grudging, fantasy."
 notes = "Shrewd and gruff, natural pace."
 fits = "orc armor dealer caught up in the curse of Valthalak"
+pitch = -2
 
 [roster.deliana]
 voice = "voice_jz0gqegxuoyl"
@@ -3862,6 +3921,7 @@ project = 3
 design = "An orc man, speaks Italian: rough, low and good natured, a gruff outdoorsman, fantasy."
 notes = "Gruff but friendly, natural pace."
 fits = "orc wilderness survival teacher"
+pitch = -2
 
 [roster.dwarfsurvivalist]
 voice = "voice_vexddo369lyb"
