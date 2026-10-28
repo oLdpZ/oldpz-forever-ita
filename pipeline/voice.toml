@@ -1043,18 +1043,21 @@ voice = "voice_apwttv36q8g6"
 design = "An orc man, speaks Italian: deep, harsh and guttural, a seasoned warrior, fantasy."
 notes = "Harsh and proud, natural pace."
 fits = "any orc male"
+pitch = -2
 
 [roster.genorcm2]
 voice = "voice_2yinhf6r8vky"
 design = "An orc man, speaks Italian: rough, gravelly and blunt, a laborer of the Horde, fantasy."
 notes = "Blunt and rough, natural pace."
 fits = "any orc male"
+pitch = -2
 
 [roster.genorcm3]
 voice = "voice_uudzy7a7vckz"
 design = "An orc man, speaks Italian: low, steady and honourable, a calm veteran, fantasy."
 notes = "Calm and steady, natural pace."
 fits = "any orc male"
+pitch = -2
 
 [roster.genorcf1]
 voice = "voice_jberl9k5qk7v"
@@ -2353,6 +2356,7 @@ project = 3
 design = "A powerful orc warchief, speaks Italian: deep, noble and commanding, a calm resonant authority, fantasy."
 notes = "Noble and resolute, measured natural pace."
 fits = "Thrall, Warchief of the Horde in Orgrimmar"
+pitch = -2
 
 [roster.tervosh]
 voice = "voice_slntkouwapdn"

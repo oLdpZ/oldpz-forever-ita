@@ -309,6 +309,28 @@ def test_a_take_paid_for_but_not_encoded_is_encoded_on_resume_without_the_engine
     assert (world.store / "mp3" / f"{stem}.mp3").is_file() and stem in _audio(world)
 
 
+def test_a_pitch_encodes_the_kept_takes_again_without_the_engine(world):
+    _gen(world, FakeEngine())
+    world.config.write_text(TOML.replace('notes = "Raspy and dry."', 'notes = "Raspy and dry."\npitch = -2'),
+                            encoding="utf-8")
+    cfg = voice_cast.load_config(world.config)
+    moved = []
+
+    def shift(wav, semitones, out):
+        moved.append((wav.name, semitones))
+        out.write_bytes(wav.read_bytes())
+
+    engine = FakeEngine()
+    r = voice_make.generate(world.data, cfg, "tirisfal", world.store, engine, encode=fake_encode,
+                            log=lambda *_: None, sleep=lambda _s: None, shift=shift)
+    mordo = {"456-completion", "456-description", "456-description_f"}
+    assert engine.calls == [] and r["made"] == len(mordo)
+    assert sorted(moved) == sorted((f"{s}.wav", -2) for s in mordo)
+    assert all(_audio(world)[s]["fingerprint"].endswith("|pitch -2") for s in mordo)
+    assert not list((world.store / "wav").glob("*.pitch.wav"))
+    assert voice_make.plan(world.data, cfg, "tirisfal", world.store)["to_make"] == 0
+
+
 def test_a_kept_take_for_another_fingerprint_is_asked_again(world):
     _gen(world, FakeEngine())
     write_quests(world.data, **{"456_completion": "Ben fatto, davvero."})

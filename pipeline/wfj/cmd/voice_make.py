@@ -66,7 +66,10 @@ DOLLARS_PER_MILLION_TOKENS = 20.0
 
 @dataclass(frozen=True)
 class Take:
-    """One file to make, and the prompt that makes it. `project` is the one whose key reaches its voice."""
+    """One file to make, and the prompt that makes it. `project` is the one whose key reaches its voice;
+    `pitch` the semitones the take is moved by when encoded. `fingerprint` is what the engine was asked for
+    (the kept WAV, the blocked list, a batch); `file_fingerprint` what the file is made from, the pitch too:
+    a new pitch encodes the kept take again, it buys no new one."""
 
     job: voice.Job
     it: str
@@ -75,6 +78,11 @@ class Take:
     gemini_voice: str
     fingerprint: str
     project: int = 1
+    pitch: float = 0
+
+    @property
+    def file_fingerprint(self) -> str:
+        return f"{self.fingerprint}|pitch {self.pitch:g}" if self.pitch else self.fingerprint
 
 
 @dataclass
@@ -242,7 +250,7 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
                 words = voice.text_hash(it, vals, said, respelled)
                 fp = voice.fingerprint(words, vid, r["gemini_voice"], r["model"], r["notes"], sex, profile)
                 takes.append(Take(voice.Job(stem, key, vid, sex), it, text, prompt, r["gemini_voice"], fp,
-                                  r.get("project", 1)))
+                                  r.get("project", 1), r.get("pitch", 0)))
     return Survey(takes, silent)
 
 
@@ -305,7 +313,7 @@ def record_row(t: Take, mp3: Path, seconds: float, provenance: Mapping[str, str]
         "voice": t.job.voice,
         "sex": t.job.sex,
         "it_hash": voice.it_hash(t.it),
-        "fingerprint": t.fingerprint,
+        "fingerprint": t.file_fingerprint,
         "seconds": round(seconds, 2),
         "bytes": mp3.stat().st_size,
         "chars": len(t.transcript),
@@ -368,7 +376,7 @@ def plan(
             continue
         if rec is None:
             count["missing"] += 1
-        elif rec.get("fingerprint") != t.fingerprint:
+        elif rec.get("fingerprint") != t.file_fingerprint:
             count["stale"] += 1
         elif held is not None and not mp3_file(held, stem).is_file():
             count["gone"] += 1
@@ -431,6 +439,12 @@ def to_mp3(wav: Path, out: Path) -> None:
         part.unlink(missing_ok=True)
 
 
+def shift_pitch(wav: Path, semitones: float, out: Path) -> None:
+    """`wav` moved by `semitones`, same length, into `out` (ffmpeg's rubberband: -2 is a deeper voice)."""
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-af",
+                    f"rubberband=pitch={2 ** (semitones / 12):.6f}", str(out)], check=True)
+
+
 def make_engine(key: str, model: str) -> gemini.Engine:
     return gemini.Engine(key, model)
 
@@ -464,6 +478,7 @@ def generate(  # noqa: PLR0913, PLR0915 - the engine, encoder, log and sleep are
     sleep: Callable[[float], None] | None = None,
     keys: Collection[str] | None = None,
     kept_only: bool = False,
+    shift: Callable[[Path, float, Path], None] = shift_pitch,
 ) -> dict[str, Any]:
     """Makes every file plan lists (for `keys` only, when given), up to `limit`; resumable. The record and the
     blocked list are written after every file, and on the way out whatever stops the run. A busy or failing
@@ -530,7 +545,16 @@ def generate(  # noqa: PLR0913, PLR0915 - the engine, encoder, log and sleep are
                 raise gemini.EngineError(f"{stem}: the engine's audio is not a readable WAV ({e})") from None
             if kept is None:
                 keep_take(store, t, wav)
-            encode(wav_path, mp3)
+            if t.pitch:
+                # the kept take stays as the engine made it: only the file is moved
+                moved = wav_path.with_name(f"{stem}.pitch.wav")
+                try:
+                    shift(wav_path, t.pitch, moved)
+                    encode(moved, mp3)
+                finally:
+                    moved.unlink(missing_ok=True)
+            else:
+                encode(wav_path, mp3)
             audio[stem] = record_row(t, mp3, secs, {"source": source, "imported": today})
             blocked.pop(stem, None)
             out["made"] += 1

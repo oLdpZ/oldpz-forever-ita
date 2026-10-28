@@ -69,7 +69,7 @@ def select(
             left.append((stem, "blocked"))
         elif rec is None:
             left.append((stem, "missing"))
-        elif rec.get("fingerprint") != t.fingerprint:
+        elif rec.get("fingerprint") != t.file_fingerprint:
             left.append((stem, "stale"))
         elif (not path.is_file() or path.stat().st_size != int(rec["bytes"])
               or voice_make.file_sha(path) != rec["sha256"]):

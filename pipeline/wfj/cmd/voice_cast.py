@@ -59,7 +59,8 @@ NARRATOR_PROFILES = {"narrator_profile": "The narrator", "book_narrator_profile"
 
 def load_config(path: Path) -> dict[str, Any]:
     """voice.toml, checked (`casting.roster_problems`), with each roster voice as the engine and
-    `voice_make.plan` read it: {gemini_voice, model, notes, fits, project} (project 1 when none is named).
+    `voice_make.plan` read it: {gemini_voice, model, notes, fits, project, pitch} (project 1 and pitch 0 when
+    none is named).
     Raises ValueError listing every problem."""
     with path.open("rb") as f:
         cfg = tomllib.load(f)
@@ -83,7 +84,7 @@ def load_config(path: Path) -> dict[str, Any]:
         raise ValueError(f"{path.name}: " + "; ".join(problems))
     cfg["roster"] = {
         vid: {"gemini_voice": v["voice"], "model": cfg["model"], "notes": v["notes"],
-              "fits": v.get("fits", ""), "project": v.get("project", 1)}
+              "fits": v.get("fits", ""), "project": v.get("project", 1), "pitch": v.get("pitch", 0)}
         for vid, v in raw.items()
     }
     return cfg

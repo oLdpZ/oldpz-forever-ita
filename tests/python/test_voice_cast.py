@@ -251,10 +251,17 @@ def _toml(path: Path, body: str = "") -> Path:
 def test_load_config_gives_the_roster_the_engine_reads(tmp_path):
     cfg = voice_cast.load_config(_toml(tmp_path / "voice.toml"))
     assert cfg["roster"]["um"] == {"gemini_voice": "Algenib", "model": "gemini-3.1-flash-tts-preview",
-                                   "notes": "Raspy and dry.", "fits": "undead male", "project": 1}
+                                   "notes": "Raspy and dry.", "fits": "undead male", "project": 1,
+                                   "pitch": 0}
     two = _toml(tmp_path / "two.toml", '[roster.d]\nvoice = "voice_abc"\ndesign = "An old man."\nproject = 2\n'
                                        'notes = "Slow."\n')
     assert voice_cast.load_config(two)["roster"]["d"]["project"] == 2
+    deep = _toml(tmp_path / "deep.toml", '[roster.d]\nvoice = "Kore"\nnotes = "Slow."\npitch = -2\n')
+    assert voice_cast.load_config(deep)["roster"]["d"]["pitch"] == -2
+    for pitch in ("9", "true", '"-2"'):
+        far = _toml(tmp_path / "far.toml", f'[roster.d]\nvoice = "Kore"\nnotes = "Slow."\npitch = {pitch}\n')
+        with pytest.raises(ValueError, match="pitch must be a number of semitones"):
+            voice_cast.load_config(far)
     assert [r["name"] for r in cfg["cast"]] == ["undead, female", "undead"]
     bad = _toml(tmp_path / "bad.toml", '[roster.it]\nvoice = "Kore"\nnotes = "Voce calma."\nfits = "x"\n')
     with pytest.raises(ValueError, match="notes must be English"):

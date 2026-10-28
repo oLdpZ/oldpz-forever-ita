@@ -142,13 +142,13 @@ def text_hash(
 
 
 def speech_text(it: str, key: str, sex: str, values: Sequence[str] = (), spoken: str | None = None) -> str:
-    """The text the voice reads, for a player of `sex` ("m" or "f"). A marked name becomes its Italian form,
-    a `<a/b>` pair the form for `sex`, `{name}` the hero, `$B` a line break, `$N<k>` the k-th number of the
+    """The text the voice reads, for a player of `sex` ("m" or "f"). A marked name becomes its Italian form, a
+    `<a/b>` pair the form for `sex`, `{name}` the hero, `$B` a line break, `$N<k>` the k-th number of the
     line's English (`values`); a number only the game knows reads as "alcuni". Stage directions, colour codes,
     `%s` and page markup are dropped, and a bracketed note loses its brackets; a line that is nothing but a
-    stage direction is refused: read without its brackets the direction would be spoken as a line. A line naming the player's class or race is read
-    only from `spoken`, its spoken version. Any other markup is refused with the line's key: it would be read
-    aloud as symbols."""
+    stage direction is refused: read without its brackets the direction would be spoken as a line. A line
+    naming the player's class or race is read only from `spoken`, its spoken version. Any other markup is
+    refused with the line's key: it would be read aloud as symbols."""
     if sex not in SEXES:
         raise VoiceError(f"{key}: sex must be one of {SEXES}, not {sex!r}")
     if spoken is None and needs_spoken(it):

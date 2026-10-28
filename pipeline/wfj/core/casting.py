@@ -359,7 +359,9 @@ def cast(
     return out
 
 
-ROSTER_FIELDS = ("voice", "design", "project", "notes", "fits")
+ROSTER_FIELDS = ("voice", "design", "project", "notes", "fits", "pitch")
+# How far `pitch` may move a voice, in semitones: past this the speech smears.
+PITCH_LIMIT = 6
 # Gemini reads direction it does not take for English aloud, so a voice's notes are English only: no accented
 # letter, and none of these common Italian words (articles, prepositions, and the words direction would use).
 _ACCENTED = re.compile(r"[àèéìíòóùú]", re.I)
@@ -407,6 +409,7 @@ def roster_problems(
         elif voice_kind(v["voice"]) == "designed" and design is None:
             out.append(f"roster {vid}: a designed voice keeps the design it was made from")
         out += _project_problems(vid, v)
+        out += _pitch_problems(vid, v)
         notes = v.get("notes")
         if not isinstance(notes, str) or not notes.strip():
             out.append(f"roster {vid}: notes must say how the voice reads (English director's notes)")
@@ -439,6 +442,18 @@ def _project_problems(vid: str, v: Mapping[str, Any]) -> list[str]:
         return [f"roster {vid}: project must be a whole number from 1 (got {project!r})"]
     if v.get("design") is None:
         return [f"roster {vid}: project is for a designed voice (the project that made it)"]
+    return []
+
+
+def _pitch_problems(vid: str, v: Mapping[str, Any]) -> list[str]:
+    """A roster voice's `pitch`: semitones its files are moved by when encoded (-2: deeper), within
+    PITCH_LIMIT."""
+    pitch = v.get("pitch")
+    if pitch is None:
+        return []
+    if isinstance(pitch, bool) or not isinstance(pitch, (int, float)) or abs(pitch) > PITCH_LIMIT:
+        return [f"roster {vid}: pitch must be a number of semitones from -{PITCH_LIMIT} to {PITCH_LIMIT}"
+                f" (got {pitch!r})"]
     return []
 
 
