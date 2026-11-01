@@ -369,6 +369,7 @@ function WFJ.OnLoad()
     "GhostFrame", "GuildInvite", "InstanceAbandon", "LootHistory", "LossOfControl",
     "MajorFactionToast", "PartyPose", "PetHappiness", "PlayerChoice", "ReadyCheck", "StackSplit", "StreamingIcon",
     "ZoneText",
+    "ZoneNames",
     -- the tutorial popup and the new player experience's screen prompts
     "Tutorial", "NewPlayerTutorial",
     -- the StaticPopup dialogs (ADR-037)

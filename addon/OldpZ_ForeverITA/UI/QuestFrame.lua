@@ -339,7 +339,23 @@ end
 -- hooksecurefunc target (QuestInfo_ShowRewards): the client redraws the rewards on its own when a reward item's data
 -- arrives (QUEST_ITEM_UPDATE, mainline/questframe.lua:75–84) or a spell is learned (:92–96), writing the English
 -- reward headings again (questinfo.lua:765) after the panel was shown. The open panel is shown again.
+-- The reward buttons' item names: QuestInfo_ShowRewards fills them when the item is loaded, so again a moment
+-- later [verified: mainline/questinfo.lua:540–550].
+local function showRewardNames()
+  local rewards = Compat.resolve("QuestInfoRewardsFrame")
+  local buttons = type(rewards) == "table" and rewards.RewardButtons or nil
+  if type(buttons) ~= "table" then return end
+  for i, button in ipairs(buttons) do
+    if type(button) == "table" and type(button.Name) == "table" then
+      WFJ.Render.name("questframe.rewardnames", "reward." .. i, button.Name, "nameitem")
+    end
+  end
+end
+
 function QuestFrame.onShowRewards()
+  showRewardNames()
+  local after = Compat.resolve("C_Timer.After")
+  if type(after) == "function" then after(0.2, showRewardNames) end
   local function visible(key)
     local f = Compat.get(DECLARE, key)
     return type(f) == "table" and type(f.IsVisible) == "function" and f:IsVisible()

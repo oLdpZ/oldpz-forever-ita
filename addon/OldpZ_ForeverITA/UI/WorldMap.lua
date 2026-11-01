@@ -1,7 +1,8 @@
 -- UI/WorldMap.lua: the world map's own chrome on Forever (surface "worldmap", area "ui", ADR-016): the
 -- words Blizzard_WorldMap (a login addon, blizzard_worldmap.toc) puts around the map canvas. The window title
 -- (MAP_AND_QUEST_LOG / WORLD_MAP, blizzard_worldmap.lua:26, 35, 40) and the quest log side panel belong to
--- UI/QuestMap.lua, and pin tooltips to UI/MapPins.lua; zone, continent and floor names are names and stay English.
+-- UI/QuestMap.lua, and pin tooltips to UI/MapPins.lua; the zone name on hover is UI/ZoneNames', continent and
+-- floor names stay English.
 -- Every widget is a parentKey or a field WorldMapMixin:AddOverlayFrames writes (blizzard_worldmap.lua:318–361):
 -- - NavBar.home: the navigation bar's first button. WorldMapNavBarMixin:OnLoad passes name = WORLD ("World") and
 --   NavBar_Initialize writes it once with homeButton:SetText (blizzard_worldmaptemplates.lua:504–517;

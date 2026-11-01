@@ -400,3 +400,10 @@ WFJ.State.on("area", function() Render.refresh() end)
 WFJ.State.on("modifier", function() Render.refresh() end)
 WFJ.State.on("markers", function() Render.refresh() end)
 WFJ.State.on("names", function() Render.refresh() end) -- marked names re-resolve (Core/Names via Core/Lookup)
+
+-- A name the client shows by itself (UI/NameText). A module loaded without it shows the English as it is.
+function Render.name(surface, recKey, fs, kind, layout)
+  local NameText = WFJ.NameText
+  if not NameText then return 0 end
+  return NameText.show(surface, recKey, fs, kind, layout)
+end

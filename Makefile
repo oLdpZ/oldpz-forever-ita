@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -284,6 +284,9 @@ FOREVER_NAMES_DIR    ?= $(REPO_ROOT)/inputs/clients/forever-names-$(FOREVER_WAGO
 
 wago-fetch-forever-names: ## download Forever's AreaTable / Faction / ChrClasses / ChrRaces (enUS, FOREVER_WAGO_BUILD) for the glossary; all or nothing
 	@$(MAKE) -s wago-fetch CLIENT=forever CLIENT_DIR="$(FOREVER_NAMES_DIR)" WAGO_BUILD=$(FOREVER_WAGO_BUILD) WAGO_TABLES="$(FOREVER_NAMES_TABLES)"
+
+surface-names: ## addon Names/*.lua: the official Italian names the client shows by itself (needs wago-fetch-retail, wago-fetch-forever-names, SkillLine.<locale>.csv in RETAIL_DIR)
+	cd pipeline && $(PY) -m wfj.dev.surface_names --retail "$(RETAIL_DIR)" --forever "$(FOREVER_NAMES_DIR)"
 
 glossary: ## pipeline/glossario_ufficiale.tsv: Blizzard's Italian names (zones, factions, classes, races, items, spells) where the retail English is Forever's (needs wago-fetch-retail, wago-fetch-forever-names, data/english)
 	cd pipeline && $(PY) -m wfj.dev.glossary_it --retail "$(RETAIL_DIR)" --build $(RETAIL_BUILD) --forever "$(FOREVER_NAMES_DIR)" --forever-build $(FOREVER_WAGO_BUILD)

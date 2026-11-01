@@ -61,7 +61,7 @@ describe("/fita covers every setting", function()
       end
     end
     -- the original eight + collector.enabled + area.interface + area.books + minimapButton + collector.remind
-    assert.are.equal(14, n) -- + names.style (spec §8)
+    assert.are.equal(18, n) -- + names.style (spec §8) + the four kinds of client names
   end)
 
   it("/fita bug opens the report window on Bug; /fita log ends with the Lua error count", function()
@@ -221,9 +221,9 @@ describe("/fita covers every setting", function()
     assert.are.same({ "OpenToCategory", 42 }, Stub.settingsCalls[#Stub.settingsCalls])
     -- the subpages by name; an unknown page opens the main one
     wfj("config collector")
-    assert.are.same({ "OpenToCategory", 43 }, Stub.settingsCalls[#Stub.settingsCalls])
-    wfj("config ABOUT")
     assert.are.same({ "OpenToCategory", 44 }, Stub.settingsCalls[#Stub.settingsCalls])
+    wfj("config ABOUT")
+    assert.are.same({ "OpenToCategory", 45 }, Stub.settingsCalls[#Stub.settingsCalls])
     wfj("config nope")
     assert.are.same({ "OpenToCategory", 42 }, Stub.settingsCalls[#Stub.settingsCalls])
     Stub.prints = {}

@@ -133,6 +133,7 @@ function Skills.onListRow(a, b, c)
   local content = row.Content
   if type(content) == "table" then -- a skill or a sub-header: its name is never ours
     WFJ.Labels.forbid(content.Name)
+    WFJ.Render.name(SURFACE, headerKey(row) .. ".name", content.Name, "namespell")
     return
   end
   if type(data) == "table" and data.isHeader == false then return end

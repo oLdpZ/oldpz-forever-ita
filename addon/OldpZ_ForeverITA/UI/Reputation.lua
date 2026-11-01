@@ -123,10 +123,13 @@ function Reputation.onRow(a, b)
   if type(row) ~= "table" then return end
   if type(row.Content) == "table" then -- an entry or a sub-header: a faction name and a standing bar
     WFJ.Labels.forbid(row.Content.Name)
+    WFJ.Render.name(SURFACE, rowKey(row) .. ".name", row.Content.Name, "namefaction")
     hookRow(row)
     Reputation.showBar(row)
   elseif type(row.Name) == "table" then -- a top-level header
-    WFJ.Labels.show(SURFACE, rowKey(row) .. ".header", row.Name, nil, HEADER_ONLY)
+    if WFJ.Labels.show(SURFACE, rowKey(row) .. ".header", row.Name, nil, HEADER_ONLY) == 0 then
+      WFJ.Render.name(SURFACE, rowKey(row) .. ".name", row.Name, "namefaction")
+    end
     WFJ.Render.updateBanner(SURFACE)
   end
 end

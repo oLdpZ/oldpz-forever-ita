@@ -4,8 +4,10 @@
 -- copied in. The same id from two shards is a generator bug and raises at load. Pure: no globals, no frames.
 -- Layout: Core/Const.lua (WFJ.SLOTS), ADR-008.
 local _, WFJ = ...
-local Data = { quest = {}, item = {}, spell = {}, gossip = {}, book = {}, ui = {}, objective = {}, area = {}, unit = {},
-  counts = { quest = 0, item = 0, spell = 0, gossip = 0, book = 0, ui = 0, objective = 0, area = 0, unit = 0 } }
+local Data = { quest = {}, item = {}, spell = {}, gossip = {}, book = {}, ui = {}, objective = {}, area = {},
+  nameitem = {}, namespell = {}, namezone = {}, namefaction = {}, unit = {},
+  counts = { quest = 0, item = 0, spell = 0, gossip = 0, book = 0, ui = 0, objective = 0, area = 0,
+    nameitem = 0, namespell = 0, namezone = 0, namefaction = 0, unit = 0 } }
 WFJ.Data = Data
 
 function Data.add(type_, tbl)

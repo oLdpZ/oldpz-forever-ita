@@ -298,6 +298,20 @@ end
 -- A line text the client marks secret (Forever: FontString:GetText is SecretReturnsForAspect Text) may not be
 -- compared or matched by addon code (an action button's tooltip in combat holds only secret lines); `type()` of one
 -- is still "string", so it is asked about explicitly.
+-- The tooltip's name line, last of all: everything above reads it as the client's English. A comparison tooltip
+-- has its "Currently Equipped" header on line 1, hence the search by text.
+local function showName(frame, kind, name)
+  local NameText = WFJ.NameText
+  if not NameText or type(name) ~= "string" or name == "" then return end
+  local lines = Tooltip.lines(frame)
+  for i = 1, math.min(2, #lines) do
+    if lines[i].text == name then
+      NameText.show(surfaceOf(frame), "name", lines[i].fs, kind, refitFor(frame))
+      return
+    end
+  end
+end
+
 local function anySecret(texts)
   local isSecret = Compat.resolve("issecretvalue")
   if type(isSecret) ~= "function" then return false end
@@ -1052,6 +1066,7 @@ function Tooltip.onItem(frame)
   end
   -- No run still has structural lines.
   local n = show(frame, "items", "item.description", id, lines, first, last, itemName, runArgs, learn, texts, sets)
+  showName(frame, "nameitem", itemName)
   traceFrame(frame, "readable item", id, lines, ("-> rendered %d"):format(n))
   -- the same tooltip one frame later, as the client drew it: a wrap that moves after this pass shows there
   local after = Tooltip.trace and Compat.resolve("C_Timer.After")
@@ -1095,6 +1110,7 @@ function Tooltip.onSpell(frame)
   end
   -- "spell.description": a bare "spell" would not name one field (spells also have `aura`)
   local n = show(frame, "spells", "spell.description", id, lines, i, i, spellName)
+  showName(frame, "namespell", spellName)
   traceFrame(frame, "readable spell", id, lines, ("-> rendered %d%s"):format(n, how))
   return n
 end
@@ -1374,6 +1390,7 @@ local function auraImpl(frame, method, unit, key, filter, clientLines)
     WFJ.Collector.record("spell", id, "aura", texts[i])
   end
   local n = show(frame, "spells", "spell.aura", id, lines, i, i, texts[1])
+  showName(frame, "namespell", texts[1])
   traceFrame(frame, "readable aura", id, lines, ("-> rendered %s, aura row %s, shipped aura text %s (%s)"):format(
     plain(n), plain(i), tostring(type(lookup) == "function" and lookup("spell.aura", id) ~= nil), how))
   return n

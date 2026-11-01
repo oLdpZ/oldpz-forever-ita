@@ -63,6 +63,9 @@ local TAIL = {
   "UI/GuildInvite.lua", "UI/InstanceAbandon.lua", "UI/LootHistory.lua",
   "UI/LossOfControl.lua", "UI/MajorFactionToast.lua", "UI/PartyPose.lua", "UI/PetHappiness.lua",
   "UI/PlayerChoice.lua", "UI/ReadyCheck.lua", "UI/StackSplit.lua", "UI/StreamingIcon.lua", "UI/ZoneText.lua",
+  "UI/NameText.lua",
+  "UI/ZoneNames.lua",
+  "Names/NameItem.lua", "Names/NameSpell.lua", "Names/NameZone.lua", "Names/NameFaction.lua",
   "UI/Tutorial.lua", -- the tutorial popup
   "UI/NewPlayerTutorial.lua",
   "UI/Popups.lua",
@@ -461,7 +464,10 @@ describe("addon loads in TOC order and answers /fita version", function()
       { "Tough Jerky", "Use: Restores 61 health over 18 sec. Must remain seated while eating.", "Sell Price: 5c" })
     assert.are.equal("Ripristina 61 punti Salute in 18 s. Devi restare seduto mentre mangi.",
       _G.GameTooltipTextLeft2:GetText())
+    assert.are.equal("Carne Essiccata Indurita", _G.GameTooltipTextLeft1:GetText()) -- the official name (UI/NameText)
+    WFJ.State.setArea("nameitem", false) -- the player chose English for item names
     assert.are.equal("Tough Jerky", _G.GameTooltipTextLeft1:GetText())
+    WFJ.State.setArea("nameitem", true)
     assert.are.equal("Sell Price: 5c", _G.GameTooltipTextLeft3:GetText()) -- the stub client defines no SELL_PRICE
     tt:Hide()
     assert.are.equal("Use: Restores 61 health over 18 sec. Must remain seated while eating.",

@@ -80,7 +80,8 @@ def test_real_toc_fields_and_load_order(root):
         "UI/EquipmentFlyout.lua", "UI/GhostFrame.lua", "UI/GuildInvite.lua", "UI/InstanceAbandon.lua",
         "UI/LootHistory.lua", "UI/LossOfControl.lua", "UI/MajorFactionToast.lua",
         "UI/PartyPose.lua", "UI/PetHappiness.lua", "UI/PlayerChoice.lua", "UI/ReadyCheck.lua", "UI/StackSplit.lua",
-        "UI/StreamingIcon.lua", "UI/ZoneText.lua",
+        "UI/StreamingIcon.lua", "UI/ZoneText.lua", "UI/NameText.lua", "UI/ZoneNames.lua",
+        "Names/NameItem.lua", "Names/NameSpell.lua", "Names/NameZone.lua", "Names/NameFaction.lua",
         "UI/Tutorial.lua",  # the tutorial popup
         "UI/NewPlayerTutorial.lua",
         "UI/Popups.lua",

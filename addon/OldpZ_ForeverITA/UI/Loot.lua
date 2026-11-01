@@ -38,6 +38,9 @@ local function get(key) return Compat.get(SURFACE, key) end
 function Loot.onRow(a, b)
   local row = a
   if a == Loot then row = b end
+  if type(row) == "table" and type(row.Text) == "table" then
+    WFJ.Render.name(SURFACE, rowKey(row.Text), row.Text, "nameitem")
+  end
   local quality = type(row) == "table" and row.QualityText or nil
   if type(quality) ~= "table" then return end
   WFJ.Labels.show(SURFACE, rowKey(quality), quality, nil, QUALITY)

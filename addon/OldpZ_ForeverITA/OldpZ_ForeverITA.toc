@@ -1235,6 +1235,12 @@ UI\ReadyCheck.lua
 UI\StackSplit.lua
 UI\StreamingIcon.lua
 UI\ZoneText.lua
+UI\NameText.lua
+UI\ZoneNames.lua
+Names\NameItem.lua
+Names\NameSpell.lua
+Names\NameZone.lua
+Names\NameFaction.lua
 UI\Tutorial.lua
 UI\NewPlayerTutorial.lua
 UI\Popups.lua

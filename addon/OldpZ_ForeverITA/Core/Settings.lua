@@ -204,6 +204,15 @@ Settings.define{ id = "names.style", kind = "choice", choices = { "it", "en" }, 
   it = "Nomi di luoghi, personaggi, fazioni, oggetti e abilità",
   choiceText = { it = "Italiani ufficiali", en = "Originali inglesi" },
   apply = function(v) WFJ.State.fire("names", v) end }
+-- The names the client shows by itself (UI/NameText), one choice per kind. Off: that kind stays English.
+Settings.define{ id = "area.nameItems", kind = "boolean", default = true, group = "names",
+  label = "Item names", it = "Nomi degli oggetti", apply = area("nameitem") }
+Settings.define{ id = "area.nameSpells", kind = "boolean", default = true, group = "names",
+  label = "Spell and skill names", it = "Nomi di incantesimi e abilità", apply = area("namespell") }
+Settings.define{ id = "area.nameZones", kind = "boolean", default = true, group = "names",
+  label = "Zone names", it = "Nomi delle zone", apply = area("namezone") }
+Settings.define{ id = "area.nameFactions", kind = "boolean", default = true, group = "names",
+  label = "Faction names", it = "Nomi delle fazioni", apply = area("namefaction") }
 -- The fix-report minimap button, on by default. UI/MinimapButton
 -- listens for the State event; its right-click menu's "Hide this button" turns this off.
 Settings.define{ id = "minimapButton", kind = "boolean", default = true,

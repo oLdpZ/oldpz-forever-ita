@@ -712,7 +712,9 @@ function QuestMap.onListUpdate()
             local okT, title = pcall(header.GetTitleRegion, header)
             if okT and type(title) == "table" then fs = title end
           end
-          WFJ.Labels.show(LIST, listHeaderKey(header), fs, nil, WFJ.Labels.families("QuestSort"))
+          if WFJ.Labels.show(LIST, listHeaderKey(header), fs, nil, WFJ.Labels.families("QuestSort")) == 0 then
+            WFJ.Render.name(LIST, listHeaderKey(header) .. ".zone", fs, "namezone")
+          end
         end
       end
     end

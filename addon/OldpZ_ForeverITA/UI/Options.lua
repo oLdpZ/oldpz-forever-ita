@@ -31,7 +31,11 @@ Options.PAGES = {
       rows = { "area.quests", "area.gossip", "area.books", "area.itemTooltips", "area.spellTooltips",
         "area.interface" } },
     { title = "section.markers", rows = { "marker.stale", "marker.missing" } },
+  } },
+  { id = "names", title = "page.names", sections = {
     { title = "section.names", rows = { "names.style" } },
+    { title = "section.clientNames",
+      rows = { "area.nameItems", "area.nameSpells", "area.nameZones", "area.nameFactions" } },
   } },
   { id = "collector", title = "page.collector", sections = {
     { title = "section.collector",

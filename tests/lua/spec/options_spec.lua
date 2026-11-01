@@ -43,19 +43,21 @@ describe("Settings pages from the registry and PAGES", function()
     for _, c in ipairs(O.controls) do if c.id == id then return c end end
   end
 
-  it("registers main, collector, about as one category and two subcategories; opens a page by id", function()
-    assert.are.same({ "main", "collector", "about" }, { list[1].id, list[2].id, list[3].id })
+  it("registers main, names, collector, about as one category and three subcategories; opens a page by id", function()
+    assert.are.same({ "main", "names", "collector", "about" },
+      { list[1].id, list[2].id, list[3].id, list[4].id })
     assert.are.equal(42, WFJ.Compat.registerOptions(list))
     local names = {}
     for _, c in ipairs(Stub.settingsCalls) do names[#names + 1] = c[1] end
     assert.are.same({ "RegisterCanvasLayoutCategory", "RegisterCanvasLayoutSubcategory",
-      "RegisterCanvasLayoutSubcategory", "RegisterAddOnCategory" }, names) -- the AddOns category last (the guide)
+      "RegisterCanvasLayoutSubcategory", "RegisterCanvasLayoutSubcategory",
+      "RegisterAddOnCategory" }, names) -- the AddOns category last (the guide)
     assert.are.equal(O.pages.main, Stub.settingsCalls[1][2])
     assert.are.equal("oLd_pZ Forever - Traduzione Italiana", Stub.settingsCalls[1][3])
-    assert.are.equal(O.pages.collector, Stub.settingsCalls[2][3])
-    assert.are.equal("English Collector", Stub.settingsCalls[2][4])
+    assert.are.equal(O.pages.collector, Stub.settingsCalls[3][3])
+    assert.are.equal("English Collector", Stub.settingsCalls[3][4])
     assert.is_true(WFJ.Compat.openOptions("collector"))
-    assert.are.same({ "OpenToCategory", 43 }, Stub.settingsCalls[#Stub.settingsCalls])
+    assert.are.same({ "OpenToCategory", 44 }, Stub.settingsCalls[#Stub.settingsCalls])
     -- no links on the pages: the category list switches pages
     for id, page in pairs(O.pages) do assert.is_nil(page.links, id) end -- no link buttons on any page
     assert.is_nil(WFJ.OptionsText.T["nav.main"]) -- and no copy left for them

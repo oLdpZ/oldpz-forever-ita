@@ -69,9 +69,21 @@ end
 
 local BUYBACK_TITLE = { only = { "MERCHANT_BUYBACK" } }
 
+-- The page's item names, MerchantItem<i>Name [verified: mainline/merchantframe.lua:298]; both tabs write them.
+local function showItemNames()
+  local i = 1
+  local fs = Compat.resolve("MerchantItem1Name")
+  while fs do
+    WFJ.Render.name(SURFACE, "item." .. i, fs, "nameitem")
+    i = i + 1
+    fs = Compat.resolve("MerchantItem" .. i .. "Name")
+  end
+end
+
 -- hooksecurefunc target: the merchant tab was written. → the number of dictionary words found.
 function Merchant.onMerchantInfo()
   WFJ.SurfaceState.drop(SURFACE, "ui.title") -- the NPC name now: the buyback title's record goes
+  showItemNames()
   return WFJ.Labels.showAll(SURFACE, { { "ui.page", get("pageText") } })
 end
 
@@ -80,6 +92,7 @@ end
 -- every SetTitle (the NPC's name never matches, so its SetTitle drops the record as onMerchantInfo does). A frame
 -- without a TitleContainer: the helper finds nothing and the title candidates are shown directly.
 function Merchant.onBuybackInfo()
+  showItemNames()
   local n = WFJ.Labels.title(SURFACE, get("frame"), BUYBACK_TITLE, "ui.title")
   if n > 0 then
     WFJ.Render.updateBanner(SURFACE)

@@ -30,7 +30,10 @@ local function named(entry)
 end
 
 -- Keyed by a 16-hex English hash, rows { ja, status } (ADR-005; book: the page's English, ADR-022).
-local KEYED = { gossip = true, book = true }
+-- name*: a name the client shows by itself, keyed by its English (Names/, UI/NameText).
+local KEYED = { gossip = true, book = true, nameitem = true, namespell = true, namezone = true,
+  namefaction = true }
+local NAME_KIND = { nameitem = true, namespell = true, namezone = true, namefaction = true }
 
 local function slotOf(kind)
   if type(kind) ~= "string" then return nil end
@@ -73,6 +76,7 @@ end
 
 function Lookup.keyed(type_, key)
   if not KEYED[type_] or key == nil then return nil end
+  if NAME_KIND[type_] and WFJ.Names and WFJ.Names.style() == "en" then return nil end
   local row = WFJ.Data[type_][key]
   if not row then return nil end
   return named({ ja = row[1], status = row[2] })

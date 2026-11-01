@@ -7,7 +7,8 @@ WFJ.SCHEMA = 1
 
 -- Translation areas (settings ids `area.<setting>` map onto these; surfaces ask State.areaEnabled(area)).
 -- "ui": Blizzard's own interface words; "books": the book / letter / plaque window.
-WFJ.AREAS = { "quests", "gossip", "items", "spells", "ui", "books" }
+WFJ.AREAS = { "quests", "gossip", "items", "spells", "ui", "books",
+  "nameitem", "namespell", "namezone", "namefaction" } -- names the client itself shows (UI/NameText)
 
 -- Marker messages: a short bilingual message, never a glyph, so it reads at a glance. A surface with a banner
 -- FontString (the quest window: the stone band under the NPC name) shows them there in MARKER_COLOR; a surface
