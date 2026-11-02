@@ -439,6 +439,8 @@ def to_mp3(wav: Path, out: Path) -> None:
         part.unlink(missing_ok=True)
 
 
+to_mp3.needs_lame = True  # type: ignore[attr-defined]  # the one encoder that runs lame
+
 def shift_pitch(wav: Path, semitones: float, out: Path) -> None:
     """`wav` moved by `semitones`, same length, into `out` (ffmpeg's rubberband: -2 is a deeper voice)."""
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-af",
@@ -494,7 +496,7 @@ def generate(  # noqa: PLR0913, PLR0915 - the engine, encoder, log and sleep are
     if not work:
         return out
     encode = encode or to_mp3
-    if encode is to_mp3 and shutil.which(LAME[0]) is None:
+    if getattr(encode, "needs_lame", False) and shutil.which(LAME[0]) is None:
         # checked before the first paid take: a take that cannot be encoded is a take paid for nothing
         out["stopped"] = f"{LAME[0]} is not installed: it encodes the MP3s"
         return out

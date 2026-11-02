@@ -544,6 +544,7 @@ def test_generate_stopped_by_the_engine_exits_with_a_resume_hint(world, monkeypa
     monkeypatch.setenv(gemini.KEY_VAR, "k")
     monkeypatch.setattr(voice_make, "make_engine", lambda key, model: FakeEngine(busy=True))
     monkeypatch.setattr(voice_make.time, "sleep", lambda _s: None)
+    monkeypatch.setattr(voice_make, "to_mp3", fake_encode)  # never reached: the engine is busy first
     args = ["generate", "--scope", "tirisfal", "--store", str(world.store), "--config", str(world.config)]
     assert voice_make.run(args, root=world.data) == 1
     err = capsys.readouterr().err
