@@ -63,9 +63,10 @@
 --     appended line is shown by HelpTooltip.appended (itemAppended), the item's lines left to UI/Tooltip;
 --   the output log: an enchant result's ItemContainer.Text = ENCHANTED_TOOLTIP_LINE with the item's name kept, written
 --     when the item loads (craftingoutputlog.lua:29–40); each pooled element's Text is followed (SetText post-hook).
--- Never touched: the EditBoxes (both search boxes, the create-count box), the recipe's name, sub text and
---   description (OutputText, OutputSubText, Description: item / spell data), the list's recipe names (client data:
---   blizzard_professionsrecipelist.lua:247) and any category name with no TradeSkillCategory row, the rank bar
+-- Names (area namespell / nameitem, UI/NameText: Blizzard's official names, never dictionary words): the list's
+--   recipe names (blizzard_professionsrecipelist.lua:247), the form's output name and its required reagents.
+-- Never touched: the EditBoxes (both search boxes, the create-count box), the recipe's sub text and description
+--   (OutputSubText, Description: item / spell data), any category name with no TradeSkillCategory row, the rank bar
 --   (joins the profession name). The window title is UI/Professions' (the same frame; a profession's name here).
 local _, WFJ = ...
 local Crafting = {}
@@ -137,6 +138,9 @@ local FORM_WRITTEN = {
   { "requiredTools", TOOLS }, { "recraftTools", TOOLS }, { "trackRecipe", only("PROFESSIONS_TRACK_RECIPE") },
 }
 
+-- a recipe's name: the spell's, or the item it makes
+local RECIPE = { "namespell", "nameitem" }
+
 local function get(key) return Compat.get(SURFACE, key) end
 local function declare()
   for key, names in pairs(CANDIDATES) do Compat.declare(SURFACE, key, names) end
@@ -170,8 +174,47 @@ function Crafting.showEnchantSlot()
   return n
 end
 
+-- The form's names: the recipe's output (OutputText, the item's name in its quality colour or the recipe's,
+-- UpdateOutputItem; SetTextToFit sized it to the English, so it is sized again) and each required reagent slot's
+-- Name ("|c…3/5 Linen Cloth|r", ProfessionsReagentSlotMixin:Update; form.reagentSlots[section] lists the slots)
+-- [verified: forever blizzard_professionstemplates/blizzard_professionsrecipeschematicform.lua:767, 861–864,
+-- 1353–1384; blizzard_professionsrecipereagentslot.lua:113–129, 156–252]. Slots refill when an item loads: again a
+-- moment later.
+local function showFormNames()
+  local form = get("form")
+  if type(form) ~= "table" then return end
+  local out = form.OutputText
+  local function refit()
+    local fit = Compat.resolve("SetTextToFit")
+    if type(fit) == "function" and type(out) == "table" and type(form.GetOutputItemMaxWidth) == "function" then
+      local multiline = type(form.ShouldAllowMultiline) == "function" and form:ShouldAllowMultiline() or false
+      fit(out, out:GetText(), form:GetOutputItemMaxWidth(), multiline)
+    end
+  end
+  WFJ.Render.name(SURFACE, "output.name", out, RECIPE, refit)
+  local sections = form.reagentSlots
+  if type(sections) ~= "table" then return end
+  for section, slots in pairs(sections) do
+    if type(slots) == "table" then
+      for i, slot in ipairs(slots) do
+        if type(slot) == "table" and type(slot.Name) == "table" then
+          WFJ.Render.name(SURFACE, "reagent." .. tostring(section) .. "." .. i, slot.Name, "nameitem")
+        end
+      end
+    end
+  end
+end
+function Crafting.showFormNames()
+  showFormNames()
+  local after = Compat.resolve("C_Timer.After")
+  if type(after) == "function" then after(0.2, showFormNames) end
+end
+
 -- hooksecurefunc target (SchematicForm:Init): the words the form rewrites per recipe. → the number found.
-function Crafting.onFormInit() return showList(FORM_WRITTEN) + Crafting.showEnchantSlot() end
+function Crafting.onFormInit()
+  Crafting.showFormNames()
+  return showList(FORM_WRITTEN) + Crafting.showEnchantSlot()
+end
 
 -- hooksecurefunc target (OpenProfessionsItemFlyout(anchorTo, owner, behavior)): the flyout's two fixed words. → the
 -- number found.
@@ -225,8 +268,9 @@ function Crafting.onListRow(a, b, c)
   local data = node
   if type(node) == "table" and type(node.GetData) == "function" then data = node:GetData() end
   if type(data) ~= "table" then return end
-  if data.recipeInfo then -- the recipe's name is never ours; its skill-up icon owns a one-line tooltip
-    WFJ.Labels.forbid(row.Label)
+  if data.recipeInfo then -- the recipe's name: an official name, never a dictionary word; its skill-up icon owns a
+    WFJ.Labels.forbid(row.Label) -- one-line tooltip
+    WFJ.Render.name(SURFACE, rowKey(row) .. ".name", row.Label, RECIPE)
     if type(row.SkillUps) == "table" then WFJ.HelpTooltip.register(row.SkillUps, SKILL_UP) end
     return
   end
@@ -266,6 +310,9 @@ function Crafting.setup()
   end
   if type(form) == "table" and type(form.Update) == "function" then -- the required tools line
     hooksecurefunc(form, "Update", Crafting.onFormInit)
+  end
+  if type(form) == "table" and type(form.UpdateOutputItem) == "function" then -- the output's name, once loaded
+    hooksecurefunc(form, "UpdateOutputItem", Crafting.showFormNames)
   end
   for _, key in ipairs({ "createButton", "createAllButton" }) do
     local button = get(key)

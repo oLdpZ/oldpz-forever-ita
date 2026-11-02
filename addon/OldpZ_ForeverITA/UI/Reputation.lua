@@ -148,6 +148,7 @@ end
 function Reputation.onPaneTitle()
   local d = detail()
   local n = WFJ.Labels.show(SURFACE, "detail.standing", type(d) == "table" and d.Subtitle or nil, nil, BAR_ONLY)
+  WFJ.Render.name(SURFACE, "detail.name", type(d) == "table" and d.Title or nil, "namefaction") -- the faction name
   WFJ.Render.updateBanner(SURFACE)
   return n
 end

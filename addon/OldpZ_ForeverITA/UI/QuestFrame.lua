@@ -118,6 +118,7 @@ local CANDIDATES = {
   timerText         = { "QuestInfoTimerText" },
   showTimer         = { "QuestInfo_ShowTimer" },
   showRewards       = { "QuestInfo_ShowRewards" },
+  progressItemsUpdate = { "QuestFrameProgressItems_Update" },
 }
 
 -- A declared client function, called only when it is one. → its returns | nil
@@ -365,6 +366,25 @@ function QuestFrame.onShowRewards()
   return 0
 end
 
+-- The progress panel's required items: QuestFrameProgressItems_Update writes QuestProgressItem<i>Name from
+-- GetQuestItemInfo, called by name from the panel's OnShow and again on QUEST_ITEM_UPDATE once an item's data arrives
+-- [verified: forever mainline/questframe.lua:75–84, 223, 230–295]. Again a moment later, as for the rewards.
+QuestFrame.PROGRESS_NAMES = "questframe.progressnames"
+local function showProgressNames()
+  local i = 1
+  local fs = Compat.resolve("QuestProgressItem1Name")
+  while type(fs) == "table" do
+    WFJ.Render.name(QuestFrame.PROGRESS_NAMES, "required." .. i, fs, "nameitem")
+    i = i + 1
+    fs = Compat.resolve("QuestProgressItem" .. i .. "Name")
+  end
+end
+function QuestFrame.onProgressItems()
+  showProgressNames()
+  local after = Compat.resolve("C_Timer.After")
+  if type(after) == "function" then after(0.2, showProgressNames) end
+end
+
 -- HookScript target on QuestFrameProgressPanel's OnShow: runs after the client's writer.
 function QuestFrame.onProgress()
   return QuestFrame.showPanel("progress")
@@ -443,6 +463,7 @@ end
 function QuestFrame.release()
   local n = 0
   for _, surface in ipairs(QuestFrame.SURFACES) do n = n + WFJ.Render.release(surface) end
+  n = n + WFJ.Render.release(QuestFrame.PROGRESS_NAMES) + WFJ.Render.release("questframe.rewardnames")
   return n + WFJ.Render.release(QuestFrame.GREETING)
 end
 
@@ -496,6 +517,9 @@ function QuestFrame.init(d)
   end
   if type(Compat.get(DECLARE, "showTimer")) == "function" then
     hooksecurefunc("QuestInfo_ShowTimer", QuestFrame.showTimer)
+  end
+  if type(Compat.get(DECLARE, "progressItemsUpdate")) == "function" then
+    hooksecurefunc("QuestFrameProgressItems_Update", QuestFrame.onProgressItems)
   end
   local frame = Compat.get(DECLARE, "frame")
   if type(frame) == "table" and type(frame.CreateFontString) == "function" and type(frame.GetFrameLevel) == "function"

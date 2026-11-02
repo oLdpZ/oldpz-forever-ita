@@ -486,6 +486,18 @@ describe("addon loads in TOC order and answers /fita version", function()
     tt:Hide()
   end)
 
+  it("shows the progress panel's required items by their official names, on the real shards", function()
+    -- QuestFrameProgressItems_Update writes QuestProgressItem<i>Name (mainline/questframe.lua:230–295)
+    local one = Stub.namedFontString("QuestProgressItem1Name", "Tough Jerky")
+    local two = Stub.namedFontString("QuestProgressItem2Name", "Nothing Of The Sort")
+    finally(function() _G.QuestProgressItem1Name, _G.QuestProgressItem2Name = nil, nil end)
+    _G.QuestFrameProgressItems_Update()
+    assert.are.equal("Carne Essiccata Indurita", one:GetText())
+    assert.are.equal("Nothing Of The Sort", two:GetText()) -- no official name: left alone
+    WFJ.QuestFrame.release()
+    assert.are.equal("Tough Jerky", one:GetText())
+  end)
+
   it("prints the TOC version on /fita version", function()
     Stub.prints = {}
     SlashCmdList.OFI("version")

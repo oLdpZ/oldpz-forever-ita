@@ -20,6 +20,8 @@ describe("NameText.show", function()
       },
       Lookup = { keyed = function(kind, key)
         if kind == "namezone" and key == "k:Elwynn Forest" then return { ja = "Foresta di Elwynn" } end
+        if kind == "nameitem" and key == "k:Linen Cloth" then return { ja = "Tela di Lino" } end
+        if kind == "namespell" and key == "k:Linen Bandage" then return { ja = "Benda di Lino" } end
       end },
       Render = { show = function(surface, key, widget, en, area, kind, id, ctx)
         shown[#shown + 1] = { surface = surface, key = key, fs = widget, en = en, area = area, kind = kind, id = id,
@@ -67,5 +69,30 @@ describe("NameText.show", function()
     assert.equals(0, NameText.show("s", "r", nil, "namezone"))
     assert.equals(0, NameText.show("s", "r", fs(""), "namezone"))
     assert.equals(0, NameText.show("s", "r", fs(nil), "namezone"))
+  end)
+  it("keeps a colour code and a reagent count around the name", function()
+    local text = "|cffffffff3/5 Linen Cloth|r"
+    assert.equals(1, NameText.show("s", "r", fs(text), "nameitem"))
+    local call = shown[1]
+    assert.equals(text, call.en)
+    assert.equals("k:Linen Cloth", call.id)
+    assert.same({ "|cffffffff3/5 ", "|r" }, call.ctx.wrap)
+  end)
+
+  it("keeps a bare count before the name", function()
+    assert.equals(1, NameText.show("s", "r", fs("5 Linen Cloth"), "nameitem"))
+    assert.same({ "5 ", "" }, shown[1].ctx.wrap)
+  end)
+
+  it("shows a plain name without a wrap", function()
+    NameText.show("s", "r", fs("Linen Cloth"), "nameitem")
+    assert.is_nil(shown[1].ctx.wrap)
+  end)
+
+  it("tries several kinds in order, the one that knows the name being the area", function()
+    assert.equals(1, NameText.show("s", "r", fs("Linen Bandage"), { "nameitem", "namespell" }))
+    assert.equals("namespell", shown[1].area)
+    assert.equals(1, NameText.show("s", "r2", fs("Linen Cloth"), { "nameitem", "namespell" }))
+    assert.equals("nameitem", shown[2].area)
   end)
 end)

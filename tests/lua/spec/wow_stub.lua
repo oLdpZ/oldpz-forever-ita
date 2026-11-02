@@ -631,6 +631,8 @@ function Stub.installQuestAPI()
   _G.QuestInfo_ShowTimer = function() end
   -- the rewards redraw the client runs on QUEST_ITEM_UPDATE (questframe.lua:75–84); the spec writes its English
   _G.QuestInfo_ShowRewards = function() end
+  -- the progress panel's required items writer, run on its OnShow and QUEST_ITEM_UPDATE (questframe.lua:80, 223)
+  _G.QuestFrameProgressItems_Update = function() end
   CreateFrame("Frame", "MapQuestInfoRewardsFrame")
   CreateFrame("Frame", "QuestFrameGreetingPanel")
   Stub.namedFontString("CurrentQuestsText", "Current Quests")

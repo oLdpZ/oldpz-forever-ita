@@ -16,7 +16,27 @@ local function secret(value)
   return type(isSecret) == "function" and isSecret(value) and true or false
 end
 
--- `fs` as record `recKey` of `surface`, if its text is a name of `kind`. `refit` (optional) lays its owner out again.
+-- The ways a line can hold a name: the whole text, then without a colour code around it, then also without a count
+-- before it ("3/5 " or "5 ", a reagent slot). → list of { before, words, after }
+local function readings(text)
+  local list = { { "", text, "" } }
+  local before, rest, after = "", text, ""
+  local code, inner = text:match("^(|c%x%x%x%x%x%x%x%x)(.*)$")
+  if code then
+    before, rest = code, inner
+    local body = rest:match("^(.*)|r$")
+    if body then rest, after = body, "|r" end
+    list[#list + 1] = { before, rest, after }
+  end
+  local count, words = rest:match("^(%d+/%d+ )(.+)$")
+  if not count then count, words = rest:match("^(%d+ )(.+)$") end
+  if count then list[#list + 1] = { before .. count, words, after } end
+  return list
+end
+
+-- `fs` as record `recKey` of `surface`, if its text is a name of `kind` (a kind, or a list tried in order: the kind
+-- that knows the name is its area). A colour code and a count around the name are kept. `refit` (optional) lays its
+-- owner out again.
 -- → 1 when it holds a name (shown, or still ours), else 0 and an earlier record is dropped: never restored
 function NameText.show(surface, recKey, fs, kind, refit)
   if type(fs) ~= "table" or type(fs.GetText) ~= "function" then return 0 end
@@ -27,11 +47,19 @@ function NameText.show(surface, recKey, fs, kind, refit)
   end
   local rec = WFJ.SurfaceState.get(surface, recKey)
   if rec and rec.fs == fs and rec.applied ~= nil and en == rec.applied then return 1 end
-  local key = type(en) == "string" and en ~= "" and NameText.key(en) or nil
-  if not key or not WFJ.Lookup.keyed(kind, key) then
-    WFJ.SurfaceState.drop(surface, recKey)
-    return 0
+  if type(en) == "string" and en ~= "" then
+    local kinds = type(kind) == "table" and kind or { kind }
+    for _, r in ipairs(readings(en)) do
+      local key = NameText.key(r[2])
+      for _, k in ipairs(kinds) do
+        if WFJ.Lookup.keyed(k, key) then
+          local wrap = (r[1] ~= "" or r[3] ~= "") and { r[1], r[3] } or nil
+          WFJ.Render.show(surface, recKey, fs, en, k, k, key, { refit = refit, compact = true, wrap = wrap })
+          return 1
+        end
+      end
+    end
   end
-  WFJ.Render.show(surface, recKey, fs, en, kind, kind, key, { refit = refit, compact = true })
-  return 1
+  WFJ.SurfaceState.drop(surface, recKey)
+  return 0
 end
