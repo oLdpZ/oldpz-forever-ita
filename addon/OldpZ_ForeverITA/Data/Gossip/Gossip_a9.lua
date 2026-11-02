@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["a93eb954414f750c"] = { "Usa la barra delle azioni del tonk, sopra la tua barra delle azioni normale, per attaccare gli altri tonk.", "." },
   ["a942e318b9d4d740"] = { "Be', il dovere chiama, no? Prima la campana... per darti vigore!", "." },
   ["a9490d47203b09db"] = { "Sei <fortunato/fortunata> ad essere <venuto/venuta> a Darnassus, dove tra i nostri istruttori puoi trovare una Cacciatrice esperta come Jocaste. Ti invito a farle visita nell'⟦Cenarion Enclave=Enclave Cenariana⟧ e a chiederle di farti da maestra.", "." },
-  ["a9762d6f21215ef5"] = { "Bronzebeard è sparito di nuovo! Quel nano non ha preso proprio niente del buon senso di suo fratello.", "." },
+  ["a9762d6f21215ef5"] = { "Barbabronzea è sparito di nuovo! Quel nano non ha preso proprio niente del buon senso di suo fratello.", "." },
   ["a97767997531d493"] = { "Salute, <fratello/sorella>... Vorrei un momento del tuo tempo, se posso.\n\nNoi tauren abbiamo sopportato molte prove e tribolazioni per fondare la nostra patria. Ora ci troviamo a corto di stoffa. Se hai materiali da parte, ti chiedo di donarli. Aiutandoci ti guadagneresti di certo la gratitudine dei tauren di ogni dove!", "." },
   ["a97b06ab7955d2c1"] = { "Finalmente... la morte! Maledetto Hakkar! Maledetto!", "." },
   ["a97d957783375795"] = { "Dicono che Duriel sia una feroce elfa della notte. Sarà un bel combattimento!", "." },

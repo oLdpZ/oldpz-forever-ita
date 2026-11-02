@@ -629,7 +629,7 @@ WFJ.Data.add("ui", {
   ["BroadcastText:329301"] = { "Gli stoici nani di Forgiardente hanno passato innumerevoli generazioni a estrarre tesori dalle profondità della terra.", 0x00b7c3df, "." },
   ["BroadcastText:329302"] = { "Nascosti nella loro inespugnabile roccaforte nella montagna di Forgiardente, di rado si avventuravano oltre le vette invernali di Dun Morogh.", 0xb25198f6, "." },
   ["BroadcastText:329303"] = { "Di recente, però, i nani hanno portato alla luce una serie di rovine che custodivano i segreti della loro antica eredità.", 0x6b2fb894, "." },
-  ["BroadcastText:329304"] = { "Deciso a scoprire la verità sulle leggendarie origini del suo popolo, il grande re Magni Bronzebeard ha ordinato ai nani di passare dall'estrazione mineraria all'archeologia.", 0x314e1092, "." },
+  ["BroadcastText:329304"] = { "Deciso a scoprire la verità sulle leggendarie origini del suo popolo, il grande re Magni Barbabronzea ha ordinato ai nani di passare dall'estrazione mineraria all'archeologia.", 0x314e1092, "." },
   ["BroadcastText:329305"] = { "Come parte della Grande Alleanza, i valorosi eserciti nanici sono stati chiamati a combattere la spietata Orda in terre lontane.", 0x273de2b6, "." },
   ["BroadcastText:329306"] = { "In questi tempi pericolosi, la difesa del regno della montagna spetta a nani coraggiosi come te.", 0xe059bcd5, "." },
   ["BroadcastText:329307"] = { "Gli spiriti degli antichi re vegliano su di te, e le montagne stesse sono la tua forza.", 0xd4ea9c5a, "." },
