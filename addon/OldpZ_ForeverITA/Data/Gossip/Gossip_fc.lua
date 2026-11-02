@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["fc42ea199c54b608"] = { "Eunice Burch vendere pezzi avanzati. Tu trovare lei in ⟦Trade Quarter=Quartiere del Commercio⟧.", "." },
   ["fc44303c0f91e104"] = { "Salute, <ragazzo/ragazza>. Sono ⟦Grelin Whitebeard=Grelin Barbabianca⟧. Sono qui per valutare la minaccia rappresentata dal numero crescente di troll nella ⟦Coldridge Valley=Valle Crestafredda⟧. Cosa ho scoperto? È un po' preoccupante...", "." },
   ["fc4f3bba7130783c"] = { "Le macchine d'assedio sono l'orgoglio di ogni pilota!", "." },
-  ["fc504de7d1b43afd"] = { "Proprio così. Nefarian, progenie di Alamorte, ora governa i Bastioni. Rend è agli ordini del drago.\n\nSe solo riuscissi in qualche modo a passare per le Halls of Ascension.\n\n<Eitrigg sospira.>\n\nAhimè, solo chi lo Stormo dei Draghi Neri ritiene degno ottiene il privilegio di ascendere.", "." },
+  ["fc504de7d1b43afd"] = { "Proprio così. Nefarian, progenie di Alamorte, ora governa i Bastioni. Rend è agli ordini del drago.\n\nSe solo riuscissi in qualche modo a passare per le Sale dell'Ascesa.\n\n<Eitrigg sospira.>\n\nAhimè, solo chi lo Stormo dei Draghi Neri ritiene degno ottiene il privilegio di ascendere.", "." },
   ["fc55f2c80130098c"] = { "Ottimo lavoro. Sei <pronto/pronta> a compiere una missione per conto mio? Non conosco nessuno più qualificato di te.", "." },
   ["fc5c563e57a41ffa"] = { "Ignorando la battaglia che infuriava intorno a lui, Latherion abbassò la guardia per stringere a sé la sua amata nei suoi ultimi istanti. Ma i demoni non gli diedero tregua e lo abbatterono in fretta.", "." },
   ["fc66a30bb66c3957"] = { "Hai rovinato le tue terre, non rovinerai le mie.", "." },

@@ -32,7 +32,7 @@ WFJ.Data.add("item", {
   [286280] = { "Il giovane Arthas deve imparare la pazienza per temperare il suo potere. Pregherò perché un giorno impari a guidare con premura anziché con la forza.", 0xbb389a87, "u" },
   [286281] = { "Ho già un regno in prospettiva, una terra da governare. Cosa chiedere? Forse un pasticcino gelato...", 0xd1122935, "u" },
   [286283] = { "Un giorno vorrei ritirarmi in una mia piccola tenuta ordinata, con un branco di cani a farmi compagnia.", 0xd20396c6, "u" },
-  [286284] = { "Brann Bronzebeard è stato qui.", 0x851089b6, "u" },
+  [286284] = { "Brann Barbabronzea è stato qui.", 0x851089b6, "u" },
   [286287] = { "A volte... vorrei che arrivasse qualcuno a darmi un lungo, grande abbraccio.", 0xc021960f, "u" },
   [286288] = { "Arthas, amore mio, ti prego, torna da me.", 0x75d29e0f, "u" },
   [286290] = { "Ascolta, piccola fontana dei desideri. Mi darai tutto il tuo potere, se sai cosa ti conviene.", 0xdae8a1fb, "u" },

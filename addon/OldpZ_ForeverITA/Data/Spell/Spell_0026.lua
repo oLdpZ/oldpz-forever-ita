@@ -119,7 +119,7 @@ WFJ.Data.add("spell", {
   [26210] = { "Passa all'abito natalizio di Prince Tortheldrin.", "Auguri!", 0x1c7853a7, 0xd7dc8d0a, "uu" },
   [26211] = { "Infligge i danni dell'arma e $N1 danni aggiuntivi a un nemico, riducendo la sua velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x879135b5, 0x08fe79f0, "uu" },
   [26212] = { "Passa all'abito natalizio di Emperor Dagran Thaurissan.", "Auguri!", 0x586f7550, 0xd7dc8d0a, "uu" },
-  [26214] = { "Passa all'abito natalizio di Warchief Rend Blackhand.", "Auguri!", 0x449228c5, 0xd7dc8d0a, "uu" },
+  [26214] = { "Passa all'abito natalizio del Capoguerra Rend Manonera.", "Auguri!", 0x449228c5, 0xd7dc8d0a, "uu" },
   [26215] = { "Passa all'abito natalizio di War Master Voone.", "Auguri!", 0x60fc3f6c, 0xd7dc8d0a, "uu" },
   [26218] = { nil, "Hai baciato qualcuno sotto un ramo di vischio!", nil, 0x3fac5a9a, "mu" },
   [26220] = { "Z precedente = $N1", "$N1 danni inflitti ogni $D1.", 0x75898622, 0x17e4d127, "uu" },
