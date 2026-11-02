@@ -319,3 +319,75 @@ def read_all_quest_speakers(path: Path) -> tuple[dict[int, list[int]], set[int],
     finally:
         db.close()
     return read_quest_speakers(path, quests)
+
+
+# Where things stand, for a voice scope drawn on the map: a quest's zone, the creatures' and the text objects'
+# spawn points (x north, y west, as the world map's bounds, z up), and the page chains of a sign or a book.
+_PLACE_NEEDS = {
+    "quest_template": ("entry", "patch", "ZoneOrSort"),
+    "creature": ("id", "map", "position_x", "position_y", "position_z"),
+    "gameobject_template": ("entry", "patch", "type", "data0"),
+    "gameobject": ("id", "map", "position_x", "position_y", "position_z"),
+    "page_text": ("entry", "next_page"),
+}
+TEXT_OBJECT = 9  # gameobject_template.type of a sign, a plaque or a lying book: data0 is its first page
+
+
+def read_quest_zones(path: Path) -> dict[int, int]:
+    """quest id → `ZoneOrSort` of its highest-patch row (a zone id, or a negative quest sort)."""
+    db = _connect(path, _PLACE_NEEDS)
+    try:
+        rows = _query(db, path,
+            "SELECT q.entry, q.ZoneOrSort FROM quest_template q"
+            " JOIN (SELECT entry, MAX(patch) AS patch FROM quest_template GROUP BY entry) m"
+            " ON q.entry = m.entry AND q.patch = m.patch",
+        )
+    finally:
+        db.close()
+    return {int(e): int(z) for e, z in rows}
+
+
+def read_creature_spawns(path: Path) -> dict[int, list[tuple[int, float, float, float]]]:
+    """creature id → its spawn points (map, x, y, z), sorted. A spawn that may be one of several creatures
+    (`id2`..`id5`) counts for each."""
+    db = _connect(path, _PLACE_NEEDS)
+    try:
+        have = {row[1] for row in db.execute("PRAGMA table_info(creature)")}
+        slots = [c for c in ("id", "id2", "id3", "id4", "id5") if c in have]
+        sql = " UNION ".join(
+            f"SELECT {c}, map, position_x, position_y, position_z FROM creature WHERE {c} <> 0" for c in slots
+        )
+        rows = _query(db, path, sql)
+    finally:
+        db.close()
+    out: dict[int, list[tuple[int, float, float, float]]] = {}
+    for c, m, x, y, z in sorted(rows):
+        out.setdefault(int(c), []).append((int(m), float(x), float(y), float(z)))
+    return out
+
+
+def read_text_objects(path: Path, map_id: int) -> list[tuple[int, float, float, float]]:
+    """(first page, x, y, z) of every text object (sign, plaque, book on a table) spawned on `map_id`, its
+    highest-patch template; sorted, distinct."""
+    db = _connect(path, _PLACE_NEEDS)
+    try:
+        rows = _query(db, path,
+            "SELECT DISTINCT t.data0, g.position_x, g.position_y, g.position_z FROM gameobject_template t"
+            " JOIN (SELECT entry, MAX(patch) AS patch FROM gameobject_template GROUP BY entry) m"
+            " ON t.entry = m.entry AND t.patch = m.patch"
+            " JOIN gameobject g ON g.id = t.entry"
+            f" WHERE t.type = {TEXT_OBJECT} AND t.data0 <> 0 AND g.map = {int(map_id)}",
+        )
+    finally:
+        db.close()
+    return sorted((int(p), float(x), float(y), float(z)) for p, x, y, z in rows)
+
+
+def read_next_pages(path: Path) -> dict[int, int]:
+    """page id → the page after it (0: the last)."""
+    db = _connect(path, _PLACE_NEEDS)
+    try:
+        rows = _query(db, path, "SELECT entry, next_page FROM page_text")
+    finally:
+        db.close()
+    return {int(e): int(n) for e, n in rows}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audizione delle voci</title>
+<style>
+body { font: 16px/1.5 system-ui, sans-serif; max-width: 62rem; margin: 0 auto; padding: 1rem; background: #fdfcf8; color: #222; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.25rem; margin: 0 0 .25rem; }
+section.creatura { border: 1px solid #c9c2ad; border-radius: .4rem; padding: .75rem 1rem; margin: 1rem 0; background: #fff; }
+.voce { margin: .5rem 0 0; padding-top: .5rem; border-top: 1px dashed #d8d2bf; }
+.voce dl { margin: 0 0 .5rem; }
+.voce dt { font-weight: 600; float: left; clear: left; margin-right: .5rem; }
+.voce dd { margin: 0 0 .15rem; }
+ul.battute { list-style: none; padding: 0; margin: 0; }
+ul.battute li { margin: .5rem 0; }
+.file { font: .85rem monospace; color: #666; }
+.testo { margin: .15rem 0; }
+audio { width: 100%; max-width: 30rem; display: block; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #c9c2ad; padding: .35rem .5rem; text-align: left; vertical-align: top; }
+th { background: #efe9d6; }
+.manca { color: #a33; }
+</style>
+</head>
+<body>
+<h1>Audizione delle voci</h1>
+<p>Ambito: <strong>$scope</strong>. Le prime $per battute di ogni parlante, $files file.</p>
+$creatures
+<h2>Versioni parlate</h2>
+$spoken
+<h2>Bloccate</h2>
+$blocked
+</body>
+</html>

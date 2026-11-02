@@ -140,6 +140,82 @@ function Stub.removeSettingsAPI()
   _G.Settings = nil
 end
 
+-- The voice player's client calls (opt-in, after Stub.install): PlaySoundFile / StopSound recorded in Stub.voice,
+-- the dialog CVar through C_CVar, C_Timer.After / NewTimer queued until Stub.fireTimers runs them, and the frame
+-- methods the voice panel uses that the shared frames lack (a PlayerModel's model calls; any other setter is
+-- accepted and does nothing: what the client draws is the in-game checklist's).
+-- Stub.voice = { sounds = { { path, channel } }, stopped = { handle }, cvars, timers = { { delay, fn } },
+--   willPlay = true }; Stub.modelFile is the file id a loaded model reports (0 = no model).
+function Stub.installVoiceAPI()
+  local v = { sounds = {}, stopped = {}, cvars = { Sound_EnableDialog = "1" }, timers = {}, willPlay = true }
+  Stub.voice, Stub.modelFile = v, 118355
+  _G.PlaySoundFile = function(path, channel)
+    v.sounds[#v.sounds + 1] = { path = path, channel = channel }
+    if not v.willPlay then return false end
+    return true, #v.sounds
+  end
+  _G.StopSound = function(handle) v.stopped[#v.stopped + 1] = handle end
+  _G.C_CVar = {
+    GetCVar = function(name) return v.cvars[name] end,
+    SetCVar = function(name, value) v.cvars[name] = tostring(value) end,
+  }
+  local function timer(delay, fn)
+    local t = { delay = delay, fn = fn }
+    function t.Cancel(self) self.cancelled = true end
+    v.timers[#v.timers + 1] = t
+    return t
+  end
+  _G.C_Timer = { After = function(delay, fn) timer(delay, fn) end, NewTimer = timer,
+    NewTicker = function(delay, fn) return timer(delay, fn) end }
+  local NOOP = function() end
+  -- only setters: a template's child keys (frame.Title) stay nil
+  local function relax(t)
+    return setmetatable(t, { __index = function(_, k)
+      if type(k) == "string" and (k:match("^Set%u") or k:match("^Enable")) then return NOOP end
+    end })
+  end
+  local create = _G.CreateFrame
+  _G.CreateFrame = function(kind, name, parent, template)
+    local f = create(kind, name, parent, template)
+    function f:SetShown(on) if on then self:Show() else self:Hide() end end
+    function f:ClearAllPoints() self.point = nil end
+    if kind == "PlayerModel" then
+      function f:SetUnit(u) self.unit, self.creature = u, nil end
+      function f:SetCreature(id) self.creature, self.unit = id, nil end
+      function f:ClearModel() self.unit, self.creature = nil, nil end
+      function f:GetModelFileID() return (self.unit or self.creature) and Stub.modelFile or 0 end
+      function f:SetAnimation(a) self.animation = a end
+    end
+    local createTexture = f.CreateTexture
+    function f:CreateTexture(...)
+      local t = createTexture(self, ...)
+      function t.SetShown(tx, on) tx.shown = on and true or false end
+      return relax(t)
+    end
+    local createFontString = f.CreateFontString
+    function f:CreateFontString(...) return relax(createFontString(self, ...)) end
+    return relax(f)
+  end
+  return v
+end
+
+-- Runs the queued timers once (those of `delay` only, when given); a timer they queue waits for the next call.
+function Stub.fireTimers(delay)
+  local v = Stub.voice
+  local due, keep = {}, {}
+  for _, t in ipairs(v.timers) do
+    if delay == nil or t.delay == delay then due[#due + 1] = t else keep[#keep + 1] = t end
+  end
+  v.timers = keep
+  for _, t in ipairs(due) do if not t.cancelled then t.fn() end end
+  return #due
+end
+
+function Stub.removeVoiceAPI()
+  _G.PlaySoundFile, _G.StopSound, _G.C_CVar, _G.C_Timer = nil, nil, nil, nil
+  Stub.voice = nil
+end
+
 -- Keys and bindings: side polls, IsKeyDown / IsMouseButtonDown, combat, the player's binding set
 -- (Stub.bindings[key] = action), override bindings and every binding write (Stub.bindingCalls), and the client's
 -- BindingUtil helpers as classic_era defines them [verified: Blizzard_SharedXML/BindingUtil.lua:5–40, 66, 86, 116].

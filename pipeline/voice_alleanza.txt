@@ -1,0 +1,230 @@
+# The alleanza voice scope: written by `wfj voice scope alleanza`; do not edit.
+# Quests: the database's quests of zones 12, 9, and Forever's quests whose
+# captured giver stands on map 0 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# Quests: the database's quests of zones 1, 132, and Forever's quests whose
+# captured giver stands on map 0 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# Quests: the database's quests of zones 141, 188, and Forever's quests whose
+# captured giver stands on map 1 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# `b <key>`: a page of a sign or a book standing there.
+6
+7
+11
+15
+16
+18
+21
+33
+35
+37
+39
+40
+45
+46
+47
+52
+54
+59
+60
+61
+62
+71
+76
+83
+84
+85
+86
+87
+88
+106
+107
+109
+111
+112
+114
+123
+147
+170
+176
+179
+182
+183
+218
+233
+234
+239
+282
+287
+291
+308
+310
+311
+312
+313
+314
+315
+317
+318
+319
+320
+400
+403
+412
+413
+414
+415
+417
+419
+420
+432
+433
+456
+457
+458
+459
+466
+467
+475
+476
+483
+486
+487
+488
+489
+490
+783
+916
+917
+918
+919
+920
+921
+922
+923
+927
+928
+929
+930
+931
+932
+933
+934
+935
+937
+938
+940
+941
+997
+2158
+2159
+2160
+2399
+2438
+2459
+2498
+2499
+2541
+2561
+3361
+3364
+3365
+3519
+3521
+3522
+3903
+3904
+3905
+4495
+5261
+5541
+5545
+5841
+5842
+7383
+7673
+7674
+7675
+7676
+7677
+7678
+7961
+7962
+8734
+87288
+91743
+91745
+91751
+91753
+91758
+91775
+91777
+92124
+92479
+94774
+95212
+95214
+95217
+96408
+96627
+96628
+97977
+97979
+98321
+98322
+98326
+98391
+98392
+98398
+98403
+98581
+99046
+99050
+99073
+99127
+99128
+99129
+99130
+99131
+99143
+99158
+99159
+99160
+99161
+99162
+b 01210d98b7a2a2d3
+b 03ad52868ff56a3a
+b 04508547939f1fe6
+b 09e16f1edd6f587e
+b 188fa9aa8fbca660
+b 1de6b79faab6d1be
+b 20c20f67849753aa
+b 2bebdc51cc03198a
+b 2e4fae4d2ad83683
+b 393a33e1201db54d
+b 489579a033cd7a8c
+b 4ff1f23dec6b27a0
+b 54d38bcf4baba975
+b 60329d525a63b3a4
+b 62c7508f9a3be141
+b 6aedeade911d13b0
+b 712343b0a36c48a1
+b 73a0825bfab64249
+b 75f0409c1cc7fadf
+b 783a62167b79083f
+b 7b00694c8fdca4bf
+b 9742154e9863aad9
+b a3a05fda3f2922cb
+b b1127261f5d155f4
+b b204e62e797e64aa
+b bc428d38d6421eb8
+b bca3588cd665992c
+b c34e9175308d1246
+b c4d426d47f730d1f
+b c53e5ace79b40598
+b cbbb4210ab398bc4
+b ce4d71cc7f5793f6
+b e4bae32a11748aa6
+b e5e6ea087c6f818a
+b ed9acf80e5990539
+b edb844140c150879
+b f2b761b88fb69d53
+b f7b4f83571c5f586

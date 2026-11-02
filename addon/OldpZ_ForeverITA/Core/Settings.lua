@@ -218,3 +218,25 @@ Settings.define{ id = "area.nameFactions", kind = "boolean", default = true, gro
 Settings.define{ id = "minimapButton", kind = "boolean", default = true,
   label = "Show the minimap button (report a line)", it = "Mostra il pulsante della minimappa (segnala una riga)",
   apply = function(v) WFJ.State.fire("minimapButton", v) end }
+
+-- Italian voice over (Core/Voice): shown only once a voice pack has registered, so a player without the pack never
+-- sees a setting that does nothing. The voice player listens for the State event and stops a line switched off.
+local function voiceHidden() return not (WFJ.Voice and WFJ.Voice.hasPack()) end
+local function voiceChanged() WFJ.State.fire("voice") end
+local function voiceSetting(id, label, it)
+  Settings.define{ id = id, kind = "boolean", default = true, hidden = voiceHidden, label = label, it = it,
+    apply = voiceChanged }
+end
+voiceSetting("voice.enabled", "Read lines aloud in Italian", "Leggi le battute ad alta voce in italiano")
+voiceSetting("voice.offer", "Quest offers", "Proposte delle missioni")
+voiceSetting("voice.progress", "Quest progress", "Missioni in corso")
+voiceSetting("voice.turnin", "Quest turn-ins", "Consegne delle missioni")
+-- An NPC's greeting: the first time you meet each one (remembered in OFI_DB.voiceHeard), every time, or never.
+Settings.define{ id = "voice.greeting", kind = "choice", choices = { "once", "always", "never" }, default = "once",
+  hidden = voiceHidden, apply = voiceChanged,
+  label = "NPC greetings", it = "Saluti dei PNG",
+  choiceText = { once = "Una volta per PNG", always = "Sempre", never = "Mai" } }
+voiceSetting("voice.books", "Books and letters", "Libri e lettere")
+-- While a line plays the game's own English voice is turned off, and put back afterwards (the voice player).
+voiceSetting("voice.muteDialog", "Silence the game's English voices while a line plays",
+  "Silenzia le voci inglesi del gioco mentre parla un PNG")

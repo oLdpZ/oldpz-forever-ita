@@ -12,6 +12,7 @@
 --   Lookup.keyed(type_, key) → { ja, status } | nil
 --                                         type_ = "gossip" | "book"
 --   Lookup.gossip(key)    → Lookup.keyed("gossip", key)
+--   Lookup.raw(kind, id)  → Lookup.get's entry with its marked names unresolved (Core/Voice hashes it)
 -- Consumers of Lookup.get: Main (Translator + Collector `lookup` deps), UI/Slash (debug verbs),
 -- UI/Tooltip (nil and status checks only).
 -- `status` is the one-char code Translator reads ("." trusted · "s" stale · "u" unaligned); an unshipped slot
@@ -50,8 +51,16 @@ local function slotOf(kind)
   return type_, slots, i
 end
 
-function Lookup.get(kind, id)
-  if KEYED[kind] then return Lookup.keyed(kind, id) end -- keyed by fingerprint, no slot map (ADR-005)
+-- The entry as shipped, names unresolved: nil, or a fresh table each call.
+local function keyedRow(type_, key)
+  if not KEYED[type_] or key == nil then return nil end
+  local row = WFJ.Data[type_][key]
+  if not row then return nil end
+  return { ja = row[1], status = row[2] }
+end
+
+local function find(kind, id)
+  if KEYED[kind] then return keyedRow(kind, id) end -- keyed by fingerprint, no slot map (ADR-005)
   local type_, slots, i = slotOf(kind)
   if not type_ then return nil end
   local row = WFJ.Data[type_][id]
@@ -59,7 +68,7 @@ function Lookup.get(kind, id)
   local ja = row[i]
   local status = row[slots.status]:sub(i, i)
   if ja == nil then
-    if status == "e" then return named({ status = status, h1 = row[i + slots.hash] }) end
+    if status == "e" then return { status = status, h1 = row[i + slots.hash] } end
     return nil
   end
   local entry = { status = status, h1 = row[i + slots.hash],
@@ -71,15 +80,22 @@ function Lookup.get(kind, id)
   else
     entry.ja = ja
   end
-  return named(entry)
+  return entry
+end
+
+function Lookup.get(kind, id)
+  return named(find(kind, id))
+end
+
+-- The same entry with its marked names left as shipped (`⟦english=italian⟧`, tokens unfilled): the text the voice
+-- pack's hash was made from, the same whatever `names.style` the player chose (Core/Voice).
+function Lookup.raw(kind, id)
+  return find(kind, id)
 end
 
 function Lookup.keyed(type_, key)
-  if not KEYED[type_] or key == nil then return nil end
   if NAME_KIND[type_] and WFJ.Names and WFJ.Names.style() == "en" then return nil end
-  local row = WFJ.Data[type_][key]
-  if not row then return nil end
-  return named({ ja = row[1], status = row[2] })
+  return named(keyedRow(type_, key))
 end
 
 function Lookup.gossip(key)

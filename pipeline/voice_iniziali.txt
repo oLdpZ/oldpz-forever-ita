@@ -1,0 +1,456 @@
+# The iniziali voice scope: written by `wfj voice scope iniziali`; do not edit.
+# Quests: the database's quests of zones 85, 154, and Forever's quests whose
+# captured giver stands on map 0 inside the zone's map bounds, above z 0.
+# Quests: the database's quests of zones 14, 363, and Forever's quests whose
+# captured giver stands on map 1 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# Quests: the database's quests of zones 215, 220, 221, and Forever's quests whose
+# captured giver stands on map 1 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# Quests: the database's quests of zones 12, 9, and Forever's quests whose
+# captured giver stands on map 0 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# Quests: the database's quests of zones 1, 132, and Forever's quests whose
+# captured giver stands on map 0 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# Quests: the database's quests of zones 141, 188, and Forever's quests whose
+# captured giver stands on map 1 inside the zone's map bounds, less 1 city area(s), above z -1000.
+# `b <key>`: a page of a sign or a book standing there.
+6
+7
+8
+11
+15
+16
+18
+21
+33
+35
+37
+39
+40
+45
+46
+47
+52
+54
+59
+60
+61
+62
+71
+76
+83
+84
+85
+86
+87
+88
+106
+107
+109
+111
+112
+114
+123
+147
+170
+176
+179
+182
+183
+218
+233
+234
+239
+282
+287
+291
+308
+310
+311
+312
+313
+314
+315
+317
+318
+319
+320
+354
+355
+356
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+374
+375
+376
+380
+381
+382
+383
+398
+400
+403
+404
+405
+407
+408
+409
+410
+411
+412
+413
+414
+415
+417
+419
+420
+426
+427
+431
+432
+433
+445
+456
+457
+458
+459
+466
+467
+475
+476
+483
+486
+487
+488
+489
+490
+492
+590
+743
+745
+746
+747
+748
+749
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+763
+764
+765
+766
+767
+770
+771
+772
+773
+774
+775
+776
+780
+781
+783
+784
+785
+786
+787
+788
+789
+790
+791
+792
+794
+804
+805
+806
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817
+818
+823
+825
+826
+827
+828
+829
+830
+831
+832
+833
+834
+835
+837
+840
+842
+854
+861
+916
+917
+918
+919
+920
+921
+922
+923
+924
+926
+927
+928
+929
+930
+931
+932
+933
+934
+935
+937
+938
+940
+941
+997
+1656
+2158
+2159
+2160
+2161
+2399
+2438
+2459
+2498
+2499
+2541
+2561
+3361
+3364
+3365
+3376
+3519
+3521
+3522
+3901
+3902
+3903
+3904
+3905
+4402
+4495
+4641
+5261
+5441
+5481
+5482
+5541
+5545
+5841
+5842
+5843
+5844
+5847
+5901
+5902
+6394
+6395
+7383
+7664
+7665
+7673
+7674
+7675
+7676
+7677
+7678
+7961
+7962
+8734
+86784
+87288
+91743
+91745
+91751
+91753
+91758
+91775
+91777
+91920
+92124
+92479
+94375
+94774
+95212
+95214
+95217
+95314
+95805
+96130
+96408
+96627
+96628
+96656
+96659
+96821
+96825
+96895
+97223
+97225
+97279
+97282
+97558
+97977
+97979
+98321
+98322
+98326
+98391
+98392
+98398
+98403
+98427
+98435
+98575
+98576
+98581
+98601
+99046
+99048
+99050
+99051
+99052
+99073
+99079
+99080
+99082
+99101
+99108
+99127
+99128
+99129
+99130
+99131
+99134
+99141
+99142
+99143
+99156
+99158
+99159
+99160
+99161
+99162
+b 01210d98b7a2a2d3
+b 027ff3f48a56c60b
+b 03ad52868ff56a3a
+b 04508547939f1fe6
+b 09e16f1edd6f587e
+b 0a6dad9dbd99b039
+b 156e80c7587b5387
+b 16f30d29bfde40d6
+b 188fa9aa8fbca660
+b 1a48b44f20c59cd7
+b 1de6b79faab6d1be
+b 20c20f67849753aa
+b 215979b0e5b665f7
+b 26ad007f7280f866
+b 273b2dd8223a91a2
+b 2bebdc51cc03198a
+b 2e4fae4d2ad83683
+b 3315b12b97e415b7
+b 33163b8d49e86d5a
+b 34d2551003c63c27
+b 35d05e785c9c4ee5
+b 393a33e1201db54d
+b 45c0b4e029906853
+b 489579a033cd7a8c
+b 4ff1f23dec6b27a0
+b 54d38bcf4baba975
+b 5643bd9de4d72bc0
+b 5a7492ba929a62cc
+b 5d96bc8042826c49
+b 5f02fb23df030dc0
+b 5f0660d034611ace
+b 60329d525a63b3a4
+b 62c7508f9a3be141
+b 67a261b8b7a256b9
+b 6aedeade911d13b0
+b 6f3bc1e3a500405e
+b 712343b0a36c48a1
+b 720094d215a79304
+b 73a0825bfab64249
+b 75f0409c1cc7fadf
+b 783a62167b79083f
+b 7b00694c8fdca4bf
+b 7c0b2931c91483f6
+b 7ce1ee0140c3e9bf
+b 7e49a90e860f0de6
+b 7f315e365737d890
+b 7ff66bda20b04ddb
+b 7ffc41ea637c7c2f
+b 829831402f41cfa3
+b 86aac270648ba089
+b 874fdc02bacb377a
+b 8d47cddf4ba727c9
+b 8d7671a0c929aa03
+b 9297e67ead957025
+b 9742154e9863aad9
+b 9ceae0f20e65ab20
+b 9ddb35746ea03187
+b 9ea6aaf624da3a3a
+b a3a05fda3f2922cb
+b a4dc830696270816
+b ae86d7a51c183814
+b b1127261f5d155f4
+b b204e62e797e64aa
+b b4292e186801cdc4
+b b449bbea974116dd
+b ba70cf77e24b047b
+b baa579dd88e695ec
+b bc428d38d6421eb8
+b bca3588cd665992c
+b c34e9175308d1246
+b c3de158687dd34ce
+b c4d426d47f730d1f
+b c53e5ace79b40598
+b cbbb4210ab398bc4
+b ce4d71cc7f5793f6
+b cf68ac8c04f56bf5
+b d4968560eafb45ab
+b d640c3f748926858
+b e1b3dbd4cff12518
+b e4bae32a11748aa6
+b e5e6ea087c6f818a
+b ed9acf80e5990539
+b edb844140c150879
+b ee9d063b62257c5a
+b f2b761b88fb69d53
+b f3ec6301fa07152d
+b f46def3be4c308d6
+b f7b4f83571c5f586
+b f8b57bd38e090088
+b f92878a5ba1c0e5d
+b f94402a9d2d71ace

@@ -26,6 +26,7 @@
 --                             clicks); send opens the send window (all: every line again)
 --   /fita nomi [it|en]         the names style (spec §8): switches, or sets, and says the new one in Italian
 --   /fita togglekey [<key>|none]   the toggle binding the settings page's Set key / Unbind row writes
+--   /fita voce stop            the Italian voice stops and the lines waiting go (with a voice pack)
 local _, WFJ = ...
 local Slash = {}
 WFJ.Slash = Slash
@@ -329,6 +330,7 @@ function Slash.debug(sub, arg)
   say("modifier: %s (%s%s)", S.get("modifier"), M.class(S.get("modifier")),
     M.bindingKey() and (" · override " .. WFJ.RevealBinding.state) or "")
   say("addon list button: %s", WFJ.AddonListButton.installed and "installed" or "absent")
+  if WFJ.VoicePlayer then say("voice: %s", WFJ.VoicePlayer.describe()) end
   if WFJ.Options.buildError then say("settings panel failed to build: %s", WFJ.Options.buildError) end
 end
 
@@ -408,6 +410,16 @@ function Slash.names(value)
   say("%s", Slash.NAMES_TEXT[S.get("names.style")])
 end
 
+-- /fita voce stop: the Italian voice stops and the lines waiting go (the voice panel's ■). Said in Italian, like
+-- /fita nomi.
+function Slash.voice(sub)
+  local V, P = WFJ.Voice, WFJ.VoicePlayer
+  if not (V and P and V.hasPack()) then return say("voce: nessun pacchetto voce installato") end
+  if sub ~= "stop" then return say("voce: /fita voce stop") end
+  P.stop()
+  say("voce: fermata")
+end
+
 -- Resolves `words` against the registry: "<id> <value>" or "<group> <name> <value>". → id, value | nil
 local function settingFromWords(words)
   local id = S.find(words[1])
@@ -455,6 +467,7 @@ function Slash.handle(msg)
   if lower == "debug" then return Slash.debug(words[2] and words[2]:lower(), words[3]) end
   if lower == "togglekey" then return Slash.togglekey(words[2], words[3]) end
   if lower == "nomi" then return Slash.names(words[2]) end
+  if lower == "voce" then return Slash.voice(words[2] and words[2]:lower()) end
   if lower == "log" then -- the diagnostics log (Core/Diag): the last N entries, 10 by default
     for _, line in ipairs(WFJ.Diag.lines(words[2])) do say("%s", line) end
     local errors = WFJ.ErrorLog.status()

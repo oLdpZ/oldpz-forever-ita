@@ -4,6 +4,8 @@
 - **Date:** 2026-10-06
 - **Related:** [ADR-002](002-live-english-only.md) (no stored English) · [ADR-005](005-gossip-key-fingerprint.md) (gossip keys) · [ADR-019](019-quest-english-per-field-and-live-check.md) (VMaNGOS as an input) · [Voice over](../systems/voice.md) · [Voice over runbook](../operations/voice.md) · [Research](../research/2026-10-04-japanese-voice-over.md)
 
+> Superseded for this project by [ADR-104](104-voce-italiana-con-gemini.md): the engine is Gemini TTS, the audio is one pack beside the main addon, and the panel is small and carries no text. This ADR describes the Japanese design it started from.
+
 ## Context
 
 The research found local generation with the AivisSpeech Engine good enough to listen to and fast enough to voice the whole game in a few days of machine time. The full audio is far too large for the main addon (gigabytes, against a main addon players download with every release). The client has no playback rate, so the reading pace is fixed when a file is made. And the Japanese keeps changing: batches, corrections and fix reports rewrite lines every week. A player must never hear audio for a line whose Japanese has since changed.

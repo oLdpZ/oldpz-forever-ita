@@ -42,6 +42,15 @@ Options.PAGES = {
       rows = { "collectorExplain", "collector.enabled", "collector.remind", "collectorStatus", "collectorClear" } },
     { title = "section.files", rows = { "collectorSteps", "collectorSend", "collectorPath" } },
   } },
+  -- Only with a voice pack: the pack registers after the pages are built, so its arrival adds this page
+  -- (State "voicePack" → Options.addPage).
+  { id = "voice", title = "page.voice", requires = function() return WFJ.Voice ~= nil and WFJ.Voice.hasPack() end,
+    sections = {
+      { title = "section.voice", rows = { "voice.enabled", "voice.muteDialog" } },
+      { title = "section.voiceKinds", columns = 2,
+        rows = { "voice.offer", "voice.progress", "voice.turnin", "voice.books" } },
+      { rows = { "voice.greeting" } },
+    } },
   { id = "about", title = "page.about", header = true, sections = {
     { title = "section.help", rows = { "aboutHold", "aboutMarkers", "aboutOpen" } },
     { title = "section.slash", rows = { "slashHelp" } },
@@ -528,3 +537,6 @@ end
 for _, event in ipairs({ "enabled", "area", "markers", "names", "revealKey", "modifier" }) do
   WFJ.State.on(event, refreshIfVisible)
 end
+
+-- a voice pack registered (Main's OldpZ_ForeverITA_RegisterVoice): its settings page joins the others
+WFJ.State.on("voicePack", function() Options.addPage("voice") end)

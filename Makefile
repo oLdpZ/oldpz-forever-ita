@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-batch-submit voice-batch-fetch voice-status voice-audition voice-pack
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -516,6 +516,47 @@ release: ## start the Release workflow on GitHub and follow it to the end: [VERS
 	done; \
 	[ -n "$$id" ] || { echo "release: the run did not appear; see the Actions tab"; exit 1; }; \
 	echo "release: run $$id"; gh run watch "$$id" --exit-status
+
+# NPC voice over (pipeline/wfj/cmd/voice*.py). SCOPE is a voice scope (pipeline/voice_<scope>.txt). The audio
+# store lives outside the repository: VOICE_ROOT when set, else voce-store in the home folder. Never under the
+# checkout: the takes are paid for, and a worktree's removal or a `git clean -fdx` of build/ would lose them.
+# The Gemini key is GEMINI_API_KEY, from the environment or VOICE_ENV (a .env file); LIMIT=n stops after n files.
+SCOPE       ?= tirisfal
+VOICE_STORE ?= $(or $(VOICE_ROOT),$(HOME)/voce-store)
+VOICE_ENV   ?=
+LIMIT       ?=
+# a voice pack of pipeline/voice-packs.toml (its suffix, e.g. 01_20), or all; empty: the one OldpZ_ForeverITA_Voce
+PACK        ?=
+# the VMaNGOS dump the speakers come from, and its commit
+VOICE_DB     ?= $(VMANGOS_PRIORITY_DB)
+VOICE_DB_SHA ?= $(VMANGOS_UNIT_SHA)
+
+voice-speakers: ## write data/voice/speakers.jsonl (who says each line of SCOPE) from VMaNGOS and forever-vo: [SCOPE=tirisfal] [VOICE_DB=<mangos.sqlite>]
+	cd pipeline && $(PY) -m wfj voice speakers --vmangos "$(VOICE_DB)" --commit $(VOICE_DB_SHA) --scope $(SCOPE) --forever-vo "$(FOREVER_VO)" --forever-vo-commit $(FOREVER_VO_SHA)
+
+voice-cast: ## write data/voice/voices.jsonl (each speaking creature's roster voice) from the profiles and pipeline/voice.toml: [SCOPE=tirisfal]
+	cd pipeline && $(PY) -m wfj voice cast --scope $(SCOPE)
+
+voice-plan: ## what voice-generate would make for SCOPE: files, characters, hours of audio, cost; the silent lines by reason: [SCOPE=tirisfal]
+	cd pipeline && $(PY) -m wfj voice plan --scope $(SCOPE) --store "$(VOICE_STORE)"
+
+voice-generate: ## make SCOPE's missing or changed audio with Gemini (paid: check voice-plan first) into VOICE_STORE; resumable: [SCOPE=tirisfal] [LIMIT=n] [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice generate --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(LIMIT),--limit $(LIMIT))
+
+voice-batch-submit: ## send SCOPE's missing or changed audio as one Gemini batch job (paid, half price, no daily cap; results within a day): [SCOPE=tirisfal] [LIMIT=n] [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice batch submit --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(LIMIT),--limit $(LIMIT))
+
+voice-batch-fetch: ## ask after the batch jobs sent; keep, encode and record the takes of the finished ones: [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice batch fetch --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)")
+
+voice-status: ## the running or last voice-generate: done / total, rate, time left
+	cd pipeline && $(PY) -m wfj voice status --store "$(VOICE_STORE)"
+
+voice-audition: ## make the first lines of each speaker of SCOPE (paid, a few) and write VOICE_STORE/audition/index.html to listen to: [SCOPE=tirisfal] [PER=2] [VOICE_ENV=<.env>]
+	cd pipeline && $(PY) -m wfj voice audition --scope $(SCOPE) --store "$(VOICE_STORE)" $(if $(VOICE_ENV),--env-file "$(VOICE_ENV)") $(if $(PER),--per $(PER))
+
+voice-pack: ## build SCOPE's voice pack from VOICE_STORE into build/voice-pack: OldpZ_ForeverITA_Voce, or PACK of pipeline/voice-packs.toml (a suffix, or all): [SCOPE=tirisfal] [PACK=01_20|all]
+	cd pipeline && $(PY) -m wfj voice pack --scope $(SCOPE) --store "$(VOICE_STORE)" --out "$(CURDIR)/build/voice-pack" $(if $(PACK),--pack $(PACK))
 
 # Local targets, when present.
 -include local.mk

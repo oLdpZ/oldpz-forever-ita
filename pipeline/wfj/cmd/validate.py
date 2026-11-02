@@ -21,6 +21,9 @@ Rules, each a function returning problems:
   8. objective index: objective and area rows sharing one English fingerprint ship one Italian.
   9. unit names (spec §5b): unit `name` rows sharing one English ship one Italian, and every NPC-name marker
      carries the name's current form (`dev.remark_names` fixes both for machine drafts).
+ 10. voice: data/voice/speakers.jsonl, voices.jsonl and profiles.jsonl are well formed and carry provenance,
+     with no duplicate key or creature; once a cast is written every creature that speaks has a voice, and
+     pipeline/voice.toml (Gemini voices, English notes) holds every voice it names.
 `luac -p` over the generated files is `make luac` (part of `make validate`); the pipeline runs no Lua.
 """
 
@@ -34,7 +37,9 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from wfj.cmd import check, generate
-from wfj.core import decisions, markup, numbered, placeholders, specifiers
+from wfj.cmd.voice import read_rows, voice_dir
+from wfj.cmd.voice_cast import load_config
+from wfj.core import casting, decisions, markup, numbered, placeholders, specifiers, voice
 from wfj.core.model import ENGLISH_FIELDS, FIELDS, SCHEMA, ui_family, validate_line
 from wfj.core.normalize import normalize_for, normalize_v1
 from wfj.core.report import SHIPPED
@@ -79,7 +84,8 @@ def _base_classes(repo: Path, ref: str) -> dict[tuple[str, int | str, str], tupl
     classes: dict[tuple[str, int | str, str], tuple[str, str]] = {}
     for path in listing:
         parts = path.split("/")
-        if len(parts) != 3 or parts[1] == "english" or not path.endswith(".jsonl"):
+        # data/voice holds who speaks and which voice reads, not translations: it has no provenance class
+        if len(parts) != 3 or parts[1] in ("english", "voice") or not path.endswith(".jsonl"):
             continue
         blob = subprocess.run(
             ["git", "-C", str(repo), "show", f"{ref}:{path}"], capture_output=True, text=True, check=True
@@ -499,6 +505,28 @@ def validate(
     )
     problems += rule_objective(store)
     problems += rule_unit_names(store, english, root.parent)
+    problems += rule_voice(root)
+    return problems
+
+
+def rule_voice(root: Path, config: Path | None = None) -> list[str]:
+    """data/voice/: the speakers and voice tables and the profiles are well formed, and voice.toml's roster is
+    Gemini voices with English notes, and names every voice the cast gave."""
+    d = voice_dir(root)
+    voices = read_rows(d / "voices.jsonl")
+    problems = voice.speaker_problems(read_rows(d / "speakers.jsonl"), voices)
+    problems += casting.problems(read_rows(d / "profiles.jsonl"))
+    cfg_path = config or root.parent / "pipeline" / "voice.toml"
+    if not cfg_path.is_file():
+        return problems
+    try:
+        roster = load_config(cfg_path)["roster"]
+    except ValueError as e:
+        return [*problems, f"voice: {e}"]
+    for r in voices:
+        for f in ("voice", "female"):
+            if r.get(f) is not None and r[f] not in roster:
+                problems.append(f"voice voices {r.get('creature')}: {f} {r[f]!r} is not in the roster")
     return problems
 
 

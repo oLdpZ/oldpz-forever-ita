@@ -42,6 +42,8 @@ globals = {
   "OFI_ToggleTranslation", "OFI_RevealKey", "BINDING_NAME_OFI_REVEAL",
   -- The TOC's AddonCompartmentFunc handlers (Blizzard's addon dropdown calls them by name)
   "OFI_OnAddonCompartmentClick", "OFI_OnAddonCompartmentEnter", "OFI_OnAddonCompartmentLeave",
+  -- the voice pack's Register.lua hands its table to this one (Core/Voice)
+  "OldpZ_ForeverITA_RegisterVoice",
 }
 
 files["addon/OldpZ_ForeverITA/Data/"] = { ignore = { ".*" } }

@@ -46,7 +46,7 @@ describe("UI/OptionsText.SLASH names every command", function()
     local Text = H.loadChunks({ "UI/OptionsText.lua" }).OptionsText
     local all = table.concat(Text.SLASH, "\n")
     for _, verb in ipairs({ "on", "off", "toggle", "config", "debug", "togglekey", "collector",
-        "version", "modifier", "area", "marker", "fix" }) do
+        "version", "modifier", "area", "marker", "fix", "voce" }) do
       assert.is_truthy(all:find("/fita " .. verb, 1, true) or all:find("| " .. verb, 1, true), verb)
     end
     local debug = {}
@@ -55,6 +55,13 @@ describe("UI/OptionsText.SLASH names every command", function()
     local subs = table.concat(debug, " | ")
     for _, sub in ipairs({ "hash", "quest", "item", "spell", "gossip", "book", "objective", "fonts", "ui", "scan" }) do
       assert.is_truthy(subs:find(sub, 1, true), sub)
+    end
+  end)
+
+  it("says the voice command needs a voice pack: without one it has nothing to stop", function()
+    local Text = H.loadChunks({ "UI/OptionsText.lua" }).OptionsText
+    for _, line in ipairs(Text.SLASH) do
+      if line:find("/fita voce", 1, true) then assert.is_truthy(line:find("with a voice pack", 1, true), line) end
     end
   end)
 end)

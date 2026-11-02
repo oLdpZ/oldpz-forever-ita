@@ -6,7 +6,8 @@ local Loader = require("tests.lua.spec.loader")
 local HEAD = { "Core/ErrorLog.lua", "Core/Const.lua", "Core/Compat.lua", "Core/Normalize.lua", "Core/Hash.lua",
   "Core/Data.lua" }
 local TAIL = {
-  "Core/Lookup.lua", "Core/Names.lua", "Core/Align.lua", "Core/State.lua", "Core/UnitNames.lua", "Core/Settings.lua",
+  "Core/Lookup.lua", "Core/Names.lua", "Core/Voice.lua", "Core/VoiceQueue.lua",
+  "Core/Align.lua", "Core/State.lua", "Core/UnitNames.lua", "Core/Settings.lua",
   "Core/Modifier.lua",
   "Core/Placeholders.lua", "Core/Translator.lua", "Core/UIStringKeys.lua",
   "Core/UIStrings.lua", "Core/Objectives.lua", "Core/SurfaceState.lua",
@@ -70,6 +71,8 @@ local TAIL = {
   "UI/NewPlayerTutorial.lua",
   "UI/Popups.lua",
   "UI/Scan.lua",
+  -- the voice over: the player, the small panel and its head, the quest log's button
+  "UI/VoicePlayer.lua", "UI/VoicePanelHead.lua", "UI/VoicePanel.lua", "UI/VoiceQuestLog.lua",
   "UI/OptionsText.lua", "UI/OptionsWidgets.lua", "UI/KeyCapture.lua", "UI/FixWindow.lua",
   "UI/CollectorSendWindow.lua", "UI/CollectorReminder.lua", "UI/IntroWindow.lua", "UI/ReportWindow.lua",
   "UI/MinimapButton.lua",
@@ -503,6 +506,66 @@ describe("addon loads in TOC order and answers /fita version", function()
     SlashCmdList.OFI("version")
     assert.are.equal(1, #Stub.prints)
     assert.is_truthy(Stub.prints[1]:find(meta.Version, 1, true))
+  end)
+
+  it("without a voice pack: no voice page, no voice frame, /fita voce says so; a pack adds the page", function()
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installQuestAPI(); Stub.installTooltipAPI(); Stub.installGossipAPI(); Stub.installItemTextAPI()
+    local v = Stub.installVoiceAPI()
+    local ns = Loader.load("OldpZ_ForeverITA", { data = H.FIXTURE_DATA })
+    Stub.fireAll("ADDON_LOADED", "OldpZ_ForeverITA")
+    local function voicePages()
+      local n = 0
+      for _, c in ipairs(Stub.settingsCalls) do
+        if c[1] == "RegisterCanvasLayoutSubcategory" and c[4] == "Voice" then n = n + 1 end
+      end
+      return n
+    end
+    assert.are.equal(0, voicePages())
+    assert.is_nil(ns.Options.pages.voice)
+    ns.State.fire("lineShown", "questframe.reward", "completion", "quest.completion", 791)
+    assert.are.equal(0, #v.sounds)
+    assert.is_nil(_G.WFJVoicePanel)
+    Stub.prints = {}
+    SlashCmdList.OFI("voce stop")
+    assert.are.equal("OFI: voce: nessun pacchetto voce installato", Stub.prints[1])
+    Stub.prints = {}
+    SlashCmdList.OFI("debug")
+    local line
+    for _, p in ipairs(Stub.prints) do if p:find("^OFI: voice: ") then line = p end end
+    assert.are.equal("OFI: voice: no pack", line)
+    -- the pack's Register.lua, after this addon's load (it depends on it)
+    local ja = ns.Lookup.raw("quest.completion", 791).ja
+    local n = OldpZ_ForeverITA_RegisterVoice({ format = 3, folder = "OldpZ_ForeverITA_Voce",
+      lines = { ["791-completion"] = { "791-completion.mp3", ns.Hash.key(ja), 4 } } })
+    assert.are.equal(1, n)
+    assert.are.equal(1, voicePages())
+    assert.is_table(ns.Options.pages.voice)
+    ns.State.fire("lineShown", "questframe.reward", "completion", "quest.completion", 791)
+    assert.are.equal(1, #v.sounds)
+    assert.is_table(_G.WFJVoicePanel)
+    Stub.prints = {}
+    SlashCmdList.OFI("debug")
+    line = nil
+    for _, p in ipairs(Stub.prints) do if p:find("^OFI: voice: ") then line = p end end
+    assert.are.equal("OFI: voice: OldpZ_ForeverITA_Voce 1 lines · registered 1 invalid 0 · matched 1 missing 0"
+      .. " stale 0 · queue 1 (791-completion) · played 1 refused 0", line)
+    Stub.prints = {}
+    SlashCmdList.OFI("voce stop")
+    assert.are.equal("OFI: voce: fermata", Stub.prints[1])
+    assert.are.equal(0, ns.VoiceQueue.size())
+    -- logout in the middle of a line puts the game's English voice back
+    ns.State.fire("lineShown", "questframe.reward", "completion", "quest.completion", 791)
+    assert.are.equal("0", v.cvars.Sound_EnableDialog)
+    Stub.fireAll("PLAYER_LOGOUT")
+    assert.are.equal("1", v.cvars.Sound_EnableDialog)
+    Stub.removeVoiceAPI()
+    _G.WFJVoicePanel = nil
+    -- restore the shared state the later cases read
+    meta = Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installQuestAPI(); Stub.installTooltipAPI(); Stub.installGossipAPI(); Stub.installItemTextAPI()
+    WFJ = Loader.load("OldpZ_ForeverITA", { data = H.FIXTURE_DATA })
+    Stub.fireAll("ADDON_LOADED", "OldpZ_ForeverITA")
   end)
 
   it("reports unknown verbs without erroring", function()
