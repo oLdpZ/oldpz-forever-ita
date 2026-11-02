@@ -40,7 +40,7 @@ WFJ.Data.add("gossip", {
   ["64cdd9b121561453"] = { "Abbiamo molte provviste per la ricostruzione. Ancora un po' e ne avremo abbastanza per riparare Dun Baldar e tornare in battaglia!", "." },
   ["64d480a1c5171d95"] = { "La ⟦Crystal Restore=Guarigione del Cristallo⟧ è un oggetto difficile da procurarsi.\n\nCredo che provenga dal ⟦Un'Goro Crater=Cratere di Un'Goro⟧, quindi ti conviene andare là.", "." },
   ["64da511427692bef"] = { "Troverai Tannysa davanti ad Alchemy Needs, nel ⟦Mage Quarter=Quartiere dei Maghi⟧.", "." },
-  ["64dc6df37687d4d9"] = { "Onorate i vostri eroi! Oggi hanno inferto un duro colpo a uno dei nostri nemici più odiati! Il falso Capoguerra, Rend Blackhand, è caduto!", "." },
+  ["64dc6df37687d4d9"] = { "Onorate i vostri eroi! Oggi hanno inferto un duro colpo a uno dei nostri nemici più odiati! Il falso Capoguerra, Rend Manonera, è caduto!", "." },
   ["64efbf0b65e41edb"] = { "Quindi vuoi fare il fabbro, eh? Prendi un grembiule e un martello, <ragazzo/ragazza>, vediamo cosa sai fare.", "." },
   ["64f1973059597602"] = { "Stolto mortale, quando mi libereranno ti squarcerò l'anima in due!", "." },
   ["64f64bebe573a50b"] = { "Il cucchiaio non esiste.", "." },

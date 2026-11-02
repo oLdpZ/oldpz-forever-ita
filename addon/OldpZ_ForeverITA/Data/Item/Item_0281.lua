@@ -5,7 +5,7 @@ WFJ.Data.add("item", {
   [281016] = { "Un Mago può decifrarlo con l'abilità Comprehension.", 0x147f07df, "u" },
   [281017] = { "Un Mago può decifrarlo con l'abilità Comprehension.", 0x147f07df, "u" },
   [281018] = { "Un Mago può decifrarlo con l'abilità Comprehension.", 0x147f07df, "u" },
-  [281030] = { "Questa tavoletta reca i sigilli personali di Madoran Bronzebeard e Khardros Wildhammer. C'è spazio per un terzo sigillo, ma la sua assenza salta all'occhio.", 0x0beb5b72, "u" },
+  [281030] = { "Questa tavoletta reca i sigilli personali di Madoran Barbabronzea e Khardros Wildhammer. C'è spazio per un terzo sigillo, ma la sua assenza salta all'occhio.", 0x0beb5b72, "u" },
   [281040] = { "Spargi l'incenso cerimoniale.", 0xb388b7b9, "u" },
   [281041] = { "Combina un Bundle of Herbs, un Bundle of Dried Cedar Twigs, un Sinew Thread e una Ceremonial Flint and Tinder per creare un Prepared Incense.", 0x8e38e0e9, "u" },
   [281042] = { "Combina un Bundle of Herbs, un Bundle of Dried Cedar Twigs, un Sinew Thread e una Ceremonial Flint and Tinder per creare un Prepared Incense.", 0x8e38e0e9, "u" },

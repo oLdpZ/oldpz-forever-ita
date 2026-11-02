@@ -9,7 +9,7 @@ WFJ.Data.add("item", {
   [272016] = { nil, 0x8660c843, "e" },
   [272017] = { "Un documento in lingua draconica con il sigillo di Nefarion", 0x04ab1204, "u" },
   [272018] = { "Un documento in lingua draconica con il sigillo del generale Drakkisath", 0xa78cfa8d, "u" },
-  [272019] = { "Un contratto dettagliato che stabilisce la dote e i diritti di successione per il matrimonio tra Dagran Thaurissan e Moira Bronzebeard.", 0x86865bff, "u" },
+  [272019] = { "Un contratto dettagliato che stabilisce la dote e i diritti di successione per il matrimonio tra Dagran Thaurissan e Moira Barbabronzea.", 0x86865bff, "u" },
   [272020] = { "Il seme di una pianta intrisa di energia vile, che brilla di energie demoniache.", 0x846b8b4c, "u" },
   [272021] = { "Un pendente in frantumi con il sigillo spezzato di Shen'dralas.", 0x3d4f1bc8, "u" },
   [272022] = { "Un anello da mignolo di ogre con incastonato un leggendario diamante terrestre draenico", 0xceb2d15c, "u" },
