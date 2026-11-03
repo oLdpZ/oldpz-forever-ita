@@ -10,8 +10,8 @@ each voice pack lists the addon as a **Required Dependency**, so the app install
 each voice file at upload: an unapproved project is not found by the Default Relations search).
 
 Projects (created 2026-11-03, Unlisted): addon 1781383; voices 1-20 1781385, 21-40 1781387, 41-55 1781388,
-56-60 1781391, libri/dialoghi/altro 1781395. CurseForge requires the **Summary in English**; the description can be
-Italian. Logo: dist/curseforge/logo-ita.png (the owner's; CurseForge forbids game logos). Files: flavor **Forever**,
+56-60 1781391, libri/dialoghi/altro 1781395. CurseForge requires the **Summary in English** and an **English section first** in the description
+(moderators asked for it on 2026-11-03), Italian below. Logo: dist/curseforge/logo-ita.png (the owner's; CurseForge forbids game logos). Files: flavor **Forever**,
 game version 1.60.x.
 
 ## Addon
@@ -24,6 +24,19 @@ game version 1.60.x.
 - **Logo:** dist/curseforge/logo-ita.png
 
 ### Description
+
+## <span style="color:#E8C77E;">English</span>
+
+**oLd_pZ Forever - Traduzione Italiana** shows World of Warcraft: Forever in **Italian**. The game's original English is always one key away: hold **Alt** to see it, release it to go back to Italian.
+
+- **What it translates:** quests of every level (title, objectives, description, progress and completion, in the quest window, the quest log and the tracker), NPC dialogue and gossip, books and letters, item and spell tooltips, interface text, and the names of items, spells, zones, factions and NPCs. Official Blizzard Italian text and names are used wherever they exist.
+- **Italian NPC voices (optional):** five separate voice packs, by level band, make NPCs speak Italian. The voices are generated with Google Gemini text-to-speech. The addon's **Voce** settings page chooses what is read aloud and how the speaker panel is shown (with portrait, without portrait, or no panel).
+- **Settings:** Esc > Options > AddOns, or **/fita config**. **/fita nomi en** switches names back to English.
+- **Privacy:** when the game shows English text the addon cannot translate, it notes it in its own saved file so it can be translated later. It never saves character name, account, realm, position, chat or times, and never sends anything by itself. **/fita collector off** turns it off.
+- **Install:** with the CurseForge app (Forever installation), or extract the zip into `World of Warcraft\_forever_\Interface\AddOns`. World of Warcraft: Forever only; no other addons or libraries needed.
+- Based on **WoW Forever Japanese** by Zyaga (GPL-2.0-or-later): the addon architecture comes from it, the translations do not. License GPL-2.0-or-later. Not affiliated with or endorsed by Blizzard Entertainment.
+
+## <span style="color:#E8C77E;">Italiano</span>
 
 **oLd_pZ Forever - Traduzione Italiana** mostra World of Warcraft: Forever in italiano. L'<span style="color:#8CB8E8;">inglese</span> originale del gioco è sempre a un tasto di distanza: tieni premuto <span style="color:#E0605A;">**Alt**</span> e torna, rilascialo e torna l'italiano.
 
@@ -75,13 +88,13 @@ Questo addon è fatto da un appassionato. Non è affiliato né approvato da Bliz
 
 Five projects, one per pack; only the name, summary and the range line change.
 
-| Project name | Pack folder | Range line |
-|---|---|---|
-| oLd_pZ Forever - Voci italiane (livelli 1-20) | OldpZ_ForeverITA_Voce_01_20 | le missioni dei livelli 1–20 |
-| oLd_pZ Forever - Voci italiane (livelli 21-40) | OldpZ_ForeverITA_Voce_21_40 | le missioni dei livelli 21–40 |
-| oLd_pZ Forever - Voci italiane (livelli 41-55) | OldpZ_ForeverITA_Voce_41_55 | le missioni dei livelli 41–55 |
-| oLd_pZ Forever - Voci italiane (livelli 56-60) | OldpZ_ForeverITA_Voce_56_60 | le missioni dei livelli 56–60 |
-| oLd_pZ Forever - Voci italiane (libri, dialoghi e altro) | OldpZ_ForeverITA_Voce_Altro | libri, lettere, dialoghi dei PNG e missioni senza una fascia di livello |
+| Project name | Pack folder | Range line | Range en |
+|---|---|---|---|
+| oLd_pZ Forever - Voci italiane (livelli 1-20) | OldpZ_ForeverITA_Voce_01_20 | le missioni dei livelli 1–20 | the quests of levels 1–20 |
+| oLd_pZ Forever - Voci italiane (livelli 21-40) | OldpZ_ForeverITA_Voce_21_40 | le missioni dei livelli 21–40 | the quests of levels 21–40 |
+| oLd_pZ Forever - Voci italiane (livelli 41-55) | OldpZ_ForeverITA_Voce_41_55 | le missioni dei livelli 41–55 | the quests of levels 41–55 |
+| oLd_pZ Forever - Voci italiane (livelli 56-60) | OldpZ_ForeverITA_Voce_56_60 | le missioni dei livelli 56–60 | the quests of levels 56–60 |
+| oLd_pZ Forever - Voci italiane (libri, dialoghi e altro) | OldpZ_ForeverITA_Voce_Altro | libri, lettere, dialoghi dei PNG e missioni senza una fascia di livello | books, letters, NPC dialogue and quests without a level band |
 
 - **Summary:** Italian NPC voices for the quests of levels N-M (Altro: for books, letters, NPC dialogue and quests
   without a level band): an optional voice pack for the oLd_pZ Forever - Traduzione Italiana addon.
@@ -90,9 +103,13 @@ Five projects, one per pack; only the name, summary and the range line change.
 - **Relations:** Required Dependency → oLd_pZ Forever - Traduzione Italiana.
 - **Logo:** dist/curseforge/logo-ita.png
 
-### Description (replace <range line>)
+### Description (replace <range line> and <range en>)
 
-**Voci italiane dei PNG** per <range line>, per l'addon **oLd_pZ Forever - Traduzione Italiana**, che serve per sentirle (l'app CurseForge lo installa insieme).
+**English:** Italian NPC voices for <range en>, for the **oLd_pZ Forever - Traduzione Italiana** addon, which is required to hear them (the CurseForge app installs it too). NPCs read aloud in Italian what they say: quest offers, progress and turn-ins, greetings, books and letters. Install only the packs you want; each works on its own. Settings are on the addon's **Voce** page; **/fita voce stop** stops the voice. The voices are AI-generated with Google Gemini text-to-speech from the Italian translation. Manual install: extract the zip into `World of Warcraft\_forever_\Interface\AddOns`, next to `OldpZ_ForeverITA`. Not affiliated with or endorsed by Blizzard Entertainment.
+
+---
+
+**Italiano:** **Voci italiane dei PNG** per <range line>, per l'addon **oLd_pZ Forever - Traduzione Italiana**, che serve per sentirle (l'app CurseForge lo installa insieme).
 
 I PNG leggono ad alta voce in italiano quello che dicono: proposta, avanzamento e consegna delle missioni, saluti, libri e lettere. Installa solo le fasce che ti servono; ogni pacchetto funziona da solo.
 
