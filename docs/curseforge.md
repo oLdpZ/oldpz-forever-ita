@@ -27,14 +27,53 @@ game version 1.60.x.
 
 ## <span style="color:#E8C77E;">English</span>
 
-**oLd_pZ Forever - Traduzione Italiana** shows World of Warcraft: Forever in **Italian**. The game's original English is always one key away: hold **Alt** to see it, release it to go back to Italian.
+**oLd_pZ Forever - Traduzione Italiana** shows World of Warcraft: Forever in Italian. The game's original <span style="color:#8CB8E8;">English</span> is always one key away: hold <span style="color:#E0605A;">**Alt**</span> and it comes back, release it and the Italian returns.
 
-- **What it translates:** quests of every level (title, objectives, description, progress and completion, in the quest window, the quest log and the tracker), NPC dialogue and gossip, books and letters, item and spell tooltips, interface text, and the names of items, spells, zones, factions and NPCs. Official Blizzard Italian text and names are used wherever they exist.
-- **Italian NPC voices (optional):** five separate voice packs, by level band, make NPCs speak Italian. The voices are generated with Google Gemini text-to-speech. The addon's **Voce** settings page chooses what is read aloud and how the speaker panel is shown (with portrait, without portrait, or no panel).
-- **Settings:** Esc > Options > AddOns, or **/fita config**. **/fita nomi en** switches names back to English.
-- **Privacy:** when the game shows English text the addon cannot translate, it notes it in its own saved file so it can be translated later. It never saves character name, account, realm, position, chat or times, and never sends anything by itself. **/fita collector off** turns it off.
-- **Install:** with the CurseForge app (Forever installation), or extract the zip into `World of Warcraft\_forever_\Interface\AddOns`. World of Warcraft: Forever only; no other addons or libraries needed.
-- Based on **WoW Forever Japanese** by Zyaga (GPL-2.0-or-later): the addon architecture comes from it, the translations do not. License GPL-2.0-or-later. Not affiliated with or endorsed by Blizzard Entertainment.
+### <span style="color:#E8C77E;">What it translates</span>
+
+- **Quests** of every level: title, objectives, description, progress and completion, in the quest window, the quest log and the tracker.
+- **NPC dialogue:** what NPCs say when you talk to them, gossip options, greetings, yells and chat lines.
+- **Books and letters.**
+- **Item and spell tooltips** and **interface text** (windows, buttons, menus, messages), using Blizzard's official Italian client text wherever it uses the same words as Forever.
+- **Names** of items, spells, zones, factions and NPCs, including above characters' heads and in the game's windows.
+
+In numbers: **20,094** quest texts, **10,876** NPC dialogue lines, **1,202** book and letter pages, **10,210** item tooltips, **25,645** spell tooltips, **15,257** interface texts, **10,098** NPC names.
+
+### <span style="color:#E8C77E;">Italian NPC voices</span>
+
+NPCs can also **speak Italian**: quest offers, progress and turn-ins, greetings, books and letters. The voices come in five separate packs, by level band, to install only if you want them (see the **oLd_pZ Forever - Voci italiane** projects). The voices are generated with Google Gemini text-to-speech, with a voice of their own for the main characters. On the **Voce** settings page you choose what is read aloud and how the speaker panel is shown: with portrait, without portrait, or no panel.
+
+### <span style="color:#E8C77E;">Names</span>
+
+Places, characters, factions, items and spells use Blizzard's official Italian names (Roccavento, not Stormwind). Prefer the <span style="color:#8CB8E8;">English</span> names to talk with other players or follow guides? Type **/fita nomi en** (and **/fita nomi it** to switch back), or choose kind by kind on the **Nomi** settings page. The spellbook stays in English on purpose: writing to it would block the action bars in combat.
+
+### <span style="color:#E8C77E;">Settings</span>
+
+**Esc > Options > AddOns**, or type **/fita config**. You can turn the translation on or off, all of it or part by part; change the key you hold for English; bind a key that toggles the translation; choose the name style; hide the markers (<span style="color:#FFD100;">**[Non tradotto / Not Translated]**</span>, <span style="color:#FFD100;">**[Da aggiornare / English Changed]**</span>) and the minimap button. **/fita** alone lists every command.
+
+### <span style="color:#E8C77E;">Why some text stays in English</span>
+
+Some text only arrives from the server when a player sees it: if it is not translated yet it stays in English with <span style="color:#FFD100;">**[Non tradotto / Not Translated]**</span>. Some windows are closed to addons (buffs on the target frame, buffs under the minimap in combat, the combat log) and stay in English.
+
+### <span style="color:#E8C77E;">What the addon records</span>
+
+When the game shows English text the addon cannot translate, the addon notes it in its own saved-variables file, so it can be translated in a future update. It saves the character's class and race, because some game lines change with them. It never saves character name, account, realm, position, chat or times, and never sends anything by itself. You can turn collection off on the **Raccolta dei testi inglesi** page or with **/fita collector off**.
+
+### <span style="color:#E8C77E;">Installation</span>
+
+Install it with the CurseForge app (make sure the **Forever** installation is selected), or extract the zip into `World of Warcraft\_forever_\Interface\AddOns`: the `OldpZ_ForeverITA` folder must be inside. At character selection, in **AddOns**, make sure the addon is ticked. World of Warcraft: Forever only; no other addons or libraries needed.
+
+### <span style="color:#E8C77E;">Reporting a problem</span>
+
+A badly translated line: left-click the minimap button (or **/fita fix**), pick the line and what is wrong, then copy the report from **Invia segnalazione**. A bug or an idea: **/fita bug**, which prepares the text with build, version and Lua errors. You can leave everything in this page's comments.
+
+### <span style="color:#E8C77E;">Credits and license</span>
+
+Based on **WoW Forever Japanese** by Zyaga (GPL-2.0-or-later): the addon architecture comes from it, the Japanese translations do not. Official Italian names and text come from Blizzard's Italian World of Warcraft client; the rest is translated for this addon with the same terminology. Sources are listed in `ATTRIBUTION.md`, included in the addon. License GPL-2.0-or-later.
+
+This addon is made by a fan. It is not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+
+---
 
 ## <span style="color:#E8C77E;">Italiano</span>
 
