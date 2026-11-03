@@ -121,12 +121,43 @@ local function linger()
   end)
 end
 
+local function mode()
+  local m = WFJ.Settings and WFJ.Settings.get("voice.panel")
+  return m == "nohead" and "nohead" or m == "none" and "none" or "full"
+end
+
+-- The head's room: with the portrait the name and buttons sit right of it; without, the panel is narrower.
+local function layout(m)
+  local noHead = m == "nohead"
+  local left = noHead and 10 or HEAD_SIZE + 10
+  frame:SetSize(noHead and WIDTH - HEAD_SIZE - 6 or WIDTH, HEIGHT)
+  nameText:ClearAllPoints()
+  nameText:SetPoint("TOPLEFT", frame, "TOPLEFT", left, -10)
+  nameText:SetWidth(WIDTH - HEAD_SIZE - 18)
+  buttons.stop:ClearAllPoints()
+  buttons.stop:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", left, 8)
+  Head.setHidden(head, noHead)
+end
+
 -- State "voiceQueue" listener: the panel as the player's state says. `reason`: "stop" hides it at once.
+-- Setting voice.panel = "none": no panel at all (the line still plays).
 function Panel.update(reason)
   local s = WFJ.VoicePlayer.state()
+  local m = mode()
+  if m == "none" then
+    if frame then
+      cancelHide()
+      frame:Hide()
+    end
+    return
+  end
   if not frame then
     if not s.item then return end -- nothing ever played: no frame
     if not build() then return end
+  end
+  if Panel.layoutMode ~= m then
+    Panel.layoutMode = m
+    layout(m)
   end
   if not s.item then
     Head.setTalking(head, false)
@@ -170,5 +201,7 @@ function Panel.init()
   if Panel.listening then return true end
   Panel.listening = true
   WFJ.State.on("voiceQueue", function(reason) pcall(Panel.update, reason) end)
+  -- a voice setting changed (voice.panel among them): redraw as the player chose, a line playing or not
+  WFJ.State.on("voice", function() if frame then pcall(Panel.update) end end)
   return true
 end

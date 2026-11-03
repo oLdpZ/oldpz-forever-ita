@@ -356,7 +356,7 @@ describe("voice in the loaded addon", function()
     assert.is_false(WFJ.Voice.hasPack())
     local all, hidden = voiceSettings()
     assert.are.same({ "voice.enabled", "voice.offer", "voice.progress", "voice.turnin", "voice.greeting",
-      "voice.books", "voice.muteDialog" }, all)
+      "voice.books", "voice.muteDialog", "voice.panel" }, all)
     assert.are.equal(#all, hidden)
     assert.are.same({ nil, "nopack" }, { WFJ.Voice.decide("gossip", "greeting", "gossip", KEY, { creature = 1 }) })
     assert.is_nil(OFI_DB.voiceHeard)
@@ -365,7 +365,7 @@ describe("voice in the loaded addon", function()
       local d
       for _, x in ipairs(S.list()) do if x.id == id then d = x end end
       assert.is_true(type(d.it) == "string" and #d.it > 0, id)
-      if id ~= "voice.greeting" then assert.is_true(S.get(id), id) end
+      if id ~= "voice.greeting" and id ~= "voice.panel" then assert.is_true(S.get(id), id) end
     end
     assert.are.equal("once", S.get("voice.greeting"))
     assert.are.same({ "once", "always", "never" }, (function()

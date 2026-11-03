@@ -51,8 +51,15 @@ function Head.build(parent, x, y, size)
 end
 
 local function showModel(h, on)
-  h.model:SetAlpha(on and 1 or 0)
-  h.icon:SetShown(not on)
+  h.shownModel = on
+  h.model:SetAlpha((on and not h.off) and 1 or 0)
+  h.icon:SetShown(not on and not h.off)
+end
+
+-- The player's "no portrait" choice (setting voice.panel): neither head nor icon, while loading goes on unseen.
+function Head.setHidden(h, off)
+  h.off = off and true or nil
+  showModel(h, h.shownModel)
 end
 
 -- Loads `item`'s speaker (VoicePlayer's queue item: item.speaker = { creature, unit, guid } or nil).

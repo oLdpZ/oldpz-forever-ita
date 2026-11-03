@@ -49,7 +49,7 @@ Options.PAGES = {
       { title = "section.voice", rows = { "voice.enabled", "voice.muteDialog" } },
       { title = "section.voiceKinds", columns = 2,
         rows = { "voice.offer", "voice.progress", "voice.turnin", "voice.books" } },
-      { rows = { "voice.greeting" } },
+      { rows = { "voice.greeting", "voice.panel" } },
     } },
   { id = "about", title = "page.about", header = true, sections = {
     { title = "section.help", rows = { "aboutHold", "aboutMarkers", "aboutOpen" } },

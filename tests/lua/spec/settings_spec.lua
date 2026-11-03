@@ -8,7 +8,7 @@ local IDS = { "enabled", "modifier", "area.quests", "area.gossip", "area.itemToo
   "area.nameFactions", "minimapButton",
   -- the voice settings, hidden until a voice pack registers (voice_spec.lua)
   "voice.enabled", "voice.offer", "voice.progress", "voice.turnin", "voice.greeting", "voice.books",
-  "voice.muteDialog" }
+  "voice.muteDialog", "voice.panel" }
 local DEFAULTS = { enabled = true, modifier = "alt", ["area.quests"] = true, ["area.gossip"] = true,
   ["area.itemTooltips"] = true, ["area.spellTooltips"] = true, ["area.interface"] = true, ["area.books"] = true,
   ["marker.stale"] = true,

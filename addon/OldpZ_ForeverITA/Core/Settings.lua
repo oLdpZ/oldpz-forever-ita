@@ -240,3 +240,9 @@ voiceSetting("voice.books", "Books and letters", "Libri e lettere")
 -- While a line plays the game's own English voice is turned off, and put back afterwards (the voice player).
 voiceSetting("voice.muteDialog", "Silence the game's English voices while a line plays",
   "Silenzia le voci inglesi del gioco mentre parla un PNG")
+-- The voice panel (UI/VoicePanel) beside the window: whole (the speaker's head, name, buttons), without the head, or
+-- not at all (the line is only heard; /fita voce stop still stops it).
+Settings.define{ id = "voice.panel", kind = "choice", choices = { "full", "nohead", "none" }, default = "full",
+  hidden = voiceHidden, apply = voiceChanged,
+  label = "Voice panel", it = "Pannello della voce",
+  choiceText = { full = "Ritratto, nome e pulsanti", nohead = "Senza ritratto", none = "Nessuno (solo la voce)" } }
