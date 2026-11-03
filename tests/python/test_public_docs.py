@@ -26,12 +26,17 @@ def test_nothing_public_claims_to_replace_the_classic_addons(root):
         assert not re.search(r"\breplaces\b|supersede|successor|\bsucceed(s|ed)?\b|後継", text, re.IGNORECASE), path
 
 
-def test_curseforge_description_is_italian_and_claims_nothing_the_addon_lacks(root):
+def test_curseforge_description_is_english_first_then_italian_and_claims_nothing_the_addon_lacks(root):
     text = _read(root, "docs/curseforge.md")
     assert "## Description" in text and "**Project name:** oLd_pZ Forever - Traduzione Italiana" in text
-    assert "### <span style=\"color:#E8C77E;\">Cosa traduce</span>" in text
+    # CurseForge moderation: an English version first, at the top, then the other language
+    english = text.index("### <span style=\"color:#E8C77E;\">What it translates</span>")
+    italian = text.index("### <span style=\"color:#E8C77E;\">Cosa traduce</span>")
+    assert english < italian
+    # the voice packs ship (separate projects), so the pages name them; nothing else the addon lacks
+    assert "Italian NPC voices" in text and "Voci italiane dei PNG" in text
     assert not re.search(r"[぀-ヿ一-鿿]", text)
-    for absent in ("voice", "voce", "dizionario", "dictionary", "Japanese Voice", "foreverjapanese"):
+    for absent in ("dizionario", "dictionary", "Japanese Voice", "foreverjapanese"):
         assert absent.lower() not in text.lower(), absent
     assert not (root / "docs/curseforge-voice.md").exists()
 

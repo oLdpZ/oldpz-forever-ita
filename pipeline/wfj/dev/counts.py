@@ -32,6 +32,12 @@ ROWS = (
 )
 README_HEADING = "## Cosa traduce"
 CURSEFORGE_PREFIX = "In numeri: "
+# CurseForge wants the English first on the page: the same counts, in English words
+CURSEFORGE_PREFIX_EN = "In numbers: "
+ROWS_EN = {
+    "quest": "quests", "gossip": "NPC dialogue lines", "book": "book pages", "letter": "letter pages",
+    "item": "item tooltips", "spell": "spell tooltips", "ui": "interface texts",
+}
 
 _COUNTS = re.compile(r"counts = \{([^}]*)\}")
 
@@ -64,6 +70,10 @@ def curseforge_line(c: dict[str, int]) -> str:
     return CURSEFORGE_PREFIX + ", ".join(f"**{_n(c[k])}** {words}" for k, _, words in ROWS) + "."
 
 
+def curseforge_line_en(c: dict[str, int]) -> str:
+    return CURSEFORGE_PREFIX_EN + ", ".join(f"**{c[k]:,}** {ROWS_EN[k]}" for k, _, _ in ROWS) + "."
+
+
 def _table_after(text: str, heading: str, table: str) -> str:
     start = text.index(heading + "\n\n") + len(heading) + 2
     end = text.index("\n\n", start) + 1
@@ -79,6 +89,7 @@ def apply_readme(text: str, c: dict[str, int]) -> str:
 
 
 def apply_curseforge(text: str, c: dict[str, int]) -> str:
+    text = _line(text, CURSEFORGE_PREFIX_EN, curseforge_line_en(c))
     return _line(text, CURSEFORGE_PREFIX, curseforge_line(c))
 
 

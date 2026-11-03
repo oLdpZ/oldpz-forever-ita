@@ -37,7 +37,7 @@ game version 1.60.x.
 - **Item and spell tooltips** and **interface text** (windows, buttons, menus, messages), using Blizzard's official Italian client text wherever it uses the same words as Forever.
 - **Names** of items, spells, zones, factions and NPCs, including above characters' heads and in the game's windows.
 
-In numbers: **20,094** quest texts, **10,876** NPC dialogue lines, **1,202** book and letter pages, **10,210** item tooltips, **25,645** spell tooltips, **15,257** interface texts, **10,098** NPC names.
+In numbers: **4,775** quests, **10,876** NPC dialogue lines, **921** book pages, **208** letter pages, **10,223** item tooltips, **19,870** spell tooltips, **15,257** interface texts.
 
 ### <span style="color:#E8C77E;">Italian NPC voices</span>
 
@@ -87,7 +87,7 @@ This addon is made by a fan. It is not affiliated with or endorsed by Blizzard E
 - **Tooltip di oggetti e abilità** e **testi dell'interfaccia** (finestre, pulsanti, menu, messaggi), con il testo del client italiano ufficiale di Blizzard dove usa le stesse parole di Forever.
 - **Nomi** di oggetti, abilità, zone, fazioni e PNG, anche sopra la testa dei personaggi e nelle finestre del gioco.
 
-In numeri: **20.094** testi di missione, **10.876** righe di dialogo dei PNG, **1.202** pagine di libri e lettere, **10.210** tooltip degli oggetti, **25.645** tooltip delle abilità, **15.257** testi dell'interfaccia, **10.098** nomi di PNG.
+In numeri: **4.775** missioni, **10.876** righe di dialogo dei PNG, **921** pagine di libri, **208** pagine di lettere, **10.223** tooltip degli oggetti, **19.870** tooltip delle abilità, **15.257** testi dell'interfaccia.
 
 ### <span style="color:#E8C77E;">Voci italiane dei PNG</span>
 
