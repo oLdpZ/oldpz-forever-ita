@@ -124,7 +124,23 @@ end
 -- as one word, which no whole-word match finds. Only the lookup candidate marked `plural` (Collector.keys, last)
 -- turns it into the token plus "s", as normalize_v1 writes "$cs": recorded text keeps a literal plural as written,
 -- since the import could not put the word back into a stand-in line.
+-- A letter or book prints `$N` in capitals ("Take care not to ignore my words, SCIATALGIA."), which the exact-case
+-- replacement leaves alone too: the name in capitals is the name token as well, on every candidate that replaces
+-- the name, so the page is found and the collector never stores the name. Capitals as the client writes them: ASCII
+-- and the Latin-1 letters (à → À: UTF-8 C3 A0–BE, ÷ excepted, minus 0x20 on the second byte).
+local function upper(word)
+  return (word:upper():gsub("\195([\160-\190])", function(b)
+    if b == "\183" then return nil end
+    return "\195" .. string.char(b:byte() - 32)
+  end))
+end
+Collector.upper = upper
+
 local function replaceLower(text, player)
+  local name = player.name
+  if type(name) == "string" and name ~= "" and upper(name) ~= name then
+    text = Normalize.replaceWord(text, upper(name), "{name}")
+  end
   for _, pair in ipairs({ { player.class, "{class}" }, { player.race, "{race}" } }) do
     local word = pair[1]
     if type(word) == "string" and word ~= "" then

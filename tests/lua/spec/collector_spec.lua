@@ -82,6 +82,17 @@ describe("Core/Collector", function()
       assert.are.equal(h1Of("Journey forth, young $c."), fps[1])
     end)
 
+    -- book page 2436: "Take care not to ignore my words, SCIATALGIA."
+    it("a letter's name in capitals is the $N token", function()
+      assert.are.equal(h1Of("Take care not to ignore my words, $N. Seek me out."),
+        C.fingerprints("Take care not to ignore my words, REYN. Seek me out.", PLAYER)[1])
+      assert.are.same({ C.key("Take care, $N.", nil) }, { C.keys("Take care, REYN.", PLAYER)[1] })
+      assert.are.equal("Take care, $N.", C.text("Take care, REYN.", PLAYER)) -- the collector never stores the name
+      local accented = { name = "Élùne", class = "Hunter", race = "Night Elf" }
+      assert.are.equal("Take care, $N.", C.text("Take care, ÉLÙNE.", accented)) -- Latin-1 letters too
+      assert.are.equal("REYNOLDS stays.", C.text("REYNOLDS stays.", PLAYER)) -- whole words only
+    end)
+
     it("a short name in the text adds its candidates and reports the comparison inconclusive", function()
       local jo = { name = "Jo", class = "Hunter", race = "Night Elf" }
       local fps, inconclusive = C.fingerprints("Well done, Jo.", jo)
