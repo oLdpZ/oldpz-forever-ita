@@ -30,9 +30,10 @@
 --   OnEnter → SetText; camelot/blizzard_professionsframe.xml:13–17; shareduipaneltemplates.lua:408–422), each
 --   restricted to its one key. The profession side tabs' tooltipText is the profession's name (camelot/
 --   blizzard_professionsframe.lua:64): never registered.
--- Never touched: a slot's ProfessionName (GetProfessionInfo's name) and specialization, a secondary slot's
---   missingHeader (PROFESSIONS_COOKING / _FISHING / _FIRST_AID are profession names; `only` keeps them English).
---   The crafting page's rank bar is UI/Crafting's. The unlearn confirmation is a StaticPopup (ADR-015 §5).
+-- Names (UI/NameText, never dictionary words; showSlotNames): a slot's ProfessionName, its rank bar, its spell
+--   buttons' names (their rank subtext is a dictionary word of RANK), a secondary slot's missingHeader (a profession's
+--   name). Never touched by the dictionary: ProfessionName and specialization (NEVER_TOUCH). The crafting page's
+--   rank bar is UI/Crafting's. The unlearn confirmation is a StaticPopup (ADR-015 §5).
 local _, WFJ = ...
 local Professions = {}
 WFJ.Professions = Professions
@@ -69,6 +70,9 @@ local HEADER = { only = { "PROFESSIONS_FIRST_PROFESSION", "PROFESSIONS_SECOND_PR
 local MISSING = { only = { "PROFESSIONS_MISSING_PROFESSION", "PROFESSIONS_COOKING_MISSING",
   "PROFESSIONS_FISHING_MISSING", "PROFESSIONS_FIRST_AID_MISSING" } }
 local UNLEARN = { only = { "UNLEARN_SKILL_TOOLTIP" } }
+-- a profession spell's subtext: its rank (spell:GetSpellSubtext(), blizzard_professionsbook.lua:491–497), the words
+-- PROFESSION_RANKS names up to Forever's 300 (blizzard_professionsbook.lua:1–5)
+local RANK = { only = { "APPRENTICE", "JOURNEYMAN", "EXPERT", "ARTISAN" } }
 Professions.KEYS = { title = TITLE.only, header = HEADER.only, missing = MISSING.only, unlearn = UNLEARN.only }
 
 local function get(key) return Compat.get(SURFACE, key) end
@@ -88,15 +92,82 @@ local function slotsOf(hostKey)
   return out
 end
 
--- The "no profession here" words of every slot of one host. → the number of dictionary words found.
+local function isSecondary(name) return name:find("^Secondary") ~= nil end
+
+-- One slot's names, as FormatProfession wrote them (camelot/blizzard_professionsbook.lua:44–143): the profession's
+-- name (ProfessionName ← GetProfessionInfo's name), its rank bar ("Mining 3/75", StatusBar.Rank.Text, the
+-- ProfessionsRankBarTemplate), each spell button's name (spellString ← the spellbook item's name) and rank
+-- (subSpellString, a dictionary word of RANK), and a secondary slot's empty header (missingHeader: the profession's
+-- name, PROFESSIONS_COOKING / _FISHING / _FIRST_AID). Names through UI/NameText (official, or coined for what
+-- Forever added): never dictionary words. The spell buttons are SecureFrameTemplate CheckButtons, but no Blizzard
+-- code reads their text back (only SetText / SetTextColor; ADR-058's taint came from text Blizzard measured).
+-- → the number shown
+local function showSlotNames(hostKey, name, frame)
+  local prefix = hostKey .. "." .. name
+  local n = WFJ.Render.name(BOOK, prefix .. ".name", frame.ProfessionName, "namespell")
+  local bar = type(frame.StatusBar) == "table" and frame.StatusBar.Rank or nil
+  if type(bar) == "table" then n = n + WFJ.Render.name(BOOK, prefix .. ".rank", bar.Text, "namespell") end
+  if isSecondary(name) then
+    n = n + WFJ.Render.name(BOOK, prefix .. ".headerName", frame.missingHeader, "namespell")
+  end
+  if type(frame.spellButtons) == "table" then
+    for i, button in ipairs(frame.spellButtons) do
+      if type(button) == "table" then
+        n = n + WFJ.Render.name(BOOK, prefix .. ".spell" .. i, button.spellString, "namespell")
+        n = n + WFJ.Labels.show(BOOK, prefix .. ".spellRank" .. i, button.subSpellString, nil, RANK)
+      end
+    end
+  end
+  return n
+end
+
+-- The "no profession here" words of every slot of one host, and its names. → the number found.
 function Professions.showStatic(hostKey)
-  local items = {}
+  local items, n = {}, 0
   for _, slot in ipairs(slotsOf(hostKey)) do
     local prefix = hostKey .. "." .. slot.name
-    items[#items + 1] = { prefix .. ".header", slot.frame.missingHeader, HEADER }
+    if not isSecondary(slot.name) then items[#items + 1] = { prefix .. ".header", slot.frame.missingHeader, HEADER } end
     items[#items + 1] = { prefix .. ".missing", slot.frame.missingText, MISSING }
+    n = n + showSlotNames(hostKey, slot.name, slot.frame)
   end
-  return WFJ.Labels.showAll(BOOK, items)
+  return WFJ.Labels.showAll(BOOK, items) + n
+end
+
+-- hooksecurefunc target (ProfessionsBookFrameMixin:FormatProfession(frame, index), on the page instance): the one
+-- slot it filled, again; and a rank bar's own Update (SKILL_LINES_CHANGED). → the number shown
+local function hostOf(page)
+  for _, hostKey in ipairs({ "bookPage", "standalone" }) do
+    if get(hostKey) == page then return hostKey end
+  end
+  return nil
+end
+function Professions.onFormat(page, frame)
+  local hostKey = hostOf(page)
+  if not hostKey or type(frame) ~= "table" then return 0 end
+  for _, slot in ipairs(slotsOf(hostKey)) do
+    if slot.frame == frame then
+      local n = showSlotNames(hostKey, slot.name, frame)
+      WFJ.Render.updateBanner(BOOK)
+      return n
+    end
+  end
+  return 0
+end
+
+local barHooked = setmetatable({}, { __mode = "k" })
+local function hookSlots(hostKey)
+  local page = get(hostKey)
+  if type(page) == "table" and type(page.FormatProfession) == "function" and not barHooked[page] then
+    barHooked[page] = true
+    hooksecurefunc(page, "FormatProfession", Professions.onFormat)
+  end
+  for _, slot in ipairs(slotsOf(hostKey)) do
+    local bar = slot.frame.StatusBar
+    if type(bar) == "table" and type(bar.Update) == "function" and not barHooked[bar] then
+      barHooked[bar] = true
+      hooksecurefunc(bar, "Update", function() Professions.onFormat(page, slot.frame) end)
+    end
+  end
 end
 
 -- A window title: after SetTitle (Labels.title's hook and ours), SetTitleFormatted (ours) and the window's OnShow.
@@ -168,6 +239,7 @@ function Professions.setupFrame()
   hookScript(page, "OnShow", Professions.onPageShow)
   hookScript(page, "OnHide", Professions.releasePage)
   registerTooltips("bookPage")
+  hookSlots("bookPage")
   local tab = get("overviewTab")
   if type(tab) == "table" then WFJ.HelpTooltip.register(tab, TITLE) end
   Professions.onFrameShow()
@@ -188,6 +260,7 @@ function Professions.setupBook()
   hookScript(book, "OnShow", Professions.onStandaloneShow)
   hookScript(book, "OnHide", Professions.release)
   registerTooltips("standalone")
+  hookSlots("standalone")
   Professions.onStandaloneShow()
   return true
 end

@@ -2051,6 +2051,7 @@ WFJ.Data.add("namespell", {
   ["5c65ec09964ead1f"] = { "Evocazione: Scheletro Atal'ai", "." },
   ["5c76dd6b06f67eff"] = { "Tecnostruzzo Verde", "." },
   ["5c81ff0691c889cc"] = { "Cappello di Cuoio Confortevole", "." },
+  ["5c852b316c646100"] = { "Fusione", "." },
   ["5c8864e2ae42ead1"] = { "Pantaloni di Stoffa dell'Ombra", "." },
   ["5ca5d45373fab8ee"] = { "Tonaca di Seta Cremisi", "." },
   ["5cacb157688c0fc2"] = { "Campione di Basilisco", "." },

@@ -29,6 +29,7 @@ local UI = {
   UNLEARN_SKILL_TOOLTIP = { "Unlearn this profession.", "この専門技術を忘れる。" },
   -- profession names that are also dictionary words here: they must stay English wherever they appear
   PROFESSIONS_COOKING = { "Cooking", "料理" }, MINING = { "Mining", "採掘" },
+  APPRENTICE = { "Apprentice", "見習い" },
 }
 
 local function en(key) return _G[key] end
@@ -63,8 +64,27 @@ local function slot(parent, primary, header, missing)
     f.UnlearnButton = CreateFrame("Button", nil, f)
     hover(f.UnlearnButton, function() return en("UNLEARN_SKILL_TOOLTIP") end)
   end
+  -- the rank bar (ProfessionsRankBarTemplate: Rank.Text) and the spell buttons (ProfessionButtonTemplate:
+  -- spellString, subSpellString; xml:41–56, 142–166)
+  f.StatusBar = CreateFrame("Frame", nil, f)
+  f.StatusBar.Rank = { Text = fs("") }
+  function f.StatusBar.Update(self, info) -- TRADESKILL_NAME_RANK (blizzard_professionsrankbar.lua:6–21, 141–143)
+    self.Rank.Text:SetText(("%s %d/%d"):format(info.professionName, info.skillLevel, info.maxSkillLevel))
+  end
+  f.spellButtons = {}
+  for i = 1, 2 do
+    local b = CreateFrame("CheckButton", nil, f)
+    b.spellString, b.subSpellString = fs(""), fs("")
+    f.spellButtons[i] = b
+  end
+  f.SpellButton1, f.SpellButton2 = f.spellButtons[1], f.spellButtons[2]
   return f
 end
+
+-- each profession's spells: { name, subtext } (ProfessionSpellButtonMixin:UpdateButton, blizzard_professionsbook.lua:
+-- 458–499)
+local SPELLS = { Mining = { { "Smelting", "Apprentice" }, { "Find Minerals", "" } }, Cooking = { { "Cooking",
+  "Apprentice" } } }
 
 local function bookContent(host)
   local c = CreateFrame("Frame", nil, host)
@@ -75,7 +95,14 @@ local function bookContent(host)
   c.SecondaryProfession2 = slot(c, false, "Fishing", en("PROFESSIONS_FISHING_MISSING"))
   c.SecondaryProfession3 = slot(c, false, "First Aid", en("PROFESSIONS_FIRST_AID_MISSING"))
   -- ProfessionsBookFrameMixin:FormatProfession (camelot/blizzard_professionsbook.lua:45–143)
-  function host.FormatProfession(_, f, name) f.ProfessionName.text = name or "" end
+  function host.FormatProfession(_, f, name)
+    f.ProfessionName.text = name or ""
+    if name then f.StatusBar:Update({ professionName = name, skillLevel = 3, maxSkillLevel = 75 }) end
+    for i, b in ipairs(f.spellButtons) do
+      local spell = name and (SPELLS[name] or {})[i]
+      b.spellString.text, b.subSpellString.text = spell and spell[1] or "", spell and spell[2] or ""
+    end
+  end
 end
 
 -- `known` = { PrimaryProfession1 = "Mining", … }: the professions the character has
@@ -207,6 +234,35 @@ describe("the professions window on the Forever client", function()
         _G.ProfessionsFrame:Hide()
         assert.are.equal("Cooking", title():GetText())
         assert.are.equal(0, SS.count("professions"))
+      end)
+
+      it("a slot's names show as the official ones: the profession, its rank bar, its spells and their rank; a"
+        .. " secondary slot's empty header; Alt shows the English", function()
+        local function key(n) return WFJ.NameText.key(n) end
+        NAMES.namespell = { [key("Mining")] = { ja = "Estrazione", status = "." },
+          [key("Smelting")] = { ja = "Fusione", status = "." }, [key("Fishing")] = { ja = "Pesca", status = "." },
+          [key("Cooking")] = { ja = "Cucina", status = "." } }
+        open()
+        local p = content().PrimaryProfession1
+        assert.are.equal("Estrazione", p.ProfessionName:GetText())
+        assert.are.equal("Estrazione 3/75", p.StatusBar.Rank.Text:GetText())
+        assert.are.equal("Fusione", p.SpellButton1.spellString:GetText())
+        assert.are.equal("見習い", p.SpellButton1.subSpellString:GetText())
+        assert.are.equal("Find Minerals", p.SpellButton2.spellString:GetText()) -- no name in the table: English
+        local fishing = content().SecondaryProfession2 -- not learnt: its header is the profession's name
+        assert.are.equal("Pesca", fishing.missingHeader:GetText())
+        local cooking = content().SecondaryProfession1
+        assert.are.equal("Cucina", cooking.ProfessionName:GetText())
+        assert.are.equal("Cucina", cooking.SpellButton1.spellString:GetText())
+        alt(true)
+        assert.are.equal("Mining 3/75", p.StatusBar.Rank.Text:GetText())
+        assert.are.equal("Smelting", p.SpellButton1.spellString:GetText())
+        alt(false)
+        p.StatusBar:Update({ professionName = "Mining", skillLevel = 4, maxSkillLevel = 75 }) -- SKILL_LINES_CHANGED
+        assert.are.equal("Estrazione 4/75", p.StatusBar.Rank.Text:GetText())
+        _G.ProfessionsFrame:Hide()
+        assert.are.equal("Mining", p.ProfessionName:GetText())
+        assert.are.equal(0, SS.count("professions.book"))
       end)
 
       it("the empty slots' headers and help texts render; profession names stay English", function()
