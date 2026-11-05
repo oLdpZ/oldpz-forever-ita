@@ -13,7 +13,7 @@ WFJ.Data.add("objective", {
   [477270] = { "Porta la tua abilità di Ingegneria a 20", 0xe75484ed, "." },
   [477368] = { "Montanaro Cornelius trovato", 0x4c37d9bb, "." },
   [477504] = { "Uovo di tarantola distrutto", 0xecffe759, "." },
-  [477518] = { "Webbed Forsaken liberati", 0x280e18e3, "." },
+  [477518] = { "Reietti Avvolti nella Ragnatela liberati", 0x280e18e3, "." },
   [477594] = { "Effetti personali di Kurothel trovati", 0x27b25393, "." },
   [477632] = { "Parla con il dottor Martin Felben", 0x35c836fd, "." },
   [477671] = { "Indagini a ⟦Raven Hill=Collecorvo⟧ svolte", 0x6e4a2ba7, "." },
