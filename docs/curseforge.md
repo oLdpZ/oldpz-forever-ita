@@ -41,7 +41,19 @@ In numbers: **4,775** quests, **10,876** NPC dialogue lines, **921** book pages,
 
 ### <span style="color:#E8C77E;">Italian NPC voices</span>
 
-NPCs can also **speak Italian**: quest offers, progress and turn-ins, greetings, books and letters. The voices come in five separate packs, by level band, to install only if you want them (see the **oLd_pZ Forever - Voci italiane** projects). The voices are generated with Google Gemini text-to-speech, with a voice of their own for the main characters. On the **Voce** settings page you choose what is read aloud and how the speaker panel is shown: with portrait, without portrait, or no panel.
+NPCs can also **speak Italian**: quest offers, progress and turn-ins, greetings, books and letters. The voices are generated with Google Gemini text-to-speech, with a voice of their own for the main characters.
+
+The voices are **optional** and come in five separate packs on CurseForge. Install only the ones you want, next to this addon: the packs need it.
+
+| Voice pack | What it voices |
+|---|---|
+| [Voci italiane (livelli 1-20)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-1-20) | the quests of levels 1–20 |
+| [Voci italiane (livelli 21-40)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-21-40) | the quests of levels 21–40 |
+| [Voci italiane (livelli 41-55)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-41-55) | the quests of levels 41–55 |
+| [Voci italiane (livelli 56-60)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-56-60) | the quests of levels 56–60 |
+| [Voci italiane (libri, dialoghi e altro)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-libri-dialoghi-e) | books, letters, NPC dialogue and quests without a level band |
+
+On the **Voce** settings page (it appears once a pack is installed) you choose what is read aloud and how the speaker panel is shown: with portrait, without portrait, or no panel. **/fita voce stop** stops a voice.
 
 ### <span style="color:#E8C77E;">Names</span>
 
@@ -91,7 +103,19 @@ In numeri: **4.775** missioni, **10.876** righe di dialogo dei PNG, **921** pagi
 
 ### <span style="color:#E8C77E;">Voci italiane dei PNG</span>
 
-I PNG possono anche **parlare in italiano**: proposte, avanzamento e consegna delle missioni, saluti, libri e lettere. Le voci sono in cinque pacchetti a parte, per fascia di livello, da installare solo se le vuoi (vedi i progetti **oLd_pZ Forever - Voci italiane**). Le voci sono generate con la sintesi vocale di Google Gemini, con una voce propria per i personaggi principali. Dalla pagina **Voce** delle impostazioni scegli cosa leggere ad alta voce e come mostrare il pannello di chi parla: con il ritratto, senza ritratto o nessun pannello.
+I PNG possono anche **parlare in italiano**: proposte, avanzamento e consegna delle missioni, saluti, libri e lettere. Le voci sono generate con la sintesi vocale di Google Gemini, con una voce propria per i personaggi principali.
+
+Le voci sono **facoltative** e sono in cinque pacchetti a parte su CurseForge. Installa solo quelli che vuoi, insieme a questo addon: i pacchetti ne hanno bisogno.
+
+| Pacchetto voce | Cosa fa parlare |
+|---|---|
+| [Voci italiane (livelli 1-20)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-1-20) | le missioni dei livelli 1–20 |
+| [Voci italiane (livelli 21-40)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-21-40) | le missioni dei livelli 21–40 |
+| [Voci italiane (livelli 41-55)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-41-55) | le missioni dei livelli 41–55 |
+| [Voci italiane (livelli 56-60)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-livelli-56-60) | le missioni dei livelli 56–60 |
+| [Voci italiane (libri, dialoghi e altro)](https://www.curseforge.com/wow/addons/old-pz-forever-voci-italiane-libri-dialoghi-e) | libri, lettere, dialoghi dei PNG e missioni senza una fascia di livello |
+
+Dalla pagina **Voce** delle impostazioni (compare quando è installato un pacchetto) scegli cosa leggere ad alta voce e come mostrare il pannello di chi parla: con il ritratto, senza ritratto o nessun pannello. **/fita voce stop** ferma una voce.
 
 ### <span style="color:#E8C77E;">Nomi</span>
 
