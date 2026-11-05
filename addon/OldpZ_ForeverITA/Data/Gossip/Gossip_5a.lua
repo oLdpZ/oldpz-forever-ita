@@ -40,4 +40,5 @@ WFJ.Data.add("gossip", {
   ["5adeed438e646800"] = { "Quindi avevo ragione sulle energie. Vediamo cosa dice l'altro tomo sull'argomento.", "." },
   ["5adff2e1bb9c5bbb"] = { "Come posso aiutare?", "." },
   ["5ae42b45f5540714"] = { "La grazia con cui combatto non è qualcosa che posso insegnarti, ma posso insegnarti a usare varie armi.", "." },
+  ["5af37d407bacde5b"] = { "Non c'è scampo, neanche nella morte.", "." },
 })

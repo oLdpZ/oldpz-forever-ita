@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["8ead5d54e91b78a2"] = { "Quella maghetta minuta, Bink, laggiù alla Hall of Mysteries, potrebbe probabilmente aiutarti per qualsiasi necessità magica.\n\nLa Hall of Mysteries è appena a nord dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["8ebf31106c5e854e"] = { "Ora vado a evocare il signore di questa dimora. Se cercherete udienza da lui, le vostre misere vite saranno senz'altro perdute! Ciononostante, cercate il suo covo, se ne avete il coraggio!", "." },
   ["8ec239bd8c9db3c7"] = { "Ok, andiamo!", "." },
+  ["8ec42a5cdb543cd8"] = { "Proprio quello che mi serviva.", "." },
   ["8ed5c63aa68ef58c"] = { "Incredibile! Come osano??", "." },
   ["8edac29bb807de31"] = { "Questa è la prova che ti avevo chiesto. Hai fatto bene, {name}.\n\nSono felice di essere la prima a congratularmi con te e a darti questo... il tuo totem dell'acqua.\n\nUsalo bene, e buona fortuna.\n\nLa tua prossima prova non arriverà prima di un po' di tempo, quindi impara bene le tue lezioni. L'acqua pura non solo ridà la vita a chi è ferito, ma può avere molti altri effetti. Ti suggerisco di cercare un istruttore degli sciamani quando ne avrai il tempo. Potrebbe avere altri incantesimi da insegnarti.", "." },
   ["8edbbaa683592c76"] = { "Un'altra vittoria per la ⟦Defias Brotherhood=Fratellanza dei Defias⟧!", "." },

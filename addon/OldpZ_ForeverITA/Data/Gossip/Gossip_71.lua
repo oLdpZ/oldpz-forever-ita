@@ -5,6 +5,7 @@ WFJ.Data.add("gossip", {
   ["7103a8535cf7635a"] = { "Non lasciare che il tintinnio delle campanelle ti distragga dal tintinnio delle monete in tasca! Compra le leccornie della Masseria Buongusto per le tue feste del Grande Inverno!", "." },
   ["7111b6893a34384a"] = { "%s comincia a creare una copia di sé!", "." },
   ["711ccad01859ea2d"] = { "Se cuciture logore d'abominio vuoi trovare, a Stratholme ti tocca andare.\n\nUn tempo città natale del Lightbringer in persona, ora è invasa dai servitori di Kel'Thuzad.\n\nSfida i pericoli della città in fiamme e abbatti i carnosi abomini! Prendi da loro il tuo premio: cuciture logore d'abominio!", "." },
+  ["71279f00bc4dc477"] = { "Come la Dama Oscura comanda.", "." },
   ["7132c400d546429d"] = { "In questo luogo, oscurità e ombre sono strumenti da usare e gettare a piacimento.", "." },
   ["71366d694883fbe3"] = { "Come vanno i tuoi viaggi, {name}? Ho sentito racconti delle tue avventure: a quanto pare hai avuto molto da fare. Ora vediamo cosa hai imparato mentre eri via.", "." },
   ["7137a29d0d7777e3"] = { "L'incubo di Ursal è finito! Siamo liberi!", "." },

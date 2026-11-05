@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["b961267a80835fa8"] = { "Ho perso il mio Confessor's Mantle e me ne serve uno nuovo, Al'tabim.", "." },
   ["b96e6ad9f0d9166f"] = { "Gli spiriti della natura sono forze da rispettare. Offrono grande aiuto a chi ne è degno e danno una morte rapida agli stolti.", "." },
   ["b970fabd7823f21e"] = { "Atten-ti! Tutto il materiale bellico per ⟦Ahn'Qiraj=Ahn'qiraj⟧ è stato contato ed è in viaggio verso la ⟦Cenarion Hold=Fortezza Cenariana⟧, <signore/signora>! Mi dicono che l'ultima parte dovrebbe arrivare in meno di un giorno. Una volta fatto, e quando qualcuno suonerà quel gong laggiù per aprire i cancelli, vi garantisco che daremo a quegli insetti una battaglia coi fiocchi!", "." },
+  ["b97bdca87e50f2c4"] = { "Ho poco tempo per stare seduto a chiacchierare con te. Se desideri uno dei miei destrieri, cerca Velma laggiù: ti insegnerà a cavalcare un destriero scheletrico.\n\nNon vorrei che la tua ignoranza facesse del male a uno dei miei splendidi cavalli.", "." },
   ["b9858cd82ee93ab4"] = { "Non è stata colpa sua, {name}. Diglielo...", "." },
   ["b9866b161153e3a7"] = { "Bottega aperta!", "." },
   ["b98875311a6f49d0"] = { "Credo che Aldwin Laughlin sia ancora il maestro di gilda residente di ⟦Stormwind=Roccavento⟧. Cerca la sua residenza sulla sinistra, appena oltrepassata la porta interna di ⟦Stormwind=Roccavento⟧.", "." },

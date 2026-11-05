@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["9843d68db9b899d1"] = { "Duke of Fathoms! Ho il tuo sigillo! Rispondi alla mia chiamata!", "." },
   ["9847dfe683b5db3d"] = { "Trovo che il fondale dell'oceano sia molto tranquillo.", "." },
   ["984eb1ce228d2cb6"] = { "Questo posto sarà la tua tomba.", "." },
+  ["9853567326dfb92c"] = { "Dolore delizioso.", "." },
   ["985d7ccf33775f49"] = { "Questo mi risparmierà di sicuro un po' di lavoro.", "." },
   ["985e0f4ee0edf781"] = { "%s si abbevera alla sofferenza dei caduti.", "." },
   ["985ec21bf3725b8c"] = { "Direi che è tutto. Abbiamo tutte le Lacrime di Arthas necessarie. Prova a chiedere in giro. Qualcuno degli altri avrà di sicuro qualcosa che deve ancora raccogliere per lo sforzo bellico.", "." },
