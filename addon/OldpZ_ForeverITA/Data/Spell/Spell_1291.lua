@@ -18,7 +18,7 @@ WFJ.Data.add("spell", {
   [1291218] = { "Evoca un Fiery Assistant che ti assiste per $D1.", nil, 0x882f806f, nil, "um" },
   [1291335] = { "Aumenta l'armatura di un bersaglio alleato di $N1, gli attributi di $N2 e le resistenze di $N3 per $D1.", "Armatura aumentata di $N1, attributi di $N2 e resistenze di $N3.", 0x21e62ed0, 0xcf69858b, "uu" },
   [1291338] = { "Infligge $N1 danni da natura a qualsiasi creatura che colpisce l'incantatore.", "$N1 danni da natura inflitti agli attaccanti in mischia.", 0x18a10f2a, 0xd89ce264, "uu" },
-  [1291341] = { "Crea un Expert Campfire.", nil, 0x4358369e, nil, "um" },
+  [1291341] = { "Crea un ⟦Expert Campfire=Fuoco da Campo da Esperto⟧.", nil, 0x4358369e, nil, "um" },
   [1291345] = { "Riduce l'oggetto bersaglio in rottami per recuperare una piccola quantità di materiali di creazione utilizzabili. Tutte le funzioni del campeggio condividono un tempo di recupero di $D1.", nil, 0x6a1b0327, nil, "um" },
   [1291346] = { "La polvere esplosiva detona, infliggendo $N1 danni da fuoco a chiunque si trovi entro $N2 m.", nil, 0x7802eb20, nil, "um" },
   [1291542] = { "+$N1 potenza d'attacco contro le bestie.", nil, 0x2e7564c4, nil, "um" },

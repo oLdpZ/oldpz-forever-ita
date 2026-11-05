@@ -66,7 +66,7 @@ WFJ.Data.add("spell", {
   [1302380] = { "Scendere sotto il $N1% della salute conferisce Restituzione al Mittente, che riflette il prossimo incantesimo lanciato su di te entro $D1. Può verificarsi solo una volta ogni $D2.", nil, 0x4510c010, nil, "um" },
   [1302497] = { "Respinge i nemici vicini entro $N1 m, infliggendo $N2 danni da natura e ulteriori $N3 danni da natura ogni $D1 per $D2.", "Infligge $N1 danni da natura ogni $D1.", 0x46b6e524, 0xa67fa389, "uu" },
   [1302500] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, stordendolo per $D1.", "Stordito.", 0x16b62254, 0x27f95286, "uu" },
-  [1302502] = { "Evoca uno scaffale di libri in un accampamento, che funge così da biblioteca. Richiede un Fuoco da Campo nelle vicinanze.", nil, 0x94cc5a4b, nil, "um" },
+  [1302502] = { "Evoca uno scaffale di libri in un accampamento, che funge così da biblioteca. Richiede un ⟦Campfire=Fuoco da Campo⟧ nelle vicinanze.", nil, 0x94cc5a4b, nil, "um" },
   [1302508] = { "Svolgi ricerche sugli incantesimi, ottenendo un fascio di pergamene. Richiede una biblioteca adatta.", nil, 0x0345d78a, nil, "um" },
   [1302511] = { "Purga $N1 effetti magici dannosi da un alleato o $N2 effetti magici benefici da un nemico. Se un effetto viene divorato, il vilsegugio recupera $N3 salute.", nil, 0x59f4eedb, nil, "um" },
   [1302521] = { "Rigenera $N1 mana.", "Rigenera $N1 mana.", 0x09fdd6de, 0x0a971cd0, "uu" },

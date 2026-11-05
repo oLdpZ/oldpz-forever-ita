@@ -83,13 +83,32 @@ def curated_rows():
                     yield row["tipo"], row["en"], row["it"]
 
 
+COINED = "nomi_coniati.tsv"
+
+
+def coined_rows(path: Path | None = None):
+    """`pipeline/nomi_coniati.tsv` (`tipo\\ten\\tit\\tnota`): Italian names for the objects and spells Forever
+    added, which no Italian client has (the camping system: `Basic Campfire` → `Fuoco da Campo Semplice`).
+    Names only, never glossary terms: they are common nouns (`Anvil`, `Loom`) that would mark the inside of
+    longer English names (`Burning Anvil`). A row of another kind, or with no English or no Italian, is
+    refused."""
+    path = path or ROOT / "pipeline" / COINED
+    with path.open(encoding="utf-8", newline="") as f:
+        for n, row in enumerate(csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE), 2):
+            if row.get("tipo") not in ("oggetto", "abilita") or not (row.get("en") or "").strip() \
+                    or not (row.get("it") or "").strip():
+                raise ValueError(f"{path.name}:{n}: not `oggetto|abilita\\ten\\tit\\tnota`: {row!r}")
+            yield row["tipo"], row["en"], row["it"]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--retail", type=Path, required=True)
     parser.add_argument("--forever", type=Path, required=True)
     args = parser.parse_args()
     store = Store(ROOT / "data", english=True)
-    names = collect(itertools.chain(retail_rows(args.retail, args.forever, store), curated_rows()))
+    rows = itertools.chain(retail_rows(args.retail, args.forever, store), curated_rows(), coined_rows())
+    names = collect(rows)
     out = ROOT / "addon" / "OldpZ_ForeverITA" / "Names"
     out.mkdir(exist_ok=True)
     for kind, file in KINDS.items():

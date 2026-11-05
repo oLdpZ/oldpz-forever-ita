@@ -499,3 +499,119 @@ describe("the crafting page on the Forever client: list rows, enchant slot, help
     assert.are.equal("Cooking", element.ItemContainer.Text:GetText())
   end)
 end)
+
+-- The Cooking page's own words around the recipe: the rank bar "Cooking 1/75", the recipe list's "Filter", the
+-- required tool "Flint and Tinder" and the recipe's description "Craft a Basic Campfire.".
+describe("the crafting page on the Forever client: rank bar, filter, required tools and the recipe's description",
+  function()
+  local WFJ, NAMES, SPELLS
+  local tools, desc
+
+  local function alt(down) Stub.keys.alt = down; WFJ.Modifier.refresh() end
+  local function page() return _G.ProfessionsFrame.CraftingPage end
+  local function form() return page().SchematicForm end
+  local function h1(text) return (WFJ.Hash.h32x2(WFJ.Normalize.v1(text))) end
+
+  before_each(function()
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installTooltipAPI()
+    local files = {}
+    for i, f in ipairs(FILES) do files[i] = f end
+    files[#files + 1] = "UI/NameText.lua"
+    WFJ = H.loadChunks(files)
+    WFJ.UIStrings.ARGS.PROFESSIONS_CREATE_ALL_FORMAT = { [1] = "words" }
+    NAMES, SPELLS = {}, {}
+    local ui = { FILTER = { "Filter", "Filtro" } }
+    for k, v in pairs(UI) do ui[k] = v end
+    H.uiSetup(WFJ, ui, { lookup = function(kind, id)
+      if kind == "spell.description" then return SPELLS[id] end
+      return NAMES[kind] and NAMES[kind][id]
+    end })
+    WFJ.Lookup = { keyed = function(kind, key) return NAMES[kind] and NAMES[kind][key] end }
+    NAMES.namespell = { [WFJ.NameText.key("Cooking")] = { ja = "Cucina", status = "." } }
+    NAMES.nameitem = { [WFJ.NameText.key("Flint and Tinder")] = { ja = "Pietra Focaia ed Esca", status = "." } }
+    -- spell lines ship "unaligned" ("u"): the align gate checks their numbers against the live text
+    SPELLS[1229737] = { ja = "Crea un Fuoco da Campo Semplice.", status = "u", h1 = h1("Craft a Basic Campfire.") }
+    SPELLS[2] = { ja = "Ripristina 50 punti salute.", status = "u", h1 = h1("Restores 50 health.") }
+    C.recipe = nil
+    tools, desc = fs(""), fs("")
+    Stub.loadedAddons[ADDON] = true
+    local frame = loadProfessions()
+    local p, f = frame.CraftingPage, frame.CraftingPage.SchematicForm
+    p.RankBar = CreateFrame("Frame", nil, p) -- ProfessionsRankBarTemplate: Rank.Text (rankbar.xml:48–61)
+    p.RankBar.Rank = { Text = fs("") }
+    function p.RankBar.Update(self, info) -- ProfessionsRankBarMixin:Update → TRADESKILL_NAME_RANK (:6–21, 141–143)
+      self.Rank.Text:SetText(("%s %d/%d"):format(info.professionName, info.skillLevel, info.maxSkillLevel))
+    end
+    p.RecipeList.FilterDropdown = CreateFrame("Frame", nil, p.RecipeList) -- WowStyle1FilterDropdownTemplate
+    p.RecipeList.FilterDropdown.Text = fs("Filter")
+    f.RequiredTools, f.Description = tools, desc
+    function f.Update(self) -- UpdateRequiredTools: a link per tool, red when unmet (schematicform.lua:335–342, 743–751)
+      local list = "|cffff2020|HTotemRequirement|hFlint and Tinder|h|r, |HSpellFocusRequirement|hAnvil|h"
+      self.RequiredTools:SetText(_G.PROFESSIONS_REQUIRED_TOOLS:format(list))
+    end
+    function f.UpdateRecipeDescription(self) -- C_TradeSkillUI.GetRecipeDescription (:1466–1485)
+      self.Description:SetText(C.description or "")
+    end
+    function f.ClearRecipeDescription(self) self.Description:SetText("") end
+    assert.is_true(WFJ.Crafting.init())
+  end)
+
+  after_each(function()
+    H.uiTeardown()
+    Stub.keys.alt = false
+    _G.ProfessionsFrame = nil
+    C.description = nil
+  end)
+
+  it("the rank bar shows the profession's official name and keeps the count; Alt shows the English", function()
+    page():Show()
+    page().RankBar:Update({ professionName = "Cooking", skillLevel = 1, maxSkillLevel = 75 })
+    assert.are.equal("Cucina 1/75", page().RankBar.Rank.Text:GetText())
+    alt(true)
+    assert.are.equal("Cooking 1/75", page().RankBar.Rank.Text:GetText())
+    alt(false)
+    page().RankBar:Update({ professionName = "Cooking", skillLevel = 2, maxSkillLevel = 75 })
+    assert.are.equal("Cucina 2/75", page().RankBar.Rank.Text:GetText())
+  end)
+
+  it("the recipe list's filter button is FILTER's Italian", function()
+    page():Show()
+    assert.are.equal("Filtro", page().RecipeList.FilterDropdown.Text:GetText())
+  end)
+
+  it("each required tool takes its official name inside its link and colour; an unknown one stays English",
+    function()
+    page():Show()
+    form():Update()
+    assert.are.equal("|cnNORMAL_FONT_COLOR:必要:|r |cffff2020|HTotemRequirement|hPietra Focaia ed Esca|h|r, "
+      .. "|HSpellFocusRequirement|hAnvil|h", tools:GetText())
+    alt(true)
+    assert.are.equal("|cnNORMAL_FONT_COLOR:Requires:|r |cffff2020|HTotemRequirement|hFlint and Tinder|h|r, "
+      .. "|HSpellFocusRequirement|hAnvil|h", tools:GetText())
+    alt(false)
+  end)
+
+  it("the recipe's description is its spell's, when the live English is the one translated", function()
+    page():Show()
+    form().currentRecipeInfo = { recipeID = 1229737 }
+    C.description = "Craft a Basic Campfire."
+    form():UpdateRecipeDescription()
+    assert.are.equal("Crea un Fuoco da Campo Semplice.", desc:GetText())
+    alt(true)
+    assert.are.equal("Craft a Basic Campfire.", desc:GetText())
+    alt(false)
+    form().currentRecipeInfo = { recipeID = 2 }
+    C.description = "Restores 50 health."
+    form():UpdateRecipeDescription()
+    assert.are.equal("Ripristina 50 punti salute.", desc:GetText())
+    C.description = "Restores 75 health." -- the client's numbers changed (a better reagent): left in English, with
+    form():UpdateRecipeDescription() -- the missing marker a tooltip shows too (Settings marker.missing)
+    assert.is_truthy(desc:GetText():find("\nRestores 75 health.", 1, true))
+    WFJ.Settings.set("marker.missing", false)
+    WFJ.Render.refresh()
+    assert.are.equal("Restores 75 health.", desc:GetText())
+    form():ClearRecipeDescription()
+    assert.are.equal("", desc:GetText())
+  end)
+end)

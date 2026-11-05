@@ -95,4 +95,52 @@ describe("NameText.show", function()
     assert.equals(1, NameText.show("s", "r2", fs("Linen Cloth"), { "nameitem", "namespell" }))
     assert.equals("nameitem", shown[2].area)
   end)
+
+  it("keeps a rank count after the name (a profession's rank bar)", function()
+    assert.equals(1, NameText.show("s", "r", fs("Linen Bandage 1/75"), "namespell"))
+    assert.same({ "", " 1/75" }, shown[1].ctx.wrap)
+    assert.equals(0, NameText.show("s", "r2", fs(" 1/75"), "namespell"))
+  end)
+end)
+
+describe("NameText.inList", function()
+  local NameText, WFJ
+
+  before_each(function()
+    WFJ = {
+      Hash = { key = function(norm) return "k:" .. norm end },
+      Normalize = { v1 = function(en) return en end },
+      Compat = { resolve = function() return nil end },
+      Lookup = { keyed = function(kind, key)
+        if kind == "nameitem" and key == "k:Flint and Tinder" then return { ja = "Pietra Focaia ed Esca" } end
+        if kind == "namezone" and key == "k:Elwynn Forest" then return { ja = "Foresta di Elwynn" } end
+      end },
+    }
+    assert(loadfile("addon/OldpZ_ForeverITA/UI/NameText.lua"))("OldpZ_ForeverITA", WFJ)
+    NameText = WFJ.NameText
+  end)
+
+  local KINDS = { "nameitem", "namespell", "namezone" }
+
+  it("names each link's label, keeping the link and the colour around it", function()
+    local text = "|cffff2020|HTotemRequirement|hFlint and Tinder|h|r, |HAreaRequirement|hElwynn Forest|h"
+    assert.equals("|cffff2020|HTotemRequirement|hPietra Focaia ed Esca|h|r, |HAreaRequirement|hForesta di Elwynn|h",
+      NameText.inList(text, KINDS))
+  end)
+
+  it("names the pieces of a plain list, colour codes kept", function()
+    assert.equals("|cffff2020Pietra Focaia ed Esca|r, Anvil",
+      NameText.inList("|cffff2020Flint and Tinder|r, Anvil", KINDS))
+  end)
+
+  it("is nil when no piece is a known name, or there is no text", function()
+    assert.is_nil(NameText.inList("|HSpellFocusRequirement|hAnvil|h", KINDS))
+    assert.is_nil(NameText.inList("Anvil, Forge", KINDS))
+    assert.is_nil(NameText.inList("", KINDS))
+    assert.is_nil(NameText.inList(nil, KINDS))
+  end)
+
+  it("is the `nameList` argument kind of Core/UIStrings", function()
+    assert.equals("Pietra Focaia ed Esca", WFJ.UIStrings.nameList("Flint and Tinder"))
+  end)
 end)

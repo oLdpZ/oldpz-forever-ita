@@ -63,11 +63,16 @@
 --     appended line is shown by HelpTooltip.appended (itemAppended), the item's lines left to UI/Tooltip;
 --   the output log: an enchant result's ItemContainer.Text = ENCHANTED_TOOLTIP_LINE with the item's name kept, written
 --     when the item loads (craftingoutputlog.lua:29–40); each pooled element's Text is followed (SetText post-hook).
--- Names (area namespell / nameitem, UI/NameText: Blizzard's official names, never dictionary words): the list's
---   recipe names (blizzard_professionsrecipelist.lua:247), the form's output name and its required reagents.
--- Never touched: the EditBoxes (both search boxes, the create-count box), the recipe's sub text and description
---   (OutputSubText, Description: item / spell data), any category name with no TradeSkillCategory row, the rank bar
---   (joins the profession name). The window title is UI/Professions' (the same frame; a profession's name here).
+-- Names (area namespell / nameitem, UI/NameText: Blizzard's official names, or the project's own for what Forever
+--   added, pipeline/nomi_coniati.tsv; never dictionary words): the list's recipe names
+--   (blizzard_professionsrecipelist.lua:247), the form's output name and its required reagents, the rank bar's
+--   profession name ("Cooking 1/75"), and each required tool (PROFESSIONS_REQUIRED_TOOLS' `nameList` argument).
+-- The recipe's description: the recipe spell's own (spell.description, area "spells"), shown after
+--   UpdateRecipeDescription. The recipe list's FilterDropdown: FILTER (WowStyle1FilterDropdownTemplate,
+--   blizzard_menu/classic/menutemplates.xml:73–76), through Labels.dropdown.
+-- Never touched by the dictionary: the EditBoxes (both search boxes, the create-count box), the recipe's sub text and
+--   description (OutputSubText, Description), any category name with no TradeSkillCategory row. The window title is
+--   UI/Professions' (the same frame; a profession's name here).
 local _, WFJ = ...
 local Crafting = {}
 WFJ.Crafting = Crafting
@@ -100,6 +105,8 @@ local CANDIDATES = {
   requiredTools = { FORM .. ".RequiredTools" }, recraftTools = { FORM .. ".RecraftingRequiredTools" },
   trackRecipe = { FORM .. ".TrackRecipeCheckbox.Text" }, outputBox = { PAGE .. ".CraftingOutputLog.ScrollBox" },
   tooltip = { "GameTooltip" },
+  rankBar = { PAGE .. ".RankBar" }, rankText = { PAGE .. ".RankBar.Rank.Text" },
+  filter = { PAGE .. ".RecipeList.FilterDropdown" },
 }
 
 local function only(...) return { only = { ... } } end
@@ -120,6 +127,7 @@ local FLYOUT_HIDE = only("PROFESSIONS_HIDE_UNOWNED_REAGENTS")
 local CREATE_TIP = only("PROFESSIONS_RECIPE_COOLDOWN", "PROFESSIONS_INSUFFICIENT_REAGENTS",
   "PROFESSIONS_MISSING_REQUIREMENT")
 local TOOLS = only("PROFESSIONS_REQUIRED_TOOLS")
+local FILTER = only("FILTER")
 local REPLACE_TIP = only("ENCHANT_TARGET_TOOLTIP_CLICK_TO_REPLACE")
 local ENCHANTED = only("ENCHANTED_TOOLTIP_LINE")
 local STATIC = {
@@ -210,6 +218,45 @@ function Crafting.showFormNames()
   if type(after) == "function" then after(0.2, showFormNames) end
 end
 
+-- The rank bar: "Cooking 1/75" (TRADESKILL_NAME_RANK "%s %d/%d", ProfessionsRankBarMixin:Update →
+-- Rank.Text:SetText, blizzard_professionsrankbar.lua:6–21, 141–143): the profession's official name, the count kept
+-- (UI/NameText reads a trailing count). → 1 | 0
+function Crafting.showRank()
+  local n = WFJ.Render.name(SURFACE, "rank", get("rankText"), "namespell")
+  WFJ.Render.updateBanner(SURFACE)
+  return n
+end
+
+-- The recipe's description (Description ← C_TradeSkillUI.GetRecipeDescription(recipeID, …), UpdateRecipeDescription,
+-- schematicform.lua:1461–1490): the recipe spell's description, from the spell data like its tooltip (area
+-- "spells"), when the live English is the one translated (the hash check). The height is laid out again as the
+-- client does (SetHeight(GetStringHeight() + 1)); the frames below are anchored to it. Cleared: the record goes.
+-- → 1 | 0
+local function fitDescription()
+  local form = get("form")
+  local fs = type(form) == "table" and form.Description or nil
+  if type(fs) == "table" and type(fs.SetHeight) == "function" and type(fs.GetStringHeight) == "function" then
+    fs:SetHeight(600)
+    fs:SetHeight(fs:GetStringHeight() + 1)
+  end
+end
+function Crafting.showDescription()
+  local form = get("form")
+  local fs = type(form) == "table" and form.Description or nil
+  local info = type(form) == "table" and form.currentRecipeInfo or nil
+  local id = type(info) == "table" and info.recipeID or nil
+  local en = type(fs) == "table" and type(fs.GetText) == "function" and fs:GetText() or nil
+  if type(id) ~= "number" or type(en) ~= "string" or en == "" then
+    WFJ.SurfaceState.drop(SURFACE, "description")
+    return 0
+  end
+  local rec = WFJ.SurfaceState.get(SURFACE, "description")
+  if rec and rec.fs == fs and rec.applied ~= nil and en == rec.applied then return 1 end
+  -- the live text is the one line the align gate checks the Italian's numbers against, as a tooltip's lines are
+  return WFJ.Render.show(SURFACE, "description", fs, en, "spells", "spell.description", id,
+    { refit = fitDescription, lines = { en } }) and 1 or 0
+end
+
 -- hooksecurefunc target (SchematicForm:Init): the words the form rewrites per recipe. → the number found.
 function Crafting.onFormInit()
   Crafting.showFormNames()
@@ -286,7 +333,8 @@ end
 
 -- The page's OnShow (and setup): the static words, then everything a writer may already have written.
 function Crafting.onShow()
-  local n = showList(STATIC) + Crafting.onFormInit() + Crafting.onControls()
+  local n = showList(STATIC) + Crafting.onFormInit() + Crafting.onControls() + Crafting.showRank()
+    + Crafting.showDescription() + WFJ.Labels.dropdown(SURFACE, "filter", get("filter"), FILTER)
   return n + WFJ.Labels.title(SURFACE, get("outputLog"), OUTPUT_TITLE, "outputLog.title")
 end
 
@@ -313,6 +361,15 @@ function Crafting.setup()
   end
   if type(form) == "table" and type(form.UpdateOutputItem) == "function" then -- the output's name, once loaded
     hooksecurefunc(form, "UpdateOutputItem", Crafting.showFormNames)
+  end
+  for _, method in ipairs({ "UpdateRecipeDescription", "ClearRecipeDescription" }) do
+    if type(form) == "table" and type(form[method]) == "function" then
+      hooksecurefunc(form, method, Crafting.showDescription)
+    end
+  end
+  local rankBar = get("rankBar")
+  if type(rankBar) == "table" and type(rankBar.Update) == "function" then
+    hooksecurefunc(rankBar, "Update", Crafting.showRank)
   end
   for _, key in ipairs({ "createButton", "createAllButton" }) do
     local button = get(key)

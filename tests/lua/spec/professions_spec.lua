@@ -3,13 +3,15 @@
 -- .xml|lua (BookPage, the overview side tab, SelectBookPage → SetTitleFormatted(TRADE_SKILL_TITLE, TRADE_SKILLS)),
 -- blizzard_professionsbook/camelot/blizzard_professionsbooktemplates.xml (the five slots and their "missing" words)
 -- and camelot/blizzard_professionsbook.lua (FormatProfession, the unlearn tooltip). camelot builds no standalone
--- ProfessionsBookFrame; both addons are load-on-demand. Profession names stay English.
+-- ProfessionsBookFrame; both addons are load-on-demand. Profession names stay English, but the
+-- crafting page's title, a profession's name, shows its official name (UI/NameText).
 local H = require("tests.lua.spec.helpers")
 local Stub = require("tests.lua.spec.wow_stub")
 
 local FILES = {}
 for i, f in ipairs(H.UI_FILES) do FILES[i] = f end
 FILES[#FILES + 1] = "UI/Professions.lua"
+FILES[#FILES + 1] = "UI/NameText.lua"
 
 local FRAME_ADDON, BOOK_ADDON = "Blizzard_Professions", "Blizzard_ProfessionsBook"
 
@@ -110,7 +112,7 @@ local function loadProfessions(known)
 end
 
 describe("the professions window on the Forever client", function()
-  local WFJ, SS
+  local WFJ, SS, NAMES
 
   local function alt(down) Stub.keys.alt = down; WFJ.Modifier.refresh() end
   local function title() return _G.ProfessionsFrame.TitleContainer.TitleText end
@@ -126,7 +128,9 @@ describe("the professions window on the Forever client", function()
     Stub.installTooltipAPI()
     WFJ = H.loadChunks(FILES)
     SS = WFJ.SurfaceState
-    H.uiSetup(WFJ, UI)
+    NAMES = {} -- kind → { [NameText.key(English)] = entry }: the official names (Names/), empty unless a test fills it
+    H.uiSetup(WFJ, UI, { lookup = function(kind, id) return NAMES[kind] and NAMES[kind][id] end })
+    WFJ.Lookup = { keyed = function(kind, key) return NAMES[kind] and NAMES[kind][key] end }
     if loadedFirst then
       local frame = loadProfessions(known)
       if shape then shape(frame) end
@@ -173,13 +177,36 @@ describe("the professions window on the Forever client", function()
         alt(false)
       end)
 
-      it("the crafting page's title is the profession's name: English, even when it is a dictionary word", function()
+      it("the crafting page's title is the profession's name: never the dictionary's word, English without an"
+        .. " official name", function()
         open()
         _G.ProfessionsFrame:SelectProfession("Mining")
         assert.are.equal("Mining", title():GetText())
         assert.are.equal(0, SS.count("professions"))
         _G.ProfessionsFrame:SelectBookPage()
         assert.are.equal("専門技術", title():GetText())
+      end)
+
+      it("the crafting page's title shows the profession's official name; Alt and the book page bring their own"
+        .. " title back", function()
+        NAMES.namespell = { [WFJ.NameText.key("Cooking")] = { ja = "Cucina", status = "." } }
+        open()
+        _G.ProfessionsFrame:SelectProfession("Cooking") -- SetTitle(professionName)
+        assert.are.equal("Cucina", title():GetText())
+        alt(true)
+        assert.are.equal("Cooking", title():GetText())
+        alt(false)
+        assert.are.equal("Cucina", title():GetText())
+        _G.ProfessionsFrame:SelectBookPage() -- SetTitleFormatted(TRADE_SKILLS): the dictionary's title again
+        assert.are.equal("専門技術", title():GetText())
+        alt(true)
+        assert.are.equal("Professions", title():GetText())
+        alt(false)
+        _G.ProfessionsFrame:SelectProfession("Cooking")
+        assert.are.equal("Cucina", title():GetText())
+        _G.ProfessionsFrame:Hide()
+        assert.are.equal("Cooking", title():GetText())
+        assert.are.equal(0, SS.count("professions"))
       end)
 
       it("the empty slots' headers and help texts render; profession names stay English", function()
@@ -237,7 +264,8 @@ describe("the professions window on the Forever client", function()
         assert.are.equal(1, #Stub.hooks["ProfessionsFrame:SetTitleFormatted"])
         open()
         open()
-        assert.are.equal(1, #Stub.hooks["ProfessionsFrame:SetTitle"])
+        -- two, each once: Labels.title's (the dictionary title) and the surface's own (the profession's name)
+        assert.are.equal(2, #Stub.hooks["ProfessionsFrame:SetTitle"])
       end)
     end)
   end

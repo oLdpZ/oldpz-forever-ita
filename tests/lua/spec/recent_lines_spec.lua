@@ -207,6 +207,7 @@ describe("every Render.show caller records a store line or nothing", function()
     ["UI/UnitFrames.lua"] = { "unit.name" }, -- an NPC's name on the target-style frames
     ["UI/NamePlates.lua"] = { "unit.name" }, -- an NPC's name on its nameplate
     ["UI/NameText.lua"] = {}, -- official names: nothing a player could report
+    ["UI/Crafting.lua"] = { "spell.description" }, -- a recipe's description
   }
 
   it("lists exactly the files that call Render.show (directly or passed on, as UI/Gossip does)", function()

@@ -23,3 +23,29 @@ def test_the_addon_file_holds_no_english():
     assert "Worn" not in text
     assert 'WFJ.Data.add("nameitem"' in text
     assert lua_string('Spada "Corta"') in text
+
+
+def test_coined_names_are_objects_and_spells_only(tmp_path):
+    """`pipeline/nomi_coniati.tsv`: the project's names for what Forever added (no Italian client has them)."""
+    import pytest
+
+    from wfj.dev.surface_names import coined_rows
+
+    good = tmp_path / "ok.tsv"
+    good.write_text("tipo\ten\tit\tnota\noggetto\tCamp Tent\tTenda da Campo\t\n"
+                    "abilita\tBasic Campfire\tFuoco da Campo Semplice\tcampeggio\n", encoding="utf-8")
+    assert list(coined_rows(good)) == [("oggetto", "Camp Tent", "Tenda da Campo"),
+                                       ("abilita", "Basic Campfire", "Fuoco da Campo Semplice")]
+    for bad in ("zona\tElwynn\tElwynn\t\n", "oggetto\tCamp Tent\t\t\n"):
+        path = tmp_path / "bad.tsv"
+        path.write_text("tipo\ten\tit\tnota\n" + bad, encoding="utf-8")
+        with pytest.raises(ValueError):
+            list(coined_rows(path))
+
+
+def test_the_shipped_coined_names_load():
+    from wfj.dev.surface_names import coined_rows
+
+    rows = list(coined_rows())
+    assert ("abilita", "Basic Campfire", "Fuoco da Campo Semplice") in rows
+    assert len({en for _, en, _ in rows}) == len(rows)  # one Italian per English

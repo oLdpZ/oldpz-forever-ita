@@ -15,7 +15,8 @@
 --   TitleContainer.TitleText directly; it does not go through SetTitle (blizzard_sharedxml/portraitframe.lua:11–17),
 --   so it is post-hooked on the frame beside Labels.title's SetTitle hook. The crafting page titles the same
 --   frame with the profession's name (SetTitle(professionName), blizzard_professionscrafting.lua:1379–1387;
---   blizzard_professionsframe.lua:246, 278): a name, so the title takes TRADE_SKILLS only. The standalone book
+--   blizzard_professionsframe.lua:246, 278): a name, so the dictionary takes TRADE_SKILLS only and the name is
+--   shown as the official skill line's (UI/NameText, area namespell; SetTitle post-hooked too). The standalone book
 --   (ProfessionsBookFrameStandaloneMixin:OnLoad → SetTitle(TRADE_SKILLS), blizzard_professionsbook.lua:216–228) is
 --   handled the same way where a client builds it.
 -- Static labels (written once by the XML / its inline OnLoad, only shown and hidden afterwards by
@@ -30,9 +31,8 @@
 --   restricted to its one key. The profession side tabs' tooltipText is the profession's name (camelot/
 --   blizzard_professionsframe.lua:64): never registered.
 -- Never touched: a slot's ProfessionName (GetProfessionInfo's name) and specialization, a secondary slot's
---   missingHeader (PROFESSIONS_COOKING / _FISHING / _FIRST_AID are profession names; `only` keeps them English),
---   the rank bar's text (TRADESKILL_NAME_RANK "%s %d/%d" joins the profession name, blizzard_professionsrankbar.lua:
---   6–21). The unlearn confirmation is a StaticPopup (ADR-015 §5).
+--   missingHeader (PROFESSIONS_COOKING / _FISHING / _FIRST_AID are profession names; `only` keeps them English).
+--   The crafting page's rank bar is UI/Crafting's. The unlearn confirmation is a StaticPopup (ADR-015 §5).
 local _, WFJ = ...
 local Professions = {}
 WFJ.Professions = Professions
@@ -99,9 +99,21 @@ function Professions.showStatic(hostKey)
   return WFJ.Labels.showAll(BOOK, items)
 end
 
--- A window title: after SetTitle (Labels.title's hook), SetTitleFormatted (ours) and the window's OnShow. → 1 | 0
+-- A window title: after SetTitle (Labels.title's hook and ours), SetTitleFormatted (ours) and the window's OnShow.
+-- The crafting page titles the window with the profession's name ("Cooking"): a skill line's name, shown as the
+-- official one (namespell holds SkillLine's names, `make surface-names`) under its own record, dropped when the
+-- title is a dictionary word again. → 1 | 0
 local function showTitle(frameKey, recKey)
-  local n = WFJ.Labels.title(SURFACE, get(frameKey), TITLE, recKey)
+  local frame = get(frameKey)
+  local box = type(frame) == "table" and frame.TitleContainer or nil
+  local text = type(box) == "table" and box.TitleText or nil
+  local nameKey = recKey .. ".name"
+  local rec = WFJ.SurfaceState.get(SURFACE, nameKey)
+  if rec and (type(text) ~= "table" or type(text.GetText) ~= "function" or text:GetText() ~= rec.applied) then
+    WFJ.SurfaceState.drop(SURFACE, nameKey) -- the client re-titled the window: the old name is no longer shown
+  end
+  local n = WFJ.Labels.title(SURFACE, frame, TITLE, recKey)
+  if n == 0 and text ~= nil then n = WFJ.Render.name(SURFACE, nameKey, text, "namespell") end
   WFJ.Render.updateBanner(SURFACE)
   return n
 end
@@ -146,6 +158,9 @@ function Professions.setupFrame()
   WFJ.Labels.forbidNames(Professions.NEVER_TOUCH) -- its widgets exist only now (Main's registration found none)
   if type(frame.SetTitleFormatted) == "function" then
     hooksecurefunc(frame, "SetTitleFormatted", Professions.showFrameTitle)
+  end
+  if type(frame.SetTitle) == "function" then -- the crafting page's SetTitle(professionName): the name
+    hooksecurefunc(frame, "SetTitle", Professions.showFrameTitle)
   end
   hookScript(frame, "OnShow", Professions.onFrameShow)
   hookScript(frame, "OnHide", Professions.release)

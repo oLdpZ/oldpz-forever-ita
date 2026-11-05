@@ -1,0 +1,47 @@
+tipo	en	it	nota
+oggetto	Blueprint: Journeyman Campfire	Progetto: Fuoco da Campo da Praticante	campeggio di Forever; Journeyman = Praticante come nei ranghi ufficiali
+oggetto	Blueprint: Expert Campfire	Progetto: Fuoco da Campo da Esperto	campeggio di Forever
+oggetto	Basic Campfire Kit	Kit per Fuoco da Campo Semplice	campeggio di Forever; «Kit» come l'ufficiale Kit di Primo Soccorso
+oggetto	Journeyman Campfire Kit	Kit per Fuoco da Campo da Praticante	campeggio di Forever
+oggetto	Expert Campfire Kit	Kit per Fuoco da Campo da Esperto	campeggio di Forever
+oggetto	Scarlet Banner	Stendardo Scarlatto	campeggio di Forever
+oggetto	Trapper's Workbench	Banco da Lavoro del Cacciatore	campeggio di Forever
+oggetto	Toxin Study	Studio delle Tossine	campeggio di Forever
+oggetto	Tanning Rack	Telaio da Conciatura	campeggio di Forever
+oggetto	Spinning Wheel	Filatoio	campeggio di Forever
+oggetto	Sharpening Wheel	Mola per Affilare	campeggio di Forever
+oggetto	Sewing Machine	Macchina da Cucire	campeggio di Forever
+oggetto	Seed Hybridizer	Ibridatore di Semi	campeggio di Forever
+oggetto	Rock Garden	Giardino di Rocce	campeggio di Forever
+oggetto	Repair Bot	Robot Riparatore	campeggio di Forever
+oggetto	Reagent Bot	Robot dei Reagenti	campeggio di Forever
+oggetto	Plague Doctor's Laboratory	Laboratorio del Medico della Peste	campeggio di Forever
+oggetto	Molten Foundry	Fonderia Ardente	campeggio di Forever
+oggetto	Master Forge	Forgia del Maestro	campeggio di Forever
+oggetto	Mana Well	Pozzo di Mana	campeggio di Forever
+oggetto	Loom	Telaio	campeggio di Forever
+oggetto	Lodestone	Magnetite	ufficiale su altri id del client italiano
+oggetto	Incense Candle	Candela d'Incenso	campeggio di Forever
+oggetto	Greenhouse	Serra	campeggio di Forever
+oggetto	Fishing Rack	Rastrelliera da Pesca	campeggio di Forever
+oggetto	Fishing Hut	Capanno da Pesca	campeggio di Forever
+oggetto	Fish Bowl	Boccia per Pesci	campeggio di Forever
+oggetto	First Aid Kit	Kit di Primo Soccorso	ufficiale su altri id del client italiano
+oggetto	Field Guide	Guida da Campo	campeggio di Forever
+oggetto	Fermenter	Fermentatore	campeggio di Forever
+oggetto	Faction Banner	Stendardo della Fazione	campeggio di Forever
+oggetto	Enchanted Lute	Liuto Incantato	campeggio di Forever
+oggetto	Camp Tent	Tenda da Campo	campeggio di Forever
+oggetto	Camp Chair	Sedia da Campo	campeggio di Forever
+oggetto	Arcane Salvager	Recuperatore Arcano	campeggio di Forever
+oggetto	Arcane Forge	Forgia Arcana	campeggio di Forever
+oggetto	Anvil	Incudine	campeggio di Forever
+oggetto	Anarchist's Workbench	Banco da Lavoro dell'Anarchico	campeggio di Forever
+oggetto	Alchemy Laboratory	Laboratorio Alchemico	campeggio di Forever
+abilita	Campfire	Fuoco da Campo	ufficiale su altri id del client italiano
+abilita	Basic Campfire	Fuoco da Campo Semplice	campeggio di Forever
+abilita	Journeyman Campfire	Fuoco da Campo da Praticante	campeggio di Forever
+abilita	Expert Campfire	Fuoco da Campo da Esperto	campeggio di Forever
+abilita	Welcoming Campfire	Fuoco da Campo Accogliente	campeggio di Forever
+abilita	Camping	Campeggio	campeggio di Forever; come la categoria del ricettario
+abilita	Library Shelf	Scaffale della Biblioteca	campeggio di Forever
