@@ -659,6 +659,59 @@ describe("Core/Collector gossip kind", function()
   end)
 end)
 
+describe("Core/Collector book kind", function()
+  local WFJ, C, shipped
+
+  local function deps()
+    return {
+      enabled = function() return true end,
+      lookup = function(kind, id) return shipped[kind] and shipped[kind][id] end,
+      player = function() return PLAYER end,
+      build = function() return "1.15.9.69722" end,
+      print = function() end,
+    }
+  end
+
+  before_each(function()
+    WFJ = loadCollector()
+    C = WFJ.Collector
+    shipped = {}
+  end)
+
+  it("stores a page in Blizzard's tokens under its text's key, the reader's name as $N", function()
+    local db = C.load(nil, deps())
+    local raw = "Executor Zygand,\n\nTake care, Reyn.\n\n--Kristof"
+    local key = C.key(raw, PLAYER)
+    assert.are.equal("recorded", C.recordBook(raw))
+    assert.are.same({ t = "book", i = key, f = "text", h = key, e = "Executor Zygand,$B$BTake care, $N.$B$B--Kristof",
+      b = 1 }, db.entries["book:" .. key .. ":text"])
+    assert.are.equal("seen", C.recordBook(raw)) -- memo
+  end)
+
+  it("a shipped page makes it known; record() refuses the kind", function()
+    local db = C.load(nil, deps())
+    local raw = "Apple yum yum. Me pick flowers now."
+    shipped.book = { [C.key(raw, PLAYER)] = { ja = "Mela gnam gnam.", status = "." } }
+    assert.are.equal("known", C.recordBook(raw))
+    assert.is_nil(next(db.entries))
+    assert.are.same({ "refused", "bad_kind" }, { C.record("book", 1, "text", "A page.") })
+    assert.are.same({ "refused", "empty" }, { C.recordBook("") })
+  end)
+
+  it("load keeps a valid page and drops one with creature ids or a numeric id", function()
+    local key = C.key("A page.", PLAYER)
+    local good = { t = "book", i = key, f = "text", h = key, e = "A page.", b = 1 }
+    local db = C.load({ version = 1, builds = { "1.15.9.69722" }, entries = {
+      ["book:" .. key .. ":text"] = good,
+      ["book:1:text"] = { t = "book", i = 1, f = "text", h = key, e = "A page.", b = 1 },
+    } }, deps())
+    assert.are.same({ ["book:" .. key .. ":text"] = good }, db.entries)
+    local bad = { t = "book", i = key, f = "text", h = key, e = "A page.", b = 1, n = { 1 } }
+    db = C.load({ version = 1, builds = { "1.15.9.69722" }, entries = { ["book:" .. key .. ":text"] = bad } }, deps())
+    assert.is_nil(next(db.entries))
+  end)
+end)
+
 -- a whole stub session through the real surfaces writes nothing personal.
 describe("Collector through the loaded addon", function()
   it("a stub session writes only the documented shape and no personal string", function()

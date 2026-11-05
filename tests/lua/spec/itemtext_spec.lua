@@ -110,6 +110,17 @@ describe("UI/ItemText: the book window", function()
       assert.is_nil(SS.get(IT.SURFACE, "page"))
     end)
 
+  it("a page the client served is offered to the Collector (which keeps only unknown ones); a player's letter never"
+    .. " is", function()
+    local noted = {}
+    WFJ.Collector.recordBook = function(raw) noted[#noted + 1] = raw end
+    Stub.openItemText({ PAGE2 })
+    assert.are.same({ PAGE2 }, noted)
+    ship({ [PAGE_DATA] = PAGE_JA })
+    Stub.openItemText({ PAGE_LIVE }, "Somebody") -- a creator: a player wrote it
+    assert.are.same({ PAGE2 }, noted)
+  end)
+
   it("an unshipped page is exactly what the client wrote; the missing marker goes above it", function()
     WFJ.Settings.set("marker.missing", false) -- on by default; this test reads the text, not the marker
     Stub.openItemText({ PAGE2 })

@@ -132,3 +132,20 @@ def test_a_spell_aura_entry_is_read_as_the_spell_aura_field():
     (e,) = d.entries
     assert (e.type_, e.id_, e.field) == ("spell", 774, "aura")
     assert not d.rejected
+
+
+def test_a_book_page_is_keyed_by_its_text_and_stored_under_a_derived_id():
+    """A page recorded in game has no page id: its key gives one above every real page, $B$B reads as line breaks."""
+    from wfj.io.collector_dump import BOOK_ID_BASE, book_id
+
+    text = "Executor Zygand,$B$BIt is my opinion.$B$B--Kristof"
+    h = key(normalize_v1(text))
+    d = read_dump(dump(entry("book", h, "text", text, k=f"book:{h}:text")))
+    assert not d.rejected
+    (en,) = d.entries
+    assert (en.type_, en.id_, en.field) == ("book", book_id(h), "text")
+    assert BOOK_ID_BASE < en.id_ < 2**31
+    assert en.en == "Executor Zygand,\n\nIt is my opinion.\n\n--Kristof"
+    assert key(normalize_v1(en.en)) == h == en.hash_
+    bad = read_dump(dump(entry("book", 7, "text", text, k="book:7:text")))
+    assert not bad.entries

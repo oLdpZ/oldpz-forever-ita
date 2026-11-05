@@ -454,6 +454,17 @@ def run_collector(a: argparse.Namespace) -> int:
     return import_dump(read_dump(path.read_text(encoding="utf-8-sig")), path.name)
 
 
+def _without_known_pages(store: Store, by_type: dict[str, list[Any]]) -> dict[str, int]:
+    """A page recorded in game whose English is already stored (under a real page id) is left out of
+    `by_type`: one English, one key, never a second id for it. → {"book": how many were left out}"""
+    entries = by_type.get("book")
+    if not entries:
+        return {}
+    have = {ln["hash"] for ln in store.load("book")}
+    by_type["book"] = [en for en in entries if en.hash_ not in have]
+    return {"book": len(entries) - len(by_type["book"])}
+
+
 def import_dump(dump: Dump, label: str) -> int:
     """Merge a read dump into `data/english/` (run_collector's rules) and print its table. `label` names
     where it came from (a file name, or an issue) on the summary line. → 0"""
@@ -461,13 +472,14 @@ def import_dump(dump: Dump, label: str) -> int:
     by_type: dict[str, list[Any]] = {}
     for en in dump.entries:
         by_type.setdefault(en.type_, []).append(en)
+    known = _without_known_pages(store, by_type)
     counts: dict[str, Counter] = {}
     differs: list[str] = []
     replaced: list[str] = []
     for type_ in sorted(by_type):
         lines = store.load(type_)
         index = {(ln["id"], ln["field"]): i for i, ln in enumerate(lines)}
-        c: Counter = Counter()
+        c: Counter = Counter(unchanged=known.get(type_, 0))
         for en in by_type[type_]:
             line = english_line(en.id_, en.field, en.en, en.hash_, f"collector@{en.build}", npcs=en.npcs)
             k = (en.id_, en.field)

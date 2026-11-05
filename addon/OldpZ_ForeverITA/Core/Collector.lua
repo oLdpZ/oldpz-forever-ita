@@ -50,9 +50,13 @@ Collector.KINDS = {
   spell = { description = true, aura = true }, -- aura: the buff / debuff tooltip line
   npc = { name = true },
   gossip = { text = true }, -- id = the gossip key (16 hex), not a game id
+  book = { text = true }, -- a book / letter / plaque page: id = its text's key (16 hex), the client gives no page id
 }
+-- Keyed by their text's hash, not a game id.
+local HASH_KINDS = { gossip = true, book = true }
 -- Server text that carries Blizzard's player tokens ($N / $C / $R): the player's name, class and race become tokens.
-local TOKEN_KINDS = { quest = true, gossip = true }
+-- A letter writes the reader's name (and sometimes class or race) like a quest does.
+local TOKEN_KINDS = { quest = true, gossip = true, book = true }
 Collector.NPC_CAP = 32 -- creature ids kept per gossip entry (a generic "Goodbye" would otherwise grow without bound)
 -- Never recorded: text that names the player's bind location: the Hearthstone item's Use: line and the
 -- Hearthstone / Astral Recall spell descriptions [likely, not yet confirmed in game].
@@ -258,8 +262,10 @@ local function validEntry(key, e, builds)
   end
   local fields = Collector.KINDS[e.t]
   if not fields or not fields[e.f] then return false end
-  if e.t == "gossip" then
-    if type(e.i) ~= "string" or e.i ~= e.h or not validNpcs(e.n) then return false end
+  if HASH_KINDS[e.t] then
+    if type(e.i) ~= "string" or e.i ~= e.h or (e.t == "book" and e.n ~= nil) or not validNpcs(e.n) then
+      return false
+    end
   elseif e.n ~= nil or not positiveInt(e.i) then
     return false
   end
@@ -379,9 +385,9 @@ end
 -- rewording is new English). An item or spell line is recorded with the client's numbers filled in, so no hash
 -- can match its template: it is covered when the tooltip gate itself accepts the Japanese for it.
 local function covered(kind, id, field, e, h1, p, keys)
-  if kind == "gossip" then
+  if HASH_KINDS[kind] then
     for _, k in ipairs(keys) do
-      if deps.lookup("gossip", k) then return true end
+      if deps.lookup(kind, k) then return true end
     end
     return false
   end
@@ -466,11 +472,11 @@ local function evaluate(kind, id, field, raw, key, npc)
   local h1, h2 = Hash.h32x2(Normalize.v1(e))
   local h = Hash.hex8(h1) .. Hash.hex8(h2)
 
-  if kind == "gossip" then
-    id, key = h, "gossip:" .. h .. ":text"
+  if HASH_KINDS[kind] then
+    id, key = h, kind .. ":" .. h .. ":text"
   end
-  -- gossip: the key is the hash, and a row shipped under any candidate key is this English
-  if covered(kind, id, field, e, h1, who, kind == "gossip" and Collector.keys(raw, player) or nil) then
+  -- gossip / book: the key is the hash, and a row shipped under any candidate key is this English
+  if covered(kind, id, field, e, h1, who, HASH_KINDS[kind] and Collector.keys(raw, player) or nil) then
     -- the line as the game shows it now ships in Japanese: an older recording under the same key goes only when
     -- it is covered too (another wording, a class's conditional text, stays until it is)
     local old = db.entries[key]
@@ -514,7 +520,7 @@ local function recordImpl(kind, id, field, raw)
   if not deps.enabled() then return "off" end
   local fields = Collector.KINDS[kind]
   -- gossip is keyed by its text, not an id: recordGossip is its only entry point
-  if not fields or not fields[field] or kind == "gossip" then return "refused", "bad_kind" end
+  if not fields or not fields[field] or HASH_KINDS[kind] then return "refused", "bad_kind" end
   if type(id) ~= "number" or id < 1 or id ~= math.floor(id) then return "refused", "bad_id" end
   if type(raw) ~= "string" or raw == "" then return "refused", "empty" end
   local key = kind .. ":" .. id .. ":" .. field
@@ -560,6 +566,31 @@ end
 
 function Collector.recordGossip(raw, guid)
   local ok, result, reason = pcall(recordGossipImpl, raw, guid)
+  if ok then return result, reason end
+  errors, lastError = errors + 1, tostring(result)
+  return "error", lastError
+end
+
+-- One page of a book, letter or plaque the client served (ITEM_TEXT_READY), keyed by its text like a gossip line:
+-- the client names no page id. Never a page a player wrote (the caller skips a page with a creator).
+local function recordBookImpl(raw)
+  if not db or not deps then return "off" end
+  if readOnly then return "refused", "read_only" end
+  if not deps.enabled() then return "off" end
+  if type(raw) ~= "string" or raw == "" then return "refused", "empty" end
+  local mkey = "book:" .. raw
+  local m = memo[mkey]
+  if m then return m.result, m.reason end
+  local result, reason = evaluate("book", nil, "text", raw, nil, nil)
+  if result ~= "capped" and reason ~= "no_player" and reason ~= "no_build" then
+    local replay = (result == "recorded" or result == "replaced") and "seen" or result
+    remember(mkey, { result = replay, reason = reason })
+  end
+  return result, reason
+end
+
+function Collector.recordBook(raw)
+  local ok, result, reason = pcall(recordBookImpl, raw)
   if ok then return result, reason end
   errors, lastError = errors + 1, tostring(result)
   return "error", lastError

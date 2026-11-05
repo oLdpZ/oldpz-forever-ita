@@ -294,6 +294,9 @@ function ItemText.onReady()
     page.client = nil
     return 0
   end
+  -- a page the addon does not know yet is noted for translation (Core/Collector: its own setting, off = nothing);
+  -- a signed page (a creator: a player wrote it) never reaches here
+  if WFJ.Collector and WFJ.Collector.recordBook then WFJ.Collector.recordBook(en) end
   local key = deps.key and deps.key(en) or nil
   if not key then
     drop()

@@ -2,7 +2,8 @@
 
 Shape (docs/systems/collector.md): `{version = 1, builds = {"1.15.9.69722", …},
 entries = {["<kind>:<id>:<field>"] = {t, i, f, h, e, b[, n]}}, …}`; a gossip entry is keyed by its
-gossip key (`i == h`, 16 hex) and may carry `n`, the creature ids that said it.
+gossip key (`i == h`, 16 hex) and may carry `n`, the creature ids that said it; a book page is keyed the same
+way (`i == h`) and stored under `book_id(h)`.
 Nothing from the file is trusted: every entry is re-checked and its hash recomputed from the text with the
 same normalize_v1 the addon uses, so a hand-edited or corrupted entry cannot land in `data/english/`.
 """
@@ -26,7 +27,16 @@ KINDS: dict[str, tuple[str, tuple[str, ...]]] = {
     "spell": ("spell", ("description", "aura")),  # aura: the buff / debuff tooltip line
     "npc": ("unit", ("name",)),
     "gossip": ("gossip", ("text",)),  # id = the gossip key
+    "book": ("book", ("text",)),  # id = the page text's key: the client names no page id (book_id)
 }
+# A page recorded in game has no page id: it is stored under BOOK_ID_BASE + the first 28 bits of its key,
+# above every real page id (ItemText ids are under 100,000) and inside a 32-bit id.
+BOOK_ID_BASE = 1_000_000_000
+
+
+def book_id(h: str) -> int:
+    """The store id of a page recorded in game, from its 16-hex key."""
+    return BOOK_ID_BASE + int(h[:7], 16)
 # The collector writes Blizzard's tokens, the pfQuest convention: $N / $C / $R for the player, $B$B between
 # paragraphs. Any other `$x` or a `{…}` placeholder is not something the addon writes.
 TOKENS = {"$N", "$C", "$R", "$B"}
@@ -112,7 +122,7 @@ def check_entry(key: Any, raw: Any, builds: list[Any]) -> tuple[Entry | None, st
     e = raw.named()
     kind, fld, raw_id = e.get("t"), e.get("f"), e.get("i")
     id_: int | str | None
-    if kind == "gossip":  # the key is the text's hash: `i` must be it
+    if kind in ("gossip", "book"):  # the key is the text's hash: `i` must be it
         id_ = raw_id if isinstance(raw_id, str) and _HEX16.match(raw_id) and raw_id == e.get("h") else None
     else:
         id_ = _int(raw_id)
@@ -130,7 +140,10 @@ def check_entry(key: Any, raw: Any, builds: list[Any]) -> tuple[Entry | None, st
         return None, "no_build"
     if not _BUILD.match(builds[b - 1]):
         return None, "no_build"
-    return Entry(KINDS[kind][0], id_, fld, e["e"], e["h"], builds[b - 1], npcs, _player(e.get("p"))), None
+    text = e["e"]
+    if kind == "book":  # a page reads with line breaks, as every other page in data/english/book
+        id_, text = book_id(e["h"]), text.replace("$B", "\n")
+    return Entry(KINDS[kind][0], id_, fld, text, e["h"], builds[b - 1], npcs, _player(e.get("p"))), None
 
 
 def _player(raw: Any) -> tuple[str, str] | None:
