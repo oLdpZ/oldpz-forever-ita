@@ -127,162 +127,95 @@ item	269757	description	8bf0b60d79b5079a	Fragile.
 item	272016	description	8660c8430cc15f30	Eureka!
 item	278051	description	0a18eb012419231f	K.D.
 quest	19	title	22ab2f517c3706f2	Tharil'zun
-quest	55	title	461172d9d080daf4	Morbent Fel
-quest	87	title	e78fd7d989b60387	Goldtooth
 quest	117	title	06ba24f24f6beb60	Thunderbrew
 quest	172	title	70336621d7910786	Children's Week
-quest	200	title	2543b951b33d1d3a	Bookie Herod
-quest	206	title	46e076d19515190f	Mai'Zoth
 quest	227	title	0593d35442033c77	Morgan Ladimore
-quest	228	title	2fb5d726d7983799	Mor'Ladim
 quest	249	title	64aa5799b5a78290	Morganth
 quest	318	title	ab586d5c375ca252	Evershine
 quest	389	title	49a42307a15b56d4	Bazil Thredd
-quest	425	title	d479936791d77493	Ivar the Foul
-quest	446	title	57daa6c7e7770a98	Thule Ravenclaw
-quest	486	title	b9e1d498450fca23	Ursal the Mauler
 quest	503	title	990985e43a3f9b49	Gol'dir
-quest	507	title	e7c398ac64df6440	Lord Aliden Perenolde
 quest	535	title	f2b724fc23f3f2fd	Valik
-quest	610	title	57decda3e1eadc74	"Pretty Boy" Duncan
 quest	628	title	f1b790154e1200ff	Excelsior
 quest	638	title	4e0c58beef287f8e	Trollbane
 quest	645	title	c3a3e914ee3ee601	Trol'kalar
 quest	646	title	c3a3e914ee3ee601	Trol'kalar
-quest	687	title	fb09538dd1d7f1fc	Theldurin the Lost
 quest	739	title	6c30dcfa127e5c38	Murdaloc
 quest	766	title	c53484ace38eaf6e	Mazzranache
 quest	790	title	c29f8f29bc8f6333	Sarkoth
 quest	804	title	c29f8f29bc8f6333	Sarkoth
-quest	809	title	c03c982044fdf85b	Ak'Zeloth
 quest	826	title	489251bd7692532a	Zalazane
 quest	828	title	5cde94d68e7e3581	Margoz
 quest	829	title	868b3608d150a7d7	Neeru Fireblade
 quest	838	title	ae1cd67702bfbc3a	Scholomance
-quest	852	title	d41b734872295031	Hezrul Bloodmark
-quest	860	title	3c4cd1521fbfcff7	Sergra Darkthorn
 quest	873	title	7582509378901de2	Isha Awak
-quest	874	title	7d6a1f65f028928e	Mahren Skyseer
-quest	876	title	3d86ef8cc292de0e	Serena Bloodfeather
 quest	881	title	8eaea284c0ee070f	Echeyakee
 quest	882	title	574078d6ef3c805b	Ishamuhale
 quest	883	title	8a0292b4de70a30c	Lakota'mani
 quest	884	title	298c2ba234f146ce	Owatanka
 quest	885	title	cfbb9a3465c5c8b4	Washte Pawne
-quest	894	title	59bd049c93e27570	Samophlange
-quest	900	title	59bd049c93e27570	Samophlange
-quest	901	title	59bd049c93e27570	Samophlange
-quest	902	title	59bd049c93e27570	Samophlange
-quest	922	title	57fb1b20a464ead1	Rellian Greenspyre
 quest	927	title	8ab57346988b06c3	The Moss-twined Heart
 quest	938	title	0a6d119d2926834f	Mist
 quest	940	title	26414cf4473ed6f4	Teldrassil
 quest	948	title	0014e88639aa9bc3	Onu
-quest	962	title	ea89f502d050305e	Serpentbloom
 quest	983	title	ed396ee3f52e901b	Buzzbox 827
 quest	1001	title	ed386236e54d6130	Buzzbox 411
 quest	1002	title	ed381fb2e1553d52	Buzzbox 323
 quest	1003	title	ed38a5c6e945c4d6	Buzzbox 525
 quest	1009	title	a5f22a9f842421e2	Ruuzel
-quest	1037	title	f7ead98e1493d3a6	Velinde Starsong
 quest	1088	title	ac86867a157eb4ff	Ordanus
-quest	1089	title	69a60aaae2d7679c	The Den
-quest	1096	title	896fbf9bd6d55105	Gerenzo Wrenchwhistle
 quest	1123	title	53da4216524e48a9	Rabine Saturna
-quest	1131	title	308aefcaf5cf7747	Steelsnap
-quest	1132	title	30729feb7fc0bfc4	Fiora Longears
 quest	1260	title	9691be75a37cf40d	Morgan Stern
 quest	1301	title	44b76fdd62264ffe	James Hyal
 quest	1302	title	44b76fdd62264ffe	James Hyal
-quest	1361	title	1e8becbf71c91343	Regthar Deathgate
 quest	1365	title	139e351372f74914	Khan Dez'hepah
 quest	1373	title	369f906c68117f61	Ongeku
 quest	1374	title	67d27edabd2d5d44	Khan Jehn
 quest	1375	title	bf1765da25d7e30a	Khan Shaka
 quest	1380	title	a9d55f09bf36ff26	Khan Hratha
 quest	1381	title	a9d55f09bf36ff26	Khan Hratha
-quest	1392	title	82434af7bca95009	Noboru the Cudgel
-quest	1418	title	4fdf2d12300e11eb	Neeka Bloodscar
-quest	1451	title	18625738bf504af7	Rhapsody Shindigger
 quest	1468	title	70336621d7910786	Children's Week
 quest	1479	title	f3e0870f3aae20f6	The Bough of the Eternals
-quest	1483	title	6cf0b9999a7e24a0	Ziz Fizziks
 quest	1489	title	034c803e1d5e2251	Hamuul Runetotem
-quest	1490	title	a9a75b816d8ebbbc	Nara Wildmane
-quest	1502	title	c4560ed6018da132	Thun'grim Firegaze
 quest	1515	progress	ec7d24010e4fda4c	Urrrghhhh...
 quest	1667	title	3fd751ee6a28e498	Dead-tooth Jack
 quest	1678	title	79ac8618a8693831	Vejrek
-quest	1679	title	d9ddd0b2c5a8385d	Muren Stormpike
-quest	1680	title	9d447a97ef89128b	Tormus Deepforge
-quest	1683	title	d401ffdac6304670	Vorlus Vilehoof
 quest	1684	title	521e2628c7c074f7	Elanaria
 quest	1686	title	8040e914a3fdfada	The Shade of Elura
 quest	1688	title	9384a1d7d4fd764f	Surena Caledon
-quest	1698	title	cd09cdbf0b2c778e	Yorus Barleybrew
 quest	1700	title	32eacdf38774b740	Grimand Elmore
 quest	1703	title	a9224821b8d19265	Mathiel
-quest	1704	title	e7370e5cbbc9f939	Klockmort Spannerspan
 quest	1715	title	0d4e536f49df7b89	The Slaughtered Lamb
-quest	1819	title	bc5fb5c05807ad2a	Ulag the Cleaver
 quest	1859	title	74b10f5104831be6	Therzok
-quest	1880	title	7e1133b0183ba9bc	Mage-tastic Gizmonitor
 quest	1885	title	e1e85fb2d4112e4e	Mennet Carkad
 quest	1962	title	d0e883d224836242	Spellfire Robes
 quest	1998	title	781cfb6869b972f9	Fenwick Thatros
-quest	2259	title	372c4f19a407f7c0	Erion Shadewhisper
 quest	2379	title	b5f8d527207a3b52	Zando'zan
-quest	2459	title	236ef724fe8a8fa6	Ferocitas the Dream Eater
-quest	2499	title	a9dba359f59ddca3	Oakenscowl
 quest	2622	completion	b47cdba15fa794e4	Swamp tal... talk.. talker...
 quest	2721	title	f24438adeab003f4	Kirith
 quest	2760	title	569a9c647597cb06	The Mithril Order
 quest	2770	title	020c88eb807d8159	Gahz'rilla
 quest	2864	title	862f6956a0e183c7	Tran'rek
 quest	2926	title	f0c05f189723b975	Gnogaine
-quest	2990	title	544cdf02a1f6660d	Thadius Grimshade
-quest	3115	title	8ca3cdd0a8470088	Tainted Memorandum
 quest	3141	title	91a140874cf8ac27	Loramus
 quest	3161	title	0b56dac1a9d11b17	Gahz'ridian
-quest	3261	title	4d1b9bdc7c17663f	Jorn Skyseer
-quest	3301	title	6ec1c3d12eb8306b	Mura Runetotem
 quest	3379	title	a980b06f5b394747	Shadoweaver
 quest	3602	title	e0c1e16ec1550a59	Azsharite
-quest	3822	title	72ff97e953c8c65f	Krom'Grul
 quest	3903	title	e1f36bcd30122caf	Milly Osworth
-quest	3921	title	60e1e274ce40d0cf	Wenikee Boltbucket
 quest	3922	title	048fd5a7df4046f9	Nugget Slugs
-quest	3923	title	4f8af447c1e0ab7a	Rilli Greasygob
 quest	4005	title	a2e8e5f33465dfd3	Aquementas
 quest	4122	title	f4017ef8b4933e54	Grark Lorkrub
-quest	4126	title	c4008466e2099844	Hurley Blackbreath
-quest	4128	title	8b04a24fd679958b	Ragnar Thunderbrew
 quest	4133	title	55a2ff513586e8fe	Vivian Lagrave
-quest	4136	title	67d4d005bf7e976d	Ribbly Screwspigot
-quest	4262	title	3d05b08bf16dca22	Overmaster Pyron
 quest	4263	title	0aa8e793ce2de2d8	Incendius!
-quest	4324	title	efbe9d0197973d5e	Yuka Screwspigot
-quest	4341	title	fe80aadb07b637a0	Kharan Mighthammer
-quest	4581	title	9dc5369f03f2531e	Kayneth Stillwind
-quest	4761	title	a1402122011b4583	Thundris Windweaver
-quest	4766	title	05c757841e05eb64	Mayara Brightwing
-quest	4808	title	d723b278ee600fdc	Felnok Steelspring
 quest	4862	title	be9d4fa6f6d37512	En-Ay-Es-Tee-Why
-quest	4867	title	f56d6e8c83e1249b	Urok Doomhowl
-quest	4907	title	b0872af6932ecf32	Tinkee Steamboil
-quest	5046	title	41b394c09ce6d37e	Razorhide
 quest	5056	title	e75213da8cea7769	Shy-Rotam
 quest	5088	title	23d8ed72144ac1f0	Arikara
 quest	5126	progress	000c2356b6a1e74a	...
 quest	5164	title	ed554449d7fd93c7	Catalogue of the Wayward
 quest	5166	title	a124a904f450aae8	Breastplate of the Chromatic Flight
 quest	5167	title	616f97397a8e6ad5	Legplates of the Chromatic Defier
-quest	5261	title	798f9e22deee0162	Eagan Peltskinner
-quest	5264	title	1364f0fb0ed23542	Lord Maxwell Tyrosus
 quest	5463	title	07faaca7bb69a6fe	Menethil's Gift
 quest	5464	title	07faaca7bb69a6fe	Menethil's Gift
 quest	5522	title	14b273d779acf514	Leonid Barthalomew
-quest	5531	title	30d1cbfe98f9cea7	Betina Bigglezink
 quest	5533	title	ae1cd67702bfbc3a	Scholomance
 quest	5641	title	eabe51393c268b76	Chastise
 quest	5642	title	cf44b409d1d1665d	Shadowguard
@@ -300,46 +233,26 @@ quest	5672	title	2e4562779402b0df	Elune's Grace
 quest	5673	title	2e4562779402b0df	Elune's Grace
 quest	5674	title	2e4562779402b0df	Elune's Grace
 quest	5675	title	2e4562779402b0df	Elune's Grace
-quest	5676	title	a7b14275f45a024f	Arcane Feedback
-quest	5677	title	a7b14275f45a024f	Arcane Feedback
-quest	5678	title	a7b14275f45a024f	Arcane Feedback
 quest	5679	title	122ac7cabd5eefa4	Dark Sacrifice
 quest	5680	title	cf44b409d1d1665d	Shadowguard
 quest	5762	title	e0d7815ad28e3754	Hemet Nesingwary
 quest	6163	title	c3b4910488c17b99	Ramstein
-quest	6184	title	065813abd0564efa	Flint Shadowmore
-quest	6261	title	99cf1567dcef85dc	Dungar Longdrink
 quest	6322	title	30ec3f6acecb039b	Michael Garrett
-quest	6344	title	1cde20018faa7228	Nessa Shadowsong
 quest	6388	title	3b5086d23620ac74	Gryth Thurden
-quest	6641	title	3efe9ea2167a9f0d	Vorsha the Lasher
 quest	6762	title	53da4216524e48a9	Rabine Saturna
 quest	6843	title	7a326c5ce25a543a	Da Foo
-quest	7202	title	7f5c48d4f1797f21	Korrak the Bloodrager
-quest	7488	title	249af7d460bd259a	Lethtendris's Web
-quest	7489	title	249af7d460bd259a	Lethtendris's Web
 quest	7494	title	fdb07f4175c4a27f	Feathermoon Stronghold
-quest	7562	title	70b8af5ff035a2ce	Mor'zul Bloodbringer
 quest	7564	title	b9b269a325899f9a	Wildeyes
-quest	7623	title	e235f82273895404	Lord Banehollow
 quest	7626	title	8f2b3d75e6cc0495	Bell of Dethmoora
 quest	7627	title	1b0d9a936ffc1359	Wheel of the Black March
 quest	7628	title	365c7d3835ff6c6c	Doomsday Candle
 quest	7630	title	c51a3c6d4f5d1879	Arcanite
-quest	7638	title	74c8e64a6453435f	Lord Grayson Shadowbreaker
-quest	7643	title	f903562c02bf7e4f	Ancient Equine Spirit
 quest	7649	title	3ac91124ca3bde8e	Enchanted Thorium Platemail: Volume I
 quest	7650	title	14e3c64bfe937925	Enchanted Thorium Platemail: Volume II
 quest	7651	title	b08e78dc9b4b0fb1	Enchanted Thorium Platemail: Volume III
-quest	7670	title	74c8e64a6453435f	Lord Grayson Shadowbreaker
 quest	8266	title	8ea61f00b1536b8e	Ribbons of Sacrifice
 quest	8268	title	8ea61f00b1536b8e	Ribbons of Sacrifice
-quest	8303	title	822118f5d1c09dd0	Anachronos
 quest	8306	progress	898460ace604834e	Natalia?
-quest	8331	title	1df6d82e69536321	Aurel Goldleaf
-quest	8349	title	c71f0889168beb3f	Bor Wildmane
-quest	8883	title	02f19ccfbc6d3648	Valadar Starsong
-quest	9063	title	168fa4b24cc8c66c	Torwa Pathfinder
 quest	78124	title	3a40adb9eca0a3d5	Nar'thalas Almanac
 quest	78127	title	3c34dd7c2d8bd947	The Dalaran Digest
 quest	78132	title	979b839cc95b4edf	Dragonslayer's Helm
@@ -375,31 +288,19 @@ quest	92529	title	20d8f218ba8db64e	Falaath Village
 quest	92534	title	0b64e98b59084d57	jktestquest1a
 quest	93128	title	67d27edabd2d5d44	Khan Jehn
 quest	93196	title	67d27edabd2d5d44	Khan Jehn
-quest	94490	title	ab8b85288cf0ef17	Ripped Missive
 quest	94559	title	e7944cd23b32e4ee	UNUSED
 quest	95140	title	1db240109a4df6c9	Old Fire-Eye
-quest	95189	title	98ec1516a82aecf3	Crest of Lordaeron
-quest	95195	title	fb70dfc526276e6a	Bloodied Insignia
-quest	95204	title	98ec1516a82aecf3	Crest of Lordaeron
-quest	95213	title	8848eca523b7ab4e	Stolen Blasting Powder
-quest	95214	title	8848eca523b7ab4e	Stolen Blasting Powder
-quest	95328	title	b283ff1d70390cdc	Whispering Horror Residue
 quest	95384	title	ec99fcec9669f73e	Partial Mystical Notes
-quest	95817	title	cc87f187ec4c8402	Rotgath Stonebeard
 quest	96130	title	5e7713ac11bc8203	Chakuyak
 quest	96222	title	a9d55f09bf36ff26	Khan Hratha
 quest	96735	title	0f38dabc39296b40	Toast!?
-quest	96774	title	5f76897dcf82cc96	Ancient Gurubashi Idol
 quest	96897	title	b7d2480d76636a1a	The Cult of the Damned
 quest	96899	title	48578fb3ccb2be0d	Bandarion Keep
-quest	97236	title	c0cb6394dcf78856	Fang of Githyiss
 quest	98027	title	b3215af63abe74d5	Gleaming Crescent Necklace
-quest	98069	title	02f16acd9daed915	Stolen Freewind Supplies
 quest	98283	title	77d7998bd3c899be	Carnage
 quest	98326	title	08b6e05feae7de2c	Frosthowl
 quest	98338	title	33acc140a20dbd02	REUSE ME
 quest	99079	title	0e88eacac3e99e26	Longwalker Malah
-quest	99142	title	739d084a832a3a9f	Tomb Weed
 spell	5306	description	0b5c24b6f71d2077	Test
 spell	11365	description	704aff9f1c73b339	Returns you to your home. Your home is currently $z.
 spell	19410	aura	59e184e0096919c0	zzOldStunned.
