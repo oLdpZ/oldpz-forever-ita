@@ -359,6 +359,16 @@ local function completionLogKey(core)
   return type(WFJ.ShippedGossipKey) == "function" and WFJ.ShippedGossipKey(core) or nil
 end
 
+-- An item to collect: the client writes the item's own name ("4/6 Scavenger Paw"), an official item name
+-- (Names/NameItem, UI/NameText) under the item names' area. → kind, key, { wrap } | nil
+local function itemName(core, tag)
+  local NameText = WFJ.NameText
+  if not NameText then return nil end
+  local kind, key, before, after = NameText.match(core, "nameitem")
+  if not kind then return nil end
+  return kind, key, { before, after .. tag }
+end
+
 -- One objective line's Japanese without a record (a tooltip the client rebuilds every frame), by the same lookups as
 -- showObjective. → Japanese | nil
 function QuestMap.objectiveJapanese(en, surface)
@@ -382,6 +392,9 @@ function QuestMap.objectiveJapanese(en, surface)
     return WFJ.Render.preview(surface, en, nil, "quests", "ui", key,
       { args = { form = "affix", before = "", after = tag, inner = args }, compact = true })
   end
+  local wrap
+  kind, key, wrap = itemName(core, tag)
+  if kind then return WFJ.Render.preview(surface, en, nil, kind, kind, key, { compact = true, wrap = wrap }) end
   return nil
 end
 
@@ -421,6 +434,12 @@ function QuestMap.showObjective(surface, recKey, fs, refit)
   if key then
     WFJ.Render.show(surface, recKey, fs, en, "quests", "ui", key,
       { refit = refit, args = { form = "affix", before = "", after = tag, inner = args }, compact = true })
+    return 1
+  end
+  local wrap
+  kind, key, wrap = itemName(core, tag)
+  if kind then
+    WFJ.Render.show(surface, recKey, fs, en, kind, kind, key, { refit = refit, compact = true, wrap = wrap })
     return 1
   end
   WFJ.SurfaceState.drop(surface, recKey)

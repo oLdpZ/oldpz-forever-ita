@@ -10,6 +10,7 @@ for _, f in ipairs(H.UI_FILES) do FILES[#FILES + 1] = f end
 FILES[#FILES + 1] = "Core/Objectives.lua"
 FILES[#FILES + 1] = "Core/Names.lua"
 FILES[#FILES + 1] = "Core/UnitNames.lua"
+FILES[#FILES + 1] = "UI/NameText.lua"
 FILES[#FILES + 1] = "UI/QuestFrame.lua"
 FILES[#FILES + 1] = "UI/QuestMap.lua"
 
@@ -250,6 +251,29 @@ describe("UI/QuestMap: objective lines", function()
       assert.are.equal("1/1 Archiveを焼き払う (完了)", Q.objectiveStrings[2]:GetText())
       Q.closeDetails()
       assert.are.equal("1/1 Archive Burned (Complete)", Q.objectiveStrings[2]:GetText())
+    end)
+  end)
+
+  -- An item to collect has no objective text of its own: the client writes the item's name ("4/6 Scavenger Paw",
+  -- quest 376), so the line is that name, found in the official item names (Names/NameItem, UI/NameText).
+  describe("an item to collect, by its official name", function()
+    before_each(function()
+      DATA.nameitem = { [WFJ.NameText.key("Scavenger Paw")] = { ja = "Zampa di Saprofago", status = "." } }
+      WFJ.Lookup = { keyed = function(kind, key) return DATA[kind] and DATA[kind][key] end }
+    end)
+
+    it("the tracker keeps the count and shows the Italian name; the reveal key brings the English back", function()
+      Q.quests[9].leaderboard = { { text = "4/6 Scavenger Paw" }, { text = "6/6 Duskbat Wing", done = true } }
+      local _, lines = trackerLines()
+      assert.are.equal("4/6 Zampa di Saprofago", lines[1].Text:GetText())
+      assert.are.equal("6/6 Duskbat Wing", lines[2].Text:GetText()) -- no shipped name: as written
+      Stub.keys.alt = true; WFJ.Modifier.refresh()
+      assert.are.equal("4/6 Scavenger Paw", lines[1].Text:GetText())
+      Stub.keys.alt = false; WFJ.Modifier.refresh()
+    end)
+
+    it("a tooltip's objective line (no record) reads the same name", function()
+      assert.are.equal("4/6 Zampa di Saprofago", QM.objectiveJapanese("4/6 Scavenger Paw", "t"))
     end)
   end)
 

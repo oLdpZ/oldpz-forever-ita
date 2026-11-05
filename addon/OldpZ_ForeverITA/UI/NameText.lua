@@ -34,6 +34,21 @@ local function readings(text)
   return list
 end
 
+-- The name `text` holds, of `kind` (a kind, or a list tried in order: the kind that knows the name is its area).
+-- → kind, key, before, after (what the line shows around the name) | nil
+function NameText.match(text, kind)
+  local keyed = WFJ.Lookup and WFJ.Lookup.keyed
+  if type(keyed) ~= "function" or type(text) ~= "string" or text == "" or secret(text) then return nil end
+  local kinds = type(kind) == "table" and kind or { kind }
+  for _, r in ipairs(readings(text)) do
+    local key = NameText.key(r[2])
+    for _, k in ipairs(kinds) do
+      if keyed(k, key) then return k, key, r[1], r[3] end
+    end
+  end
+  return nil
+end
+
 -- `fs` as record `recKey` of `surface`, if its text is a name of `kind` (a kind, or a list tried in order: the kind
 -- that knows the name is its area). A colour code and a count around the name are kept. `refit` (optional) lays its
 -- owner out again.
@@ -47,18 +62,11 @@ function NameText.show(surface, recKey, fs, kind, refit)
   end
   local rec = WFJ.SurfaceState.get(surface, recKey)
   if rec and rec.fs == fs and rec.applied ~= nil and en == rec.applied then return 1 end
-  if type(en) == "string" and en ~= "" then
-    local kinds = type(kind) == "table" and kind or { kind }
-    for _, r in ipairs(readings(en)) do
-      local key = NameText.key(r[2])
-      for _, k in ipairs(kinds) do
-        if WFJ.Lookup.keyed(k, key) then
-          local wrap = (r[1] ~= "" or r[3] ~= "") and { r[1], r[3] } or nil
-          WFJ.Render.show(surface, recKey, fs, en, k, k, key, { refit = refit, compact = true, wrap = wrap })
-          return 1
-        end
-      end
-    end
+  local k, key, before, after = NameText.match(en, kind)
+  if k then
+    local wrap = (before ~= "" or after ~= "") and { before, after } or nil
+    WFJ.Render.show(surface, recKey, fs, en, k, k, key, { refit = refit, compact = true, wrap = wrap })
+    return 1
   end
   WFJ.SurfaceState.drop(surface, recKey)
   return 0
