@@ -6,7 +6,7 @@ tags are the editor's own colour syntax. The counts line ("In numeri: …") foll
 (docs/operations/coverage.md); paste the page again when it changes.
 
 The addon and the voice packs are separate projects because the CurseForge app installs one file per project:
-each voice pack lists the addon as a **Required Dependency**, so the app installs the addon with it (set it on
+each voice pack lists the addon as a **Required Dependency**, so the app installs the addon with it (set on
 each voice file at upload: an unapproved project is not found by the Default Relations search).
 
 Projects (created 2026-11-03, Unlisted): addon 1781383; voices 1-20 1781385, 21-40 1781387, 41-55 1781388,
@@ -43,7 +43,7 @@ In numbers: **4,775** quests, **10,876** NPC dialogue lines, **921** book pages,
 
 NPCs can also **speak Italian**: quest offers, progress and turn-ins, greetings, books and letters. The voices are generated with Google Gemini text-to-speech, with a voice of their own for the main characters.
 
-The voices are **optional** and come in five separate packs on CurseForge. Install only the ones you want, next to this addon: the packs need it.
+The voices are **optional** and come in five separate packs on CurseForge. Install only the ones you want: the CurseForge app installs this addon together with each pack.
 
 | Voice pack | What it voices |
 |---|---|
@@ -105,7 +105,7 @@ In numeri: **4.775** missioni, **10.876** righe di dialogo dei PNG, **921** pagi
 
 I PNG possono anche **parlare in italiano**: proposte, avanzamento e consegna delle missioni, saluti, libri e lettere. Le voci sono generate con la sintesi vocale di Google Gemini, con una voce propria per i personaggi principali.
 
-Le voci sono **facoltative** e sono in cinque pacchetti a parte su CurseForge. Installa solo quelli che vuoi, insieme a questo addon: i pacchetti ne hanno bisogno.
+Le voci sono **facoltative** e sono in cinque pacchetti a parte su CurseForge. Installa solo quelli che vuoi: l'app CurseForge installa questo addon insieme a ogni pacchetto.
 
 | Pacchetto voce | Cosa fa parlare |
 |---|---|
