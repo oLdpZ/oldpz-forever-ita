@@ -69,7 +69,7 @@ WFJ.Data.add("item", {
   [250367] = { "Ti insegna a creare un Lesser Cleric's Elixir.", 0x7f44084f, "u" },
   [250368] = { "Ti insegna a creare un Cleric's Elixir.", 0xac2119c5, "u" },
   [250369] = { "Ti insegna a creare un Greater Cleric's Elixir.", 0xeeeb75e4, "u" },
-  [250370] = { "Ti insegna a creare un Elisir della Fermezza.", 0x9e5c9b64, "u" },
+  [250370] = { "Ti insegna a creare un ⟦Elixir of Fortitude=Elisir della Fermezza⟧.", 0x9e5c9b64, "u" },
   [250371] = { "Ti insegna a creare un Elixir of Greater Fortitude.", 0x53ebd533, "u" },
   [250372] = { "Ti insegna a creare un Elixir of Wicked Regeneration.", 0x1f2e35aa, "u" },
   [250373] = { "Ti insegna a creare un Elixir of the Owl.", 0x42a604af, "u" },

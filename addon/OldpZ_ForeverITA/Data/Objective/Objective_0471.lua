@@ -4,9 +4,9 @@ WFJ.Data.add("objective", {
   [471121] = { "Scopri perché gli abitanti di Kul Tiras sono qui", 0x399b6957, "." },
   [471235] = { "Trova l'ingresso della Drowned City", 0xbb71eeb1, "." },
   [471636] = { "Offri il tuo sangue di tua volontà", 0x9fb50498, "." },
-  [471637] = { "Libera la ⟦Tortured Soul=Anima Torturata⟧", 0x9cef74cc, "." },
+  [471637] = { "Libera l'⟦Tortured Soul=Anima Torturata⟧", 0x9cef74cc, "." },
   [471712] = { "Scopri cosa è successo ad Ardin Grassman", 0x83a0a47e, "." },
   [471841] = { "Siediti vicino al fuoco da campo", 0xd2953d47, "." },
   [471923] = { "Porta la tua abilità di Sartoria a 20", 0xf38e72c6, "." },
-  [471934] = { "Ottieni il beneficio Boosted Rest", 0x801ef2f5, "." },
+  [471934] = { "Ottieni il beneficio ⟦Boosted Rest=Riposo Potenziato⟧", 0x801ef2f5, "." },
 })

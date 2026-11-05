@@ -32,7 +32,7 @@ WFJ.Data.add("spell", {
   [1303503] = { "Espelle il mana rimasto in un elementale in un'area che rigenera $N1 mana ogni $D1 alle creature vicine.", nil, 0x0a6e2be7, nil, "um" },
   [1303505] = { "Espelle il mana rimasto in un elementale in un'area che rigenera $N1 mana ogni $D1 alle creature vicine.", "Fornisce $N1 mana ogni $D1.", 0x5c455fb5, 0xa30aa824, "uu" },
   [1303509] = { "Spargi l'incenso sulla scogliera meridionale dell'⟦Hunter Rise=Altura dei Cacciatori⟧.", nil, 0x55017d5c, nil, "um" },
-  [1303520] = { "Combina un Bundle of Herbs, un Bundle of Dried Cedar Twigs, un Sinew Thread e una Ceremonial Flint and Tinder per creare un Prepared Incense.", nil, 0x8e38e0e9, nil, "um" },
+  [1303520] = { "Combina un ⟦Bundle of Herbs=Mazzo di Erbe⟧, un Bundle of Dried Cedar Twigs, un ⟦Sinew Thread=Filo di Tendine⟧ e una ⟦Ceremonial Flint and Tinder=Pietra Focaia ed Esca Cerimoniali⟧ per creare un Prepared Incense.", nil, 0x8e38e0e9, nil, "um" },
   [1303543] = { "Pianta uno ⟦Scarlet Banner=Stendardo Scarlatto⟧ in un accampamento. Richiede un ⟦Campfire=Fuoco da Campo⟧ nelle vicinanze.", nil, 0xc1dc1b97, nil, "um" },
   [1303551] = { "Colpisce un nemico con un dardo elettrico che si propaga a un altro nemico vicino. L'incantesimo colpisce fino a $N1 bersagli, infliggendo danni da natura a ciascuno.", nil, 0x91b98b1a, nil, "um" },
   [1303598] = { "Trasforma i nemici vicini in un animale, costringendoli a vagare per un massimo di $D1. Mentre vagano non possono attaccare né lanciare incantesimi.", "Impossibile attaccare o lanciare incantesimi.", 0xb8524f66, 0x03c3096f, "uu" },

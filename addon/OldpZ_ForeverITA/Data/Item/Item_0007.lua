@@ -151,7 +151,7 @@ WFJ.Data.add("item", {
   [7982] = { "Ti insegna a creare dei ⟦Barbaric Iron Gloves=Guanti di Ferro della Barbarie⟧.", 0xee1a85fd, "u" },
   [7983] = { "Ti insegna a creare dei ⟦Ornate Mithril Pants=Pantaloni di Mithril Preziosi⟧.", 0x1acb4b04, "u" },
   [7984] = { "Ti insegna a creare dei ⟦Ornate Mithril Gloves=Guanti di Mithril Preziosi⟧.", 0x3c3d243c, "u" },
-  [7985] = { "Ti insegna a creare degli Ornate Mithril Shoulders.", 0x3f587ed0, "u" },
+  [7985] = { "Ti insegna a creare degli ⟦Ornate Mithril Shoulders=Spallacci Ornati di Mithril⟧.", 0x3f587ed0, "u" },
   [7989] = { "Ti insegna a creare degli ⟦Mithril Spurs=Speroni di Mithril⟧.", 0xffa33396, "u" },
   [7990] = { "Ti insegna a creare un ⟦Heavy Mithril Helm=Elmo Pesante di Mithril⟧.", 0xe15863f6, "u" },
   [7991] = { "Ti insegna a creare dei Mithril Plate Shoulders.", 0xebb005c1, "u" },

@@ -18,7 +18,7 @@ WFJ.Data.add("area", {
   [4506] = { "Riporta il gatto corrotto a Winna Hazzard", 0x802b9ea8, "." },
   [4734] = { "Collauda il prototipo di Uovoscilloscopio", 0xfa6d59ce, "." },
   [4770] = { "Scorta Pao'ka via da ⟦Highperch=Covoalto⟧", 0x59894a71, "." },
-  [4771] = { "Piazza la Trappola della Luce dell'Alba", 0xb9eda693, "." },
+  [4771] = { "Piazza la ⟦Dawn's Gambit=Trappola della Luce dell'Alba⟧", 0xb9eda693, "." },
   [4786] = { "Aspetta che ⟦Menara Voidrender=Menara Squarciavuoto⟧ completi il tuo oggetto", 0xad154db8, "." },
   [4811] = { "Trova il grande cristallo rosso sulla catena montuosa orientale di Rivafosca", 0x9043611d, "." },
   [4842] = { "Scopri la ⟦Darkwhisper Gorge=Gola di Mormoscuro⟧", 0x59153320, "." },

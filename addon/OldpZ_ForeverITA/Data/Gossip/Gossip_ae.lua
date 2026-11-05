@@ -35,7 +35,7 @@ WFJ.Data.add("gossip", {
   ["aece2f49d5584b76"] = { "Mmm... sì, ho una ricetta che potrebbe esserti utile. Lascia che te la insegni!", "." },
   ["aed0a54bb5658151"] = { "In vita ho dedicato le mie energie a guarire gli altri. Vediamo ora, nella morte, quanto dolore posso causare!", "." },
   ["aed26b0faff2971e"] = { "Mmmh...", "." },
-  ["aed393389edc4f50"] = { "È fatta. La Fiamma Eterna arde di nuovo.\n\nLa tua prova è completa. Sono lieto di consegnarti il tuo Totem del Fuoco. Usa bene questo simbolo di potere nei tuoi viaggi, {name}.\n\nRicorda solo che il potere del piano elementale serve chi lo rispetta e consuma chi non lo fa. Questa è la nostra via.", "." },
+  ["aed393389edc4f50"] = { "È fatta. La Fiamma Eterna arde di nuovo.\n\nLa tua prova è completa. Sono lieto di consegnarti il tuo ⟦Fire Totem=Totem del Fuoco⟧. Usa bene questo simbolo di potere nei tuoi viaggi, {name}.\n\nRicorda solo che il potere del piano elementale serve chi lo rispetta e consuma chi non lo fa. Questa è la nostra via.", "." },
   ["aed93e2e0d387838"] = { "Riuscii a malapena a fingere la morte mentre i cadaveri del Flagello mi si ammucchiavano addosso. C'erano solo il buio e i suoni attutiti della battaglia sopra di me. Il cozzare del ferro, il digrignare e lo stridere... suoni orribili, terribili. E poi calò il silenzio. Mi chiamò! \"Fairbanks! Fairbanks, dove sei? Parlami, Fairbanks!\" E poi venne il suono dell'incredulità. Il morso del tradimento, {race}...", "." },
   ["aedcb130117e9754"] = { "Dov'è l'anziano Scruta Cieli?", "." },
   ["aede8afc27a36bd2"] = { "La ⟦Scarlet Crusade=Crociata Scarlatta⟧ colpirà i malvagi e scaccerà il male da queste terre!", "." },

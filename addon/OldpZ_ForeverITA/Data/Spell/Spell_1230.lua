@@ -9,7 +9,7 @@ WFJ.Data.add("spell", {
   [1230117] = { "Crea un Kit di ⟦First Aid=Primo Soccorso⟧.", nil, 0xd4c55d1b, nil, "um" },
   [1230123] = { "Infligge $N1 danni da natura ai nemici colpiti dall'esplosione.", nil, 0x7185d351, nil, "um" },
   [1230125] = { nil, "Una luce incontrollata sgorga dal Brandicenere, infliggendo danni da sacro ogni secondo.", nil, 0xbd16af36, "mu" },
-  [1230161] = { "Crea una ⟦Lodestone=Magnetite⟧.", nil, 0x0dffc679, nil, "um" },
+  [1230161] = { "Crea un ⟦Lodestone=Magnetite⟧.", nil, 0x0dffc679, nil, "um" },
   [1230171] = { "Crea una ⟦Sharpening Wheel=Mola per Affilare⟧.", nil, 0xb9ede7c1, nil, "um" },
   [1230200] = { "Infligge $N1 danni da natura a un nemico e aumenta del $N2% i danni da natura che subisce per $D1.", "Danni da natura subiti aumentati del $N1%. $N2 danni da natura ogni secondo.", 0x1cb219ac, 0xabbf78ea, "uu" },
   [1230203] = { "Infligge $N1 danni da sacro al bersaglio e aumenta del $N2% i danni che infligge.", "Danni inflitti aumentati del $N1%.", 0x3fccb5a1, 0xd7cc9fd9, "uu" },

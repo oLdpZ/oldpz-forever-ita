@@ -13,7 +13,7 @@ WFJ.Data.add("gossip", {
   ["e8334e15d50c55c9"] = { "Nel corso di 8.000 anni sono state create solo poche di queste lame, ognuna unica per potere e aspetto. Le lame di Quel'Serrar assumevano le caratteristiche del loro creatore.", "." },
   ["e83813fec722a150"] = { "Non è nostra usanza, e non sarebbe nemmeno possibile. Nefarian è protetto da antichi sigilli, antichi quanto gli Aspetti stessi. Sono loro a impedirmi di entrare nel santuario interno di questa cittadella. La magia oscura impedisce a qualsiasi membro dell'altro stormo di entrare senza essere consacrato... a meno che.", "." },
   ["e83c52a3b89bf174"] = { "Ora lasciami in pace. Devo riposare.", "." },
-  ["e83ff0187378af10"] = { "%s pianta il Moss-twined Heart...", "." },
+  ["e83ff0187378af10"] = { "%s pianta il ⟦Moss-twined Heart=Cuore Avvolto dal Muschio⟧...", "." },
   ["e84073d6eabccb27"] = { "Il ⟦Arathi Basin=Bacino d'Arathi⟧ un tempo era la nostra casa, e con il tuo aiuto lo sarà di nuovo! Ci aiuterai, {class}?", "." },
   ["e847782c450e0921"] = { "<Eva appare e scompare alla vista.>", "." },
   ["e847853e989f3986"] = { "Salve, <giovanotto/signorina>. Sono Eva Sarkhoff e questo è mio marito, Lucien. È un piacere fare la tua conoscenza.", "." },

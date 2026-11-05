@@ -71,7 +71,7 @@ WFJ.Data.add("objective", {
   [476662] = { "Hai lanciato Elune's Light", 0x6eca65f6, "." },
   [476663] = { "Hai lanciato Shadowmeld", 0x1f55e7d4, "." },
   [476752] = { "Prendi lo Skyborne Portal per ⟦Stormwind=Roccavento⟧", 0xc5bd6dc3, "." },
-  [476843] = { "Sealed Company Request consegnata al consiglio di ⟦Hillsbrad=Colletorto⟧", 0xd02048e6, "." },
+  [476843] = { "⟦Sealed Company Request=Richiesta Sigillata della Compagnia⟧ consegnata al consiglio di ⟦Hillsbrad=Colletorto⟧", 0xd02048e6, "." },
   [476846] = { "Fallrook Varietal consegnato a Dun Garok", 0xa250ae2e, "." },
   [476860] = { "Fiala occidentale piazzata", 0x3fd1ac41, "." },
   [476861] = { "Fiala settentrionale piazzata", 0xbf6465fc, "." },

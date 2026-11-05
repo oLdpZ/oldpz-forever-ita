@@ -144,7 +144,7 @@ WFJ.Data.add("item", {
   [3827] = { "Rigenera $N1 mana.", 0x09fdd6de, "u" },
   [3828] = { "Permette di individuare l'invisibilità inferiore per $D1.", 0xefa08436, "u" },
   [3829] = { "Se applicato a un'arma da mischia, conferisce il $N1% di probabilità di lanciare Dardo di Gelo sull'avversario quando colpisce. Dura $N2 min.", 0xd34b9a3a, "u" },
-  [3830] = { "Ti insegna a creare un Elisir della Fermezza.", 0xa7d07b61, "u" },
+  [3830] = { "Ti insegna a creare un ⟦Elixir of Fortitude=Elisir della Fermezza⟧.", 0xa7d07b61, "u" },
   [3831] = { "Ti insegna a creare un Troll's Blood Elixir.", 0x37d0b279, "u" },
   [3832] = { "Ti insegna a creare un Elisir ⟦Detect Lesser Invisibility=Individua Invisibilità Inferiore⟧.", 0xaeb9b7fc, "u" },
   [3854] = { "Lancia un dardo gelido contro il nemico, infliggendo $N1 danni da gelo e riducendo la velocità di movimento del nemico del $N2% per $D1.", 0x013c5fa4, "u" },

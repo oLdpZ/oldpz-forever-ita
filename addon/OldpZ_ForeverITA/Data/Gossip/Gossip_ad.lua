@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["ad9c79fe77499851"] = { "Abbiamo raccolto molti rifornimenti per la ricostruzione, ma ce ne servono ancora parecchi per riparare Dun Baldar. Continua a portarmi rifornimenti!", "." },
   ["ad9fb8c642409dfb"] = { "Questo atto di follia non resterà impunito!", "." },
   ["ada710129f79ea70"] = { "Difendete la barricata!", "." },
-  ["ada78182e829b1f5"] = { "Posso avere un altro Dawn's Gambit, Betina? Voglio provarlo di nuovo...", "." },
+  ["ada78182e829b1f5"] = { "Posso avere un altro ⟦Dawn's Gambit=Trappola della Luce dell'Alba⟧, Betina? Voglio provarlo di nuovo...", "." },
   ["adb0a9eaa24f67f2"] = { "Le maree della guerra sono tornate. Dal gelido nord, le necropoli del Re dei Lich hanno posto sotto assedio le nostre terre. Lui e il suo maledetto generale, Kel'Thuzad, mandano necropoli volanti a invadere il mondo intero.", "." },
   ["adb1f64243f1d7e9"] = { "Ben detto!", "." },
   ["adb2489bd7642bbb"] = { "%s salta dalla prima catapulta alla seconda!", "." },

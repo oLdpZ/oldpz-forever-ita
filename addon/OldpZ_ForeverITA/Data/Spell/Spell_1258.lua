@@ -12,7 +12,7 @@ WFJ.Data.add("spell", {
   [1258518] = { "Attraversa le protezioni druidiche per accedere al ⟦Mount Hyjal=Monte Hyjal⟧.", nil, 0xf9ad16b6, nil, "um" },
   [1258520] = { "Balza sul bersaglio, stordendolo per $D1 e infliggendo $N2 danni in $D2. Bisogna essere in Movimento Furtivo e alle spalle del bersaglio. Fornisce $N4 punti combo.", "Stordito.", 0x97420bb2, 0x27f95286, "uu" },
   [1258773] = { "Preleva un campione d'acqua dal pozzo di una fattoria delle ⟦Westfall=Marche Occidentali⟧.", nil, 0x345ca815, nil, "um" },
-  [1258784] = { "Combina le Imbued Tears con la ⟦Petrified Bark=Corteccia Pietrificata⟧ per creare un Rudimentary Necromancy Staff.", nil, 0x67cc52ab, nil, "um" },
+  [1258784] = { "Combina le ⟦Imbued Tears=Lacrime Infuse⟧ con la ⟦Petrified Bark=Corteccia Pietrificata⟧ per creare un Rudimentary Necromancy Staff.", nil, 0x67cc52ab, nil, "um" },
   [1258812] = { "Tenta di infondere energia negromantica negli scheletri di Orgrul.", nil, 0xbb88d223, nil, "um" },
   [1258822] = { "Piazza gli esplosivi accanto alla fonderia nelle ⟦Deadmines=Miniere della Morte⟧.", nil, 0xc291176b, nil, "um" },
 })

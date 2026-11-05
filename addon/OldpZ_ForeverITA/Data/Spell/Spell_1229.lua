@@ -16,7 +16,7 @@ WFJ.Data.add("spell", {
   [1229451] = { nil, "Non puoi ottenere altra esperienza da riposato da una ⟦Camp Tent=Tenda da Campo⟧ per $D1.", nil, 0x02bcf44c, "mu" },
   [1229487] = { nil, "Aumenta l'esperienza da riposato dopo $D1 trascorsi a riposare vicino alla tenda. Puoi ottenere questo beneficio solo una volta all'ora.", nil, 0x18495878, "mu" },
   [1229503] = { "Giudicato dal potere del Brandicenere.", "Giudicato dal potere del Brandicenere.", 0xa885366c, 0xa885366c, "uu" },
-  [1229504] = { "Crea un ⟦Faction Banner=Stendardo della Fazione⟧.", nil, 0xd67a2145, nil, "um" },
+  [1229504] = { "Crea uno ⟦Faction Banner=Stendardo della Fazione⟧.", nil, 0xd67a2145, nil, "um" },
   [1229508] = { "Giudicato dal potere del Brandicenere. Stordito, con Armatura e probabilità di schivata ridotte.", "Giudicato dal potere del Brandicenere. Stordito, con Armatura e probabilità di schivata ridotte.", 0xf0e131a5, 0xf0e131a5, "uu" },
   [1229517] = { "Crea una ⟦Camp Chair=Sedia da Campo⟧.", nil, 0x0819b343, nil, "um" },
   [1229705] = { "Crea una ⟦Incense Candle=Candela d'Incenso⟧.", nil, 0x53987f01, nil, "um" },

@@ -2,6 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("objective", {
   [472272] = { "Siediti vicino al fuoco da campo", 0xd2953d47, "." },
-  [472273] = { "Ottieni il beneficio Boosted Rest", 0x801ef2f5, "." },
+  [472273] = { "Ottieni il beneficio ⟦Boosted Rest=Riposo Potenziato⟧", 0x801ef2f5, "." },
   [472284] = { "Porta la tua abilità di Sartoria a 20", 0xf38e72c6, "." },
 })

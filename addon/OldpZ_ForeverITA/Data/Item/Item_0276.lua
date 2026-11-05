@@ -4,7 +4,7 @@ WFJ.Data.add("item", {
   [276063] = { "Ti insegna a evocare questa cavalcatura.", 0x720161a4, "u" },
   [276066] = { "Il pacco è sigillato stretto con quello che sembra un fiocco improvvisato, fatto con una cima d'ormeggio umida.", 0x3da235c4, "u" },
   [276145] = { "Scaglia l'Explosive Runeshard sul punto bersaglio per segnalare a Maerion di attaccare.", 0xf4e4982b, "u" },
-  [276236] = { "Estrai la tua Replica Ironforge Air Rifle per una sparatoria amichevole.\nLa versione ufficiale, con una bussola nel calcio e un marchingegno gnomesco che tiene il punteggio.", 0x79a634c0, "u" },
+  [276236] = { "Estrai la tua ⟦Replica Ironforge Air Rifle=Replica del Fucile ad Aria di Forgiardente⟧ per una sparatoria amichevole.\nLa versione ufficiale, con una bussola nel calcio e un marchingegno gnomesco che tiene il punteggio.", 0x79a634c0, "u" },
   [276242] = { "Ti trasformi in un Mezzorso per $D1.", 0x9565f3ee, "u" },
   [276274] = { "Ti permette di camminare sull'acqua per $D1.\n\nAttaccare o subire danni annulla l'effetto.", 0xa68ec1ff, "u" },
   [276275] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },

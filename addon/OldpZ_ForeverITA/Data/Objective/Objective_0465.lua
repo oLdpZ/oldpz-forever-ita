@@ -18,5 +18,5 @@ WFJ.Data.add("objective", {
   [465810] = { "Recluta l'High Order", 0x9692fa9e, "." },
   [465840] = { "Parla con Valennia Stormfist", 0xacafaca0, "." },
   [465935] = { "Fai rapporto a Hyusaa Quickbreeze", 0x32498a3f, "." },
-  [465999] = { "Dissolvi l'Accursed Skull", 0xdd5f2c13, "." },
+  [465999] = { "Dissolvi il ⟦Accursed Skull=Teschio Maledetto⟧", 0xdd5f2c13, "." },
 })

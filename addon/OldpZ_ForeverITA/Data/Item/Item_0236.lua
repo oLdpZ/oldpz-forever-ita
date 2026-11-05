@@ -14,7 +14,7 @@ WFJ.Data.add("item", {
   [236395] = { "Libera il tuo potenziale all'interno di Naxxramas, aumentando la minaccia che generi del $N1%, i tuoi danni del $N2% e la tua salute del $N3% per ogni oggetto Consacrato indossato. (Indossare più di $N4 oggetti Consacrati non dà alcun beneficio aggiuntivo)", 0x3ac5cc8c, "u" },
   [236396] = { "Libera il tuo potenziale all'interno di Naxxramas, aumentando la minaccia che generi del $N1%, i tuoi danni del $N2% e la tua salute del $N3% per ogni oggetto Consacrato indossato. (Indossare più di $N4 oggetti Consacrati non dà alcun beneficio aggiuntivo)", 0x3ac5cc8c, "u" },
   [236414] = { "Questa cassa ammaccata e danneggiata sembra letteralmente caduta dal retro di uno zeppelin", 0x68f7e7f8, "u" },
-  [236754] = { "Ti insegna a creare un Distilled Firewater.", 0xbb5be81b, "u" },
+  [236754] = { "Ti insegna a creare un ⟦Distilled Firewater=Corroborante Distillato⟧.", 0xbb5be81b, "u" },
   [236872] = { "Ti insegna a creare dei Creepy Censor Sensors.", 0x26e7963c, "u" },
   [236878] = { "Tenebroso, eppure integro. Una reliquia dell'oscurità incombente.", 0xdfa5e521, "u" },
   [236879] = { "Urla discordanti e avvizzite riecheggiano una fioritura armoniosa. Il filo argentato riversa orrore.", 0x3aa67a5b, "u" },

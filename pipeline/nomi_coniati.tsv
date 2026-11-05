@@ -46,3 +46,390 @@ abilita	Welcoming Campfire	Fuoco da Campo Accogliente	campeggio di Forever
 abilita	Camping	Campeggio	campeggio di Forever; come la categoria del ricettario
 abilita	Library Shelf	Scaffale della Biblioteca	campeggio di Forever
 abilita	Smelting	Fusione	abilità dell'Estrazione; nessun nome ufficiale col testo di Forever
+abilita	Camp Benefits	Benefici dell'Accampamento	campeggio di Forever
+abilita	Boosted Rest	Riposo Potenziato	campeggio di Forever
+abilita	Campfire Nearby	Fuoco da Campo Vicino	campeggio di Forever
+abilita	Bait and Tackle	Esche e Attrezzatura	campeggio di Forever (pesca)
+abilita	Gardening	Giardinaggio	campeggio di Forever (erbalismo)
+abilita	Tanning	Conciatura	campeggio di Forever (scuoiatura); come «Campeggio 101: Conciatura»
+abilita	Iron Oven	Forno di Ferro	campeggio di Forever (cucina)
+abilita	Scrap Item	Smantella Oggetto	campeggio di Forever
+abilita	Cookie's Feast	Banchetto di Dolcetto	Cookie = Dolcetto come l'ufficiale «Cucina di Dolcetto»
+abilita	Second Home	Seconda Casa	Forever
+oggetto	Sam's Basic Campfire	Fuoco da Campo Semplice di Sam	campeggio di Forever (missione)
+oggetto	Raan's Basic Campfire	Fuoco da Campo Semplice di Raan	campeggio di Forever (missione)
+oggetto	Brakk's Basic Campfire	Fuoco da Campo Semplice di Brakk	campeggio di Forever (missione)
+oggetto	Kaga's Basic Campfire	Fuoco da Campo Semplice di Kaga	campeggio di Forever (missione)
+oggetto	Lyreena's Basic Campfire	Fuoco da Campo Semplice di Lyreena	campeggio di Forever (missione)
+oggetto	Eleanor's Basic Campfire	Fuoco da Campo Semplice di Eleanor	campeggio di Forever (missione)
+oggetto	Eric's Basic Campfire	Fuoco da Campo Semplice di Eric	campeggio di Forever (missione)
+abilita	Cooking Fire	Fuoco da Campo	ufficiale (incantesimo 818 del client italiano)
+oggetto	Ursangous's Paw	Zampa di Ursangous	coniato
+oggetto	Crocolisk Tear	Lacrima di Crocolisco	ufficiale (altro id)
+oggetto	Small Brass Key	Chiave di Ottone Piccola	coniato
+oggetto	Johaan's Special Drink	Bevanda Speciale di Johaan	coniato
+oggetto	Mudsnout Blossoms	Fiori di Grugnobrago	coniato
+oggetto	Maury's Key	Chiave di Maury	coniato
+oggetto	Prowler Claws	Artigli di Predatore	coniato
+oggetto	Moss-twined Heart	Cuore Avvolto dal Muschio	coniato
+oggetto	Dal Bloodclaw's Skull	Teschio di Dal Graffiasangue	coniato
+oggetto	Crystalized Scales	Scaglie Cristallizzate	coniato
+oggetto	Rocket Car Parts	Parti di Razzomacchina	ufficiale (altro id)
+oggetto	Vimes's Report	Rapporto di Vimes	coniato
+oggetto	Zraedus's Brew	Infuso di Zraedus	coniato
+oggetto	Flayed Demon Skin	Pelle Scorticata di Demone	ufficiale (altro id)
+oggetto	Dirt-caked Pendant	Pendente Incrostato di Terra	coniato
+oggetto	Torch of Eternal Flame	Torcia della Fiamma Eterna	dal testo della missione
+oggetto	Mage-tastic Gizmonitor	Gizmonitor Magitastico	coniato
+oggetto	Lucius's Lockbox	Scrigno di Lucius	coniato
+oggetto	Defias Tower Key	Chiave della Torre dei Defias	coniato
+oggetto	Silixiz's Tower Key	Chiave della Torre di Silixiz	coniato
+oggetto	Leaded Vial	Fiala Piombata	coniato
+oggetto	Divino-matic Rod	Verga Divino-matica	coniato
+oggetto	Thermaplugg's Safe Combination	Combinazione della Cassaforte di Termospin	coniato
+oggetto	Robo-mechanical Guts	Budella Robomeccaniche	coniato
+oggetto	Bamboo Cage Key	Chiave della Gabbia di Bambù	coniato
+oggetto	Tainted Memorandum	Promemoria Corrotto	coniato
+oggetto	Neeru's Herb Pouch	Borsa di Erbe di Neeru	coniato
+oggetto	Ward of the Defiler	Protezione del Profanatore	coniato
+oggetto	Hilary's Necklace	Collana di Hilary	dal testo della missione
+oggetto	Bolvar's Decree	Decreto di Bolvar	coniato
+oggetto	Undelivered Parcel	Pacco Non Consegnato	coniato
+oggetto	Grimesilt Outhouse Key	Chiave della Latrina di Golasporca	coniato
+oggetto	Dawn's Gambit	Trappola della Luce dell'Alba	dal testo della missione
+oggetto	Soul Shard	Frammento d'Anima	ufficiale (altro id)
+oggetto	Blue-feathered Amulet	Amuleto dalle Piume Blu	coniato
+oggetto	Blue-feathered Necklace	Collana dalle Piume Blu	coniato
+oggetto	Crossroads' Supply Crates	Casse di Rifornimenti del Crocevia	dal testo della missione
+oggetto	Empty Firewater Flask	Fiala di Corroborante Vuota	ufficiale (altro id)
+oggetto	Crudely-written Log	Diario Scritto Rozzamente	coniato
+oggetto	Blood Red Key	Chiave Rosso Sangue	coniato
+oggetto	Blood of Innocents	Sangue degli Innocenti	ufficiale (altro id)
+oggetto	Northshire Gift Voucher	Buono Regalo della Contea del Nord	dal testo della missione
+oggetto	Coldridge Valley Gift Voucher	Buono Regalo della Valle Crestafredda	dal testo della missione
+oggetto	Shadowglen Gift Voucher	Buono Regalo di Vallombra	dal testo della missione
+oggetto	Valley of Trials Gift Voucher	Buono Regalo della Valle delle Sfide	dal testo della missione
+oggetto	Camp Narache Gift Voucher	Buono Regalo del Campo Narache	dal testo della missione
+oggetto	Deathknell Gift Voucher	Buono Regalo di Albamorta	dal testo della missione
+oggetto	Soft-shelled Clam Meat	Mollusco dal Guscio Molle	coniato
+oggetto	Podrig's Order	Ordine di Podrig	coniato
+oggetto	Nessa's Collection	Collezione di Nessa	coniato
+oggetto	Laird's Response	Risposta di Laird	coniato
+oggetto	Zargh's Meats	Carni di Zargh	coniato
+oggetto	Brock's List	Lista di Brock	coniato
+oggetto	Honorary Picks	Picconi Onorari	coniato
+oggetto	Rexxar's Testament	Testamento di Rexxar	coniato
+oggetto	Karang's Banner	Stendardo di Karang	coniato
+oggetto	Lethtendris's Web	Ragnatela di Lethtendris	coniato
+oggetto	Chambermaid Pillaclencher's Pillow	Cuscino della Domestica Scaldaletto	ufficiale (altro id)
+oggetto	Warsong Mark of Honor	Contrassegno d'Onore dei Cantaguerra	dal testo della missione
+oggetto	Voodoo Feathers	Piume Vudù	coniato
+oggetto	Elementium Ore	Minerale d'Elementio	ufficiale (altro id)
+oggetto	Venoxis's Venom Sac	Sacca di Veleno di Venoxis	coniato
+oggetto	Nexus Crystal	Cristallo del Nexus	coniato
+oggetto	Torn Letter	Lettera Strappata	coniato
+oggetto	Lovers' Hearts	Cuori degli Amanti	coniato
+oggetto	Wooden Figurine	Statuetta di Legno	coniato
+oggetto	Withered Scarf	Sciarpa Sbiadita	coniato
+oggetto	Knife Set	Set di Coltelli	coniato
+oggetto	Althalaxx Orb	Sfera di Althalaxx	coniato
+oggetto	Summoner's Salt	Sale dell'Evocatore	coniato
+oggetto	Horn of Xelthos	Corno di Xelthos	coniato
+oggetto	Eye of Bhossca	Occhio di Bhossca	coniato
+oggetto	Primitive Drawing	Disegno Primitivo	coniato
+oggetto	Crimson Trophy Quill	Penna Trofeo Cremisi	coniato
+oggetto	Warsong Outrider Mark	Contrassegno dei Predoni Cantaguerra	coniato
+oggetto	Silverwing Sentinel Charm	Talismano delle Sentinelle Alargentea	coniato
+oggetto	Grant's Mace	Mazza di Grant	coniato
+oggetto	Eye of the Tempest	Occhio della Tempesta	coniato
+oggetto	Illegible Recipe	Ricetta Illeggibile	coniato
+oggetto	Shadowscythe	Falce d'Ombra	coniato
+oggetto	Ogre Magi Text	Testo dei Maghi Ogre	coniato
+oggetto	Unhatched Green Dragon Egg	Uovo di Drago Verde Non Schiuso	coniato
+oggetto	Nightmare Moss	Muschio dell'Incubo	coniato
+oggetto	Cold Iron Ore	Minerale di Ferro Freddo	coniato
+oggetto	Dreamengine	Motore Onirico	coniato
+oggetto	Azsharan Prophecy	Profezia di Azshara	coniato
+oggetto	Dreamroot	Radice Onirica	coniato
+oggetto	Fool's Gold Dust	Polvere d'Oro degli Sciocchi	coniato
+oggetto	Dream-Infused Dragonscale	Scaglia di Drago Infusa di Sogno	coniato
+oggetto	Star-Touched Dragonegg	Uovo di Drago Toccato dalle Stelle	coniato
+oggetto	Elunar Relic	Reliquia Elunariana	coniato
+oggetto	Dreampearl	Perla Onirica	coniato
+oggetto	Star Lotus	Loto Stellare	coniato
+oggetto	Starsilver Ore	Minerale di Argento Stellare	coniato
+oggetto	Moonglow Dragonegg	Uovo di Drago del Bagliore Lunare	coniato
+oggetto	Mad Keeper's Notes	Appunti del Custode Folle	coniato
+oggetto	Harpy Screed	Scritto dell'Arpia	coniato
+oggetto	Moonroot	Radice Lunare	coniato
+oggetto	Greater Moonstone	Pietraluna Superiore	ufficiale (altro id)
+oggetto	Excavation Tools	Attrezzi da Scavo	coniato
+oggetto	Jar of Snow	Barattolo di Neve	coniato
+oggetto	Rod of Deep Dominion	Verga del Dominio Profondo	coniato
+oggetto	Stolen Explosives	Esplosivi Rubati	coniato
+oggetto	Essene's Waterskin	Borraccia di Essene	coniato
+oggetto	Essene's Spellbook	Grimorio di Essene	coniato
+oggetto	Essene's Necklace	Collana di Essene	coniato
+oggetto	House Prop	Arredo per la Casa	coniato
+oggetto	Classy Quill	Penna Elegante	coniato
+oggetto	Sturdy Lumber	Legname Robusto	coniato
+oggetto	Stolen Enchanting Supplies	Materiali per Incantamento Rubati	coniato
+oggetto	Mining Tools	Attrezzi da Estrazione	ufficiale (altro id)
+oggetto	Waterlogged Saw	Sega Fradicia	coniato
+oggetto	Waterlogged Axe	Ascia Fradicia	coniato
+oggetto	Waterlogged Toolbox	Cassetta Fradicia	ufficiale (altro id)
+oggetto	Croaky's Head	Testa di Croaky	coniato
+oggetto	Elmpaw's Head	Testa di Elmpaw	coniato
+oggetto	Sack of "Picture" Books	Sacco di Libri "Illustrati"	dal testo della missione
+oggetto	Luminous Residue	Residuo Luminoso	coniato
+oggetto	Kobold Tracking Kit	Kit da Tracciamento dei Coboldi	coniato
+oggetto	Geomancy for Curious Young Wizards	Geomanzia per Giovani Maghi Curiosi	coniato
+oggetto	Arcane Explainer: Magical Stuff in Simple Words	Spiegazioni Arcane: Cose Magiche in Parole Semplici	coniato
+oggetto	Fenris Isle Key	Chiave dell'Isola di Fenris	coniato
+oggetto	Blood-Stained Letter	Lettera Macchiata di Sangue	coniato
+oggetto	Intact Limbs	Arti Intatti	coniato
+oggetto	Thendal Grove Gift Voucher	Buono Regalo del Boschetto di Thendal	coniato; luogo coniato: Thendal Grove=Boschetto di Thendal
+oggetto	Fel Infused Blossom	Bocciolo Infuso di Vil	coniato
+oggetto	Arcane Mote	Particella Arcana	coniato
+oggetto	Signet of Akir	Sigillo di Akir	coniato
+oggetto	Scribbled Letter	Lettera Scarabocchiata	coniato
+oggetto	Glowing Recall Crystal	Cristallo di Richiamo Luminoso	coniato
+oggetto	Scribbled Note	Nota Scarabocchiata	coniato
+oggetto	Humming Recall Crystal	Cristallo di Richiamo Ronzante	coniato
+oggetto	Folded Parchment	Cartapecora Piegata	coniato
+oggetto	Packaged Tonics	Tonici Confezionati	coniato
+oggetto	Stolen Shen'dar Supplies	Rifornimenti Shen'dar Rubati	coniato
+oggetto	Aonda's Written Report	Rapporto Scritto di Aonda	coniato
+oggetto	Flutterfly Dust	Polvere di Svolazzina	coniato
+oggetto	Bruuz's Dorsal Fin	Pinna Dorsale di Bruuz	coniato
+oggetto	Goliath's Wristguards	Polsiere di Goliath	coniato
+oggetto	Shriekling Talons	Artigli di Strillino	coniato
+oggetto	Well Water Sample Kit	Kit di Campionamento dell'Acqua di Pozzo	coniato
+oggetto	Suspicious Industrial Supplies	Materiali Industriali Sospetti	coniato
+oggetto	Remote Detonator Kit	Kit Detonatore a Distanza	coniato
+oggetto	Extra-Destructive Explosives	Esplosivi Extra-distruttivi	coniato
+oggetto	Imbued Tears	Lacrime Infuse	coniato
+oggetto	Pouch of Tomb Dust	Sacchetto di Polvere Tombale	coniato
+oggetto	Enhanced Necromancy Staff	Bastone Negromantico Potenziato	coniato
+oggetto	Precessive Autocognition Assembly	Assemblaggio di Autocognizione Precessiva	coniato
+oggetto	Necromantic Garb	Abiti Negromantici	coniato
+oggetto	Gelkis Necromantic Garb	Abiti Negromantici dei Gelkis	coniato
+oggetto	Accursed Skull	Teschio Maledetto	coniato
+oggetto	Stolen Supplies	Scorte Rubate	ufficiale (altro id)
+oggetto	Rusty Gadget	Congegno Arrugginito	coniato
+oggetto	Entomology Starter Kit	Kit Base di Entomologia	coniato
+oggetto	Hay Weevil Specimen	Esemplare di Punteruolo del Fieno	coniato
+oggetto	Totem Tote	Sporta per Totem	ufficiale (altro id)
+oggetto	Windsong Crawler Meat	Carne di Crostaceo di Soffiavento	coniato
+oggetto	Dalaran Sewer Key	Chiave delle Fogne di Dalaran	coniato
+oggetto	Wind-Infused Bough	Ramo Infuso di Vento	coniato
+oggetto	Shadowsong Family Signet	Sigillo della Famiglia Cantombroso	coniato
+oggetto	Hippogryph Down	Piumino d'Ippogrifo	coniato
+oggetto	Skybreaker Bulwark	Baluardo Fendicielo	coniato
+oggetto	Scarlet Crusade Attack Plans	Piani d'Attacco della Crociata Scarlatta	coniato
+oggetto	Lady's Tear Moss	Muschio Lacrima della Dama	coniato
+oggetto	Ripped Missive	Missiva Strappata	coniato
+oggetto	Unfilled Blue Waterskin	Borraccia Blu da Riempire	coniato
+oggetto	Abandoned Belongings	Effetti Personali Abbandonati	coniato
+oggetto	Gnomeregan Archival Data	Dati d'Archivio di Gnomeregan	coniato
+oggetto	Ott's Masterwork	Capolavoro di Ott	coniato
+oggetto	Moonsilver Blade	Lama d'Argento Lunare	coniato
+oggetto	Crest of Lordaeron	Stemma di Lordaeron	coniato
+oggetto	Empty Powder Keg	Barile di Polvere Vuoto	coniato
+oggetto	Stolen Blasting Powder	Polvere Esplosiva Rubata	coniato
+oggetto	Highly Toxic Strain	Ceppo Altamente Tossico	coniato
+oggetto	Head of the Baron	Testa del Barone	coniato
+oggetto	Whispering Horror Residue	Residuo di Orrore Sussurrante	coniato
+oggetto	Trapped Game	Selvaggina Intrappolata	coniato
+oggetto	Titan Relic	Reliquia dei Titani	ufficiale (altro id)
+oggetto	Thicket Raptor Meat	Carne di Raptor del Boschetto	coniato
+oggetto	Olgra's Adornments	Ornamenti di Olgra	coniato
+oggetto	Tortured Soul	Anima Torturata	ufficiale (altro id)
+oggetto	Broken Staff of Incinerator Gar'im	Bastone Spezzato dell'Inceneritore Gar'im	coniato
+oggetto	Toxin Extractor	Estrattore di Tossine	coniato
+oggetto	Crystalline Silk	Seta Cristallina	coniato
+oggetto	Dark Iron Map	Mappa dei Ferroscuro	coniato
+oggetto	Supply Bundle	Fagotto di Rifornimenti	coniato
+oggetto	Ancient Gurubashi Idol	Idolo Antico dei Gurubashi	coniato
+oggetto	Barton's Scouting Report	Rapporto d'Esplorazione di Barton	coniato
+oggetto	Blade of House Perenolde	Lama del Casato Perenolde	coniato
+oggetto	Royal Aegis of Perenolde	Egida Reale di Perenolde	coniato
+oggetto	The Lost Magic of the Runemasters	La Magia Perduta dei Maestri delle Rune	coniato
+oggetto	Raider's Bow	Arco dell'Incursore	coniato
+oggetto	Raider's Battleaxe	Ascia da Battaglia dell'Incursore	coniato
+oggetto	Prickly Pear Fruit	Fico Spinoso	ufficiale (altro id)
+oggetto	Rough Lizard Hide	Pelle di Lucertola Grezza	coniato
+oggetto	Halikor's Hoof	Zoccolo di Halikor	coniato
+oggetto	Chol'aruk's Head	Testa di Chol'aruk	coniato
+oggetto	Gatehouse Shipment	Spedizione del Corpo di Guardia	coniato
+oggetto	Fang of Githyiss	Zanna di Githyiss	coniato
+oggetto	Faladiel's Heart	Cuore di Faladiel	coniato
+oggetto	Kuramaa's Mask	Maschera di Kuramaa	coniato
+oggetto	Migi's Lunch	Pranzo di Migi	coniato
+oggetto	Yelmak's Potion	Pozione di Yelmak	coniato
+oggetto	Gozwin's Mechanic's Log	Registro del Meccanico di Gozwin	coniato
+oggetto	Abominable Head	Testa Abominevole	coniato
+oggetto	Toxic Skullcap	Cappello Tossico	coniato
+oggetto	Blisterweed	Erbavescica	coniato
+oggetto	Hissing Serum	Siero Sibilante	coniato
+oggetto	Primitive Key	Chiave Primitiva	coniato
+oggetto	Bundle of Herbs	Mazzo di Erbe	coniato
+oggetto	Sinew Thread	Filo di Tendine	coniato
+oggetto	Ceremonial Flint and Tinder	Pietra Focaia ed Esca Cerimoniali	coniato
+oggetto	Mirkweed Pods	Baccelli di Alga Torbida	coniato
+oggetto	Surgical Spidersilk	Seta di Ragno Chirurgica	coniato
+oggetto	Vile Fin Murloc Skin	Pelle di Murloc Pinnainfame	coniato
+oggetto	Nutritious Slime Sludge	Fanghiglia di Melma Nutriente	coniato
+oggetto	Unstable Potion	Pozione Instabile	coniato
+oggetto	Thundris' Letter	Lettera di Thundris	coniato
+oggetto	Alexston's Reply	Risposta di Alexston	coniato
+oggetto	Clouded Water Globe	Globo d'Acqua Torbida	coniato
+oggetto	Peerless Eye	Occhio Impareggiabile	coniato
+oggetto	Drained Vessel	Recipiente Prosciugato	coniato
+oggetto	Sealed Company Request	Richiesta Sigillata della Compagnia	coniato
+oggetto	Moonwell Remnants	Resti del Pozzo Lunare	coniato
+oggetto	Stolen Freewind Supplies	Rifornimenti di Ventolibero Rubati	coniato
+oggetto	Apothecary Vials	Fiale da Speziale	coniato
+oggetto	Package of Pristine Pelts	Pacco di Pelli Intatte	coniato
+oggetto	Khaz Modan Timber	Legname di Khaz Modan	coniato
+oggetto	Khaz Modan Iron	Ferro di Khaz Modan	coniato
+oggetto	Goaz Stone	Pietra di Goaz	coniato
+oggetto	Titanic Keystone	Chiave di Volta Titanica	coniato
+oggetto	Tattered Spellbook	Grimorio Logoro	coniato
+oggetto	Crimson Crate	Cassa Cremisi	coniato
+oggetto	Shipping Label	Etichetta di Spedizione	coniato
+oggetto	Unruptured Stalker Gland	Ghiandola di Inseguitore Intatta	coniato
+oggetto	Carnage's Head	Testa di Carnage	coniato
+oggetto	Dragonmaw Armaments	Armamenti delle Fauci di Drago	coniato
+oggetto	Worgen Bits	Pezzi di Worgen	coniato
+oggetto	Howin's Missive	Missiva di Howin	coniato
+oggetto	Whelgar Relic Package	Pacco di Reliquie di Whelgar	coniato
+oggetto	Mountaineer Gretchen's Report	Rapporto della Montanara Gretchen	coniato
+oggetto	Sack of Fish	Sacco di Pesce	coniato
+oggetto	Relic of the Fang	Reliquia della Zanna	coniato
+oggetto	Relic of the Claw	Reliquia dell'Artiglio	coniato
+oggetto	Relic of the Silent Shadow	Reliquia dell'Ombra Silente	coniato
+oggetto	Blackrock Supplies	Rifornimenti dei Roccianera	coniato
+oggetto	Hatescreech's Amulet	Amuleto di Hatescreech	coniato
+oggetto	Windmistress Gaedress' Amulet	Amuleto della Signora del Vento Gaedress	coniato
+oggetto	Witchmother Arysa's Amulet	Amuleto della Madre Strega Arysa	coniato
+oggetto	Mature Fel Moss	Vilmuschio Maturo	coniato
+oggetto	Treaty of Understanding	Trattato d'Intesa	coniato
+oggetto	Clearcutter Key	Chiave del Disboscatore	coniato
+oggetto	Thunderhorn's Report	Rapporto di Corno Tonante	coniato
+oggetto	Tom's Gift	Dono di Tom	coniato
+oggetto	Hollee's Note	Nota di Hollee	coniato
+oggetto	Hallowed Memorandum	Promemoria Benedetto	coniato
+oggetto	Tainted Tablet	Tavoletta Corrotta	coniato
+oggetto	Glyphic Parchment	Cartapecora con Glifi	ufficiale (altro id)
+oggetto	Archaic Rune	Runa Arcaica	coniato
+oggetto	Consecrated Scroll	Pergamena Consacrata	dal testo della missione
+oggetto	Empty Vial	Fiala Vuota	ufficiale (altro id)
+oggetto	Lashwater Salve	Unguento di Sferzacqua	coniato
+oggetto	Longwalker Malah's Report	Rapporto del Viandante Malah	coniato
+oggetto	Tomb Weed	Erba Tombale	coniato
+oggetto	Riptear's Heart	Cuore di Riptear	coniato
+oggetto	Tender Strider Meat	Tenera Carne di Zampalunga	ufficiale (altro id)
+oggetto	Earth Totem	Totem della Terra	ufficiale (altro id)
+oggetto	Fire Totem	Totem del Fuoco	ufficiale (altro id)
+oggetto	Water Totem	Totem dell'Acqua	ufficiale (altro id)
+oggetto	Air Totem	Totem dell'Aria	ufficiale (altro id)
+oggetto	Elixir of Defense	Elisir della Difesa	ufficiale (altro id)
+oggetto	Elementium Bar	Lingotto d'Elementio	ufficiale (altro id)
+oggetto	Elixir of Fortitude	Elisir della Fermezza	ufficiale (altro id)
+oggetto	Bloodied Insignia	Fregio Insanguinato	ufficiale (altro id)
+oggetto	Red Linen Bandana	Bandana di Lino Rossa	coniato
+oggetto	Lesser Troll's Blood Elixir	Elisir di Sangue di Troll Inferiore	coniato
+oggetto	Copper Modulator	Modulatore di Rame	coniato
+oggetto	Bristleback Quilboar Tusk	Zanna di Verrospino Mantotergo	coniato
+oggetto	Draught of Water Breathing	Pozione di Respirazione Acquatica	coniato
+oggetto	Practice Lock	Serratura d'Esercitazione	coniato
+oggetto	Tome of Nobility	Tomo della Nobiltà	coniato
+oggetto	Ornate Mithril Shoulders	Spallacci Ornati di Mithril	coniato
+oggetto	Draught of Detect Demon	Pozione di Individuazione dei Demoni	coniato
+oggetto	Ship Schedule	Orario delle Navi	coniato
+oggetto	Wildkin Muisek	Spirito di Selvagufo	coniato
+oggetto	Catseye Draught	Pozione d'Occhio di Gatto	coniato
+oggetto	Greater Mystic Essence	Essenza Mistica Superiore	coniato
+oggetto	Lesser Nether Essence	Essenza Fatua Inferiore	coniato
+oggetto	Minion's Scourgestone	Pietra del Flagello del Servitore	coniato
+oggetto	Flask of Chromatic Resistance	Tonico di Resistenza Cromatica	coniato
+oggetto	Gnomish Alarm-O-Bot	Robot d'Allarme Gnomesco	coniato
+oggetto	Rage Scar Yeti Hide	Pelle di Yeti Artiglio Selvaggio	coniato
+oggetto	Seaforium Mining Charge	Carica Minatoria al Seaforium	coniato
+oggetto	Windfury Cone	Cono della Furia del Vento	coniato
+oggetto	Squall-breakers Potion	Pozione Spezzaburrasca	coniato
+oggetto	Dream-Touched Dragonscale	Scaglia di Drago Toccata dal Sogno	coniato
+oggetto	Moondragon Scale	Scaglia di Drago Lunare	coniato
+oggetto	Dawnwoven Fabric	Tessuto dell'Alba	coniato
+oggetto	Distilled Firewater	Corroborante Distillato	coniato
+oggetto	Stolen Book	Libro Rubato	coniato
+oggetto	Rough Wolf Pelt	Pelliccia di Lupo Grezza	coniato
+oggetto	Crude Wax Effigy	Effigie di Cera Grezza	coniato
+oggetto	Lost Book	Libro Perduto	coniato
+oggetto	Scrawny Ursera Claw	Artiglio di Ursera Gracile	coniato
+oggetto	Prideclaw Pelt	Pelliccia di Artiglio Fiero	coniato
+oggetto	Ripe Stormapple	Mela Tempestosa Matura	coniato
+oggetto	Blood-Stained Bandit Mask	Maschera da Bandito Macchiata di Sangue	coniato
+oggetto	Lowlands Galestrider Tenderloin	Filetto di Zampalunga dei Bassopiani	coniato
+oggetto	Flutterfly Swatter	Scacciasvolazzine	coniato
+oggetto	Carved Centaur Totem	Totem Centauro Intagliato	coniato
+oggetto	Longshore Murloc Gill	Branchia di Murloc della Costa	coniato
+oggetto	Gently Cursed Bone	Osso Leggermente Maledetto	coniato
+oggetto	Well Cursed Bone	Osso Ben Maledetto	coniato
+oggetto	Golem Isospring	Isomolla da Golem	coniato
+oggetto	Harvester Gyrostabilizer	Girostabilizzatore della Mietitrice	coniato
+oggetto	Al'Aketh Windstone Charm	Amuleto della Pietra del Vento Al'aketh	coniato
+oggetto	Pilfered Windstone	Pietra del Vento Trafugata	coniato
+oggetto	Al'Aketh Cultist's Ear	Orecchio di Cultista Al'aketh	coniato
+oggetto	Windstone Cluster	Grappolo di Pietre del Vento	coniato
+oggetto	Wind Hollow Essence	Essenza della Conca del Vento	coniato
+oggetto	Pristine Leopard Pelt	Pelliccia di Leopardo Intatta	coniato
+oggetto	Toughened Boar Hide	Pelle di Cinghiale Indurita	coniato
+oggetto	Savannah Lion Hide	Pelle di Leone della Savana	coniato
+oggetto	Brinescale Trident	Tridente Squamasalina	coniato
+oggetto	I'lalai Fetish	Feticcio di I'lalai	coniato
+oggetto	Gloomrise Toxin Sample	Campione di Tossina di Cupaurora	coniato
+oggetto	Twisted Fire Totem	Totem del Fuoco Distorto	coniato
+oggetto	Twisted Earth Totem	Totem della Terra Distorto	coniato
+oggetto	Twisted Water Totem	Totem dell'Acqua Distorto	coniato
+oggetto	Twisted Air Totem	Totem dell'Aria Distorto	coniato
+oggetto	Dwarven Heirloom	Cimelio Nanico	coniato
+oggetto	Weathered Spine	Spina Logora	coniato
+oggetto	Hexed Pendant	Pendente Stregato	coniato
+oggetto	Necrotic Crystal Fragment	Frammento di Cristallo Necrotico	coniato
+oggetto	Cracked Sentry Core	Nucleo da Sentinella Incrinato	coniato
+oggetto	Forgotten Loa Idol	Idolo dei Loa Dimenticato	coniato
+oggetto	Abandoned Training Weapon	Arma d'Addestramento Abbandonata	coniato
+oggetto	Charged Thunder Lizard Organ	Organo di Lucertola del Tuono Carico	coniato
+oggetto	Spectral Bear Cub	Cucciolo d'Orso Spettrale	coniato
+oggetto	Glittering Sunstone	Pietrasole Scintillante	coniato
+oggetto	Smooth Boulder	Masso Levigato	coniato
+oggetto	Stolen Shipment	Carico Rubato	coniato
+oggetto	Duskbat Wing Membrane	Membrana d'Ala di Pipistrello del Vespro	come l'ufficiale Ala di Pipistrello del Vespro
+oggetto	Darkhound Hide	Pelle di Segugio Oscuro	coniato
+oggetto	Gnarlpine Totem	Totem dei Mordipigna	coniato
+oggetto	Pristine Crimson Scale	Scaglia Cremisi Intatta	coniato
+oggetto	Pristine Pesterhide Pelt	Pelliccia di Tormentante Intatta	coniato
+oggetto	Dry Branch	Ramo Secco	coniato
+oggetto	Soft Nightsaber Pelt	Pelliccia Morbida di Fiera della Notte	coniato
+oggetto	Razormaw Incisor	Incisivo di Boccaguzza	coniato
+oggetto	Perfect Razormaw Egg	Uovo di Boccaguzza Perfetto	coniato
+oggetto	Stolen Weapon	Arma Rubata	coniato
+oggetto	Replica Ironforge Air Rifle	Replica del Fucile ad Aria di Forgiardente	coniato
+oggetto	Thicket Raptor Hide	Pelle di Raptor del Boschetto	coniato
+oggetto	Naga Spinefin	Pinnaspina dei Naga	coniato
+oggetto	Dewy Lasher Frond	Fronda di Pianta Sferzante Rugiadosa	coniato
+oggetto	Duskweed Petal	Petalo di Erbavespro	coniato
+oggetto	Faintly Glowing Bone	Osso Debolmente Luminoso	coniato
+oggetto	Bottle of Whispering Elixir	Bottiglia di Elisir Sussurrante	coniato
+oggetto	Dillinger's Report	Rapporto di Dillinger	coniato
+oggetto	Kristof's Report	Rapporto di Kristof	coniato
+oggetto	Gordo's Report	Rapporto di Gordo	coniato
+oggetto	Apprentice's Herb Pouch	Sacchetto per Erbe dell'Apprendista	Forever (mercante)
+oggetto	Apprentice's Skinning Satchel	Borsa da Scuoiatore dell'Apprendista	Forever (mercante)
+oggetto	Apprentice's Mining Pack	Zaino da Minatore dell'Apprendista	Forever (mercante)
+oggetto	Apprentice's Spellstaff	Bastone Magico dell'Apprendista	Forever
+oggetto	Apprentice's Blouse	Camicetta dell'Apprendista	Forever
+oggetto	Bottles of Whispering Elixir	Bottiglie di Elisir Sussurrante	plurale di Bottle of Whispering Elixir
+oggetto	Whispering Elixir	Elisir Sussurrante	Forever (Tirisfal)

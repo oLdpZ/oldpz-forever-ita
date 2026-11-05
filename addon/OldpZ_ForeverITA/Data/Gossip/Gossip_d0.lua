@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["d07d90a8971a69c8"] = { "Puoi parlare liberamente, Neeru...", "." },
   ["d081eae159b11b01"] = { "Serge, ho perso la cura per il ⟦Touch of Zanzil=Tocco di Zanzil⟧! AIUTO!", "." },
   ["d08a4be7d3ccf483"] = { "Ah, eccoti. Mi avevano detto di aspettarmi aiuto, quindi ascolta bene. La situazione è questa: mi è stato affidato il compito di raccogliere $2055w fiori di loto purpureo in vista della guerra imminente ad ⟦Ahn'Qiraj=Ahn'qiraj⟧. Finora ne abbiamo $2054w.\n\nAndare sul campo a raccogliere i fiori spetterà a te e a quelli come te. Io devo restare qui per assicurarmi che vengano conservati bene e per trovare nuovi modi creativi di usarli contro i silitidi e qualunque altra cosa ci aspetti laggiù.", "." },
-  ["d08a5fa50787fb41"] = { "%s esamina il Moss-twined Heart...", "." },
+  ["d08a5fa50787fb41"] = { "%s esamina il ⟦Moss-twined Heart=Cuore Avvolto dal Muschio⟧...", "." },
   ["d08aa0ad2aed6c75"] = { "Segnalata molta attività di gnoll nella ⟦Gold Coast Quarry=Cava della Costa d'Oro⟧ e nella ⟦Jangolode Mine=Miniera Venacava⟧.", "." },
   ["d08ad249ba71df22"] = { "Possiamo fare una pausa? I piedi mi stanno uccidendo, e quelle... quelle cose laggiù mi mettono i brividi.", "." },
   ["d08fdd677f65bdc4"] = { "Più aspetti, meno futuro avrai da farti predire.", "." },

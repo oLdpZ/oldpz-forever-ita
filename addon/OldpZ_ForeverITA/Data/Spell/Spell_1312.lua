@@ -14,7 +14,7 @@ WFJ.Data.add("spell", {
   [1312698] = { "Rigenera il $N1% della salute.", nil, 0xbfc764d3, nil, "um" },
   [1312702] = { "Rigenera il $N1% del mana.", nil, 0xce81cf6a, nil, "um" },
   [1312719] = { "Rigenera il $N1% della salute e il $N2% del mana in $D1. Devi sederti per bere.", "Rigenera il $N1% della salute e il $N2% del mana al secondo.", 0xc98bf519, 0x8179b4fa, "uu" },
-  [1312745] = { "Tenta di stordire gli altri giocatori che hanno equipaggiato anche loro una Replica Ironforge Air Rifle.", nil, 0x71aea935, nil, "um" },
+  [1312745] = { "Tenta di stordire gli altri giocatori che hanno equipaggiato anche loro una ⟦Replica Ironforge Air Rifle=Replica del Fucile ad Aria di Forgiardente⟧.", nil, 0x71aea935, nil, "um" },
   [1312869] = { "Prosciuga $N1 salute a un nemico ogni $D1 per $D2, trasferendola a te.", "$N1 salute prosciugata ogni $D1.", 0x7d0486fa, 0xb1b7cf5f, "uu" },
   [1312870] = { "Infligge $N1 danni da natura ai nemici entro $N2 m dal bersaglio attuale.", nil, 0x46a939af, nil, "um" },
   [1312880] = { "Clicca col pulsante destro per evocare e congedare il tuo cucciolo di crocolisco.", nil, 0x14ea2ea0, nil, "um" },

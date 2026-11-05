@@ -136,7 +136,7 @@ WFJ.Data.add("item", {
   [13519] = { "Ti insegna a creare un ⟦Flask of the Titans=Tonico dei Titani⟧.", 0xfb3e2fe2, "u" },
   [13520] = { "Ti insegna a creare un ⟦Flask of Distilled Wisdom=Tonico della Saggezza Distillata⟧.", 0xdde64870, "u" },
   [13521] = { "Ti insegna a creare un ⟦Flask of Supreme Power=Tonico della Potenza Suprema⟧.", 0xa9ee12b4, "u" },
-  [13522] = { "Ti insegna a creare un Flask of Chromatic Resistance.", 0x7652e792, "u" },
+  [13522] = { "Ti insegna a creare un ⟦Flask of Chromatic Resistance=Tonico di Resistenza Cromatica⟧.", 0x7652e792, "u" },
   [13523] = { "Il sangue è ancora fresco.", 0x82b83aed, "u" },
   [13536] = { "Risveglia il Druido addormentato.", 0x35d0e139, "u" },
   [13546] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },

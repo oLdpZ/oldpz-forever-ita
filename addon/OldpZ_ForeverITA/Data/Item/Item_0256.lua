@@ -3,5 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("item", {
   [256057] = { "Un cristallo rarissimo, originario di un altro mondo. Si è appena cominciato a scoprirne i numerosi usi.", 0x3a97c899, "u" },
   [256058] = { "Potenzia il bastone di Uthek con un ⟦Draenethyst Crystal=Cristallo di Draenetista⟧.", 0x40bee7fb, "u" },
-  [256061] = { "Tenta di dissolvere la maledizione negromantica dell'Accursed Skull.", 0x9b828052, "u" },
+  [256061] = { "Tenta di dissolvere la maledizione negromantica del ⟦Accursed Skull=Teschio Maledetto⟧.", 0x9b828052, "u" },
 })

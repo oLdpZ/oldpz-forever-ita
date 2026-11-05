@@ -7,7 +7,7 @@ WFJ.Data.add("item", {
   [277136] = { "Dà accesso alla Vord'anaar Prison nelle Barrow Deeps.", 0x3d578e50, "u" },
   [277198] = { "Da lasciare davanti alla porta al secondo piano di Trias' Cheese.\nConsegnare all'ingresso del magazzino del corpo di guardia, piano $N1, proprietà di Trias, ⟦Trade District=Quartiere del Commercio⟧", 0xc2727522, "u" },
   [277267] = { "Il cuore è nero e ha un aspetto malsano.", 0x75e417ec, "u" },
-  [277329] = { "Protendi la Torcia della Fiamma Eterna.", 0xd92c5ba1, "u" },
+  [277329] = { "Protendi la ⟦Torch of Eternal Flame=Torcia della Fiamma Eterna⟧.", 0xd92c5ba1, "u" },
   [277470] = { "Ti insegna a creare uno Harvester Override Signalcaster.", 0x3e7b4029, "u" },
   [277483] = { "Evoca un fedele famiglio rana per $D1. La sua presenza aumenta il tuo Intelletto di $N2.", 0xaf2388c7, "u" },
   [277484] = { "Ammalia la bestia bersaglio, riducendo del $N1% i danni fisici che ti infligge.", 0x0af0d110, "u" },
