@@ -123,9 +123,9 @@ describe("UI/Questie", function()
     local function trackerData()
       local seen = {}
       local data = {
-        GetColoredQuestName = function(quest, showLevel)
-          seen.complete = quest:IsComplete()
-          return (showLevel and ("[" .. quest.level .. "] ") or "") .. quest.name
+        GetColoredQuestName = function(q, showLevel)
+          seen.complete = q:IsComplete()
+          return (showLevel and ("[" .. q.level .. "] ") or "") .. q.name
         end,
         GetObjectiveText = function(objective) return "|cffff0000" .. objective.Description end,
       }
