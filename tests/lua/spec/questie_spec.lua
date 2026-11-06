@@ -102,12 +102,80 @@ describe("UI/Questie", function()
       assert.is_false(Q.wrap({}))
     end)
 
-    it("is installed when Questie loads", function()
+    it("is installed when Questie loads, with the tracker", function()
       local db = questieDB({})
       local fn = db.GetQuestIDFromName
-      _G.QuestieLoader = { ImportModule = function(_, name) return name == "QuestieDB" and db or nil end }
+      local tracker = { GetColoredQuestName = function(q) return q.name end, GetObjectiveText = function(o)
+        return o.Description end }
+      local name = tracker.GetColoredQuestName
+      _G.QuestieLoader = { ImportModule = function(_, n)
+        return (n == "QuestieDB" and db) or (n == "TrackerData" and tracker) or nil
+      end }
       Stub.fireAll("ADDON_LOADED", "Questie")
       assert.are_not.equal(fn, db.GetQuestIDFromName)
+      assert.are_not.equal(name, tracker.GetColoredQuestName)
+    end)
+  end)
+
+  describe("the tracker", function()
+    -- Questie's TrackerData: the title and the objective line come from the client's quest log (English); the two
+    -- writers colour, level and tag what they are given
+    local function trackerData()
+      local seen = {}
+      local data = {
+        GetColoredQuestName = function(quest, showLevel)
+          seen.complete = quest:IsComplete()
+          return (showLevel and ("[" .. quest.level .. "] ") or "") .. quest.name
+        end,
+        GetObjectiveText = function(objective) return "|cffff0000" .. objective.Description end,
+      }
+      return data, seen
+    end
+    local function displayQuest(id, name)
+      return { Id = id, name = name, level = 7, IsComplete = function(self) return self.Id == 99999910 and 1 or 0 end }
+    end
+
+    it("shows the Italian title of a quest whose English it translates, Questie's level and state kept", function()
+      quest(99999910, "Il ⟦Cult of the Damned=Culto dei Dannati⟧", "The Cult of the Damned")
+      local data, seen = trackerData()
+      assert.is_true(Q.wrapTracker(data))
+      assert.is_false(Q.wrapTracker(data))
+      local q = displayQuest(99999910, "The Cult of the Damned")
+      assert.are.equal("[7] Il Culto dei Dannati", data.GetColoredQuestName(q, true))
+      assert.are.equal(1, seen.complete) -- Questie's own methods still read the record
+      assert.are.equal("The Cult of the Damned", q.name) -- never written
+      WFJ.Settings.set("names.style", "en")
+      assert.are.equal("Il Cult of the Damned", data.GetColoredQuestName(q, false))
+    end)
+
+    it("leaves the English: another English on the id, no row, the translation off, the reveal key", function()
+      quest(99999911, "Il Ritorno", "The Return")
+      local data = trackerData()
+      Q.wrapTracker(data)
+      assert.are.equal("Forever Renamed", data.GetColoredQuestName(displayQuest(99999911, "Forever Renamed")))
+      assert.are.equal("Unknown", data.GetColoredQuestName(displayQuest(99999912, "Unknown")))
+      assert.are.equal("Il Ritorno", data.GetColoredQuestName(displayQuest(99999911, "The Return")))
+      WFJ.State.enabled = false
+      assert.are.equal("The Return", data.GetColoredQuestName(displayQuest(99999911, "The Return")))
+      WFJ.State.enabled = true
+      local isDown = WFJ.Modifier.isDown
+      WFJ.Modifier.isDown = function() return true end
+      assert.are.equal("The Return", data.GetColoredQuestName(displayQuest(99999911, "The Return")))
+      WFJ.Modifier.isDown = isDown
+    end)
+
+    it("shows an objective line in Italian through the quest map's lookups, else the English", function()
+      local data = trackerData()
+      Q.wrapTracker(data)
+      local real = WFJ.QuestMap.objectiveJapanese
+      WFJ.QuestMap.objectiveJapanese = function(en) return en == "2/5 Wolf slain" and "2/5 Lupo ucciso" or nil end
+      local line = { Description = "2/5 Wolf slain", Collected = 2 }
+      assert.are.equal("|cffff00002/5 Lupo ucciso", data.GetObjectiveText(line))
+      assert.are.equal("2/5 Wolf slain", line.Description)
+      assert.are.equal("|cffff0000Gather herbs", data.GetObjectiveText({ Description = "Gather herbs" }))
+      WFJ.QuestMap.objectiveJapanese = function(en) return en .. " [Non tradotto]" end -- English with a marker
+      assert.are.equal("|cffff00002/5 Wolf slain", data.GetObjectiveText(line))
+      WFJ.QuestMap.objectiveJapanese = real
     end)
   end)
 end)

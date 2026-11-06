@@ -18,6 +18,7 @@
 --   Questie.quests() / Questie.npcs()  → the lookup tables
 --   Questie.titlesFor(english) → { Italian title, … }
 --   Questie.wrap(questieDB)  → true when GetQuestIDFromName was wrapped
+--   Questie.wrapTracker(trackerData) → true when the tracker's title and objective writers were wrapped
 local _, WFJ = ...
 local Questie = {}
 WFJ.Questie = Questie
@@ -127,5 +128,67 @@ function Questie.wrap(db)
     return id
   end
   wrapped[db] = true
+  return true
+end
+
+-- ── The tracker ─────────────────────────────────────────────────────────────────────────────────────────────────
+-- Questie's tracker does not read its database for what it shows: the quest's title and each objective line come
+-- from the client's quest log (TrackerData: "never replaces the native title, objective wording or live progress
+-- with database values"), so they are the client's English. The tracker writes them through two functions of the
+-- TrackerData module, looked up on the module at every call (QuestSection, TrackerLinePool, TrackerMenu):
+--   TrackerData.GetColoredQuestName(displayQuest, showLevel, showState)  displayQuest.name, displayQuest.Id
+--   TrackerData.GetObjectiveText(objective)                              objective.Description
+-- `wrapTracker` hands each the Italian through a stand-in table that reads every other field from the original
+-- (the original record is never written), so Questie colours, levels and tags the Italian as it does the English.
+-- What is shown is this addon's: the quest's title row when the English shown is the one it translates (its h1), and
+-- an objective line by the same lookups as the quest map's objective lines (QuestMap.objectiveJapanese). The
+-- translation off, the quest area off or the reveal key held at the moment Questie draws → its English.
+-- The chat link (GetQuestLink) stays English: it is read by other players.
+
+local function trackerOn()
+  if WFJ.State.enabled == false or not WFJ.State.areaEnabled("quests") then return false end
+  return not (WFJ.Modifier and WFJ.Modifier.isDown())
+end
+
+-- → the Italian title of quest `id` when `en` is the English it translates, else nil
+function Questie.trackerTitle(id, en)
+  if type(id) ~= "number" or type(en) ~= "string" or en == "" or not trackerOn() then return nil end
+  local entry = WFJ.Lookup.get("quest.title", id)
+  if entry == nil or not usable(entry.ja) or entry.ja == en then return nil end
+  if entry.h1 ~= nil and WFJ.Hash.h32x2(WFJ.Normalize.v1(en)) ~= entry.h1 then return nil end
+  return entry.ja
+end
+
+-- → the Italian of one live objective line, else nil
+function Questie.trackerObjective(en)
+  if type(en) ~= "string" or en == "" or not trackerOn() then return nil end
+  local QuestMap = WFJ.QuestMap
+  if not QuestMap or type(QuestMap.objectiveJapanese) ~= "function" then return nil end
+  local ok, text = pcall(QuestMap.objectiveJapanese, en, "questie")
+  if not ok or type(text) ~= "string" or text == "" or text:find(en, 1, true) then return nil end
+  return text
+end
+
+local function standIn(original, field, value)
+  return setmetatable({ [field] = value }, { __index = original })
+end
+
+function Questie.wrapTracker(data)
+  if type(data) ~= "table" or wrapped[data] then return false end
+  local name, objective = data.GetColoredQuestName, data.GetObjectiveText
+  if type(name) ~= "function" and type(objective) ~= "function" then return false end
+  if type(name) == "function" then
+    data.GetColoredQuestName = function(quest, ...)
+      local it = type(quest) == "table" and Questie.trackerTitle(quest.Id, quest.name) or nil
+      return name(it and standIn(quest, "name", it) or quest, ...)
+    end
+  end
+  if type(objective) == "function" then
+    data.GetObjectiveText = function(line, ...)
+      local it = type(line) == "table" and Questie.trackerObjective(line.Description) or nil
+      return objective(it and standIn(line, "Description", it) or line, ...)
+    end
+  end
+  wrapped[data] = true
   return true
 end

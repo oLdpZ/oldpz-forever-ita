@@ -348,14 +348,15 @@ function WFJ.OnLoad()
   -- Questie (ADR-105): titles, objectives and NPC names through its translation global, read at its login; the
   -- gossip title match retried in Italian once Questie has loaded (it loads after this addon)
   step("questie", function()
-    if WFJ.Questie.install(_G) then
-      WFJ.LoadOnDemand.when("Questie", function()
-        local loader = _G.QuestieLoader
-        if type(loader) == "table" and type(loader.ImportModule) == "function" then
-          WFJ.Questie.wrap(loader:ImportModule("QuestieDB"))
-        end
-      end)
-    end
+    -- the database lookups only when the global is ours; the tracker shows the client's English either way
+    local ours = WFJ.Questie.install(_G)
+    WFJ.LoadOnDemand.when("Questie", function()
+      local loader = _G.QuestieLoader
+      if type(loader) == "table" and type(loader.ImportModule) == "function" then
+        if ours then WFJ.Questie.wrap(loader:ImportModule("QuestieDB")) end
+        WFJ.Questie.wrapTracker(loader:ImportModule("TrackerData"))
+      end
+    end)
   end)
   -- Surfaces: declare their client names and post-hook the client's writers (ADR-009); each feeds the API English
   -- to the Collector before rendering.

@@ -32,11 +32,23 @@
    `QuestieDB.GetQuestIDFromName`; se il titolo inglese non trova nulla, riprova con i titoli italiani delle
    missioni la cui impronta inglese (h1) è quella del titolo chiesto.
 
+5. **Il tracker di Questie riceve l'italiano dall'addon** (aggiunta del 2026-11-07, dopo la segnalazione di un
+   giocatore su CurseForge): il tracker non legge il database di Questie, prende titolo e righe degli obiettivi dal
+   registro missioni del client (`TrackerData`: «never replaces the native title, objective wording or live progress
+   with database values»), quindi i punti 1–4 non lo toccano. L'addon avvolge `TrackerData.GetColoredQuestName` e
+   `TrackerData.GetObjectiveText`, che il tracker cerca sul modulo a ogni chiamata, e passa loro una tabella
+   sostitutiva con il titolo italiano (la riga `quest.title` dell'id, solo se l'inglese mostrato ha la sua impronta
+   h1) o la riga dell'obiettivo in italiano (le stesse ricerche delle righe della mappa delle missioni,
+   `QuestMap.objectiveJapanese`). Il record di Questie non viene mai scritto. Il link in chat resta inglese. Vale
+   anche quando la variabile globale è di un altro addon.
+
 ## Conseguenze
 
 - Con Questie attivo tracker, mappa, diario e tooltip di Questie mostrano titoli, obiettivi e nomi in
-  italiano. Le righe di avanzamento del suo tracker ("3/8 Wolf slain") vengono dall'API del client e restano
-  inglesi; oggetti e oggetti del mondo non sono pubblicati (l'addon li ha per testo inglese, non per id).
+  italiano; nel tracker anche le righe di avanzamento ("3/8 Lupo ucciso"), tradotte come nel tracker di Blizzard.
+  Oggetti e oggetti del mondo non sono pubblicati (l'addon li ha per testo inglese, non per id).
+- Il tracker di Questie si ridisegna quando cambia il registro, non quando si preme Alt: l'inglese con Alt vi compare
+  al suo prossimo aggiornamento.
 - Cambiare `names.style` vale per Questie dal prossimo accesso o `/reload`: Questie legge le tabelle una volta.
 - Se Questie cambia il contratto della variabile, la traduzione dentro Questie si spegne e Questie torna
   all'inglese: l'addon non tocca altro di Questie oltre a `GetQuestIDFromName`.
