@@ -1383,13 +1383,21 @@ local function auraImpl(frame, method, unit, key, filter, clientLines)
   -- Forever: line 2 only when the client wrote it; a line another addon appended (an id line, the PTR
   -- reporter's hint) is past the client's own count and is never the aura text
   if i and clientLines and i > clientLines then i = nil end
+  local n = show(frame, "spells", "spell.aura", id, lines, i, i, texts[1])
   -- Line 2 is a positional choice, and the Collector takes no positional guess as data. It records the aura
-  -- line only for a spell whose `aura` ships: evidence the spell has aura text for line 2 to be.
+  -- line only for a spell whose `aura` ships (evidence the spell has aura text for line 2 to be), and only when
+  -- that line still shows its English after the pass: a line shown in Italian is not one the addon cannot show
+  -- (ADR-065). A template line (the Camp Benefits sections, `$N` values) never equals its rendered English, so
+  -- the Collector's own known check cannot tell it was shown.
   local lookup = WFJ.Lookup and WFJ.Lookup.get
   if i and type(lookup) == "function" and lookup("spell.aura", id) ~= nil then
-    WFJ.Collector.record("spell", id, "aura", texts[i])
+    local fs = lines[i] and lines[i].fs
+    local now = fs and type(fs.GetText) == "function" and fs:GetText() or nil
+    -- still English: the client's text, alone or with the missing marker around it
+    if type(now) ~= "string" or now:find(texts[i], 1, true) then
+      WFJ.Collector.record("spell", id, "aura", texts[i])
+    end
   end
-  local n = show(frame, "spells", "spell.aura", id, lines, i, i, texts[1])
   showName(frame, "namespell", texts[1])
   traceFrame(frame, "readable aura", id, lines, ("-> rendered %s, aura row %s, shipped aura text %s (%s)"):format(
     plain(n), plain(i), tostring(type(lookup) == "function" and lookup("spell.aura", id) ~= nil), how))

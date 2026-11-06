@@ -271,14 +271,21 @@ describe("UI/Tooltip: buff and debuff tooltips", function()
     assert.are.equal("残り25分", text(3))
   end)
 
-  it("the aura line's English is recorded as spell / aura", function()
+  it("the aura line's English is recorded as spell / aura only while it stays English", function()
     local WFJ, tt = setup()
     WFJ.Tooltip.init()
     local seen = {}
     WFJ.Collector.record = function(kind, id, field, raw) seen[#seen + 1] = { kind, id, field, raw } end
     aura("player:1:HELPFUL", 774, LINES)
+    -- shown in Japanese: nothing the addon cannot show, nothing recorded
     tt:SetUnitAura("player", 1, "HELPFUL")
-    assert.are.same({ { "spell", 774, "aura", AURA_EN } }, seen)
+    assert.are.equal(AURA_SHOWN, text(2))
+    assert.are.same({}, seen)
+    -- a gate failure leaves the English: recorded
+    aura("player:3:HELPFUL", 774, { "Rejuvenation", "Heals 12 damage every 30 seconds and more.", "" })
+    DATA["spell.aura"][774] = { ja = "$N9秒", status = "u" }
+    tt:SetUnitAura("player", 3, "HELPFUL")
+    assert.are.same({ { "spell", 774, "aura", "Heals 12 damage every 30 seconds and more." } }, seen)
     assert.is_true(WFJ.Collector.KINDS.spell.aura)
     -- a spell whose aura does not ship: line 2 is only a positional guess, so it is not recorded
     aura("player:2:HELPFUL", 8936, { "Regrowth", "Heals 5 damage every 2 sec.", "" })
