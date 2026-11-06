@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["b5b33c9992d1fe0b"] = { "Oh, accidenti...", "." },
   ["b5bde38c28ccefcb"] = { "Stavolta ti finisco una volta per tutte!", "." },
   ["b5cc0825ce0a4622"] = { "Questa pianta di fiorcanto spicca come uno scoglio nel mare di corruzione che è ⟦Felwood=Vilbosco⟧. I suoi petali hanno un profumo intenso che ti risolleva lo spirito e rafforza la tua determinazione.", "." },
+  ["b5cf805bfdedd91a"] = { "Il barbiere", "." },
   ["b5d8597e3072d3d7"] = { "È bello avere veterani come te nella ⟦Alterac Valley=Valle d'Alterac⟧, {name}. Le nostre scorte sono troppo scarse per lanciare un assalto di terra attraverso la ⟦Alterac Valley=Valle d'Alterac⟧... parla con il nostro intendente: ti dirà come aumentare le nostre riserve.", "." },
   ["b5db1d1f420a9c65"] = { "Soldati di Kalimdor, difendete la base!", "." },
   ["b5dde458d715df07"] = { "Le ⟦Ruins of Eldarath=Rovine di Eldarath⟧.", "." },

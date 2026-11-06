@@ -35,6 +35,8 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Tooltip degli ultimi incantesimi rimasti in italiano: abilità delle creature e dei famigli, effetti di eventi, cavalcature e oggetti (circa 2.300 righe). Ora quasi tutti i tooltip delle abilità sono in italiano.
 
 ### Fixed
+- 80 titoli di missione rimasti in inglese per errore ora sono in italiano: «Il Culto dei Dannati», «La Settimana dei Bambini», «Crimini contro l'anatomia», «Elmo dell'Ammazzadraghi», i titoli dei libri e degli incantesimi. Restano in inglese solo i nomi di persona senza una forma italiana.
+- Righe raccolte in gioco: nuove frasi di PNG (Durotar, Tirisfal, il barbiere), le consegne della Mola per Affilare e della Magnetite del campeggio e due consegne che Forever ha riscritto.
 - Missioni, dialoghi, libri e tooltip chiamano ogni PNG con lo stesso nome che ha nel mondo (circa 1.000 testi corretti: «l'alchimista Rollabomba», «re Magni Barbabronzea», «sire Valthalak»).
 - Nomi dei PNG più coerenti: i titoli seguono quelli ufficiali (Mercante di Forniture, Specialista, Arcaio, Archibugiere), «Famiglio di …» per i famigli, i PNG di prova numerati restano in inglese; Geologa Guastafesta come nelle missioni ufficiali.
 - Nomi più coerenti nelle missioni: oggetti degli obiettivi con il nome ufficiale italiano anche nei livelli 1–20, Babbo Inverno e la Masseria Buongusto, Guardiani della Notte, epiteti dei personaggi, arcidruido, segatronchi e i titoli dei personaggi (guardiano, ispettore, signore supremo).

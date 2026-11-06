@@ -6,6 +6,7 @@
 {"id": "553fc8849097a676", "field": "text", "en": "You have learned much, more than I can teach. Go to James Van Brunt, he will teach you what I cannot.", "hash": "553fc8849097a676", "src": "vmangos@13b49dc"}
 {"id": "5545c28a8f3fd120", "field": "text", "en": "Meow!", "hash": "5545c28a8f3fd120", "src": "vmangos@13b49dc"}
 {"id": "55463d22b5917413", "field": "text", "en": "And... do you expect to defeat the Primal Gods?", "hash": "55463d22b5917413", "src": "vmangos@13b49dc"}
+{"id": "5558120f02fd1e8a", "field": "text", "en": "Hail. Be brief, for we both have much to do.", "hash": "5558120f02fd1e8a", "src": "collector@1.60.1.70790", "npcs": [3142]}
 {"id": "5561061882d6bcd3", "field": "text", "en": "Learn the recipe.", "hash": "5561061882d6bcd3", "src": "vmangos@13b49dc"}
 {"id": "556298a83a615972", "field": "text", "en": "Brazenly you have disregarded powers beyond your understanding.", "hash": "556298a83a615972", "src": "vmangos@13b49dc"}
 {"id": "556783bdb7311055", "field": "text", "en": "Stop! Omosh time!", "hash": "556783bdb7311055", "src": "vmangos@13b49dc"}

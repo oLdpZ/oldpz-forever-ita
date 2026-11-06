@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["9b868dd05d5fa6a6"] = { "Che posso fare per te, amico?", "." },
   ["9b8721dbe9ea2238"] = { "Zarrin sembra conoscere bene l'arte della cucina. Perché non vai a vedere se ti mostra qualche ricetta? Di solito cucina vicino alla locanda di Dolanaar.", "." },
   ["9b8a5153e177fe8f"] = { "Il mio lavoro qui è finito. Farò sapere a Mar'alith e agli altri della ⟦Cenarion Hold=Fortezza Cenariana⟧ che mi hai dato una mano. Fai attenzione qui dentro: da qui in poi non ci sono io a tenerti per mano.", "." },
+  ["9b9667adfaa888fc"] = { "Fai attenzione, {class}. Ci sono dei cultisti qui vicino.", "." },
   ["9b96ba0692515cfe"] = { "Rischi di distruggerci tutti, {race}! Bisogna eliminarti!", "." },
   ["9b97d7b32e2b67fb"] = { "Conosci gli ⟦Highborne=Alti Nobili⟧? Gli Shen'dralar?", "." },
   ["9b9df0f975903585"] = { "⟦Wailing Caverns=Caverna dei Lamenti⟧", "." },

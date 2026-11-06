@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["553fc8849097a676"] = { "Hai imparato molto, più di quanto io possa insegnarti. Va' da James Van Brunt: ti insegnerà ciò che io non posso.", "." },
   ["5545c28a8f3fd120"] = { "Miao!", "." },
   ["55463d22b5917413"] = { "E... pensi di sconfiggere gli Dei Primordiali?", "." },
+  ["5558120f02fd1e8a"] = { "Salve. Sii breve, perché tutti e due abbiamo molto da fare.", "." },
   ["5561061882d6bcd3"] = { "Impara la ricetta.", "." },
   ["556298a83a615972"] = { "Hai sfacciatamente ignorato poteri che vanno oltre la tua comprensione.", "." },
   ["556783bdb7311055"] = { "Fermi! È l'ora di Omosh!", "." },

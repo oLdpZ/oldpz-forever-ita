@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["dc025e97e72ee88c"] = { "Per ora reggono. Alziamo la temperatura...", "." },
+  ["dc067e67c7d32d14"] = { "Mi assicuro che Sen'jin sia rifornita dei materiali ricavati dalle bestie del posto. È un compito onorevole.", "." },
   ["dc10f5e84728daaa"] = { "Ho smarrito la via nel Sogno. Percepisco la sua forza vitale, ma i miei poteri non sono ancora abbastanza forti da stabilire un contatto.", "." },
   ["dc11fd2f5e220f14"] = { "Ricordati le mie parole, imp: ti prenderò. E quando succederà!", "." },
   ["dc149fe8bb7e5ac4"] = { "Salute, {class}. Brutti tempi sono questi, amico mio, perché la nostra città è sotto assedio! Gli orchi ⟦Blackrock=Roccianera⟧ attaccano dal ⟦Stonewatch Keep=Mastio di Guardamasso⟧, i Mantombroso incombono sulla ⟦Tower of Ilgalar=Torre di Ilgalar⟧ e il branco di gnoll di ⟦Redridge=Crestarossa⟧ si fa sempre più forte. Spero che tu non sia qui in vacanza...", "." },

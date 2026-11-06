@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["196c0cdc834842e5"] = { "Hai detto che l'avresti riavuto. Cosa significa?", "." },
   ["1976ae92a5d2f439"] = { "Cos'è stato? Hai sentito qualcosa?", "." },
   ["19944f6e3b59d28d"] = { "Addestrarti ancora va oltre le mie capacità. Parla con Telonis, nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus. È sempre lieto di aiutare gli allievi di talento.", "." },
+  ["199aa2b841c8e3f1"] = { "Le sabbie di Durotar sono dure e aride rispetto alle terre tropicali e rigogliose da cui veniamo, ma noi ⟦Darkspear=Lanciascura⟧ teniamo duro. Dove ci guida il capo Vol'jin, noi lo seguiremo.", "." },
   ["199e5afffc441588"] = { "Pazienta, {name}. La torcia è quasi pronta.", "." },
   ["19aa5114d762d07d"] = { "Ecco il tomo mistico che cercavo.", "." },
   ["19b1c30eff995427"] = { "Non stai cercando di uccidere l'incudine con il martello, stai cercando di creare un'arma con cui uccidere i tuoi nemici. Lascia che ti mostri cosa sbagli.", "." },
