@@ -304,3 +304,26 @@ describe("keys that share one English declare one set of argument kinds", functi
     end
   end)
 end)
+
+-- A duration template whose Italian is its English ships no row (INT_SPELL_DURATION_MIN "%d min"): the index
+-- still reads it, so a tooltip line holding "10 min" passes the gate instead of staying English.
+describe("Core/UIStrings duration templates with no row", function()
+  it("are indexed with their English as the Italian, the shipped rows left as they are", function()
+    local t = ns()
+    local function h1(text) return (t.Hash.h32x2(t.Normalize.v1(text))) end
+    local english = { INT_SPELL_DURATION_MIN = "%d min", INT_SPELL_DURATION_HOURS = "%d |4hour:hrs;" }
+    local rows = { INT_SPELL_DURATION_HOURS = { "%d |4ora:ore;", h1(english.INT_SPELL_DURATION_HOURS), "." } }
+    local index = t.UIStrings.build({ rows = rows, english = function(k) return english[k] end, hash = h1 })
+    assert.are.equal("10 min", index:duration("10 min", true))
+    assert.are.equal("1 min", index:duration("1 min", true))
+    assert.is_truthy(index:duration("1 hour", true):find("^1 "))
+    assert.is_nil(rows.INT_SPELL_DURATION_MIN) -- a copy was indexed, never the shipped rows
+  end)
+
+  it("a key with no client English adds nothing", function()
+    local t = ns()
+    local function h1(text) return (t.Hash.h32x2(t.Normalize.v1(text))) end
+    local rows = {}
+    assert.are.equal(rows, t.UIStrings.withDurations(rows, { english = function() return nil end, hash = h1 }))
+  end)
+end)

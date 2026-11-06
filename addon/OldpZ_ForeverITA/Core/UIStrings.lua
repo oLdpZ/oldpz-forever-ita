@@ -1273,8 +1273,29 @@ local function sortedKeys(t)
   return keys
 end
 
+-- A duration template whose Italian is its English ("%d min", "%.1f min") ships no row (an official line equal to
+-- its English is not imported, and a draft may not repeat the English), yet the tooltip gate needs every duration
+-- template to read a live duration ("10 min"): without it the whole line stays English. Such a key is indexed with
+-- its English as the Italian, on a copy of the rows (the shipped data stays as generated). → rows
+local function withDurations(rows, deps)
+  local missing = {}
+  for _, list in ipairs({ UIStrings.DURATIONS, UIStrings.SPELL_DURATIONS }) do
+    for _, k in ipairs(list or {}) do
+      local en = rows[k] == nil and type(deps.english) == "function" and deps.english(k) or nil
+      -- a duration template holds its number's specifier ("%d", "%.1f"); anything else is not one
+      if type(en) == "string" and en:find("%%[%d.]*[df]") and type(deps.hash) == "function" then missing[k] = en end
+    end
+  end
+  if next(missing) == nil then return rows end
+  local out = {}
+  for k, v in pairs(rows) do out[k] = v end
+  for k, en in pairs(missing) do out[k] = { en, deps.hash(en), "." } end
+  return out
+end
+UIStrings.withDurations = withDurations
+
 function UIStrings.build(deps)
-  local rows = deps.rows or {}
+  local rows = withDurations(deps.rows or {}, deps)
   local index = setmetatable({ rows = rows, exact = {}, templates = {}, prefixes = {}, byHash = {}, hashCount = 0,
     memo = {}, memoCount = 0, durations = {}, spellDurations = {}, synonyms = {}, own = {}, templateKeys = {},
     bySlots = {}, byNumbers = {}, byRestricted = {}, byTemplate = {},
