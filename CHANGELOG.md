@@ -11,6 +11,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 ## Unreleased
 
 ### Added
+- Con Questie: titoli e obiettivi delle missioni e nomi dei PNG in italiano anche nel tracker, nella mappa, nel diario e nei tooltip di Questie. Le scritte di Questie e le righe di avanzamento del suo tracker restano in inglese.
 - Nomi ufficiali in italiano anche dove li mostra il gioco: oggetti, incantesimi, abilità, zone e fazioni nei tooltip, nella reputazione, nelle abilità, in mercanti, bottino, ricompense, minimappa e mappa. Ogni tipo di nome si sceglie in italiano o in inglese nelle opzioni. Il libro incantesimi resta in inglese: scriverci bloccherebbe le barre azioni in combattimento.
 - Nomi ufficiali anche negli oggetti richiesti alla consegna di una missione, nella finestra delle professioni (ricette, oggetto prodotto, reagenti) e nel titolo del dettaglio della reputazione.
 - First Italian build: the interface strings, item flavour text and spell tooltips that Blizzard's own Italian client (retail, itIT) words exactly as Forever does now show in Italian.

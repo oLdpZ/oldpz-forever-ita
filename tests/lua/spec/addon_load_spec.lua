@@ -78,7 +78,7 @@ local TAIL = {
   "UI/MinimapButton.lua",
   "UI/RevealBinding.lua",
   "UI/AddonListButton.lua",
-  "UI/Options.lua", "UI/Slash.lua", "Main.lua", -- the settings pages' modules
+  "UI/Options.lua", "UI/Slash.lua", "UI/Questie.lua", "Main.lua", -- the settings pages' modules
 }
 -- the window modules declare the names of windows this stub does not build (and, in the client, windows that
 -- load on demand); the unresolved checks below read only the other namespaces.

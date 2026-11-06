@@ -95,7 +95,7 @@ def test_real_toc_fields_and_load_order(root):
             "UI/ReportWindow.lua",
             "UI/MinimapButton.lua",  # the minimap button
             "UI/RevealBinding.lua",
-        "UI/AddonListButton.lua", "UI/Options.lua", "UI/Slash.lua", "Main.lua",
+        "UI/AddonListButton.lua", "UI/Options.lua", "UI/Slash.lua", "UI/Questie.lua", "Main.lua",
     ]
     assert files[: len(head)] == head and files[-len(tail) :] == tail
     generated = files[len(head) : -len(tail)]

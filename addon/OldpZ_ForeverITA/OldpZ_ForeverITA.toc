@@ -1264,4 +1264,5 @@ UI\RevealBinding.lua
 UI\AddonListButton.lua
 UI\Options.lua
 UI\Slash.lua
+UI\Questie.lua
 Main.lua
