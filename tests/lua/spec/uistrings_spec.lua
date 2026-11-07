@@ -80,6 +80,32 @@ describe("Core/UIStrings", function()
     assert.is_nil(index:match("Accept Quest"))
   end)
 
+  it("a class list and a skill take the names UI/NameText knows; an unknown one stays as written", function()
+    local t = ns()
+    local function h1(text) return (t.Hash.h32x2(t.Normalize.v1(text))) end
+    local en = { ITEM_CLASSES_ALLOWED = "Classes: %s", ITEM_MIN_SKILL = "Requires %s (%d)" }
+    local rows = { ITEM_CLASSES_ALLOWED = { "Classi: %s", h1(en.ITEM_CLASSES_ALLOWED), "." },
+      ITEM_MIN_SKILL = { "Richiede: %s (%d)", h1(en.ITEM_MIN_SKILL), "." } }
+    local index = t.UIStrings.build({ rows = rows, hash = h1, english = function(k) return en[k] end })
+    local names = { Mage = "Mago", Warrior = "Guerriero", Comprehension = "Comprensione" }
+    t.UIStrings.nameList = function(text)
+      local changed = false
+      local out = text:gsub("[^,]+", function(piece)
+        local lead, body = piece:match("^(%s*)(.-)$")
+        if names[body] then changed = true; return lead .. names[body] end
+      end)
+      return changed and out or nil
+    end
+    local function show(line)
+      local key, args = index:match(line)
+      return key and index:fill(rows[key][1], args)
+    end
+    assert.are.equal("Classi: Mago", show("Classes: Mage"))
+    assert.are.equal("Classi: Guerriero, Mago", show("Classes: Warrior, Mage"))
+    assert.are.equal("Richiede: Comprensione (1)", show("Requires Comprehension (1)"))
+    assert.are.equal("Richiede: Engineering (225)", show("Requires Engineering (225)"))
+  end)
+
   it("keys that share one English: same Japanese indexes once, different Japanese is ambiguous", function()
     local t = ns()
     local index = build(t)

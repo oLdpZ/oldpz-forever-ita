@@ -4,7 +4,7 @@ WFJ.Data.add("item", {
   [230008] = { "Assumi le sembianze di un assassino ninja.", 0xdd706146, "u" },
   [230903] = { "Infondi di magia la Depleted Essence of Fire.\nDall'insolita pergamena emana una magia ardente.", 0x470f0a6e, "u" },
   [230909] = { "Infondi di magia la Depleted Essence of Fire.", 0x2a35ab25, "u" },
-  [230946] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", 0xce6c2da9, "u" },
+  [230946] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", 0xce6c2da9, "u" },
   [230947] = { "Infondi di magia la Depleted Essence of Frost.\nDall'insolita pergamena emana una magia gelida.", 0xa3207054, "u" },
   [230949] = { "Infondi di magia la Depleted Essence of Frost.", 0xe983ec96, "u" },
 })

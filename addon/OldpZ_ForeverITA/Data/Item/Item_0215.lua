@@ -13,7 +13,7 @@ WFJ.Data.add("item", {
   [215156] = { "Ti insegna a creare un Hyperconductive Goldwap", 0xe4671917, "u" },
   [215163] = { "Ti insegna a creare una Mildly Irradiated Rejuvenation Potion.", 0xc381fd6b, "u" },
   [215168] = { "Infligge $N1 danni da fuoco a chi si trova nel raggio dell'esplosione, più $N2 danni da natura aggiuntivi ogni $D1 per $N4 s. Riduce inoltre la velocità di movimento dei bersagli colpiti del $N5% per $D2.\nUna versione depotenziata ma non meno letale della sua controparte più complessa, per chi manca di competenza ma abbonda di sicurezza.", 0xec83c81e, "u" },
-  [215257] = { "Aumenta l'abilità Comprehension di $N1 per $D1.", 0xb588fed3, "u" },
+  [215257] = { "Aumenta l'abilità Comprensione di $N1 per $D1.", 0xb588fed3, "u" },
   [215365] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
   [215366] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
   [215367] = { "Ti insegna a creare un fascio di Faintly Glowing Leather.", 0xae6f728b, "u" },

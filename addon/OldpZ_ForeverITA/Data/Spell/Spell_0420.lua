@@ -10,7 +10,7 @@ WFJ.Data.add("spell", {
   [420684] = { "Evoca una lancia di fulmine magica e la scaglia contro un nemico.", "Evoca una lancia di fulmine magica e la scaglia contro un nemico.", 0xc44b4eb1, 0xc44b4eb1, "uu" },
   [420710] = { "In preda alla follia.", nil, 0x02d4316d, nil, "um" },
   [420744] = { nil, "Il tuo sacrificio sarà estenuante...", nil, 0x7d6dcfbc, "mu" },
-  [420794] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
+  [420794] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
   [420799] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
   [420818] = { nil, "Un'illusione della terra desolata", nil, 0x4bd608c1, "mu" },
   [420825] = { nil, "Un'illusione della terra desolata", nil, 0x4bd608c1, "mu" },

@@ -14,7 +14,7 @@ WFJ.Data.add("spell", {
   [433546] = { "L'incantatore scaglia un'ondata di melma tossica su tutti i giocatori, infliggendo $N1 danni da natura e altri $N2 danni da natura ogni $D1 per $D2. Questo effetto è cumulabile.", "$N1 danni da natura inflitti ogni $D1.", 0xdae18fd3, 0xd8c7b0a1, "uu" },
   [433551] = { "Dai acqua a un antico alberello.", nil, 0xf84149f3, nil, "um" },
   [433672] = { "Costringe il bersaglio ad attaccarti, ma non ha effetto se il bersaglio ti sta già attaccando.", nil, 0x71de38fd, nil, "um" },
-  [433780] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
+  [433780] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
   [433797] = { "Attacchi tutti i nemici vicini per $D1, infliggendo i danni dell'arma più altri $N2 ogni $D2.", "Attacchi tutti i nemici vicini infliggendo i danni dell'arma + $N1.", 0x3df8972c, 0xde7e324f, "uu" },
   [433801] = { "Attacchi tutti i nemici vicini per $D1, infliggendo i danni dell'arma più altri $N2 ogni $D2.", "Attacchi tutti i nemici vicini infliggendo i danni dell'arma + $N1.", 0x3df8972c, 0xde7e324f, "uu" },
   [433804] = { nil, "Offri un tributo al Blood Loa prima che qualcuno faccia di te il suo tributo.", nil, 0x3f021473, "mu" },

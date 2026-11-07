@@ -48,7 +48,7 @@ WFJ.Data.add("item", {
   [208749] = { "Sull'impugnatura è rozzamente intagliato un ramo d'albero.", 0xa2415d9a, "u" },
   [208750] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [208753] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
-  [208754] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", 0x7ccaad21, "u" },
+  [208754] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.", 0x7ccaad21, "u" },
   [208758] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [208760] = { "Risveglia uno spirito delle pianure", 0x6a4a51d5, "u" },
   [208765] = { "La mano si aprirà per un salvatore", 0x22a2e274, "u" },
@@ -71,7 +71,7 @@ WFJ.Data.add("item", {
   [208849] = { "Apprendi una nuova abilità dopo aver dato benedizioni a $N1 giocatori diversi", 0xbacb09f4, "u" },
   [208851] = { "Apprendi una nuova abilità dopo aver ucciso $N1 nemici storditi da ⟦Hammer of Justice=Martello della Giustizia⟧", 0xf0b2846c, "u" },
   [208853] = { "Ti insegna una nuova abilità d'incisione runica.", 0x01f50842, "u" },
-  [208854] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.\nGli sciamani trogg sono lettori davvero voraci.", 0x4481d1a3, "u" },
+  [208854] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.\nGli sciamani trogg sono lettori davvero voraci.", 0x4481d1a3, "u" },
   [208855] = { "Dai l'esca al bersaglio.\nUna leccornia per i mostri dei laghi", 0x19d98837, "u" },
   [208860] = { "Gli scritti di un celebre mago gnomo. Un'ottima aggiunta alla collezione di qualsiasi biblioteca.", 0x5c4db874, "u" },
 })

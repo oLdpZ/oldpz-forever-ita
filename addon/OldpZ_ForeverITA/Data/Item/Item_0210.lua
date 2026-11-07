@@ -37,7 +37,7 @@ WFJ.Data.add("item", {
   [210596] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [210653] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [210654] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
-  [210655] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", 0x7ccaad21, "u" },
+  [210655] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.", 0x7ccaad21, "u" },
   [210708] = { "Permette a chi lo beve di parlare con il cadavere di qualcuno che ha questioni in sospeso nel mondo dei vivi. Potrebbe anche curare l'indigestione.", 0x440274f1, "u" },
   [210709] = { "Ti insegna a creare un Elixir of Coalesced Regret.", 0xbd3eb856, "u" },
   [210712] = { "Contempla una visione al falò di Je'neu.", 0x8f6faa55, "u" },

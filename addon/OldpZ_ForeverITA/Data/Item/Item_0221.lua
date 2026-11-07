@@ -60,7 +60,7 @@ WFJ.Data.add("item", {
   [221325] = { "Fa saltare le porte chiuse più difficili.\nLa miccia a lenta combustione è già accesa!", 0x6f75d8fa, "u" },
   [221326] = { "Presentalo come offerta allo Shrine of the Beast.", 0x3ef68078, "u" },
   [221336] = { "Ti insegna a creare un ⟦Goblin Mining Helmet=Elmetto da Minatore Goblin⟧.", 0x76ec60a1, "u" },
-  [221344] = { "Aumenta fino a $N1 i danni e le cure prodotti da incantesimi ed effetti magici.\nEvoca $N2 Comprehension Charm.", 0xd8a4118a, "u" },
+  [221344] = { "Aumenta fino a $N1 i danni e le cure prodotti da incantesimi ed effetti magici.\nEvoca $N2 Amuleto della Comprensione.", 0xd8a4118a, "u" },
   [221347] = { "Permette allo Sciamano di vedere gli spiriti elementali.\nUn intruglio torbido. Una strana influenza di dubbia origine contamina una magia altrimenti riconoscibile.", 0x30414fb1, "u" },
   [221348] = { "Permette allo Sciamano di vedere gli spiriti elementali.\nUn intruglio torbido. Una strana influenza di dubbia origine contamina una magia altrimenti riconoscibile.", 0x30414fb1, "u" },
   [221349] = { "Permette allo Sciamano di vedere gli spiriti elementali.\nUn intruglio torbido. Una strana influenza di dubbia origine contamina una magia altrimenti riconoscibile.", 0x30414fb1, "u" },

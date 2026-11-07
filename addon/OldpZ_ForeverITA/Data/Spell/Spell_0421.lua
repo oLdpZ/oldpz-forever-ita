@@ -17,6 +17,6 @@ WFJ.Data.add("spell", {
   [421436] = { "Combina $N1 Glade Flower per creare una corona.", nil, 0xebce6cc7, nil, "um" },
   [421510] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
   [421535] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
-  [421596] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
+  [421596] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
   [421599] = { "Dai la pastura al bersaglio.", nil, 0x69e51170, nil, "um" },
 })

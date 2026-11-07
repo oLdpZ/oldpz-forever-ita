@@ -32,7 +32,7 @@ WFJ.Data.add("spell", {
   [430405] = { "Aggiungi $N1 Benda Pesante di Lana per completare la spedizione.", nil, 0x0446fd96, nil, "um" },
   [430406] = { "Rigenera $N1 mana ogni $D1 e aumenta del $N3% la probabilità d'impatto degli incantesimi. L'effetto si applica solo negli ⟦Blackfathom Deeps=Abissi di Fondocupo⟧.", nil, 0x34458caa, nil, "um" },
   [430409] = { "Crea un Blackfathom Mana Oil.", nil, 0x268f97e3, nil, "um" },
-  [430419] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
+  [430419] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [430420] = { nil, "Un santuario vicino è dedicato a Elune e aumenta il tuo Intelletto del $N1%.", nil, 0x510e01fd, "mu" },
   [430421] = { nil, "Un santuario vicino è dedicato ai loa e aumenta la tua Tempra del $N1%.", nil, 0xf8bd63be, "mu" },
   [430422] = { nil, "Un santuario vicino è dedicato alla non morte e aumenta la tua Armatura del $N1%.", nil, 0xede3c905, "mu" },

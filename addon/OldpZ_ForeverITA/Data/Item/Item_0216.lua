@@ -12,5 +12,5 @@ WFJ.Data.add("item", {
   [216637] = { "Da qualche parte qualcuno potrebbe trovare utile questa roba, ma a te sembra solo ciarpame.", 0x11462515, "u" },
   [216645] = { "Un'energia oscura permea questo minuscolo granello di energia fluttuante. Chissà quali magie straordinarie potrebbe alimentare?", 0xce943a0d, "u" },
   [216748] = { "Ti insegna l'abilità Portal of Summoning.", 0xcfb15750, "u" },
-  [216879] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", 0xce6c2da9, "u" },
+  [216879] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", 0xce6c2da9, "u" },
 })

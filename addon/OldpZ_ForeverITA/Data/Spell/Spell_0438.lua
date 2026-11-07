@@ -44,5 +44,5 @@ WFJ.Data.add("spell", {
   [438732] = { nil, "$N1 danni da natura inflitti ogni $D1.", nil, 0x508bfddc, "mu" },
   [438735] = { nil, "I pulsanti non sembrano rispondere al tuo tocco mentre sei sotto carica elettrica.", nil, 0x69ae8183, "mu" },
   [438859] = { "Esplode, infliggendo danni in un'area.", nil, 0xf8a03f70, nil, "um" },
-  [438938] = { "Decifra gli appunti dell'incantesimo con un Comprehension Charm per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
+  [438938] = { "Decifra gli appunti dell'incantesimo con un Amuleto della Comprensione per apprendere un nuovo incantesimo d'incisione.", nil, 0x7ccaad21, nil, "um" },
 })

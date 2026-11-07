@@ -29,7 +29,7 @@ WFJ.Data.add("spell", {
   [468199] = { "Una pioggia acida cade dall'alto, infliggendo $N1 danni da natura ai giocatori colpiti.", nil, 0xd27b3641, nil, "um" },
   [468211] = { "Chiudi un piccolo portale vile selezionato. Potrebbe attirare attenzioni indesiderate dall'altra parte.", nil, 0xa89f2449, nil, "um" },
   [468224] = { "Aumenta fino a $N1 le cure e fino a $N2 i danni prodotti da incantesimi ed effetti magici.", nil, 0x77ff472e, nil, "um" },
-  [468225] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
+  [468225] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [468235] = { "Le tue abilità ⟦Heroic Strike=Assalto Eroico⟧, Contusione e Dominazione infliggono il $N1% di danni in più.", nil, 0x59ae5f58, nil, "um" },
   [468236] = { "I tuoi colpi di Contusione azzerano il tempo di recupero residuo delle abilità ⟦Mortal Strike=Assalto Mortale⟧, Sete di Sangue e ⟦Shield Slam=Colpo di Scudo⟧.", nil, 0x653c0fa5, nil, "um" },
   [468252] = { "Rimuovi la runa.", nil, 0xb7b126b1, nil, "um" },

@@ -57,7 +57,7 @@ WFJ.Data.add("spell", {
   [437695] = { nil, "Il Loa del Sangue vuole una sfida leale, non il massacro degli indifesi! Lascia la tua incursione o affronta la sua ira! Tutti gli attributi e la velocità di movimento ridotti del $N1%.", nil, 0xa7fb784d, "mu" },
   [437698] = { nil, "Testa! Probabilità di critico aumentata!", nil, 0x76bf17c2, "mu" },
   [437699] = { nil, "Croce! Velocità di movimento aumentata!", nil, 0x83e9b865, "mu" },
-  [437707] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
+  [437707] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [437713] = { "Aumenta del $N1% tutti i danni inflitti.", "Aumenta del $N1% tutti i danni inflitti.", 0x268ec311, 0x268ec311, "uu" },
   [437715] = { "Prosciuga $N1 salute ai nemici vicini, curando l'incantatore fino al doppio dell'ammontare sottratto.", nil, 0xf23f3711, nil, "um" },
   [437716] = { "Il tuo prossimo attacco sarà un colpo critico.", "Il tuo prossimo attacco sarà un colpo critico.", 0xe3c6fa9b, 0xe3c6fa9b, "uu" },

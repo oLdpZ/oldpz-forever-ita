@@ -2932,6 +2932,7 @@ WFJ.Data.add("namespell", {
   ["868279b14e0b7083"] = { "Detonazione Mentale", "." },
   ["869c2773b0ba80d1"] = { "Empatia", "." },
   ["869e531760cdcf22"] = { "Sacca dei Sei Demoni", "." },
+  ["86a5f87182b4fbe0"] = { "Comprensione", "." },
   ["86a93fb5251f53e8"] = { "Dolori Toracici", "." },
   ["86acf86d0c7fa884"] = { "Mutaforma Druidica Facile", "." },
   ["86bed8cfebb9bae5"] = { "Reincarnazione", "." },

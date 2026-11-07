@@ -71,7 +71,7 @@ WFJ.Data.add("spell", {
   [460898] = { nil, "Heart of Ash brucia dentro di te, infliggendo danni nel tempo. Annullato da Heart of Cinder.", nil, 0xadcd1c39, "mu" },
   [460906] = { "Gli attacchi in mischia della vilguardia che infliggono danni scatenano una frenesia demoniaca, aumentando la potenza d'attacco del $N1% per $D1. Questo effetto si cumula fino a $N3 volte.", nil, 0xcd2e65e6, nil, "um" },
   [460907] = { nil, "Potenza d'attacco aumentata del $N1%.", nil, 0x28c2d282, "mu" },
-  [460923] = { "Decifra la pergamena con un Comprehension Charm. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
+  [460923] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", nil, 0xce6c2da9, nil, "um" },
   [460931] = { "Infligge $N1 danni da ombra ai nemici vicini dopo $D1.", "$N1 danni da ombra subiti dopo $D1.", 0x0a28521b, 0x7fe6a36d, "uu" },
   [460932] = { "Maledice i nemici vicini, aumentando il costo di incantesimi e abilità del $N1% per $D1. L'aumento si applica a tutti gli incantesimi e le abilità, a prescindere che il loro costo sia in mana, rabbia o energia.", "Costo di incantesimi e abilità aumentato del $N1%.", 0x0632c665, 0x4c2d18ce, "uu" },
   [460933] = { "..", nil, 0x000017b8, nil, "um" },

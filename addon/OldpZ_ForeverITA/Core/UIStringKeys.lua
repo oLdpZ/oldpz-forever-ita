@@ -31,11 +31,14 @@ UIStrings.ARGS = {
   PLUS_SINGLE_DAMAGE_TEMPLATE_WITH_SCHOOL = { [2] = "word" }, AMMO_SCHOOL_DAMAGE_TEMPLATE = { [2] = "word" },
   PLUS_AMMO_SCHOOL_DAMAGE_TEMPLATE = { [2] = "word" }, CONTAINER_SLOTS = { [2] = "words" },
   ITEM_REQ_REPUTATION = { [1] = "text", [2] = "word" },
-  ITEM_REQ_SKILL = { [1] = "skill" }, ITEM_MIN_SKILL = { [1] = "text" },
+  -- the skill and the class list name what UI/NameText knows (a class is its SkillLine name, "Mage" → "Mago"; a
+  -- Forever skill is in nomi_coniati, "Comprehension" → "Comprensione"); anything else stays as written
+  ITEM_REQ_SKILL = { [1] = "skill" }, ITEM_MIN_SKILL = { [1] = "nameList" },
   SPELL_EQUIPPED_ITEM = { [1] = "itemSubClassMask" }, SPELL_EQUIPPED_ITEM_NOSPACE = { [1] = "itemSubClassMask" },
   -- "Requires %s": an ItemSubClassMask row ("Melee Weapon") is shown in Japanese; a form, item or skill name is kept
   SPELL_REQUIRED_FORM = { [1] = "itemSubClassMask" }, SPELL_REQUIRED_FORM_NOSPACE = { [1] = "itemSubClassMask" },
-  ITEM_CLASSES_ALLOWED = { [1] = "text" }, ITEM_RACES_ALLOWED = { [1] = "text" }, ITEM_SPELL_EFFECT = { [1] = "text" },
+  ITEM_CLASSES_ALLOWED = { [1] = "nameList" }, ITEM_RACES_ALLOWED = { [1] = "text" },
+  ITEM_SPELL_EFFECT = { [1] = "text" },
   ITEM_WRITTEN_BY = { [1] = "text" }, ITEM_LIMIT_CATEGORY = { [1] = "text" },
   ITEM_LIMIT_CATEGORY_MULTIPLE = { [1] = "text" }, TOOLTIP_TALENT_TIER_POINTS = { [2] = "text" },
   ITEM_COOLDOWN_TIME = { [1] = "time" }, ITEM_COOLDOWN_TOTAL = { [1] = "time" },
