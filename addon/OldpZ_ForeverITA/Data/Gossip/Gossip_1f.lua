@@ -50,6 +50,7 @@ WFJ.Data.add("gossip", {
   ["1fe91a6934b5305b"] = { "La nostra libertà non avrebbe avuto alcun senso se ⟦C'Thun=C'thun⟧ fosse sopravvissuto. Sei davvero <un/una> <campione/campionessa> della profezia.", "." },
   ["1fe98dcba8c772e0"] = { "Non costringermi a passare alle maniere forti.", "." },
   ["1fea9bcc67c43b56"] = { "Vuoi imparare a usare una nuova arma, eh? Beh, allora dovresti parlare con Bixi o Buliwyf alla bottega d'armi Timberline Arms, <ragazzo/ragazza>. Conoscono le armi, dalle asce agli... ehm... zweihander.", "." },
+  ["1feefebade0d1405"] = { "Respingo questa idea. Questo è ciò che siamo ora, e faremo vedere ai Reietti che non siamo ciò che credono. Possiamo tornare a servire Lordaeron.", "." },
   ["1ff5cac0e08be16f"] = { "Non morirò di nuovo! Non per mano di gente come te!!", "." },
   ["1ff6662dfacdd793"] = { "Ti strapperò gli arti e li userò per pestarti finché non ti arrendi!", "." },
   ["1ff9509cbf3ce617"] = { "Ottimo lavoro, soldato. Devo tornare al campo base! Mi copri?", "." },

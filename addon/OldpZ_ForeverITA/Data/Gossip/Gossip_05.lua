@@ -44,6 +44,7 @@ WFJ.Data.add("gossip", {
   ["05c67f80fbb215f3"] = { "La tua abilità non è da poco. Visto che sembri avere abbastanza esperienza, c'è una faccenda per cui mi serve il tuo aiuto.", "." },
   ["05cf2f558b1e4000"] = { "Il Signore delle Acque Idraxis si nasconde ad Azshara, su un'isola nella ⟦Bay of Storms=Baia delle Tempeste⟧. Che razza di minaccia può mai radunare quello sciocco da laggiù?", "." },
   ["05d1504239c6f66d"] = { "Sento piccoli cuori che battono. Sì... battono più forte, ora... presto il battito si fermerà.", "." },
+  ["05deec4facc31860"] = { "Sono felice di essere venuto a vedere ciò che avete costruito qui. Garek ne sarebbe fiero. Ma questa non è una visita di cortesia, Danitha. Lo sai di certo...", "." },
   ["05e8e5c161e7fb5f"] = { "C'è dell'altro.", "." },
   ["05f0416731b6a25c"] = { "Betina, vorrei una ⟦Rune of the Dawn=Runa dell'Alba⟧ nuova, per favore!", "." },
   ["05f36b78ace0504b"] = { "Se lo desideri, oltre all'addestramento, ho il potere di cancellare dalla tua mente la conoscenza dei tuoi talenti. Ma sappi che ogni volta che ti sottoponi a questa procedura diventa più difficile da eseguire, e quindi più costosa.", "." },

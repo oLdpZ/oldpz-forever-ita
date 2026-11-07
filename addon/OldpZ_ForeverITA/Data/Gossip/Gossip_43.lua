@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["438105ede1ec715b"] = { "Ora dobbiamo aspettare, {name}. Non passerà molto prima che i naga si accorgano di ciò che abbiamo fatto.", "." },
   ["43869d0fcbf631cb"] = { "Tutti i preparativi sono completi, {class}. Aspettiamo che l'ultimo materiale venga spedito a ⟦Silithus=Silitus⟧, il che dovrebbe avvenire in meno di un giorno. Poi, una volta conclusa l'organizzazione laggiù, qualcuno dovrà farsi avanti e suonare il gong sull'Altare dello Scarabeo con lo Scettro delle Sabbie Mutevoli. Allora comincerà la Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Che la Madre Terra vegli su tutti noi, allora.", "." },
   ["4389a2a4e2d5d317"] = { "Sono pezzi davvero belli, {name}. Per la maestria e la cura messe nel farli, si venderebbero a parecchio argento in più di un pezzo qualunque.\n\nHai completato il mio ordine, e con esso arriva la tua ricompensa. La conoscenza per fare le vesti di Cuoio Selvatico ora è tua!", "." },
+  ["438eb82ce39cc25f"] = { "No, Leonid. Il nostro posto è qui. Il nostro giovane ordine deve trovare la sua identità tra i nostri simili. So cosa pensi dei Reietti... che la nostra «condizione» sia qualcosa da curare.", "." },
   ["43912074bf2dc3ba"] = { "Ottimo, cominciamo... ah! Ci sei cascat<o/a>! Non avrai pensato che fosse così semplice. Dovrai dimostrare il tuo valore come tutti gli altri!", "." },
   ["43a7ae12f8f34cec"] = { "Bijou sa dove sono nascosti i tesori.", "." },
   ["43af2d862cf65a11"] = { "Cerchi questi???? Non li avrai mai!", "." },

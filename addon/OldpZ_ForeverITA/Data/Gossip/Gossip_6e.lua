@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["6e7e8ddcae7cd663"] = { "Che cosa farò?", "." },
   ["6e7fe384655d5a70"] = { "L'unica cosa che Metzen farà in questo Grande Inverno sarà arrostire allo spiedo!", "." },
   ["6e86f52afa1e3b07"] = { "La ⟦Irondeep Mine=Miniera di Ferrofondo⟧ è in territorio dell'⟦Alliance=Alleanza⟧, a nord del ⟦Stormpike Graveyard=Cimitero dei Piccatonante⟧.\n\nÈ controllata dai trogg.", "." },
+  ["6e89e13e9b48dd20"] = { "Ma ti temono e ti odiano, Danitha. Lo sai di certo, no? Nell'⟦Argent Dawn=Alba d'Argento⟧ il tuo legame con la Luce sarebbe una risorsa. Saresti tenuta in grande considerazione!", "." },
   ["6e8e7c0787e23bb7"] = { "Ooh, è proprio bello! Lascia che lo dissotterri...", "." },
   ["6e8f995c9266f2e5"] = { "Non offro addestramento per apprendisti. Cerca il tauren Waldor nella ⟦Wailing Caverns=Caverna dei Lamenti⟧, qui nelle ⟦Barrens=Savane⟧. Può aiutarti con qualsiasi cosa ti serva.", "." },
   ["6e909972f5cfe8d9"] = { "Ehi, Hornizz! Eccomi di ritorno! E dietro di me c'è gente che mi ha tirato fuori dai guai.", "." },

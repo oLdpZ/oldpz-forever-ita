@@ -16,6 +16,7 @@ WFJ.Data.add("gossip", {
   ["134c7661460ca085"] = { "Tempi duri, eh, {name}? Ovunque ti giri c'è qualcuno che ha bisogno d'aiuto, e io e mia moglie non facciamo eccezione.", "." },
   ["13507331cc3597fc"] = { "Questi nani sono gli stessi di oggi, giusto? I nani mantengono altri legami con i Terrigeni?", "." },
   ["1355ea4c90bc60c4"] = { "Salute, {name}.", "." },
+  ["135a847417fad321"] = { "Non lo accetterò! Io servo la Luce!", "." },
   ["135b53bf12ddc50d"] = { "Forse posso insegnarti qualcosa...", "." },
   ["135f64029e899fde"] = { "Non mi tirerete mai fuori dal mio bunker, infedeli!", "." },
   ["13604dcc337c10d7"] = { "Ho perso il mio ⟦Signet of Unyielding Strength=Sigillo della Forza Inflessibile⟧. Puoi sostituirmelo?", "." },

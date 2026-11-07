@@ -46,4 +46,5 @@ WFJ.Data.add("gossip", {
   ["53eb8fa92fedb60a"] = { "|cffffff00La Torre di ⟦Plaguewood=Malaselva⟧ è stata presa dall'⟦Alliance=Alleanza⟧!|r", "." },
   ["53fd4406ce21c39e"] = { "Il segreto del coltello è tenerlo nascosto fino al momento di colpire.", "." },
   ["53fd9387c8440137"] = { "Ah, senti che bell'aria salmastra! Fa sempre piacere tornare al nostro porto di casa, ⟦Booty Bay=Baia del Bottino⟧.", "." },
+  ["53fe199b44f747b3"] = { "Ed è per questo che è così importante restare.", "." },
 })

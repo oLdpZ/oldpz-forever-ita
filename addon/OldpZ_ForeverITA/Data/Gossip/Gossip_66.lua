@@ -8,6 +8,7 @@ WFJ.Data.add("gossip", {
   ["661333292f23f150"] = { "Ciao. Ti ho già vist<o/a>... vero?", "." },
   ["6616e74c187a7166"] = { "Vedo del potenziale in te, {name}. Ora prendi un martello e un po' di quei rottami: ti serve un sacco di pratica.", "." },
   ["661dcc2dc3e14f2f"] = { "È la mia fine! Evocate Verog!", "." },
+  ["6621a3df954f3b57"] = { "È bello rivederti, Danitha. Sono passati solo pochi anni, ma sembra trascorso un oceano di tempo.", "." },
   ["662461e3c0b16b41"] = { "Ah, come dice il titolo, faccio l'assassino per la ⟦Scarlet Crusade=Crociata Scarlatta⟧. Passo le giornate a sterminare bersagli di alta priorità e le notti nella discoteca di ⟦Gadgetzan=Meccania⟧. Ballare è la mia vera vocazione. Assassinare serve solo a pagare i conti.", "." },
   ["6627ff465d91cdbf"] = { "Lui nome è ⟦Grizzle Halfmane=Grizzle Mezzachioma⟧. Lui in Royal Quarter con Regina Banshee e Dread Lord.", "." },
   ["66306e06def4f901"] = { "Che succede? Guarda!", "." },

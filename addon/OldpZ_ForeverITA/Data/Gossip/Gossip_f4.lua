@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["f43a752b1ae32b14"] = { "Non credo ci siano pesci in questi canali.", "." },
   ["f44d3f68bdfe603d"] = { "Muori nel nome di Ragnaros!", "." },
   ["f45201221f7a1663"] = { "Buona giornata, <ragazzo/ragazza>. Posso esserti utile?", "." },
+  ["f452db3c5a222f8b"] = { "Sì. Hai preso in considerazione l'offerta di lord Tyrosus? L'⟦Argent Dawn=Alba d'Argento⟧ è pronta ad accogliere te e la tua gente a braccia aperte.", "." },
   ["f461001ec2d60924"] = { "Mi fai perdere tempo, va' a parlare con il mio allievo Basil.", "." },
   ["f46824e69663cc78"] = { "Il Capoguerra porta un cambiamento che darà la vittoria all'⟦Horde=Orda⟧! Cerca Swart dentro la caserma, sul lato est della città.", "." },
   ["f4684f836fbb8f15"] = { "Io preferisco il cibo crudo, ma se a te piace cotto, Denni'ka può insegnarti ad accendere un fuoco. La trovi a Survival of the Fittest, una capanna sulla riva del lago accanto alla Spirit Lodge. Cercala più in alto, a ovest della ⟦Valley of Strength=Valle della Forza⟧.", "." },

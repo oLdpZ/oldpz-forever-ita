@@ -20,6 +20,7 @@ WFJ.Data.add("gossip", {
   ["7c6ea0467ed113bd"] = { "Vieni giù al santuario con Tiev. Lì metteremo all'opera la magia dei sapta.", "." },
   ["7c6edaf46f72278d"] = { "Te l'avevo detto che avevi il sangue del fabbro, e avevo ragione. Va' a ⟦Ironforge=Forgiardente⟧, alla ⟦Great Forge=Grande Forgia⟧, e cercati un fabbro nanico di nome ⟦Bengus Deepforge=Bengus Forgiafonda⟧. È stato il mio maestro, ed è uno dei più grandi fabbri che abbia mai conosciuto.", "." },
   ["7c71093c08857ed4"] = { "Cerca ⟦Tarshaw Jaggedscar=Tarshaw Frangitaglio⟧ nella caserma, sul lato est della città.", "." },
+  ["7c74f7fdb80e0300"] = { "Molto bene, Danitha. Abbiate cura di voi. Molti Reietti non riescono a dimenticare il dolore che hanno patito per mano dei vivi che brandiscono la Luce. La loro diffidenza verso i paladini è profonda.", "." },
   ["7c757fcf5aa765dc"] = { "Dei $1998w lingotti di rame che ci servono, ne abbiamo $2018w. Per i lingotti di stagno siamo a $2005w su $2006w necessari. E sono stati fusi $2008w lingotti di mithril su $2009w per la causa.", "." },
   ["7c79582296214901"] = { "Un'interessante piega degli eventi.", "." },
   ["7c8302dd13f153a1"] = { "$964w, giovane {class}.", "." },

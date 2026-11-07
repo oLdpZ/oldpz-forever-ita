@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["ba015798fb869929"] = { "Vuoi imparare a usare una nuova arma, eh? Beh, allora dovresti parlare con Bixi o Buliwyf alla bottega d'armi Timberline Arms, <ragazzo/ragazza>. Conoscono le armi, dalle asce agli... ehm... zweihander.", "." },
+  ["ba0236cdf16d2da0"] = { "Ah, quindi andiamo dritti al punto?", "." },
   ["ba03416b9867401c"] = { "Anathera e Latherion combatterono schiena contro schiena dove la battaglia era più fitta. Due amanti decisi a sopravvivere insieme alla guerra.", "." },
   ["ba04153507b8795c"] = { "Sappiano tutti che {name}, {class} dell'⟦Horde=Orda⟧, ha conquistato il rispetto imperituro del Capoguerra. Ha condotto con grande diplomazia i rapporti con il ⟦Timbermaw Hold=Rifugio dei Mordilegno⟧ e ha compiuto per loro azioni valorose a nostro nome. Ha fatto molto più di quanto il dovere richiedesse. Tre urrà per {name}, <un/una> <vero/vera> <eroe/eroina> dell'⟦Horde=Orda⟧!", "." },
   ["ba05ca0a7b6376eb"] = { "Qui dimora un orrore indicibile, mortale. ⟦C'Thun=C'thun⟧ e i suoi adoratori non sono solo un affronto alla natura: la loro esistenza preannuncia la distruzione di Azeroth come la conosciamo.\n\nMerithra si sacrificò mille anni fa insieme a Caelestrasz e Arygos, perché anche loro lo sapevano. Siamo qui per il nostro giuramento di tornare per loro, ma siamo qui anche perché ⟦C'Thun=C'thun⟧ va fermato!", "." },

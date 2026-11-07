@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["2a9687227f2dfaa2"] = { "<Benvenuto/Benvenuta> al quartier generale dell'⟦SI:7=IR:7⟧, {name}.", "." },
   ["2a9728f3a19d2087"] = { "Be', qualunque cosa sia, funziona proprio bene!", "." },
   ["2aa4a2231502bb99"] = { "Grrr, che vuoi, {race}? Oh, sarai qui per i controfiletti di lupo per l'imminente Guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Sì, hai sentito bene, li sto raccogliendo io, e allora? Hai una pila fresca per me? Me ne servono solo $2096w, e sembra che al momento ne abbiamo $2095w.", "." },
+  ["2aa76945285608a0"] = { "È proprio così, Leonid. Ho apprezzato la nostra corrispondenza, ma mi fa piacere che tu sia finalmente venuto di persona a Forte Bandarion.", "." },
   ["2ab2a5caf1be3cc4"] = { "In piedi e alle armi, cittadini di ⟦Darkshire=Borgoscuro⟧! Un abominio non morto si avvicina lungo la strada!", "." },
   ["2ab9d79b66d97634"] = { "Salve, {class}. Posso aiutarti in qualcosa?", "." },
   ["2ac02f87f082ae3e"] = { "Dopo aver attirato la sua attenzione (e puoi contarci: se ti vede vicino alla torre, avrai fin troppa della sua attenzione), mettiti di fronte a lui ed esegui lo Shattered /Salute. Lascia che ti mostri....", "." },

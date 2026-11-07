@@ -42,3 +42,4 @@
 {"id": "53eb8fa92fedb60a", "field": "text", "en": "|cffffff00The Plaguewood Tower has been taken by the Alliance!|r", "hash": "53eb8fa92fedb60a", "src": "vmangos@13b49dc"}
 {"id": "53fd4406ce21c39e", "field": "text", "en": "The secret to the knife is to keep it hidden until the moment you strike.", "hash": "53fd4406ce21c39e", "src": "vmangos@13b49dc"}
 {"id": "53fd9387c8440137", "field": "text", "en": "Ah, smell the fine salt air!  'Tis always nice to return to our home port of Booty Bay.", "hash": "53fd9387c8440137", "src": "vmangos@13b49dc"}
+{"id": "53fe199b44f747b3", "field": "text", "en": "That is why it is so important that we stay.", "hash": "53fe199b44f747b3", "src": "collector@1.60.1.70862"}

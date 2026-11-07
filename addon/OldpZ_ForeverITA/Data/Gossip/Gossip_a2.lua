@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["a29edf868120f52f"] = { "È meglio dei disegni nei tomi di storia.", "." },
   ["a2a01226dfe65ef6"] = { "Va bene, va bene... dammi un minuto per riposare. Me le hai suonate per bene.", "." },
   ["a2a0820b57e19010"] = { "Druidi? Non ho visto druidi da queste parti. C'è però un distretto di ⟦Stormwind=Roccavento⟧ che gli elfi della notte hanno fatto proprio.", "." },
+  ["a2a9b112b63a4252"] = { "Mi dispiace, Leonid, ma devo rifiutare. Molto è cambiato, ma i Reietti sono ancora il popolo che abbiamo giurato di proteggere.", "." },
   ["a2b01da73756fef9"] = { "Prendetelo!", "." },
   ["a2b23d8a5bf0abb1"] = { "Ben trovati, viaggiatori di ⟦Duskwood=Boscovespro⟧! La mia incredibile merce è in vendita per poco tempo a ⟦Darkshire=Borgoscuro⟧. Affrettatevi!", "." },
   ["a2b4c01388511582"] = { "E ora la guerra, lei sta per arrivare. Resta solo da mandare tutte queste merci e armi alla ⟦Cenarion Hold=Fortezza Cenariana⟧ a ⟦Silithus=Silitus⟧, e sarà fatto entro un giorno. Poi qualche anima coraggiosa dovrà suonare il gong vicino alle porte di ⟦Ahn'Qiraj=Ahn'qiraj⟧ per aprirle e dare inizio alla guerra.", "." },
