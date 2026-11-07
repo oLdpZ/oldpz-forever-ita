@@ -17,7 +17,7 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 | | In italiano |
 |---|---|
 | Missioni | 4.775 |
-| Righe di dialogo dei PNG | 10.888 |
+| Righe di dialogo dei PNG | 10.901 |
 | Pagine di libri | 924 |
 | Pagine di lettere | 208 |
 | Tooltip degli oggetti | 10.223 |
