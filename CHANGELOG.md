@@ -35,6 +35,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Tooltip degli ultimi incantesimi rimasti in italiano: abilità delle creature e dei famigli, effetti di eventi, cavalcature e oggetti (circa 2.300 righe). Ora quasi tutti i tooltip delle abilità sono in italiano.
 
 ### Fixed
+- Nomi dei mostri nuovi di Forever (per esempio «Rabid Forest Wolf», «Vile Fin Attacker»): non sono in nessuna tabella del gioco, il server li manda quando li incontri. Ora la raccolta dei testi li salva quando compaiono sul bersaglio, sulle targhette o nel tooltip, così arrivano con il prossimo invio e vengono tradotti.
 - Missioni da dungeon, incursione o campagna: il titolo nella finestra della missione e nel diario ora è in italiano. Il gioco mette un'icona davanti al loro titolo e la mod, non riconoscendo più il titolo inglese, lo lasciava com'era (per esempio «The Power to Destroy...»).
 - Nomi degli oggetti fra le ricompense di una missione: ora sono in italiano anche quando il gioco li scrive in ritardo, appena arrivano i dati dell'oggetto (per esempio «Calzoni dell'Oltretomba» invece di «Ghastly Trousers»).
 - Casa d'aste: aprirla non dà più un errore Lua, e la sua traduzione si attiva tutta. Al caricamento le liste dell'asta non sono ancora pronte e la mod provava a leggerne le righe: l'errore interrompeva la traduzione a metà.

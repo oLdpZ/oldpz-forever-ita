@@ -65,6 +65,22 @@ describe("Core/UnitNames", function()
     assert.is_nil(U.name(SENANI, ""))
   end)
 
+  it("a creature with no row, or another English on its id, is recorded for translation; a kept row is not",
+  function()
+    local recorded = {}
+    local record = WFJ.Collector.record
+    WFJ.Collector.record = function(kind, id, field, en) recorded[#recorded + 1] = { kind, id, field, en } end
+    assert.is_nil(U.name("Creature-0-1-2-3-999999-0000", "Rabid Forest Wolf")) -- a mob Forever added
+    assert.is_nil(U.name(SENANI, "Senani Stormheart")) -- Forever renamed it
+    WFJ.Data.add("unit", { [99999903] = { nil, nil, 0x282b2a44, nil, "em" } })
+    assert.is_nil(U.name("Creature-0-1-2-3-99999903-0000", "Senani Thunderheart")) -- kept English on purpose
+    assert.is_nil(U.subname("Creature-0-1-2-3-999998-0000", "Wolf Trainer")) -- subnames: not recorded
+    assert.is_nil(U.name("Player-1-0ABCDEF0", "Someone")) -- never a player
+    assert.are.same({ { "npc", 999999, "name", "Rabid Forest Wolf" }, { "npc", 12696, "name", "Senani Stormheart" } },
+      recorded)
+    WFJ.Collector.record = record
+  end)
+
   it("subname reads the subname slot", function()
     WFJ.Data.add("unit", { [99999904] = { nil, "Maestro di prova", nil, 0x282b2a44, "m." } })
     assert.are.equal("Maestro di prova", U.subname("Creature-0-1-2-3-99999904-0000", "Senani Thunderheart"))

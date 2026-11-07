@@ -33,10 +33,21 @@ local function secret(v)
   return type(isSecret) == "function" and isSecret(v) and true or false
 end
 
+-- A creature name the shipped data has no row for (a mob Forever added: it is in no table the pipeline reads, the
+-- server sends it) or whose English is not the row's (a Forever rename) goes to the collector as an "npc" line, so the
+-- next send brings it in for translation. A kept-English row with its own English is never recorded. Once per
+-- creature and text: the answer cache below holds the miss.
+local function recordMiss(field, id, entry, shown)
+  if field ~= "name" then return end
+  if entry ~= nil and (entry.h1 == nil or WFJ.Hash.h32x2(WFJ.Normalize.v1(shown)) == entry.h1) then return end
+  WFJ.Collector.record("npc", id, "name", shown)
+end
+
 local function compute(field, guid, shown)
   local id = WFJ.Collector.creatureId(guid)
   if id == nil then return nil end
   local entry = WFJ.Lookup.get("unit." .. field, id)
+  recordMiss(field, id, entry, shown)
   if entry == nil or type(entry.ja) ~= "string" or entry.ja == "" or entry.h1 == nil then return nil end
   if WFJ.Hash.h32x2(WFJ.Normalize.v1(shown)) ~= entry.h1 then return nil end
   return entry.ja
