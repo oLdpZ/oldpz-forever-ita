@@ -327,6 +327,12 @@ local function showRow(row)
   return n
 end
 
+-- A ScrollBox's rows can be walked only once it has a view: ScrollBoxListMixin:ForEachFrame indexes GetView()
+-- (ScrollBox.lua:594–596), nil until the client sets the view; the error stopped the setup at load.
+local function hasView(box)
+  return type(box.GetView) ~= "function" or box:GetView() ~= nil
+end
+
 -- ScrollUtil callback: (owner, frame, elementData) on initialization, (frame, elementData) on the existing-frames
 -- pass. Returns nothing (ForEachFrame stops at the first truthy return).
 function AuctionHouse.onRow(a, b)
@@ -350,7 +356,7 @@ function AuctionHouse.showList(prefix, list)
     end
   end
   local box = list.ScrollBox
-  if type(box) == "table" and type(box.ForEachFrame) == "function" then
+  if type(box) == "table" and type(box.ForEachFrame) == "function" and hasView(box) then
     box:ForEachFrame(function(row) n = n + showRow(row) end)
   end
   WFJ.Render.updateBanner(SURFACE)
@@ -403,6 +409,10 @@ local function hook(target, method, fn)
   if type(target) == "table" and type(target[method]) == "function" then hooksecurefunc(target, method, fn) end
 end
 
+local function onRows(util, box, fn)
+  util.AddInitializedFrameCallback(box, fn, AuctionHouse, hasView(box))
+end
+
 local function hookList(prefix, list, util)
   if type(list) ~= "table" then return end
   local function shown() AuctionHouse.showList(prefix, list) end
@@ -416,7 +426,7 @@ local function hookList(prefix, list, util)
   end
   if type(util) == "table" and type(util.AddInitializedFrameCallback) == "function"
       and type(list.ScrollBox) == "table" then
-    util.AddInitializedFrameCallback(list.ScrollBox, AuctionHouse.onRow, AuctionHouse, true)
+    onRows(util, list.ScrollBox, AuctionHouse.onRow)
   end
 end
 
@@ -461,7 +471,7 @@ function AuctionHouse.setup()
   for _, l in ipairs(LISTS) do hookList(l[1], get(l[1]), util) end
   local summary = get("summary")
   if type(summary) == "table" and type(util) == "table" and type(util.AddInitializedFrameCallback) == "function" then
-    util.AddInitializedFrameCallback(summary, AuctionHouse.onSummaryLine, AuctionHouse, true)
+    onRows(util, summary, AuctionHouse.onSummaryLine)
   end
   for i, t in ipairs(TOOLTIPS) do WFJ.HelpTooltip.register(get("tip" .. i), t[2]) end
   AuctionHouse.showAll() -- what the client already wrote (the addon may load after the frame was shown)

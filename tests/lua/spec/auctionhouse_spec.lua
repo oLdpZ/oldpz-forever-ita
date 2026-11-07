@@ -336,6 +336,27 @@ describe("the auction house on Forever", function()
     assert.has_no.errors(function() assert.is_false(WFJ.AuctionHouse.init()) end)
   end)
 
+  it("a list with no view yet (the client at load) is hooked without walking its rows; rows still translate", function()
+    load()
+    local frame = loadAuctionHouse()
+    -- ScrollBoxListMixin:ForEachFrame (ScrollBox.lua:594–596) indexes GetView(), nil before the view is set
+    local boxes = { frame.BrowseResultsFrame.ItemList.ScrollBox, frame.AuctionsFrame.SummaryList.ScrollBox }
+    for _, box in ipairs(boxes) do
+      box.GetView = function() return nil end
+      box.ForEachFrame = function(self) return self:GetView():ForEachFrame() end
+    end
+    assert.has_no.errors(function()
+      assert.is_true(WFJ.AuctionHouse.init())
+      frame:Show()
+    end)
+    assert.are.equal("購入", frame.BuyTab:GetText()) -- the setup ran to its end
+    assert.are.equal(1, #boxes[1].initCallbacks)
+    assert.are.equal(1, #boxes[2].initCallbacks)
+    local row = { cells = {} } -- the view is set, a row is initialized: the callback still sees it
+    boxes[2].GetView = function() return {} end
+    assert.has_no.errors(function() boxes[2]:initFrame(row, {}) end)
+  end)
+
   it("the addon never loads → init is false and nothing is set up", function()
     load()
     assert.has_no.errors(function() assert.is_false(WFJ.AuctionHouse.init()) end)
