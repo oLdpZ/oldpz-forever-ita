@@ -133,6 +133,50 @@ describe("UI/QuestFrame: accept / progress / turn-in windows", function()
     assert.are.same({ "quest.title", 2 }, lookups[1])
   end)
 
+  it("a dungeon quest's title keeps the client's icon link in front of the Japanese; Alt gives the English back",
+  function()
+    -- QuestUtils_DecorateQuestText: QuestUtils_GetQuestDecorationLink(tagText, id, atlas, 14, 14) .. " " .. title
+    local icon = "|HDungeon:2|h|A:Dungeon:14:14|a|h "
+    Stub.quest.titlePrefix = icon
+    Stub.showDetail()
+    assert.are.equal(icon .. "Sharptalonの鉤爪", QuestInfoTitleHeader:GetText())
+    assert.are.equal("Silverwind Refugeの説明文", QuestInfoDescriptionText:GetText())
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    assert.are.equal(icon .. "Sharptalon's Claw", QuestInfoTitleHeader:GetText())
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    assert.are.equal(icon .. "Sharptalonの鉤爪", QuestInfoTitleHeader:GetText())
+    QF.onShowRewards() -- a redraw without the client rewriting: kept
+    assert.are.equal(icon .. "Sharptalonの鉤爪", QuestInfoTitleHeader:GetText())
+    QuestFrame:Hide()
+    assert.are.equal(icon .. "Sharptalon's Claw", QuestInfoTitleHeader:GetText())
+    -- anything in front that is not a link is not a decoration: left English
+    Stub.quest.titlePrefix = "Old: "
+    Stub.showDetail()
+    assert.are.equal("Old: Sharptalon's Claw", QuestInfoTitleHeader:GetText())
+  end)
+
+  it("a reward item's name written late (its data arriving after any timer) is still given to the names", function()
+    local name = CreateFrame("Frame"):CreateFontString() -- the button's Name (parentKey, no global name)
+    _G.QuestInfoRewardsFrame.RewardButtons = { { Name = name } }
+    local seen, real = {}, WFJ.Render.name
+    WFJ.Render.name = function(surface, key, fs, kind)
+      seen[#seen + 1] = { surface, key, fs:GetText(), kind }
+      if fs:GetText() == "Ghastly Trousers" then fs:SetText("Calzoni dell'Oltretomba") end -- our write: no loop
+      return 1
+    end
+    QF.onShowRewards()
+    local before = #seen
+    name:SetText("Ghastly Trousers") -- item:ContinueOnItemLoad, seconds later
+    assert.are.same({ "questframe.rewardnames", "reward.1", "Ghastly Trousers", "nameitem" }, seen[before + 1])
+    assert.are.equal(before + 1, #seen) -- our own write did not come back through the hook
+    assert.are.equal("Calzoni dell'Oltretomba", name:GetText())
+    QF.onShowRewards() -- hooked once
+    name:SetText("Dredgemire Leggings")
+    assert.are.equal("Dredgemire Leggings", seen[#seen][3])
+    WFJ.Render.name = real
+    _G.QuestInfoRewardsFrame.RewardButtons = nil
+  end)
+
   it("a reward redraw (item data arriving on a first open) keeps the Japanese prose and the banner", function()
     Stub.showDetail()
     QF.onShowRewards()

@@ -133,6 +133,52 @@ local function isText(w)
   return type(w) == "table" and type(w.GetText) == "function" and type(w.SetText) == "function"
 end
 
+-- The icon links mainline puts in front of a quest title (QuestInfo_GetTitle → QuestUtils_DecorateQuestText,
+-- blizzard_framexmlutil/mainline/questutils.lua:728–758): a dungeon, raid, campaign, replay or disabled quest gets one
+-- or more QuestUtils_GetQuestDecorationLink(…) .. " " ("|H<type>:<id>|h|A:<atlas>:w:h|a|h "), then the API English.
+-- → the links, when `text` is exactly links .. en | nil
+function QuestFrame.iconPrefix(text, en)
+  if type(text) ~= "string" or type(en) ~= "string" or en == "" or #text <= #en
+      or text:sub(-#en) ~= en then return nil end
+  local head = text:sub(1, #text - #en)
+  local rest = head
+  repeat
+    local link = rest:match("^|H[^|]*|h.-|h ")
+    if not link then return nil end
+    rest = rest:sub(#link + 1)
+  until rest == ""
+  return head
+end
+
+-- A title widget seen through its icon links: GetText returns the text after them, SetText writes them back in front.
+-- One adapter per widget (weak-keyed), so a record keeps its widget identity; the links are set on every show.
+local prefixed = setmetatable({}, { __mode = "k" })
+function QuestFrame.titleWidget(fs, en)
+  if type(fs) ~= "table" or type(fs.GetText) ~= "function" then return fs end
+  local text = fs:GetText()
+  local head = QuestFrame.iconPrefix(text, en)
+  local a = prefixed[fs]
+  if not head then
+    -- our Japanese already inside the same links (a redraw the client did not rewrite): the same adapter
+    if a and type(text) == "string" and a.prefix ~= "" and text:sub(1, #a.prefix) == a.prefix then return a end
+    return fs
+  end
+  if not a then
+    a = { prefix = "" }
+    function a.GetText()
+      local t = fs:GetText()
+      if type(t) == "string" and t:sub(1, #a.prefix) == a.prefix then return t:sub(#a.prefix + 1) end
+      return t
+    end
+    function a.SetText(_, t) fs:SetText(a.prefix .. (t or "")) end
+    function a.GetFont() return fs:GetFont() end
+    function a.SetFont(_, path, size, flags) return fs:SetFont(path, size, flags) end
+    prefixed[fs] = a
+  end
+  a.prefix = head
+  return a
+end
+
 local function refitFor(scrollKey)
   return function()
     local scroll = Compat.get(DECLARE, scrollKey)
@@ -223,6 +269,7 @@ function QuestFrame.showPanel(panelName)
     local field, widgetKey, getter = spec[1], spec[2], spec[3]
     local fs = Compat.get(DECLARE, widgetKey)
     local en = getter()
+    if field == "title" then fs = QuestFrame.titleWidget(fs, en) end
     -- text keyed by its English, used only when the line is not the quest's own (ADR-054): a conditional
     -- description (another wording of the quest for this character), or the progress / turn-in text of a quest
     -- Forever repeats under another id with the same text
@@ -344,13 +391,31 @@ end
 -- reward headings again (questinfo.lua:765) after the panel was shown. The open panel is shown again.
 -- The reward buttons' item names: QuestInfo_ShowRewards fills them when the item is loaded, so again a moment
 -- later [verified: mainline/questinfo.lua:540–550].
+-- The name of an item not yet loaded is written whenever its data arrives (item:ContinueOnItemLoad, questinfo.lua:540–
+-- 550), which can be later than any timer: each reward button's Name is also post-hooked on SetText, once. Our own
+-- write comes back through the hook and stops at NameText's record check.
+local namedHooked = setmetatable({}, { __mode = "k" })
+local naming = false -- our own write: the hook leaves it alone (the record is stored after the write)
+local function nameOne(key, fs)
+  if naming then return end
+  naming = true
+  local ok, err = pcall(WFJ.Render.name, "questframe.rewardnames", key, fs, "nameitem")
+  naming = false
+  if not ok then error(err, 0) end
+end
 local function showRewardNames()
   local rewards = Compat.resolve("QuestInfoRewardsFrame")
   local buttons = type(rewards) == "table" and rewards.RewardButtons or nil
   if type(buttons) ~= "table" then return end
   for i, button in ipairs(buttons) do
-    if type(button) == "table" and type(button.Name) == "table" then
-      WFJ.Render.name("questframe.rewardnames", "reward." .. i, button.Name, "nameitem")
+    local fs = type(button) == "table" and button.Name or nil
+    if type(fs) == "table" then
+      local key = "reward." .. i
+      nameOne(key, fs)
+      if not namedHooked[fs] and type(fs.SetText) == "function" then
+        namedHooked[fs] = true
+        hooksecurefunc(fs, "SetText", function() nameOne(key, fs) end)
+      end
     end
   end
 end

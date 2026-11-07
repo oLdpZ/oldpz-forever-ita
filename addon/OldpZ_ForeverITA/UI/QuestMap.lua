@@ -244,6 +244,11 @@ end
 
 local function showField(pane, field, en, id)
   local fs = get(field)
+  -- a dungeon / raid / campaign quest's title carries the client's icon links in front (UI/QuestFrame.titleWidget)
+  local QF = WFJ.QuestFrame
+  if field == "title" and type(QF) == "table" and type(QF.titleWidget) == "function" then
+    fs = QF.titleWidget(fs, en)
+  end
   local variant = field == "description" and type(WFJ.ShippedGossipKey) == "function"
     and not (type(WFJ.IsQuestFieldEnglish) == "function" and WFJ.IsQuestFieldEnglish(id, field, en))
       and WFJ.ShippedGossipKey(en)

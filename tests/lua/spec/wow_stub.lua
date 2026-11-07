@@ -738,7 +738,8 @@ function Stub.installQuestAPI()
   _G.QuestInfo_Display = function(template, parentFrame)
     -- QuestInfo.lua: ShowTitle / ShowDescriptionText / ShowObjectivesText / ShowRewardText
     if template.questLog then return end
-    QuestInfoTitleHeader:SetText(GetTitleText())
+    -- mainline QuestInfo_ShowTitle decorates the title (QuestUtils_DecorateQuestText): Stub.quest.titlePrefix
+    QuestInfoTitleHeader:SetText((Stub.quest and Stub.quest.titlePrefix or "") .. GetTitleText())
     if parentFrame == QuestDetailScrollChildFrame then
       QuestInfoDescriptionText:SetText(GetQuestText())
       QuestInfoObjectivesText:SetText(GetObjectiveText())

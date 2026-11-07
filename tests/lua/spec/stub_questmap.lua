@@ -191,6 +191,8 @@ function Q.install()
     -- QuestInfo_ShowTitle: decorated, or the failed format (questinfo.lua:137–161)
     local title = _G.C_QuestLog.GetTitleForQuestID(_G.C_QuestLog.GetSelectedQuest()) or ""
     if q.decorated then title = "|A:questlog-questtypeicon-dungeon:16:16|a" .. title end
+    -- QuestUtils_DecorateQuestText's icon link (mainline questutils.lua:704–758)
+    if q.titlePrefix then title = q.titlePrefix .. title end
     if q.failed then title = S("QUEST_TITLE_FORMAT_FAILED"):format(title) end
     _G.QuestInfoTitleHeader.text = title
     local description, objectives = _G.GetQuestLogQuestText()

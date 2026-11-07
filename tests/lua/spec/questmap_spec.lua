@@ -132,6 +132,14 @@ describe("UI/QuestMap: the camelot quest log", function()
       assert.is_nil(SS.get(QM.INFO, "title"))
     end)
 
+    it("a dungeon quest's title: the Japanese after the client's icon link, the link kept", function()
+      local icon = "|HDungeon:5|h|A:Dungeon:14:14|a|h "
+      Q.quests[5].titlePrefix = icon
+      Q.showDetails(5)
+      assert.are.equal(icon .. "狼の毛皮", QuestInfoTitleHeader:GetText())
+      assert.are.equal("森の狼が増えている。", QuestInfoDescriptionText:GetText())
+    end)
+
     it("an untranslated quest shows the client's English; no selection records nothing", function()
       WFJ.Settings.set("marker.missing", false) -- on by default; this test reads the text, not the marker
       Q.showDetails(5)
