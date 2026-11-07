@@ -25,7 +25,7 @@ def test_the_addon_file_holds_no_english():
     assert lua_string('Spada "Corta"') in text
 
 
-def test_coined_names_are_objects_and_spells_only(tmp_path):
+def test_coined_names_are_objects_spells_and_zones_only(tmp_path):
     """`pipeline/nomi_coniati.tsv`: the project's names for what Forever added (no Italian client has them)."""
     import pytest
 
@@ -33,10 +33,12 @@ def test_coined_names_are_objects_and_spells_only(tmp_path):
 
     good = tmp_path / "ok.tsv"
     good.write_text("tipo\ten\tit\tnota\noggetto\tCamp Tent\tTenda da Campo\t\n"
-                    "abilita\tBasic Campfire\tFuoco da Campo Semplice\tcampeggio\n", encoding="utf-8")
+                    "abilita\tBasic Campfire\tFuoco da Campo Semplice\tcampeggio\n"
+                    "zona\tBandarion Keep\tForte Bandarion\tForever\n", encoding="utf-8")
     assert list(coined_rows(good)) == [("oggetto", "Camp Tent", "Tenda da Campo"),
-                                       ("abilita", "Basic Campfire", "Fuoco da Campo Semplice")]
-    for bad in ("zona\tElwynn\tElwynn\t\n", "oggetto\tCamp Tent\t\t\n"):
+                                       ("abilita", "Basic Campfire", "Fuoco da Campo Semplice"),
+                                       ("zona", "Bandarion Keep", "Forte Bandarion")]
+    for bad in ("fazione\tElwynn\tElwynn\t\n", "oggetto\tCamp Tent\t\t\n"):
         path = tmp_path / "bad.tsv"
         path.write_text("tipo\ten\tit\tnota\n" + bad, encoding="utf-8")
         with pytest.raises(ValueError):

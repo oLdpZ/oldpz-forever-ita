@@ -433,3 +433,140 @@ oggetto	Apprentice's Spellstaff	Bastone Magico dell'Apprendista	Forever
 oggetto	Apprentice's Blouse	Camicetta dell'Apprendista	Forever
 oggetto	Bottles of Whispering Elixir	Bottiglie di Elisir Sussurrante	plurale di Bottle of Whispering Elixir
 oggetto	Whispering Elixir	Elisir Sussurrante	Forever (Tirisfal)
+zona	Arcane Sanctum	Santuario Arcano	Forever; ufficiale itIT (AreaTable per nome)
+zona	Dreadwatch Outpost	Avamposto di Cuposguardo	Forever; ufficiale itIT (AreaTable per nome)
+zona	Eastwind Shore	Costa Vento di Levante	Forever; ufficiale itIT (AreaTable per nome)
+zona	Emberstone Mine	Miniera di Pietrardente	Forever; ufficiale itIT (AreaTable per nome)
+zona	Emberstone Village	Pietrardente	Forever; ufficiale itIT (AreaTable per nome)
+zona	Gilnean Coast	Costa Gilneana	Forever; ufficiale itIT (AreaTable per nome)
+zona	Gilnean Stronghold	Roccaforte Gilneana	Forever; ufficiale itIT (AreaTable per nome)
+zona	Gilneas City	Città di Gilneas	Forever; ufficiale itIT (AreaTable per nome)
+zona	Hayward Fishery	Porticciolo dei Tagliafieno	Forever; ufficiale itIT (AreaTable per nome)
+zona	Horde Landing	Approdo dell'Orda	Forever; ufficiale itIT (AreaTable per nome)
+zona	Mines	Miniere	Forever; ufficiale itIT (AreaTable per nome)
+zona	New Avalon	Nuova Avalon	Forever; ufficiale itIT (AreaTable per nome)
+zona	Northern Headlands	Alture Settentrionali	Forever; ufficiale itIT (AreaTable per nome)
+zona	Ruins	Rovine	Forever; ufficiale itIT (AreaTable per nome)
+zona	Ruins of Gilneas	Rovine di Gilneas	Forever; ufficiale itIT (AreaTable per nome)
+zona	Rutsak's Guard	Presidio di Rutsak	Forever; ufficiale itIT (AreaTable per nome)
+zona	Shipwreck Cove	Baia dei Relitti	Forever; ufficiale itIT (AreaTable per nome)
+zona	Shrine of Aviana	Sacrario di Aviana	Forever; ufficiale itIT (AreaTable per nome)
+zona	Skywall	Celaria	Forever; ufficiale itIT (AreaTable per nome)
+zona	Storm Cliffs	Scogliere della Tempesta	Forever; ufficiale itIT (AreaTable per nome)
+zona	Stormwind Harbor	Porto di Roccavento	Forever; ufficiale itIT (AreaTable per nome)
+zona	Stranglethorn Vale	Valle di Rovotorto	Forever; ufficiale itIT (AreaTable per nome)
+zona	Tempest's Reach	Riva della Tempesta	Forever; ufficiale itIT (AreaTable per nome)
+zona	The Blackwald	Bosconero	Forever; ufficiale itIT (AreaTable per nome)
+zona	The Eventide	Piazza del Vespro	Forever; ufficiale itIT (AreaTable per nome)
+zona	The Overlook	Osservatorio	Forever; ufficiale itIT (AreaTable per nome)
+zona	The Shaper's Terrace	Terrazza del Modellatore	Forever; ufficiale itIT (AreaTable per nome)
+zona	Waterworks	Mulino ad Acqua	Forever; ufficiale itIT (AreaTable per nome)
+zona	Whispering Forest	Foresta Sussurrante	Forever; ufficiale itIT (AreaTable per nome)
+zona	Abandoned Tower	Torre Abbandonata	Forever; coniato
+zona	Ashwood's Fall	Caduta di Ashwood	Forever; coniato
+zona	Bandarion Keep	Forte Bandarion	Forever; coniato
+zona	Bandit Hideout	Rifugio dei Banditi	Forever; coniato
+zona	Battle for Gilneas	Battaglia per Gilneas	Forever; coniato
+zona	Beneath the Double Rainbow	Sotto il Doppio Arcobaleno	Forever; coniato
+zona	Bristle Hills	Colline Ispide	Forever; coniato
+zona	Bristleback Retreat	Rifugio dei Mantotergo	Forever; coniato (Mantotergo ufficiale)
+zona	Camp	Accampamento	Forever; coniato
+zona	Camp Gev'rek	Campo Gev'rek	Forever; coniato
+zona	City of Dalaran	Città di Dalaran	Forever; coniato
+zona	Cradle of Tranquility	Culla della Tranquillità	Forever; coniato
+zona	Darkspear Islands	Isole Lanciascura	Forever; coniato (Lanciascura ufficiale)
+zona	Demon Fall Barrow	Tumulo della Caduta del Demone	Forever; coniato
+zona	Dragonmaw Retreat	Rifugio delle Fauci di Drago	Forever; coniato (Fauci di Drago ufficiale)
+zona	Dreambound Pinnacle	Pinnacolo del Sogno	Forever; coniato
+zona	East Pylon Watchtower	Torre di Guardia del Pilone Orientale	Forever; coniato
+zona	Elbrim's Farm	Fattoria di Elbrim	Forever; coniato
+zona	Elderwild	Selva Antica	Forever; coniato
+zona	Elsewhen	Altroquando	Forever; coniato
+zona	Evenshade's Overlook	Belvedere di Evenshade	Forever; coniato
+zona	Excavation Site: Wetlands	Sito di Scavo: Paludi Grigie	Forever; coniato (Paludi Grigie ufficiale)
+zona	Fairweather Stables	Scuderie del Bel Tempo	Forever; coniato
+zona	Falaath Village	Villaggio di Falaath	Forever; coniato
+zona	Farholde Keep	Forte Farholde	Forever; coniato
+zona	Fel Grove	Boschetto Vile	Forever; coniato
+zona	Felblood Scar	Cicatrice Sanguevile	Forever; coniato
+zona	Forlorn Gardens	Giardini Desolati	Forever; coniato
+zona	Forlorn Pit	Fossa Desolata	Forever; coniato
+zona	Gloomrise	Altura Tetra	Forever; coniato
+zona	Gustberry Lowlands	Pianure di Ventobacca	Forever; coniato
+zona	Half-Pint Tavern	Taverna del Mezzo Boccale	Forever; coniato
+zona	Hyjal Crater	Cratere di Hyjal	Forever; coniato
+zona	Ironforge Submarine Facility	Base Sottomarina di Forgiardente	Forever; coniato (Forgiardente ufficiale)
+zona	Itharius's Cave	Grotta di Itharius	Forever; coniato
+zona	Karazhan Crypts	Cripte di Karazhan	Forever; coniato
+zona	King's Alley	Vicolo del Re	Forever; coniato
+zona	Krol'dok Stronghold	Roccaforte di Krol'dok	Forever; coniato
+zona	Legashi Stronghold	Roccaforte Legashi	Forever; coniato
+zona	Lordaeron Graveyard	Cimitero di Lordaeron	Forever; coniato
+zona	Lordamere Overlook	Belvedere di Lordamere	Forever; coniato
+zona	Lost Dig Site	Scavo Perduto	Forever; coniato
+zona	Lost Marsh	Palude Perduta	Forever; coniato
+zona	Magram Front	Fronte Magram	Forever; coniato
+zona	Malorne's Retreat	Rifugio di Malorne	Forever; coniato
+zona	Market Street	Via del Mercato	Forever; coniato
+zona	Meadowsbrook	Rivoprato	Forever; coniato
+zona	Mine	Miniera	Forever; coniato
+zona	Mourning's Rest	Riposo del Lutto	Forever; coniato
+zona	Naze of Shirvallah	Promontorio di Shirvallah	Forever; coniato
+zona	Nightclaw Cavern	Caverna Artiglio Notturno	Forever; coniato
+zona	Old Dalaran Ruins	Rovine della Vecchia Dalaran	Forever; coniato
+zona	Outcast Hideaway	Nascondiglio dei Reietti	Forever; coniato
+zona	Overlook Standing Stones	Pietre Erette del Belvedere	Forever; coniato
+zona	Pagle's Pointe	Punta di Pagle	Forever; coniato
+zona	Pillar of Assimilation	Pilastro dell'Assimilazione	Forever; coniato
+zona	Poacher's Den	Covo dei Bracconieri	Forever; coniato
+zona	Powderfuse Port	Porto Polveraccesa	Forever; coniato
+zona	Prison	Prigione	Forever; coniato
+zona	Rise of Spirits	Ascesa degli Spiriti	Forever; coniato
+zona	Riverglades	Radure del Fiume	Forever; coniato
+zona	Rohashi Spires	Guglie Rohashi	Forever; coniato
+zona	Ruins of Ban'aethal	Rovine di Ban'aethal	Forever; coniato
+zona	Sanctum of Storms	Santuario delle Tempeste	Forever; coniato
+zona	Scalding Ridge	Cresta Ustionante	Forever; coniato
+zona	Scarlet Base Camp	Campo Base Scarlatto	Forever; coniato
+zona	Scarlet Enclave	Enclave Scarlatta	Forever; coniato
+zona	Shadowgale Forest	Foresta di Ventombra	Forever; coniato
+zona	Shadowvale	Valombra	Forever; coniato
+zona	Shark-Infested Waters	Acque Infestate dagli Squali	Forever; coniato
+zona	Shen'dar Highlands	Altopiani di Shen'dar	Forever; coniato
+zona	Shen'dar Village	Villaggio di Shen'dar	Forever; coniato
+zona	Shriekling Den	Tana degli Strillanti	Forever; coniato
+zona	Shrine of Akir	Sacrario di Akir	Forever; coniato (come Sacrario di Aviana)
+zona	Site of the Guardian	Sito del Guardiano	Forever; coniato
+zona	Skywatcher Plateau	Altopiano dei Vegliacieli	Forever; coniato
+zona	Southern Watch	Guardia Meridionale	Forever; coniato
+zona	Stalker's Thicket	Boscaglia del Predatore	Forever; coniato
+zona	Stomping Grounds	Terre Calpestate	Forever; coniato
+zona	Summit of Eternity	Vetta dell'Eternità	Forever; coniato
+zona	Sunken Hollow	Conca Sommersa	Forever; coniato
+zona	Sunnyglade	Radura Solare	Forever; coniato
+zona	Tainted Foothills	Colline Corrotte	Forever; coniato
+zona	Temple of Ahn'Qiraj	Tempio di Ahn'Qiraj	Forever; coniato
+zona	Terral's Watch	Presidio di Terral	Forever; coniato
+zona	Thalassian Vanguard Camp	Campo dell'Avanguardia Thalassiana	Forever; coniato
+zona	The Bloodfire Pit	Fossa del Fuoco di Sangue	Forever; coniato
+zona	The Burning of Andorhal	L'Incendio di Andorhal	Forever; coniato
+zona	The Drunken Dwarf	Il Nano Ubriaco	Forever; coniato
+zona	The Forbidding Expanse	La Distesa Proibita	Forever; coniato
+zona	The Hall of Thanes	Sala dei Thane	Forever; coniato
+zona	The Searing Basin	Bacino Rovente	Forever; coniato
+zona	Thendal Cave	Grotta di Thendal	Forever; coniato
+zona	Thendal Grove	Boschetto di Thendal	Forever; coniato
+zona	Thendal Standing Stones	Pietre Erette di Thendal	Forever; coniato
+zona	Thendal Village	Villaggio di Thendal	Forever; coniato
+zona	Turner's Logging Camp	Campo di Disboscamento di Turner	Forever; coniato
+zona	Twilight Hollow	Conca del Crepuscolo	Forever; coniato
+zona	Twilight's Shroud	Velo del Crepuscolo	Forever; coniato
+zona	Valanaar Skydocks	Moli Celesti di Valanaar	Forever; coniato
+zona	West Pylon Watchtower	Torre di Guardia del Pilone Occidentale	Forever; coniato
+zona	Wheeler's Grange	Fattoria di Wheeler	Forever; coniato
+zona	Windfield Orchard	Frutteto di Campovento	Forever; coniato
+zona	Windsong Lake	Lago Cantovento	Forever; coniato
+zona	Windsong Standing Stones	Pietre Erette di Cantovento	Forever; coniato
+zona	Windstead	Casavento	Forever; coniato
+zona	Zanza's Rise	Altura di Zanza	Forever; coniato
+zona	Zephras Isle	Isola di Zephras	Forever; coniato

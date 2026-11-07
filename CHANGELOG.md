@@ -34,6 +34,9 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 - Un personaggio femminile vede la reputazione al femminile: Odiata, Avversa, Onorata, Riverita, Osannata (nel pannello della reputazione, in quello della gilda e nei requisiti delle missioni).
 - Tooltip degli ultimi incantesimi rimasti in italiano: abilità delle creature e dei famigli, effetti di eventi, cavalcature e oggetti (circa 2.300 righe). Ora quasi tutti i tooltip delle abilità sono in italiano.
 
+### Added
+- Nomi in italiano per 137 zone che esistono solo in Forever, dove il gioco mostra il nome della zona (scoperta, mappa, minimappa, scritta della zona): «Forte Bandarion», «Villaggio di Shen'dar», «Foresta di Ventombra». Dove il client italiano di Blizzard ha già un nome per quel luogo si usa quello («Città di Gilneas», «Porto di Roccavento», «Nuova Avalon»). Missioni e dialoghi che nominano queste zone verranno allineati in una prossima versione.
+
 ### Fixed
 - Nomi dei mostri nuovi di Forever (per esempio «Rabid Forest Wolf», «Vile Fin Attacker»): non sono in nessuna tabella del gioco, il server li manda quando li incontri. Ora la raccolta dei testi li salva quando compaiono sul bersaglio, sulle targhette o nel tooltip, così arrivano con il prossimo invio e vengono tradotti.
 - Missioni da dungeon, incursione o campagna: il titolo nella finestra della missione e nel diario ora è in italiano. Il gioco mette un'icona davanti al loro titolo e la mod, non riconoscendo più il titolo inglese, lo lasciava com'era (per esempio «The Power to Destroy...»).
