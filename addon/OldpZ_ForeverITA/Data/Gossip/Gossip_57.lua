@@ -21,7 +21,7 @@ WFJ.Data.add("gossip", {
   ["573f16acce326976"] = { "MmmmmMmmmm... Enorme cracker chimicamente modificato....", "." },
   ["5743c82711299fcf"] = { "C'è sempre... il Brandicenere.", "." },
   ["57495169361bf91e"] = { "Premi il pulsante rosso con la scritta «E.C.A.C.».", "." },
-  ["574b701e7f051936"] = { "Hai sentito cos'è successo a Ban'aethal? I Pacificatori avvertono la gente di stare lontana dalle rovine e da tutta la Shadowgale Forest.\r\n\nHo sentito qualcuno alla locanda parlare di malevoli spiriti del vento che sembravano poco più di una sagoma indistinta, come se fossero... svuotati, in qualche modo.\r\n\nMi vengono i brividi solo a pensarci.", "." },
+  ["574b701e7f051936"] = { "Hai sentito cos'è successo a Ban'aethal? I Pacificatori avvertono la gente di stare lontana dalle rovine e da tutta la ⟦Shadowgale Forest=Foresta di Ventombra⟧.\r\n\nHo sentito qualcuno alla locanda parlare di malevoli spiriti del vento che sembravano poco più di una sagoma indistinta, come se fossero... svuotati, in qualche modo.\r\n\nMi vengono i brividi solo a pensarci.", "." },
   ["57519a901c6fb1ff"] = { "Un essere di grande potere si è risvegliato.", "." },
   ["57561b5ecb530a5f"] = { "Era destino, Windsor? Se sei venuto in cerca di morte, allora la profezia si è compiuta. Che la tua coscienza marcisca nella ⟦Twisting Nether=Distorsione Fatua⟧. Finite il resto di questi insetti impiccioni, figli miei. Bolvar, sei stato un burattino piacevole.", "." },
   ["575ce926b1a7e2a7"] = { "Ce l'abbiamo fatta, {name}!", "." },

@@ -51,7 +51,7 @@ WFJ.Data.add("gossip", {
   ["5edf8adb95527836"] = { "Prendilo! Torna da me se il potere dell'Occhio dovesse affievolirsi.", "." },
   ["5ee06338aeafd91a"] = { "Al villaggio c'è un saggio che si chiama ⟦Narm Skychaser=Narm Preda Cielo⟧. Può proseguire il tuo apprendimento sulla via dello Sciamano.", "." },
   ["5ee489aeedae3517"] = { "La pagherete cara quando tornerò dagli abissi!", "." },
-  ["5efb11afdf764656"] = { "Il culto di Al'Aketh sostiene che Al'Akir, il «Signore del Vento», ci salverà dalle nostre attuali sventure qui su Zephras. Se Al'Akir è reale ed è davvero il sovrano di Skywall, perché gli spiriti del vento si sono rifiutati di parlare di lui per così tanto tempo?\r\n\nO non è reale o, peggio ancora, è reale e non è benevolo come sostiene il culto. In ogni caso, niente di ciò che il culto sta facendo è un bene per noi gente comune.", "." },
+  ["5efb11afdf764656"] = { "Il culto di Al'Aketh sostiene che Al'Akir, il «Signore del Vento», ci salverà dalle nostre attuali sventure qui su Zephras. Se Al'Akir è reale ed è davvero il sovrano di ⟦Skywall=Celaria⟧, perché gli spiriti del vento si sono rifiutati di parlare di lui per così tanto tempo?\r\n\nO non è reale o, peggio ancora, è reale e non è benevolo come sostiene il culto. In ogni caso, niente di ciò che il culto sta facendo è un bene per noi gente comune.", "." },
   ["5efd42b68f4725be"] = { "Ehi, Raven...", "." },
   ["5efde0453f398670"] = { "Cerchi Mishiki. Ha una capanna a sud, nel ⟦Sen'jin Village=Villaggio di Sen'jin⟧.", "." },
 })

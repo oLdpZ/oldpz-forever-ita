@@ -52,7 +52,7 @@ WFJ.Data.add("gossip", {
   ["48d0cdabf342ed62"] = { "Portami con te, <signore/signora>.", "." },
   ["48da80090a6d7b6c"] = { "Myolor, un tempo ero Fabbro d'Armi e ora vorrei imparare invece la via del fabbro di armature. Mi insegnerai?", "." },
   ["48e5e291893b037a"] = { "L'Occhio vede tutto ciò che sta entro la sua sfera d'influenza, {class}. Che cosa desideri vedere?", "." },
-  ["48ebc4b8a8d2df84"] = { "Salute, {class}. Ti servono armi?\n\nMi ha addestrato Antarion di Ban'aethal, con segreti tramandati dagli antichi maestri magifabbri di Kalimdor.\n\nSu Zephras Isle non troverai armi migliori delle mie.", "." },
+  ["48ebc4b8a8d2df84"] = { "Salute, {class}. Ti servono armi?\n\nMi ha addestrato Antarion di Ban'aethal, con segreti tramandati dagli antichi maestri magifabbri di Kalimdor.\n\nSull'⟦Zephras Isle=Isola di Zephras⟧ non troverai armi migliori delle mie.", "." },
   ["48ec0275b839214f"] = { "La tua sicurezza è ben fondata, <viaggiatore/viaggiatrice>. Ora la tua vera istruzione può avere inizio!", "." },
   ["48f633907788b022"] = { "Tutto tranquillo a ⟦Sentinel Hill=Guardiacolle⟧, lord Stoutmantle. Però a ⟦Moonbrook=Rivoluna⟧ segnalano grandi movimenti dei Defias.", "." },
   ["48fb7d1cdb189410"] = { "Ora possiamo ricostruire! Per l'⟦Horde=Orda⟧!", "." },

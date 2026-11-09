@@ -39,7 +39,7 @@ WFJ.Data.add("gossip", {
   ["1fb561518e4c2559"] = { "Cosa?! Come osi!", "." },
   ["1fb7c5378b36a862"] = { "<Senza alzare lo sguardo dalle catene, Lotwil tende una mano e agita le dita con impazienza.>\n\nL'ingranaggio, {name}, l'ingranaggio!", "." },
   ["1fb82e6bb6b5ac94"] = { "Molti sono i sentieri della Madre Terra. Ovunque tu decida di viaggiare, possa lei vegliare su di te.", "." },
-  ["1fc7847f62cdbd83"] = { "Shadowgale Forest!\n\nÈ infestata! Infestata, com'è vero che il cielo è blu! Terribili spiriti della foresta, uccelli del terrore con artigli grossi come il tuo braccio! È... un incubo!\n\n<Swimmers si volta verso Donaal e rutta sonoramente.>\n\nNON SONO VANEGGIAMENTI, DONAAL!", "." },
+  ["1fc7847f62cdbd83"] = { "⟦Shadowgale Forest=Foresta di Ventombra⟧!\n\nÈ infestata! Infestata, com'è vero che il cielo è blu! Terribili spiriti della foresta, uccelli del terrore con artigli grossi come il tuo braccio! È... un incubo!\n\n<Swimmers si volta verso Donaal e rutta sonoramente.>\n\nNON SONO VANEGGIAMENTI, DONAAL!", "." },
   ["1fc7ac8488767215"] = { "Raccontami una storia, Skorn.", "." },
   ["1fc8210db1150a0b"] = { "Incredibile! Mi sento... rinascere. Le forze mi tornano!", "." },
   ["1fd751eccc43ced3"] = { "Brandicenere è morto e non ce ne sarà mai un altro come lui. Il Mograine minore è ben lontano dall'uomo che fu suo padre. Lo sai, comandante! Dopotutto, fu proprio la tua guida a causare la morte del gran signore scarlatto Mograine.", "." },

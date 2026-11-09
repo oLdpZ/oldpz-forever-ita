@@ -39,5 +39,5 @@ WFJ.Data.add("gossip", {
   ["71f07c8458ebe4d2"] = { "Ahah!", "." },
   ["71f4a879500d9751"] = { "Non fermerai mai i Reietti, {race}. La Dama Oscura ti farà soffrire.", "." },
   ["71fabdb09e0cbf97"] = { "Aha! Ecco qua!", "." },
-  ["71fbfad1e2055d64"] = { "Ti do il benvenuto alle Fairweather Stables! Mi piacerebbe darti uno dei nostri splendidi galestrider, ma sembra che tu non abbia ancora abbastanza esperienza per cavalcarne uno.\r\n\nA volte sono capricciosi e tendono a disarcionare i cavalieri inesperti, se non li si sa gestire. Sarà un vero piacere darti l'addestramento quando avrai più esperienza come avventuriero e abbastanza monete!", "." },
+  ["71fbfad1e2055d64"] = { "Ti do il benvenuto alle ⟦Fairweather Stables=Scuderie del Bel Tempo⟧! Mi piacerebbe darti uno dei nostri splendidi galestrider, ma sembra che tu non abbia ancora abbastanza esperienza per cavalcarne uno.\r\n\nA volte sono capricciosi e tendono a disarcionare i cavalieri inesperti, se non li si sa gestire. Sarà un vero piacere darti l'addestramento quando avrai più esperienza come avventuriero e abbastanza monete!", "." },
 })

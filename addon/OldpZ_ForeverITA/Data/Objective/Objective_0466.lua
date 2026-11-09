@@ -12,5 +12,5 @@ WFJ.Data.add("objective", {
   [466302] = { "Khan Jehn resuscitato", 0x131df9ab, "." },
   [466600] = { "Parla con Mulara", 0x8678b9fb, "." },
   [466633] = { "Parla con Rathiril Sunlance", 0xd567c2e0, "." },
-  [466639] = { "Trova la casa isolata negli Shen'dar Highlands", 0x9bd70556, "." },
+  [466639] = { "Trova la casa isolata negli ⟦Shen'dar Highlands=Altopiani di Shen'dar⟧", 0x9bd70556, "." },
 })

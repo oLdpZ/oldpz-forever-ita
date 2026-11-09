@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["4796ed04c40c5a5a"] = { "La ⟦Darkmoon Faire=Fiera di Lunacupa⟧ è arrivata in città! Non perderti lo spettacolo più emozionante che tu abbia mai visto!", "." },
   ["4796ed22c40c5a78"] = { "La ⟦Darkmoon Faire=Fiera di Lunacupa⟧ è arrivata in città! Non perderti lo spettacolo più emozionante che tu abbia mai visto?", "." },
   ["4797c005591022a3"] = { "Auguri di stagione, e pace a te!", "." },
-  ["479c8ff4281497dd"] = { "Agente, puoi dirmi cosa sta succedendo qui negli Shen'dar Highlands?", "." },
+  ["479c8ff4281497dd"] = { "Agente, puoi dirmi cosa sta succedendo qui negli ⟦Shen'dar Highlands=Altopiani di Shen'dar⟧?", "." },
   ["47a69c2b8850d66b"] = { "Che le spire dell'odio si dispieghino!", "." },
   ["47a81e8f6ae667d0"] = { "Salute, {class}. Insegno conciatura qui a ⟦Thunder Bluff=Picco del Tuono⟧. In cosa posso esserti utile?", "." },
   ["47ac8e0d94aa744b"] = { "Nessuno passerà!", "." },

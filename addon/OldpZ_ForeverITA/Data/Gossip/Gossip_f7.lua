@@ -10,7 +10,7 @@ WFJ.Data.add("gossip", {
   ["f7245a6206447837"] = { "Hai trovato qualche indizio su cos'è successo alla ⟦Shady Rest Inn=Locanda Ombracalma⟧?", "." },
   ["f7271dda0743f646"] = { "Istruttore di classe", "." },
   ["f72ca24580ed7a7b"] = { "Uno stregone, eh... Be', se hai in mente di fare quel genere di cose da queste parti, allora faresti meglio a tenere i tuoi demoni al guinzaglio, <ragazzo/ragazza>. Non mi piacciono i demoni, ma adoro piantarci dentro l'ascia. Mi capisci?\n\nOra lasciami in pace e va' a perderti nella Caverna degli Inganni. È lì che troverai quello stregone, ⟦Thistleheart=Cuorcardo⟧.", "." },
-  ["f732a20054e433bc"] = { "Il Windfield Orchard ha visto giorni migliori...", "." },
+  ["f732a20054e433bc"] = { "Il ⟦Windfield Orchard=Frutteto di Campovento⟧ ha visto giorni migliori...", "." },
   ["f738008ef33daec7"] = { "Il Flagello ha sfondato in tutte le ali! Che la Luce sconfigga queste immonde creature! Combatteremo fino all'ultimo!", "." },
   ["f73e71f92a2a6f76"] = { "Sei qui per addestrarti? O sei qui solo per far perdere tempo a un guerriero?", "." },
   ["f73f96c116c428e4"] = { "Capitolo sulla ⟦Skin of Shadow=Pelle dell'Ombra⟧.", "." },

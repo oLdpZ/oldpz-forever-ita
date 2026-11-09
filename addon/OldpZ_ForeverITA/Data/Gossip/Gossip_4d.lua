@@ -27,7 +27,7 @@ WFJ.Data.add("gossip", {
   ["4d6175fdcc41fd8c"] = { "Quanti rifornimenti servono ancora per ricostruire la nostra base?", "." },
   ["4d61f3fb2c7ea95a"] = { "Ehm, sto portando davanti al re dei prigionieri che abbiamo trovato fuori, perché vengano puniti.", "." },
   ["4d6878b7e21685e1"] = { "Dove vuoi andare, <ragazzo/ragazza>? Per poche monete i miei grifoni ti ci portano più in fretta del più veloce dei cavalli.", "." },
-  ["4d687b0e9dc160e5"] = { "Puoi dirmi cosa sta succedendo su Zephras Isle?", "." },
+  ["4d687b0e9dc160e5"] = { "Puoi dirmi cosa sta succedendo sull'⟦Zephras Isle=Isola di Zephras⟧?", "." },
   ["4d7881b4ca71190d"] = { "Le migliori bevute di ⟦Stormwind=Roccavento⟧!", "." },
   ["4d7db1bef187fe8f"] = { "Credo... credo che stia funzionando!", "." },
   ["4d8246eec5539370"] = { "Ora dobbiamo solo liberare Tobias e poi possiamo andarcene da qui. Da questa parte!", "." },

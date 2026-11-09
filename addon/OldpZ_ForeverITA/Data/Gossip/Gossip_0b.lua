@@ -47,7 +47,7 @@ WFJ.Data.add("gossip", {
   ["0bdbb1f120e1170b"] = { "Ratti dappertutto. Dovunque guardi vedo ratti. Sempre a fissarmi con quei loro occhietti. Gliela farò vedere io. Gliela farò vedere a tutti!", "." },
   ["0be93d3f5a3ce59d"] = { "Mostrami solo la strada, Franclorn.", "." },
   ["0bf1eadc9da37c99"] = { "Esatto!", "." },
-  ["0bf6cd82130c69b9"] = { "Ingegnere? Che cosa diamine è, per Skywall?\r\n\nOra che me lo dici... credo di aver sentito quell'ubriacone di Sirrocas, alla locanda, parlare di una specie di spirito della foresta che diceva di aver incontrato e che si faceva chiamare «ingegnere».\r\n\nEra la prima volta che sentivo parlare di una cosa simile.\r\n\nMi pare abbia detto che questo spirito in particolare si trova da qualche parte nella Shadowgale Forest, ma non posso consigliarti di andare in quel posto maledetto!", "." },
+  ["0bf6cd82130c69b9"] = { "Ingegnere? Che cosa diamine è, per ⟦Skywall=Celaria⟧?\r\n\nOra che me lo dici... credo di aver sentito quell'ubriacone di Sirrocas, alla locanda, parlare di una specie di spirito della foresta che diceva di aver incontrato e che si faceva chiamare «ingegnere».\r\n\nEra la prima volta che sentivo parlare di una cosa simile.\r\n\nMi pare abbia detto che questo spirito in particolare si trova da qualche parte nella ⟦Shadowgale Forest=Foresta di Ventombra⟧, ma non posso consigliarti di andare in quel posto maledetto!", "." },
   ["0bfa2ecee646b77f"] = { "Se intendi liberare Myzrael, te ne pentirai!", "." },
   ["0bfae3266a9e736d"] = { "Avanti!", "." },
   ["0bfcf142ebf9760a"] = { "Intrusi! Altre pedine dell'⟦Argent Dawn=Alba d'Argento⟧, senza dubbio. Già una di loro è tra i miei prigionieri. Ritiratevi dal mio dominio prima che venga giustiziata!", "." },

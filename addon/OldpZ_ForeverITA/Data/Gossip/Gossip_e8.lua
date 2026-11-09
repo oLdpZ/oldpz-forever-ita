@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["e877f3e7f5c00ea3"] = { "Per il momento quella zona è libera dall'influenza del Flagello. Temo sia solo questione di tempo prima che ritorni.", "." },
   ["e88413e700a0b553"] = { "I segni su questa tavoletta mostrano antichi diagrammi e contengono terribili parole di potere.\n\nCredi che si tratti di una ricetta alchemica, ma va oltre le tue capacità...", "." },
   ["e8880c7c3ce83a37"] = { "Il mio scettro tornerà di nuovo intero!", "." },
-  ["e88872178af0481d"] = { "L'hanno chiamata Bandarion Keep. Chissà cosa ne penserebbe Garek?", "." },
+  ["e88872178af0481d"] = { "L'hanno chiamato ⟦Bandarion Keep=Forte Bandarion⟧. Chissà cosa ne penserebbe Garek?", "." },
   ["e88a6fed1dfecd6f"] = { "Bella canzone, vero?", "." },
   ["e88bbdcf2689a256"] = { "Se inserisci la linguetta A nella fessura B, è ovvio che fa BUM! Ecco, lascia che ti mostri cosa ho, e poi puoi chiedere a Lilliam come montarlo perché non esploda.", "." },
   ["e892d8f83e954ceb"] = { "Cassetta della posta", "." },

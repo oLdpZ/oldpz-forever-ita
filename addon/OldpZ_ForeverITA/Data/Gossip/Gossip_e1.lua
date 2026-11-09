@@ -42,7 +42,7 @@ WFJ.Data.add("gossip", {
   ["e1ea0c1299ba0fe6"] = { "Ti prego, continua.", "." },
   ["e1ea23b43ec4302f"] = { "Se lo trovi, è tuo! Non dire a nessuno che Rin'ji ti ha parlato!", "." },
   ["e1ea353cdfe10488"] = { "Il nemico è alle porte, tenetevi pronti!", "." },
-  ["e1f2707afa37cdda"] = { "Sei <il/la> <benvenuto/benvenuta> a Shen'dar Village, dove si pesca tra il meglio da questo lato della catena montuosa. Se vuoi imparare a pescare posso insegnarti io, a pagamento.", "." },
+  ["e1f2707afa37cdda"] = { "Sei <il/la> <benvenuto/benvenuta> al ⟦Shen'dar Village=Villaggio di Shen'dar⟧, dove si pesca tra il meglio da questo lato della catena montuosa. Se vuoi imparare a pescare posso insegnarti io, a pagamento.", "." },
   ["e1f87c5e53fff943"] = { "Kildrath tende a drammatizzare la situazione. Per esempio, «⟦Garona: A Study on Stealth and Treachery=Garona: Studio sulla Furtività e sul Tradimento⟧» è stato rubato più di 400 volte.\n\nIl marchio dell'Athenaeum protegge i tomi, impedendo qualunque consultazione non autorizzata.", "." },
   ["e1fb6d9eab2be0b0"] = { "Spendere monete NON è il senso della Festa del Grande Inverno!", "." },
 })

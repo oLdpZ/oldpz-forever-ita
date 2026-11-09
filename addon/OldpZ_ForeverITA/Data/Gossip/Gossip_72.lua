@@ -26,7 +26,7 @@ WFJ.Data.add("gossip", {
   ["727d88788811ff38"] = { "%s finisce sulla Flame of Uzel.", "." },
   ["72854be5b91f4947"] = { "Mi fa piacere dirti che il tuo talento ha superato il mio. Ora vattene. Ehm, prova dalla tauren ⟦Una=Uma⟧, nelle botteghe a nord-ovest dell'altopiano centrale di Picco del Tuono. È molto abile, te lo assicuro.", "." },
   ["72888b8e34057329"] = { "Un campione puro è un campione non corrotto da influenze involontarie. Dobbiamo trovare le creature nell'ambiente più semplice e normale possibile.\n\nCioè in un posto privo di civiltà e degli effetti delle razze dominanti di Azeroth. Un posto... incontaminato.", "." },
-  ["728aba0a6339203d"] = { "Aonda è una brava donna e una vera servitrice di Zephras Isle. Spero che tu riesca a guadagnarti presto la sua fiducia e ad aiutarla a proteggere Shen'dar Village. Che i venti ti guidino, {name}.", "." },
+  ["728aba0a6339203d"] = { "Aonda è una brava donna e una vera servitrice dell'⟦Zephras Isle=Isola di Zephras⟧. Spero che tu riesca a guadagnarti presto la sua fiducia e ad aiutarla a proteggere il ⟦Shen'dar Village=Villaggio di Shen'dar⟧. Che i venti ti guidino, {name}.", "." },
   ["7291cdf61a7c38d6"] = { "Hai perso il senno, Nefarius. Parli per enigmi.", "." },
   ["7296d618ddb1cdbd"] = { "Forse hai la stoffa, forse no. Se ce l'hai, ti prenderò con me e ti insegnerò ciò che vuoi sapere. Se non ce l'hai... beh, lasciamo stare.", "." },
   ["729860b8642a200a"] = { "È con soddisfazione che ti comunico che abbiamo raccolto tutto il loto purpureo che ci serve. Grazie per il tuo contributo, {class}. Se ti va, qui ci sono probabilmente altri che stanno ancora raccogliendo altre risorse per la causa.", "." },

@@ -36,7 +36,7 @@ WFJ.Data.add("gossip", {
   ["fcc10b39451bc6f6"] = { "I silvagufi sono intrinsecamente magici: questo potere fu loro concesso dalla dea.", "." },
   ["fccb9166dec2a601"] = { "Proprio mentre parliamo, {class}, tutto il materiale bellico viene trasportato a ⟦Silithus=Silitus⟧. A quanto pare, dovrebbe arrivare tutto in meno di $2113w giorni. Dopodiché, <un/una> <eroe/eroina> dovrà venire a suonare il gong sull'Altare dello Scarabeo. Allora la guerra comincerà davvero.", "." },
   ["fcde299ee09a41b6"] = { "{name}, se sei qui per far verificare il compito che ti è stato affidato, allora benissimo: sono dieci scaglie dei Crestaostile quelle che cerco. Se sei qui per fare due chiacchiere, al momento non ho tempo per simili futilità.\n\nSappi questo: noi elfi della notte non siamo guerrafondai. La nostra razza è votata alla conservazione della pace e dell'armonia. Questo però non significa che non proteggeremo i nostri interessi in modo attivo. È il mio dovere verso la generale Feathermoon e verso la roccaforte.", "." },
-  ["fce10d345babce67"] = { "Ti do il benvenuto a Bandarion Keep, {class}.", "." },
+  ["fce10d345babce67"] = { "Ti do il benvenuto a ⟦Bandarion Keep=Forte Bandarion⟧, {class}.", "." },
   ["fce1f623120a24a8"] = { "Salute, {class}. Sii breve nel dire in che modo il Kirin Tor può esserti utile.", "." },
   ["fcf718e1109fed61"] = { "Con tutti questi mercanti che arrivano qui e in tutta Azeroth, c'è meno disponibilità del materiale che usiamo per fare i vestiti ai bambini del nostro orfanotrofio. Aiutarmi a raccogliere il lino perché mia moglie possa fare loro dei vestiti nuovi è molto nobile da parte tua, {name}. Grazie.\n\nSpero di poter tornare presto a casa da mia moglie.", "." },
   ["fcf731edf32258c2"] = { "Alt.", "." },

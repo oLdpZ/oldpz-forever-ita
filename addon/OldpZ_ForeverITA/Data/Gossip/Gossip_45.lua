@@ -28,7 +28,7 @@ WFJ.Data.add("gossip", {
   ["457e66ce58fa3c51"] = { "Trova il maestro delle viverne in cima alla Sky Tower, nella ⟦Valley of Strength=Valle della Forza⟧. Doras farà in modo che tu trovi la strada per la battaglia che cerchi.", "." },
   ["4590b956e921e27c"] = { "Stai solo rimandando l'inevitabile, {race}. Arrenditi. Lei libererà la tua anima smarrita.", "." },
   ["45980b4f981becdd"] = { "%s abbassa la voce fino a un sussurro.", "." },
-  ["459d0cbea3ece8f0"] = { "Il mio compito è fornire ai paladini di Bandarion Keep armi e armature adeguate. Non è granché, ma è un lavoro onesto.\r\n\nHo anche qualcosa in vendita, se ti serve dell'equipaggiamento.", "." },
+  ["459d0cbea3ece8f0"] = { "Il mio compito è fornire ai paladini di ⟦Bandarion Keep=Forte Bandarion⟧ armi e armature adeguate. Non è granché, ma è un lavoro onesto.\r\n\nHo anche qualcosa in vendita, se ti serve dell'equipaggiamento.", "." },
   ["45a1160aeb73debe"] = { "Amichevole", "." },
   ["45a22b426024c228"] = { "Dobbiamo andare a riunirci con gli altri Discepoli. C'è molto lavoro da fare prima che possa tentare di nuovo di risanare le ⟦Barrens=Savane⟧. Addio, anime coraggiose!", "." },
   ["45a25ef248c7ca7c"] = { "Sei sicur<o/a> che sia la strada giusta? Forse dovremmo andare da questa parte...", "." },

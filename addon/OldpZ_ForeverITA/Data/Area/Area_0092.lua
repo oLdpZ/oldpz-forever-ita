@@ -4,5 +4,5 @@ WFJ.Data.add("area", {
   [92401] = { "Indaga sulla scomparsa di Edward Heartweaver nelle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧.", 0x5b830c47, "." },
   [92434] = { "Trova un modo per entrare a Dalaran lungo il ⟦Lordamere Lake=Lago Lordamere⟧", 0x74dbabf8, "." },
   [92464] = { "Scopri di più sui venti agitati.", 0x55c782d9, "." },
-  [92529] = { "Parla con il missionario Jasaan all'ingresso di Falaath Village", 0xa342318a, "." },
+  [92529] = { "Parla con il missionario Jasaan all'ingresso del ⟦Falaath Village=Villaggio di Falaath⟧", 0xa342318a, "." },
 })

@@ -14,7 +14,7 @@ WFJ.Data.add("gossip", {
   ["9d34a3c13518b6b4"] = { "Io sente puzza di vivi!", "." },
   ["9d3b29d679699ef1"] = { "Fatti sotto!", "." },
   ["9d3ea46fe561671d"] = { "Il ⟦Stormpike Graveyard=Cimitero dei Piccatonante⟧ è stato conquistato dall'⟦Horde=Orda⟧!", "." },
-  ["9d3ffd35d2b66513"] = { "Puoi dirmi di più sulla situazione di Zephras Isle e dei Windshaper?", "." },
+  ["9d3ffd35d2b66513"] = { "Puoi dirmi di più sulla situazione dell'⟦Zephras Isle=Isola di Zephras⟧ e dei Windshaper?", "." },
   ["9d483e0c650d9e7b"] = { "Sono qui per imparare, Daio.", "." },
   ["9d4a547634de8b4f"] = { "Alzatevi e difendete il vostro padrone!", "." },
   ["9d4d41e5c5556545"] = { "Via, a Orgrimmar, {name}!", "." },
