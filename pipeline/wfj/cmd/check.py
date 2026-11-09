@@ -23,11 +23,11 @@ TYPES = ("quest", "item", "spell", "ui", "gossip", "book", "objective", "area", 
 # A gossip line is keyed by the hash of its English (ADR-005): the key is its English hash and the only
 # English `check` consults (ADR-017). Changed English is a different key: never stale.
 GOSSIP_SRC = "gossip-key@normalize_v1"
-# What the Forever client shows is the English, so collector English for server-written text (quest,
+# What the Forever client shows is the English, so collector English for server-written text (quest, book,
 # gossip) is consulted like any source. Item and spell lines are recorded with their numbers filled in,
 # while the client's tables hold the templates, so for those types it stays unconsulted (ADR-013).
 UNCONSULTED_SOURCES = ("collector",)
-CONSULTED_COLLECTOR_TYPES = ("quest", "gossip", "unit")
+CONSULTED_COLLECTOR_TYPES = ("quest", "gossip", "unit", "book")
 
 
 # pfQuest never provides (ADR-019) these fields, so a baseline recorded from a pfQuest line on one of

@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [248415] = { "Tordrin Lamasevera", nil, 0x0fd50be0, nil, ".m" },
+  [248840] = { nil, nil, 0x501592e4, nil, "em" },
 })

@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["95654529a05d1f19"] = { "Proprio mentre parliamo, {class}, tutto il materiale bellico viene trasportato a ⟦Silithus=Silitus⟧. A quanto pare, l'ultimo carico dovrebbe arrivare in meno di un giorno. Dopodiché, servirà che qualche <eroe/eroina> venga a suonare il gong all'Altare dello Scarabeo. Allora la guerra comincerà davvero.", "." },
   ["9566e8d06fc4d743"] = { "Ci guiderò attraverso Valsalda fino al limitare della foresta. Da lì, mi porterai da mio padre.", "." },
   ["9569fa1a841cf422"] = { "Ti prego, aiutami, <fratello/sorella>...\n\nPresto lascerò questo mondo, e anche se soffro, so che dopo il trapasso non soffrirò più. Ma la fauna, <fratello/sorella> <mio/mia>... anche la fauna soffre, e non conosce sollievo. Ti chiedo aiuto con gli ultimi respiri della mia vita.", "." },
+  ["956aba84fd18d0e9"] = { "Lo SPACCHIAMO CON UN MARTELLO!", "." },
   ["9579ce3e559801e4"] = { "%s emette uno strano rumore.", "." },
   ["957ceb2e3b88063e"] = { "Sì, Fandral, ricorda queste parole: non lasciare che il dolore guidi la tua fede. Questi pensieri che coltivi... luoghi oscuri in cui vai, elfo della notte. L'assoluzione non si ottiene con una vendetta sconsiderata.", "." },
   ["958100a8e1bc2d4d"] = { "Dov'è la ⟦Silver Hand=Mano d'Argento⟧? Ci serve il suo aiuto!", "." },

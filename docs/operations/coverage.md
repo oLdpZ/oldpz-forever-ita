@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-08 at commit `2fbce77f`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-09 at commit `986804e7`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -10,15 +10,15 @@
 | Surface | English lines | Ship Italian | Nothing to translate | Done | Not yet |
 |---|---|---|---|---|---|
 | Quest text | 20,468 | 20,275 | 98 | 99.5% | 95 |
-| NPC dialogue (gossip, speech) | 10,990 | 10,901 | 0 | 99.2% | 89 |
-| Book / letter pages | 1,260 | 1,205 | 54 | 99.9% | 1 |
+| NPC dialogue (gossip, speech) | 10,992 | 10,903 | 0 | 99.2% | 89 |
+| Book / letter pages | 1,261 | 1,206 | 54 | 99.9% | 1 |
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,224 | 10,210 | 0 | 99.9% | 14 |
 | Spell tooltips + auras | 25,719 | 25,645 | 1 | 99.7% | 73 |
 | Interface strings | 16,417 | 15,257 | 1,029 | 99.2% | 131 |
-| NPC names | 12,909 | 10,100 | 0 | 78.2% | 2,809 |
-| **All** | **98,642** | | | **96.7%** | **3,212** |
+| NPC names | 12,912 | 10,101 | 0 | 78.2% | 2,811 |
+| **All** | **98,648** | | | **96.7%** | **3,214** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -54,7 +54,7 @@ professions, internal strings): quest 139.
 | Spell tooltips + auras | rejected: no_english_id | 1 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
 | Interface strings | no Italian yet | 131 |
-| NPC names | no Italian yet | 2,809 |
+| NPC names | no Italian yet | 2,811 |
 
 ### Quests without a level
 

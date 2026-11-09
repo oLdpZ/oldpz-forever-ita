@@ -49,6 +49,7 @@ WFJ.Data.add("gossip", {
   ["87c249787898ccff"] = { "Aiuto! Ho una mano sola per difendermi.", "." },
   ["87c3a21341a8a7f1"] = { "La mia veglia è eterna, mortale.", "." },
   ["87cb4a1a4e054519"] = { "Dovrei trovarmi un aiutante: non mi piace passare la giornata qui a vendere articoli da pesca. Preferirei di gran lunga andare a pescare, e poi vendere gli articoli.", "." },
+  ["87d575f53a0864ba"] = { "Ora che il cristallo è qui...", "." },
   ["87dc1007c8dfcbe6"] = { "Da queste parti la maggior parte della gente non vede di buon occhio lo scasso. Come piccola cortesia professionale, lascia che ti mostri qualche trucco che ho imparato.", "." },
   ["87e1d7667c3e68d8"] = { "Realizzati dai migliori artigiani di tutta Teldrassil, portati a mano da Kalimdor ad Azeroth come segno della crescente alleanza tra il popolo del Grande Albero e gli umani di questa terra. Se ti serve qualcosa, non hai che da chiedere.", "." },
   ["87ea4acd97b1432f"] = { "%s in armamento. T meno 60 secondi.", "." },

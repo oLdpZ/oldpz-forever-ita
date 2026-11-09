@@ -258,6 +258,19 @@ def test_check_consults_collector_quest_english_only(root, tmp_path: Path, monke
     assert all(p.startswith("quest 2/") for p in changed)
 
 
+def test_check_consults_collector_book_english(tmp_path: Path, monkeypatch):
+    """A book page the collector read in game (keyed by its text hash, no client table holds it) is the
+    English its Italian is checked against: without it the page would be no_english_id and never shipped."""
+    from wfj.cmd import check
+
+    data = _data_dir(tmp_path, monkeypatch)
+    english = Store(data, english=True)
+    en = "By order of the Dark Lady."
+    english.save("book", [english_line(1184112262, "text", en, key(normalize_v1(en)), "collector@1.60.1.70862")])
+    scopes = check.build_scopes(english, "book")
+    assert scopes[1184112262].fields["text"] == normalize_v1(en)
+
+
 def test_truncated_dump_is_refused_with_one_line(tmp_path: Path, monkeypatch, capsys):
     """A truncated SavedVariables file → `wfj import:` error, exit 1, nothing written."""
     data = _data_dir(tmp_path, monkeypatch)
