@@ -19,7 +19,7 @@ local TAIL = {
   "UI/TaintWatch.lua",
   "UI/HtmlText.lua",
   "UI/LoadOnDemand.lua",
-  "UI/HelpTooltip.lua", "UI/TooltipData.lua",
+  "UI/HelpTooltip.lua", "UI/MenuAttach.lua", "UI/TooltipData.lua",
   -- shared helpers (ADR-030)
   "UI/SettingsKeys.lua", "UI/LabelTree.lua", "UI/TooltipLines.lua",
   -- the always-visible windows

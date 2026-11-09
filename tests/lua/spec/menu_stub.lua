@@ -10,11 +10,14 @@ local M = {}
 -- (optional): a client initializer added when the element is created (as a generator's AddInitializer does).
 function M.element(text, init)
   local e = { text = text, children = {}, inits = {}, resets = {} }
-  function e:CreateButton(t, clientInit)
+  function e:CreateButton(t, clientInit, responder)
     local c = M.element(t, clientInit)
+    c.responder = responder
     self.children[#self.children + 1] = c
     return c
   end
+  function e:HasResponder() return self.responder ~= nil end
+  function e:HasElements() return #self.children > 0 end
   function e:EnumerateElementDescriptions() return ipairs(self.children) end
   function e:AddInitializer(fn) self.inits[#self.inits + 1] = fn end
   function e:AddResetter(fn) self.resets[#self.resets + 1] = fn end
@@ -40,7 +43,10 @@ function M.open(root)
         return b
       end
       function frame:GetChildren() return unpack(self.attached) end
+      function frame.GetElementDescription() return e end -- menu.lua:1102–1104
       for _, fn in ipairs(e.inits) do fn(frame, e) end
+      -- the button final initializer (menutemplates.lua:109–110), after every initializer
+      _G.MenuTemplates.RecurseSetupFontString(frame)
       frames[e] = frame
       each(e)
     end

@@ -253,15 +253,16 @@ function Menus.resetElement(frame)
   return #gone
 end
 
--- Adds the initializer and the resetter to every element description under `desc`, submenus included; with
--- `skipTitle`, the first element of `desc` (a name title) is left alone. → count
+-- Gives every element description under `desc` our show and reset, submenus included; with `skipTitle`, the first
+-- element of `desc` (a name title) is left alone. → count
 local function walk(tag, desc, depth, name, skipTitle)
   if depth > 8 or type(desc) ~= "table" or type(desc.EnumerateElementDescriptions) ~= "function" then return 0 end
   local n, first = 0, true
   for _, child in desc:EnumerateElementDescriptions() do
     if type(child) == "table" and type(child.AddInitializer) == "function" and not (skipTitle and first) then
-      child:AddInitializer(function(frame) Menus.showElement(tag, frame, name) end)
-      if type(child.AddResetter) == "function" then child:AddResetter(Menus.resetElement) end
+      -- UI/MenuAttach: never an initializer of ours in a clickable element (its click would be tainted)
+      WFJ.MenuAttach.attach(child, function(frame) return Menus.showElement(tag, frame, name) end,
+        Menus.resetElement)
       n = n + 1 + walk(tag, child, depth + 1, name, false)
     end
     first = false
@@ -293,6 +294,7 @@ function Menus.init()
   Compat.declare(SURFACE, "modifyMenu", { "Menu.ModifyMenu" })
   local modify = Compat.get(SURFACE, "modifyMenu")
   if type(modify) ~= "function" then return false end
+  WFJ.MenuAttach.hook()
   for tag in pairs(Menus.TAGS) do
     if not hooked[tag] then
       hooked[tag] = true

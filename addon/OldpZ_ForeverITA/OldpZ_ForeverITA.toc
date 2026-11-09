@@ -1094,6 +1094,7 @@ UI\TaintWatch.lua
 UI\HtmlText.lua
 UI\LoadOnDemand.lua
 UI\HelpTooltip.lua
+UI\MenuAttach.lua
 UI\TooltipData.lua
 UI\SettingsKeys.lua
 UI\LabelTree.lua

@@ -109,9 +109,9 @@ function SpellBook.onSettingsMenu(_, root)
   if type(root) ~= "table" or type(root.EnumerateElementDescriptions) ~= "function" then return 0 end
   local n = 0
   for _, desc in root:EnumerateElementDescriptions() do
-    if type(desc) == "table" and type(desc.AddInitializer) == "function" then
-      desc:AddInitializer(SpellBook.showMenuButton)
-      if type(desc.AddResetter) == "function" then desc:AddResetter(SpellBook.resetMenuButton) end
+    -- through UI/MenuAttach: an initializer of ours in a clickable element would taint its click
+    if type(desc) == "table" and type(desc.AddInitializer) == "function"
+        and WFJ.MenuAttach.attach(desc, SpellBook.showMenuButton, SpellBook.resetMenuButton) then
       n = n + 1
     end
   end

@@ -65,7 +65,14 @@ local UI = {
 
 local function element(text)
   local e = { text = text, children = {}, inits = {}, resets = {} }
-  function e:CreateButton(t) local c = element(t); self.children[#self.children + 1] = c; return c end
+  function e:CreateButton(t, responder)
+    local c = element(t)
+    c.responder = responder
+    self.children[#self.children + 1] = c
+    return c
+  end
+  function e:HasResponder() return self.responder ~= nil end
+  function e:HasElements() return #self.children > 0 end
   function e:EnumerateElementDescriptions() return ipairs(self.children) end
   function e:AddInitializer(fn) self.inits[#self.inits + 1] = fn end
   function e:AddResetter(fn) self.resets[#self.resets + 1] = fn end
@@ -82,7 +89,9 @@ local function open(root)
       frame.fontString = Stub.fontString(e.text)
       -- the compositor forbids SetFont on its FontStrings (blizzard_menu/compositor.lua:166–169, 254–256)
       frame.fontString.SetFont = function() error("Use of function 'SetFont' is disallowed. (Index)") end
+      function frame.GetElementDescription() return e end -- menu.lua:1102–1104
       for _, fn in ipairs(e.inits) do fn(frame, e) end
+      _G.MenuTemplates.RecurseSetupFontString(frame) -- the button final initializer (menutemplates.lua:109–110)
       frames[e] = frame
       each(e)
     end
@@ -260,6 +269,70 @@ describe("UI/Menus: menu entries", function()
     for _, which in ipairs({ "SELF", "TARGET", "PLAYER", "ENEMY_PLAYER", "PARTY", "PET", "FOCUS", "FRIEND" }) do
       assert.is_function(callbacks["MENU_UNIT_" .. which], which)
     end
+  end)
+
+  -- the raid-marker block (UI/MenuAttach): the client front-inserts its template initializer into the element's
+  -- array at layout; a value of ours already there is moved, which taints that initializer and the click it sets
+  it("a clickable entry or a submenu never gets an initializer of ours; the final-initializer hook shows it",
+    function()
+    WFJ.Menus.init()
+    local markers, star
+    local root, frames = generate("MENU_UNIT_TARGET", function(r)
+      r:CreateButton("Gnoll") -- the title
+      r:CreateButton(UI.UNIT_FRAME_DROPDOWN_SUBSECTION_TITLE_OTHER[1]) -- a section title: no responder
+      markers = r:CreateButton(UI.RAID_TARGET_ICON[1])
+      star = markers:CreateButton(UI.RAID_TARGET_1[1], function() end) -- SetRaidTargetIcon
+    end, { unit = "target", name = "Gnoll" })
+    local e = root.children
+    assert.are.equal(0, #markers.inits)
+    assert.are.equal(0, #star.inits)
+    assert.are.equal(1, #e[2].inits) -- an inert title keeps the initializer (no final initializer to hook)
+    assert.are.equal(1, #star.resets) -- resetters are appended, never moved
+    assert.are.equal("ターゲットマーカー", frames[markers].fontString:GetText())
+    assert.are.equal("スター", frames[star].fontString:GetText())
+    assert.are.equal("その他のオプション", frames[e[2]].fontString:GetText())
+    Stub.keys.alt = true; WFJ.Modifier.refresh()
+    assert.are.equal("Star", frames[star].fontString:GetText())
+    Stub.keys.alt = false; WFJ.Modifier.refresh()
+    release(frames)
+    assert.are.equal(0, WFJ.SurfaceState.count(WFJ.Menus.SURFACE))
+  end)
+
+  it("the hook widens an element by what the Italian added; a frame without a description is left alone", function()
+    WFJ.Menus.init()
+    local root = element(nil)
+    root:CreateButton("Gnoll") -- the title (the unit's name): never ours
+    local entry = root:CreateButton(UI.SET_FOCUS[1], function() end)
+    WFJ.Menus.onMenu("MENU_UNIT_TARGET", root, { unit = "target", name = "Gnoll" })
+    local frame = CreateFrame("Button")
+    frame.fontString = Stub.fontString(UI.SET_FOCUS[1])
+    function frame.fontString:GetUnboundedStringWidth() return 6 * #self.text end
+    frame.width = 100
+    function frame:GetWidth() return self.width end
+    function frame:SetWidth(w) self.width = w end
+    function frame.GetElementDescription() return entry end
+    local grew = 6 * (#"フォーカスに設定" - #UI.SET_FOCUS[1])
+    assert.are.equal(1, WFJ.MenuAttach.onFinalInit(frame))
+    assert.are.equal("フォーカスに設定", frame.fontString:GetText())
+    assert.are.equal(100 + grew, frame.width)
+    assert.are.equal(0, WFJ.MenuAttach.onFinalInit(CreateFrame("Button"))) -- a utility button: no description
+    assert.are.equal(0, WFJ.MenuAttach.onFinalInit(nil))
+  end)
+
+  it("no MenuTemplates on the client: a clickable entry stays English and gets no initializer", function()
+    _G.MenuTemplates = nil
+    local W = H.loadChunks(FILES)
+    H.uiSetup(W, UI)
+    _G.Menu = { ModifyMenu = function(tag, fn) callbacks[tag] = fn end }
+    W.Compat.init(function(name) return _G[name] end)
+    W.Menus.init()
+    local root = element(nil)
+    local entry = root:CreateButton(UI.SET_FOCUS[1], function() end)
+    local title = root:CreateButton(UI.UNIT_FRAME_DROPDOWN_SUBSECTION_TITLE_OTHER[1])
+    assert.is_false(W.MenuAttach.attach(entry, function() end))
+    assert.are.equal(0, #entry.inits)
+    assert.is_true(W.MenuAttach.attach(title, function() end))
+    assert.are.equal(1, #title.inits)
   end)
 
   it("a target menu with only a unit: an entry equal to UnitName(unit) is never matched", function()

@@ -107,6 +107,14 @@ characters with a |T…AvailableQuestIcon:16:16|t above their head.") were kept 
   moved UI string).
 - Menus run the addon's code inside Blizzard's menu initializers. `AddInitializer` is Blizzard's own extension point,
   but a protected menu (the raid pullout) could still taint; that is an in-game check, not a proven property.
+  **Amended 2026-11-09:** it did taint. At layout the client front-inserts the template initializer into the
+  element's initializer array (`AddInitializer(initializer, 1)`, blizzard_menu/menu.lua:1106–1114), and moving our
+  value taints that initializer and the `OnClick` it sets, so picking a raid marker was blocked
+  (`ADDON_ACTION_FORBIDDEN SetRaidTarget()`). Every attach now goes through `UI/MenuAttach.lua`: an element with a
+  responder or a submenu is shown from a post-hook of `MenuTemplates.RecurseSetupFontString` (the button final
+  initializer, before the menu is measured; the element is widened by what the Italian added) and never gets an
+  initializer of ours; only inert elements (titles, labels) keep one. Highlight-button and custom-template entries
+  with a responder have no such hook point and stay English.
 - Every tag is a hand-kept list of keys. A menu entry Blizzard adds under an existing tag stays English until its key
   is added to the tag.
 - HelpTip hooks a mixin method copied onto pooled frames; a frame that bypassed both the mixin and the pool would be

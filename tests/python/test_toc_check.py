@@ -35,7 +35,7 @@ def test_real_toc_fields_and_load_order(root):
         "UI/ButtonText.lua", "UI/Labels.lua",
         "UI/TextWatch.lua", "UI/TaintWatch.lua",  # ADR-058: text followed from our own frame, the taint watch
         "UI/HtmlText.lua", "UI/LoadOnDemand.lua",
-        "UI/HelpTooltip.lua", "UI/TooltipData.lua",
+        "UI/HelpTooltip.lua", "UI/MenuAttach.lua", "UI/TooltipData.lua",
         # ADR-030: shared helpers
         "UI/SettingsKeys.lua", "UI/LabelTree.lua", "UI/TooltipLines.lua",
         "UI/Character.lua", "UI/Reputation.lua", "UI/Skills.lua",

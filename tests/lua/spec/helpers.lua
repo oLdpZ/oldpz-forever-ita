@@ -88,7 +88,7 @@ H.UI_FILES = { "Core/Const.lua", "Core/Compat.lua", "Core/Align.lua", "Core/Stat
   "Core/Hash.lua", "Core/Collector.lua", "Core/Diag.lua",
   "UI/Font.lua", "UI/Frames.lua", "UI/Render.lua", "UI/ButtonText.lua", "UI/Labels.lua", "UI/TextWatch.lua",
   "UI/HtmlText.lua",
-  "UI/LoadOnDemand.lua", "UI/HelpTooltip.lua" }
+  "UI/LoadOnDemand.lua", "UI/HelpTooltip.lua", "UI/MenuAttach.lua" }
 
 -- Builds the ui index and the translator the way Main does, over `ui` = { KEY = { English, Japanese } }.
 -- The English of a global-string key is set as that global (cleared by H.uiTeardown); `ItemSubClass:` /

@@ -81,6 +81,8 @@ function PS.openMenu(tag, labels)
     local desc = { text = text, initializers = {}, resetters = {} }
     function desc.AddInitializer(self, fn) self.initializers[#self.initializers + 1] = fn end
     function desc.AddResetter(self, fn) self.resetters[#self.resetters + 1] = fn end
+    function desc.HasResponder() return true end -- a checkbox (MenuUtil.CreateCheckbox)
+    function desc.HasElements() return false end
     desc:AddInitializer(function(button) -- MenuVariants.CreateCheckbox: fontString:SetTextToFit(text)
       button.fontString = button.fontString or Stub.fontString("")
       button.fontString.text = text
@@ -92,7 +94,9 @@ function PS.openMenu(tag, labels)
   for i, desc in ipairs(root.elements) do
     local button = PS.menuButtons[i] or {}
     PS.menuButtons[i] = button
+    function button.GetElementDescription() return desc end
     for _, init in ipairs(desc.initializers) do init(button, desc, {}) end
+    _G.MenuTemplates.RecurseSetupFontString(button) -- the button final initializer (menutemplates.lua:109–110)
     button.desc = desc
     shown[i] = button
   end

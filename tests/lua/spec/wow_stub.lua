@@ -309,6 +309,8 @@ function Stub.install(tocPath)
   _G.OFI_DB = nil -- fresh SavedVariables per install (a real global; it would otherwise leak between specs)
   _G.OFI_Collector = nil
   _G.OFI_Log = nil -- the third SavedVariables: an error one spec caught must not count in the next
+  -- the button final initializer's walk (blizzard_menu/menutemplates.lua:109–110, 236–254): UI/Menus post-hooks it
+  _G.MenuTemplates = { RecurseSetupFontString = function() end }
   -- the AddOn List is opt-in per spec (Stub.installAddonList), never left over from an earlier one
   _G.AddonList, _G.AddonList_InitAddon, _G.AddonList_HasAnyChanged, _G.HideUIPanel = nil, nil, nil, nil
   _G.UIParent, _G.OFI_SettingsTooltip = nil, nil
