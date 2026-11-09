@@ -11,7 +11,7 @@
 {"id": 309, "field": "text", "en": "Escort Miran to the excavation site", "hash": "8397cf94c8648c6b", "src": "wdb@1.60.1.70450"}
 {"id": 434, "field": "text", "en": "Overhear Lescovar and Marzon's Conversation", "hash": "5f8d89b597d49209", "src": "wdb@1.60.1.70450"}
 {"id": 435, "field": "text", "en": "Erland must reach Rane Yorick", "hash": "707ada30e8e552ca", "src": "wdb@1.60.1.70450"}
-{"id": 437, "field": "text", "en": "Enter the Dead Fields", "hash": "c9160b6254ff5aa6", "src": "wdb@1.60.1.70450"}
+{"id": 437, "field": "text", "en": "Enter the Dead Fields", "hash": "c9160b6254ff5aa6", "src": "wdb@1.60.1.70862"}
 {"id": 452, "field": "text", "en": "Aid Faerleia in killing the Pyrewood Council", "hash": "670e8d298b87e7a7", "src": "wdb@1.60.1.70450"}
 {"id": 455, "field": "text", "en": "Traverse Dun Algaz", "hash": "457bc8fb31956222", "src": "wdb@1.60.1.70450"}
 {"id": 503, "field": "text", "en": "Find where Gol'dir is being held", "hash": "e3201db4b3c5fa70", "src": "wdb@1.60.1.70450"}
@@ -28,7 +28,7 @@
 {"id": 809, "field": "text", "en": "Destroy the Demon Seed", "hash": "07a58f1053c1bc40", "src": "wdb@1.60.1.70450"}
 {"id": 836, "field": "text", "en": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff", "hash": "ee69b80a9323d877", "src": "wdb@1.15.9.69722"}
 {"id": 863, "field": "text", "en": "Escort Wizzlecrank out of the Venture Co. drill site", "hash": "d4a28152c21913e1", "src": "wdb@1.60.1.70450"}
-{"id": 870, "field": "text", "en": "Explore the waters of the Forgotten Pools", "hash": "e4a84a11577b6c7a", "src": "wdb@1.60.1.70450"}
+{"id": 870, "field": "text", "en": "Explore the waters of the Forgotten Pools", "hash": "e4a84a11577b6c7a", "src": "wdb@1.60.1.70862"}
 {"id": 898, "field": "text", "en": "Escort Gilthares Firebough back to Ratchet", "hash": "170203ae431375a0", "src": "wdb@1.60.1.70450"}
 {"id": 910, "field": "text", "en": "Go to the docks of Ratchet in the Barrens.", "hash": "cc5f78c9e561adb4", "src": "wdb@1.15.9.69722"}
 {"id": 911, "field": "text", "en": "Go to the Mor'shan Rampart in the Barrens.", "hash": "e4eedaba2d62c8dd", "src": "wdb@1.15.9.69722"}

@@ -604,10 +604,14 @@ TABLES: dict[str, Table] = {
             0x4D9FE25C,
             7,
             (_c("ID", ID), _c("DisplayRaceID", 1), _c("DisplaySexID", 2)),
-            # the record's fields: the inline id, the race, the sex, the class, the flags and two bake
-            # material ids. [unverified] for hotfix decoding: this build's hotfix cache holds no
-            # row of this table, so the sizes are WoWDBDefs' and none has been decoded.
-            record=("i32", "i8", "i8", "i8", "i8", "i32", "i32"),
+            # the record's fields: the inline id, the race, the sex, five one-byte fields (the class,
+            # the flags and a three-byte array) and two bake material ids. Fitted to the 1.60.1.70862
+            # hotfix cache's two rows of this table (161568, 163244: 19 bytes each, the race and sex at
+            # bytes 4 and 5, the bake ids at 11 and 15); WoWDBDefs' seven fields (16 bytes) never fit
+            # them. Where the array sits among the five bytes is not known (all zero in both rows): only
+            # the id, race and sex are written, read before it.
+            record=("i32", "i8", "i8", "i8", "i8", "i8", "i8", "i8", "i32", "i32"),
+            record_extra=3,
         ),
         # Race names for the ids above (ClientFileString: "NightElf", "Tauren"). Fields 0-14 are strings: the
         # client prefix, then the name forms and lore names, all unwritten.

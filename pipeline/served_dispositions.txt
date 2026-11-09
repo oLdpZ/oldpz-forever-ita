@@ -302,3 +302,5 @@ transmogsituation.f0  surface:ui:TransmogSituation  # Name_lang: the transmog ou
 transmogsituationtrigger.f0  surface:ui:TransmogTrigger  # Name_lang: the outfit window's situation groups
 transmogsituationtrigger.f1  surface:ui:TransmogTriggerDescription  # Description_lang: the situation group's help text
 transmogoutfitslotoption.f0  surface:ui:TransmogSlotOption  # Name_lang: the outfit window's slot options (One Handed Weapon, Cloth)
+hotfixes.f0  internal  # Hotfixes.db2 (named by the listfile from 1.60.1.70862): the upper-case name of the table each hotfix record patches (SPAWNPATHNODE, NAMESPROFANITY, SPELL; 328 distinct over 61,505 rows), read in the archive; never shown
+hash-c842493a.*  internal  # a table only the 1.60.1.70862 hotfix cache names: 12 records, each one 4-byte integer or empty, no text (read from DBCache.bin)

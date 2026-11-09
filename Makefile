@@ -94,9 +94,9 @@ CLIENTS := classic-era forever
 classic-era_BUILD   := 1.15.9.69722
 classic-era_SRC     := wago
 classic-era_PRODUCT := wow_classic_era
-forever_BUILD       := 1.60.1.70450
+forever_BUILD       := 1.60.1.70862
 forever_SRC         := db2
-forever_PRODUCT     := wow_classic_beta
+forever_PRODUCT     := wowf
 client_dir = $(INPUTS)/clients/$(1)-$($(1)_BUILD)
 # The client a single-client target acts on (wago-fetch, tables-extract, wdb-copy), and
 # the one each per-client step of `import` is re-invoked with. The per-client knobs below derive from it; pass
@@ -170,7 +170,7 @@ MERGE        ?= union
 WOW_DIR      ?=
 # The hotfix cache `tables-extract` applies (read only); HOTFIXES= extracts the archive rows only.
 HOTFIXES     ?= $(WOW_DIR)/Cache/ADB/enUS/DBCache.bin
-# The .build.info product of the client in WOW_DIR (Classic Era: wow_classic_era, Forever: wow_classic_beta; a
+# The .build.info product of the client in WOW_DIR (Classic Era: wow_classic_era, Forever: wowf; a
 # wrong one lists the products the install has). Follows CLIENT.
 PRODUCT      ?= $($(CLIENT)_PRODUCT)
 
@@ -195,8 +195,23 @@ import-english: ## refresh only data/english/ (keeps data/ lines, rulings and pr
 # last client". The other clients' caches are read only to map an objective id to its quest. The translation stays in
 # data/; `check` makes it no_english_id until a later harvest lists the id again.
 SERVED_DIR = $(call client_dir,forever)
+# The other clients' quest caches, read only to map an objective to its quest. import-forever (SERVED_PRESENT=1)
+# names only the caches on disk: the other clients' inputs need not be staged for it.
+other_caches = $(foreach c,$(filter-out forever,$(CLIENTS)),$(call client_dir,$(c))/questcache.wdb)
+SERVED_MAP = $(foreach w,$(if $(SERVED_PRESENT),$(wildcard $(other_caches)),$(other_caches)),--map-cache "$(w)")
 import-served: ## drop the English for ids the Forever tables do not list (ADR-033; run last by import / import-english)
-	cd pipeline && $(PY) -m wfj import english served "$(SERVED_DIR)/QuestV2.csv" "$(SERVED_DIR)/questcache.wdb" "$(SERVED_DIR)/ItemSparse.csv" "$(SERVED_DIR)/SpellName.csv" --keys "$(UI_KEYS)" $(foreach c,$(filter-out forever,$(CLIENTS)),--map-cache "$(call client_dir,$(c))/questcache.wdb")
+	cd pipeline && $(PY) -m wfj import english served "$(SERVED_DIR)/QuestV2.csv" "$(SERVED_DIR)/questcache.wdb" "$(SERVED_DIR)/ItemSparse.csv" "$(SERVED_DIR)/SpellName.csv" --keys "$(UI_KEYS)" $(SERVED_MAP)
+
+# A new Forever build when the other inputs are not at hand: only Forever's own English (its quest cache, then
+# its tables), merged over data/english under the union merge as `import-english` would at that step, then the
+# served step. pfQuest, VMaNGOS, forever-vo and Classic Era's lines stay as the last full import left them, so the
+# result equals a full `import-english` whenever those inputs have not changed. Stage the folder first:
+# `make tables-extract WOW_DIR=…` and `make wdb-copy WOW_DIR=…` (Forever's pins bumped in this Makefile).
+import-forever: ## refresh only Forever's own English (its quest cache and tables at forever_BUILD) over data/english, then the served step
+	@$(ONE_CLIENT_GUARD)
+	@$(MAKE) -s client-preflight CLIENT=forever
+	@$(MAKE) -s import-client CLIENT=forever
+	@$(MAKE) -s import-served SERVED_PRESENT=1
 
 # The English no client serves: pfQuest, then VMaNGOS. Before every client's quest cache, which outranks pfQuest.
 import-shared-english:
