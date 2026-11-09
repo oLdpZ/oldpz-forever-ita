@@ -2,8 +2,8 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [17002] = { "Aumenta la velocità di movimento in ⟦Cat Form=Forma Felina⟧ del $N1% e la probabilità di schivata del $N2%.", nil, 0x104915e9, nil, "um" },
-  [17003] = { "Aumenta l'Intelletto del $N1%. Inoltre, in ⟦Bear Form=Forma d'Orso⟧ o Dire Bear Form la Tempra aumenta del $N2% e in ⟦Cat Form=Forma Felina⟧ la Forza aumenta del $N3%.", nil, 0xb8e7a728, nil, "um" },
-  [17007] = { "In ⟦Cat Form=Forma Felina⟧, ⟦Bear Form=Forma d'Orso⟧ o Dire Bear Form, Capobranco aumenta del $N2% la probabilità di critico di tutti i membri del gruppo o dell'incursione entro $N1 m.", nil, 0x33f8cc1f, nil, "um" },
+  [17003] = { "Aumenta l'Intelletto del $N1%. Inoltre, in ⟦Bear Form=Forma d'Orso⟧ o ⟦Dire Bear Form=Forma d'Orso Crudele⟧ la Tempra aumenta del $N2% e in ⟦Cat Form=Forma Felina⟧ la Forza aumenta del $N3%.", nil, 0xb8e7a728, nil, "um" },
+  [17007] = { "In ⟦Cat Form=Forma Felina⟧, ⟦Bear Form=Forma d'Orso⟧ o ⟦Dire Bear Form=Forma d'Orso Crudele⟧, Capobranco aumenta del $N2% la probabilità di critico di tutti i membri del gruppo o dell'incursione entro $N1 m.", nil, 0x33f8cc1f, nil, "um" },
   [17008] = { "Prosciuga fino a un massimo di $N1 mana a un nemico in $D1 e lo trasferisce all'incantatore.", "$N1 mana prosciugato in $D1.", 0x55b7bb58, 0x84856b70, "uu" },
   [17011] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
   [17012] = { "Dissolve $N1 effetti magici da un nemico e cura l'incantatore di $N2.", nil, 0x81dc3258, nil, "um" },
@@ -22,7 +22,7 @@ WFJ.Data.add("spell", {
   [17053] = { "Aumenta gli effetti di ⟦Mark of the Wild=Marchio Selvaggio⟧ e Dono della Selva del $N1%.", nil, 0x0749612d, nil, "um" },
   [17054] = { "Aumenta gli effetti di ⟦Mark of the Wild=Marchio Selvaggio⟧ e Dono della Selva del $N1%.", nil, 0x0749612d, nil, "um" },
   [17055] = { "Aumenta gli effetti di ⟦Mark of the Wild=Marchio Selvaggio⟧ e Dono della Selva del $N1%.", nil, 0x0749612d, nil, "um" },
-  [17056] = { "Conferisce una probabilità del $N1% di ottenere $N2 rabbia quando assumi la ⟦Bear Form=Forma d'Orso⟧ o la Dire Bear Form. Assumere la ⟦Cat Form=Forma Felina⟧ ripristina il $N3% dell'energia che avevi l'ultima volta in ⟦Cat Form=Forma Felina⟧, più $N4 energia per ogni secondo trascorso fuori dalla ⟦Bear Form=Forma d'Orso⟧ o dalla Dire Bear Form, fino a un massimo di $N5 energia.", nil, 0x36e838a2, nil, "um" },
+  [17056] = { "Conferisce una probabilità del $N1% di ottenere $N2 rabbia quando assumi la ⟦Bear Form=Forma d'Orso⟧ o la ⟦Dire Bear Form=Forma d'Orso Crudele⟧. Assumere la ⟦Cat Form=Forma Felina⟧ ripristina il $N3% dell'energia che avevi l'ultima volta in ⟦Cat Form=Forma Felina⟧, più $N4 energia per ogni secondo trascorso fuori dalla ⟦Bear Form=Forma d'Orso⟧ o dalla ⟦Dire Bear Form=Forma d'Orso Crudele⟧, fino a un massimo di $N5 energia.", nil, 0x36e838a2, nil, "um" },
   [17063] = { "Conferisce ai tuoi incantesimi di arcano e di natura una probabilità del $N1% di non subire ritardi nel lancio quando subisci danni.", nil, 0x69343373, nil, "um" },
   [17069] = { "Riduce di $D1 il tempo di lancio di ⟦Healing Touch=Tocco Curativo⟧ e Crescita Rigogliosa e aumenta del $N2% tutti i danni che infliggi.", nil, 0xb357f79e, nil, "um" },
   [17074] = { "Aumenta la probabilità di effetto critico di Ricrescita del $N1%.", nil, 0x4f3f1f26, nil, "um" },

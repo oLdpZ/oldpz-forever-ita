@@ -90,7 +90,7 @@ WFJ.Data.add("spell", {
   [436536] = { "Ti riporta alla tua residenza. Parla con un locandiere in un'altra località per cambiare la tua residenza.", nil, 0xf92eb2a9, nil, "um" },
   [436537] = { "Strumento dei GM per congelare i giocatori.", "Congelato.", 0x05a2ce6d, 0x16ac477b, "uu" },
   [436538] = { nil, "Non credo di dover stare qui...", nil, 0x261534e9, "mu" },
-  [436545] = { "Combinalo con una fonte di energia adatta per creare un Charged Voidcore.", "Combinalo con una fonte di energia adatta per creare un Charged Voidcore.", 0x6f006444, 0x6f006444, "uu" },
+  [436545] = { "Combinalo con una fonte di energia adatta per creare un Caricato Voidcore.", "Combinalo con una fonte di energia adatta per creare un Caricato Voidcore.", 0x6f006444, 0x6f006444, "uu" },
   [436564] = { "Spara una raffica di moschetto contro un massimo di $N1 nemici in un cono davanti a te, infliggendo $N2 danni fisici.", nil, 0xdb83412d, nil, "um" },
   [436608] = { "Ottieni l'abilità Ventaglio di Lame:\n\n$I1\nScaglia istantaneamente entrambe le armi contro tutti i bersagli entro $N1 m, infliggendo il $N2% dei danni dell'arma con i pugnali e il $N3% con tutte le altre armi.", nil, 0x86e39fc3, nil, "um" },
   [436609] = { "Incidi sul tuo mantello la runa Ventaglio di Lame:\n\n$I1\nScaglia istantaneamente entrambe le armi contro tutti i bersagli entro $N1 m, infliggendo il $N2% dei danni dell'arma con i pugnali e il $N3% con tutte le altre armi.", nil, 0x35afb930, nil, "um" },

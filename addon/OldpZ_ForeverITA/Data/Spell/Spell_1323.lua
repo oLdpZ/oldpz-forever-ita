@@ -30,7 +30,7 @@ WFJ.Data.add("spell", {
   [1323963] = { "Aumenta del $N1% la probabilità di colpire con gli attacchi della mano secondaria.", nil, 0x55d7f5d6, nil, "um" },
   [1323964] = { "Aumenta di $D1 il tempo prima che la tua rabbia inizi a calare dopo aver lasciato il combattimento.", nil, 0x5edbed1f, nil, "um" },
   [1323965] = { "Aumenta di $D1 il tempo prima che la tua rabbia inizi a calare dopo aver lasciato il combattimento.", nil, 0x0faca47c, nil, "um" },
-  [1323967] = { "Rabbia, ⟦Berserker Rage=Furia del Berserker⟧, Rabbia del Sangue, Desiderio di Morte, Reckless Swings e Sete di Sangue fanno sì che i tuoi prossimi $N1 attacchi in mischia rigenerino il $N2% della tua salute massima.", nil, 0x7fe8ef01, nil, "um" },
+  [1323967] = { "Rabbia, ⟦Berserker Rage=Furia del Berserker⟧, Rabbia del Sangue, Desiderio di Morte, ⟦Reckless Swings=Fendenti Avventati⟧ e Sete di Sangue fanno sì che i tuoi prossimi $N1 attacchi in mischia rigenerino il $N2% della tua salute massima.", nil, 0x7fe8ef01, nil, "um" },
   [1323968] = { "Cure dagli attacchi in mischia.", nil, 0x956e2572, nil, "um" },
   [1323969] = { "Gli attacchi in mischia andati a segno rigenerano $N1 salute.", "Gli attacchi in mischia andati a segno rigenerano $N1 salute.", 0x9918fb14, 0x39f1c37c, "uu" },
 })

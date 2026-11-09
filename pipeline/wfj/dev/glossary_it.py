@@ -64,7 +64,7 @@ CURATED = "glossario_curato.tsv"
 CURATED_HEADER = "tipo\ten\tit\tnota"
 CURATED_KIND = "curato"
 # what a curated row may name (`tipo`): documentation for the reader, all loaded as CURATED_KIND
-CURATED_TYPES = ("zona", "luogo", "fazione", "organizzazione", "popolo", "tribù")
+CURATED_TYPES = ("zona", "luogo", "fazione", "organizzazione", "popolo", "tribù", "abilita")
 GlossTerm = tuple[str, int, str, str]  # (kind, id, en, it)
 KINDS = ("zona", "fazione", "classe", "razza", "oggetto", "abilita", "creatura")
 CREATURE_KIND = "creatura"

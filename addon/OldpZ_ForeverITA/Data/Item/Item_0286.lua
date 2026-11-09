@@ -68,7 +68,7 @@ WFJ.Data.add("item", {
   [286568] = { "Preso da una iena che divorava qualsiasi cosa, o chiunque.", 0x2a7b9883, "u" },
   [286604] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [286612] = { "Rimuove gli effetti di immobilizzazione attivi e ti rende immune agli effetti di immobilizzazione per $D1.", 0x949e3aa9, "u" },
-  [286616] = { "Aumenta Feral Combat di $N1.", 0x5338bc25, "u" },
+  [286616] = { "Aumenta ⟦Feral Combat=Combattimento Ferino⟧ di $N1.", 0x5338bc25, "u" },
   [286646] = { "La respirazione subacquea dura il $N1% in più del normale.", 0x7c55adcc, "u" },
   [286648] = { "Gettalo in un'Unstable Mana Rift.", 0xee05b862, "u" },
   [286650] = { "Ustiona il bersaglio, infliggendo $N1 danni da fuoco ogni $D1 per $D2.\nCos'è la piromanzia, se non un semplice incendio doloso?", 0x5ecfab6b, "u" },

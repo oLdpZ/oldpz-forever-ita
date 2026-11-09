@@ -114,7 +114,7 @@ WFJ.Data.add("spell", {
   [7320] = { "Aumenta l'Armatura di $N1 e la resistenza al gelo di $N2. Se un nemico colpisce l'incantatore, la sua velocità di movimento può essere ridotta del $N3% e l'intervallo tra i suoi attacchi aumentato del $N4% per $D1. Sul Mago può essere attivo un solo tipo di incantesimo di armatura alla volta. Dura $D2.", "Armatura aumentata di $N1 e resistenza al gelo aumentata di $N2. Può rallentare gli aggressori.", 0x66634630, 0x7ddffa1a, "uu" },
   [7321] = { nil, "Velocità di movimento ridotta del $N1% e intervallo tra gli attacchi aumentato del $N2%.", nil, 0x393b75e9, "mu" },
   [7322] = { "Lancia un dardo di gelo contro il nemico, infliggendo $N1 danni da gelo e riducendo la sua velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x0ea2143b, 0xbe1d3d24, "uu" },
-  [7327] = { "Ti insegna l'abilità Seal of Wisdom (Grado $N1).", nil, 0x47359eca, nil, "um" },
+  [7327] = { "Ti insegna l'abilità ⟦Seal of Wisdom=Sigillo della Saggezza⟧ (Grado $N1).", nil, 0x47359eca, nil, "um" },
   [7328] = { "Riporta in vita un personaggio morto con $N1 salute e $N2 mana. Non utilizzabile in combattimento.", nil, 0xf0621701, nil, "um" },
   [7331] = { "Heals the Paladin and nearby group members for $N1 every tick.", nil, 0x5b9cc6dd, nil, "um" },
   [7342] = { "Infligge danni normali e $N1 danni aggiuntivi ai nemici in un cono frontale.", nil, 0xe5bf1e4e, nil, "um" },

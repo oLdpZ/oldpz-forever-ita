@@ -230,7 +230,7 @@ WFJ.Data.add("spell", {
   [1220624] = { "Incanta in modo permanente un bracciale per aggiungere $N1 alla potenza magica.", nil, 0xaecf12de, nil, "um" },
   [1220635] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", nil, 0x76cbff0e, nil, "um" },
   [1220637] = { nil, "Stanno eruttando pustole nocive.", nil, 0xec703e9e, "mu" },
-  [1220642] = { "Aumenta del $N1% le cure dei tuoi incantesimi ⟦Chain Heal=Catena di Guarigione⟧, Marea Gelida e ⟦Earth Shield=Scudo di Terra⟧.", nil, 0xa4ae62b9, nil, "um" },
+  [1220642] = { "Aumenta del $N1% le cure dei tuoi incantesimi ⟦Chain Heal=Catena di Guarigione⟧, Marea Benefica e ⟦Earth Shield=Scudo di Terra⟧.", nil, 0xa4ae62b9, nil, "um" },
   [1220645] = { "Aumenta del $N1% le cure dei tuoi incantesimi ⟦Holy Light=Luce Sacra⟧ e ⟦Holy Shock=Folgore Sacra⟧, e del $N2% l'assorbimento del tuo incantesimo Scudo Sacro.", nil, 0x19f901f1, nil, "um" },
   [1220650] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [1220651] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },

@@ -7,7 +7,7 @@ WFJ.Data.add("item", {
   [216523] = { "Apre la gabbia arrugginita", 0xed809cdb, "u" },
   [216606] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [216619] = { "Mangiane una manciata e recupera il tempo perduto lungo il sentiero!\nLa buona vecchia uvetta con le arachidi... e molto altro!", 0xe24843b2, "u" },
-  [216635] = { "Combinalo con una fonte di energia adatta per creare un Charged Voidcore.\nSembra corrispondere alla descrizione del nucleo del Vuoto che serve a Wirdal, ma appare del tutto inerte. Dev'esserci un modo per ricaricarlo...", 0x1c5b2e49, "u" },
+  [216635] = { "Combinalo con una fonte di energia adatta per creare un Caricato Voidcore.\nSembra corrispondere alla descrizione del nucleo del Vuoto che serve a Wirdal, ma appare del tutto inerte. Dev'esserci un modo per ricaricarlo...", 0x1c5b2e49, "u" },
   [216636] = { "Questo oggetto sembra assorbire tutta la luce e il calore che lo circondano. È gelido al tatto.", 0x4e92cc55, "u" },
   [216637] = { "Da qualche parte qualcuno potrebbe trovare utile questa roba, ma a te sembra solo ciarpame.", 0x11462515, "u" },
   [216645] = { "Un'energia oscura permea questo minuscolo granello di energia fluttuante. Chissà quali magie straordinarie potrebbe alimentare?", 0xce943a0d, "u" },

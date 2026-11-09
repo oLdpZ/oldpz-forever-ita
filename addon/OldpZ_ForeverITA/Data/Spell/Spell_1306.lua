@@ -19,7 +19,7 @@ WFJ.Data.add("spell", {
   [1306433] = { "Aumenta l'indice di blocco con lo scudo del $N1% mentre ⟦Holy Shield=Scudo Benedetto⟧ è attivo.", nil, 0x7f7de8b3, nil, "um" },
   [1306438] = { "Respinge il bersaglio, azzerando la minaccia.", nil, 0x38521a2c, nil, "um" },
   [1306448] = { "Aumenta la probabilità di critico di ⟦Lesser Healing Wave=Ondata di Cura Inferiore⟧ del $N1%.", nil, 0x4c099695, nil, "um" },
-  [1306459] = { "In ⟦Bear Form=Forma d'Orso⟧, Dire Bear Form o ⟦Moonkin Form=Forma di Lunagufo⟧ ottieni Armatura base aggiuntiva pari al $N1% della tua abilità in Difesa.", nil, 0x9469c2c4, nil, "um" },
+  [1306459] = { "In ⟦Bear Form=Forma d'Orso⟧, ⟦Dire Bear Form=Forma d'Orso Crudele⟧ o ⟦Moonkin Form=Forma di Lunagufo⟧ ottieni Armatura base aggiuntiva pari al $N1% della tua abilità in Difesa.", nil, 0x9469c2c4, nil, "um" },
   [1306483] = { "I colpi di Lacerazione hanno il $N1% di probabilità di azzerare il tempo di recupero di Morso Primordiale.", nil, 0xa7fe2f7c, nil, "um" },
   [1306488] = { "Riduce il tempo di recupero di Guarigione Immediata di $D1.", nil, 0xa5fb393f, nil, "um" },
   [1306515] = { "Aumenta i danni inflitti da incantesimi ed effetti di fuoco fino a un massimo di $N1.", "Danni da fuoco inflitti da incantesimi e abilità aumentati fino a $N1.", 0x6e8982e7, 0x3e469155, "uu" },

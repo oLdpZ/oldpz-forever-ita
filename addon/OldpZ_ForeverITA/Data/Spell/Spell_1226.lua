@@ -19,7 +19,7 @@ WFJ.Data.add("spell", {
   [1226109] = { "Ottieni $N1 energia ogni volta che Graffio o Squarcio infliggono danni periodici.", nil, 0x317e6f05, nil, "um" },
   [1226116] = { "Moltiplica per $N1 il bonus ai danni di ⟦Tiger's Fury=Furia della Tigre⟧.", nil, 0x78baa101, nil, "um" },
   [1226119] = { "Le tue mosse risolutive hanno una probabilità del $N1% per punto combo speso di attivare Lancio Istintivo e di prolungare di $D1 la durata della tua ⟦Tiger's Fury=Furia della Tigre⟧ attiva.", nil, 0x0bb9bdeb, nil, "um" },
-  [1226121] = { "I tuoi colpi critici in mischia in ⟦Bear Form=Forma d'Orso⟧ o in Dire Bear Form ti conferiscono uno scudo che dura $D1 e assorbe danni fisici pari al $N2% della tua potenza d'attacco la prossima volta che subisci danni fisici. Si accumula fino a $N3 volte.", nil, 0x6a8c7b34, nil, "um" },
+  [1226121] = { "I tuoi colpi critici in mischia in ⟦Bear Form=Forma d'Orso⟧ o in ⟦Dire Bear Form=Forma d'Orso Crudele⟧ ti conferiscono uno scudo che dura $D1 e assorbe danni fisici pari al $N2% della tua potenza d'attacco la prossima volta che subisci danni fisici. Si accumula fino a $N3 volte.", nil, 0x6a8c7b34, nil, "um" },
   [1226125] = { "Aumenta di $D1 la durata della tua abilità Berserk.", nil, 0x80f97bb5, nil, "um" },
   [1226126] = { "Ottieni il $N1% di velocità d'attacco in più per $D1 ogni volta che infliggi un colpo critico.", nil, 0xb0e96ef5, nil, "um" },
   [1226127] = { nil, "Velocità d'attacco in mischia aumentata del $N1%.", nil, 0xd471470c, "mu" },

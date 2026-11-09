@@ -4,7 +4,7 @@ WFJ.Data.add("spell", {
   [453017] = { "Gli effetti critici delle cure hanno una probabilità di curare $N1 alleati vicini di $N2 e i colpi critici degli incantesimi hanno una probabilità di infliggere $N4 danni da natura a $N3 nemici vicini.", "I critici degli incantesimi di cura hanno una probabilità di curare di $N2 fino a $N1 alleati vicini.", 0x376f5ceb, 0x25f66d43, "uu" },
   [453053] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },
   [453482] = { "Entra in sintonia con i cieli e sostituisci la tua Forma di Lunagufo con un aspetto più celestiale.", "Assume un aspetto astrale...", 0x7d88df02, 0xf73bad51, "uu" },
-  [453622] = { "Abilità in Feral Combat aumentata di $N1. Non si cumula con altre rune dell'anello.", nil, 0x3a8a2bf4, nil, "um" },
+  [453622] = { "Abilità in ⟦Feral Combat=Combattimento Ferino⟧ aumentata di $N1. Non si cumula con altre rune dell'anello.", nil, 0x3a8a2bf4, nil, "um" },
   [453635] = { "Incidi sul tuo anello la runa Sword Specialization:\n\n$I1\nAbilità con Spade e Spade a due mani aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x619fe816, nil, "um" },
   [453688] = { "Incidi sul tuo anello la runa Axe Specialization:\n\n$I1\nAbilità con Asce e Asce a due mani aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0x80944dc1, nil, "um" },
   [453689] = { "Incidi sul tuo anello la runa Mace Specialization:\n\n$I1\nAbilità con Mazze e Mazze a due mani aumentata di $N1. Questo effetto non si cumula con i bonus razziali o con altre rune dell'anello.", nil, 0xf8361805, nil, "um" },
@@ -18,5 +18,5 @@ WFJ.Data.add("spell", {
   [453698] = { "Incidi sul tuo anello la runa Nature Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x916cd76f, nil, "um" },
   [453700] = { "Incidi sul tuo anello la runa Shadow Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x54313767, nil, "um" },
   [453702] = { "Incidi sul tuo anello la runa Holy Specialization:\n\n$I1\nProbabilità d'impatto con gli incantesimi aumentata del $N1%. Non cumulabile con le altre rune dell'anello.", nil, 0x363fe6df, nil, "um" },
-  [453703] = { "Incidi sul tuo anello la runa Feral Combat Specialization:\n\n$I1\nAbilità in Feral Combat aumentata di $N1. Non cumulabile con le altre rune dell'anello.", nil, 0x7e65f7a7, nil, "um" },
+  [453703] = { "Incidi sul tuo anello la runa ⟦Feral Combat=Combattimento Ferino⟧ Specialization:\n\n$I1\nAbilità in ⟦Feral Combat=Combattimento Ferino⟧ aumentata di $N1. Non cumulabile con le altre rune dell'anello.", nil, 0x7e65f7a7, nil, "um" },
 })

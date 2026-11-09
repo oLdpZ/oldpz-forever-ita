@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [433100] = { "Un attacco ad ampio raggio che colpisce tutti i nemici di fronte a te infliggendo il $N1% dei danni dell'arma.", nil, 0x795df839, nil, "um" },
-  [433107] = { "Quando sei in ⟦Cat Form=Forma Felina⟧, ⟦Bear Form=Forma d'Orso⟧ o Dire Bear Form, i membri del gruppo entro $N1 m ottengono una maggiore ferocia in combattimento. Ogni colpo in mischia ha una probabilità del $N2% di concedere all'attaccante un attacco aggiuntivo con il $N3% di potenza d'attacco in più. Nessun effetto se il membro del gruppo beneficia già di ⟦Windfury Totem=Totem della Furia del Vento⟧.", "Probabilità di ottenere attacchi aggiuntivi.", 0x0c4cd0cf, 0xa530781b, "uu" },
+  [433107] = { "Quando sei in ⟦Cat Form=Forma Felina⟧, ⟦Bear Form=Forma d'Orso⟧ o ⟦Dire Bear Form=Forma d'Orso Crudele⟧, i membri del gruppo entro $N1 m ottengono una maggiore ferocia in combattimento. Ogni colpo in mischia ha una probabilità del $N2% di concedere all'attaccante un attacco aggiuntivo con il $N3% di potenza d'attacco in più. Nessun effetto se il membro del gruppo beneficia già di ⟦Windfury Totem=Totem della Furia del Vento⟧.", "Probabilità di ottenere attacchi aggiuntivi.", 0x0c4cd0cf, 0xa530781b, "uu" },
   [433251] = { "Elettrocuz $N1 scatena una scarica di fulmini sul bersaglio più lontano, infliggendo $N2 danni da natura e rimbalzando fino a $N3 volte. Ogni giocatore colpito da questo effetto subisce il $N4% di danni in più da Static Arc per $D1.", "Danni subiti da Static Arc aumentati del $N1%.", 0x013e0939, 0x4c559deb, "uu" },
   [433255] = { nil, "Rigeneri $N1 mana ogni $D1.", nil, 0x29b71579, "mu" },
   [433357] = { nil, "La tempesta cresce di potenza.", nil, 0x7eae5e78, "mu" },

@@ -136,7 +136,7 @@ WFJ.Data.add("item", {
   [251461] = { "Ti insegna a creare degli Mithril Claws.", 0xe25e4cd3, "u" },
   [251462] = { "Ti insegna a creare un Mithril Claymore.", 0x375bb80e, "u" },
   [251463] = { "Ti insegna a creare un Mithril Stiletto.", 0x38627934, "u" },
-  [251464] = { "Ti insegna a creare una Charged Mithril Battleaxe.", 0xf2f17482, "u" },
+  [251464] = { "Ti insegna a creare una Caricato Mithril Battleaxe.", 0xf2f17482, "u" },
   [251465] = { "Ti insegna a creare una Thorium Greatmace.", 0x82575494, "u" },
   [251466] = { "Ti insegna a creare un Thorium Cestus.", 0x96616b5b, "u" },
   [251467] = { "Ti insegna a creare una Thorium Poleaxe.", 0x29002c70, "u" },

@@ -209,7 +209,7 @@ WFJ.Data.add("spell", {
   [3698] = { "Fornisce $N1 salute al famiglio dell'incantatore ogni secondo per $D1, finché l'incantatore canalizza. Genera una minaccia ridotta.", { "Trasferimento di vita in corso. Generazione di minaccia aumentata del $N1%.", "Trasferimento di vita in corso.", shape = { "1/0", "0/0" } }, 0x0aeefa60, 0xe55a3f4d, "uu" },
   [3699] = { "Fornisce $N1 salute al famiglio dell'incantatore ogni secondo per $D1, finché l'incantatore canalizza. Genera una minaccia ridotta.", { "Trasferimento di vita in corso. Generazione di minaccia aumentata del $N1%.", "Trasferimento di vita in corso.", shape = { "1/0", "0/0" } }, 0x0aeefa60, 0xe55a3f4d, "uu" },
   [3700] = { "Fornisce $N1 salute al famiglio dell'incantatore ogni secondo per $D1, finché l'incantatore canalizza. Genera una minaccia ridotta.", { "Trasferimento di vita in corso. Generazione di minaccia aumentata del $N1%.", "Trasferimento di vita in corso.", shape = { "1/0", "0/0" } }, 0x0aeefa60, 0xe55a3f4d, "uu" },
-  [3713] = { "Ti insegna l'abilità Seal of Wisdom (Grado $N1).", nil, 0x4735e1d3, nil, "um" },
+  [3713] = { "Ti insegna l'abilità ⟦Seal of Wisdom=Sigillo della Saggezza⟧ (Grado $N1).", nil, 0x4735e1d3, nil, "um" },
   [3716] = { "Provoca la creatura, aumentando la probabilità che attacchi l'ombra del Vuoto.", nil, 0xdf5c0ea2, nil, "um" },
   [3720] = { "Lancia una ⟦Syndicate Bomb=Bomba della Lega dei Tagliagole⟧.", nil, 0x81cadef7, nil, "um" },
   [3722] = { "Evoca $N1 Syndicate Spectres per aiutare l'incantatore in battaglia per $D1.", nil, 0x6ae225ac, nil, "um" },

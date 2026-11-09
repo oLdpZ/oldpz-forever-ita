@@ -1296,6 +1296,7 @@ oggetto	799	Rough Leather Vest	Giubba di Cuoio Grezzo
 oggetto	804	Large Blue Sack	Sacca Grande Blu
 oggetto	805	Small Red Pouch	Sacchettino Rosso
 oggetto	810	Hammer of the Northern Wind	Martello del Vento del Nord
+oggetto	811	Axe of the Deep Woods	Ascia delle Selve Profonde
 oggetto	812	Glowing Brightwood Staff	Bastone di Legnoradioso Luminoso
 oggetto	813	Broken Cog	Ingranaggio Rotto
 oggetto	814	Flask of Oil	Fiaschetta di Olio
@@ -1373,6 +1374,9 @@ oggetto	936	Midnight Mace	Mazza della Mezzanotte
 oggetto	937	Black Duskwood Staff	Bastone di Boscovespro Nero
 oggetto	938	Muddy Journal Pages	Pagine di Diario Infangate
 oggetto	939	A Bloodstained Journal Page	Pagina di Diario Macchiata di Sangue
+oggetto	940	Robes of Insight	Vesti della Consapevolezza
+oggetto	942	Freezing Band	Vera Ghiacciata
+oggetto	943	Warden Staff	Bastone del Custode
 oggetto	944	Elemental Mage Staff	Bastone del Mago Elementale
 oggetto	954	Scroll of Strength	Pergamena della Forza
 oggetto	955	Scroll of Intellect	Pergamena dell'Intelletto
@@ -1414,6 +1418,7 @@ oggetto	1158	Solid Metal Club	Clava Metallica Massiccia
 oggetto	1159	Militia Quarterstaff	Bastone Ferrato della Milizia
 oggetto	1161	Militia Shortsword	Spada Corta della Milizia
 oggetto	1167	Small Targe	Scudo Targa Piccolo
+oggetto	1169	Blackskull Shield	Scudo Nero del Teschio
 oggetto	1172	Grayson's Torch	Torcia di Grayson
 oggetto	1175	A Gold Tooth	Dente d'Oro
 oggetto	1177	Oil of Olaf	Olio di Olaf
@@ -1478,6 +1483,7 @@ oggetto	1307	Gold Pickup Schedule	Programma di Raccolta dell'Oro
 oggetto	1309	Oslow's Toolbox	Cassetta degli Attrezzi di Oslow
 oggetto	1310	Smith's Trousers	Pantaloni di Smith
 oggetto	1314	Ghoul Fingers	Dita di Ghoul
+oggetto	1315	Lei of Lilies	Catenina di Gigli
 oggetto	1317	Hardened Root Staff	Bastone Indurito
 oggetto	1318	Night Reaver	Razziatore Notturno
 oggetto	1319	Ring of Iron Will	Anello della Volontà Ferrea
@@ -1543,6 +1549,7 @@ oggetto	1434	Glowing Wax Stick	Bastoncino di Cera Luminoso
 oggetto	1436	Frontier Britches	Pantaloni della Frontiera
 oggetto	1438	Warrior's Shield	Scudo del Guerriero
 oggetto	1440	Gnoll Skull Basher	Craniata degli Gnoll
+oggetto	1443	Jeweled Amulet of Cainwyn	Amuleto Ingioiellato di Cainwyn
 oggetto	1445	Blackrock Pauldrons	Paraspalle di Roccianera
 oggetto	1446	Blackrock Boots	Stivali di Roccianera
 oggetto	1447	Ring of Saviors	Anello dei Salvatori
@@ -1576,6 +1583,7 @@ oggetto	1486	Tree Bark Jacket	Maglia di Corteccia d'Albero
 oggetto	1487	Conjured Pumpernickel	Pane Integrale Evocato
 oggetto	1488	Avenger's Armor	Armatura del Giustiziere
 oggetto	1489	Gloomshroud Armor	Armatura Ammantata di Tenebra
+oggetto	1490	Guardian Talisman	Talismano Guardiano
 oggetto	1491	Ring of Precision	Anello di Precisione
 oggetto	1493	Heavy Marauder Scimitar	Scimitarra da Predone Pesante
 oggetto	1495	Calico Shoes	Scarpe di Calicò
@@ -1600,6 +1608,7 @@ oggetto	1516	Worn Hatchet	Accetta Consumata
 oggetto	1518	Ghost Hair Comb	Pettine con Capelli Spettrali
 oggetto	1519	Bloodscalp Ear	Orecchio di Scalporosso
 oggetto	1520	Troll Sweat	Sudore Troll
+oggetto	1521	Lumbering Ogre Axe	Ascia da Ogre Ingombrante
 oggetto	1522	Headhunting Spear	Lancia del Cacciatore di Teste
 oggetto	1523	Huge Stone Club	Clava di Pietra Smisurata
 oggetto	1524	Skullsplitter Tusk	Zanna dei Fendicranio
@@ -1615,6 +1624,7 @@ oggetto	1566	Edge of the People's Militia	Lama della Milizia del Popolo
 oggetto	1596	Ghost Hair Thread	Filo di Capelli Spettrali
 oggetto	1598	Rot Blossom	Fiore Marcio
 oggetto	1602	Sickle Axe	Ascia a Falcetto
+oggetto	1604	Chromatic Sword	Spada Cromatica
 oggetto	1608	Skullcrusher Mace	Mazza Sfondateschi
 oggetto	1613	Spiritchaser Staff	Bastone Cercaspiriti
 oggetto	1624	Skullsplitter Helm	Elmo dei Fendicranio
@@ -1626,6 +1636,7 @@ oggetto	1645	Moonberry Juice	Succo di Baccaluna
 oggetto	1652	Sturdy Lunchbox	Cestino della Merenda Robusto
 oggetto	1656	Translated Letter	Lettera Tradotta
 oggetto	1659	Engineering Gloves	Guanti da Ingegnere
+oggetto	1664	Spellforce Rod	Verga Forzamagia
 oggetto	1678	Black Ogre Kickers	Calzari Neri da Ogre
 oggetto	1679	Korg Bat	Mazza Korg
 oggetto	1686	Bristly Whisker	Baffo Irsuto
@@ -1795,6 +1806,7 @@ oggetto	1973	Orb of Deception	Globo dell'Inganno
 oggetto	1974	Mindthrust Bracers	Bracciali della Spinta Mentale
 oggetto	1975	Pysan's Old Greatsword	Granspada Antica di Pysan
 oggetto	1978	Wolfclaw Gloves	Guanti dell'Artiglio Lupino
+oggetto	1979	Wall of the Dead	Scudo Muraglia del Morto
 oggetto	1980	Underworld Band	Vera del Mondo Sotterraneo
 oggetto	1981	Icemail Jerkin	Giaco di Maglia di Ghiaccio
 oggetto	1987	Krazek's Fixed Pot	Pentola Riparata di Krazek
@@ -1863,6 +1875,7 @@ oggetto	2088	Long Crawler Limb	Zanna Lunga di Crostaceo
 oggetto	2089	Scrimshaw Dagger	Pugnale Intagliato
 oggetto	2091	Magic Dust	Polvere Magica
 oggetto	2092	Worn Dagger	Pugnale Consunto
+oggetto	2100	Precisely Calibrated Boomstick	Cannalunga Calibrato Preciso
 oggetto	2101	Light Quiver	Faretra Leggera
 oggetto	2102	Small Ammo Pouch	Sacca per Munizioni Piccola
 oggetto	2105	Thug Shirt	Camicia da Teppista
@@ -1952,7 +1965,9 @@ oggetto	2239	The Collector's Ring	Anello del Collezionista
 oggetto	2240	Rugged Cape	Cappa Resistente
 oggetto	2241	Desperado Cape	Mantello del Disperato
 oggetto	2243	Hand of Edward the Odd	Mazza di Edoardo Stranamore
+oggetto	2244	Krol Blade	Lama di Krol
 oggetto	2245	Helm of Narv	Elmo di Narvalo
+oggetto	2246	Myrmidon's Signet	Anello con Sigillo del Mirmidone
 oggetto	2249	Militia Buckler	Brocchiero della Milizia
 oggetto	2250	Dusky Crab Cakes	Tortino di Granchio Scuro
 oggetto	2251	Gooey Spider Leg	Zampa di Ragno Appiccicosa
@@ -1983,6 +1998,7 @@ oggetto	2287	Haunch of Meat	Cosciotto di Carne
 oggetto	2288	Conjured Fresh Water	Acqua Fresca Evocata
 oggetto	2289	Scroll of Strength II	Pergamena della Forza II
 oggetto	2290	Scroll of Intellect II	Pergamena dell'Intelletto II
+oggetto	2291	Kang the Decapitator	Kang il Decapitatore
 oggetto	2292	Necrology Robes	Vesti Necrologiche
 oggetto	2295	Large Boar Tusk	Zanna di Cinghiale Grande
 oggetto	2296	Great Goretusk Snout	Muso di Gran Cinghiospino
@@ -2180,8 +2196,10 @@ oggetto	2616	Shimmering Silk Robes	Vesti di Seta Scintillante
 oggetto	2617	Burning Robes	Vesti Brucianti
 oggetto	2618	Silver Dress Robes	Vestito d'Argento
 oggetto	2619	Grelin's Report	Rapporto di Grelin
+oggetto	2620	Augural Shroud	Cappuccio del Presagio
 oggetto	2621	Cowl of Necromancy	Copricapo della Negromanzia
 oggetto	2622	Nimar's Tribal Headdress	Copricapo Tribale di Nimar
+oggetto	2623	Holy Diadem	Diadema Sacro
 oggetto	2624	Thinking Cap	Cappello Pensante
 oggetto	2625	Menethil Statuette	Statuetta di Menethil
 oggetto	2628	Senir's Report	Rapporti di Senir
@@ -2212,6 +2230,8 @@ oggetto	2658	Ados Fragment	Frammento di Ados
 oggetto	2659	Modr Fragment	Frammento di Modr
 oggetto	2660	Golm Fragment	Frammento di Golm
 oggetto	2661	Neru Fragment	Frammento Neru
+oggetto	2662	Ribbly's Quiver	Faretra di Ribbly
+oggetto	2663	Ribbly's Bandolier	Bandoliera di Ribbly
 oggetto	2666	Barrel of Thunder Ale	Barile di Birra del Tuono
 oggetto	2667	MacGrann's Dried Meats	Carne Essiccata di MacGrann
 oggetto	2668	Threshadon Tooth	Dente di Plesiosauro
@@ -2385,6 +2405,7 @@ oggetto	2910	Gold Militia Boots	Stivali della Milizia d'Oro
 oggetto	2911	Keller's Girdle	Cinturone di Keller
 oggetto	2912	Claw of the Shadowmancer	Artiglio dell'Ombromante
 oggetto	2913	Silk Mantle of Gamn	Coprispalle di Seta di Gamn
+oggetto	2915	Taran Icebreaker	Rompighiaccio di Taran
 oggetto	2916	Gold Lion Shield	Scudo del Leone d'Oro
 oggetto	2917	Tranquil Ring	Anello Quieto
 oggetto	2924	Crocolisk Meat	Carne di Crocolisco
@@ -2492,6 +2513,7 @@ oggetto	3071	Striking Hatchet	Accetta Assaltatrice
 oggetto	3072	Smoldering Robe	Tonaca Infuocata
 oggetto	3073	Smoldering Pants	Pantaloni Infuocati
 oggetto	3074	Smoldering Gloves	Guanti Infuocati
+oggetto	3075	Eye of Flame	Occhio della Fiamma
 oggetto	3076	Smoldering Boots	Stivali Fumanti
 oggetto	3078	Naga Heartpiercer	Arco Perforatore dei Naga
 oggetto	3079	Skorn's Rifle	Archibugio di Skorn
@@ -5142,6 +5164,8 @@ oggetto	6798	Blasting Hackbut	Sparacolpi Sovraccarica
 oggetto	6799	Vejrek's Head	Testa di Vejrek
 oggetto	6800	Umbral Ore	Minerale Ombrale
 oggetto	6801	Baroque Apron	Vestito Raffinato
+oggetto	6802	Sword of Omen	Spada di Bifido
+oggetto	6803	Prophetic Cane	Bastone Profetico
 oggetto	6804	Windstorm Hammer	Martello della Tempesta di Vento
 oggetto	6805	Horn of Vorlus	Corno di Vorlus
 oggetto	6806	Dancing Flame	Fiamma Danzante
@@ -5154,6 +5178,8 @@ oggetto	6812	Case of Elunite	Scatola di Elunite
 oggetto	6826	Brilliant Scale	Scaglia Brillante
 oggetto	6827	Box of Supplies	Scatola di Forniture
 oggetto	6828	Visionary Buckler	Brocchiero Visionario
+oggetto	6829	Sword of Serenity	Spada della Serenità
+oggetto	6831	Black Menace	Minaccia Nera
 oggetto	6832	Cloak of Blight	Mantello della Sventura
 oggetto	6833	White Tuxedo Shirt	Camicia Bianca da Smoking
 oggetto	6834	Black Tuxedo	Giacca Nera da Smoking
@@ -5327,6 +5353,7 @@ oggetto	7135	Broken Dragonmaw Shinbone	Osso delle Fauci di Drago Rotto
 oggetto	7148	Goblin Jumper Cables	Defibrillatore dei Goblin
 oggetto	7166	Copper Dagger	Pugnale di Rame
 oggetto	7189	Goblin Rocket Boots	Stivali Razzo dei Goblin
+oggetto	7190	Scorched Rocket Boots	Stivali Razzo Bruciati
 oggetto	7191	Fused Wiring	Bobina di Fusione
 oggetto	7206	Mirror Lake Water Sample	Campione d'Acqua del Lago Riflesso
 oggetto	7207	Jennea's Flask	Bottiglietta di Jennea
@@ -5597,6 +5624,7 @@ oggetto	7669	Shattered Necklace Ruby	Rubino della Collana Infranta
 oggetto	7670	Shattered Necklace Sapphire	Zaffiro della Collana Infranta
 oggetto	7671	Shattered Necklace Topaz	Topazio della Collana Infranta
 oggetto	7672	Shattered Necklace Power Source	Sorgente Energetica della Collana Infranta
+oggetto	7673	Talvash's Enhancing Necklace	Collana Potenziante di Talvash
 oggetto	7674	Delivery to Mathias	Consegna per Mathias
 oggetto	7676	Thistle Tea	Tè di Sboccialesto
 oggetto	7678	Recipe: Thistle Tea	Ricetta: Tè di Sboccialesto
@@ -5625,6 +5653,7 @@ oggetto	7719	Raging Berserker's Helm	Elmo del Berserker Furente
 oggetto	7720	Whitemane's Chapeau	Cappello di Biancachioma
 oggetto	7721	Hand of Righteousness	Mano della Rettitudine
 oggetto	7722	Triune Amulet	Amuleto della Trinità
+oggetto	7723	Mograine's Might	Vigore di Mograine
 oggetto	7724	Gauntlets of Divinity	Guanti Lunghi della Divinità
 oggetto	7726	Aegis of the Scarlet Commander	Scudo del Comandante Scarlatto
 oggetto	7727	Watchman Pauldrons	Paraspalle da Sorvegliante
@@ -5652,6 +5681,7 @@ oggetto	7754	Harbinger Boots	Stivali dell'Araldo
 oggetto	7755	Flintrock Shoulders	Spallacci del Selciato
 oggetto	7756	Dog Training Gloves	Guanti dell'Addestratore di Cani
 oggetto	7757	Windweaver Staff	Bastone Brigliavento
+oggetto	7758	Ruthless Shiv	Daghetta Crudele
 oggetto	7759	Archon Chestpiece	Corazza Sovrana
 oggetto	7760	Warchief Kilt	Kilt del Capoguerra
 oggetto	7761	Steelclaw Reaver	Ascia dell'Artiglio d'Acciaio
@@ -5677,6 +5707,7 @@ oggetto	7870	Thaumaturgy Vessel Lockbox	Cassetta di Ampolle Taumaturgiche
 oggetto	7871	Token of Thievery	Emblema del Ladro
 oggetto	7886	Untranslated Journal	Diario Indecifrato
 oggetto	7887	Necklace and Gem Salvage	Collana e Gemma Recuperate
+oggetto	7888	Jarkal's Enhancing Necklace	Collana Potenziante di Jarkal
 oggetto	7906	Horns of Nez'ra	Corna di Nez'ra
 oggetto	7907	Certificate of Thievery	Attestato di Ladro
 oggetto	7908	Klaven Mortwake's Journal	Diario di Klaven Vegliamorte
@@ -6246,9 +6277,12 @@ oggetto	9368	Jer'kai's Signet Ring	Anello con Sigillo di Jer'kai
 oggetto	9369	Iridescent Sprite Darter Wing	Ala Iridescente di Drago Fatato
 oggetto	9370	Gordunni Scroll	Pergamena di Gordunni
 oggetto	9371	Gordunni Orb	Globo Gordunni
+oggetto	9372	Sul'thraze the Lasher	Sul'thraze la Sferzatrice
 oggetto	9378	Shovelphlange's Mining Axe	Piccone di Vangapazza
+oggetto	9379	Sang'thraze the Deflector	Sang'thraze l'Indefessa
 oggetto	9381	Earthen Rod	Bacchetta Terrigena
 oggetto	9382	Tromping Miner's Boots	Stivali del Minatore Pazzo
+oggetto	9383	Obsidian Cleaver	Mannaia d'Ossidiana
 oggetto	9384	Stonevault Shiv	Daghetta della Volta
 oggetto	9385	Archaic Defender	Spadone Arcaico
 oggetto	9386	Excavator's Brand	Marchio dello Scavatore
@@ -6276,15 +6310,23 @@ oggetto	9408	Ironshod Bludgeon	Mazzuola di Scarpadura
 oggetto	9409	Ironaya's Bracers	Bracciali di Ferreya
 oggetto	9411	Rockshard Pauldrons	Paraspalle del Frammento Roccioso
 oggetto	9412	Galgann's Fireblaster	Sputafuoco di Galgann
+oggetto	9413	The Rockpounder	Tritarocce
 oggetto	9414	Oilskin Leggings	Gambiere di Pelle Oliata
 oggetto	9415	Grimlok's Tribal Vestments	Maglia Tribale di Tetrok
 oggetto	9416	Grimlok's Charge	Guisarma di Tetrok
 oggetto	9419	Galgann's Firehammer	Martello Infuocato di Galgann
 oggetto	9420	Adventurer's Pith Helmet	Cappello da Esplorazione dell'Avventuriero
 oggetto	9421	Major Healthstone	Pietra della Salute Maggiore
+oggetto	9422	Shadowforge Bushmaster	Sventrasiepi di Forgiascura
+oggetto	9423	The Jackhammer	Mazzuolatore
+oggetto	9425	Pendulum of Doom	Pendolo della Rovina
 oggetto	9426	Monolithic Bow	Arco Monolitico
+oggetto	9427	Stonevault Bonebreaker	Spaccaossa della Volta
 oggetto	9428	Unearthed Bands	Nastri Dissotterrati
+oggetto	9429	Miner's Hat of the Deep	Elmetto delle Profondità del Minatore
+oggetto	9430	Spaulders of a Lost Age	Guardaspalle dell'Era Perduta
 oggetto	9431	Papal Fez	Fez Papale
+oggetto	9432	Skullplate Bracers	Bracciali a Piastre d'Ossa
 oggetto	9433	Forgotten Wraps	Polsiere Dimenticate
 oggetto	9434	Elemental Raiment	Giubba Elementale
 oggetto	9435	Reticulated Bone Gauntlets	Guanti Lunghi d'Ossa Reticolate
@@ -6314,10 +6356,22 @@ oggetto	9460	Grimtotem Horn	Corno dei Totem Truce
 oggetto	9461	Charged Gear	Ingranaggio Carico
 oggetto	9462	Crate of Grimtotem Horns	Cassa di Corna dei Totem Truce
 oggetto	9463	Gordunni Cobalt	Cobalto dei Gordunni
+oggetto	9465	Digmaster 5000	Superpiccone 5000
 oggetto	9466	Orwin's Shovel	Badile di Orwin
+oggetto	9467	Gahz'rilla Fang	Zanna di Gahz'rilla
 oggetto	9468	Sharpbeak's Feather	Piuma di Beccaguzzo
+oggetto	9469	Gahz'rilla Scale Armor	Armatura di Scaglie di Gahz'rilla
+oggetto	9470	Bad Mojo Mask	Maschera del Mojo Cattivo
 oggetto	9471	Nekrum's Medallion	Medaglione di Nekrum
 oggetto	9472	Hexx's Key	Chiave della Maledizione
+oggetto	9473	Jinxed Hoodoo Skin	Pelle Vudù Maledetta
+oggetto	9474	Jinxed Hoodoo Kilt	Kilt Vudù Maledetto
+oggetto	9475	Diabolic Skiver	Sciabola Diabolica
+oggetto	9476	Big Bad Pauldrons	Paraspalle Brutti e Cattivi
+oggetto	9477	The Chief's Enforcer	Tutore del Capo Tribù
+oggetto	9479	Embrace of the Lycan	Cappuccio del Licantropo
+oggetto	9481	The Minotaur	Minotauro
+oggetto	9482	Witch Doctor's Cane	Verga del Taumaturgo
 oggetto	9486	Supercharger Battle Axe	Ascia da Battaglia Supercarica
 oggetto	9487	Hi-Tech Supergun	Arma da Fuoco ad Alta Tecnologia
 oggetto	9488	Oscillating Power Hammer	Martello Potente Oscillante
@@ -6328,6 +6382,7 @@ oggetto	9492	Electromagnetic Gigaflux Reactivator	Riattivatore Gigaflusso Elettr
 oggetto	9508	Mechbuilder's Overalls	Salopette da Costruttore Meccanico
 oggetto	9509	Petrolspill Leggings	Gambiere di Petrolio Estratto
 oggetto	9510	Caverndeep Trudgers	Stivali di Antrofondo
+oggetto	9512	Blackmetal Cape	Cappa di Metallo Nero
 oggetto	9513	Ley Staff	Bastone della Faglia
 oggetto	9514	Arcane Staff	Bastone Arcano
 oggetto	9516	Astral Knot Blouse	Veste Logora Astrale
@@ -6337,8 +6392,12 @@ oggetto	9519	Durtfeet Stompers	Calzari della Palude Limacciosa
 oggetto	9520	Silent Hunter	Cacciatore Silenzioso
 oggetto	9522	Energized Stone Circle	Scudo di Pietra Energizzato
 oggetto	9523	Troll Temper	Sudore di Troll
+oggetto	9527	Spellshifter Rod	Bacchetta dell'Incantesimo Variante
 oggetto	9528	Edana's Dark Heart	Cuore Oscuro di Edana
 oggetto	9530	Horn of Hatetalon	Corno di Bramartiglio
+oggetto	9531	Gemshale Pauldrons	Paraspalle Cristallizzati
+oggetto	9533	Masons Fraternity Ring	Anello della Confraternita dei Muratori
+oggetto	9534	Engineer's Guild Headpiece	Copricapo della Gilda degli Ingegneri
 oggetto	9536	Fairywing Mantle	Coprispalle d'Ala di Fata
 oggetto	9538	Talvash's Gold Ring	Anello d'Oro di Talvash
 oggetto	9539	Box of Rations	Scatola di Razioni
@@ -6409,6 +6468,7 @@ oggetto	9622	Reedknot Ring	Anello del Canneto Intrecciato
 oggetto	9623	Civinad Robes	Vesti Civinad
 oggetto	9624	Triprunner Dungarees	Pantaloni da Corsa
 oggetto	9625	Dual Reinforced Leggings	Gambiere con Doppio Rinforzo
+oggetto	9626	Dwarven Charge	Carica Nanica
 oggetto	9629	A Shrunken Head	Testa Rimpicciolita
 oggetto	9630	Pratt's Handcrafted Boots	Stivali Artigianali di Pratt
 oggetto	9631	Pratt's Handcrafted Gloves	Guanti Artigianali di Pratt
@@ -6419,6 +6479,9 @@ oggetto	9635	Master Apothecary Cape	Cappa del Maestro Speziale
 oggetto	9636	Swashbuckler Sash	Fascia da Spadaccino
 oggetto	9637	Shinkicker Boots	Stivali di Scaglie Lucenti
 oggetto	9638	Chelonian Cuffs	Avambracci delle Tartarughe
+oggetto	9639	The Hand of Antu'sul	Mano di Antu'sul
+oggetto	9640	Vice Grips	Paramani Viziosi
+oggetto	9641	Lifeblood Amulet	Amuleto di Sangue Vitale
 oggetto	9642	Band of the Great Tortoise	Vera della Grande Tartaruga
 oggetto	9643	Optomatic Deflector	Deflettore Optomatico
 oggetto	9644	Thermotastic Egg Timer	Timer Termostatico
@@ -7074,6 +7137,8 @@ oggetto	10445	Drawing Kit	Corredo da Disegno
 oggetto	10446	Heart of Obsidion	Cuore di Obsidion
 oggetto	10447	Head of Lathoric the Black	Testa di Lathoric il Nero
 oggetto	10450	Undamaged Hippogryph Feather	Piuma di Ippogrifo Intonsa
+oggetto	10454	Essence of Eranikus	Essenza di Eranikus
+oggetto	10455	Chained Essence of Eranikus	Essenza Incatenata di Eranikus
 oggetto	10456	A Bulging Coin Purse	Borsellino Pieno e Pesante
 oggetto	10457	Empty Sea Snail Shell	Guscio di Lumaca Marina Vuoto
 oggetto	10458	Prayer to Elune	Preghiera a Elune
@@ -7134,12 +7199,15 @@ oggetto	10565	Rubbing: Rune of Markri	Copia: Runa di Markri
 oggetto	10566	Rubbing: Rune of Sael'hai	Copia: Runa di Sael'hai
 oggetto	10569	Hoard of the Black Dragonflight	Tesoro dello Stormo Nero
 oggetto	10571	Ebony Boneclub	Mazza Ossea d'Ebano
+oggetto	10572	Freezing Shard	Scheggia Raggelante
 oggetto	10575	Black Dragonflight Molt	Muta dello Stormo Nero
 oggetto	10576	Mithril Mechanical Dragonling	Minidrago Meccanico di Mithril
 oggetto	10577	Goblin Mortar	Mortaio dei Goblin
 oggetto	10578	Thoughtcast Boots	Stivali dell'Incanto Ragionato
 oggetto	10579	Explosive Arrow	Freccia Esplosiva
+oggetto	10581	Death's Head Vestment	Maglia Testamorta
 oggetto	10582	Briar Tredders	Stivali dell'Erica Calpestata
+oggetto	10583	Quillward Harness	Imbracatura Piumata
 oggetto	10584	Stormgale Fists	Guanti dei Venti Tempestosi
 oggetto	10586	The Big One	Bombone
 oggetto	10587	Goblin Bomb Dispenser	Distributore di Bombe dei Goblin
@@ -7163,6 +7231,11 @@ oggetto	10610	Hetaera's Blood	Sangue di Hetaera
 oggetto	10620	Thorium Ore	Minerale di Torio
 oggetto	10621	Runed Scroll	Pergamena Runica
 oggetto	10622	Kadrak's Flag	Bandiera di Kadrak
+oggetto	10624	Stinging Bow	Arco Pungente
+oggetto	10631	Murkwater Gauntlets	Guanti Lunghi dell'Acqua Torbida
+oggetto	10632	Slimescale Bracers	Bracciali della Scaglia Limacciosa
+oggetto	10633	Silvershell Leggings	Gambiere della Conchiglia Argentea
+oggetto	10634	Mindseye Circle	Anello dell'Occhio della Mente
 oggetto	10636	Nomadic Gloves	Guanti da Nomade
 oggetto	10637	Brewer's Gloves	Guanti del Birraio
 oggetto	10638	Long Draping Cape	Mantello Lungo
@@ -7218,6 +7291,8 @@ oggetto	10706	Nightscale Girdle	Cinturone di Scaglie Notturne
 oggetto	10707	Steelsmith Greaves	Schinieri d'Acciaio
 oggetto	10708	Skullspell Orb	Globo del Teschio Incantato
 oggetto	10709	Pyrestone Orb	Globo di Pietrapira
+oggetto	10710	Dragonclaw Ring	Anello dell'Artiglio di Drago
+oggetto	10711	Dragon's Blood Necklace	Collana del Sangue di Drago
 oggetto	10712	Cuely's Elixir	Elisir di Cuely
 oggetto	10713	Plans: Inlaid Mithril Cylinder	Progetto: Cilindro di Mithril Intarsiato
 oggetto	10714	Crystallized Azsharite	Azsharite Cristallizzata
@@ -7245,13 +7320,22 @@ oggetto	10745	Kaylari Shoulders	Spallacci di Kaylari
 oggetto	10746	Runesteel Vambraces	Avambracci di Acciaio Runico
 oggetto	10747	Teacher's Sash	Fascia dell'Insegnante
 oggetto	10748	Wanderlust Boots	Stivali del Viaggio Meraviglioso
+oggetto	10749	Avenguard Helm	Elmo d'Avanguardia
+oggetto	10750	Lifeforce Dirk	Stiletto della Forza della Vita
+oggetto	10751	Gemburst Circlet	Tiara Gemmata
 oggetto	10752	Emerald Encrusted Chest	Cassa Ricoperta di Smeraldi
 oggetto	10753	Amulet of Grol	Amuleto di Grol
 oggetto	10754	Amulet of Sevine	Amuleto di Sevine
 oggetto	10755	Amulet of Allistarj	Amuleto di Allistarj
 oggetto	10759	Severed Horn of the Defiler	Corno del Profanatore Staccato
+oggetto	10760	Swine Fists	Guanti Suini
+oggetto	10761	Coldrage Dagger	Pugnale Rabbiafredda
 oggetto	10762	Robes of the Lich	Vesti dei Lich
 oggetto	10763	Icemetal Barbute	Celata del Metallo di Ghiaccio
+oggetto	10764	Deathchill Armor	Armatura Mortegelida
+oggetto	10766	Plaguerot Sprig	Ramoscello della Piaga Corrotta
+oggetto	10767	Savage Boar's Guard	Scudo del Cinghiale Selvaggio
+oggetto	10768	Boar Champion's Belt	Cintura del Campione Cinghialesco
 oggetto	10769	Glowing Eye of Mordresh	Occhio Luminoso di Mordresh
 oggetto	10770	Mordresh's Lifeless Skull	Teschio Senza Vita di Mordresh
 oggetto	10771	Deathmage Sash	Fascia del Magomorte
@@ -7263,26 +7347,60 @@ oggetto	10776	Silky Spider Cape	Mantello Setoso del Ragno
 oggetto	10777	Arachnid Gloves	Guanti Aracnoidei
 oggetto	10778	Necklace of Sanctuary	Collana del Santuario
 oggetto	10779	Demon's Blood	Sangue Demoniaco
+oggetto	10780	Mark of Hakkar	Marchio di Hakkar
+oggetto	10781	Hakkari Breastplate	Pettorale Corazzato degli Hakkari
+oggetto	10782	Hakkari Shroud	Manto degli Hakkari
+oggetto	10783	Atal'ai Spaulders	Spallacci degli Atal'ai
+oggetto	10784	Atal'ai Breastplate	Pettorale Corazzato degli Atal'ai
+oggetto	10785	Atal'ai Leggings	Gambiere degli Atal'ai
+oggetto	10786	Atal'ai Boots	Stivali degli Atal'ai
+oggetto	10787	Atal'ai Gloves	Guanti degli Atal'ai
+oggetto	10788	Atal'ai Girdle	Cinturone degli Atal'ai
 oggetto	10789	Manual of Engineering Disciplines	Manuale delle Discipline Ingegneristiche
 oggetto	10790	Gnome Engineer Membership Card	Tessera di Socio degli Ingegneri Gnomi
 oggetto	10791	Goblin Engineer Membership Card	Tessera di Socio degli Ingegneri Goblin
 oggetto	10792	Nixx's Pledge of Secrecy	Giuramento di Segretezza di Nixx
 oggetto	10793	Overspark's Pledge of Secrecy	Patto di Segretezza di Granfavilla
 oggetto	10794	Oglethorpe's Pledge of Secrecy	Patto di Segretezza di Oglethorpe
+oggetto	10795	Drakeclaw Band	Vera dell'Artiglio Draconico
+oggetto	10798	Atal'alarion's Tusk Ring	Cinturone di Zanna di Atal'alarion
+oggetto	10800	Darkwater Bracers	Bracciali d'Acquascura
+oggetto	10801	Slitherscale Boots	Calzari della Scaglia Strisciante
+oggetto	10802	Wingveil Cloak	Mantello dell'Alavelata
+oggetto	10803	Blade of the Wretched	Lama della Disgrazia
+oggetto	10804	Fist of the Damned	Pugno del Dannato
+oggetto	10805	Eater of the Dead	Mangiamorte
+oggetto	10806	Vestments of the Atal'ai Prophet	Maglia del Profeta Atal'ai
+oggetto	10807	Kilt of the Atal'ai Prophet	Kilt del Profeta Atal'ai
+oggetto	10808	Gloves of the Atal'ai Prophet	Guanti del Profeta Atal'ai
 oggetto	10818	Yeh'kinya's Scroll	Pergamena di Yeh'kinya
 oggetto	10819	Wildkin Feather	Penna di Silvagufo
 oggetto	10820	Jackseed Belt	Cintura di Jack
 oggetto	10821	Sower's Cloak	Mantello del Seminatore
 oggetto	10822	Dark Whelpling	Draghetto Oscuro
+oggetto	10823	Vanquisher's Sword	Spada del Dominatore
+oggetto	10824	Amberglow Talisman	Talismano del Bagliore d'Ambra
 oggetto	10826	Staff of Lore	Bastone della Conoscenza
 oggetto	10827	Surveyor's Tunic	Giubba dell'Ispettore
+oggetto	10828	Dire Nail	Artiglio Infausto
 oggetto	10830	M73 Frag Grenade	Granata M73
 oggetto	10831	Fel Orb	Vilsfera
 oggetto	10832	Fel Tracker Owner's Manual	Manuale del Proprietario del Vilsegugio
+oggetto	10833	Horns of Eranikus	Corna di Eranikus
 oggetto	10834	Felhound Tracker Kit	Corredo per Vilsegugio Braccatore
+oggetto	10835	Crest of Supremacy	Scudo della Supremazia
+oggetto	10836	Rod of Corrosion	Verga della Corrosione
+oggetto	10837	Tooth of Eranikus	Dente di Eranikus
+oggetto	10838	Might of Hakkar	Potenza di Hakkar
 oggetto	10839	Crystallized Note	Nota Cristallizzata
 oggetto	10840	Crystallized Note	Nota Cristallizzata
 oggetto	10841	Goldthorn Tea	Tè di Orospino
+oggetto	10842	Windscale Sarong	Gonna di Scaglie di Vento
+oggetto	10843	Featherskin Cape	Cappa di Cuoiopiuma
+oggetto	10844	Spire of Hakkar	Spira di Hakkar
+oggetto	10845	Warrior's Embrace	Corazza dell'Abbraccio del Guerriero
+oggetto	10846	Bloodshot Greaves	Stivaloni Sputasangue
+oggetto	10847	Dragon's Call	Spada della Chiamata del Draghetto
 oggetto	10858	Plans: Solid Iron Maul	Progetto: Maglio di Ferro Solido
 oggetto	10919	Apothecary Gloves	Guanti dello Speziale
 oggetto	10938	Lesser Magic Essence	Essenza Magica Inferiore
@@ -7301,6 +7419,7 @@ oggetto	11058	Sha'ni's Nose-Ring	Anello da Naso di Sha'ni
 oggetto	11078	Relic Coffer Key	Chiave del Coperchio del Reliquiario
 oggetto	11080	Gor'tesh's Lopped Off Head	Testa Mozzata di Gor'tesh
 oggetto	11081	Formula: Enchant Shield - Lesser Protection	Formula: Incanta Scudo - Protezione Inferiore
+oggetto	11086	Jang'thraze the Protector	Jang'thraze l'Inflessibile
 oggetto	11101	Formula: Enchant Bracer - Lesser Strength	Formula: Incanta Bracciali - Forza Inferiore
 oggetto	11102	Unhatched Sprite Darter Egg	Uovo di Drago Fatato Non Covato
 oggetto	11103	Seed Voucher	Buono per Sementi
@@ -7320,6 +7439,8 @@ oggetto	11119	Milly's Harvest	Raccolto di Milly
 oggetto	11120	Belgrom's Hammer	Martello di Belgrom
 oggetto	11121	Darkwater Talwar	Talwar dell'Acquascura
 oggetto	11122	Carrot on a Stick	Bastone e Carota
+oggetto	11123	Rainstrider Leggings	Gambiere del Camminatore della Pioggia
+oggetto	11124	Helm of Exile	Elmo dell'Esilio
 oggetto	11125	Grape Manifest	Bollettino dell'Uva
 oggetto	11126	Tablet of Kurniya	Tavoletta di Kurniya
 oggetto	11127	Scavenged Goods	Beni Recuperati
@@ -7376,6 +7497,7 @@ oggetto	11227	Piece of Krom'zar's Banner	Pezzo dello Stendardo di Krom'zar
 oggetto	11230	Encased Fiery Essence	Essenza Ardente Intrappolata
 oggetto	11231	Altered Black Dragonflight Molt	Muta Alterata dello Stormo Nero
 oggetto	11243	Videre Elixir	Elisir Videre
+oggetto	11262	Orb of Lorica	Globo di Lorica
 oggetto	11263	Nether Force Wand	Bacchetta della Forza Fatua
 oggetto	11265	Cragwood Maul	Maglio del Dirupo Scosceso
 oggetto	11266	Fractured Elemental Shard	Scheggia Elementale Fratturata
@@ -7508,6 +7630,18 @@ oggetto	11615	Plans: Dark Iron Shoulders	Progetto: Spallacci di Ferroscuro
 oggetto	11616	DEBUG Samophlange Manual Page	Pagina del Manuale per Samoflago
 oggetto	11617	Eridan's Supplies	Rifornimenti di Eridan
 oggetto	11622	Lesser Arcanum of Rumination	Arcanum Inferiore della Meditazione
+oggetto	11624	Kentic Amice	Amitto di Kentic
+oggetto	11625	Enthralled Sphere	Sfera Ammaliata
+oggetto	11626	Blackveil Cape	Cappa del Velo Nero
+oggetto	11627	Fleetfoot Greaves	Schinieri del Grancorsiero
+oggetto	11628	Houndmaster's Bow	Arco del Maestro dei Segugi
+oggetto	11629	Houndmaster's Rifle	Archibugio del Maestro dei Segugi
+oggetto	11630	Rockshard Pellets	Proiettili di Roccia Scheggiata
+oggetto	11631	Stoneshell Guard	Guardia di Pietra Massiccia
+oggetto	11632	Earthslag Shoulders	Spallacci della Scoria Terrestre
+oggetto	11633	Spiderfang Carapace	Carapace dell'Aracnide Pungente
+oggetto	11634	Silkweb Gloves	Guanti di Ragnatela
+oggetto	11635	Hookfang Shanker	Daga Uncino
 oggetto	11642	Lesser Arcanum of Constitution	Arcanum Inferiore della Costituzione
 oggetto	11643	Lesser Arcanum of Tenacity	Arcanum Inferiore della Tenacità
 oggetto	11644	Lesser Arcanum of Resilience	Arcanum Inferiore della Resilienza
@@ -7516,25 +7650,69 @@ oggetto	11646	Lesser Arcanum of Voracity	Arcanum Inferiore della Voracità
 oggetto	11647	Lesser Arcanum of Voracity	Arcanum Inferiore della Voracità
 oggetto	11648	Lesser Arcanum of Voracity	Arcanum Inferiore della Voracità
 oggetto	11649	Lesser Arcanum of Voracity	Arcanum Inferiore della Voracità
+oggetto	11665	Ogreseer Fists	Pugni dell'Ogre Veggente
 oggetto	11668	Flute of Xavaric	Flauto di Xavaric
 oggetto	11674	Jadefire Felbind	Vil Legame di Giadafulgida
+oggetto	11677	Graverot Cape	Cappa della Tomba Marcia
+oggetto	11678	Carapace of Anub'shiah	Carapace di Anub'shiah
+oggetto	11679	Rubicund Armguards	Bracciali Foderati Rubicondi
 oggetto	11682	Eridan's Vial	Fiala di Eridan
+oggetto	11685	Splinthide Shoulders	Spallacci di Pelle Scheggiata
+oggetto	11686	Girdle of Beastial Fury	Cinturone della Furia Bestiale
+oggetto	11702	Grizzle's Skinner	Scuoiatore di Grizzle
+oggetto	11703	Stonewall Girdle	Cinturone di Pietramura
 oggetto	11723	Goodsteel's Balanced Flameberge	Spada di Fuoco Bilanciata di Ferrofiz
 oggetto	11724	Overdue Package	Cassa in Ritardo
 oggetto	11725	Solid Crystal Leg Shaft	Zampa di Cristallo
+oggetto	11726	Savage Gladiator Chain	Corazza a Maglie del Gladiatore Selvaggio
 oggetto	11727	Goodsteel Ledger	Libro Mastro di Ferrofiz
+oggetto	11728	Savage Gladiator Leggings	Gambiere del Gladiatore Selvaggio
+oggetto	11729	Savage Gladiator Helm	Elmo del Gladiatore Selvaggio
+oggetto	11730	Savage Gladiator Grips	Paramani del Gladiatore Selvaggio
+oggetto	11731	Savage Gladiator Greaves	Schinieri del Gladiatore Selvaggio
 oggetto	11732	Libram of Rumination	Compendio sulla Meditazione
 oggetto	11733	Libram of Constitution	Compendio sulla Costituzione
 oggetto	11734	Libram of Tenacity	Compendio sulla Tenacia
+oggetto	11735	Ragefury Eyepatch	Benda per Occhio della Furia Rabbiosa
 oggetto	11736	Libram of Resilience	Compendio sulla Resilienza
 oggetto	11737	Libram of Voracity	Compendio sulla Voracità
+oggetto	11742	Wayfarer's Knapsack	Zaino del Vagabondo
+oggetto	11745	Fists of Phalanx	Pugni di Falange
+oggetto	11746	Golem Skull Helm	Elmo del Teschio dei Golem
+oggetto	11747	Flamestrider Robes	Vesti del Calcafiamme
+oggetto	11748	Pyric Caduceus	Caduceo Pirico
+oggetto	11749	Searingscale Leggings	Gambiere di Scaglie Roventi
+oggetto	11750	Kindling Stave	Bastone Combustibile
 oggetto	11751	Burning Essence	Essenza Bruciante
 oggetto	11752	Black Blood of the Tormented	Sangue Nero del Tormentato
 oggetto	11753	Eye of Kajal	Occhio di Kajal
 oggetto	11754	Black Diamond	Diamante Nero
+oggetto	11755	Verek's Collar	Collare di Verek
+oggetto	11764	Cinderhide Armsplints	Antibracci di Pelle Cinerea
+oggetto	11765	Pyremail Wristguards	Polsiere Foderate di Piromaglia
+oggetto	11766	Flameweave Cuffs	Polsiere di Telafiamma
+oggetto	11767	Emberplate Armguards	Bracciali di Scaglie Ardenti
+oggetto	11782	Boreal Mantle	Coprispalle Boreali
+oggetto	11783	Chillsteel Girdle	Cinturone d'Acciaio Freddo
+oggetto	11784	Arbiter's Blade	Lama del Giudice
+oggetto	11787	Shalehusk Boots	Stivali di Gusci Rocciosi
+oggetto	11802	Lavacrest Leggings	Gambiere della Cresta di Lava
 oggetto	11804	Spraggle's Canteen	Borraccia di Spraggle
+oggetto	11805	Rubidium Hammer	Martello di Rubidio
+oggetto	11807	Sash of the Burning Heart	Cintura del Cuore Ardente
+oggetto	11809	Flame Wrath	Ira delle Fiamme
+oggetto	11810	Force of Will	Forza di Volontà
 oggetto	11811	Smoking Heart of the Mountain	Cuore della Montagna Fumante
+oggetto	11812	Cape of the Fire Salamander	Cappa della Salamandra di Fuoco
 oggetto	11813	Formula: Smoking Heart of the Mountain	Formula: Cuore della Montagna Fumante
+oggetto	11814	Molten Fists	Pugni Fusi
+oggetto	11816	Angerforge's Battle Axe	Ascia da Battaglia di Forgiarabbia
+oggetto	11817	Lord General's Sword	Spada del Signor Generale
+oggetto	11819	Second Wind	Aria di Sfida
+oggetto	11820	Royal Decorated Armor	Armatura Reale Decorata
+oggetto	11821	Warstrife Leggings	Gambiere dell'Assalto Guerresco
+oggetto	11822	Omnicast Boots	Stivali della Magia Continua
+oggetto	11823	Luminary Kilt	Kilt Luminoso
 oggetto	11825	Pet Bombling	Robobomba da Compagnia
 oggetto	11826	Lil' Smoky	Fumetto Furbetto
 oggetto	11827	Schematic: Lil' Smoky	Schema: Fumetto Furbetto
@@ -7542,11 +7720,15 @@ oggetto	11828	Schematic: Pet Bombling	Schema: Robobomba da Compagnia
 oggetto	11829	Un'Goro Ash	Cenere di Un'Goro
 oggetto	11830	Webbed Diemetradon Scale	Scaglia Palmata di Diemetradonte
 oggetto	11831	Webbed Pterrordax Scale	Scaglia Palmata di Pterrordattilo
+oggetto	11832	Burst of Knowledge	Scarica di Conoscenza
 oggetto	11833	Gorishi Queen Lure	Esca della Regina Gorishi
 oggetto	11834	Super Sticky Tar	Pece Appiccicosissima
 oggetto	11835	Gorishi Queen Brain	Cervello della Regina Gorishi
 oggetto	11837	Gorishi Scent Gland	Ghiandola Odorosa di Gorishi
+oggetto	11839	Chief Architect's Monocle	Monocolo del Capo Architetto
 oggetto	11840	Master Builder's Shirt	Maglietta del Mastro Costruttore
+oggetto	11841	Senior Designer's Pantaloons	Brache del Disegnatore Anziano
+oggetto	11842	Lead Surveyor's Mantle	Coprispalle del Capo Ispettore
 oggetto	11843	Bank Voucher	Buono della Banca
 oggetto	11844	Pestlezugg's Un'Goro Report	Rapporto su Un'Goro di Rollabomba
 oggetto	11845	Handmade Leather Bag	Borsa di Cuoio Artigianale
@@ -7569,6 +7751,8 @@ oggetto	11861	Girdle of Reprisal	Cinturone della Rappresaglia
 oggetto	11862	White Bone Band	Vera d'Osso Bianco
 oggetto	11863	White Bone Shredder	Segatronchi d'Osso Bianco
 oggetto	11864	White Bone Spear	Lancia d'Osso Bianco
+oggetto	11865	Rancor Boots	Stivali del Rancore
+oggetto	11866	Nagmara's Whipping Belt	Cintura Sferzante di Nagmara
 oggetto	11867	Maddening Gauntlets	Guanti Lunghi Esasperanti
 oggetto	11868	Choking Band	Vera Strangolante
 oggetto	11869	Sha'ni's Ring	Anello di Sha'ni
@@ -7603,6 +7787,21 @@ oggetto	11916	Shizzle's Muzzle	Spallacci di Shizzle
 oggetto	11917	Shizzle's Nozzle Wiper	Bracciali della Pulitura di Shizzle
 oggetto	11918	Grotslab Gloves	Guanti con Fibbie
 oggetto	11919	Cragplate Greaves	Schinieri del Dirupo
+oggetto	11920	Wraith Scythe	Ascia della Presenza
+oggetto	11921	Impervious Giant	Gigante Impervio
+oggetto	11922	Blood-Etched Blade	Lama del Sangue Inciso
+oggetto	11923	The Hammer of Grace	Martello della Grazia
+oggetto	11924	Robes of the Royal Crown	Vesti della Corona Reale
+oggetto	11926	Deathdealer Breastplate	Pettorale Corazzato del Venditore di Morte
+oggetto	11927	Legplates of the Eternal Guardian	Gambali Corazzati del Guardiano Eterno
+oggetto	11928	Thaurissan's Royal Scepter	Scettro Reale di Thaurissan
+oggetto	11929	Haunting Specter Leggings	Gambiere dello Spettro Infestante
+oggetto	11930	The Emperor's New Cape	Cappa Nuova dell'Imperatore
+oggetto	11931	Dreadforge Retaliator	Vendicatore di Malaforgia
+oggetto	11932	Guiding Stave of Wisdom	Bastone Guida della Saggezza
+oggetto	11933	Imperial Jewel	Gioiello Imperiale
+oggetto	11934	Emperor's Seal	Sigillo dell'Imperatore
+oggetto	11935	Magmus Stone	Pietra di Magmus
 oggetto	11936	Relic Hunter Belt	Cintura del Cacciatore di Reliquie
 oggetto	11937	Fat Sack of Coins	Grossa Sacca di Monete
 oggetto	11938	Sack of Gems	Sacca di Gemme
@@ -7623,6 +7822,9 @@ oggetto	11952	Night Dragon's Breath	Mentina all'Alito di Drago
 oggetto	11953	Empty Pure Sample Jar	Contenitore di Campioni Puri Vuoto
 oggetto	11954	Filled Pure Sample Jar	Contenitore Pieno di Campioni Puri
 oggetto	11955	Bag of Empty Ooze Containers	Sacca di Contenitori di Melma Vuoti
+oggetto	11962	Manacle Cuffs	Polsiere della Restrizione
+oggetto	11963	Penance Spaulders	Guardaspalle della Contrizione
+oggetto	11964	Swiftstrike Cudgel	Mazza Ferrata dell'Assalto Rapido
 oggetto	11965	Quartz Ring	Anello di Quarzo
 oggetto	11966	Small Sack of Coins	Piccola Sacca di Monete
 oggetto	11967	Zircon Band	Vera con Zircone
@@ -7658,6 +7860,7 @@ oggetto	11996	Basalt Ring	Anello di Basalto
 oggetto	11997	Greenstone Circle	Anello di Pietraverde
 oggetto	11998	Jet Loop	Anello Nero Lucente
 oggetto	11999	Lodestone Hoop	Anello di Magnetite
+oggetto	12000	Limb Cleaver	Sventrabraccia
 oggetto	12001	Onyx Ring	Anello d'Onice
 oggetto	12002	Marble Circle	Anello di Marmo
 oggetto	12003	Dark Dwarven Lager	Birra Scura dei Nani
@@ -7695,6 +7898,7 @@ oggetto	12034	Marble Necklace	Collana di Marmo
 oggetto	12035	Obsidian Pendant	Pendente d'Ossidiana
 oggetto	12036	Granite Necklace	Collana di Granito
 oggetto	12037	Mystery Meat	Carne Misteriosa
+oggetto	12038	Lagrave's Seal	Sigillo di Lagrave
 oggetto	12039	Tundra Necklace	Collana della Tundra
 oggetto	12040	Forest Pendant	Pendente della Foresta
 oggetto	12041	Windshear Leggings	Gambiere di Tagliavento
@@ -7705,6 +7909,7 @@ oggetto	12045	Swamp Pendant	Pendente Paludoso
 oggetto	12046	Jungle Necklace	Collana della Giungla
 oggetto	12047	Spectral Necklace	Collana Spettrale
 oggetto	12048	Prismatic Pendant	Pendente Prismatico
+oggetto	12049	Splintsteel Armor	Armatura di Stecche d'Acciaio
 oggetto	12050	Hazecover Boots	Stivali Coperti di Nuvole
 oggetto	12051	Brazen Gauntlets	Guanti Lunghi Sfacciati
 oggetto	12052	Ring of the Moon	Anello della Luna
@@ -7715,8 +7920,22 @@ oggetto	12056	Ring of the Heavens	Anello dei Cieli
 oggetto	12057	Dragonscale Band	Anello di Scaglie di Drago
 oggetto	12058	Demonic Bone Ring	Anello d'Ossa di Demone
 oggetto	12060	Shindrell's Note	Messaggio di Shindrell
+oggetto	12061	Blade of Reckoning	Lama del Regolamento dei Conti
+oggetto	12062	Skilled Fighting Blade	Lama Abile da Combattimento
 oggetto	12064	Gamemaster Hood	Cappuccio del Game Master
+oggetto	12065	Ward of the Elements	Guardia degli Elementi
+oggetto	12066	Shaleskin Cape	Cappa di Quarzo
+oggetto	12082	Wyrmhide Spaulders	Guardaspalle di Dragonpelle
+oggetto	12083	Valconian Sash	Fascia Valconiana
 oggetto	12102	Ring of the Aristocrat	Anello Aristocratico
+oggetto	12108	Basaltscale Armor	Armatura di Scaglie di Basalto
+oggetto	12109	Azure Moon Amice	Amitto della Luna di Zaffiro
+oggetto	12110	Raincaster Drape	Drappo dello Scagliapioggia
+oggetto	12111	Lavaplate Gauntlets	Guanti Lunghi a Piastre Laviche
+oggetto	12112	Crypt Demon Bracers	Bracciali del Demone della Cripta
+oggetto	12113	Sunborne Cape	Cappa del Solenuovo
+oggetto	12114	Nightfall Gloves	Guanti della Notte Fonda
+oggetto	12115	Stalwart Clutch	Anello Animoso
 oggetto	12122	Kum'isha's Junk	Cianfrusaglie di Kum'isha
 oggetto	12162	Plans: Hardened Iron Shortsword	Progetto: Spada Corta di Ferro Indurito
 oggetto	12163	Plans: Moonsteel Broadsword	Progetto: Spadone d'Acciaio Lunare
@@ -7764,6 +7983,7 @@ oggetto	12239	Recipe: Dragonbreath Chili	Ricetta: Chili alla Ruttafuoco
 oggetto	12240	Recipe: Heavy Kodo Stew	Ricetta: Stufato Denso di Kodo
 oggetto	12241	Collected Dragon Egg	Uovo di Drago Raccolto
 oggetto	12242	Sea Creature Bones	Ossa di Creature Marine
+oggetto	12243	Smoldering Claw	Artiglio Infuocato
 oggetto	12247	Broad Bladed Knife	Coltello a Lama Larga
 oggetto	12248	Daring Dirk	Stiletto Ardimentoso
 oggetto	12249	Merciless Axe	Ascia Crudele
@@ -7878,8 +8098,14 @@ oggetto	12457	Juju Chill	Ghiacciolo di Juju
 oggetto	12458	Juju Guile	Astuzia di Juju
 oggetto	12459	Juju Escape	Olio di Juju
 oggetto	12460	Juju Might	Vigore di Juju
+oggetto	12463	Drakefang Butcher	Dracartiglio del Macello
+oggetto	12464	Bloodfire Talons	Artigli del Fuoco Sanguineo
+oggetto	12465	Nightfall Drape	Drappo della Notte Fonda
+oggetto	12466	Dawnspire Cord	Fascione della Spira d'Alba
 oggetto	12467	Alien Egg	Uovo Alieno
 oggetto	12468	Chilton Wand	Bacchetta di Chilton
+oggetto	12470	Sandstalker Ankleguards	Cavigliere Foderate dell'Inseguitore delle Sabbie
+oggetto	12471	Desertwalker Cane	Bastone del Camminatore del Deserto
 oggetto	12472	Krakle's Thermometer	Termometro di Krakle
 oggetto	12522	Bingles' Flying Gloves	Guanti Volanti di Bingles
 oggetto	12525	Jaron's Supplies	Rifornimenti di Jaron
@@ -7887,15 +8113,23 @@ oggetto	12529	Smolderweb Carrier	Trasportino di Bruciatela
 oggetto	12530	Spire Spider Egg	Uovo del Ragno dei Bastioni
 oggetto	12533	Roughshod Pike	Picca a Spuntoni
 oggetto	12534	Omokk's Head	Testa di Omokk
+oggetto	12543	Songstone of Ironforge	Pietra Canterina di Forgiardente
+oggetto	12544	Thrall's Resolve	Risolutezza di Thrall
+oggetto	12545	Eye of Orgrimmar	Occhio di Orgrimmar
+oggetto	12548	Magni's Will	Volontà di Magni
+oggetto	12550	Runed Golem Shackles	Bracciali del Golem Runico
+oggetto	12556	High Priestess Boots	Stivali della Gran Sacerdotessa
 oggetto	12562	Important Blackrock Documents	Documenti Importanti di Roccianera
 oggetto	12563	Warlord Goretooth's Command	Ordine del Signore della Guerra Zannatruce
 oggetto	12564	Assassination Note	Nota sull'Assassinio
 oggetto	12565	Winna's Kitten Carrier	Trasportino della Gatta di Winna
 oggetto	12566	Hardened Flasket	Fiasca Indurita
 oggetto	12567	Filled Flasket	Fiasca Piena
+oggetto	12582	Keris of Zul'Serak	Kris di Zul'Serak
 oggetto	12584	Grand Marshal's Longsword	Spada Lunga del Gran Maresciallo
 oggetto	12586	Immature Venom Sac	Sacca di Veleno Immatura
 oggetto	12607	Brilliant Chromatic Scale	Scaglia Cromatica Brillante
+oggetto	12608	Butcher's Apron	Grembiule del Macellaio
 oggetto	12610	Runic Plate Shoulders	Spallacci Runici a Piastre
 oggetto	12611	Runic Plate Boots	Stivali Runici a Piastre
 oggetto	12612	Runic Plate Helm	Elmo Runico a Piastre
@@ -7908,6 +8142,7 @@ oggetto	12622	Shardtooth Meat	Carne di Orso Denterotto
 oggetto	12623	Chillwind Meat	Carne di Chimera Ventofreddo
 oggetto	12624	Wildthorn Mail	Pettorale di Maglia Selvaggia
 oggetto	12625	Dawnbringer Shoulders	Spallacci dell'Araldo dell'Alba
+oggetto	12626	Funeral Cuffs	Polsiere Funebri
 oggetto	12627	Temporal Displacer	Distorsore Temporale
 oggetto	12628	Demon Forged Breastplate	Pettorale Corazzato Forgiato dal Demone
 oggetto	12630	Head of Rend Blackhand	Testa di Rend Manonera
@@ -8212,11 +8447,23 @@ oggetto	13156	Mystic Crystal	Cristallo Mistico
 oggetto	13157	Fetid Skull	Teschio Nauseabondo
 oggetto	13158	Words of the High Chief	Parole del Gran Capo
 oggetto	13159	Bone Dust	Polvere d'Osso
+oggetto	13161	Trindlehaven Staff	Bastone del Rifugio Celeste
+oggetto	13162	Reiver Claws	Artigli del Razziatore
 oggetto	13164	Heart of the Scale	Cuore dell'Equilibrio
+oggetto	13166	Slamshot Shoulders	Spallacci dello Schianto Selvaggio
+oggetto	13167	Fist of Omokk	Pugno di Omokk
+oggetto	13168	Plate of the Shaman King	Corazza del Re Sciamano
+oggetto	13169	Tressermane Leggings	Gambiere di Manto Intrecciato
+oggetto	13170	Skyshroud Leggings	Gambiere di Tela Celeste
+oggetto	13171	Smokey's Lighter	Accendino di Smokey
 oggetto	13172	Grimm's Premium Tobacco	Tabacco Premium di Grimm
 oggetto	13174	Plagued Flesh Sample	Campioni di Carne Infetta
 oggetto	13176	Scourge Data	Dati del Flagello
+oggetto	13178	Rosewine Circle	Cerchio di Vinrosato
+oggetto	13179	Brazecore Armguards	Bracciali Foderati del Nucleo Bruciante
 oggetto	13180	Stratholme Holy Water	Acqua Santa di Stratholme
+oggetto	13182	Phase Blade	Lama dello Sfasamento
+oggetto	13185	Sunderseer Mantle	Coprispalle del Veggente Sferzante
 oggetto	13186	Empty Felstone Field Bottle	Bottiglia del Campo di Vilpietra Vuota
 oggetto	13187	Empty Dalson's Tears Bottle	Bottiglia di Lacrime di Dalson Vuota
 oggetto	13188	Empty Writhing Haunt Bottle	Bottiglia del Campo Putrido Vuota
@@ -8229,13 +8476,36 @@ oggetto	13194	Felstone Field Cauldron Key	Chiave del Calderone del Campo di Vilp
 oggetto	13195	Dalson's Tears Cauldron Key	Chiave del Calderone di Lacrime di Dalson
 oggetto	13196	Gahrron's Withering Cauldron Key	Chiave del Calderone del Podere di Gahrron
 oggetto	13197	Writhing Haunt Cauldron Key	Chiave del Calderone del Campo Putrido
+oggetto	13198	Hurd Smasher	Pestafolla
 oggetto	13199	Crushridge Bindings	Bracciali di Sfasciacresta
 oggetto	13202	Extended Annals of Darrowshire	Annali Estesi del Borgo di Darrow
+oggetto	13203	Armswake Cloak	Mantello del Destaspade
+oggetto	13205	Rhombeard Protector	Protettore di Rhombeard
+oggetto	13206	Wolfshear Leggings	Gambiere Sferzalupi
 oggetto	13207	Shadow Lord Fel'dan's Head	Testa del Signore dell'Ombra Fel'dan
+oggetto	13208	Bleak Howler Armguards	Bracciali della Belva Tetra
+oggetto	13209	Seal of the Dawn	Sigillo dell'Alba
+oggetto	13210	Pads of the Dread Wolf	Stivali del Lupo Terrificante
+oggetto	13211	Slashclaw Bracers	Bracciali dell'Artiglio Sferzante
+oggetto	13212	Halycon's Spiked Collar	Collare Puntuto di Halycon
+oggetto	13213	Smolderweb's Eye	Occhio di Bruciatela
+oggetto	13216	Crown of the Penitent	Corona del Penitente
+oggetto	13217	Band of the Penitent	Vera del Penitente
+oggetto	13218	Fang of the Crystal Spider	Zanna del Ragno di Cristallo
+oggetto	13243	Argent Defender	Scudo Difensore d'Argento
+oggetto	13244	Gilded Gauntlets	Guanti Lunghi Dorati
 oggetto	13245	Kresh's Back	Guscio di Kresh
+oggetto	13246	Argent Avenger	Spada Vendicativa d'Argento
 oggetto	13247	Quartermaster Zigris' Footlocker	Scrigno del Quartiermastro Zigris
+oggetto	13249	Argent Crusader	Bastone Crociato d'Argento
 oggetto	13250	Head of Balnazzar	Testa di Balnazzar
 oggetto	13251	Head of Baron Rivendare	Testa del Barone Fieramorte
+oggetto	13257	Demonic Runed Spaulders	Guardaspalle Runici del Demone
+oggetto	13258	Slaghide Gauntlets	Guanti Lunghi di Pelle Escoriata
+oggetto	13259	Ribsteel Footguards	Calzari Foderati di Placche d'Acciaio
+oggetto	13261	Globe of D'sak	Globo di D'Sak
+oggetto	13283	Magus Ring	Anello del Magus
+oggetto	13284	Swiftdart Battleboots	Stivali da Guerra del Dardo Lesto
 oggetto	13287	Pattern: Raptor Hide Harness	Modello: Imbracatura di Pelle di Raptor
 oggetto	13288	Pattern: Raptor Hide Belt	Modello: Cintura di Pelle di Raptor
 oggetto	13289	Egan's Blaster	Fucile di Egan
@@ -8244,6 +8514,8 @@ oggetto	13309	Schematic: Lovingly Crafted Boomstick	Schema: Cannalunga Artigiana
 oggetto	13310	Schematic: Accurate Scope	Schema: Mirino Accurato
 oggetto	13311	Schematic: Mechanical Dragonling	Schema: Minidrago Meccanico
 oggetto	13313	Sacred Highborne Writings	Scritti Sacri degli Alti Nobili
+oggetto	13314	Alanna's Embrace	Veste dell'Abbraccio di Alanna
+oggetto	13315	Testament of Hope	Testamento di Speranza
 oggetto	13317	Whistle of the Ivory Raptor	Fischietto del Raptor d'Avorio
 oggetto	13320	Arcane Quickener	Accelerante Arcano
 oggetto	13321	Green Mechanostrider	Tecnostruzzo Verde
@@ -8258,6 +8530,9 @@ oggetto	13332	Blue Skeletal Horse	Cavallo Scheletrico Blu
 oggetto	13333	Brown Skeletal Horse	Cavallo Scheletrico Bruno
 oggetto	13334	Green Skeletal Warhorse	Cavallo da Guerra Scheletrico Verde
 oggetto	13335	Deathcharger's Reins	Redini del Nerodestriero
+oggetto	13340	Cape of the Black Baron	Cappa del Barone Nero
+oggetto	13344	Dracorian Gauntlets	Guanti Lunghi Dracoriani
+oggetto	13346	Robes of the Exalted	Vesti dell'Esaltato
 oggetto	13347	Crystal of Zin-Malor	Cristallo di Zin-Malor
 oggetto	13350	Insignia of the Black Guard	Fregio delle Guardie Nere
 oggetto	13351	Crimson Hammersmith's Apron	Grembiule Cremisi di Battimartello
@@ -8265,14 +8540,31 @@ oggetto	13352	Vosh'gajin's Snakestone	Pietra del Serpente di Vosh'gajin
 oggetto	13354	Ectoplasmic Resonator	Risonatore Ectoplasmico
 oggetto	13356	Somatic Intensifier	Intensificatore Somatico
 oggetto	13357	Osseous Agitator	Agitatore Osseo
+oggetto	13359	Crown of Tyranny	Corona della Tirannide
+oggetto	13360	Gift of the Elven Magi	Dono degli Elfi Maghi
 oggetto	13362	Letter from the Front	Lettera dal Fronte
 oggetto	13363	Municipal Proclamation	Proclama Municipale
 oggetto	13364	Ezra Grimm's Advertisement	Pubblicità di Ezra Grimm
 oggetto	13365	Town Meeting Notice	Avviso di Assemblea Cittadina
 oggetto	13366	Ingenious Toy	Giocattolo Ingegnoso
 oggetto	13367	Wrapped Gift	Dono Incartato
+oggetto	13369	Fire Striders	Stivali Focosi
 oggetto	13370	Vitreous Focuser	Focalizzatore Vitreo
 oggetto	13371	Father Flame	Fiamma Patriarca
+oggetto	13372	Slavedriver's Cane	Bastone dell'Aguzzino
+oggetto	13374	Soulstealer Mantle	Coprispalle del Ladro d'Anime
+oggetto	13376	Royal Tribunal Cloak	Mantello del Tribunale Reale
+oggetto	13377	Miniature Cannon Balls	Palle di Cannone in Miniatura
+oggetto	13379	Piccolo of the Flaming Fire	Ottavino del Fuoco Focoso
+oggetto	13381	Master Cannoneer Boots	Stivali del Mastro Cannoniere
+oggetto	13385	Tome of Knowledge	Tomo della Conoscenza
+oggetto	13386	Archivist Cape	Mantello da Archivista
+oggetto	13387	Foresight Girdle	Cintura della Visione Boschiva
+oggetto	13395	Skul's Fingerbone Claws	Artigli Ossei di Skul
+oggetto	13398	Boots of the Shrieker	Stivali dell'Urlatore
+oggetto	13403	Grimgore Noose	Cappio di Torvosangue
+oggetto	13405	Wailing Nightbane Pauldrons	Paraspalle del Cuparovina Lamentoso
+oggetto	13408	Soul Breaker	Spezzanima
 oggetto	13422	Stonescale Eel	Anguilla Squamapietra
 oggetto	13423	Stonescale Oil	Olio di Squamapietra
 oggetto	13442	Mighty Rage Potion	Pozione Vigorosa della Rabbia
@@ -8328,15 +8620,23 @@ oggetto	13499	Recipe: Greater Shadow Protection Potion	Ricetta: Pozione Superior
 oggetto	13500	Recipe: Greater Holy Protection Potion	Ricetta: Pozione Superiore della Difesa dal Sacro
 oggetto	13501	Recipe: Major Mana Potion	Ricetta: Pozione Maggiore di Mana
 oggetto	13507	Cliffwatcher Longhorn Report	Rapporto del Guardiacolli Corno Lungo
+oggetto	13508	Eye of Arachnida	Occhio di Arachnida
 oggetto	13509	Clutch of Foresight	Grinfie della Previdenza
 oggetto	13510	Flask of the Titans	Tonico dei Titani
 oggetto	13511	Flask of Distilled Wisdom	Tonico della Saggezza Distillata
 oggetto	13512	Flask of Supreme Power	Tonico della Potenza Suprema
+oggetto	13514	Wail of the Banshee	Lamento della Banshee
+oggetto	13515	Ramstein's Lightning Bolts	Dardi Fulminanti di Ramstein
 oggetto	13519	Recipe: Flask of the Titans	Ricetta: Tonico dei Titani
 oggetto	13520	Recipe: Flask of Distilled Wisdom	Ricetta: Tonico della Saggezza Distillata
 oggetto	13521	Recipe: Flask of Supreme Power	Ricetta: Tonico della Potenza Suprema
+oggetto	13524	Skull of Burning Shadows	Teschio delle Ombre Ardenti
+oggetto	13529	Husk of Nerub'enkan	Guscio di Nerub'enkan
+oggetto	13531	Crypt Stalker Leggings	Gambiere dell'Inseguitore delle Cripte
+oggetto	13534	Banshee Finger	Dito Pungente di Banshee
 oggetto	13536	Horn of Awakening	Corno del Risveglio
 oggetto	13542	Demon Box	Scatola Demoniaca
+oggetto	13544	Spectral Essence	Essenza di Spettro
 oggetto	13546	Bloodbelly Fish	Pesce Ventrerosso
 oggetto	13562	Remains of Trey Lightforge	Resti di Trey Forgialuce
 oggetto	13582	Zergling Leash	Guinzaglio di Zergling
@@ -8438,16 +8738,32 @@ oggetto	13932	Poached Sunscale Salmon	Salmone Scagliagialla al Cartoccio
 oggetto	13933	Lobster Stew	Stufato d'Aragosta
 oggetto	13934	Mightfish Steak	Trancio di Pescetoro
 oggetto	13935	Baked Salmon	Salmone Impanato
+oggetto	13937	Headmaster's Charge	Dignità del Rettore
 oggetto	13939	Recipe: Spotted Yellowtail	Ricetta: Pinnagialla Maculato al Vapore
 oggetto	13940	Recipe: Cooked Glossy Mightfish	Ricetta: Pescetoro Lucente Lessato
 oggetto	13941	Recipe: Filet of Redgill	Ricetta: Filetto di Branchiarossa
 oggetto	13942	Recipe: Grilled Squid	Ricetta: Calamaro alla Griglia
 oggetto	13943	Recipe: Hot Smoked Bass	Ricetta: Branzino Piccante Affumicato
+oggetto	13944	Tombstone Breastplate	Pettorale Corazzato della Lapide
 oggetto	13945	Recipe: Nightfin Soup	Ricetta: Zuppa di Pinnanera
 oggetto	13946	Recipe: Poached Sunscale Salmon	Ricetta: Salmone Scagliagialla al Cartoccio
 oggetto	13947	Recipe: Lobster Stew	Ricetta: Stufato d'Aragosta
 oggetto	13948	Recipe: Mightfish Steak	Ricetta: Trancio di Pescetoro
 oggetto	13949	Recipe: Baked Salmon	Ricetta: Salmone Impanato
+oggetto	13957	Gargoyle Slashers	Guanti del Gargoyle
+oggetto	13958	Wyrmthalak's Shackles	Ceppi di Dragthalak
+oggetto	13959	Omokk's Girth Restrainer	Pancera di Omokk
+oggetto	13961	Halycon's Muzzle	Museruola di Halycon
+oggetto	13962	Vosh'gajin's Strand	Cintura di Vosh'gajin
+oggetto	13963	Voone's Vice Grips	Paramani Viziosi di Voone
+oggetto	13965	Blackhand's Breadth	Mostrina di Manonera
+oggetto	13966	Mark of Tyranny	Marchio della Tirannia
+oggetto	13967	Windreaver Greaves	Schinieri Razziavento
+oggetto	13968	Eye of the Beast	Occhio della Bestia
+oggetto	13969	Loomguard Armbraces	Avambracci dell'Araldo
+oggetto	13983	Gravestone War Axe	Ascia da Guerra di Pietra di Lapide
+oggetto	14022	Barov Peasant Caller	Campanella dei Servitori dei Barov
+oggetto	14023	Barov Peasant Caller	Campanella dei Servitori dei Barov
 oggetto	14025	Mystic's Belt	Cintura del Mistico
 oggetto	14042	Cindercloth Vest	Veste di Stoffa Carbonizzata
 oggetto	14043	Cindercloth Gloves	Guanti di Stoffa Carbonizzata
@@ -8828,6 +9144,7 @@ oggetto	14498	Pattern: Runecloth Headband	Modello: Banda di Telarunica
 oggetto	14499	Pattern: Mooncloth Bag	Modello: Sacca di Telaluna
 oggetto	14500	Pattern: Wizardweave Robe	Modello: Tonaca di Tessuto Stregato
 oggetto	14501	Pattern: Mooncloth Vest	Modello: Veste di Telaluna
+oggetto	14502	Frostbite Girdle	Cintura della Morsa Gelida
 oggetto	14504	Pattern: Runecloth Shoulders	Modello: Spallacci di Telarunica
 oggetto	14505	Pattern: Wizardweave Turban	Modello: Turbante di Tessuto Stregato
 oggetto	14506	Pattern: Felcloth Robe	Modello: Tonaca di Telavile
@@ -8840,9 +9157,12 @@ oggetto	14512	Pattern: Truefaith Vestments	Modello: Paramento della Pura Verità
 oggetto	14513	Pattern: Robe of the Archmage	Modello: Tonaca dell'Arcimago
 oggetto	14514	Pattern: Robe of the Void	Modello: Tonaca del Vuoto
 oggetto	14523	Demon Pick	Piccone Demoniaco
+oggetto	14525	Boneclenched Gauntlets	Guanti Lunghi d'Ossa Aggrovigliate
 oggetto	14526	Pattern: Mooncloth	Modello: Telaluna
 oggetto	14529	Runecloth Bandage	Benda di Telarunica
 oggetto	14530	Heavy Runecloth Bandage	Benda Pesante di Telarunica
+oggetto	14531	Frightskull Shaft	Mazza del Teschio Orrendo
+oggetto	14537	Corpselight Greaves	Schinieri dell'Illuminazione Cadaverica
 oggetto	14540	Taragaman the Hungerer's Heart	Cuore di Taragaman il Famelico
 oggetto	14542	Kravel's Crate	Cassa di Kravel
 oggetto	14544	Lieutenant's Insignia	Distintivo del Luogotenente
@@ -8850,6 +9170,8 @@ oggetto	14546	Roon's Kodo Horn	Corno di Kodo di Roon
 oggetto	14547	Hand of Iruxos	Mano di Iruxos
 oggetto	14549	Boots of Avoidance	Stivali dell'Annullamento
 oggetto	14550	Bladebane Armguards	Bracciali Foderati dell'Anatema delle Lame
+oggetto	14551	Edgemaster's Handguards	Guardamani del Maestro di Spade
+oggetto	14552	Stockade Pauldrons	Paraspalle delle Segrete
 oggetto	14559	Prospector's Sash	Fascia del Prospettore
 oggetto	14560	Prospector's Boots	Stivali del Prospettore
 oggetto	14561	Prospector's Cuffs	Polsiere del Prospettore
@@ -8896,15 +9218,35 @@ oggetto	14606	Warden's Gloves	Guanti del Custode
 oggetto	14607	Hawkeye's Buckler	Brocchiero di Occhiolungo
 oggetto	14608	Dokebi Buckler	Brocchiero del Dokebi
 oggetto	14610	Araj's Scarab	Scarabeo Araj
+oggetto	14611	Bloodmail Hauberk	Usbergo di Maglia Insanguinata
+oggetto	14612	Bloodmail Legguards	Gambali Foderati di Maglia Insanguinata
 oggetto	14613	Taelan's Hammer	Martello di Taelan
+oggetto	14614	Bloodmail Belt	Cintura di Maglia Insanguinata
+oggetto	14615	Bloodmail Gauntlets	Guanti Lunghi di Maglia Insanguinata
+oggetto	14616	Bloodmail Boots	Stivali di Maglia Insanguinata
 oggetto	14617	Sawbones Shirt	Camicia del Segaossa
 oggetto	14619	Skeletal Fragments	Frammenti Scheletrici
+oggetto	14620	Deathbone Girdle	Cinturone di Ossotetro
+oggetto	14621	Deathbone Sabatons	Calzari di Ossotetro
+oggetto	14622	Deathbone Gauntlets	Guanti Lunghi di Ossotetro
+oggetto	14623	Deathbone Legguards	Gambali Foderati di Ossotetro
+oggetto	14624	Deathbone Chestplate	Cotta di Ossotetro
 oggetto	14625	Symbol of Lost Honor	Simbolo dell'Onor Perduto
+oggetto	14626	Necropile Robe	Tonaca della Necromassa
 oggetto	14627	Pattern: Bright Yellow Shirt	Modello: Camicia Gialla
 oggetto	14628	Imbued Skeletal Fragments	Frammenti Scheletrici Infusi
+oggetto	14629	Necropile Cuffs	Nastri della Necromassa
 oggetto	14630	Pattern: Enchanter's Cowl	Modello: Copricapo da Incantatore
+oggetto	14631	Necropile Boots	Stivali della Necromassa
+oggetto	14632	Necropile Leggings	Gambiere della Necromassa
+oggetto	14633	Necropile Mantle	Coprispalle della Necromassa
 oggetto	14634	Recipe: Frost Oil	Ricetta: Olio del Freddo
+oggetto	14636	Cadaverous Belt	Cintura Cadaverica
+oggetto	14637	Cadaverous Armor	Armatura Cadaverica
+oggetto	14638	Cadaverous Leggings	Gambiere Cadaveriche
 oggetto	14639	Schematic: Minor Recombobulator	Schema: Tecno-Ricostituente Minore
+oggetto	14640	Cadaverous Gloves	Guanti Cadaverici
+oggetto	14641	Cadaverous Walkers	Scarpe Cadaveriche
 oggetto	14644	Skeleton Key Mold	Stampo della Chiave Universale
 oggetto	14645	Unfinished Skeleton Key	Chiave Universale Incompiuta
 oggetto	14652	Scorpashi Sash	Fascia Scorpashi
@@ -9525,12 +9867,16 @@ oggetto	15407	Cured Rugged Hide	Pelle Dura Trattata
 oggetto	15408	Heavy Scorpid Scale	Scaglie Pesanti di Scorpide
 oggetto	15409	Refined Deeprock Salt	Sale Raffinato di Rocciafonda
 oggetto	15410	Scale of Onyxia	Scaglie di Onyxia
+oggetto	15411	Mark of Fordring	Marchio di Fordring
 oggetto	15412	Green Dragonscale	Scaglie di Drago Verde
+oggetto	15413	Ornate Adamantium Breastplate	Pettorale Corazzato d'Adamantio Decorato
 oggetto	15414	Red Dragonscale	Scaglie di Drago Rosso
 oggetto	15415	Blue Dragonscale	Scaglie di Drago Blu
 oggetto	15416	Black Dragonscale	Scaglie di Drago Nero
 oggetto	15417	Devilsaur Leather	Cuoio di Gigantosauro
+oggetto	15418	Shimmering Platinum Warhammer	Martello da Guerra di Platino Scintillante
 oggetto	15419	Warbear Leather	Cuoio di Orsoguerra
+oggetto	15421	Shroud of the Exile	Manto dell'Esilio
 oggetto	15422	Frostsaber Leather	Cuoio della Fiera Glaciale
 oggetto	15423	Chimera Leather	Cuoio di Chimera
 oggetto	15424	Axe of Orgrimmar	Ascia di Orgrimmar a Due Mani
@@ -9881,6 +10227,7 @@ oggetto	15790	Studies in Spirit Speaking	Studi sull'Invocazione degli Spiriti
 oggetto	15791	Turquoise Sash	Fusciacca Turchese
 oggetto	15792	Plow Wood Spaulders	Guardaspalle di Legno Trattato
 oggetto	15793	A Chewed Bone	Osso Masticato
+oggetto	15794	Ripped Ogre Loincloth	Calzoncini di Ogre Lacerati
 oggetto	15795	Emerald Mist Gauntlets	Guanti Lunghi della Nebbia di Smeraldo
 oggetto	15796	Seaspray Bracers	Bracciali Brumarini
 oggetto	15797	Shining Armplates	Parabraccia Corazzati Lucenti
@@ -9891,6 +10238,8 @@ oggetto	15801	Valiant Shortsword	Spada Corta Valorosa
 oggetto	15802	Mooncloth Boots	Stivali di Telaluna
 oggetto	15803	Book of the Ancients	Libro degli Antichi
 oggetto	15804	Cerise Drape	Drappo Rosso
+oggetto	15805	Penelope's Rose	Rosa di Penelope
+oggetto	15806	Mirah's Song	Canto di Mirah
 oggetto	15807	Light Crossbow	Balestra Leggera
 oggetto	15808	Fine Light Crossbow	Balestra Leggera Buona
 oggetto	15809	Heavy Crossbow	Balestra Pesante
@@ -9902,7 +10251,10 @@ oggetto	15814	Hameya's Slayer	Lamassassina di Hameya
 oggetto	15815	Hameya's Cloak	Mantello degli Hameya
 oggetto	15822	Shadowskin Spaulders	Guardaspalle di Pelle d'Ombra
 oggetto	15823	Bricksteel Gauntlets	Guanti Lunghi di Muracciaio
+oggetto	15824	Astoria Robes	Vesti di Astoria
+oggetto	15825	Traphook Jerkin	Giaco Trappola
 oggetto	15826	Curative Animal Salve	Balsamo Curativo Animale
+oggetto	15827	Jadescale Breastplate	Pettorale di Scaglie di Giada
 oggetto	15842	Empty Dreadmist Peak Sampler	Campione del Picco di Brumafunesta Vuoto
 oggetto	15843	Filled Dreadmist Peak Sampler	Campione del Picco di Brumafunesta Pieno
 oggetto	15844	Empty Cliffspring Falls Sampler	Campione delle Cascate di Altafonte Vuoto
@@ -9916,6 +10268,10 @@ oggetto	15852	Kodo Horn	Corno di Kodo
 oggetto	15855	Ring of Protection	Anello della Protezione
 oggetto	15856	Archlight Talisman	Talismano dell'Arciluce
 oggetto	15857	Magebane Scion	Talea della Lamamagica
+oggetto	15858	Freewind Gloves	Guanti di Ventolibero
+oggetto	15859	Seapost Girdle	Cinturone della Guarnigione Marina
+oggetto	15860	Blinkstrike Armguards	Bracciali del Traslassalto
+oggetto	15861	Swiftfoot Treads	Stivaletti del Piede Lesto
 oggetto	15863	Grave Scepter	Scettro Tombale
 oggetto	15864	Condor Bracers	Bracciali di Condor
 oggetto	15865	Anchorhold Buckler	Brocchiero all'Ancora
@@ -9925,6 +10281,7 @@ oggetto	15869	Silver Skeleton Key	Chiave Universale d'Argento
 oggetto	15870	Golden Skeleton Key	Chiave Universale d'Oro
 oggetto	15871	Truesilver Skeleton Key	Chiave Universale di Verargento
 oggetto	15872	Arcanite Skeleton Key	Chiave Universale d'Arcanite
+oggetto	15873	Ragged John's Neverending Cup	Boccale Senza Fondo di John
 oggetto	15875	Rotten Apple	Mela Marcia
 oggetto	15876	Nathanos' Chest	Cassa di Nathanos
 oggetto	15877	Shrine Bauble	Bolla del Santuario
@@ -10049,6 +10406,7 @@ oggetto	16053	Schematic: Master Engineer's Goggles	Schema: Occhiali da Maestro I
 oggetto	16054	Schematic: Arcanite Dragonling	Schema: Minidrago d'Arcanite
 oggetto	16055	Schematic: Arcane Bomb	Schema: Bomba Arcana
 oggetto	16056	Schematic: Flawless Arcanite Rifle	Schema: Archibugio d'Arcanite Perfetto
+oggetto	16058	Fordring's Seal	Sigillo di Fordring
 oggetto	16059	Common Brown Shirt	Camicia Marrone Comune
 oggetto	16060	Common White Shirt	Camicia Bianca Comune
 oggetto	16072	Expert Cookbook	Ricettario per Esperti
@@ -10495,6 +10853,7 @@ oggetto	16995	Duskwing Mantle	Coprispalle di Alascura
 oggetto	16996	Gorewood Bow	Arco di Legnosangue
 oggetto	16998	Sacred Protector	Protettore Consacrato
 oggetto	16999	Royal Seal of Alexis	Sigillo Reale di Alexis
+oggetto	17001	Elemental Circle	Fede Elementale
 oggetto	17002	Ichor Spitter	Incidicore
 oggetto	17003	Skullstone Hammer	Martello di Teschio di Pietra
 oggetto	17004	Sarah's Guide	Guida di Sarah
@@ -10532,9 +10891,12 @@ oggetto	17037	Hornbeam Seed	Seme di Carpinus
 oggetto	17038	Ironwood Seed	Seme di Legnoduro
 oggetto	17042	Nail Spitter	Cannalunga Sparachiodi
 oggetto	17043	Zealot's Robe	Tonaca dello Zelota
+oggetto	17044	Will of the Martyr	Volontà del Martire
+oggetto	17045	Blood of the Martyr	Sangue del Martire
 oggetto	17047	Luminescent Amice	Amitto Luminoso
 oggetto	17048	Rumsey Rum	Rum di Rumsey
 oggetto	17049	Plans: Fiery Chain Girdle	Progetto: Cinturone Inanellato Ardente
+oggetto	17050	Chan's Imperial Robes	Vesti Imperiali di Chan
 oggetto	17051	Plans: Dark Iron Bracers	Progetto: Bracciali di Ferroscuro
 oggetto	17052	Plans: Dark Iron Leggings	Progetto: Gambiere di Ferroscuro
 oggetto	17053	Plans: Fiery Chain Shoulders	Progetto: Spallacci Inanellati Ardenti
@@ -10698,9 +11060,18 @@ oggetto	17703	Celebrian Diamond	Diamante Celebriano
 oggetto	17704	Edge of Winter	Incisore dell'Inverno
 oggetto	17705	Thrash Blade	Lama Falciata
 oggetto	17706	Plans: Edge of Winter	Progetto: Incisore dell'Inverno
+oggetto	17707	Gemshard Heart	Cuore Scheggiato
 oggetto	17708	Elixir of Frost Power	Elisir del Potere del Freddo
 oggetto	17709	Recipe: Elixir of Frost Power	Ricetta: Elisir del Potere del Freddo
+oggetto	17710	Charstone Dirk	Stiletto di Pietrarsa
+oggetto	17711	Elemental Rockridge Leggings	Gambiere Elementali della Cresta Rocciosa
+oggetto	17713	Blackstone Ring	Anello di Rocciascura
+oggetto	17714	Bracers of the Stone Princess	Bracciali della Principessa di Pietra
+oggetto	17715	Eye of Theradras	Occhio di Theradras
 oggetto	17716	Snowmaster 9000	Creaneve 9000
+oggetto	17717	Megashot Rifle	Archibugio Mega
+oggetto	17718	Gizlock's Hypertech Buckler	Brocchiero Ipertecnico di Gizlock
+oggetto	17719	Inventor's Focal Sword	Spada Focale dell'Inventore
 oggetto	17720	Schematic: Snowmaster 9000	Schema: Creaneve 9000
 oggetto	17721	Gloves of the Greatfather	Guanti del Nonno
 oggetto	17722	Pattern: Gloves of the Greatfather	Modello: Guanti del Nonno
@@ -10709,11 +11080,32 @@ oggetto	17724	Pattern: Green Holiday Shirt	Modello: Camicia Verde della Festa
 oggetto	17725	Formula: Enchant Weapon - Winter's Might	Formula: Incanta Arma - Vigore dell'Inverno
 oggetto	17726	Smokywood Pastures Special Gift	Regalo Speciale della Masseria Buongusto
 oggetto	17727	Smokywood Pastures Gift Pack	Pacco Regalo della Masseria Buongusto
+oggetto	17728	Albino Crocscale Boots	Stivali di Crocolisco Albino
+oggetto	17730	Gatorbite Axe	Ascia del Morso dell'Alligatore
+oggetto	17732	Rotgrip Mantle	Coprispalle di Morsodrillo
 oggetto	17733	Fist of Stone	Pugno di Roccia
+oggetto	17734	Helm of the Mountain	Elmo della Montagna
 oggetto	17735	The Feast of Winter Veil	Vigilia di Grande Inverno
+oggetto	17736	Rockgrip Gauntlets	Guanti Lunghi della Presa Rocciosa
+oggetto	17737	Cloud Stone	Nuvola di Pietra
+oggetto	17738	Claw of Celebras	Artiglio di Celebras
+oggetto	17739	Grovekeeper's Drape	Mantello Silvestre
+oggetto	17740	Soothsayer's Headdress	Tiara dell'Indovino
+oggetto	17741	Nature's Embrace	Abbraccio della Natura
+oggetto	17742	Fungus Shroud Armor	Armatura Ricoperta di Funghi
 oggetto	17743	Resurgence Rod	Verga della Rifioritura
+oggetto	17744	Heart of Noxxion	Cuore di Noxxion
+oggetto	17745	Noxious Shooter	Perforatore Velenoso
+oggetto	17746	Noxxion's Shackles	Manette di Noxxion
 oggetto	17747	Razorlash Root	Radice di Ramospino
+oggetto	17748	Vinerot Sandals	Grancalzari Ramospinosi
+oggetto	17749	Phytoskin Spaulders	Guardaspalle di Fitopelle
+oggetto	17750	Chloromesh Girdle	Cinturone Intessuto di Cloro
+oggetto	17751	Brusslehide Leggings	Gambiere di Pellespina
+oggetto	17752	Satyr's Lash	Sferza del Satiro
 oggetto	17753	Verdant Keeper's Aim	Arco da Custode Verdeggiante
+oggetto	17754	Infernal Trickster Leggings	Gambiere dell'Ingannatore Infernale
+oggetto	17755	Satyrmane Sash	Fascia da Satiro
 oggetto	17756	Shadowshard Fragment	Frammento di Cristalli d'Ombra
 oggetto	17757	Amulet of Spirits	Amuleto degli Spiriti
 oggetto	17758	Amulet of Union	Amuleto dell'Unione
@@ -10724,6 +11116,19 @@ oggetto	17762	Gem of the Second Khan	Gemma del Secondo Khan
 oggetto	17763	Gem of the Third Khan	Gemma del Terzo Khan
 oggetto	17764	Gem of the Fourth Khan	Gemma del Quarto Khan
 oggetto	17765	Gem of the Fifth Khan	Gemma del Quinto Khan
+oggetto	17766	Princess Theradras' Scepter	Scettro della Principessa Theradras
+oggetto	17767	Bloomsprout Headpiece	Cimiero del Germoglio di Sangue
+oggetto	17768	Woodseed Hoop	Anello del Seme di Legno
+oggetto	17770	Branchclaw Gauntlets	Guanti Lunghi di Ramartiglio
+oggetto	17772	Zealous Shadowshard Pendant	Pendente di Cristalli d'Ombra Zelante
+oggetto	17773	Prodigious Shadowshard Pendant	Pendente di Cristalli d'Ombra Prodigioso
+oggetto	17774	Mark of the Chosen	Marchio del Prescelto
+oggetto	17775	Acumen Robes	Vesti dell'Acume
+oggetto	17776	Sprightring Helm	Elmo Brioso
+oggetto	17777	Relentless Chain	Corazza Implacabile
+oggetto	17778	Sagebrush Girdle	Cinturone di Artemisia
+oggetto	17779	Hulkstone Pauldrons	Spallacci di Pietra Ingombrante
+oggetto	17780	Blade of Eternal Darkness	Lama dell'Oscurità Eterna
 oggetto	17781	The Pariah's Instructions	Istruzioni dell'Emarginato
 oggetto	17782	Talisman of Binding Shard	Talismano della Scheggia del Vincolo
 oggetto	17822	Frostwolf Maps	Mappe dei Lupi Bianchi
@@ -10741,15 +11146,21 @@ oggetto	17907	Frostwolf Insignia Rank 4	Fregio dei Lupi Bianchi Grado 4
 oggetto	17908	Frostwolf Insignia Rank 5	Fregio dei Lupi Bianchi Grado 5
 oggetto	17909	Frostwolf Insignia Rank 6	Fregio dei Lupi Bianchi Grado 6
 oggetto	17922	Lionfur Armor	Armatura di Pelliccia di Leone
+oggetto	17943	Fist of Stone	Pugno di Roccia
 oggetto	17962	Blue Sack of Gems	Sacca di Gemme Blu
 oggetto	17963	Green Sack of Gems	Sacca Verde di Gemme
 oggetto	17964	Gray Sack of Gems	Sacca Grigia di Gemme
 oggetto	17965	Yellow Sack of Gems	Sacca Gialla di Gemme
 oggetto	17966	Onyxia Hide Backpack	Zaino di Pelle di Onyxia
 oggetto	17969	Red Sack of Gems	Sacca di Gemme Rossa
+oggetto	18022	Royal Seal of Alexis	Sigillo Reale di Alexis
 oggetto	18042	Thorium Headed Arrow	Freccia con Punta di Torio
+oggetto	18043	Coal Miner Boots	Stivali della Miniera di Carbone
+oggetto	18044	Hurley's Tankard	Boccale di Hurley
 oggetto	18045	Tender Wolf Steak	Filetto di Lupo
 oggetto	18046	Recipe: Tender Wolf Steak	Ricetta: Filetto di Lupo
+oggetto	18082	Zum'rah's Vexing Cane	Bastone Vessatorio di Zum'rah
+oggetto	18083	Jumanza Grips	Paramani Jumanza
 oggetto	18142	Severed Night Elf Head	Testa Mozzata di Elfo della Notte
 oggetto	18143	Tuft of Gnome Hair	Ciuffo di Capelli di Gnomo
 oggetto	18144	Human Bone Chip	Scheggia d'Osso Umano
@@ -10820,12 +11231,26 @@ oggetto	18284	Kreeg's Stout Beatdown	Mazzata Scura di Kreeg
 oggetto	18285	Crystallized Mana Shard	Frammento di Mana Cristallizzato
 oggetto	18286	Condensed Mana Fragment	Frammento di Mana Condensato
 oggetto	18288	Molasses Firewater	Acquavite di Melassa
+oggetto	18289	Barbed Thorn Necklace	Collana di Spine Pungenti
 oggetto	18290	Schematic: Biznicks 247x128 Accurascope	Schema: Ultramirino Bizz 247x128
 oggetto	18291	Schematic: Force Reactive Disk	Schema: Disco Elettroreattivo
 oggetto	18292	Schematic: Core Marksman Rifle	Schema: Archibugio del Tiratore Scelto
 oggetto	18297	Thornling Seed	Seme di Spinino
 oggetto	18299	Hydrospawn Essence	Essenza di Idrogenio
 oggetto	18300	Hyjal Nectar	Nettare di Hyjal
+oggetto	18302	Band of Vigor	Vera del Vigore
+oggetto	18304	Greenroot Mail	Maglia Verde Borchiata
+oggetto	18305	Breakwater Legguards	Gambali Foderati del Frangiflutti
+oggetto	18308	Clever Hat	Cappello dell'Intelligenza
+oggetto	18312	Energized Chestplate	Cotta Energizzata
+oggetto	18314	Ring of Demonic Guile	Anello dell'Ingegno Demoniaco
+oggetto	18315	Ring of Demonic Potency	Anello della Potenza Demoniaca
+oggetto	18318	Merciful Greaves	Sandali della Misericordia
+oggetto	18319	Fervent Helm	Camaglio del Fervente
+oggetto	18322	Waterspout Boots	Stivali della Manifestazione d'Acqua
+oggetto	18323	Satyr's Bow	Arco del Satiro
+oggetto	18326	Razor Gauntlets	Guanti Lunghi Taglienti
+oggetto	18328	Shadewood Cloak	Mantello di Legnoscuro
 oggetto	18329	Arcanum of Rapidity	Arcanum della Rapidità
 oggetto	18330	Arcanum of Focus	Arcanum del Focus
 oggetto	18331	Arcanum of Protection	Arcanum della Protezione
@@ -10834,6 +11259,8 @@ oggetto	18333	Libram of Focus	Compendio sulla Concentrazione
 oggetto	18334	Libram of Protection	Compendio sulla Protezione
 oggetto	18335	Pristine Black Diamond	Diamante Nero Intatto
 oggetto	18336	Gauntlet of Gordok Might	Guanto della Forza Gordok
+oggetto	18337	Orphic Bracers	Bracciali Orfici
+oggetto	18354	Pimgib's Collar	Collare di Pimgib
 oggetto	18356	Garona: A Study on Stealth and Treachery	Garona: Studio sulla Furtività e sul Tradimento
 oggetto	18357	Codex of Defense	Codice della Difesa
 oggetto	18358	The Arcanist's Cookbook	Libro di Ricette dell'Arcanista
@@ -10843,6 +11270,18 @@ oggetto	18361	The Greatest Race of Hunters	Grande Stirpe dei Cacciatori
 oggetto	18362	Holy Bologna: What the Light Won't Tell You	Sacra Lasagna: Cosa la Luce Non Vuole Farvi Sapere
 oggetto	18363	Frost Shock and You	Folgore del Gelo per Negati
 oggetto	18364	The Emerald Dream	Sogno di Smeraldo
+oggetto	18366	Gordok's Handguards	Guardamani di Gordok
+oggetto	18367	Gordok's Gauntlets	Guanti Lunghi di Gordok
+oggetto	18368	Gordok's Gloves	Guanti di Gordok
+oggetto	18369	Gordok's Handwraps	Mitene di Gordok
+oggetto	18371	Mindtap Talisman	Talismano dell'Impulso Mentale
+oggetto	18375	Bracers of the Eclipse	Bracciali dell'Eclissi
+oggetto	18379	Odious Greaves	Schinieri Odiosi
+oggetto	18386	Padre's Trousers	Calzoni del Padre
+oggetto	18387	Brightspark Gloves	Guanti Sprizzaluce
+oggetto	18389	Cloak of the Cosmos	Mantello del Cosmo
+oggetto	18390	Tanglemoss Leggings	Gambiere di Muschio
+oggetto	18392	Distracting Dagger	Pugnale della Distrazione
 oggetto	18398	Tidal Loop	Anello Mareale
 oggetto	18399	Ocean's Breeze	Brezza dell'Oceano
 oggetto	18400	Ring of Living Stone	Anello della Pietra Vivente
@@ -10855,6 +11294,8 @@ oggetto	18406	Onyxia Blood Talisman	Talismano Insanguinato di Onyxia
 oggetto	18407	Felcloth Gloves	Guanti di Telavile
 oggetto	18408	Inferno Gloves	Guanti Infernali
 oggetto	18409	Mooncloth Gloves	Guanti di Telaluna
+oggetto	18410	Sprinter's Sword	Spada del Velocista
+oggetto	18411	Spry Boots	Stivali della Vivacità
 oggetto	18412	Core Fragment	Frammento di Nucleo
 oggetto	18413	Cloak of Warding	Mantello della Protezione
 oggetto	18414	Pattern: Belt of the Archmage	Modello: Cintura dell'Arcimago
@@ -10862,8 +11303,10 @@ oggetto	18415	Pattern: Felcloth Gloves	Modello: Guanti di Telavile
 oggetto	18416	Pattern: Inferno Gloves	Modello: Guanti Infernali
 oggetto	18417	Pattern: Mooncloth Gloves	Modello: Guanti di Telaluna
 oggetto	18418	Pattern: Cloak of Warding	Modello: Mantello della Protezione
+oggetto	18421	Backwood Helm	Elmo Legnoso
 oggetto	18422	Head of Onyxia	Testa di Onyxia
 oggetto	18423	Head of Onyxia	Testa di Onyxia
+oggetto	18424	Sedge Boots	Stivali di Falasco
 oggetto	18427	Sergeant's Cloak	Mantello del Sergente
 oggetto	18428	Senior Sergeant's Insignia	Fregio del Sergente Istruttore
 oggetto	18429	First Sergeant's Plate Bracers	Bracciali a Piastre del Primo Sergente
@@ -10882,6 +11325,7 @@ oggetto	18445	Sergeant Major's Plate Wristguards	Polsiere Foderate a Piastre del
 oggetto	18447	Sergeant Major's Plate Wristguards	Polsiere Foderate a Piastre del Sergente Maggiore
 oggetto	18448	Sergeant Major's Chain Armguards	Bracciali Foderati Inanellati del Sergente Maggiore
 oggetto	18449	Sergeant Major's Chain Armguards	Bracciali Foderati Inanellati del Sergente Maggiore
+oggetto	18451	Hyena Hide Belt	Cintura di Pelle di Iena
 oggetto	18452	Sergeant Major's Leather Armsplints	Antibracci di Cuoio del Sergente Maggiore
 oggetto	18453	Sergeant Major's Leather Armsplints	Antibracci di Cuoio del Sergente Maggiore
 oggetto	18454	Sergeant Major's Dragonhide Armsplints	Antibracci di Pelle di Drago del Sergente Maggiore
@@ -10889,13 +11333,30 @@ oggetto	18455	Sergeant Major's Dragonhide Armsplints	Antibracci di Pelle di Drag
 oggetto	18456	Sergeant Major's Silk Cuffs	Polsiere di Seta del Sergente Maggiore
 oggetto	18457	Sergeant Major's Silk Cuffs	Polsiere di Seta del Sergente Maggiore
 oggetto	18461	Sergeant's Cloak	Mantello del Sergente
+oggetto	18462	Jagged Bone Fist	Paranocche Scheggiato
+oggetto	18463	Ogre Pocket Knife	Spadino Ogre
+oggetto	18473	Royal Seal of Eldre'Thalas	Sigillo Reale di Eldre'Thalas
+oggetto	18475	Oddly Magical Belt	Cintura Magica Strana
+oggetto	18476	Mud Stained Boots	Stivali Coperti di Fango
+oggetto	18477	Shaggy Leggings	Gambiere Rattoppate
+oggetto	18478	Hyena Hide Jerkin	Giaco di Pelle di Iena
+oggetto	18479	Carrion Scorpid Helm	Elmo di Scorpide Cadaverico
+oggetto	18480	Scarab Plate Helm	Elmo d'Acciaio dello Scarabeo
+oggetto	18481	Skullcracking Mace	Mazza Spaccacrani
+oggetto	18482	Ogre Toothpick Shooter	Stuzzicadenti Ogre
+oggetto	18483	Mana Channeling Wand	Bacchetta del Mana Canalizzato
+oggetto	18485	Observer's Shield	Scudo dell'Osservatore
 oggetto	18486	Mooncloth Robe	Tonaca di Telaluna
 oggetto	18487	Pattern: Mooncloth Robe	Modello: Tonaca di Telaluna
 oggetto	18488	Heated Ancient Blade	Lama Temprata Antica
 oggetto	18489	Unfired Ancient Blade	Antica Lama Cruda
 oggetto	18492	Treated Ancient Blade	Lama Trattata Antica
+oggetto	18495	Redoubt Cloak	Mantello da Trincea
+oggetto	18499	Barrier Shield	Scudo Barriera
+oggetto	18500	Tarnished Elven Ring	Anello Elfico Annerito
 oggetto	18501	Felvine Shard	Frammento di Vil Vite
 oggetto	18504	Girdle of Insight	Cinturone della Consapevolezza
+oggetto	18505	Mugger's Belt	Cintura del Rapinatore
 oggetto	18506	Mongoose Boots	Stivali della Mangusta
 oggetto	18508	Swift Flight Bracers	Bracciali del Volo Rapido
 oggetto	18509	Chromatic Cloak	Mantello Cromatico
@@ -10909,6 +11370,24 @@ oggetto	18516	Pattern: Swift Flight Bracers	Modello: Bracciali del Volo Rapido
 oggetto	18517	Pattern: Chromatic Cloak	Modello: Mantello Cromatico
 oggetto	18518	Pattern: Hide of the Wild	Modello: Mantello delle Terre Selvagge
 oggetto	18519	Pattern: Shifting Cloak	Modello: Mantello Mutevole
+oggetto	18520	Barbarous Blade	Lama Barbara
+oggetto	18521	Grimy Metal Boots	Stivali di Metallo Sporchi
+oggetto	18522	Band of the Ogre King	Vera del Re degli Ogre
+oggetto	18523	Brightly Glowing Stone	Pietra dell'Intelligenza Brillante
+oggetto	18524	Leggings of Destruction	Gambiere della Distruzione
+oggetto	18525	Bracers of Prosperity	Bracciali della Prosperità
+oggetto	18526	Crown of the Ogre King	Corona del Re degli Ogre
+oggetto	18527	Harmonious Gauntlets	Guanti Lunghi dell'Armonia
+oggetto	18528	Cyclone Spaulders	Guardaspalle del Ciclone
+oggetto	18529	Elemental Plate Girdle	Cinturone a Piastre Elementale
+oggetto	18530	Ogre Forged Hauberk	Usbergo Forgiato da Ogre
+oggetto	18531	Unyielding Maul	Maglio dell'Inflessibilità
+oggetto	18532	Mindsurge Robe	Tonaca dell'Ondata Intellettuale
+oggetto	18533	Gordok Bracers of Power	Bracciali della Potenza di Gordok
+oggetto	18534	Rod of the Ogre Magi	Verga del Mago Ogre
+oggetto	18535	Milli's Shield	Scudo di Milli
+oggetto	18536	Milli's Lexicon	Dizionario di Milli
+oggetto	18537	Counterattack Lodestone	Magnetite del Contrattacco
 oggetto	18539	Reliquary of Purity	Reliquiario della Purezza
 oggetto	18540	Sealed Reliquary of Purity	Reliquiario della Purezza Sigillato
 oggetto	18543	Ring of Entropy	Anello dell'Entropia
@@ -10979,12 +11458,19 @@ oggetto	18664	A Treatise on Military Ranks	Trattato sui Gradi Militari
 oggetto	18665	The Eye of Shadow	Occhio dell'Ombra
 oggetto	18670	Xorothian Glyphs	Glifi Xorothiani
 oggetto	18671	Baron Charr's Sceptre	Scettro del Barone Charr
+oggetto	18672	Elemental Ember	Brace Elementale
 oggetto	18674	Hardened Stone Band	Vera di Pietra Indurita
 oggetto	18675	Military Ranks of the Horde & Alliance	Gradi Militari dell'Orda e dell'Alleanza
 oggetto	18678	Tempestria's Frozen Necklace	Collana Ghiacciata di Tempestria
 oggetto	18679	Frigid Ring	Anello Frigido
+oggetto	18683	Hammer of the Vesper	Martello del Vespro
+oggetto	18686	Bone Golem Shoulders	Spallacci del Golem d'Ossa
 oggetto	18687	Xorothian Stardust	Polvere Stellare Xorotiana
 oggetto	18688	Imp in a Jar	Imp in un Vaso
+oggetto	18689	Phantasmal Cloak	Mantello Ectoplasmico
+oggetto	18690	Wraithplate Leggings	Gambiere delle Piastre Aleggianti
+oggetto	18694	Shadowy Mail Greaves	Schinieri di Maglia Ombrosa
+oggetto	18695	Spellbound Tome	Tomo Vincolamagie
 oggetto	18703	Ancient Petrified Leaf	Antica Foglia Pietrificata
 oggetto	18704	Mature Blue Dragon Sinew	Tendine di Drago Blu Adulto
 oggetto	18705	Mature Black Dragon Sinew	Tendine di Drago Nero Adulto
@@ -10998,9 +11484,16 @@ oggetto	18712	Arena Vambraces	Avambracci delle Arene
 oggetto	18713	Rhok'delar, Longbow of the Ancient Keepers	Rhok'delar, Arco Lungo degli Antichi Protettori
 oggetto	18714	Ancient Sinew Wrapped Lamina	Faretra di Tendini Antichi
 oggetto	18715	Lok'delar, Stave of the Ancient Keepers	Lok'delar, Bastone degli Antichi Protettori
+oggetto	18716	Ash Covered Boots	Stivali Coperti di Cenere
+oggetto	18717	Hammer of the Grand Crusader	Martello del Gran Crociato
+oggetto	18718	Grand Crusader's Helm	Elmo del Gran Crociato
 oggetto	18719	The Traitor's Heart	Cuore del Traditore
 oggetto	18724	Enchanted Black Dragon Sinew	Tendine di Drago Nero Incantato
+oggetto	18727	Crimson Felt Hat	Fedora Rosso Cremisi
+oggetto	18730	Shadowy Laced Handwraps	Guardamani Intessuti d'Ombra
 oggetto	18731	Pattern: Heavy Leather Ball	Modello: Palla di Cuoio Pesante
+oggetto	18737	Bone Slicing Hatchet	Accetta Tagliaossa
+oggetto	18745	Sacred Cloth Leggings	Gambali di Stoffa Consacrati
 oggetto	18746	Divination Scryer	Veggente della Divinazione
 oggetto	18749	Charger's Lost Soul	Anima Perduta del Gran Destriero
 oggetto	18752	Exorcism Censer	Incensiere per Esorcismo
@@ -11403,6 +11896,7 @@ oggetto	19505	Warsong Battle Tabard	Insegna da Battaglia dei Cantaguerra
 oggetto	19506	Silverwing Battle Tabard	Insegna degli Alargentea
 oggetto	19507	Inquisitor's Shawl	Spalline dell'Inquisitore
 oggetto	19508	Branded Leather Bracers	Bracciali di Cuoio Marcati
+oggetto	19509	Dusty Mail Boots	Stivali di Maglia Impolverati
 oggetto	19510	Legionnaire's Band	Vera del Legionario
 oggetto	19511	Legionnaire's Band	Vera del Legionario
 oggetto	19512	Legionnaire's Band	Vera del Legionario
@@ -11585,6 +12079,7 @@ oggetto	19805	Keefer's Angelfish	Pesce Angelo di Keefer
 oggetto	19806	Dezian Queenfish	Scienide di Dezian
 oggetto	19807	Speckled Tastyfish	Spigola Screziata
 oggetto	19808	Rockhide Strongfish	Pesceforte Scagliadura
+oggetto	19812	Rune of the Dawn	Runa dell'Alba
 oggetto	19813	Punctured Voodoo Doll	Bambola Vudù con Spilloni
 oggetto	19814	Punctured Voodoo Doll	Bambola Vudù con Spilloni
 oggetto	19815	Punctured Voodoo Doll	Bambola Vudù con Spilloni
@@ -11663,6 +12158,11 @@ oggetto	19974	Mudskunk Lure	Esca per Fanguzzola
 oggetto	19975	Zulian Mudskunk	Fanguzzola Zuliana
 oggetto	19978	Fishing Tournament!	Torneo di Pesca!
 oggetto	19979	Hook of the Master Angler	Amo del Maestro Pescatore
+oggetto	19982	Duskbat Drape	Drappo di Pipistrello del Vespro
+oggetto	19984	Ebon Mask	Maschera d'Ebano
+oggetto	19990	Blessed Prayer Beads	Perle della Preghiera Benedette
+oggetto	19991	Devilsaur Eye	Occhio del Gigantosauro
+oggetto	19992	Devilsaur Tooth	Dente di Gigantosauro
 oggetto	19994	Harvest Fruit	Frutta del Raccolto
 oggetto	19995	Harvest Boar	Cinghiale del Raccolto
 oggetto	19996	Harvest Fish	Pesce del Raccolto
@@ -11672,6 +12172,7 @@ oggetto	19999	Bloodvine Goggles	Occhiali della Vite del Sangue
 oggetto	20000	Schematic: Bloodvine Goggles	Schema: Occhiali della Vite del Sangue
 oggetto	20001	Schematic: Bloodvine Lens	Schema: Lente della Vite del Sangue
 oggetto	20002	Greater Dreamless Sleep Potion	Pozione Superiore del Sonno Senza Sogni
+oggetto	20006	Circle of Hope	Anello della Speranza
 oggetto	20007	Mageblood Elixir	Elisir del Sangue Magico
 oggetto	20008	Living Action Potion	Pozione dell'Azione Continua
 oggetto	20009	For the Light!	Per la Luce!
@@ -11695,6 +12196,9 @@ oggetto	20030	Pet Rock	Sassolino
 oggetto	20031	Essence Mango	Essenza di Mango
 oggetto	20033	Zandalar Demoniac's Robe	Tonaca Demoniaca degli Zandalari
 oggetto	20034	Zandalar Illusionist's Robe	Tonaca dell'Illusionista degli Zandalari
+oggetto	20035	Glacial Spike	Spina Glaciale
+oggetto	20036	Fire Ruby	Rubino di Fuoco
+oggetto	20037	Arcane Crystal Pendant	Pendente con Cristallo Arcano
 oggetto	20039	Dark Iron Boots	Stivali di Ferroscuro
 oggetto	20040	Plans: Dark Iron Boots	Progetto: Stivali di Ferroscuro
 oggetto	20041	Highlander's Plate Girdle	Cinturone a Piastre degli Altopiani
@@ -11737,6 +12241,7 @@ oggetto	20078	Zandalar Signet of Serenity	Sigillo della Serenità degli Zandalar
 oggetto	20079	Spirit of Zanza	Spirito di Zanza
 oggetto	20080	Sheen of Zanza	Bagliore di Zanza
 oggetto	20081	Swiftness of Zanza	Rapidità di Zanza
+oggetto	20083	Hunting Spear	Lancia da Caccia
 oggetto	20085	Arcane Shard	Scheggia Arcana
 oggetto	20087	Wavethrasher Scales	Scaglie di Spazzaonda
 oggetto	20088	Highlander's Chain Girdle	Cinturone Inanellato degli Altopiani
@@ -11781,6 +12286,7 @@ oggetto	20126	Highlander's Plate Girdle	Cinturone a Piastre degli Altopiani
 oggetto	20127	Highlander's Plate Greaves	Schinieri a Piastre degli Altopiani
 oggetto	20128	Highlander's Plate Greaves	Schinieri a Piastre degli Altopiani
 oggetto	20129	Highlander's Plate Greaves	Schinieri a Piastre degli Altopiani
+oggetto	20130	Diamond Flask	Tonico del Diamante
 oggetto	20131	Battle Tabard of the Defilers	Insegna da Battaglia dei Profanatori
 oggetto	20132	Arathor Battle Tabard	Insegna da Battaglia degli Arathor
 oggetto	20150	Defiler's Chain Girdle	Cinturone Inanellato dei Profanatori
@@ -11873,9 +12379,11 @@ oggetto	20243	Highlander's Runecloth Bandage	Benda di Telarunica degli Altopiani
 oggetto	20244	Highlander's Silk Bandage	Benda di Seta degli Altopiani
 oggetto	20253	Pattern: Warbear Harness	Modello: Imbracatura dell'Orsoguerra
 oggetto	20254	Pattern: Warbear Woolies	Modello: Pantaloncini di Lana dell'Orsoguerra
+oggetto	20255	Whisperwalk Boots	Stivali del Passo Leggero
 oggetto	20256	Warsong Gulch Ribbon of Sacrifice	Coccarda del Sacrificio della Forra dei Cantaguerra
 oggetto	20295	Blue Dragonscale Leggings	Gambiere di Scaglie di Drago Blu
 oggetto	20296	Green Dragonscale Gauntlets	Guanti Lunghi di Scaglie di Drago Verde
+oggetto	20369	Azurite Fists	Guanti d'Azurite
 oggetto	20371	Blue Murloc Egg	Uovo di Murloc Blu
 oggetto	20373	Stonelash Scorpid Stinger	Pungiglione di Scorpide Sferzapietra
 oggetto	20374	Stonelash Pincer Stinger	Pungiglione di Pinzatore Sferzapietra
@@ -11976,19 +12484,28 @@ oggetto	20498	Silithid Chitin	Chitina di Silitide
 oggetto	20499	Broken Silithid Chitin	Chitina di Silitide Corrotta
 oggetto	20500	Light Silithid Carapace	Carapace Leggero di Silitide
 oggetto	20501	Heavy Silithid Carapace	Carapace Pesante di Silitide
+oggetto	20503	Enamored Water Spirit	Spirito dell'Acqua dell'Innamorato
+oggetto	20504	Lightforged Blade	Lama Forgiata nella Luce
+oggetto	20505	Chivalrous Signet	Anello con Sigillo Cavalleresco
+oggetto	20512	Sanctified Orb	Globo Consacrato
 oggetto	20514	Abyssal Signet	Anello con Sigillo Abissale
 oggetto	20515	Abyssal Scepter	Scettro Abissale
 oggetto	20516	Bobbing Apple	Mela Galleggiante
+oggetto	20517	Razorsteel Shoulders	Spallacci d'Acciaio Tagliente
 oggetto	20518	Scroll: Create Crest of Beckoning	Pergamena: Crea Insegna del Richiamo
 oggetto	20519	Southsea Pirate Hat	Cappello da Pirata dei Mari del Sud
 oggetto	20520	Dark Rune	Runa Oscura
+oggetto	20521	Fury Visor	Diadema Furioso
 oggetto	20526	Scroll: Create Crest of Beckoning	Pergamena: Crea Insegna del Richiamo
 oggetto	20527	Scroll: Create Crest of Beckoning	Pergamena: Crea Insegna del Richiamo
 oggetto	20528	Scroll: Create Crest of Beckoning	Pergamena: Crea Insegna del Richiamo
+oggetto	20530	Robes of Servitude	Vesti della Servitù
 oggetto	20531	Scroll: Create Signet of Beckoning	Pergamena: Crea Tavoletta del Richiamo
 oggetto	20532	Scroll: Create Signet of Beckoning	Pergamena: Crea Tavoletta del Richiamo
 oggetto	20533	Scroll: Create Signet of Beckoning	Pergamena: Crea Tavoletta del Richiamo
+oggetto	20534	Abyss Shard	Scheggia Abissale
 oggetto	20535	Scroll: Create Signet of Beckoning	Pergamena: Crea Tavoletta del Richiamo
+oggetto	20536	Soul Harvester	Mietianime
 oggetto	20537	Runed Stygian Boots	Stivali Stigi Runici
 oggetto	20538	Runed Stygian Leggings	Gambiere Stigie Runiche
 oggetto	20539	Runed Stygian Belt	Cintura Stigia Runica
@@ -12785,7 +13302,12 @@ oggetto	22200	Silver Shafted Arrow	Freccia Argentata
 oggetto	22201	Reliquary of Purity	Reliquiario della Purezza
 oggetto	22202	Small Obsidian Shard	Frammento d'Ossidiana Piccolo
 oggetto	22203	Large Obsidian Shard	Frammento d'Ossidiana Grande
+oggetto	22204	Wristguards of Renown	Polsiere Foderate della Notorietà
+oggetto	22205	Black Steel Bindings	Bracciali di Acciaio Nero
 oggetto	22206	Bouquet of Red Roses	Bouquet di Rose Rosse
+oggetto	22207	Sash of the Grand Hunt	Fascia della Grande Caccia
+oggetto	22208	Lavastone Hammer	Martello di Pietra Lavica
+oggetto	22212	Golem Fitted Pauldrons	Paraspalle da Golem
 oggetto	22217	Kurinnaxx's Venom Sac	Sacca di Veleno di Kurinnaxx
 oggetto	22218	Handful of Rose Petals	Manciata di Petali di Rosa
 oggetto	22219	Plans: Jagged Obsidian Shield	Progetto: Scudo d'Ossidiana Scheggiata
@@ -12797,11 +13319,16 @@ oggetto	22226	Druidical Remains	Resti Druidici
 oggetto	22227	Starbreeze Village Relic	Reliquia di Brezzastella
 oggetto	22228	Brilliant Sword of Zealotry	Spada del Fanatismo Brillante
 oggetto	22229	Soul Ashes of the Banished	Ceneri d'Anima dell'Esiliato
+oggetto	22231	Kayser's Boots of Precision	Stivali della Precisione del Kayser
+oggetto	22234	Mantle of Lost Hope	Coprispalle della Speranza Perduta
 oggetto	22235	Truesilver Shafted Arrow	Freccia Verargentata
 oggetto	22236	Buttermilk Delight	Dolcetto Glassato
 oggetto	22237	Dark Desire	Estasi Fondente
 oggetto	22238	Very Berry Cream	Crema ai Mirtilli
 oggetto	22239	Sweet Surprise	Dolce Sorpresa
+oggetto	22240	Greaves of Withering Despair	Schinieri della Disperazione Inaridita
+oggetto	22241	Dark Warder's Pauldrons	Paraspalle della Guardia Oscura
+oggetto	22242	Verek's Leash	Guinzaglio di Verek
 oggetto	22243	Small Soul Pouch	Borsa dell'Anima Piccola
 oggetto	22244	Box of Souls	Scatola d'Anime
 oggetto	22246	Enchanted Mageweave Pouch	Borsa di Telamagica Incantata
@@ -12810,6 +13337,10 @@ oggetto	22249	Big Bag of Enchantment	Sacca Grande da Incantatore
 oggetto	22250	Herb Pouch	Sacca da Erbalista
 oggetto	22251	Cenarion Herb Bag	Sacca per Erbe Cenariana
 oggetto	22252	Satchel of Cenarius	Sacco Cenariano
+oggetto	22254	Wand of Eternal Light	Bacchetta della Luce Eterna
+oggetto	22255	Magma Forged Band	Vera Forgiata dal Magma
+oggetto	22256	Mana Shaping Handwraps	Guanti Plasmamana
+oggetto	22257	Bloodclot Band	Vera del Sangue Rappreso
 oggetto	22259	Unbestowed Friendship Bracelet	Braccialetti dell'Amicizia
 oggetto	22260	Friendship Bracelet	Braccialetto dell'Amicizia
 oggetto	22261	Love Fool	Pazzo d'Amore
@@ -12817,6 +13348,11 @@ oggetto	22262	Alliance Gift Collection	Collezione di Doni dell'Alleanza
 oggetto	22263	Horde Gift Collection	Collezione di Doni dell'Orda
 oggetto	22264	Carefully Written Letter	Lettera Scritta con Cura
 oggetto	22265	Lovingly Composed Letter	Lettera Scritta con Amore
+oggetto	22270	Entrenching Boots	Stivali Radicanti
+oggetto	22271	Leggings of Frenzied Magic	Gambiere della Magia Furiosa
+oggetto	22272	Forest's Embrace	Abbraccio della Foresta
+oggetto	22274	Grizzled Pelt	Pelliccia Selvaggia
+oggetto	22275	Firemoss Boots	Stivali del Muschio Ardente
 oggetto	22276	Lovely Red Dress	Vestito Amoroso Rosso
 oggetto	22277	Red Dinner Suit	Completo da Sera Rosso
 oggetto	22278	Lovely Blue Dress	Vestito Amoroso Blu
@@ -12895,9 +13431,17 @@ oggetto	22389	Plans: Sageblade	Progetto: Lama Saggia
 oggetto	22390	Plans: Persuader	Progetto: Persuasore
 oggetto	22392	Formula: Enchant 2H Weapon - Agility	Formula: Incanta Arma a Due Mani - Agilità
 oggetto	22393	Codex: Prayer of Shadow Protection	Codice della Preghiera della Difesa dall'Ombra
+oggetto	22394	Staff of Metanoia	Bastone della Metanoia
+oggetto	22395	Totem of Rage	Totem della Rabbia
 oggetto	22396	Totem of Life	Totem della Vita
+oggetto	22397	Idol of Ferocity	Idolo della Ferocia
 oggetto	22399	Idol of Health	Idolo della Salute
+oggetto	22400	Libram of Truth	Libram della Verità
 oggetto	22402	Libram of Grace	Libram della Grazia
+oggetto	22404	Willey's Back Scratcher	Grattaschiena di Willey
+oggetto	22408	Ritssyn's Wand of Bad Mojo	Bacchetta del Mojo Cattivo di Ritssyn
+oggetto	22410	Gauntlets of Deftness	Guanti Lunghi dell'Abilità
+oggetto	22411	Helm of the Executioner	Elmo del Carnefice
 oggetto	22416	Dreadnaught Breastplate	Pettorale Corazzato dell'Ardore
 oggetto	22417	Dreadnaught Legplates	Gambali Corazzati dell'Ardore
 oggetto	22418	Dreadnaught Helmet	Elmetto dell'Ardore
@@ -12925,6 +13469,7 @@ oggetto	22441	Cryptstalker Handguards	Guardamani Foderati del Predatore di Cript
 oggetto	22442	Cryptstalker Girdle	Cinturone del Predatore di Cripte
 oggetto	22443	Cryptstalker Wristguards	Polsiere Foderate del Predatore di Cripte
 oggetto	22444	Putrid Vine	Vite Putrida
+oggetto	22458	Moonshadow Stave	Asta di Lunascura
 oggetto	22464	Earthshatter Tunic	Giubba Spezzaterra
 oggetto	22465	Earthshatter Legguards	Gambali Foderati Spezzaterra
 oggetto	22466	Earthshatter Headpiece	Cimiero Spezzaterra
@@ -13226,7 +13771,10 @@ oggetto	23194	Lesser Mark of the Dawn	Marchio Inferiore dell'Alba
 oggetto	23195	Mark of the Dawn	Marchio dell'Alba
 oggetto	23196	Greater Mark of the Dawn	Marchio Maggiore dell'Alba
 oggetto	23197	Idol of the Moon	Idolo della Luna
+oggetto	23198	Idol of Brutality	Idolo della Brutalità
 oggetto	23199	Totem of the Storm	Totem della Tempesta
+oggetto	23200	Totem of Sustaining	Totem del Sostentamento
+oggetto	23201	Libram of Divinity	Libram della Divinità
 oggetto	23203	Libram of Fervor	Libram del Fervore
 oggetto	23206	Mark of the Champion	Marchio del Campione
 oggetto	23207	Mark of the Champion	Marchio del Campione
@@ -15860,6 +16408,7 @@ abilita	13750	Adrenaline Rush	Scarica d'Adrenalina
 abilita	13752	Faerie Fire	Fuoco Fatato
 abilita	13787	Demon Armor	Armatura Demoniaca
 abilita	13808	M73 Frag Grenade	Granata M73
+abilita	13812	Explosive Trap	Trappola Esplosiva
 abilita	13813	Explosive Trap	Trappola Esplosiva
 abilita	13819	Summon Warhorse	Evocazione: Cavallo da Guerra
 abilita	13821	Goblin Rocket Helmet	Casco dei Goblin
@@ -19946,15 +20495,47 @@ abilita	33388	Apprentice Riding	Apprendista in Equitazione
 abilita	33389	Apprentice Riding	Apprendista in Equitazione
 abilita	33391	Journeyman Riding	Praticante in Equitazione
 abilita	33392	Journeyman Riding	Praticante in Equitazione
+abilita	36562	Dismiss Pet	Congedo: Famiglio
 abilita	42598	Pet Submerge	Zucca Malefica
 abilita	42609	Sinister Squashling	Zucca Malefica
 abilita	43308	Find Fish	Trova Pesci
+abilita	43869	You're a Zombie!	Sei uno Zombi!
+abilita	43945	You're a ...! (Effects1)	Sei un...! (Effetti 1)
+abilita	43958	You're Infected!	Sei Infetto!
+abilita	44305	You're a ...! (Effects2)	Sei un...! (Effetti 2)
+abilita	44426	Zombie Explosion!	Esplosione Zombi!
 abilita	44950	Green Winter Clothes	Giacca di Grande Inverno Verde
 abilita	44953	Winter Boots	Stivali di Grande Inverno
 abilita	44958	Red Winter Clothes	Giacca di Grande Inverno Rossa
+abilita	45320	You're Re-infected!	Sei Ri-Infetto!
 abilita	45440	Steam Tonk Controller	Telecomando Carro Giocattolo
 abilita	46598	Ride Vehicle Hardcoded	Utilizzo Veicolo Hardcoded
+abilita	47912	You're a ...! (Parent)	Sei un...! (Genitore)
+abilita	47913	You're a...! (NPC)	Sei un...! (PNG)
+abilita	48050	You're a ...! (Effects3)	Sei un...! (Effetti 3)
+abilita	48198	Righteous Fire	Fuoco Virtuoso
+abilita	48199	Find Zombie	Trova Zombi
+abilita	48200	Healer Aura	Aura Guaritrice
+abilita	48309	Cure Infection	Cura Infezione
+abilita	50146	Righteous Purge	Epurazione Virtuosa
+abilita	50817	Cure Nearby Units	Cura Unità Vicine
+abilita	51244	Water Breathing	Respiro Acquatico
+abilita	54059	You're a ...! (Effects4)	Sei un...! (Effetti 4)
+abilita	54145	You're a ...! (Effects5)	Sei un...! (Effetti 5)
+abilita	54147	You're a ...! (Effects6)	Sei un...! (Effetti 6)
+abilita	55720	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55721	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55722	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55723	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55724	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55725	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55726	You're a...! (NPC)	Sei un...! (PNG)
+abilita	55727	You're a...! (NPC)	Sei un...! (PNG)
+abilita	56528	Zombie Explosion!	Esplosione Zombi!
+abilita	56560	Beckoning Groan	Lamento Richiamante
 abilita	57346	Ride Vehicle	Utilizzo Veicolo
+abilita	57523	Wretched Zombie Healer	Guaritore Zombi Vomitato
+abilita	61454	Zombie Dies	Zombi Muore
 abilita	63624	Learn a Second Talent Specialization	Apprendi una Seconda Specializzazione Talenti
 abilita	64659	Venomhide Ravasaur	Devasauro Malapelle
 abilita	65183	Summon Venomhide Hatchling	Evocazione: Cucciolo di Malapelle
@@ -26357,7 +26938,7 @@ creatura	15177	Cloud Skydancer	Cloud Danzanubi
 creatura	15178	Runk Windtamer	Runk Calma Vento
 creatura	15180	Baristolth of the Shifting Sands	Baristolth delle Sabbie Mutevoli
 creatura	15181	Commander Mar'alith	Comandante Mar'alith
-creatura	15183	Geologist Larksbane	Geologa Gneiss
+creatura	15183	Geologist Larksbane	Geologa Guastafesta
 creatura	15184	Cenarion Hold Infantry	Gregario della Fortezza Cenariana
 creatura	15185	Brood of Nozdormu	Stirpe di Nozdormu
 creatura	15187	Cenarion Emissary Jademoon	Emissaria Cenariana Giadaluna

@@ -26,7 +26,7 @@ WFJ.Data.add("item", {
   [4160] = { "Ti insegna l'abilità Invisibilità.", 0x3e63efc6, "u" },
   [4161] = { "Ti insegna l'abilità Palla di Fuoco (Grado $N1).", 0x3621f7b6, "u" },
   [4162] = { "Ti insegna l'abilità Traslazione (Grado $N1).", 0xcc2b6995, "u" },
-  [4163] = { "Ti insegna l'abilità Seal of Fury (Grado $N1).", 0x00ddca40, "u" },
+  [4163] = { "Ti insegna l'abilità ⟦Seal of Fury=Sigillo della Furia⟧ (Grado $N1).", 0x00ddca40, "u" },
   [4164] = { "Ti insegna l'abilità ⟦Holy Light=Luce Sacra⟧ (Grado $N1).", 0x4ef0b364, "u" },
   [4165] = { "Ti insegna l'abilità ⟦Holy Light=Luce Sacra⟧ (Grado $N1).", 0x4ef0f66d, "u" },
   [4166] = { "Ti insegna l'abilità ⟦Seal of Protection=Sigillo di Protezione⟧ (Grado $N1).", 0x12c01864, "u" },

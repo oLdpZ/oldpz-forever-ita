@@ -86,7 +86,7 @@ WFJ.Data.add("item", {
   [274430] = { "In combattimento, i tuoi incantesimi di cura hanno una probabilità di conferire a un alleato $N1 punti di Armatura per $D1.", 0xaf5c722d, "u" },
   [274444] = { "Rimuove tutti gli effetti di limitazione al movimento e tutti gli effetti che ti fanno perdere il controllo del personaggio.", 0x5922de69, "u" },
   [274445] = { "Rimuove tutti gli effetti di limitazione al movimento e tutti gli effetti che ti fanno perdere il controllo del personaggio.", 0x5922de69, "u" },
-  [274484] = { "Ferisce il bersaglio infliggendo $N1 danni.\nCombina Axe of Lingering Dread e Axe of Inevitable Ruin per ricostruire il Pendolo della Rovina.", 0xd3c78b48, "u" },
+  [274484] = { "Ferisce il bersaglio infliggendo $N1 danni.\nCombina Axe of Lingering Dread e Axe of Inevitable Ruin per ricostruire il ⟦Pendulum of Doom=Pendolo della Rovina⟧.", 0xd3c78b48, "u" },
   [274491] = { "Ti insegna a creare dei Centaur Hoofwarmers.", 0x9d17e057, "u" },
   [274559] = { "Contiene un set casuale di equipaggiamento per un personaggio di livello $N1 che indossa armature di stoffa.", 0x9a03d87f, "u" },
   [274561] = { "Contiene un set casuale di equipaggiamento per un personaggio di livello $N1 che indossa armature di cuoio.", 0xd0b45a77, "u" },

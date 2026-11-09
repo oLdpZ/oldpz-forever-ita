@@ -119,7 +119,7 @@ WFJ.Data.add("spell", {
   [461640] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
   [461644] = { nil, "Pieno d'ispirazione.", nil, 0x12978998, "mu" },
   [461680] = { "Aumenta fino a $N1 i danni e le cure di incantesimi ed effetti magici per $D1.", "Danni e cure magici aumentati di $N1.", 0xc0d35181, 0x27248267, "uu" },
-  [461681] = { "Aumenta Feral Combat di $N1.", nil, 0x3029c093, nil, "um" },
+  [461681] = { "Aumenta ⟦Feral Combat=Combattimento Ferino⟧ di $N1.", nil, 0x3029c093, nil, "um" },
   [461682] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra e riducendo tutti gli attributi di $N2 per $D1.", nil, 0x17a1cf02, nil, "um" },
   [461683] = { "Sottrae $N1 salute al bersaglio nemico.", nil, 0x8e44b266, nil, "um" },
   [461685] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", nil, 0xa798bce2, nil, "um" },

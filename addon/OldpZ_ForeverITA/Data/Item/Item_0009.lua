@@ -259,7 +259,7 @@ WFJ.Data.add("item", {
   [9405] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },
   [9410] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },
   [9412] = { "Colpisce il bersaglio a distanza con una ⟦Fire Blast=Detonazione di Fuoco⟧ per $N1 danni da fuoco.", 0x03ffdc5b, "u" },
-  [9414] = { "Aumenta Feral Combat di $N1.", 0x5338bc25, "u" },
+  [9414] = { "Aumenta ⟦Feral Combat=Combattimento Ferino⟧ di $N1.", 0x5338bc25, "u" },
   [9418] = { "Squarcia terra e pietra, infliggendo $N1 danni fisici. Infligge $N2 volte i danni agli elementali della terra, ai golem e alle creature forgiate dai Titani.", 0x745a0a2b, "u" },
   [9419] = { "Probabilità, al lancio di un incantesimo offensivo, di colpire un bersaglio con una vampata per $N1 danni da fuoco.", 0x4b9b6817, "u" },
   [9421] = { "Rigenera istantaneamente $N1 salute.", 0xca0d20e6, "u" },

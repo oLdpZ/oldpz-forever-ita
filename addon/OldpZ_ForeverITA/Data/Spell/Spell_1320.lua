@@ -18,7 +18,7 @@ WFJ.Data.add("spell", {
   [1320580] = { "Invoca i venti di Tanaris per rallentare i nemici vicini di $N1. In un deserto i venti si intensificano e il rallentamento sale a $N2.", "Velocità di movimento ridotta di $N1.", 0xa6add0fd, 0xec87dfa1, "uu" },
   [1320643] = { "La capacità di respirare sott'acqua dura il $N1% in più del normale.", "Respiro acquatico.", 0xb6b5ad19, 0x20974a4a, "uu" },
   [1320658] = { "Apre un alveare di silitidi, liberando lo sciame.", nil, 0x22f9e378, nil, "um" },
-  [1320726] = { "Aumenta Feral Combat di $N1.", "Feral Combat aumentato di $N1.", 0x5338bc25, 0x302accb7, "uu" },
+  [1320726] = { "Aumenta ⟦Feral Combat=Combattimento Ferino⟧ di $N1.", "⟦Feral Combat=Combattimento Ferino⟧ aumentato di $N1.", 0x5338bc25, 0x302accb7, "uu" },
   [1320758] = { "Clicca col pulsante destro per evocare e congedare Spawn of Grubthor.", nil, 0x2f66ba80, nil, "um" },
   [1320808] = { "Ferisce il bersaglio, infliggendo $N1 danni.", nil, 0xdaa3fed4, nil, "um" },
   [1320824] = { "Ferisce il bersaglio, facendolo sanguinare per $N1 danni in $D1.", "$N1 danni da sanguinamento subiti ogni $D1.", 0x85a68264, 0x72a94853, "uu" },

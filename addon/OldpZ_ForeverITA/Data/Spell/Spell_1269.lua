@@ -65,5 +65,5 @@ WFJ.Data.add("spell", {
   [1269958] = { "Aumenta di $N1 lo Spirito per la durata della pioggia.", "Spirito aumentato di $N1 durante la pioggia torrenziale. Dovresti asciugarti.", 0x8773f27d, 0x1b032bec, "uu" },
   [1269960] = { "Aumenta di $N1 la Tempra per la durata della tempesta di neve.", "Tempra aumentata di $N1 durante la tempesta di neve. Hai anche molta fame.", 0x540882c4, 0x6332a2fb, "uu" },
   [1269962] = { "Aumenta del $N1% i danni e le cure di incantesimi ed effetti magici per la durata dell'intensa luce solare.", "Danni e cure di incantesimi ed effetti magici aumentati del $N1% sotto l'intensa luce del sole. Dovresti rinfrescarti.", 0x68bd918a, 0xb547d293, "uu" },
-  [1269966] = { "Aumenta di $N1 l'Intelletto per la durata del vento.", "Intelletto aumentato di $N1 durante il vento di burrasca. Dovresti trovare una Charged Stone per non volare via.", 0xbeb1c725, 0x1006e9f9, "uu" },
+  [1269966] = { "Aumenta di $N1 l'Intelletto per la durata del vento.", "Intelletto aumentato di $N1 durante il vento di burrasca. Dovresti trovare una Caricato Stone per non volare via.", 0xbeb1c725, 0x1006e9f9, "uu" },
 })
