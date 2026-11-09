@@ -1,5 +1,5 @@
 -- UI/MenuAttach.lua: how our show / reset reach a Menu element without tainting its click (ADR-031 amendment,
--- 2026-11-09, the raid-marker block). UI/Menus (every tagged and untagged menu) and UI/SpellBook (its settings menu)
+-- the raid-marker block). UI/Menus (every tagged and untagged menu) and UI/SpellBook (its settings menu)
 -- attach through here.
 -- An initializer of ours must never sit in an element's initializer array when the client front-inserts its own
 -- template initializer there at layout (InitializeElementDescription: AddInitializer(initializer, 1) →
@@ -7,8 +7,8 @@
 -- move will taint execution"). The move reads our value, so the template initializer lands in the array tainted,
 -- runs tainted, and its button:SetScript("OnClick", OnButtonClick) (menutemplates.lua:196) leaves the element's
 -- click tainted: picking a raid marker then calls SetRaidTarget from tainted code and the client blocks it, naming
--- this addon [in game 2026-11-09: ADDON_ACTION_FORBIDDEN SetRaidTarget(), taint.log 11:00:23; gone with the menus
--- off, still there with our initializer's body emptied].
+-- this addon [seen in game: ADDON_ACTION_FORBIDDEN SetRaidTarget(); gone with the menus off, still there
+-- with our initializer's body emptied].
 -- So an element that does something when clicked (a responder) or opens a submenu gets no initializer of ours: it is
 -- shown from a post-hook of MenuTemplates.RecurseSetupFontString, which the client's button final initializer calls
 -- on the element after every initializer and before the menu is measured (menutemplates.lua:109–110;
