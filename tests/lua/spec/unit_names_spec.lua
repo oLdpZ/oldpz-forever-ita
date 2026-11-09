@@ -19,6 +19,7 @@ describe("Core/UnitNames", function()
   after_each(function()
     _G.issecretvalue = nil
     _G.UnitGUID = nil
+    _G.UnitTokenFromGUID, _G.UnitPlayerControlled = nil, nil
   end)
 
   it("gives the Italian name when the shown English hashes to the row's h1 (pipeline ↔ Lua contract)", function()
@@ -78,6 +79,22 @@ describe("Core/UnitNames", function()
     assert.is_nil(U.name("Player-1-0ABCDEF0", "Someone")) -- never a player
     assert.are.same({ { "npc", 999999, "name", "Rabid Forest Wolf" }, { "npc", 12696, "name", "Senani Stormheart" } },
       recorded)
+    WFJ.Collector.record = record
+  end)
+
+  it("a creature a player controls is never recorded: its shown name can be the one its owner gave it", function()
+    local recorded = {}
+    local record = WFJ.Collector.record
+    WFJ.Collector.record = function(kind, id, field, en) recorded[#recorded + 1] = { kind, id, field, en } end
+    local PET, WILD = "Creature-0-1-2-3-1860-0000", "Creature-0-1-2-3-999997-0000"
+    _G.UnitTokenFromGUID = function(guid) return (guid == PET or guid == WILD) and "mouseover" or nil end
+    local controlledNow = true
+    _G.UnitPlayerControlled = function() return controlledNow end
+    WFJ.Compat.init(function(name) return _G[name] end)
+    assert.is_nil(U.name(PET, "Makgrave")) -- a Voidwalker its warlock named
+    controlledNow = false
+    assert.is_nil(U.name(WILD, "Rabid Forest Wolf"))
+    assert.are.same({ { "npc", 999997, "name", "Rabid Forest Wolf" } }, recorded)
     WFJ.Collector.record = record
   end)
 

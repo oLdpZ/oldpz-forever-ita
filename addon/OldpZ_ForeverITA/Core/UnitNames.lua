@@ -36,9 +36,22 @@ end
 -- A creature name the shipped data has no row for (a mob Forever added: it is in no table the pipeline reads, the
 -- server sends it) or whose English is not the row's (a Forever rename) goes to the collector as an "npc" line, so the
 -- next send brings it in for translation. A kept-English row with its own English is never recorded. Once per
--- creature and text: the answer cache below holds the miss.
-local function recordMiss(field, id, entry, shown)
+-- creature and text: the answer cache below holds the miss. A creature a player controls (a summoned demon, a
+-- hunter's pet) is never recorded: its shown name can be the one its owner gave it ("Makgrave" on a Voidwalker),
+-- and on this client such a pet can carry a Creature- GUID.
+local function controlled(guid)
+  local fromGUID = WFJ.Compat.resolve("UnitTokenFromGUID")
+  local isControlled = WFJ.Compat.resolve("UnitPlayerControlled")
+  if type(fromGUID) ~= "function" or type(isControlled) ~= "function" then return false end
+  local ok, token = pcall(fromGUID, guid)
+  if not ok or type(token) ~= "string" or secret(token) then return false end
+  local okC, yes = pcall(isControlled, token)
+  return okC and not secret(yes) and yes == true
+end
+
+local function recordMiss(field, id, entry, shown, guid)
   if field ~= "name" then return end
+  if controlled(guid) then return end
   if entry ~= nil and (entry.h1 == nil or WFJ.Hash.h32x2(WFJ.Normalize.v1(shown)) == entry.h1) then return end
   WFJ.Collector.record("npc", id, "name", shown)
 end
@@ -47,7 +60,7 @@ local function compute(field, guid, shown)
   local id = WFJ.Collector.creatureId(guid)
   if id == nil then return nil end
   local entry = WFJ.Lookup.get("unit." .. field, id)
-  recordMiss(field, id, entry, shown)
+  recordMiss(field, id, entry, shown, guid)
   if entry == nil or type(entry.ja) ~= "string" or entry.ja == "" or entry.h1 == nil then return nil end
   if WFJ.Hash.h32x2(WFJ.Normalize.v1(shown)) ~= entry.h1 then return nil end
   return entry.ja
