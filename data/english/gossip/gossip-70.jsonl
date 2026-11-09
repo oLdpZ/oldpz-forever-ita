@@ -33,6 +33,7 @@
 {"id": "70b58c7bf440bdd2", "field": "text", "en": "Where is the Skinning trainer?", "hash": "70b58c7bf440bdd2", "src": "collector@1.60.1.70205", "npcs": [247229]}
 {"id": "70bd2790ce58c87e", "field": "text", "en": "Klaven doesn't pay me enough to deal with zombies, drones, or whatever he calls 'em.", "hash": "70bd2790ce58c87e", "src": "vmangos@13b49dc"}
 {"id": "70c0efcaefe9c4fa", "field": "text", "en": "Finding Reethe.", "hash": "70c0efcaefe9c4fa", "src": "vmangos@13b49dc"}
+{"id": "70c2cbdf7fa9a81f", "field": "text", "en": "The Kirin Tor did not heed my warnings! The Alliance is a sham. Arugal is a reckless fool.", "hash": "70c2cbdf7fa9a81f", "src": "collector@1.60.1.70862", "npcs": [1938]}
 {"id": "70c352390813eef1", "field": "text", "en": "The Commander has been slain! Charge their lines! Die with honor!", "hash": "70c352390813eef1", "src": "vmangos@13b49dc"}
 {"id": "70c8c0dd356fa6ba", "field": "text", "en": "I have discerned the path that you must take. Are you prepared?", "hash": "70c8c0dd356fa6ba", "src": "vmangos@13b49dc"}
 {"id": "70ce28229f19a788", "field": "text", "en": "Bread here! Loaves of your favorites! Nice and fresh!", "hash": "70ce28229f19a788", "src": "vmangos@13b49dc"}

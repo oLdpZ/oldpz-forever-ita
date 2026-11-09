@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["8c433ba9d25c2b03"] = { "Usa questo ⟦Staff of Command=Bastone del Comando⟧ su Raze quando sei vicino agli Shadowsilk Poacher, e lui farà loro rimpiangere il giorno in cui hanno deciso di cacciare di frodo in queste terre.", "." },
   ["8c4d1af8978117ed"] = { "Tuo teschio va a decorare nostri altari rituali!", "." },
   ["8c5ac8cc8755e531"] = { "Ho la certezza assoluta di voler imparare la Conciatura Tribale.", "." },
+  ["8c5cd5132919ae58"] = { "Desidero disimparare i miei talenti di classe o i talenti ereditari.", "." },
   ["8c6358aa2b427784"] = { "Dov'è l'anziana Predastelle?", "." },
   ["8c6681bf373fae0b"] = { "Tu grande capo adesso! Tu <re/regina>! Gloria a <re/regina> {name}, <Re/Regina> dei Gordok!\n\nOra che tu capo, tutti scagnozzi ti danno tributo! Tu lasciato qualcuno vivo, vero capo?", "." },
   ["8c6d1fcfa8f9cb06"] = { "Il ⟦Stonehearth Bunker=Fortilizio di Cordipietra⟧ è stato distrutto dall'⟦Horde=Orda⟧!", "." },

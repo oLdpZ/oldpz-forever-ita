@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-09 at commit `dc887371`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-09 at commit `b65215cf`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -10,15 +10,15 @@
 | Surface | English lines | Ship Italian | Nothing to translate | Done | Not yet |
 |---|---|---|---|---|---|
 | Quest text | 20,468 | 20,275 | 98 | 99.5% | 95 |
-| NPC dialogue (gossip, speech) | 10,992 | 10,903 | 0 | 99.2% | 89 |
+| NPC dialogue (gossip, speech) | 10,995 | 10,906 | 0 | 99.2% | 89 |
 | Book / letter pages | 1,261 | 1,206 | 54 | 99.9% | 1 |
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,224 | 10,210 | 0 | 99.9% | 14 |
-| Spell tooltips + auras | 25,719 | 25,645 | 1 | 99.7% | 73 |
+| Spell tooltips + auras | 25,722 | 25,645 | 1 | 99.7% | 76 |
 | Interface strings | 16,417 | 15,257 | 1,029 | 99.2% | 131 |
-| NPC names | 12,912 | 10,101 | 0 | 78.2% | 2,811 |
-| **All** | **98,648** | | | **96.7%** | **3,214** |
+| NPC names | 12,921 | 10,106 | 0 | 78.2% | 2,815 |
+| **All** | **98,663** | | | **96.7%** | **3,221** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139.
@@ -47,14 +47,14 @@ professions, internal strings): quest 139.
 | Item descriptions | no Italian yet | 13 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
 | Spell tooltips + auras | no Italian yet: the template includes a spell the Forever tables do not hold | 34 |
-| Spell tooltips + auras | no Italian yet | 25 |
+| Spell tooltips + auras | no Italian yet | 28 |
 | Spell tooltips + auras | no Italian yet: the template has too many optional parts for one translation | 8 |
 | Spell tooltips + auras | no Italian yet: the template names the aura's caster, which only the game knows | 2 |
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |
 | Spell tooltips + auras | rejected: no_english_id | 1 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
 | Interface strings | no Italian yet | 131 |
-| NPC names | no Italian yet | 2,811 |
+| NPC names | no Italian yet | 2,815 |
 
 ### Quests without a level
 

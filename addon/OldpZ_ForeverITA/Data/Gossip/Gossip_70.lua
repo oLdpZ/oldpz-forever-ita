@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["70b58c7bf440bdd2"] = { "Dov'è l'istruttore di Scuoiatura?", "." },
   ["70bd2790ce58c87e"] = { "Klaven non mi paga abbastanza per avere a che fare con zombi, droni o come diavolo li chiama.", "." },
   ["70c0efcaefe9c4fa"] = { "Trovare Reethe.", "." },
+  ["70c2cbdf7fa9a81f"] = { "Il Kirin Tor non ha dato ascolto ai miei avvertimenti! L'⟦Alliance=Alleanza⟧ è una farsa. Arugal è un folle sconsiderato.", "." },
   ["70c352390813eef1"] = { "Il comandante è stato ucciso! Caricate le loro linee! Morite con onore!", "." },
   ["70c8c0dd356fa6ba"] = { "Ho individuato la strada che devi percorrere. Sei <pronto/pronta>?", "." },
   ["70ce28229f19a788"] = { "Pane! Pagnotte, le vostre preferite! Belle fresche!", "." },

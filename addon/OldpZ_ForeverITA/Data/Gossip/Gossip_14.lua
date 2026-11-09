@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["1455f28b083f3d2b"] = { "A quanto pare dovrò intervenire e occuparmi di te personalmente.", "." },
   ["145f1261f5cff181"] = { "Salve, Antonio. Che piacere vedere che sei arrivato di nuovo sano e salvo. Fammi sapere se ti serve qualcosa.", "." },
   ["145fe5e84af0ee26"] = { "Ti addestrerei se potessi, ma ti serve qualcuno un po' più... com'è che si dice? Cervellone! Cerca Trixie Quickswitch a ⟦Ironforge=Forgiardente⟧. Dille che ti manda Bronk!", "." },
+  ["1461bc89df144a7d"] = { "⟦Ruins of Lordaeron=Rovine di Lordaeron⟧", "." },
   ["1462899e04f75945"] = { "Abbiamo vinto $2219W battaglie contro il Flagello. Preparati, {name}, perché questa guerra è tutt'altro che finita.", "." },
   ["14694a19b5e6be04"] = { "<Sicuro/Sicura> di non voler imparare a fare <il/la> <guerriero/guerriera>? Beh, è la tua pelle sul campo di battaglia. Se vuoi davvero imparare ad agitare il ditino, faresti meglio a parlare con ⟦Magis Sparkmantle=Magis Frizzamanto⟧ nella ⟦Thunderbrew Distillery=Distilleria Birratuono⟧.", "." },
   ["146ccd94ccabc8e0"] = { "Come posso aiutarti, <signore/signora>?", "." },
