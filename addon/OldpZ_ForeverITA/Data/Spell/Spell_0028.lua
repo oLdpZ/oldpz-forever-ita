@@ -139,7 +139,7 @@ WFJ.Data.add("spell", {
   [28574] = { "Aumenta la tua Armatura di un valore pari al $N1% del tuo Intelletto.", nil, 0xd7cdf469, nil, "um" },
   [28599] = { "Lancia missili di magia oscura che infliggono danni da ombra ai nemici vicini.", nil, 0xff498631, nil, "um" },
   [28608] = { "Maledice il bersaglio con agonia, infliggendo $N1 danni da ombra in $D1. All'inizio i danni sono lenti e aumentano man mano che la maledizione si avvicina alla sua durata completa. Su un bersaglio può essere attiva solo una maledizione per Stregone alla volta.", "$N1 danni da ombra in $D1.", 0xfc5d632c, 0x1df96f24, "uu" },
-  [28609] = { { "Assorbe $N1 danni da gelo e fornisce una probabilità del $N2% di riflettere incantesimi ed effetti di gelo. Dura $D1.", "Assorbe $N1 danni da gelo. Dura $D1.", shape = { "3/1", "2/1" } }, { "Assorbe $N1 danni da gelo. Probabilità del $N2% di riflettere incantesimi ed effetti di gelo.", "Assorbe $N1 danni da gelo.", shape = { "2/0", "1/0" } }, 0x388bceec, 0x7185f7be, "uu" },
+  [28609] = { { "Assorbe $N1 danni da gelo e fornisce una probabilità del $N2% di annullare i danni da gelo. Dura $D1.", "Assorbe $N1 danni da gelo. Dura $D1.", shape = { "3/1", "2/1" } }, { "Assorbe $N1 danni da gelo. Probabilità del $N2% di annullare i danni da gelo.", "Assorbe $N1 danni da gelo.", shape = { "2/0", "1/0" } }, 0x300ae4f9, 0x7b0c6566, "uu" },
   [28610] = { "Assorbe $N1 danni da ombra. Dura $D1.", "Assorbe $N1 danni da ombra.", 0x8d4773b5, 0x0741eb29, "uu" },
   [28612] = { "Evoca $N1 girelle alla cannella, fornendo al Mago e ai suoi alleati qualcosa da mangiare.\n\nGli oggetti evocati scompaiono se si resta disconnessi per più di $N2 min.", nil, 0xa3848fbf, nil, "um" },
   [28614] = { "Lancia uno spuntone appuntito.", nil, 0xadc05b31, nil, "um" },
@@ -291,5 +291,5 @@ WFJ.Data.add("spell", {
   [28991] = { "Lancia una ragnatela contro il nemico, immobilizzandolo per $D1.", "Immobilizzato.", 0xc19c3572, 0x18deeb81, "uu" },
   [28995] = { nil, "$N1 salute rigenerata in $D1.", nil, 0x6ed72e1e, "mu" },
   [28996] = { "Riduce del $N1% i danni subiti dagli effetti di fuoco, gelo e natura.", nil, 0x22b34bd2, nil, "um" },
-  [28999] = { "Aumenta di $N1 m la portata di ⟦Lightning Bolt=Dardo Fulminante⟧, ⟦Chain Lightning=Catena di Fulmini⟧, ⟦Fire Nova=Esplosione di Fuoco⟧ e ⟦Lava Burst=Getto di Lava⟧ e riduce il tempo di recupero di Proiezione Totemica di $D1.", nil, 0x6e4fa2f9, nil, "um" },
+  [28999] = { "Aumenta di $N1 m la portata di ⟦Lightning Bolt=Dardo Fulminante⟧, ⟦Chain Lightning=Catena di Fulmini⟧ ed ⟦Fire Nova=Esplosione di Fuoco⟧.", nil, 0x35a07976, nil, "um" },
 })

@@ -18,7 +18,7 @@ WFJ.Data.add("item", {
   [272025] = { "La corrispondenza di Saidan Dathrohan prima e durante la Terza Guerra", 0xf0d55054, "u" },
   [272026] = { "Una lacrima cristallizzata della grande dragonessa Ysera.", 0xf4362f88, "u" },
   [272027] = { "Un marchio di servizio alla Legione Infuocata, nel nome del satiro Xavius.", 0x4f0dc1e4, "u" },
-  [272028] = { "Una pietra segnata con il sigillo della titana Freya", 0x87fad030, "u" },
+  [272028] = { "Una pietra segnata con il sigillo della titana Freya.", 0x95588a17, "u" },
   [272053] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare. Utilizzabile solo all'interno delle Isole dei ⟦Darkspear=Lanciascura⟧.", 0xc9e5c5cc, "u" },
   [272054] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare. Utilizzabile solo all'interno delle Isole dei ⟦Darkspear=Lanciascura⟧.", 0xf40fa690, "u" },
   [272055] = { "Rigenera $N1 salute e $N2 mana in $D1. Devi sederti per mangiare. Utilizzabile solo all'interno delle Isole dei ⟦Darkspear=Lanciascura⟧.", 0x10d1e095, "u" },

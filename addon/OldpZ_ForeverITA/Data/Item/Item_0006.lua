@@ -138,6 +138,7 @@ WFJ.Data.add("item", {
   [6785] = { "Della mano di Khadgar.", 0x2fddf924, "u" },
   [6807] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [6811] = { "Applicato alla canna da pesca, aumenta la Pesca di $N1 per $N2 min.", 0x6301105f, "u" },
+  [6831] = { "Lancia un dardo d'ombra contro il nemico, infliggendo $N1 danni da ombra.", 0xeeaaaf00, "u" },
   [6866] = { "La persona in sintonia con il ⟦Symbol of Life=Simbolo della Vita⟧ viene riportata in vita da quest'ultimo.", 0x96dfc564, "u" },
   [6887] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 danni magici per $D3. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 danni magici per $D3. ", shape = { "6/3", "5/3" } }, 0xcbfd0593, "u" },
   [6888] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. ", shape = { "6/3", "5/3" } }, 0x07c351a2, "u" },

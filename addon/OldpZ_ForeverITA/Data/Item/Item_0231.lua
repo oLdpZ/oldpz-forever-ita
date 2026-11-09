@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("item", {
   [231298] = { "Chiudi un piccolo portale vile selezionato. Potrebbe attirare attenzioni indesiderate dall'altra parte.", 0xa89f2449, "u" },
   [231304] = { "Decifra la pergamena con un Amuleto della Comprensione. Chissà quale magia contiene?", 0xce6c2da9, "u" },
+  [231313] = { "Rimuovi la runa.", 0xb7b126b1, "u" },
   [231386] = { "Questa scaglia è immensa e perfetta. Solo i draghi più venerabili possiedono scaglie di tale qualità.", 0xdff698bc, "u" },
   [231530] = { "Aumenta la probabilità di critico con tutti gli incantesimi e gli attacchi del $N1%.", 0xb510d4fb, "u" },
   [231531] = { "Aumenta la probabilità d'impatto con tutti gli incantesimi e gli attacchi del $N1%.", 0x3dde388a, "u" },

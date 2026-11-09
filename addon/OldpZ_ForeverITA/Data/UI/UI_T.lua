@@ -56,7 +56,7 @@ WFJ.Data.add("ui", {
   ["TALENT_MICRO_BUTTON_UNSPENT_TALENTS"] = { "Hai dei punti talento non assegnati.", 0x35db637e, "." },
   ["TALENT_SPEC_ACTIVATE"] = { "Attiva", 0x6fe8ceb4, "." },
   ["TALENT_SPEC_ACTIVE"] = { "Attivo", 0xb60b9ac0, "." },
-  ["TALENT_SPEC_LOCKED"] = { "Bloccato", 0x5518bc84, "." },
+  ["TALENT_SPEC_LOCKED"] = { "Si sblocca dal tuo istruttore di classe", 0xba0e2a53, "." },
   ["TALENT_SPEC_PRIMARY"] = { "Specializzazione primaria", 0x090b4b85, "." },
   ["TALENT_SPEC_SECONDARY"] = { "Specializzazione secondaria", 0x6231633f, "." },
   ["TALL"] = { "Alto", 0x0b5b14f5, "." },

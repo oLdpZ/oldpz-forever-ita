@@ -57,7 +57,7 @@ WFJ.Data.add("ui", {
   ["ENABLE_ERROR_SPEECH"] = { "Messaggi d'errore", 0x38cdb759, "." },
   ["ENABLE_EXTERNAL_DEFENSIVES_TOOLTIP"] = { "Attiva per visualizzare i benefici difensivi importanti in una sezione separata e personalizzabile dell'interfaccia", 0xd392c177, "." },
   ["ENABLE_EXTERNAL_DEFENSIVES_VIEWER"] = { "Attiva difese esterne", 0x36d69250, "." },
-  ["ENABLE_GAMEPAD_UI"] = { "Attiva interfaccia gamepad (versione alpha)", 0xa09edca0, "." },
+  ["ENABLE_GAMEPAD_UI"] = { "Attiva interfaccia gamepad (beta)", 0x17b554e3, "." },
   ["ENABLE_GAMEPLAY_SFX"] = { "Attiva i segnali sonori durante gli scontri", 0x9a109095, "." },
   ["ENABLE_INTERACT_SOUND_OPTION"] = { "Suono pulsante interazione", 0x2d2910b9, "." },
   ["ENABLE_INTERACT_SOUND_OPTION_TOOLTIP"] = { "Emette un suono quando diventa possibile o impossibile interagire con un bersaglio.", 0x56bae5a8, "." },

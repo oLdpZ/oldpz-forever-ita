@@ -2,4 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [48108] = { "Ogni volta che metti a segno $N1 critici magici consecutivi con Palla di Fuoco, ⟦Fire Blast=Detonazione di Fuoco⟧, Bruciatura, ⟦Living Bomb=Bomba Vivente⟧ o Palla di Fuocogelo, hai una probabilità che la successiva Pirosfera lanciata entro $D1 sia istantanea.", "La tua prossima Pirosfera ha un lancio istantaneo.", 0x200c4cec, 0xbf94c763, "uu" },
+  [48198] = { "Colpisci uno zombi con il fuoco della giustizia. Dopo $N1 colpi consecutivi, lo zombi viene distrutto.", "Un guaritore ti ha colpito. Con $N1 colpi sei fuori!", 0x765fc503, 0x4407d0d1, "uu" },
 })

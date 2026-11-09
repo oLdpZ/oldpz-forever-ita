@@ -13,6 +13,7 @@ WFJ.Data.add("spell", {
   [1297448] = { "Aumenta il tuo livello effettivo di individuazione della furtività di $N1 per $D1, poi lo riduce di $N3 per $D2.", "Individuazione della furtività aumentata.", 0x3f0ad502, 0x2751c8b9, "uu" },
   [1297449] = { nil, "Individuazione della furtività ridotta.", nil, 0x2e151c40, "mu" },
   [1297455] = { "Riduce del $N1% la probabilità che gli effetti di ammaliamento ti colpiscano.", nil, 0x7e411fc2, nil, "um" },
+  [1297589] = { nil, "Frastornato.", nil, 0x8649cd0f, "mu" },
   [1297608] = { "Clic destro per evocare e congedare il tuo slimeling.", nil, 0x744e4a9c, nil, "um" },
   [1297626] = { "Il giocatore bersaglio perde tutto il mana.", nil, 0x447910a9, nil, "um" },
   [1297653] = { "Veleno nocivo e fuoco eruttano attorno a te, infliggendo $N1 danni.", "Avvolto da fumi nocivi e surriscaldati.", 0x20ec795c, 0x93acc395, "uu" },

@@ -17,7 +17,7 @@ WFJ.Data.add("spell", {
   [1263080] = { "Crea un ⟦Loom=Telaio⟧.", nil, 0x8e782580, nil, "um" },
   [1263082] = { "Crea una ⟦Arcane Forge=Forgia Arcana⟧.", nil, 0xb1e18ff4, nil, "um" },
   [1263083] = { "Crea un ⟦Anarchist's Workbench=Banco da Lavoro dell'Anarchico⟧.", nil, 0x842b1dab, nil, "um" },
-  [1263086] = { "Infligge $N1 danni fisici a tutti i giocatori entro $N2 m e riduce le cure che ricevono del $N3% per $D1.", "Cure ricevute ridotte del $N1% per $D1.", 0x0a578720, 0x299c4296, "uu" },
+  [1263086] = { "Infligge $N1 danni fisici a tutti i giocatori entro $N2 m e altri $N3 danni fisici ogni $D1.", "Infligge $N1 danni fisici ogni $D1.", 0x46ce546a, 0x08894ce0, "uu" },
   [1263099] = { "Aumenta la velocità d'attacco del $N1%.", "Velocità d'attacco aumentata del $N1%.", 0xb21e340d, 0x8859e2db, "uu" },
   [1263100] = { "Aumenta la velocità d'attacco del $N1%.", "Velocità d'attacco aumentata del $N1%.", 0xb21e340d, 0x8859e2db, "uu" },
   [1263102] = { "Aumenta la velocità d'attacco del $N1%.", "Velocità d'attacco aumentata del $N1%.", 0xb21e340d, 0x8859e2db, "uu" },

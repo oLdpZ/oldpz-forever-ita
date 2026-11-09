@@ -33,6 +33,7 @@ WFJ.Data.add("item", {
   [277504] = { "Da usare sulla Witchblade per creare un'arma potente.", 0x5fb53cd2, "u" },
   [277508] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [277518] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },
+  [277559] = { "Dissolve $N1 effetto magico benefico dal nemico bersaglio e $N2 effetto magico aggiuntivo ogni $D1 per $D2.", 0x564e004f, "u" },
   [277673] = { "Ti insegna a creare dei Rough Copper Chain Boots.", 0xea95ef51, "u" },
   [277714] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [277716] = { "Ti insegna a creare una Light Leather Reagent Bag.", 0xb4ab7e44, "u" },

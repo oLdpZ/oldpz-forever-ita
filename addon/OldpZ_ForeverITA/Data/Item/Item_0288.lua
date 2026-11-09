@@ -6,4 +6,8 @@ WFJ.Data.add("item", {
   [288338] = { "Lancia un fuoco d'artificio che esplode in migliaia di stelle rosse.", 0xb5141a1b, "u" },
   [288339] = { "Lancia un fuoco d'artificio che esplode in migliaia di scie rosse.", 0xd794951e, "u" },
   [288340] = { "Lancia un fuoco d'artificio in aria che esplode in una cascata di luci gialle.", 0x4f1a2ec2, "u" },
+  [288896] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },
+  [288897] = { "Rigenera $N1 mana.", 0x09fdd6de, "u" },
+  [288898] = { "Aumenta la velocità di movimento del $N1% per $D1.", 0x61fe647b, "u" },
+  [288900] = { "Atterra tutti i nemici vicini per $D1.", 0x2c47ce6c, "u" },
 })

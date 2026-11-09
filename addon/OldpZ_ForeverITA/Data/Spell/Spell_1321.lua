@@ -8,6 +8,7 @@ WFJ.Data.add("spell", {
   [1321337] = { "Ti teletrasporta a Orgrimmar.", nil, 0xf10f5028, nil, "um" },
   [1321339] = { "Ti teletrasporta a Orgrimmar.", nil, 0xf10f5028, nil, "um" },
   [1321343] = { "Ti teletrasporta a Orgrimmar.", nil, 0xf10f5028, nil, "um" },
+  [1321504] = { "Invoca la volontà degli Shen'dorei, aumentando lo Spirito di $N1 e permettendo al $N2% della rigenerazione totale della salute di continuare durante il combattimento per $D1.", "Spirito aumentato di $N1; il $N2% della rigenerazione totale della salute resta attivo.", 0x3bbc3ce1, 0x560f21d4, "uu" },
   [1321558] = { "Rigenera $N1 mana ogni $D1.", "$N1 mana rigenerato ogni $D1.", 0xb5b20e12, 0x75584d71, "uu" },
   [1321560] = { "Quando il tuo mana scende sotto il $N1%, rigenera $N2 mana in $D1. Rigenera il doppio del mana nelle zone infestate e desolate. Può verificarsi solo una volta ogni $D2.", nil, 0x9d2d804c, nil, "um" },
   [1321572] = { "Riduce del $N1% tutta la minaccia generata.", nil, 0x1faa90cf, nil, "um" },

@@ -4,4 +4,9 @@ WFJ.Data.add("spell", {
   [43308] = { "Indica sulla minimappa la posizione dei banchi di pesci vicini.", "Alla ricerca di pesci.", 0xdd2472bd, 0xe5f3a7f3, "uu" },
   [43680] = { "I tuoi compagni di squadra ti hanno segnalato per inattività! Entra in combattimento PvP o verrai segnato come Inattivo e non potrai ricevere Punti Onore.", "I tuoi compagni di squadra ti hanno segnalato per inattività! Entra in combattimento PvP o verrai segnato come Inattivo e non potrai ricevere Punti Onore.", 0xbce38590, 0xbce38590, "uu" },
   [43681] = { "Non guadagnerai Punti Onore finché non entrerai in combattimento PvP.\nVerrai espulso dal campo di battaglia se resterai Inattivo.", "Non guadagnerai Punti Onore finché non entrerai in combattimento PvP.\nVerrai espulso dal campo di battaglia se resterai Inattivo.", 0x152fece1, 0x152fece1, "uu" },
+  [43869] = { "Sei <stato/stata> <trasformato/trasformata>! E hai fame di cervelli umanoidi!", "Sei <stato/stata> <trasformato/trasformata>! E hai fame di cervelli umanoidi!", 0x187f94c4, 0x187f94c4, "uu" },
+  [43948] = { "Cura lo zombi del $N1% della sua vita e infetta l'umanoide bersaglio con la peste degli zombi.", nil, 0x897b9fd6, nil, "um" },
+  [43949] = { "Tu e gli zombi vicini ottenete un'improvvisa e temporanea accelerazione, per aiutarvi a catturare il vostro cibo. Rimuove qualsiasi effetto di impedimento al movimento o di controllo.", "La fame ti ha reso più veloce. Ottieni +$N1% di velocità di movimento.", 0x32c99e4c, 0x7777c836, "uu" },
+  [43958] = { "Infetta un umanoide con la peste degli zombi.", "Uno zombi ti ha infettato. Trova una cura prima che sia troppo tardi!", 0x2e0efd44, 0x419a63b3, "uu" },
+  [43963] = { "Sei <stato/stata> <coperto/coperta> di melma! Velocità di movimento ridotta del $N1%. Esci prima di venire <infettato/infettata>!", "La melma ti ha investito! Velocità di movimento ridotta del $N1%. Allontanati prima che ti infetti!", 0xad750c14, 0xad750c14, "uu" },
 })

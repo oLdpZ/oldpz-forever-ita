@@ -261,6 +261,7 @@ WFJ.Data.add("spell", {
   [21553] = { "Un colpo feroce che infligge i danni dell'arma e $N1 danni aggiuntivi e ferisce il bersaglio, riducendo l'efficacia di qualsiasi cura del $N2% per $D1.", "Effetti di cura ridotti del $N1%.", 0xe4c425df, 0x25745901, "uu" },
   [21559] = { "Infligge $N1 danni da fuoco ai nemici in un cono frontale. Inoltre, causa una penalità del 5% all'integrità dell'armatura da torso del tuo nemico.", nil, 0xebade6d0, nil, "um" },
   [21562] = { "Potenzia tutti i membri del gruppo e dell'incursione, aumentando la Tempra di $N1 per $D1.", "Tempra aumentata di $N1.", 0x2832da99, 0x543f3a70, "uu" },
+  [21563] = { "Aumenta del $N1% i danni inflitti dai famigli di cacciatori e stregoni.", nil, 0x063d29ad, nil, "um" },
   [21564] = { "Potenzia tutti i membri del gruppo e dell'incursione, aumentando la Tempra di $N1 per $D1.", "Tempra aumentata di $N1.", 0x2832da99, 0x543f3a70, "uu" },
   [21565] = { "Crea un Segatronchi che puoi controllare!", "Segando tronchi...", 0x632dd652, 0xfc185884, "uu" },
   [21566] = { nil, "Segando tronchi...", nil, 0xfc185884, "mu" },

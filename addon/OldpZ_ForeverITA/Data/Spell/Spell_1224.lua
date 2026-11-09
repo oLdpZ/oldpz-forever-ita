@@ -8,7 +8,7 @@ WFJ.Data.add("spell", {
   [1224428] = { "Le forze del Flagello si rafforzano.", "Impegnato contro le forze del Flagello.\n\nI benefici del tuo ⟦Seal of the Dawn=Sigillo dell'Alba⟧ non possono superare il Grado $N1.", 0xc72f3794, 0xa8fb80a9, "uu" },
   [1224553] = { "Aumenta del $N1% la probabilità di colpo critico dei tuoi incantesimi ⟦Holy Shock=Folgore Sacra⟧ e ⟦Holy Light=Luce Sacra⟧.", nil, 0x0a423554, nil, "um" },
   [1224692] = { "Aumenta del $N1% tutte le cure prodotte dai tuoi incantesimi e del $N2% tutte le cure che ricevi.", nil, 0x4065c70b, nil, "um" },
-  [1224697] = { "Aumenta del $N1% la tua Tempra totale e riduce di $D1 il tempo di recupero dei tuoi incantesimi ⟦Divine Shield=Scudo Divino⟧, ⟦Divine Protection=Protezione Divina⟧ e Templar's Bulwark.", nil, 0x6ff8c6b6, nil, "um" },
+  [1224697] = { "Riduce di $D1 il tempo di recupero dei tuoi incantesimi ⟦Divine Shield=Scudo Divino⟧, ⟦Divine Protection=Protezione Divina⟧ e Templar's Bulwark e di $D2 la durata di Rigorosità.", nil, 0xabb5a77c, nil, "um" },
   [1224716] = { "Aumenta del $N1% la probabilità di colpo critico della tua Pugnalata alle Spalle e del $N2% quella della tua Mutilazione, e conferisce a Pugnalata alle Spalle il $N3% di probabilità di aggiungere un punto combo extra.", nil, 0xdad38dd6, nil, "um" },
   [1224782] = { "Riduce del $N1% il costo in energia delle tue abilità Tramortimento e Accecamento.", nil, 0x0a58f6d1, nil, "um" },
 })

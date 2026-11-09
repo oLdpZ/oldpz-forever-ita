@@ -131,7 +131,7 @@ WFJ.Data.add("spell", {
   [7372] = { "Mutila il nemico, infliggendo $N1 danni e riducendo la sua velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x99e679bf, 0xbd9449c1, "uu" },
   [7373] = { "Mutila il nemico, infliggendo $N1 danni e riducendo la sua velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0x99e679bf, 0xbd9449c1, "uu" },
   [7376] = { "Riduce i danni subiti da tutte le fonti del $N1%. Riduce i danni inflitti del $N2%.\\nAumenta tutta la minaccia generata del $N3%.", nil, 0xbb4e7c90, nil, "um" },
-  [7379] = { "Contrattacca all'istante un nemico, infliggendo $N1 danni e generando un'elevata quantità di minaccia. Rivincita è utilizzabile solo dopo aver bloccato, schivato o parato.", nil, 0x3c5ac9a7, nil, "um" },
+  [7379] = { "Contrattacca all'istante un nemico, infliggendo $N1 danni e generando un'elevata quantità di minaccia. Rivincita è utilizzabile solo dopo aver bloccato, schivato o parato.", nil, 0x9630cea7, nil, "um" },
   [7381] = { "Aumenta la probabilità di critico del $N1%. Aumenta tutti i danni subiti del $N2%.", nil, 0x438c317e, nil, "um" },
   [7383] = { nil, "Immune ai danni fisici.", nil, 0xe9f5cca7, "mu" },
   [7384] = { "Sopraffà all'istante il nemico, infliggendo i danni dell'arma e $N1 danni aggiuntivi. Utilizzabile solo dopo che il bersaglio ha schivato. Dominazione non può essere bloccata, schivata o parata.", nil, 0x8be488f4, nil, "um" },

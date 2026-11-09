@@ -131,6 +131,7 @@ DRAFT_SOURCES = {"draft-ui",
                  "draft-b70291-ui-sg12", "draft-b70291-ui-trial-sg12",  # a re-pull's new and reworded keys
                  "draft-r70425-ui-sg12", "draft-r70425-uirv-sg12",  # a re-pull's new and reworded keys
                  "draft-r70450-ui-sg12", "draft-r70450-intro-sg12",  # a re-pull's new keys and the race intro subtitles
+                 "draft-r70862-uirv-sg12",  # the keys build 70862 reworded, re-verified
                  *(f"draft-u{i:02d}-sg12" for i in range(1, 22)),  # the remaining interface keys, by window then by client table
                  "draft-u22-sg14",  # a female character's reputation standings (UIStrings.OWN, Index:standing)
                  "draft-ui-left", "draft-ui-left-tooltip",  # lines a Forever client file shows, links and set bonuses

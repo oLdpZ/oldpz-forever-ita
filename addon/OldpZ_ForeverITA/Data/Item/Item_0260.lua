@@ -10,6 +10,7 @@ WFJ.Data.add("item", {
   [260245] = { "Unisci $N1 Vibrant Flower per creare un Benevolent Bouquet.\nLa sua bellezza contrasta nettamente con i giardini in cui è cresciuto.", 0x7f166c3e, "u" },
   [260247] = { "Un tempo era una collana incantata che sosteneva la vita nei giardini di Shen'dralas. La magia che conteneva si è ormai esaurita.", 0x80eb4bb8, "u" },
   [260307] = { "Né neve, né pioggia, né caldo, né il buio della notte...", 0x0ad73fee, "u" },
+  [260308] = { "Aumenta del $N1% la velocità di corsa e di nuoto.\n...distoglie questi corrieri dal rapido compimento dei loro giri prestabiliti.", 0x0b5f372b, "u" },
   [260347] = { "Mancano quasi tutte le pagine.", 0x8eb6ce67, "u" },
   [260348] = { "Aggiungi una pagina mancante al diario di Evenshade.", 0x7643c4e2, "u" },
   [260349] = { "Aggiungi una pagina mancante al diario di Evenshade.", 0x7643c4e2, "u" },

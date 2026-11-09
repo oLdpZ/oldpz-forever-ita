@@ -157,7 +157,7 @@ Drift tests regenerate each pair in memory and fail if the result differs from t
 predecessors/
 ├── clients/
 │   ├── classic-era-1.15.9.69722/   wago tables (stamped wago@1.15.9.69722), questcache.wdb, missing.txt
-│   └── forever-1.60.1.70450/       db2 tables (stamped db2@1.60.1.70450), questcache.wdb, missing.txt
+│   └── forever-1.60.1.70862/       db2 tables (stamped db2@1.60.1.70862), questcache.wdb, missing.txt
 ├── pfquest-quests.lua              pfQuest db/enUS/quests.lua at commit 7786596
 ├── vmangos/mangos.sqlite          VMaNGOS world database, release asset db-sqlite-13b49dc.zip
 ├── vmangos-priority/mangos.sqlite a newer VMaNGOS world database (db_latest 4641790), only for make gossip-priority
@@ -175,6 +175,7 @@ Staging a client folder (the preflight refuses the import until every client's f
 - **Tables:** `make tables-extract CLIENT=forever WOW_DIR=<client folder>` (a `db2` client) or `make wago-fetch CLIENT=classic-era` (a `wago` client). Use the one that matches the client's pinned source; the other refuses or writes a stamp the preflight refuses.
 - **Quest cache:** `make wdb-copy CLIENT=<client> WOW_DIR=<client folder>` after a scan. The cache cannot be downloaded: its content depends on scan history. The committed `data/english/quest` was built from the Classic Era cache (build 1.15.9.69722, sha256 `a10d1d9b50a6bc724383519338b8c109cdc3b59b14defee585b70495480ec763`) and the Forever cache (build 1.60.1.70009, sha256 `b3e110161e30d5a07c31df154002b445d8ef9f1430f51f77b4a8528f744e5885`); without those files nobody can rebuild `data/english/quest` byte for byte.
 - `missing.txt` is written by the cache import; nothing to stage.
+- **A new Forever build without the other inputs.** Bump `forever_BUILD` (and `forever_PRODUCT` if the launcher renamed it), stage only Forever's folder (`make tables-extract` and `make wdb-copy`, `WOW_DIR=<client folder>`), then `make import-forever`: Forever's quest cache and tables are merged over `data/english` under the union merge, then the served step, while pfQuest, VMaNGOS, forever-vo and Classic Era's lines stay as the last full import left them. Then `make check`: the reworded lines are `stale`, and they are redrafted with `REVERIFY=1` ([Translation batches](translation-batches.md#re-verifying-reworded-lines-reverify1)). The served step reads only the other clients' quest caches that are on disk.
 
 `CLIENT` (default `forever`) picks the client for the single-client targets (`wago-fetch`, `tables-extract`, `wdb-copy`). The per-client knobs (`WAGO_BUILD`, `WDB_BUILD`, `TABLES_SRC`, `WDB_QUEST`, `WAGO_QUESTV2`, `CLIENT_DIR`, `PRODUCT`, …) derive from `CLIENT`; pass them on the command line only to a single-client target. `make import`, `import-english`, `data` and `rebuild-check` refuse them, because a value would apply to every client. A new client build is a `Makefile` change (bump `<client>_BUILD`, stage the new folder), committed with the regenerated data.
 

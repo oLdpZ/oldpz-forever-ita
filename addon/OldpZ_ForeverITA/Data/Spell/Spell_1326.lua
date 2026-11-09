@@ -27,5 +27,7 @@ WFJ.Data.add("spell", {
   [1326189] = { nil, "In traslazione...", nil, 0xe8b15d2f, "mu" },
   [1326475] = { "Invoca una colonna di fuoco che brucia tutti i nemici nell'area, infliggendo $N1 danni da fuoco e altri $N2 danni da fuoco ogni $N3 s per $D1.", "$N1 danni da fuoco subiti ogni $N2 s.", 0x2bff8df0, 0x1f1095fd, "uu" },
   [1326548] = { nil, "Ammaliato.\nDanni aumentati del $N1%.\nCure aumentate del $N2%.", nil, 0x67380af4, "mu" },
+  [1326619] = { "Ricongiunge lo spirito al corpo, riportando in vita un bersaglio morto con $N1 salute e $N2 mana. Non utilizzabile in combattimento.", nil, 0x6ede565d, nil, "um" },
+  [1326891] = { "Aumenta del $N1% i danni inflitti dai tuoi incantesimi di gelo.", "Aumenta del $N1% i danni inflitti dai tuoi incantesimi di gelo.", 0xb993a0ec, 0xba1cd758, "uu" },
   [1326990] = { "Infligge danni da ombra a un nemico, ma genera un'elevata quantità di minaccia.", nil, 0xd6075571, nil, "um" },
 })

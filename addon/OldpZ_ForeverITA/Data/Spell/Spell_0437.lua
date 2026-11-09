@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [437002] = { nil, "Onora gli archivisti.", nil, 0xa62056ef, "mu" },
-  [437009] = { "Sposta i tuoi totem attivi nel punto indicato.", nil, 0xaf3bd915, nil, "um" },
+  [437009] = { "Sposta i tuoi totem attivi nella tua posizione.", nil, 0xf8a6cc4c, nil, "um" },
   [437032] = { "Uccidere un bersaglio non banale afflitto dal tuo Risucchio d'Anima aumenta del $N1% la tua rigenerazione del mana per $D1 e permette al $N3% della normale rigenerazione del mana di continuare durante il lancio.", nil, 0x6e81f42f, nil, "um" },
   [437053] = { "Onora gli archivisti.", nil, 0xa62056ef, nil, "um" },
   [437054] = { "Onora gli archivisti.", nil, 0xa62056ef, nil, "um" },

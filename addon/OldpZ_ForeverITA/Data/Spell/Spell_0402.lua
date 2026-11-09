@@ -57,6 +57,6 @@ WFJ.Data.add("spell", {
   [402911] = { "Un colpo feroce che infligge il $N1% dei danni dell'arma, ma che si può usare solo mentre Rabbia, ⟦Berserker Rage=Furia del Berserker⟧ o Rabbia del Sangue è attiva. Ogni altra abilità in mischia usata mentre Rabbia, ⟦Berserker Rage=Furia del Berserker⟧ o Rabbia del Sangue è attiva riduce di $D1 il tempo di recupero residuo di Colpo Furente.", nil, 0xc369b8a3, nil, "um" },
   [402913] = { "Ti cura del $N1% della tua salute massima in $D1, ma si può usare solo mentre Rabbia, ⟦Berserker Rage=Furia del Berserker⟧ o Rabbia del Sangue è attiva. Utilizzabile anche durante lo stordimento.", "Rigenera il $N1% della salute massima ogni $D1.", 0x8c9eb59e, 0x1fa7c1e1, "uu" },
   [402922] = { "Contusione ora è istantanea ma ha un tempo di recupero di $D1.", nil, 0xd1d418c3, nil, "um" },
-  [402927] = { "Attacca istantaneamente il bersaglio, infliggendo $N1 danni e curandoti del $N2% della tua salute massima. Utilizzabile solo entro $D1 dall'uccisione di un nemico non banale.", nil, 0xa6a325bb, nil, "um" },
+  [402927] = { "Attacca istantaneamente il bersaglio, infliggendo $N1 danni e curandoti del $N2% della tua salute massima. Utilizzabile solo entro $D1 dall'uccisione di un nemico non banale.", nil, 0x158e5b67, nil, "um" },
   [402975] = { "Segue l'uccisione di un nemico e consente di usare Frenesia di Vittoria.", "Frenesia di Vittoria attivata di recente.", 0x392d4b55, 0x8aba4c0c, "uu" },
 })

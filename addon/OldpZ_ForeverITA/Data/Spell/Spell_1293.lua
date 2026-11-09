@@ -111,5 +111,6 @@ WFJ.Data.add("spell", {
   [1293973] = { "Ti cura di $N1.", nil, 0x017adfca, nil, "um" },
   [1293980] = { "Probabilità, al lancio di un incantesimo offensivo, di colpire un bersaglio con una vampata per $N1 danni da fuoco.", nil, 0x4b9b6817, nil, "um" },
   [1293986] = { "Usa il cristallo per stordire temporaneamente il Master of Vessels.", nil, 0xee7bc8b0, nil, "um" },
-  [1293991] = { nil, "$N1 danni da ombra ogni $D1. L'intenso pozzo gravitazionale ti attira verso il suo centro.", nil, 0x14174e1e, "mu" },
+  [1293989] = { "Anara Chillwind invoca la notte umbratile, creando nella sua posizione una singolarità che attira i nemici vicini per $D1. L'intenso pozzo gravitazionale infligge $N2 danni da ombra e i bersagli che cadono nella singolarità vengono uccisi all'istante.", nil, 0xcc3b0135, nil, "um" },
+  [1293991] = { "Anara Chillwind invoca la notte umbratile, creando nella sua posizione una singolarità che attira i nemici vicini per $D1. L'intenso pozzo gravitazionale infligge $N2 danni da ombra e i bersagli che cadono nella singolarità vengono uccisi all'istante.", "$N1 danni da ombra ogni $D1. L'intenso pozzo gravitazionale ti attira verso il suo centro.", 0xfebd8d30, 0x14174e1e, "uu" },
 })

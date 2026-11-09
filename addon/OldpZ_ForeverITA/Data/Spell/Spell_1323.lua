@@ -15,7 +15,7 @@ WFJ.Data.add("spell", {
   [1323419] = { nil, "Probabilità di colpo critico del tuo prossimo incantesimo non periodico aumentata del $N1%.", nil, 0xb0c893a2, "mu" },
   [1323420] = { "Restituisce i tuoi totem alla terra, fornendoti il $N1% del mana necessario a evocare ogni totem distrutto da Richiamo dei Totem.", nil, 0x7e7acb66, nil, "um" },
   [1323500] = { nil, "Stordito.", nil, 0x27f95286, "mu" },
-  [1323522] = { "Infondi nel Paladino vari potenziamenti divini.\n\nAttualmente hai accesso a:$T", nil, 0x407037e6, nil, "um" },
+  [1323522] = { "Infondi nel Paladino vari potenziamenti divini.\n\nAttualmente hai accesso a:$T", nil, 0x71d5ae20, nil, "um" },
   [1323651] = { "Brucia il nemico infliggendo danni da arcano e altri danni in $D1.", "$N1 danni da arcano inflitti ogni $D1.", 0xba2c738b, 0x1e69ddb3, "uu" },
   [1323656] = { "Infligge danni normali e $N1 danni aggiuntivi a un nemico, poi altri $N2 danni da natura ogni $D1 per $D2.", "$N1 danni da natura inflitti ogni $D1.", 0x28109756, 0xf6322bec, "uu" },
   [1323676] = { "Stende un nemico a terra, infliggendo danni fisici e stordendolo per $D1.", "Stordito.", 0xb1a2fbca, 0x27f95286, "uu" },
@@ -30,7 +30,7 @@ WFJ.Data.add("spell", {
   [1323963] = { "Aumenta del $N1% la probabilità di colpire con gli attacchi della mano secondaria.", nil, 0x55d7f5d6, nil, "um" },
   [1323964] = { "Aumenta di $D1 il tempo prima che la tua rabbia inizi a calare dopo aver lasciato il combattimento.", nil, 0x5edbed1f, nil, "um" },
   [1323965] = { "Aumenta di $D1 il tempo prima che la tua rabbia inizi a calare dopo aver lasciato il combattimento.", nil, 0x0faca47c, nil, "um" },
-  [1323967] = { "Rabbia, ⟦Berserker Rage=Furia del Berserker⟧, Rabbia del Sangue, Desiderio di Morte e Sete di Sangue fanno sì che i tuoi prossimi $N1 attacchi in mischia rigenerino il $N2% della tua salute massima.", nil, 0x6954c0fe, nil, "um" },
+  [1323967] = { "Rabbia, ⟦Berserker Rage=Furia del Berserker⟧, Rabbia del Sangue, Desiderio di Morte, Reckless Swings e Sete di Sangue fanno sì che i tuoi prossimi $N1 attacchi in mischia rigenerino il $N2% della tua salute massima.", nil, 0x7fe8ef01, nil, "um" },
   [1323968] = { "Cure dagli attacchi in mischia.", nil, 0x956e2572, nil, "um" },
   [1323969] = { "Gli attacchi in mischia andati a segno rigenerano $N1 salute.", "Gli attacchi in mischia andati a segno rigenerano $N1 salute.", 0x9918fb14, 0x39f1c37c, "uu" },
 })

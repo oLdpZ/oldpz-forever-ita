@@ -668,7 +668,7 @@ WFJ.Data.add("ui", {
   ["BroadcastText:329340"] = { "Col tempo, le tribù sparse si unirono sotto un unico stendardo.", 0x23fbbc57, "." },
   ["BroadcastText:329341"] = { "Sebbene i nobili tauren siano pacifici per natura, i riti della grande caccia sono venerati come il cuore della loro cultura spirituale.", 0xb19247fa, "." },
   ["BroadcastText:329342"] = { "Come membro di una tribù di Mulgore, devi mettere alla prova le tue abilità nelle terre selvagge e dimostrare il tuo valore nella grande caccia.", 0x5ca0252a, "." },
-  ["BroadcastText:329343"] = { "I feroci troll che popolano le numerose isole tropicali dei Mari del Sud sono famosi per la loro crudeltà e il loro oscuro misticismo.", 0xb4610576, "." },
+  ["BroadcastText:329343"] = { "I feroci troll che popolano le numerose isole tropicali dei Mari del Sud sono famosi per la loro crudeltà e il loro oscuro misticismo.", 0xdeac96db, "." },
   ["BroadcastText:329344"] = { "Barbari e superstiziosi, nutrono un odio ribollente per tutte le altre razze.", 0x7d882c33, "." },
   ["BroadcastText:329345"] = { "Esiliata da tempo dalla sua patria ancestrale nella Valle di Rovotorto, la tribù dei Lanciascura fu quasi annientata da orde di murloc infuriati.", 0x7f94d190, "." },
   ["BroadcastText:329346"] = { "Salvata dal giovane capoguerra Thrall e dai suoi guerrieri orchi, la tribù dei Lanciascura giurò fedeltà all'Orda.", 0x4faff755, "." },

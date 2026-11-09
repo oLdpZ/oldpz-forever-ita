@@ -192,5 +192,6 @@ WFJ.Data.add("item", {
   [264238] = { "Ti insegna a creare dei SAF-T Nitro Boosts.", 0x8431f44f, "u" },
   [264239] = { "Ti insegna a creare un EZ-Thro Magnetic Displacer.", 0x782b3c87, "u" },
   [264240] = { "Ti insegna a creare un SAF-T Teleport.", 0x038a4052, "u" },
+  [264501] = { "Alla base della lama è incisa una 'L' ornata.", 0xb2f65ea0, "u" },
   [264908] = { "Ammaccature profonde e graffi rovinano la superficie opaca degli intricati motivi kaldorei. All'interno della fascia un'iscrizione sbiadita ma leggibile dice: «Con amore, per sempre, KG».", 0x6bc854e6, "u" },
 })

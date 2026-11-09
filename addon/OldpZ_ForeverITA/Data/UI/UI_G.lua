@@ -42,7 +42,7 @@ WFJ.Data.add("ui", {
   ["GAMEPAD_FACE_MOVEMENT_SWIMMING"] = { "Orientamento al movimento a nuoto", 0xde29083e, "." },
   ["GAMEPAD_FOLLOW_CAMERA"] = { "Visuale a seguire", 0xa3c8355d, "." },
   ["GAMEPAD_FOLLOW_CAMERA_PITCH_OFFSET"] = { "Inclinazione della visuale a seguire", 0xc8aaccba, "." },
-  ["GAMEPAD_LABEL"] = { "Gamepad (versione alpha)", 0x559f645a, "." },
+  ["GAMEPAD_LABEL"] = { "Gamepad (beta)", 0x3e384455, "." },
   ["GAMEPAD_MODIFIER_LABEL"] = { "Modificatore HUD", 0xaee35f54, "." },
   ["GAMEPAD_MODIFIER_TOGGLE"] = { "Premi per alternare", 0x676409ee, "." },
   ["GAMEPAD_MOVEMENT_FACE_ANGLE"] = { "Angolo orientamento movimento", 0x91d8c6c6, "." },

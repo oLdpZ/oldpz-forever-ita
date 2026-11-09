@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [31016] = { "Mossa risolutiva che infligge danni in base ai punti combo, aumentati dalla potenza d'attacco:\n $N1 punto: $N2-$N3 danni\n $N4 punti: $N5-$N6 danni\n $N7 punti: $N8-$N9 danni\n $N10 punti: $N11-$N12 danni\n $N13 punti: $N14-$N15 danni", nil, 0xb268c10a, nil, "um" },
-  [31018] = { "Mossa risolutiva che infligge danni per punto combo e converte ogni punto di energia in più in $N1 danni aggiuntivi. I danni aumentano con la potenza d'attacco.\n $N2 punto: $N3-$N4 danni\n $N5 punti: $N6-$N7 danni\n $N8 punti: $N9-$N10 danni\n $N11 punti: $N12-$N13 danni\n $N14 punti: $N15-$N16 danni", nil, 0x58b294b7, nil, "um" },
+  [31018] = { "Mossa risolutiva che infligge danni per punto combo e converte ogni punto di energia in più in $N1 danni aggiuntivi. I danni aumentano con la potenza d'attacco.\n $N2 punto: $N3-$N4 danni\n $N5 punti: $N6-$N7 danni\n $N8 punti: $N9-$N10 danni\n $N11 punti: $N12-$N13 danni\n $N14 punti: $N15-$N16 danni", nil, 0x4692ae22, nil, "um" },
   [31255] = { "Aumenta la tua velocità di movimento del $N1% ogni volta che infliggi danni a un bersaglio con meno del $N2% di salute.", nil, 0x31f53889, nil, "um" },
   [31316] = { nil, "Non colpire questo bersaglio!", nil, 0x0cd960b9, "mu" },
   [31364] = { "Infligge $N1 danni da fuoco ai nemici nell'area d'effetto.", nil, 0x85b142c2, nil, "um" },

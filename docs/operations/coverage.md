@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-09 at commit `b65215cf`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-09 at commit `ac74ae2f`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -14,14 +14,14 @@
 | Book / letter pages | 1,261 | 1,206 | 54 | 99.9% | 1 |
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
-| Item descriptions | 10,224 | 10,210 | 0 | 99.9% | 14 |
-| Spell tooltips + auras | 25,722 | 25,645 | 1 | 99.7% | 76 |
+| Item descriptions | 10,480 | 10,466 | 0 | 99.9% | 14 |
+| Spell tooltips + auras | 25,928 | 25,855 | 1 | 99.7% | 72 |
 | Interface strings | 16,417 | 15,257 | 1,029 | 99.2% | 131 |
 | NPC names | 12,921 | 10,106 | 0 | 78.2% | 2,815 |
-| **All** | **98,663** | | | **96.7%** | **3,221** |
+| **All** | **99,125** | | | **96.8%** | **3,217** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
-professions, internal strings): quest 139.
+professions, internal strings): quest 139, ui 2.
 
 ### Nothing to translate (counted as done)
 
@@ -47,11 +47,10 @@ professions, internal strings): quest 139.
 | Item descriptions | no Italian yet | 13 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
 | Spell tooltips + auras | no Italian yet: the template includes a spell the Forever tables do not hold | 34 |
-| Spell tooltips + auras | no Italian yet | 28 |
+| Spell tooltips + auras | no Italian yet | 25 |
 | Spell tooltips + auras | no Italian yet: the template has too many optional parts for one translation | 8 |
 | Spell tooltips + auras | no Italian yet: the template names the aura's caster, which only the game knows | 2 |
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |
-| Spell tooltips + auras | rejected: no_english_id | 1 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
 | Interface strings | no Italian yet | 131 |
 | NPC names | no Italian yet | 2,815 |
@@ -100,38 +99,38 @@ never shows, or the key that already shows the same English.
 
 ## Served text inventory
 
-Every text column the client serves on 1.60.1.70450 (`pipeline/served_columns.txt`: its
+Every text column the client serves on 1.60.1.70862 (`pipeline/served_columns.txt`: its
 tables, hotfixes and server caches), with the disposition
 `pipeline/served_dispositions.txt` gives it.
 Lines are non-empty values; a server cache counts the records this install holds.
 
 | Disposition | Columns | Lines |
 |---|---|---|
-| Shipped through a surface above | 71 | 84,417 |
-| Names (stay English) | 55 | 69,764 |
-| Internal (never printed) | 96 | 370,914 |
-| No place in the Forever client | 30 | 1,909 |
-| Same text as another column | 6 | 11,225 |
+| Shipped through a surface above | 71 | 81,602 |
+| Names (stay English) | 55 | 70,409 |
+| Internal (never printed) | 98 | 424,314 |
+| No place in the Forever client | 30 | 1,912 |
+| Same text as another column | 6 | 11,132 |
 | Empty on this build | 3 | 0 |
 
 ### Every column
 
 | Column | Disposition | Lines | Why |
 |---|---|---|---|
-| `achievement.f0` | surface:ui:AchievementDescription | 397 | Description_lang |
-| `achievement.f1` | surface:ui:AchievementTitle | 441 | Title_lang |
-| `achievement.f2` | surface:ui:AchievementReward | 131 | Reward_lang |
+| `achievement.f0` | surface:ui:AchievementDescription | 396 | Description_lang |
+| `achievement.f1` | surface:ui:AchievementTitle | 440 | Title_lang |
+| `achievement.f2` | surface:ui:AchievementReward | 130 | Reward_lang |
 | `achievement_category.f0` | surface:ui:AchievementCategory | 56 | Name_lang |
 | `animkitboneset.f0` | internal | 18 | animation bone set names |
 | `areaconditionaldata.f0` | names | 2 | place names (The Drunken Dwarf) |
 | `areapoi.f0` | names | 372 | place names (Anvilmar, Brill) |
 | `areapoi.f1` | surface:ui:AreaPoiDescription | 150 | Description_lang: map point tooltip lines (zone and faction names stay English) |
 | `areapoistate.f0` | surface:ui:AreaPoiState | 17 | Description_lang |
-| `areatable.f0` | internal | 1,375 | ZoneName: CamelCase tokens (DunMorogh) |
-| `areatable.f1` | names | 1,375 | AreaName_lang: zone and subzone names |
-| `auctionhouse.f0` | names | 21 | auction house names (Stormwind Auction House) |
-| `availablesuperdistrict.f0` | no-display | 5 | ruleset names, realm list (blizzard_gluexml superdistrict.lua) |
-| `availablesuperdistrict.f1` | no-display | 5 | ruleset descriptions, realm list (blizzard_gluexml superdistrict.lua) |
+| `areatable.f0` | internal | 1,387 | ZoneName: CamelCase tokens (DunMorogh) |
+| `areatable.f1` | names | 1,387 | AreaName_lang: zone and subzone names |
+| `auctionhouse.f0` | names | 24 | auction house names (Stormwind Auction House) |
+| `availablesuperdistrict.f0` | no-display | 6 | ruleset names, realm list (blizzard_gluexml superdistrict.lua) |
+| `availablesuperdistrict.f1` | no-display | 6 | ruleset descriptions, realm list (blizzard_gluexml superdistrict.lua) |
 | `availablesuperdistrict.f2` | internal | 1 | atlas names (Mode-Selection-Card-Hardcore) |
 | `availablesuperdistrict.f3` | internal | 1 | atlas names |
 | `bannedaddons.f0` | internal | 69 | addon names the client refuses to load |
@@ -144,18 +143,18 @@ Lines are non-empty values; a server cache counts the records this install holds
 | `battlepaycurrency.f1` | internal | 42 | price formats ($%s) |
 | `battlepaycurrency.f2` | internal | 42 | price formats |
 | `battlepaycurrency.f3` | no-display | 41 | blizzard_catalogshop.toc and blizzard_storeui.toc declare UseSecureEnvironment: 1 |
-| `broadcasttext.f0` | surface:ui:BroadcastText | 104 | Text_lang: the archive's rows (cinematic subtitles) |
+| `broadcasttext.f0` | surface:ui:BroadcastText | 79 | Text_lang: the archive's rows (cinematic subtitles) |
 | `cfg_categories.f0` | internal | 100 | realm list categories (glue screen) |
 | `cfg_datacenterlocality.f0` | internal | 9 | data center names |
-| `cfg_regions.f0` | internal | 245 | region codes |
-| `cfg_regions.f1` | internal | 14 | region names (DEV, Alpha) |
+| `cfg_regions.f0` | internal | 247 | region codes |
+| `cfg_regions.f1` | internal | 16 | region names (DEV, Alpha) |
 | `characterserviceinfo.f0` | no-display | 9 | character services, glue screens (blizzard_glueparent characterservices*.lua); blizzard_classtrial is standard-only |
 | `characterserviceinfo.f1` | no-display | 9 | character services, glue screens |
 | `characterserviceinfo.f2` | no-display | 5 | character services, glue screens |
 | `chartitles.f0` | names | 41 | player titles (Bloodsail Admiral %s), names |
 | `chartitles.f1` | names | 41 | player titles, female form |
-| `chatchannels.f0` | names | 19 | channel names (General - %s); UI/Channels.lua keeps channel names English |
-| `chatchannels.f1` | names | 19 | channel names (Trade) |
+| `chatchannels.f0` | names | 20 | channel names (General - %s); UI/Channels.lua keeps channel names English |
+| `chatchannels.f1` | names | 20 | channel names (Trade) |
 | `chatprofanity.f0` | internal | 3,748 | profanity filter list |
 | `chrclasses.f0` | names | 9 | class names |
 | `chrclasses.f1` | internal | 9 | class tokens (WARRIOR) |
@@ -196,13 +195,13 @@ Lines are non-empty values; a server cache counts the records this install holds
 | `creature.f2` | names | 3 | a creature title (Lord of Terror) |
 | `creaturefamily.f0` | names | 27 | pet family names (docs/research/2026-09-26-client-table-text.md) |
 | `creaturetype.f0` | surface:ui:CreatureType | 13 | Name_lang |
-| `criteriatree.f0` | surface:ui:CriteriaText | 5,664 | Description_lang: achievement and Legacy criteria (the achievements' own trees) |
+| `criteriatree.f0` | surface:ui:CriteriaText | 5,658 | Description_lang: achievement and Legacy criteria (the achievements' own trees) |
 | `currencycategory.f0` | surface:ui:CurrencyCategory | 6 | Name_lang |
 | `currencytypes.f0` | names | 9 | Name_lang: currency names (Honor Points, Darkmoon Prize Ticket) |
 | `currencytypes.f1` | surface:ui:CurrencyDescription | 8 | Description_lang |
 | `datatagxrecord.f0` | internal | 210 | tag tokens (HouseDecor) |
 | `difficulty.f0` | surface:ui:Difficulty | 22 | Name_lang |
-| `dungeonencounter.f0` | names | 342 | boss names |
+| `dungeonencounter.f0` | names | 343 | boss names |
 | `emotes.f0` | internal | 124 | animation tokens (ONESHOT_TALK) |
 | `emotestext.f0` | internal | 255 | slash tokens (AGREE) |
 | `emotestextdata.f0` | surface:ui:EmoteText | 1,334 | Text_lang |
@@ -214,37 +213,39 @@ Lines are non-empty values; a server cache counts the records this install holds
 | `factiongroup.f1` | names | 2 | Alliance, Horde |
 | `friendshipreputation.f0` | names | 1 | Rank Points: the PvP rank currency's name |
 | `friendshipreputation.f1` | surface:ui:FriendshipGain | 1 | StandingModified_lang: You gain %d Rank Points. |
-| `gamemode.f0` | internal | 5 | mode tokens (wfhc, standard) |
+| `gamemode.f0` | internal | 6 | mode tokens (wfhc, standard) |
 | `gameobjects.f0` | names | 1,421 | object names (Old Coast Road) |
 | `gametips.f0` | no-display | 72 | loading screen tips are drawn by the client, not by a Lua frame an addon can reach (only the showLoadingScreenTips CVar, blizzard_settingsdefinitions_frame/camelot/interfaceoverrides.lua:67) |
-| `globalcolor.f0` | internal | 336 | colour constant names |
-| `globalstrings.f0` | internal | 27,388 | BaseTag: the key, not shown |
-| `globalstrings.f1` | surface:ui:GlobalStrings | 27,346 | TagText_lang, inventoried key by key in pipeline/ui_inventory.txt (ui_keys.txt or ui_exclusions.txt) |
+| `globalcolor.f0` | internal | 337 | colour constant names |
+| `globalstrings.f0` | internal | 27,400 | BaseTag: the key, not shown |
+| `globalstrings.f1` | surface:ui:GlobalStrings | 27,357 | TagText_lang, inventoried key by key in pipeline/ui_inventory.txt (ui_keys.txt or ui_exclusions.txt) |
 | `gmsurveyanswers.f0` | no-display | 83 | no GM survey frame (blizzard_wowsurveyui/blizzard_wowsurveyui.lua:12) |
 | `gmsurveyquestions.f0` | no-display | 25 | no GM survey frame; surveys open on the web (blizzard_wowsurveyui/blizzard_wowsurveyui.lua:12) |
 | `groupfinderactivity.f0` | surface:ui:LfgActivity | 109 | FullName_lang (dungeon names stay English; the curated list keeps the rest) |
 | `groupfinderactivity.f1` | covered-by:groupfinderactivity.f0 | 109 | ShortName_lang: the same dungeon names, shortened |
 | `groupfinderactivitygrp.f0` | surface:ui:LfgActivityGroup | 7 | Name_lang |
 | `groupfindercategory.f0` | surface:ui:LfgCategory | 5 | Name_lang |
+| `hash-c842493a.*` | internal | 0 | a table only the 1.60.1.70862 hotfix cache names: 12 records, each one 4-byte integer or empty, no text (read from DBCache.bin) |
 | `holidaydescriptions.f0` | surface:ui:HolidayDescription | 17 | Description_lang |
 | `holidaynames.f0` | names | 16 | Name_lang: event names (Darkmoon Faire) |
+| `hotfixes.f0` | internal | 61,505 | Hotfixes.db2 (named by the listfile from 1.60.1.70862): the upper-case name of the table each hotfix record patches (SPAWNPATHNODE, NAMESPROFANITY, SPELL; 328 distinct over 61,505 rows), read in the archive; never shown |
 | `itembagfamily.f0` | no-display | 24 | Lua reads only the family number (C_Container.GetContainerNumFreeSlots); no reader prints the name |
 | `itemclass.f0` | no-display | 17 | the camelot auction data (blizzard_auctionhouseui/camelot/blizzard_auctiondata.lua) uses GlobalStrings categories; the class-only branch (shared/blizzard_auctiondata.lua:93-94) is never reached |
 | `itemlimitcategory.f0` | names | 30 | item names (Signet Ring of the Bronze Dragonflight) |
 | `itemnamedescription.f0` | surface:ui:ItemNameDescription | 92 | Description_lang |
 | `itempetfood.f0` | surface:ui:PetFood | 8 | Name_lang: pet diet words |
-| `itemsearchname.f0` | covered-by:itemsparse.f0 | 11,093 | item names again, for the search index; the names in itemsparse.f4 stay English and this table carries nothing else |
-| `itemset.f0` | names | 536 | item set names (The Gladiator) |
-| `itemsparse.f0` | surface:item.description | 4,845 | Description_lang |
+| `itemsearchname.f0` | covered-by:itemsparse.f0 | 11,000 | item names again, for the search index; the names in itemsparse.f4 stay English and this table carries nothing else |
+| `itemset.f0` | names | 545 | item set names (The Gladiator) |
+| `itemsparse.f0` | surface:item.description | 4,881 | Description_lang |
 | `itemsparse.f1` | empty | 0 | Display3_lang |
 | `itemsparse.f2` | empty | 0 | Display2_lang |
 | `itemsparse.f3` | empty | 0 | Display1_lang |
-| `itemsparse.f4` | names | 24,007 | Display_lang: item names |
+| `itemsparse.f4` | names | 24,073 | Display_lang: item names |
 | `itemsubclass.f0` | surface:ui:ItemSubClass | 100 | DisplayName_lang |
 | `itemsubclass.f1` | surface:ui:ItemSubClassName | 36 | VerboseName_lang |
 | `itemsubclassmask.f0` | surface:ui:ItemSubClassMask | 3 | Name_lang (Requires Melee Weapon) |
-| `languages.f0` | names | 15 | language names (Orcish) |
-| `languagewords.f0` | internal | 1,583 | the made-up words other-faction speech is scrambled into |
+| `languages.f0` | names | 16 | language names (Orcish) |
+| `languagewords.f0` | internal | 1,592 | the made-up words other-faction speech is scrambled into |
 | `lfgdungeons.f0` | names | 71 | dungeon names |
 | `lightskybox.f0` | internal | 28 | model file paths |
 | `liquidtype.f0` | internal | 57 | liquid type names (Water, Ocean) used by tools |
@@ -265,9 +266,9 @@ Lines are non-empty values; a server cache counts the records this install holds
 | `mapdifficulty.f0` | surface:ui:InstanceEntryMessage | 21 | Message_lang: the error when entering an instance under its level |
 | `mapdifficultyxcondition.f0` | surface:ui:InstanceEntryFailure | 139 | FailureDescription_lang |
 | `mount.f0` | names | 141 | mount names |
-| `namegen.f0` | internal | 2,738 | random name generator syllables |
-| `namesprofanity.f0` | internal | 6,595 | name filter list |
-| `namesreserved.f0` | internal | 2,559 | reserved name list |
+| `namegen.f0` | internal | 2,737 | random name generator syllables |
+| `namesprofanity.f0` | internal | 267 | name filter list |
+| `namesreserved.f0` | internal | 703 | reserved name list |
 | `namesreservedlocale.f0` | internal | 2 | reserved name patterns |
 | `pagetextmaterial.f0` | internal | 6 | page background material names |
 | `paperdollitemframe.f0` | internal | 48 | frame names (HeadSlot) |
@@ -295,41 +296,41 @@ Lines are non-empty values; a server cache counts the records this install holds
 | `scenescriptpackage.f0` | internal | 9 | script package names |
 | `scenescripttext.f0` | internal | 147 | script names |
 | `scenescripttext.f1` | internal | 145 | Lua source |
-| `screeneffect.f0` | internal | 77 | effect names (Ghost Screen Effect) |
+| `screeneffect.f0` | internal | 78 | effect names (Ghost Screen Effect) |
 | `screenlocation.f0` | internal | 12 | position names (Center) |
 | `servermessages.f0` | surface:ui:ServerMessage | 15 | Text_lang: server notices in chat ([SERVER] Shutdown in %s); the bare %s row and the DEBUG row are left out |
 | `sharedstring.f0` | surface:ui:SharedString | 37 | String_lang: talent requirement lines (profession names stay English) |
 | `skillline.f0` | names | 154 | DisplayName_lang: skill and profession names |
 | `skillline.f2` | surface:ui:SkillLineDescription | 56 | Description_lang |
 | `skilllinecategory.f0` | surface:ui:SkillCategory | 9 | Name_lang |
-| `soundemitters.f0` | internal | 1,786 | sound emitter names |
+| `soundemitters.f0` | internal | 1,790 | sound emitter names |
 | `soundmixgroup.f0` | internal | 210 | sound mix group names |
 | `soundmixgroup.f1` | internal | 210 | sound mix group names |
 | `soundproviderpreferences.f0` | internal | 41 | sound test names |
 | `spammessages.f0` | internal | 137 | spam filter patterns |
-| `spell.f0` | surface:ui:SpellSubtext | 4,764 | NameSubtext_lang: Racial Passive and the like; Rank N stays English |
-| `spell.f1` | surface:spell.description | 17,762 | Description_lang |
-| `spell.f2` | surface:spell.aura | 7,844 | AuraDescription_lang |
+| `spell.f0` | surface:ui:SpellSubtext | 4,774 | NameSubtext_lang: Racial Passive and the like; Rank N stays English |
+| `spell.f1` | surface:spell.description | 17,878 | Description_lang |
+| `spell.f2` | surface:spell.aura | 7,919 | AuraDescription_lang |
 | `spellcategory.f0` | internal | 266 | developer category names (Direct Damage - Spell); no Forever display site (docs/research/2026-09-26-client-table-text.md) |
-| `spelldescriptionvariables.f0` | internal | 44 | formulas ($power=${...}) |
-| `spelldiminish.f0` | no-display | 11 | stored, never printed (blizzard_spelldiminishui/blizzard_spelldiminishuitemplates.lua:21-22; arena frames show icons) |
+| `spelldescriptionvariables.f0` | internal | 46 | formulas ($power=${...}) |
+| `spelldiminish.f0` | no-display | 12 | stored, never printed (blizzard_spelldiminishui/blizzard_spelldiminishuitemplates.lua:21-22; arena frames show icons) |
 | `spelldispeltype.f0` | surface:ui:DispelType | 11 | Name_lang |
 | `spelldispeltype.f1` | internal | 4 | InternalName: the same four words, upper-case tokens for code |
 | `spellflyout.f0` | surface:ui:FlyoutName | 19 | Name_lang: a spellbook flyout's name (Portal, Summon Demon) |
 | `spellflyout.f1` | surface:ui:FlyoutDescription | 19 | Description_lang: the flyout's tooltip description |
 | `spellfocusobject.f0` | names | 244 | object names a recipe or spell needs (Anvil, Forge, Ambermill Leyline Focus); names stay English |
-| `spellitemenchantment.f0` | surface:ui:SpellItemEnchantment | 2,216 | Name_lang: enchant lines on item tooltips |
+| `spellitemenchantment.f0` | surface:ui:SpellItemEnchantment | 2,217 | Name_lang: enchant lines on item tooltips |
 | `spellkeyboundoverride.f0` | internal | 1 | a key token (JUMP) |
 | `spellmechanic.f0` | internal | 36 | lower-case mechanic names (charmed, dazed); no Forever display site (docs/research/2026-09-26-client-table-text.md) |
 | `spellmissilemotion.f0` | internal | 70 | missile motion names |
-| `spellname.f0` | names | 31,930 | Name_lang: spell names |
-| `spelloverridename.f0` | names | 1 | one spell name |
+| `spellname.f0` | names | 32,110 | Name_lang: spell names |
+| `spelloverridename.f0` | names | 4 | one spell name |
 | `spellrange.f0` | no-display | 61 | in game on 1.60.1.70170, Wrath (SpellRange 4 "Medium Range", 30 yards) shows SPELL_RANGE "30 yd range", already Japanese; melee spells use MELEE_RANGE |
 | `spellrange.f1` | no-display | 61 | the short range names (Medium); not printed, as spellrange.f0 |
 | `spellscript.f0` | internal | 1 | script name |
 | `spellscript.f1` | internal | 1 | Lua source |
 | `spellscript.f2` | internal | 1 | author name of a script |
-| `spellshapeshiftform.f0` | names | 20 | form names (Cat Form), spell names |
+| `spellshapeshiftform.f0` | names | 21 | form names (Cat Form), spell names |
 | `talenttab.f0` | names | 27 | talent tree names (Fire, Frost) |
 | `talenttab.f1` | internal | 27 | background file tokens (MageFire) |
 | `taxinodes.f0` | names | 101 | flight point names |
@@ -356,26 +357,26 @@ Lines are non-empty values; a server cache counts the records this install holds
 | `uieventtoast.f3` | surface:ui:EventToastText | 2 | SubIcon_lang |
 | `uiexpansiondisplayinfoicon.f0` | no-display | 3 | expansion feature lines (GetExpansionDisplayInfo().features[i].text) on glue screens only: the promotion panel (blizzard_gluexml/promotionframe.lua:90-104) and character select (blizzard_gluexml/mainline/characterselect.lua:1133-1168); its in-game readers blizzard_classtrial and blizzard_expansiontrial are gated on camelot (pipeline/forever_addons.txt) |
 | `uimap.f0` | names | 60 | map names |
-| `uimodelsceneactor.f0` | internal | 1,009 | actor names |
-| `uimodelscenecamera.f0` | internal | 303 | camera names |
-| `uitextureatlaselement.f0` | internal | 20,816 | atlas names |
-| `uitextureatlasmember.f0` | internal | 20,676 | atlas names |
+| `uimodelsceneactor.f0` | internal | 1,016 | actor names |
+| `uimodelscenecamera.f0` | internal | 305 | camera names |
+| `uitextureatlaselement.f0` | internal | 20,817 | atlas names |
+| `uitextureatlasmember.f0` | internal | 20,677 | atlas names |
 | `uitexturekit.f0` | internal | 850 | texture kit names |
-| `uiwidgetstringsource.f0` | surface:ui:WidgetText | 101 | Value_lang |
+| `uiwidgetstringsource.f0` | surface:ui:WidgetText | 103 | Value_lang |
 | `uiwidgetvistypedatareq.f0` | internal | 515 | developer labels |
 | `uiwidgetvisualization.f0` | internal | 648 | developer labels |
 | `vignette.f0` | names | 2 | creature names |
 | `virtualattachment.f0` | internal | 1 | a developer label |
 | `voiceoverpriority.f0` | internal | 19 | developer labels |
 | `wbaccesscontrollist.f0` | internal | 172 | URL patterns |
-| `wdb-creaturecache.*` | names | 146 | creature names and their titles (<Innkeeper>); UI/TooltipUnit.lua leaves line 1 and title lines as the client wrote them |
-| `wdb-gameobjectcache.*` | names | 103 | object names |
+| `wdb-creaturecache.*` | names | 472 | creature names and their titles (<Innkeeper>); UI/TooltipUnit.lua leaves line 1 and title lines as the client wrote them |
+| `wdb-gameobjectcache.*` | names | 51 | object names |
 | `wdb-npccache.*` | surface:gossip.text | 0 | NPC dialogue; gossip English comes from VMaNGOS and the in-game collector (docs/systems/collector.md) |
-| `wdb-pagetextcache.*` | surface:book.text | 0 | book and letter pages; English from VMaNGOS and the collector |
+| `wdb-pagetextcache.*` | surface:book.text | 1 | book and letter pages; English from VMaNGOS and the collector |
 | `wdb-petitioncache.*` | internal | 0 | player-written guild charter names and text, never game text |
-| `wdb-questcache.*` | surface:quest.* | 3,078 | quest text, objectives and area text, plus each conditional description and completion log line keyed like NPC dialogue; the whole server set is harvested by the quest scan |
-| `wmoareatable.f0` | names | 7,662 | area names inside buildings |
-| `worldstateexpression.f0` | internal | 3,977 | encoded expressions |
+| `wdb-questcache.*` | surface:quest.* | 45 | quest text, objectives and area text, plus each conditional description and completion log line keyed like NPC dialogue; the whole server set is harvested by the quest scan |
+| `wmoareatable.f0` | names | 7,755 | area names inside buildings |
+| `worldstateexpression.f0` | internal | 4,001 | encoded expressions |
 | `zoneintromusictable.f0` | internal | 54 | music names |
-| `zonelight.f0` | internal | 24 | light names |
+| `zonelight.f0` | internal | 23 | light names |
 | `zonemusic.f0` | internal | 164 | music names |
