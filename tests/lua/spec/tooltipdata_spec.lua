@@ -8,6 +8,8 @@ local UI = {
   TANK = { "Tank", "タンク" },
   ["FlyoutName:248"] = { "Portal", "ポータル" },
   ["FlyoutDescription:248"] = { "Creates a portal to a major city.", "主要都市へのポータルを作り出します。" },
+  ["CurrencyDescription:3402"] = { "Used as an interim currency among merchants.",
+    "Usato come valuta provvisoria tra i mercanti." },
 }
 
 describe("UI/TooltipData", function()
@@ -53,6 +55,21 @@ describe("UI/TooltipData", function()
     tt:SetText("Character Info")
     tt:Show()
     assert.are.equal("Character Info", left(1):GetText())
+  end)
+
+  it("a currency's description is its own CurrencyDescription row; other restricted rows stay English", function()
+    WFJ.TooltipData.init()
+    tt:SetOwner(Stub.button("QuestInfoRewardsFrameQuestInfoItem1", ""))
+    tt:SetText("Merchant's Favor")
+    tt:AddLine("Used as an interim currency among merchants.")
+    tt:AddLine("Creates a portal to a major city.") -- a flyout row: restricted to its own family
+    tt:AddLine("Character Info")
+    tt.primaryInfo = { tooltipData = { type = 5 } }
+    posts[5](tt)
+    assert.are.equal("Merchant's Favor", left(1):GetText())
+    assert.are.equal("Usato come valuta provvisoria tra i mercanti.", left(2):GetText())
+    assert.are.equal("Creates a portal to a major city.", left(3):GetText())
+    assert.are.equal("キャラクター情報", left(4):GetText())
   end)
 
   it("a flyout's tooltip: its name and description in their own families, line 1 included", function()

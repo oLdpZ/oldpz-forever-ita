@@ -119,8 +119,9 @@ function Labels.scrolling(sf)
 end
 
 -- Shows one label as record `recKey` on `surface`. `opts` (optional): { only = { KEY = true, … } | { "KEY", … },
--- evenForbidden = true }. A forbidden widget is shown only with `evenForbidden` and an `only` list: the one form of it
--- that is a dictionary line (a locked calendar event's title around the title the player typed).
+-- also = a set of restricted keys tried after the open dictionary (ignored with `only`), evenForbidden = true }.
+-- A forbidden widget is shown only with `evenForbidden` and an `only` list: the one form of it that is a dictionary
+-- line (a locked calendar event's title around the title the player typed).
 -- → 1 when the widget holds a dictionary word (shown or already ours), else 0; and a record from an earlier text on
 -- that key is dropped, never restored over the client's text.
 function Labels.show(surface, recKey, widget, refit, opts)
@@ -143,6 +144,8 @@ function Labels.show(surface, recKey, widget, refit, opts)
   local key, args
   if type(en) == "string" and en ~= "" then
     if opts and opts.only then key, args = index:matchOnly(en, opts.only) else key, args = index:match(en) end
+    -- `also`: restricted keys this widget may show besides the open dictionary (a currency's own description)
+    if not key and opts and not opts.only and opts.also then key, args = index:matchOnly(en, opts.also) end
   end
   -- a forbidden widget takes only the form the client writes, colour codes and all: a bare form there would be
   -- the player's own text ("Raid night (Locked)")

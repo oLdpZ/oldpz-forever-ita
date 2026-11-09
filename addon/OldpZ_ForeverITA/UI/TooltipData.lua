@@ -32,6 +32,15 @@ local function walkWith(opts)
 end
 local walk = walkWith(OPTS)
 TooltipData.walk = walk
+-- A currency's description is a CurrencyDescription row, a restricted family (ADR-042): tried after the open
+-- dictionary, which keeps the totals and caps lines.
+local currencyOpts = { from = 2 }
+local function currencyWalkOpts()
+  currencyOpts.also = WFJ.Labels.families("CurrencyDescription").only
+  return currencyOpts
+end
+local walkCurrency = walkWith(currencyWalkOpts)
+TooltipData.walkCurrency = walkCurrency
 
 -- A spellbook or action-bar flyout's tooltip: its name and description, both SpellFlyout rows (a category, not a
 -- spell), matched in those two families only, line 1 included.
@@ -49,7 +58,7 @@ function TooltipData.init()
   if type(processor) ~= "table" or type(processor.AddTooltipPostCall) ~= "function" or type(types) ~= "table" then
     return false
   end
-  if types.Currency ~= nil then processor.AddTooltipPostCall(types.Currency, walk) end
+  if types.Currency ~= nil then processor.AddTooltipPostCall(types.Currency, walkCurrency) end
   if types.Mount ~= nil then processor.AddTooltipPostCall(types.Mount, walk) end
   if types.CompanionPet ~= nil then processor.AddTooltipPostCall(types.CompanionPet, walk) end
   if types.EquipmentSet ~= nil then processor.AddTooltipPostCall(types.EquipmentSet, walkWith(SET_OPTS)) end
