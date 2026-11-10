@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["bbbf58e50b6d2057"] = { "Ti presenti per il servizio, {class}? Tutto il materiale bellico sia dell'⟦Horde=Orda⟧ sia dell'⟦Alliance=Alleanza⟧ è pronto e viene spedito a ⟦Silithus=Silitus⟧ proprio ora. Dovrebbe arrivare tutto in meno di un giorno. Spero che qualcuno abbia trovato i vari pezzi dello Scettro delle Sabbie Mutevoli e li abbia rimessi insieme.", "." },
   ["bbc6bc0f21103b74"] = { "Il magnete per spettri attira %s...", "." },
   ["bbc9a7a7f1219fe0"] = { "Chi controlla il Dun Baldar South Bunker?", "." },
+  ["bbcefed8fa5e8bc6"] = { "Il trasmogrificatore", "." },
   ["bbd6059af83f376d"] = { "In tempi difficili un druido può essere un caro amico per chi gli sta intorno. Chiedi a uno qualunque dei druidi nell'⟦Cenarion Enclave=Enclave Cenariana⟧ e ti dirà lo stesso.", "." },
   ["bbf52fbc4c8626fe"] = { "Mi serve una mano qui. {name} mi ha visto.", "." },
   ["bbf8281a2bddfa7e"] = { "Ciuf ciuf, tuu tuu! Buona Veglia delle Ombre, {name}!", "." },

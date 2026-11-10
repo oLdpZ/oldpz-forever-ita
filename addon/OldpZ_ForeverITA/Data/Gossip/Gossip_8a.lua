@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["8aa78629a1741a96"] = { "Mostrami dove posso volare.", "." },
   ["8aab39bedbe406c8"] = { "Distogliete lo sguardo, bambini. La furia del sangue ha preso il sopravvento...", "." },
   ["8ab43c9c9c006459"] = { "Non risveglierai mai il sognatore!", "." },
+  ["8ac6a9d3f236ddb9"] = { "Grazie per il tuo impegno, {name}. Ultimamente c'è stata un'ondata di banditi e ladri che intercettano le rotte commerciali. Se trovi altre casse in giro, portale qui e al resto penseremo noi.\n\nEcco il tuo compenso.", "." },
   ["8ac6ded5b124ceb7"] = { "Mi sembra di vedere qualcosa.", "." },
   ["8acd9973891e3199"] = { "Sento odore di ladro.", "." },
   ["8add11d98b1b84e2"] = { "Il compito delle Staffette è garantire la sicurezza di chi viaggia attraverso le pianure di Mulgore. Chi minaccia la sicurezza della patria dei tauren rischia di subire la nostra punizione.", "." },

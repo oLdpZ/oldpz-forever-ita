@@ -35,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["919374d1b71f4f28"] = { "La ⟦Syndicate=Lega dei Tagliagole⟧ tiene molte casse chiuse di rifornimenti nel ⟦Durnholde Keep=Forte Durnholde⟧, a ⟦Hillsbrad=Colletorto⟧.", "." },
   ["9198e191bd8d7151"] = { "Ah, eccone uno.", "." },
   ["919bff9afffae312"] = { "Va' a sederti vicino al fuoco e possiamo cominciare.", "." },
+  ["91a995c895675637"] = { "Oh, Jornah dovrebbe essere da qualche parte nell'accampamento. Se hai delle domande, sarà felice di risponderti.", "." },
   ["91ac8c7ed704ecfe"] = { "Trovi una cassetta postale proprio laggiù, vicino alla Stonefire Tavern. È appena a nord dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["91af32bc65d73286"] = { "%s si nasconde tra i cespugli.", "." },
   ["91b3a773faf0c72e"] = { "IN RIGA, VERMI!", "." },

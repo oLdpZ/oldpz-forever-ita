@@ -1,0 +1,1 @@
+{"id": 274916, "field": "name", "it": "Guardiamorte Vigile", "status": "trusted", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-r18-sg15@2026-11-10", "imported": "2026-11-10"}, "english": {"hash": "7542ab471fa2e1e8", "src": "collector@1.60.1.70862"}, "reasons": [], "conflicts": []}
