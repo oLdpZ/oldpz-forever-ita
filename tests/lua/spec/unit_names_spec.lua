@@ -20,6 +20,7 @@ describe("Core/UnitNames", function()
     _G.issecretvalue = nil
     _G.UnitGUID = nil
     _G.UnitTokenFromGUID, _G.UnitPlayerControlled = nil, nil
+    _G.UNKNOWNOBJECT = nil
   end)
 
   it("gives the Italian name when the shown English hashes to the row's h1 (pipeline ↔ Lua contract)", function()
@@ -96,6 +97,25 @@ describe("Core/UnitNames", function()
     assert.is_nil(U.name(WILD, "Rabid Forest Wolf"))
     assert.are.same({ { "npc", 999997, "name", "Rabid Forest Wolf" } }, recorded)
     WFJ.Collector.record = record
+  end)
+
+  it("a stale text on a reused widget (the previous unit's name) and the Unknown placeholder are never recorded",
+    function()
+    local recorded = {}
+    local record = WFJ.Collector.record
+    WFJ.Collector.record = function(kind, id, field, en) recorded[#recorded + 1] = { kind, id, field, en } end
+    local GAMON = "Creature-0-1-2-3-999996-0000"
+    Stub.units.nameplate1 = { name = "Gamon", guid = GAMON } -- the token already names the new unit
+    WFJ.Compat.init(function(name) return _G[name] end)
+    assert.is_nil(U.forUnit("nameplate1", "Elder Mottled Boar")) -- the plate still shows the previous mob's name
+    assert.is_nil(U.name("Creature-0-1-2-3-999995-0000", "Unknown"))
+    _G.UNKNOWNOBJECT = "Sconosciuto"
+    assert.is_nil(U.name("Creature-0-1-2-3-999994-0000", "Sconosciuto"))
+    Stub.units.nameplate1 = { name = "|cffff0000Gamon|r", guid = GAMON } -- colour codes are not a difference
+    assert.is_nil(U.forUnit("nameplate1", "Gamon"))
+    assert.are.same({ { "npc", 999996, "name", "Gamon" } }, recorded)
+    WFJ.Collector.record = record
+    Stub.units.nameplate1 = nil
   end)
 
   it("subname reads the subname slot", function()

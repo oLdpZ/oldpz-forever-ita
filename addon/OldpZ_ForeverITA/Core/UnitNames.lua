@@ -49,9 +49,15 @@ local function controlled(guid)
   return okC and not secret(yes) and yes == true
 end
 
+-- the client's placeholder for a creature whose name has not arrived yet (UNKNOWNOBJECT): never a name to translate
+local function placeholder(shown)
+  local unknown = WFJ.Compat.resolve("UNKNOWNOBJECT")
+  return shown == "Unknown" or (type(unknown) == "string" and not secret(unknown) and shown == unknown)
+end
+
 local function recordMiss(field, id, entry, shown, guid)
   if field ~= "name" then return end
-  if controlled(guid) then return end
+  if placeholder(shown) or controlled(guid) then return end
   if entry ~= nil and (entry.h1 == nil or WFJ.Hash.h32x2(WFJ.Normalize.v1(shown)) == entry.h1) then return end
   WFJ.Collector.record("npc", id, "name", shown)
 end
@@ -87,9 +93,22 @@ function UnitNames.subname(guid, shown)
   return answer("subname", guid, shown)
 end
 
+-- A text read from a widget the client reuses for another unit (a nameplate given to the next mob) can still be the
+-- previous unit's name while the token already names the new one: such a pair is neither answered nor recorded
+-- (a send paired a Durotar boar's name with Gamon's id). The check needs UnitName and a plain, non-secret answer.
+local function bare(s) return (s:gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")) end
+local function stale(unit, shown)
+  local unitName = WFJ.Compat.resolve("UnitName")
+  if type(unitName) ~= "function" then return false end
+  local ok, current = pcall(unitName, unit)
+  if not ok or secret(current) or type(current) ~= "string" or current == "" then return false end
+  return bare(current) ~= bare(shown)
+end
+
 function UnitNames.forUnit(unit, shown)
   local unitGUID = WFJ.Compat.resolve("UnitGUID")
   if type(unitGUID) ~= "function" or unit == nil then return nil end
+  if secret(unit) or secret(shown) or type(shown) ~= "string" or stale(unit, shown) then return nil end
   return UnitNames.name(unitGUID(unit), shown)
 end
 
