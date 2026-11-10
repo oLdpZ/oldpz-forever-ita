@@ -45,7 +45,10 @@ def plan(root) -> tuple[dict[str, dict[tuple[Any, str], tuple[str, str]]], dict[
         translated = store.load(type_)
         hand = {line["id"] for line in translated if decisions.hand_written_variants(line)}
         has_it = {line["id"] for line in translated}
-        new_of = {(line["id"], line["field"]): hash_key(normalize_for(type_, line["en"])) for line in lines}
+        new_of = {
+            (line["id"], line["field"]): hash_key(normalize_for(type_, line["en"], line["id"]))
+            for line in lines
+        }
         # a line whose key moves away frees its old key: only a line that stays there holds it
         moving = {k[0] for k, new in new_of.items() if type_ in HASH_KEYED and new != k[0]}
         landing: dict[str, Any] = {}

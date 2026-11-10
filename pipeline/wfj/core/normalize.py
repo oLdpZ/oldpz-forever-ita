@@ -124,10 +124,17 @@ def mask_values(norm: str) -> str:
 # English and every check read the same text.
 CLIENT_TYPES = frozenset({"item", "spell", "ui"})
 
+# The UI-store families the SERVER fills in before the client shows them: a letter's body
+# (MailTemplate.Body_lang) arrives with `$n` already the player's name, and UI/Mail turns that name back
+# into `{name}` before hashing, so these rows keep the player mapping although their store is "ui".
+SERVER_UI_FAMILIES = frozenset({"MailBody"})
 
-def normalize_for(type_: str, raw: str) -> str:
-    """`normalize_v1` with the canon for `type_`: a client template keeps its `$n` / `$c` / `$r`."""
-    return normalize_v1(raw, player_tokens=type_ not in CLIENT_TYPES)
+
+def normalize_for(type_: str, raw: str, key: object = None) -> str:
+    """`normalize_v1` with the canon for `type_`: a client template keeps its `$n` / `$c` / `$r`, except a
+    UI row (`key`) of a family the server fills in."""
+    server = type_ == "ui" and isinstance(key, str) and key.split(":", 1)[0] in SERVER_UI_FAMILIES
+    return normalize_v1(raw, player_tokens=server or type_ not in CLIENT_TYPES)
 
 
 def female_variant(raw: str) -> str | None:

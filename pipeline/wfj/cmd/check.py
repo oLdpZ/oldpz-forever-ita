@@ -46,7 +46,7 @@ def build_scopes(english: Store, type_: str) -> dict[int | str, Scope]:
         if str(ln["src"]).split("@", 1)[0] in skip:
             continue
         sc = scopes.setdefault(ln["id"], Scope(kind=type_, src=ln["src"]))
-        sc.fields[ln["field"]] = normalize_for(type_, ln["en"])
+        sc.fields[ln["field"]] = normalize_for(type_, ln["en"], ln["id"])
         sc.raw[ln["field"]] = ln["en"]
         sc.hashes[ln["field"]] = ln["hash"]
         sc.srcs[ln["field"]] = ln["src"]

@@ -188,7 +188,7 @@ def run_wago_ui(a: argparse.Namespace) -> int:
         problems = validate_line("ui", english_line(k, "text", table[k], "0" * 16, src), english=True)
         if problems:
             raise ValueError(f"wago-ui: {k}: {'; '.join(problems)}")
-        lines.append(english_line(k, "text", table[k], hash_key(_client_hash(table[k])), src))
+        lines.append(english_line(k, "text", table[k], hash_key(normalize_for("ui", table[k], k)), src))
     store = Store(root, english=True)
     store.save(
         "ui",

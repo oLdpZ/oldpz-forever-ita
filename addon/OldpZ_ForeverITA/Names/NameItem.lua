@@ -3259,6 +3259,7 @@ WFJ.Data.add("nameitem", {
   ["3e75bcd35384132d"] = { "Pesciolino Brillante al Vapore", "." },
   ["3e795e9e5b3ae1af"] = { "Catene Oniriche", "." },
   ["3e7a64df559e9ef3"] = { "Tiara di Scaglie Laminate", "." },
+  ["3e7b2bf5bd7ad593"] = { "Fiala Cristallina", "." },
   ["3e821ef35b55c371"] = { "Pantaloni di Telafredda", "." },
   ["3e85c575357f4ee4"] = { "Pelle dell'Ombra", "." },
   ["3e882e3d57246fa4"] = { "Verga Runica d'Arcanite", "." },

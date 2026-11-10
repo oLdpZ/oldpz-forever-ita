@@ -80,10 +80,18 @@ local function showItemNames()
   end
 end
 
+-- The last item sold, under the merchant tab's page: UpdateMerchantInfo writes MerchantBuyBackItemName with
+-- GetBuybackItemInfo's name (mainline/merchantframe.lua, the buyback block after the page loop).
+local function showBuybackName()
+  local fs = Compat.resolve("MerchantBuyBackItemName")
+  if fs then WFJ.Render.name(SURFACE, "item.buyback", fs, "nameitem") end
+end
+
 -- hooksecurefunc target: the merchant tab was written. → the number of dictionary words found.
 function Merchant.onMerchantInfo()
   WFJ.SurfaceState.drop(SURFACE, "ui.title") -- the NPC name now: the buyback title's record goes
   showItemNames()
+  showBuybackName()
   return WFJ.Labels.showAll(SURFACE, { { "ui.page", get("pageText") } })
 end
 

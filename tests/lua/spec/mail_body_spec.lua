@@ -24,7 +24,11 @@ local UI = {
   ["MailBody:200"] = { SHORT, "よく来た、{name}。\nこれを受け取れ。" },
   ["CurrencyCategory:9"] = { "Close", "Altro" }, -- another family: never a letter body
   CLOSE = { "Close", "Chiudi" },
+  ["MailBody:612"] = { "Greetings $n,\r\n\r\nI've been observing your handiwork.\r\n\r\nRegards, \r\nC",
+    "Salute, {name},\n\nfirmato\nC" },
 }
+-- as the client shows it: the name filled in; the CRLF and the trailing space as the table has them
+local OFFER_SERVED = "Greetings Reyn,\r\n\r\nI've been observing your handiwork.\r\n\r\nRegards, \r\nC"
 
 -- what GetInboxText returns for a template letter: the tokens filled in by the server
 local function served(template, name)
@@ -91,6 +95,10 @@ describe("the open letter's body on Forever", function()
     alt(false)
     assert.are.equal("ほっほー、Reyn！\n\n冬のヴェール祭をお楽しみください！\n\n季節のご挨拶を…\nグレートファーザー・ウィンター",
       html().text)
+  end)
+
+  it("a table letter with CRLF breaks and a trailing space (MailBody:612, the rogue's offer) matches", function()
+    assert.are.equal("Salute, Reyn,\n\nfirmato\nC", open(OFFER_SERVED))
   end)
 
   it("a letter with no name token and a lowercase $n with a short name match too", function()

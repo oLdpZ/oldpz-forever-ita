@@ -82,6 +82,20 @@ describe("the merchant on the Forever client", function()
     for i = 1, 12 do assert.are.equal(0, _G["MerchantItem" .. i .. "Name"].calls.addonSetText) end
   end)
 
+  it("the merchant tab's item names and the last item sold go through the item-name renderer", function()
+    local seen = {}
+    local name = WFJ.Render.name
+    WFJ.Render.name = function(surface, key, fs, kind)
+      seen[key] = { fs, kind }
+      return name(surface, key, fs, kind)
+    end
+    CI.merchantItems = { "Leaded Vial" }
+    CI.openMerchant()
+    WFJ.Render.name = name
+    assert.are.same({ _G.MerchantItem1Name, "nameitem" }, seen["item.1"])
+    assert.are.same({ _G.MerchantBuyBackItemName, "nameitem" }, seen["item.buyback"])
+  end)
+
   it("the sell-junk and guild-repair tooltips are Japanese, the money lines verbatim", function()
     CI.hover(_G.MerchantSellAllJunkButton)
     assert.are.equal("ガラクタをすべて売る", left(1))

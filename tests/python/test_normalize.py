@@ -1,4 +1,4 @@
-from wfj.core.normalize import Player, normalize_v1, replace_word
+from wfj.core.normalize import Player, normalize_for, normalize_v1, replace_word
 
 
 def test_markup_link_keeps_label():
@@ -51,3 +51,12 @@ def test_vectors_norm(vectors):
     for v in vectors:
         p = Player(v["player"]["name"], v["player"]["class"], v["player"]["race"]) if v["player"] else None
         assert normalize_v1(v["raw"], p) == v["norm"], v["id"]
+
+
+def test_a_letter_body_is_hashed_with_the_player_mapping_other_ui_rows_keep_their_codes():
+    # the server fills a letter's `$n` with the player's name and UI/Mail turns it back into {name}
+    body = "Greetings $n,\r\n\r\nRegards, \r\nC"
+    assert normalize_for("ui", body, "MailBody:612") == "Greetings {name}, Regards, C"
+    assert normalize_for("ui", body, "ERR_SOMETHING") == "Greetings $n, Regards, C"
+    assert normalize_for("ui", body) == "Greetings $n, Regards, C"
+    assert normalize_for("spell", "within $r yards", "MailBody:1") == "within $r yards"

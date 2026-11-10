@@ -138,7 +138,7 @@ def rule_collisions(english: Store) -> list[str]:
     for type_ in ENGLISH_FIELDS:
         seen: dict[str, str] = {}
         for ln in english.load(type_):
-            norm = normalize_for(type_, ln["en"])
+            norm = normalize_for(type_, ln["en"], ln["id"])
             other = seen.setdefault(ln["hash"], norm)
             if other != norm:
                 problems.append(
@@ -322,7 +322,7 @@ def ui_group(key: str, en: str, it: str) -> tuple[str, str]:
     if numbered.is_numbered(key):
         it = numbered.fill_slots(text, it)
         text = numbered.skeleton(text)
-    return (ui_family(key) or "") + "\0" + normalize_for("ui", text), normalize_v1(it)
+    return (ui_family(key) or "") + "\0" + normalize_for("ui", text, key), normalize_v1(it)
 
 
 def rule_ui(
