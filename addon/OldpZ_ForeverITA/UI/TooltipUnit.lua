@@ -317,7 +317,18 @@ function TooltipUnit.onUnit(tt, data)
         end
         notes[#notes + 1] = ("row %d quest title: %s"):format(i, id and ("quest " .. id) or why)
       else
-        n = n + WFJ.Labels.show(SURFACE, "L" .. i, fs, refit, only)
+        local shown = WFJ.Labels.show(SURFACE, "L" .. i, fs, refit, only)
+        -- an objective row the keys do not answer ("  - 6/8 Rot Hide Ichor": an item to collect, a server-written
+        -- objective) goes through the quest log's objective lookups; a secret row is never read
+        if shown == 0 and kinds[i] == "QuestObjective" and WFJ.QuestMap then
+          local text = fs:GetText()
+          local isSecret = Compat.resolve("issecretvalue")
+          if type(text) == "string" and not (type(isSecret) == "function" and isSecret(text)) then
+            shown = WFJ.QuestMap.showObjective(SURFACE, "L" .. i, fs, refit, true)
+            if shown > 0 then notes[#notes + 1] = ("row %d objective"):format(i) end
+          end
+        end
+        n = n + shown
       end
     end
   end

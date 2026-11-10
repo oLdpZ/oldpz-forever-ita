@@ -404,8 +404,10 @@ function QuestMap.objectiveJapanese(en, surface)
 end
 
 -- One objective line on `fs` as record `recKey`. `refit` (optional) lays the line's owner out again after a write.
+-- `dashed`: the line may open with the client's " - " (a unit tooltip's objective row, "  - 6/8 Rot Hide Ichor"),
+-- which is kept as written in front of the Italian. The caller has ruled out a secret text.
 -- → 1 when shown (or still ours), else 0 and the record is dropped
-function QuestMap.showObjective(surface, recKey, fs, refit)
+function QuestMap.showObjective(surface, recKey, fs, refit, dashed)
   if not isText(fs) then
     WFJ.SurfaceState.drop(surface, recKey)
     return 0
@@ -417,13 +419,19 @@ function QuestMap.showObjective(surface, recKey, fs, refit)
     WFJ.SurfaceState.drop(surface, recKey)
     return 0
   end
-  local core, tag = completeTag(en)
+  local lead, body = "", en
+  if dashed then
+    local l, rest = en:match("^(%s*%- )(.+)$")
+    if l then lead, body = l, rest end
+  end
+  local core, tag = completeTag(body)
   local ui, objectives = WFJ.UIIndex, WFJ.ObjectiveIndex
   -- the objective's own text first: a server text that starts with a dictionary word ("Learn cooking from Tomas")
   -- must never be read as a client template. The index holds objective and area rows; `kind` names which.
   local id, args, kind
   if objectives then id, args, kind = objectives:match(core) end
   if id then
+    args.before = lead .. (args.before or "")
     args.after = args.after .. tag
     WFJ.Render.show(surface, recKey, fs, en, "quests", kind, id, { refit = refit, args = args, compact = true })
     return 1
@@ -431,19 +439,20 @@ function QuestMap.showObjective(surface, recKey, fs, refit)
   local keyed = completionLogKey(core)
   if keyed then
     WFJ.Render.show(surface, recKey, fs, en, "quests", "gossip", keyed,
-      { refit = refit, args = { form = "affix", before = "", after = tag }, compact = true })
+      { refit = refit, args = { form = "affix", before = lead, after = tag }, compact = true })
     return 1
   end
   local key
   if ui then key, args = ui:matchOnly(core, QuestMap.OBJECTIVE_KEYS) end
   if key then
     WFJ.Render.show(surface, recKey, fs, en, "quests", "ui", key,
-      { refit = refit, args = { form = "affix", before = "", after = tag, inner = args }, compact = true })
+      { refit = refit, args = { form = "affix", before = lead, after = tag, inner = args }, compact = true })
     return 1
   end
   local wrap
   kind, key, wrap = itemName(core, tag)
   if kind then
+    wrap[1] = lead .. wrap[1]
     WFJ.Render.show(surface, recKey, fs, en, kind, kind, key, { refit = refit, compact = true, wrap = wrap })
     return 1
   end

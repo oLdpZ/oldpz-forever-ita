@@ -5,7 +5,8 @@ local Stub = require("tests.lua.spec.wow_stub")
 
 local FILES = {}
 for _, f in ipairs(H.UI_FILES) do FILES[#FILES + 1] = f end
-for _, f in ipairs({ "UI/QuestMap.lua", "UI/TimeLine.lua", "UI/Tooltip.lua", "UI/TooltipUnit.lua" }) do
+for _, f in ipairs({ "UI/NameText.lua", "UI/QuestMap.lua", "UI/TimeLine.lua", "UI/Tooltip.lua",
+  "UI/TooltipUnit.lua" }) do
   FILES[#FILES + 1] = f
 end
 
@@ -59,8 +60,13 @@ describe("UI/TooltipUnit: quest titles and line kinds", function()
       WFJ.Data.quest[id] = true
       if q[2] then titles[id] = { ja = q[2], status = ".", h1 = h1(q[1]) } end
     end
-    WFJ.Lookup = { get = function(kind, id) if kind == "quest.title" then return titles[id] end end }
-    H.uiSetup(WFJ, UI, { lookup = function(kind, id) if kind == "quest.title" then return titles[id] end end })
+    local items = { [WFJ.NameText.key("Rot Hide Ichor")] = { ja = "Icore di Pellemarcia", status = "." } }
+    WFJ.Lookup = { get = function(kind, id) if kind == "quest.title" then return titles[id] end end,
+      keyed = function(kind, key) if kind == "nameitem" then return items[key] end end }
+    H.uiSetup(WFJ, UI, { lookup = function(kind, id)
+      if kind == "quest.title" then return titles[id] end
+      if kind == "nameitem" then return items[id] end
+    end })
     WFJ.HelpTooltip.init()
     tt = _G.GameTooltip
   end)
@@ -133,6 +139,26 @@ describe("UI/TooltipUnit: quest titles and line kinds", function()
       assert.are.equal("狼の毛皮", left(3))
       tt:Hide()
       assert.are.equal(0, WFJ.SurfaceState.count(WFJ.TooltipUnit.SURFACE))
+    end)
+
+    it("an item objective row keeps the client's dash and count and takes the item's official name", function()
+      hover({ "Rot Hide Mystic", "Wolf Pelts", "Party Member", "  - 6/8 Rot Hide Ichor", "  - 1/2 Unknown Thing" },
+        kinds({ "UnitName", "QuestTitle", "None", "QuestObjective", "QuestObjective" }))
+      assert.are.equal("狼の毛皮", left(2))
+      assert.are.equal("Party Member", left(3))
+      assert.is_truthy(left(4):find("  - 6/8 Icore di Pellemarcia", 1, true), left(4))
+      assert.are.equal("  - 1/2 Unknown Thing", left(5))
+      Stub.keys.alt = true; WFJ.Modifier.refresh()
+      assert.are.equal("  - 6/8 Rot Hide Ichor", left(4))
+      Stub.keys.alt = false; WFJ.Modifier.refresh()
+      _G.issecretvalue = function(v) return v == "  - 6/8 Rot Hide Ichor" end
+      hover({ "Rot Hide Mystic", "Wolf Pelts", "  - 6/8 Rot Hide Ichor" },
+        kinds({ "UnitName", "QuestTitle", "QuestObjective" }))
+      assert.are.equal("  - 6/8 Rot Hide Ichor", left(3))
+      _G.issecretvalue = nil
+      -- the same text on a row not tagged as an objective is left as written
+      hover({ "Rot Hide Mystic", "  - 6/8 Rot Hide Ichor" }, kinds({ "UnitName", "None" }))
+      assert.are.equal("  - 6/8 Rot Hide Ichor", left(2))
     end)
 
     it("a title on a row the client did not tag QuestTitle is read as a unit line, not a quest", function()
