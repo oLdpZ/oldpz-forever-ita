@@ -255,6 +255,7 @@ WFJ.Data.add("ui", {
   ["LOSS_OF_CONTROL_SECONDS"] = { "secondi", 0x404254b6, "." },
   ["LOW"] = { "Bassa", 0x00141ff0, "." },
   ["LOW_LATENCY_MODE"] = { "Modalità a bassa latenza", 0x0acdf8d5, "." },
+  ["LOYALTY_LEVEL"] = { "Livello di lealtà %d", 0xd82b7a53, "." },
   ["LUA_ERROR"] = { "Errore Lua", 0x8437e5e8, "." },
   ["LUA_WARNING"] = { "Avviso Lua", 0x47c6975b, "." },
   ["LfgActivity:1064"] = { "Personalizzata", 0xe8eb93f2, "." },

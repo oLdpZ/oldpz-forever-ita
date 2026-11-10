@@ -72,6 +72,7 @@ WFJ.Data.add("ui", {
   ["GAMEPAD_TALENT_APPLY"] = { "Tieni premuto per applicare", 0xbf1d27a1, "." },
   ["GAMEPAD_TALENT_REMOVE_POINT"] = { "Rimuovi punto", 0xbaa7b91c, "." },
   ["GAMEPAD_TOGGLE_COMPACT_ACTION_BAR"] = { "Usa barra delle azioni compatta", 0x93c5fe20, "." },
+  ["GAMEPAD_TOGGLE_COMPACT_ACTION_BAR_TOOLTIP"] = { "Attiva una disposizione più compatta della barra delle azioni, che mostra solo la barra attualmente attiva.", 0xfdfa1da7, "." },
   ["GAMEPAD_TURN_WITH_CAMERA"] = { "Ruota il personaggio con la visuale", 0x7e8f64b4, "." },
   ["GAMEPAD_TURN_WITH_CAMERA_OPTION_ALWAYS"] = { "Il personaggio gira sempre con la visuale", 0xdfdf6c49, "." },
   ["GAMEPAD_TURN_WITH_CAMERA_OPTION_MOVING"] = { "Il personaggio gira con la visuale quando si muove", 0x152441fd, "." },

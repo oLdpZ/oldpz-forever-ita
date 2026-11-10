@@ -412,7 +412,7 @@ WFJ.Data.add("unit", {
   [3416] = { "Matriarca delle Savane", nil, 0x0132c85d, nil, ".m" },
   [3417] = { "Fiamma Vivente", nil, 0x60c716da, nil, ".m" },
   [3418] = { "Kirge Corno Severo", nil, 0xe88da2e4, nil, ".m" },
-  [3419] = { "Speziale Zamah", nil, 0xe9931e98, 0xff871454, ".e" },
+  [3419] = { "Speziale Zamah", "Società Reale degli Speziali", 0xe9931e98, 0xff871454, ".." },
   [3420] = { nil, nil, 0xbfcd9c2e, nil, "em" },
   [3421] = { "Feegly l'Esiliato", nil, 0xe0cd9562, nil, ".m" },
   [3424] = { "Falco del Tuono Graffianubi", nil, 0x64d88579, nil, ".m" },

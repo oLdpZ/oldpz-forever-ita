@@ -134,6 +134,7 @@ DRAFT_SOURCES = {"draft-ui",
                  "draft-r70862-uirv-sg12",  # the keys build 70862 reworded, re-verified
                  *(f"draft-u{i:02d}-sg12" for i in range(1, 22)),  # the remaining interface keys, by window then by client table
                  "draft-u22-sg14",  # a female character's reputation standings (UIStrings.OWN, Index:standing)
+                 "draft-u23-sg15",  # Forever-only gamepad tooltips, pet loyalty, the healthstone criteria
                  "draft-ui-left", "draft-ui-left-tooltip",  # lines a Forever client file shows, links and set bonuses
                  # the last interface lines, the tooltip owner / socket / trade lines and the unit lines the
                  # tooltip line kinds surfaced
