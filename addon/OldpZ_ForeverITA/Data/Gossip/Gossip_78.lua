@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["785c39bc98e580f2"] = { "Il ⟦Stormpike Graveyard=Cimitero dei Piccatonante⟧ è scavato nelle montagne, oltre il ponte a est di Dun Baldar.\n\nAl momento nessuna delle due parti lo controlla.", "." },
   ["786008308cd20e67"] = { "VIENI A CAPO JANEIRO. TI ASPETTO, SMOTTS...", "." },
   ["7869187b0077b2cc"] = { "Non che dubiti delle tue capacità, ma vorrei che svolgessi un compito per me. Chiamala una prova di buona fede...", "." },
+  ["786cd32d537a141a"] = { "Ragno no prende libro!", "." },
   ["7870c84427eb4750"] = { "Oh, magnifico.", "." },
   ["787299a314e9883e"] = { "Sii <guarito/guarita>, <sacerdote/sacerdotessa>.", "." },
   ["7876056419e218a4"] = { "Annalise... Hai ragione. N-non posso farlo. Devo trovare un'altra strada.", "." },

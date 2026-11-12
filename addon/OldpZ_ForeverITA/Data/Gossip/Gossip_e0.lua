@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["e0a432e952d1b785"] = { "*sospiro* È quasi ora di controllare di nuovo il cimitero... Torno tra qualche minuto.", "." },
   ["e0a7303cc7bab5d9"] = { "Ah, il buon vecchio ⟦Brandur Ironhammer=Brandur Fermartello⟧. Non c'è dubbio che ti darà la guida che cerchi, <ragazzo/ragazza>. Lo troverai nella Hall of Mysteries, a nord dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["e0c00f9b8ed128c4"] = { "Il capitano Galvangar è il fidato braccio destro di ⟦Drek'Thar=Drek'thar⟧. Guida le forze dell'⟦Horde=Orda⟧ dal ⟦Iceblood Garrison=Presidio di Brinarossa⟧, nella parte meridionale del ⟦Field of Strife=Pian della Discordia⟧.\n\nAl momento il capitano Galvangar si trova nel ⟦Iceblood Garrison=Presidio di Brinarossa⟧.", "." },
+  ["e0c6d07c8cec4315"] = { "Vorrei vedere la tua merce.", "." },
   ["e0c8c93db2793f92"] = { "Ti maledico, mortale.", "." },
   ["e0c93b079c13fd4d"] = { "Porterò quel segnalatore al cratere senza un graffio, Guse. Puoi contare su di me!", "." },
   ["e0cfad60591d42e1"] = { "All'attacco!!", "." },

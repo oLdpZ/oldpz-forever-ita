@@ -27,6 +27,7 @@ WFJ.Data.add("gossip", {
   ["b995c5dc0d0d826b"] = { "C'è un solo cacciatore qui intorno con cui ti farei parlare, ed è ⟦Grif Wildheart=Grif Cuorselvaggio⟧. Lo troverai appena fuori dalla fucina di Kharanos.", "." },
   ["b999094943281aee"] = { "Ah... il meraviglioso suono dei kodo. Adoro come fanno tremare la terra... esamina la bestia per me.", "." },
   ["b99bf28cb7b0e2fb"] = { "Grazie ancora, {name}. Ora userò questo indurio per potenziare il mio bolide!", "." },
+  ["b9b84a0ca441f0b4"] = { "Veggente della Terra, ti prego, condividi con me la tua vista lontana.", "." },
   ["b9cbd4b6f95c95fa"] = { "Sì, sì, avanti, di' al vecchio ⟦Greatfather Winter=Babbo Inverno⟧ cosa vorresti per questo Grande Inverno.\n\nOh oh oh, sbrigati.", "." },
   ["b9d064f6c850fe04"] = { "Ben <trovato/trovata>, {class}. Il mio consiglio è questo: mentre viaggi per il mondo, diffida della magia, perché brucia chi non è addestrato.", "." },
   ["b9d8626197160c6c"] = { "Come procede la caccia a Edwin VanCleef?", "." },

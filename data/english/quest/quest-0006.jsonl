@@ -142,7 +142,7 @@
 {"id": 6074, "field": "title", "en": "The Hunter's Path", "hash": "e59cef474fca5f3e", "src": "wdb@1.60.1.70450"}
 {"id": 6074, "field": "objectives", "en": "Speak with Grif Wildheart in Kharanos.", "hash": "7378e497b8b9f1cd", "src": "wdb@1.60.1.70450"}
 {"id": 6074, "field": "description", "en": "Hello, young hunter. You look to me like you are skilled enough to handle a beast and train it as your companion.$B$BYou must see Grif Wildheart in Kharanos. He can put you on the path to earning a pet of your own.", "hash": "892ec4fe93ca5ded", "src": "wdb@1.60.1.70450"}
-{"id": 6074, "field": "completion", "en": "Yes, I do believe you are ready, as well....", "hash": "c84c7dad9be2d55a", "src": "vmangos@13b49dc"}
+{"id": 6074, "field": "completion", "en": "Yes, I believe that it is time...", "hash": "467a6a72b0c7e203", "src": "collector@1.60.1.70840"}
 {"id": 6075, "field": "title", "en": "The Hunter's Path", "hash": "e59cef474fca5f3e", "src": "wdb@1.60.1.70450"}
 {"id": 6075, "field": "objectives", "en": "Speak with Grif Wildheart in Kharanos.", "hash": "7378e497b8b9f1cd", "src": "wdb@1.60.1.70450"}
 {"id": 6075, "field": "description", "en": "Hello, young hunter. You look to me like you are skilled enough to handle a beast and train it as your companion.$B$BYou must see Grif Wildheart in Kharanos. He can put you on the path to earning a pet of your own.", "hash": "892ec4fe93ca5ded", "src": "wdb@1.60.1.70450"}

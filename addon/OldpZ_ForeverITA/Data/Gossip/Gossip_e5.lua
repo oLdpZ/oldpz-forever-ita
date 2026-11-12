@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["e5057f89f25feb05"] = { "Imparerai, {name}, e un giorno sarai <un/una> grande {class}.", "." },
   ["e50aba6648051769"] = { "Di ritorno da un lungo viaggio? Riposati e rilassati al Pig and Whistle!", "." },
   ["e5199b84802aea4a"] = { "La chiave di Gelkak scivola nella fessura vuota.", "." },
+  ["e51a267844b25753"] = { "Mi dispiace, {class}, ma non hai ancora abbastanza esperienza per entrare nelle Isole ⟦Darkspear=Lanciascura⟧.", "." },
   ["e51cabf03a640a4b"] = { "Se vuoi andare avanti, dobbiamo prima costruire una prigione per contenere la bestia.", "." },
   ["e51e9ac87901057d"] = { "Se ti hanno silenziato, o hai domande sulla procedura di silenziamento e riattivazione, visita... zzzzttt!!", "." },
   ["e51f8c56ede28d36"] = { "Mio! Mio! Mio! ⟦Gizlock=Tagliafizz⟧ è il signore di questo dominio! Non rivelerai mai la mia presenza!", "." },
