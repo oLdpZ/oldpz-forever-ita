@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-10 at commit `1e3ad552`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-12 at commit `0168427c`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -9,16 +9,16 @@
 
 | Surface | English lines | Ship Italian | Nothing to translate | Done | Not yet |
 |---|---|---|---|---|---|
-| Quest text | 20,468 | 20,275 | 98 | 99.5% | 95 |
-| NPC dialogue (gossip, speech) | 10,997 | 10,908 | 0 | 99.2% | 89 |
+| Quest text | 20,470 | 20,277 | 98 | 99.5% | 95 |
+| NPC dialogue (gossip, speech) | 10,998 | 10,909 | 0 | 99.2% | 89 |
 | Book / letter pages | 1,261 | 1,206 | 54 | 99.9% | 1 |
 | Quest objective lines | 432 | 394 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,480 | 10,466 | 0 | 99.9% | 14 |
 | Spell tooltips + auras | 25,928 | 25,855 | 1 | 99.7% | 72 |
 | Interface strings | 16,417 | 15,271 | 1,029 | 99.3% | 117 |
-| NPC names | 12,932 | 10,145 | 0 | 78.4% | 2,787 |
-| **All** | **99,138** | | | **96.8%** | **3,175** |
+| NPC names | 12,937 | 10,148 | 0 | 78.4% | 2,789 |
+| **All** | **99,146** | | | **96.8%** | **3,177** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139, ui 2.
@@ -53,7 +53,7 @@ professions, internal strings): quest 139, ui 2.
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
 | Interface strings | no Italian yet | 117 |
-| NPC names | no Italian yet | 2,787 |
+| NPC names | no Italian yet | 2,789 |
 
 ### Quests without a level
 

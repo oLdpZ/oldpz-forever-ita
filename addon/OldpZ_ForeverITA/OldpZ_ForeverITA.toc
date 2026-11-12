@@ -520,6 +520,7 @@ Data\Unit\Unit_0017.lua
 Data\Unit\Unit_0018.lua
 Data\Unit\Unit_0185.lua
 Data\Unit\Unit_0203.lua
+Data\Unit\Unit_0211.lua
 Data\Unit\Unit_0230.lua
 Data\Unit\Unit_0244.lua
 Data\Unit\Unit_0246.lua
@@ -537,6 +538,7 @@ Data\Unit\Unit_0265.lua
 Data\Unit\Unit_0266.lua
 Data\Unit\Unit_0267.lua
 Data\Unit\Unit_0268.lua
+Data\Unit\Unit_0271.lua
 Data\Unit\Unit_0272.lua
 Data\Unit\Unit_0274.lua
 Data\Unit\Unit_0275.lua

@@ -1,0 +1,1 @@
+{"id": 271613, "field": "name", "it": "Abominio Incompiuto", "status": "trusted", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-r19-sg15@2026-11-12", "imported": "2026-11-12"}, "english": {"hash": "03c2b6a7d6afd081", "src": "collector@1.60.1.70862"}, "reasons": [], "conflicts": []}
