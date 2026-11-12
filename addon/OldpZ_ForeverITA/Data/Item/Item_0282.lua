@@ -10,6 +10,7 @@ WFJ.Data.add("item", {
   [282064] = { "Probabilmente a Tim non mancherà.", 0xb4971c8b, "u" },
   [282074] = { "Anche l'ogre portato per la magia apprezza la forza fisica.", 0x80b41cfb, "u" },
   [282080] = { "Quando subisci un colpo in combattimento, infligge $N1 danni da fuoco all'aggressore.", 0xddbd4603, "u" },
+  [282085] = { "Bagnato nel sangue del grande draco Hematos.", 0x0e13a081, "u" },
   [282285] = { "Fondi la chiave in una forgia per ottenere $N1 Lingotti di Bronzo.", 0x8a94dcd7, "u" },
   [282315] = { "L'elsa è incredibilmente antica, ma il metallo che affiora sotto la polvere e lo sporco brilla ancora intensamente. Prima di spezzarsi, quest'arma era chiaramente un capolavoro.", 0xf7c48cda, "u" },
   [282337] = { "L'ultimo resto dell'antico difensore elementale di una città degli ⟦Highborne=Alti Nobili⟧.", 0x21d434b4, "u" },
@@ -25,6 +26,7 @@ WFJ.Data.add("item", {
   [282699] = { "L'ultimo resto dell'antico difensore elementale di una città degli ⟦Highborne=Alti Nobili⟧.", 0x21d434b4, "u" },
   [282703] = { "Trafigge il bersaglio, infliggendo $N1 danni fisici.", 0x970d45f0, "u" },
   [282706] = { "Non c'è dubbio su come ⟦Foulbelly=Panciamarcia⟧ si sia guadagnato quel nome.", 0x5f900395, "u" },
+  [282712] = { "La superficie è ricoperta da rune oscure.", 0xbdacf254, "u" },
   [282720] = { "Evoca uno sciame di ragni che ti protegge per $D1.", 0x08920823, "u" },
   [282778] = { "Assorbe $N1 danni da fuoco, curandoti di tutti i danni assorbiti.", 0x79a94f06, "u" },
 })

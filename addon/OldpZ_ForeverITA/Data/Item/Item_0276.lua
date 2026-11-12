@@ -28,6 +28,7 @@ WFJ.Data.add("item", {
   [276637] = { "Un borsellino per allegare degli importi in valuta ai contenitori di oggetti immediati.", 0x8055e2d0, "u" },
   [276742] = { "Infligge $N1 danni fisici ogni volta che blocchi.", 0x2cbf03aa, "u" },
   [276743] = { "Aumenta la Forza di $N1 mentre sei soggetto a un effetto di sanguinamento.", 0x9d3d89fb, "u" },
+  [276744] = { "Richiama un ⟦Black Dragon Whelp=Draghetto Nero⟧ che ti protegga in battaglia per un breve periodo di tempo.", 0x06da34e8, "u" },
   [276782] = { "Accendi l'aggeggio e invia il segnale a Jurgens.", 0x1a89811d, "u" },
   [276784] = { "Recupera l'anima perduta del destriero del cavaliere della morte, trasformandola in uno spirito del castigo.", 0x775bfb52, "u" },
   [276785] = { "Nella bisaccia ci sono il ⟦Divination Scryer=Veggente della Divinazione⟧ e la ⟦Blessed Arcanite Barding=Bardatura d'Arcanite Benedetta⟧ che hai completato.", 0xf58f943b, "u" },

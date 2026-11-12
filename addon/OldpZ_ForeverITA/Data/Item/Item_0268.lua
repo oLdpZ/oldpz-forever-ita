@@ -24,6 +24,7 @@ WFJ.Data.add("item", {
   [268814] = { "Pezzi di qualcosa che non si è del tutto liquefatto...", 0x8c8b2578, "u" },
   [268815] = { "Troppo piccolo per identificarlo, ma abbastanza affilato da lasciare un brutto taglio.", 0xa2dc30c3, "u" },
   [268873] = { "Richiama un Barkskin Ancestor che combatte al tuo fianco e ti cura per $D1.", 0x21118d44, "u" },
+  [268879] = { "Ti insegna a evocare questa mascotte.", 0x42caee1b, "u" },
   [268880] = { "Applicato alla canna da pesca, aumenta la Pesca di $N1 per $D1.", 0x14f245d7, "u" },
   [268881] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },
   [268882] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },

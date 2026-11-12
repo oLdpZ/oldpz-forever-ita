@@ -67,7 +67,7 @@ WFJ.Data.add("ui", {
   ["INVERT_GAMEPAD_PITCH"] = { "Inverti asse verticale", 0xb92e6498, "." },
   ["INVERT_GAMEPAD_YAW"] = { "Inverti asse orizzontale", 0x44b7cba7, "." },
   ["INVERT_MOUSE"] = { "Inverti il mouse", 0x823191c7, "." },
-  ["INVITATION"] = { "%s ti invita in un gruppo.\n\n|TInterface\\DialogFrame\\UI-Dialog-Icon-AlertNew:0:0:0:-1|t Accettando questo invito il mondo intorno a te potrebbe ricaricarsi.", 0x75adb6e0, "." },
+  ["INVITATION"] = { "%s ti invita in un gruppo.", 0xe38d7130, "." },
   ["INVITATION_XREALM"] = { "%s ti invita in un gruppo.\n\nAccettare l'invito potrebbe trasferirti su un altro reame.", 0x8b81470e, "." },
   ["INVITE"] = { "Invita", 0x53896770, "." },
   ["INVITE_COMMUNITY_MEMBER_POPUP_INVITE_EDITBOX_INSTRUCTIONS"] = { "ID reale o BattleTag", 0x07be35b1, "." },

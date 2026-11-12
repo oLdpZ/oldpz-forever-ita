@@ -244,7 +244,7 @@ WFJ.Data.add("item", {
   [20367] = { "Una bella cassa di equipaggiamento.", 0x673955b1, "u" },
   [20368] = { "Questo arco non conosce variazioni.", 0x319ecef2, "u" },
   [20370] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", 0xa798bce2, "u" },
-  [20371] = { "Clicca col pulsante destro per evocare e congedare Murky.", 0xd2b48849, "u" },
+  [20371] = { "Ti insegna a evocare questa mascotte.", 0x42caee1b, "u" },
   [20372] = { "+$N1 potenza d'attacco solo in Forma Felina, Forma d'Orso e Dire Bear Form.", 0xa798bce2, "u" },
   [20380] = { "Rigenera $N1 mana ogni $D1.", 0x9ac76902, "u" },
   [20383] = { "Solo UNO può risorgere... (e di conseguenza solo UNO può raccogliere questa testa)", 0xe55c3563, "u" },

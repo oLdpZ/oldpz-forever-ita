@@ -38,6 +38,7 @@ WFJ.Data.add("item", {
   [226679] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [226680] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
   [226694] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
+  [226697] = { "Riduce di $N1 il tuo livello effettivo di furtività.", 0x4380924e, "u" },
   [226699] = { "Comprende tappi per staffe e spratti mezzi grippati", 0x6fc72631, "u" },
   [226772] = { "Aumenta la probabilità di critico con tutti gli incantesimi e gli attacchi del $N1%.\nAumenta fino a $N2 i danni e le cure prodotti da incantesimi ed effetti magici.", 0x163b9031, "u" },
   [226773] = { "Aumenta la probabilità d'impatto con tutti gli incantesimi e gli attacchi del $N1%.\nAumenta fino a $N2 i danni e le cure prodotti da incantesimi ed effetti magici.", 0x20608b2d, "u" },

@@ -101,6 +101,7 @@ WFJ.Data.add("item", {
   [15847] = { "Questo libro emette un debole bagliore.", 0x20efb9f4, "u" },
   [15848] = { "Piazza il magnete tra i Goliath Morti nella ⟦Valley of Bones=Valle delle Ossa⟧.", 0xc41035c2, "u" },
   [15849] = { "Che schifo!", 0xa1ca27ca, "u" },
+  [15853] = { "Infligge $N1 danni da natura ogni $D1 per $D2.", 0xd02092a3, "u" },
   [15862] = { "+$N1 potenza d'attacco.", 0xff5c97b2, "u" },
   [15866] = { "Rigenera $N1 mana ogni $D1 per $D2.", 0x17437600, "u" },
   [15867] = { "Aumenta tutte le resistenze di $N1 per $D1.", 0x51b5f8a4, "u" },

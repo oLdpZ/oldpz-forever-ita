@@ -314,7 +314,7 @@ WFJ.Data.add("spell", {
   [17788] = { "Riduce il tempo di lancio di ⟦Shadow Bolt=Dardo d'Ombra⟧, Immolazione e Incenerimento di $D1 e quello di ⟦Soul Fire=Fuoco dell'Anima⟧ di $D2.", nil, 0xf8b65742, nil, "um" },
   [17793] = { "I colpi critici di ⟦Shadow Bolt=Dardo d'Ombra⟧ aumentano del $N1% i danni da ombra che il bersaglio subisce dai tuoi attacchi per $D1.", nil, 0x66f9789c, nil, "um" },
   [17794] = { nil, "Danni da ombra subiti per mano dello Stregone aumentati del $N1%.", nil, 0xeebd5b60, "mu" },
-  [17804] = { "Aumenta i danni inflitti o la salute risucchiata da ⟦Drain Life=Risucchio di Vita⟧, Risucchio d'Anima e Distruzione del $N1% per ciascuno degli altri tuoi effetti di Afflizione attivi sul bersaglio, fino a un aumento massimo del $N2%.", nil, 0xc0ffdd63, nil, "um" },
+  [17804] = { "Aumenta i danni inflitti o la salute risucchiata da ⟦Drain Life=Risucchio di Vita⟧, Risucchio d'Anima e Distruzione del $N1% per ciascuno dei tuoi effetti di Corruzione, Siphon Life e Bane of Agony attivi sul bersaglio, fino a un aumento massimo del $N2%.", nil, 0x04c9b3d8, nil, "um" },
   [17809] = { "Attivazione di danni da fuoco.", nil, 0x0756b0cc, nil, "um" },
   [17810] = { "Riduce il tempo di lancio di Corruzione di $D1 e ne aumenta i danni del $N2%.", nil, 0x88b11be3, nil, "um" },
   [17815] = { "Aumenta i danni iniziali di Immolazione del $N1%.", nil, 0x0c511bde, nil, "um" },

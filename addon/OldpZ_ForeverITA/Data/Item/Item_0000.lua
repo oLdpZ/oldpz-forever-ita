@@ -20,6 +20,7 @@ WFJ.Data.add("item", {
   [810] = { "Lancia un dardo gelido contro il nemico, infliggendo $N1 danni da gelo e riducendo la velocità di movimento del nemico del $N2% per $D1.", 0x013c5fa4, "u" },
   [811] = { "Travolge il bersaglio, infliggendo $N1 danni da natura.", 0x37bddcc4, "u" },
   [823] = { "Evoca e congeda un Cavallo Bruno cavalcabile.", 0x53702bab, "u" },
+  [833] = { "Rigenera $N1 salute, aumentata del $N2% per ogni $N3% di salute mancante.", 0x6026e9e7, "u" },
   [835] = { "Impedisce a un bersaglio di muoversi per $D1.", 0x73de166e, "u" },
   [842] = { "Evoca e congeda un Lupo Grigio cavalcabile.", 0xa7f601eb, "u" },
   [858] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },

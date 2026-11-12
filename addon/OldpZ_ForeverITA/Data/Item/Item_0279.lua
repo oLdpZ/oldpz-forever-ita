@@ -57,6 +57,7 @@ WFJ.Data.add("item", {
   [279882] = { "Nonostante gli anni passati sott'acqua, questo antico manufatto irradia ancora un grande potere.", 0x03f68222, "u" },
   [279891] = { "Velocità di movimento aumentata del $N1% nelle zone di foresta e di prateria.", 0xace399bb, "u" },
   [279892] = { "Rigenera $N1 mana ogni $D1 nelle zone di foresta e di prateria.", 0x7686c001, "u" },
+  [279893] = { "Un tempo un gioiello amato, ora un incentivo alla vendetta.", 0x168df89e, "u" },
   [279895] = { "Travolge il bersaglio, infliggendo $N1 danni da fuoco.", 0x9d8bd0af, "u" },
   [279896] = { "La ⟦Great Forge=Grande Forgia⟧ arde ancora al suo interno.", 0x4f5a1d08, "u" },
   [279898] = { "Narra la storia di nani dimenticati da tempo.", 0x89e481f8, "u" },

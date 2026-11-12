@@ -50,6 +50,7 @@ WFJ.Data.add("spell", {
   [1294270] = { "Infonde la tua arma con il fuoco, conferendo agli attacchi una probabilità di infliggere danni da fuoco: $N1 danni da fuoco ogni $D1.", "Gli attacchi hanno una probabilità di applicare Lame Ardenti, che infligge $N1 danni da fuoco ogni $D1.", 0x0e66087a, 0x82fe3188, "uu" },
   [1294273] = { "Colpisce un nemico con il gelo, infliggendo $N1 danni da gelo ogni $D1 e rallentandone la velocità di movimento.", "$N1 danni da gelo inflitti ogni $D1.\nVelocità di movimento ridotta del $N3%.", 0x6c3d963f, 0x2b0696ec, "uu" },
   [1294274] = { "Infonde la tua arma con il gelo, conferendo agli attacchi una probabilità di infliggere danni da gelo, rallentando la velocità di movimento del nemico e infliggendo danni da gelo ogni $D1.", "Gli attacchi hanno una probabilità di applicare Chilling Blade, che infligge $N1 danni da gelo ogni $D1 e riduce la velocità di movimento del $N3%.", 0xdd1b7478, 0xae457ecf, "uu" },
+  [1294313] = { "Costringe i nemici vicini a fuggire impauriti per $D1.", "Fuga in preda al terrore.", 0x9265f43a, 0xfa67e4a8, "uu" },
   [1294314] = { "Lancia una torcia nell'area bersaglio.", nil, 0x5ca1a20e, nil, "um" },
   [1294339] = { "Infligge $N1 danni fisici e stordisce per $D1. Contro i troll i danni e la durata dello stordimento sono moltiplicati per $N3.", nil, 0xc37b8245, nil, "um" },
   [1294340] = { nil, "Stordito.", nil, 0x27f95286, "mu" },

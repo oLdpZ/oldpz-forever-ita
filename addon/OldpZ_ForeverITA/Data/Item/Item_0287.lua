@@ -6,6 +6,7 @@ WFJ.Data.add("item", {
   [287025] = { "Riduce del $N1% il tempo di lancio di Disincantamento.", 0x81de7c97, "u" },
   [287026] = { "Disarma il bersaglio per $D1.", 0xfbbf66ad, "u" },
   [287034] = { "Soggiogare un'anima ha un prezzo anche per la propria.", 0xd318b873, "u" },
+  [287045] = { "Fruga in un Un'Goro Dirt Pile.", 0x645bcd54, "u" },
   [287069] = { "Funge da ⟦Skinning Knife=Coltello da Scuoiatore⟧.", 0x0f5d1ea5, "u" },
   [287416] = { "La cheesecake rende felici.", 0x81d403b4, "u" },
   [287505] = { "Porta il pranzo a Kyle!\nKyle non vedrebbe l'ora di addentare questa succulenta prelibatezza!", 0x5e17d5fa, "u" },

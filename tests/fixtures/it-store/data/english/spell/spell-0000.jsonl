@@ -1,3 +1,3 @@
-{"id": 133, "field": "name", "en": "Fireball", "hash": "c16308c21a375f45", "src": "db2@1.60.1.70862"}
-{"id": 133, "field": "description", "en": "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.", "hash": "dbc51345ec8b892d", "src": "db2@1.60.1.70862"}
-{"id": 133, "field": "aura", "en": "$s2 Fire damage every $t2 seconds.", "hash": "a1772ba6ae58c5d0", "src": "db2@1.60.1.70862"}
+{"id": 133, "field": "name", "en": "Fireball", "hash": "c16308c21a375f45", "src": "db2@1.60.1.70888"}
+{"id": 133, "field": "description", "en": "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.", "hash": "dbc51345ec8b892d", "src": "db2@1.60.1.70888"}
+{"id": 133, "field": "aura", "en": "$s2 Fire damage every $t2 seconds.", "hash": "a1772ba6ae58c5d0", "src": "db2@1.60.1.70888"}

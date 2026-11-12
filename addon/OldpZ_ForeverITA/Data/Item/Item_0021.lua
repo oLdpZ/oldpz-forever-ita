@@ -249,7 +249,7 @@ WFJ.Data.add("item", {
   [21540] = { "Crea una ⟦Elune Stone=Pietra di Elune⟧. Richiede una ⟦Solid Stone=Pietra Solida⟧.\nUn congegno che, si dice, cattura la luce emanata da Elune in persona.", 0xedfcc4cc, "u" },
   [21545] = { "Da usare prima del $N1", 0x8529e422, "u" },
   [21546] = { "Aumenta fino a $N1 i danni da sacro degli incantesimi per $D1.", 0xc4a3d79d, "u" },
-  [21547] = { "Ti insegna a creare un Elisir della ⟦Greater Firepower=Potenza del Fuoco Superiore⟧.", 0x61440532, "u" },
+  [21547] = { "Ti insegna a creare un Elisir del ⟦Holy Power=Potere Sacro⟧.", 0xff38e289, "u" },
   [21548] = { "Ti insegna a creare dei ⟦Stormshroud Gloves=Guanti del Manto Tempestoso⟧.", 0xe4612a26, "u" },
   [21552] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [21557] = { "Inseriscilo in un Mortaio per Fuochi d'Artificio!", 0xe506f47a, "u" },
