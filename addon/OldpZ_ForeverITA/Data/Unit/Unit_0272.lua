@@ -4,5 +4,6 @@ WFJ.Data.add("unit", {
   [272328] = { nil, nil, 0xec56d1b7, nil, "em" },
   [272329] = { nil, nil, 0x67eb0286, nil, "em" },
   [272330] = { "Cucciolo di Panda", nil, 0x885f4767, nil, ".m" },
+  [272389] = { "Gufo delle Paludi", nil, 0x358be803, nil, ".m" },
   [272526] = { nil, nil, 0xbc827642, nil, "em" },
 })

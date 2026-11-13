@@ -237,7 +237,7 @@ WFJ.Data.add("unit", {
   [2270] = { "Avvistatore di Colletorto", nil, 0x09c56ac3, nil, ".m" },
   [2271] = { "Guardiascudo di Dalaran", nil, 0x5cfb548d, nil, ".m" },
   [2272] = { "Teurgo di Dalaran", nil, 0x83913ebc, nil, ".m" },
-  [2274] = { nil, nil, 0x436e28bd, nil, "em" },
+  [2274] = { "⟦Enraged Stanley=Stanley Rabbioso⟧", nil, 0xb5397f28, nil, ".m" },
   [2275] = { "Stanley Rabbioso", nil, 0xb5397f28, nil, ".m" },
   [2276] = { "Magistrato Henry Maleb", nil, 0xe1352c5a, nil, ".m" },
   [2277] = { "Storico Dibbs", nil, 0x79def4a3, nil, ".m" },

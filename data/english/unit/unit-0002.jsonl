@@ -286,7 +286,7 @@
 {"id": 2270, "field": "name", "en": "Hillsbrad Sentry", "hash": "09c56ac3edc8d0f6", "src": "vmangos@4641790"}
 {"id": 2271, "field": "name", "en": "Dalaran Shield Guard", "hash": "5cfb548d3c4ad5d3", "src": "vmangos@4641790"}
 {"id": 2272, "field": "name", "en": "Dalaran Theurgist", "hash": "83913ebc3498fd26", "src": "vmangos@4641790"}
-{"id": 2274, "field": "name", "en": "Stanley", "hash": "436e28bd9881be32", "src": "vmangos@4641790"}
+{"id": 2274, "field": "name", "en": "Enraged Stanley", "hash": "b5397f289f0601ef", "src": "collector@1.60.1.70938"}
 {"id": 2275, "field": "name", "en": "Enraged Stanley", "hash": "b5397f289f0601ef", "src": "vmangos@4641790"}
 {"id": 2276, "field": "name", "en": "Magistrate Henry Maleb", "hash": "e1352c5a1b809230", "src": "vmangos@4641790"}
 {"id": 2277, "field": "name", "en": "Loremaster Dibbs", "hash": "79def4a33cd11c0d", "src": "vmangos@4641790"}
