@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["d3003d4971647f57"] = { "Signor guardia del corpo, te la guadagni la paga o no?", "." },
   ["d30101b4c2dde063"] = { "Da questo cristallo emana un grande dolore.", "." },
   ["d301d88dfea47d05"] = { "Troverai la locandiera Renee dentro la ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, all'estremità sud-orientale della strada che attraversa il paese.", "." },
+  ["d3035a55ddb2100f"] = { "Sì. Vorrei disimparare i miei talenti ereditari.", "." },
   ["d306b4d5624949d1"] = { "Sei tornat<o/a> e hai portato ciò che ti ho chiesto, quindi la tua tenacia e la tua determinazione sono fuori discussione. Sei <pronto/pronta> per il prossimo passo, {name}.", "." },
   ["d30e95ee592ec6f4"] = { "Beh, ho visto di meglio. Ma hai del potenziale, non lo nego. Sta' attent<o/a> e forse imparerai qualcosa!", "." },
   ["d31022aaaaefe073"] = { "Inchinatevi alla potenza del gran signore!", "." },

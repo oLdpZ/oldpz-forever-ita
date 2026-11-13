@@ -23,6 +23,7 @@ WFJ.Data.add("item", {
   [281306] = { "Stoutfist insiste che questo libro vada distrutto, ma forse prima puoi trarne qualche vantaggio.", 0x9c732a62, "u" },
   [281327] = { "Inietta il ⟦Hissing Serum=Siero Sibilante⟧ nell'impianto sopra il corpo di Othmar.", 0x6327c0eb, "u" },
   [281371] = { "Ti pervade di energia magica, permettendoti di individuare e ottenere Motes of Unstable Magic da alcuni incantatori e nemici potenti.", 0xebca25f0, "u" },
+  [281598] = { "Aumenta la velocità di movimento del $N1% sul ⟦Mount Hyjal=Monte Hyjal⟧.", 0x19aca8f1, "u" },
   [281657] = { "Un tempo puro come i fiumi che scorrono nelle Riverglades, ora contaminato.", 0xc948ce72, "u" },
   [281665] = { "Investe il bersaglio con le fiamme di una forgia, infliggendo $N1 danni da fuoco.\nFunge da ⟦Blacksmith Hammer=Martello da Fabbro⟧.", 0x69601c2e, "u" },
 })

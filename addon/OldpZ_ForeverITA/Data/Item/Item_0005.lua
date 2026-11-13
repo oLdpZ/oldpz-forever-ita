@@ -122,6 +122,7 @@ WFJ.Data.add("item", {
   [5550] = { "Test dell'attivatore LOC", 0x17940095, "u" },
   [5578] = { "Ti insegna a creare un ⟦Silvered Bronze Breastplate=Pettorale Corazzato di Bronzo Argentato⟧.", 0x6bb0482a, "u" },
   [5613] = { "Purifica il bersaglio alleato, rimuovendo $N1 effetti di malattia e $N2 effetti di veleno.", 0x824049de, "u" },
+  [5616] = { "Ferisce il bersaglio facendolo sanguinare per $N1 danni in $D1.", 0x47f171f5, "u" },
   [5619] = { "Riempi la ⟦Jade Phial=Fiala di Giada⟧ al Pozzo Lunare di Brezzastella.", 0x8b1fe99c, "u" },
   [5621] = { "Riempi la ⟦Tourmaline Phial=Fiala di Tormalina⟧ al Pozzo Lunare delle ⟦Pools of Arlithrien=Pozze di Arlithrien⟧.", 0xacbbf482, "u" },
   [5623] = { "Riempi la ⟦Amethyst Phial=Fiala di Ametista⟧ al Pozzo Lunare della Radura dell'Oracolo.", 0xe09fe7fb, "u" },

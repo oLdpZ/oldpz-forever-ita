@@ -255,7 +255,7 @@ WFJ.Data.add("spell", {
   [18559] = { "Usa il ⟦Demon Pick=Piccone Demoniaco⟧ per distruggere il Cristallo Demoniaco.", nil, 0x28576edc, nil, "um" },
   [18560] = { "La purificazione della Telavile contaminata in Telaluna può avvenire solo presso un Pozzo Lunare, e le acque si lasciano usare in questo modo solo una volta ogni $D1.", nil, 0xb4349ba1, nil, "um" },
   [18561] = { "Tira contro un bersaglio nemico, infliggendo danni fisici.", nil, 0x75634826, nil, "um" },
-  [18562] = { "Cura istantaneamente un bersaglio sotto l'effetto del tuo Rinvigorimento o della tua Ricrescita di un ammontare pari all'intera durata dell'effetto periodico dell'incantesimo consumato.", nil, 0x3037f7ae, nil, "um" },
+  [18562] = { "Cura istantaneamente un bersaglio sotto l'effetto del tuo Rinvigorimento o della tua Ricrescita di un ammontare pari all'intera durata dell'effetto periodico.", nil, 0xe6cb6d14, nil, "um" },
   [18608] = { "Cura di $N1 in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0xcb31688f, 0x4b6eb5c1, "uu" },
   [18610] = { "Cura di $N1 in $D1.", "$N1 salute rigenerata ogni $N2 s.", 0xcb31688f, 0x4b6eb5c1, "uu" },
   [18633] = { "Infligge $N1 danni da ombra ogni $D1 per $D2 e riduce la potenza d'attacco del bersaglio di $N4 per $D3.", "$N1 danni da ombra subiti ogni $D1 e potenza d'attacco ridotta di $N3.", 0xb1a1a9df, 0xf61e017c, "uu" },

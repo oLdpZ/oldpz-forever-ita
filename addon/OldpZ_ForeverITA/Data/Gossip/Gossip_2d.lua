@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["2d0f8cade67d1a63"] = { "<Valennia fa una smorfia di dolore mentre si sposta per guardarti.>\r\n\nNon guardarmi così. Starò bene. Nonostante gli sforzi dei guaritori apprensivi dell'alto anziano, sarò di nuovo in piedi e in grado di combattere in un attimo.\r\n\nOra vai... non lasciare che questo vecchio soldato ti trattenga. I venti ti porteranno fortuna nel tuo viaggio, lo so.", "." },
   ["2d112394cad929fb"] = { "Prima del suo esilio, Alamorte tentava di creare una progenie impura. Mezzosangue che non solo sarebbero stati immuni ai poteri e alle capacità innati dei loro Aspetti, ma anche sotto il completo controllo di Alamorte.\n\nSembra che dove il padre ha fallito, Nefarian possa esserci riuscito, almeno in parte.\n\nFu Ysera, Aspetto dei Sogni, a vedere gli abomini e a costringerci ad agire. Se questi draghi 'cromatici' esistono, vanno distrutti.", "." },
   ["2d11351a8fd85ced"] = { "Abbiamo metà del silithyst che ci serve. Ce la possiamo fare!", "." },
+  ["2d1628cb3b09adc5"] = { "Sì. Vorrei disimparare i miei talenti di classe.", "." },
   ["2d198d6b923749ff"] = { "Questi ordini devono arrivare all'alto generale Abbendis!", "." },
   ["2d1a39af5cfe7ca2"] = { "Si dice che Kel'Thuzad cerchi la leggendaria Atiesh, Granbastone del Guardiano.\n\nSì, proprio il bastone che un tempo impugnava Medivh.", "." },
   ["2d21d3b171390cc7"] = { "Ho sentito che ci sono dei pesci enormi che sanno camminare sulla terra per cacciare, e mangiano le persone!", "." },

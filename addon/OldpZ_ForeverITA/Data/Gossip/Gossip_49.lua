@@ -40,6 +40,7 @@ WFJ.Data.add("gossip", {
   ["49d6bc106a788afb"] = { "%s scompare nella palude.", "." },
   ["49d70cb91e3182b1"] = { "%s tira un sospiro di sollievo.", "." },
   ["49da27023461b0a1"] = { "Ti prego, fai come ti dico, {name}.", "." },
+  ["49e150e92d8dff51"] = { "Benvenut<o/a> alla Tenuta di Ambraquieta. Se ti interessa acquistare una cavalcatura, mio marito Veron sarà più che felice di aiutarti a scegliere la bestia giusta. Se invece cerchi avventure, be', un aiuto da queste parti ci farebbe proprio comodo...", "." },
   ["49e5578d03825cda"] = { "Addestrami nelle vie della bestia.", "." },
   ["49e7f9b9be13657f"] = { "Esala l'ultimo respiro!", "." },
   ["49e92c34807026b1"] = { "Preparatevi alla battaglia, mie creature.", "." },

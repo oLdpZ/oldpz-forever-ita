@@ -17,11 +17,11 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 | | In italiano |
 |---|---|
 | Missioni | 4.775 |
-| Righe di dialogo dei PNG | 10.909 |
+| Righe di dialogo dei PNG | 10.923 |
 | Pagine di libri | 925 |
 | Pagine di lettere | 208 |
-| Tooltip degli oggetti | 10.479 |
-| Tooltip delle abilità | 20.007 |
+| Tooltip degli oggetti | 10.566 |
+| Tooltip delle abilità | 20.010 |
 | Testi dell'interfaccia | 15.271 |
 
 - **Missioni** dei livelli 1–20: titolo, obiettivi, descrizione, testo di avanzamento e di completamento, nella

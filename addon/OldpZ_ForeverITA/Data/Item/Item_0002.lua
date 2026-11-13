@@ -13,6 +13,7 @@ WFJ.Data.add("item", {
   [2070] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [2071] = { "Rigenera $N1 mana in $D1. Devi sederti per bere.", 0xf502561a, "u" },
   [2091] = { "Costringe il bersaglio nemico a dormire per un massimo di $D1. Eventuali danni inflitti risvegliano il bersaglio. Può essere addormentato solo un bersaglio alla volta.", 0x26124111, "u" },
+  [2099] = { "Spara una ⟦Flaming Cannonball=Palla di Cannone Fiammeggiante⟧ contro il bersaglio, infliggendo $N1 danni da fuoco.", 0xeb549b6b, "u" },
   [2101] = { "Aumenta la velocità degli attacchi a distanza del $N1%.", 0x3009bf39, "u" },
   [2102] = { "Aumenta la velocità degli attacchi a distanza del $N1%.", 0x3009bf39, "u" },
   [2136] = { "Rigenera $N1 mana in $D1. Devi sederti per bere.", 0xf502561a, "u" },

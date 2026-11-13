@@ -39,6 +39,7 @@ WFJ.Data.add("gossip", {
   ["66cce9c8f7aecb1d"] = { "Gliel'abbiamo fatta vedere!", "." },
   ["66cd13d8c4539d2d"] = { "Ho bisogno di addestramento, Grimnur.", "." },
   ["66d09dd52c23e2ff"] = { "L'anziano Ferrocollo vive nella ⟦Blackchar Cave=Caverna Bracenera⟧, nella ⟦Searing Gorge=Gorgia Rovente⟧.", "." },
+  ["66d2ef706d53e824"] = { "Salute, {class}. Posso insegnarti abilità e tecniche.", "." },
   ["66d878ae46c38c8f"] = { "Ehi, {class}! Pare che l'⟦Horde=Orda⟧ abbia raccolto le ultime cose, e ora la sua roba e la nostra vengono spedite a ⟦Silithus=Silitus⟧ proprio in questo momento. Mi dicono che arriveranno in meno di $2113w giorni, e poi qualcuno potrà suonare quel grande gong vicino alle porte di ⟦Ahn'Qiraj=Ahn'qiraj⟧ per far cominciare la guerra.", "." },
   ["66e4713bbf324396"] = { "Non voltare le spalle alla Luce, {class}: un giorno potrebbe essere l'unica cosa a salvarti.", "." },
   ["66ea9434c533f35f"] = { "Cos'è questo? Una scheggiatura nel frammento? Finalmente, una debolezza scoperta... Non manca molto, ormai.", "." },

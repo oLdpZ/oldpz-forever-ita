@@ -226,7 +226,7 @@ WFJ.Data.add("spell", {
   [27848] = { "Aumenta di $D1 la durata dei tuoi incantesimi Sigillo.", nil, 0x9d288bb1, nil, "um" },
   [27849] = { "Distruggi un Cristallo della Necropoli!", nil, 0x17c09541, nil, "um" },
   [27850] = { "Riduce del $N1% il costo in mana di Depurazione e Purificazione.", nil, 0x60856267, nil, "um" },
-  [27851] = { "Riduce di $N1 il costo in energia di Sfregio, Graffio e Dilaniamento.", nil, 0xb3e13197, nil, "um" },
+  [27851] = { "Riduce di $N1 il costo in energia di Sfregio e Graffio.", nil, 0x8c1fca52, nil, "um" },
   [27852] = { nil, "Non colpire questo bersaglio!", nil, 0x0cd960b9, "mu" },
   [27853] = { "Aumenta del $N1% la cura iniziale di Ricrescita quando la lanci su un bersaglio sotto l'effetto del tuo Rinvigorimento.", nil, 0x0e299bc7, nil, "um" },
   [27855] = { "Aumenta fino a $N1 le cure prodotte da ⟦Lesser Healing Wave=Ondata di Cura Inferiore⟧.", nil, 0x0f673ce5, nil, "um" },

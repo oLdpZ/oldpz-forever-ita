@@ -10,6 +10,7 @@ WFJ.Data.add("item", {
   [284193] = { "Aumenta l'Intelletto di $N1 di notte.", 0xeb59d09c, "u" },
   [284214] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [284228] = { "Forse è meglio non bere questa.", 0x563b5703, "u" },
+  [284231] = { "Ammalia il bersaglio, impedendogli qualsiasi azione per un massimo di $D1. Eventuali danni inflitti annullano l'effetto. Funziona solo sugli umanoidi.\nNon proprio seducente come una Sayaad.", 0x7c1334dc, "u" },
   [284262] = { "Riduce la potenza d'attacco del bersaglio nemico di $N1 per $D1.", 0x68d8d99c, "u" },
   [284266] = { "Aumenta la velocità su cavalcatura del $N1% a ⟦Winterspring=Fontefredda⟧.", 0x46e8d69f, "u" },
   [284282] = { "I più fedeli di Azshara portavano un anello con sigillo che ne attestava la lealtà eterna.", 0x2a5dc360, "u" },

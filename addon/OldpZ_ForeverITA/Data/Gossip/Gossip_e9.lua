@@ -35,4 +35,5 @@ WFJ.Data.add("gossip", {
   ["e9e4e48936e4868d"] = { "Devi cominciare a imparare cose che vanno oltre la mia competenza! Parla con ⟦Lilliam Sparkspindle=Lilliam Saldafresa⟧, davanti alla tenda laggiù. Ti metterà sulla strada giusta!", "." },
   ["e9ee99c1aa6ed833"] = { "La capitana Balinda Cordipietra guida le forze di prima linea dell'⟦Alliance=Alleanza⟧. Ha la sua base all'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧, nella parte settentrionale del ⟦Field of Strife=Pian della Discordia⟧.\n\nBalinda non è ancora tornata in battaglia.", "." },
   ["e9fdf2289c62ef04"] = { "Ma dai, non è vero.", "." },
+  ["e9fe8830c46730de"] = { "Per dare luce, bisogna bruciare.", "." },
 })

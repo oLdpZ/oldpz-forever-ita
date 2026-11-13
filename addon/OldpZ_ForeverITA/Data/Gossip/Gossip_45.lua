@@ -9,7 +9,7 @@ WFJ.Data.add("gossip", {
   ["451b59393c68e9f4"] = { "Messaggio di debug: Thelrin è stato evocato.", "." },
   ["451e93114391235b"] = { "Per ora ti darò ciò che ti serve per concentrare i tuoi incantesimi e invocare gli spiriti dell'aria. Prendi questo totem e, quando sarai pront<o/a>, torna ad addestrarti con me.", "." },
   ["452047fe0c449e1d"] = { "Solo per i membri, pivello!", "." },
-  ["452722a2722aacc4"] = { "Possedere le abilità necessarie per sopravvivere all'aperto è fondamentale. Un avventuriero ben riposato e ben preparato ha molte più probabilità di sopravvivere a questo stile di vita.", "." },
+  ["452722a2722aacc4"] = { "Avere le capacità necessarie per sopravvivere all'aria aperta è fondamentale. Un avventuriero ben riposato e ben preparato ha molte più probabilità di sopravvivere a questo stile di vita.", "." },
   ["45289c55e39e21fe"] = { "Sono <pronto/pronta>, ⟦Anachronos=Anacronos⟧. Ti prego, concedimi lo Scettro delle Sabbie Mutevoli.", "." },
   ["4534fadfe674fb7e"] = { "Ti ringrazio, {name}. E anche mio fratello ti ringrazia.", "." },
   ["454270c99b799a3e"] = { "Soldato semplice Thorsen di ritorno dalla pattuglia. Niente di nuovo da riferire: là fuori è tutto piuttosto tranquillo...", "." },

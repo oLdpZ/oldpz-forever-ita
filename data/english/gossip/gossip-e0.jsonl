@@ -31,6 +31,7 @@
 {"id": "e0a432e952d1b785", "field": "text", "en": "*sigh* It's about time to check on the cemetery again-- I'll be back in a few minutes.", "hash": "e0a432e952d1b785", "src": "vmangos@13b49dc"}
 {"id": "e0a7303cc7bab5d9", "field": "text", "en": "Ah, good ol' Brandur Ironhammer.  There's no doubt he'll provide ye with the guidance ye seek, $glad : lass;.  Ye'll find him in the Hall of Mysteries north of the gates of Ironforge.", "hash": "e0a7303cc7bab5d9", "src": "vmangos@13b49dc"}
 {"id": "e0c00f9b8ed128c4", "field": "text", "en": "Captain Galvangar is the trusted aid to Drek'Thar.  He leads the Horde forces from the Iceblood Garrison, in the southern section of the the Field of Strife.$B$BCaptain Galvangar is currently in the Iceblood Garrison.", "hash": "e0c00f9b8ed128c4", "src": "vmangos@13b49dc"}
+{"id": "e0c6d07c8cec4315", "field": "text", "en": "I'd like to see your wares.", "hash": "e0c6d07c8cec4315", "src": "collector@1.60.1.70862", "npcs": [1684]}
 {"id": "e0c8c93db2793f92", "field": "text", "en": "Curse you, mortal.", "hash": "e0c8c93db2793f92", "src": "vmangos@13b49dc"}
 {"id": "e0c93b079c13fd4d", "field": "text", "en": "I'll get that beacon to the crater safely, Guse. You can count on me!", "hash": "e0c93b079c13fd4d", "src": "vmangos@13b49dc"}
 {"id": "e0cfad60591d42e1", "field": "text", "en": "Attack!!", "hash": "e0cfad60591d42e1", "src": "vmangos@13b49dc"}

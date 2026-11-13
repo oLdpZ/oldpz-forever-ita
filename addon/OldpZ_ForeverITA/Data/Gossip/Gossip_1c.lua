@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["1cc81bbfefa2146f"] = { "Tu controlla davanti!", "." },
   ["1cd1ae3d8c60a0b7"] = { "Non sembra... giusto. Guarda quanto è alieno questo deserto! Passare di qui potrebbe essere un terribile errore.", "." },
   ["1cd20643e0e705a4"] = { "L'anziana Filastelle si trova nel villaggio costiero di Auberdine, a ⟦Darkshore=Rivafosca⟧.", "." },
+  ["1cd5f473c31ff79d"] = { "Appena ti rimettiamo in piedi, ci mettiamo al lavoro su quel fucile tascabile! Così gliela facciamo vedere!", "." },
   ["1cdb8059af775f2e"] = { "Forza, fannulloni, è ora di alzarsi e mettersi al lavoro. Quel ponte non si costruisce da solo.", "." },
   ["1ce38290b3b35b5d"] = { "Sarebbe magnifico! Grazie, Meridith.", "." },
   ["1cebdb1b635fbf8b"] = { "%s armeggia con la serratura arrugginita della porta del cortile.", "." },
