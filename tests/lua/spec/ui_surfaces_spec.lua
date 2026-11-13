@@ -296,6 +296,34 @@ describe("the ui area on its surfaces", function()
     assert.are.equal(0, SS.count("gamemenu"))
   end)
 
+  it("an addon that finds the AddOns button by its English on Layout (ACP) still finds it", function()
+    -- ACP Klee 3.5.17 hooks GameMenuFrame.Layout at PLAYER_ENTERING_WORLD, after our init, and replaces the
+    -- OnClick of the button whose text equals ADDONS
+    local seen, clicks = {}, 0
+    hooksecurefunc(GameMenuFrame, "Layout", function(self)
+      for b in self.buttonPool:EnumerateActive() do
+        seen[#seen + 1] = b:GetText()
+        if b:GetText() == "AddOns" then b:SetScript("OnClick", function() clicks = clicks + 1 end) end
+      end
+    end)
+    GameMenuFrame:Show()
+    local byLabel = {}
+    for b in GameMenuFrame.buttonPool:EnumerateActive() do byLabel[b.layoutIndex] = b end
+    assert.truthy(table.concat(seen, "|"):find("AddOns", 1, true))
+    assert.are.equal("オプション", byLabel[1]:GetText()) -- ours written after theirs
+    byLabel[2].scripts.OnClick(byLabel[2])
+    assert.are.equal(1, clicks)
+
+    -- an event rebuild while shown (OnEvent → InitButtons, then Layout on the next OnUpdate): same order
+    seen = {}
+    GameMenuFrame:InitButtons(); GameMenuFrame:Layout()
+    assert.truthy(table.concat(seen, "|"):find("AddOns", 1, true))
+    byLabel = {}
+    for b in GameMenuFrame.buttonPool:EnumerateActive() do byLabel[b.layoutIndex] = b end
+    assert.are.equal("オプション", byLabel[1]:GetText())
+    GameMenuFrame:Hide()
+  end)
+
   it("without an index nothing is shown and nothing breaks", function()
     WFJ.UIIndex = nil
     Stub.setItemTooltip(tt, "|Hitem:2488:0:0:0|h[Worn Shortsword]|h", SWORD)

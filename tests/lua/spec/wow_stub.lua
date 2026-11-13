@@ -648,7 +648,11 @@ function Stub.installGameMenu()
       b:SetScript("OnLeave", nil)
     end
   end
-  frame:SetScript("OnShow", function(self) self:InitButtons() end)
+  -- LayoutMixin: Layout places the buttons; OnShow runs it right after InitButtons [verified: Forever
+  -- blizzard_gamemenu/shared/gamemenuframe.lua:72–73]
+  frame.layouts = 0
+  function frame.Layout(self) self.layouts = self.layouts + 1 end
+  frame:SetScript("OnShow", function(self) self:InitButtons(); self:Layout() end)
   return frame
 end
 

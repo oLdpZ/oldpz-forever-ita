@@ -17,6 +17,14 @@
 -- the mainline GetLogoutText (lua:281–284) where the Classic override returned LOGOUT. The buttons are matched by their
 -- English like every other entry, so only the dictionary had to learn them. The mainline button template is a
 -- 200×36 three-slice button (blizzard_sharedxml/mainline/frame/mainmenuframetemplates.xml:11–16).
+-- When the words are written: after the frame's Layout, not after InitButtons. Other addons find the menu's
+-- buttons by their English in a post-hook of GameMenuFrame.Layout (ACP: `button:GetText() == ADDONS`, then its own
+-- OnClick), and every InitButtons is followed by a Layout: OnShow calls it right after InitButtons, and AddButton's
+-- MarkDirty runs it on the next OnUpdate after an event rebuild [verified: Forever blizzard_gamemenu/shared/
+-- gamemenuframe.lua:61–77, 96–102; blizzard_sharedxml/shared/frame/mainmenuframetemplates.lua:24–65;
+-- blizzard_sharedxml/layoutframe.lua:12–16, 79–89]. Our Layout hook is installed at the first show, after those
+-- addons hooked at login (ACP: PLAYER_ENTERING_WORLD), so it runs after theirs and they still read the English.
+-- The OnShow hook covers that first show (its Layout has run already) and a frame with no Layout.
 local _, WFJ = ...
 local GameMenu = {}
 WFJ.GameMenu = GameMenu
@@ -54,15 +62,28 @@ function GameMenu.release()
 end
 
 local hooked = false
+GameMenu.layoutHooked = false
+
+-- OnShow post-hook: the client's OnShow ran InitButtons and Layout (and the hooks other addons put on Layout).
+-- Installs the Layout hook once, then writes this show's words. → the number of dictionary words found.
+function GameMenu.onShow(frame)
+  if not GameMenu.layoutHooked and type(frame) == "table" and type(frame.Layout) == "function" then
+    GameMenu.layoutHooked = true
+    hooksecurefunc(frame, "Layout", GameMenu.onInit)
+  end
+  return GameMenu.onInit(frame)
+end
 
 -- Called by Main after Compat.init.
 function GameMenu.init()
   Compat.declare(SURFACE, "frame", { "GameMenuFrame" })
   if hooked then return false end
   local frame = Compat.get(SURFACE, "frame")
-  if type(frame) ~= "table" or type(frame.InitButtons) ~= "function" then return false end
+  if type(frame) ~= "table" or type(frame.InitButtons) ~= "function" or type(frame.HookScript) ~= "function" then
+    return false
+  end
   hooked = true
-  hooksecurefunc(frame, "InitButtons", GameMenu.onInit)
-  if type(frame.HookScript) == "function" then frame:HookScript("OnHide", GameMenu.release) end
+  frame:HookScript("OnShow", GameMenu.onShow)
+  frame:HookScript("OnHide", GameMenu.release)
   return true
 end

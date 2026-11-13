@@ -171,7 +171,11 @@ describe("addon loads in TOC order and answers /fita version", function()
     -- placeholder English is not the client's: three keys the index refuses to answer for
     assert.are.equal(3, c.mismatched)
     assert.are.equal("ACCEPT", (ns.UIIndex:match("Accept")))
-    assert.are.equal(1, #(Stub.hooks["GameMenuFrame:InitButtons"] or {}))
+    assert.is_nil(Stub.hooks["GameMenuFrame:InitButtons"]) -- the words follow Layout (UI/GameMenu.lua)
+    assert.is_nil(Stub.hooks["GameMenuFrame:Layout"]) -- hooked at the first show only
+    GameMenuFrame:Show(); GameMenuFrame:Show()
+    assert.are.equal(1, #(Stub.hooks["GameMenuFrame:Layout"] or {}))
+    GameMenuFrame:Hide()
     meta = Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
     Stub.installQuestAPI(); Stub.installTooltipAPI(); Stub.installGossipAPI(); Stub.installItemTextAPI()
     WFJ = Loader.load("OldpZ_ForeverITA", { data = H.FIXTURE_DATA })
