@@ -474,3 +474,41 @@ def test_a_scope_takes_its_quests_its_pages_and_all_npc_talk_chat_and_intros():
                                  "g-" + "c" * 16, "s-" + "d" * 16, "i-316345")]
     got = [r["key"] for r in in_scope(rows, [1], ["a" * 16])]
     assert got == ["1-description", "b-" + "a" * 16, "g-" + "c" * 16, "s-" + "d" * 16, "i-316345"]
+
+
+INTRO = '[intro.human]\nvoice = "nar"\nprofile = "The narrator of the human intro, telling of Stormwind"\n'
+
+
+def test_each_race_s_intro_has_a_narrator_voice_and_profile(tmp_path):
+    cfg = voice_cast.load_config(_toml(tmp_path / "voice.toml", INTRO))
+    assert cfg["intro"] == {"human": {"voice": "nar",
+                                      "profile": "The narrator of the human intro, telling of Stormwind"}}
+    assert voice_cast.load_config(_toml(tmp_path / "none.toml"))["intro"] == {}  # no intro narrators yet
+    for body, why in ((INTRO.replace('"nar"', '"nobody"'), "not in the roster"),
+                      (INTRO.replace("intro.human", "intro.elf"), "no race"),
+                      (INTRO.replace("telling of Stormwind", "che racconta"), "English")):
+        with pytest.raises(ValueError, match=why):
+            voice_cast.load_config(_toml(tmp_path / "bad.toml", body))
+
+
+def test_an_intro_line_is_read_by_its_race_s_narrator(tmp_path):
+    from wfj.cmd.voice_make import line_voices
+
+    cfg = voice_cast.load_config(_toml(tmp_path / "voice.toml", INTRO))
+    assert line_voices({"speaker": "narrator-human"}, {}, cfg, {}, {}) == [
+        ("nar", "The narrator of the human intro, telling of Stormwind")]
+    assert line_voices({"speaker": "narrator-orc"}, {}, cfg, {}, {}) == []  # no voice yet: silent
+
+
+def test_candidates_count_every_line_and_skip_the_designed(tmp_path):
+    from wfj.cmd import voice_candidates
+
+    rows = [{"key": f"{q}-description", "speaker": 10} for q in range(5)]
+    rows += [{"key": f"s-{i:016x}", "speaker": 10} for i in range(3)]  # 5 + 3: eight lines
+    rows += [{"key": f"g-{i:016x}", "speaker": 11, "others": [12]} for i in range(9)]
+    rows += [{"key": f"s-{i + 100:016x}", "speaker": 13} for i in range(7)]  # seven: under the bar
+    voices = [{"creature": 11, "voice": "salma"}, {"creature": 12, "voice": "humanmale"}]
+    designed = {"salma"}
+    got = voice_candidates.candidates(rows, voices, designed, 8)
+    # most lines first: 12 (nine greetings as one of the others) before 10 (eight); 11 has its own voice, 13 has seven
+    assert [(c.creature, c.quest, c.greeting, c.chat) for c in got] == [(12, 0, 9, 0), (10, 5, 0, 3)]

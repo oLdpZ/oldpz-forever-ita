@@ -162,6 +162,11 @@ def line_voices(
             pairs = [(cfg["narrator"], cfg["narrator_profile"])]
         elif c == voice.BOOK_NARRATOR:
             pairs = [(cfg["book_narrator"], cfg["book_narrator_profile"])]
+        elif c in voice.INTRO_NARRATORS:  # a race intro's narrator, once voice.toml names one
+            t = cfg.get("intro", {}).get(str(c).split("-", 1)[1])
+            if not t:
+                continue
+            pairs = [(t["voice"], t["profile"])]
         elif c in cast:
             v, p, name = cast[c], profiles.get(c, {}), names.get(c) or f"Creature {c}"
             mixed = bool(v.get("female"))

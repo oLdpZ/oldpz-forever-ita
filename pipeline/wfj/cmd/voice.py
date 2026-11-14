@@ -18,6 +18,7 @@
   audition                                  see `voice_audition`
   pack                                      see `voice_ship`
   design                                    see `voice_design`
+  candidates                                see `voice_candidates`
   batch submit|fetch|cancel                 see `voice_batch`
 """
 
@@ -305,7 +306,7 @@ def run_speakers(a: argparse.Namespace) -> int:
 
 OWN_MODULE = {
     "scope": "voice_scope", "audition": "voice_audition", "spoken": "voice_spoken", "pack": "voice_ship",
-    "design": "voice_design",
+    "design": "voice_design", "candidates": "voice_candidates",
     "batch": "voice_batch",
 }
 
