@@ -19,6 +19,15 @@
 --     otherwise leave the player's NPC voices off for good. It is put back when the queue runs out, on stop, at
 --     logout and on the next load. A player who had the dialog channel off keeps it off; one who changed it by hand
 --     while the line played keeps what they chose.
+--   * An NPC's line in chat (`onSpeech`, from UI/Speech): no window and no queue, one at a time. It never starts
+--     while a window's line plays or waits, and a window's line stops it. While one plays a new line is dropped,
+--     unless it is a yell or a whisper, which takes over. The chat repeats a line once per tab: a line id plays once.
+--   * A race intro (the subtitles' lines, "cinematic.subtitles"): its English narration is one file with the music
+--     in it, on no channel a setting turns off. From its first Italian line to CINEMATIC_STOP the race's narration
+--     files are silenced (MuteSoundFile) and the race's starting-zone music plays (PlayMusic); a race whose
+--     narration file is unknown stays English. Each subtitle plays once per showing (the scroll shows it again).
+--   * A game file silenced (an intro's narration, a line in chat's own English voice) is kept in
+--     OFI_DB.voiceMutedFiles and given back on stop, at logout and on the next load (a /reload lifts it too).
 -- Without a voice pack nothing here creates a frame or calls the sound API: `onShown` returns at once.
 local _, WFJ = ...
 local VoicePlayer = {}
@@ -38,6 +47,14 @@ VoicePlayer.counts = { played = 0, refused = 0 }
 local db -- OFI_DB
 local playing -- { handle, key, token } while a line plays
 local tokens = 0 -- a stale end timer (a line stopped or skipped) finds a newer token and does nothing
+local speaking -- { handle, key, token, mute } while a line in chat plays
+local spoken = {} -- chat line id → true: a line shown in several tabs plays once
+local spokenCount = 0
+local SPOKEN_MAX = 200 -- line ids remembered before the list starts over
+-- a yell or a whisper takes over from a line in chat already playing; anything else waits for silence
+local URGENT = { MONSTER_YELL = true, MONSTER_WHISPER = true, RAID_BOSS_WHISPER = true }
+local intro -- the race row (Core/VoiceIntro) whose narration is silenced, from the first line to CINEMATIC_STOP
+local introHeard = {} -- pack key → true: the subtitles played in this showing of the intro
 local events -- the loading screen / logout frame, made by the first line queued
 
 -- a line may play or wait: translation and voice on
@@ -72,6 +89,7 @@ end
 local function windowOf(surface)
   if surface == "gossip" then return "GossipFrame" end
   if surface == "itemtext" then return "ItemTextFrame" end
+  if surface == "cinematic.subtitles" then return "CinematicFrame" end -- no speaker: the race's narrator
   return "QuestFrame"
 end
 
@@ -128,6 +146,34 @@ local function muteDialog()
   setCVar(DIALOG, "0")
 end
 
+-- Silences game files by id, remembered in OFI_DB.voiceMutedFiles until given back.
+local function muteFiles(ids)
+  local mute = Compat.resolve("MuteSoundFile")
+  if type(mute) ~= "function" or not db or type(ids) ~= "table" then return end
+  db.voiceMutedFiles = db.voiceMutedFiles or {}
+  for _, id in ipairs(ids) do
+    mute(id)
+    db.voiceMutedFiles[id] = true
+  end
+end
+
+-- Gives back the files of `ids`, or every file this addon silenced (nil).
+local function unmuteFiles(ids)
+  local saved = db and db.voiceMutedFiles
+  if type(saved) ~= "table" then return end
+  local unmute = Compat.resolve("UnmuteSoundFile")
+  local list = ids
+  if list == nil then
+    list = {}
+    for id in pairs(saved) do list[#list + 1] = id end
+  end
+  for _, id in ipairs(list) do
+    if saved[id] and type(unmute) == "function" then unmute(id) end
+    saved[id] = nil
+  end
+  if next(saved) == nil then db.voiceMutedFiles = nil end
+end
+
 local function silence()
   if not playing then return end
   local stopSound = Compat.resolve("StopSound")
@@ -135,9 +181,38 @@ local function silence()
   playing = nil
 end
 
+-- The line in chat ends or is cut: its own English file is given back.
+local function stopSpeech()
+  if not speaking then return false end
+  local stopSound = Compat.resolve("StopSound")
+  if type(stopSound) == "function" and speaking.handle then stopSound(speaking.handle) end
+  unmuteFiles(speaking.mute)
+  speaking = nil
+  return true
+end
+
+-- The intro is over (or stopped): its narration and the game's own music come back.
+local function endIntro()
+  introHeard = {}
+  if not intro then return end
+  unmuteFiles(intro.files)
+  local stopMusic = Compat.resolve("StopMusic")
+  if type(stopMusic) == "function" then stopMusic() end
+  intro = nil
+end
+
+local function startIntro(race)
+  if intro then return end
+  intro = race
+  muteFiles(race.files)
+  local playMusic = Compat.resolve("PlayMusic")
+  if type(playMusic) == "function" then playMusic(race.music) end
+end
+
 -- A loading screen ends the line and the queue (the player is somewhere else now); logout (a /reload too) as well:
 -- the dialog channel must be back on before the client saves its settings. LOADING_SCREEN_ENABLED [likely on
--- Forever; in-game check: a portal or a hearthstone stops the voice].
+-- Forever; in-game check: a portal or a hearthstone stops the voice]. A cinematic's end ends its intro; its start
+-- forgets the subtitles heard in the last showing.
 local function watchEvents()
   if events then return end
   local createFrame = Compat.resolve("CreateFrame")
@@ -145,14 +220,30 @@ local function watchEvents()
   events = createFrame("Frame")
   events:RegisterEvent("PLAYER_LOGOUT")
   events:RegisterEvent("LOADING_SCREEN_ENABLED")
-  events:SetScript("OnEvent", function() VoicePlayer.stop() end)
+  events:RegisterEvent("CINEMATIC_START")
+  events:RegisterEvent("CINEMATIC_STOP")
+  events:SetScript("OnEvent", function(_, event)
+    if event == "CINEMATIC_START" then
+      introHeard = {}
+    elseif event == "CINEMATIC_STOP" then
+      -- the intro's lines stop with it (Esc skips the cinematic); a window's line was not part of it
+      local head = Q.current()
+      if head and head.intro then VoicePlayer.stop() else endIntro() end
+    else
+      VoicePlayer.stop()
+    end
+  end)
 end
 
--- Stops the line and empties the queue. → true when something was playing or waiting
+-- Stops the line, the line in chat and the intro, and empties the queue. → true when something was playing or
+-- waiting
 function VoicePlayer.stop()
   local had = Q.size() > 0
   silence()
   Q.clear()
+  had = stopSpeech() or had
+  endIntro()
+  unmuteFiles()
   VoicePlayer.restoreDialog()
   if had then notify("stop") end
   return had
@@ -185,8 +276,11 @@ local function play(item)
   local playSoundFile = Compat.resolve("PlaySoundFile")
   if type(playSoundFile) ~= "function" then return false end
   muteDialog()
+  -- the intro's English narration goes quiet before our narrator starts, and stays so until the cinematic ends
+  if item.intro then startIntro(item.intro) end
   local willPlay, handle = playSoundFile(item.path, CHANNEL)
   if not willPlay then return false end
+  if item.intro then introHeard[item.key] = true end
   tokens = tokens + 1
   local token = tokens
   playing = { handle = handle, key = item.key, token = token }
@@ -222,6 +316,7 @@ end
 function VoicePlayer.enqueue(item)
   if not allowed() or not Q.push(item) then return false end
   watchEvents()
+  stopSpeech() -- a window's line goes before what an NPC says in chat
   if Q.size() == 1 and not held() then return startHead() end
   notify("queued")
   return false
@@ -270,17 +365,64 @@ end
 -- State "lineShown" listener. → true when the line started now
 function VoicePlayer.onShown(surface, recKey, kind, id)
   if not WFJ.Voice.hasPack() then return false end
-  local byKey = WFJ.Voice.KINDS[surface]
-  if not (byKey and byKey[recKey]) then return false end -- a title, an objective: never voiced
+  local setting = WFJ.Voice.kindSetting(surface, recKey)
+  if not setting then return false end -- a title, an objective: never voiced
+  local key = WFJ.Voice.packKey(kind, id)
+  local race
+  if setting == "voice.intro" then
+    -- an intro's line: once per showing, and only for a race whose English narration can be silenced
+    race = key and WFJ.VoiceIntro.of(tonumber(key:sub(3)))
+    if not race or #race.files == 0 or introHeard[key] then return false end
+  end
   local window = windowOf(surface)
   local who = VoicePlayer.speaker(window)
   local path, seconds = WFJ.Voice.decide(surface, recKey, kind, id, who, playerSex())
   if not path then return false end
   -- shown while the reveal key is held, the line is still English: `heldKey` names its record, read when the key
   -- is let go (settleHeld)
-  return VoicePlayer.enqueue({ key = WFJ.Voice.packKey(kind, id), path = path, seconds = seconds, window = window,
-    surface = surface, speaker = who, name = VoicePlayer.nameOf(window),
-    greeting = byKey[recKey] == "voice.greeting", heldKey = held() and recKey or nil })
+  return VoicePlayer.enqueue({ key = key, path = path, seconds = seconds, window = window,
+    surface = surface, speaker = who, name = VoicePlayer.nameOf(window), intro = race,
+    greeting = setting == "voice.greeting", heldKey = held() and recKey or nil })
+end
+
+local function endSpeech(token)
+  if speaking and speaking.token == token then stopSpeech() end
+end
+
+-- What an NPC said in chat (UI/Speech, a line it showed in Italian): `key` its gossip key, `chatType` the chat
+-- type's name (MONSTER_SAY …), `creature` the speaker's creature id from the line's GUID, `lineID` the chat's id
+-- of the line. Plays at once or not at all (see the file's head). → true when it started
+function VoicePlayer.onSpeech(key, chatType, creature, lineID)
+  if not WFJ.Voice.hasPack() or not allowed() or type(key) ~= "string" then return false end
+  if lineID ~= nil then
+    if spoken[lineID] then return false end
+    if spokenCount >= SPOKEN_MAX then spoken, spokenCount = {}, 0 end
+    spoken[lineID], spokenCount = true, spokenCount + 1
+  end
+  if Q.size() > 0 or held() then return false end
+  if speaking and not URGENT[chatType] then return false end
+  local path, seconds, mute = WFJ.Voice.decide("speech", "line", "speech", key,
+    creature and { creature = creature } or nil, playerSex())
+  if not path then return false end
+  local playSoundFile = Compat.resolve("PlaySoundFile")
+  if type(playSoundFile) ~= "function" then return false end
+  stopSpeech()
+  muteFiles(mute)
+  local willPlay, handle = playSoundFile(path, CHANNEL)
+  if not willPlay then
+    unmuteFiles(mute)
+    return false
+  end
+  watchEvents()
+  tokens = tokens + 1
+  local token = tokens
+  speaking = { handle = handle, key = key, token = token, mute = mute }
+  VoicePlayer.counts.played = VoicePlayer.counts.played + 1
+  local timer = Compat.resolve("C_Timer")
+  if type(timer) == "table" and type(timer.After) == "function" then
+    timer.After((seconds or UNKNOWN_LENGTH) + END_MARGIN, function() endSpeech(token) end)
+  end
+  return true
 end
 
 -- → { item = the line playing (the queue's head), playing, waiting = the number of lines after it } for the panel
@@ -310,6 +452,7 @@ end
 function VoicePlayer.init(savedDb)
   db = savedDb
   VoicePlayer.restoreDialog() -- a crash during a line left the dialog channel off
+  unmuteFiles() -- or a game file silenced
   if VoicePlayer.listening then return true end
   VoicePlayer.listening = true
   -- guarded: an error here must not reach the surface that rendered the line

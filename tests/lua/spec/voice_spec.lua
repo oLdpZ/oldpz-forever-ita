@@ -356,7 +356,7 @@ describe("voice in the loaded addon", function()
     assert.is_false(WFJ.Voice.hasPack())
     local all, hidden = voiceSettings()
     assert.are.same({ "voice.enabled", "voice.offer", "voice.progress", "voice.turnin", "voice.greeting",
-      "voice.books", "voice.muteDialog", "voice.panel" }, all)
+      "voice.books", "voice.speech", "voice.intro", "voice.muteDialog", "voice.panel" }, all)
     assert.are.equal(#all, hidden)
     assert.are.same({ nil, "nopack" }, { WFJ.Voice.decide("gossip", "greeting", "gossip", KEY, { creature = 1 }) })
     assert.is_nil(OFI_DB.voiceHeard)

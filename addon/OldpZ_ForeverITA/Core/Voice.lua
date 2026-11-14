@@ -2,7 +2,8 @@
 -- Pure: no frames, no sound API; the voice player (UI) plays what `decide` returns.
 -- The audio lives in a separate addon whose folder starts with OldpZ_ForeverITA_Voce; its Register.lua hands its
 -- table to the global OldpZ_ForeverITA_RegisterVoice (Main.lua). Each entry is keyed like the Italian it speaks
--- ("<questID>-<field>", "g-<gossip key>", "b-<book page key>") and carries the hash of the shipped Italian it was
+-- ("<questID>-<field>", "g-<gossip key>", "b-<book page key>", "s-<gossip key>" a line in chat, "i-<BroadcastText
+-- id>" an intro's subtitle) and carries the hash of the shipped Italian it was
 -- made from, raw (name markers and tokens as generated): a line whose shipped Italian changed since stays silent,
 -- never voices other words, and the hash does not depend on the names style the player chose.
 -- A line that names the player or picks a word by sex (`{name}`, `<o/a>`) has a female take; a female character
@@ -16,8 +17,10 @@ WFJ.Voice = Voice
 Voice.FOLDER = "OldpZ_ForeverITA_Voce"
 Voice.FORMATS = { [3] = true } -- the Register.lua table shapes this file reads
 
--- The lines a pack may voice: surface → record key → the setting that turns that kind off. Objectives, titles and
--- option rows are never voiced. `voice.greeting` is a choice (once · always · never), the others are switches.
+-- The lines a pack may voice: surface → record key → the setting that turns that kind off, or the setting alone when
+-- every record of the surface is voiced (the subtitles' records are one per line, "line.<n>"). Objectives, titles
+-- and option rows are never voiced. `voice.greeting` is a choice (once · always · never), the others are switches.
+-- "speech" is an NPC's line in chat (UI/Speech hands it to the voice player: it has no window).
 Voice.KINDS = {
   ["questframe.detail"] = { description = "voice.offer" },
   ["questframe.progress"] = { progress = "voice.progress" },
@@ -25,10 +28,23 @@ Voice.KINDS = {
   ["questframe.greeting"] = { greeting = "voice.greeting" },
   gossip = { greeting = "voice.greeting" },
   itemtext = { page = "voice.books" },
+  speech = { line = "voice.speech" },
+  ["cinematic.subtitles"] = "voice.intro",
 }
 
--- pack key → { file, seconds, f = { file, seconds }, itHash, folder, v = { [voice] = { file, seconds, f } } };
--- nil until a pack registers
+-- The setting that voices a record of a surface, or nil when its lines are never voiced.
+function Voice.kindSetting(surface, recKey)
+  local byKey = Voice.KINDS[surface]
+  if type(byKey) == "string" then return byKey end
+  return byKey and byKey[recKey] or nil
+end
+
+-- A rendered line's kind → the kind its shipped Italian is looked up under: a line in chat is a gossip row.
+Voice.LOOKUP = { speech = "gossip" }
+
+-- pack key → { file, seconds, f = { file, seconds }, itHash, folder, v = { [voice] = { file, seconds, f } },
+-- mute = { file id, … } }; nil until a pack registers. `mute`: the game's own English voice of the line (a line in
+-- chat the server sends with a sound), silenced while ours plays.
 local lines
 local creatures = {} -- creature id → voice id, or { m = male voice, f = female voice } (a creature shown as both)
 local creatureBy = {} -- creature id → { [pack folder] = its voice }: several packs may carry one creature
@@ -67,9 +83,19 @@ local function validTake(t)
   return t.f == nil or validTake(t.f)
 end
 
+-- { file id, … }: positive whole numbers only
+local function validMute(m)
+  if type(m) ~= "table" then return false end
+  for _, id in ipairs(m) do
+    if type(id) ~= "number" or id < 1 or id % 1 ~= 0 then return false end
+  end
+  return #m > 0
+end
+
 local function validEntry(e)
   if not (type(e) == "table" and validFile(e[1]) and type(e[2]) == "string" and e[2]:match("^%x+$") ~= nil
-    and #e[2] == 16 and (e[3] == nil or type(e[3]) == "number") and (e.f == nil or validTake(e.f))) then
+    and #e[2] == 16 and (e[3] == nil or type(e[3]) == "number") and (e.f == nil or validTake(e.f))
+    and (e.m == nil or validMute(e.m))) then
     return false
   end
   if e.v == nil then return true end
@@ -122,7 +148,7 @@ function Voice.register(tbl)
   for key, e in pairs(tbl.lines) do
     if type(key) == "string" and validEntry(e) then
       local line = take(e[1], e[3], e.f)
-      line.itHash, line.folder = e[2]:lower(), tbl.folder
+      line.itHash, line.folder, line.mute = e[2]:lower(), tbl.folder, e.m
       if e.v then
         line.v = {}
         for vid, t in pairs(e.v) do line.v[vid] = take(t[1], t[2], t.f) end
@@ -158,11 +184,16 @@ function Voice.hasPack()
   return Voice.counts.registered > 0
 end
 
--- The pack key of a rendered line (its Translator kind and id): a quest field by quest id, gossip and book pages by
--- their key.
+-- The pack key of a rendered line (its Translator kind and id): a quest field by quest id, gossip, a line in chat
+-- and book pages by their key, an intro's subtitle (a UI row "BroadcastText:<id>") by its id.
 function Voice.packKey(kind, id)
   if kind == "gossip" and type(id) == "string" then return "g-" .. id end
+  if kind == "speech" and type(id) == "string" then return "s-" .. id end
   if kind == "book" and type(id) == "string" then return "b-" .. id end
+  if kind == "ui" and type(id) == "string" then
+    local n = id:match("^BroadcastText:(%d+)$")
+    return n and "i-" .. n or nil
+  end
   local field = type(kind) == "string" and kind:match("^quest%.(%a+)$")
   if field and type(id) == "number" then return ("%d-%s"):format(id, field) end
   return nil
@@ -203,14 +234,14 @@ end
 
 -- A line just shown in Italian on `surface` under record key `recKey`, rendered as (kind, id), said by `who`
 -- ({ creature = id, sex = the speaker's UnitSex } or nil), to a character of UnitSex `sex` (3 female).
--- → the file's path and its length in seconds, or nil and why ("kind" · "off" · "english" · "nopack" · "missing" ·
--- "notext" · "stale" · "nofemale"). A greeting set to play once per creature is "off" for a creature already heard.
+-- → the file's path, its length in seconds and the game's English files the line silences (or nil), or nil and why
+-- ("kind" · "off" · "english" · "nopack" · "missing" · "notext" · "stale" · "nofemale"). A greeting set to play
+-- once per creature is "off" for a creature already heard.
 -- Only reads: the voice player calls Voice.markHeard when a greeting starts playing.
 -- `peek`: only asking (the replay button): /fita debug's counts are left as they are, and a greeting heard once is
 -- asked anyway.
 function Voice.decide(surface, recKey, kind, id, who, sex, peek)
-  local byKey = Voice.KINDS[surface]
-  local kindSetting = byKey and byKey[recKey]
+  local kindSetting = Voice.kindSetting(surface, recKey)
   if not kindSetting then return nil, "kind" end
   local mode = setting(kindSetting)
   if not setting("voice.enabled") or not mode or mode == "never" then return nil, "off" end
@@ -228,7 +259,7 @@ function Voice.decide(surface, recKey, kind, id, who, sex, peek)
     if not peek then Voice.counts.missing = Voice.counts.missing + 1 end
     return nil, "missing"
   end
-  local shipped = type(deps.lookup) == "function" and deps.lookup(kind, id) or nil
+  local shipped = type(deps.lookup) == "function" and deps.lookup(Voice.LOOKUP[kind] or kind, id) or nil
   if type(shipped) ~= "table" or type(shipped.ja) ~= "string" then return nil, "notext" end
   if type(deps.hash) ~= "function" or deps.hash(shipped.ja) ~= entry.itHash then
     if not peek then Voice.counts.stale = Voice.counts.stale + 1 end
@@ -244,5 +275,5 @@ function Voice.decide(surface, recKey, kind, id, who, sex, peek)
     end
   end
   if not peek then Voice.counts.matched = Voice.counts.matched + 1 end
-  return "Interface\\AddOns\\" .. entry.folder .. "\\Sound\\" .. t.file, t.seconds
+  return "Interface\\AddOns\\" .. entry.folder .. "\\Sound\\" .. t.file, t.seconds, entry.mute
 end

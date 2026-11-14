@@ -6,7 +6,7 @@ local Loader = require("tests.lua.spec.loader")
 local HEAD = { "Core/ErrorLog.lua", "Core/Const.lua", "Core/Compat.lua", "Core/Normalize.lua", "Core/Hash.lua",
   "Core/Data.lua" }
 local TAIL = {
-  "Core/Lookup.lua", "Core/Names.lua", "Core/Voice.lua", "Core/VoiceQueue.lua",
+  "Core/Lookup.lua", "Core/Names.lua", "Core/Voice.lua", "Core/VoiceQueue.lua", "Core/VoiceIntro.lua",
   "Core/Align.lua", "Core/State.lua", "Core/UnitNames.lua", "Core/Settings.lua",
   "Core/Modifier.lua",
   "Core/Placeholders.lua", "Core/Translator.lua", "Core/UIStringKeys.lua",

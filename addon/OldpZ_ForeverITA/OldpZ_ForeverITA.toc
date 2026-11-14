@@ -1087,6 +1087,7 @@ Core\Lookup.lua
 Core\Names.lua
 Core\Voice.lua
 Core\VoiceQueue.lua
+Core\VoiceIntro.lua
 Core\Align.lua
 Core\State.lua
 Core\UnitNames.lua
