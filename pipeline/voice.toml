@@ -4413,6 +4413,71 @@ design = "An ancient forest wisp spirit, speaks Italian: airy, echoing and other
 notes = "Airy and otherworldly, natural pace."
 fits = "forest wisp, messenger of Malfurion"
 
+# --- designed voices (3.8): the narrators of the race intro cinematics (voce-5), one per race
+
+[roster.narratorhuman]
+voice = "voice_08ss60x92onp"
+project = 4
+design = "A mature human man, speaks Italian: noble, resonant and stirring, the storyteller of a proud kingdom, fantasy."
+notes = "Solemn and stirring, measured natural pace."
+fits = "narrator of the human intro cinematic"
+
+[roster.narratordwarf]
+voice = "voice_ide8bs8bazcm"
+project = 4
+design = "A mature dwarf man, speaks Italian: deep, gravelly and proud, a hearty storyteller of mountain halls, fantasy."
+notes = "Proud and hearty, measured natural pace."
+fits = "narrator of the dwarf intro cinematic"
+
+[roster.narratorgnome]
+voice = "voice_96tqi79o7t67"
+project = 4
+design = "An adult gnome man, speaks Italian: bright, quick and earnest, a clever and lively storyteller, fantasy."
+notes = "Earnest and lively, natural pace."
+fits = "narrator of the gnome intro cinematic"
+
+[roster.narratornightelf]
+voice = "voice_oeh4wiihaxom"
+project = 4
+design = "A mature night elf woman, speaks Italian: serene, airy and ancient, a graceful and solemn storyteller, fantasy."
+notes = "Serene and solemn, measured natural pace."
+fits = "narrator of the night elf intro cinematic"
+
+[roster.narratororc]
+voice = "voice_s3u3izlb17g7"
+project = 4
+design = "A mature orc man, speaks Italian: deep, rough and powerful, a proud warrior telling his people's story, fantasy."
+notes = "Proud and grave, measured natural pace."
+fits = "narrator of the orc intro cinematic"
+
+[roster.narratortauren]
+voice = "voice_qb9llr7w45nx"
+project = 4
+design = "An old tauren man, speaks Italian: low, warm and earthy, a calm and wise storyteller of the plains, fantasy."
+notes = "Calm and wise, measured natural pace."
+fits = "narrator of the tauren intro cinematic"
+
+[roster.narratortroll]
+voice = "voice_ofui0j4mut0r"
+project = 4
+design = "An adult troll man, speaks Italian: husky, rhythmic and sly, a jungle storyteller with a lilting cadence, fantasy."
+notes = "Sly and rhythmic, natural pace."
+fits = "narrator of the troll intro cinematic"
+
+[roster.narratorundead]
+voice = "voice_o959pldx4qnn"
+project = 4
+design = "An undead man, speaks Italian: hollow, cold and rasping, a bitter and grim storyteller, dark fantasy."
+notes = "Cold and bitter, measured natural pace."
+fits = "narrator of the Forsaken intro cinematic"
+
+[roster.narratorskyborne]
+voice = "voice_l381gicm3m41"
+project = 4
+design = "A young high elf woman, speaks Italian: clear, light and wistful, a hopeful storyteller of a floating island, fantasy."
+notes = "Wistful and hopeful, natural pace."
+fits = "narrator of the Skyborne intro cinematic"
+
 [[cast]]
 name = "undead, female, elder"
 when = { archetype = ["undead", "ghost"], gender = "female", age = "elder" }
@@ -4578,3 +4643,32 @@ voices = ["malesmooth", "malewarm"]
 name = "male"
 when = { gender = ["male", "none"] }
 voices = ["malefirm", "malewarm", "malecasual", "malebright"]
+
+# --- the narrator of each race's intro cinematic (`i-` lines): its voice and who it is for the prompt
+[intro.human]
+voice = "narratorhuman"
+profile = "The narrator of the human intro cinematic, telling the story of Stormwind"
+[intro.dwarf]
+voice = "narratordwarf"
+profile = "The narrator of the dwarf intro cinematic, telling the story of Ironforge"
+[intro.gnome]
+voice = "narratorgnome"
+profile = "The narrator of the gnome intro cinematic, telling the story of Gnomeregan"
+[intro.nightelf]
+voice = "narratornightelf"
+profile = "The narrator of the night elf intro cinematic, telling the story of Teldrassil"
+[intro.orc]
+voice = "narratororc"
+profile = "The narrator of the orc intro cinematic, telling the story of the Horde"
+[intro.tauren]
+voice = "narratortauren"
+profile = "The narrator of the tauren intro cinematic, telling the story of Mulgore"
+[intro.troll]
+voice = "narratortroll"
+profile = "The narrator of the troll intro cinematic, telling the story of the Darkspear tribe"
+[intro.undead]
+voice = "narratorundead"
+profile = "The narrator of the Forsaken intro cinematic, telling the story of the Undercity"
+[intro.skyborne]
+voice = "narratorskyborne"
+profile = "The narrator of the Skyborne intro cinematic, telling the story of Zephras Isle"

@@ -414,6 +414,7 @@
 {"creature": 9529, "voice": "maybess", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 9560, "voice": "maxwell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 9619, "voice": "torwa", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9623, "voice": "narrator", "reason": "damaged mechanical construct of Karna Remtravel in Un Goro: narration", "provenance": {"source": "maintainer", "imported": "2026-11-14"}}
 {"creature": 9796, "voice": "galgar", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 10136, "voice": "fuely", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10176, "voice": "kaltunk", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
@@ -427,6 +428,7 @@
 {"creature": 10321, "voice": "emberstrife", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10460, "voice": "ironboot", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10537, "voice": "longhorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10541, "voice": "narrator", "reason": "talking thermometer device of Krakle in Un'Goro: narration", "provenance": {"source": "maintainer", "imported": "2026-11-14"}}
 {"creature": 10616, "voice": "raelen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10665, "voice": "holland", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 10666, "voice": "gordo", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
