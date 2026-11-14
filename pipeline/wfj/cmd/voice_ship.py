@@ -41,6 +41,27 @@ LIMIT = 420 * 1024 * 1024  # bytes of audio: the pack's ceiling
 STEM = re.compile(r"^[A-Za-z0-9_-]+$")  # what the addon accepts of a file name (`^[%w%-_]+%.mp3$`)
 PACKS = Path("pipeline") / "voice-packs.toml"  # the packs the whole game is split into
 LEVELS = Path("pipeline") / "quest_levels.tsv"  # the quest levels the packs are split by
+MUTES = Path("pipeline") / "voice_mute.tsv"  # a line in chat's English sound files (wfj.dev.voice_mute)
+
+
+def read_mutes(path: Path) -> dict[str, tuple[int, ...]]:
+    """{gossip key: the game's file ids of its English voice} from voice_mute.tsv; no table, none."""
+    if not path.is_file():
+        return {}
+    out: dict[str, tuple[int, ...]] = {}
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        if not raw.strip() or raw.startswith(("#", "key\t")):
+            continue
+        key, files = raw.split("\t")
+        out[key] = tuple(int(f) for f in files.split(","))
+    return out
+
+
+def add_mutes(lines: Mapping[str, Entry], mutes: Mapping[str, tuple[int, ...]]) -> None:
+    """Each line in chat (`s-`) whose English has a voice of its own silences it while ours plays."""
+    for key, e in lines.items():
+        if key.startswith("s-") and key[2:] in mutes:
+            e.mute = mutes[key[2:]]
 
 
 def interface_of(root: Path) -> str:
@@ -237,6 +258,7 @@ def build(  # noqa: PLR0913 - the table and the levels are injected for the test
     ship, left, silent = select(root, cfg, scope, store)
     lines, orphans = entries(ship, voice_make.audio_record(root))
     left += orphans
+    add_mutes(lines, read_mutes(root.parent / MUTES))
     for f in files_of(lines):
         if not STEM.match(f.removesuffix(".mp3")):
             raise ValueError(f"file name the addon would refuse: {f}")

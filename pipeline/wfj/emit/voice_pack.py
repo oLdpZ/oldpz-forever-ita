@@ -6,8 +6,9 @@ it one table through the main addon's single global, `OldpZ_ForeverITA_RegisterV
 { file name, Italian hash, seconds, f = { file name, seconds }, v = { [voice id] = { file name, seconds } } };
 `f` is the take for a female character (a line that names the player or picks a word by sex), `v` is there
 only for a line several differently cast creatures say, and `creatures` maps each speaker of such a line to
-its voice id ({ m = male voice, f = female voice } for a creature shown as both). The addon plays a file only
-when the hash equals the hash of the Italian it ships.
+its voice id ({ m = male voice, f = female voice } for a creature shown as both). A line in chat whose
+English the server sends with a sound carries `m = { file id, … }`: the game's own files the addon silences
+while ours plays. The addon plays a file only when the hash equals the hash of the Italian it ships.
 """
 
 from __future__ import annotations
@@ -26,14 +27,15 @@ AUTHOR = "oLd_pZ"
 
 @dataclass
 class Entry:
-    """One line of the pack: the male (or only) take, the female take of the main voice, and the takes of the
-    other voices (each with its own female take)."""
+    """One line of the pack: the male (or only) take, the female take of the main voice, the takes of the
+    other voices (each with its own female take) and the game's English files it silences."""
 
     file: str
     hash: str
     seconds: float
     female: tuple[str, float] | None = None
     voices: dict[str, tuple[str, float, tuple[str, float] | None]] = field(default_factory=dict)
+    mute: tuple[int, ...] = ()
 
 
 def title_of(words: str | None = None) -> str:
@@ -71,6 +73,8 @@ def _line(key: str, e: Entry) -> str:
             for vid, (f, s, fem) in sorted(e.voices.items())
         )
         parts.append(f"v = {{ {v} }}")
+    if e.mute:
+        parts.append(f"m = {{ {', '.join(str(int(i)) for i in e.mute)} }}")
     return f"    [{lua_string(key)}] = {{ {', '.join(parts)} }},"
 
 

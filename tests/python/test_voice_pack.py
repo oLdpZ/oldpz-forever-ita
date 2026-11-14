@@ -359,3 +359,30 @@ def test_the_committed_table_sends_chat_and_intros_to_their_packs():
     assert voice_packs.pack_of("s-0123456789abcdef", packs, {}).suffix == "Chat"
     assert voice_packs.pack_of("i-316345", packs, {}).suffix == "01_20"
     assert voice_packs.pack_of("g-0123456789abcdef", packs, {}).suffix == "Altro"
+
+
+def test_a_line_in_chat_carries_the_english_files_it_silences():
+    lines = {"s-00112233445566ff": Entry("s-00112233445566ff.mp3", "a" * 16, 2.0, mute=(555001, 555002)),
+             "g-00112233445566ff": Entry("g-00112233445566ff.mp3", "b" * 16, 1.0)}
+    lua = voice_pack.register_text(lines, {})
+    assert '["s-00112233445566ff"] = { "s-00112233445566ff.mp3", "' + "a" * 16 + '", 2.0, m = { 555001, 555002 } },' \
+        in lua
+    assert "m = " not in lua.split('["g-00112233445566ff"]')[1].split("\n")[0]
+
+
+def test_the_mute_table_reaches_only_the_lines_in_chat(tmp_path):
+    table = tmp_path / "voice_mute.tsv"
+    table.write_text("key\tfiles\n00112233445566ff\t555001,555002\n", encoding="utf-8")
+    lines = {"s-00112233445566ff": Entry("s.mp3", "a" * 16, 2.0), "g-00112233445566ff": Entry("g.mp3", "b" * 16, 1.0)}
+    voice_ship.add_mutes(lines, voice_ship.read_mutes(table))
+    assert lines["s-00112233445566ff"].mute == (555001, 555002)
+    assert lines["g-00112233445566ff"].mute == ()
+    assert voice_ship.read_mutes(tmp_path / "absent.tsv") == {}
+
+
+def test_the_mute_table_is_made_from_the_server_sounds_and_the_client_sound_kits():
+    from wfj.core.voice import gossip_id
+    from wfj.dev import voice_mute
+
+    got = voice_mute.rows({"Release the hounds!": 61, "No sound kit.": 9}, {61: [567437, 567438], 63: [1]})
+    assert got == {gossip_id("Release the hounds!"): [567437, 567438]}

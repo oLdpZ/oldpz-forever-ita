@@ -23,7 +23,7 @@ from wfj.cmd.voice_cast import CONFIG
 from wfj.io.jsonl_store import Store
 from wfj.paths import data_root
 
-MINIMUM = 8  # the owner's bar (2026-10-26)
+MINIMUM = 8  # the owner's bar
 
 
 @dataclass(frozen=True)
