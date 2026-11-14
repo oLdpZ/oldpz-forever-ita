@@ -490,3 +490,45 @@ describe("NPC speech", function()
     end)
   end)
 end)
+
+describe("NPC speech voiced", function()
+  local WFJ, heard
+  before_each(function()
+    secrets, bubbles, clock = {}, {}, 0
+    WFJ = load()
+    WFJ.State.setArea("gossip", true)
+    assert.is_true(WFJ.ChatSystem.init())
+    local expand = function(ja) return (ja:gsub("{name}", "Testplayer")) end
+    assert.is_true(WFJ.Speech.init({ key = keyOf, expand = expand }))
+    heard = {}
+    WFJ.VoicePlayer = { onSpeech = function(...) heard[#heard + 1] = { ... } end }
+    WFJ.Collector = { recordGossip = function() end,
+      creatureId = function(guid) return tonumber(guid:match("^Creature%-%d+%-%d+%-%d+%-%d+%-(%d+)")) end }
+  end)
+  after_each(function()
+    H.uiTeardown()
+    for _, n in ipairs(NAMES) do _G[n] = nil end
+  end)
+
+  it("hands a translated say or yell to the voice player with its key, type, speaker and line id", function()
+    npc(_G.ChatFrame1, YELL, "%s yells: ", "Stay close, Testplayer!", "Ralph", "Creature-0-1-2-3-1234-00002")
+    assert.are.same({ { KEY["Stay close, {name}!"], "MONSTER_YELL", 1234, lineID } }, heard)
+  end)
+
+  it("never for an emote, a line left English or a secret one", function()
+    local f = _G.ChatFrame1
+    npc(f, EMOTE, "", "%s goes into a frenzy!", "Hogger", "Creature-0-1-2-3-99-00001")
+    npc(f, SAY, "%s says: ", "Something no one translated!", "Bob", "Creature-0-1-2-3-98-00001")
+    npc(f, SAY, "", "The rest is stale.", "Ralph", "Creature-0-1-2-3-97-00001")
+    secrets["Stay close, Testplayer!"] = true
+    npc(f, SAY, "%s says: ", "Stay close, Testplayer!", "Ralph", "Creature-0-1-2-3-1234-00002")
+    assert.are.same({}, heard)
+  end)
+
+  it("keeps the line translated when the voice player fails", function()
+    WFJ.VoicePlayer = { onSpeech = function() error("boom") end }
+    local f = _G.ChatFrame1
+    npc(f, SAY, "%s says: ", "Stay close, Testplayer!", "Ralph", "Creature-0-1-2-3-1234-00002")
+    assert.are.equal("Ralphの発言: 離れるな、Testplayer！", f:Last())
+  end)
+end)

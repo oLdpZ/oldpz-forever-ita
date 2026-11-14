@@ -168,3 +168,31 @@ describe("cinematic subtitles on Forever", function()
     end)
   end)
 end)
+
+describe("cinematic subtitles for the voice", function()
+  before_each(function()
+    Stub.install(H.ADDON_DIR .. "/OldpZ_ForeverITA.toc")
+    Stub.installTooltipAPI()
+  end)
+  after_each(function()
+    H.uiTeardown()
+    _G.SubtitlesFrame, _G.SUBTITLE_FORMAT = nil, nil
+  end)
+
+  it("tells the voice player each new line by its BroadcastText row, the scroll's rewrites included", function()
+    local WFJ = H.loadChunks(FILES)
+    H.uiSetup(WFJ, UI)
+    installSubtitles()
+    assert.is_true(WFJ.Subtitles.init())
+    local shown = {}
+    WFJ.State.on("lineShown", function(surface, _, kind, id) shown[#shown + 1] = { surface, kind, id } end)
+    local f = _G.SubtitlesFrame
+    f:OnEvent("The Horde will prevail.")
+    assert.are.same({ { "cinematic.subtitles", "ui", "BroadcastText:1001" } }, shown)
+    f:OnEvent("For the Alliance!")
+    assert.are.same({ "cinematic.subtitles", "ui", "BroadcastText:1002" }, shown[#shown])
+    -- the voice player keeps a subtitle it heard from playing twice (voice_chat_intro_spec): no duplicate here
+    -- matters, only that each line arrives with its row
+    for _, s in ipairs(shown) do assert.is_truthy(s[3]:match("^BroadcastText:%d+$")) end
+  end)
+end)
