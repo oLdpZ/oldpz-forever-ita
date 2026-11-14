@@ -398,11 +398,14 @@ def read_next_pages(path: Path) -> dict[int, int]:
 # with `target_type = 0` the script's source says it, and the source is the creature that owns the script:
 # its AI events, a waypoint of one of its spawns or of its template, the quest it gives or takes, the gossip
 # option on its menu. Scripts no creature owns (generic and event scripts, run from the core) are left to the
-# C++ reader (`vmangos_src`). Emotes (chat types 2 and 16: "%s growls.") are not lines and are left out.
+# C++ reader (`vmangos_src`). Emotes (chat types 2 text, 3 boss and 7 zone emote: "%s growls.") are not
+# lines and are left out. A script whose `data_flags` swap or replace its targets (bits 1 and 2) has another
+# speaker.
 _TALK = 0
-_EMOTES = "2, 16"
+_EMOTES = "2, 3, 7"
+_SWAPS = 3
 _SLOTS = ("dataint", "dataint2", "dataint3", "dataint4")
-_SCRIPT = ("id", "command", "target_type", *_SLOTS)
+_SCRIPT = ("id", "command", "target_type", "data_flags", *_SLOTS)
 _SPEECH_NEEDS = {
     "broadcast_text": ("entry", "male_text", "female_text", "chat_type"),
     "creature_ai_events": ("creature_id", "action1_script", "action2_script", "action3_script"),
@@ -439,7 +442,8 @@ _OWNERS = {
 def _talk(table: str) -> str:
     """(script id, broadcast text id) of every talk command in `table` that the script's source says."""
     return " UNION ".join(
-        f"SELECT id AS sid, {c} AS bt FROM {table} WHERE command = {_TALK} AND target_type = 0 AND {c} <> 0"
+        f"SELECT id AS sid, {c} AS bt FROM {table} WHERE command = {_TALK} AND target_type = 0"
+        f" AND (data_flags & {_SWAPS}) = 0 AND {c} <> 0"
         for c in _SLOTS
     )
 

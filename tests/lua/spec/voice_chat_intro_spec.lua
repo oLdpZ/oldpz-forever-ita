@@ -180,3 +180,21 @@ describe("voice in chat and intros", function()
     end)
   end)
 end)
+
+describe("an intro the pack voices only in part", function()
+  after_each(E.teardown)
+
+  it("stays English when a subtitle of the race has Italian but no take that matches it", function()
+    local WFJ = E.setup(true)
+    local add = function(ja) return { "x.mp3", WFJ.Hash.key(ja), 2.0 } end
+    WFJ.Voice.register({ format = 3, folder = E.CHAT_FOLDER, lines = {
+      ["i-329309"] = add(E.DATA.ui[E.INTRO1].ja),
+      ["i-329310"] = add("an older wording of the second subtitle"), -- stale: the Italian changed since
+    } })
+    local v = Stub.voice
+    assert.is_false(WFJ.VoicePlayer.onShown("cinematic.subtitles", "line.1", "ui", E.INTRO1))
+    assert.are.equal(0, v.mutes)
+    assert.is_nil(v.playing)
+    assert.are.equal(0, #v.sounds)
+  end)
+end)

@@ -54,6 +54,7 @@ local SPOKEN_MAX = 200 -- line ids remembered before the list starts over
 -- a yell or a whisper takes over from a line in chat already playing; anything else waits for silence
 local URGENT = { MONSTER_YELL = true, MONSTER_WHISPER = true, RAID_BOSS_WHISPER = true }
 local intro -- the race row (Core/VoiceIntro) whose narration is silenced, from the first line to CINEMATIC_STOP
+local introReady -- (race, surface, recKey) → whether the pack voices the whole intro (below)
 local introHeard = {} -- pack key → true: the subtitles played in this showing of the intro
 local events -- the loading screen / logout frame, made by the first line queued
 
@@ -362,6 +363,18 @@ local function released()
   return startHead()
 end
 
+-- An intro silences its English narration whole, so it is voiced only when every subtitle of the race that ships
+-- Italian has a take that matches it: one line left without a voice would be heard as silence. An id with neither
+-- Italian nor a take is no subtitle (the ranges have gaps).
+introReady = function(race, surface, recKey)
+  local V, sex = WFJ.Voice, playerSex()
+  for n = race.first, race.last do
+    local path, why = V.decide(surface, recKey, "ui", "BroadcastText:" .. n, nil, sex, true)
+    if not path and not (why == "missing" and not V.shipped("ui", "BroadcastText:" .. n)) then return false end
+  end
+  return true
+end
+
 -- State "lineShown" listener. → true when the line started now
 function VoicePlayer.onShown(surface, recKey, kind, id)
   if not WFJ.Voice.hasPack() then return false end
@@ -373,6 +386,7 @@ function VoicePlayer.onShown(surface, recKey, kind, id)
     -- an intro's line: once per showing, and only for a race whose English narration can be silenced
     race = key and WFJ.VoiceIntro.of(tonumber(key:sub(3)))
     if not race or #race.files == 0 or introHeard[key] then return false end
+    if intro ~= race and not introReady(race, surface, recKey) then return false end
   end
   local window = windowOf(surface)
   local who = VoicePlayer.speaker(window)

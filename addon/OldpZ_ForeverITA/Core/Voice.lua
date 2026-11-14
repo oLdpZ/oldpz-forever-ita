@@ -199,6 +199,12 @@ function Voice.packKey(kind, id)
   return nil
 end
 
+-- Whether the addon ships Italian for a line (kind, id), as `decide` looks it up.
+function Voice.shipped(kind, id)
+  local row = type(deps.lookup) == "function" and deps.lookup(Voice.LOOKUP[kind] or kind, id) or nil
+  return type(row) == "table" and type(row.ja) == "string"
+end
+
 local function setting(id)
   return type(deps.setting) == "function" and deps.setting(id)
 end

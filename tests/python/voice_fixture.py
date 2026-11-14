@@ -177,12 +177,13 @@ def add_speech(db_path: Path, data: Path) -> None:
     db.execute("UPDATE creature_template SET script_name = 'boss_bat' WHERE entry = 9000")
     db.executemany("INSERT INTO broadcast_text VALUES (?, ?, '', ?, 0)",
                    [(801, SHOUT, 1), (802, SHARED, 0), (803, BOSS, 1), (804, GROWL, 2)])
-    cols = "id INT, command INT, target_type INT, dataint INT, dataint2 INT, dataint3 INT, dataint4 INT"
+    cols = ("id INT, command INT, target_type INT, dataint INT, dataint2 INT, dataint3 INT, dataint4 INT,"
+            " data_flags INT")
     for t in ("creature_ai_scripts", "creature_movement_scripts", "quest_start_scripts", "quest_end_scripts",
               "gossip_scripts"):
         db.execute(f"CREATE TABLE {t} ({cols})")
-    db.executemany("INSERT INTO creature_ai_scripts VALUES (?, 0, 0, ?, 0, 0, 0)", [(10, 801), (11, 804)])
-    db.execute("INSERT INTO creature_movement_scripts VALUES (20, 0, 0, 802, 0, 0, 0)")
+    db.executemany("INSERT INTO creature_ai_scripts VALUES (?, 0, 0, ?, 0, 0, 0, 0)", [(10, 801), (11, 804)])
+    db.execute("INSERT INTO creature_movement_scripts VALUES (20, 0, 0, 802, 0, 0, 0, 0)")
     db.execute("CREATE TABLE creature_ai_events (creature_id INT, action1_script INT, action2_script INT,"
                " action3_script INT)")
     db.executemany("INSERT INTO creature_ai_events VALUES (?, ?, 0, 0)", [(2079, 10), (2079, 11)])

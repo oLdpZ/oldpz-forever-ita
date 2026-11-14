@@ -11,7 +11,8 @@ import pytest
 from wfj.io import vmangos, vmangos_src
 
 SCRIPT_COLUMNS = ("id INT, delay INT, command INT, datalong INT, target_type INT, dataint INT, dataint2 INT,"
-                  " dataint3 INT, dataint4 INT")
+                  " dataint3 INT, dataint4 INT, data_flags INT DEFAULT 0")
+SCRIPT_INSERT = "(id, delay, command, datalong, target_type, dataint, dataint2, dataint3, dataint4)"
 SCRIPT_TABLES = ("creature_ai_scripts", "creature_movement_scripts", "quest_start_scripts", "quest_end_scripts",
                  "gossip_scripts", "generic_scripts")
 
@@ -26,13 +27,16 @@ def make_db(path: Path) -> Path:
         (4, "Quest start", "", 0, 0), (5, "Quest end", "", 0, 0), (6, "Gossip option", "Gossip option (f)", 0, 0),
         (7, "%s growls.", "", 2, 0), (8, "Said by the target", "", 0, 0), (9, "Only a generic script", "", 0, 0),
         (10, "Whisper", "", 4, 77),
+        (11, "%s goes into a frenzy!", "", 3, 88), (12, "%s roars across the zone.", "", 7, 0),
+        (13, "Said by the swapped target", "", 0, 0),
     ])
     for t in SCRIPT_TABLES:
         db.execute(f"CREATE TABLE {t} ({SCRIPT_COLUMNS})")
     rows = {
         "creature_ai_scripts": [(100, 0, 0, 0, 0, 1, 0, 0, 0), (101, 0, 0, 0, 0, 0, 0, 0, 7),
                                 (102, 0, 0, 0, 1, 8, 0, 0, 0), (103, 0, 15, 0, 0, 1, 0, 0, 0),
-                                (104, 0, 0, 0, 0, 10, 0, 0, 0)],
+                                (104, 0, 0, 0, 0, 10, 0, 0, 0), (105, 0, 0, 0, 0, 11, 12, 0, 0),
+                                (106, 0, 0, 0, 0, 13, 0, 0, 0)],
         "creature_movement_scripts": [(200, 0, 0, 0, 0, 2, 0, 0, 0), (201, 0, 0, 0, 0, 0, 3, 0, 0)],
         "quest_start_scripts": [(456, 0, 0, 0, 0, 4, 0, 0, 0)],
         "quest_end_scripts": [(457, 0, 0, 0, 0, 5, 0, 0, 0)],
@@ -40,11 +44,14 @@ def make_db(path: Path) -> Path:
         "generic_scripts": [(400, 0, 0, 0, 0, 9, 0, 0, 0)],
     }
     for t, rs in rows.items():
-        db.executemany(f"INSERT INTO {t} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", rs)
+        db.executemany(f"INSERT INTO {t} {SCRIPT_INSERT} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", rs)
+    # 106 swaps its targets (data_flags 1): the one the script was started on speaks, not the owner
+    db.execute("UPDATE creature_ai_scripts SET data_flags = 1 WHERE id = 106")
     db.execute("CREATE TABLE creature_ai_events (id INT, creature_id INT, action1_script INT, action2_script INT,"
                " action3_script INT)")
     db.executemany("INSERT INTO creature_ai_events VALUES (?, ?, ?, ?, ?)",
-                   [(1, 10, 100, 101, 0), (2, 11, 0, 0, 102), (3, 12, 103, 0, 0), (4, 13, 104, 0, 0)])
+                   [(1, 10, 100, 101, 0), (2, 11, 0, 0, 102), (3, 12, 103, 0, 0), (4, 13, 104, 0, 0),
+                    (5, 14, 105, 106, 0)])
     db.execute("CREATE TABLE creature (guid INT, id INT)")
     db.execute("INSERT INTO creature VALUES (5, 20)")
     db.execute("CREATE TABLE creature_movement (id INT, point INT, script_id INT)")
@@ -88,6 +95,11 @@ def test_emotes_other_targets_other_commands_and_unowned_scripts_do_not_count(db
     assert "Said by the target" not in texts  # target_type 1: someone else speaks
     assert not any(c == 12 for c, _ in got)  # command 15 is a spell cast, not talk
     assert "Only a generic script" not in texts  # no creature owns a generic script
+    # a boss emote (chat type 3) and a zone emote (7) are emotes too; a swapped-target script is not the owner's
+    assert "%s goes into a frenzy!" not in texts and "%s roars across the zone." not in texts
+    assert "Said by the swapped target" not in texts
+    assert vmangos.read_speech_sounds(db) == {"Whisper": 77}
+    assert vmangos.read_broadcast_texts(db, {11, 12}) == {}
     assert got == sorted(set(got))  # sorted, distinct (two patches of creature 40 count once)
 
 
