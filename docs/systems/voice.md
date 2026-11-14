@@ -42,8 +42,10 @@ sequenceDiagram
 | Quest window, NPC greeting panel | `greeting` | `g-<gossip key>` | `voice.greeting` |
 | NPC talk window, greeting | `greeting` | `g-<gossip key>` | `voice.greeting` |
 | Book, letter or plaque page | `page` | `b-<page key>` | `voice.books` |
+| Chat: what an NPC says, yells or whispers (`CHAT_MSG_MONSTER_SAY`, `_YELL`, `_WHISPER`, `_PARTY`, `CHAT_MSG_RAID_BOSS_WHISPER`) | `line` | `s-<gossip key>` | `voice.speech` |
+| Race intro cinematic, a subtitle (`cinematic.subtitles`, any `line.<n>`) | `line.<n>` | `i-<BroadcastText id>` | `voice.intro` |
 
-`Voice.KINDS` holds this table. Objectives, quest titles, clickable options, shouts and chat lines are never voiced, and neither are the character's own error lines.
+`Voice.KINDS` holds this table (`Voice.kindSetting` reads it; a surface whose every record is voiced maps to the setting alone). A line in chat reads its Italian from the gossip rows (`Voice.LOOKUP`), an intro subtitle from its UI row. Objectives, quest titles, clickable options, NPC emotes ("%s growls") and the character's own error lines are never voiced.
 
 ### Who speaks
 `wfj voice speakers` writes `data/voice/speakers.jsonl`: for each line of the scope, its main speaker (a creature id, `narrator` or `book-narrator`) and the `others` who say it too.
@@ -51,7 +53,8 @@ sequenceDiagram
 - The offer is read by the creature that starts the quest, progress and turn-in by the one that ends it (VMaNGOS). A quest the open database lacks (one Forever added) takes the creature most players' captures saw in the window (forever-vo). A quest started by an object or an item, with no creature, is read by the narrator.
 - A gossip line is read by the creature whose greeting it is. A creature id the collector recorded in game for that line wins over the database.
 - A book page is read by its signer when exactly one creature that speaks has that name (the page's last line is a name, `book_signature`), otherwise by the book narrator.
-- Two creatures for one line: the lowest id is the main speaker, the rest go into `others`; each may have a voice of its own.
+- Two creatures for one line: the lowest id is the main speaker, the rest go into `others`; each may have a voice of its own. A re-run keeps a line's old main speaker while it still says it (`keep_speakers`): its audio was made in that voice.
+- **Scope `tutto`** adds the whole game's NPC talk: every creature with a gossip menu or a quest window greeting, or one the collector heard, greets (not only the quests' NPCs); the NPC lines in chat (`s-`) get the creature whose own script says them (VMaNGOS: AI events, waypoints of its spawns and template, the quests it gives and takes, its gossip options; with `--vmangos-src`, the core's C++ boss scripts, `wfj.io.vmangos_src`); each intro subtitle (`i-`) is read by its race's narrator (`narrator-<race>`, `pipeline/voice_intros.tsv`). A line in chat no creature's script says has no speaker and stays silent (most of the server's broadcast texts are never sent by a script).
 
 ### The scope
 A scope is a list of ids in `pipeline/voice_<scope>.txt`, written by `wfj voice scope` and committed: the database's quests of the zone's areas plus Forever's own quests whose captured giver stands inside the zone's map bounds, and `b <key>` for each page of a sign or book standing there. What cannot be placed (no giver captured, given by an object, given by a creature the database never spawns) is counted and left out, never guessed. Only the `tirisfal` scope exists.
@@ -122,6 +125,9 @@ The whole game (`--scope tutto`, about 17,400 files, 1.25 GB) does not fit one p
 | `OldpZ_ForeverITA_Voce_41_55` | quests of level 41-55 | 1,883 lines, 2,754 files, 15.6 h, ~214 MB |
 | `OldpZ_ForeverITA_Voce_56_60` | quests of level 56 and up (level 60 alone is ~180 MB) | 2,221 lines, 3,433 files, 17.0 h, ~235 MB |
 | `OldpZ_ForeverITA_Voce_Altro` | book pages (`b-…`, ~120 MB), gossip (`g-…`, ~62 MB), quests with no known level (~147 MB) | 3,326 lines, 4,252 files, 23.8 h, ~328 MB |
+| `OldpZ_ForeverITA_Voce_Chat` | NPC lines in chat (`s-…`) | measured at the first plan |
+
+The race intros (`i-…`) go to `01_20`, where a new character hears them. A pack's `prefixes` (voice-packs.toml) take every key that starts so before the level bands are looked at.
 
 The estimate is the plan's transcripts at 290 bytes per character (13.8 characters a second at 4,016 bytes a second, measured on the 1,700 files of `data/voice/audio.jsonl`), every take counted: female and other-voice takes too.
 
@@ -157,6 +163,9 @@ A female character never hears the male take of a line that names the player or 
 - **The game's English voice**: while a line plays `Sound_EnableDialog` is turned off, only if it was on and `voice.muteDialog` is on. The fact is kept in `OFI_DB.voiceDialogMuted`, because the client saves the setting to `Config.wtf` and a crash in between would leave the player's NPC voices off for good; it is put back when the queue runs out, on stop, at logout and on the next load. A player who had the channel off keeps it off, and one who turned it on by hand while the line played keeps what they chose.
 - A greeting set to once per creature is remembered in `OFI_DB.voiceHeard[creature id]` when it starts playing, not when it is queued. A file the client refuses is dropped and the next one plays.
 - Without a pack `onShown` returns at once: no frame, no sound call.
+- **A line in chat** (`VoicePlayer.onSpeech`, from `UI/Speech` once it showed the Italian): no window and no queue, one at a time. It never starts while a window's line plays or waits, and a window's line stops it. While one plays a new line is dropped, unless it is a yell or a whisper, which takes over. The chat hands a line once per tab: a line id plays once. Its English voice (a few lines, mostly boss yells, `pipeline/voice_mute.tsv` → the entry's `m`) is silenced with `MuteSoundFile` while ours plays; the dialog channel is not touched.
+- **A race intro**: the English narration is one file that also holds the cinematic's music, on no channel a setting turns off. From the intro's first Italian line to `CINEMATIC_STOP` the race's narration files are silenced and its starting-zone music plays (`PlayMusic`, a file of the game's own; `Core/VoiceIntro`). Each subtitle plays once per showing (the scroll shows it again); `CINEMATIC_STOP` (Esc too) stops our narrator. A race whose narration file is unknown (Skyborne, for now) stays English.
+- Every file silenced is kept in `OFI_DB.voiceMutedFiles` and given back on stop, at logout and on the next load.
 
 ### The panel
 A small frame, `WFJVoicePanel`, about 220 × 64, a child of `UIParent` and never of a Blizzard frame, built by the first line that plays. Its `TOPLEFT` is anchored 4 pixels right of the `TOPRIGHT` of the quest, talk or book window that showed the line. It holds the speaker's 3D head, its name (Italian from `UnitNames` when `names.style = it` and the unit's name ships, otherwise the client's; a book's own title for a page), a stop button, a skip button and "+N" while N lines wait. No text: the window already shows it.
@@ -222,6 +231,8 @@ These facts come from the code and the stubs, not from a run in the Forever clie
 - The 3D head: `SetUnit("questnpc")` and `SetUnit("npc")`, `SetCreature(id)` after `/reload`, zoom and camera, the talking animation 60 moving the mouth, and the book icon `INV_Misc_Book_09` and the next-page arrow existing.
 - The quest log button: its place on the details frame, and `QuestMapFrame_ShowQuestDetails` being hookable after login (the pack registers after the main addon loaded).
 - The loading screen event `LOADING_SCREEN_ENABLED` firing on a portal or a hearthstone and stopping the line.
+- `CINEMATIC_START` / `CINEMATIC_STOP` around a race intro, `PlayMusic(fileID)` under it and `StopMusic()` giving the zone's music back; the starting-zone tracks chosen by the owner by ear. `MuteSoundFile` on the narration file silences it (verified in game on the human/orc files; Skyborne's file is not known yet).
+- The boss yells of `pipeline/voice_mute.tsv` silenced by their SoundKit files (the SoundKitEntry table's build is not recorded).
 - The **Voce** page appearing in the options panel when added after the categories were registered.
 - `UnitSex` on `questnpc` and `npc`, for the voice of a creature shown as both sexes.
 - That a line shown while Alt is held, in a window that stayed English, is not played in Italian by mistake (the hash binds the audio to the Italian text, not to what the window shows).
