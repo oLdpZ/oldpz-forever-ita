@@ -212,14 +212,14 @@ def run_profiles(argv: Sequence[str]) -> int:
 def in_scope(
     rows: Sequence[dict[str, Any]], quests: Sequence[int], books: Sequence[str]
 ) -> list[dict[str, Any]]:
-    """The speakers rows of a scope: its quests' fields, its book pages and the NPC talk (the table holds the
-    talk of the scope's creatures only)."""
+    """The speakers rows of a scope: its quests' fields, its book pages, the NPC talk, the NPC lines in chat
+    and the intro lines (the table holds those of the scope only: `wfj voice speakers` wrote it)."""
     want, pages = set(quests), {voice.book_key(b) for b in books}
     return [
         r for r in rows
         if (r["key"][0].isdigit() and int(r["key"].split("-", 1)[0]) in want)
         or r["key"] in pages
-        or r["key"].startswith("g-")
+        or r["key"].startswith(("g-", "s-", "i-"))
     ]
 
 

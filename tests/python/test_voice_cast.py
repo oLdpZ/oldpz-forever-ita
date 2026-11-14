@@ -465,3 +465,12 @@ def test_cast_writes_one_voice_per_creature_and_is_stable(world, capsys):
     path.write_text(old, encoding="utf-8")
     _cast(world, *reversed(profiles))
     assert path.read_text(encoding="utf-8") == old  # same creature, same voice, old dates kept
+
+
+def test_a_scope_takes_its_quests_its_pages_and_all_npc_talk_chat_and_intros():
+    from wfj.cmd.voice_cast import in_scope
+
+    rows = [{"key": k} for k in ("1-description", "2-progress", "b-" + "a" * 16, "b-" + "b" * 16,
+                                 "g-" + "c" * 16, "s-" + "d" * 16, "i-316345")]
+    got = [r["key"] for r in in_scope(rows, [1], ["a" * 16])]
+    assert got == ["1-description", "b-" + "a" * 16, "g-" + "c" * 16, "s-" + "d" * 16, "i-316345"]
