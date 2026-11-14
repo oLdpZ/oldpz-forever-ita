@@ -5,7 +5,8 @@ A line's pack depends only on that line: a quest field (`<quest id>-<field>`) go
 own level (`lvl` of `pipeline/quest_levels.tsv`, its `min` when `lvl` is empty); a book page (`b-…`), a
 gossip line (`g-…`) and a quest with no known level go to the pack marked `other`. A key that starts with one
 of a pack's `prefixes` (`s-` an NPC's line in chat, `i-` a race intro's line) goes to that pack before any of
-this. So a fix to one line re-releases one pack. A level under the first band goes to the first, over the last band to the last.
+this. So a fix to one line re-releases one pack. A level under the first band goes to the first, over the
+last band to the last.
 
 Each pack's folder is `OldpZ_ForeverITA_Voce_<suffix>`: the addon accepts any folder that starts with
 `OldpZ_ForeverITA_Voce` and is made only of letters, digits and `_` (`^[%w_]+$`, Core/Voice.lua), so a
@@ -47,8 +48,9 @@ class Pack:
 
 def parse_packs(text: str, source: str = "voice-packs.toml") -> list[Pack]:
     """The table's packs, in order. Refused (ValueError naming `source`): a suffix the addon would refuse or
-    seen twice, an empty title, a prefix that is not `<letters>-` or that two packs claim, a band that is not `[low, high]` with 1 <= low <= high, bands that overlap or
-    leave a gap, no band, or not exactly one `other` pack."""
+    seen twice, an empty title, a prefix that is not `<letters>-` or that two packs claim, a band that is not
+    `[low, high]` with 1 <= low <= high, bands that overlap or leave a gap, no band, or not exactly one
+    `other` pack."""
     rows = tomllib.loads(text).get("pack")
     if not isinstance(rows, list) or not rows:
         raise ValueError(f"{source}: no [[pack]]")
@@ -60,7 +62,8 @@ def parse_packs(text: str, source: str = "voice-packs.toml") -> list[Pack]:
         if not isinstance(title, str) or not title.strip():
             raise ValueError(f"{source}: pack {suffix}: no title")
         levels, other, prefixes = row.get("levels"), row.get("other", False), row.get("prefixes", [])
-        if not isinstance(prefixes, list) or not all(isinstance(x, str) and PREFIX.match(x) for x in prefixes):
+        if not isinstance(prefixes, list) or not all(isinstance(x, str) and PREFIX.match(x)
+                                                     for x in prefixes):
             raise ValueError(f"{source}: pack {suffix}: a prefix is letters then '-' (s-, i-)")
         if other is True and levels is None and not prefixes:
             out.append(Pack(suffix, title))

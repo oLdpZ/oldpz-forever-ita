@@ -391,3 +391,121 @@ def read_next_pages(path: Path) -> dict[int, int]:
     finally:
         db.close()
     return {int(e): int(n) for e, n in rows}
+
+
+# ---- who says an NPC's line in chat -------------------------------------------------------------------
+# A script's talk command (`command = 0`) sends one of up to four broadcast texts (`dataint`..`dataint4`);
+# with `target_type = 0` the script's source says it, and the source is the creature that owns the script:
+# its AI events, a waypoint of one of its spawns or of its template, the quest it gives or takes, the gossip
+# option on its menu. Scripts no creature owns (generic and event scripts, run from the core) are left to the
+# C++ reader (`vmangos_src`). Emotes (chat types 2 and 16: "%s growls.") are not lines and are left out.
+_TALK = 0
+_EMOTES = "2, 16"
+_SLOTS = ("dataint", "dataint2", "dataint3", "dataint4")
+_SCRIPT = ("id", "command", "target_type", *_SLOTS)
+_SPEECH_NEEDS = {
+    "broadcast_text": ("entry", "male_text", "female_text", "chat_type"),
+    "creature_ai_events": ("creature_id", "action1_script", "action2_script", "action3_script"),
+    "creature_ai_scripts": _SCRIPT,
+    "creature_movement_scripts": _SCRIPT,
+    "quest_start_scripts": _SCRIPT,
+    "quest_end_scripts": _SCRIPT,
+    "gossip_scripts": _SCRIPT,
+    "creature": ("guid", "id"),
+    "creature_movement": ("id", "script_id"),
+    "creature_movement_template": ("entry", "script_id"),
+    "creature_questrelation": ("id", "quest"),
+    "creature_involvedrelation": ("id", "quest"),
+    "gossip_menu_option": ("menu_id", "action_script_id"),
+    "creature_template": ("entry", "gossip_menu_id"),
+}
+# script table → (script id, creature id) of the creature that owns each script
+_OWNERS = {
+    "creature_ai_scripts": " UNION ".join(
+        f"SELECT {a} AS sid, creature_id AS c FROM creature_ai_events WHERE {a} <> 0"
+        for a in ("action1_script", "action2_script", "action3_script")
+    ),
+    "creature_movement_scripts": "SELECT m.script_id AS sid, s.id AS c FROM creature_movement m"
+    " JOIN creature s ON s.guid = m.id WHERE m.script_id <> 0"
+    " UNION SELECT script_id AS sid, entry AS c FROM creature_movement_template WHERE script_id <> 0",
+    "quest_start_scripts": "SELECT quest AS sid, id AS c FROM creature_questrelation",
+    "quest_end_scripts": "SELECT quest AS sid, id AS c FROM creature_involvedrelation",
+    "gossip_scripts": "SELECT o.action_script_id AS sid, t.entry AS c FROM gossip_menu_option o"
+    " JOIN creature_template t ON t.gossip_menu_id = o.menu_id AND o.menu_id <> 0"
+    " WHERE o.action_script_id <> 0",
+}
+
+
+def _talk(table: str) -> str:
+    """(script id, broadcast text id) of every talk command in `table` that the script's source says."""
+    return " UNION ".join(
+        f"SELECT id AS sid, {c} AS bt FROM {table} WHERE command = {_TALK} AND target_type = 0 AND {c} <> 0"
+        for c in _SLOTS
+    )
+
+
+def _wordings(texts: tuple) -> tuple[str, ...]:
+    return tuple(dict.fromkeys(t for t in texts if isinstance(t, str) and t.strip()))
+
+
+def read_speech_speakers(path: Path) -> list[tuple[int, str]]:
+    """(creature id, English) for every NPC line in chat a creature's own script says, male and female
+    wording; sorted, distinct, emotes and empty text skipped."""
+    db = _connect(path, _SPEECH_NEEDS)
+    try:
+        rows: list[tuple] = []
+        for table, owner in _OWNERS.items():
+            rows += _query(db, path,
+                f"SELECT DISTINCT o.c, b.male_text, b.female_text FROM ({_talk(table)}) s"
+                f" JOIN ({owner}) o ON o.sid = s.sid"
+                f" JOIN broadcast_text b ON b.entry = s.bt AND b.chat_type NOT IN ({_EMOTES})",
+            )
+    finally:
+        db.close()
+    return sorted({(int(c), t) for c, *texts in rows for t in _wordings(tuple(texts))})
+
+
+def read_script_names(path: Path) -> dict[str, list[int]]:
+    """C++ script name → the creatures that run it (any patch), sorted."""
+    db = _connect(path, {"creature_template": ("entry", "script_name")})
+    try:
+        rows = _query(db, path,
+            "SELECT DISTINCT script_name, entry FROM creature_template WHERE script_name <> '' ORDER BY 1, 2")
+    finally:
+        db.close()
+    out: dict[str, list[int]] = {}
+    for name, entry in rows:
+        out.setdefault(str(name), []).append(int(entry))
+    return out
+
+
+def read_broadcast_texts(path: Path, ids: set[int]) -> dict[int, tuple[str, ...]]:
+    """Broadcast text id → its non-empty wordings (male, then female when it differs), for `ids`; emotes and
+    unknown ids left out."""
+    want = ",".join(str(int(i)) for i in sorted(ids)) or "NULL"
+    db = _connect(path, {"broadcast_text": ("entry", "male_text", "female_text", "chat_type")})
+    try:
+        rows = _query(db, path,
+            f"SELECT entry, male_text, female_text FROM broadcast_text WHERE entry IN ({want})"
+            f" AND chat_type NOT IN ({_EMOTES})")
+    finally:
+        db.close()
+    return {int(e): w for e, *texts in rows if (w := _wordings(tuple(texts)))}
+
+
+def read_speech_sounds(path: Path) -> dict[str, int]:
+    """English → the sound the server plays with it (`sound_id`), for the NPC lines in chat that have one: the
+    English voice the addon silences while the Italian plays. Emotes left out; of a text said with several
+    sounds, the lowest."""
+    db = _connect(path, {"broadcast_text": ("entry", "male_text", "female_text", "chat_type", "sound_id")})
+    try:
+        rows = _query(db, path,
+            "SELECT male_text, female_text, sound_id FROM broadcast_text"
+            f" WHERE sound_id > 0 AND chat_type NOT IN ({_EMOTES}) ORDER BY sound_id")
+    finally:
+        db.close()
+    out: dict[str, int] = {}
+    for *texts, sound in rows:
+        for t in _wordings(tuple(texts)):
+            out.setdefault(t, int(sound))
+    return out
