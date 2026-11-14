@@ -318,3 +318,44 @@ def test_one_pack_over_420_mb_writes_none(split, monkeypatch, capsys):
     err = capsys.readouterr().err
     assert "OldpZ_ForeverITA_Voce_01_10:" in err and "Altro" not in err and "nothing written" in err
     assert not split.out.exists()
+
+
+PREFIXED = PACKS.replace('levels = [1, 10]', 'levels = [1, 10]\nprefixes = ["i-"]') + """
+[[pack]]
+suffix = "Chat"
+title = "frasi dei PNG in chat"
+prefixes = ["s-"]
+"""
+
+
+def test_a_prefixed_key_goes_to_its_pack_before_the_levels():
+    packs = voice_packs.parse_packs(PREFIXED)
+    levels = voice_packs.parse_levels(LEVELS)
+
+    def of(key: str) -> str:
+        return voice_packs.pack_of(key, packs, levels).suffix
+
+    assert of("s-006921c124c689f8") == "Chat"
+    assert of("i-316345") == "01_10"
+    assert of("g-006921c124c689f8") == "Altro"
+    assert of("457-progress") == "11_20"
+    chat = voice_packs.find(packs, "Chat")
+    assert chat.prefixes == ("s-",) and chat.levels is None and not chat.other
+
+
+@pytest.mark.parametrize(("change", "why"), [
+    (('prefixes = ["s-"]', 'prefixes = ["i-"]'), "prefix"),  # one prefix, two packs
+    (('prefixes = ["s-"]', 'prefixes = []'), "want levels"),  # a pack with no band, no other, no prefix
+    (('prefixes = ["s-"]', 'prefixes = ["s"]'), "prefix"),  # a prefix is letters then '-'
+])
+def test_a_bad_prefix_is_refused(change, why):
+    with pytest.raises(ValueError, match=why):
+        voice_packs.parse_packs(PREFIXED.replace(*change))
+
+
+def test_the_committed_table_sends_chat_and_intros_to_their_packs():
+    pipeline = Path(__file__).resolve().parents[2] / "pipeline"
+    packs = voice_packs.parse_packs((pipeline / "voice-packs.toml").read_text(encoding="utf-8"))
+    assert voice_packs.pack_of("s-0123456789abcdef", packs, {}).suffix == "Chat"
+    assert voice_packs.pack_of("i-316345", packs, {}).suffix == "01_20"
+    assert voice_packs.pack_of("g-0123456789abcdef", packs, {}).suffix == "Altro"

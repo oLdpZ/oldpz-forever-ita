@@ -86,6 +86,19 @@ def test_speaker_problems():
     assert "voice speakers 6-progress: provenance must be an object" in problems
 
 
+
+def test_speech_and_intro_keys():
+    assert voice.speech_key("0123456789abcdef") == "s-0123456789abcdef"
+    assert voice.intro_key(316345) == "i-316345"
+    assert "narrator-skyborne" in voice.INTRO_NARRATORS and len(voice.INTRO_NARRATORS) == 9
+    good = [_row("s-" + "a" * 16, 10), _row("i-316345", "narrator-skyborne")]
+    assert voice.speaker_problems(good, []) == []
+    bad = [_row(G("b" * 16), "narrator-skyborne"), _row("i-316346", "narrator-elf"), _row("i-31a", "narrator-orc")]
+    problems = voice.speaker_problems(bad, [])
+    assert any(p.startswith(f"voice speakers {G('b' * 16)}: only an intro line") for p in problems)
+    assert any(p.startswith("voice speakers i-316346: speaker must be") for p in problems)
+    assert "voice speakers: bad key 'i-31a'" in problems
+
 def test_once_cast_every_speaking_creature_needs_a_voice():
     voices = [{"creature": 10, "voice": "undeadmale", "row": "undead",
                "provenance": {"source": "cast@voice.toml", "imported": TODAY}}]
