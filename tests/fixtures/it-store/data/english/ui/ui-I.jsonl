@@ -1,4 +1,4 @@
-{"id": "INT_SPELL_DURATION_MIN", "field": "text", "en": "%d min", "hash": "39e09a403a3fcdbe", "src": "db2@1.60.1.70888"}
-{"id": "INT_SPELL_DURATION_SEC", "field": "text", "en": "%d sec", "hash": "39e22a5f5210e4b5", "src": "db2@1.60.1.70888"}
-{"id": "ITEM_SPELL_TRIGGER_ONEQUIP", "field": "text", "en": "Equip:", "hash": "99ff0c11a1015fbe", "src": "db2@1.60.1.70888"}
-{"id": "ItemSubClass:4:1", "field": "text", "en": "Cloth", "hash": "a6acc156b7ee2344", "src": "db2@1.60.1.70888"}
+{"id": "INT_SPELL_DURATION_MIN", "field": "text", "en": "%d min", "hash": "39e09a403a3fcdbe", "src": "db2@1.60.1.70938"}
+{"id": "INT_SPELL_DURATION_SEC", "field": "text", "en": "%d sec", "hash": "39e22a5f5210e4b5", "src": "db2@1.60.1.70938"}
+{"id": "ITEM_SPELL_TRIGGER_ONEQUIP", "field": "text", "en": "Equip:", "hash": "99ff0c11a1015fbe", "src": "db2@1.60.1.70938"}
+{"id": "ItemSubClass:4:1", "field": "text", "en": "Cloth", "hash": "a6acc156b7ee2344", "src": "db2@1.60.1.70938"}

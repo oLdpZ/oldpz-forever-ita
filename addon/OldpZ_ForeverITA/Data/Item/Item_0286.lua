@@ -66,6 +66,7 @@ WFJ.Data.add("item", {
   [286541] = { "Rigenera $N1 mana in $D1. Devi sederti per bere.", 0xf502561a, "u" },
   [286556] = { "Rallenta i nemici vicini del $N1% per $D1, valore che sale al $N3% nelle zone desertiche.", 0x124abd59, "u" },
   [286568] = { "Preso da una iena che divorava qualsiasi cosa, o chiunque.", 0x2a7b9883, "u" },
+  [286573] = { "Apre un alveare di silitidi, liberando lo sciame.", 0x22f9e378, "u" },
   [286604] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [286612] = { "Rimuove gli effetti di immobilizzazione attivi e ti rende immune agli effetti di immobilizzazione per $D1.", 0x949e3aa9, "u" },
   [286613] = { "Il re di Un'Goro divorava chiunque sfidasse il suo dominio.", 0x23c05b82, "u" },

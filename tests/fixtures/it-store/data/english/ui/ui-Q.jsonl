@@ -1,2 +1,2 @@
-{"id": "QUEST_LOG", "field": "text", "en": "Quest Log", "hash": "ac526ca3a65b23aa", "src": "db2@1.60.1.70888"}
-{"id": "QUEST_PREPEND", "field": "text", "en": "(Quest)", "hash": "e43328ae9fda8947", "src": "db2@1.60.1.70888"}
+{"id": "QUEST_LOG", "field": "text", "en": "Quest Log", "hash": "ac526ca3a65b23aa", "src": "db2@1.60.1.70938"}
+{"id": "QUEST_PREPEND", "field": "text", "en": "(Quest)", "hash": "e43328ae9fda8947", "src": "db2@1.60.1.70938"}

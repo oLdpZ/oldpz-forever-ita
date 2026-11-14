@@ -24,7 +24,7 @@ WFJ.Data.add("item", {
   [835] = { "Impedisce a un bersaglio di muoversi per $D1.", 0x73de166e, "u" },
   [842] = { "Evoca e congeda un Lupo Grigio cavalcabile.", 0xa7f601eb, "u" },
   [858] = { "Rigenera $N1 salute.", 0x4d16029e, "u" },
-  [867] = { "Punisce il bersaglio, infliggendo $N1 danni da sacro. I danni sono triplicati contro i Non Morti.", 0x98c8d89a, "u" },
+  [867] = { "Quando colpisci con un incantesimo o un attacco offensivo, hai il $N1% di probabilità di punire il bersaglio, infliggendo $N2 danni da sacro. I danni sono triplicati contro i Non Morti.", 0x0a2fed35, "u" },
   [868] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },
   [869] = { "Riduce l'Armatura del bersaglio di $N1 per $D1. Mentre ne è affetto, il bersaglio non può entrare in modalità furtiva o diventare invisibile.", 0xf183631b, "u" },
   [870] = { "Lancia una palla infuocata, infliggendo $N1 danni da fuoco e $N2 danni aggiuntivi in $D1.", 0xa6bc16f5, "u" },

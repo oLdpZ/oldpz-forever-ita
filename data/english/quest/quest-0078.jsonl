@@ -50,9 +50,9 @@
 {"id": 78676, "field": "title", "en": "The Eye of Bhossca", "hash": "db721cead351e2e0", "src": "wdb@1.60.1.70450"}
 {"id": 78676, "field": "objectives", "en": "Find The Eye of Bhossca inside of the Scarlet Monastery. Then, return it to C's dead drop near Pyrewood Village. You must complete the job alone.", "hash": "84b09c9a3dbfd6f0", "src": "wdb@1.60.1.70450"}
 {"id": 78676, "field": "description", "en": "<A note sits in the chest>\r\n\r\nGlad to have you back, $n.\r\n\r\nThe latest object of my desire is an artifact known as the Eye of Bhossca. My sources tell me the eye is somewhere within the Scarlet Monastery. As with Shadowfang Keep, you must infiltrate the monastery alone.\r\n\r\nIt may behoove you to find a disguise before going in. It will make getting around a touch easier. I'm sure you could find something on the monastery's grounds.\r\n\r\nReturn the eye here, and payment will be delivered as before.\r\n\r\n- C", "hash": "def0af608156c340", "src": "wdb@1.60.1.70450"}
-{"id": 78699, "field": "title", "en": "The Eye of Bhossca", "hash": "db721cead351e2e0", "src": "wdb@1.60.1.70450"}
-{"id": 78699, "field": "objectives", "en": "Log", "hash": "00141fe02dc1f053", "src": "wdb@1.60.1.70450"}
-{"id": 78699, "field": "description", "en": "Description", "hash": "6173958c6c516f23", "src": "wdb@1.60.1.70450"}
+{"id": 78699, "field": "title", "en": "The Eye of Bhossca", "hash": "db721cead351e2e0", "src": "wdb@1.60.1.70938"}
+{"id": 78699, "field": "objectives", "en": "Log", "hash": "00141fe02dc1f053", "src": "wdb@1.60.1.70938"}
+{"id": 78699, "field": "description", "en": "Description", "hash": "6173958c6c516f23", "src": "wdb@1.60.1.70938"}
 {"id": 78823, "field": "title", "en": "Terror of the Desert Skies", "hash": "095389a78d48bbf9", "src": "wdb@1.60.1.70450"}
 {"id": 78823, "field": "objectives", "en": "Bring the Primitive Drawing to Hemet Nesingwary in Stranglethorn Vale.", "hash": "ee6d5c939124ed1a", "src": "wdb@1.60.1.70450"}
 {"id": 78823, "field": "description", "en": "The drawing is composed of rough, broad, strokes and seems to depict a large bird of prey. Despite the simple composition, the artist clearly viewed this creature with fear and awe. An expert on big game could likely tell you more.", "hash": "946d35b23b1d533f", "src": "wdb@1.60.1.70450"}

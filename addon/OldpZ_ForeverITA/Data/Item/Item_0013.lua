@@ -151,6 +151,7 @@ WFJ.Data.add("item", {
   [13500] = { "Ti insegna a creare una ⟦Greater Holy Protection Potion=Pozione Superiore della Difesa dal Sacro⟧.", 0x46102f49, "u" },
   [13501] = { "Ti insegna a creare una ⟦Major Mana Potion=Pozione Maggiore di Mana⟧.", 0x8ad233e9, "u" },
   [13503] = { "Aumenta del $N1% gli effetti delle pozioni curative e di mana su chi lo indossa.\nPuò essere usato per le trasmutazioni al posto di una ⟦Philosopher's Stone=Pietra Filosofale⟧.", 0x7ed99028, "u" },
+  [13505] = { "Aumenta del $N1% la velocità di movimento e ripristina $N2 salute ogni $N3 s.", 0x389996ba, "u" },
   [13506] = { "Ti trasformi in pietra e diventi immune a tutti gli attacchi fisici e agli incantesimi per $D1, ma nel frattempo non puoi attaccare, muoverti né lanciare incantesimi. Puoi avere attivo l'effetto di un solo tonico alla volta.", 0x7d8a1bc0, "u" },
   [13508] = { "Evoca un ⟦Eye of Kilrogg=Occhio di Kilrogg⟧ e vi lega la tua visuale. L'occhio si muove rapidamente ma è molto fragile.", 0x03a37e0a, "u" },
   [13509] = { "Contrasta l'incantesimo del nemico, impedendogli di lanciare qualsiasi incantesimo di quella scuola di magia per $D1. Genera un'elevata quantità di minaccia.", 0xf632a166, "u" },

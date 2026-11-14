@@ -96,6 +96,7 @@ WFJ.Data.add("item", {
   [12584] = { "Aumenta la probabilità di critico del $N1%.\n+$N2 potenza d'attacco.", 0xc0dede9a, "u" },
   [12585] = { "Crea un portale che teletrasporta a ⟦Stormwind=Roccavento⟧ i membri del gruppo che lo utilizzano.", 0x69006ae2, "u" },
   [12586] = { "Cura $N1 effetti di veleno.\nProtegge la covata dal ⟦Mother's Milk=Latte Materno⟧. L'efficacia diminuisce col tempo.", 0xdc92d37f, "u" },
+  [12590] = { "Per $D1 tutti gli attacchi vanno a segno e sono colpi critici.", 0x14cb9ba5, "u" },
   [12592] = { "Evoca lo spirito infernale di Shahram.", 0x692558ba, "u" },
   [12618] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },
   [12619] = { "Difesa aumentata di $N1.", 0xc1caea0e, "u" },

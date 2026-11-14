@@ -25,6 +25,7 @@ WFJ.Data.add("item", {
   [276545] = { "Ti insegna a creare degli Spiritcaller Boots.", 0xbae7a77e, "u" },
   [276561] = { "Usalo presso il focus delle linee di potere di ⟦Ambermill=Mulino d'Ambra⟧ per creare il Tome of Dalaran.", 0x90108173, "u" },
   [276631] = { "Gli attacchi in mischia infliggono $N1 danni da fuoco aggiuntivi ai bersagli congelati.", 0x1a2a60d5, "u" },
+  [276632] = { "Gli attacchi in mischia hanno il $N1% di probabilità di concedere uno stato di Lancio Istintivo, che riduce del $N2% il costo in mana del tuo prossimo incantesimo di danno.", 0x51187bc1, "u" },
   [276637] = { "Un borsellino per allegare degli importi in valuta ai contenitori di oggetti immediati.", 0x8055e2d0, "u" },
   [276742] = { "Infligge $N1 danni fisici ogni volta che blocchi.", 0x2cbf03aa, "u" },
   [276743] = { "Aumenta la Forza di $N1 mentre sei soggetto a un effetto di sanguinamento.", 0x9d3d89fb, "u" },

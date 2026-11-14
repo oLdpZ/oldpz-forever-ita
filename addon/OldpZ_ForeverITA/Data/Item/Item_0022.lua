@@ -154,6 +154,7 @@ WFJ.Data.add("item", {
   [22310] = { "Ti insegna a creare una ⟦Cenarion Herb Bag=Sacca per Erbe Cenariana⟧.", 0x239e42a2, "u" },
   [22312] = { "Ti insegna a creare un ⟦Satchel of Cenarius=Sacco Cenariano⟧.", 0x5a80c833, "u" },
   [22321] = { "Gli attacchi in mischia e a distanza hanno una probabilità di infliggere $N1 danni da fuoco. Agli orchi infligge $N2 volte tanti danni.", 0xf613fe2e, "u" },
+  [22322] = { "Non commestibile", 0x1581a0f4, "u" },
   [22324] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
   [22344] = { "Dove trovare i Luoghi Tormentati.", 0x9aa2b574, "u" },
   [22347] = { "Aumenta la probabilità d'impatto del $N1%.", 0x8e26e034, "u" },
