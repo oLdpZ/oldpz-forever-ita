@@ -182,33 +182,37 @@ describe("voice in chat and intros", function()
       local human = WFJ.VoiceIntro.of(329309)
       for _, id in ipairs(human.files) do assert.is_true(v.muted[id]) end
       assert.are.equal(53492, v.playing)
-      assert.is_false(subtitle(E.INTRO1)) -- already started with the cinematic (next test)
+      assert.is_false(subtitle(E.INTRO1)) -- the cinematic's first instant: the line waits (next tests)
       Stub.fireAll("CINEMATIC_STOP")
       assert.is_nil(v.playing) -- the narration stays silenced, for a replay (next tests)
     end)
 
-    -- the first subtitle can come before the addon hears the cinematic start, or not reach it at all: the
-    -- player's race intro starts its first line with the cinematic
-    it("starts the first line of the player's race intro with the cinematic, its subtitle or not", function()
-      _G.UnitRace = function() return "Human", "Human", 1 end
-      Stub.fireAll("CINEMATIC_START")
-      assert.are.equal(E.chatPath("i-329309"), v.sounds[#v.sounds].path)
-      assert.is_false(subtitle(E.INTRO1))
-      subtitle(E.INTRO2)
-      Stub.fireTimers(2.5)
-      assert.are.equal(E.chatPath("i-329310"), v.sounds[#v.sounds].path)
-    end)
+    -- the game cuts the sounds started in the cinematic's first instant, and the first subtitle can come before
+    -- the addon hears the cinematic start, or not reach it at all: the player's race intro starts its first line
+    -- once the cinematic has settled
+    it("starts the first line of the player's race intro once the cinematic has settled, its subtitle or not",
+      function()
+        _G.UnitRace = function() return "Human", "Human", 1 end
+        Stub.fireAll("CINEMATIC_START")
+        assert.is_false(subtitle(E.INTRO1))
+        assert.are.equal(0, #v.sounds)
+        Stub.fireTimers(1)
+        assert.are.equal(E.chatPath("i-329309"), v.sounds[#v.sounds].path)
+        assert.is_false(subtitle(E.INTRO1))
+        subtitle(E.INTRO2)
+        Stub.fireTimers(2.5)
+        assert.are.equal(E.chatPath("i-329310"), v.sounds[#v.sounds].path)
+      end)
 
-    it("says the first line once when its subtitle came before the cinematic's start", function()
+    it("starts the first line again once the cinematic has settled, when its subtitle came first", function()
       _G.UnitRace = function() return "Human", "Human", 1 end
       Stub.fireAll("PLAYER_LOGIN")
       assert.is_true(subtitle(E.INTRO1))
       Stub.fireAll("CINEMATIC_START")
-      local n = 0
-      for _, s in ipairs(v.sounds) do
-        if s.path == E.chatPath("i-329309") then n = n + 1 end
-      end
-      assert.are.equal(1, n)
+      assert.are.same({ 1 }, v.stopped) -- cut: the cinematic would have cut it anyway
+      Stub.fireTimers(1)
+      assert.are.equal(E.chatPath("i-329309"), v.sounds[#v.sounds].path)
+      assert.are.equal(2, #v.sounds)
       assert.are.equal(53492, v.playing)
     end)
 

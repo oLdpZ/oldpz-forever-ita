@@ -382,11 +382,20 @@ local isOpen, isClose = {}, {}
 for _, e in ipairs(OPENS) do isOpen[e] = true end
 for _, e in ipairs(CLOSES) do isClose[e] = true end
 
--- The first subtitle can come before the cinematic's start reaches the addon, or not reach it at all: the player's
--- race intro starts its first line with the cinematic (once: a line already said in this showing is kept).
+-- The game cuts the sounds started in a cinematic's first instant, and the first subtitle can come before the
+-- cinematic's start reaches the addon, or not reach it at all: an intro line playing then is cut, the lines wait
+-- while the cinematic settles, and the player's race intro then starts its first line.
+local INTRO_SETTLE = 1 -- seconds
+local settling -- a token while the cinematic settles: the intro's lines wait
+local settleToken = 0
+
 local function cinematicStarted()
   local head = Q.current()
-  if not (head and head.intro) then introHeard = {} end
+  if head and head.intro then
+    silence()
+    Q.clear()
+  end
+  introHeard = {}
   local race = playerIntro()
   if not race then
     if intro and not intro.music then unmuteFiles(intro.files); intro = nil end
@@ -394,8 +403,15 @@ local function cinematicStarted()
   end
   if intro and not intro.music then intro = nil end -- armed: the cinematic is here
   startIntro(race)
-  VoicePlayer.onShown(WFJ.Subtitles and WFJ.Subtitles.SURFACE or "cinematic.subtitles", nil, "ui",
-    "BroadcastText:" .. race.first)
+  settleToken = settleToken + 1
+  local token = settleToken
+  settling = token
+  after(INTRO_SETTLE, function()
+    if settling ~= token then return end
+    settling = nil
+    VoicePlayer.onShown(WFJ.Subtitles and WFJ.Subtitles.SURFACE or "cinematic.subtitles", nil, "ui",
+      "BroadcastText:" .. race.first)
+  end)
 end
 
 -- A loading screen ends the line and the queue (the player is somewhere else now); logout (a /reload too) as well:
@@ -429,6 +445,7 @@ local function watchEvents()
       armIntro()
     elseif event == "CINEMATIC_STOP" then
       -- the intro's lines stop with it (Esc skips the cinematic); a window's line was not part of it
+      settling = nil
       local head = Q.current()
       if head and head.intro then VoicePlayer.stop() else endIntro() end
       armIntro() -- a replay (OpeningCinematic) starts silent too
@@ -601,7 +618,7 @@ function VoicePlayer.onShown(surface, recKey, kind, id)
   if setting == "voice.intro" then
     -- an intro's line: once per showing, and only for a race whose English narration can be silenced
     race = key and WFJ.VoiceIntro.of(tonumber(key:sub(3)))
-    if not race or #race.files == 0 or introHeard[key] then return false end
+    if not race or #race.files == 0 or introHeard[key] or settling then return false end
     if intro ~= race and not introReady(race, surface, recKey) then return false end
   end
   local window = windowOf(surface)
