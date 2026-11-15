@@ -182,9 +182,34 @@ describe("voice in chat and intros", function()
       local human = WFJ.VoiceIntro.of(329309)
       for _, id in ipairs(human.files) do assert.is_true(v.muted[id]) end
       assert.are.equal(53492, v.playing)
-      assert.is_true(subtitle(E.INTRO1))
+      assert.is_false(subtitle(E.INTRO1)) -- already started with the cinematic (next test)
       Stub.fireAll("CINEMATIC_STOP")
-      assert.is_nil(v.playing) -- the narration stays silenced, for a replay (next test)
+      assert.is_nil(v.playing) -- the narration stays silenced, for a replay (next tests)
+    end)
+
+    -- the first subtitle can come before the addon hears the cinematic start, or not reach it at all: the
+    -- player's race intro starts its first line with the cinematic
+    it("starts the first line of the player's race intro with the cinematic, its subtitle or not", function()
+      _G.UnitRace = function() return "Human", "Human", 1 end
+      Stub.fireAll("CINEMATIC_START")
+      assert.are.equal(E.chatPath("i-329309"), v.sounds[#v.sounds].path)
+      assert.is_false(subtitle(E.INTRO1))
+      subtitle(E.INTRO2)
+      Stub.fireTimers(2.5)
+      assert.are.equal(E.chatPath("i-329310"), v.sounds[#v.sounds].path)
+    end)
+
+    it("says the first line once when its subtitle came before the cinematic's start", function()
+      _G.UnitRace = function() return "Human", "Human", 1 end
+      Stub.fireAll("PLAYER_LOGIN")
+      assert.is_true(subtitle(E.INTRO1))
+      Stub.fireAll("CINEMATIC_START")
+      local n = 0
+      for _, s in ipairs(v.sounds) do
+        if s.path == E.chatPath("i-329309") then n = n + 1 end
+      end
+      assert.are.equal(1, n)
+      assert.are.equal(53492, v.playing)
     end)
 
     -- the cinematic of a new character starts before any event the addon could answer in time: the narration

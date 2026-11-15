@@ -325,8 +325,11 @@ local isOpen, isClose = {}, {}
 for _, e in ipairs(OPENS) do isOpen[e] = true end
 for _, e in ipairs(CLOSES) do isClose[e] = true end
 
+-- The first subtitle can come before the cinematic's start reaches the addon, or not reach it at all: the player's
+-- race intro starts its first line with the cinematic (once: a line already said in this showing is kept).
 local function cinematicStarted()
-  introHeard = {}
+  local head = Q.current()
+  if not (head and head.intro) then introHeard = {} end
   local race = playerIntro()
   if not race then
     if intro and not intro.music then unmuteFiles(intro.files); intro = nil end
@@ -334,6 +337,8 @@ local function cinematicStarted()
   end
   if intro and not intro.music then intro = nil end -- armed: the cinematic is here
   startIntro(race)
+  VoicePlayer.onShown(WFJ.Subtitles and WFJ.Subtitles.SURFACE or "cinematic.subtitles", nil, "ui",
+    "BroadcastText:" .. race.first)
 end
 
 -- A loading screen ends the line and the queue (the player is somewhere else now); logout (a /reload too) as well:
