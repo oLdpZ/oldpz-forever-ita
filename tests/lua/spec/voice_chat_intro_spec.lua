@@ -12,7 +12,10 @@ describe("voice in chat and intros", function()
     E.registerChat(WFJ)
     P, V, v = WFJ.VoicePlayer, WFJ.Voice, Stub.voice
   end)
-  after_each(E.teardown)
+  after_each(function()
+    _G.UnitLevel, _G.UnitXP = nil, nil
+    E.teardown()
+  end)
 
   local function say(key, chatType, lineID)
     return P.onSpeech(key, chatType or "MONSTER_SAY", 3233, lineID or key)
@@ -170,6 +173,57 @@ describe("voice in chat and intros", function()
       P.init(db)
       assert.is_nil(v.muted[222761])
       assert.is_nil(db.voiceMutedFiles)
+    end)
+
+    -- a file already playing is not stopped by MuteSoundFile: the narration must be silenced before it starts
+    it("silences the player's race narration as the cinematic starts, before its first subtitle", function()
+      _G.UnitRace = function() return "Human", "Human", 1 end
+      Stub.fireAll("CINEMATIC_START")
+      local human = WFJ.VoiceIntro.of(329309)
+      for _, id in ipairs(human.files) do assert.is_true(v.muted[id]) end
+      assert.are.equal(53492, v.playing)
+      assert.is_true(subtitle(E.INTRO1))
+      Stub.fireAll("CINEMATIC_STOP")
+      for _, id in ipairs(human.files) do assert.is_nil(v.muted[id]) end
+      assert.is_nil(v.playing)
+    end)
+
+    it("silences a new character's narration at login, before the cinematic, and gives it back if none comes",
+      function()
+        _G.UnitRace = function() return "Human", "Human", 1 end
+        _G.UnitLevel = function() return 1 end
+        _G.UnitXP = function() return 0 end
+        local human = WFJ.VoiceIntro.of(329309)
+        Stub.fireAll("PLAYER_ENTERING_WORLD", true, false)
+        for _, id in ipairs(human.files) do assert.is_true(v.muted[id]) end
+        assert.is_nil(v.playing) -- the music waits for the cinematic
+        Stub.fireAll("CINEMATIC_START")
+        assert.are.equal(53492, v.playing)
+        Stub.fireAll("CINEMATIC_STOP")
+        assert.is_nil(next(v.muted))
+        -- no cinematic after the login (the player turned intros off in the game): the English comes back
+        Stub.fireAll("PLAYER_ENTERING_WORLD", true, false)
+        assert.is_true(v.muted[human.files[1]])
+        Stub.fireTimers(20)
+        assert.is_nil(next(v.muted))
+        assert.is_nil(db.voiceMutedFiles)
+      end)
+
+    it("leaves an old character's login, an unvoiced race and a switched-off intro alone", function()
+      _G.UnitRace = function() return "Human", "Human", 1 end
+      _G.UnitLevel = function() return 12 end
+      _G.UnitXP = function() return 0 end
+      Stub.fireAll("PLAYER_ENTERING_WORLD", true, false)
+      assert.are.equal(0, v.mutes)
+      _G.UnitRace = function() return "Orc", "Orc", 2 end -- the pack voices no orc subtitle
+      Stub.fireAll("CINEMATIC_START")
+      assert.are.equal(0, v.mutes)
+      Stub.fireAll("CINEMATIC_STOP")
+      _G.UnitRace = function() return "Human", "Human", 1 end
+      WFJ.Settings.set("voice.intro", false)
+      Stub.fireAll("CINEMATIC_START")
+      assert.are.equal(0, v.mutes)
+      assert.is_nil(v.playing)
     end)
 
     it("stays English for a race whose narration file is unknown, or with intros switched off", function()

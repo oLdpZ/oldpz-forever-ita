@@ -23,9 +23,11 @@
 --     while a window's line plays or waits, and a window's line stops it. While one plays a new line is dropped,
 --     unless it is a yell or a whisper, which takes over. The chat repeats a line once per tab: a line id plays once.
 --   * A race intro (the subtitles' lines, "cinematic.subtitles"): its English narration is one file with the music
---     in it, on no channel a setting turns off. From its first Italian line to CINEMATIC_STOP the race's narration
---     files are silenced (MuteSoundFile) and the race's starting-zone music plays (PlayMusic); a race whose
---     narration file is unknown stays English. Each subtitle plays once per showing (the scroll shows it again).
+--     in it, on no channel a setting turns off. MuteSoundFile does not stop a file already playing, so the
+--     player's race narration is silenced before it starts: at a new character's login (level 1, no experience;
+--     given back if no cinematic comes) and at CINEMATIC_START. From then to CINEMATIC_STOP the race's
+--     starting-zone music plays (PlayMusic); a race whose narration file is unknown stays English. Each subtitle
+--     plays once per showing (the scroll shows it again).
 --   * A game file silenced (an intro's narration, a line in chat's own English voice) is kept in
 --     OFI_DB.voiceMutedFiles and given back on stop, at logout and on the next load (a /reload lifts it too).
 -- Without a voice pack nothing here creates a frame or calls the sound API: `onShown` returns at once.
@@ -203,11 +205,61 @@ local function endIntro()
 end
 
 local function startIntro(race)
-  if intro then return end
+  if intro and intro.music then return end
   intro = race
   muteFiles(race.files)
   local playMusic = Compat.resolve("PlayMusic")
   if type(playMusic) == "function" then playMusic(race.music) end
+end
+
+-- The intro the player's race is about to see, when the pack voices it whole: MuteSoundFile does not stop a file
+-- already playing, so its narration is silenced before the cinematic plays it, not at its first subtitle.
+local function playerIntro()
+  if not allowed() or not WFJ.Voice.hasPack() then return nil end
+  local unitRace = Compat.resolve("UnitRace")
+  if type(unitRace) ~= "function" then return nil end
+  local _, file = unitRace("player")
+  local race = WFJ.VoiceIntro.ofUnit(file)
+  if not race or #race.files == 0 then return nil end
+  if not introReady(race, WFJ.Subtitles and WFJ.Subtitles.SURFACE or "cinematic.subtitles", nil) then return nil end
+  return race
+end
+
+local ARMED_FOR = 20 -- seconds a new character's login keeps the narration silenced, waiting for its cinematic
+local armToken = 0
+
+-- A new character (level 1, no experience) logs in: its intro starts right after, so the narration is silenced
+-- now, without the music; the cinematic's start brings the music. No cinematic in time: the English comes back.
+local function armIntro()
+  local level, xp = Compat.resolve("UnitLevel"), Compat.resolve("UnitXP")
+  if type(level) ~= "function" or type(xp) ~= "function" then return end
+  if level("player") ~= 1 or xp("player") ~= 0 or intro then return end
+  local race = playerIntro()
+  if not race then return end
+  intro = { files = race.files, race = race.race } -- armed: silenced, no music yet
+  muteFiles(race.files)
+  armToken = armToken + 1
+  local token = armToken
+  local after = Compat.resolve("C_Timer")
+  if type(after) == "table" and type(after.After) == "function" then
+    after.After(ARMED_FOR, function()
+      if token == armToken and intro and not intro.music then
+        unmuteFiles(intro.files)
+        intro = nil
+      end
+    end)
+  end
+end
+
+local function cinematicStarted()
+  introHeard = {}
+  local race = playerIntro()
+  if not race then
+    if intro and not intro.music then unmuteFiles(intro.files); intro = nil end
+    return
+  end
+  if intro and not intro.music then intro = nil end -- armed at login: the cinematic is here
+  startIntro(race)
 end
 
 -- A loading screen ends the line and the queue (the player is somewhere else now); logout (a /reload too) as well:
@@ -223,9 +275,12 @@ local function watchEvents()
   events:RegisterEvent("LOADING_SCREEN_ENABLED")
   events:RegisterEvent("CINEMATIC_START")
   events:RegisterEvent("CINEMATIC_STOP")
-  events:SetScript("OnEvent", function(_, event)
+  events:RegisterEvent("PLAYER_ENTERING_WORLD")
+  events:SetScript("OnEvent", function(_, event, isLogin)
     if event == "CINEMATIC_START" then
-      introHeard = {}
+      cinematicStarted()
+    elseif event == "PLAYER_ENTERING_WORLD" then
+      if isLogin then armIntro() end
     elseif event == "CINEMATIC_STOP" then
       -- the intro's lines stop with it (Esc skips the cinematic); a window's line was not part of it
       local head = Q.current()
@@ -366,13 +421,18 @@ end
 -- An intro silences its English narration whole, so it is voiced only when every subtitle of the race that ships
 -- Italian has a take that matches it: one line left without a voice would be heard as silence. An id with neither
 -- Italian nor a take is no subtitle (the ranges have gaps).
+-- A race the pack voices no subtitle of is not ready either.
 introReady = function(race, surface, recKey)
-  local V, sex = WFJ.Voice, playerSex()
+  local V, sex, voiced = WFJ.Voice, playerSex(), 0
   for n = race.first, race.last do
     local path, why = V.decide(surface, recKey, "ui", "BroadcastText:" .. n, nil, sex, true)
-    if not path and not (why == "missing" and not V.shipped("ui", "BroadcastText:" .. n)) then return false end
+    if path then
+      voiced = voiced + 1
+    elseif not (why == "missing" and not V.shipped("ui", "BroadcastText:" .. n)) then
+      return false
+    end
   end
-  return true
+  return voiced > 0
 end
 
 -- State "lineShown" listener. → true when the line started now
@@ -471,6 +531,9 @@ function VoicePlayer.init(savedDb)
   VoicePlayer.listening = true
   -- guarded: an error here must not reach the surface that rendered the line
   WFJ.State.on("lineShown", function(...) pcall(VoicePlayer.onShown, ...) end)
+  -- the events (an intro's cinematic among them) are watched from the first pack on, before any line is shown
+  if WFJ.Voice.hasPack() then watchEvents() end
+  WFJ.State.on("voicePack", function() pcall(watchEvents) end)
   WFJ.State.on("modifier", function(down) if not down then pcall(released) end end)
   WFJ.State.on("enabled", stopUnless)
   WFJ.State.on("voice", function() -- a voice setting changed
