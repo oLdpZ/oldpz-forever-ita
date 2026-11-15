@@ -24,10 +24,10 @@
 --     unless it is a yell or a whisper, which takes over. The chat repeats a line once per tab: a line id plays once.
 --   * A race intro (the subtitles' lines, "cinematic.subtitles"): its English narration is one file with the music
 --     in it, on no channel a setting turns off. MuteSoundFile does not stop a file already playing, so the
---     player's race narration is silenced before it starts: at a new character's login (level 1, no experience;
---     given back if no cinematic comes) and at CINEMATIC_START. From then to CINEMATIC_STOP the race's
---     starting-zone music plays (PlayMusic); a race whose narration file is unknown stays English. Each subtitle
---     plays once per showing (the scroll shows it again).
+--     player's race narration (files only an intro plays) is kept silenced from the pack's load to logout, while
+--     the pack voices that intro; from CINEMATIC_START to CINEMATIC_STOP the race's starting-zone music plays
+--     (PlayMusic). A race whose narration file is unknown stays English. Each subtitle plays once per showing
+--     (the scroll shows it again).
 --   * A game file silenced (an intro's narration, a line in chat's own English voice) is kept in
 --     OFI_DB.voiceMutedFiles and given back on stop, at logout and on the next load (a /reload lifts it too).
 -- Without a voice pack nothing here creates a frame or calls the sound API: `onShown` returns at once.
@@ -225,30 +225,16 @@ local function playerIntro()
   return race
 end
 
-local ARMED_FOR = 20 -- seconds a new character's login keeps the narration silenced, waiting for its cinematic
-local armToken = 0
-
--- A new character (level 1, no experience) logs in: its intro starts right after, so the narration is silenced
--- now, without the music; the cinematic's start brings the music. No cinematic in time: the English comes back.
+-- A new character's cinematic starts before any event the addon could answer in time, so the player's race
+-- narration (files only an intro plays) is kept silenced from the pack's load on, the music left for the
+-- cinematic itself: `intro` is then the armed row { files, race } with no music. Given back at logout, and when
+-- the intro would not be voiced (switched off).
 local function armIntro()
-  local level, xp = Compat.resolve("UnitLevel"), Compat.resolve("UnitXP")
-  if type(level) ~= "function" or type(xp) ~= "function" then return end
-  if level("player") ~= 1 or xp("player") ~= 0 or intro then return end
+  if intro then return end
   local race = playerIntro()
   if not race then return end
-  intro = { files = race.files, race = race.race } -- armed: silenced, no music yet
+  intro = { files = race.files, race = race.race }
   muteFiles(race.files)
-  armToken = armToken + 1
-  local token = armToken
-  local after = Compat.resolve("C_Timer")
-  if type(after) == "table" and type(after.After) == "function" then
-    after.After(ARMED_FOR, function()
-      if token == armToken and intro and not intro.music then
-        unmuteFiles(intro.files)
-        intro = nil
-      end
-    end)
-  end
 end
 
 local function cinematicStarted()
@@ -258,7 +244,7 @@ local function cinematicStarted()
     if intro and not intro.music then unmuteFiles(intro.files); intro = nil end
     return
   end
-  if intro and not intro.music then intro = nil end -- armed at login: the cinematic is here
+  if intro and not intro.music then intro = nil end -- armed: the cinematic is here
   startIntro(race)
 end
 
@@ -275,20 +261,24 @@ local function watchEvents()
   events:RegisterEvent("LOADING_SCREEN_ENABLED")
   events:RegisterEvent("CINEMATIC_START")
   events:RegisterEvent("CINEMATIC_STOP")
+  events:RegisterEvent("PLAYER_LOGIN")
   events:RegisterEvent("PLAYER_ENTERING_WORLD")
-  events:SetScript("OnEvent", function(_, event, isLogin)
+  events:SetScript("OnEvent", function(_, event)
     if event == "CINEMATIC_START" then
       cinematicStarted()
-    elseif event == "PLAYER_ENTERING_WORLD" then
-      if isLogin then armIntro() end
+    elseif event == "PLAYER_LOGIN" or event == "PLAYER_ENTERING_WORLD" then
+      armIntro()
     elseif event == "CINEMATIC_STOP" then
       -- the intro's lines stop with it (Esc skips the cinematic); a window's line was not part of it
       local head = Q.current()
       if head and head.intro then VoicePlayer.stop() else endIntro() end
+      armIntro() -- a replay (OpeningCinematic) starts silent too
     else
       VoicePlayer.stop()
+      if event ~= "PLAYER_LOGOUT" then armIntro() end
     end
   end)
+  armIntro()
 end
 
 -- Stops the line, the line in chat and the intro, and empties the queue. → true when something was playing or
@@ -539,6 +529,8 @@ function VoicePlayer.init(savedDb)
   WFJ.State.on("voice", function() -- a voice setting changed
     if not WFJ.Settings.get("voice.enabled") then return VoicePlayer.stop() end
     if not WFJ.Settings.get("voice.muteDialog") then VoicePlayer.restoreDialog() end
+    if intro and not intro.music and not playerIntro() then unmuteFiles(intro.files); intro = nil end
+    armIntro()
   end)
   return true
 end
