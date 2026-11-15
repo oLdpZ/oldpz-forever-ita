@@ -360,6 +360,28 @@ def test_the_committed_table_sends_chat_greetings_and_intros_to_their_packs():
     assert voice_packs.pack_of("i-316345", packs, {}).suffix == "01_20"
     # greetings ride with the chat lines: with them Altro is over the limit
     assert voice_packs.pack_of("g-0123456789abcdef", packs, {}).suffix == "Chat"
+    assert voice_packs.pack_of("n-genorcm1-g1", packs, {}).suffix == "Chat"
+
+
+def test_the_pack_of_the_greetings_names_who_greets_and_the_english_files_to_silence():
+    lines = {"n-um-g1": Entry("n-um-g1.mp3", "a" * 16, 0.8)}
+    lua = voice_pack.register_text(lines, {}, hello=({2079: "um", 1992: "uf"}, [700, 701]))
+    assert "  greeters = {\n    [1992] = \"uf\",\n    [2079] = \"um\",\n  }," in lua
+    assert "  hellomute = { 700, 701 }," in lua
+    assert "greeters" not in voice_pack.register_text(lines, {})  # a pack without greetings says nothing
+
+
+def test_the_chat_pack_carries_the_greetings_of_its_voices_only(world):  # noqa: F811 - the fixture
+    vf_rows = [{"key": "n-um-g1", "voice": "um", "speaker": 2079, "it": "Che vuoi?"}]
+    (world.data / "voice" / "hello.jsonl").write_text(
+        "".join(__import__("json").dumps(r) + "\n" for r in vf_rows), encoding="utf-8")
+    (world.data / "voice" / "greeters.jsonl").write_text(
+        '{"creature": 2079, "voice": "um"}\n{"creature": 9, "voice": "nobody"}\n', encoding="utf-8")
+    (world.tmp / "pipeline").mkdir(exist_ok=True)
+    (world.tmp / "pipeline" / "voice_hello_mute.txt").write_text("# files\n700\n701\n", encoding="utf-8")
+    assert voice_ship.hello_of(world.data, {"n-um-g1": Entry("n-um-g1.mp3", "a" * 16, 0.8)}) == (
+        {2079: "um"}, [700, 701])
+    assert voice_ship.hello_of(world.data, {"1-description": Entry("x.mp3", "a" * 16, 1.0)}) is None
 
 
 def test_a_line_in_chat_carries_the_english_files_it_silences():

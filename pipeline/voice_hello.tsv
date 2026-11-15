@@ -1,0 +1,60 @@
+# The short Italian lines an NPC says on a click (g), on goodbye (b) and when clicked again and again (p), in
+# place of the client's English sounds (wfj.dev.voice_hello). race: a profile's race, `*` for every race; a
+# voice says its race's lines first. No word may change with the player's sex (no <a/b>).
+# race	slot	line
+*	g	Salve.
+*	g	Ben trovato.
+*	g	Posso aiutarti?
+*	g	Cosa ti serve?
+*	g	Dimmi pure.
+*	g	Sì?
+*	g	Saluti, viandante.
+*	g	Eccomi.
+*	b	Addio.
+*	b	Buona fortuna.
+*	b	Stammi bene.
+*	b	Alla prossima.
+*	b	Fai buon viaggio.
+*	p	Che c'è ancora?
+*	p	Lasciami in pace!
+*	p	Non ho tempo per questo.
+*	p	Basta così!
+*	p	Smettila di infastidirmi.
+human	g	Che la Luce sia con te.
+human	b	Che la Luce ti guidi.
+dwarf	g	Salute a te!
+dwarf	b	Tieni alta l'ascia!
+dwarf	p	Per la barba di Magni, smettila!
+gnome	g	Oh, ciao ciao!
+gnome	b	Torna presto, eh!
+gnome	p	Sto facendo dei calcoli, non disturbare!
+nightelf	g	Ishnu-alah.
+nightelf	g	Elune sia con te.
+nightelf	b	Che Elune illumini il tuo cammino.
+nightelf	p	La mia pazienza ha un limite.
+orc	g	Lok'tar!
+orc	g	Throm-ka.
+orc	b	Lok'tar ogar!
+orc	b	Combatti con onore.
+orc	p	Non mettermi alla prova!
+troll	g	Ehi, che si dice?
+troll	b	Occhi aperti là fuori.
+troll	p	Mi stai seccando, eh!
+tauren	g	Che la Madre Terra ti protegga.
+tauren	b	Cammina con la Madre Terra.
+tauren	p	La mia pazienza non è infinita.
+scourge	g	Che vuoi?
+scourge	g	Parla.
+scourge	b	Vai pure.
+scourge	p	Non ho tempo per i vivi.
+undead	g	Che vuoi?
+undead	b	Vai pure.
+undead	p	Non ho tempo per i vivi.
+goblin	g	Affari, affari!
+goblin	g	Cosa compri?
+goblin	b	Torna a spendere!
+goblin	p	Il tempo è denaro, e tu me lo stai rubando!
+bloodelf	g	Bal'a dash, malanore.
+bloodelf	b	Che il Sole ti guidi.
+skyborne	g	Che i venti ti siano propizi.
+skyborne	b	Vola alto.

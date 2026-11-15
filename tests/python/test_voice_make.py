@@ -177,6 +177,20 @@ def test_the_prompt_is_english_direction_over_the_italian_transcript(world):
     assert prompts["Uccidi 7 lupi."].startswith("# AUDIO PROFILE: The narrator of a fantasy adventure\n")
 
 
+def test_a_greeting_on_a_click_is_made_in_its_voice_with_its_speaker_s_profile(world):
+    vf.write_rows(world.data / "voice" / "hello.jsonl", [
+        {"key": "n-um-g1", "voice": "um", "speaker": 2079, "it": "Che vuoi?"},
+        {"key": "n-uf-b1", "voice": "uf", "speaker": 1992, "it": "Vai pure."},
+    ])
+    engine = FakeEngine()
+    _gen(world, engine)
+    audio = _audio(world)
+    assert audio["n-um-g1"]["voice"] == "um" and audio["n-uf-b1"]["voice"] == "uf"
+    said = dict(zip(engine.said(), (p for p, _ in engine.calls), strict=True))
+    assert "Undertaker Mordo" in said["Che vuoi?"]  # the profile of the creature the voice was cast to
+    assert "n-um-g1_f" not in audio  # no word changes with the player's sex: one file
+
+
 def test_a_class_line_stays_silent_until_it_has_a_spoken_version(world):
     engine = FakeEngine()
     _gen(world, engine)

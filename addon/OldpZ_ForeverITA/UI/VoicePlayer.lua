@@ -237,6 +237,94 @@ local function armIntro()
   muteFiles(race.files)
 end
 
+-- ---- the greetings on a click and goodbyes -------------------------------------------------------------------
+-- The client plays a short English greeting when an NPC's window opens and a goodbye when it closes (NPCSounds);
+-- while a pack carries the Italian ones those files stay silenced, and the NPC's own voice says ours.
+local HELLO_WAIT = 0.2 -- seconds after a window opens: its own text, voiced, takes the greeting's place
+local BYE_WAIT = 0.3 -- a window closing into another of the same NPC (gossip → quest) says no goodbye
+local ANNOYED_CLICKS, ANNOYED_SPAN = 3, 10 -- that many opens within that many seconds: an annoyed line
+local leaving -- PLAYER_LOGOUT: nothing is silenced again
+local helloMuted -- { file id, … } silenced for the greetings
+local greeting -- { handle } while a greeting plays
+local talking -- the creature whose window is open
+local clicks = {} -- creature id → { time, … } of its window's recent opens
+local closeToken = 0
+
+local function syncHello()
+  local want = WFJ.Voice.helloOn() and WFJ.Voice.helloFiles() or nil
+  if helloMuted and not want then unmuteFiles(helloMuted) end
+  helloMuted = want
+  if want then muteFiles(want) end
+end
+
+local function npcCreature()
+  local guid = Compat.resolve("UnitGUID")
+  return type(guid) == "function" and WFJ.Collector.creatureId(guid("npc")) or nil
+end
+
+local function now()
+  local t = Compat.resolve("GetTime")
+  return type(t) == "function" and t() or 0
+end
+
+local function pick(n) return math.random(n) end
+
+local function sayHello(creature, slot)
+  local path = WFJ.Voice.hello(creature, slot, pick)
+  if not path then return false end
+  local stopSound, play = Compat.resolve("StopSound"), Compat.resolve("PlaySoundFile")
+  if greeting and greeting.handle and type(stopSound) == "function" then stopSound(greeting.handle) end
+  if type(play) ~= "function" then return false end
+  local _, handle = play(path, CHANNEL)
+  greeting = { handle = handle }
+  return true
+end
+
+local function after(delay, fn)
+  local timer = Compat.resolve("C_Timer")
+  if type(timer) == "table" and type(timer.After) == "function" then timer.After(delay, fn) else fn() end
+end
+
+local function windowOpened()
+  if not WFJ.Voice.helloOn() then return end
+  local c = npcCreature()
+  if not c then return end
+  closeToken = closeToken + 1 -- a goodbye on its way is called off: the same talk goes on
+  if talking == c then return end
+  talking = c
+  local t, recent = now(), {}
+  for _, at in ipairs(clicks[c] or {}) do
+    if t - at < ANNOYED_SPAN then recent[#recent + 1] = at end
+  end
+  recent[#recent + 1] = t
+  clicks[c] = recent
+  local slot = #recent >= ANNOYED_CLICKS and "p" or "g"
+  after(HELLO_WAIT, function()
+    if playing or Q.current() then return end -- the window's text is read aloud
+    sayHello(c, slot)
+  end)
+end
+
+local function windowClosed()
+  local c = talking
+  if not c then return end
+  closeToken = closeToken + 1
+  local token = closeToken
+  after(BYE_WAIT, function()
+    if token ~= closeToken then return end
+    talking = nil
+    if WFJ.Voice.helloOn() then sayHello(c, "b") end
+  end)
+end
+
+local OPENS = { "GOSSIP_SHOW", "QUEST_GREETING", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE",
+  "MERCHANT_SHOW", "TRAINER_SHOW", "BANKFRAME_OPENED", "TAXIMAP_OPENED" }
+local CLOSES = { "GOSSIP_CLOSED", "QUEST_FINISHED", "MERCHANT_CLOSED", "TRAINER_CLOSED", "BANKFRAME_CLOSED",
+  "TAXIMAP_CLOSED" }
+local isOpen, isClose = {}, {}
+for _, e in ipairs(OPENS) do isOpen[e] = true end
+for _, e in ipairs(CLOSES) do isClose[e] = true end
+
 local function cinematicStarted()
   introHeard = {}
   local race = playerIntro()
@@ -263,8 +351,14 @@ local function watchEvents()
   events:RegisterEvent("CINEMATIC_STOP")
   events:RegisterEvent("PLAYER_LOGIN")
   events:RegisterEvent("PLAYER_ENTERING_WORLD")
+  for _, e in ipairs(OPENS) do events:RegisterEvent(e) end
+  for _, e in ipairs(CLOSES) do events:RegisterEvent(e) end
   events:SetScript("OnEvent", function(_, event)
-    if event == "CINEMATIC_START" then
+    if isOpen[event] then
+      windowOpened()
+    elseif isClose[event] then
+      windowClosed()
+    elseif event == "CINEMATIC_START" then
       cinematicStarted()
     elseif event == "PLAYER_LOGIN" or event == "PLAYER_ENTERING_WORLD" then
       armIntro()
@@ -274,11 +368,12 @@ local function watchEvents()
       if head and head.intro then VoicePlayer.stop() else endIntro() end
       armIntro() -- a replay (OpeningCinematic) starts silent too
     else
+      if event == "PLAYER_LOGOUT" then leaving = true end
       VoicePlayer.stop()
-      if event ~= "PLAYER_LOGOUT" then armIntro() end
     end
   end)
   armIntro()
+  syncHello()
 end
 
 -- Stops the line, the line in chat and the intro, and empties the queue. → true when something was playing or
@@ -290,6 +385,12 @@ function VoicePlayer.stop()
   had = stopSpeech() or had
   endIntro()
   unmuteFiles()
+  -- the files kept silenced for the whole session (an intro's narration, the English greetings) are silenced again,
+  -- unless the player is leaving: the next load starts from the client's own sounds
+  if not leaving then
+    armIntro()
+    syncHello()
+  end
   VoicePlayer.restoreDialog()
   if had then notify("stop") end
   return had
@@ -523,7 +624,11 @@ function VoicePlayer.init(savedDb)
   WFJ.State.on("lineShown", function(...) pcall(VoicePlayer.onShown, ...) end)
   -- the events (an intro's cinematic among them) are watched from the first pack on, before any line is shown
   if WFJ.Voice.hasPack() then watchEvents() end
-  WFJ.State.on("voicePack", function() pcall(watchEvents) end)
+  WFJ.State.on("voicePack", function()
+    pcall(watchEvents)
+    pcall(armIntro)
+    pcall(syncHello) -- a later pack may bring the greetings
+  end)
   WFJ.State.on("modifier", function(down) if not down then pcall(released) end end)
   WFJ.State.on("enabled", stopUnless)
   WFJ.State.on("voice", function() -- a voice setting changed
@@ -531,6 +636,7 @@ function VoicePlayer.init(savedDb)
     if not WFJ.Settings.get("voice.muteDialog") then VoicePlayer.restoreDialog() end
     if intro and not intro.music and not playerIntro() then unmuteFiles(intro.files); intro = nil end
     armIntro()
+    syncHello()
   end)
   return true
 end

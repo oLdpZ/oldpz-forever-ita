@@ -52,6 +52,7 @@ from wfj.paths import data_root
 
 LAME = ("lame", "-m", "m", "--resample", "22.05", "-b", "32", "--cbr", "-t", "--quiet")
 AUDIO, SPOKEN, BLOCKED = "audio.jsonl", "spoken.jsonl", "blocked.jsonl"
+HELLO = "hello.jsonl"  # the NPCs' greetings on a click and goodbyes (wfj.dev.voice_hello)
 ANY = "any"  # a spoken version both sexes hear
 TRIES = 4  # takes the filter may block before the line goes to the blocked list
 # What plan estimates from: Gemini says about 11 characters of Italian a second, and bills 25 audio tokens a
@@ -217,6 +218,12 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
     names = english_names(root, set(cast))
     spoken = read_spoken(root)
     values = line_values(root, lines, spoken.values())
+    # the NPCs' greetings on a click and goodbyes (wfj.dev.voice_hello): each line names its voice and the
+    # creature whose profile directs it
+    for h in _rows(root / "voice" / HELLO):
+        rows = [*rows, {"key": h["key"], "speaker": int(h["speaker"]), "hello_voice": h["voice"]}]
+        lines[h["key"]] = h["it"]
+    names.update(english_names(root, {int(r["speaker"]) for r in rows if "hello_voice" in r} - set(names)))
     takes: list[Take] = []
     silent: list[tuple[str, str, str]] = []
     for row in rows:
@@ -225,10 +232,17 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
         if it is None:
             continue
         sp = row["speaker"]
-        if isinstance(sp, int) and sp not in cast:
+        if "hello_voice" in row:
+            if row["hello_voice"] not in cfg["roster"]:
+                silent.append((key, "no voice", f"{key}: voice {row['hello_voice']} is not in the roster"))
+                continue
+            who = names.get(sp) or f"Creature {sp}"
+            voices = [(row["hello_voice"], profile_text(who, profiles.get(sp, {})))]
+        elif isinstance(sp, int) and sp not in cast:
             silent.append((key, "no voice", f"creature {sp} has no voice (wfj voice cast)"))
             continue
-        voices = line_voices(row, cast, cfg, names, profiles)
+        else:
+            voices = line_voices(row, cast, cfg, names, profiles)
         vals = values.get(key, ())
         # a spoken version that names the player, or picks a word by sex, is said for each sex too
         said_by_sex = [spoken_for(spoken, key, s, it)[0] for s in voice.SEXES]

@@ -13,7 +13,7 @@ while ours plays. The addon plays a file only when the hash equals the hash of t
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 
 from wfj.emit.lua_writer import lua_string
@@ -87,10 +87,22 @@ def _creature(c: int, v: str | tuple[str, str]) -> str:
 def register_text(
     lines: Mapping[str, Entry], creatures: Mapping[int, str | tuple[str, str]] | None = None,
     folder: str = FOLDER,
+    hello: tuple[Mapping[int, str], Sequence[int]] | None = None,
 ) -> str:
-    """`lines`: {pack key: Entry}; `creatures`: {creature id: voice id or (male, female)}. Written sorted."""
+    """`lines`: {pack key: Entry}; `creatures`: {creature id: voice id or (male, female)}; `hello`, for the
+    pack that holds the greetings on a click (`n-<voice>-<slot><k>`): ({creature: the voice that greets}, the
+    client's English greeting files the addon silences). Written sorted."""
     body = [_line(key, e) for key, e in sorted(lines.items())]
     who = [_creature(c, v) for c, v in sorted((creatures or {}).items())]
+    greet: list[str] = []
+    if hello is not None:
+        greeters, mute = hello
+        greet = [
+            "  greeters = {",
+            *(f"    [{c}] = {lua_string(v)}," for c, v in sorted(greeters.items())),
+            "  },",
+            f"  hellomute = {{ {', '.join(str(f) for f in sorted(mute))} }},",
+        ]
     return "\n".join([
         "-- Generato da wfj voice pack. Non modificare.",
         "-- Un addon principale troppo vecchio non ha la funzione di registrazione: il pacchetto resta muto.",
@@ -104,6 +116,7 @@ def register_text(
         "  creatures = {",
         *who,
         "  },",
+        *greet,
         "})",
         "",
     ])

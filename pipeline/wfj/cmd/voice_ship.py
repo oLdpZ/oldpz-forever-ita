@@ -158,6 +158,24 @@ def creature_voices(
     return out
 
 
+# the client's English greeting files (wfj.dev.voice_hello)
+HELLO_MUTE = Path("pipeline") / "voice_hello_mute.txt"
+
+
+def hello_of(root: Path, lines: Mapping[str, Entry]) -> tuple[dict[int, str], list[int]] | None:
+    """For a pack holding greetings on a click (`n-<voice>-…`): ({creature: voice} for the voices it holds,
+    the English files to silence); None for any other pack."""
+    voices = {k.split("-")[1] for k in lines if k.startswith("n-")}
+    if not voices:
+        return None
+    greeters = {int(r["creature"]): r["voice"] for r in read_rows(root / "voice" / "greeters.jsonl")
+                if r["voice"] in voices}
+    path = root.parent / HELLO_MUTE
+    text = path.read_text(encoding="utf-8").splitlines()
+    mute = [int(x) for x in text if x.strip() and not x.startswith("#")]
+    return greeters, mute
+
+
 def files_of(lines: Mapping[str, Entry]) -> list[str]:
     """Every file name the lines point at, sorted."""
     out: list[str] = []
@@ -236,7 +254,10 @@ def write_pack(root: Path, scope: str, store: Path, out: Path, version: str, t: 
     (dest / f"{t.folder}.toc").write_text(
         voice_pack.toc_text(interface_of(root), version, t.title), encoding="utf-8")
     (dest / "Register.lua").write_text(
-        voice_pack.register_text(t.lines, creature_voices(root, scope, t.lines), t.folder), encoding="utf-8"
+        voice_pack.register_text(
+            t.lines, creature_voices(root, scope, t.lines), t.folder, hello_of(root, t.lines)
+        ),
+        encoding="utf-8",
     )
     (dest / "LEGGIMI.txt").write_text(
         voice_pack.readme_text(len(t.lines), version, t.folder, t.title), encoding="utf-8")

@@ -49,6 +49,10 @@ local lines
 local creatures = {} -- creature id → voice id, or { m = male voice, f = female voice } (a creature shown as both)
 local creatureBy = {} -- creature id → { [pack folder] = its voice }: several packs may carry one creature
 local packs = {} -- pack folder → the number of its lines registered
+-- the greetings on a click and goodbyes: creature id → { voice, folder } of the pack that says them, and pack
+-- folder → the client's English greeting files that pack silences
+local greeters = {}
+local helloMute = {}
 local deps = {}
 
 local function zero()
@@ -167,10 +171,57 @@ function Voice.register(tbl)
       bad = bad + 1
     end
   end
+  for c, g in pairs(greeters) do
+    if g.folder == tbl.folder then greeters[c] = nil end
+  end
+  for c, vid in pairs(type(tbl.greeters) == "table" and tbl.greeters or {}) do
+    if type(c) == "number" and type(vid) == "string" and vid:match("^[%w]+$") then
+      greeters[c] = { voice = vid, folder = tbl.folder }
+    else
+      bad = bad + 1
+    end
+  end
+  helloMute[tbl.folder] = nil
+  if tbl.hellomute ~= nil then
+    if validMute(tbl.hellomute) then helloMute[tbl.folder] = tbl.hellomute else bad = bad + 1 end
+  end
   packs[tbl.folder] = n
   Voice.counts.invalid = Voice.counts.invalid + bad
   recount()
   return n, bad
+end
+
+-- The greetings on a click: on with the voice and its setting, and only with a pack that carries them.
+function Voice.helloOn()
+  local get = deps.setting
+  if type(get) ~= "function" then return false end
+  return get("voice.enabled") and get("voice.hello") and next(helloMute) ~= nil or false
+end
+
+-- → { file id, … }: the client's English greeting files the packs silence (none while greetings are off)
+function Voice.helloFiles()
+  local out = {}
+  for _, ids in pairs(helloMute) do
+    for _, id in ipairs(ids) do out[#out + 1] = id end
+  end
+  return out
+end
+
+-- A creature's greeting (slot "g"), goodbye ("b") or annoyed line ("p"): `pick(n)` → 1..n chooses among the
+-- voice's lines. → path, seconds; nil when the creature has no greeting voice or the line is off.
+function Voice.hello(creature, slot, pick)
+  if not Voice.helloOn() or not lines then return nil end
+  if type(deps.enabled) == "function" and not deps.enabled() then return nil end
+  local g = greeters[creature]
+  if not g then return nil end
+  local found = {}
+  for k = 1, 9 do
+    local e = lines[("n-%s-%s%d"):format(g.voice, slot, k)]
+    if e then found[#found + 1] = e end
+  end
+  if #found == 0 then return nil end
+  local e = found[pick and pick(#found) or 1] or found[1]
+  return "Interface\\AddOns\\" .. e.folder .. "\\Sound\\" .. e.file, e.seconds
 end
 
 -- → { [folder] = lines } of every registered pack (for the settings page and /fita debug)

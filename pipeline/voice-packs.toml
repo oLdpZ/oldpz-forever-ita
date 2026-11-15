@@ -8,7 +8,7 @@
 # files, about 1.25 GB at 290 bytes per character of transcript) for each to stay under about 330 MB.
 # Moving a band boundary moves lines between two packs: both are released again.
 # `prefixes` sends every key that starts so to that pack first: `s-` (an NPC's line in chat) and `g-` (a
-# greeting) to Chat, which keeps Altro under the limit; `i-` (a race intro's line) to 01_20, where a new
+# greeting), with `n-` (a greeting on a click or a goodbye), to Chat, which keeps Altro under the limit; `i-` (a race intro's line) to 01_20, where a new
 # character hears it.
 
 [[pack]]
@@ -40,4 +40,4 @@ other = true
 [[pack]]
 suffix = "Chat"
 title = "saluti e frasi dei PNG"
-prefixes = ["s-", "g-"]
+prefixes = ["s-", "g-", "n-"]
