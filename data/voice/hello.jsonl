@@ -978,6 +978,13 @@
 {"key": "n-garthok-b2", "voice": "garthok", "speaker": 3139, "it": "Combatti con onore."}
 {"key": "n-garthok-p1", "voice": "garthok", "speaker": 3139, "it": "Non mettermi alla prova!"}
 {"key": "n-garthok-p2", "voice": "garthok", "speaker": 3139, "it": "Smettila di infastidirmi."}
+{"key": "n-gavin-g1", "voice": "gavin", "speaker": 1253, "it": "Che la Luce sia con te."}
+{"key": "n-gavin-g2", "voice": "gavin", "speaker": 1253, "it": "Dimmi pure."}
+{"key": "n-gavin-g3", "voice": "gavin", "speaker": 1253, "it": "Sì?"}
+{"key": "n-gavin-b1", "voice": "gavin", "speaker": 1253, "it": "Che la Luce ti guidi."}
+{"key": "n-gavin-b2", "voice": "gavin", "speaker": 1253, "it": "Addio."}
+{"key": "n-gavin-p1", "voice": "gavin", "speaker": 1253, "it": "Smettila di infastidirmi."}
+{"key": "n-gavin-p2", "voice": "gavin", "speaker": 1253, "it": "Che c'è ancora?"}
 {"key": "n-gaxim-g1", "voice": "gaxim", "speaker": 4077, "it": "Oh, ciao ciao!"}
 {"key": "n-gaxim-g2", "voice": "gaxim", "speaker": 4077, "it": "Sì?"}
 {"key": "n-gaxim-g3", "voice": "gaxim", "speaker": 4077, "it": "Saluti, viandante."}
@@ -1111,13 +1118,13 @@
 {"key": "n-gengoblinm2-b2", "voice": "gengoblinm2", "speaker": 2490, "it": "Addio."}
 {"key": "n-gengoblinm2-p1", "voice": "gengoblinm2", "speaker": 2490, "it": "Il tempo è denaro, e tu me lo stai rubando!"}
 {"key": "n-gengoblinm2-p2", "voice": "gengoblinm2", "speaker": 2490, "it": "Smettila di infastidirmi."}
-{"key": "n-gengoblinm3-g1", "voice": "gengoblinm3", "speaker": 2627, "it": "Affari, affari!"}
-{"key": "n-gengoblinm3-g2", "voice": "gengoblinm3", "speaker": 2627, "it": "Cosa compri?"}
-{"key": "n-gengoblinm3-g3", "voice": "gengoblinm3", "speaker": 2627, "it": "Posso aiutarti?"}
-{"key": "n-gengoblinm3-b1", "voice": "gengoblinm3", "speaker": 2627, "it": "Torna a spendere!"}
-{"key": "n-gengoblinm3-b2", "voice": "gengoblinm3", "speaker": 2627, "it": "Buona fortuna."}
-{"key": "n-gengoblinm3-p1", "voice": "gengoblinm3", "speaker": 2627, "it": "Il tempo è denaro, e tu me lo stai rubando!"}
-{"key": "n-gengoblinm3-p2", "voice": "gengoblinm3", "speaker": 2627, "it": "Che c'è ancora?"}
+{"key": "n-gengoblinm3-g1", "voice": "gengoblinm3", "speaker": 2624, "it": "Affari, affari!"}
+{"key": "n-gengoblinm3-g2", "voice": "gengoblinm3", "speaker": 2624, "it": "Cosa compri?"}
+{"key": "n-gengoblinm3-g3", "voice": "gengoblinm3", "speaker": 2624, "it": "Posso aiutarti?"}
+{"key": "n-gengoblinm3-b1", "voice": "gengoblinm3", "speaker": 2624, "it": "Torna a spendere!"}
+{"key": "n-gengoblinm3-b2", "voice": "gengoblinm3", "speaker": 2624, "it": "Buona fortuna."}
+{"key": "n-gengoblinm3-p1", "voice": "gengoblinm3", "speaker": 2624, "it": "Il tempo è denaro, e tu me lo stai rubando!"}
+{"key": "n-gengoblinm3-p2", "voice": "gengoblinm3", "speaker": 2624, "it": "Che c'è ancora?"}
 {"key": "n-genhumanf1-g1", "voice": "genhumanf1", "speaker": 342, "it": "Che la Luce sia con te."}
 {"key": "n-genhumanf1-g2", "voice": "genhumanf1", "speaker": 342, "it": "Sì?"}
 {"key": "n-genhumanf1-g3", "voice": "genhumanf1", "speaker": 342, "it": "Saluti, viandante."}

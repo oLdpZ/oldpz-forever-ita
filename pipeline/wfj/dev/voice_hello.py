@@ -9,8 +9,10 @@ Writes data/voice/hello.jsonl (the lines: key `n-<voice>-<slot><k>`, voice, spea
 data/voice/greeters.jsonl (creature → the voice that greets) and pipeline/voice_hello_mute.txt (the English
 files). The lines come from pipeline/voice_hello.tsv (`race`, `slot` g/b/p, line; race `*` for every race).
 
-An NPC that opens a window (npc_flags) greets with its own voice (data/voice/voices.jsonl); one without
-a voice with the voice most NPCs of its voice set have. A set no voiced NPC uses keeps its English files.
+An NPC that opens a window (npc_flags), and a humanoid that opens none, greets with its own voice
+(data/voice/voices.jsonl); one without a voice with the voice most NPCs of its voice set have; one of a set no
+voiced NPC uses with the generic voice of its race and sex (voice.toml's cast rows, from its display).
+A set none of whose NPCs gets a voice keeps its English files.
 """
 
 from __future__ import annotations
@@ -26,8 +28,12 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from wfj.cmd import voice_cast
+from wfj.core import casting
 from wfj.core.hashing import key as hash_key
+from wfj.io import client_tables
 
+HUMANOID = 7  # creature_template.type
 SLOTS = (("g", 3), ("b", 2), ("p", 2))  # greeting, goodbye, annoyed: how many lines each voice says
 
 
@@ -67,7 +73,9 @@ def plan(  # noqa: PLR0913 - the tables are injected for the tests
     sets: Mapping[int, tuple[int, ...]],
     kits: Mapping[int, Sequence[int]],
     phrases: Mapping[str, Mapping[str, list[str]]],
+    fallback: Mapping[int, str] | None = None,
 ) -> Plan:
+    """`fallback`: creature → its race and sex's generic voice, for an NPC of a set no voiced one uses."""
     by_set: dict[int, Counter[str]] = defaultdict(Counter)
     for c, s in greeters:
         if c in cast:
@@ -78,6 +86,8 @@ def plan(  # noqa: PLR0913 - the tables are injected for the tests
         v = cast.get(c)
         if v is None and by_set[s]:
             v = min(by_set[s].items(), key=lambda kv: (-kv[1], kv[0]))[0]
+        if v is None and fallback:
+            v = fallback.get(c)
         if v is not None:
             who[c] = v
             covered.add(s)
@@ -115,12 +125,26 @@ def main(argv: Sequence[str] | None = None) -> int:
     root = Path(a.root)
     db = sqlite3.connect(a.vmangos)
     rows = db.execute(
-        "SELECT t.entry, t.npc_flags, t.display_id1 FROM creature_template t"
+        "SELECT t.entry, t.npc_flags, t.display_id1, t.type FROM creature_template t"
         " JOIN (SELECT entry, MAX(patch) AS patch FROM creature_template GROUP BY entry) m"
         " ON t.entry = m.entry AND t.patch = m.patch"
     ).fetchall()
     sound_of = {int(r["ID"]): int(r["NPCSoundID"] or 0) for r in _csv(Path(a.displays))}
-    greeters = [(e, sound_of[d]) for e, flags, d in rows if flags and sound_of.get(d)]
+    # an NPC that opens a window, and a humanoid that opens none (selected, it greets): a beast's or a
+    # critter's voice set holds its cries, never words
+    greeters = [
+        (e, sound_of[d]) for e, flags, d, kind in rows if (flags or kind == HUMANOID) and sound_of.get(d)
+    ]
+    displays, _ = client_tables.read_displays(Path(a.displays).parent)
+    cast_cfg = voice_cast.load_config(root / "pipeline/voice.toml")["cast"]
+    fallback: dict[int, str] = {}
+    for e, _flags, d, _kind in rows:
+        shown = displays.get(d)
+        if shown is None or not shown.race:  # a murloc cub, a peasant's own model: no race, no generic voice
+            continue
+        got =casting.cast_one({"creature": e, "race": shown.race, "gender": shown.gender}, cast_cfg)
+        if got:
+            fallback[e] = got[0]
     sets = {int(r["ID"]): tuple(int(r[f"SoundID_{i}"]) for i in range(3)) for r in _csv(Path(a.npc_sounds))}
     kits: dict[int, list[int]] = defaultdict(list)
     for r in _csv(Path(a.sound_kits)):
@@ -128,7 +152,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     cast = {int(r["creature"]): r["voice"] for r in _jsonl(root / "data/voice/voices.jsonl")}
     profiles = _jsonl(root / "data/voice/profiles.jsonl")
     races = {int(r["creature"]): r["race"] for r in profiles if r.get("race")}
-    result = plan(greeters, cast, races, sets, kits, read_phrases(root / "pipeline/voice_hello.tsv"))
+    for e, _flags, d, _kind in rows:
+        shown = displays.get(d)
+        if e not in races and shown is not None and shown.race:
+            races[e] = shown.race
+    phrases = read_phrases(root / "pipeline/voice_hello.tsv")
+    result = plan(greeters, cast, races, sets, kits, phrases, fallback)
     (root / "data/voice/hello.jsonl").write_text(
         "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in result.lines), encoding="utf-8")
     (root / "data/voice/greeters.jsonl").write_text(

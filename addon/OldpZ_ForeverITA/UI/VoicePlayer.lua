@@ -285,23 +285,80 @@ local function after(delay, fn)
   if type(timer) == "table" and type(timer.After) == "function" then timer.After(delay, fn) else fn() end
 end
 
-local function windowOpened()
-  if not WFJ.Voice.helloOn() then return end
-  local c = npcCreature()
-  if not c then return end
-  closeToken = closeToken + 1 -- a goodbye on its way is called off: the same talk goes on
-  if talking == c then return end
-  talking = c
+-- One more click on `c`: → "p" (annoyed) on the third within the span, else "g"
+local function clickSlot(c)
   local t, recent = now(), {}
   for _, at in ipairs(clicks[c] or {}) do
     if t - at < ANNOYED_SPAN then recent[#recent + 1] = at end
   end
   recent[#recent + 1] = t
   clicks[c] = recent
-  local slot = #recent >= ANNOYED_CLICKS and "p" or "g"
+  return #recent >= ANNOYED_CLICKS and "p" or "g"
+end
+
+local near -- the selected NPC that opens no window, greeted: { creature, token }
+local nearToken = 0
+
+local function windowOpened()
+  if not WFJ.Voice.helloOn() then return end
+  local c = npcCreature()
+  if not c then return end
+  closeToken = closeToken + 1 -- a goodbye on its way is called off: the same talk goes on
+  if near and near.creature == c then near = nil end -- the window's goodbye is the one said
+  if talking == c then return end
+  talking = c
+  local slot = clickSlot(c)
   after(HELLO_WAIT, function()
     if playing or Q.current() then return end -- the window's text is read aloud
     sayHello(c, slot)
+  end)
+end
+
+-- An NPC that opens no window (a quest giver with nothing left, a guard) sends no event on a click: its
+-- selection greets, once the click had the time to open a window (whose greeting then goes instead), and letting
+-- it go or walking away says goodbye.
+local TARGET_WAIT = 0.4 -- seconds after the selection: a right click's window opens within it
+local NEAR_POLL = 0.5 -- seconds between the checks that the player is still by the NPC
+
+local function targetCreature()
+  local guid = Compat.resolve("UnitGUID")
+  local c = type(guid) == "function" and WFJ.Collector.creatureId(guid("target")) or nil
+  if not c then return nil end
+  local canAttack = Compat.resolve("UnitCanAttack")
+  if type(canAttack) == "function" and canAttack("player", "target") then return nil end
+  return c
+end
+
+local function leaveNear()
+  local n = near
+  near = nil
+  if n and WFJ.Voice.helloOn() then sayHello(n.creature, "b") end
+end
+
+local function watchNear(token)
+  after(NEAR_POLL, function()
+    if not near or near.token ~= token then return end
+    local inRange = Compat.resolve("CheckInteractDistance")
+    if type(inRange) == "function" then
+      local ok, close = pcall(inRange, "target", 3)
+      if ok and not close then return leaveNear() end
+    end
+    watchNear(token)
+  end)
+end
+
+local function targetChanged()
+  local c = WFJ.Voice.helloOn() and targetCreature() or nil
+  if near and near.creature ~= c then leaveNear() end
+  if not c or talking == c or (near and near.creature == c) then return end
+  nearToken = nearToken + 1
+  local token = nearToken
+  after(TARGET_WAIT, function()
+    if token ~= nearToken or talking == c or targetCreature() ~= c then return end
+    if playing or Q.current() then return end
+    if not sayHello(c, clickSlot(c)) then return end
+    near = { creature = c, token = token }
+    watchNear(token)
   end)
 end
 
@@ -356,6 +413,7 @@ local function watchEvents()
   events:RegisterEvent("CINEMATIC_STOP")
   events:RegisterEvent("PLAYER_LOGIN")
   events:RegisterEvent("PLAYER_ENTERING_WORLD")
+  events:RegisterEvent("PLAYER_TARGET_CHANGED")
   for _, e in ipairs(OPENS) do events:RegisterEvent(e) end
   for _, e in ipairs(CLOSES) do events:RegisterEvent(e) end
   events:SetScript("OnEvent", function(_, event)
@@ -363,6 +421,8 @@ local function watchEvents()
       windowOpened()
     elseif isClose[event] then
       windowClosed()
+    elseif event == "PLAYER_TARGET_CHANGED" then
+      targetChanged()
     elseif event == "CINEMATIC_START" then
       cinematicStarted()
     elseif event == "PLAYER_LOGIN" or event == "PLAYER_ENTERING_WORLD" then

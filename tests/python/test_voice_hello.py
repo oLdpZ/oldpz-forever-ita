@@ -34,6 +34,16 @@ def test_a_set_no_voiced_npc_uses_stays_english():
     assert p.mute == [700, 701, 710, 720]  # every file of the covered set, sorted
 
 
+def test_an_npc_of_a_set_no_voiced_npc_uses_greets_with_its_race_s_generic_voice():
+    p = plan(fallback={4: "gengnomem1"}, races={1: "orc", 2: "orc", 3: "orc", 4: "gnome"})
+    assert p.greeters[4] == "gengnomem1"
+    assert 800 in p.mute and 810 in p.mute
+    assert {r["key"] for r in p.lines if r["voice"] == "gengnomem1"} >= {"n-gengnomem1-g1", "n-gengnomem1-p2"}
+    # a generic voice never outvotes a set's own: NPC 5 of set 7 still gets the set's most common voice
+    p = plan(greeters=[(1, 7), (5, 7)], fallback={5: "gengnomem1"})
+    assert p.greeters[5] == "genorcm1"
+
+
 def test_each_voice_says_three_greetings_two_goodbyes_two_annoyed_lines_its_race_s_first():
     p = plan()
     lines = {r["key"]: r for r in p.lines}

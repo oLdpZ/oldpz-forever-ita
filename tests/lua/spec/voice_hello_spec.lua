@@ -99,6 +99,56 @@ describe("greetings on a click", function()
     assert.are.equal(0, #v.sounds)
   end)
 
+  -- an NPC that opens no window (no quest left, a guard) sends no event on a click: its selection greets
+  local function select(unit)
+    Stub.units.target = unit
+    Stub.fireAll("PLAYER_TARGET_CHANGED")
+  end
+  local NPC = { name = "Somebody", guid = "Creature-0-4372-0-1-3233-0000ABCDEF" }
+
+  it("greets an NPC that opens no window when it is selected, says goodbye when it is let go", function()
+    select(NPC)
+    Stub.fireTimers(0.4)
+    assert.are.equal(path("n-vx-g1"), last().path)
+    select(nil)
+    assert.are.equal(path("n-vx-b1"), last().path)
+    assert.are.equal(2, #v.sounds)
+  end)
+
+  it("says goodbye when the player walks away from the NPC still selected", function()
+    select(NPC)
+    Stub.fireTimers(0.4)
+    Stub.fireTimers(0.5) -- still near
+    assert.are.equal(1, #v.sounds)
+    _G.CheckInteractDistance = function() return false end
+    Stub.fireTimers(0.5)
+    _G.CheckInteractDistance = nil
+    assert.are.equal(path("n-vx-b1"), last().path)
+    select(nil)
+    assert.are.equal(2, #v.sounds) -- one goodbye
+  end)
+
+  it("lets the window greet when the click opens one, and says one goodbye", function()
+    select(NPC)
+    Stub.fireAll("MERCHANT_SHOW")
+    Stub.fireTimers(0.2)
+    Stub.fireTimers(0.4)
+    assert.are.equal(1, #v.sounds)
+    Stub.fireAll("MERCHANT_CLOSED")
+    Stub.fireTimers(0.3)
+    select(nil)
+    assert.are.equal(2, #v.sounds)
+    assert.are.equal(path("n-vx-b1"), last().path)
+  end)
+
+  it("never greets an NPC the player can attack", function()
+    _G.UnitCanAttack = function() return true end
+    select(NPC)
+    Stub.fireTimers(0.4)
+    _G.UnitCanAttack = nil
+    assert.are.equal(0, #v.sounds)
+  end)
+
   it("gives the English back and says nothing when greetings are switched off", function()
     WFJ.Settings.set("voice.hello", false)
     WFJ.State.fire("voice")
