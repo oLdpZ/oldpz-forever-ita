@@ -353,12 +353,13 @@ def test_a_bad_prefix_is_refused(change, why):
         voice_packs.parse_packs(PREFIXED.replace(*change))
 
 
-def test_the_committed_table_sends_chat_and_intros_to_their_packs():
+def test_the_committed_table_sends_chat_greetings_and_intros_to_their_packs():
     pipeline = Path(__file__).resolve().parents[2] / "pipeline"
     packs = voice_packs.parse_packs((pipeline / "voice-packs.toml").read_text(encoding="utf-8"))
     assert voice_packs.pack_of("s-0123456789abcdef", packs, {}).suffix == "Chat"
     assert voice_packs.pack_of("i-316345", packs, {}).suffix == "01_20"
-    assert voice_packs.pack_of("g-0123456789abcdef", packs, {}).suffix == "Altro"
+    # greetings ride with the chat lines: with them Altro is over the limit
+    assert voice_packs.pack_of("g-0123456789abcdef", packs, {}).suffix == "Chat"
 
 
 def test_a_line_in_chat_carries_the_english_files_it_silences():

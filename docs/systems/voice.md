@@ -124,10 +124,10 @@ The whole game (`--scope tutto`, about 17,400 files, 1.25 GB) does not fit one p
 | `OldpZ_ForeverITA_Voce_21_40` | quests of level 21-40 | 2,224 lines, 3,293 files, 17.4 h, ~240 MB |
 | `OldpZ_ForeverITA_Voce_41_55` | quests of level 41-55 | 1,883 lines, 2,754 files, 15.6 h, ~214 MB |
 | `OldpZ_ForeverITA_Voce_56_60` | quests of level 56 and up (level 60 alone is ~180 MB) | 2,221 lines, 3,433 files, 17.0 h, ~235 MB |
-| `OldpZ_ForeverITA_Voce_Altro` | book pages (`b-…`, ~120 MB), gossip (`g-…`, ~62 MB), quests with no known level (~147 MB) | 3,326 lines, 4,252 files, 23.8 h, ~328 MB |
-| `OldpZ_ForeverITA_Voce_Chat` | NPC lines in chat (`s-…`) | measured at the first plan |
+| `OldpZ_ForeverITA_Voce_Altro` | book pages (`b-…`), quests with no known level | built: 2,558 lines, 3,083 files, 295.9 MB |
+| `OldpZ_ForeverITA_Voce_Chat` | NPC lines in chat (`s-…`) and greetings (`g-…`) | built: 3,982 lines, 6,537 files, 212.6 MB |
 
-The race intros (`i-…`) go to `01_20`, where a new character hears them. A pack's `prefixes` (voice-packs.toml) take every key that starts so before the level bands are looked at.
+Greetings moved from `Altro` to `Chat` once every NPC's greeting was voiced: with them `Altro` was 451.7 MB, over the 420 MB limit. The race intros (`i-…`) go to `01_20`, where a new character hears them. A pack's `prefixes` (voice-packs.toml) take every key that starts so before the level bands are looked at.
 
 The estimate is the plan's transcripts at 290 bytes per character (13.8 characters a second at 4,016 bytes a second, measured on the 1,700 files of `data/voice/audio.jsonl`), every take counted: female and other-voice takes too.
 
