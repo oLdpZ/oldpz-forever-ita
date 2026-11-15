@@ -1,0 +1,1 @@
+{"id": 276089, "field": "name", "it": "Il Condannato", "status": "trusted", "checks": [], "provenance": {"class": "machine", "model": "claude-opus-5-5", "source": "draft-c26-sg15@2026-11-15", "imported": "2026-11-15"}, "english": {"hash": "340d1bf676b86942", "src": "collector@1.60.1.70938"}, "reasons": [], "conflicts": []}

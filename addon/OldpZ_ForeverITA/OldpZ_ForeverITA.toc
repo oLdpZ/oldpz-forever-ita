@@ -541,10 +541,12 @@ Data\Unit\Unit_0265.lua
 Data\Unit\Unit_0266.lua
 Data\Unit\Unit_0267.lua
 Data\Unit\Unit_0268.lua
+Data\Unit\Unit_0270.lua
 Data\Unit\Unit_0271.lua
 Data\Unit\Unit_0272.lua
 Data\Unit\Unit_0274.lua
 Data\Unit\Unit_0275.lua
+Data\Unit\Unit_0276.lua
 Data\Unit\Unit_0277.lua
 Data\Gossip\Gossip_00.lua
 Data\Gossip\Gossip_01.lua
