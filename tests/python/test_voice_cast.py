@@ -252,8 +252,14 @@ def test_load_config_gives_the_roster_the_engine_reads(tmp_path):
     cfg = voice_cast.load_config(_toml(tmp_path / "voice.toml"))
     assert cfg["roster"]["um"] == {"gemini_voice": "Algenib", "model": "gemini-3.1-flash-tts-preview",
                                    "notes": "Raspy and dry.", "fits": "undead male", "project": 1,
-                                   "pitch": 0}
-    two = _toml(tmp_path / "two.toml", '[roster.d]\nvoice = "voice_abc"\ndesign = "An old man."\nproject = 2\n'
+                                   "pitch": 0, "tempo": 1}
+    quick = _toml(tmp_path / "quick.toml", '[roster.d]\nvoice = "Kore"\nnotes = "Slow."\ntempo = 1.12\n')
+    assert voice_cast.load_config(quick)["roster"]["d"]["tempo"] == 1.12
+    for tempo in ("2", "0.5", "true", '"1.1"'):
+        off = _toml(tmp_path / "off.toml", f'[roster.d]\nvoice = "Kore"\nnotes = "Slow."\ntempo = {tempo}\n')
+        with pytest.raises(ValueError, match="tempo must be a number from 0.8 to 1.3"):
+            voice_cast.load_config(off)
+    two =_toml(tmp_path / "two.toml", '[roster.d]\nvoice = "voice_abc"\ndesign = "An old man."\nproject = 2\n'
                                        'notes = "Slow."\n')
     assert voice_cast.load_config(two)["roster"]["d"]["project"] == 2
     deep = _toml(tmp_path / "deep.toml", '[roster.d]\nvoice = "Kore"\nnotes = "Slow."\npitch = -2\n')

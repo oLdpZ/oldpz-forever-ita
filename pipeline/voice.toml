@@ -4414,6 +4414,7 @@ notes = "Airy and otherworldly, natural pace."
 fits = "forest wisp, messenger of Malfurion"
 
 # --- designed voices (3.8): the narrators of the race intro cinematics (voce-5), one per race
+# tempo: the Italian takes longer than the English the cinematic is timed to, so it is said a little quicker
 
 [roster.narratorhuman]
 voice = "voice_08ss60x92onp"
@@ -4421,6 +4422,7 @@ project = 4
 design = "A mature human man, speaks Italian: noble, resonant and stirring, the storyteller of a proud kingdom, fantasy."
 notes = "Solemn and stirring, measured natural pace."
 fits = "narrator of the human intro cinematic"
+tempo = 1.12
 
 [roster.narratordwarf]
 voice = "voice_ide8bs8bazcm"
@@ -4428,6 +4430,7 @@ project = 4
 design = "A mature dwarf man, speaks Italian: deep, gravelly and proud, a hearty storyteller of mountain halls, fantasy."
 notes = "Proud and hearty, measured natural pace."
 fits = "narrator of the dwarf intro cinematic"
+tempo = 1.12
 
 [roster.narratorgnome]
 voice = "voice_96tqi79o7t67"
@@ -4435,6 +4438,7 @@ project = 4
 design = "An adult gnome man, speaks Italian: bright, quick and earnest, a clever and lively storyteller, fantasy."
 notes = "Earnest and lively, natural pace."
 fits = "narrator of the gnome intro cinematic"
+tempo = 1.12
 
 [roster.narratornightelf]
 voice = "voice_oeh4wiihaxom"
@@ -4442,6 +4446,7 @@ project = 4
 design = "A mature night elf woman, speaks Italian: serene, airy and ancient, a graceful and solemn storyteller, fantasy."
 notes = "Serene and solemn, measured natural pace."
 fits = "narrator of the night elf intro cinematic"
+tempo = 1.12
 
 [roster.narratororc]
 voice = "voice_s3u3izlb17g7"
@@ -4449,6 +4454,7 @@ project = 4
 design = "A mature orc man, speaks Italian: deep, rough and powerful, a proud warrior telling his people's story, fantasy."
 notes = "Proud and grave, measured natural pace."
 fits = "narrator of the orc intro cinematic"
+tempo = 1.12
 
 [roster.narratortauren]
 voice = "voice_qb9llr7w45nx"
@@ -4456,6 +4462,7 @@ project = 4
 design = "An old tauren man, speaks Italian: low, warm and earthy, a calm and wise storyteller of the plains, fantasy."
 notes = "Calm and wise, measured natural pace."
 fits = "narrator of the tauren intro cinematic"
+tempo = 1.12
 
 [roster.narratortroll]
 voice = "voice_ofui0j4mut0r"
@@ -4463,6 +4470,7 @@ project = 4
 design = "An adult troll man, speaks Italian: husky, rhythmic and sly, a jungle storyteller with a lilting cadence, fantasy."
 notes = "Sly and rhythmic, natural pace."
 fits = "narrator of the troll intro cinematic"
+tempo = 1.12
 
 [roster.narratorundead]
 voice = "voice_o959pldx4qnn"
@@ -4470,6 +4478,7 @@ project = 4
 design = "An undead man, speaks Italian: hollow, cold and rasping, a bitter and grim storyteller, dark fantasy."
 notes = "Cold and bitter, measured natural pace."
 fits = "narrator of the Forsaken intro cinematic"
+tempo = 1.12
 
 [roster.narratorskyborne]
 voice = "voice_l381gicm3m41"

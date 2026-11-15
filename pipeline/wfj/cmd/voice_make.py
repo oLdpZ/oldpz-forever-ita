@@ -53,6 +53,9 @@ from wfj.paths import data_root
 LAME = ("lame", "-m", "m", "--resample", "22.05", "-b", "32", "--cbr", "-t", "--quiet")
 AUDIO, SPOKEN, BLOCKED = "audio.jsonl", "spoken.jsonl", "blocked.jsonl"
 HELLO = "hello.jsonl"  # the NPCs' greetings on a click and goodbyes (wfj.dev.voice_hello)
+# A greeting is a word or two: too little for the model to tell its language by, so it would say it with an
+# English accent. Its notes say the language.
+HELLO_NOTES = "This short line is Italian: say it as a native Italian speaker, with Italian pronunciation."
 ANY = "any"  # a spoken version both sexes hear
 TRIES = 4  # takes the filter may block before the line goes to the blocked list
 # What plan estimates from: Gemini says about 11 characters of Italian a second, and bills 25 audio tokens a
@@ -68,9 +71,10 @@ DOLLARS_PER_MILLION_TOKENS = 20.0
 @dataclass(frozen=True)
 class Take:
     """One file to make, and the prompt that makes it. `project` is the one whose key reaches its voice;
-    `pitch` the semitones the take is moved by when encoded. `fingerprint` is what the engine was asked for
-    (the kept WAV, the blocked list, a batch); `file_fingerprint` what the file is made from, the pitch too:
-    a new pitch encodes the kept take again, it buys no new one."""
+    `pitch` the semitones the take is moved by when encoded, `tempo` how much quicker it is made.
+    `fingerprint` is what the engine was asked for (the kept WAV, the blocked list, a batch);
+    `file_fingerprint` what the file is made from, the pitch and the tempo too: a new one encodes the kept
+    take again, it buys no new one."""
 
     job: voice.Job
     it: str
@@ -80,10 +84,12 @@ class Take:
     fingerprint: str
     project: int = 1
     pitch: float = 0
+    tempo: float = 1
 
     @property
     def file_fingerprint(self) -> str:
-        return f"{self.fingerprint}|pitch {self.pitch:g}" if self.pitch else self.fingerprint
+        fp = f"{self.fingerprint}|pitch {self.pitch:g}" if self.pitch else self.fingerprint
+        return f"{fp}|tempo {self.tempo:g}" if self.tempo != 1 else fp
 
 
 @dataclass
@@ -257,19 +263,20 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
             for n, (vid, profile) in enumerate(voices):
                 stem = (key if n == 0 else f"{key}_{vid}") + tail
                 r = cfg["roster"][vid]
+                notes = f"{r['notes']} {HELLO_NOTES}" if "hello_voice" in row else r["notes"]
                 try:
                     plain = voice.speech_text(it, key, sex, vals, said)
                     text = voice.respell(plain, cfg.get("pronounce", {}))
                     named = profile.split("; ", 1)[0] if isinstance(sp, int) else ""
-                    prompt = build_prompt(stem, profile, r["notes"], text, named)
+                    prompt = build_prompt(stem, profile, notes, text, named)
                 except voice.VoiceError as e:
                     silent.append((stem, "refused", str(e)))
                     continue
                 respelled = text if text != plain else None
                 words = voice.text_hash(it, vals, said, respelled)
-                fp = voice.fingerprint(words, vid, r["gemini_voice"], r["model"], r["notes"], sex, profile)
+                fp = voice.fingerprint(words, vid, r["gemini_voice"], r["model"], notes, sex, profile)
                 takes.append(Take(voice.Job(stem, key, vid, sex), it, text, prompt, r["gemini_voice"], fp,
-                                  r.get("project", 1), r.get("pitch", 0)))
+                                  r.get("project", 1), r.get("pitch", 0), r.get("tempo", 1)))
     return Survey(takes, silent)
 
 
@@ -460,10 +467,30 @@ def to_mp3(wav: Path, out: Path) -> None:
 
 to_mp3.needs_lame = True  # type: ignore[attr-defined]  # the one encoder that runs lame
 
-def shift_pitch(wav: Path, semitones: float, out: Path) -> None:
-    """`wav` moved by `semitones`, same length, into `out` (ffmpeg's rubberband: -2 is a deeper voice)."""
+def shift_pitch(wav: Path, semitones: float, out: Path, tempo: float = 1.0) -> None:
+    """`wav` moved by `semitones` and made `tempo` times quicker, its pitch kept, into `out` (ffmpeg's
+    rubberband: -2 is a deeper voice, 1.1 a tenth quicker)."""
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-af",
-                    f"rubberband=pitch={2 ** (semitones / 12):.6f}", str(out)], check=True)
+                    f"rubberband=pitch={2 ** (semitones / 12):.6f}:tempo={tempo:.6f}", str(out)], check=True)
+
+
+def encode_take(
+    t: Take, wav: Path, mp3: Path, encode: Callable[[Path, Path], None], shift: Callable[..., None]
+) -> None:
+    """The kept take `wav` as the file `mp3`, moved by its pitch and tempo when it has one: the kept take
+    stays as the engine made it, only the file is moved."""
+    if not t.pitch and t.tempo == 1:
+        encode(wav, mp3)
+        return
+    moved = wav.with_name(f"{wav.stem}.pitch.wav")
+    try:
+        if t.tempo != 1:
+            shift(wav, t.pitch, moved, tempo=t.tempo)
+        else:
+            shift(wav, t.pitch, moved)
+        encode(moved, mp3)
+    finally:
+        moved.unlink(missing_ok=True)
 
 
 def make_engine(key: str, model: str) -> gemini.Engine:
@@ -566,16 +593,7 @@ def generate(  # noqa: PLR0913, PLR0915 - the engine, encoder, log and sleep are
                 raise gemini.EngineError(f"{stem}: the engine's audio is not a readable WAV ({e})") from None
             if kept is None:
                 keep_take(store, t, wav)
-            if t.pitch:
-                # the kept take stays as the engine made it: only the file is moved
-                moved = wav_path.with_name(f"{stem}.pitch.wav")
-                try:
-                    shift(wav_path, t.pitch, moved)
-                    encode(moved, mp3)
-                finally:
-                    moved.unlink(missing_ok=True)
-            else:
-                encode(wav_path, mp3)
+            encode_take(t, wav_path, mp3, encode, shift)
             audio[stem] = record_row(t, mp3, secs, {"source": source, "imported": today})
             blocked.pop(stem, None)
             out["made"] += 1

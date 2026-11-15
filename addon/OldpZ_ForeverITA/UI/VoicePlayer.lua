@@ -296,17 +296,21 @@ local function clickSlot(c)
   return #recent >= ANNOYED_CLICKS and "p" or "g"
 end
 
-local near -- the selected NPC that opens no window, greeted: { creature, token }
+local near -- the selected NPC, greeted on the selection: { creature, token, at }
 local nearToken = 0
+local GREETED_SPAN = 3 -- seconds: a window opening this soon after the selection's greeting says none again
 
 local function windowOpened()
   if not WFJ.Voice.helloOn() then return end
   local c = npcCreature()
   if not c then return end
   closeToken = closeToken + 1 -- a goodbye on its way is called off: the same talk goes on
-  if near and near.creature == c then near = nil end -- the window's goodbye is the one said
+  -- the click that selected the NPC greeted it already: the window's goodbye is the one said
+  local greeted = near and near.creature == c and now() - near.at < GREETED_SPAN
+  if near and near.creature == c then near = nil end
   if talking == c then return end
   talking = c
+  if greeted then return end
   local slot = clickSlot(c)
   after(HELLO_WAIT, function()
     if playing or Q.current() then return end -- the window's text is read aloud
@@ -315,9 +319,8 @@ local function windowOpened()
 end
 
 -- An NPC that opens no window (a quest giver with nothing left, a guard) sends no event on a click: its
--- selection greets, once the click had the time to open a window (whose greeting then goes instead), and letting
--- it go or walking away says goodbye.
-local TARGET_WAIT = 0.4 -- seconds after the selection: a right click's window opens within it
+-- selection greets at once (a window the click then opens greets no more), and letting it go or walking away
+-- says goodbye.
 local NEAR_POLL = 0.5 -- seconds between the checks that the player is still by the NPC
 
 local function targetCreature()
@@ -351,15 +354,11 @@ local function targetChanged()
   local c = WFJ.Voice.helloOn() and targetCreature() or nil
   if near and near.creature ~= c then leaveNear() end
   if not c or talking == c or (near and near.creature == c) then return end
+  if playing or Q.current() then return end
+  if not sayHello(c, clickSlot(c)) then return end
   nearToken = nearToken + 1
-  local token = nearToken
-  after(TARGET_WAIT, function()
-    if token ~= nearToken or talking == c or targetCreature() ~= c then return end
-    if playing or Q.current() then return end
-    if not sayHello(c, clickSlot(c)) then return end
-    near = { creature = c, token = token }
-    watchNear(token)
-  end)
+  near = { creature = c, token = nearToken, at = now() }
+  watchNear(nearToken)
 end
 
 local function windowClosed()
@@ -505,6 +504,11 @@ local function play(item)
   local playSoundFile = Compat.resolve("PlaySoundFile")
   if type(playSoundFile) ~= "function" then return false end
   muteDialog()
+  if greeting and greeting.handle then -- the selection's greeting gives way to the window's text
+    local stopSound = Compat.resolve("StopSound")
+    if type(stopSound) == "function" then stopSound(greeting.handle) end
+    greeting = nil
+  end
   -- the intro's English narration goes quiet before our narrator starts, and stays so until the cinematic ends
   if item.intro then startIntro(item.intro) end
   local willPlay, handle = playSoundFile(item.path, CHANNEL)

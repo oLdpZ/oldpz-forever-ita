@@ -189,6 +189,10 @@ def test_a_greeting_on_a_click_is_made_in_its_voice_with_its_speaker_s_profile(w
     said = dict(zip(engine.said(), (p for p, _ in engine.calls), strict=True))
     assert "Undertaker Mordo" in said["Che vuoi?"]  # the profile of the creature the voice was cast to
     assert "n-um-g1_f" not in audio  # no word changes with the player's sex: one file
+    # a line of a word or two gives the model no language to go by: the notes name it
+    assert voice_make.HELLO_NOTES in said["Che vuoi?"]
+    assert voice_make.HELLO_NOTES not in "".join(p for p, _ in engine.calls if "Che vuoi?" not in p
+                                                 and "Vai pure." not in p)
 
 
 def test_a_class_line_stays_silent_until_it_has_a_spoken_version(world):
@@ -342,6 +346,27 @@ def test_a_pitch_encodes_the_kept_takes_again_without_the_engine(world):
     assert sorted(moved) == sorted((f"{s}.wav", -2) for s in mordo)
     assert all(_audio(world)[s]["fingerprint"].endswith("|pitch -2") for s in mordo)
     assert not list((world.store / "wav").glob("*.pitch.wav"))
+    assert voice_make.plan(world.data, cfg, "tirisfal", world.store)["to_make"] == 0
+
+
+def test_a_tempo_encodes_the_kept_takes_again_quicker_without_the_engine(world):
+    _gen(world, FakeEngine())
+    world.config.write_text(TOML.replace('notes = "Raspy and dry."', 'notes = "Raspy and dry."\ntempo = 1.12'),
+                            encoding="utf-8")
+    cfg = voice_cast.load_config(world.config)
+    moved = []
+
+    def shift(wav, semitones, out, tempo=1.0):
+        moved.append((wav.name, semitones, tempo))
+        out.write_bytes(wav.read_bytes())
+
+    engine = FakeEngine()
+    r = voice_make.generate(world.data, cfg, "tirisfal", world.store, engine, encode=fake_encode,
+                            log=lambda *_: None, sleep=lambda _s: None, shift=shift)
+    mordo = {"456-completion", "456-description", "456-description_f"}
+    assert engine.calls == [] and r["made"] == len(mordo)
+    assert sorted(moved) == sorted((f"{s}.wav", 0, 1.12) for s in mordo)
+    assert all(_audio(world)[s]["fingerprint"].endswith("|tempo 1.12") for s in mordo)
     assert voice_make.plan(world.data, cfg, "tirisfal", world.store)["to_make"] == 0
 
 

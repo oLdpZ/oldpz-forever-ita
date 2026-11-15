@@ -106,9 +106,8 @@ describe("greetings on a click", function()
   end
   local NPC = { name = "Somebody", guid = "Creature-0-4372-0-1-3233-0000ABCDEF" }
 
-  it("greets an NPC that opens no window when it is selected, says goodbye when it is let go", function()
+  it("greets an NPC at once when it is selected, says goodbye when it is let go", function()
     select(NPC)
-    Stub.fireTimers(0.4)
     assert.are.equal(path("n-vx-g1"), last().path)
     select(nil)
     assert.are.equal(path("n-vx-b1"), last().path)
@@ -139,6 +138,16 @@ describe("greetings on a click", function()
     select(nil)
     assert.are.equal(2, #v.sounds)
     assert.are.equal(path("n-vx-b1"), last().path)
+  end)
+
+  it("cuts the greeting said on the selection when the window's text is read aloud", function()
+    select(NPC)
+    Stub.fireAll("GOSSIP_SHOW")
+    WFJ.VoicePlayer.onShown("gossip", "greeting", "gossip", E.GOSSIP)
+    Stub.fireTimers(0.2)
+    assert.are.same({ 1 }, v.stopped)
+    assert.are.equal(E.path("g-" .. E.GOSSIP), last().path)
+    assert.are.equal(2, #v.sounds)
   end)
 
   it("never greets an NPC the player can attack", function()

@@ -105,7 +105,8 @@ def load_config(path: Path) -> dict[str, Any]:
         raise ValueError(f"{path.name}: " + "; ".join(problems))
     cfg["roster"] = {
         vid: {"gemini_voice": v["voice"], "model": cfg["model"], "notes": v["notes"],
-              "fits": v.get("fits", ""), "project": v.get("project", 1), "pitch": v.get("pitch", 0)}
+              "fits": v.get("fits", ""), "project": v.get("project", 1), "pitch": v.get("pitch", 0),
+              "tempo": v.get("tempo", 1)}
         for vid, v in raw.items()
     }
     return cfg
