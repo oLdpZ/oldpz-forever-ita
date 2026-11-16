@@ -367,6 +367,9 @@ def test_a_tempo_encodes_the_kept_takes_again_quicker_without_the_engine(world):
     assert engine.calls == [] and r["made"] == len(mordo)
     assert sorted(moved) == sorted((f"{s}.wav", 0, 1.12) for s in mordo)
     assert all(_audio(world)[s]["fingerprint"].endswith("|tempo 1.12") for s in mordo)
+    # the addon waits for a line's length before the next one: the quicker file's
+    wav = world.store / "wav" / "456-completion.wav"
+    assert _audio(world)["456-completion"]["seconds"] == round(voice_make.wav_seconds(wav.read_bytes()) / 1.12, 2)
     assert voice_make.plan(world.data, cfg, "tirisfal", world.store)["to_make"] == 0
 
 

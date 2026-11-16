@@ -340,7 +340,7 @@ def record_row(t: Take, mp3: Path, seconds: float, provenance: Mapping[str, str]
         "sex": t.job.sex,
         "it_hash": voice.it_hash(t.it),
         "fingerprint": t.file_fingerprint,
-        "seconds": round(seconds, 2),
+        "seconds": round(seconds / t.tempo, 2),  # the file's: a tempo makes it shorter than the take
         "bytes": mp3.stat().st_size,
         "chars": len(t.transcript),
         "sha256": file_sha(mp3),
