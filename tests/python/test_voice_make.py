@@ -187,12 +187,17 @@ def test_a_greeting_on_a_click_is_made_in_its_voice_with_its_speaker_s_profile(w
     audio = _audio(world)
     assert audio["n-um-g1"]["voice"] == "um" and audio["n-uf-b1"]["voice"] == "uf"
     said = dict(zip(engine.said(), (p for p, _ in engine.calls), strict=True))
-    assert "Undertaker Mordo" in said["Che vuoi?"]  # the profile of the creature the voice was cast to
     assert "n-um-g1_f" not in audio  # no word changes with the player's sex: one file
-    # a line of a word or two gives the model no language to go by: the notes name it
-    assert voice_make.HELLO_NOTES in said["Che vuoi?"]
-    assert voice_make.HELLO_NOTES not in "".join(p for p, _ in engine.calls if "Che vuoi?" not in p
-                                                 and "Vai pure." not in p)
+    # a line of a word or two gives the model no language to go by, and English direction around it gives
+    # it an English accent: an Italian actor dubs the character (its profile, not its English name), and
+    # the notes ask for Italian diction before the voice's character
+    assert said["Che vuoi?"] == gemini.prompt_text(
+        "A native Italian voice actor from Italy, dubbing a fantasy character (race: scourge; gender: male;"
+        " age: elder; archetype: undead; role: priest) in the Italian edition of a video game.",
+        f"{voice_make.HELLO_DICTION} Character: Raspy and dry.", "Che vuoi?")
+    assert "Undertaker Mordo" not in said["Che vuoi?"]
+    assert voice_make.HELLO_DICTION not in "".join(p for p, _ in engine.calls if "Che vuoi?" not in p
+                                                   and "Vai pure." not in p)
 
 
 def test_a_class_line_stays_silent_until_it_has_a_spoken_version(world):

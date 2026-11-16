@@ -5,6 +5,13 @@
 {"key": "n-abercrombie-b2", "voice": "abercrombie", "speaker": 289, "it": "Fai buon viaggio."}
 {"key": "n-abercrombie-p1", "voice": "abercrombie", "speaker": 289, "it": "Basta così!"}
 {"key": "n-abercrombie-p2", "voice": "abercrombie", "speaker": 289, "it": "Smettila di infastidirmi."}
+{"key": "n-abomination-g1", "voice": "abomination", "speaker": 5624, "it": "Che vuoi?"}
+{"key": "n-abomination-g2", "voice": "abomination", "speaker": 5624, "it": "Dimmi pure."}
+{"key": "n-abomination-g3", "voice": "abomination", "speaker": 5624, "it": "Sì?"}
+{"key": "n-abomination-b1", "voice": "abomination", "speaker": 5624, "it": "Vai pure."}
+{"key": "n-abomination-b2", "voice": "abomination", "speaker": 5624, "it": "Buona fortuna."}
+{"key": "n-abomination-p1", "voice": "abomination", "speaker": 5624, "it": "Non ho tempo per i vivi."}
+{"key": "n-abomination-p2", "voice": "abomination", "speaker": 5624, "it": "Che c'è ancora?"}
 {"key": "n-aelthalyste-g1", "voice": "aelthalyste", "speaker": 4606, "it": "Che vuoi?"}
 {"key": "n-aelthalyste-g2", "voice": "aelthalyste", "speaker": 4606, "it": "Saluti, viandante."}
 {"key": "n-aelthalyste-g3", "voice": "aelthalyste", "speaker": 4606, "it": "Eccomi."}
@@ -166,6 +173,13 @@
 {"key": "n-balthule-b2", "voice": "balthule", "speaker": 3661, "it": "Buona fortuna."}
 {"key": "n-balthule-p1", "voice": "balthule", "speaker": 3661, "it": "La mia pazienza ha un limite."}
 {"key": "n-balthule-p2", "voice": "balthule", "speaker": 3661, "it": "Che c'è ancora?"}
+{"key": "n-bansheequeen-g1", "voice": "bansheequeen", "speaker": 10181, "it": "Che i venti ti siano propizi."}
+{"key": "n-bansheequeen-g2", "voice": "bansheequeen", "speaker": 10181, "it": "Eccomi."}
+{"key": "n-bansheequeen-g3", "voice": "bansheequeen", "speaker": 10181, "it": "Salve."}
+{"key": "n-bansheequeen-b1", "voice": "bansheequeen", "speaker": 10181, "it": "Vola alto."}
+{"key": "n-bansheequeen-b2", "voice": "bansheequeen", "speaker": 10181, "it": "Stammi bene."}
+{"key": "n-bansheequeen-p1", "voice": "bansheequeen", "speaker": 10181, "it": "Lasciami in pace!"}
+{"key": "n-bansheequeen-p2", "voice": "bansheequeen", "speaker": 10181, "it": "Non ho tempo per questo."}
 {"key": "n-barin-g1", "voice": "barin", "speaker": 1274, "it": "Salute a te!"}
 {"key": "n-barin-g2", "voice": "barin", "speaker": 1274, "it": "Eccomi."}
 {"key": "n-barin-g3", "voice": "barin", "speaker": 1274, "it": "Salve."}
@@ -649,6 +663,13 @@
 {"key": "n-drumfel-b2", "voice": "drumfel", "speaker": 2771, "it": "Combatti con onore."}
 {"key": "n-drumfel-p1", "voice": "drumfel", "speaker": 2771, "it": "Non mettermi alla prova!"}
 {"key": "n-drumfel-p2", "voice": "drumfel", "speaker": 2771, "it": "Smettila di infastidirmi."}
+{"key": "n-dryad-g1", "voice": "dryad", "speaker": 3584, "it": "Salve."}
+{"key": "n-dryad-g2", "voice": "dryad", "speaker": 3584, "it": "Ben trovato."}
+{"key": "n-dryad-g3", "voice": "dryad", "speaker": 3584, "it": "Posso aiutarti?"}
+{"key": "n-dryad-b1", "voice": "dryad", "speaker": 3584, "it": "Addio."}
+{"key": "n-dryad-b2", "voice": "dryad", "speaker": 3584, "it": "Buona fortuna."}
+{"key": "n-dryad-p1", "voice": "dryad", "speaker": 3584, "it": "Che c'è ancora?"}
+{"key": "n-dryad-p2", "voice": "dryad", "speaker": 3584, "it": "Lasciami in pace!"}
 {"key": "n-dughan-g1", "voice": "dughan", "speaker": 240, "it": "Che la Luce sia con te."}
 {"key": "n-dughan-g2", "voice": "dughan", "speaker": 240, "it": "Cosa ti serve?"}
 {"key": "n-dughan-g3", "voice": "dughan", "speaker": 240, "it": "Dimmi pure."}
@@ -831,34 +852,6 @@
 {"key": "n-felzerul-b2", "voice": "felzerul", "speaker": 1443, "it": "Combatti con onore."}
 {"key": "n-felzerul-p1", "voice": "felzerul", "speaker": 1443, "it": "Non mettermi alla prova!"}
 {"key": "n-felzerul-p2", "voice": "felzerul", "speaker": 1443, "it": "Che c'è ancora?"}
-{"key": "n-femaleeasy-g1", "voice": "femaleeasy", "speaker": 3584, "it": "Salve."}
-{"key": "n-femaleeasy-g2", "voice": "femaleeasy", "speaker": 3584, "it": "Ben trovato."}
-{"key": "n-femaleeasy-g3", "voice": "femaleeasy", "speaker": 3584, "it": "Posso aiutarti?"}
-{"key": "n-femaleeasy-b1", "voice": "femaleeasy", "speaker": 3584, "it": "Addio."}
-{"key": "n-femaleeasy-b2", "voice": "femaleeasy", "speaker": 3584, "it": "Buona fortuna."}
-{"key": "n-femaleeasy-p1", "voice": "femaleeasy", "speaker": 3584, "it": "Che c'è ancora?"}
-{"key": "n-femaleeasy-p2", "voice": "femaleeasy", "speaker": 3584, "it": "Lasciami in pace!"}
-{"key": "n-femalefirm-g1", "voice": "femalefirm", "speaker": 3585, "it": "Che i venti ti siano propizi."}
-{"key": "n-femalefirm-g2", "voice": "femalefirm", "speaker": 3585, "it": "Saluti, viandante."}
-{"key": "n-femalefirm-g3", "voice": "femalefirm", "speaker": 3585, "it": "Eccomi."}
-{"key": "n-femalefirm-b1", "voice": "femalefirm", "speaker": 3585, "it": "Vola alto."}
-{"key": "n-femalefirm-b2", "voice": "femalefirm", "speaker": 3585, "it": "Addio."}
-{"key": "n-femalefirm-p1", "voice": "femalefirm", "speaker": 3585, "it": "Smettila di infastidirmi."}
-{"key": "n-femalefirm-p2", "voice": "femalefirm", "speaker": 3585, "it": "Che c'è ancora?"}
-{"key": "n-femalesteady-g1", "voice": "femalesteady", "speaker": 13697, "it": "Salve."}
-{"key": "n-femalesteady-g2", "voice": "femalesteady", "speaker": 13697, "it": "Ben trovato."}
-{"key": "n-femalesteady-g3", "voice": "femalesteady", "speaker": 13697, "it": "Posso aiutarti?"}
-{"key": "n-femalesteady-b1", "voice": "femalesteady", "speaker": 13697, "it": "Addio."}
-{"key": "n-femalesteady-b2", "voice": "femalesteady", "speaker": 13697, "it": "Buona fortuna."}
-{"key": "n-femalesteady-p1", "voice": "femalesteady", "speaker": 13697, "it": "Che c'è ancora?"}
-{"key": "n-femalesteady-p2", "voice": "femalesteady", "speaker": 13697, "it": "Lasciami in pace!"}
-{"key": "n-femalewarm-g1", "voice": "femalewarm", "speaker": 3901, "it": "Salve."}
-{"key": "n-femalewarm-g2", "voice": "femalewarm", "speaker": 3901, "it": "Ben trovato."}
-{"key": "n-femalewarm-g3", "voice": "femalewarm", "speaker": 3901, "it": "Posso aiutarti?"}
-{"key": "n-femalewarm-b1", "voice": "femalewarm", "speaker": 3901, "it": "Addio."}
-{"key": "n-femalewarm-b2", "voice": "femalewarm", "speaker": 3901, "it": "Buona fortuna."}
-{"key": "n-femalewarm-p1", "voice": "femalewarm", "speaker": 3901, "it": "Che c'è ancora?"}
-{"key": "n-femalewarm-p2", "voice": "femalewarm", "speaker": 3901, "it": "Lasciami in pace!"}
 {"key": "n-festflamekeeper-g1", "voice": "festflamekeeper", "speaker": 16788, "it": "Che la Madre Terra ti protegga."}
 {"key": "n-festflamekeeper-g2", "voice": "festflamekeeper", "speaker": 16788, "it": "Sì?"}
 {"key": "n-festflamekeeper-g3", "voice": "festflamekeeper", "speaker": 16788, "it": "Saluti, viandante."}
@@ -2238,13 +2231,13 @@
 {"key": "n-malefirm-b2", "voice": "malefirm", "speaker": 10583, "it": "Buona fortuna."}
 {"key": "n-malefirm-p1", "voice": "malefirm", "speaker": 10583, "it": "Che c'è ancora?"}
 {"key": "n-malefirm-p2", "voice": "malefirm", "speaker": 10583, "it": "Lasciami in pace!"}
-{"key": "n-malewarm-g1", "voice": "malewarm", "speaker": 10918, "it": "Salve."}
-{"key": "n-malewarm-g2", "voice": "malewarm", "speaker": 10918, "it": "Ben trovato."}
-{"key": "n-malewarm-g3", "voice": "malewarm", "speaker": 10918, "it": "Posso aiutarti?"}
-{"key": "n-malewarm-b1", "voice": "malewarm", "speaker": 10918, "it": "Addio."}
-{"key": "n-malewarm-b2", "voice": "malewarm", "speaker": 10918, "it": "Buona fortuna."}
-{"key": "n-malewarm-p1", "voice": "malewarm", "speaker": 10918, "it": "Che c'è ancora?"}
-{"key": "n-malewarm-p2", "voice": "malewarm", "speaker": 10918, "it": "Lasciami in pace!"}
+{"key": "n-malewarm-g1", "voice": "malewarm", "speaker": 16075, "it": "Salve."}
+{"key": "n-malewarm-g2", "voice": "malewarm", "speaker": 16075, "it": "Ben trovato."}
+{"key": "n-malewarm-g3", "voice": "malewarm", "speaker": 16075, "it": "Posso aiutarti?"}
+{"key": "n-malewarm-b1", "voice": "malewarm", "speaker": 16075, "it": "Addio."}
+{"key": "n-malewarm-b2", "voice": "malewarm", "speaker": 16075, "it": "Buona fortuna."}
+{"key": "n-malewarm-p1", "voice": "malewarm", "speaker": 16075, "it": "Che c'è ancora?"}
+{"key": "n-malewarm-p2", "voice": "malewarm", "speaker": 16075, "it": "Lasciami in pace!"}
 {"key": "n-mankrik-g1", "voice": "mankrik", "speaker": 3432, "it": "Lok'tar!"}
 {"key": "n-mankrik-g2", "voice": "mankrik", "speaker": 3432, "it": "Throm-ka."}
 {"key": "n-mankrik-g3", "voice": "mankrik", "speaker": 3432, "it": "Dimmi pure."}
@@ -3057,6 +3050,13 @@
 {"key": "n-sarvis-b2", "voice": "sarvis", "speaker": 1569, "it": "Addio."}
 {"key": "n-sarvis-p1", "voice": "sarvis", "speaker": 1569, "it": "Non ho tempo per i vivi."}
 {"key": "n-sarvis-p2", "voice": "sarvis", "speaker": 1569, "it": "Smettila di infastidirmi."}
+{"key": "n-satyr-g1", "voice": "satyr", "speaker": 10918, "it": "Salve."}
+{"key": "n-satyr-g2", "voice": "satyr", "speaker": 10918, "it": "Ben trovato."}
+{"key": "n-satyr-g3", "voice": "satyr", "speaker": 10918, "it": "Posso aiutarti?"}
+{"key": "n-satyr-b1", "voice": "satyr", "speaker": 10918, "it": "Addio."}
+{"key": "n-satyr-b2", "voice": "satyr", "speaker": 10918, "it": "Buona fortuna."}
+{"key": "n-satyr-p1", "voice": "satyr", "speaker": 10918, "it": "Che c'è ancora?"}
+{"key": "n-satyr-p2", "voice": "satyr", "speaker": 10918, "it": "Lasciami in pace!"}
 {"key": "n-seahorn-g1", "voice": "seahorn", "speaker": 2487, "it": "Che la Madre Terra ti protegga."}
 {"key": "n-seahorn-g2", "voice": "seahorn", "speaker": 2487, "it": "Eccomi."}
 {"key": "n-seahorn-g3", "voice": "seahorn", "speaker": 2487, "it": "Salve."}

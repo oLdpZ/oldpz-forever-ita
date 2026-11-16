@@ -230,6 +230,28 @@ voice = "Zephyr"
 notes = "A young woman: lively, curious and a bit cheeky. Quick pace."
 fits = "young female"
 
+# --- non-human speakers the owner asked to sound like what they are (a greeting in an undead man's voice
+# from an abomination did not fit)
+[roster.abomination]
+voice = "Algenib"
+notes = "A hulking Forsaken abomination stitched together from corpses: thick, wet and gurgling, slow-witted, slurred words, childish glee. Unhurried."
+fits = "abominations"
+
+[roster.bansheequeen]
+voice = "Gacrux"
+notes = "The Banshee Queen of the Forsaken: cold, regal and commanding, a haunting ghostly edge. Measured and imperious."
+fits = "Lady Sylvanas Windrunner"
+
+[roster.dryad]
+voice = "Leda"
+notes = "A dryad, a fey daughter of the forest demigod Cenarius: light, airy, playful and musical, a little otherworldly. Lively pace."
+fits = "dryads"
+
+[roster.satyr]
+voice = "Puck"
+notes = "A satyr: sly, mocking and wicked, a bleating goat-like laugh in the voice. Quick, sneering pace."
+fits = "satyrs"
+
 # --- creatures
 [roster.creature]
 voice = "Fenrir"

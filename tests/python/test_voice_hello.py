@@ -44,6 +44,13 @@ def test_an_npc_of_a_set_no_voiced_npc_uses_greets_with_its_race_s_generic_voice
     assert p.greeters[5] == "genorcm1"
 
 
+def test_a_ruling_wins_over_the_cast_voice_and_the_set_s():
+    # an abomination of an undead voice set, cast an undead man's voice: the ruling gives it its own
+    p = plan(greeters=[(1, 7), (2, 7), (5, 7)], overrides={2: "abomination", 5: "abomination"})
+    assert p.greeters == {1: "genorcm1", 2: "abomination", 5: "abomination"}
+    assert "n-abomination-g1" in {r["key"] for r in p.lines}
+
+
 def test_each_voice_says_three_greetings_two_goodbyes_two_annoyed_lines_its_race_s_first():
     p = plan()
     lines = {r["key"]: r for r in p.lines}

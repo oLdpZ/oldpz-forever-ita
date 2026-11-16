@@ -74,8 +74,12 @@ def plan(  # noqa: PLR0913 - the tables are injected for the tests
     kits: Mapping[int, Sequence[int]],
     phrases: Mapping[str, Mapping[str, list[str]]],
     fallback: Mapping[int, str] | None = None,
+    overrides: Mapping[int, str] | None = None,
 ) -> Plan:
-    """`fallback`: creature → its race and sex's generic voice, for an NPC of a set no voiced one uses."""
+    """`fallback`: creature → its race and sex's generic voice, for an NPC of a set no voiced one uses.
+    `overrides`: the rulings (data/voice/overrides.jsonl), which win over the cast voice: an NPC that only
+    greets has none, and its set's voice may not fit it (an abomination of an undead man's set)."""
+    cast = {**cast, **(overrides or {})}
     by_set: dict[int, Counter[str]] = defaultdict(Counter)
     for c, s in greeters:
         if c in cast:
@@ -150,6 +154,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     for r in _csv(Path(a.sound_kits)):
         kits[int(r["SoundKitID"])].append(int(r["FileDataID"]))
     cast = {int(r["creature"]): r["voice"] for r in _jsonl(root / "data/voice/voices.jsonl")}
+    overrides = {int(r["creature"]): r["voice"] for r in _jsonl(root / "data/voice/overrides.jsonl")}
     profiles = _jsonl(root / "data/voice/profiles.jsonl")
     races = {int(r["creature"]): r["race"] for r in profiles if r.get("race")}
     for e, _flags, d, _kind in rows:
@@ -157,7 +162,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         if e not in races and shown is not None and shown.race:
             races[e] = shown.race
     phrases = read_phrases(root / "pipeline/voice_hello.tsv")
-    result = plan(greeters, cast, races, sets, kits, phrases, fallback)
+    result = plan(greeters, cast, races, sets, kits, phrases, fallback, overrides)
     (root / "data/voice/hello.jsonl").write_text(
         "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in result.lines), encoding="utf-8")
     (root / "data/voice/greeters.jsonl").write_text(

@@ -575,3 +575,20 @@
 {"creature": 275657, "voice": "narrator", "reason": "a corpse: its line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 275683, "voice": "narrator", "reason": "Eralya dying: the lines are stage directions, narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 275789, "voice": "narrator", "reason": "a corpse: its line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 5624, "voice": "abomination", "reason": "an abomination: the undead man's voice did not fit it (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 15195, "voice": "abomination", "reason": "an abomination: the undead man's voice did not fit it (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 10181, "voice": "bansheequeen", "reason": "the Banshee Queen: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 15193, "voice": "bansheequeen", "reason": "the Banshee Queen: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 3584, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 3585, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 3901, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4053, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4054, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4061, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 8518, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 11793, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 11794, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 13697, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 13699, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 13737, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 10918, "voice": "satyr", "reason": "a satyr: a plain man's voice did not fit him (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}

@@ -53,9 +53,13 @@ from wfj.paths import data_root
 LAME = ("lame", "-m", "m", "--resample", "22.05", "-b", "32", "--cbr", "-t", "--quiet")
 AUDIO, SPOKEN, BLOCKED = "audio.jsonl", "spoken.jsonl", "blocked.jsonl"
 HELLO = "hello.jsonl"  # the NPCs' greetings on a click and goodbyes (wfj.dev.voice_hello)
-# A greeting is a word or two: too little for the model to tell its language by, so it would say it with an
-# English accent. Its notes say the language.
-HELLO_NOTES = "This short line is Italian: say it as a native Italian speaker, with Italian pronunciation."
+# A greeting is a word or two: too little for the model to tell its language by, and the English direction
+# around it (an English name, notes that only add the language) gave it an English accent. An Italian actor
+# dubs the character instead, and the notes ask for Italian diction before the voice's character.
+HELLO_DICTION = ("Speak in Italian as a native speaker from Italy: standard Italian diction, Italian vowels"
+                 " and rolled R, no foreign or English accent at all.")
+HELLO_PROFILE = ("A native Italian voice actor from Italy, dubbing a fantasy character{} in the Italian"
+                 " edition of a video game.")
 ANY = "any"  # a spoken version both sexes hear
 TRIES = 4  # takes the filter may block before the line goes to the blocked list
 # What plan estimates from: Gemini says about 11 characters of Italian a second, and bills 25 audio tokens a
@@ -242,8 +246,8 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
             if row["hello_voice"] not in cfg["roster"]:
                 silent.append((key, "no voice", f"{key}: voice {row['hello_voice']} is not in the roster"))
                 continue
-            who = names.get(sp) or f"Creature {sp}"
-            voices = [(row["hello_voice"], profile_text(who, profiles.get(sp, {})))]
+            facts = profile_text("", profiles.get(sp, {})).removeprefix("; ")
+            voices = [(row["hello_voice"], HELLO_PROFILE.format(f" ({facts})" if facts else ""))]
         elif isinstance(sp, int) and sp not in cast:
             silent.append((key, "no voice", f"creature {sp} has no voice (wfj voice cast)"))
             continue
@@ -263,11 +267,12 @@ def survey(root: Path, cfg: Mapping[str, Any], scope: str) -> Survey:
             for n, (vid, profile) in enumerate(voices):
                 stem = (key if n == 0 else f"{key}_{vid}") + tail
                 r = cfg["roster"][vid]
-                notes = f"{r['notes']} {HELLO_NOTES}" if "hello_voice" in row else r["notes"]
+                hello = "hello_voice" in row
+                notes = f"{HELLO_DICTION} Character: {r['notes']}" if hello else r["notes"]
                 try:
                     plain = voice.speech_text(it, key, sex, vals, said)
                     text = voice.respell(plain, cfg.get("pronounce", {}))
-                    named = profile.split("; ", 1)[0] if isinstance(sp, int) else ""
+                    named = profile.split("; ", 1)[0] if isinstance(sp, int) and not hello else ""
                     prompt = build_prompt(stem, profile, notes, text, named)
                 except voice.VoiceError as e:
                     silent.append((stem, "refused", str(e)))
