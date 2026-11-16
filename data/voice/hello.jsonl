@@ -257,6 +257,13 @@
 {"key": "n-bellowfiz-b2", "voice": "bellowfiz", "speaker": 1378, "it": "Fai buon viaggio."}
 {"key": "n-bellowfiz-p1", "voice": "bellowfiz", "speaker": 1378, "it": "Per la barba di Magni, smettila!"}
 {"key": "n-bellowfiz-p2", "voice": "bellowfiz", "speaker": 1378, "it": "Basta così!"}
+{"key": "n-benedictus-g1", "voice": "benedictus", "speaker": 1284, "it": "Che la Luce sia con te."}
+{"key": "n-benedictus-g2", "voice": "benedictus", "speaker": 1284, "it": "Sì?"}
+{"key": "n-benedictus-g3", "voice": "benedictus", "speaker": 1284, "it": "Saluti, viandante."}
+{"key": "n-benedictus-b1", "voice": "benedictus", "speaker": 1284, "it": "Che la Luce ti guidi."}
+{"key": "n-benedictus-b2", "voice": "benedictus", "speaker": 1284, "it": "Buona fortuna."}
+{"key": "n-benedictus-p1", "voice": "benedictus", "speaker": 1284, "it": "Che c'è ancora?"}
+{"key": "n-benedictus-p2", "voice": "benedictus", "speaker": 1284, "it": "Lasciami in pace!"}
 {"key": "n-bernice-g1", "voice": "bernice", "speaker": 246, "it": "Che la Luce sia con te."}
 {"key": "n-bernice-g2", "voice": "bernice", "speaker": 246, "it": "Cosa ti serve?"}
 {"key": "n-bernice-g3", "voice": "bernice", "speaker": 246, "it": "Dimmi pure."}
@@ -796,6 +803,13 @@
 {"key": "n-falrin-b2", "voice": "falrin", "speaker": 16032, "it": "Buona fortuna."}
 {"key": "n-falrin-p1", "voice": "falrin", "speaker": 16032, "it": "La mia pazienza ha un limite."}
 {"key": "n-falrin-p2", "voice": "falrin", "speaker": 16032, "it": "Che c'è ancora?"}
+{"key": "n-falstad-g1", "voice": "falstad", "speaker": 5635, "it": "Salute a te!"}
+{"key": "n-falstad-g2", "voice": "falstad", "speaker": 5635, "it": "Dimmi pure."}
+{"key": "n-falstad-g3", "voice": "falstad", "speaker": 5635, "it": "Sì?"}
+{"key": "n-falstad-b1", "voice": "falstad", "speaker": 5635, "it": "Tieni alta l'ascia!"}
+{"key": "n-falstad-b2", "voice": "falstad", "speaker": 5635, "it": "Buona fortuna."}
+{"key": "n-falstad-p1", "voice": "falstad", "speaker": 5635, "it": "Per la barba di Magni, smettila!"}
+{"key": "n-falstad-p2", "voice": "falstad", "speaker": 5635, "it": "Che c'è ancora?"}
 {"key": "n-falthir-g1", "voice": "falthir", "speaker": 14905, "it": "Ehi, che si dice?"}
 {"key": "n-falthir-g2", "voice": "falthir", "speaker": 14905, "it": "Saluti, viandante."}
 {"key": "n-falthir-g3", "voice": "falthir", "speaker": 14905, "it": "Eccomi."}
@@ -1671,6 +1685,13 @@
 {"key": "n-iverron-b2", "voice": "iverron", "speaker": 8584, "it": "Addio."}
 {"key": "n-iverron-p1", "voice": "iverron", "speaker": 8584, "it": "La mia pazienza ha un limite."}
 {"key": "n-iverron-p2", "voice": "iverron", "speaker": 8584, "it": "Smettila di infastidirmi."}
+{"key": "n-jaina-g1", "voice": "jaina", "speaker": 4968, "it": "Che la Luce sia con te."}
+{"key": "n-jaina-g2", "voice": "jaina", "speaker": 4968, "it": "Ben trovato."}
+{"key": "n-jaina-g3", "voice": "jaina", "speaker": 4968, "it": "Posso aiutarti?"}
+{"key": "n-jaina-b1", "voice": "jaina", "speaker": 4968, "it": "Che la Luce ti guidi."}
+{"key": "n-jaina-b2", "voice": "jaina", "speaker": 4968, "it": "Alla prossima."}
+{"key": "n-jaina-p1", "voice": "jaina", "speaker": 4968, "it": "Non ho tempo per questo."}
+{"key": "n-jaina-p2", "voice": "jaina", "speaker": 4968, "it": "Basta così!"}
 {"key": "n-jangdor-g1", "voice": "jangdor", "speaker": 7854, "it": "Che la Madre Terra ti protegga."}
 {"key": "n-jangdor-g2", "voice": "jangdor", "speaker": 7854, "it": "Cosa ti serve?"}
 {"key": "n-jangdor-g3", "voice": "jangdor", "speaker": 7854, "it": "Dimmi pure."}
@@ -2378,6 +2399,13 @@
 {"key": "n-mehr-b2", "voice": "mehr", "speaker": 1977, "it": "Fai buon viaggio."}
 {"key": "n-mehr-p1", "voice": "mehr", "speaker": 1977, "it": "Per la barba di Magni, smettila!"}
 {"key": "n-mehr-p2", "voice": "mehr", "speaker": 1977, "it": "Basta così!"}
+{"key": "n-mekkatorque-g1", "voice": "mekkatorque", "speaker": 7937, "it": "Oh, ciao ciao!"}
+{"key": "n-mekkatorque-g2", "voice": "mekkatorque", "speaker": 7937, "it": "Saluti, viandante."}
+{"key": "n-mekkatorque-g3", "voice": "mekkatorque", "speaker": 7937, "it": "Eccomi."}
+{"key": "n-mekkatorque-b1", "voice": "mekkatorque", "speaker": 7937, "it": "Torna presto, eh!"}
+{"key": "n-mekkatorque-b2", "voice": "mekkatorque", "speaker": 7937, "it": "Addio."}
+{"key": "n-mekkatorque-p1", "voice": "mekkatorque", "speaker": 7937, "it": "Sto facendo dei calcoli, non disturbare!"}
+{"key": "n-mekkatorque-p2", "voice": "mekkatorque", "speaker": 7937, "it": "Smettila di infastidirmi."}
 {"key": "n-melisara-g1", "voice": "melisara", "speaker": 2278, "it": "Che vuoi?"}
 {"key": "n-melisara-g2", "voice": "melisara", "speaker": 2278, "it": "Eccomi."}
 {"key": "n-melisara-g3", "voice": "melisara", "speaker": 2278, "it": "Salve."}
@@ -2938,6 +2966,13 @@
 {"key": "n-revilgaz-b2", "voice": "revilgaz", "speaker": 2496, "it": "Fai buon viaggio."}
 {"key": "n-revilgaz-p1", "voice": "revilgaz", "speaker": 2496, "it": "Il tempo è denaro, e tu me lo stai rubando!"}
 {"key": "n-revilgaz-p2", "voice": "revilgaz", "speaker": 2496, "it": "Basta così!"}
+{"key": "n-rexxar-g1", "voice": "rexxar", "speaker": 10182, "it": "Lok'tar!"}
+{"key": "n-rexxar-g2", "voice": "rexxar", "speaker": 10182, "it": "Throm-ka."}
+{"key": "n-rexxar-g3", "voice": "rexxar", "speaker": 10182, "it": "Sì?"}
+{"key": "n-rexxar-b1", "voice": "rexxar", "speaker": 10182, "it": "Lok'tar ogar!"}
+{"key": "n-rexxar-b2", "voice": "rexxar", "speaker": 10182, "it": "Combatti con onore."}
+{"key": "n-rexxar-p1", "voice": "rexxar", "speaker": 10182, "it": "Non mettermi alla prova!"}
+{"key": "n-rexxar-p2", "voice": "rexxar", "speaker": 10182, "it": "Smettila di infastidirmi."}
 {"key": "n-rezlak-g1", "voice": "rezlak", "speaker": 3293, "it": "Affari, affari!"}
 {"key": "n-rezlak-g2", "voice": "rezlak", "speaker": 3293, "it": "Cosa compri?"}
 {"key": "n-rezlak-g3", "voice": "rezlak", "speaker": 3293, "it": "Sì?"}
@@ -2952,6 +2987,13 @@
 {"key": "n-rhinag-b2", "voice": "rhinag", "speaker": 3190, "it": "Stammi bene."}
 {"key": "n-rhinag-p1", "voice": "rhinag", "speaker": 3190, "it": "Mi stai seccando, eh!"}
 {"key": "n-rhinag-p2", "voice": "rhinag", "speaker": 3190, "it": "Lasciami in pace!"}
+{"key": "n-rhonin-g1", "voice": "rhonin", "speaker": 16128, "it": "Che la Luce sia con te."}
+{"key": "n-rhonin-g2", "voice": "rhonin", "speaker": 16128, "it": "Dimmi pure."}
+{"key": "n-rhonin-g3", "voice": "rhonin", "speaker": 16128, "it": "Sì?"}
+{"key": "n-rhonin-b1", "voice": "rhonin", "speaker": 16128, "it": "Che la Luce ti guidi."}
+{"key": "n-rhonin-b2", "voice": "rhonin", "speaker": 16128, "it": "Fai buon viaggio."}
+{"key": "n-rhonin-p1", "voice": "rhonin", "speaker": 16128, "it": "Basta così!"}
+{"key": "n-rhonin-p2", "voice": "rhonin", "speaker": 16128, "it": "Smettila di infastidirmi."}
 {"key": "n-rigglefuzz-g1", "voice": "rigglefuzz", "speaker": 2817, "it": "Affari, affari!"}
 {"key": "n-rigglefuzz-g2", "voice": "rigglefuzz", "speaker": 2817, "it": "Cosa compri?"}
 {"key": "n-rigglefuzz-g3", "voice": "rigglefuzz", "speaker": 2817, "it": "Ben trovato."}
@@ -3057,6 +3099,13 @@
 {"key": "n-satyr-b2", "voice": "satyr", "speaker": 10918, "it": "Buona fortuna."}
 {"key": "n-satyr-p1", "voice": "satyr", "speaker": 10918, "it": "Che c'è ancora?"}
 {"key": "n-satyr-p2", "voice": "satyr", "speaker": 10918, "it": "Lasciami in pace!"}
+{"key": "n-saurfang-g1", "voice": "saurfang", "speaker": 14720, "it": "Lok'tar!"}
+{"key": "n-saurfang-g2", "voice": "saurfang", "speaker": 14720, "it": "Throm-ka."}
+{"key": "n-saurfang-g3", "voice": "saurfang", "speaker": 14720, "it": "Eccomi."}
+{"key": "n-saurfang-b1", "voice": "saurfang", "speaker": 14720, "it": "Lok'tar ogar!"}
+{"key": "n-saurfang-b2", "voice": "saurfang", "speaker": 14720, "it": "Combatti con onore."}
+{"key": "n-saurfang-p1", "voice": "saurfang", "speaker": 14720, "it": "Non mettermi alla prova!"}
+{"key": "n-saurfang-p2", "voice": "saurfang", "speaker": 14720, "it": "Smettila di infastidirmi."}
 {"key": "n-seahorn-g1", "voice": "seahorn", "speaker": 2487, "it": "Che la Madre Terra ti protegga."}
 {"key": "n-seahorn-g2", "voice": "seahorn", "speaker": 2487, "it": "Eccomi."}
 {"key": "n-seahorn-g3", "voice": "seahorn", "speaker": 2487, "it": "Salve."}
@@ -3624,6 +3673,13 @@
 {"key": "n-turak-b2", "voice": "turak", "speaker": 3033, "it": "Stammi bene."}
 {"key": "n-turak-p1", "voice": "turak", "speaker": 3033, "it": "La mia pazienza non è infinita."}
 {"key": "n-turak-p2", "voice": "turak", "speaker": 3033, "it": "Lasciami in pace!"}
+{"key": "n-tyrande-g1", "voice": "tyrande", "speaker": 7999, "it": "Ishnu-alah."}
+{"key": "n-tyrande-g2", "voice": "tyrande", "speaker": 7999, "it": "Elune sia con te."}
+{"key": "n-tyrande-g3", "voice": "tyrande", "speaker": 7999, "it": "Eccomi."}
+{"key": "n-tyrande-b1", "voice": "tyrande", "speaker": 7999, "it": "Che Elune illumini il tuo cammino."}
+{"key": "n-tyrande-b2", "voice": "tyrande", "speaker": 7999, "it": "Buona fortuna."}
+{"key": "n-tyrande-p1", "voice": "tyrande", "speaker": 7999, "it": "La mia pazienza ha un limite."}
+{"key": "n-tyrande-p2", "voice": "tyrande", "speaker": 7999, "it": "Che c'è ancora?"}
 {"key": "n-ukor-g1", "voice": "ukor", "speaker": 6786, "it": "Lok'tar!"}
 {"key": "n-ukor-g2", "voice": "ukor", "speaker": 6786, "it": "Throm-ka."}
 {"key": "n-ukor-g3", "voice": "ukor", "speaker": 6786, "it": "Saluti, viandante."}
@@ -3778,6 +3834,13 @@
 {"key": "n-vandis-b2", "voice": "vandis", "speaker": 11055, "it": "Alla prossima."}
 {"key": "n-vandis-p1", "voice": "vandis", "speaker": 11055, "it": "Non ho tempo per i vivi."}
 {"key": "n-vandis-p2", "voice": "vandis", "speaker": 11055, "it": "Non ho tempo per questo."}
+{"key": "n-varian-g1", "voice": "varian", "speaker": 11699, "it": "Che la Luce sia con te."}
+{"key": "n-varian-g2", "voice": "varian", "speaker": 11699, "it": "Salve."}
+{"key": "n-varian-g3", "voice": "varian", "speaker": 11699, "it": "Ben trovato."}
+{"key": "n-varian-b1", "voice": "varian", "speaker": 11699, "it": "Che la Luce ti guidi."}
+{"key": "n-varian-b2", "voice": "varian", "speaker": 11699, "it": "Alla prossima."}
+{"key": "n-varian-p1", "voice": "varian", "speaker": 11699, "it": "Non ho tempo per questo."}
+{"key": "n-varian-p2", "voice": "varian", "speaker": 11699, "it": "Basta così!"}
 {"key": "n-varimathras-g1", "voice": "varimathras", "speaker": 2425, "it": "Dimmi pure."}
 {"key": "n-varimathras-g2", "voice": "varimathras", "speaker": 2425, "it": "Sì?"}
 {"key": "n-varimathras-g3", "voice": "varimathras", "speaker": 2425, "it": "Saluti, viandante."}
@@ -3827,6 +3890,13 @@
 {"key": "n-vimes-b2", "voice": "vimes", "speaker": 4944, "it": "Fai buon viaggio."}
 {"key": "n-vimes-p1", "voice": "vimes", "speaker": 4944, "it": "Basta così!"}
 {"key": "n-vimes-p2", "voice": "vimes", "speaker": 4944, "it": "Smettila di infastidirmi."}
+{"key": "n-voljin-g1", "voice": "voljin", "speaker": 10540, "it": "Ehi, che si dice?"}
+{"key": "n-voljin-g2", "voice": "voljin", "speaker": 10540, "it": "Ben trovato."}
+{"key": "n-voljin-g3", "voice": "voljin", "speaker": 10540, "it": "Posso aiutarti?"}
+{"key": "n-voljin-b1", "voice": "voljin", "speaker": 10540, "it": "Occhi aperti là fuori."}
+{"key": "n-voljin-b2", "voice": "voljin", "speaker": 10540, "it": "Addio."}
+{"key": "n-voljin-p1", "voice": "voljin", "speaker": 10540, "it": "Mi stai seccando, eh!"}
+{"key": "n-voljin-p2", "voice": "voljin", "speaker": 10540, "it": "Smettila di infastidirmi."}
 {"key": "n-vorn-g1", "voice": "vorn", "speaker": 11944, "it": "Che la Madre Terra ti protegga."}
 {"key": "n-vorn-g2", "voice": "vorn", "speaker": 11944, "it": "Eccomi."}
 {"key": "n-vorn-g3", "voice": "vorn", "speaker": 11944, "it": "Salve."}

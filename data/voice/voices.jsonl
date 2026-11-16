@@ -329,7 +329,7 @@
 {"creature": 1274, "voice": "barin", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 1275, "voice": "genhumanf1", "row": "human, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 1276, "voice": "gendwarfm4", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
-{"creature": 1284, "voice": "genhumanm1", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 1284, "voice": "benedictus", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 1285, "voice": "genhumanm3", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 1286, "voice": "genhumanf2", "row": "human, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 1287, "voice": "genhumanf3", "row": "human, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
@@ -1259,7 +1259,7 @@
 {"creature": 4964, "voice": "genhumanm2", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 4966, "voice": "genhumanm2", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 4967, "voice": "tervosh", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
-{"creature": 4968, "voice": "genhumanf3", "row": "human, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 4968, "voice": "jaina", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 4972, "voice": "genorcm1", "row": "orc, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 4973, "voice": "genhumanm4", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 4974, "voice": "genhumanm1", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
@@ -1387,7 +1387,7 @@
 {"creature": 5612, "voice": "gengnomem2", "row": "gnome, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 5624, "voice": "abomination", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-16"}}
 {"creature": 5634, "voice": "gendwarfm1", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
-{"creature": 5635, "voice": "gendwarfm3", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 5635, "voice": "falstad", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 5636, "voice": "talonaxe", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 5637, "voice": "gendwarfm3", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 5638, "voice": "kreldig", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
@@ -1717,7 +1717,7 @@
 {"creature": 7916, "voice": "erelas", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 7917, "voice": "genhumanm3", "row": "human, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 7918, "voice": "creature", "row": "creature", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-26"}}
-{"creature": 7937, "voice": "gengnomem1", "row": "gnome, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 7937, "voice": "mekkatorque", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 7944, "voice": "overspark", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 7948, "voice": "gennightelff2", "row": "nightelf, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 7949, "voice": "gennightelff3", "row": "nightelf, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
@@ -1731,7 +1731,7 @@
 {"creature": 7957, "voice": "gennightelff2", "row": "nightelf, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 7978, "voice": "gengnomef2", "row": "gnome, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 7998, "voice": "gengnomef2", "row": "gnome, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
-{"creature": 7999, "voice": "gennightelff2", "row": "nightelf, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 7999, "voice": "tyrande", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 8018, "voice": "gendwarfm3", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 8019, "voice": "gennightelfm2", "row": "nightelf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 8020, "voice": "gentaurenf2", "row": "tauren, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
@@ -1920,7 +1920,7 @@
 {"creature": 10162, "voice": "creaturebrute", "row": "creature", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
 {"creature": 10176, "voice": "kaltunk", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-25"}}
 {"creature": 10181, "voice": "bansheequeen", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-16"}}
-{"creature": 10182, "voice": "genorcm3", "row": "orc, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 10182, "voice": "rexxar", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 10216, "voice": "gendwarfm4", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 10219, "voice": "gwennyth", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 10257, "voice": "bijou", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
@@ -2425,7 +2425,7 @@
 {"creature": 14634, "voice": "gendwarfm3", "row": "dwarf, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 14637, "voice": "gengoblinm3", "row": "goblin, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 14686, "voice": "undeaddeep", "row": "undead", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-14"}}
-{"creature": 14720, "voice": "genorcm2", "row": "orc, male", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
+{"creature": 14720, "voice": "saurfang", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-11-17"}}
 {"creature": 14721, "voice": "genhumanf2", "row": "human, female", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 14722, "voice": "clavicus", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}
 {"creature": 14723, "voice": "mistina", "row": "override", "provenance": {"source": "cast@voice.toml", "imported": "2026-10-27"}}

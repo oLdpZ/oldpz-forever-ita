@@ -592,3 +592,14 @@
 {"creature": 13699, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
 {"creature": 13737, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
 {"creature": 10918, "voice": "satyr", "reason": "a satyr: a plain man's voice did not fit him (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4968, "voice": "jaina", "reason": "Lady Jaina Proudmoore: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 7999, "voice": "tyrande", "reason": "Tyrande Whisperwind: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 15633, "voice": "tyrande", "reason": "Tyrande Whisperwind: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 10540, "voice": "voljin", "reason": "Vol'jin: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 7937, "voice": "mekkatorque", "reason": "High Tinker Mekkatorque: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 11699, "voice": "varian", "reason": "Varian Wrynn: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 14720, "voice": "saurfang", "reason": "High Overlord Saurfang: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 10182, "voice": "rexxar", "reason": "Rexxar: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 5635, "voice": "falstad", "reason": "Falstad Wildhammer: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 16128, "voice": "rhonin", "reason": "Rhonin: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 1284, "voice": "benedictus", "reason": "Archbishop Benedictus: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}

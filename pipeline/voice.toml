@@ -252,6 +252,57 @@ voice = "Puck"
 notes = "A satyr: sly, mocking and wicked, a bleating goat-like laugh in the voice. Quick, sneering pace."
 fits = "satyrs"
 
+# --- the great leaders: each its own voice, not its race's generic one (the owner)
+[roster.jaina]
+voice = "Zephyr"
+notes = "Lady Jaina Proudmoore, ruler of Theramore: a young, brilliant sorceress, bright, confident and compassionate. Natural pace."
+fits = "Lady Jaina Proudmoore"
+
+[roster.tyrande]
+voice = "Vindemiatrix"
+notes = "Tyrande Whisperwind, High Priestess of Elune: serene and graceful, with quiet authority and steel beneath. Measured pace."
+fits = "Tyrande Whisperwind"
+
+[roster.voljin]
+voice = "Umbriel"
+notes = "Vol'jin, chieftain of the Darkspear trolls: deep, calm and wise, a laid-back drawl with a dangerous edge. Unhurried."
+fits = "Vol'jin"
+
+[roster.mekkatorque]
+voice = "Sadachbia"
+notes = "High Tinker Mekkatorque, King of Gnomes: a small, quick and brilliant inventor king, chirpy but proud and resolute. Lively pace."
+fits = "High Tinker Mekkatorque"
+
+[roster.varian]
+voice = "Orus"
+notes = "Varian Wrynn, King of Stormwind: a warrior king, firm, commanding and proud, a lion's growl held in check. Natural pace."
+fits = "Varian Wrynn"
+
+[roster.saurfang]
+voice = "Alnilam"
+notes = "High Overlord Saurfang: an old orc warlord, deep, gravelly and battle-hardened, honourable and grave. Steady pace."
+fits = "High Overlord Saurfang"
+
+[roster.rexxar]
+voice = "Enceladus"
+notes = "Rexxar, Champion of the Horde: a gruff, rugged wanderer of few words, low and rough, at ease only in the wild. Unhurried."
+fits = "Rexxar"
+
+[roster.falstad]
+voice = "Sadaltager"
+notes = "Falstad Wildhammer, High Thane: a bold, booming Wildhammer dwarf, fierce and proud, a rider of gryphons. Lively pace."
+fits = "Falstad Wildhammer"
+
+[roster.rhonin]
+voice = "Iapetus"
+notes = "Rhonin, archmage of the Kirin Tor: clear, self-assured and a little reckless, a wizard used to being heard. Natural pace."
+fits = "Rhonin"
+
+[roster.benedictus]
+voice = "Algieba"
+notes = "Archbishop Benedictus, head of the Church of the Holy Light: smooth, solemn and benevolent, a preacher's warm gravity. Measured pace."
+fits = "Archbishop Benedictus"
+
 # --- creatures
 [roster.creature]
 voice = "Fenrir"
