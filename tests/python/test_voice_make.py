@@ -177,6 +177,29 @@ def test_the_prompt_is_english_direction_over_the_italian_transcript(world):
     assert prompts["Uccidi 7 lupi."].startswith("# AUDIO PROFILE: The narrator of a fantasy adventure\n")
 
 
+def test_a_greeting_on_a_click_is_made_in_its_voice_with_its_speaker_s_profile(world):
+    vf.write_rows(world.data / "voice" / "hello.jsonl", [
+        {"key": "n-um-g1", "voice": "um", "speaker": 2079, "it": "Che vuoi?"},
+        {"key": "n-uf-b1", "voice": "uf", "speaker": 1992, "it": "Vai pure."},
+    ])
+    engine = FakeEngine()
+    _gen(world, engine)
+    audio = _audio(world)
+    assert audio["n-um-g1"]["voice"] == "um" and audio["n-uf-b1"]["voice"] == "uf"
+    said = dict(zip(engine.said(), (p for p, _ in engine.calls), strict=True))
+    assert "n-um-g1_f" not in audio  # no word changes with the player's sex: one file
+    # a line of a word or two gives the model no language to go by, and English direction around it gives
+    # it an English accent: an Italian actor dubs the character (its profile, not its English name), and
+    # the notes ask for Italian diction before the voice's character
+    assert said["Che vuoi?"] == gemini.prompt_text(
+        "A native Italian voice actor from Italy, dubbing a fantasy character (race: scourge; gender: male;"
+        " age: elder; archetype: undead; role: priest) in the Italian edition of a video game.",
+        f"{voice_make.HELLO_DICTION} Character: Raspy and dry.", "Che vuoi?")
+    assert "Undertaker Mordo" not in said["Che vuoi?"]
+    assert voice_make.HELLO_DICTION not in "".join(p for p, _ in engine.calls if "Che vuoi?" not in p
+                                                   and "Vai pure." not in p)
+
+
 def test_a_class_line_stays_silent_until_it_has_a_spoken_version(world):
     engine = FakeEngine()
     _gen(world, engine)
@@ -328,6 +351,30 @@ def test_a_pitch_encodes_the_kept_takes_again_without_the_engine(world):
     assert sorted(moved) == sorted((f"{s}.wav", -2) for s in mordo)
     assert all(_audio(world)[s]["fingerprint"].endswith("|pitch -2") for s in mordo)
     assert not list((world.store / "wav").glob("*.pitch.wav"))
+    assert voice_make.plan(world.data, cfg, "tirisfal", world.store)["to_make"] == 0
+
+
+def test_a_tempo_encodes_the_kept_takes_again_quicker_without_the_engine(world):
+    _gen(world, FakeEngine())
+    world.config.write_text(TOML.replace('notes = "Raspy and dry."', 'notes = "Raspy and dry."\ntempo = 1.12'),
+                            encoding="utf-8")
+    cfg = voice_cast.load_config(world.config)
+    moved = []
+
+    def shift(wav, semitones, out, tempo=1.0):
+        moved.append((wav.name, semitones, tempo))
+        out.write_bytes(wav.read_bytes())
+
+    engine = FakeEngine()
+    r = voice_make.generate(world.data, cfg, "tirisfal", world.store, engine, encode=fake_encode,
+                            log=lambda *_: None, sleep=lambda _s: None, shift=shift)
+    mordo = {"456-completion", "456-description", "456-description_f"}
+    assert engine.calls == [] and r["made"] == len(mordo)
+    assert sorted(moved) == sorted((f"{s}.wav", 0, 1.12) for s in mordo)
+    assert all(_audio(world)[s]["fingerprint"].endswith("|tempo 1.12") for s in mordo)
+    # the addon waits for a line's length before the next one: the quicker file's
+    wav = world.store / "wav" / "456-completion.wav"
+    assert _audio(world)["456-completion"]["seconds"] == round(voice_make.wav_seconds(wav.read_bytes()) / 1.12, 2)
     assert voice_make.plan(world.data, cfg, "tirisfal", world.store)["to_make"] == 0
 
 

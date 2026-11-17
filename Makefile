@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles voice-speakers voice-cast voice-plan voice-generate voice-batch-submit voice-batch-fetch voice-status voice-audition voice-pack
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles vmangos-src voice-speakers voice-cast voice-plan voice-generate voice-batch-submit voice-batch-fetch voice-status voice-audition voice-pack
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -545,9 +545,18 @@ PACK        ?=
 # the VMaNGOS dump the speakers come from, and its commit
 VOICE_DB     ?= $(VMANGOS_PRIORITY_DB)
 VOICE_DB_SHA ?= $(VMANGOS_UNIT_SHA)
+# the core's C++ scripts at the dump's commit (only src/scripts is kept): who says the boss and event lines
+VMANGOS_SRC  ?= $(INPUTS)/vmangos-src/$(VOICE_DB_SHA)
 
-voice-speakers: ## write data/voice/speakers.jsonl (who says each line of SCOPE) from VMaNGOS and forever-vo: [SCOPE=tirisfal] [VOICE_DB=<mangos.sqlite>]
-	cd pipeline && $(PY) -m wfj voice speakers --vmangos "$(VOICE_DB)" --commit $(VOICE_DB_SHA) --scope $(SCOPE) --forever-vo "$(FOREVER_VO)" --forever-vo-commit $(FOREVER_VO_SHA)
+vmangos-src: ## download vmangos/core's src/scripts at VOICE_DB_SHA into VMANGOS_SRC (read, never built); once per commit
+	@test -d "$(VMANGOS_SRC)/src/scripts" || { tmp="$$(mktemp)" && \
+		curl -fsSL -o "$$tmp" "https://codeload.github.com/vmangos/core/tar.gz/$(VOICE_DB_SHA)" && \
+		mkdir -p "$(VMANGOS_SRC).part" && \
+		tar -xzf "$$tmp" -C "$(VMANGOS_SRC).part" --strip-components=1 --wildcards '*/src/scripts/*' && \
+		rm -f "$$tmp" && mv "$(VMANGOS_SRC).part" "$(VMANGOS_SRC)"; }
+
+voice-speakers: ## write data/voice/speakers.jsonl (who says each line of SCOPE) from VMaNGOS and forever-vo: [SCOPE=tirisfal] [VOICE_DB=<mangos.sqlite>] (scope tutto also needs vmangos-src)
+	cd pipeline && $(PY) -m wfj voice speakers --vmangos "$(VOICE_DB)" --commit $(VOICE_DB_SHA) --scope $(SCOPE) --forever-vo "$(FOREVER_VO)" --forever-vo-commit $(FOREVER_VO_SHA) $(if $(wildcard $(VMANGOS_SRC)/src/scripts),--vmangos-src "$(VMANGOS_SRC)")
 
 voice-cast: ## write data/voice/voices.jsonl (each speaking creature's roster voice) from the profiles and pipeline/voice.toml: [SCOPE=tirisfal]
 	cd pipeline && $(PY) -m wfj voice cast --scope $(SCOPE)

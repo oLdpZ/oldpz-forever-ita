@@ -847,6 +847,9 @@ The Italian NPC voice over from the separate pack ([Voice over](../systems/voice
 16. **In combat.** Open a quest window and let a line play with an enemy attacking: no "action blocked" message, and `/fita taint` after the fight lists nothing from this addon.
 17. **Counts.** `/fita debug`: `matched` and `played` went up with each line heard; `missing` and `stale` stay `0` for the lines of the scope; `refused 0`.
 18. **Without the pack.** Disable or remove the voice folder and reload: `/fita debug` says `voice: no pack`, there is no *Voice* page, no panel and no button in the quest log, and every window behaves as it did before.
+19. **A race intro.** Create a character of a race whose intro the pack voices (the `01_20` pack): the intro plays with an Italian narrator over the starting zone's music and no English narrator under it; press Esc halfway: our narrator stops too and the zone's music comes back. After `/reload` the English narration is back (`/run OpeningCinematic()` on a character with no experience replays it). **Fail:** English and Italian together, or the English narration still silent after the cinematic.
+20. **An NPC greeting.** Talk to a vendor or a trainer that gives no quest: it greets in Italian.
+21. **A line in chat.** Stand by an NPC that says or yells something on a timer or in a quest event: the line plays in Italian, in the voice its quests use, once even with several chat tabs; a quest window opened meanwhile cuts it. In a dungeon (hidden text) the boss stays in English, never silent.
 
 **Unverified facts this list settles** (record what you see):
 - `PlaySoundFile(path, "Master")` plays an MP3 from an addon folder and returns a handle `StopSound` stops; the length plus half a second does not cut the end (steps 3 to 7; `refused` stays 0).

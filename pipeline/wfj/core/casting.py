@@ -359,7 +359,7 @@ def cast(
     return out
 
 
-ROSTER_FIELDS = ("voice", "design", "project", "notes", "fits", "pitch")
+ROSTER_FIELDS = ("voice", "design", "project", "notes", "fits", "pitch", "tempo")
 # How far `pitch` may move a voice, in semitones: past this the speech smears.
 PITCH_LIMIT = 6
 # Gemini reads direction it does not take for English aloud, so a voice's notes are English only: no accented
@@ -410,6 +410,7 @@ def roster_problems(
             out.append(f"roster {vid}: a designed voice keeps the design it was made from")
         out += _project_problems(vid, v)
         out += _pitch_problems(vid, v)
+        out += _tempo_problems(vid, v)
         notes = v.get("notes")
         if not isinstance(notes, str) or not notes.strip():
             out.append(f"roster {vid}: notes must say how the voice reads (English director's notes)")
@@ -442,6 +443,22 @@ def _project_problems(vid: str, v: Mapping[str, Any]) -> list[str]:
         return [f"roster {vid}: project must be a whole number from 1 (got {project!r})"]
     if v.get("design") is None:
         return [f"roster {vid}: project is for a designed voice (the project that made it)"]
+    return []
+
+
+# How far `tempo` may speed a voice up or slow it down: past this the speech smears.
+TEMPO_RANGE = (0.8, 1.3)
+
+
+def _tempo_problems(vid: str, v: Mapping[str, Any]) -> list[str]:
+    """A roster voice's `tempo`: how much quicker its files are made when encoded (1.1: a tenth quicker),
+    within TEMPO_RANGE."""
+    tempo = v.get("tempo")
+    if tempo is None:
+        return []
+    low, high = TEMPO_RANGE
+    if isinstance(tempo, bool) or not isinstance(tempo, (int, float)) or not low <= tempo <= high:
+        return [f"roster {vid}: tempo must be a number from {low:g} to {high:g} (got {tempo!r})"]
     return []
 
 

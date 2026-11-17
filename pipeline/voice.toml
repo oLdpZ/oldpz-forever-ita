@@ -230,6 +230,79 @@ voice = "Zephyr"
 notes = "A young woman: lively, curious and a bit cheeky. Quick pace."
 fits = "young female"
 
+# --- non-human speakers the owner asked to sound like what they are (a greeting in an undead man's voice
+# from an abomination did not fit)
+[roster.abomination]
+voice = "Algenib"
+notes = "A hulking Forsaken abomination stitched together from corpses: thick, wet and gurgling, slow-witted, slurred words, childish glee. Unhurried."
+fits = "abominations"
+
+[roster.bansheequeen]
+voice = "Gacrux"
+notes = "The Banshee Queen of the Forsaken: cold, regal and commanding, a haunting ghostly edge. Measured and imperious."
+fits = "Lady Sylvanas Windrunner"
+
+[roster.dryad]
+voice = "Leda"
+notes = "A dryad, a fey daughter of the forest demigod Cenarius: light, airy, playful and musical, a little otherworldly. Lively pace."
+fits = "dryads"
+
+[roster.satyr]
+voice = "Puck"
+notes = "A satyr: sly, mocking and wicked, a bleating goat-like laugh in the voice. Quick, sneering pace."
+fits = "satyrs"
+
+# --- the great leaders: each its own voice, not its race's generic one (the owner)
+[roster.jaina]
+voice = "Zephyr"
+notes = "Lady Jaina Proudmoore, ruler of Theramore: a young, brilliant sorceress, bright, confident and compassionate. Natural pace."
+fits = "Lady Jaina Proudmoore"
+
+[roster.tyrande]
+voice = "Vindemiatrix"
+notes = "Tyrande Whisperwind, High Priestess of Elune: serene and graceful, with quiet authority and steel beneath. Measured pace."
+fits = "Tyrande Whisperwind"
+
+[roster.voljin]
+voice = "Umbriel"
+notes = "Vol'jin, chieftain of the Darkspear trolls: deep, calm and wise, a laid-back drawl with a dangerous edge. Unhurried."
+fits = "Vol'jin"
+
+[roster.mekkatorque]
+voice = "Sadachbia"
+notes = "High Tinker Mekkatorque, King of Gnomes: a small, quick and brilliant inventor king, chirpy but proud and resolute. Lively pace."
+fits = "High Tinker Mekkatorque"
+
+[roster.varian]
+voice = "Orus"
+notes = "Varian Wrynn, King of Stormwind: a warrior king, firm, commanding and proud, a lion's growl held in check. Natural pace."
+fits = "Varian Wrynn"
+
+[roster.saurfang]
+voice = "Alnilam"
+notes = "High Overlord Saurfang: an old orc warlord, deep, gravelly and battle-hardened, honourable and grave. Steady pace."
+fits = "High Overlord Saurfang"
+
+[roster.rexxar]
+voice = "Enceladus"
+notes = "Rexxar, Champion of the Horde: a gruff, rugged wanderer of few words, low and rough, at ease only in the wild. Unhurried."
+fits = "Rexxar"
+
+[roster.falstad]
+voice = "Sadaltager"
+notes = "Falstad Wildhammer, High Thane: a bold, booming Wildhammer dwarf, fierce and proud, a rider of gryphons. Lively pace."
+fits = "Falstad Wildhammer"
+
+[roster.rhonin]
+voice = "Iapetus"
+notes = "Rhonin, archmage of the Kirin Tor: clear, self-assured and a little reckless, a wizard used to being heard. Natural pace."
+fits = "Rhonin"
+
+[roster.benedictus]
+voice = "Algieba"
+notes = "Archbishop Benedictus, head of the Church of the Holy Light: smooth, solemn and benevolent, a preacher's warm gravity. Measured pace."
+fits = "Archbishop Benedictus"
+
 # --- creatures
 [roster.creature]
 voice = "Fenrir"
@@ -4413,6 +4486,80 @@ design = "An ancient forest wisp spirit, speaks Italian: airy, echoing and other
 notes = "Airy and otherworldly, natural pace."
 fits = "forest wisp, messenger of Malfurion"
 
+# --- designed voices (3.8): the narrators of the race intro cinematics (voce-5), one per race
+# tempo: the Italian takes longer than the English the cinematic is timed to, so it is said a little quicker
+
+[roster.narratorhuman]
+voice = "voice_08ss60x92onp"
+project = 4
+design = "A mature human man, speaks Italian: noble, resonant and stirring, the storyteller of a proud kingdom, fantasy."
+notes = "Solemn and stirring, measured natural pace."
+fits = "narrator of the human intro cinematic"
+tempo = 1.12
+
+[roster.narratordwarf]
+voice = "voice_ide8bs8bazcm"
+project = 4
+design = "A mature dwarf man, speaks Italian: deep, gravelly and proud, a hearty storyteller of mountain halls, fantasy."
+notes = "Proud and hearty, measured natural pace."
+fits = "narrator of the dwarf intro cinematic"
+tempo = 1.12
+
+[roster.narratorgnome]
+voice = "voice_96tqi79o7t67"
+project = 4
+design = "An adult gnome man, speaks Italian: bright, quick and earnest, a clever and lively storyteller, fantasy."
+notes = "Earnest and lively, natural pace."
+fits = "narrator of the gnome intro cinematic"
+tempo = 1.12
+
+[roster.narratornightelf]
+voice = "voice_oeh4wiihaxom"
+project = 4
+design = "A mature night elf woman, speaks Italian: serene, airy and ancient, a graceful and solemn storyteller, fantasy."
+notes = "Serene and solemn, measured natural pace."
+fits = "narrator of the night elf intro cinematic"
+tempo = 1.12
+
+[roster.narratororc]
+voice = "voice_s3u3izlb17g7"
+project = 4
+design = "A mature orc man, speaks Italian: deep, rough and powerful, a proud warrior telling his people's story, fantasy."
+notes = "Proud and grave, measured natural pace."
+fits = "narrator of the orc intro cinematic"
+tempo = 1.12
+
+[roster.narratortauren]
+voice = "voice_qb9llr7w45nx"
+project = 4
+design = "An old tauren man, speaks Italian: low, warm and earthy, a calm and wise storyteller of the plains, fantasy."
+notes = "Calm and wise, measured natural pace."
+fits = "narrator of the tauren intro cinematic"
+tempo = 1.12
+
+[roster.narratortroll]
+voice = "voice_ofui0j4mut0r"
+project = 4
+design = "An adult troll man, speaks Italian: husky, rhythmic and sly, a jungle storyteller with a lilting cadence, fantasy."
+notes = "Sly and rhythmic, natural pace."
+fits = "narrator of the troll intro cinematic"
+tempo = 1.12
+
+[roster.narratorundead]
+voice = "voice_o959pldx4qnn"
+project = 4
+design = "An undead man, speaks Italian: hollow, cold and rasping, a bitter and grim storyteller, dark fantasy."
+notes = "Cold and bitter, measured natural pace."
+fits = "narrator of the Forsaken intro cinematic"
+tempo = 1.12
+
+[roster.narratorskyborne]
+voice = "voice_l381gicm3m41"
+project = 4
+design = "A young high elf woman, speaks Italian: clear, light and wistful, a hopeful storyteller of a floating island, fantasy."
+notes = "Wistful and hopeful, natural pace."
+fits = "narrator of the Skyborne intro cinematic"
+
 [[cast]]
 name = "undead, female, elder"
 when = { archetype = ["undead", "ghost"], gender = "female", age = "elder" }
@@ -4578,3 +4725,32 @@ voices = ["malesmooth", "malewarm"]
 name = "male"
 when = { gender = ["male", "none"] }
 voices = ["malefirm", "malewarm", "malecasual", "malebright"]
+
+# --- the narrator of each race's intro cinematic (`i-` lines): its voice and who it is for the prompt
+[intro.human]
+voice = "narratorhuman"
+profile = "The narrator of the human intro cinematic, telling the story of Stormwind"
+[intro.dwarf]
+voice = "narratordwarf"
+profile = "The narrator of the dwarf intro cinematic, telling the story of Ironforge"
+[intro.gnome]
+voice = "narratorgnome"
+profile = "The narrator of the gnome intro cinematic, telling the story of Gnomeregan"
+[intro.nightelf]
+voice = "narratornightelf"
+profile = "The narrator of the night elf intro cinematic, telling the story of Teldrassil"
+[intro.orc]
+voice = "narratororc"
+profile = "The narrator of the orc intro cinematic, telling the story of the Horde"
+[intro.tauren]
+voice = "narratortauren"
+profile = "The narrator of the tauren intro cinematic, telling the story of Mulgore"
+[intro.troll]
+voice = "narratortroll"
+profile = "The narrator of the troll intro cinematic, telling the story of the Darkspear tribe"
+[intro.undead]
+voice = "narratorundead"
+profile = "The narrator of the Forsaken intro cinematic, telling the story of the Undercity"
+[intro.skyborne]
+voice = "narratorskyborne"
+profile = "The narrator of the Skyborne intro cinematic, telling the story of Zephras Isle"

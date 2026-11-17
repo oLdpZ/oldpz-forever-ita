@@ -160,3 +160,59 @@ def make_data(tmp_path: Path) -> Path:
         {"creature": 6906, "voice": "m", "row": "male", "provenance": SRC},
     ])
     return data
+
+
+# NPC lines in chat: 2079 shouts one from its AI events; both 2079 and 1992 say SHARED on a waypoint; 9000 says
+# BOSS from the core's C++ script `boss_bat`; GROWL is an emote and is never voiced
+SHOUT, SHARED, BOSS, GROWL = "Die, intruder!", "For the Dark Lady!", "You will never leave!", "%s growls."
+
+
+def add_speech(db_path: Path, data: Path) -> None:
+    """The script tables `vmangos.read_speech_speakers` reads, added to the speaker database, and the Italian
+    of the lines in chat shipped as gossip."""
+    db = sqlite3.connect(db_path)
+    db.execute("ALTER TABLE broadcast_text ADD COLUMN chat_type INT DEFAULT 0")
+    db.execute("ALTER TABLE broadcast_text ADD COLUMN sound_id INT DEFAULT 0")
+    db.execute("ALTER TABLE creature_template ADD COLUMN script_name TEXT DEFAULT ''")
+    db.execute("UPDATE creature_template SET script_name = 'boss_bat' WHERE entry = 9000")
+    db.executemany("INSERT INTO broadcast_text VALUES (?, ?, '', ?, 0)",
+                   [(801, SHOUT, 1), (802, SHARED, 0), (803, BOSS, 1), (804, GROWL, 2)])
+    cols = ("id INT, command INT, target_type INT, dataint INT, dataint2 INT, dataint3 INT, dataint4 INT,"
+            " data_flags INT")
+    for t in ("creature_ai_scripts", "creature_movement_scripts", "quest_start_scripts", "quest_end_scripts",
+              "gossip_scripts"):
+        db.execute(f"CREATE TABLE {t} ({cols})")
+    db.executemany("INSERT INTO creature_ai_scripts VALUES (?, 0, 0, ?, 0, 0, 0, 0)", [(10, 801), (11, 804)])
+    db.execute("INSERT INTO creature_movement_scripts VALUES (20, 0, 0, 802, 0, 0, 0, 0)")
+    db.execute("CREATE TABLE creature_ai_events (creature_id INT, action1_script INT, action2_script INT,"
+               " action3_script INT)")
+    db.executemany("INSERT INTO creature_ai_events VALUES (?, ?, 0, 0)", [(2079, 10), (2079, 11)])
+    db.execute("CREATE TABLE creature_movement (id INT, script_id INT)")
+    db.execute("CREATE TABLE creature_movement_template (entry INT, script_id INT)")
+    db.executemany("INSERT INTO creature_movement_template VALUES (?, 20)", [(2079,), (1992,)])
+    db.execute("CREATE TABLE gossip_menu_option (menu_id INT, action_script_id INT)")
+    db.commit()
+    db.close()
+    store = Store(data)
+    store.save("gossip", [*store.load("gossip"), *(
+        _it(voice.gossip_id(t), "text", it)
+        for t, it in ((SHOUT, "Muori, intruso!"), (SHARED, "Per la Dama Oscura!"), (BOSS, "Non uscirai mai!"),
+                      (GROWL, "%s ringhia."))
+    )])
+
+
+def add_core(folder: Path) -> Path:
+    """A vmangos/core checkout holding one C++ script, boss_bat, that says broadcast text 803."""
+    cpp = folder / "src" / "scripts" / "zone" / "boss_bat.cpp"
+    cpp.parent.mkdir(parents=True)
+    cpp.write_text('enum { YELL_LEAVE = 803 };\nvoid AddSC() { newscript->Name = "boss_bat"; }\n')
+    return folder
+
+
+def add_intro(data: Path) -> None:
+    """The Skyborne intro's first two subtitles shipped in Italian, and the intro table under pipeline/."""
+    Store(data).save("ui", [_it("BroadcastText:316345", "text", "Per migliaia di anni,"),
+                            _it("BroadcastText:316346", "text", "un gruppo di alti elfi")])
+    (data.parent / "pipeline").mkdir(exist_ok=True)
+    (data.parent / "pipeline" / "voice_intros.tsv").write_text(
+        "first\tlast\trace\n316345\t316358\tskyborne\n329309\t329317\thuman\n", encoding="utf-8")

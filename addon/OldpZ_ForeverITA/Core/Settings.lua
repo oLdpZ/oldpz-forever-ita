@@ -237,6 +237,11 @@ Settings.define{ id = "voice.greeting", kind = "choice", choices = { "once", "al
   label = "NPC greetings", it = "Saluti dei PNG",
   choiceText = { once = "Una volta per PNG", always = "Sempre", never = "Mai" } }
 voiceSetting("voice.books", "Books and letters", "Libri e lettere")
+-- what NPCs say or yell in chat, and the narrator of each race's intro cinematic
+voiceSetting("voice.speech", "NPC lines in chat", "Frasi dei PNG in chat")
+voiceSetting("voice.intro", "Race intro cinematics", "Filmati d'introduzione delle razze")
+-- the short greeting when an NPC's window opens, its goodbye, and the annoyed line after many clicks
+voiceSetting("voice.hello", "NPC greetings on a click and goodbyes", "Saluti al clic e congedi dei PNG")
 -- While a line plays the game's own English voice is turned off, and put back afterwards (the voice player).
 voiceSetting("voice.muteDialog", "Silence the game's English voices while a line plays",
   "Silenzia le voci inglesi del gioco mentre parla un PNG")

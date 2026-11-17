@@ -32,6 +32,9 @@ SCOPES: dict[str, str] = {
 FIELDS = ("description", "progress", "completion")
 NARRATOR = "narrator"
 BOOK_NARRATOR = "book-narrator"
+# the narrator of each race's intro cinematic (`i-` lines), one voice each; Skyborne is Forever's own race
+INTRO_RACES = ("human", "dwarf", "gnome", "nightelf", "orc", "tauren", "troll", "undead", "skyborne")
+INTRO_NARRATORS = tuple(f"narrator-{r}" for r in INTRO_RACES)
 SEXES = ("m", "f")
 # The pack is made before anyone plays: it cannot know the name, so the player is the hero.
 HERO = {"m": "eroe", "f": "eroina"}
@@ -74,6 +77,16 @@ def gossip_key(key: str) -> str:
 
 def book_key(key: str) -> str:
     return f"b-{key}"
+
+
+def speech_key(key: str) -> str:
+    """An NPC's line in chat, by the gossip key of its English (UI/Speech finds the Italian the same way)."""
+    return f"s-{key}"
+
+
+def intro_key(broadcast_id: int) -> str:
+    """A line of a race's intro cinematic, by its BroadcastText id (the subtitle's UI key)."""
+    return f"i-{broadcast_id}"
 
 
 def it_hash(it: str) -> str:
@@ -244,7 +257,7 @@ class Job:
 
 # ---- who speaks a line -----------------------------------------------------------------------------------
 
-_KEY = re.compile(r"\d+-(?:description|progress|completion)|[gb]-[0-9a-f]{16}")
+_KEY = re.compile(r"\d+-(?:description|progress|completion)|[gbs]-[0-9a-f]{16}|i-\d+")
 _VOICE_ID = re.compile(r"[a-z0-9]+")
 
 
@@ -411,9 +424,12 @@ def _speaker_rows(speakers: Sequence[Mapping[str, Any]]) -> list[str]:
         sp = row.get("speaker")
         if sp == BOOK_NARRATOR and not str(key).startswith("b-"):
             problems.append(f"voice speakers {key}: only a book page has the book narrator")
-        elif not (sp in (NARRATOR, BOOK_NARRATOR) or _creature_id(sp)):
+        elif sp in INTRO_NARRATORS and not str(key).startswith("i-"):
+            problems.append(f"voice speakers {key}: only an intro line has an intro narrator")
+        elif not (sp in (NARRATOR, BOOK_NARRATOR, *INTRO_NARRATORS) or _creature_id(sp)):
             problems.append(
-                f"voice speakers {key}: speaker must be a creature id, {NARRATOR!r} or {BOOK_NARRATOR!r}"
+                f"voice speakers {key}: speaker must be a creature id, {NARRATOR!r}, {BOOK_NARRATOR!r} or an"
+                " intro narrator (narrator-<race>)"
             )
         others = row.get("others", [])
         if not isinstance(others, list) or not all(_creature_id(o) for o in others) or sp in others:

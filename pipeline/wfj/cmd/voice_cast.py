@@ -57,6 +57,26 @@ LINES_PER_SPEAKER = 3
 NARRATOR_PROFILES = {"narrator_profile": "The narrator", "book_narrator_profile": "A reader of books"}
 
 
+def intro_problems(intro: dict[str, Any], roster: dict[str, Any]) -> list[str]:
+    """voice.toml's `[intro.<race>]` tables: the narrator of each race's intro cinematic (`voice`, a roster
+    voice) and who it is for the prompt (`profile`, English only). A race with no table has no intro voice."""
+    out: list[str] = []
+    for race, t in intro.items():
+        where = f"intro {race}"
+        if race not in voice.INTRO_RACES:
+            out.append(f"{where}: no race {race!r} (one of {', '.join(voice.INTRO_RACES)})")
+            continue
+        if not isinstance(t, dict) or t.get("voice") not in roster:
+            named = t.get("voice") if isinstance(t, dict) else t
+            out.append(f"{where}: voice {named!r} is not in the roster")
+            continue
+        profile = t.get("profile")
+        why = casting.not_english(profile) if isinstance(profile, str) and profile.strip() else "empty"
+        if why:
+            out.append(f"{where}: profile must be English only, Gemini would read it aloud ({why})")
+    return out
+
+
 def load_config(path: Path) -> dict[str, Any]:
     """voice.toml, checked (`casting.roster_problems`), with each roster voice as the engine and
     `voice_make.plan` read it: {gemini_voice, model, notes, fits, project, pitch} (project 1 and pitch 0 when
@@ -80,11 +100,13 @@ def load_config(path: Path) -> dict[str, Any]:
         why = casting.not_english(text) if isinstance(text, str) and text.strip() else "empty"
         if why:
             problems.append(f"{name} must be English only, Gemini would read it aloud ({why})")
+    problems += intro_problems(cfg.setdefault("intro", {}), raw)
     if problems:
         raise ValueError(f"{path.name}: " + "; ".join(problems))
     cfg["roster"] = {
         vid: {"gemini_voice": v["voice"], "model": cfg["model"], "notes": v["notes"],
-              "fits": v.get("fits", ""), "project": v.get("project", 1), "pitch": v.get("pitch", 0)}
+              "fits": v.get("fits", ""), "project": v.get("project", 1), "pitch": v.get("pitch", 0),
+              "tempo": v.get("tempo", 1)}
         for vid, v in raw.items()
     }
     return cfg
@@ -212,14 +234,14 @@ def run_profiles(argv: Sequence[str]) -> int:
 def in_scope(
     rows: Sequence[dict[str, Any]], quests: Sequence[int], books: Sequence[str]
 ) -> list[dict[str, Any]]:
-    """The speakers rows of a scope: its quests' fields, its book pages and the NPC talk (the table holds the
-    talk of the scope's creatures only)."""
+    """The speakers rows of a scope: its quests' fields, its book pages, the NPC talk, the NPC lines in chat
+    and the intro lines (the table holds those of the scope only: `wfj voice speakers` wrote it)."""
     want, pages = set(quests), {voice.book_key(b) for b in books}
     return [
         r for r in rows
         if (r["key"][0].isdigit() and int(r["key"].split("-", 1)[0]) in want)
         or r["key"] in pages
-        or r["key"].startswith("g-")
+        or r["key"].startswith(("g-", "s-", "i-"))
     ]
 
 

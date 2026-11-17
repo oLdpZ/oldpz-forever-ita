@@ -86,6 +86,19 @@ def test_speaker_problems():
     assert "voice speakers 6-progress: provenance must be an object" in problems
 
 
+
+def test_speech_and_intro_keys():
+    assert voice.speech_key("0123456789abcdef") == "s-0123456789abcdef"
+    assert voice.intro_key(316345) == "i-316345"
+    assert "narrator-skyborne" in voice.INTRO_NARRATORS and len(voice.INTRO_NARRATORS) == 9
+    good = [_row("s-" + "a" * 16, 10), _row("i-316345", "narrator-skyborne")]
+    assert voice.speaker_problems(good, []) == []
+    bad = [_row(G("b" * 16), "narrator-skyborne"), _row("i-316346", "narrator-elf"), _row("i-31a", "narrator-orc")]
+    problems = voice.speaker_problems(bad, [])
+    assert any(p.startswith(f"voice speakers {G('b' * 16)}: only an intro line") for p in problems)
+    assert any(p.startswith("voice speakers i-316346: speaker must be") for p in problems)
+    assert "voice speakers: bad key 'i-31a'" in problems
+
 def test_once_cast_every_speaking_creature_needs_a_voice():
     voices = [{"creature": 10, "voice": "undeadmale", "row": "undead",
                "provenance": {"source": "cast@voice.toml", "imported": TODAY}}]
@@ -197,3 +210,76 @@ def test_book_pages_sharing_one_english_ship_the_lowest_pages_italian(world):
     english.save("book", [*english.load("book"), vf._en(31, "text", "Hello Morgan,$B$B-Baelog", hash=vf.SIGNED)])
     store.save("book", [*store.load("book"), vf._it(31, "text", "Caro  Morgan.", english={"hash": vf.SIGNED})])
     assert cmd.shipped_lines(world.data, [], [vf.SIGNED])[f"b-{vf.SIGNED}"] == "Caro Morgan."
+
+
+# ---- the whole game: every NPC's greeting, the lines in chat, the intros ------------------------------------
+
+S = voice.speech_key
+NOTHING = ((), ())
+
+
+def test_everyone_greets_every_npc_with_a_menu_or_a_collected_line(world):
+    vf.add_speech(world.db, world.data)
+    rows, _ = cmd.build_tables(world.data, world.db, "sha", NOTHING, TODAY, everyone=True)
+    got = _by_key(rows)
+    # no quest in scope, yet every creature with a gossip menu or quest greeting, or one the collector heard,
+    # greets
+    assert got[G(voice.gossip_id(vf.HELLO))] == (3597, vf.COLLECTOR)
+    assert got[G(voice.gossip_id(vf.GREETING))] == (1992, "vmangos@sha")
+    assert got[G(voice.gossip_id(vf.STRANGER))] == (5000, vf.COLLECTOR)
+    assert not any(k.startswith("i-") for k in got)  # no intro table under pipeline/: no intro lines
+    assert S(voice.gossip_id(vf.BOSS)) not in got  # without the core's sources the C++ lines have no speaker
+
+
+def test_everyone_names_who_says_each_line_in_chat(world):
+    vf.add_speech(world.db, world.data)
+    core = vf.add_core(world.tmp / "core")
+    rows, report = cmd.build_tables(world.data, world.db, "sha", NOTHING, TODAY, everyone=True, core=core)
+    got = {r["key"]: r for r in rows}
+    assert got[S(voice.gossip_id(vf.SHOUT))]["speaker"] == 2079
+    shared = got[S(voice.gossip_id(vf.SHARED))]
+    assert shared["speaker"] == 1992 and shared["others"] == [2079]  # the lowest speaks, the rest are others
+    assert got[S(voice.gossip_id(vf.BOSS))]["speaker"] == 9000  # from the C++ script
+    assert got[S(voice.gossip_id(vf.BOSS))]["provenance"]["source"] == "vmangos-src@sha"
+    assert S(voice.gossip_id(vf.GROWL)) not in got  # an emote
+    assert report["speech"] == []  # every C++ line found its creature
+
+
+def test_everyone_gives_each_intro_line_its_race_s_narrator(world):
+    vf.add_speech(world.db, world.data)
+    vf.add_intro(world.data)
+    rows, _ = cmd.build_tables(world.data, world.db, "sha", NOTHING, TODAY, everyone=True)
+    got = _by_key(rows)
+    assert got["i-316345"] == ("narrator-skyborne", "intro@voice_intros.tsv")
+    assert got["i-316346"] == ("narrator-skyborne", "intro@voice_intros.tsv")
+    lines = cmd.shipped_lines(world.data, [], [])
+    assert lines["i-316345"] == "Per migliaia di anni,"
+    assert voice.speaker_problems(rows, []) == []
+
+
+def test_a_zone_scope_stays_as_it_was(world):
+    vf.add_speech(world.db, world.data)
+    vf.add_intro(world.data)
+    rows, _ = cmd.build_tables(world.data, world.db, "sha", SCOPE, TODAY)
+    assert not any(r["key"].startswith(("s-", "i-")) for r in rows)
+    assert G(voice.gossip_id(vf.STRANGER)) not in _by_key(rows)
+
+
+def test_a_rerun_keeps_a_line_s_old_speaker_while_it_still_says_it():
+    old = [_row("g-" + "a" * 16, 30), _row("g-" + "b" * 16, 31), _row("1-description", voice.NARRATOR)]
+    new = [_row("g-" + "a" * 16, 20, others=[30, 40]), _row("g-" + "b" * 16, 20, others=[40]),
+           _row("1-description", 50)]
+    got = {r["key"]: (r["speaker"], r.get("others")) for r in cmd.keep_speakers(new, old)}
+    assert got["g-" + "a" * 16] == (30, [20, 40])  # 30 still says it: it keeps the line (and its audio)
+    assert got["g-" + "b" * 16] == (20, [40])  # 31 no longer does: the new choice stands
+    assert got["1-description"] == (50, None)  # the narrator gives way to a creature found since
+
+
+def test_speakers_refuses_a_forever_vo_folder_that_is_not_there(world, capsys):
+    scope = world.tmp / voice.SCOPES["tirisfal"]
+    scope.parent.mkdir(parents=True)
+    scope.write_text("456\n")
+    argv = ["speakers", "--vmangos", str(world.db), "--commit", "sha", "--scope", "tirisfal",
+            "--forever-vo", str(world.tmp / "nowhere")]
+    assert cmd.run(argv) == 1
+    assert "nowhere" in capsys.readouterr().err

@@ -11,6 +11,7 @@ history of WoW Forever Japanese, the addon this one is forked from, stays with t
 ## Unreleased
 
 ### Added
+- Voce italiana anche per i saluti di tutti i PNG, per quello che i PNG dicono e urlano in chat (con la stessa voce delle loro missioni) e per i filmati d'introduzione di ogni razza, letti da un narratore italiano sopra la musica della zona di partenza. Si attivano nella pagina Voce delle opzioni e richiedono i pacchetti voce aggiornati.
 - Con Questie: titoli e obiettivi delle missioni e nomi dei PNG in italiano anche nel tracker, nella mappa, nel diario e nei tooltip di Questie. Le scritte di Questie e le righe di avanzamento del suo tracker restano in inglese.
 - Nomi ufficiali in italiano anche dove li mostra il gioco: oggetti, incantesimi, abilità, zone e fazioni nei tooltip, nella reputazione, nelle abilità, in mercanti, bottino, ricompense, minimappa e mappa. Ogni tipo di nome si sceglie in italiano o in inglese nelle opzioni. Il libro incantesimi resta in inglese: scriverci bloccherebbe le barre azioni in combattimento.
 - Nomi ufficiali anche negli oggetti richiesti alla consegna di una missione, nella finestra delle professioni (ricette, oggetto prodotto, reagenti) e nel titolo del dettaglio della reputazione.

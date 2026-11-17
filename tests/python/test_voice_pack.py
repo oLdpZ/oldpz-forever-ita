@@ -318,3 +318,94 @@ def test_one_pack_over_420_mb_writes_none(split, monkeypatch, capsys):
     err = capsys.readouterr().err
     assert "OldpZ_ForeverITA_Voce_01_10:" in err and "Altro" not in err and "nothing written" in err
     assert not split.out.exists()
+
+
+PREFIXED = PACKS.replace('levels = [1, 10]', 'levels = [1, 10]\nprefixes = ["i-"]') + """
+[[pack]]
+suffix = "Chat"
+title = "frasi dei PNG in chat"
+prefixes = ["s-"]
+"""
+
+
+def test_a_prefixed_key_goes_to_its_pack_before_the_levels():
+    packs = voice_packs.parse_packs(PREFIXED)
+    levels = voice_packs.parse_levels(LEVELS)
+
+    def of(key: str) -> str:
+        return voice_packs.pack_of(key, packs, levels).suffix
+
+    assert of("s-006921c124c689f8") == "Chat"
+    assert of("i-316345") == "01_10"
+    assert of("g-006921c124c689f8") == "Altro"
+    assert of("457-progress") == "11_20"
+    chat = voice_packs.find(packs, "Chat")
+    assert chat.prefixes == ("s-",) and chat.levels is None and not chat.other
+
+
+@pytest.mark.parametrize(("change", "why"), [
+    (('prefixes = ["s-"]', 'prefixes = ["i-"]'), "prefix"),  # one prefix, two packs
+    (('prefixes = ["s-"]', 'prefixes = []'), "want levels"),  # a pack with no band, no other, no prefix
+    (('prefixes = ["s-"]', 'prefixes = ["s"]'), "prefix"),  # a prefix is letters then '-'
+])
+def test_a_bad_prefix_is_refused(change, why):
+    with pytest.raises(ValueError, match=why):
+        voice_packs.parse_packs(PREFIXED.replace(*change))
+
+
+def test_the_committed_table_sends_chat_greetings_and_intros_to_their_packs():
+    pipeline = Path(__file__).resolve().parents[2] / "pipeline"
+    packs = voice_packs.parse_packs((pipeline / "voice-packs.toml").read_text(encoding="utf-8"))
+    assert voice_packs.pack_of("s-0123456789abcdef", packs, {}).suffix == "Chat"
+    assert voice_packs.pack_of("i-316345", packs, {}).suffix == "01_20"
+    # greetings ride with the chat lines: with them Altro is over the limit
+    assert voice_packs.pack_of("g-0123456789abcdef", packs, {}).suffix == "Chat"
+    assert voice_packs.pack_of("n-genorcm1-g1", packs, {}).suffix == "Chat"
+
+
+def test_the_pack_of_the_greetings_names_who_greets_and_the_english_files_to_silence():
+    lines = {"n-um-g1": Entry("n-um-g1.mp3", "a" * 16, 0.8)}
+    lua = voice_pack.register_text(lines, {}, hello=({2079: "um", 1992: "uf"}, [700, 701]))
+    assert "  greeters = {\n    [1992] = \"uf\",\n    [2079] = \"um\",\n  }," in lua
+    assert "  hellomute = { 700, 701 }," in lua
+    assert "greeters" not in voice_pack.register_text(lines, {})  # a pack without greetings says nothing
+
+
+def test_the_chat_pack_carries_the_greetings_of_its_voices_only(world):  # noqa: F811 - the fixture
+    vf_rows = [{"key": "n-um-g1", "voice": "um", "speaker": 2079, "it": "Che vuoi?"}]
+    (world.data / "voice" / "hello.jsonl").write_text(
+        "".join(__import__("json").dumps(r) + "\n" for r in vf_rows), encoding="utf-8")
+    (world.data / "voice" / "greeters.jsonl").write_text(
+        '{"creature": 2079, "voice": "um"}\n{"creature": 9, "voice": "nobody"}\n', encoding="utf-8")
+    (world.tmp / "pipeline").mkdir(exist_ok=True)
+    (world.tmp / "pipeline" / "voice_hello_mute.txt").write_text("# files\n700\n701\n", encoding="utf-8")
+    assert voice_ship.hello_of(world.data, {"n-um-g1": Entry("n-um-g1.mp3", "a" * 16, 0.8)}) == (
+        {2079: "um"}, [700, 701])
+    assert voice_ship.hello_of(world.data, {"1-description": Entry("x.mp3", "a" * 16, 1.0)}) is None
+
+
+def test_a_line_in_chat_carries_the_english_files_it_silences():
+    lines = {"s-00112233445566ff": Entry("s-00112233445566ff.mp3", "a" * 16, 2.0, mute=(555001, 555002)),
+             "g-00112233445566ff": Entry("g-00112233445566ff.mp3", "b" * 16, 1.0)}
+    lua = voice_pack.register_text(lines, {})
+    assert '["s-00112233445566ff"] = { "s-00112233445566ff.mp3", "' + "a" * 16 + '", 2.0, m = { 555001, 555002 } },' \
+        in lua
+    assert "m = " not in lua.split('["g-00112233445566ff"]')[1].split("\n")[0]
+
+
+def test_the_mute_table_reaches_only_the_lines_in_chat(tmp_path):
+    table = tmp_path / "voice_mute.tsv"
+    table.write_text("key\tfiles\n00112233445566ff\t555001,555002\n", encoding="utf-8")
+    lines = {"s-00112233445566ff": Entry("s.mp3", "a" * 16, 2.0), "g-00112233445566ff": Entry("g.mp3", "b" * 16, 1.0)}
+    voice_ship.add_mutes(lines, voice_ship.read_mutes(table))
+    assert lines["s-00112233445566ff"].mute == (555001, 555002)
+    assert lines["g-00112233445566ff"].mute == ()
+    assert voice_ship.read_mutes(tmp_path / "absent.tsv") == {}
+
+
+def test_the_mute_table_is_made_from_the_server_sounds_and_the_client_sound_kits():
+    from wfj.core.voice import gossip_id
+    from wfj.dev import voice_mute
+
+    got = voice_mute.rows({"Release the hounds!": 61, "No sound kit.": 9}, {61: [567437, 567438], 63: [1]})
+    assert got == {gossip_id("Release the hounds!"): [567437, 567438]}

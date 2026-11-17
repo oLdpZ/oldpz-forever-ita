@@ -37,6 +37,9 @@ local CANDIDATES = { frames = { "CHAT_FRAMES" }, typeInfo = { "ChatTypeInfo" }, 
 Speech.TYPES = { "MONSTER_SAY", "MONSTER_YELL", "MONSTER_WHISPER", "MONSTER_EMOTE", "MONSTER_PARTY",
   "RAID_BOSS_EMOTE", "RAID_BOSS_WHISPER" }
 local BUBBLE_TYPES = { MONSTER_SAY = true, MONSTER_YELL = true, MONSTER_PARTY = true }
+-- the lines the voice pack may speak (UI/VoicePlayer.onSpeech): what an NPC says, never what it does (an emote)
+local VOICED_TYPES = { MONSTER_SAY = true, MONSTER_YELL = true, MONSTER_WHISPER = true, MONSTER_PARTY = true,
+  RAID_BOSS_WHISPER = true }
 Speech.BUBBLE_SCANS, Speech.BUBBLE_INTERVAL = 8, 0.1 -- a bubble is looked for 8 times, 0.1 s apart
 
 local deps = {}
@@ -285,6 +288,13 @@ local function handle(frame, line, typeId, event, eventArgs, formatter)
   end)
   if matched == 0 then why("no line matched", frame, event, en, key) end
   lastJa = ja ~= nil and matched > 0
+  -- the Italian is on screen: its voice may speak it, in the speaker's voice (guarded: the line stays translated)
+  local voice = WFJ.VoicePlayer
+  if lastJa and VOICED_TYPES[name] and voice and type(voice.onSpeech) == "function" then
+    local C = WFJ.Collector
+    local creature = C and type(C.creatureId) == "function" and not secret(guid) and C.creatureId(guid) or nil
+    pcall(voice.onSpeech, key, name, creature, lineID)
+  end
   if ja and BUBBLE_TYPES[name] and count(en, "%%s") == 0 and not queued(lineID) then
     pending[#pending + 1] = { en = en, ja = ja, id = lineID, left = Speech.BUBBLE_SCANS }
     Speech.scheduleScan()

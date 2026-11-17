@@ -34,6 +34,13 @@ Its inputs are variables with defaults under `predecessors/` (the import's input
 
 Writes `data/voice/speakers.jsonl`: who says each line. It prints the lines read by a narrator, the quests the database lacks, the lines with several speakers and the scoped lines with no Italian. Look at the narrator lines: a quest started by a creature that is not known should not be a narrator.
 
+For the whole game (`SCOPE=tutto`: every NPC's greeting, the NPC lines in chat, the race intros) first fetch the core's C++ scripts once, then pass the inputs folder where forever-vo lives (a `--forever-vo` folder that is not there is an error, never skipped):
+```
+make vmangos-src INPUTS=/root/inputs
+make voice-speakers SCOPE=tutto INPUTS=/root/inputs VOICE_DB=<mangos.sqlite>
+```
+It prints the greetings, lines in chat and intro lines it found, and the C++ lines no single script uses (left silent). The intro ranges are `pipeline/voice_intros.tsv`.
+
 ### 3. Profiles
 ```
 cd pipeline && python -m wfj voice profiles build --vmangos <mangos.sqlite> --commit <sha> --client <client tables folder>
@@ -52,6 +59,10 @@ Edit `pipeline/voice.toml` if a kind of speaker needs another voice (the roster 
 make voice-cast SCOPE=tirisfal
 ```
 Writes `data/voice/voices.jsonl`; it prints how many creatures each row got. One creature's voice, by a ruling, goes in `data/voice/overrides.jsonl` (`{"creature": id, "voice": "<roster id>"}`). Recasting a kind of speaker remakes only its lines.
+
+**Designed voices.** The owner's rule: a creature with 8 or more lines (quest fields, greetings and lines in chat) gets a voice of its own. `python -m wfj voice candidates` lists those that have none yet; their designs go into `voice.toml` (`design`, English), their overrides into `overrides.jsonl`, and `make voice-design` makes them (up to 200 per Gemini project; ask the owner before using the slots). Each race intro's narrator is a `[intro.<race>]` table (`voice`, `profile`).
+
+**The English voice of the lines in chat.** `python -m wfj.dev.voice_mute --vmangos <mangos.sqlite> --soundkit <SoundKitEntry.csv> --out voice_mute.tsv` (from `pipeline/`) rewrites `pipeline/voice_mute.tsv`, which the packs read.
 
 ### 5. Plan
 ```

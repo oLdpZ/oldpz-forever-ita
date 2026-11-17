@@ -6,13 +6,14 @@ it one table through the main addon's single global, `OldpZ_ForeverITA_RegisterV
 { file name, Italian hash, seconds, f = { file name, seconds }, v = { [voice id] = { file name, seconds } } };
 `f` is the take for a female character (a line that names the player or picks a word by sex), `v` is there
 only for a line several differently cast creatures say, and `creatures` maps each speaker of such a line to
-its voice id ({ m = male voice, f = female voice } for a creature shown as both). The addon plays a file only
-when the hash equals the hash of the Italian it ships.
+its voice id ({ m = male voice, f = female voice } for a creature shown as both). A line in chat whose
+English the server sends with a sound carries `m = { file id, … }`: the game's own files the addon silences
+while ours plays. The addon plays a file only when the hash equals the hash of the Italian it ships.
 """
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 
 from wfj.emit.lua_writer import lua_string
@@ -26,14 +27,15 @@ AUTHOR = "oLd_pZ"
 
 @dataclass
 class Entry:
-    """One line of the pack: the male (or only) take, the female take of the main voice, and the takes of the
-    other voices (each with its own female take)."""
+    """One line of the pack: the male (or only) take, the female take of the main voice, the takes of the
+    other voices (each with its own female take) and the game's English files it silences."""
 
     file: str
     hash: str
     seconds: float
     female: tuple[str, float] | None = None
     voices: dict[str, tuple[str, float, tuple[str, float] | None]] = field(default_factory=dict)
+    mute: tuple[int, ...] = ()
 
 
 def title_of(words: str | None = None) -> str:
@@ -71,6 +73,8 @@ def _line(key: str, e: Entry) -> str:
             for vid, (f, s, fem) in sorted(e.voices.items())
         )
         parts.append(f"v = {{ {v} }}")
+    if e.mute:
+        parts.append(f"m = {{ {', '.join(str(int(i)) for i in e.mute)} }}")
     return f"    [{lua_string(key)}] = {{ {', '.join(parts)} }},"
 
 
@@ -83,10 +87,22 @@ def _creature(c: int, v: str | tuple[str, str]) -> str:
 def register_text(
     lines: Mapping[str, Entry], creatures: Mapping[int, str | tuple[str, str]] | None = None,
     folder: str = FOLDER,
+    hello: tuple[Mapping[int, str], Sequence[int]] | None = None,
 ) -> str:
-    """`lines`: {pack key: Entry}; `creatures`: {creature id: voice id or (male, female)}. Written sorted."""
+    """`lines`: {pack key: Entry}; `creatures`: {creature id: voice id or (male, female)}; `hello`, for the
+    pack that holds the greetings on a click (`n-<voice>-<slot><k>`): ({creature: the voice that greets}, the
+    client's English greeting files the addon silences). Written sorted."""
     body = [_line(key, e) for key, e in sorted(lines.items())]
     who = [_creature(c, v) for c, v in sorted((creatures or {}).items())]
+    greet: list[str] = []
+    if hello is not None:
+        greeters, mute = hello
+        greet = [
+            "  greeters = {",
+            *(f"    [{c}] = {lua_string(v)}," for c, v in sorted(greeters.items())),
+            "  },",
+            f"  hellomute = {{ {', '.join(str(f) for f in sorted(mute))} }},",
+        ]
     return "\n".join([
         "-- Generato da wfj voice pack. Non modificare.",
         "-- Un addon principale troppo vecchio non ha la funzione di registrazione: il pacchetto resta muto.",
@@ -100,6 +116,7 @@ def register_text(
         "  creatures = {",
         *who,
         "  },",
+        *greet,
         "})",
         "",
     ])

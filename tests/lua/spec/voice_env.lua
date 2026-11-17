@@ -7,6 +7,7 @@ local Stub = require("tests.lua.spec.wow_stub")
 local E = {}
 
 E.FILES = { "Core/Const.lua", "Core/Compat.lua", "Core/State.lua", "Core/Voice.lua", "Core/VoiceQueue.lua",
+  "Core/VoiceIntro.lua",
   "Core/Settings.lua", "Core/Modifier.lua", "Core/Translator.lua", "Core/SurfaceState.lua", "Core/Normalize.lua",
   "Core/Hash.lua", "Core/Collector.lua", "Core/UIStringKeys.lua", "Core/UIStrings.lua",
   "UI/Font.lua", "UI/Frames.lua", "UI/Render.lua", "UI/ButtonText.lua", "UI/Labels.lua", "UI/QuestFrame.lua",
@@ -48,6 +49,34 @@ end
 -- The pack's Register.lua, as Main's global does it: register, then tell the UI a pack arrived.
 function E.register(WFJ)
   local n = WFJ.Voice.register({ format = 3, folder = E.FOLDER, lines = lines(WFJ) })
+  if n > 0 then WFJ.State.fire("voicePack") end
+  return n
+end
+
+-- The human intro's first two subtitles (UI rows) and a line in chat whose English has a voice of its own
+-- (file 555001, silenced while ours plays), in a second pack.
+E.CHAT_FOLDER = "OldpZ_ForeverITA_Voce_Chat"
+E.INTRO1, E.INTRO2 = "BroadcastText:329309", "BroadcastText:329310"
+E.DATA.ui = { [E.INTRO1] = { ja = "I nobili umani di Roccavento.", status = "." },
+  [E.INTRO2] = { ja = "Anche se l'invasione recente.", status = "." } }
+E.SHOUT = "00112233445566ff"
+E.DATA.gossip[E.SHOUT] = { ja = "Fuori di qui!", status = "." }
+E.ENGLISH_SHOUT = 555001
+
+function E.chatPath(key) return ("Interface\\AddOns\\%s\\Sound\\%s.mp3"):format(E.CHAT_FOLDER, key) end
+
+function E.registerChat(WFJ)
+  local function add(key, ja, extra)
+    local e = { key .. ".mp3", WFJ.Hash.key(ja), 2.0 }
+    for k, v in pairs(extra or {}) do e[k] = v end
+    return e
+  end
+  local n = WFJ.Voice.register({ format = 3, folder = E.CHAT_FOLDER, lines = {
+    ["s-" .. E.GOSSIP] = add("s-" .. E.GOSSIP, E.DATA.gossip[E.GOSSIP].ja),
+    ["s-" .. E.SHOUT] = add("s-" .. E.SHOUT, E.DATA.gossip[E.SHOUT].ja, { m = { E.ENGLISH_SHOUT } }),
+    ["i-329309"] = add("i-329309", E.DATA.ui[E.INTRO1].ja),
+    ["i-329310"] = add("i-329310", E.DATA.ui[E.INTRO2].ja),
+  } })
   if n > 0 then WFJ.State.fire("voicePack") end
   return n
 end

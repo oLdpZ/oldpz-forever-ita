@@ -147,13 +147,19 @@ end
 -- Stub.voice = { sounds = { { path, channel } }, stopped = { handle }, cvars, timers = { { delay, fn } },
 --   willPlay = true }; Stub.modelFile is the file id a loaded model reports (0 = no model).
 function Stub.installVoiceAPI()
-  local v = { sounds = {}, stopped = {}, cvars = { Sound_EnableDialog = "1" }, timers = {}, willPlay = true }
+  local v = { sounds = {}, stopped = {}, cvars = { Sound_EnableDialog = "1" }, timers = {}, willPlay = true,
+    muted = {}, mutes = 0, music = {} }
   Stub.voice, Stub.modelFile = v, 118355
   _G.PlaySoundFile = function(path, channel)
     v.sounds[#v.sounds + 1] = { path = path, channel = channel }
     if not v.willPlay then return false end
     return true, #v.sounds
   end
+  -- a game file silenced by id until unmuted (a /reload lifts them all); the music playing, or nil
+  _G.MuteSoundFile = function(id) v.muted[id] = true; v.mutes = v.mutes + 1 end
+  _G.UnmuteSoundFile = function(id) v.muted[id] = nil end
+  _G.PlayMusic = function(id) v.music[#v.music + 1] = id; v.playing = id end
+  _G.StopMusic = function() v.playing = nil end
   _G.StopSound = function(handle) v.stopped[#v.stopped + 1] = handle end
   _G.C_CVar = {
     GetCVar = function(name) return v.cvars[name] end,
@@ -213,6 +219,7 @@ end
 
 function Stub.removeVoiceAPI()
   _G.PlaySoundFile, _G.StopSound, _G.C_CVar, _G.C_Timer = nil, nil, nil, nil
+  _G.MuteSoundFile, _G.UnmuteSoundFile, _G.PlayMusic, _G.StopMusic = nil, nil, nil, nil
   Stub.voice = nil
 end
 

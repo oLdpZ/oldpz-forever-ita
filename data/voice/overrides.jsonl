@@ -414,6 +414,7 @@
 {"creature": 9529, "voice": "maybess", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 9560, "voice": "maxwell", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 9619, "voice": "torwa", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 9623, "voice": "narrator", "reason": "damaged mechanical construct of Karna Remtravel in Un Goro: narration", "provenance": {"source": "maintainer", "imported": "2026-11-14"}}
 {"creature": 9796, "voice": "galgar", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 10136, "voice": "fuely", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10176, "voice": "kaltunk", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
@@ -427,6 +428,7 @@
 {"creature": 10321, "voice": "emberstrife", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10460, "voice": "ironboot", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10537, "voice": "longhorn", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
+{"creature": 10541, "voice": "narrator", "reason": "talking thermometer device of Krakle in Un'Goro: narration", "provenance": {"source": "maintainer", "imported": "2026-11-14"}}
 {"creature": 10616, "voice": "raelen", "reason": "a designed voice of its own (>= 8 quest lines or a starting zone, 2026-10-26)", "provenance": {"source": "maintainer", "imported": "2026-10-26"}}
 {"creature": 10665, "voice": "holland", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
 {"creature": 10666, "voice": "gordo", "reason": "a designed voice of its own (the owner chose 3.8 designed voices, 2026-10-24)", "provenance": {"source": "maintainer", "imported": "2026-10-24"}}
@@ -573,3 +575,31 @@
 {"creature": 275657, "voice": "narrator", "reason": "a corpse: its line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 275683, "voice": "narrator", "reason": "Eralya dying: the lines are stage directions, narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
 {"creature": 275789, "voice": "narrator", "reason": "a corpse: its line is narration", "provenance": {"source": "maintainer", "imported": "2026-10-25"}}
+{"creature": 5624, "voice": "abomination", "reason": "an abomination: the undead man's voice did not fit it (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 15195, "voice": "abomination", "reason": "an abomination: the undead man's voice did not fit it (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 10181, "voice": "bansheequeen", "reason": "the Banshee Queen: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 15193, "voice": "bansheequeen", "reason": "the Banshee Queen: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 3584, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 3585, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 3901, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4053, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4054, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4061, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 8518, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 11793, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 11794, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 13697, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 13699, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 13737, "voice": "dryad", "reason": "a dryad: a plain woman's voice did not fit her (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 10918, "voice": "satyr", "reason": "a satyr: a plain man's voice did not fit him (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-16"}}
+{"creature": 4968, "voice": "jaina", "reason": "Lady Jaina Proudmoore: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 7999, "voice": "tyrande", "reason": "Tyrande Whisperwind: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 15633, "voice": "tyrande", "reason": "Tyrande Whisperwind: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 10540, "voice": "voljin", "reason": "Vol'jin: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 7937, "voice": "mekkatorque", "reason": "High Tinker Mekkatorque: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 11699, "voice": "varian", "reason": "Varian Wrynn: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 14720, "voice": "saurfang", "reason": "High Overlord Saurfang: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 10182, "voice": "rexxar", "reason": "Rexxar: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 5635, "voice": "falstad", "reason": "Falstad Wildhammer: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 16128, "voice": "rhonin", "reason": "Rhonin: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
+{"creature": 1284, "voice": "benedictus", "reason": "Archbishop Benedictus: a great leader gets a voice of its own, not its race's generic one (the owner)", "provenance": {"source": "maintainer", "imported": "2026-11-17"}}
