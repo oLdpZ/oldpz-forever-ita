@@ -341,6 +341,23 @@ describe("Core/Collector", function()
       assert.is_nil(C.creatureId("garbage"))
     end)
 
+    it("a secret GUID is never indexed: nil, no error (the client's quest window in Forever 1.60.1)", function()
+      local SECRET = "Creature-0-4372-0-17-3100-0000SECRET"
+      local mt = getmetatable("")
+      local index = mt.__index
+      mt.__index = function(s, k)
+        if s == SECRET then error("attempt to index a secret string value") end
+        return index[k]
+      end
+      _G.issecretvalue = function(v) return v == SECRET end
+      WFJ.Compat = WFJ.Compat or { resolve = function(name) return _G[name] end }
+      local ok, id = pcall(C.creatureId, SECRET)
+      mt.__index, _G.issecretvalue = index, nil
+      assert.is_true(ok, tostring(id))
+      assert.is_nil(id)
+      assert.are.equal(3100, C.creatureId("Creature-0-4372-0-17-3100-0000A1B2C3"))
+    end)
+
     it("records the name under npc:<id>:name, never the GUID; refuses the player's own name", function()
       local db = C.load(nil, deps())
       assert.are.equal("recorded", C.recordNpc("Creature-0-4372-0-17-3100-0000A1B2C3", "Senani Thunderheart"))

@@ -102,6 +102,9 @@ function HelpTooltip.walk(tt)
         local recKey = side:sub(1, 1) .. i
         if i < (labelOpts and labelOpts.from or 1) then
           WFJ.SurfaceState.drop(SURFACE, recKey) -- a line the opts leave out (a name on line 1)
+        elseif fs and fs.GetText and WFJ.SurfaceState.secret(fs:GetText()) then
+          -- a secret line (a unit frame's tooltip): never compared or read, and nothing of ours stays on it
+          WFJ.SurfaceState.drop(SURFACE, recKey)
         elseif fs and fs.GetText and (fs:GetText() or "") ~= "" then
           -- The client appended to a line we already translated (GameTooltip:AppendText adds the key binding after
           -- SetText, whose hook has run): put its English back in front of the addition, so the whole line is

@@ -43,6 +43,23 @@ describe("UI/HelpTooltip", function()
     assert.are.equal(WFJ.Font.PATH, (left(1):GetFont()))
   end)
 
+  it("a secret line (a unit frame's tooltip, Forever 1.60.1) is never read; the others translated", function()
+    local SECRET = "Senani Thunderheart (secret)"
+    local mt = getmetatable("")
+    local index = mt.__index
+    mt.__index = function(s, k)
+      if s == SECRET then error("attempt to compare a secret string value") end
+      return index[k]
+    end
+    _G.issecretvalue = function(v) return v == SECRET end
+    WFJ.Compat.init(function(name) return _G[name] end)
+    local ok, err = pcall(hover, owner, SECRET, "Information about your character.")
+    mt.__index, _G.issecretvalue = index, nil
+    assert.is_true(ok, tostring(err))
+    assert.are.equal(SECRET, left(1):GetText())
+    assert.are.equal("キャラクターの情報です。", left(2):GetText())
+  end)
+
   it("refits with one Show() only when a pass changed a line", function()
     hover(owner, "Character Info", "Information about your character.")
     local before = tt.calls.Show

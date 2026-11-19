@@ -380,7 +380,8 @@ end
 local function knownNames(eventArgs)
   local names, seen = {}, {}
   local function add(n)
-    if type(n) == "string" and n ~= "" and not secret(n) and not seen[n] then seen[n] = true; names[#names + 1] = n end
+    -- the secret test first: a secret name may not even be compared with ""
+    if type(n) == "string" and not secret(n) and n ~= "" and not seen[n] then seen[n] = true; names[#names + 1] = n end
   end
   local sender = type(eventArgs) == "table" and eventArgs[2] or nil
   add(sender)
