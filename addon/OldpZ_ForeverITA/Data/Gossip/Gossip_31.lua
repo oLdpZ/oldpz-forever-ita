@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["314d31c6c5e02268"] = { "Cerchi l'aiuto di un druido? Allora dovresti andare da Kal al Pozzo Lunare appena a sud della locanda di Dolanaar.", "." },
   ["314d8ab0f0b1b5b1"] = { "Grazie, {name}. Mobiliterò subito la mia gente!", "." },
   ["314e71667ce1a151"] = { "Il ⟦Stonehearth Bunker=Fortilizio di Cordipietra⟧ è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo distruggerà!", "." },
+  ["3152be44c5b7c5c6"] = { "Salute, amico. Posso interessarti a qualcuno dei miei materiali per le professioni?", "." },
   ["31539665aa88b598"] = { "Ah, mia dolce Brandy, quanto mi manca!", "." },
   ["3157dfed1fc92668"] = { "La nostra unica speranza è trarre qualcosa di buono da una situazione già brutta.", "." },
   ["315f5202c4429714"] = { "Déjà vu. Per un attimo mi è sembrato di essere di nuovo a casa... prima della pestilenza...", "." },

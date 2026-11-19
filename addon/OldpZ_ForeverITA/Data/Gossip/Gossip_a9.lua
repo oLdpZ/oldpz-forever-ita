@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["a900ecfd3b8eafc2"] = { "Quando sentirò che hai imparato abbastanza, ti concederò la capacità di scegliere qualsiasi famiglio tu preferisca.", "." },
+  ["a901427360f53f76"] = { "Benvenut<o/a> al Servizio Recupero Beni di Xizzix! Se l'hai perso, probabilmente l'abbiamo trovato noi!\n\nDai un'occhiata alla mia merce: forse abbiamo recuperato qualcosa che hai buttato via senza pensarci e di cui ora hai deciso che proprio non puoi fare a meno.", "." },
   ["a90690082f0b97b2"] = { "Ti prego, insegnami a diventare Fabbro di Spade, Seril.", "." },
   ["a91547ee34ba4fc5"] = { "La corruzione di un titano caduto. La corruzione del Distruttore. Dopotutto, il bastone fu forgiato dal seme dell'odio. È questo, naturalmente, ciò che mi ha portato qui...", "." },
   ["a918f042301666cb"] = { "Nella morte, gli animali del mondo ci donano sia la vita sia la protezione. Se senti di poter offrire il giusto rispetto per il loro sacrificio, allora la professione di scuoiatore potrebbe fare per te. Parla con Eladriel nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧, nel nord di Darnassus, per saperne di più.", "." },

@@ -2,5 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [270038] = { nil, nil, 0xb2fc98aa, nil, "em" },
+  [270094] = { "Cuorditempesta", nil, 0xe7d3a256, nil, ".m" },
   [270438] = { "⟦Deathstalker=Inseguitore della Morte⟧ Masoj", nil, 0xd7077bf2, nil, ".m" },
 })

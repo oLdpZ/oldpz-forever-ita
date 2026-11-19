@@ -2,5 +2,5 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [185333] = { nil, nil, 0xa6076fc9, nil, "em" },
-  [185334] = { nil, nil, 0x252b5011, nil, "em" },
+  [185334] = { nil, nil, 0xd970dfdc, nil, "em" },
 })

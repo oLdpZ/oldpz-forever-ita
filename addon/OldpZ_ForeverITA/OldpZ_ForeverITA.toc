@@ -523,6 +523,7 @@ Data\Unit\Unit_0049.lua
 Data\Unit\Unit_0185.lua
 Data\Unit\Unit_0203.lua
 Data\Unit\Unit_0211.lua
+Data\Unit\Unit_0214.lua
 Data\Unit\Unit_0230.lua
 Data\Unit\Unit_0244.lua
 Data\Unit\Unit_0246.lua

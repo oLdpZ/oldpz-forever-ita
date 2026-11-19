@@ -34,6 +34,7 @@
 {"id": "3bb49b77f727d647", "field": "text", "en": "Understand this, Eranikus wants nothing more than to be brought to Azeroth from the Dream. Once he is out, he will stop at nothing to destroy my physical manifestation. This, however, is the only way in which you could recover the scepter shard.", "hash": "3bb49b77f727d647", "src": "vmangos@13b49dc"}
 {"id": "3bc278a509a38933", "field": "text", "en": "I would be delighted to aid you in the commencement of your pursuit! Let me grab my spinner and we'll get started...", "hash": "3bc278a509a38933", "src": "vmangos@13b49dc"}
 {"id": "3bcebb4f7703b915", "field": "text", "en": "Please explain how the scepter works.", "hash": "3bcebb4f7703b915", "src": "vmangos@13b49dc"}
+{"id": "3bd007fa3ddbd6ca", "field": "text", "en": "Words are like arrows. Once loosed, you cannot call them back.", "hash": "3bd007fa3ddbd6ca", "src": "collector@1.60.1.70938", "npcs": [4604]}
 {"id": "3bdd17cacbc31043", "field": "text", "en": "The Royal Apothecary Society has little patience for fools, as do I.  Perhaps the next time you and I speak of my steeds, you will be considered a friend of the Undercity.  Until then...", "hash": "3bdd17cacbc31043", "src": "vmangos@13b49dc"}
 {"id": "3bde261437bc081e", "field": "text", "en": "The Stormpike Graveyard is under attack!  If left unchecked, the Alliance will capture it!", "hash": "3bde261437bc081e", "src": "vmangos@13b49dc"}
 {"id": "3be17a1cbc1d52c9", "field": "text", "en": "I've been gone a long time...I better get back.", "hash": "3be17a1cbc1d52c9", "src": "vmangos@13b49dc"}

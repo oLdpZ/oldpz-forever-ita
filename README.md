@@ -16,11 +16,11 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 
 | | In italiano |
 |---|---|
-| Missioni | 4.775 |
-| Righe di dialogo dei PNG | 10.924 |
+| Missioni | 4.776 |
+| Righe di dialogo dei PNG | 10.930 |
 | Pagine di libri | 925 |
 | Pagine di lettere | 208 |
-| Tooltip degli oggetti | 10.577 |
+| Tooltip degli oggetti | 10.578 |
 | Tooltip delle abilità | 20.010 |
 | Testi dell'interfaccia | 15.271 |
 

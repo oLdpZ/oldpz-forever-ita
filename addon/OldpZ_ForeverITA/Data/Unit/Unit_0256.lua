@@ -2,5 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [256386] = { nil, nil, 0x7a084a67, nil, "em" },
+  [256388] = { nil, nil, 0x6013786c, nil, "em" },
   [256392] = { "⟦Pack Kodo=Kodo da Soma⟧", nil, 0x3622e4ee, nil, ".m" },
+  [256672] = { "Kurvelk Zoccolo d'Ombra", nil, 0x0216f024, nil, ".m" },
 })

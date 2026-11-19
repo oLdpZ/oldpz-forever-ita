@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["3bb49b77f727d647"] = { "Sappi questo: Eranikus non desidera altro che essere portato su Azeroth dal Sogno. Una volta uscito, non si fermerà davanti a nulla pur di distruggere la mia manifestazione fisica. Questo, però, è l'unico modo in cui potresti recuperare il frammento dello scettro.", "." },
   ["3bc278a509a38933"] = { "Sarà un vero piacere aiutarti a muovere i primi passi! Fammi prendere il filatoio e cominciamo...", "." },
   ["3bcebb4f7703b915"] = { "Ti prego, spiegami come funziona lo scettro.", "." },
+  ["3bd007fa3ddbd6ca"] = { "Le parole sono come frecce: una volta scoccate, non puoi più richiamarle.", "." },
   ["3bda17948348b1a4"] = { "Presto sarai pront<o/a>, {name}.", "." },
   ["3bdd17cacbc31043"] = { "La Royal Apothecary Society ha poca pazienza con gli sciocchi, e io pure. Forse la prossima volta che parleremo dei miei destrieri sarai <considerato/considerata> amic<o/a> di ⟦Undercity=Sepulcra⟧. Fino ad allora...", "." },
   ["3bde261437bc081e"] = { "Il ⟦Stormpike Graveyard=Cimitero dei Piccatonante⟧ è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo conquisterà!", "." },

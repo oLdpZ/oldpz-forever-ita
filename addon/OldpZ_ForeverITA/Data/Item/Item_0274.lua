@@ -22,6 +22,7 @@ WFJ.Data.add("item", {
   [274018] = { "Ti insegna a creare dei Pauldrons of Glory.", 0x7941f9e7, "u" },
   [274019] = { "Ti insegna a creare dei Sabatons of Glory.", 0xf79affb3, "u" },
   [274020] = { "Consegnalo ad Aisarra Nightmeadow in cambio di una ricetta di forgiatura d'armature a tua scelta tra quelle che offre al momento.", 0x6ae32dc5, "u" },
+  [274022] = { "Usa: aggiunge questo aspetto alla collezione del tuo account.", 0x95fcc750, "u" },
   [274026] = { "Assegnato ai vincitori della Stranglethorn Fishing Extravaganza. Scambialo con Jang per un premio a tua scelta.", 0x60a0554d, "u" },
   [274029] = { "L'Interrogatore aveva con sé diverse chiavi, ma questa è particolarmente ornata.", 0x43ace8e1, "u" },
   [274030] = { "Si ottiene disincantando oggetti di Hyjal Summit o di Barrow Deeps. Il suo potere può essere sfruttato per creare oggetti artigianali potenti.", 0x30c15756, "u" },

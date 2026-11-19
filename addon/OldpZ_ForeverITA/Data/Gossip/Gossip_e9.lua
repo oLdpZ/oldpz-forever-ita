@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["e96c2914a093f591"] = { "⟦Jubjub=Pincopalla⟧? Dove sei, ⟦Jubjub=Pincopalla⟧? Oh no! Dove sei andato stavolta!", "." },
   ["e9709ba79dbf89f9"] = { "Benvenut<o/a> a Caer Darrow, <straniero/straniera>.", "." },
   ["e97ae1d9e9ff75fb"] = { "Ho la testa a posto quanto chiunque altro, <amico/amica>. Credi quello che vuoi, ma SONO in grado di realizzare questa armatura. Se ti interessa, forse possiamo metterci d'accordo. Prima esco dal giro degli assassinii, meglio è.", "." },
+  ["e97b0c3a1ec019ce"] = { "Il primo giro lo offro io! Cioè, la moneta per pagarlo. Sulla mia mano. Da parte tua.", "." },
   ["e9963b6518819362"] = { "Buona gente di ⟦Goldshire=Borgodoro⟧, venite ad approfittare dei miei prezzi incredibili su merci rare. Non tornerò per un bel po'!", "." },
   ["e99751536d055949"] = { "%s comincia a combinare insieme cristalli di colori diversi.", "." },
   ["e99ceb739facfd5c"] = { "Bene, bene. Pare che abbiamo un po' di concorrenza. Addosso, ragazzi!", "." },
