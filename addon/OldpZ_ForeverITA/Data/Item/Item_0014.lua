@@ -86,6 +86,7 @@ WFJ.Data.add("item", {
   [14549] = { "Aumenta la probabilità di schivata del $N1%.", 0x40869ada, "u" },
   [14554] = { "Aumenta di $N1 la potenza d'attacco per $D1.", 0xb593685a, "u" },
   [14555] = { "Colpisce un bersaglio infliggendo $N1 danni da fuoco.", 0x9d8bd0af, "u" },
+  [14557] = { "Quando vieni colpito in combattimento hai il $N1% di probabilità di aumentare di $N2 l'armatura di tutti i membri del gruppo per $D1. La probabilità raddoppia nelle roccaforti e nelle città.", 0xde7745ff, "u" },
   [14576] = { "Riduce del $N1% tutta la minaccia generata.\nCorrompe il bersaglio, infliggendo $N2 danni in $D1.", 0xe1766722, "u" },
   [14613] = { "Inciso: al mio ometto, Taelan, da suo padre con amore.", 0x0776c4a0, "u" },
   [14625] = { "Ordine della ⟦Silver Hand=Mano d'Argento⟧.", 0x0f056048, "u" },

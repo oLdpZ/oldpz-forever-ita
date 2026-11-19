@@ -89,7 +89,7 @@ WFJ.Data.add("item", {
   [250387] = { "Ti insegna a creare un Elixir of the Grizzly.", 0x7909a84a, "u" },
   [250388] = { "Ti insegna a creare un Elixir of Lesser Intellect.", 0xb12f9adc, "u" },
   [250389] = { "Ti insegna a creare un Elixir of Intellect.", 0xf44def18, "u" },
-  [250725] = { "Maneggiare con cura.\nÈ allegata una polizza di carico che indica chiaramente che la spedizione è pericolosa e va trasportata con delicatezza. Le note sul contenuto avvertono che scadrà presto se il destinatario non lo mette al sicuro come si deve.", 0x714c6e56, "u" },
+  [250725] = { "È allegata una polizza di carico che indica chiaramente che la spedizione è pericolosa e va trasportata con delicatezza. Le note sul contenuto avvertono che scadrà presto se il destinatario non lo mette al sicuro come si deve.", 0xbaae002a, "u" },
   [250744] = { "Una manciata attorcigliata di legnetti ancora buoni per accendere il fuoco.", 0x2287c3e1, "u" },
   [250773] = { "Ricoperto di terra appena smossa. Scava nel terreno da secoli.", 0x615128b5, "u" },
   [250932] = { "Aumenta i danni magici di $N1 per $D1.", 0xe3e0c85c, "u" },

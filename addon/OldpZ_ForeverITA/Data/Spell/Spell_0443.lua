@@ -10,7 +10,7 @@ WFJ.Data.add("spell", {
   [443464] = { nil, "Rigenera $N1 salute ogni $N2 s.", nil, 0xc535cc68, "mu" },
   [443630] = { "Rimuove tutti gli effetti di limitazione al movimento e tutti gli effetti che ti fanno perdere il controllo del personaggio.", nil, 0x5922de69, nil, "um" },
   [443631] = { "Fa crescere per $D1 un Healing Blossom dal cadavere di un umanoide o di una bestia, che cura i membri del gruppo entro $N2 m di $N3 ogni $N4 s.", nil, 0xae7b345a, nil, "um" },
-  [443632] = { "Aumenta di $N1 il tuo livello effettivo di furtività. Aumenta di $N2 m la portata di Disarmo Trappole e Borseggio, e di $N3 m quella di Distrazione.", nil, 0x52f344aa, nil, "um" },
+  [443632] = { "Aumenta di $N1 il tuo livello effettivo di furtività.", nil, 0x01a7b84c, nil, "um" },
   [443635] = { "Evoca $N1 bottiglie d'acqua sorgiva, fornendo al Mago e ai suoi alleati qualcosa da bere.\n\nGli oggetti evocati scompaiono se si resta disconnessi per più di $N2 min.", nil, 0xc65f7367, nil, "um" },
   [443678] = { nil, "Quando viene ucciso, dal suo cadavere spunterà un Healing Blossom.", nil, 0x053e469e, "mu" },
   [443766] = { "Colpisce i nemici in un cono davanti all'incantatore, respingendoli.", nil, 0x61a1859e, nil, "um" },

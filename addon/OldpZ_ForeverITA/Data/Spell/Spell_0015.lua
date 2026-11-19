@@ -98,7 +98,7 @@ WFJ.Data.add("spell", {
   [15283] = { "Stordisce il bersaglio per $D1.", "Stordito.", 0x9d6107dd, 0x27f95286, "uu" },
   [15284] = { "Infligge i danni dell'arma e $N1 danni aggiuntivi a un nemico e ai suoi alleati più vicini, colpendo fino a un massimo di $N2 bersagli.", nil, 0xbd91ba0f, nil, "um" },
   [15285] = { "Infligge danni da fuoco ai nemici vicini.", nil, 0x209abb75, nil, "um" },
-  [15286] = { "Affligge il bersaglio con energia d'ombra che cura tutti i membri del gruppo del $N1% dei danni da incantesimi d'ombra che infliggi, per $D1.", "Il $N1% dei danni da incantesimi d'ombra inflitti dal Sacerdote che lo ha lanciato cura il gruppo del Sacerdote.", 0xac61f89c, 0xf23d1350, "uu" },
+  [15286] = { "Affligge il bersaglio con energia d'ombra che cura tutti i membri del gruppo del $N1% dei danni da incantesimi d'ombra che infliggi, per $D1. Tu ricevi il $N3% di cure in più da questo effetto.", "Il $N1% dei danni da incantesimi d'ombra inflitti dal Sacerdote che lo ha lanciato cura il gruppo del Sacerdote.", 0x1442ae51, 0xf23d1350, "uu" },
   [15288] = { "Aumenta i danni magici inflitti da un alleato di $N1 per $D1.", "Danni magici inflitti aumentati di $N1.", 0xf66c3a18, 0x01e9bfc6, "uu" },
   [15290] = { nil, "Il $N1% dei danni subiti dagli incantesimi da ombra cura l'incantatore.", nil, 0xadb33dda, "mu" },
   [15299] = { "Ti insegna a creare una ⟦Dark Iron Plate=Corazza a Piastre di Ferroscuro⟧.", nil, 0xf78a4dd7, nil, "um" },

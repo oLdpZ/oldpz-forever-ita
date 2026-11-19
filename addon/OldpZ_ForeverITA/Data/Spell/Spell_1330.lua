@@ -3,4 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1330734] = { "Rigenera $N1 mana in $D1. Devi sederti per bere.", "$N1 mana rigenerato ogni secondo.", 0x792a9d04, 0x338019ff, "uu" },
   [1330855] = { "Quando colpisci con un incantesimo o un attacco offensivo, hai il $N1% di probabilità di punire il bersaglio, infliggendo $N2 danni da sacro. I danni sono triplicati contro i Non Morti.", nil, 0x0a2fed35, nil, "um" },
+  [1330858] = { "Gli attacchi in mischia possono sferzare il bersaglio, infliggendo $N1 danni da ombra.", nil, 0xe715b1ba, nil, "um" },
+  [1330887] = { "Spine magiche infliggono $N1 danni da natura a chiunque attacchi in mischia.", "Circondato da spine magiche che infliggono $N1 danni da natura a chi lo attacca in mischia.", 0x82c58d13, 0x27611b2f, "uu" },
+  [1330916] = { "Riduce di $N1 la potenza d'attacco del nemico bersaglio per $D1.", "Potenza d'attacco ridotta di $N1.", 0x77ef34fe, 0x3ac72513, "uu" },
 })

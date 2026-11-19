@@ -157,6 +157,7 @@ WFJ.Data.add("item", {
   [7991] = { "Ti insegna a creare dei Mithril Plate Shoulders.", 0xebb005c1, "u" },
   [7992] = { "Ti insegna a creare un'⟦Blue Glittering Axe=Ascia Splendente Blu⟧.", 0xb0932c04, "u" },
   [7993] = { "Ti insegna a creare uno ⟦Dazzling Mithril Rapier=Stocco di Mithril Luccicante⟧.", 0xdae5ff68, "u" },
+  [7994] = { "Ti insegna a creare delle ⟦Orcish War Leggings=Gambiere della Guerra Orchesche⟧.", 0x20fd8b38, "u" },
   [7995] = { "Ti insegna a creare dei Mithril Plate Bracers.", 0x2f79e0c3, "u" },
   [7996] = { "Competenza in Pesca aumentata di $N1.", 0x325349e2, "u" },
 })

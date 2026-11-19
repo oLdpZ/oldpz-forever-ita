@@ -24,6 +24,7 @@ WFJ.Data.add("item", {
   [282637] = { "Ti insegna a evocare questo compagno.", 0x42caee1b, "u" },
   [282639] = { "Gli ogre ti schiacciano con qualunque cosa.", 0x397b0b4c, "u" },
   [282699] = { "L'ultimo resto dell'antico difensore elementale di una città degli ⟦Highborne=Alti Nobili⟧.", 0x21d434b4, "u" },
+  [282700] = { "Scatena una raffica di dardi d'ombra contro tutti i bersagli vicini, infliggendo $N1 danni a ogni nemico colpito.", 0xf928fef9, "u" },
   [282703] = { "Trafigge il bersaglio, infliggendo $N1 danni fisici.", 0x970d45f0, "u" },
   [282706] = { "Non c'è dubbio su come ⟦Foulbelly=Panciamarcia⟧ si sia guadagnato quel nome.", 0x5f900395, "u" },
   [282712] = { "La superficie è ricoperta da rune oscure.", 0xbdacf254, "u" },

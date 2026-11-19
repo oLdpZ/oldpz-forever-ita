@@ -20,8 +20,8 @@ Funziona solo con **World of Warcraft: Forever**. Non è per WoW Classic né per
 | Righe di dialogo dei PNG | 10.930 |
 | Pagine di libri | 925 |
 | Pagine di lettere | 208 |
-| Tooltip degli oggetti | 10.578 |
-| Tooltip delle abilità | 20.010 |
+| Tooltip degli oggetti | 10.599 |
+| Tooltip delle abilità | 20.018 |
 | Testi dell'interfaccia | 15.271 |
 
 - **Missioni** dei livelli 1–20: titolo, obiettivi, descrizione, testo di avanzamento e di completamento, nella

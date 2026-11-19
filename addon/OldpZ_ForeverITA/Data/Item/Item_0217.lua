@@ -36,9 +36,11 @@ WFJ.Data.add("item", {
   [217497] = { "Aumenta i danni e le cure di incantesimi ed effetti magici fino a un massimo di $N1.", 0x76cbff0e, "u" },
   [217609] = { "Il talismano mostra un volto di pura malvagità. Eviti di fissarlo direttamente.", 0x25f8d1b6, "u" },
   [217693] = { "Rende invisibile chi la beve per $D1.", 0x3fdd20e3, "u" },
+  [217716] = { "Gettalo in un calderone ribollente per provocare un'esplosione di gas nocivo. Non interrompe la furtività.", 0x5d2eeb16, "u" },
   [217717] = { "Infondi l'essenza della magia del sangue in un emblema cavo.", 0x9ddd6f51, "u" },
   [217719] = { "Infondi l'essenza della magia del sangue in un emblema cavo.", 0x9ddd6f51, "u" },
   [217720] = { "Unisci offerte di carne e ossa.", 0x49295518, "u" },
   [217721] = { "Unisci offerte di carne e ossa.", 0x49295518, "u" },
+  [217727] = { "Rivela la tomba che nasconde un'offerta.", 0x4a6817a6, "u" },
   [217736] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
 })

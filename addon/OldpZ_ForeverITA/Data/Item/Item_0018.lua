@@ -86,6 +86,7 @@ WFJ.Data.add("item", {
   [18336] = { "Questo guanto sembra forte com'era una volta, infuso di potenza magica.", 0xa761e33e, "u" },
   [18340] = { "Assorbe $N1 danni da ombra per $D1.", 0x0612f036, "u" },
   [18345] = { "Riduce del $N1% la probabilità che gli effetti di silenzio ti colpiscano.", 0x3b7aed97, "u" },
+  [18348] = { "Conferisce a chi la impugna $N1 difesa, $N2 armatura, $N3 potenza d'attacco e $N4 potenza d'attacco aggiuntiva contro i dragoidi per $D1.\nL'Alta Lama", 0x1f33fedd, "u" },
   [18351] = { "Riduce i danni magici subiti di $N1.", 0x1d9ea266, "u" },
   [18354] = { "Rigenera $N1 mana ogni $D1 al tuo Imp.", 0xdaacf265, "u" },
   [18355] = { "Aumenta i danni inflitti dai famigli del 4%.", 0x30f466b7, "u" },

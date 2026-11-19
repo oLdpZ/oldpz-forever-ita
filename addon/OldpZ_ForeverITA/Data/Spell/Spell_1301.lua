@@ -62,7 +62,7 @@ WFJ.Data.add("spell", {
   [1301703] = { "Riduce il tempo di recupero di Contrizione e Preghiera di Guarigione di $D1.", nil, 0x54018d12, nil, "um" },
   [1301706] = { "Riduce il tempo di recupero di Piaga Divoratrice di $D1.", nil, 0x07f80f57, nil, "um" },
   [1301707] = { "Impossibile da rintracciare.", "Non tracciabile.", 0x9bd2adf2, 0x90c3da9a, "uu" },
-  [1301708] = { "Riduce il costo di Affondo Venefico e Sventramento di $N1 energia.", nil, 0x8f9d8c39, nil, "um" },
+  [1301708] = { "Riduce di $N1 energia il costo di Sventramento e Marchio della Morte.", nil, 0x0a4deea4, nil, "um" },
   [1301709] = { "Riduce il tempo di recupero di Assalto della Tempesta di $D1.", nil, 0xcc42fbad, nil, "um" },
   [1301711] = { "Riduce il tempo di recupero di ⟦Lava Burst=Getto di Lava⟧ di $D1.", nil, 0xc7834c12, nil, "um" },
   [1301713] = { "Riduce il tempo di recupero di Marea Benefica di $D1.", nil, 0x60ae184e, nil, "um" },

@@ -141,7 +141,7 @@ WFJ.Data.add("spell", {
   [17324] = { "+$N1 potenza d'attacco contro le bestie.", nil, 0x2e7564c4, nil, "um" },
   [17328] = { "Fornisce a chi lo indossa $N1 punti di rigenerazione del mana al secondo.", nil, 0xf99c0962, nil, "um" },
   [17329] = { "I prossimi $N1 attacchi in mischia che colpiscono l'incantatore avvolgeranno l'attaccante con ⟦Entangling Roots=Radici Avvolgenti⟧ (Grado $N2). Utilizzabile anche in forma alterata. Dura $D1.", "I danni in mischia che subisci immobilizzano il nemico con delle radici.", 0xbcbd5b38, 0x7c17ef4b, "uu" },
-  [17330] = { "Ti ancora al terreno con una ragnatela, impedendoti di saltare e annullando il prossimo effetto di Respinta subito entro $D1.", "Annulla il prossimo effetto di Respinta subito. Impossibile saltare.", 0x8e59d2c1, 0xc1bec85d, "uu" },
+  [17330] = { "Annulla il prossimo effetto di Respinta subito entro $D1, ma impedisce di saltare finché è attivo.", "Annulla il prossimo effetto di Respinta subito. Impossibile saltare.", 0x2e55c7f7, 0xc1bec85d, "uu" },
   [17331] = { "Riduce il tempo di lancio d'incantesimi del bersaglio nemico e aumenta l'intervallo tra gli attacchi in mischia e a distanza del $N1% per $D1.", "Velocità d'attacco e di lancio d'incantesimi ridotte.", 0xb8429a4c, 0x60bcdaaf, "uu" },
   [17332] = { "Probabilità al colpo: immobilizza il bersaglio e ne riduce l'Armatura di $N1 per $D1.", nil, 0x84c18016, nil, "um" },
   [17333] = { nil, "Immobilizzato e armatura ridotta.", nil, 0xafdcfc61, "mu" },
