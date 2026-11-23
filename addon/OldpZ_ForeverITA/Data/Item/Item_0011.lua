@@ -102,6 +102,7 @@ WFJ.Data.add("item", {
   [11584] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $N3 s diventi Ben Nutrito e guadagni $N4 Tempra e Spirito per $D2.", 0x7cf6aa9d, "u" },
   [11590] = { "Rigenera $N1 salute a un bersaglio meccanico alleato", 0xdee9ac83, "u" },
   [11602] = { "Apri la porta chiusa della taverna.", 0xb6eeb5da, "u" },
+  [11603] = { "Ferisce il bersaglio infliggendo $N1 danni.", 0xdaa3fed4, "u" },
   [11607] = { "Riduce l'armatura del bersaglio di $N1 per $D1.", 0x7c5d4826, "u" },
   [11608] = { "Stordisce il bersaglio per $D1.", 0x9d6107dd, "u" },
   [11609] = { "Usala sui resti di ⟦Bael'Gar=Bael'gar⟧ per catturarne l'essenza ardente.\nUsata per raccogliere l'essenza ardente di ⟦Bael'Gar=Bael'gar⟧.", 0xd7115ef8, "u" },

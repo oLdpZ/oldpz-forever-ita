@@ -292,7 +292,7 @@ WFJ.Data.add("item", {
   [16658] = { "Potenza d'attacco aumentata di $N1 contro le bestie.", 0xa8076141, "u" },
   [16659] = { "+$N1 potenza d'attacco.", 0xff5c97b2, "u" },
   [16665] = { "Ti insegna l'abilità ⟦Tranquilizing Shot=Tiro Tranquillizzante⟧.", 0xc625e40e, "u" },
-  [16766] = { "Rigenera $N1 salute in $D1. Devi sederti per mangiare.", 0xe5e04206, "u" },
+  [16766] = { { "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. Inoltre, l'esperienza ottenuta dalle uccisioni aumenta del $N6%.", "Rigenera $N1 salute in $D1. Devi sederti per mangiare. Se mangi per almeno $D2 diventi Ben Nutrito e guadagni $N4 Tempra per $D3. ", shape = { "6/3", "5/3" } }, 0x64afd919, "u" },
   [16767] = { "Ti insegna a cucinare un ⟦Undermine Clam Chowder=Guazzetto di Bivalve Piccante⟧.", 0x08409ade, "u" },
   [16768] = { "Rigenera $N1 salute ogni $D1 per $D2.", 0xe8cdadbe, "u" },
   [16787] = { "Utilizzala per camuffarti da membro dello Stormo dei Draghi Neri.", 0xbf106d9a, "u" },

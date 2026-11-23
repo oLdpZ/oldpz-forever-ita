@@ -20,7 +20,7 @@ WFJ.Data.add("spell", {
   [1280533] = { nil, "Marcato.", nil, 0x866cb76b, "mu" },
   [1280540] = { "Infligge danni ripartiti equamente tra tutti i bersagli colpiti", nil, 0xea674863, nil, "um" },
   [1280564] = { "Cura un alleato ogni $D1 per $D2.", "Rigenera $N1 salute ogni $D1.", 0x9e55a345, 0x1f2cc315, "uu" },
-  [1280634] = { "Cura tutti i membri del gruppo vicini di $N1 ogni $D1 per $D2. È necessario mantenere la canalizzazione affinché l'incantesimo resti attivo.", "Cura i membri del gruppo vicini di $N1 ogni $D1.", 0xe385df4e, 0x80aae398, "uu" },
+  [1280634] = { "Cura tutti gli alleati vicini di $N1 ogni $D1 per $D2.", "Cura i membri del gruppo vicini di $N1 ogni $D1.", 0xa2162d15, 0x80aae398, "uu" },
   [1280662] = { "Un grande nutrimento riempie l'incantatore, aumentando del $N1% i danni fisici inflitti e del $N2% le dimensioni.", "Danni aumentati del $N1%.", 0x44d52c98, 0xb556e361, "uu" },
   [1280669] = { "Infligge $N1 danni da fuoco al bersaglio.", nil, 0x1967a50e, nil, "um" },
   [1280857] = { "Hai ottenuto il rispetto dei Bolder'ok.", "Molto rispettato dai Bolder'ok.", 0x15ba29d2, 0x14f84f46, "uu" },

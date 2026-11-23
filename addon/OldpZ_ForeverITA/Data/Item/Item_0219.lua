@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("item", {
   [219147] = { "Ti insegna una nuova abilità d'incisione.", 0xbc8956a2, "u" },
+  [219326] = { "Probabilità di impiantare un seme negli umanoidi, nelle bestie o nei draconidi nemici colpiti dalle tue abilità o dai tuoi incantesimi. Se la creatura viene uccisa entro $N1 secondi dall'impianto del seme, dal suo cadavere crescerà un ⟦Healing Blossom=Fiore Curativo⟧.", 0x7356ebc3, "u" },
   [219343] = { "Aumenta di $N1 il tuo livello effettivo di furtività.", 0x01a7b84c, "u" },
   [219345] = { "Infligge $N1 danni da fuoco in $D1. Demoni e bestie restano immobilizzati per $D2.", 0xc1da90e1, "u" },
   [219399] = { "Effimero e instabile.", 0x284073cd, "u" },

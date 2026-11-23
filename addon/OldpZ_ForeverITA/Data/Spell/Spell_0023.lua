@@ -392,7 +392,7 @@ WFJ.Data.add("spell", {
   [23860] = { "Consuma un nemico nelle fiamme, bruciandolo e infliggendo danni da fuoco aggiuntivi ogni $N1 s in $D2.", "Danni da fuoco inflitti ogni $N1 s.", 0x2900110b, 0xfd7a76cf, "uu" },
   [23861] = { "Infligge $N1 danni da natura ai nemici vicini ogni $N2 s per $D2.", "$N1 danni da natura inflitti ogni $N2 s.", 0xa5f95a74, 0xf6322bec, "uu" },
   [23862] = { "Sputa veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $N1 s per $D2.", "Danni da natura inflitti ogni $N1 s.", 0xf250210d, 0xaae6fcde, "uu" },
-  [23863] = { "Probabilità del $N1% a ogni attacco in mischia di rigenerare $N2 energia.", nil, 0x9bbb22b0, nil, "um" },
+  [23863] = { "Probabilità del $N1% a ogni attacco in mischia di rigenerare $N2 energia.", nil, 0xd1575284, nil, "um" },
   [23864] = { "Rigenera $N1 energia.", nil, 0xa4de3742, nil, "um" },
   [23865] = { nil, "$N1 danni inflitti ogni $N2 s.", nil, 0x2af65718, "mu" },
   [23881] = { "Attacca all'istante il bersaglio, infliggendo danni pari al $N1% della potenza d'attacco più $N2 e aumentando la velocità di movimento del $N3% per $D1.", "Velocità di movimento aumentata del $N1%.", 0x4cccba66, 0xd5c4328e, "uu" },
