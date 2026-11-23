@@ -106,6 +106,7 @@ function MapPins.familyLines(tt, families)
   for i = 2, tt:NumLines() or 0 do -- line 1 is the quest's or the POI's own name
     local fs = Compat.resolve(name .. "TextLeft" .. i)
     local text = type(fs) == "table" and type(fs.GetText) == "function" and fs:GetText() or nil
+    if Compat.secret(text) then text = nil end -- never matched
     local atlas, body
     if type(text) == "string" then atlas, body = text:match("^(|A[^|]*|a ?)(.+)$") end
     body = body or text

@@ -100,6 +100,7 @@ local function populate(generator, owner, desc)
   local title, found, first = nil, false, true
   for _, child in desc:EnumerateElementDescriptions() do
     local text = elementText(child)
+    if Compat.secret(text) then text = nil end -- a secret element text is never compared
     if first then title, first = text, false end
     if type(text) == "string" and (text == report or text == advert) then found = true end
   end

@@ -1093,6 +1093,7 @@ function QuestMap.onTitleTooltip(_, button, questID)
   for i = 2, tt:NumLines() or 0 do
     local fs = Compat.resolve(name .. "TextLeft" .. i)
     local text = type(fs) == "table" and type(fs.GetText) == "function" and fs:GetText() or nil
+    if Compat.secret(text) then text = nil end -- a secret tooltip line is never matched
     local rec = WFJ.SurfaceState.get(help.SURFACE, "L" .. i)
     -- blank, or already shown (and counted) by the walk: the click line, also while the reveal key shows its English
     local skip = type(text) ~= "string" or text:match("^%s*$")

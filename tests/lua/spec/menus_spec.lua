@@ -319,6 +319,42 @@ describe("UI/Menus: menu entries", function()
     assert.are.equal(0, WFJ.MenuAttach.onFinalInit(nil))
   end)
 
+  it("a secret text width (Forever 1.60.1.71037) is never compared: the entry shows, its width stays", function()
+    WFJ.Menus.init()
+    local root = element(nil)
+    root:CreateButton("Gnoll")
+    local entry = root:CreateButton(UI.SET_FOCUS[1], function() end)
+    WFJ.Menus.onMenu("MENU_UNIT_TARGET", root, { unit = "target", name = "Gnoll" })
+    local frame = CreateFrame("Button")
+    frame.fontString = Stub.fontString(UI.SET_FOCUS[1])
+    function frame.fontString:GetUnboundedStringWidth() return 6 * #self.text end
+    frame.width = 100
+    function frame:GetWidth() return self.width end
+    function frame:SetWidth(w) self.width = w end
+    function frame.GetElementDescription() return entry end
+    _G.issecretvalue = function(v) return type(v) == "number" end -- every width secret
+    local ok, n = pcall(WFJ.MenuAttach.onFinalInit, frame)
+    _G.issecretvalue = nil
+    assert.is_true(ok, n)
+    assert.are.equal(1, n)
+    assert.are.equal("フォーカスに設定", frame.fontString:GetText())
+    assert.are.equal(100, frame.width)
+  end)
+
+  it("a secret element text is left as written; a secret unit name never stops the other entries", function()
+    WFJ.Menus.init()
+    _G.UnitName = function(unit) return unit == "target" and "Gnoll" or nil end
+    _G.issecretvalue = function(v) return v == "Gnoll" or v == UI.TRADE[1] end
+    local root, frames = generate("MENU_UNIT_TARGET", function(r)
+      r:CreateButton("Gnoll") -- the title
+      r:CreateButton(UI.SET_FOCUS[1])
+      r:CreateButton(UI.TRADE[1]) -- its text secret: never matched
+    end, { unit = "target" })
+    _G.issecretvalue, _G.UnitName = nil, nil
+    assert.are.equal("フォーカスに設定", frames[root.children[2]].fontString:GetText())
+    assert.are.equal(UI.TRADE[1], frames[root.children[3]].fontString:GetText())
+  end)
+
   it("no MenuTemplates on the client: a clickable entry stays English and gets no initializer", function()
     _G.MenuTemplates = nil
     local W = H.loadChunks(FILES)

@@ -49,7 +49,8 @@ Widgets.fontStrings = fontStrings
 function Widgets.showFrame(frame)
   local n, only = 0, WFJ.Labels.families("WidgetText")
   for _, fs in ipairs(fontStrings(frame, DEPTH)) do
-    if type(fs.GetText) == "function" and type(fs:GetText()) == "string" and fs:GetText() ~= "" then
+    if type(fs.GetText) == "function" and type(fs:GetText()) == "string" and not WFJ.Compat.secret(fs:GetText())
+        and fs:GetText() ~= "" then
       n = n + WFJ.Labels.show(SURFACE, textKey(fs), fs, nil, only)
     end
   end

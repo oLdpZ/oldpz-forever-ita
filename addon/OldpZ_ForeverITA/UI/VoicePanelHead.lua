@@ -73,7 +73,8 @@ function Head.load(h, item)
   end
   local unit = who.unit
   local guid = Compat.resolve("UnitGUID")
-  if unit and (type(guid) ~= "function" or guid(unit) ~= who.guid) then unit = nil end
+  local now = unit and type(guid) == "function" and guid(unit) or nil
+  if unit and (not now or Compat.secret(now) or now ~= who.guid) then unit = nil end
   local want = unit and who.guid or who.creature
   if h.loaded == want and hasModel(h.model) then
     showModel(h, true)

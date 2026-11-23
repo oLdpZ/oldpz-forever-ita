@@ -39,6 +39,7 @@ function Scan.collect()
         if region.GetObjectType and region:GetObjectType() == "FontString" and region:IsVisible()
             and not applied[region] then
           local text = region:GetText()
+          if Compat.secret(text) then text = nil end -- a nameplate's or a chat line's secret: never read
           if english(text) and not seen[text] then
             seen[text] = true
             local known = index ~= nil and index:match(text) ~= nil

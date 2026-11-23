@@ -199,7 +199,9 @@ function HelpTooltip.appended(tt, opts)
   local ok, err = pcall(function()
     for i = 1, tt:NumLines() or 0 do
       local fs = Compat.resolve(name .. "TextLeft" .. i)
-      if type(fs) == "table" and type(fs.GetText) == "function" and (fs:GetText() or "") ~= "" then
+      -- a secret line (a unit's, in combat) is never compared: the client's stays
+      if type(fs) == "table" and type(fs.GetText) == "function" and not Compat.secret(fs:GetText())
+          and (fs:GetText() or "") ~= "" then
         local before = fs:GetText()
         n = n + WFJ.Labels.show(APPENDED, "L" .. i, fs, relayout, opts)
         if fs:GetText() ~= before then changed = true end

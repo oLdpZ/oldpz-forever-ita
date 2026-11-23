@@ -228,7 +228,7 @@ end
 local function handle(frame, line, typeId, event, eventArgs, formatter)
   local en = type(eventArgs) == "table" and eventArgs[1] or nil
   local byId = typeIds()
-  local name = byId and byId[typeId]
+  local name = byId and not secret(typeId) and byId[typeId]
   if not name then return why("unknown chat type", frame, event, en) end
   if type(frame) ~= "table" or type(line) ~= "string" then return why("no line", frame, event, en) end
   if type(eventArgs) ~= "table" then return why("no eventArgs", frame, event, en) end
@@ -247,6 +247,7 @@ local function handle(frame, line, typeId, event, eventArgs, formatter)
   local guid, target, language = eventArgs[12], eventArgs[5], eventArgs[3]
   local me = Compat.resolve("UnitName")
   me = type(me) == "function" and me("player") or nil
+  if secret(me) then me = nil end -- never compared
   local toOther = type(target) == "string" and target ~= "" and not secret(target) and target ~= me
   lastTarget = Speech.targetShape(target, me)
   lastCollect = "not asked"
@@ -360,7 +361,7 @@ end
 local warnText = setmetatable({}, { __mode = "k" }) -- fs → { en, ja }
 function Speech.onRaidWarning(frame, event, message, playerName)
   if (event ~= "RAID_BOSS_EMOTE" and event ~= "RAID_BOSS_WHISPER") or type(frame) ~= "table"
-      or type(message) ~= "string" or secret(message) or not WFJ.ChatSystem.on(AREA) then
+      or type(message) ~= "string" or secret(message) or secret(playerName) or not WFJ.ChatSystem.on(AREA) then
     return 0
   end
   local ja = Speech.translate(message)
@@ -368,9 +369,10 @@ function Speech.onRaidWarning(frame, event, message, playerName)
   if not ja or type(pool) ~= "table" or type(pool.EnumerateActive) ~= "function" then return 0 end
   local ok, jaBody = pcall(string.format, escaped(ja), playerName, playerName)
   local okEn, enBody = pcall(string.format, message, playerName, playerName)
-  if not ok or not okEn then return 0 end
+  if not ok or not okEn or secret(enBody) then return 0 end
   for fs in pool:EnumerateActive() do
-    if fs.messageOrder == frame.messageCounter and fs:GetText() == enBody then
+    local shown = fs:GetText()
+    if fs.messageOrder == frame.messageCounter and not secret(shown) and shown == enBody then
       warnText[fs] = { en = enBody, ja = jaBody }
       setBubble(fs, warnText[fs])
       return 1

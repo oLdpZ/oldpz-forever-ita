@@ -287,6 +287,7 @@ function AuctionHouse.onCellTooltip()
   for i = 1, tt:NumLines() or 0 do
     local fs = Compat.resolve(tt:GetName() .. "TextLeft" .. i)
     local text = type(fs) == "table" and fs:GetText() or nil
+    if Compat.secret(text) then text = nil end -- a secret tooltip line is never matched
     local open, label, close, rest = (text or ""):match("^(|c%x%x%x%x%x%x%x%x)(.-)(|r)(.*)$")
     if label == en and index:exactKey(label) then
       local band = WFJ.Labels.part(rest, BANDS) or rest

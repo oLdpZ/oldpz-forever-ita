@@ -86,8 +86,13 @@ local function fitHeader(box)
   if not base or type(header) ~= "table" or type(box.SetTextInsets) ~= "function" then return end
   local suffix = Compat.resolve(box:GetName() .. "HeaderSuffix")
   local left = base.left
-  if header:GetText() ~= base.text and not (type(suffix) == "table" and suffix:IsShown()) then
-    left = math.max(HEADER_PAD, base.left + header:GetStringWidth() - base.width)
+  local text, width = header:GetText(), header:GetStringWidth()
+  if Compat.secret(text, width) then -- a secret header (a whisper target's name) is never compared or measured
+    box:SetTextInsets(left, HEADER_RIGHT, 0, 0)
+    return
+  end
+  if text ~= base.text and not (type(suffix) == "table" and suffix:IsShown()) then
+    left = math.max(HEADER_PAD, base.left + width - base.width)
   end
   box:SetTextInsets(left, HEADER_RIGHT, 0, 0)
 end
@@ -105,7 +110,8 @@ function ChatTabs.onHeader(box)
     refits[box] = refit
   end
   if type(box.GetTextInsets) == "function" then
-    bases[box] = { left = (box:GetTextInsets()), text = header:GetText(), width = header:GetStringWidth() }
+    local left, text, width = (box:GetTextInsets()), header:GetText(), header:GetStringWidth()
+    bases[box] = not Compat.secret(left, text, width) and { left = left, text = text, width = width } or nil
   end
   local n = WFJ.Labels.show(SURFACE, "header." .. box:GetName(), header, refit, HEADER)
   if n > 0 then fitHeader(box) end

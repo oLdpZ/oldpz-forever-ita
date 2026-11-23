@@ -9,6 +9,15 @@ describe("Compat: resolver over an injected env", function()
     WFJ.Compat.init(function(name) return world[name] end)
   end)
 
+  it("secret: true when any value is one the client's issecretvalue flags; false without it", function()
+    assert.is_false(WFJ.Compat.secret("a", 1))
+    world.issecretvalue = function(v) return v == 42 end
+    assert.is_true(WFJ.Compat.secret(42))
+    assert.is_true(WFJ.Compat.secret(nil, "a", 42)) -- a nil before the secret does not stop the search
+    assert.is_false(WFJ.Compat.secret("a", 1))
+    assert.is_false(WFJ.Compat.secret())
+  end)
+
   it("returns the first candidate the env resolves, else nil", function()
     world.QuestInfoDescriptionText = "desc-widget"
     WFJ.Compat.declare("quest", "description", { "QuestDescriptionText", "QuestInfoDescriptionText" })

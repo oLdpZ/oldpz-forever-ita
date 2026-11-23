@@ -107,7 +107,9 @@ function VoicePlayer.speaker(window)
   local id = WFJ.Collector.creatureId(g)
   if not id then return nil end
   local sex = Compat.resolve("UnitSex")
-  return { creature = id, sex = type(sex) == "function" and sex(unit) or nil, unit = unit, guid = g }
+  local s = type(sex) == "function" and sex(unit) or nil
+  if Compat.secret(s) then s = nil end -- compared by Core/Voice and saved: never a secret
+  return { creature = id, sex = s, unit = unit, guid = g }
 end
 
 -- The name the panel shows: the NPC's Italian name when one is shipped (Core/UnitNames), else the client's; a book's
@@ -117,6 +119,7 @@ function VoicePlayer.nameOf(window)
   if unit then
     local unitName = Compat.resolve("UnitName")
     local en = type(unitName) == "function" and unitName(unit) or nil
+    if Compat.secret(en) then return nil end -- the name is saved with the line: never a secret
     local it = WFJ.UnitNames and type(en) == "string" and WFJ.UnitNames.forUnit(unit, en) or nil
     return it or en
   end

@@ -36,7 +36,9 @@ function TooltipLines.walk(tt)
     for i = 1, lines do
       local fs = Compat.resolve(name .. "TextLeft" .. i)
       local recKey = "L" .. i
-      if type(fs) == "table" and type(fs.GetText) == "function" and (fs:GetText() or "") ~= "" then
+      -- a secret line (a unit's, in combat) is never compared: the client's stays
+      if type(fs) == "table" and type(fs.GetText) == "function" and not Compat.secret(fs:GetText())
+          and (fs:GetText() or "") ~= "" then
         local before = fs:GetText()
         n = n + WFJ.Labels.show(f.surface, recKey, fs, f.refit, f.opts)
         if fs:GetText() ~= before then changed = true end

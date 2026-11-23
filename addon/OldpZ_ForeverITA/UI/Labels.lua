@@ -169,6 +169,10 @@ end
 function Labels.showArgs(surface, recKey, widget, key, args, refit)
   local fs = Labels.widget(widget)
   local en = fs and fs:GetText()
+  if Compat.secret(en) then -- never compared: the client's line stays
+    WFJ.SurfaceState.drop(surface, recKey)
+    return 0
+  end
   local rec = fs and WFJ.SurfaceState.get(surface, recKey)
   -- still our Japanese: a caller that re-splits it finds no key, which must not turn the line back to English
   if rec and rec.fs == fs and rec.applied ~= nil and en == rec.applied then return 1 end
@@ -208,7 +212,7 @@ function Labels.region(frame, key)
   if type(en) ~= "string" or en == "" then return nil end
   for _, region in ipairs(WFJ.Frames.regions(frame)) do
     if type(region) == "table" and region.GetObjectType and region:GetObjectType() == "FontString"
-        and region:GetText() == en then
+        and not Compat.secret(region:GetText()) and region:GetText() == en then
       cache = cache or {}
       cache[key] = region
       regionCache[frame] = cache

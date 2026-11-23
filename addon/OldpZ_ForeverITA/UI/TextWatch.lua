@@ -32,7 +32,8 @@ local function check(e)
   local font = fontOf(fs)
   if text == e.text and font == e.font then return false end
   pcall(e.fn)
-  e.text, e.font = fs:GetText(), fontOf(fs)
+  local now = fs:GetText()
+  e.text, e.font = not secret(now) and now or nil, fontOf(fs) -- a secret is never kept to be compared next time
   return true
 end
 

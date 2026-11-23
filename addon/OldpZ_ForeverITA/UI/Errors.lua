@@ -113,7 +113,7 @@ local function showLua(fs, recKey)
   local index = WFJ.UIIndex
   if not index or type(fs) ~= "table" or type(fs.GetText) ~= "function" then return 0 end
   local text = fs:GetText()
-  if type(text) ~= "string" or text == "" then return 0 end
+  if Compat.secret(text) or type(text) ~= "string" or text == "" then return 0 end
   local key = index:exactKey(text)
   return WFJ.Labels.show(SURFACE, recKey, fs, nil, { only = key and exactSet(key) or luaTemplates(index) })
 end
@@ -126,7 +126,8 @@ end
 local function linesFor(frame, message, messageID)
   local out, seen = {}, {}
   local function add(fs)
-    if type(fs) == "table" and not seen[fs] and type(fs.GetText) == "function" and fs:GetText() == message
+    if type(fs) == "table" and not seen[fs] and type(fs.GetText) == "function"
+        and not Compat.secret(fs:GetText()) and fs:GetText() == message
         and (type(fs.IsShown) ~= "function" or fs:IsShown()) then
       seen[fs] = true
       out[#out + 1] = fs
@@ -159,7 +160,7 @@ end
 
 -- hooksecurefunc target (UIErrorsFrame:AddMessage). → 1 (a render is on its way) | 0
 function Errors.onAddMessage(frame, message, _, _, _, _, messageID)
-  if type(frame) ~= "table" or type(message) ~= "string" or message == "" then return 0 end
+  if type(frame) ~= "table" or type(message) ~= "string" or Compat.secret(message) or message == "" then return 0 end
   local only
   if type(messageID) == "number" then
     local info = Compat.get(SURFACE, "messageInfo")
@@ -180,11 +181,15 @@ end
 
 -- The record of the line `messageType` shows while it is our Japanese for `message`. → rec, fs | nil
 local function ours(frame, messageType, message)
-  if type(messageType) ~= "number" or type(message) ~= "string" then return nil end
+  -- inside the client's TryDisplayMessage: a secret message or line must never be compared here
+  if type(messageType) ~= "number" or type(message) ~= "string" or Compat.secret(messageType, message) then
+    return nil
+  end
   local fs = frame:GetFontStringByID(messageType)
   local rec = type(fs) == "table" and WFJ.SurfaceState.get(SURFACE, lineKey(fs)) or nil
   if not rec or rec.fs ~= fs or rec.en ~= message or type(rec.applied) ~= "string" then return nil end
-  if fs:GetText() ~= rec.applied then return nil end
+  local shown = fs:GetText()
+  if Compat.secret(shown) or shown ~= rec.applied then return nil end
   return rec, fs
 end
 

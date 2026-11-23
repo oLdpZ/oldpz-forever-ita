@@ -119,7 +119,7 @@ function CommunitiesGuild.onRewardTooltip()
   local name, n, changed = tt:GetName(), 0, false
   for i = 1, tt:NumLines() or 0 do
     local fs = WFJ.Compat.resolve(name .. "TextLeft" .. i)
-    if type(fs) == "table" and type(fs.GetText) == "function" then
+    if type(fs) == "table" and type(fs.GetText) == "function" and not WFJ.Compat.secret(fs:GetText()) then
       local before = fs:GetText()
       n = n + WFJ.Labels.show(REWARD_TT, "L" .. i, fs, nil, { only = REWARD_LINES })
       if fs:GetText() ~= before then changed = true end

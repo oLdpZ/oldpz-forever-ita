@@ -97,7 +97,8 @@ end
 function SurfaceState.applyFont(surface, key, font)
   local rec = SurfaceState.get(surface, key)
   if not rec or not font or rec.applied == nil or sameFont(rec.appliedFont, font) then return nil end
-  if rec.fs:GetText() ~= rec.applied then return nil end
+  local current = rec.fs:GetText()
+  if SurfaceState.secret(current) or current ~= rec.applied then return nil end -- a secret is never compared
   if rec.fs:SetFont(font.path, font.size, font.flags) == false then return false end
   rec.appliedFont = font
   if rec.last then rec.last.font = font end

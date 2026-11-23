@@ -229,6 +229,7 @@ local function showText(dialog, info)
   local key, english = keyFor(info.text)
   if not key then return 0 end
   local shown = fs:GetText()
+  if Compat.secret(shown) then return 0 end -- a secret line is never compared: the client's stays
   local a1, a2 = argumentsOf(dialog, info, fs, english, shown)
   if a1 == nil and a2 == nil and english:find("%", 1, true) then return 0 end -- computed or changed: never guessed
   if english:find("%", 1, true) == nil and shown ~= english then return 0 end
@@ -299,7 +300,9 @@ end
 local seen = setmetatable({}, { __mode = "k" })
 
 local function labelOf(button)
-  return type(button) == "table" and type(button.GetText) == "function" and button:GetText() or nil
+  local label = type(button) == "table" and type(button.GetText) == "function" and button:GetText() or nil
+  if Compat.secret(label) then return nil end -- never compared
+  return label
 end
 
 -- Whether any button label differs from the one recorded last frame. → bool
@@ -319,21 +322,27 @@ function Popups.onUpdate(dialog)
   end
   local container = dialog.ButtonContainer
   local buttons = type(container) == "table" and type(container.Buttons) == "table" and container.Buttons or {}
+  local text = dialog.Text:GetText()
+  -- a secret line (a name in a combat-time dialog) is never compared or kept: the dialog stays as the client wrote it
+  if Compat.secret(text) then
+    seen[dialog] = nil
+    return
+  end
   local last = seen[dialog]
-  if last and last.text == dialog.Text:GetText() and not labelsChanged(last, buttons) then return end
+  if last and last.text == text and not labelsChanged(last, buttons) then return end
   local info = shownInfo(dialog, dialog.dialogInfo) -- GENERIC_CONFIRMATION: the caller's text and buttons
   showText(dialog, info)
   for i, button in ipairs(buttons) do
     local english = info["button" .. i]
     -- only a label that reads its English again: a countdown ("Decline (1s)") stays as the client wrote it
-    if type(button) == "table" and type(button.GetText) == "function" and english ~= nil
-        and button:GetText() == english and not (i == 1 and dialog.acceptDelay ~= nil) then
+    if english ~= nil and labelOf(button) == english and not (i == 1 and dialog.acceptDelay ~= nil) then
       showWord(button, english)
     end
   end
   local labels = {}
   for i, button in ipairs(buttons) do labels[i] = labelOf(button) end
-  seen[dialog] = { text = dialog.Text:GetText(), labels = labels, count = #buttons }
+  local after = dialog.Text:GetText()
+  seen[dialog] = not Compat.secret(after) and { text = after, labels = labels, count = #buttons } or nil
 end
 
 -- Every FontString and button label under `frame` (depth-first), restricted to SPECIAL_ONLY. An EditBox (a name the

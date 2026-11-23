@@ -54,7 +54,8 @@ local function showText()
   local fs = get("text")
   if type(fs) ~= "table" or type(fs.GetText) ~= "function" then return 0 end
   local text = fs:GetText()
-  if type(text) ~= "string" or not text:find("\n", 1, true) then
+  -- the line names who started the check: a secret one goes to Labels.show, which leaves it as the client wrote it
+  if type(text) ~= "string" or Compat.secret(text) or not text:find("\n", 1, true) then
     return WFJ.Labels.show(SURFACE, "text", fs, nil, TEXT)
   end
   local rec = WFJ.SurfaceState.get(SURFACE, "text")

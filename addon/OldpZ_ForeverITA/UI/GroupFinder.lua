@@ -266,8 +266,10 @@ local function fitVoiceLine()
   if type(fs.IsShown) == "function" and not fs:IsShown() then return end
   local tip = fs:GetParent()
   if type(tip) ~= "table" or type(tip.GetWidth) ~= "function" or type(tip.SetWidth) ~= "function" then return end
-  local need = (fs:GetStringWidth() or 0) + 22
-  if need > (tip:GetWidth() or 0) then tip:SetWidth(need) end
+  local width, now = fs:GetStringWidth(), tip:GetWidth()
+  if Compat.secret(width, now) then return end -- a secret size is neither added nor compared
+  local need = (width or 0) + 22
+  if need > (now or 0) then tip:SetWidth(need) end
 end
 
 function GroupFinder.onTooltip()

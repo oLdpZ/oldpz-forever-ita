@@ -398,6 +398,7 @@ function Calendar.onDayTooltip(dayButton)
   for i = 1, tt:NumLines() or 0 do
     local fs = Compat.resolve(name .. "TextLeft" .. i)
     local text = type(fs) == "table" and type(fs.GetText) == "function" and fs:GetText() or nil
+    if Compat.secret(text) then text = nil end -- a secret tooltip line is never matched
     local key, args
     if type(text) == "string" and text ~= "" then key, args = index:matchOnly(text, keys) end
     local id = key and type(args) == "table" and type(args[1]) == "string" and key .. "\0" .. args[1]

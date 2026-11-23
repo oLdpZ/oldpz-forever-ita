@@ -217,6 +217,11 @@ local function textOf(frame)
   return nil
 end
 
+local function secret(v)
+  local isSecret = Compat.resolve("issecretvalue")
+  return type(isSecret) == "function" and isSecret(v) and true or false
+end
+
 local menuKey = WFJ.Labels.keyer("menu.") -- a pooled frame's text widget, never its English or position
 
 -- One element, after the client's initializer wrote its English. `name` (optional): the menu's name (a unit's), never
@@ -233,8 +238,11 @@ function Menus.showElement(tag, frame, name)
   end
   local fs = textOf(frame)
   local en = fs and fs:GetText() or nil
+  -- a secret text (Forever 1.60.1) may not be compared: the element stays as the client wrote it; a secret name
+  -- (a unit menu's UnitName) is never compared either, so an entry is shown even when it reads like the name
+  if secret(en) then return 0 end
   if #spec.keys == 0 or type(en) ~= "string" or en == "" then return 0 end
-  if name ~= nil and en == name then return 0 end
+  if name ~= nil and not secret(name) and en == name then return 0 end
   -- one record per text widget: frames are pooled, and two entries may share one English
   local n = WFJ.Labels.show(SURFACE, menuKey(fs), fs, nil, { only = spec.keys })
   if n == 0 and spec.show then n = spec.show(SURFACE, menuKey(fs), fs) end -- a tag's own line form

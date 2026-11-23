@@ -328,6 +328,17 @@ describe("the StaticPopup dialogs on Forever", function()
     assert.are.equal("Do you really want to reset all of your instances? (2 left)", e.Text:GetText())
   end)
 
+  it("a secret dialog line (Forever 1.60.1) is never compared: the dialog stays as the client wrote it", function()
+    local e = _G.StaticPopup_Show("CONFIRM_RESET_INSTANCES")
+    local SECRET = "Do you really want to reset all of your instances? (secret)"
+    e.Text:SetText(SECRET)
+    _G.issecretvalue = function(v) return v == SECRET end
+    local ok, err = pcall(WFJ.Popups.onUpdate, e)
+    _G.issecretvalue = nil
+    assert.is_true(ok, err)
+    assert.are.equal(SECRET, e.Text:GetText())
+  end)
+
   it("the death countdown is rebuilt each time the client re-writes it, with its unit word in Japanese", function()
     local d = _G.StaticPopup_Show("DEATH")
     _G.StaticPopup_OnUpdate(d, 0.5) -- 89.5 s left: "2 Minutes"

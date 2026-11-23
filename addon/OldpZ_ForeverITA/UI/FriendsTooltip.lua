@@ -29,6 +29,7 @@ local function refitFor(line)
     local tip = get("tooltip")
     if type(tip) ~= "table" or type(line.GetHeight) ~= "function" then return end
     local h, old = line:GetHeight(), heights[line]
+    if Compat.secret(h) then h = nil end -- a secret size is neither kept, added nor compared
     heights[line] = h
     local margin = get("margin")
     margin = type(margin) == "number" and margin or 0
@@ -39,8 +40,11 @@ local function refitFor(line)
     local maxWidth = get("maxWidth")
     if type(line.GetStringWidth) == "function" and type(tip.GetWidth) == "function" and type(tip.SetWidth) == "function"
         and type(maxWidth) == "number" then
-      local want = math.min(maxWidth, line:GetStringWidth() + margin * 2)
-      if want > tip:GetWidth() then tip:SetWidth(want) end
+      local width, now = line:GetStringWidth(), tip:GetWidth()
+      if type(width) == "number" and type(now) == "number" and not Compat.secret(width, now) then
+        local want = math.min(maxWidth, width + margin * 2)
+        if want > now then tip:SetWidth(want) end
+      end
     end
   end
 end
@@ -55,8 +59,10 @@ local function showLine(line, recKey, keys)
     return 0
   end
   local rec = WFJ.SurfaceState.get(SURFACE, recKey)
-  if not (rec and rec.applied ~= nil and rec.applied == line:GetText()) then
-    heights[line] = type(line.GetHeight) == "function" and line:GetHeight() or nil
+  local shown = line:GetText()
+  if not (rec and rec.applied ~= nil and not Compat.secret(shown) and rec.applied == shown) then
+    local h = type(line.GetHeight) == "function" and line:GetHeight() or nil
+    heights[line] = not Compat.secret(h) and h or nil
   end
   return WFJ.Labels.show(SURFACE, recKey, line, refitFor(line), { only = keys })
 end

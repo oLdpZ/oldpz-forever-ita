@@ -104,7 +104,8 @@ function TooltipUnit.lineKinds(data)
   for name, value in pairs(enum) do names[value] = name end
   for _, line in ipairs(data.lines) do
     local row, kind = line.lineIndex, line.type
-    if type(row) == "number" and kind ~= nil then out[row] = names[kind] end
+    -- a unit tooltip's data can be secret: never used as a key
+    if type(row) == "number" and kind and not Compat.secret(row, kind) then out[row] = names[kind] end
   end
   return out
 end

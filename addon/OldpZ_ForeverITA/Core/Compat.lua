@@ -49,6 +49,17 @@ function Compat.resolve(name)
   return value or nil
 end
 
+-- → true when any of the values is a secret value (the client's issecretvalue; none on a client without it). A
+-- secret may be passed back to the client but never compared, measured, added, concatenated or used as a key.
+function Compat.secret(...)
+  local isSecret = Compat.resolve("issecretvalue")
+  if type(isSecret) ~= "function" then return false end
+  for i = 1, select("#", ...) do
+    if isSecret((select(i, ...))) then return true end
+  end
+  return false
+end
+
 -- First candidate `env` resolves to something truthy, else nil (a `false` global counts as unresolved).
 function Compat.get(surface, key)
   local bucket = resolved[surface]

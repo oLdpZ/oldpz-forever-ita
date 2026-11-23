@@ -227,10 +227,12 @@ local function showStructural(surface, frame, lines, first, last, refit, name, s
   local n = 0
   local headed = HEADED[frame:GetName()]
   local sides = { { "L", lines }, { "R", Tooltip.lines(frame, "Right") } }
+  if Compat.secret(name) then name = nil end -- never compared
   for i = 1, #lines do
     if not (first and i >= first and i <= last) and i ~= skip then
       for _, side in ipairs(sides) do
         local l = side[2][i]
+        if l and Compat.secret(l.text) then l = nil end -- a secret line (a right-side cooldown, say) stays the client's
         -- an uncached item has no name yet: on a comparison tooltip the name is then line 2 by position
         local isName = side[1] == "L" and ((i == 1 and not headed) or (name ~= nil and l and l.text == name)
           or (headed and name == nil and i == 2))
@@ -302,10 +304,10 @@ end
 -- has its "Currently Equipped" header on line 1, hence the search by text.
 local function showName(frame, kind, name)
   local NameText = WFJ.NameText
-  if not NameText or type(name) ~= "string" or name == "" then return end
+  if not NameText or type(name) ~= "string" or Compat.secret(name) or name == "" then return end
   local lines = Tooltip.lines(frame)
   for i = 1, math.min(2, #lines) do
-    if lines[i].text == name then
+    if not Compat.secret(lines[i].text) and lines[i].text == name then
       NameText.show(surfaceOf(frame), "name", lines[i].fs, kind, refitFor(frame))
       return
     end
@@ -606,14 +608,17 @@ local hiddenRows = setmetatable({}, { __mode = "k" }) -- [frame] = { [fs] = the 
 local function dressHidden(frame, fs, clientText)
   WFJ.Font.bundle(fs)
   hiddenRows[frame] = hiddenRows[frame] or {}
-  if hiddenRows[frame][fs] == nil then hiddenRows[frame][fs] = clientText == nil and true or clientText end
+  -- the client's text is a secret here: only its type is asked, never the value compared
+  if type(hiddenRows[frame][fs]) == "nil" then
+    hiddenRows[frame][fs] = type(clientText) == "nil" and true or clientText
+  end
 end
 
 local function undressHidden(frame, writeBack)
   local list = hiddenRows[frame]
   if not list then return end
   for fs, clientText in pairs(list) do
-    if writeBack and clientText ~= true then pcall(fs.SetText, fs, clientText) end
+    if writeBack and type(clientText) ~= "boolean" then pcall(fs.SetText, fs, clientText) end
     pcall(WFJ.Font.restore, fs)
   end
   hiddenRows[frame] = nil
@@ -968,7 +973,8 @@ local function setBonuses(id, lines, taken)
     local inner = f.args[slot]
     local hit, hitId
     for _, sid in ipairs(type(inner) == "string" and spells or {}) do
-      if not used[sid] and Tooltip.spellDescription(sid) == inner then
+      local described = not used[sid] and Tooltip.spellDescription(sid) or nil
+      if described and not Compat.secret(described) and described == inner then
         local ok, text = gate(lookup("spell.description", sid), { inner })
         if ok then hit, hitId = text, sid end
         break
@@ -1199,7 +1205,7 @@ function Tooltip.onCompareShow(frame)
     -- the "Equipped" tab above the comparison (tooltipcomparisonmanager.lua:241-247)
     local header = type(frame.CompareHeader) == "table" and frame.CompareHeader.Label or nil
     local htext = type(header) == "table" and type(header.GetText) == "function" and header:GetText() or nil
-    if type(htext) == "string" and htext ~= "" and not anySecret({ htext }) then
+    if type(htext) == "string" and not anySecretOf(htext) and htext ~= "" then
       local key = index:matchOnly(htext, COMPARE_HEADER_KEYS)
       if key and WFJ.Render.show(surface, "ui.header", header, htext, "ui", "ui", key, {}) then n = n + 1 end
     end
@@ -1207,7 +1213,7 @@ function Tooltip.onCompareShow(frame)
     local deltas = false
     for i, l in ipairs(Tooltip.lines(frame)) do
       local key, args, runs
-      if l.text ~= "" then
+      if not anySecretOf(l.text) and l.text ~= "" then
         key, args = index:matchOnly(l.text, COMPARE_KEYS)
         if key == "ITEM_DELTA_DESCRIPTION" or key == "ITEM_DELTA_MULTIPLE_COMPARISON_DESCRIPTION" then
           deltas = true

@@ -299,7 +299,9 @@ end
 local function onPlayerLine(frame, message, typeId, eventArgs)
   local byId = prefixedTypeIds()
   local name = byId and byId[typeId]
-  if not name or type(eventArgs) ~= "table" or eventArgs[11] == nil or not on("ui") then return 0 end
+  if not name or type(eventArgs) ~= "table" or secret(eventArgs[11]) or eventArgs[11] == nil or not on("ui") then
+    return 0
+  end
   local ja = ChatSystem.prefixed(message, name)
   if not ja or ja == message or not remember(ja, message) then return 0 end
   local lineID = eventArgs[11]
@@ -400,6 +402,7 @@ local function onEmoteLine(frame, message, typeId, eventArgs)
   local ja = ChatSystem.emote(message, knownNames(eventArgs))
   if not ja or ja == message or not remember(ja, message) then return 0 end
   local lineID = type(eventArgs) == "table" and eventArgs[11] or nil
+  if secret(lineID) then return 0 end -- the line's id is compared below: a secret one never is
   frame:TransformMessages(function(text, _, _, _, lineType, _, _, _, args)
     if lineType ~= typeId or secret(text) or text ~= message then return false end
     return lineID == nil or (type(args) == "table" and not secret(args[11]) and args[11] == lineID)
@@ -412,7 +415,7 @@ end
 -- hooksecurefunc target (a chat frame's AddMessage). → 1 | 0
 function ChatSystem.onAddMessage(frame, message, _, _, _, typeId, _, _, _, eventArgs)
   local ids = plainTypeIds()
-  if not ids or type(frame) ~= "table" or type(message) ~= "string" or secret(message)
+  if not ids or type(frame) ~= "table" or type(message) ~= "string" or secret(message) or secret(typeId)
       or type(frame.TransformMessages) ~= "function" then
     return 0
   end

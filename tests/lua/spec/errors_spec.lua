@@ -278,6 +278,17 @@ describe("the UI errors frame", function()
     end)
 
 
+  it("a secret message is never compared, in the hook or inside the client's ShouldDisplayMessageType", function()
+    local f = _G.UIErrorsFrame
+    f:TryDisplayMessage(1, "Out of range.")
+    assert.are.equal("範囲外です。", f.lines[1]:GetText())
+    _G.issecretvalue = function(v) return v == "Out of range." end
+    f:TryDisplayMessage(1, "Out of range.") -- the record's English is now secret: the client's own path, untouched
+    _G.issecretvalue = nil
+    assert.are.equal(0, f.flashed)
+    assert.are.equal(2, f.sounds)
+  end)
+
   it("an argument that is a dictionary word is shown in Japanese; any other as written", function()
     _G.UIErrorsFrame:TryDisplayMessage(8, "Can't attack while Stunned.")
     assert.are.equal("スタンの間は攻撃できません。", _G.UIErrorsFrame.lines[8]:GetText())

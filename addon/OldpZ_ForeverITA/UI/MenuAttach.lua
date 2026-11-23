@@ -32,11 +32,16 @@ local function inert(desc)
 end
 MenuAttach.inert = inert
 
+-- → the widget's text width, or nil. A secret width (issecretvalue: Forever 1.60.1.71037 hands one back for a menu
+-- element) is nil: it may be neither compared nor added, so the element keeps the width the client gave it.
 local function stringWidth(fs)
   local f = type(fs) == "table" and (fs.GetUnboundedStringWidth or fs.GetStringWidth) or nil
   if type(f) ~= "function" then return nil end
   local ok, w = pcall(f, fs)
-  return ok and type(w) == "number" and w or nil
+  if not ok or type(w) ~= "number" then return nil end
+  local isSecret = WFJ.Compat and WFJ.Compat.resolve("issecretvalue")
+  if type(isSecret) == "function" and isSecret(w) then return nil end
+  return w
 end
 
 -- The post-hook: one element frame (or one of its children, which carry no description). → show's count | 0
@@ -52,7 +57,12 @@ function MenuAttach.onFinalInit(frame)
   local after = stringWidth(fs)
   if before and after and after > before and type(frame.GetWidth) == "function"
       and type(frame.SetWidth) == "function" then
-    pcall(function() frame:SetWidth(frame:GetWidth() + (after - before)) end)
+    pcall(function()
+      local width = frame:GetWidth()
+      local isSecret = WFJ.Compat and WFJ.Compat.resolve("issecretvalue")
+      if type(width) ~= "number" or (type(isSecret) == "function" and isSecret(width)) then return end
+      frame:SetWidth(width + (after - before))
+    end)
   end
   return n
 end

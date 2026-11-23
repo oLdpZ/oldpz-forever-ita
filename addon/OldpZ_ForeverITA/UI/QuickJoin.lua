@@ -83,6 +83,7 @@ function QuickJoin.onQueueTooltip(tt)
   for i = 1, tt:NumLines() or 0 do
     local fs = Compat.resolve(name .. "TextLeft" .. i)
     local text = type(fs) == "table" and type(fs.GetText) == "function" and fs:GetText() or nil
+    if Compat.secret(text) then text = nil end -- a secret tooltip line is never matched
     local queue = type(text) == "string" and text:match("^%- (.+)$")
     local part = queue and WFJ.Labels.part(queue, QUEUES)
     if part then

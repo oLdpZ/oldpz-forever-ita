@@ -44,6 +44,7 @@ local function showLine(fs)
   local recKey = lineKey(fs)
   local index = WFJ.UIIndex
   local text = type(fs.GetText) == "function" and fs:GetText() or nil
+  if Compat.secret(text) then text = nil end -- a secret line is never matched (Labels.showArgs drops its record)
   local key, args
   if index and type(text) == "string" and text ~= "" then
     local only = WFJ.Labels.families("BroadcastText").only
@@ -73,6 +74,7 @@ function Subtitles.onAdd()
   for _, fs in ipairs(lines) do
     if type(fs) == "table" and type(fs.GetText) == "function" and type(fs.SetText) == "function" then
       local text = fs:GetText()
+      if Compat.secret(text) then text = nil end -- never compared, never a key
       local rec = WFJ.SurfaceState.get(SURFACE, lineKey(fs))
       local own = rec and rec.fs == fs and rec.applied == text
       if not own and type(text) == "string" and english[text] then fs:SetText(english[text]) end
