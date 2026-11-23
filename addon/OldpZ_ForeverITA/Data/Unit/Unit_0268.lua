@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [268048] = { "Emissario ⟦Darkspear=Lanciascura⟧", nil, 0x27368836, nil, ".m" },
+  [268557] = { "Olana Zoccolo Lucente", nil, 0x195b5356, nil, ".m" },
   [268624] = { "Incursore ⟦Razormane=Chiomaguzza⟧", nil, 0xabf41fc8, nil, ".m" },
   [268705] = { nil, nil, 0xadb4f747, nil, "em" },
   [268745] = { "Mayhoa Zoccolo Celeste", nil, 0x9debbd6e, nil, ".m" },

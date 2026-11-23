@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["2a062314e45ce659"] = { "Non preoccuparti, <ragazzo/ragazza>! Potrai provarne qualcuno prima di doverne scegliere uno solo.", "." },
   ["2a083fa20295af66"] = { "Mi addolora tanto che i treant siano stati corrotti. Vorrei poter fare di più per aiutarli.", "." },
+  ["2a20483171a8907c"] = { "Vorrei cambiare l'aspetto del mio equipaggiamento.", "." },
   ["2a231c2886453838"] = { "Ti do il benvenuto al Torvo Beone!", "." },
   ["2a2639f04f58896a"] = { "La signora Pomeroy raccoglie erbe per un alchimista che vive sulle colline tra la ⟦Northshire=Contea del Nord⟧ e ⟦Stormwind=Roccavento⟧. Cercala nella sua casetta e vedi se ti insegna la professione.", "." },
   ["2a266cf6a0c2cde6"] = { "Così osate trastullarvi con le creature del Re dei Lich? Ramstein, assicurati di dare agli intrusi un benvenuto come si deve.", "." },

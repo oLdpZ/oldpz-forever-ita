@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["e91e6e1bd2587f11"] = { "C'è qualcosa là fuori. Sparate un colpo d'avvertimento!", "." },
   ["e91f8b6fa5e6ca69"] = { "Io, Arynia Cloudsbreak, ho il compito di proteggere la sacralità dell'Oracle Grove.", "." },
   ["e92068a733db8688"] = { "Che la morte di questo prigioniero serva da monito. Nessuno sfida il Flagello e sopravvive!", "." },
+  ["e92b773303b6a6b3"] = { "Un tauren {class}? Azeroth è piena di sorprese. Cosa posso imparare da te?", "." },
   ["e92e0178f7d3c036"] = { "Il mio nome ti dice qualcosa? Forse ci conoscevamo tanto tempo fa...\n\nCredo che il mio nome venga da qualcuno di importante...", "." },
   ["e92f74220b253c91"] = { "Perché non distruggerli con la forza unita degli Aspetti?", "." },
   ["e93191b0cb736259"] = { "Ho fallito nel mio compito di vegliare sul tempio... la mia anima corrotta non conosce pace...", "." },

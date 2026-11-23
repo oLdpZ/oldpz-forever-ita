@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["213ef0ba8b76d2e0"] = { "%s va su tutte le furie dopo aver visto cadere un amico in battaglia!", "." },
   ["21477573d044bad3"] = { "Cerchi il consiglio di Gennia Runetotem. La troverai nella grande tenda sul lato est del villaggio.", "." },
   ["21491a369e855106"] = { "Le erbe costano un occhio della testa! Un piccolo extra mi farebbe sempre comodo, se capisci cosa intendo. Dai una mano a un goblin?", "." },
+  ["214c387aaa889d1f"] = { "Un fruscio nella boscaglia, poi un forte ruggito stridulo.", "." },
   ["214fb2ce6175fd2e"] = { "Devo solo controllare una cosa...", "." },
   ["2150c35b525dfa50"] = { "Torna a Zoram'gar e riferisci il nostro successo al Messaggero dei ⟦Warsong=Cantaguerra⟧.", "." },
   ["2151d7002b73f734"] = { "Ti prego, insegnami a diventare Fabbro di Martelli, Lilith.", "." },

@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["9630f424a03a024b"] = { "La tua interferenza non sarà tollerata!", "." },
   ["96377ddbb57ded2a"] = { "Graham Van Talen, nel ⟦Rogues' Quarter=Quartiere dei Ladri⟧, sull'anello esterno di ⟦Undercity=Sepulcra⟧.", "." },
   ["96393e8715e7dbfc"] = { "La West Frostwolf Tower protegge la porta tra il ⟦Frostwolf Village=Villaggio dei Lupi Bianchi⟧ e la ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧.\n\nNon è controllata da nessuna delle due fazioni.", "." },
+  ["963e99d44d69bbfa"] = { "Mi sa che ti serve un passaggio per attraversare il Grande Mare. Beh, sei nel posto giusto: questo è l'ormeggio della Maiden's Fancy, la miglior nave passeggeri che solchi queste acque. Quando arriva, sali a bordo e, prima che te ne accorga, ti ritroverai a crogiolarti sulle spiagge sabbiose di Rovotorto o a buttare giù un bicchiere a ⟦Booty Bay=Baia del Bottino⟧.", "." },
   ["96460c6377210008"] = { "Se avessi una moneta di rame per ogni tua impresa, sarei un coboldo ricco!", "." },
   ["9654f36796bf7315"] = { "Non ti racconto storie, verme. L'oscurità di questi oggetti potrebbe benissimo distruggerci entrambi. Ecco perché il prezzo è così alto. Se devo morire, morirò ricco.\n\nE non me ne importa uno sputo di gnoll di come muori tu, basta che tu faccia ciò che ti chiedo. Portami ciò che mi serve e ne avremo vantaggio entrambi... o moriremo, ma questo te l'ho già spiegato...", "." },
   ["9658e4fed8ef2e2c"] = { "Guerriero", "." },

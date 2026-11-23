@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["2344417af8ca62b3"] = { "Oh no! I draghi fatati catturati non ce l'hanno fatta. Cosa facciamo?", "." },
   ["23469fa273f901b7"] = { "Devi lasciare il bar!", "." },
   ["2346b1df4b7931cd"] = { "Il mio popolo non ti conosce. Il kodo è una cavalcatura possente, frutto dell'amore e delle cure della mia gente; non lo si concede agli stranieri. Finché non avrai reputazione Osannato presso gli anziani di ⟦Thunder Bluff=Picco del Tuono⟧, non posso venderti un kodo.", "." },
+  ["234882a5593e56ac"] = { "Sì... SÌ! È VIVO!!", "." },
   ["2353a2049c378bbc"] = { "Ora siete miei, bambini. Crescerete e diventerete una parte forte dell'Orda!", "." },
   ["2357ac0b58311782"] = { "Furono i luogotenenti di Ragnaros, Geddon e Garr, a perpetrare il tradimento contro il mio Signore. Thunderaan fu colto alla sprovvista.", "." },
   ["235d92a861d61050"] = { "Cercavo materiali per costruire la mia ultima e più grande invenzione, l'unità shredder portatile a controllo remoto, quando questi troll mi sono saltati addosso con le clave, trascinandomi nelle profondità della loro caverna.\n\nRiportami al sicuro e darò il mio aiuto alla tua causa, {race}.", "." },

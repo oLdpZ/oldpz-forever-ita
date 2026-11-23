@@ -4,6 +4,7 @@
 {"id": "e91e6e1bd2587f11", "field": "text", "en": "There's something out there. Let loose a warning round!", "hash": "e91e6e1bd2587f11", "src": "vmangos@13b49dc"}
 {"id": "e91f8b6fa5e6ca69", "field": "text", "en": "I, Arynia Cloudsbreak, have been tasked with protecting the sanctity of the Oracle Grove.", "hash": "e91f8b6fa5e6ca69", "src": "vmangos@13b49dc"}
 {"id": "e92068a733db8688", "field": "text", "en": "May this prisoner's death serve as a warning.  None shall defy the scourge and live!", "hash": "e92068a733db8688", "src": "vmangos@13b49dc"}
+{"id": "e92b773303b6a6b3", "field": "text", "en": "A tauren $C? Azeroth is full of surprises. What can I learn from you?", "hash": "e92b773303b6a6b3", "src": "collector@1.60.1.70959", "npcs": [205729]}
 {"id": "e92e0178f7d3c036", "field": "text", "en": "Does my name sound familiar to you? Maybe we knew each other a long time ago...$B$BI think I'm named after someone important...", "hash": "e92e0178f7d3c036", "src": "vmangos@13b49dc"}
 {"id": "e92f74220b253c91", "field": "text", "en": "Why not destroy them with the combined might of the Aspects?", "hash": "e92f74220b253c91", "src": "vmangos@13b49dc"}
 {"id": "e93191b0cb736259", "field": "text", "en": "My charge to watch the temple has failed... my corrupted soul knows no peace...", "hash": "e93191b0cb736259", "src": "vmangos@13b49dc"}

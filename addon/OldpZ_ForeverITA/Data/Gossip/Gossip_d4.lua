@@ -48,6 +48,7 @@ WFJ.Data.add("gossip", {
   ["d4d6d5bd69a53d8b"] = { "A Caer Darrow non sono ammessi bighellonaggio, accattonaggio, imprecazioni, risse né qualunque altra cosa tu stia pensando di fare.", "." },
   ["d4d77240963518da"] = { "La stirpe di Onyxia!", "." },
   ["d4d774717e7be4c9"] = { "Me la pagherai!", "." },
+  ["d4e3aede56a475cb"] = { "No, credo che mi metterò a coltivare un orto proprio qui...\n\n<Alza la voce.>\n\nCosa pensavi che avrei fatto? Certo che da qui in poi andrò sul sicuro!", "." },
   ["d4e3d3f078fa7a3f"] = { "Dov'è l'anziano Primaroccia?", "." },
   ["d4e48356dc5cc8e7"] = { "Allora è con ⟦Thelman Slatefist=Thelman Spezzardesia⟧ che vuoi parlare. Lo trovi al cospetto del re, nel Castello di ⟦Stormwind=Roccavento⟧.", "." },
   ["d4e550e46bef0ba5"] = { "E poi cosa fece Ragnaros?", "." },

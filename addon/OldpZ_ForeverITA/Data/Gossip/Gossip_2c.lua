@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["2c3784f1a3be122e"] = { "Pericolo. Pericolo! {name} prova fare male A-Me.", "." },
   ["2c3922bbc70af359"] = { "Salute, {class}. Come posso esserti utile oggi, nel mio umile servizio alla Roccaforte di Piumaluna?", "." },
   ["2c403c18c2cb2465"] = { "Oh oh...", "." },
+  ["2c4d35afaf9d922c"] = { "Fai attenzione: quando abbiamo finito seguici fuori, ma resta a debita distanza, nel caso finissimo nei guai.", "." },
   ["2c501f082c9e96b8"] = { "Mi prenderò i tuoi soldi e anche la tua vita!", "." },
   ["2c5522e4b7cef8e5"] = { "Sarai un degno sacrificio per Ragnaros.", "." },
   ["2c5d489e2161afc2"] = { "Me ne andai. Non volevo restare con i ⟦Blackrock=Roccianera⟧. No, la morte dei miei figli non sarebbe stata vana. Non avrei servito un maniaco inetto e assetato di potere come Rend.\n\nTrovai rifugio nei boschi di Lordaeron, vivendo da eremita vicino a ⟦Hearthglen=Valsalda⟧.", "." },

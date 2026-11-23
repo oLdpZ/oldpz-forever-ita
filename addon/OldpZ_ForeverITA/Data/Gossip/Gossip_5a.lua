@@ -41,4 +41,5 @@ WFJ.Data.add("gossip", {
   ["5adff2e1bb9c5bbb"] = { "Come posso aiutare?", "." },
   ["5ae42b45f5540714"] = { "La grazia con cui combatto non è qualcosa che posso insegnarti, ma posso insegnarti a usare varie armi.", "." },
   ["5af37d407bacde5b"] = { "Non c'è scampo, neanche nella morte.", "." },
+  ["5afec27db36f9b5b"] = { "Sei arrivat<o/a> appena in tempo! Ci siamo cacciati nei guai, poi abbiamo avuto dei problemi, e poi ci sono stati diversi incidenti!\n\nCaitlin sarà preoccupatissima.\n\nLa squadra di scavo è a pezzi, ma grazie al tuo aiuto ora abbiamo una possibilità di uscirne vivi!", "." },
 })

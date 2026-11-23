@@ -3008,6 +3008,8 @@ unit	17869	name	88ccb8da454dbab9	Silithus Spice Sandworm Mortar Target
 unit	18199	name	b4b45651bbb7755c	Silithus Dust Turnin Quest Doodad Horde
 unit	185333	name	a6076fc9ed0c0a2f	Avelina Lilly
 unit	185334	name	d970dfdc7ad8088f	Isaac Pearson
+unit	205729	name	76f0cd42ab1ff2d5	Boarton Shadetotem
+unit	209797	name	95ee6f7241451280	Bruuz
 unit	211022	name	218c9203f31f4069	Owen Thadd
 unit	214954	name	6df725eb2095260e	Rix Xizzix
 unit	230317	name	51b254611d03bbe6	Mokvar
@@ -3023,7 +3025,11 @@ unit	251371	name	a96387125f9f0b6d	Falorne Fallwind
 unit	251487	name	55b612f86655d751	Ventaari Brightwish
 unit	256386	name	7a084a670b92cefd	Dokimi
 unit	256388	name	6013786ce67c4bcb	Jornah
+unit	259118	name	ebe5930294361362	Muln Earthfury
+unit	259119	name	2b95d766e9d4cfbf	Alaana Stormwalker
 unit	259190	name	5cf3c894b1f02236	Ephram Barbaro
+unit	259649	name	36ffbfae7928ba6c	Ulric Frostveil
+unit	262502	name	0b1d73890491123c	Brix Xizzix
 unit	263113	name	bf1b0dbfa5ecb52f	Myriaal Mistwake
 unit	264943	name	6c00d6ec108a2ada	Afadra Dunwall
 unit	265003	name	d8748549222afd4e	Thom Filch
@@ -3038,13 +3044,17 @@ unit	267009	name	daf29c318aa0d129	Hadric Harlson
 unit	267309	name	252b5011c3bca462	Bainham
 unit	268705	name	adb4f7479610af59	Aka'rai
 unit	270038	name	b2fc98aa724755e6	Calder Gray
+unit	270582	name	520499a68ba1ac5f	Mon'ye
 unit	272328	name	ec56d1b70891da62	Mini Diablo
 unit	272329	name	67eb028653b866a3	Zergling
 unit	272526	name	bc8276422b05df72	Glix Xizzix
+unit	274833	name	ae5309aabb51f22e	An'drak
+unit	274834	name	96fc0901766ab2ca	Evermore
 unit	274845	name	e1cd062a7d6298f0	Pallwick Boneset
 unit	274852	name	f1af30ac8e831246	Zeglo Kruptorr
 unit	275657	name	f4b8e2fdb28fa191	Heglan Shadeeye
 unit	276795	name	5ba60e740bf30783	Anya Rince
 unit	276798	name	54bbc24f4db6f64f	Malus
+unit	277368	name	7f74b13a3174f33b	Gevreka
 unit	277639	name	08d23a8c94309d73	Alyz
 unit	277727	name	62ded2c810eb6637	Deyrek Duke
