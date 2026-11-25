@@ -109,7 +109,7 @@ WFJ.Data.add("item", {
   [10610] = { "Sangue della Regina del Mare.", 0xead537a8, "u" },
   [10622] = { "Piantala nell'Eremo Grinfialunga.", 0xc229e9d1, "u" },
   [10623] = { "Lancia un dardo gelido contro il nemico, infliggendo $N1 danni da gelo e riducendo la velocità di movimento del $N2% per $D1.", 0x013c5fa4, "u" },
-  [10625] = { "Aumenta il livello effettivo di furtività di $N1.\nFurtività per muoverti di nascosto, ma riduce la velocità di movimento del $N2%. Utilizzabile solo fuori dal combattimento.", 0x746fb363, "u" },
+  [10625] = { "Aumenta il livello effettivo di furtività di $N1.\nFurtività per muoverti di nascosto, ma riduce la velocità di movimento del $N2%. Utilizzabile solo fuori dal combattimento. Dura $D1.", 0x1b36f9da, "u" },
   [10626] = { "Aumenta la potenza d'attacco di $N1 e la velocità d'attacco in mischia del $N2% per $D1.", 0x5fe2609a, "u" },
   [10627] = { "Colpisce il bersaglio con un randello, infliggendo $N1 danni fisici. I canidi e le iene vengono storditi e restano seduti per $D1.", 0x94af7e4d, "u" },
   [10628] = { "Infligge una ferita fatale che causa $N1 danni fisici. Infligge il $N2% di danni in più ai bersagli con meno del $N3% di salute.", 0xbbacb806, "u" },

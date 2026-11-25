@@ -1759,7 +1759,7 @@ WFJ.Data.add("ui", {
   ["CriteriaText:221536"] = { "Competenza in Sartoria 225", 0xf2d46e34, "." },
   ["CriteriaText:221537"] = { "300 di competenza in Sartoria", 0xf6775fcf, "." },
   ["CriteriaText:221538"] = { "Competenza in Sartoria 300", 0x1a676cb4, "." },
-  ["CriteriaText:221563"] = { "1.60.0 - Completa la serie di missioni di potenziamento delle spedizioni - Saving the Best for Last", 0x97f8f4b6, "." },
+  ["CriteriaText:221563"] = { "1.60.0 - Completa la serie di missioni di potenziamento delle spedizioni - Saving the Best for Last", 0x97f8f4b6, "s" },
   ["CriteriaText:221565"] = { "Osannato con la Valle d'Alterac", 0x0afc0077, "." },
   ["CriteriaText:221566"] = { "Raggiungi la reputazione Osannato con il Clan Lupi Bianchi", 0x0dd5022e, "." },
   ["CriteriaText:221567"] = { "Raggiungi la reputazione Osannato con la Guardia dei Piccatonante", 0x0683f8ce, "." },

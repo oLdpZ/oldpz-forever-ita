@@ -57,7 +57,7 @@ WFJ.Data.add("spell", {
   [29162] = { "Quando vieni colpito, hai il $N1% di probabilità di ridurre del $N2% la velocità di movimento dell'attaccante per $N3 s.", nil, 0x9cbd28ab, nil, "um" },
   [29163] = { "Scaglia un dardo di gelo contro il nemico, infliggendo $N1 danni da gelo e riducendo la velocità di movimento del $N2% per $D1.", "Velocità di movimento ridotta del $N1%.", 0xf9aa34f5, 0xbd9406b8, "uu" },
   [29164] = { nil, "Velocità di movimento ridotta del $N1%.", nil, 0xbd9406b8, "mu" },
-  [29166] = { "Aumenta la rigenerazione del mana del bersaglio del $N1% e permette al $N2% della rigenerazione del mana del bersaglio di continuare durante il lancio. Dura $D1.", "Rigenerazione del mana aumentata del $N1%. Il $N2% della rigenerazione del mana può continuare durante il lancio.", 0x5be63390, 0x7042e9d9, "uu" },
+  [29166] = { "Aumenta la rigenerazione del mana del bersaglio del $N1% e permette al $N2% della rigenerazione del mana del bersaglio di continuare durante il lancio. Dura $D1.", "Rigenerazione del mana aumentata del $N1%. Il $N2% della rigenerazione del mana può continuare durante il lancio.", 0x5be63390, 0x317a7590, "uu" },
   [29168] = { "Incute paura a un nemico, costringendolo a fuggire in preda al terrore per $D1. Può essere spaventato solo $N2 bersaglio alla volta.", "Fuga in preda al terrore.", 0x790d3c30, 0xfa67e4a8, "uu" },
   [29169] = { "Lancia veleno contro un bersaglio nemico, infliggendo danni da natura e danni aggiuntivi ogni $D1 per $D2.", "Danni da natura inflitti ogni $D1.", 0x2c66ca3a, 0xaae6fcde, "uu" },
   [29171] = { "Aumenta del $N1% il mana ottenuto dai tuoi totem di ⟦Mana Spring=Flusso di Mana⟧.", nil, 0xd062b534, nil, "um" },

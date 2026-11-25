@@ -53,9 +53,9 @@
 {"id": 78699, "field": "title", "en": "The Eye of Bhossca", "hash": "db721cead351e2e0", "src": "wdb@1.60.1.70938"}
 {"id": 78699, "field": "objectives", "en": "Log", "hash": "00141fe02dc1f053", "src": "wdb@1.60.1.70938"}
 {"id": 78699, "field": "description", "en": "Description", "hash": "6173958c6c516f23", "src": "wdb@1.60.1.70938"}
-{"id": 78823, "field": "title", "en": "Terror of the Desert Skies", "hash": "095389a78d48bbf9", "src": "wdb@1.60.1.71037"}
-{"id": 78823, "field": "objectives", "en": "Bring the Primitive Drawing to Hemet Nesingwary in Stranglethorn Vale.", "hash": "ee6d5c939124ed1a", "src": "wdb@1.60.1.71037"}
-{"id": 78823, "field": "description", "en": "The drawing is composed of rough, broad, strokes and seems to depict a large bird of prey. Despite the simple composition, the artist clearly viewed this creature with fear and awe. An expert on big game could likely tell you more.", "hash": "946d35b23b1d533f", "src": "wdb@1.60.1.71037"}
+{"id": 78823, "field": "title", "en": "Terror of the Desert Skies", "hash": "095389a78d48bbf9", "src": "wdb@1.60.1.71139"}
+{"id": 78823, "field": "objectives", "en": "Bring the Primitive Drawing to Hemet Nesingwary in Stranglethorn Vale.", "hash": "ee6d5c939124ed1a", "src": "wdb@1.60.1.71139"}
+{"id": 78823, "field": "description", "en": "The drawing is composed of rough, broad, strokes and seems to depict a large bird of prey. Despite the simple composition, the artist clearly viewed this creature with fear and awe. An expert on big game could likely tell you more.", "hash": "946d35b23b1d533f", "src": "wdb@1.60.1.71139"}
 {"id": 78830, "field": "title", "en": "Terror of the Desert Skies", "hash": "095389a78d48bbf9", "src": "wdb@1.60.1.70450"}
 {"id": 78830, "field": "objectives", "en": "Get a Crimson Trophy Quill from Gharrik in the Badlands. Then, return to Hemet Nesingwary in Stranglethorn Vale.", "hash": "538655d8ad0c76c3", "src": "wdb@1.60.1.70450"}
 {"id": 78830, "field": "description", "en": "This drawing reminds me of a story I'd heard on another expedition, not long ago. I was told of a great bird, Gharrik, who reigns over the Badlands as an apex predator.\r\n\r\nShe was last spotted northeast of Camp Cagg. Perhaps her nest is somewhere nearby?\r\n\r\nYou'll need live bait to draw her out. I'll lend you a cage to catch some. Small wildlife is scarce in the Badlands, so you'll need to find your bait elsewhere.\r\n\r\nA quill from Gharrik would make a fine prize. You'd certainly be the talk of the camp.", "hash": "1ada8d6b9ec6b713", "src": "wdb@1.60.1.70450"}

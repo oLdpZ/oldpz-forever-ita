@@ -1,0 +1,19 @@
+{"id": 1334174, "field": "name", "en": "Might of the Alliance", "hash": "c9a15eea4ab5d875", "src": "db2@1.60.1.71139"}
+{"id": 1334174, "field": "description", "en": "Increases health by $s1%, Attack speed by $s2%, and Damage done by $s3%.", "hash": "25f2ad5944933e62", "src": "db2@1.60.1.71139"}
+{"id": 1334174, "field": "aura", "en": "Health increased by $s1%\r\nAttack speed increased by $s2%\r\nDamage done increased by $s3%.", "hash": "bd554263816efcf9", "src": "db2@1.60.1.71139"}
+{"id": 1334175, "field": "name", "en": "Might of the Horde", "hash": "029183080e8ba121", "src": "db2@1.60.1.71139"}
+{"id": 1334175, "field": "description", "en": "Increases health by $s1%, Attack speed by $s2%, and Damage done by $s3%.", "hash": "25f2ad5944933e62", "src": "db2@1.60.1.71139"}
+{"id": 1334175, "field": "aura", "en": "Health increased by $s1%\r\nAttack speed increased by $s2%\r\nDamage done increased by $s3%.", "hash": "bd554263816efcf9", "src": "db2@1.60.1.71139"}
+{"id": 1334176, "field": "name", "en": "Remove Stack", "hash": "effa422451cc79e2", "src": "db2@1.60.1.71139"}
+{"id": 1334177, "field": "name", "en": "Remove Stack", "hash": "effa422451cc79e2", "src": "db2@1.60.1.71139"}
+{"id": 1334284, "field": "name", "en": "Cleave", "hash": "490af681ad18ef1f", "src": "db2@1.60.1.71139"}
+{"id": 1334284, "field": "description", "en": "Inflicts normal damage plus $s1 to an enemy and its nearest allies, affecting up to $x1 targets.", "hash": "b36a844fa91760b7", "src": "db2@1.60.1.71139"}
+{"id": 1334285, "field": "name", "en": "Whirlwind", "hash": "ac9b02bdb51dc78d", "src": "db2@1.60.1.71139"}
+{"id": 1334295, "field": "name", "en": "Enrage", "hash": "64ece3953c46c879", "src": "db2@1.60.1.71139"}
+{"id": 1334295, "field": "description", "en": "Increases the caster's attack speed by $s2% and the Physical damage it deals by $s1 for $d.", "hash": "1d3f8a492f089bd8", "src": "db2@1.60.1.71139"}
+{"id": 1334295, "field": "aura", "en": "Physical damage dealt is increased by $s1.\r\nAttack speed increased by $s2%.", "hash": "bc6c8e1d090dadea", "src": "db2@1.60.1.71139"}
+{"id": 1334297, "field": "name", "en": "Avatar", "hash": "010736fdd4f92f80", "src": "db2@1.60.1.71139"}
+{"id": 1334297, "field": "description", "en": "Increases the Physical damage dealt by the caster by $s1% and enhances its armor by $s2% for $d.", "hash": "e8bc8bd570640313", "src": "db2@1.60.1.71139"}
+{"id": 1334297, "field": "aura", "en": "Physical damage dealt is increased by $s1%.\r\nArmor increased by $s2%.", "hash": "c9b08b16789c88fe", "src": "db2@1.60.1.71139"}
+{"id": 1334458, "field": "name", "en": "Alliance Alterac Valley", "hash": "60240e19352a3581", "src": "db2@1.60.1.71139"}
+{"id": 1334459, "field": "name", "en": "Horde Alterac Valley", "hash": "7758fc523978b9ed", "src": "db2@1.60.1.71139"}
