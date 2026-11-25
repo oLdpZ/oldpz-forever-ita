@@ -45,5 +45,6 @@ WFJ.Data.add("gossip", {
   ["54d897bcfd74b026"] = { "Mm... se vuoi confondere le menti, {name}, il segreto degli zombi di Zanzil potrebbe proprio fare al caso tuo!", "." },
   ["54e373b88a8e9fc5"] = { "L'⟦Alliance=Alleanza⟧ ha preso la miniera!", "." },
   ["54e625a461c246da"] = { "I tuoi dischi ti saranno restituiti quando accederai al piedistallo.", "." },
+  ["54f820a6faf44a62"] = { "Eccellente. Portane altri.", "." },
   ["54fbe825a7169532"] = { "Soldati di Kalimdor! Eroi di ⟦Silithus=Silitus⟧! Uno di voi ha inferto un colpo feroce ai nostri nemici mortali! {name} e i suoi alleati hanno liberato le ⟦Ruins of Ahn'Qiraj=Rovine di Ahn'qiraj⟧ dal loro spietato capo! ⟦Ossirian the Unscarred=Ossirian l'Indomito⟧, flagello di ⟦Silithus=Silitus⟧, è stato finalmente distrutto e i suoi eserciti completamente smantellati!", "." },
 })

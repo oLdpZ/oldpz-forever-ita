@@ -7,4 +7,7 @@ WFJ.Data.add("unit", {
   [259377] = { "Guardia della Morte Ferita", nil, 0x697fbb46, nil, ".m" },
   [259611] = { "Guardiamorte Baldren", nil, 0x127a41e1, nil, ".m" },
   [259649] = { nil, nil, 0x36ffbfae, nil, "em" },
+  [259766] = { nil, nil, 0x23bc5ad6, nil, "em" },
+  [259961] = { "Capitano del Porto Ronzafischio", nil, 0x49281e09, nil, ".m" },
+  [259962] = { "Fimbo Manunta", nil, 0x93aa2ed4, nil, ".m" },
 })

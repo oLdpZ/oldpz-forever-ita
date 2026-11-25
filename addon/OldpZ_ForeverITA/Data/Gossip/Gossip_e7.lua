@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["e709312bef16c64b"] = { "L'anziana Preda Cielo osserva le ⟦Westfall=Marche Occidentali⟧ dall'alto di ⟦Sentinel Hill=Guardiacolle⟧.", "." },
   ["e70fe75e3dbc0937"] = { "Dover combattere contro la mia stessa gente mi rattrista profondamente.", "." },
   ["e717bcbda393680e"] = { "Quindi la ⟦Searing Blade=Lama Rovente⟧ è sacrificabile?", "." },
+  ["e717bd721a826a5f"] = { "Come va, concittadino di Dalaran? Che baccano oggi, eh?", "." },
   ["e7188a853f31f07c"] = { "Pane caldo e genuino!", "." },
   ["e71ca7f38c75d641"] = { "È deciso. Comando io la ⟦Might of Kalimdor=Forza di Kalimdor⟧. Assicurati che i tuoi soldati lo capiscano e lo accettino come un dato di fatto. Di sangue se n'è già versato in abbondanza. Che non se ne versi tra le nostre fazioni.", "." },
   ["e71cad732fd10f64"] = { "Sono un uomo semplice che sa qualcosa di sartoria, ma ti serve più aiuto di quanto io possa darti. Ho sentito parlare di un Elfo della Notte che è un sarto molto abile. Vive a ⟦Stormwind=Roccavento⟧, nel Quartiere della Magia.", "." },

@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["eca969df24856432"] = { "%s lancia uno strillo acuto, chiedendo aiuto!", "." },
   ["eca969ec2485643f"] = { "%s lancia uno strillo acuto, chiedendo aiuto.", "." },
   ["ecad8b5cf1cceac3"] = { "Cosa sai dirmi della fiera della notte Shadumbra?", "." },
+  ["ecaec3ff316367bb"] = { "Prego, prendi pure la sedia libera che preferisci. Vengo a prendere l'ordinazione tra un attimo.", "." },
   ["ecb65cd1c5f98213"] = { "Proprio così. La madre della covata dello Stormo dei Draghi Neri aveva usato illusioni e inganni per travestirsi da membro della corte reale. Peggio ancora, aveva preso il controllo dell'attuale gran signore di ⟦Stormwind=Roccavento⟧, Bolvar Fordragon.\n\nNon c'è da stupirsi che fossero state prese decisioni militari così sciocche. Gli ultimi movimenti delle forze dell'⟦Alliance=Alleanza⟧ ci avevano lasciati perplessi. Ora capiamo che lo Stormo dei Draghi Neri cercava di dividere l'impero, di distruggerlo dall'interno.", "." },
   ["ecb7559d040cb7ff"] = { "⟦Thorium Brotherhood=Fratellanza del Torio⟧ o no, se uno di quei ⟦Dark Iron=Ferroscuro⟧ mi si avvicina, assaggerà il mio piccone sulla tempia! Allora, dove posso mandarti, <ragazzo/ragazza>?", "." },
   ["eccb14a675bfef8e"] = { "Come un gatto bagnato dalla pioggia, graffi e artigli, e poi da capo... Tornerò per averne ancora...\n\nOh, non ti avevo <visto/vista> entrare, {name}! Cosa posso fare per te?", "." },

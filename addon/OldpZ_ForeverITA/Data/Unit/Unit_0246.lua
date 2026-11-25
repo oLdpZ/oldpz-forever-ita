@@ -3,4 +3,5 @@ local _, WFJ = ...
 WFJ.Data.add("unit", {
   [246344] = { "Alodan il Fiducioso", nil, 0x46dc6602, nil, ".m" },
   [246389] = { "Hilda la Spaccatrice", nil, 0x0bd5f227, nil, ".m" },
+  [246848] = { "Guardia del Kirin Tor", nil, 0xc7e3f8b5, nil, ".m" },
 })

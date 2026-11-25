@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["a20c349fe0df7302"] = { "Di solito trovi fratello Wilhelm sul retro della fucina, a scambiarsi storie con Lyria. È sempre pronto a insegnare nuove abilità ai suoi compagni paladini.", "." },
   ["a212fc0ec15af5a2"] = { "Il Cult of the Damned è cresciuto molto in estensione. Quasi ogni città, dalle capitali ai piccoli villaggi e tuguri dell'⟦Horde=Orda⟧ come dell'⟦Alliance=Alleanza⟧, ha membri del Culto nascosti tra i suoi cittadini.\n\nNon fare quella faccia sorpresa. Il Culto indossa un'uniforme solo per riti e cerimonie. È del tutto possibile che tu ne abbia incontrato uno durante le tue avventure senza nemmeno saperlo.", "." },
   ["a21cf8cb52e6ab06"] = { "Hai idea di quanto tempo è che aspetto qui? E la cena dov'è? Tutto questo tempo passato e niente in cambio?", "." },
+  ["a229431ae8b7190c"] = { "Portate via quei corpi dalla sala. Lui non vuole essere fatto aspettare.", "." },
   ["a22e42a9ad71206e"] = { "Non vedi che stiamo cercando di prepararci per la visita di Uther? Ora levati di torno, ho molto lavoro da fare!", "." },
   ["a23830cbb017c2f7"] = { "|cff33ccffTutte e quattro le torri sono ora sotto il controllo dell'⟦Alliance=Alleanza⟧!|r", "." },
   ["a238c9ae316b8c67"] = { "Niente male... per essere alle prime armi! Comunque ne sai quanto me. Se vuoi imparare di più, dovrai parlare con Josef Gregorian a ⟦Undercity=Sepulcra⟧.", "." },

@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["d299426d276a1c64"] = { "Ti serve la ⟦Hall of Legends=Sala delle Leggende⟧. Si trova in alto sopra la ⟦Valley of Strength=Valle della Forza⟧, sul lato ovest. Se non sei un ufficiale non puoi entrare, ma puoi comunque parlare con il sergente Ba'sha, fuori.", "." },
   ["d2a0e6a69382621a"] = { "Quindi... i Terrigeni erano fatti di pietra?", "." },
   ["d2a58e9fb644ea16"] = { "Ehi, Knot, conosco la Sartoria. Pensi di potermi insegnare a fare il completo da ogre?", "." },
+  ["d2ae026180ad4b65"] = { "Portateli fuori dalle sale: non ci serve gente che ficca il naso.", "." },
   ["d2af1bb5f3135845"] = { "Non posso insegnarti la Conciatura Tribale, {name}. Devi andare a Tanaris e trovare la casa di ⟦Narain Soothfancy=Narain Veravite⟧. Una volta lì, consulta il libro «Soothsaying for Dummies».", "." },
   ["d2b403e1d9b2559e"] = { "Per l'⟦Horde=Orda⟧!", "." },
   ["d2b49a6a4ba496d7"] = { "La morte dell'imperatore Thaurissan sconvolge visibilmente %s.", "." },

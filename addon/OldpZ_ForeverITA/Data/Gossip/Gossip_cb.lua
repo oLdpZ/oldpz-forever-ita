@@ -43,6 +43,7 @@ WFJ.Data.add("gossip", {
   ["cbcc136a5c6ab52f"] = { "Ohè! Cerchi addestramento nella via del guerriero, eh? ⟦Kelstrum Stonebreaker=Kelstrum Spaccapietra⟧ ti farà sudare! Basta che tu marci fino al Salone delle Armi, a est dei cancelli di ⟦Ironforge=Forgiardente⟧.", "." },
   ["cbd585a35d7d7541"] = { "La battaglia infuria, e sia il nostro capitano sia quello del nemico sono caduti!\n\nOra Drek'Thar ci guida dalla ⟦Frostwolf Keep=Rocca dei Lupi Bianchi⟧, e il nano ⟦Vanndar Stormpike=Vanndar Piccatonante⟧ si nasconde nel profondo di Dun Baldar. Sconfiggi Vanndar e conquista la vittoria per l'⟦Horde=Orda⟧!", "." },
   ["cbd86e14b61ce7f1"] = { "Vedo che anche tu pratichi le arti sottili. Forse c'è qualcosa che posso insegnarti.", "." },
+  ["cbe001a430164a46"] = { "Te lo dico io, <ragazzo/ragazza>. Non è facile fare il capitano del porto. Se sapessi tutta la logistica che serve per spedire oltre il mare anche solo una cassa di mele, ti girerebbe la testa.", "." },
   ["cbe36745a181a856"] = { "Piagnone! Piagnone!", "." },
   ["cbebe5a9504cf573"] = { "Salute, {class}! Ho un solo obiettivo: catalogare e registrare tutto il sapere legato alla storia di ⟦Duskwood=Boscovespro⟧ e ⟦Darkshire=Borgoscuro⟧. Forse potresti aiutarmi nella mia impresa?", "." },
   ["cbeea509e2e5009d"] = { "Non dimenticate gli orfani di ⟦Stormwind=Roccavento⟧!", "." },

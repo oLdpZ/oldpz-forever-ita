@@ -15,6 +15,7 @@ WFJ.Data.add("gossip", {
   ["f639fde295d16043"] = { "Arriva un momento in cui la vita che conosciamo non basta più. Ci sentiamo in trappola e cerchiamo risposte, e troviamo la speranza che arde nei luoghi oscuri.\n\nSolo allora, {name}, muoviamo i primi passi verso la libertà.", "." },
   ["f6404eaceb0e4c80"] = { "Hai fatto bene, {name}. Continua la tua ricerca della conoscenza, e ricorda la storia che hai imparato.", "." },
   ["f64128a29785627b"] = { "Bisogna fare attenzione a non danneggiare l'esemplare...", "." },
+  ["f64517108ea5750a"] = { "Portane un altro: il tempo stringe.", "." },
   ["f64af4a53ee70a4c"] = { "Il mio sogno è servire un giorno ai tuoi ordini, <padrone/padrona> {name}. Sempre che tu mi giudichi mai all'altezza di simili cose...", "." },
   ["f64cfee276a1a590"] = { "La tua sfida è fallita!", "." },
   ["f653239efcfa4c0e"] = { "Dov'è l'acqua, Emma? Prendi l'acqua, Emma? Se non fosse per me, quella gente non saprebbe nemmeno che aspetto ha l'acqua.", "." },

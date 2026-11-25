@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["7553545abe2251a2"] = { "Non posso lasciare il mio posto, {name}, ma c'è un compito da sbrigare. Posso fidarmi di te per portarlo a termine?", "." },
   ["7554b2bae0ae97d9"] = { "Questo raggio di luna ti porterà a ⟦Thunder Bluff=Picco del Tuono⟧. Usalo quando vuoi lasciare la festa.", "." },
   ["756b717639c72a0d"] = { "Mostrami a cosa ho accesso, Lokhtos.", "." },
+  ["75768f9c28aef26b"] = { "Ti serve qualcosa?", "." },
   ["7577c31e4de605b1"] = { "Ora mettiamo questa terra rara nella mia fioriera...", "." },
   ["7577e9e6d5992cda"] = { "Uff! Che sollievo essere fuori da quella grotta inquietante.", "." },
   ["757ce5b8c4bd3fec"] = { "Vuoi cominciare l'addestramento? Allora cerca di starmi dietro, {name}. Abbiamo molta strada da fare.", "." },

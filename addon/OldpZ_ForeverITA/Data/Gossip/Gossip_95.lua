@@ -40,6 +40,7 @@ WFJ.Data.add("gossip", {
   ["95a312df7baa87a8"] = { "Dov'è l'anziano Malatomba?", "." },
   ["95a5244834da6e71"] = { "Ah, uno dei miei clienti preferiti. Hai l'aria di <uno/una> <stregone/strega> di un certo potere, {name}. È un piacere conoscerti. Se c'è qualcosa che posso fare per te, ti prego, chiedi pure.\n\nMio fratello e io pensiamo che saranno quelli come te a guidarci nella prossima grande era. Un tale potere... un tale controllo... è solo questione di tempo prima che la Legione stessa si pieghi alla tua volontà.\n\nNon nascondo un pizzico d'invidia.", "." },
   ["95aeb2482dc5ecfd"] = { "I nostri veterani lasciano il campo. Ci servono altre provviste!", "." },
+  ["95b56775d3fb3bde"] = { "Cosa chiederesti alla morte?", "." },
   ["95bccce13c608720"] = { "Il tempo della guerra è quasi giunto, {class}! Sia l'⟦Horde=Orda⟧ sia l'⟦Alliance=Alleanza⟧ hanno completato i preparativi. Tutto il nostro materiale bellico viene spedito a ⟦Silithus=Silitus⟧ proprio ora. Mi aspetto che arrivi tutto entro $2113w giorni. Quando tutto sarà radunato là, chi avrà portato a termine l'arduo compito di ricomporre lo Scettro delle Sabbie Mutevoli lo batterà contro lo Scarab Gong e aprirà i cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Allora si combatterà una battaglia come non se ne vedevano da secoli!\n\nLok'tar Ogar!", "." },
   ["95c42a96ddd37f7a"] = { "Che devastazione... che disastro orribile...", "." },
   ["95cdc6898d910068"] = { "Attraverso la gemma, Elune incanalò la sua infinita saggezza...", "." },
