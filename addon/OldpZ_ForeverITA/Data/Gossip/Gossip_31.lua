@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["311fd46ea2263353"] = { "Ti ho dato tutto il sapere che possiedo, {name}. Che la fortuna sia con te.", "." },
   ["3121a4c3d26a0e1a"] = { "Con piacere. Queste cose puzzano!", "." },
   ["3121c9fea56a2549"] = { "Mmh... i miei occhi non sono più così pesanti, papà. Possiamo uscire a giocare?", "." },
+  ["3127e626b912c9fe"] = { "Che notizie dalle Isole dei ⟦Darkspear=Lanciascura⟧, {name}?", "." },
   ["31301e9b3de8d9aa"] = { "Allora il tuo viaggio ti porta verso ⟦Thunder Bluff=Picco del Tuono⟧, a nord, amico. Una volta lì, cerca la saggezza di uno dei Guardiani del Picco, che potrà dirti direttamente dove trovare chi cerchi.", "." },
   ["313878e302450a6a"] = { "Credo che tu sia all'altezza di questo compito... accetterai la sfida?", "." },
   ["314a8b40d6afb2f3"] = { "La Confraternita non tollererà le tue azioni.", "." },

@@ -49,6 +49,7 @@ WFJ.Data.add("gossip", {
   ["aad78abfa10ba7f6"] = { "Ok, al lavoro!", "." },
   ["aae0a55d50c2df33"] = { "Insetti!", "." },
   ["aaea8bacc79d2178"] = { "Domanda 2, catena 1?", "." },
+  ["aaed106a987cd142"] = { "Se porti totem dei clan di ⟦Desolace=Desolanda⟧, sono disposto a commerciare.", "." },
   ["aaee419f5e05271f"] = { "Non hai nulla a che fare con questi giardini. Il tuo corpo nutrirà le nostre splendide creazioni!", "." },
   ["aaef6d2634402175"] = { "FUOCO ALLE POLVERI!", "." },
   ["aaf2340134449868"] = { "C'è chi si chiede cosa ci facciamo qui nel deserto. Be'... se te lo dicessi, resteresti qui a cercare di farti i nostri profitti!", "." },

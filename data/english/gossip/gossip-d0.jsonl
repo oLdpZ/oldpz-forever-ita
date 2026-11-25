@@ -5,6 +5,7 @@
 {"id": "d01de45166da4d03", "field": "text", "en": "Are you so eager to die? I will be happy to accommodate you...", "hash": "d01de45166da4d03", "src": "vmangos@13b49dc"}
 {"id": "d029618373c7816a", "field": "text", "en": "Narain, I need another special kit.", "hash": "d029618373c7816a", "src": "vmangos@13b49dc"}
 {"id": "d02a50fc0c9d6c3a", "field": "text", "en": "I am interested in tailor training.", "hash": "d02a50fc0c9d6c3a", "src": "vmangos@13b49dc"}
+{"id": "d02c969df99ba7ad", "field": "text", "en": "<Bibbly sniffs the air>$B$BCan you smell that? It's the smell of a successful Goblin$B$B<Bibbly sniffs the air again>$B$BOr is that the smell of these old bones?", "hash": "d02c969df99ba7ad", "src": "collector@1.60.1.71037", "npcs": [11438]}
 {"id": "d035977b8bff237b", "field": "text", "en": "I cannot be teachin' a Tauren to ride a Raptor.", "hash": "d035977b8bff237b", "src": "vmangos@13b49dc"}
 {"id": "d03ea24d98759581", "field": "text", "en": "%s throws Anton's letter down on the table.", "hash": "d03ea24d98759581", "src": "vmangos@13b49dc"}
 {"id": "d0410525ee565060", "field": "text", "en": "You can find the cooking trainer in a small house on the north end of town.", "hash": "d0410525ee565060", "src": "forever-vo@025070f", "npcs": [253474]}

@@ -38,4 +38,5 @@ WFJ.Data.add("gossip", {
   ["dff92f81e70a838a"] = { "Salute, giovane {class}.", "." },
   ["dff95d62bc69e5d2"] = { "La tua vita è un sacrificio degno del mio padrone, {class}.", "." },
   ["dffabc3924b2b31d"] = { "Il Dun Baldar North Bunker è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo distruggerà!", "." },
+  ["dffc89ab72c3c546"] = { "Sei tornat<o/a> con i totem?", "." },
 })

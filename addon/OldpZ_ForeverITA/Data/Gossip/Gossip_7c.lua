@@ -9,6 +9,7 @@ WFJ.Data.add("gossip", {
   ["7c1b6ff4f915b6fc"] = { "Cosa puoi dirmi sulla situazione dell'High Order?", "." },
   ["7c1b716564b26b20"] = { "Maywiki, ho perso il mio talismano e me ne serve uno nuovo.", "." },
   ["7c258328e4d48f8e"] = { "Accetto la tua offerta, Eitrigg.", "." },
+  ["7c270563535d186e"] = { "Bene, bene... sei pront<o/a> a combattere per l'⟦Horde=Orda⟧ nelle Isole dei ⟦Darkspear=Lanciascura⟧?", "." },
   ["7c279e046295b09d"] = { "Ebbene, a quanto pare abbiamo un po' di tempo libero. L'⟦Horde=Orda⟧ ha completato i suoi compiti di raccolta, e si sta preparando tutto per la spedizione finale verso ⟦Silithus=Silitus⟧. Aspettiamo solo che l'⟦Alliance=Alleanza⟧ finisca i suoi. Dovresti andare a chiedere a quel loro sciocco ambasciatorino a che punto sono.", "." },
   ["7c36ccdfb7cf9599"] = { "Salute, {class}. Spero che tu mi porti buone notizie sull'evento Worldwide Invitational. Se è così, di certo ti hanno dato un codice segreto da riferirmi. In cambio del tuo codice ti regalerò uno dei cuccioli di panda di cui mi prendo cura.\n\nSussurramelo all'orecchio quando vuoi.", "." },
   ["7c3e7aa7f70c8a6a"] = { "La foresta trema e si scuote! I venti ululano! Si avvicina il Signore della Foresta?", "." },

@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [277055] = { "Edine Corno Aguzzo", nil, 0x904dcfc5, nil, ".m" },
+  [277059] = { nil, nil, 0x2089bfc2, nil, "em" },
   [277368] = { nil, nil, 0x7f74b13a, nil, "em" },
   [277639] = { nil, nil, 0x08d23a8c, nil, "em" },
   [277727] = { nil, nil, 0x62ded2c8, nil, "em" },

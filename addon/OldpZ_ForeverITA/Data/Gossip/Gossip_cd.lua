@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["cdbb99b39d980e5b"] = { "È ORA DI AGIRE! Fatevi sotto! <da sostituire>", "." },
   ["cdbd32f8b0e6e40d"] = { "Non può essere sconfitto. <La reliquia brucia fino a sparire. I ricordi che conteneva ora sono tuoi. Questa città è stata distrutta da un essere non di questo mondo.>", "." },
   ["cdcb588860b67600"] = { "⟦Trick or Treat=Dolcetto o Scherzetto⟧!", "." },
+  ["cdcee50137b588a3"] = { "Un estraneo così addentro al villaggio? Sarà meglio che tu sia qui per affari.", "." },
   ["cdd0bb3ffd6b2a39"] = { "Voglio altra birra! Datemi altra birra!", "." },
   ["cdd2d3f9e410fe05"] = { "Ecco! Ha funzionato!", "." },
   ["cdd2db0d7e9804b6"] = { "Il rogo dell'Uomo di Paglia comincerà tra cinque minuti! Venite alla festa, appena a ovest di ⟦Undercity=Sepulcra⟧, e celebrate la Veglia delle Ombre e la nostra liberazione dal Flagello!", "." },

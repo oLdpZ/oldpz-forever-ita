@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["a6180a3afc03d027"] = { "Come, non hai un pegno da darmi? Non mi vuoi bene?", "." },
   ["a61ba2574f53deb7"] = { "Notte a tutti. Io non vado ancora a dormire. Magari passa Darcy.", "." },
   ["a622579f8fb0a329"] = { "L'ingegneria ti darà le abilità e le conoscenze per smontare i tuoi avversari! Lascia che ti mostri come...", "." },
+  ["a62d7012f22df758"] = { "I Testamorta non possono essere fermati! Spazzeremo via questa terra e apriremo la strada all'unico vero padrone!", "." },
   ["a62f01073ffc465e"] = { "Con piacere... lasciami solo assaporare questo momento ancora un minuto.", "." },
   ["a6355b9b0d4c61d2"] = { "%s arrossisce.", "." },
   ["a63a645d6e883743"] = { "Abbassa la voce, straniero. Non vorrai disturbare le meditazioni del Maestro.", "." },

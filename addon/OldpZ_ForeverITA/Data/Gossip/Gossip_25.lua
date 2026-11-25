@@ -16,6 +16,7 @@ WFJ.Data.add("gossip", {
   ["254dd2a7ac3f71f7"] = { "Sei molto più brav<o/a> di me a forgiare, questo è certo. Anche se negherò di averlo detto, se lo racconti in giro. Dovresti andare a parlare con ⟦Therum Deepforge=Therum Forgiafonda⟧. Se c'è qualcuno che può insegnarti di più, è lui.", "." },
   ["25629ad2d58e52e0"] = { "Va' con le benedizioni di Al'Akir. Ma bada: chi si avvicina ai fedeli del Signore del Vento con false intenzioni affronterà presto la Sua ira.", "." },
   ["2578d91ce6c6c683"] = { "La magia attira %s!", "." },
+  ["257942dcdb3c2a2f"] = { "<Molkar sbircia nella borsa. Un sorrisetto gli increspa le labbra e svanisce solo per un attimo quando scorge un totem palesemente falso. Fa finta di non vederlo.>\n\nNon so cosa abbia spinto un estraneo a portare un simile dono al nostro clan. È una grande fortuna per il nostro popolo, perché ultimamente il Clan Magram è stato insolitamente feroce.\n\nNon devi più muoverti con cautela nel nostro villaggio. Informerò Uthek, che parlerà con il Khan.", "." },
   ["257ec981239d870b"] = { "Sto per chiudere, comprate finché potete!", "." },
   ["257f859aec74893a"] = { "⟦Sentinels=Sentinelle⟧, difendetemi!", "." },
   ["258029e806ac748e"] = { "Devi avere reputazione Osannato presso gli elfi della notte di Darnassus prima che io ti insegni a cavalcare, {class}.", "." },

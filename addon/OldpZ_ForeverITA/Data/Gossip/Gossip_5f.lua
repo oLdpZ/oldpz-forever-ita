@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["5f67994fe9702b4f"] = { "Io... credo di vedere Blue...", "." },
   ["5f6c2558b002a989"] = { "Salve, salve, Amy. È bello essere di nuovo a ⟦Lakeshire=Borgolago⟧ e rivederti, mia signora.", "." },
   ["5f6d5d97b0b95882"] = { "Ho appena visto uno del Flagello! Uccidilo!", "." },
+  ["5f6e80e59326133e"] = { "Un estraneo si avvicina a me?\n\nDubito che abbiamo molto di cui parlare, a meno che tu non sia qui per aiutare un vecchio Kolkar.", "." },
   ["5f769cf26b576bfd"] = { "Stiamo perdendo tempo. Mettiamoci in marcia.", "." },
   ["5f7fb2de304ba300"] = { "%s lancia un ruggito di sfida a {name}!", "." },
   ["5f800a0154b19146"] = { "Mi sento male.", "." },

@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["d01de45166da4d03"] = { "Hai tanta fretta di morire? Sarò felice di accontentarti...", "." },
   ["d029618373c7816a"] = { "Narain, mi serve un altro kit speciale.", "." },
   ["d02a50fc0c9d6c3a"] = { "Mi interessa l'addestramento da sarto.", "." },
+  ["d02c969df99ba7ad"] = { "<Bibbly annusa l'aria.>\n\nLo senti questo odore? È l'odore di un goblin di successo.\n\n<Bibbly annusa di nuovo l'aria.>\n\nO forse è l'odore di queste vecchie ossa?", "." },
   ["d0323cfc721454ac"] = { "Hai trovato qualcosa? Non ci spero molto.", "." },
   ["d035977b8bff237b"] = { "Non posso insegnare a un tauren a cavalcare un raptor.", "." },
   ["d03ea24d98759581"] = { "%s getta sul tavolo la lettera di Anton.", "." },

@@ -368,6 +368,7 @@
 {"id": 98887, "field": "title", "en": "Conflict at Darkspear Islands", "hash": "969b71fe137628da", "src": "wdb@1.60.1.70450"}
 {"id": 98887, "field": "objectives", "en": "Bring 3 Darkspear Islands Marks of Honor to a Horde Warbringer outside the battlegrounds.", "hash": "eba00ea0528f1bb2", "src": "wdb@1.60.1.70450"}
 {"id": 98887, "field": "description", "en": "The Theramore Expeditionary Force are tenacious and continue to send reinforcements to bolster their position on the Darkspear Islands. $B$BGo, show them the might of the Horde! Bring me the evidence of your victory in this key battleground and you will be well rewarded.", "hash": "652e7e65142197b2", "src": "wdb@1.60.1.70450"}
+{"id": 98887, "field": "progress", "en": "What news from the Darkspear Islands, $N?", "hash": "3127e626b912c9fe", "src": "collector@1.60.1.71037"}
 {"id": 98889, "field": "title", "en": "Conflict at Darkspear Islands", "hash": "969b71fe137628da", "src": "wdb@1.60.1.70450"}
 {"id": 98889, "field": "objectives", "en": "Bring 3 Darkspear Islands Marks of Honor to a Horde Warbringer outside the battlegrounds.", "hash": "eba00ea0528f1bb2", "src": "wdb@1.60.1.70450"}
 {"id": 98889, "field": "description", "en": "The Theramore Expeditionary Force are tenacious and continue to send reinforcements to bolster their position on the Darkspear Islands. $B$BGo, show them the might of the Horde! Bring me the evidence of your victory in this key battleground and you will be well rewarded.", "hash": "652e7e65142197b2", "src": "wdb@1.60.1.70450"}

@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["f0b1eb4e9aeb411f"] = { "%s va su tutte le furie!", "." },
   ["f0b92989bbac2be7"] = { "Come mio fratello, onoro chi onora i propri antenati. È per me una grande gioia condividere i miei segreti artigianali con i discepoli della Celebrazione della Luna!", "." },
   ["f0ba0fccf017f2e4"] = { "Disperate, mortali! Il vostro destino è giunto!", "." },
+  ["f0bec51b9b66af90"] = { "Sono splendidi... avevo sottovalutato la creatività dei centauri. Non avrei mai immaginato che una razza così piena di brutalità e crudeltà sapesse apprezzare storie raccontate attraverso degli intagli.\n\nImmagino che apprezzarli richieda molto meno fatica che realizzarli. Mi correggo: non avrei mai immaginato che i centauri avessero la pazienza di intagliare così tante storie nel legno. E dove lo trovano, il legno?\n\nIn ogni caso, parlami quando sei pront<o/a> a fare la consegna.", "." },
   ["f0c5f7363c198e1d"] = { "Non provare a teletrasportarti in una delle città dei tuoi nemici. Non funzionerà: qui saremo anche tutti amici, ma a casa i vecchi rancori restano...", "." },
   ["f0d50494ebc80e7d"] = { "Niente può cambiare il passato, ma il tempo guarisce tutte le ferite. Grazie per avermi mostrato che è possibile, {name}. Ti auguro ogni bene.", "." },
   ["f0dc03d6b6a6e5c2"] = { "Questo è il mio dialogo di prova.", "." },

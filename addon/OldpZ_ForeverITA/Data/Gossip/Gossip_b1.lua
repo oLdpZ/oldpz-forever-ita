@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["b1d5cb94117a669f"] = { "Non sono qui a insegnare ai poppanti appena usciti dalla culla. Non hai neanche lontanamente l'abilità che pretendo dai miei allievi. Anzi, sei <un/una> <ragazzo/ragazza> che fa pena, e ti pregherei di non restare lì a blaterare.", "." },
   ["b1d72bf46d17dfdf"] = { "Va bene, va bene... mi alzo.", "." },
   ["b1d89e3f2e8cc144"] = { "⟦Davil Lightfire=Davil Fiocafiamma⟧ ha ceduto alle ferite!", "." },
+  ["b1dc9ed25b8e4d25"] = { "Mettere al sicuro le nostre risorse ad Arathi è un compito importante! Hai fatto un buon lavoro, {name}.", "." },
   ["b1e0e1a6cb7cc7ce"] = { "No! Stammi lontano! Aiuto!!", "." },
   ["b1e239feb6d1bafd"] = { "Sono caduti in troppi, <sacerdote/sacerdotessa>. Devi concentrarti!", "." },
   ["b1e28e10f0881e99"] = { "Il mondo patirà crudeltà indicibili sotto il mio regno.", "." },
