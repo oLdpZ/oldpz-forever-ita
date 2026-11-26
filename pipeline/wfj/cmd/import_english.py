@@ -954,6 +954,8 @@ def _report_row(type_: str, c: tuple[Any, str, str, str]) -> str:
 
 
 def run_upstream(a: argparse.Namespace) -> int:
+    if not re.fullmatch(r"[0-9a-fA-F]{7,40}", a.commit):
+        raise ValueError(f"upstream --commit {a.commit!r} must be 7 to 40 hex chars")
     clone = Path(a.clone)
     head = upstream.head_commit(clone)
     if not head.startswith(a.commit):

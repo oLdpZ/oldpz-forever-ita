@@ -18,9 +18,12 @@ PLACEHOLDER_TEXT = re.compile(r"temp text|<CHANGE TO GOSSIP>|^\s*TEST\b", re.IGN
 
 
 def head_commit(clone: Path) -> str:
-    out = subprocess.run(
-        ["git", "-C", str(clone), "rev-parse", "HEAD"], check=True, capture_output=True, text=True
-    )
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(clone), "rev-parse", "HEAD"], check=True, capture_output=True, text=True
+        )
+    except (subprocess.CalledProcessError, OSError) as e:
+        raise ValueError(f"upstream clone {clone} is not a readable git repository") from e
     return out.stdout.strip()
 
 
