@@ -118,7 +118,7 @@ WFJ.Data.add("unit", {
   [13357] = { "Posamine dei Lupi Bianchi", nil, 0x55329b05, nil, ".m" },
   [13358] = { "Balestriere dei Piccatonante", nil, 0x93677f8a, nil, ".m" },
   [13359] = { "Arciere dei Lupi Bianchi", nil, 0x05fc3478, nil, ".m" },
-  [13377] = { "Maestro Ingegnere Zinfizzlex", nil, 0x440925c1, nil, ".m" },
+  [13377] = { "Maestro Ingegnere Svitarazzi", nil, 0x440925c1, nil, ".m" },
   [13378] = { "Unità Segatronchi dei Lupi Bianchi", nil, 0x5261cb55, nil, ".m" },
   [13396] = { "Minatore Ferrofondo", nil, 0xc7f35f7c, nil, ".m" },
   [13397] = { "Peone Ferrofondo", nil, 0x57e8b2f3, nil, ".m" },

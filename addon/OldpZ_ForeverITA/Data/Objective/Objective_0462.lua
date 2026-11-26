@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("objective", {
   [462326] = { "Offri aiuto al Frightened Paladin", 0xdf429b53, "." },
   [462329] = { "Fai rapporto a Shari Stilwell a Brill", 0x410c0a4a, "." },
-  [462436] = { "Parla con Hilda the Breaker", 0x53e4d0d0, "." },
+  [462436] = { "Parla con ⟦Hilda the Breaker=Hilda la Spaccatrice⟧", 0x53e4d0d0, "." },
   [462437] = { "Parla con Jorin Croge", 0xde4674cb, "." },
   [462438] = { "Parla con Ander Solliden", 0x4c336f05, "." },
   [462439] = { "Parla con Danitha Morr", 0xe7530beb, "." },

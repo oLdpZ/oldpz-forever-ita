@@ -4818,7 +4818,7 @@ WFJ.Data.add("namespell", {
   ["d7d87531e9a44d43"] = { "Abito Nuziale Bianco", "." },
   ["d7e362425c9a0cef"] = { "Congelamento di Viscidus", "." },
   ["d7ec9a965e73201e"] = { "Preghiera di Cura", "." },
-  ["d7f331a3ef02adce"] = { "Fuoco da Campo", "." },
+  ["d7f331a3ef02adce"] = { "Fuoco da Cucina", "." },
   ["d80cb4ca409107ff"] = { "Guardia Rete", "." },
   ["d80deb9b0247d8c8"] = { "Tempra Superiore", "." },
   ["d8150dde942e4065"] = { "Rimozione Scudo Empio", "." },

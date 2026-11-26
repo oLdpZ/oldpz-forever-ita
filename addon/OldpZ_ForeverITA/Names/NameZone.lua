@@ -959,7 +959,7 @@ WFJ.Data.add("namezone", {
   ["ed8294ff632510e1"] = { "Cascina dei Marris", "." },
   ["ed8477381aae12d4"] = { "Cantaselva", "." },
   ["edae77dfa3b8810b"] = { "Cascina dei Dabyrie", "." },
-  ["edb86f1083a3cca8"] = { "Scuderie del Bel Tempo", "." },
+  ["edb86f1083a3cca8"] = { "Scuderie Chiarosole", "." },
   ["ee32041a4d244873"] = { "Fattoria dei Molsen", "." },
   ["ee8ebd1e3b3a4a1b"] = { "Rupe di Zoccolo Spezzato", "." },
   ["eef148acda90c5c9"] = { "Torre di Ilgalar", "." },

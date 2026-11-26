@@ -63,7 +63,7 @@ oggetto	Kaga's Basic Campfire	Fuoco da Campo Semplice di Kaga	campeggio di Forev
 oggetto	Lyreena's Basic Campfire	Fuoco da Campo Semplice di Lyreena	campeggio di Forever (missione)
 oggetto	Eleanor's Basic Campfire	Fuoco da Campo Semplice di Eleanor	campeggio di Forever (missione)
 oggetto	Eric's Basic Campfire	Fuoco da Campo Semplice di Eric	campeggio di Forever (missione)
-abilita	Cooking Fire	Fuoco da Campo	ufficiale (incantesimo 818 del client italiano)
+abilita	Cooking Fire	Fuoco da Cucina	distinto da Campfire = Fuoco da Campo (decisione di revisione)
 oggetto	Ursangous's Paw	Zampa di Ursangous	coniato
 oggetto	Crocolisk Tear	Lacrima di Crocolisco	ufficiale (altro id)
 oggetto	Small Brass Key	Chiave di Ottone Piccola	coniato
@@ -484,7 +484,7 @@ zona	Elderwild	Selva Antica	Forever; coniato
 zona	Elsewhen	Altroquando	Forever; coniato
 zona	Evenshade's Overlook	Belvedere di Evenshade	Forever; coniato
 zona	Excavation Site: Wetlands	Sito di Scavo: Paludi Grigie	Forever; coniato (Paludi Grigie ufficiale)
-zona	Fairweather Stables	Scuderie del Bel Tempo	Forever; coniato
+zona	Fairweather Stables	Scuderie Chiarosole	Forever; coniato; Fairweather = Chiarosole come gli oggetti ufficiali (decisione di revisione)
 zona	Falaath Village	Villaggio di Falaath	Forever; coniato
 zona	Farholde Keep	Forte Farholde	Forever; coniato
 zona	Fel Grove	Boschetto Vile	Forever; coniato
