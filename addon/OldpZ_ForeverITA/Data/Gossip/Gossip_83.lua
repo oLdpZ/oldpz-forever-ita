@@ -20,6 +20,7 @@ WFJ.Data.add("gossip", {
   ["8345272677ad076b"] = { "Ascolto e ascolto, ma non sento questi spiriti di cui parla Karn.", "." },
   ["834643b0063eb8f6"] = { "Ahh, allora dovrai raggiungere la Hunter's Hall. Lì, sull'⟦Hunter Rise=Altura dei Cacciatori⟧, troverai diversi grandi cacciatori come ⟦Holt Thunderhorn=Holt Corno Tonante⟧.", "." },
   ["8348bf7b8f2b45cc"] = { "Ottimo lavoro! Meriti davvero il sapere che ti concederò!", "." },
+  ["834b33ff398b1768"] = { "Hai imparato tutto ciò che posso insegnarti, {name}. Che le benedizioni della Madre Terra ti guidino nella scelta di un famiglio.\n\nEcco a te, {name}. Ora ti darò il potere di addomesticare una bestia, e di richiamarla e congedarla come meglio credi. Usa le tue nuove abilità con orgoglio e onora la Madre Terra.", "." },
   ["834dc587955cdac7"] = { "Io contro cinquanta orchi? Non ci casco, {name}. Il mio paparino diceva sempre: «La discrezione è la parte migliore del biscotto», o qualcosa del genere, e io sapevo cosa voleva dire.", "." },
   ["834e6c60b98c4d0d"] = { "Salve! Sei proprio la persona che cercavo. Siediti e ascolta, perché ho un piano che ci farà diventare ricchi tutti e due!", "." },
   ["8351f0c5f2951df9"] = { "Informazioni sulle Scaglie Cromatiche Brillanti.", "." },

@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["427609bc26578b8e"] = { "⟦Davil Lightfire=Davil Fiocafiamma⟧ è stato sconfitto! Il ⟦Darrowshire=Borgo di Darrow⟧ è perduto!", "." },
   ["42778da898ec6614"] = { "Ehi, mon, tu sei qui per portarmi barre di mithril, di sicuro. Ci sono grossi guai in arrivo nel deserto di ⟦Silithus=Silitus⟧, ad ⟦Ahn'Qiraj=Ahn'qiraj⟧. Noi e l'⟦Alliance=Alleanza⟧ stavolta facciamo di tutto per fermare quegli insetti, ed è per questo che vedi tutti qui.\n\nL'⟦Horde=Orda⟧ mi chiede di raccogliere $2009w per lo sforzo bellico, ma io ne ho solo $2008w. Allora mi aiuti o no?", "." },
   ["427cc287e7272380"] = { "Vai dritto nella zona nord-ovest della ⟦Valley of Honor=Valle dell'Onore⟧. Lì troverai la Hunter's Hall.", "." },
+  ["427d0b771c074797"] = { "Ecco a te, {name}. Ora ti darò il potere di addomesticare una bestia, e di richiamarla e congedarla come ti pare.\n\nTrovati un famiglio buono e leale, e goditi la caccia!", "." },
   ["42a354f3ad27d654"] = { "%s entra in una furia berserker!", "." },
   ["42a41b5d749d499a"] = { "Hai ragni o scarafaggi, {class}? Corrono veloci, ma se tu sei più veloce scoprirai che sono una vera prelibatezza!", "." },
   ["42a709aa5e9109ab"] = { "<Non riesci a capire niente del gergo tecnico di questa pergamena.>", "." },

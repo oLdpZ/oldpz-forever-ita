@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["e56a41b3c273e2ab"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi del Magistro in cambio della nuova ⟦Sorcerer's Crown=Corona dell'Occultista⟧ e delle nuove Vesti dell'Occultista?", "." },
   ["e56db50d49d03188"] = { "Ecco fatto...", "." },
   ["e56dc4f702a8ddca"] = { "Il tuo destino è segnato, Deliana! Pagherai per i tuoi oltraggi contro sire Valthalak!", "." },
+  ["e57154b4dc5899a1"] = { "La Madre Terra mi ha mandato dei segni: hai fatto un buon lavoro.", "." },
   ["e577ee56a2877042"] = { "Potenziamento a unità veterane!", "." },
   ["e57b8d0280bf2cf0"] = { "Senti il richiamo della caccia, {class}? Devi ascoltare con attenzione, ma il richiamo viene dal profondo di te. Viene dal profondo di tutti noi.", "." },
   ["e57f9d65bff20883"] = { "Dove pensavi che fosse il maestro delle viverne? Va' in cima alla Sky Tower nella ⟦Valley of Strength=Valle della Forza⟧!", "." },

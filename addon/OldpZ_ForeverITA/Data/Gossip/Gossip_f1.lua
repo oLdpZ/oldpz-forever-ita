@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["f1414d06e968fe2f"] = { "Ti prego, ricorda ciò che ti abbiamo mostrato...", "." },
   ["f141f2dfb42775d9"] = { "Mojka, coprimi! Ho delle faccende da sbrigare.", "." },
   ["f143867b27e22d57"] = { "<Stupido/Stupida> {race}! Il clan ⟦Blackrock=Roccianera⟧ danzerà sulla tua tomba!", "." },
+  ["f149b5be3434fea1"] = { "Mentre t'imbatti nei resti dell'ennesimo cadavere carbonizzato, il tuo sguardo cade su un messaggio fissato a un'asse di legno.", "." },
   ["f14b8ad0163285b1"] = { "Il ⟦Icewing Bunker=Fortilizio di Algidala⟧ sorveglia il passo tra il territorio dell'⟦Alliance=Alleanza⟧ e il ⟦Field of Strife=Pian della Discordia⟧.\n\nNon è controllato da nessuna delle due fazioni.", "." },
   ["f14c03d52b7b02c7"] = { "%s emette un bubolio minaccioso.", "." },
   ["f154288a6666262f"] = { "Allora non dobbiamo perdere altro tempo. Lo stormo cromatico è pronto?", "." },

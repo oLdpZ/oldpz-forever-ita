@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["ac01be218f4d0d48"] = { "Be', per me si torna al lavoro. Però è stato proprio bello fare quella breve pausa, ed è sempre bello bere ⟦Thunder Ale=Birra del Tuono⟧!", "." },
   ["ac0643cfc349b368"] = { "Aprilo, e stavolta fai attenzione!", "." },
   ["ac0ad82c963727a1"] = { "Che la tua anima bruci nell'angoscia, Isillien! Luce, dammi la forza di combattere questo demonio.", "." },
+  ["ac1c2d654bc5fb2c"] = { "Hai fatto un buon lavoro, {name}. Credo che tu sia <pronto/pronta> per il prossimo compito.", "." },
   ["ac2bee11166998d3"] = { "Mettiti in viaggio verso Orgrimmar e cercalo nella ⟦Valley of Honor=Valle dell'Onore⟧. Lavora in una bottega chiamata Arms of Legend.", "." },
   ["ac2d162b5b23d790"] = { "Lady Sylvanas ha ordinato di studiare alcuni fenomeni naturali di Azeroth. Ritiene che ci sia qualcosa di grande da imparare dal suo passato segreto.\n\nNon so come abbia appreso queste cose, ma mi fido ciecamente di lei, quindi farò del mio meglio.\n\nAl momento sto studiando le melme, i liquami e simili. Le creature sembrano tutte simili nella composizione, ma fortemente influenzate dal loro ambiente.\n\nMi farebbe comodo il tuo aiuto per raccogliere campioni di queste creature..", "." },
   ["ac2f4ddb6037e7f2"] = { "Cosa? Come osi dirmi una cosa del genere?!?", "." },

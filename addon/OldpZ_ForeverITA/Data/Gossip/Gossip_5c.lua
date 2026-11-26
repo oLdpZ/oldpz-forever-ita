@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["5c57e10038b6db46"] = { "Piano piano, {class}, Pele'keiki pensa che tu non sapere che tutta quella roba essere in viaggio per ⟦Silithus=Silitus⟧. A Pele'keiki hanno detto che l'ultima parte arriva là in meno di $2113w giorni, e poi qualche sciocco sconsiderato suona il gong fuori dai cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧ per aprirli e comincia la guerra.", "." },
   ["5c617b3c8bd7df3c"] = { "%s prepara una pozione per {name}.", "." },
   ["5c61977714f290ad"] = { "A volte i nani si girano su se stessi lasciando la schiena scoperta. Approfitta di quel momento per colpire così...", "." },
+  ["5c64ed8c14d25699"] = { "Eccellente, {name}! Impari davvero in fretta. Ora che conosci le basi, posso insegnarti a stringere un legame duraturo con un compagno animale.\n\nVa' con questa conoscenza e prospera. Sii <il/la> {class} di cui l'isola di Zephras ha bisogno.", "." },
   ["5c65948d4a91339e"] = { "Ora sto meglio. Torniamo a ⟦Ratchet=Porto Paranco⟧. Andiamo, {name}.", "." },
   ["5c67715b106da800"] = { "Una banda di predoni laggiù! Fuoco!", "." },
   ["5c6ad9a0bc7e8891"] = { "La macchina ne ha prese parecchie! Prepariamola per la prossima gara.", "." },

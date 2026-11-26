@@ -354,9 +354,10 @@ def quest_text_aliases(
     quest_lines: list[dict[str, Any]], english_lines: list[dict[str, Any]]
 ) -> dict[str, tuple[int, str]]:
     """Forever repeats a quest under several ids (one per start area or profession) with the same text, and a
-    copy often has no progress or turn-in English of its own. For a title several quests share, where a copy
-    lacks the field's English, every trusted translation of that field among the copies also ships keyed by
-    the hash of its English, so the copy finds it by the live text (ADR-054). Only an exact English match
+    copy often has no progress or turn-in text of its own. For a title several quests share, where a copy
+    ships no Italian for the field (no English, or English not translated yet), every trusted translation of
+    that field among the copies also ships keyed by the hash of its English, so the copy finds it by the live
+    text (ADR-054). Only an exact English match
     shows it. A text with a `$G` code ships under its female wording's key too: the key keeps the male
     branch, and a female character's live text is the other. The lowest quest id answers a key two copies
     hold. → {key: (quest id, field)}"""
@@ -366,6 +367,7 @@ def quest_text_aliases(
     trusted = {
         (ln["id"], ln["field"]) for ln in quest_lines if ln["status"] == "trusted" and lua_writer.shipped(ln)
     }
+    shipped = {(ln["id"], ln["field"]) for ln in quest_lines if lua_writer.shipped(ln)}
     families: dict[str, list[int]] = {}
     for id_, fields in english.items():
         if "title" in fields:
@@ -375,8 +377,8 @@ def quest_text_aliases(
         if len(ids) < 2:
             continue
         for field in QUEST_KEYED_FIELDS:
-            if all(field in english[i] for i in ids):
-                continue  # every copy has its own English: each is found by its own id
+            if all((i, field) in shipped for i in ids):
+                continue  # every copy ships its own Italian: each is found by its own id
             for i in sorted(ids):
                 if (i, field) in trusted and field in english[i]:
                     out.setdefault(english[i][field]["hash"], (i, field))

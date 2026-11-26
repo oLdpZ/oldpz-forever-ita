@@ -38,6 +38,7 @@ WFJ.Data.add("gossip", {
   ["409865ade3d460bd"] = { "Credimi quando te lo dico: rimpiangerai di essere <nato/nata>, femminuccia!", "." },
   ["409958b28a5bf603"] = { "Assicurati che lo legga subito. Temo che il nostro problema con il Flagello sia appena cominciato.\r\n\nTorna da me a tempo debito. Credo di aver quasi scoperto qualcosa per cui mi servirebbe l'aiuto di una lama volenterosa.", "." },
   ["40a187496eac25c8"] = { "Proprio così. Alla fine l'oggetto fu distrutto e Alamorte quasi ucciso dal potere unito e rinnovato dei quattro Aspetti rimasti. Dove si trovi ora Alamorte non si sa. Ciò che sappiamo, però, è che uno dei suoi discendenti, Nefarian, governa questa cittadella e vuole riprendere da dove suo padre si era interrotto.", "." },
+  ["40ad2d6e81580ba9"] = { "La forza bruta della foresta. Un lavoro coraggioso, {name}!", "." },
   ["40bd5ad932d96f1b"] = { "Dun Baldar ha subito un duro colpo nell'ultimo attacco dell'⟦Horde=Orda⟧! Ci servono altri rifornimenti per ricostruire e fare le riparazioni!", "." },
   ["40bdbb8fe7dc2866"] = { "Via, a ⟦Undercity=Sepulcra⟧, {name}! Cerca di non prenderti la peste...", "." },
   ["40befd091302d915"] = { "Ecco fatto!", "." },

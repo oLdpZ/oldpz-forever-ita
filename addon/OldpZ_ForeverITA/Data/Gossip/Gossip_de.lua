@@ -39,6 +39,7 @@ WFJ.Data.add("gossip", {
   ["dea9b05def876c2d"] = { "Parlami del ⟦Portals Deck=Mazzo dei Portali⟧.", "." },
   ["deaf55ca4f7f1f5f"] = { "comincia a creparsi!", "." },
   ["deb10d2e1603c5ec"] = { "Anch'io sono felice di vederti, Grim! A quanto pare non tutti gli stranieri sono da temere, eh, Grim? Terenthis saprà ricompensare a dovere chi ci ha aiutati.", "." },
+  ["deb475c1fd9f8097"] = { "Hai imparato tutto ciò che posso insegnarti, {name}. Permettimi di darti un ultimo consiglio: scegli con giudizio il tuo primo famiglio. Sceglierai una creatura della terra, dell'acqua o del cielo? Qualunque sia, senza dubbio il tuo famiglio starà con te per molto tempo.\n\nEcco a te, {name}. Ora ti darò il potere di addomesticare una bestia, e di richiamarla e congedarla come meglio credi. Usa le tue nuove abilità con orgoglio: te le sei guadagnate.", "." },
   ["deb73f3d66079a83"] = { "Ora, dov'era quel libro sulle usanze degli elfi della notte che stavo cercando...", "." },
   ["deb805650f20433a"] = { "Non divorate subito tutto il cadavere, figlioli! Lasciate spazio per il dessert!", "." },
   ["deb81371181fe4bf"] = { "Tutto fatto!", "." },

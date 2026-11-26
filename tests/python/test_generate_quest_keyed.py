@@ -23,10 +23,18 @@ def test_a_copy_without_the_field_gets_its_siblings_text_keyed():
     assert got == {key(normalize_v1(CAMP)): (1, "progress")}  # the lowest id answers a shared key
 
 
-def test_nothing_keyed_when_every_copy_has_its_own_english_or_no_copy_is_translated():
+def test_nothing_keyed_when_every_copy_ships_its_own_italian_or_no_copy_is_translated():
     english = [_en(1, "title", "T"), _en(2, "title", "T"), _en(1, "completion", "A."), _en(2, "completion", "B."),
                _en(3, "title", "U"), _en(4, "title", "U"), _en(3, "progress", "C.")]
-    assert quest_text_aliases([_ja(1, "completion"), _ja(3, "progress", "stale")], english) == {}
+    both = [_ja(1, "completion"), _ja(2, "completion"), _ja(3, "progress", "stale")]
+    assert quest_text_aliases(both, english) == {}
+
+
+def test_a_copy_with_english_but_no_italian_still_reaches_its_siblings_text():
+    english = [_en(1, "title", "T"), _en(2, "title", "T"), _en(1, "completion", CAMP), _en(2, "completion", CAMP)]
+    got = quest_text_aliases([_ja(1, "completion")], english)
+    assert got == {key(normalize_v1(CAMP)): (1, "completion")}
+    assert quest_text_aliases([_ja(1, "completion"), _ja(2, "completion")], english) == {}
 
 
 def test_a_single_quest_title_is_never_keyed():

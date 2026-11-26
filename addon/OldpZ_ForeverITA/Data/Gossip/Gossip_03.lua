@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["0361cb9eb6c08161"] = { "Bena lavora come un'invasata. Giorno e notte l'ho vista china su queste pozioni, spesso senza dormire né mangiare. So che i nostri alleati non morti hanno bisogno d'aiuto, ma comincio a temere che finirà per farsi del male.", "." },
   ["036580e6398f6d50"] = { "Vorrei chiederti un'altra cosa.", "." },
   ["036a13f5e0a55935"] = { "L'⟦Horde=Orda⟧ è pronta, ora che abbiamo finito di raccogliere tutte le nostre risorse. Aspettiamo solo che quella lumaca dell'⟦Alliance=Alleanza⟧ finisca con le sue, e poi via alla gloriosa battaglia!", "." },
+  ["0370a830ae08072e"] = { "Sì... La Madre Terra ritiene che tu sia pront<o/a> per la prossima lezione.", "." },
   ["037e8f0a74c325b3"] = { "Scuoiatura", "." },
   ["038bccd447dce093"] = { "Ridammi la mia bambola!!", "." },
   ["03a4ea8cdbea3c0d"] = { "Allora è Shelene Rhobart. Prendi la strada che esce da Brill verso sud-est, poi gira a est all'incrocio. Si trova in un accampamento sul ciglio della strada.", "." },

@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["e35d5b4a5270fed5"] = { "Sarà così bello riavere all'ovile la nostra pecorella smarrita, non trovi?", "." },
   ["e3600d39873bbe59"] = { "Ho sentito che a ⟦Ironforge=Forgiardente⟧ c'è una bottega gestita dagli gnomi specializzata in alchimia. Dovresti darci un'occhiata.", "." },
   ["e361f26e724ee82d"] = { "Noi ha casa d'aste in anello centrale.", "." },
+  ["e3639023aafa084a"] = { "Vedo il tuo impegno, e vedo che hai compreso ciò che ti ho insegnato, {name}.", "." },
   ["e36d0c502d80c677"] = { "Grazie di cuore!", "." },
   ["e36d21b29336d08d"] = { "Adoro l'odore di ⟦Ironforge=Forgiardente⟧ al mattino! Eh? E tu di che cosa avresti bisogno, {class}?", "." },
   ["e37228ddfe3918ac"] = { "Bene, diamo un'occhiata a quest'aggeggio...", "." },
