@@ -3,6 +3,7 @@ import re
 from wfj.dev.gen_attribution import (
     FOREVER_VO,
     NO_TRANSLATORS,
+    UPSTREAM_STAMP,
     correctors_section,
     data_translators,
     english_sources,
@@ -142,3 +143,17 @@ def test_wowhead_npc_names_are_credited_apart_with_their_read_date():
     assert "Retail builds read: `12.1.5.70448`." in section
     assert "Wowhead" in section and "`2026-10-21`" in section
     assert "Wowhead" not in render([], set(), {"wago-itit@12.1.5.70448"})
+
+
+def test_upstream_credit_stands_exactly_while_its_stamp_exists(root):
+    """The Japanese project's English is credited (ADR-106) while pipeline/upstream-source.txt exists. When
+    this fails, run `python -m wfj.dev.gen_attribution`."""
+    text = (root / "ATTRIBUTION.md").read_text(encoding="utf-8")
+    assert ("the Japanese WoW Forever project this repository descends from" in text) == (root / UPSTREAM_STAMP).is_file()
+
+
+def test_the_upstream_credit_is_a_single_bullet_after_forever_vo():
+    without, with_ = render(["a"], {FOREVER_VO}), render(["a"], {FOREVER_VO}, upstream=True)
+    key = "the Japanese WoW Forever project this repository descends from"
+    assert key not in without and with_.count(key) == 1
+    assert with_.index("- forever-vo (") < with_.index(key) < with_.index("## pfQuest license")

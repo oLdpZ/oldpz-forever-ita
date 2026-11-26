@@ -230,7 +230,7 @@ import-shared-english:
 # English for (a different English is reported in pipeline/upstream-conflicts.tsv, never written). Skipped with a notice
 # when the clone is absent, so the other sources never depend on it (ADR-106).
 import-upstream: ## add the English the Japanese project (wfj-upstream clone, pinned UPSTREAM_SHA) has and we lack; conflicts go to pipeline/upstream-conflicts.tsv; skipped if the clone is missing
-	@if [ -d "$(UPSTREAM)" ]; then cd pipeline && $(PY) -m wfj import english upstream "$(UPSTREAM)" --commit $(UPSTREAM_SHA) --report "$(CURDIR)/pipeline/upstream-conflicts.tsv"; else echo "import-upstream: no clone at $(UPSTREAM); skipped (git clone it and check out $(UPSTREAM_SHA))"; fi
+	@if [ -e "$(UPSTREAM)/.git" ]; then cd pipeline && $(PY) -m wfj import english upstream "$(UPSTREAM)" --commit $(UPSTREAM_SHA) --report "$(CURDIR)/pipeline/upstream-conflicts.tsv"; else echo "import-upstream: no clone at $(UPSTREAM); skipped (git clone it and check out $(UPSTREAM_SHA))"; fi
 
 # One client's English (CLIENT=<client>): its quest cache, then its tables (names, tooltip text, UI strings).
 import-client:

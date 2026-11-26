@@ -89,6 +89,13 @@ FOREVER_VO_SOURCE = """\
 - forever-vo (https://github.com/quinn-dougherty/forever-vo), under the MIT License (below): quest progress
   and turn-in text and NPC greetings that players of the Forever client recorded with its addon and sent in.
 """
+# The Japanese project's English (ADR-106) is credited while the stamp its importer writes exists.
+UPSTREAM_STAMP = Path("pipeline") / "upstream-source.txt"
+UPSTREAM_SOURCE = """\
+- the Japanese WoW Forever project this repository descends from (a pinned clone, see
+  `pipeline/upstream-source.txt`): quest, gossip, objective and book English that our own scans
+  lacked; never its Japanese text.
+"""
 FOREVER_VO_LICENSE = """
 ## forever-vo license
 
@@ -205,16 +212,21 @@ def with_correctors(text: str, entries: dict[str, list[int]]) -> str:
 
 
 def render(
-    tags: list[str], sources: set[str] | frozenset[str] = frozenset(), official: set[str] | list[str] = ()
+    tags: list[str],
+    sources: set[str] | frozenset[str] = frozenset(),
+    official: set[str] | list[str] = (),
+    upstream: bool = False,
 ) -> str:
     """The whole file. `sources`: the English source names in `data/english/` (english_sources);
-    `official`: the official variants' sources (official_sources), credited to Blizzard when there are any."""
+    `official`: the official variants' sources (official_sources), credited to Blizzard when there are any;
+    `upstream`: the Japanese project's English was imported (its stamp exists)."""
     tags = _sorted(set(tags))
     lines = ["# Attribution", "", UPSTREAM.rstrip("\n"), ""]
     lines += [f"## Translators ({len(tags)} tags, as recorded in data/)", ""]
     lines += [f"- {t}" for t in tags] or [NO_TRANSLATORS]
     vo = FOREVER_VO in sources
-    lineage = LINEAGE.replace("<FOREVER_VO_SOURCE>\n", (FOREVER_VO_SOURCE if vo else "") + "\n")
+    sources_text = (FOREVER_VO_SOURCE if vo else "") + (UPSTREAM_SOURCE if upstream else "")
+    lineage = LINEAGE.replace("<FOREVER_VO_SOURCE>\n", sources_text + "\n")
     lineage = lineage.replace("<FOREVER_VO_LICENSE>\n", (FOREVER_VO_LICENSE if vo else "") + "\n")
     if official:
         # after Lineage, beside the English source credit: the part above Lineage never reads "official"
@@ -243,7 +255,8 @@ def main(argv: list[str] | None = None) -> int:
     # the Correctors section is written by `wfj report apply` from data/; a regeneration keeps it
     kept = _SECTION.search(before)
     data = a.data or data_root()
-    text = render(_sorted(tags), english_sources(data), official_sources(data))
+    upstream = (data.parent / UPSTREAM_STAMP).is_file()
+    text = render(_sorted(tags), english_sources(data), official_sources(data), upstream)
     if kept:
         at = text.find("## Lineage")
         # render always writes Lineage; without it the kept section goes at the end rather than being lost
