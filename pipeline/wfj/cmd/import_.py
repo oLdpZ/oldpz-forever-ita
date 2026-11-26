@@ -12,6 +12,8 @@
   wfj import english wdb <questcache.wdb> --build VERSION [--questv2 QuestV2.csv [--missing PATH]]
                          [--allow-shrink] [--dry-run]
                          (Blizzard's cached quest title / objectives / description, ADR-020)
+  wfj import english upstream <clone> --commit SHA [--report TSV] [--dry-run]
+                         (the English the Japanese project ships that we lack; additive, conflicts reported)
   wfj import english served <QuestV2.csv> <questcache.wdb> <ItemSparse.csv> <SpellName.csv>
       [--map-cache WDB]... [--dry-run]
                          (drop English for ids the target client, Forever, does not serve; run last)
@@ -50,6 +52,7 @@ from wfj.cmd.import_english import (
     run_collector,
     run_forever_vo,
     run_pfquest,
+    run_upstream,
     run_vmangos,
     run_wago,
     run_wago_ui,
@@ -100,6 +103,12 @@ def _add_english(sub: Any) -> None:
     )
     wd.add_argument("--dry-run", action="store_true", help="run every check, print the report, write nothing")
     wd.set_defaults(fn=run_wdb)
+    up = esub.add_parser("upstream")
+    up.add_argument("clone")
+    up.add_argument("--commit", required=True)
+    up.add_argument("--report", metavar="TSV", help="write the conflicts: type, id, field, ours, theirs")
+    up.add_argument("--dry-run", action="store_true", help="print the report, write nothing")
+    up.set_defaults(fn=run_upstream)
     served.add_parser(esub)
 
 

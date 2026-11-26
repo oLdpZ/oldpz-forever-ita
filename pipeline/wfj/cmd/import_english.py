@@ -19,7 +19,7 @@ from typing import Any
 from wfj.core.hashing import key as hash_key
 from wfj.core.model import english_line, validate_line
 from wfj.core.normalize import female_variant, normalize_for, normalize_v1
-from wfj.io import forever_vo, tables_stamp, vmangos, wago, wdb
+from wfj.io import forever_vo, tables_stamp, upstream, vmangos, wago, wdb
 from wfj.io.collector_dump import Dump, read_dump
 from wfj.io.jsonl_store import Store
 from wfj.io.lua_reader import as_int_id, parse_assignment
@@ -907,3 +907,86 @@ def _print_questv2(questv2: set[int], unanswered: list[int], cached: set[int], m
     print(f"cached ids not in QuestV2: {len(cached - questv2)}")
     if missing:
         print(f"unanswered: {len(unanswered)} ids → {missing}")
+
+
+UPSTREAM_TYPES = ("quest", "objective", "gossip", "book")
+
+
+def add_missing(
+    existing: list[dict[str, Any]], new: list[dict[str, Any]]
+) -> tuple[list[dict[str, Any]], int, list[tuple[Any, str, str, str]]]:
+    """Additive merge by (id, field): our line always stays; a key we lack is added; a key holding other
+    English is reported, never written. → (lines, added, [(id, field, ours_en, theirs_en)])"""
+    present = {(ln["id"], ln["field"]): ln for ln in existing}
+    added: list[dict[str, Any]] = []
+    conflicts: list[tuple[Any, str, str, str]] = []
+    for ln in new:
+        k = (ln["id"], ln["field"])
+        cur = present.get(k)
+        if cur is None:
+            present[k] = ln
+            added.append(ln)
+        elif normalize_v1(cur["en"]) != normalize_v1(ln["en"]):
+            conflicts.append((ln["id"], ln["field"], cur["en"], ln["en"]))
+    return existing + added, len(added), conflicts
+
+
+def _upstream_lines(type_: str, raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
+    """The rows re-hashed in our canon → (lines, gossip rows whose id is not the hash of their text)."""
+    out: list[dict[str, Any]] = []
+    bad_hash = 0
+    for r in raw:
+        h = hash_key(normalize_for(type_, r["en"]))
+        if type_ == "gossip" and r["id"] != h:
+            bad_hash += 1
+            continue
+        ln = english_line(r["id"], r["field"], r["en"], h, r["src"], npcs=r.get("npcs"))
+        problems = validate_line(type_, ln, english=True)
+        if problems:
+            raise ValueError(f"upstream {type_} {r['id']} {r['field']}: {'; '.join(problems)}")
+        out.append(ln)
+    return out, bad_hash
+
+
+def _report_row(type_: str, c: tuple[Any, str, str, str]) -> str:
+    cells = [type_, str(c[0]), c[1], c[2], c[3]]
+    return "\t".join(x.replace("\t", " ").replace("\n", "\\n") for x in cells)
+
+
+def run_upstream(a: argparse.Namespace) -> int:
+    clone = Path(a.clone)
+    head = upstream.head_commit(clone)
+    if not head.startswith(a.commit):
+        raise ValueError(f"upstream clone is at {head}, not --commit {a.commit}")
+    root = data_root()
+    store = Store(root, english=True)
+    report: list[str] = []
+    results: dict[str, list[dict[str, Any]]] = {}
+    for type_ in UPSTREAM_TYPES:
+        raw = upstream.read_english(clone, type_)
+        dropped: set[int] = set()
+        if type_ == "quest":
+            dropped = upstream.placeholder_quest_ids(raw)
+            raw = [r for r in raw if r["id"] not in dropped]
+        new, bad_hash = _upstream_lines(type_, raw)
+        existing = store.load(type_)
+        known_ids = {ln["id"] for ln in existing}
+        merged, added, conflicts = add_missing(existing, new)
+        fresh = {ln["id"] for ln in merged[len(existing) :]} - known_ids
+        report.extend(_report_row(type_, c) for c in conflicts)
+        print(
+            f"english {type_}: +{added} righe ({len(fresh)} missioni nuove), {len(conflicts)} conflitti, "
+            f"{len(dropped)} segnaposto, {bad_hash} hash diversi"
+        )
+        if added:
+            results[type_] = merged
+    if a.report:
+        Path(a.report).write_text("".join(r + "\n" for r in report), encoding="utf-8")
+    if a.dry_run:
+        return 0
+    for type_, merged in results.items():
+        store.save(type_, merged)
+    stamp = root.parent / "pipeline" / "upstream-source.txt"
+    stamp.parent.mkdir(parents=True, exist_ok=True)
+    stamp.write_text(f"wfj-upstream {head}\n", encoding="utf-8")
+    return 0
