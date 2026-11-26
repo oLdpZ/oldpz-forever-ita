@@ -15,7 +15,7 @@ VENV_PY  := $(REPO_ROOT)/.venv/bin/python
 PY       ?= $(if $(wildcard $(VENV_PY)),$(VENV_PY),python3)
 ADDON    := addon/OldpZ_ForeverITA
 
-.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles vmangos-src voice-speakers voice-cast voice-plan voice-generate voice-batch-submit voice-batch-fetch voice-status voice-audition voice-pack
+.PHONY: creature-official unit-english quest-levels gossip-priority lotto-taglia lotto-importa letter-pages coverage-py coverage-lua lint-public report-intake report-apply collector-intake coverage forever-table-counts ui-inventory tooltip-line-kinds served-columns level1-spells import-draft import-official import-official-text wago-fetch wago-fetch-retail wago-fetch-forever-names glossary surface-names tables-extract wdb-copy wdb-preflight client-preflight import-shared-english import-upstream import-client import-served rebuild-check help test test-py test-lua lint lint-py lint-lua lint-core-gate lint-no-english-in-addon lint-no-private-paths luac vectors toc-check import import-english import-collector check stats generate data validate package release forever-addons forever-titles vmangos-src voice-speakers voice-cast voice-plan voice-generate voice-batch-submit voice-batch-fetch voice-status voice-audition voice-pack
 
 help:
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /: /'
@@ -85,6 +85,9 @@ INPUTS       ?= $(or $(wildcard $(CURDIR)/predecessors),$(REPO_ROOT)/predecessor
 override INPUTS := $(abspath $(INPUTS))
 PFQUEST      ?= $(INPUTS)/pfquest-quests.lua
 PFQUEST_SHA  ?= 7786596
+# The Japanese project's English (ADR-106): a clone of the upstream repo, pinned like the other sources.
+UPSTREAM     ?= $(INPUTS)/wfj-upstream
+UPSTREAM_SHA ?= 065ac52d
 # The clients whose English the import merges, oldest first. Each client's inputs (its table CSVs with
 # their tables-source.txt stamp, questcache.wdb, the missing.txt the cache import writes) live in their own folder,
 # $(INPUTS)/clients/<client>-<build>/. `import` runs every client's imports once, in this order, under
@@ -179,6 +182,7 @@ import: ## data/english/ from the pinned inputs (one rebuild pass: every client 
 	@$(MAKE) -s wdb-preflight
 	@$(MAKE) -s import-shared-english
 	@for c in $(CLIENTS); do $(MAKE) -s import-client CLIENT=$$c || exit 1; done
+	@$(MAKE) -s import-upstream
 	@$(MAKE) -s import-served
 	@$(MAKE) -s import-official-text
 
@@ -187,6 +191,7 @@ import-english: ## refresh only data/english/ (keeps data/ lines, rulings and pr
 	@$(MAKE) -s wdb-preflight
 	@$(MAKE) -s import-shared-english
 	@for c in $(CLIENTS); do $(MAKE) -s import-client CLIENT=$$c || exit 1; done
+	@$(MAKE) -s import-upstream
 	@$(MAKE) -s import-served
 
 # Forever is the only target (ADR-034); the other clients are inputs. After every client is merged, drop
@@ -211,6 +216,7 @@ import-forever: ## refresh only Forever's own English (its quest cache and table
 	@$(ONE_CLIENT_GUARD)
 	@$(MAKE) -s client-preflight CLIENT=forever
 	@$(MAKE) -s import-client CLIENT=forever
+	@$(MAKE) -s import-upstream
 	@$(MAKE) -s import-served SERVED_PRESENT=1
 
 # The English no client serves: pfQuest, then VMaNGOS. Before every client's quest cache, which outranks pfQuest.
@@ -219,6 +225,12 @@ import-shared-english:
 	cd pipeline && $(PY) -m wfj import english vmangos $(VMANGOS_DB) --commit $(VMANGOS_SHA)
 	@test "$$(git -C "$(FOREVER_VO)" rev-parse --short=7 HEAD)" = "$(FOREVER_VO_SHA)" || { echo "import: $(FOREVER_VO) is not at FOREVER_VO_SHA $(FOREVER_VO_SHA)"; exit 1; }
 	cd pipeline && $(PY) -m wfj import english forever-vo $(FOREVER_VO) --commit $(FOREVER_VO_SHA) --skip forever_vo_skipped.txt
+
+# The English the Japanese project gathered, additive and last before the served step: only ids and fields we have no
+# English for (a different English is reported in pipeline/upstream-conflicts.tsv, never written). Skipped with a notice
+# when the clone is absent, so the other sources never depend on it (ADR-106).
+import-upstream: ## add the English the Japanese project (wfj-upstream clone, pinned UPSTREAM_SHA) has and we lack; conflicts go to pipeline/upstream-conflicts.tsv; skipped if the clone is missing
+	@if [ -d "$(UPSTREAM)" ]; then cd pipeline && $(PY) -m wfj import english upstream "$(UPSTREAM)" --commit $(UPSTREAM_SHA) --report "$(CURDIR)/pipeline/upstream-conflicts.tsv"; else echo "import-upstream: no clone at $(UPSTREAM); skipped (git clone it and check out $(UPSTREAM_SHA))"; fi
 
 # One client's English (CLIENT=<client>): its quest cache, then its tables (names, tooltip text, UI strings).
 import-client:

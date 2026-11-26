@@ -47,7 +47,7 @@ def test_every_client_is_imported_in_order_after_the_shared_sources(root, tmp_pa
     # the served step runs once, after every client; `import` then lays Blizzard's itIT text over that English
     # (`import-english` refreshes data/english/ only)
     official = ["official"] if target == "import" else []
-    assert verbs == shared + ["wdb", "wago-ids", "client-text", "wago-ui"] * 2 + ["served"] + official, verbs
+    assert verbs == shared + ["wdb", "wago-ids", "client-text", "wago-ui"] * 2 + ["upstream", "served"] + official, verbs
     first_write = out.index(steps[0])
     for client in CLIENTS:
         assert any("--dry-run" in ln and f"/clients/{client}-" in ln for ln in out[:first_write]), client
@@ -248,9 +248,9 @@ def test_every_english_import_passes_the_merge_mode(makefile):
     for ln in lines:
         verb = ln.split("import english ", 1)[1].split()[0]
         # one source at one version, so there is nothing for a second client to hold: pfQuest is a repo at a
-        # commit, VMaNGOS a database snapshot, forever-vo a capture set at a commit, and the collector dump is
+        # commit (as is the upstream clone), VMaNGOS a database snapshot, forever-vo a capture set at a commit, and the collector dump is
         # this client's own recording
-        if verb in ("pfquest", "vmangos", "forever-vo", "collector"):
+        if verb in ("pfquest", "vmangos", "forever-vo", "collector", "upstream"):
             continue
         # `served` merges nothing; it only removes English for ids Forever does not serve
         if verb == "served":
