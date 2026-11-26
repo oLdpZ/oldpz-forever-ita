@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["d2c6b1ac379c8c0b"] = { "La tua armatura fa paura. Fai paura anche tu?", "." },
   ["d2cc1927b7d21233"] = { "Lo spirito del Maldestriero pulsa di rabbia.", "." },
   ["d2d3fabd35a26bdb"] = { "Le ⟦Plaguelands=Terre Infette⟧ sono il posto ideale per colpire il Flagello!", "." },
+  ["d2dfef56c6e91d90"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi della Forgia della Luce in cambio del nuovo Elmo della Forgia dell'Anima e del nuovo Pettorale Corazzato della Forgia dell'Anima?", "." },
   ["d2e29cada028a868"] = { "Le mie creazioni godono di una certa fama, {class}. Con i materiali giusti posso realizzare un'armatura nota come Vagasogni. I druidi, e persino alcuni sciamani, sono attratti da questa armatura per le sue proprietà magiche. Ti interessa?", "." },
   ["d2e5b31cb159d23c"] = { "Ho sentito che a ⟦Undercity=Sepulcra⟧ c'è un istruttore di Estrazione. Per arrivarci basta uscire dal paese verso sud e andare sul retro delle ⟦Ruins of Lordaeron=Rovine di Lordaeron⟧. Poi prendi l'ascensore, scendi fino a ⟦Undercity=Sepulcra⟧ vera e propria e chiedi altre indicazioni a un ⟦Undercity Guardian=Guardiano di Sepulcra⟧.", "." },
   ["d2f6a85f4588ef6f"] = { "Byancie ha spesso prestato i suoi servigi alle Sentinelle che pattugliano le terre selvagge della zona. Dovresti parlarle se vuoi imparare il ⟦First Aid=Primo Soccorso⟧.", "." },

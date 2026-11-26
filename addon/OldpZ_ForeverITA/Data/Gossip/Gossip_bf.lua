@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["bf92474e52ca5f1b"] = { "Ehi, Knot, faccio Conciatura. Pensi di potermi insegnare a fare il costume da ogre?", "." },
   ["bfa08adde94b0938"] = { "Un istruttore di Cucina, eh? Beh, allora vai al Bronze Kettle, sul lato nord-orientale della ⟦Great Forge=Grande Forgia⟧. Daryl Riknussun ti insegnerà a preparare un piatto coi fiocchi, che di sicuro ti rimetterà in sesto!", "." },
   ["bfabfbed29263b86"] = { "Ti sei battuto bene, Edward. Vediamo se Kahil riesce a tenergli testa.", "." },
+  ["bfad707418781e39"] = { "I ninnoli del tempo che cerco sono congegni semplici. Sono per lo più orologi, con le lancette ferme per sempre al momento in cui la piaga devastò Andorhal.\n\nIl tempo non finisce mai, e gli orologi che mi porterai finiranno inevitabilmente per tornare, contati, alle loro case... almeno finché qui continueranno i disturbi.", "." },
   ["bfc977cb257ffc0b"] = { "Sono così felice che ⟦Jubjub=Pincopalla⟧ sia tornata! Spero solo di non finire presto la birra ⟦Dark Iron=Ferroscuro⟧, o temo che la mia rana possa scappare di nuovo!", "." },
   ["bfd414cc85015100"] = { "Quante pelli ha raccolto finora l'⟦Horde=Orda⟧?", "." },
   ["bfd65a32da795e95"] = { "Questo sì che è un ⟦War Stomp=Urto di Guerra⟧! Ottimo lavoro!", "." },

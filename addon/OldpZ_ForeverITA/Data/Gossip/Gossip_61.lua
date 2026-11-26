@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["6173f2ea69723317"] = { "{name} ha assaltato la fattoria!", "." },
   ["6174f7f842c89f01"] = { "Schiena dritta! La tua debolezza mi disgusta!", "." },
   ["617c25ac3609a944"] = { "Non aspetteremo più dietro porte sbarrate e mura di pietra! Non ci sarà più negata la nostra vendetta! Persino i draghi tremeranno davanti alla nostra ira!", "." },
+  ["618026951d4ab4d2"] = { "Il nostro accordo resta valido. Ricorda però che questo è solo un assaggio di ciò che ti aspetta. Liberami da questo destino maledetto e ti ricompenserò con oggetti di un potere davvero grande.", "." },
   ["6181b150085dea6b"] = { "Ahah, tu prendere in giro me, <amico/amica>. Pele'keiki sa che tu sai che noi dell'⟦Horde=Orda⟧ già avere tutta la roba di guerra che serve. Ora aspettiamo solo che quell'⟦Alliance=Alleanza⟧ prende la sua e poi cominciamo la guerra.", "." },
   ["6194b17a05733da3"] = { "Ehi, {name}. Qui, voglio parlarti.", "." },
   ["61955939760ceb0e"] = { "Saluti. La mia funzione è offrire accesso e, quando consentito, chiarimenti sulle informazioni riguardanti la sintesi dei Terrigeni a opera dei Creatori sul mondo designato come Azeroth. Posso condividere queste informazioni con te ora, quando preferisci.", "." },

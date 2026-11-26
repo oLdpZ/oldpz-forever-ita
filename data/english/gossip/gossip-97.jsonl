@@ -5,7 +5,9 @@
 {"id": "971b369e6b51381f", "field": "text", "en": "As you wish, Eitrigg.", "hash": "971b369e6b51381f", "src": "vmangos@13b49dc"}
 {"id": "97201551951f4ba5", "field": "text", "en": "The Royal Apothecary Society shall heed The Dark Lady's call to uncover the New Plague and drive Arthas and his heathen Scourge Army from the world once and for all.", "hash": "97201551951f4ba5", "src": "vmangos@13b49dc"}
 {"id": "97226b504838e6a3", "field": "text", "en": "You have my deepest gratitude, $N. I thank you.", "hash": "97226b504838e6a3", "src": "vmangos@13b49dc"}
+{"id": "972598a93b1a164e", "field": "text", "en": "Hmm, I see. Very well then, $C. The Windshapers will provide aid. Please inform Valennia that she can count on us for this fight.", "hash": "972598a93b1a164e", "src": "collector@1.60.1.70790", "npcs": [251968]}
 {"id": "9726671842ae8465", "field": "text", "en": "Success!  Huzzah!  The power source restored the necklace!", "hash": "9726671842ae8465", "src": "vmangos@13b49dc"}
+{"id": "97299a1bc91b0d25", "field": "text", "en": "Well if this isn't an inspirational sight. The little elves seem to have friends in... low places.", "hash": "97299a1bc91b0d25", "src": "collector@1.60.1.70790"}
 {"id": "972b0df0ea5fcd69", "field": "text", "en": "Ok, $n. Follow me to the cave where I'll attempt to harness the power of the rune stone into these goggles.", "hash": "972b0df0ea5fcd69", "src": "vmangos@13b49dc"}
 {"id": "974bc49608caa9bd", "field": "text", "en": "Hahah!  That was funny!  Funny wooden human!", "hash": "974bc49608caa9bd", "src": "vmangos@13b49dc"}
 {"id": "9756791b5791af82", "field": "text", "en": "Cho'Rush die! NOW YOU DIE!", "hash": "9756791b5791af82", "src": "vmangos@13b49dc"}
@@ -16,6 +18,7 @@
 {"id": "977086e334e98de7", "field": "text", "en": "Very well, $n.", "hash": "977086e334e98de7", "src": "vmangos@13b49dc"}
 {"id": "977271405ba4726f", "field": "text", "en": "Us know where they are!  Skull building in Magic Quarter on outer ring of city.", "hash": "977271405ba4726f", "src": "vmangos@13b49dc"}
 {"id": "977af7d000482995", "field": "text", "en": "No, Vaelan, I do not.", "hash": "977af7d000482995", "src": "vmangos@13b49dc"}
+{"id": "977bc6ecb24e6aab", "field": "text", "en": "What do we do, then?", "hash": "977bc6ecb24e6aab", "src": "collector@1.60.1.70938", "npcs": [4722]}
 {"id": "9780a82aa0087a4e", "field": "text", "en": "A gnome? How pathetic. Face me, demon!", "hash": "9780a82aa0087a4e", "src": "vmangos@13b49dc"}
 {"id": "9781bdf54cc60cfc", "field": "text", "en": "I think Plugger filled one of his kegs too much.  It looks like it's about to blow!", "hash": "9781bdf54cc60cfc", "src": "vmangos@13b49dc"}
 {"id": "9785a87073eaac42", "field": "text", "en": "Take a Candle of Beckoning from this crate, $n.", "hash": "9785a87073eaac42", "src": "vmangos@13b49dc"}
@@ -29,6 +32,7 @@
 {"id": "97b6ed07b571604f", "field": "text", "en": "%s will be armed in 5 seconds!", "hash": "97b6ed07b571604f", "src": "vmangos@13b49dc"}
 {"id": "97b7c189533bed0f", "field": "text", "en": "Between the orange and the purple passageways near the doors to Maraudon, you will find a third path.$B$BThe scepter you hold in your hands is the key.", "hash": "97b7c189533bed0f", "src": "vmangos@13b49dc"}
 {"id": "97b8b0e5497984b0", "field": "text", "en": "Gubber, I don't have a fishing pole.", "hash": "97b8b0e5497984b0", "src": "vmangos@13b49dc"}
+{"id": "97c19eaef56705f6", "field": "text", "en": "The storm guides my blows!", "hash": "97c19eaef56705f6", "src": "collector@1.60.1.70790"}
 {"id": "97c4bab9f3d6df5d", "field": "text", "en": "$n, pay very close attention to what I do and follow my instructions precisely. To not heed my words is to sign your own death warrant, as Taskmaster Fizzule is VERY well versed in the ways of the warrior and the assassin.", "hash": "97c4bab9f3d6df5d", "src": "vmangos@13b49dc"}
 {"id": "97ce6a44519147e6", "field": "text", "en": "Now let's heat up these flakes...", "hash": "97ce6a44519147e6", "src": "vmangos@13b49dc"}
 {"id": "97cea19152371670", "field": "text", "en": "Very well, $n. I will use the Nightmare object to conjure forth Eranikus.", "hash": "97cea19152371670", "src": "vmangos@13b49dc"}
@@ -38,4 +42,5 @@
 {"id": "97eaacc69101c0c7", "field": "text", "en": "%s raises his hand and then lowers it.", "hash": "97eaacc69101c0c7", "src": "vmangos@13b49dc"}
 {"id": "97ef7b982fbb9053", "field": "text", "en": "Hail, $c!  Our supply level is high, and we are ready to launch a ground assault through the Field of Strife.  Perhaps if your renown was greater, I would trust you to deliver the assault orders.$B$BSo get out there and fight the Alliance!  Show me you're a trusted and capable member of the Horde!", "hash": "97ef7b982fbb9053", "src": "vmangos@13b49dc"}
 {"id": "97f376be7e4f6c23", "field": "text", "en": "There's only one person I know of who is more learned in the art of tailoring than myself. Last I heard he could be found in Theramore Isle. He is the person you should seek.", "hash": "97f376be7e4f6c23", "src": "vmangos@13b49dc"}
+{"id": "97f56c94031e52fb", "field": "text", "en": "Greetings, $C. I am happy Anshe has guided you to me today. I would be proud to sell you one of our finest kodos once you have trained with Kar.$B$BThe kodo is a noble beast, but is prone to its own behaviors that make it different than most steeds. Once you learn from Kar you will have no issues traversing the world with one at your side.", "hash": "97f56c94031e52fb", "src": "collector@1.60.1.70790", "npcs": [3685]}
 {"id": "97f8aa037e28192d", "field": "text", "en": "The fabric of which our world is woven is most delicate. It merely takes some knowledge and the application of said knowledge to tear the fabric. It is thusly that rifts are born. ", "hash": "97f8aa037e28192d", "src": "vmangos@13b49dc"}

@@ -16,6 +16,7 @@ WFJ.Data.add("gossip", {
   ["042a6d92d0d971b8"] = { "Ehi, Pratt, puoi insegnarmi di nuovo a fare un ⟦Wild Leather Helmet=Elmetto di Cuoio Selvatico⟧?", "." },
   ["043089abab761be1"] = { "Il ⟦Stonehearth Bunker=Fortilizio di Cordipietra⟧ protegge il fianco orientale del ⟦Field of Strife=Pian della Discordia⟧.\n\nÈ sotto il controllo dell'⟦Alliance=Alleanza⟧.", "." },
   ["0430ee7f4cd20006"] = { "Salute! Se sei qui per accedere agli schemi di ingegneria gnomesca, tieni pronta la tua Tessera di Socio degli Ingegneri Gnomi per la verifica.", "." },
+  ["043c799333ea6c2b"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi del Predatore di Bestie in cambio del nuovo ⟦Beastmaster's Cap=Berretto del Maestro delle Bestie⟧ e della nuova Giubba del Maestro delle Bestie?", "." },
   ["044feb87d63232c3"] = { "Il tuo sangue scorre per il bene dell'umanità, infedele!", "." },
   ["04549609616c244d"] = { "Osserva la saggezza e la conoscenza della bestia, e vedrai te <stesso/stessa>. Osserva come fa il gufo, impara l'astuzia dalla tigre dai denti a sciabola, incarna il possente spirito del lupo.", "." },
   ["04591db7e2cb5c0e"] = { "Attenzione! Attaccano i Kolkar!", "." },

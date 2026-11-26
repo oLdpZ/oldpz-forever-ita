@@ -1,4 +1,5 @@
 {"id": "2c015b70f26a98b3", "field": "text", "en": "Do ye have some new treasures that ye want to keep safe n' sound?  Then ye'll be wanting to store them at The Vault with the Stonemantles.  \n\nYe'll find The Vault just a hammer's throw northeast from the entrance to Ironforge.", "hash": "2c015b70f26a98b3", "src": "vmangos@13b49dc"}
+{"id": "2c046b7e92ecb863", "field": "text", "en": "It takes more than a big arm and a mean look to be a $C. You also need a clear head and a sharp eye if you want to stay alive.$B$BAnd bad breath doesn't hurt either.", "hash": "2c046b7e92ecb863", "src": "collector@1.60.1.70450", "npcs": [6089]}
 {"id": "2c07051ea2800540", "field": "text", "en": "Finally, the agony ceases....", "hash": "2c07051ea2800540", "src": "vmangos@13b49dc"}
 {"id": "2c08fecaa5e59c84", "field": "text", "en": "Greetings, $c - I'm a Commendation Officer acting on behalf of the Gnomeregan Exiles.  It is my duty to assist adventurers who have received Alliance Commendation Signets.$B$BI accept signets in different quantities, but the most beneficial exchange for you is to hand in a set of ten at once.  I will enter your deeds into our records when you hand in your signets.  As a result, you will earn recognition from the Gnomeregan Exiles for your duty and service.\n", "hash": "2c08fecaa5e59c84", "src": "vmangos@13b49dc"}
 {"id": "2c0dbb0375fbeb77", "field": "text", "en": "My, that Black Claw stout packs quite a punch!", "hash": "2c0dbb0375fbeb77", "src": "vmangos@13b49dc"}
@@ -37,6 +38,7 @@
 {"id": "2cbf13285c184cc4", "field": "text", "en": "$n, I would have words with you.", "hash": "2cbf13285c184cc4", "src": "vmangos@13b49dc"}
 {"id": "2cc138008d505fbe", "field": "text", "en": "The Battle for Arathi Basin will begin in 30 seconds.", "hash": "2cc138008d505fbe", "src": "vmangos@13b49dc"}
 {"id": "2ccb7188a6f41d58", "field": "text", "en": "%s begins crafting...", "hash": "2ccb7188a6f41d58", "src": "vmangos@13b49dc"}
+{"id": "2cce65b8fdd2847e", "field": "text", "en": "Pleaaaase.... HNNGGHH!!", "hash": "2cce65b8fdd2847e", "src": "collector@1.60.1.70938"}
 {"id": "2cd1f0d3884b2493", "field": "text", "en": "How could the altar and the statues be related?", "hash": "2cd1f0d3884b2493", "src": "vmangos@13b49dc"}
 {"id": "2cd81b0a542de7e3", "field": "text", "en": "Ragnaros? Terrible news indeed...", "hash": "2cd81b0a542de7e3", "src": "vmangos@13b49dc"}
 {"id": "2cda33e9e85dd572", "field": "text", "en": "Which way should you go? Well, the only advice I can offer is for you to take any road you want!$B$BI can't remember anything!", "hash": "2cda33e9e85dd572", "src": "vmangos@13b49dc"}

@@ -42,6 +42,7 @@ WFJ.Data.add("gossip", {
   ["abe3148ca3130e2c"] = { "Se hai la stoffa necessaria, ti mostrerò volentieri la strada.", "." },
   ["abebbe2832d34bad"] = { "Ottimo lavoro, {name}! Completa la tua prova parlando con me. Il tempo continua a scorrere finché non lo fai!", "." },
   ["abefe34077e6348b"] = { "Un'elemosina per i poveri?", "." },
+  ["abf40a4447838666"] = { "Hai i cinque otri d'acqua dei Wastewander che ci servono? Se ce li hai, la Cassa di Rifornimenti della Compagnia Idrica di ⟦Gadgetzan=Meccania⟧, modello 103-XB, sarà tua!", "." },
   ["abf9a1190530c364"] = { "Certo che posso mostrarti dov'è Myolor. Proprio laggiù, vicino all'incudine della ⟦Great Forge=Grande Forgia⟧: è lì che lavora. Ascolta bene le sue parole, <ragazzo/ragazza>: Myolor è abile come pochi.", "." },
   ["abfabad31af1bceb"] = { "%s continua le sue meditazioni...", "." },
   ["abfc0333115044c2"] = { "Sì, {name}?", "." },

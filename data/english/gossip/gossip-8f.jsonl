@@ -1,5 +1,6 @@
 {"id": "8f01cab29786f703", "field": "text", "en": "The Carevin family fights for victory under the Light. My duty under the Light is to give my life in their battle against against the undead. Master Carevin has tasked me with the extermination of the vile worgen in Duskwood. Perhaps you would assit me?", "hash": "8f01cab29786f703", "src": "vmangos@13b49dc"}
 {"id": "8f0243c434a845f8", "field": "text", "en": "A cursory examination of the skeletal remains indicates that the flesh was seared off. Quite a grisly sight.", "hash": "8f0243c434a845f8", "src": "vmangos@13b49dc"}
+{"id": "8f078e32049cc339", "field": "text", "en": "Stranger... please... put me down... on the bedroll by that tree there...", "hash": "8f078e32049cc339", "src": "collector@1.60.1.70790"}
 {"id": "8f086793982122f2", "field": "text", "en": "I hold the key to lands of free! Chase me and you'll see!", "hash": "8f086793982122f2", "src": "vmangos@13b49dc"}
 {"id": "8f0a52b0737d0a68", "field": "text", "en": "You've convinced me of your intentions, $n, and you have my thanks for being willing to help out the members of my former mercenary company, The Veiled Blade.$B$BNow let's see, what's next on our list of things to do?", "hash": "8f0a52b0737d0a68", "src": "vmangos@13b49dc"}
 {"id": "8f0e661d27d76e8d", "field": "text", "en": "%s chips and splinters!", "hash": "8f0e661d27d76e8d", "src": "vmangos@13b49dc"}
@@ -23,6 +24,7 @@
 {"id": "8f766ce518dfae6e", "field": "text", "en": "You require the instruction of a true master! Go to Daryl Stack in Tarren Mill and embrace your destiny!", "hash": "8f766ce518dfae6e", "src": "vmangos@13b49dc"}
 {"id": "8f7db87927cad640", "field": "text", "en": "Oh, I am so tired...", "hash": "8f7db87927cad640", "src": "vmangos@13b49dc"}
 {"id": "8f8b1e880e79a8b2", "field": "text", "en": "This is an exotic sample of flora, unseen in other parts of Teldrassil.", "hash": "8f8b1e880e79a8b2", "src": "vmangos@13b49dc"}
+{"id": "8f8f2cd472599bdb", "field": "text", "en": "Ho there, traveler! New to town? Well, once you get settled in, come see me if you'd like some work. I've been working overtime preparing for the Festival of Winds and I'll take all the help I can get keeping the larders full!", "hash": "8f8f2cd472599bdb", "src": "collector@1.60.1.70790", "npcs": [251905]}
 {"id": "8f93f0a7bab7e9c8", "field": "text", "en": "It is done.  $n, your armor is ready.", "hash": "8f93f0a7bab7e9c8", "src": "vmangos@13b49dc"}
 {"id": "8f9bfd05f2ebaf98", "field": "text", "en": "You've interfered with our plans for the last time, foolish $c!", "hash": "8f9bfd05f2ebaf98", "src": "vmangos@13b49dc"}
 {"id": "8f9d6a7792da8584", "field": "text", "en": "In time you will be ready for what I have to teach, $n. Until then, please ask Darianna over there to help you with your training.", "hash": "8f9d6a7792da8584", "src": "vmangos@13b49dc"}

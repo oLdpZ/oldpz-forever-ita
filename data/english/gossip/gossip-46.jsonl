@@ -15,6 +15,7 @@
 {"id": "4641f6a1582cfcfd", "field": "text", "en": "Good day, Elling!  Hullo Elaine!  Let me have a wheel of bleu cheese, eh?", "hash": "4641f6a1582cfcfd", "src": "vmangos@13b49dc"}
 {"id": "4642f9e280d27436", "field": "text", "en": "Hip hip, hoorah!", "hash": "4642f9e280d27436", "src": "vmangos@13b49dc"}
 {"id": "464728cfea218e38", "field": "text", "en": "Quite the riveting tale.  Now I know why there was so much dust on that book.", "hash": "464728cfea218e38", "src": "vmangos@13b49dc"}
+{"id": "4649a19e52adfd9d", "field": "text", "en": "Yes, High Priestess!", "hash": "4649a19e52adfd9d", "src": "collector@1.60.1.70790"}
 {"id": "464e73002c357179", "field": "text", "en": "Greetings, $c.\r\n\r\nI can show you how to weave magic about yourself to change the appearance of your equipment, if you so desire. Do you wish to utilize my services?", "hash": "464e73002c357179", "src": "forever-vo@025070f", "npcs": [270513, 270581, 270582]}
 {"id": "4653241155467559", "field": "text", "en": "%s holds the limp body of Taelan Fordring and softly sobs.", "hash": "4653241155467559", "src": "vmangos@13b49dc"}
 {"id": "465ad121b64fa674", "field": "text", "en": "Tell me of Drek'Thar.", "hash": "465ad121b64fa674", "src": "vmangos@13b49dc"}
@@ -24,6 +25,7 @@
 {"id": "4666b2637a812f8b", "field": "text", "en": "Feugen make master happy.", "hash": "4666b2637a812f8b", "src": "vmangos@13b49dc"}
 {"id": "46681fe26fe61cc8", "field": "text", "en": "For the Legion! For Kil'Jaeden!", "hash": "46681fe26fe61cc8", "src": "vmangos@13b49dc"}
 {"id": "466da7e334d58034", "field": "text", "en": "The Blastenheimer 5000 Ultra Cannon is a state-of-the-art single person projectile device. Delivering its payload at near the speed of a dragon, the cannon is the pride and joy of the Blastenheimer family, world renown for their aeronautical and combustible feats!$B$BIf you'd like to be launched through the skies to fly free as a bird, seek out Maxima Blastenheimer on the east end of the faire. I hear that she's placed a target ring way over on Crystal Lake for you to aim for as you sail through the air!", "hash": "466da7e334d58034", "src": "vmangos@13b49dc"}
+{"id": "466f792105bf920c", "field": "text", "en": "Scanning for corruption.", "hash": "466f792105bf920c", "src": "collector@1.60.1.70938"}
 {"id": "467118502ac742f0", "field": "text", "en": "I will teach you what I can.", "hash": "467118502ac742f0", "src": "vmangos@13b49dc"}
 {"id": "467200e5a22989b0", "field": "text", "en": "There is no victory for you here! What little ground you've gained will be swallowed by the Scourge army in due course!", "hash": "467200e5a22989b0", "src": "vmangos@13b49dc"}
 {"id": "4673bb823e1fa495", "field": "text", "en": "Only those who have proven themselves to not be hostile toward the Timbermaw may pass through the Hold without fear of being attacked.  Have you made an effort to earn our trust, outsider?", "hash": "4673bb823e1fa495", "src": "vmangos@13b49dc"}
@@ -32,6 +34,7 @@
 {"id": "467d77e3c3f70dcd", "field": "text", "en": "Aye, you there!  If you want to earn the respect of the Darkspear, then you can start by donating valuable resources for those in need!  Textiles and bandages don't grow on trees, ya know.$B$BRather than cash in various cloth pieces you find adventuring, donate them!  Doing so will earn you the recognition of the Darkspear!", "hash": "467d77e3c3f70dcd", "src": "vmangos@13b49dc"}
 {"id": "4684612f223b058f", "field": "text", "en": "Not bad... I suppose training you is not out of the question. Very well! Let's begin...", "hash": "4684612f223b058f", "src": "vmangos@13b49dc"}
 {"id": "4684b1e85683af72", "field": "text", "en": "Alexstrazsa, the Life-Binder. A magnificent creature.", "hash": "4684b1e85683af72", "src": "vmangos@13b49dc"}
+{"id": "4685893d8a212880", "field": "text", "en": "Even a lesser Wild God contains a font of immense energy. No mortal should have this power.", "hash": "4685893d8a212880", "src": "collector@1.60.1.70938"}
 {"id": "4689f682fbd7d2c2", "field": "text", "en": "You put the piece on a minnow and placed the minnow somewhere in the waters of the sea between here and the Eastern Kingdoms? And this minnow has special powers?", "hash": "4689f682fbd7d2c2", "src": "vmangos@13b49dc"}
 {"id": "468dc90bc2f8ff7d", "field": "text", "en": "Trying to find out more about my predicament has been nearly impossible.  The smuggler that hired us has vanished and Anthion Harmon, our mercenary company's leader, is dead.", "hash": "468dc90bc2f8ff7d", "src": "vmangos@13b49dc"}
 {"id": "468e523c2e1d50d4", "field": "text", "en": "Now is the time to attack!  For the Horde!", "hash": "468e523c2e1d50d4", "src": "vmangos@13b49dc"}

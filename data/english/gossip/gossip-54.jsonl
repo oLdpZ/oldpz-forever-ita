@@ -16,7 +16,9 @@
 {"id": "5433e25c11890db6", "field": "text", "en": "We suspect that in order to preserve their fortune and hold of the land - well past their lifespan - the Barovs made a deal with a powerful human mage named Kel'Thuzad.$B$B<Eva shudders.>$B$BFrom this deal sprang the school of necromancy: A place which bore the Cult of the Damned and would become their capital.$B$BAs each week passed, the house Barov became more and more decrepit...$B$BDark beings began to take residence in the various wings of the house. Upkeep became impossible... and disgusting.", "hash": "5433e25c11890db6", "src": "vmangos@13b49dc"}
 {"id": "54344ef2cca8a1f5", "field": "text", "en": "The Abyssal Council does not tolerate deceit!  Feel our wrath, little $r!", "hash": "54344ef2cca8a1f5", "src": "vmangos@13b49dc"}
 {"id": "54347f35fea83f19", "field": "text", "en": "Tower Point is under attack!  If left unchecked, the Alliance will destroy it!", "hash": "54347f35fea83f19", "src": "vmangos@13b49dc"}
+{"id": "543a5da2d6dee4bf", "field": "text", "en": "Now...I just need to inscribe the contents of this scroll onto my work...", "hash": "543a5da2d6dee4bf", "src": "collector@1.60.1.70888"}
 {"id": "5456b59aef3be5f0", "field": "text", "en": "Is there anything else?", "hash": "5456b59aef3be5f0", "src": "vmangos@13b49dc"}
+{"id": "5456db4b853e98b3", "field": "text", "en": "<The tag on the mechanostrider reads:$B$BMecha-Titanium Eco-strider 9000! Now with elongated wing shields and eco-friendly tailpipe dampers.>", "hash": "5456db4b853e98b3", "src": "collector@1.60.1.70959", "npcs": [276734]}
 {"id": "545b411e79de6056", "field": "text", "en": "You cannot hide from me!", "hash": "545b411e79de6056", "src": "vmangos@13b49dc"}
 {"id": "546dd6cb0dae420d", "field": "text", "en": "The bear looks at you calmy and patiently, but says nothing.", "hash": "546dd6cb0dae420d", "src": "vmangos@13b49dc"}
 {"id": "547414273202a272", "field": "text", "en": "We wish to face the Defiler.", "hash": "547414273202a272", "src": "vmangos@13b49dc"}
@@ -29,12 +31,14 @@
 {"id": "549a9eac32159f92", "field": "text", "en": "Get those parts moving down to the ship!", "hash": "549a9eac32159f92", "src": "vmangos@13b49dc"}
 {"id": "549eafc05f511874", "field": "text", "en": "Our leader, Doom'rel, has ears for the challenge.", "hash": "549eafc05f511874", "src": "vmangos@13b49dc"}
 {"id": "54a9727e39d5b13e", "field": "text", "en": "Yes, well...let's head on to the monument dedicated to the heroes of the two Great Wars, the Valley of Heroes. Follow me.", "hash": "54a9727e39d5b13e", "src": "vmangos@13b49dc"}
+{"id": "54afbe9e0505efe2", "field": "text", "en": "Stabilization resolved. Defensive measures reactivated.", "hash": "54afbe9e0505efe2", "src": "collector@1.60.1.70888"}
 {"id": "54afeb0b128ae3fb", "field": "text", "en": "I'll teach ye to chop down yer foes like saplings in the forest.", "hash": "54afeb0b128ae3fb", "src": "vmangos@13b49dc"}
 {"id": "54b25c84541eef52", "field": "text", "en": "%s scrutinizes the camp's visitor.", "hash": "54b25c84541eef52", "src": "vmangos@13b49dc"}
 {"id": "54bdbc2a595505f7", "field": "text", "en": "There'll be a new trade risin' up round your carcass, $n. We'll call it 'flesh-craftin.'", "hash": "54bdbc2a595505f7", "src": "vmangos@13b49dc"}
 {"id": "54be767168906108", "field": "text", "en": "Teacher are there night elves in Stormwind? I've never seen a night elf before.", "hash": "54be767168906108", "src": "vmangos@13b49dc"}
 {"id": "54c7b13f8fef27db", "field": "text", "en": "%s yawns.", "hash": "54c7b13f8fef27db", "src": "vmangos@13b49dc"}
 {"id": "54cde6562e415ab2", "field": "text", "en": "Yes, young one, you need not convince me of such things, the Warchief and I have much history. Your dedication, however, is noted.$B$BAs I was saying, Rend had found a new home for his people, and I was among those who would wearily follow.$B$BFrom one conflict arose others... countless others. It was in those battles for Blackrock Spire between the Blackrock clan and the Dark Iron dwarves that my sons were both slain. It was then that I realized my time among the Blackrock clan had come to an end.", "hash": "54cde6562e415ab2", "src": "vmangos@13b49dc"}
+{"id": "54d1840b9e18829a", "field": "text", "en": "No! NO! Damn it all!", "hash": "54d1840b9e18829a", "src": "collector@1.60.1.70790"}
 {"id": "54d5dc9eb0d75a97", "field": "text", "en": "Make yourself useful and help me out here!", "hash": "54d5dc9eb0d75a97", "src": "vmangos@13b49dc"}
 {"id": "54d897bcfd74b026", "field": "text", "en": "Hm... if you're looking to adle wits, $n, then the secret behind Zanzil's zombies might just do the trick!", "hash": "54d897bcfd74b026", "src": "vmangos@13b49dc"}
 {"id": "54e373b88a8e9fc5", "field": "text", "en": "The Alliance has taken the mine!", "hash": "54e373b88a8e9fc5", "src": "vmangos@13b49dc"}

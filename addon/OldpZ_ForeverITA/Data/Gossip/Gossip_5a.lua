@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["5a48dee32e206165"] = { "C'è un tempo e un luogo per ogni cosa, anche per il riposo. Sul lato ovest del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧, il locandiere Kauth gestisce una casa lunga per chi cerca riposo. Lo troverai lì.", "." },
   ["5a4be775c05bcc4f"] = { "Quali scoperte?", "." },
   ["5a4df4e99cdcb522"] = { "Eccone uno! Per l'⟦Horde=Orda⟧!", "." },
+  ["5a58b6f5c183d065"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata a Orgrimmar, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["5a59ac57d573e631"] = { "<Gli occhi di Tarsis si illuminano.>\n\nL'ho stretto una volta... L'ho stretto nonostante gli avvertimenti del Kirin Tor. L'ho stretto, mortale... Potere senza fine. Il potere di fare ciò che desideravo, come lo desideravo. E altrettanto in fretta mi è stato tolto. Ma l'avevo assaggiato... E quel sapore è bastato.", "." },
   ["5a5bb1e76798d7de"] = { "Guarda! Laggiù, sulla parete del tunnel!", "." },
   ["5a63ac66057f2b22"] = { "Il nostro comandante è caduto! È giunta l'ora della vendetta! Cavalieri dei montoni, alla carica!!!!!!", "." },

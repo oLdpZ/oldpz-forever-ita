@@ -2,10 +2,12 @@
 {"id": "f60d0f3d24ab7934", "field": "text", "en": "Payment for those plans comes in bones - YOUR BONES!", "hash": "f60d0f3d24ab7934", "src": "vmangos@13b49dc"}
 {"id": "f612be82cb7bbf66", "field": "text", "en": "Certainly, $n.$B$BAdventurers that the Dawn views as friendly must submit a combined total of 60 insignias to access superior items. To access items of even greater power, they would be required to submit a total of 220 insignias.$B$BI must admit, the price is quite high for adventurers not favored by the Dawn.\n", "hash": "f612be82cb7bbf66", "src": "vmangos@13b49dc"}
 {"id": "f618fd5e9d49fd2b", "field": "text", "en": "Throm'ka, $c. All of the war materiel is in final preparation and being sent to Silithus. The last of it should arrive in less than a day. With the equipment readied, and our forces arrayed, all we will be waiting for is someone to ring the gong on the Scarab Dais, which should open the gates of Ahn'Qiraj and start the war.$B$BLok'tar Ogar!", "hash": "f618fd5e9d49fd2b", "src": "vmangos@13b49dc"}
+{"id": "f61b8d7d89ed0a81", "field": "text", "en": "I never thought I'd see the day that a $C would be doing anything other than trying to destroy me.", "hash": "f61b8d7d89ed0a81", "src": "collector@1.60.1.70790"}
 {"id": "f61c02cfa670c6c5", "field": "text", "en": "%s accepts the relics from $n.", "hash": "f61c02cfa670c6c5", "src": "vmangos@13b49dc"}
 {"id": "f61d2089c28bf25e", "field": "text", "en": "We must eliminate the elves and their cowardly Alliance from Warsong Gulch. Go to the Hall of the Brave in the Valley of Honor and speak with Brakgul Deathbringer if you have what it takes to aid the Horde.", "hash": "f61d2089c28bf25e", "src": "vmangos@13b49dc"}
 {"id": "f620831b08c56ce5", "field": "text", "en": "I will do my best, Vaelan.", "hash": "f620831b08c56ce5", "src": "vmangos@13b49dc"}
 {"id": "f62182ccd203035b", "field": "text", "en": "Look here, if you don't tell me about the fire--", "hash": "f62182ccd203035b", "src": "vmangos@13b49dc"}
+{"id": "f623a1b0be197d23", "field": "text", "en": "It sounds like you were very fond of him. Did you know him personally?", "hash": "f623a1b0be197d23", "src": "collector@1.60.1.70790", "npcs": [252383]}
 {"id": "f625eff5b518454d", "field": "text", "en": "May the spirit of Isha Awak give you strength, $n.", "hash": "f625eff5b518454d", "src": "vmangos@13b49dc"}
 {"id": "f63889c70ebd3c4b", "field": "text", "en": "The Coldtooth Mine lies in Horde territory, in the mountains north of the Frostwolf Graveyard.$B$BIt is controlled by the Alliance.", "hash": "f63889c70ebd3c4b", "src": "vmangos@13b49dc"}
 {"id": "f639dacbbbd773cf", "field": "text", "en": "%s reads from the tablets. Unknown, unheard sounds flow through your consciousness.", "hash": "f639dacbbbd773cf", "src": "vmangos@13b49dc"}
@@ -15,13 +17,16 @@
 {"id": "f64517108ea5750a", "field": "text", "en": "Bring another; we are running out of time.", "hash": "f64517108ea5750a", "src": "collector@1.60.1.71139"}
 {"id": "f64af4a53ee70a4c", "field": "text", "en": "It is my dream to one day serve under your command, $G Master:Mistress; $n. That is, should you ever deem me worthy of such things...", "hash": "f64af4a53ee70a4c", "src": "vmangos@13b49dc"}
 {"id": "f64cfee276a1a590", "field": "text", "en": "Your challenge has failed!", "hash": "f64cfee276a1a590", "src": "vmangos@13b49dc"}
+{"id": "f652f6b91595bf6e", "field": "text", "en": "Only the righteous will be saved from what is to come! Death to non-believers!", "hash": "f652f6b91595bf6e", "src": "collector@1.60.1.70862"}
 {"id": "f653239efcfa4c0e", "field": "text", "en": "Where's the water, Emma? Get the water, Emma? If'n it weren't fer me, that lot wouldn't know what water looks like.", "hash": "f653239efcfa4c0e", "src": "vmangos@13b49dc"}
 {"id": "f655cb5b7f756ef3", "field": "text", "en": "Razorfen Kraul", "hash": "f655cb5b7f756ef3", "src": "vmangos@13b49dc"}
 {"id": "f662e0d07115b46c", "field": "text", "en": "RUN THEM THROUGH, SOLDIERS!", "hash": "f662e0d07115b46c", "src": "vmangos@13b49dc"}
 {"id": "f662e235a69ab910", "field": "text", "en": "Acquire Higher Level Access Card", "hash": "f662e235a69ab910", "src": "vmangos@13b49dc"}
 {"id": "f677deaa0a786e8c", "field": "text", "en": "So why are you here? What are we to do if there is no hope?", "hash": "f677deaa0a786e8c", "src": "vmangos@13b49dc"}
+{"id": "f679880d04edb4e7", "field": "text", "en": "That's what I like to hear!", "hash": "f679880d04edb4e7", "src": "collector@1.60.1.71037"}
 {"id": "f679881a04edb4f4", "field": "text", "en": "That's what I like to hear.", "hash": "f679881a04edb4f4", "src": "vmangos@13b49dc"}
 {"id": "f681118120d19ae8", "field": "text", "en": "Well Done!", "hash": "f681118120d19ae8", "src": "vmangos@13b49dc"}
+{"id": "f68438145a50f09b", "field": "text", "en": "The night elf is motionless, with multiple wounds and discoloration emblematic of suffering from poison.", "hash": "f68438145a50f09b", "src": "collector@1.60.1.70888", "npcs": [268925]}
 {"id": "f689a251bac256b3", "field": "text", "en": "We defend. We stand. We show that as one. United. We destroy. Their god will fall.\n", "hash": "f689a251bac256b3", "src": "vmangos@13b49dc"}
 {"id": "f698d53141ed488c", "field": "text", "en": "Herbalism requires a gentle touch that few such as Malorne can teach.  Seek him out east of the Inn in Dolanaar.", "hash": "f698d53141ed488c", "src": "vmangos@13b49dc"}
 {"id": "f6a9cc2c85cdf94f", "field": "text", "en": "What could you possibly need a bank for?  Very well, you'll need to go through the Ruins of Lordaeron to the south of Brill.  In the back are a set of elevators leading down into the Undercity.  When you get there stop any of those lumbering Abominations they like to call an Undercity Guardian and ask it for better directions.", "hash": "f6a9cc2c85cdf94f", "src": "vmangos@13b49dc"}
@@ -38,5 +43,6 @@
 {"id": "f6de3a0e80d35628", "field": "text", "en": "So much to do, so much to do!  Where does the time go?", "hash": "f6de3a0e80d35628", "src": "vmangos@13b49dc"}
 {"id": "f6e3f75ac95dce5f", "field": "text", "en": "The long reload takes some getting used to, but nothing else is better for starting off a fight. ", "hash": "f6e3f75ac95dce5f", "src": "vmangos@13b49dc"}
 {"id": "f6ee09b0247875c3", "field": "text", "en": "Mmmh...I SMELL FOOD!", "hash": "f6ee09b0247875c3", "src": "vmangos@13b49dc"}
+{"id": "f6f3fc2231b4166d", "field": "text", "en": "Oh, enough of that crazy talk, swimmers. You are going to scare off the few customers we have with your drunken ghost stories!", "hash": "f6f3fc2231b4166d", "src": "collector@1.60.1.70790"}
 {"id": "f6f5b95ae5b636a5", "field": "text", "en": "I give unto you cordial salutations, $r.  You've come far off the beaten path merely to speak to someone dwelling inside a cave.  I trust there is a reason for your strange, yet not unforeseen visit here.  Yes?", "hash": "f6f5b95ae5b636a5", "src": "vmangos@13b49dc"}
 {"id": "f6fddae86839a7b4", "field": "text", "en": "Do we have much further to go, $n?", "hash": "f6fddae86839a7b4", "src": "vmangos@13b49dc"}

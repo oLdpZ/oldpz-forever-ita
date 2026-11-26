@@ -25,6 +25,7 @@
 {"id": "14724c4354957f8a", "field": "text", "en": "The only good $R is a dead $R!", "hash": "14724c4354957f8a", "src": "vmangos@13b49dc"}
 {"id": "1476692ed667b84c", "field": "text", "en": "Take that!  The Drywhiskers will prevail!", "hash": "1476692ed667b84c", "src": "vmangos@13b49dc"}
 {"id": "1478e1889c68a0b0", "field": "text", "en": "Quickly! $n attacks!", "hash": "1478e1889c68a0b0", "src": "vmangos@13b49dc"}
+{"id": "147ccedb9fe21a14", "field": "text", "en": "You seem very \"matter-of-fact\" about that.", "hash": "147ccedb9fe21a14", "src": "collector@1.60.1.70862", "npcs": [256930]}
 {"id": "147d4137ca0b2477", "field": "text", "en": "May your spirit burn brightly, $n.", "hash": "147d4137ca0b2477", "src": "vmangos@13b49dc"}
 {"id": "148d2d1534e7dabc", "field": "text", "en": "What can you tell me about the status of the Windshapers?", "hash": "148d2d1534e7dabc", "src": "collector@1.60.1.70205", "npcs": [251487]}
 {"id": "14acf86805a68210", "field": "text", "en": "And thank you, $n.  Without your aid I may never have found my way to the Forsaken.", "hash": "14acf86805a68210", "src": "vmangos@13b49dc"}
@@ -40,6 +41,8 @@
 {"id": "14d2a0804c413cc4", "field": "text", "en": "Driving a Steam Tank isn't for everyone.  It takes an iron grip and nerves of steel...lucky I have both!  How about you?  How's your mettle?  Want to prove it to me?", "hash": "14d2a0804c413cc4", "src": "vmangos@13b49dc"}
 {"id": "14e4f1f5a1458a7a", "field": "text", "en": "Time for the Gizleton Caravan to head on out! We'll be back soon but if you cannot wait, head north to Kormek's Hut. We open shop in about an hour.", "hash": "14e4f1f5a1458a7a", "src": "vmangos@13b49dc"}
 {"id": "14ea81a8bdab91df", "field": "text", "en": "Rupert Boch is his name.  I hear that he's upstairs in one of the rooms at the Gallows' End Tavern on the southeast end of town.", "hash": "14ea81a8bdab91df", "src": "vmangos@13b49dc"}
+{"id": "14ed521f74b370b3", "field": "text", "en": "SI:7 will take things from here. The forge and warship you liberated from the Defias have strategic value and we are taking control of them.", "hash": "14ed521f74b370b3", "src": "collector@1.60.1.70862"}
+{"id": "14ef520eed74038e", "field": "text", "en": "The Al'Aketh cult continues to escalate their violence, and the Windshapers stubbornly refuse to recognize the inaction that brought us here.", "hash": "14ef520eed74038e", "src": "collector@1.60.1.70790"}
 {"id": "14f0461cfe7fb2b0", "field": "text", "en": "The earth keeps many secrets, $c; it is our duty to ensure that those that must remain a secret for the good of all stays as such.", "hash": "14f0461cfe7fb2b0", "src": "vmangos@13b49dc"}
 {"id": "14f4a7910bae917a", "field": "text", "en": "This constant, annoying resistance is futile, you maggots! There will be nothing in the end but death!", "hash": "14f4a7910bae917a", "src": "vmangos@13b49dc"}
 {"id": "14f932c031f85f2c", "field": "text", "en": "So... cold...", "hash": "14f932c031f85f2c", "src": "vmangos@13b49dc"}

@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["7a1eb3196ca6cac4"] = { "L'Occhio Onniveggente deve essere recuperato!", "." },
   ["7a2d46d19688ece8"] = { "D'accordo, andiamo.", "." },
   ["7a34245fca7943d5"] = { "Udite, udite! Mi fermerò a vendere la mia merce qui a ⟦Lakeshire=Borgolago⟧ solo per poco tempo. Venite subito al municipio!", "." },
+  ["7a344d64835cac92"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi del Cuorselvaggio in cambio del nuovo ⟦Feralheart Cowl=Copricapo del Cuore Ferino⟧ e della nuova Veste del Cuore Ferino?", "." },
   ["7a349eea8d790bb1"] = { "Hai quasi raggiunto l'apice del tuo addestramento. Per arrivare al massimo nell'arte dell'incantamento, ti resta un'ultima maestra da cercare. Si chiama Annora, e puoi trovarla a Uldaman.", "." },
   ["7a374449c1f3aa4a"] = { "Nagmara! È rimasto del montone?", "." },
   ["7a4a0f2e93147745"] = { "{name}! Come te la passi, <ragazzo/ragazza>? Fammi vedere cos'hai imparato dall'ultima volta che ti ho visto, così vediamo se c'è qualcosa di nuovo che posso insegnarti.", "." },

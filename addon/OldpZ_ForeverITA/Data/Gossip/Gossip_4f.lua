@@ -37,6 +37,7 @@ WFJ.Data.add("gossip", {
   ["4fe16636f0ecbb07"] = { "Aiuto! Mi attaccano!", "." },
   ["4fe69eda6a22d2a7"] = { "Un istruttore di professioni", "." },
   ["4febdf3373a89a4d"] = { "%s sniffa polvere onirica.", "." },
+  ["4ff1246fe0b02d5b"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata a Darnassus, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["4ff35ff347878c86"] = { "Salve, salve! <Benvenuto/Benvenuta> nella mia cucina, <signore/signora>! È qui che nascono tutte le migliori prelibatezze della Scarlet Raven Tavern. Ah, senti che profumo meraviglioso!", "." },
   ["4ff41bcb528eb21b"] = { "Un buon martello in mano rende il mondo più sicuro. Come se potessi affrontare perfino il più potente dei nemici con un bel pezzo di metallo massiccio stretto nei pugni.", "." },
   ["4ffc7a62ea29e508"] = { "Ho così tanto da fare... così tanto, prima che arrivi la Piaga...", "." },

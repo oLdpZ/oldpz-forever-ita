@@ -27,6 +27,7 @@ WFJ.Data.add("gossip", {
   ["956aba84fd18d0e9"] = { "Lo SPACCHIAMO CON UN MARTELLO!", "." },
   ["9579ce3e559801e4"] = { "%s emette uno strano rumore.", "." },
   ["957ceb2e3b88063e"] = { "Sì, Fandral, ricorda queste parole: non lasciare che il dolore guidi la tua fede. Questi pensieri che coltivi... luoghi oscuri in cui vai, elfo della notte. L'assoluzione non si ottiene con una vendetta sconsiderata.", "." },
+  ["957e7fbe5da994c2"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi del Devoto in cambio della nuova ⟦Virtuous Crown=Corona del Virtuoso⟧ e della nuova Tonaca del Virtuoso?", "." },
   ["958100a8e1bc2d4d"] = { "Dov'è la ⟦Silver Hand=Mano d'Argento⟧? Ci serve il suo aiuto!", "." },
   ["958877ca7f63a315"] = { "Orrendi muggiti e ringhi provengono dalla baracca di quel vecchio eremita!", "." },
   ["9589a9e3e8eccf49"] = { "Aiutate i bambini di ⟦Stormwind=Roccavento⟧... vittime della guerra e della peste!", "." },

@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["814dedf113e9c02c"] = { "La rabbia che ti brucia dentro troverà presto alimento nei nostri nemici.", "." },
   ["81583f70f34b8885"] = { "L'invenzione, <mio/mia> <caro/cara> {class}, è per il due percento ispirazione in bottiglia, per il quattro percento esposizione solare, per il sei percento probabilità di temporali in diradamento entro metà pomeriggio, e per il novantatré percento Rumplesnicker.\n\nAspetta, fa cento? Ho i miei appunti qui da qualche parte.", "." },
   ["8162bed7f086b8d2"] = { "Questo Dimensional Imploder sembra pericoloso! Come posso costruirne uno?", "." },
+  ["816d03be770dcda8"] = { "Che notizie porti, {name}?", "." },
   ["816f8b0e4261e1bc"] = { "Ciao! Mi chiamo Jenna! E tu?", "." },
   ["8199922a929fb6c3"] = { "Non dobbiamo cedere al male che ha oscurato la nostra terra. I Guardiani della Notte devono prevalere!", "." },
   ["81aa5c14c36e7b77"] = { "Questa storia ti piacerà, {race}. Vedi, il punto è questo. Non appena Malygos mi ha incaricato di proteggere il frammento dello scettro, ho capito che mi aspettava un'eternità di mal di testa e sofferenze.\n\nTutto ciò che voglio è studiare queste coste ricche di magia e scoprire quali manufatti possano essere rimasti dalla Separazione. Sai, un tempo qui prosperava una civiltà degli ⟦Highborne=Alti Nobili⟧! Non c'è bisogno che tu mi dica che qui intorno ci saranno oggetti magici di tutto rispetto, {race}. Ne sento l'odore!", "." },

@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["d65accd1af85a276"] = { "Vuoi fare un gioco, <puzzone/puzzona>?", "." },
   ["d664bea3121f5a86"] = { "Allora vieni, eremita!", "." },
   ["d66a1b436d3e439d"] = { "Sei <stato/stata> <MALOWNATO/MALOWNATA>!", "." },
+  ["d66be95035297d7c"] = { "Tu: al primo posto. Tutti gli altri: al secondo o più giù. Oh, grazie per avermi liberato!\n\nLo sapevo che la mia vita era destinata a qualcosa di più che fare da antipasto a un ogre!", "." },
   ["d66d38dce889a6d4"] = { "Attenti! Tutto il materiale bellico per ⟦Ahn'Qiraj=Ahn'qiraj⟧ è stato registrato ed è in corso di trasporto verso la ⟦Cenarion Hold=Fortezza Cenariana⟧, <signore/signora>! Mi dicono che l'ultimo carico dovrebbe arrivare in meno di $2113w giorni. Una volta fatto, e quando qualcuno suonerà quel gong laggiù per aprire i cancelli, garantisco che daremo a quegli insetti una battaglia coi fiocchi!", "." },
   ["d66dd375f5074fae"] = { "Quando si deciderà qualcuno a fare qualcosa contro i non morti?", "." },
   ["d66f376eedbc34a8"] = { "Usa 8 Rune Necrotiche e interrompi il suo rituale.", "." },

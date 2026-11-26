@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["ebb2c1a1a3aae91c"] = { "Qualcun altro pronto a provare l'ira della ⟦Defias Brotherhood=Fratellanza dei Defias⟧?", "." },
   ["ebc66f7a1d7e7a2d"] = { "Ehi, calma, {class}, Pele'keiki pensa che tu non sapere che tutta quella roba sta andando a ⟦Silithus=Silitus⟧. A Pele'keiki hanno detto che l'ultima parte arriva là in meno di un giorno, e dopo qualche sciocco suona il gong fuori dai cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧ per aprirli e comincia la guerra.", "." },
   ["ebc7fc5ae6bf2bbc"] = { "Salute, {class}, insegno la Conciatura a Darnassus. In cosa posso esserti utile?", "." },
+  ["ebcc5e877fab253d"] = { "Ecco il mio spararazzi standard. E dopo aver sparato abbi pazienza: ce ne sono solo un paio di cariche, e potrei metterci un minuto ad arrivare da te, a seconda di quanto sarò al largo. Dopo aver sparato il razzo, tieni d'occhio il mare.", "." },
   ["ebd1d03284ab9576"] = { "Carote ogni giorno per un anno se la smetti!", "." },
   ["ebd6a51523a4716c"] = { "Chi devo uccidere? Indicami solo da che parte sono, comandante.", "." },
   ["ebe5f1442d53de72"] = { "Dammi il cucciolo di ippogrifo!", "." },

@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["7d75b10529cb9006"] = { "Eccoli che arrivano!", "." },
   ["7d75b11229cb9013"] = { "Eccoli che arrivano.", "." },
   ["7d75da6b4758a12a"] = { "%s ricambia il gesto volgare di {name}.", "." },
+  ["7d7fce4f1d2db5ce"] = { "Mi mette a disagio chiedere un aiuto materiale, ma il mio veggente della divinazione, il congegno che spero di finire, richiede un diamante per tipo. Se non puoi aiutarmi, capirò di certo.", "." },
   ["7d85284a3887edf4"] = { "E poi il coniglio gli ha staccato la testa con un morso... lo giuro.", "." },
   ["7da5449750b6bef1"] = { "Mettici più olio di gomito, <ragazzo/ragazza>. Lavoro duro e determinazione, così si fa! Non dare retta a chi ti dice che basta studiare sui libri.", "." },
   ["7db727c6a198980e"] = { "<Eitrigg ride.>\n\nGiovane, il mondo non è sempre stato in un tale caos. C'è stato un tempo prima che il Flagello saccheggiasse la terra. Prima che quelle zone di Lordaeron fossero conosciute come le ⟦Plaguelands=Terre Infette⟧.\n\nFu lì che Thrall mi salvò dalla morte, e fu allora che mi unii alla nuova ⟦Horde=Orda⟧... ma divago. Questa è una storia per un'altra volta. Sì, un'altra volta... Forse...", "." },

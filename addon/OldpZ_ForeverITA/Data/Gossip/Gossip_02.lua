@@ -9,6 +9,7 @@ WFJ.Data.add("gossip", {
   ["021e8a7e5eee4e6c"] = { "Gli ⟦Blackfathom Deeps=Abissi di Fondocupo⟧ si trovano all'estremità nord della ⟦Zoram Strand=Spiaggia di Zoram⟧, lungo la costa di ⟦Ashenvale=Valtetra⟧.", "." },
   ["0220a8508f9c0e90"] = { "Stringetevi attorno ai vostri luogotenenti e comandanti! Proteggete le nostre basi!", "." },
   ["022aa864abcf853a"] = { "Non cercare di imporre la tua volontà al cuoio. Lascia piuttosto che siano le sue tendenze naturali a stabilire la forma e la funzione che assumerà. Non è una battaglia da vincere. Lavora con il cuoio, non contro di esso.", "." },
+  ["022eedef5c7c83c5"] = { "Sei pront<o/a> a fare lo scambio?", "." },
   ["023be434f81f9fe8"] = { "Marion Call tiene compagnia al chierico oscuro Beryl nella sala di lettura al piano di sopra della ⟦Gallows' End Tavern=Taverna dell'Impiccato⟧, sul margine sud-est di Brill. Muoio dalla voglia di vedere chi vince quella gara di sguardi.", "." },
   ["023c23543cad7359"] = { "Fatevi avanti e sentite parlare dello spettacolo più straordinario di tutta Azeroth: la ⟦Darkmoon Faire=Fiera di Lunacupa⟧! Urrà!", "." },
   ["023cce0431f06786"] = { "Aiutami a schiacciare questi mingherlini!", "." },

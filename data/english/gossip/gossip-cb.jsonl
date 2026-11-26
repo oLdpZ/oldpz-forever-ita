@@ -7,6 +7,7 @@
 {"id": "cb170fbfc71ed278", "field": "text", "en": "Mommy? Can I pet Fizzles?", "hash": "cb170fbfc71ed278", "src": "vmangos@13b49dc"}
 {"id": "cb1daa7e11c31084", "field": "text", "en": "Where can I find bone fragments?", "hash": "cb1daa7e11c31084", "src": "vmangos@13b49dc"}
 {"id": "cb247bd0f25da945", "field": "text", "en": "What a great day for racing! Oh, who am I kidding? Every day's a great day for racing!", "hash": "cb247bd0f25da945", "src": "vmangos@13b49dc"}
+{"id": "cb25cfb3525b27ab", "field": "text", "en": "You will... never find...", "hash": "cb25cfb3525b27ab", "src": "collector@1.60.1.70888"}
 {"id": "cb28c47dc4c26121", "field": "text", "en": "Could I have a copy of \"The Feast of Winter Veil\" to read?", "hash": "cb28c47dc4c26121", "src": "vmangos@13b49dc"}
 {"id": "cb2a72993cb4201c", "field": "text", "en": "Now go back home where you belong! ", "hash": "cb2a72993cb4201c", "src": "vmangos@13b49dc"}
 {"id": "cb2ae403a0edc651", "field": "text", "en": "Celebras, I lost my Scepter...", "hash": "cb2ae403a0edc651", "src": "vmangos@13b49dc"}
@@ -28,6 +29,7 @@
 {"id": "cb82772153bd26a2", "field": "text", "en": "Continue please.", "hash": "cb82772153bd26a2", "src": "vmangos@13b49dc"}
 {"id": "cb833365167dae8f", "field": "text", "en": "Our master Malfurion remains lost in the Dreaming, $c.  His is the light of a beacon that shows the way for us, and we must do everything in our power to preserve that light.", "hash": "cb833365167dae8f", "src": "vmangos@13b49dc"}
 {"id": "cb8eb0440a902e7b", "field": "text", "en": "Food, now there's a subject that I can sink my fangs into! I am told that we have $2095w of $2096w lean wolf steaks, $2102w out of $2103w spotted yellowtail, and $2105w of $2106w baked salmon on ice and stored away.", "hash": "cb8eb0440a902e7b", "src": "vmangos@13b49dc"}
+{"id": "cb980fdd910df36c", "field": "text", "en": "Welcome to Shen'dralas, or what remains of it.$B$BI hope you can appreciate the majesty of this place, even if it is a haunted shell of its former self.", "hash": "cb980fdd910df36c", "src": "collector@1.60.1.70888", "npcs": [253471]}
 {"id": "cb9c194ea4f294df", "field": "text", "en": "I'm afraid not, $n. Now, feel the shame you have brought upon yourself.", "hash": "cb9c194ea4f294df", "src": "vmangos@13b49dc"}
 {"id": "cba07f3bb879e0eb", "field": "text", "en": "The numbers of my companions dwindles, goddess, and my own power shall soon be insufficient to hold back the demons of Felwood.", "hash": "cba07f3bb879e0eb", "src": "vmangos@13b49dc"}
 {"id": "cba6baffb0eb833c", "field": "text", "en": "Greetings, $c.  I am Exzhal, Servitor of Rastakhan.", "hash": "cba6baffb0eb833c", "src": "vmangos@13b49dc"}

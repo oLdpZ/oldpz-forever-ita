@@ -36,6 +36,7 @@ WFJ.Data.add("gossip", {
   ["e9d5b17b46115db1"] = { "Buona fortuna, {name}!", "." },
   ["e9e4e48936e4868d"] = { "Devi cominciare a imparare cose che vanno oltre la mia competenza! Parla con ⟦Lilliam Sparkspindle=Lilliam Saldafresa⟧, davanti alla tenda laggiù. Ti metterà sulla strada giusta!", "." },
   ["e9ee99c1aa6ed833"] = { "La capitana Balinda Cordipietra guida le forze di prima linea dell'⟦Alliance=Alleanza⟧. Ha la sua base all'⟦Stonehearth Outpost=Avamposto di Cordipietra⟧, nella parte settentrionale del ⟦Field of Strife=Pian della Discordia⟧.\n\nBalinda non è ancora tornata in battaglia.", "." },
+  ["e9fc3fdffe418605"] = { "Non sei tipo da deludere, {name}! Ciò che hai imparato va oltre medaglie ed encomi da quattro soldi. Ciò che hai imparato può venire solo con l'esperienza e con la tempra forgiata sul campo di battaglia.\n\nHai fatto bene, {class}. Sei <un/una> <vero/vera> <eroe/eroina> dell'⟦Alliance=Alleanza⟧!", "." },
   ["e9fdf2289c62ef04"] = { "Ma dai, non è vero.", "." },
   ["e9fe8830c46730de"] = { "Per dare luce, bisogna bruciare.", "." },
 })

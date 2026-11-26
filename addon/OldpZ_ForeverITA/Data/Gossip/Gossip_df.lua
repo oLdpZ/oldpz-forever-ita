@@ -35,8 +35,8 @@ WFJ.Data.add("gossip", {
   ["dfe597b007d72880"] = { "Ciao! Sono ⟦Kwee Q. Peddlefeet=Kwee Q. Stupìdo⟧! Sono qui per scoprire chi è il più popolare tra tutti gli eroi di Azeroth!\n\nMi scalda proprio il cuore vedere così tanti fan adoranti salutare i loro capi, ma... sai cosa mi scalderebbe ancora di più?\n\nUn bacio!", "." },
   ["dfefb31a7c434722"] = { "%s piange.", "." },
   ["dff28fd18440078e"] = { "Vince l'⟦Horde=Orda⟧!", "." },
+  ["dff68b8a2714b8b4"] = { "La tua generosità non ha eguali, {name}. Ti ringrazio per la tua gentilezza.\n\nOra potrò finire il mio veggente della divinazione, e dovrei riuscire a fabbricarne altri senza bisogno di altri diamanti... forse ti interesserebbe aiutarmi a usarlo? È per un compito importantissimo, te lo assicuro... uno che, se trascurato, potrebbe significare un disastro totale per il regno degli spiriti!", "." },
   ["dff92f81e70a838a"] = { "Salute, giovane {class}.", "." },
   ["dff95d62bc69e5d2"] = { "La tua vita è un sacrificio degno del mio padrone, {class}.", "." },
   ["dffabc3924b2b31d"] = { "Il Dun Baldar North Bunker è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo distruggerà!", "." },
-  ["dffc89ab72c3c546"] = { "Sei tornat<o/a> con i totem?", "." },
 })

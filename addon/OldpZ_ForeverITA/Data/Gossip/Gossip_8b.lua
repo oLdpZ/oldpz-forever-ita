@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["8b97ce3a2cc4dcc0"] = { "E questo \"Signore del Vento\"? Al'Akir è reale, o un'invenzione del culto?", "." },
   ["8b99c393aa88ce9e"] = { "Sono un guaritore degli spiriti di prova.", "." },
   ["8b9e2c705c4ce07b"] = { "A quanto pare arrivi troppo tardi, {class}. Abbiamo tutto il raptor arrosto che ci serve: ucciso, cotto e salato. Comunque, sembra che qualcun altro qui intorno abbia bisogno di una mano. Dovresti andare a sentire loro. Io vado a vedere se adesso mi lasciano tornare a casa.", "." },
+  ["8b9e3b1a9a4dc38c"] = { "Ottimo lavoro, {race}. Se trovi altri tomi, non esitare a riportarceli.\n\nCol passare del tempo, cambiamo spesso le ricompense per la restituzione dei tomi perduti e ne aggiungiamo di nuove.", "." },
   ["8ba6030feea6990d"] = { "È ora di insegnarti un po' di buone maniere, <ragazzo/ragazza>.", "." },
   ["8ba7bea14ccae981"] = { "Davvero straordinario, Gerard. Come ci sei riuscito?", "." },
   ["8bb14995d052b45d"] = { "La fine è adesso, Fordring.", "." },

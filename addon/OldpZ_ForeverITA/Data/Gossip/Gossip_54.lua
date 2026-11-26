@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["54007d6ba58358fa"] = { "Ora mi sento un po' meglio, grazie.", "." },
+  ["5400bb60382c061f"] = { "Che questi coltelli trovino posto nel cuore di qualcuno.\n\nLetteralmente.", "." },
   ["5401958112324f1c"] = { "Ti copro io, Vipore. Muoviti!", "." },
   ["540ce9b083c69734"] = { "La raccolta delle bende procede secondo i piani. Per quanto riguarda le bende di lino, ne abbiamo raccolte $2076w su $2077w. Le bende di seta sono a quota $2082w su $2083w, e abbiamo $2088w bende di telarunica sulle $2090w necessarie.", "." },
   ["540d6737042b45a7"] = { "Non lasciarti ingannare dagli occhietti e dalla barba folta. Vosur è un apprendista di talento e un buon amico, anche se mi viene il torcicollo quando gli parlo.", "." },
@@ -22,7 +23,6 @@ WFJ.Data.add("gossip", {
   ["5456b59aef3be5f0"] = { "C'è dell'altro?", "." },
   ["545b411e79de6056"] = { "Non puoi nasconderti da me!", "." },
   ["546dd6cb0dae420d"] = { "L'orso ti guarda con calma e pazienza, ma non dice nulla.", "." },
-  ["547275386e1e1645"] = { "Ecco fatto: ora puoi fabbricare una ⟦Fish Bowl=Boccia per Pesci⟧ tutta tua. Alla gente non piace granché vedere accampamenti montati in centro città, quindi dovrai andartene in mezzo alla natura selvaggia se vuoi provarlo.\n\nAh, e ricorda: nessun accampamento è completo senza un fuoco da campo. Te ne servirà uno prima di montare il tuo accampamento. Quasi tutti i cuochi possono insegnarti ad accendere un fuoco. Se non l'hai già fatto, potresti fare un salto da qualcuno che ti istruisca nelle arti culinarie, per impararne le basi.", "." },
   ["547414273202a272"] = { "Vogliamo affrontare il Profanatore.", "." },
   ["5475eaabd126ccac"] = { "Davvero? Chiamali, servitore.", "." },
   ["5476cf471d3f99fe"] = { "È da un po' che non ti si vede da queste parti. Hai trovato il tomo e le verghe?", "." },

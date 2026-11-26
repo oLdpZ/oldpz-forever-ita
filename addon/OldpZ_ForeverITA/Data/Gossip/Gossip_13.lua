@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["134515cfa4450473"] = { "Il ⟦Ragefire Chasm=Baratro di Fiamma Furente⟧ si trova sotto la Shadow Cleft, al centro di Orgrimmar.", "." },
   ["134852a7764925dc"] = { "Enu thora'serador. Questo è un luogo sacro.", "." },
   ["1349d1e382bdc388"] = { "Ti sembro una guida? E va bene, cosa ti serve?", "." },
+  ["134a3898207f42ec"] = { "La battaglia nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧ contro le ⟦Silverwing Sentinels=Sentinelle Alargentea⟧ è di grande importanza. Con il pretesto di proteggere una foresta che non le appartiene, l'⟦Alliance=Alleanza⟧ cerca di negare all'⟦Horde=Orda⟧ una delle nostre maggiori fonti di legname.\n\nNon permettere che accada, {name}! Torna da me con la prova di aver servito l'⟦Horde=Orda⟧ in modo degno!", "." },
   ["134c7661460ca085"] = { "Tempi duri, eh, {name}? Ovunque ti giri c'è qualcuno che ha bisogno d'aiuto, e io e mia moglie non facciamo eccezione.", "." },
   ["13507331cc3597fc"] = { "Questi nani sono gli stessi di oggi, giusto? I nani mantengono altri legami con i Terrigeni?", "." },
   ["1355ea4c90bc60c4"] = { "Salute, {name}.", "." },

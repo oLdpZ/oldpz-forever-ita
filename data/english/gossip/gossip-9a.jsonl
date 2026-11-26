@@ -38,6 +38,7 @@
 {"id": "9ad10c3fe0187b0a", "field": "text", "en": "%s hatches!", "hash": "9ad10c3fe0187b0a", "src": "vmangos@13b49dc"}
 {"id": "9ad2ec2ae065d566", "field": "text", "en": "Welcome to me shop. What can I do for ye'?", "hash": "9ad2ec2ae065d566", "src": "vmangos@13b49dc"}
 {"id": "9ad864a1d74d3d23", "field": "text", "en": "I have given you an oathstone of Ysera's Dragonflight, $n.  When you are ready and able to aid us, use it, and then we may begin.", "hash": "9ad864a1d74d3d23", "src": "vmangos@13b49dc"}
+{"id": "9adef6c33b24455e", "field": "text", "en": "Do YOU hear the voices too?", "hash": "9adef6c33b24455e", "src": "collector@1.60.1.70959"}
 {"id": "9ae4b040d9993ae8", "field": "text", "en": "I have no time to waste on the likes of you $c.", "hash": "9ae4b040d9993ae8", "src": "vmangos@13b49dc"}
 {"id": "9ae61f4ffeb52ff1", "field": "text", "en": "Wow, all of this for a love potion. Hope he's worth it.", "hash": "9ae61f4ffeb52ff1", "src": "vmangos@13b49dc"}
 {"id": "9ae8536442f19a09", "field": "text", "en": "Thanks to the combined efforts of the Alliance's adventuring guilds, we have been able to gather all of the singed corestones we think that we'll need. However, you might want to check around with the other collectors here to see if they still need help in gathering up vital resources.", "hash": "9ae8536442f19a09", "src": "vmangos@13b49dc"}
@@ -46,3 +47,4 @@
 {"id": "9af20e90f2d2ee8d", "field": "text", "en": "It's all over 'cept for the crying now. All of the war materiel is being transported to Cenarion Hold in Silithus, and the last of it will be there in less than a day. Shouldn't be much longer until the scepter is assembled and the war finally begins.", "hash": "9af20e90f2d2ee8d", "src": "vmangos@13b49dc"}
 {"id": "9af7eb5d3a3d00e8", "field": "text", "en": "The Stormpike Aid Station is in Dun Baldar, right outside the Dun Baldar barracks.$B$BThe Alliance currently controls it.", "hash": "9af7eb5d3a3d00e8", "src": "vmangos@13b49dc"}
 {"id": "9af915dfc93f4262", "field": "text", "en": "I am done inspecting the skulls, $n, and I am relieved.  Yenniku is not among them...", "hash": "9af915dfc93f4262", "src": "vmangos@13b49dc"}
+{"id": "9aff0430a5aa1656", "field": "text", "en": "There's even a terrible forest wraith! Dressed all in black and... evil looking! I tell you, it's a cursed place! *hic*", "hash": "9aff0430a5aa1656", "src": "collector@1.60.1.70790"}

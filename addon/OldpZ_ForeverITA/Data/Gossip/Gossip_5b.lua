@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["5b8f83ed1734b8f2"] = { "La creatura più facile da evocare per te è l'imp. Dovresti già essere in grado di richiamare questo servitore, ma per completezza comincerò da lui.", "." },
   ["5b9f8c717d7faf1f"] = { "<Narain tiene una busta ancora chiusa contro la fronte.>\n\nChe cos'è... Mmmm... Velluto!\n\nHo indovinato?", "." },
   ["5bb3dfe40e2a62b9"] = { "Argh, che dolore. Mi lascerà mai?", "." },
+  ["5bb7b09a841adbea"] = { "Porti notizie dalla ⟦Warsong Gulch=Forra dei Cantaguerra⟧, {name}?", "." },
   ["5bbe908fb91a284b"] = { "Ah, eccone uno!", "." },
   ["5bcedff68aae0fcb"] = { "La West Frostwolf Tower è stata distrutta dall'⟦Alliance=Alleanza⟧!", "." },
   ["5bd2346ae2ff53ef"] = { "Siamo tutti attirati qui per ragioni diverse, {class}.\n\n<Rayne sorride.>\n\nSono qui per incontrare Rimblat del Circolo della Terra. Ha delle teorie interessanti su come purificare queste terre.", "." },

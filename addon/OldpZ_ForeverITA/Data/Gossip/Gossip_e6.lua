@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["e67d746078ee03f0"] = { "Perdonami, padre! Ti prego...", "." },
   ["e67ed60b58fc8743"] = { "Forza, ragazzi! È ora di alzarsi", "." },
   ["e6817059d132428b"] = { "Cerchi Plucky? Be', non dire in giro che te l'ho detto io, ma... forse se chiedi a Kronkrider, su nella torre, te lo dirà...", "." },
+  ["e68246ccea9e15f6"] = { "Dove hai detto che l'hai trovata? Mi stupisce che tu sia ancora tutt<o/a> inter<o/a>. Grazie, <ragazzo/ragazza>.\n\nSai una cosa? Se hai l'abitudine di fare favori, scommetto che un sacco di gente da queste parti saprà come metterti all'opera. Perché non resti un po'?", "." },
   ["e6879ce35f7c0a91"] = { "Quasi fatto...", "." },
   ["e689e4b59a89dfd5"] = { "Vai avanti senza di me! Raggiungerò il ⟦Tarren Mill=Mulino di Tarren⟧ per conto mio.", "." },
   ["e68b0921fa02efc6"] = { "Assaggia il mio potere!", "." },

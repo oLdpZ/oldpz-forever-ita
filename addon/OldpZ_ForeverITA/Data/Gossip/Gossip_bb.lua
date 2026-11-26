@@ -8,6 +8,7 @@ WFJ.Data.add("gossip", {
   ["bb0ee22b6f312a2f"] = { "La tua volontà non è abbastanza forte da manipolare le forze che controlliamo, {class}.", "." },
   ["bb1ae0812f6640ac"] = { "Venite, piccoletti. Affrontatemi!", "." },
   ["bb1ea928ca3e8ff2"] = { "Le stalle sono di nuovo piene! La nostra cavalleria presto cavalcherà!", "." },
+  ["bb2381b8567feef6"] = { "Mi hai portato ciò che ti ho chiesto, {name}?", "." },
   ["bb349076981a8996"] = { "Il ⟦Temple of the Moon=Tempio della Luna⟧ è la casa dei sacerdoti di Elune. Lì troverai Jandria e Lariia, che ti guideranno ancora sulla via del sacerdozio.", "." },
   ["bb5a08d1318dc40f"] = { "C'è una cassetta della posta in posizione comodissima, proprio tra la banca di ⟦Stormwind=Roccavento⟧ e la locanda Gilded Rose, nel ⟦Trade District=Quartiere del Commercio⟧.", "." },
   ["bb5a9e9d3f034705"] = { "<Il gran inquisitore Fierasponda scuote la testa.>\n\nNo... Rimase in disparte a guardare mentre la legione di non morti si abbatteva su di noi. Poco dopo, i miei poteri si esaurirono. Fui il primo a cadere... Di certo mi avrebbero fatto a pezzi mentre giacevo lì privo di sensi; invece mi ignorarono del tutto, concentrando tutta la loro attenzione sul gran signore.", "." },

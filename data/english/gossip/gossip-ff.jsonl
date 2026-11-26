@@ -1,4 +1,5 @@
 {"id": "ff00b65dab470201", "field": "text", "en": "I wish to make a purchase.", "hash": "ff00b65dab470201", "src": "vmangos@13b49dc"}
+{"id": "ff0544773cea5058", "field": "text", "en": "Krol'dok Stronghold", "hash": "ff0544773cea5058", "src": "collector@1.60.1.70938", "npcs": [257595]}
 {"id": "ff05591d594254a9", "field": "text", "en": "Greetings, $C.  Be wary as you travel east toward The Bulwark.  Recent surveillance reports indicate increased Scourge activity in that area, so exercise caution.", "hash": "ff05591d594254a9", "src": "vmangos@13b49dc"}
 {"id": "ff09f93da2768327", "field": "text", "en": "Kiss me.", "hash": "ff09f93da2768327", "src": "vmangos@13b49dc"}
 {"id": "ff0ee181a9ec2557", "field": "text", "en": "Where is Elder Windtotem?", "hash": "ff0ee181a9ec2557", "src": "vmangos@13b49dc"}
@@ -10,6 +11,7 @@
 {"id": "ff2d4d26f84284d8", "field": "text", "en": "Many think the staff an inferior weapon. I challenge any who think so to prove their strength against my staff. ", "hash": "ff2d4d26f84284d8", "src": "vmangos@13b49dc"}
 {"id": "ff36d45a60800ef1", "field": "text", "en": "Interesting... continue, John.", "hash": "ff36d45a60800ef1", "src": "vmangos@13b49dc"}
 {"id": "ff4bccc32175dabd", "field": "text", "en": "%s begins the ritual.", "hash": "ff4bccc32175dabd", "src": "vmangos@13b49dc"}
+{"id": "ff546c4ca22b4983", "field": "text", "en": "<Before you lies the corpse of Jorel Windsinger.$B$BDeep lacerations are cut into his legs, and lightning burns scorch his fur.$B$BIt is clear he put up a fight before succumbing to his wounds.>", "hash": "ff546c4ca22b4983", "src": "collector@1.60.1.70790", "npcs": [258130]}
 {"id": "ff54dc6a6bdc970f", "field": "text", "en": "Hey, Rocknot!", "hash": "ff54dc6a6bdc970f", "src": "vmangos@13b49dc"}
 {"id": "ff597f7b055e1b8b", "field": "text", "en": "Take that you mangy Harpy! Hyaa!", "hash": "ff597f7b055e1b8b", "src": "vmangos@13b49dc"}
 {"id": "ff5e508221e424c3", "field": "text", "en": "This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.", "hash": "ff5e508221e424c3", "src": "vmangos@13b49dc"}
@@ -25,20 +27,24 @@
 {"id": "ff85bc0e1ef69f4e", "field": "text", "en": "Have fun in Booty Bay, $n!", "hash": "ff85bc0e1ef69f4e", "src": "vmangos@13b49dc"}
 {"id": "ff887607b7554095", "field": "text", "en": "Where to go? What to do? So many choices that all end in pain, end in death.", "hash": "ff887607b7554095", "src": "vmangos@13b49dc"}
 {"id": "ff89e8ce3c552c28", "field": "text", "en": "Clean this place up! We will not live in such squalor.", "hash": "ff89e8ce3c552c28", "src": "vmangos@13b49dc"}
+{"id": "ff94aac93dffc42c", "field": "text", "en": "The light will purify us both!", "hash": "ff94aac93dffc42c", "src": "collector@1.60.1.70862"}
 {"id": "ff9624548e072fc1", "field": "text", "en": "Ah, here at last! It's going to feel so good to get rid of these barrels.", "hash": "ff9624548e072fc1", "src": "vmangos@13b49dc"}
 {"id": "ff9bdec4fdeec5ee", "field": "text", "en": "What are the Paragons of Power?", "hash": "ff9bdec4fdeec5ee", "src": "vmangos@13b49dc"}
 {"id": "ffa223922dcb99eb", "field": "text", "en": "Greetings, adventurer.", "hash": "ffa223922dcb99eb", "src": "forever-vo@025070f", "npcs": [1949]}
 {"id": "ffa48fb8ad4bc95f", "field": "text", "en": "Teacher, when are we gonna see the sparkly Mage Tower?", "hash": "ffa48fb8ad4bc95f", "src": "vmangos@13b49dc"}
 {"id": "ffaca6741b285d92", "field": "text", "en": "Feralas - Screecher Spirit - On Quest Default Greeting", "hash": "ffaca6741b285d92", "src": "vmangos@13b49dc"}
+{"id": "ffadda706c875aa2", "field": "text", "en": "Looking for adventure, are ye? Well, look no further!$B$BThis here dock serves the one an' only boat that'll take ye to the distant elven lands of Darkshore, and Menethil Harbor without even leaving yer stateroom! How's that for adventure?!", "hash": "ffadda706c875aa2", "src": "collector@1.60.1.70862", "npcs": [276316]}
 {"id": "ffb0656c8dac3f04", "field": "text", "en": "An excellent question! We have many things for sale here at the faire. If you are interested in food and drink, then head over to Stamp and Sylannia's booth. My favorite is the Darkmoon Special Reserve.\n\nIf you'd rather purchase something more exotic, then Lhara may have just the thing for you. She specializes in rarities from all over the world.\n\nAnd then there is Flik running around here somewhere. If you can grab him he sells balls for throwing and frogs to keep as pets.\n", "hash": "ffb0656c8dac3f04", "src": "vmangos@13b49dc"}
 {"id": "ffb578400787fbef", "field": "text", "en": "$n claims the blacksmith!  If left unchallenged, the Horde will control it in 1 minute!", "hash": "ffb578400787fbef", "src": "vmangos@13b49dc"}
 {"id": "ffb849b10e3be4fe", "field": "text", "en": "I'm gonna' enjoy killin' these slack-jawed daffodils!", "hash": "ffb849b10e3be4fe", "src": "vmangos@13b49dc"}
 {"id": "ffbdacee38d89672", "field": "text", "en": "Hmm, I guess I can take on another student. Well, don't just stand there. Tell me what you're looking to learn.", "hash": "ffbdacee38d89672", "src": "vmangos@13b49dc"}
 {"id": "ffbec7606593f345", "field": "text", "en": "I knew of another like you once... His name was Vol'jin. You are a rare breed, my friend.", "hash": "ffbec7606593f345", "src": "vmangos@13b49dc"}
+{"id": "ffc1bd8379fc610f", "field": "text", "en": "Spirits of the wind... forgive me...", "hash": "ffc1bd8379fc610f", "src": "collector@1.60.1.70790"}
 {"id": "ffc3fb864b8521ce", "field": "text", "en": "YAW! Er, to the front lines with you!", "hash": "ffc3fb864b8521ce", "src": "vmangos@13b49dc"}
 {"id": "ffd022f8fce0edb0", "field": "text", "en": "Fleeing will do you no good, mortals!", "hash": "ffd022f8fce0edb0", "src": "vmangos@13b49dc"}
 {"id": "ffd17a976d8c15ff", "field": "text", "en": "Rin'ji is being attacked!", "hash": "ffd17a976d8c15ff", "src": "vmangos@13b49dc"}
 {"id": "ffd919d7efae2fa3", "field": "text", "en": "Grrrr! Idiots!", "hash": "ffd919d7efae2fa3", "src": "vmangos@13b49dc"}
+{"id": "ffd94a320bd43785", "field": "text", "en": "...and the Windshapers. We are ready to support an assault on the Shrine, Valennia.", "hash": "ffd94a320bd43785", "src": "collector@1.60.1.70790"}
 {"id": "ffe7673d7424501f", "field": "text", "en": "Hi there, $c! With the Ahn'Qiraj War drawing near, our preparations here are in full swing. I'm in charge of thick leather collections. It's a fine day for gathering thick leather, don't ya think? I got my stacks here and it looks like we've got $2069w right now. Our magic number is $2071w. Want to help out?", "hash": "ffe7673d7424501f", "src": "vmangos@13b49dc"}
 {"id": "fff5cf1ef18a2025", "field": "text", "en": "You outsiders will pay for encroaching on our land!", "hash": "fff5cf1ef18a2025", "src": "vmangos@13b49dc"}
 {"id": "fffc5c1d0259c895", "field": "text", "en": "I'd like to train.", "hash": "fffc5c1d0259c895", "src": "vmangos@13b49dc"}

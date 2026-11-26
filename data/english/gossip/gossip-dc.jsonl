@@ -2,6 +2,7 @@
 {"id": "dc067e67c7d32d14", "field": "text", "en": "I make sure Sen'jin is supplied with materials from the local beasts. It is an honorable role.", "hash": "dc067e67c7d32d14", "src": "collector@1.60.1.70790", "npcs": [3194]}
 {"id": "dc10f5e84728daaa", "field": "text", "en": "I have been lost in the Dream. I sense his lifeforce but my powers have not yet grown strong enough to make contact.", "hash": "dc10f5e84728daaa", "src": "vmangos@13b49dc"}
 {"id": "dc11fd2f5e220f14", "field": "text", "en": "Mark my words, I will catch you, imp. And when I do!", "hash": "dc11fd2f5e220f14", "src": "vmangos@13b49dc"}
+{"id": "dc12d3eceb2959a9", "field": "text", "en": "Greetings, $C. As advisor to Demar, I would be happy to answer any questions you have about Farholde Keep.", "hash": "dc12d3eceb2959a9", "src": "collector@1.60.1.70888", "npcs": [257591]}
 {"id": "dc149fe8bb7e5ac4", "field": "text", "en": "Hail, $C.  Ill times these are, my friend, for our town is besieged!  The Blackrock Orcs attack from Stonewatch Keep, the Shadowhides loom over the Tower of Ilgalar, and the Redridge Gnoll Pack gathers strength.  I hope you're not here for a holiday...", "hash": "dc149fe8bb7e5ac4", "src": "vmangos@13b49dc"}
 {"id": "dc196b735d38840f", "field": "text", "en": "The People of Westfall salute $n, a brave and valiant defender of freedom.", "hash": "dc196b735d38840f", "src": "vmangos@13b49dc"}
 {"id": "dc237f7478039df3", "field": "text", "en": "A task presses upon me, but I do not have the time to take care of it myself. Can I entrust you with it?", "hash": "dc237f7478039df3", "src": "vmangos@13b49dc"}
@@ -45,3 +46,4 @@
 {"id": "dceb5dacd7127dc0", "field": "text", "en": "Maybe this wasn't the best place for a shop after all...", "hash": "dceb5dacd7127dc0", "src": "vmangos@13b49dc"}
 {"id": "dcf0504f0f8eb1cb", "field": "text", "en": "You honor the spirits of the animals you must slay by not letting them go to waste.  Aska Mistrunner will show you how.  She has a kitchen on the high rise.", "hash": "dcf0504f0f8eb1cb", "src": "vmangos@13b49dc"}
 {"id": "dcf65d9d24183972", "field": "text", "en": "What is E'ko?", "hash": "dcf65d9d24183972", "src": "vmangos@13b49dc"}
+{"id": "dcf73905fc7a036f", "field": "text", "en": "Continue your efforts; there is no time for pause.", "hash": "dcf73905fc7a036f", "src": "collector@1.60.1.70938"}

@@ -1,5 +1,6 @@
 {"id": "5e06bad2cfda014b", "field": "text", "en": "So... you wouldn't happen to have a chest around here that has, let's say, a gauntlet that the Gordok ogres consider to be a priceless artifact?", "hash": "5e06bad2cfda014b", "src": "vmangos@13b49dc"}
 {"id": "5e0865f8ed185df8", "field": "text", "en": "Lakota'mani thunders within you, $n.", "hash": "5e0865f8ed185df8", "src": "vmangos@13b49dc"}
+{"id": "5e0930b8ac2dedc0", "field": "text", "en": "Greetings $R, pardon my rudeness but I am on urgent business from the Quel'danil lodge. I am here hoping to petition the aid of the paladins of the Silver Hand.", "hash": "5e0930b8ac2dedc0", "src": "collector@1.60.1.70862", "npcs": [221827]}
 {"id": "5e0e31f14be498d0", "field": "text", "en": "How can I get Evoroot?", "hash": "5e0e31f14be498d0", "src": "vmangos@13b49dc"}
 {"id": "5e19fe136aca1a63", "field": "text", "en": "The Firelord and all who dare stand in my way shall reel from my wrath.", "hash": "5e19fe136aca1a63", "src": "vmangos@13b49dc"}
 {"id": "5e286aab4f1a15ed", "field": "text", "en": "Why... that is very sweet of you.  I gather that you are volunteering time for Children's Week, yes $c?  Well, you are to be commended.  It is imperative that we remember those less fortunate - especially the children.$B$BI'd be happy to sign an autograph.  Here you go.", "hash": "5e286aab4f1a15ed", "src": "vmangos@13b49dc"}
@@ -36,6 +37,7 @@
 {"id": "5ebcb0dc24342c63", "field": "text", "en": "What is this task?", "hash": "5ebcb0dc24342c63", "src": "vmangos@13b49dc"}
 {"id": "5ec0e84ea28a4879", "field": "text", "en": "Come back to me when you've had more training. Randal Worth over there can help you with that.", "hash": "5ec0e84ea28a4879", "src": "vmangos@13b49dc"}
 {"id": "5ec31bc944a07299", "field": "text", "en": "What's needed for the cauldron at Felstone Field?", "hash": "5ec31bc944a07299", "src": "vmangos@13b49dc"}
+{"id": "5ec64a255bb7fb2e", "field": "text", "en": "Master Apothecary Faranell sighs exasperatedly.", "hash": "5ec64a255bb7fb2e", "src": "collector@1.60.1.70938"}
 {"id": "5ec872c6290c9796", "field": "text", "en": "Run for hills! Wait! We already in hills!", "hash": "5ec872c6290c9796", "src": "vmangos@13b49dc"}
 {"id": "5ec9dfa903eb795b", "field": "text", "en": "Yes, commander!", "hash": "5ec9dfa903eb795b", "src": "vmangos@13b49dc"}
 {"id": "5ecc75125ec512da", "field": "text", "en": "Thanks to everyone's efforts we now have all the iron bars that we need. Check with one of the others to see if there's something else you should be out there collecting for the war effort. Me, I'm going to see if I can get out of here a little early to play some cards.", "hash": "5ecc75125ec512da", "src": "vmangos@13b49dc"}

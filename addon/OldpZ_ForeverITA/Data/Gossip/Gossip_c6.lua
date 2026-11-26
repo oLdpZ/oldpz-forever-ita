@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["c66fec2fa146f987"] = { "È Proudmoore! Via di qui!", "." },
   ["c67426f802552a2d"] = { "Vengo a radere al suolo le vostre basi, clan Lupi Bianchi. Ivus vi punisce per il vostro tradimento!", "." },
   ["c67508299187ef76"] = { "Per favore, pulisciti prima di maneggiare i nostri tomi.", "." },
+  ["c67d587b4cf88e05"] = { "Hai dimostrato grande coraggio nel proteggere le nostre terre nella ⟦Alterac Valley=Valle d'Alterac⟧! Riferirò le tue gesta ai miei superiori.", "." },
   ["c6803fa04bd53652"] = { "Devi cercare nelle acque delle ⟦Westfall=Marche Occidentali⟧, verso ovest-nordovest rispetto al punto in cui la ⟦Gold Coast Quarry=Cava della Costa d'Oro⟧ incontra la riva. Un'ancora indica dove, più in là, è affondata una barca, giù in profondità. La pressione sott'acqua lì è feroce; nuotare troppo lontano schiaccerà per lo sfinimento anche il nuotatore più forte.\n\nCerca una formazione naturale che ti aiuti, {name}: qui vicino c'è una fessura piena di bolle, che offre a chi nuota in acque profonde l'occasione di riprendere fiato.", "." },
   ["c683cb7bb764f36a"] = { "Il tuo talento supera il mio, amico. Parla con Tarn, qui: la sua conoscenza del cuoio è molto più grande della mia. Di sicuro accoglierebbe volentieri qualcuno in più da istruire.", "." },
   ["c683d939c6e36871"] = { "No! Lasciaci! Non dobbiamo fallire il nostro compito!", "." },

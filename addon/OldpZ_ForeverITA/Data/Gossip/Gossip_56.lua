@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["569e96a13116f5f1"] = { "Muoviti!", "." },
   ["56a97d0c7a04c936"] = { "Ti ringrazio per l'interessamento, ma ho già tutte le bende di lana necessarie per lo sforzo bellico. Ti suggerisco comunque di chiedere in giro: molti qui potrebbero ancora aver bisogno del tuo aiuto.", "." },
   ["56b57bcc5a9d9436"] = { "Che la Luce ti protegga oggi.", "." },
+  ["56be67b9f9e798a5"] = { "{name}, hai contribuito moltissimo alla nostra raccolta di stoffa. Mentre lavoriamo sodo per ricostituire le nostre riserve, un tipo di stoffa resta scarsissimo: la telarunica. Ne abbiamo un bisogno disperato e speriamo che tu possa aiutarci come hai fatto in passato!\n\nSe sei dispost<o/a>, portami tutta la telarunica di cui puoi fare a meno. Per cominciare accetteremo una singola donazione di sessanta pezze, poi vedremo.", "." },
   ["56c3b068052780bd"] = { "Ti prego, accendi questo mentre incanalo.", "." },
   ["56c5c9011dcb09d3"] = { "Se devo insegnarti i segreti dell'evocazione di un servitore infernale, devi distruggere Kroshius e portarmi il nucleo infernale dai suoi resti in fiamme. Questo, però, non è facile come sembra. Kroshius si è quasi del tutto consumato. Devi riaccendere il suo cadavere e risollevarlo dalle macerie. Per farlo, però, dovrai raccogliere alcuni componenti da altre entità demoniache.\n\nIl mio imp, Impsy, ti metterà sulla buona strada.", "." },
   ["56c793390354a581"] = { "Sono qui per l'oro.", "." },

@@ -13,6 +13,7 @@
 {"id": "36462069c74e9166", "field": "text", "en": "Troggs?!  Are the troggs you mention the same as the ones in the world today?", "hash": "36462069c74e9166", "src": "vmangos@13b49dc"}
 {"id": "364778ea4e65ca8c", "field": "text", "en": "I bet Josetta would be more than happy to teach you some new spells.  She is probably up in her room at the Lion's Pride Inn.", "hash": "364778ea4e65ca8c", "src": "vmangos@13b49dc"}
 {"id": "36488dc4ef214598", "field": "text", "en": "Hey Pratt - can you teach me how to make a Wild Leather Vest again?", "hash": "36488dc4ef214598", "src": "vmangos@13b49dc"}
+{"id": "3650e8fdbff02d4d", "field": "text", "en": "Greetings, friend! I have an ample supply of leather and hides, and I know a few techniques I might be willing to share. Interested in doing business?", "hash": "3650e8fdbff02d4d", "src": "collector@1.60.1.70790", "npcs": [248201]}
 {"id": "365810df5b683e41", "field": "text", "en": "What goods have I earned the right to purchase from the Defilers?", "hash": "365810df5b683e41", "src": "vmangos@13b49dc"}
 {"id": "366207c702ac32ad", "field": "text", "en": "All of Nature's might is at my disposal, puny mortals. Let us see which of my many forms it will be that ends your suffering!", "hash": "366207c702ac32ad", "src": "vmangos@13b49dc"}
 {"id": "366450201d61ff57", "field": "text", "en": "%s casually points at the orc target...", "hash": "366450201d61ff57", "src": "vmangos@13b49dc"}
@@ -25,6 +26,7 @@
 {"id": "36bed95a710c5740", "field": "text", "en": "Peace and patience be with you, $n. Remain strong always.", "hash": "36bed95a710c5740", "src": "vmangos@13b49dc"}
 {"id": "36c5bdc348d1ae33", "field": "text", "en": "Miranda, could you please tell me the insignia cost of items that you are offering for adventurers of revered reputation?", "hash": "36c5bdc348d1ae33", "src": "vmangos@13b49dc"}
 {"id": "36cbad5eb4364863", "field": "text", "en": "%s begins tinkering with the goggles before the stone.", "hash": "36cbad5eb4364863", "src": "vmangos@13b49dc"}
+{"id": "36d6dcd2c17d5228", "field": "text", "en": "What is this... fading...", "hash": "36d6dcd2c17d5228", "src": "collector@1.60.1.70888"}
 {"id": "36d8875b35381c87", "field": "text", "en": "Alright, alright! I think I can figure out how to operate this thing...", "hash": "36d8875b35381c87", "src": "vmangos@13b49dc"}
 {"id": "36dcbc2fd140552b", "field": "text", "en": "Kel'Thuzad say to tell you... DIE!", "hash": "36dcbc2fd140552b", "src": "vmangos@13b49dc"}
 {"id": "36dcbf965b885c07", "field": "text", "en": "The caverns below us are a source of strange and wondrous hides, but you must take care if you venture into their depths, $n. Remember that your own skin is far more valuable.", "hash": "36dcbf965b885c07", "src": "vmangos@13b49dc"}

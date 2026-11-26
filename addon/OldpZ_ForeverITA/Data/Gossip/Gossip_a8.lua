@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["a86ecf4ee28adb1c"] = { "Il ⟦Iceblood Graveyard=Cimitero di Brinarossa⟧ è stato conquistato dall'⟦Horde=Orda⟧!", "." },
   ["a87bcb8e3830903d"] = { "Lascia le tue battaglie o le tue commissioni, e guarda la mia incredibile merce! Solo per poco tempo a ⟦Darkshire=Borgoscuro⟧... sia lodata la Luce per questo.", "." },
   ["a88032d6f1245132"] = { "Salute, {name}. Sono ⟦Johnny McWeaksauce=Johnny Salsaforte⟧. Gli sviluppatori mi usano come strumento per svolgere funzioni specifiche a scopo di test. Per questo periodo di test sono impostato per fare due cose precise:\n\n(1) Segnarti come chi ha completato la missione di sintonia di Naxxramas, così da poter accettare la missione successiva, \"Echoes of War\", dal comandante Eligor Araldo dell'Alba. Devi prima completare quella missione per accedere alle missioni del tuo set di armatura Tier 3.\n\n(2) Teletrasportarti a Naxxramas.\n\nDi cosa hai bisogno?", "." },
+  ["a88964c53f94de90"] = { "Mi serve una fiala per assicurarmi che sia davvero l'elisir... Sì... È proprio questo.", "." },
   ["a88abadbc30af46b"] = { "Cos'è questo rumore?", "." },
   ["a88ca7cb776ae16c"] = { "Non abbocca niente....", "." },
   ["a892886186ad4819"] = { "Se tu non parla con Mizzle, tu non diventa re! Parla con Mizzle l'Astuto!", "." },

@@ -31,6 +31,7 @@
 {"id": "9d9d3506eb9f39dd", "field": "text", "en": "The attackers have fled!  Strength and honor to the Horde!", "hash": "9d9d3506eb9f39dd", "src": "vmangos@13b49dc"}
 {"id": "9da4aa503064c765", "field": "text", "en": "Where are those reinforcements from Stormwind?  Heavy Blackrock activity has been reported in the East.", "hash": "9da4aa503064c765", "src": "vmangos@13b49dc"}
 {"id": "9daa02c8c44d949f", "field": "text", "en": "You will not escape your fate, Onyxia. It has been prophesied - a vision resonating from the great halls of Karazhan. It ends now...", "hash": "9daa02c8c44d949f", "src": "vmangos@13b49dc"}
+{"id": "9db5b979f6a63ff3", "field": "text", "en": "Greetings, King Bronzebeard. I am a Skyborne of the High Order. I've been sent by Highlord Bolvar Fordragon to meet you.", "hash": "9db5b979f6a63ff3", "src": "collector@1.60.1.70862", "npcs": [2784]}
 {"id": "9dbeaff96334ea75", "field": "text", "en": "Arathi Basin", "hash": "9dbeaff96334ea75", "src": "vmangos@13b49dc"}
 {"id": "9dbfb9fae0862d65", "field": "text", "en": "Without knowledge of the incantations required to unite the two parts, Lord Vyletongue was unable to use the scepter. However, now that I am free of the curse of Vyletongue's corruption, I will be able to assist you, if you'd like to bring me the two parts -- both the head and the rod of the scepter.", "hash": "9dbfb9fae0862d65", "src": "vmangos@13b49dc"}
 {"id": "9dc469d901560981", "field": "text", "en": "You've come further than many, $n. Respect the elements around you and you shall fare far greater than most.", "hash": "9dc469d901560981", "src": "vmangos@13b49dc"}
@@ -38,11 +39,13 @@
 {"id": "9dcdee345c09313e", "field": "text", "en": "Smoother than and elf, stronger than an orc! No better drinks in all of Stormwind!", "hash": "9dcdee345c09313e", "src": "vmangos@13b49dc"}
 {"id": "9dd21dfb0d72dfdc", "field": "text", "en": "I don't want to be a meal for an ogre! Please save me!", "hash": "9dd21dfb0d72dfdc", "src": "vmangos@13b49dc"}
 {"id": "9dd277c3627eaa01", "field": "text", "en": "Greetings mage.  Shall I provide you with further insight into the world of magic?", "hash": "9dd277c3627eaa01", "src": "vmangos@13b49dc"}
+{"id": "9dd85261b87929c5", "field": "text", "en": "The barriers will not hold for long", "hash": "9dd85261b87929c5", "src": "collector@1.60.1.70938"}
 {"id": "9dd8a6482ef64000", "field": "text", "en": "I require training", "hash": "9dd8a6482ef64000", "src": "vmangos@13b49dc"}
 {"id": "9ddbaea817b296cb", "field": "text", "en": "It remains to be seen if you are ready, young one.  Even the wisest and oldest of druids are never truly ready when their ultimate time of testing comes.$B$BYou have heard my words, and now you must move on.  Heed what I have taught you.  There will be a time when you will have your strength tested.  You must face your foe as the bear would - with strength of body and with strength of heart.  Learn from the fight, young one.  Go... with my blessings.", "hash": "9ddbaea817b296cb", "src": "vmangos@13b49dc"}
 {"id": "9de15a0dc0c25009", "field": "text", "en": "The needle is small, but the thread is strong, and the stitches are fine. Our pact with Thrall and the others will hold. The Horde will not be driven from these lands.", "hash": "9de15a0dc0c25009", "src": "vmangos@13b49dc"}
 {"id": "9de4bd3675a744f7", "field": "text", "en": "Overflowin' with rats! Help a pirate out, matey!", "hash": "9de4bd3675a744f7", "src": "vmangos@13b49dc"}
 {"id": "9dea9bd83cdb549e", "field": "text", "en": "Hmm, it could be that meddler Shaw. I will see what I can discover. Be off with you. I'll contact you again soon.", "hash": "9dea9bd83cdb549e", "src": "vmangos@13b49dc"}
+{"id": "9def862e009a91e7", "field": "text", "en": "<This cultist is dead. Upon close inspection, you notice that he seems to be clutching something to his chest, almost as if he was protecting it.>", "hash": "9def862e009a91e7", "src": "collector@1.60.1.70790", "npcs": [253372]}
 {"id": "9df7db8732faa182", "field": "text", "en": "Ok soldiers, take a break!", "hash": "9df7db8732faa182", "src": "vmangos@13b49dc"}
 {"id": "9dfbde901c6b4144", "field": "text", "en": "%s turns to face you.", "hash": "9dfbde901c6b4144", "src": "vmangos@13b49dc"}
 {"id": "9dfd60a6ba8d79b2", "field": "text", "en": "DARKSHIRE...I HUNGER!!", "hash": "9dfd60a6ba8d79b2", "src": "vmangos@13b49dc"}

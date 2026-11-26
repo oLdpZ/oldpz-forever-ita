@@ -16,6 +16,7 @@
 {"id": "495b338f744b4f32", "field": "text", "en": "I need another set of tools.", "hash": "495b338f744b4f32", "src": "vmangos@13b49dc"}
 {"id": "495f67ce207dbe2a", "field": "text", "en": "%s siphons the energy from the totem and redirects it in the form of an anti-magic pulse.", "hash": "495f67ce207dbe2a", "src": "vmangos@13b49dc"}
 {"id": "496072da3e359a49", "field": "text", "en": "BY FIRE BE PURGED!", "hash": "496072da3e359a49", "src": "vmangos@13b49dc"}
+{"id": "4969c2e40a0680a1", "field": "text", "en": "<The Brazier of Eternal Flame awaits your offering.>", "hash": "4969c2e40a0680a1", "src": "collector@1.60.1.70790", "npcs": [268679]}
 {"id": "4971c2da59ea5f91", "field": "text", "en": "|cffffff00Eastwall Tower has been taken by the Horde!|r", "hash": "4971c2da59ea5f91", "src": "vmangos@13b49dc"}
 {"id": "49725f272722d8bd", "field": "text", "en": "Scream your dying breath!", "hash": "49725f272722d8bd", "src": "vmangos@13b49dc"}
 {"id": "4979177b05e43363", "field": "text", "en": "Not bad, for a beginner! I guess it couldn't hurt for me to show you a few things...", "hash": "4979177b05e43363", "src": "vmangos@13b49dc"}
@@ -32,11 +33,13 @@
 {"id": "49b53774826c51ce", "field": "text", "en": "Bring the Tattered Note to Rau Cliffrunner in Thousand Needles.", "hash": "49b53774826c51ce", "src": "wdb@1.60.1.70245"}
 {"id": "49b72426ab41b58e", "field": "text", "en": "Raaarrrrggghhh!  We come for you!", "hash": "49b72426ab41b58e", "src": "vmangos@13b49dc"}
 {"id": "49b9c272e750dd0c", "field": "text", "en": "Nana always said there was no greater thing in the whole world than a warm, toasty slice of fresh, homemeade cherry pie.", "hash": "49b9c272e750dd0c", "src": "vmangos@13b49dc"}
+{"id": "49bd91a7e6af4164", "field": "text", "en": "Tenaron and Corithras will not fail me again. And you, courier, I give one last chance only because it is your first time getting in my way!", "hash": "49bd91a7e6af4164", "src": "collector@1.60.1.70790"}
 {"id": "49c08fce7bcffaf7", "field": "text", "en": "Glorious, indeed, Maltrake. It looks as if my plan worked perfectly. Wouldn't you say so, mortal?", "hash": "49c08fce7bcffaf7", "src": "vmangos@13b49dc"}
 {"id": "49d6bc106a788afb", "field": "text", "en": "%s disappears into the swamp.", "hash": "49d6bc106a788afb", "src": "vmangos@13b49dc"}
 {"id": "49d70cb91e3182b1", "field": "text", "en": "%s breathes a sigh of relief.", "hash": "49d70cb91e3182b1", "src": "vmangos@13b49dc"}
 {"id": "49da27023461b0a1", "field": "text", "en": "Please do as I instruct you, $n.", "hash": "49da27023461b0a1", "src": "vmangos@13b49dc"}
 {"id": "49e150e92d8dff51", "field": "text", "en": "Welcome to the Amberstill Corral. If you're interested in purchasing a mount, my husband Veron will be more than happy to help you choose just the right beast. If you're looking for adventure, well we sure could use some help around here. . .", "hash": "49e150e92d8dff51", "src": "collector@1.60.1.70790", "npcs": [1265]}
+{"id": "49e3db01a142fb22", "field": "text", "en": "However, it's hard on them when the only family they really have is a handful of stuffy wizards and me.", "hash": "49e3db01a142fb22", "src": "collector@1.60.1.70888"}
 {"id": "49e5578d03825cda", "field": "text", "en": "Train me in the ways of the beast.", "hash": "49e5578d03825cda", "src": "vmangos@13b49dc"}
 {"id": "49e7f9b9be13657f", "field": "text", "en": "Breathe your last!", "hash": "49e7f9b9be13657f", "src": "vmangos@13b49dc"}
 {"id": "49e92c34807026b1", "field": "text", "en": "Make ready for battle, my creations.", "hash": "49e92c34807026b1", "src": "vmangos@13b49dc"}

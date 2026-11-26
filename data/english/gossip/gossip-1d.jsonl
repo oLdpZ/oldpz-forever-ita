@@ -2,6 +2,7 @@
 {"id": "1d0941a5f6086506", "field": "text", "en": "My education is ongoing, and your knowledge surpasses mine. If you wish to learn more you must speak to Me'lynn. She will guide you.", "hash": "1d0941a5f6086506", "src": "vmangos@13b49dc"}
 {"id": "1d10e862cc5c608e", "field": "text", "en": "Elune be praised!  You seek out our Warsong Gulch Battlemaster?  Her name is Aethalas, and she stands ready to greet you near the warrior trainers.", "hash": "1d10e862cc5c608e", "src": "vmangos@13b49dc"}
 {"id": "1d1541ff3eb1b1e9", "field": "text", "en": "%s rolls on the floor laughing.", "hash": "1d1541ff3eb1b1e9", "src": "vmangos@13b49dc"}
+{"id": "1d15e79a64fd665e", "field": "text", "en": "No, Ve'han! Do not do this! You are betraying your oath as a protector of the mountain!", "hash": "1d15e79a64fd665e", "src": "collector@1.60.1.71037"}
 {"id": "1d1800ba52bd789b", "field": "text", "en": "What is there to do on Hallow's End?", "hash": "1d1800ba52bd789b", "src": "vmangos@13b49dc"}
 {"id": "1d193ae61ff09348", "field": "text", "en": "Thanks to the Warchief, even here in the ruins of our former prison, some hope remains, and the Horde rises anew.", "hash": "1d193ae61ff09348", "src": "vmangos@13b49dc"}
 {"id": "1d255aed4582e1b3", "field": "text", "en": "I have no time for you, $r. Continue on your way.", "hash": "1d255aed4582e1b3", "src": "vmangos@13b49dc"}
@@ -19,6 +20,7 @@
 {"id": "1d5c6a4e852cb1f0", "field": "text", "en": "My purpose is to regulate access to the Uldum complex for the Creators.  I allow entry into the compound only when the solicitor exhibits for access the proper sequencing discs.$B$BYour disc set currently does not contain the Plates of Uldum, the primary prerequisite for entry.  Access is not granted unless the Plates of Uldum are present.", "hash": "1d5c6a4e852cb1f0", "src": "vmangos@13b49dc"}
 {"id": "1d5ccab5d719577b", "field": "text", "en": "You want Zamja at Borstan's Firepit on the upper level of The Drag.  Go up the stairs on the left as you enter The Drag from the Valley of Strength.", "hash": "1d5ccab5d719577b", "src": "vmangos@13b49dc"}
 {"id": "1d5da07a687d0910", "field": "text", "en": "Gimme the tiger cub!", "hash": "1d5da07a687d0910", "src": "vmangos@13b49dc"}
+{"id": "1d6793657f7a509e", "field": "text", "en": "Very well, how do you believe that I may be of assistance.", "hash": "1d6793657f7a509e", "src": "collector@1.60.1.70862", "npcs": [221827]}
 {"id": "1d68ee6272716010", "field": "text", "en": "Remember, I need your help to properly channel. I will ask you to aid me several times on our path, so please be ready.", "hash": "1d68ee6272716010", "src": "vmangos@13b49dc"}
 {"id": "1d6d88812e540c56", "field": "text", "en": "Tower Point was taken by the Horde!", "hash": "1d6d88812e540c56", "src": "vmangos@13b49dc"}
 {"id": "1d7170fdc0fe7d03", "field": "text", "en": "%s start pushing each other back and forth.", "hash": "1d7170fdc0fe7d03", "src": "vmangos@13b49dc"}
@@ -26,6 +28,7 @@
 {"id": "1d8262e6b4a0a9cf", "field": "text", "en": "No more play?", "hash": "1d8262e6b4a0a9cf", "src": "vmangos@13b49dc"}
 {"id": "1d89aebebd69b2fc", "field": "text", "en": "I hope that you're here to help us take back Arathi Basin from The Defilers.  What do you say $n?", "hash": "1d89aebebd69b2fc", "src": "vmangos@13b49dc"}
 {"id": "1d8d69574681c6c7", "field": "text", "en": "Let me go get you a set of tools, $n.", "hash": "1d8d69574681c6c7", "src": "vmangos@13b49dc"}
+{"id": "1d8f64e6927547eb", "field": "text", "en": "Some among us must leave this plane of existence. We must travel to Azeroth to rediscover what we've lost, and bring that knowledge back as a tool to save our home.", "hash": "1d8f64e6927547eb", "src": "collector@1.60.1.70790"}
 {"id": "1d93073e4d28d015", "field": "text", "en": "What goods have I earned the right to purchase from the League of Arathor?", "hash": "1d93073e4d28d015", "src": "vmangos@13b49dc"}
 {"id": "1da18296ce265106", "field": "text", "en": "Aber?  Is that you...?  Oh...I'm so hungry, Aber!  SO HUNGRY!!", "hash": "1da18296ce265106", "src": "vmangos@13b49dc"}
 {"id": "1da4910b947eb570", "field": "text", "en": "Here to visit the family?  Die, fool!", "hash": "1da4910b947eb570", "src": "vmangos@13b49dc"}
@@ -43,5 +46,7 @@
 {"id": "1dd4ae0a97be2fb2", "field": "text", "en": "What was that noise? It sounded like a roar.", "hash": "1dd4ae0a97be2fb2", "src": "vmangos@13b49dc"}
 {"id": "1dd57f161bc69942", "field": "text", "en": "You're never going to stop coming after me, are you?  Fine, but you won't take me down without a fight!", "hash": "1dd57f161bc69942", "src": "vmangos@13b49dc"}
 {"id": "1dd5bd420fc3b22d", "field": "text", "en": "I can sense it now, $n. Ashenvale lies down this path.", "hash": "1dd5bd420fc3b22d", "src": "vmangos@13b49dc"}
+{"id": "1ddbf80a4e335ac3", "field": "text", "en": "Move! Keep piling.", "hash": "1ddbf80a4e335ac3", "src": "collector@1.60.1.70938"}
 {"id": "1de08fdd54d62f1e", "field": "text", "en": "I come from the land down under... where women plague and men sunder.", "hash": "1de08fdd54d62f1e", "src": "vmangos@13b49dc"}
+{"id": "1deec6dc64282f28", "field": "text", "en": "Cooking on Zephras may seem difficult to the untrained eye, but I enjoy the creation of every dish. Even though our dwindling home is lacking many of our traditional kaldorei ingredients, it has been fun to create new variations of the recipes of our ancestors.$B$BI hope that no matter where the winds take you, these recipes remind you of home.", "hash": "1deec6dc64282f28", "src": "collector@1.60.1.70790", "npcs": [257006]}
 {"id": "1dfbf58477bed65e", "field": "text", "en": "Greetings, $c - I'm a Commendation Officer acting on behalf of the Undercity.  It is my duty to assist adventurers who have received Horde Commendation Signets.$B$BI accept signets in different quantities, but the most beneficial exchange for you is to hand in a set of ten at once.  I will enter your deeds into our records when you hand in your signets.  As a result, you will earn recognition from the Undercity for your duty and service.\n", "hash": "1dfbf58477bed65e", "src": "vmangos@13b49dc"}

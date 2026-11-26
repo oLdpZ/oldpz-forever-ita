@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["9b2c7cf59a53ebf6"] = { "Sono <pronto/pronta>!", "." },
   ["9b2c7d029a53ec03"] = { "Ci sono.", "." },
   ["9b2eb221b266e8f8"] = { "Padrone, salvami!!", "." },
+  ["9b3492ba87ce9590"] = { "Ah, una delle nostre raccolte più preziose. Questa manca da secoli.", "." },
   ["9b36804a0807cff0"] = { "Posso insegnarti i segreti di ⟦Kodo Riding=Cavalca-Kodo⟧, purché tu abbia abbastanza oro per pagare la lezione!", "." },
   ["9b39bc50d9e2d5a6"] = { "La raccolta e la conoscenza delle erbe sono la specialità di ⟦Firodren Mooncaller=Firodren Vocaluna⟧. Cercalo nei Giardini del Tempio, nella zona sud-occidentale di Darnassus.", "." },
   ["9b4c6ceab2822863"] = { "Abbiamo superato il passo! Ora ci aspetta la palude...", "." },

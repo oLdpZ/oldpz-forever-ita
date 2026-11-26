@@ -26,6 +26,8 @@
 {"id": "ae924ce29bbfc50e", "field": "text", "en": "We cannot take care of all the threats in this area alone. We could use another fighting hand, $n.", "hash": "ae924ce29bbfc50e", "src": "vmangos@13b49dc"}
 {"id": "ae94e081ac11ecc0", "field": "text", "en": "We're pretty far from anything I'd call civilization here, at least until the Horde can send us more reinforcements. You must really like working with leather.", "hash": "ae94e081ac11ecc0", "src": "vmangos@13b49dc"}
 {"id": "ae981e63948b1956", "field": "text", "en": "A thunderous voice bellows from the stone...$B$BWhat is this?  I sense a little cultist scurrying about!  Run along, vermin, or face the wrath of the lords of the Council!", "hash": "ae981e63948b1956", "src": "vmangos@13b49dc"}
+{"id": "aea293cd1d28f785", "field": "text", "en": "<The horse's calm demeanor and even-keeled temperament evident in its stance.>", "hash": "aea293cd1d28f785", "src": "collector@1.60.1.70862", "npcs": [276786]}
+{"id": "aea6fa8d9d756074", "field": "text", "en": "We will not stop until we are able to discover what went wrong. We will find the strength we need to call the spirits back to us.", "hash": "aea6fa8d9d756074", "src": "collector@1.60.1.70790"}
 {"id": "aeaf020f23181f41", "field": "text", "en": "Yes, $c? Are you reporting in?", "hash": "aeaf020f23181f41", "src": "vmangos@13b49dc"}
 {"id": "aeb495a6b903187f", "field": "text", "en": "Let me have another one, Langston.", "hash": "aeb495a6b903187f", "src": "vmangos@13b49dc"}
 {"id": "aeb9962bed7dbaba", "field": "text", "en": "Be sure to catch all the amazing sights and wonders of the Darkmoon Faire when it comes to town!", "hash": "aeb9962bed7dbaba", "src": "vmangos@13b49dc"}
@@ -33,6 +35,7 @@
 {"id": "aece2f49d5584b76", "field": "text", "en": "Hm... yes, I do have a recipe you might find useful.  Let me teach you!", "hash": "aece2f49d5584b76", "src": "vmangos@13b49dc"}
 {"id": "aed0a54bb5658151", "field": "text", "en": "In life, I focused my energies on healing others. Let us see in death how much pain I can cause!", "hash": "aed0a54bb5658151", "src": "vmangos@13b49dc"}
 {"id": "aed26b0faff2971e", "field": "text", "en": "Hrmmm...", "hash": "aed26b0faff2971e", "src": "vmangos@13b49dc"}
+{"id": "aed68b159600c6ac", "field": "text", "en": "He'll need a while to recover. Go back to the lumber camp and tell Foreman Turner the situation here's been handled. I'll stay with Curly in the meantime.", "hash": "aed68b159600c6ac", "src": "collector@1.60.1.71037"}
 {"id": "aed93e2e0d387838", "field": "text", "en": "It was all I could do to feign death as the corpses of the Scourge piled upon me. There was darkness and only the muffled sounds of the battle above me. The clashing of iron, the gnashing and grinding... gruesome, terrible sounds. And then there was silence. He called to me! \"Fairbanks! Fairbanks where are you? Talk to me Fairbanks!\" And then came the sound of incredulousness. The bite of betrayal, $r...", "hash": "aed93e2e0d387838", "src": "vmangos@13b49dc"}
 {"id": "aedcb130117e9754", "field": "text", "en": "Where is Elder Skyseer?", "hash": "aedcb130117e9754", "src": "vmangos@13b49dc"}
 {"id": "aede8afc27a36bd2", "field": "text", "en": "The Scarlet Crusade shall smite the wicked and drive evil from these lands!", "hash": "aede8afc27a36bd2", "src": "vmangos@13b49dc"}

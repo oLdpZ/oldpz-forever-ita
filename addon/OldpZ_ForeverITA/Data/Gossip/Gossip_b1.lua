@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["b1d72bf46d17dfdf"] = { "Va bene, va bene... mi alzo.", "." },
   ["b1d89e3f2e8cc144"] = { "⟦Davil Lightfire=Davil Fiocafiamma⟧ ha ceduto alle ferite!", "." },
   ["b1dc9ed25b8e4d25"] = { "Mettere al sicuro le nostre risorse ad Arathi è un compito importante! Hai fatto un buon lavoro, {name}.", "." },
+  ["b1e0632fd251f8d0"] = { "Sì, questo funzionerà. Basta infilare qui, rimboccare qui... eh eh, funzionerà alla perfezione! <Un ampio sorriso illumina il volto del goblin incatenato.>\n\nEcco fatto, sei a posto. Ricorda: non è l'oggetto più solido del mondo. Avrai dieci minuti di utilizzo prima che vada a pezzi, e poi non ingannerai più nessuno! Prova a usarlo appena prima di avvicinarti a lui, e ricorda... gli farà credere soltanto che TU sei un alleato, non i tuoi compagni di gruppo!", "." },
   ["b1e0e1a6cb7cc7ce"] = { "No! Stammi lontano! Aiuto!!", "." },
   ["b1e239feb6d1bafd"] = { "Sono caduti in troppi, <sacerdote/sacerdotessa>. Devi concentrarti!", "." },
   ["b1e28e10f0881e99"] = { "Il mondo patirà crudeltà indicibili sotto il mio regno.", "." },

@@ -22,6 +22,7 @@
 {"id": "57519a901c6fb1ff", "field": "text", "en": "A being of great power has awoken.", "hash": "57519a901c6fb1ff", "src": "vmangos@13b49dc"}
 {"id": "57561b5ecb530a5f", "field": "text", "en": "Was this fated, Windsor? If it was death that you came for, then the prophecy has been fulfilled. May your consciousness rot in the Twisting Nether. Finish the rest of these meddlesome insects, children. Bolvar, you have been a pleasurable puppet.", "hash": "57561b5ecb530a5f", "src": "vmangos@13b49dc"}
 {"id": "575ce926b1a7e2a7", "field": "text", "en": "We have done it, $N!", "hash": "575ce926b1a7e2a7", "src": "vmangos@13b49dc"}
+{"id": "577a8e9b32ac9c26", "field": "text", "en": "Move! We need more!", "hash": "577a8e9b32ac9c26", "src": "collector@1.60.1.70938"}
 {"id": "577c0fab8faed76f", "field": "text", "en": "If ye ask me, I think Grif spends a little too much time with the animals.  Still, nobody else knows the hunter's path quite like he does.  Look for him outside the smithy in Kharanos.", "hash": "577c0fab8faed76f", "src": "vmangos@13b49dc"}
 {"id": "577c475f46dc95ae", "field": "text", "en": "... A message from Banehollow?  What message is that?  Does he have need of his great advisor and servant, Ulathek?  Does he require my presence?", "hash": "577c475f46dc95ae", "src": "vmangos@13b49dc"}
 {"id": "578114aaa1d35b59", "field": "text", "en": "I've not seen finer armor made in many years $n. Not since I trained under Grumnus Steelshaper in the Great Forge. I bet he could teach ye things about makin armor that would spark yer interest.", "hash": "578114aaa1d35b59", "src": "vmangos@13b49dc"}
@@ -33,6 +34,7 @@
 {"id": "57a2e02b459956ab", "field": "text", "en": "If you figure out any way to improve the device let me know!", "hash": "57a2e02b459956ab", "src": "vmangos@13b49dc"}
 {"id": "57ad3b36a2e64b72", "field": "text", "en": "Seek absolution, Eranikus. All will be forgiven...\n", "hash": "57ad3b36a2e64b72", "src": "vmangos@13b49dc"}
 {"id": "57b00b9eb596502c", "field": "text", "en": "Hey Pratt - can you teach me again how to make a Wild Leather Vest again?", "hash": "57b00b9eb596502c", "src": "vmangos@13b49dc"}
+{"id": "57b1f92f3824477c", "field": "text", "en": "Remind me again what is happening on Zephras Isle?", "hash": "57b1f92f3824477c", "src": "collector@1.60.1.70790", "npcs": [251902, 251903]}
 {"id": "57b4ce45306670de", "field": "text", "en": "%s collapses and begins to smolder.", "hash": "57b4ce45306670de", "src": "vmangos@13b49dc"}
 {"id": "57b8c2b6d8aace1b", "field": "text", "en": "I require all my students to prove their dedication. Now it's your turn...", "hash": "57b8c2b6d8aace1b", "src": "vmangos@13b49dc"}
 {"id": "57c3ef93235dba72", "field": "text", "en": "This looks like the perfect place for a nap...", "hash": "57c3ef93235dba72", "src": "vmangos@13b49dc"}
@@ -40,5 +42,6 @@
 {"id": "57cfe5ac3fbbb4c4", "field": "text", "en": "Looking to learn how to work an anvil and hammer, eh?  Karn Stonehoof can teach you how.  He has a smithy set up on the lower rise by the pond.", "hash": "57cfe5ac3fbbb4c4", "src": "vmangos@13b49dc"}
 {"id": "57dadc6ab3ba5733", "field": "text", "en": "My knowledge of night elf lore is limited, but it is said long ago--back when the night elves still held sacred the art of arcane spell casting--that Azshara was the greatest of their kind. A beautiful woman they named queen. Sadly, it was her addiction to the arcane that would one day be the catalyst for the most devastating events in this world's history.", "hash": "57dadc6ab3ba5733", "src": "vmangos@13b49dc"}
 {"id": "57e27109658342e2", "field": "text", "en": "The land has been good to our people, $c. We must be thankful for our good fortune.", "hash": "57e27109658342e2", "src": "vmangos@13b49dc"}
+{"id": "57e56f84369b40d6", "field": "text", "en": "There is no escape for you. The Crusade shall destroy all who carry the scourge's taint.", "hash": "57e56f84369b40d6", "src": "collector@1.60.1.70938"}
 {"id": "57e5a57291a8003b", "field": "text", "en": "Welcome back, $n. Have I mentioned how good it is to have someone to talk to?$B$BAlright then, let's get down to business. What's next that we have to do?", "hash": "57e5a57291a8003b", "src": "vmangos@13b49dc"}
 {"id": "57fda7a3bdf933a3", "field": "text", "en": "The Dun Baldar South Bunker protects the south and east flanks of Dun Baldar.$B$BIt is controlled by neither side.", "hash": "57fda7a3bdf933a3", "src": "vmangos@13b49dc"}

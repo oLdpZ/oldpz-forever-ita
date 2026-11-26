@@ -21,6 +21,7 @@
 {"id": "b38f53df7f72a691", "field": "text", "en": "Stalagg kill!", "hash": "b38f53df7f72a691", "src": "vmangos@13b49dc"}
 {"id": "b391a05cb38301ad", "field": "text", "en": "It was quite a haul, but now I can load up on supplies for the trip back into the Crater.  I should be able to unload some of this exotic cargo as well.", "hash": "b391a05cb38301ad", "src": "vmangos@13b49dc"}
 {"id": "b39d67a2a621fb12", "field": "text", "en": "Freshly baked bread for sale!", "hash": "b39d67a2a621fb12", "src": "vmangos@13b49dc"}
+{"id": "b3a4ccc89a003ec1", "field": "text", "en": "Yes! Yes! It is by my will that the way to Zephras is open to you! Bring me before your Windlord so that he may know who was the herald of his glory!", "hash": "b3a4ccc89a003ec1", "src": "collector@1.60.1.70790"}
 {"id": "b3a736fe7a9d92c0", "field": "text", "en": "Become a mentor for one of our orphans during the Week of the Wardens!  Huzzah!\n", "hash": "b3a736fe7a9d92c0", "src": "vmangos@13b49dc"}
 {"id": "b3a7a9e99d936f73", "field": "text", "en": "I've been to Ironforge before.  It smells funny there.", "hash": "b3a7a9e99d936f73", "src": "vmangos@13b49dc"}
 {"id": "b3a86e23d6ab3ccd", "field": "text", "en": "I am listening, Demitrian.", "hash": "b3a86e23d6ab3ccd", "src": "vmangos@13b49dc"}
@@ -38,3 +39,4 @@
 {"id": "b3e192af0a2a32f8", "field": "text", "en": "Greetings, I am Elaadrin Evengale, the current Supreme Magister of the High Order. How can I help you?", "hash": "b3e192af0a2a32f8", "src": "forever-vo@025070f", "npcs": [252475]}
 {"id": "b3e3d9e84bd033bc", "field": "text", "en": "You will keep us safe from the evil mistress, yes!", "hash": "b3e3d9e84bd033bc", "src": "vmangos@13b49dc"}
 {"id": "b3e786d0a7b69aaf", "field": "text", "en": "I first set up shop in the Magic Quarter, but it was pretty noisy there. This is a definite improvement, barring a few persistent students who still track me down, despite the fact that I've relocated.", "hash": "b3e786d0a7b69aaf", "src": "vmangos@13b49dc"}
+{"id": "b3f20144398264a3", "field": "text", "en": "I'd like to speak about something else.", "hash": "b3f20144398264a3", "src": "collector@1.60.1.70938", "npcs": [4722]}

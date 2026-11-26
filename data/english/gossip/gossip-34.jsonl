@@ -4,6 +4,7 @@
 {"id": "34059b9403754895", "field": "text", "en": "Ha! You ain't got what it takes... yet! Come back to me after you've learned a few things!", "hash": "34059b9403754895", "src": "vmangos@13b49dc"}
 {"id": "34063272f2f755bf", "field": "text", "en": "You will talk eventually.  You might as well spill it now.", "hash": "34063272f2f755bf", "src": "vmangos@13b49dc"}
 {"id": "340bc2bd88f1f7fc", "field": "text", "en": "Interesting... Now this is more than I expected. Delicious...", "hash": "340bc2bd88f1f7fc", "src": "vmangos@13b49dc"}
+{"id": "340d6d808b488d80", "field": "text", "en": "Please do not touch the vials unless you intend to purchase one.$B$BFingerprints ruin the value, you see.", "hash": "340d6d808b488d80", "src": "collector@1.60.1.70790", "npcs": [248196]}
 {"id": "340db6000240ec6d", "field": "text", "en": "Warlocks, eh.  Well, you didn't hear it from me, but I've heard rumors that those types gather at a bar called the Slaughtered Lamb in the Mage Quarter.  ", "hash": "340db6000240ec6d", "src": "vmangos@13b49dc"}
 {"id": "3414fac82d57fdc9", "field": "text", "en": "I've made no mistakes.", "hash": "3414fac82d57fdc9", "src": "vmangos@13b49dc"}
 {"id": "341bcd322cb1c2ae", "field": "text", "en": "Thank you for freeing me, my brother, and all of you! We can finally rest in peace now.", "hash": "341bcd322cb1c2ae", "src": "vmangos@13b49dc"}
@@ -12,14 +13,18 @@
 {"id": "34211904b49c1e32", "field": "text", "en": "Step right up!  Get your red hot wings right here!", "hash": "34211904b49c1e32", "src": "vmangos@13b49dc"}
 {"id": "34211e322dab4d53", "field": "text", "en": "You will be ok, Awbee. Your assailants have been terminated.", "hash": "34211e322dab4d53", "src": "vmangos@13b49dc"}
 {"id": "3425da563fcb33b7", "field": "text", "en": "%s's laughter trails off...", "hash": "3425da563fcb33b7", "src": "vmangos@13b49dc"}
+{"id": "342f677df94e4d3b", "field": "text", "en": "<A faint whirring sound can be heard coming from underneath the construct's metal armor plates. The wind powering this machine is present but is listless and only faintly churning. You don't need to know much about air constructs to know that this unit is clearly not in good repair.>", "hash": "342f677df94e4d3b", "src": "collector@1.60.1.70790", "npcs": [256076]}
 {"id": "34309a001085cfe3", "field": "text", "en": "I will read the words carved into the stone, and you must find a way to light it.", "hash": "34309a001085cfe3", "src": "vmangos@13b49dc"}
 {"id": "3434132e025ab68f", "field": "text", "en": "Who dares interfere with the Sons of Arugal?", "hash": "3434132e025ab68f", "src": "vmangos@13b49dc"}
+{"id": "34364a71841be7fb", "field": "text", "en": "The flora and fauna of Shadowglen is a testament to our talents at working with nature. It is an honor to bear witness to our grand achievement.", "hash": "34364a71841be7fb", "src": "collector@1.60.1.70959", "npcs": [2082]}
 {"id": "34392e088a20b537", "field": "text", "en": "Eat this, my daughter.  It will help you feel better.", "hash": "34392e088a20b537", "src": "vmangos@13b49dc"}
 {"id": "34480b3ff3fce9bb", "field": "text", "en": "The Dun Baldar North Bunker protects the eastern entrance to Dun Baldar.$B$BIt is controlled by neither side.", "hash": "34480b3ff3fce9bb", "src": "vmangos@13b49dc"}
+{"id": "3448e1f183f53032", "field": "text", "en": "Greetings and well met, $N! Your arrival is timely, and we here at the Durotar Supply and Logistics company are always in need of new contractors.$B$BIf you are someone with a knack for gathering useful materials or the skills to craft something from scratch, you have a place here.$B$BPlease let me know if you have any questions.", "hash": "3448e1f183f53032", "src": "collector@1.60.1.70790", "npcs": [256388]}
 {"id": "344c960bb713b210", "field": "text", "en": "I wanna see the Mage Tower.", "hash": "344c960bb713b210", "src": "vmangos@13b49dc"}
 {"id": "344dd3614d79d586", "field": "text", "en": "Isillien!", "hash": "344dd3614d79d586", "src": "vmangos@13b49dc"}
 {"id": "344f58a29e31d1ea", "field": "text", "en": "Remember when Danath gathered all the mercenaries of Stormwind together and we marched to fight at Nethergarde?", "hash": "344f58a29e31d1ea", "src": "vmangos@13b49dc"}
 {"id": "34511cbb35947a7f", "field": "text", "en": "If you think you have the strength to pound good metal into weapons and armor for the Horde look for Dwukk next to the heated forge in the northwest corner of Razor Hill.", "hash": "34511cbb35947a7f", "src": "vmangos@13b49dc"}
+{"id": "34525da9f8237cf9", "field": "text", "en": "My oath binds me to this place. What brings you here, to this light-forsaken place?", "hash": "34525da9f8237cf9", "src": "collector@1.60.1.70862", "npcs": [276110]}
 {"id": "3453250b67e1fb6f", "field": "text", "en": "Lookin' to fish? Then you'll need the proper tools.", "hash": "3453250b67e1fb6f", "src": "forever-vo@025070f", "npcs": [8508]}
 {"id": "345a0be31d7728f7", "field": "text", "en": "My strength wanes, mortal. I have done as promised, the way is clear. I now return to whence I came.", "hash": "345a0be31d7728f7", "src": "vmangos@13b49dc"}
 {"id": "346a238eddc1a559", "field": "text", "en": "Need some supplies?", "hash": "346a238eddc1a559", "src": "vmangos@13b49dc"}
@@ -43,6 +48,7 @@
 {"id": "34c43ab65c5391b9", "field": "text", "en": "All is gathered, $c. All is being transported for final preparation to Silithus and should arrive within a day. All of our combined forces await the $g hero : heroine; that will complete the reunification of the Scepter of the Shifting Sands, ring the gong and begin the Ahn'Qiraj War.", "hash": "34c43ab65c5391b9", "src": "vmangos@13b49dc"}
 {"id": "34c60ac7e6f31b82", "field": "text", "en": "I do hope they stay alive long enough for me to... introduce myself.", "hash": "34c60ac7e6f31b82", "src": "vmangos@13b49dc"}
 {"id": "34c81a80380e08aa", "field": "text", "en": "Tiny $C!  You are no match for the Blackrock Clan!", "hash": "34c81a80380e08aa", "src": "vmangos@13b49dc"}
+{"id": "34ca4577c3dd88a9", "field": "text", "en": "POWER RESTORED. READY TO RESUME FUNCTION.", "hash": "34ca4577c3dd88a9", "src": "collector@1.60.1.70790"}
 {"id": "34cb5dbb2a9dced0", "field": "text", "en": "Heeeeeeeeeeeeellllllllllllllllllllllllp!!!", "hash": "34cb5dbb2a9dced0", "src": "vmangos@13b49dc"}
 {"id": "34d3726877f49085", "field": "text", "en": "SMOTTS!  HEY, SMOTTS!!  COME OUT AND PLAY!", "hash": "34d3726877f49085", "src": "vmangos@13b49dc"}
 {"id": "34e6098a931984f4", "field": "text", "en": "Thank you again, $n.  This rare earth will be very helpful in my experiments.", "hash": "34e6098a931984f4", "src": "vmangos@13b49dc"}
@@ -52,5 +58,6 @@
 {"id": "34f6192db660371e", "field": "text", "en": "Alright you sorry sacks of bones. Let's see what you've got. Strike your opponent, and don't stop till I say so.", "hash": "34f6192db660371e", "src": "vmangos@13b49dc"}
 {"id": "34f7f9667fb1c192", "field": "text", "en": "They know how to throw a party here in Moonglade.  Who would have thought so?", "hash": "34f7f9667fb1c192", "src": "vmangos@13b49dc"}
 {"id": "34f94fe620958064", "field": "text", "en": "Take me to Northpass Tower.", "hash": "34f94fe620958064", "src": "vmangos@13b49dc"}
+{"id": "34f981787f52033b", "field": "text", "en": "Carved by mysterious means into an unknown material, this stone's prominent mark is the element of water.", "hash": "34f981787f52033b", "src": "collector@1.60.1.70888"}
 {"id": "34fa2bd9c25f28ba", "field": "text", "en": "$n claims the farm!  If left unchallenged, the Alliance will control it in 1 minute!", "hash": "34fa2bd9c25f28ba", "src": "vmangos@13b49dc"}
 {"id": "34fc62df0abdd1ec", "field": "text", "en": "You won't find better prices anywhere!", "hash": "34fc62df0abdd1ec", "src": "vmangos@13b49dc"}

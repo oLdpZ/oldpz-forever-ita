@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["3b0ab5c67453f7fb"] = { "Le radici e le felci parlano bene di te, piccol<o/a>. Ho molti nomi, ma rispondo a pochi. Tu puoi chiamarmi Rethiel.\n\nE devi ascoltare... perché queste terre piangono per ferite infette, e io ti affido il compito di guarirle.", "." },
   ["3b0b244bd6b66153"] = { "Ce l'abbiamo fatta! Vittoria all'⟦Alliance=Alleanza⟧!", "." },
+  ["3b0ca232fa1dda87"] = { "{name}, sei tornat<o/a>! Sei riuscit<o/a> a cavartela con Merideth Carlson e con ⟦Tendris Warpwood=Tendris Legnotorto⟧? Sinceramente, a volte non so quale dei due sia la minaccia peggiore...", "." },
   ["3b102456f3892c77"] = { "Interessante, continua, per favore.", "." },
   ["3b1b4da7b982c88f"] = { "Vorrei parlare con gli spiriti, Tiev.", "." },
   ["3b1ba3f2dc3097c0"] = { "I Thunderbrew gestiscono un'ottima locanda a Kharanos che porta il loro nome. Fermati per una pinta e un po' di riposo.", "." },
@@ -22,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["3b657590c0c3982c"] = { "Meraviglioso. Semplicemente meraviglioso. Sei un'ispirazione per tutti noi, {name}.", "." },
   ["3b65aafc6366e9f3"] = { "Tu! {race}! Vieni qui. <grugnito>\n\nIl tempo stringe, e la mia fine <grugnito> è vicina. ⟦Mangletooth=Squarciadenti⟧ vincerà, vedrai. <grugnito>\n\nLa mia cattura può ancora aiutare <grugnito> il mio popolo. La tribù dei ⟦Razormane=Chiomaguzza⟧ è più potente dei Mantotergo!\n\nL'⟦Horde=Orda⟧ vuole scoprire chi guida le incursioni contro la sua gente. Tu <grugnito> aiuterai ⟦Mangletooth=Squarciadenti⟧ in cambio delle informazioni che solo io conosco. ⟦Mangletooth=Squarciadenti⟧ può aiutarti! <grugnito> Ma tu devi aiutare ⟦Mangletooth=Squarciadenti⟧.", "." },
   ["3b667ec322161c3a"] = { "Sto scomparendo da {name}.", "." },
+  ["3b67906927588d17"] = { "È proprio ciò che mi serve. Ecco, prendi questi unguenti per piante e usali per strappare ⟦Felwood=Vilbosco⟧ alla corruzione. Dobbiamo perseverare, {name}!", "." },
   ["3b7adc87be6324a3"] = { "Lo giuro... se Quint prova ancora una volta a infilarmi addosso un verme da pesca, gli abbatto l'albero con la mia spada non poi così arrugginita.", "." },
   ["3b7e7e09b4433835"] = { "E l'ha fatto?", "." },
   ["3b7e94ab95396667"] = { "Esatto. Hai ascoltato! Questo pesciolino è davvero una creatura terribile, opera mia. Quando mi rilasso mi piace pensare ai pescatori sfortunati che si sono imbattuti in questo pesciolino e sono stati divorati in un boccone. Scommetto che sono rimasti piuttosto sorpresi!\n\n<Azuregos ride.>", "." },

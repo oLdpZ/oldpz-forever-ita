@@ -54,4 +54,5 @@ WFJ.Data.add("gossip", {
   ["77e8c915ca25b77c"] = { "{name}, ho le informazioni che cerchi...", "." },
   ["77effe627ae0f9ed"] = { "Capitolo sul ⟦Frostwhisper's Embalming Fluid=Fluido per Imbalsamazioni di Soffiogelo⟧.", "." },
   ["77fcc04e2a64a90f"] = { "Cosa vuol dire «zug zug»?", "." },
+  ["77fdc05ec9456038"] = { "Questo... be', è esattamente ciò che mi serviva. Sei <un/una> {class} piuttosto pien<o/a> di risorse, eh?\n\nBene, allora, finiamo questa bardatura per te!", "." },
 })

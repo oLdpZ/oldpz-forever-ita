@@ -40,6 +40,7 @@ WFJ.Data.add("gossip", {
   ["15cc7176ac63714a"] = { "Se lo sapessi, credo che la vita qui su Zephras sarebbe molto, molto più facile. Tante delle nostre lotte e dei nostri conflitti ruotano proprio intorno a quel mistero.\r\n\nApprezzo la tua curiosità sull'argomento, ma temo che per oggi non abbia altro da dire.", "." },
   ["15d12bbc1a6230b2"] = { "Cos'è una \"fondazione di costruzione resiliente\"?", "." },
   ["15d1c5135e747c26"] = { "Ti sei <perso/persa>?", "." },
+  ["15d8c7201fe114f0"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi del Valore in cambio del nuovo Elmo dell'Eroismo e del nuovo ⟦Breastplate of Heroism=Pettorale Corazzato dell'Eroismo⟧?", "." },
   ["15ddcadd80453181"] = { "Questa terra appartiene ai ⟦Dark Iron Dwarves=Nani Ferroscuro⟧. Preparati a vedere l'aldilà, {class}!", "." },
   ["15e55a5b8b0208f3"] = { "Incredibile! Ha funzionato! {name}, ho la tua armatura.", "." },
   ["15e560ac5d22dc38"] = { "Hai già ucciso Ran, amico mio?\n\nNemmeno gli Elfi della Notte meritano davvero la sua furia. Il suo odio brucia ancora più forte del mio, ma la sua mente non gli appartiene più. È una minaccia per tutte le creature naturali di questa foresta.", "." },

@@ -6,6 +6,7 @@ WFJ.Data.add("gossip", {
   ["c1063221546e3be3"] = { "Allora devi parlare con Osborne. A ⟦Stormwind=Roccavento⟧ non c'è maestro delle arti furtive migliore di lui. Cercalo nella Città Vecchia.", "." },
   ["c11cfefd5874bcb5"] = { "Sì, subito, mamma!", "." },
   ["c11eacf43d2e2c82"] = { "La mia fede guida le mie azioni, {race}. So che Ivus verrà.", "." },
+  ["c129794c8f0b10d2"] = { "<Ironus è impegnato a impilare monete d'oro in ordinate pilette.>", "." },
   ["c13766548658c2f4"] = { "Noi, l'⟦Alliance=Alleanza⟧, trionferemo!", "." },
   ["c1386a7d03d5eb5a"] = { "Non sono qui a insegnare ai poppanti appena usciti dalla culla. Non hai neanche lontanamente l'abilità che pretendo dai miei allievi. Anzi, sei <un/una> <ragazzo/ragazza> che fa pena, e ti pregherei di non restare lì a blaterare.", "." },
   ["c14030101bc1bad2"] = { "La vostra prigione è nostra!", "." },

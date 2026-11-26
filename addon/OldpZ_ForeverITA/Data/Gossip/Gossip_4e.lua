@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["4e733c0fa71de317"] = { "Non credo che tu voglia imparare qualcosa che posso insegnarti. Faresti meglio a cercare un istruttore di {class} che ti aiuti.", "." },
   ["4e7486cb0640e50d"] = { "Fate largo! Lasciateli passare!", "." },
   ["4e75b2cecea6222c"] = { "Sei qui per imparare? Molto bene. Immagino che, se ti istruisco, non potrai fare molto male ai nostri alleati. Basta che tu riesca davvero a fare male ai nostri nemici.", "." },
+  ["4e769c4f51b26569"] = { "Come da accordi, sei pront<o/a> a consegnare i tuoi pezzi degli Elementi in cambio della nuova Maschera dei Cinque Tuoni e della nuova ⟦Vest of The Five Thunders=Maglia dei Cinque Tuoni⟧?", "." },
   ["4e833f4d3decb2f7"] = { "Vorrei inserire il mio codice e-coupon per vincere l'oggetto virtuale.", "." },
   ["4e84e824ec48da20"] = { "AIUTO! SONO VENUTI DEGLI ASSASSINI A UCCIDERMI!", "." },
   ["4e86aee35427155d"] = { "Credo che agli spiriti tu piaccia più di me: io non ho ancora sentito il loro richiamo, ma tu sembri aver appreso bene le loro lezioni. Va' a parlare con Karn, sarà entusiasta di vedere qualcuno che li sente come lui.", "." },

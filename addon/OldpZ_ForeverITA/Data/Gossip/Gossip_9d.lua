@@ -27,6 +27,7 @@ WFJ.Data.add("gossip", {
   ["9d6a4f43672db88a"] = { "Raccontami una storia, John.", "." },
   ["9d6fa6e0befb6685"] = { "Oh, hai ancora un mucchio di cose da imparare. Ti insegnerei tutto se potessi, ma sto ancora imparando anch'io! Perché non parli con Trixie Quickswitch a ⟦Ironforge=Forgiardente⟧? Ti aiuterà a proseguire la tua formazione!", "." },
   ["9d6fe8bb04f342d9"] = { "Tra i colori, un sentiero.\n\nAttraversalo in un lampo di luce.\n\nDall'acqua, riemergi.", "." },
+  ["9d7a3c307695a6b5"] = { "Se hai con te un Rilevatore Cenariano mentre estrai minerali a ⟦Felwood=Vilbosco⟧, potrai vedere il Vetriolo Corrotto che contamina un filone di metallo grezzo. So come purificare quel vetriolo e trasformarlo in un reagente che serve a preparare l'Unguento per Piante Cenariano. Poi userai quell'unguento sulle piante da salvare che troverai nella natura.\n\nSe hai raccolto del Vetriolo Corrotto, ti darò un po' di Unguento per Piante Cenariano che ho già preparato.", "." },
   ["9d7e67886611fdad"] = { "Non allontanarti troppo. Di sicuro ce ne sono altri là fuori.", "." },
   ["9d83db4e0ac26a41"] = { "Un applauso per {name}!", "." },
   ["9d849b0f30a299ea"] = { "Non temere! Ogni destino può essere svelato da chi conosce la via.", "." },

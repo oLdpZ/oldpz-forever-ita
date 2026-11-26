@@ -8,10 +8,12 @@
 {"id": "3c2891460f4e74d1", "field": "text", "en": "Khara hums an old dwarven tune while she cooks.", "hash": "3c2891460f4e74d1", "src": "vmangos@13b49dc"}
 {"id": "3c3069d6e4586916", "field": "text", "en": "Yes, $c?", "hash": "3c3069d6e4586916", "src": "vmangos@13b49dc"}
 {"id": "3c38b2fec588570b", "field": "text", "en": "If you're going to venture into Blackrock Depths, come speak with me. I may have some work for you.", "hash": "3c38b2fec588570b", "src": "vmangos@13b49dc"}
+{"id": "3c3c5e7961c53694", "field": "text", "en": "It's clear that poor man we found has suffered abuse. His mind and body are broken, but much of what he had to say lines up with what we learned from Hendel's interrogation...", "hash": "3c3c5e7961c53694", "src": "collector@1.60.1.70888"}
 {"id": "3c48d177aac9af36", "field": "text", "en": "Hundreds of various diagrams and schematics begin to take shape on the pages of the book. You recognize some of the diagrams while others remain foreign but familiar.", "hash": "3c48d177aac9af36", "src": "vmangos@13b49dc"}
 {"id": "3c4eaab6fb106123", "field": "text", "en": "And now... the final step!", "hash": "3c4eaab6fb106123", "src": "vmangos@13b49dc"}
 {"id": "3c4ebd91eb0b5630", "field": "text", "en": "In the King's audience chamber you will find the Lady Hoteshem.  She can assist you in getting to Arathi Basin where The League of Arathor is in need of assistance against The Defilers.", "hash": "3c4ebd91eb0b5630", "src": "vmangos@13b49dc"}
 {"id": "3c5237b5dc862531", "field": "text", "en": "Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!", "hash": "3c5237b5dc862531", "src": "vmangos@13b49dc"}
+{"id": "3c54b56072cf94f5", "field": "text", "en": "If you have the aptitude for the druidic arts, I can train you.", "hash": "3c54b56072cf94f5", "src": "collector@1.60.1.70790", "npcs": [251373, 254081]}
 {"id": "3c599235eebc42a8", "field": "text", "en": "Who dares summon me?", "hash": "3c599235eebc42a8", "src": "vmangos@13b49dc"}
 {"id": "3c5aaadd1d92e521", "field": "text", "en": "Yes.  Give me the spell to summon the avatar.", "hash": "3c5aaadd1d92e521", "src": "vmangos@13b49dc"}
 {"id": "3c5ebb3b3331d6ca", "field": "text", "en": "You look like you could use a few enchants. You have come to the right place!", "hash": "3c5ebb3b3331d6ca", "src": "forever-vo@025070f", "npcs": [256732]}
@@ -35,6 +37,7 @@
 {"id": "3c9e614fb46b24d2", "field": "text", "en": "%s breaks free from his stone slumber!", "hash": "3c9e614fb46b24d2", "src": "vmangos@13b49dc"}
 {"id": "3c9f178b9babb917", "field": "text", "en": "Your future is clouded.  Concentrate, and ask again.", "hash": "3c9f178b9babb917", "src": "vmangos@13b49dc"}
 {"id": "3c9f9e8585bd1760", "field": "text", "en": "Almost perfect shot! It's a bit off but I can see where Grumlar would miss with it. He couldn't hit the broad side of a barn.", "hash": "3c9f9e8585bd1760", "src": "vmangos@13b49dc"}
+{"id": "3ca21591f0529de1", "field": "text", "en": "...BELATHAAN BRIGHTWISH", "hash": "3ca21591f0529de1", "src": "collector@1.60.1.70790"}
 {"id": "3ca3b8bf42efeea0", "field": "text", "en": "I just received word on that. We currently have $2021w out of $2020w peacebloom, $2050w of $2051w firebloom, and $2054w out of $2055w purple lotus herbs requested.", "hash": "3ca3b8bf42efeea0", "src": "vmangos@13b49dc"}
 {"id": "3ca63548a3f31cba", "field": "text", "en": "Hi, $n.  No hard feelings, ok?", "hash": "3ca63548a3f31cba", "src": "vmangos@13b49dc"}
 {"id": "3cae78b239930147", "field": "text", "en": "Five tickets or two-hundred and fifty, it doesn't matter friend, everybody is a winner!", "hash": "3cae78b239930147", "src": "vmangos@13b49dc"}
@@ -44,6 +47,7 @@
 {"id": "3cc58c0c09937daf", "field": "text", "en": "%s uses his index finger to make a cutting motion across his neck.", "hash": "3cc58c0c09937daf", "src": "vmangos@13b49dc"}
 {"id": "3cc8c2472923b812", "field": "text", "en": "Please, champion, protect our people.", "hash": "3cc8c2472923b812", "src": "vmangos@13b49dc"}
 {"id": "3cce84146ecb4658", "field": "text", "en": "Ok, now let's get out of here!", "hash": "3cce84146ecb4658", "src": "vmangos@13b49dc"}
+{"id": "3cd1d0c6cb45eb6a", "field": "text", "en": "Aman melar ul buras Enkilzar ul karkun, arakal. Ruk daz tiros ruk rikk kiel ul buras ul revos xi ruk tiriosh revola? Amanalar kazile...", "hash": "3cd1d0c6cb45eb6a", "src": "collector@1.60.1.70862"}
 {"id": "3cd1e2f8a996e2b8", "field": "text", "en": "Hey Jangdor - can you teach me again how to make Wild Leather Boots again?", "hash": "3cd1e2f8a996e2b8", "src": "vmangos@13b49dc"}
 {"id": "3cd32fa019140f89", "field": "text", "en": "The Scarlet Crusade shall not fail in its mission!", "hash": "3cd32fa019140f89", "src": "vmangos@13b49dc"}
 {"id": "3cd4cad92e74e21c", "field": "text", "en": "You're a leatherworker by trade, aren't you?  It's that faint smell of cured hides, I'd recognize it anywhere.$B$BMy father used to talk about a famous artisan who lived in Southwind Village centuries ago.  It's a shame the place is in ruins now.", "hash": "3cd4cad92e74e21c", "src": "vmangos@13b49dc"}
@@ -53,4 +57,6 @@
 {"id": "3cde6c4ddf81e71c", "field": "text", "en": "Down goes Frazier!  Down goes Frazier! Down goes...huh?  That Wasn't Frazier?", "hash": "3cde6c4ddf81e71c", "src": "vmangos@13b49dc"}
 {"id": "3cee35cfee2d5757", "field": "text", "en": "<Remain Silent>", "hash": "3cee35cfee2d5757", "src": "collector@1.60.1.70205", "npcs": [251902]}
 {"id": "3cf1722af894056d", "field": "text", "en": "Are the Eastern Plaguelands currently under attack?", "hash": "3cf1722af894056d", "src": "vmangos@13b49dc"}
+{"id": "3cfbfae599c85f1c", "field": "text", "en": "The elementals who brought us here are gone. Any feats they used to maintain our homes can be replicated with highborne magic, but our powers have grown weak in Skywall.", "hash": "3cfbfae599c85f1c", "src": "collector@1.60.1.70790"}
+{"id": "3cfdf310eb449eca", "field": "text", "en": "When it was over I was stunned. He knew what would happen and he threw himself in front of that creature anyway to shield me.$B$BWe windshapers always pay our debts, and I owe him a debt. We've already avenged his death, but we can still avenge what was done to him by that monster, if you are still willing to lend me aid.", "hash": "3cfdf310eb449eca", "src": "collector@1.60.1.70888", "npcs": [259620]}
 {"id": "3cfefadfd72ed5a5", "field": "text", "en": "Run if you like fools!  Your fate is sealed anyways!", "hash": "3cfefadfd72ed5a5", "src": "vmangos@13b49dc"}

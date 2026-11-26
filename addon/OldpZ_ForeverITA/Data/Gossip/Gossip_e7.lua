@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["e7ac0a9900cab08f"] = { "L'⟦Horde=Orda⟧ ha preso la fattoria!", "." },
   ["e7ae7b9d303826a3"] = { "Brzzzzt!\n\nTi do il benvenuto nel Matrix Punchograph 3005 barra B, un terminale con livello di sicurezza beta.\n\nPer accedere alle funzioni del terminale devi possedere una scheda perforata gialla.\n\n01000111 01101110 01101111 01101101 01100101 01110010 01100011 01111001 00100001", "." },
   ["e7b42382f2bea195"] = { "La vita non ha senso. È nella morte che veniamo messi davvero alla prova.", "." },
+  ["e7bcdb0b20d6a072"] = { "Mi mancherai davvero, {name}. Ho con te un debito che forse non potrò mai saldare.\n\nGoditi la tua nuova armatura per testa e torso. Che ti protegga a lungo e ti aiuti a conquistare un onore ancora più grande!", "." },
   ["e7ccb48d4c5277db"] = { "La East Frostwolf Tower è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ la distruggerà!", "." },
   ["e7d152ae28460455"] = { "Salute! Hai un'aria familiare... ci siamo già visti?\n\nBe', se ci siamo già visti, allora... di sicuro ti hanno dato un codice segreto. Dimmi il tuo codice e ti darò un regalo!", "." },
   ["e7d71cfdd6f877ae"] = { "Porta la Tattered Note a Veyric Thunderhame negli ⟦Arathi Highlands=Altopiani d'Arathi⟧.", "." },

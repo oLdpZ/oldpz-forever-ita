@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["6e26a116d0b5c402"] = { "Renataki, delle ⟦Thousand Blades=Mille Lame⟧.\n\nIl dolore è la sua linfa vitale. La paura, la sua alleata. Possa un giorno tornare e portare con sé un gioioso spargimento di sangue.\n\nOra Renataki dimora lontano da qui. Un giorno, forse, tornerà...", "." },
   ["6e2bac745ea7087c"] = { "Abbiamo qualche rifornimento, ma non molti. Ce ne serviranno molti di più per lanciare un assalto via terra nel ⟦Field of Strife=Pian della Discordia⟧.", "." },
   ["6e2d61616829a931"] = { "Mi metto subito al lavoro, {name}!", "." },
+  ["6e2eea1bf00e1ca5"] = { "Molto bene, ecco un po' di Unguento per Piante Cenariano. Se trovi altro vetriolo quando estrai minerali a ⟦Felwood=Vilbosco⟧, ricordati di tenerlo per me! Più ne trovi, più unguento potrò preparare.", "." },
   ["6e392578c1ec75ef"] = { "Il tuo nome sarà ricordato nei secoli, {name}. Cerca ⟦Taim Ragetotem=Taim Totem Rabbioso⟧ sull'⟦Hunter Rise=Altura dei Cacciatori⟧: ti aiuterà a raggiungere la ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
   ["6e3cc1f93427a4ba"] = { "Hai certamente fatto molta strada nel tuo addestramento. C'è un solo istruttore che può addestrarti ancora. Trova ⟦Buzzek Bracketswing=Buzzek Forcatorta⟧ a ⟦Gadgetzan=Meccania⟧!", "." },
   ["6e443221011c62ce"] = { "Per l'⟦Alliance=Alleanza⟧!", "." },

@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["86358ad34cb9fff6"] = { "Hai fatto bene a cercarmi. Ti chiederei un piccolo favore. In cambio, posso insegnarti molto.", "." },
   ["863cc235a53b93ad"] = { "Preda misera.", "." },
   ["8641c68b029aae7d"] = { "Brzzzzt!\n\n<Benvenuto/Benvenuta> al Matrix Punchograph 3005 barra A, un terminale di livello di sicurezza alfa.\n\nPer accedere alle funzioni del terminale devi possedere una scheda perforata bianca.\n\n01000100 01101111 01110111 01101110 00100000 01110111 01101001 01110100 01101000 00100000 01110100 01101000 01100101 00100000 01101000 01101111 01110010 01100100 01100101 00100001", "." },
+  ["86434e096ae72f30"] = { "Tu hai rispettato la tua parte dell'accordo, io rispetterò la mia.\n\nRicorda solo che terrò per me i pezzi migliori finché il tuo lavoro non sarà finito.", "." },
   ["86463319cbb3367d"] = { "Le nostre unità campione stanno lasciando il campo. Ci servono altri rifornimenti!", "." },
   ["8651a47757186178"] = { "<Copia lo schema nel tuo quaderno di ingegneria.>", "." },
   ["86533a1b31ea249f"] = { "L'abominio ha travolto il campo dei Guardiani della Notte! Presto, dobbiamo intercettarlo prima che raggiunga il paese!", "." },

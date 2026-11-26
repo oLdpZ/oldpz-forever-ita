@@ -25,6 +25,7 @@ WFJ.Data.add("gossip", {
   ["558f449a26ee1585"] = { "È meraviglioso, Rimblat! Persino questa terra immonda e spaccata può ancora guarire.", "." },
   ["5596b5611514f7cb"] = { "Allora, {name}, eccomi qui: ti racconto cos'è successo nella ⟦Swamp of Sorrows=Palude del Dolore⟧. Hic!", "." },
   ["55a41b2750f7d066"] = { "Questa guerra ha prosciugato il nostro popolo e le nostre risorse. Nemmeno qui su Teldrassil possiamo sfuggire alle sue ripercussioni. Perdonami se te lo chiedo, ma faresti una commissione per me?", "." },
+  ["55a62f46d60bde17"] = { "Metti l'uovo di ippogrifo nella macchina. Segue una serie di bip, insieme a strani rumori meccanici.\n\nSembra che l'Eggometer abbia pesato, misurato e impacchettato il tuo uovo. Questo sì che è un servizio rapido!", "." },
   ["55b27e71fc9183b5"] = { "Vengo per te, patetica ⟦Alliance=Alleanza⟧!", "." },
   ["55b59eed0506d3b0"] = { "Torna qui!", "." },
   ["55c6356f338b54d6"] = { "%s comincia a eseguire il rituale del risveglio su Naralex.", "." },

@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["8474c47c689bcca5"] = { "Noi volere vilsegugio come famiglio. Noi dare da mangiare e trattare bene e insegnare a riportare legnetto. Tu trova stregoni in ⟦Magic Quarter=Quartiere della Magia⟧, su anello esterno di città.", "." },
   ["847c1c5beaf9fd2f"] = { "Bah! Prima di arrivare a tiro del vecchio Trollplow saresti già <ridotto/ridotta> in macerie!", "." },
   ["84876ebd8bd82c81"] = { "Ah, <sacerdote/sacerdotessa>, capiti proprio al momento giusto. Ti ringrazio.", "." },
+  ["84936fd1f6fe7f03"] = { "Ecco un po' di Unguento per Piante Cenariano: per questo mi basta una sola Lesser Nether Essence, {name}. L'essenza è di gran lunga la cosa più potente che io possa usare per trasformare le spade in aratri, per così dire. Se ti serve altro unguento, mi trovi qui!", "." },
   ["8494f610c7784fac"] = { "Sai chi sono, <fanatico/fanatica>?", "." },
   ["84a2a7e163c2dafd"] = { "L'arcano corrompe solo i deboli. Anche se non segui la via dello stregone, faresti bene a ricordarlo.", "." },
   ["84a4e6ddf424d1e3"] = { "Incisa su una tavoletta d'oro puro c'era l'incarnazione del mio rimorso, della mia vergogna, del mio rimpianto e del mio dolore. Purtroppo il ⟦Twilight's Hammer=Martello del Crepuscolo⟧ trovò la tavoletta e mi marchiò di blasfemia. Mi giustiziarono sommariamente, con la mia preghiera a Elune incompiuta. Ora il mio spirito è legato a questo mondo, incapace di trascendere nel Nether, e rinchiuso in questa gabbia come monito per tutti coloro che tradirebbero la fede del ⟦Twilight's Hammer=Martello del Crepuscolo⟧.", "." },

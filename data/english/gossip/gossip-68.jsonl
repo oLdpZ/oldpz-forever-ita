@@ -1,3 +1,4 @@
+{"id": "6802232e93bb7351", "field": "text", "en": "A customer all the way out here? What luck! This place was a goldmine of empty alchemy bottles. Kinda weird.$B$BDon't worry, I washed 'em out.", "hash": "6802232e93bb7351", "src": "collector@1.60.1.70938", "npcs": [2481]}
 {"id": "6803f1cce2ea6304", "field": "text", "en": "I have run through these plains for many, many seasons.  And I have hunted great beasts.  And I had never been bested... until I faced Ghost Howl.$B$BLong ago, the massive wolf was an ally to the tauren and fought bravely against the Burning Legion.  But he was wounded savagely by a demon, and the tear in his flesh never healed.  Eventually... it drove Ghost Howl mad.$B$BNow he roams the plains in agony, seeking an end to his pain.  To my shame, when we fought I lacked the strength to slay him...", "hash": "6803f1cce2ea6304", "src": "vmangos@13b49dc"}
 {"id": "68100666fa91aed3", "field": "text", "en": "Flee while you still have a chance, mortals. You will pray for a swift death should I enter the arena.", "hash": "68100666fa91aed3", "src": "vmangos@13b49dc"}
 {"id": "6813c79514c114f7", "field": "text", "en": "You there! Check out that noise.", "hash": "6813c79514c114f7", "src": "vmangos@13b49dc"}
@@ -16,13 +17,17 @@
 {"id": "685dfa7adf1c1c59", "field": "text", "en": "The Crystal Pylons of Un'Goro are a mystery to all. To the few inhabitants here, they are a source of legend, with much speculation as to their purpose.", "hash": "685dfa7adf1c1c59", "src": "vmangos@13b49dc"}
 {"id": "686668c3a66fe805", "field": "text", "en": "%s self destructs!", "hash": "686668c3a66fe805", "src": "vmangos@13b49dc"}
 {"id": "6866f9a2454fd0f1", "field": "text", "en": "Oy!  You here for a game of knuckles?", "hash": "6866f9a2454fd0f1", "src": "vmangos@13b49dc"}
+{"id": "686e2bc635af2da4", "field": "text", "en": "Return to Knight Commander Demar Brant in Farholde Keep.", "hash": "686e2bc635af2da4", "src": "wdb@1.60.1.70862"}
 {"id": "68731898241737de", "field": "text", "en": "%s cooks up a batch of spicy hot buzzard wings for $n.", "hash": "68731898241737de", "src": "vmangos@13b49dc"}
+{"id": "687a4d7ef275cd3b", "field": "text", "en": "On the darkest nights, my wish to give to you was all that kept me going.", "hash": "687a4d7ef275cd3b", "src": "collector@1.60.1.70959"}
 {"id": "687b29c1a1f9b682", "field": "text", "en": "|cffffff00Northpass Tower has been taken by the Horde!|r", "hash": "687b29c1a1f9b682", "src": "vmangos@13b49dc"}
 {"id": "687c3574bac76b4d", "field": "text", "en": "It's a rescue attempt!  Slay them all!", "hash": "687c3574bac76b4d", "src": "vmangos@13b49dc"}
 {"id": "6881870c711e283c", "field": "text", "en": "Consider it done, Jeztor. Give me a beacon.", "hash": "6881870c711e283c", "src": "vmangos@13b49dc"}
 {"id": "68827e303e7a6504", "field": "text", "en": "%s begins to craft...", "hash": "68827e303e7a6504", "src": "vmangos@13b49dc"}
 {"id": "6897c3475726ef54", "field": "text", "en": "Teleport me to the lair of the Twin Emperors, please.", "hash": "6897c3475726ef54", "src": "vmangos@13b49dc"}
 {"id": "689ac350516217ba", "field": "text", "en": "I require training, sir!", "hash": "689ac350516217ba", "src": "vmangos@13b49dc"}
+{"id": "689ef04bb0d6b9ce", "field": "text", "en": "Get it done! These monstrosities won't be kept at bay for long.", "hash": "689ef04bb0d6b9ce", "src": "collector@1.60.1.70959"}
+{"id": "68a794fbb5058eee", "field": "text", "en": "I see, and the pylons?", "hash": "68a794fbb5058eee", "src": "collector@1.60.1.70888", "npcs": [253471]}
 {"id": "68aeb9550a8a83a2", "field": "text", "en": "Long live the mighty Blackrock Clan!", "hash": "68aeb9550a8a83a2", "src": "vmangos@13b49dc"}
 {"id": "68b33db5d6ccc704", "field": "text", "en": "Is there something I can help you find?", "hash": "68b33db5d6ccc704", "src": "vmangos@13b49dc"}
 {"id": "68ba633d66b9fbfc", "field": "text", "en": "Wares for sale! Wares for sale! Come browse Antonio's wares before I must take my leave, citizens of Goldshire.", "hash": "68ba633d66b9fbfc", "src": "vmangos@13b49dc"}

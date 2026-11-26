@@ -53,5 +53,6 @@ WFJ.Data.add("gossip", {
   ["1feefebade0d1405"] = { "Respingo questa idea. Questo è ciò che siamo ora, e faremo vedere ai Reietti che non siamo ciò che credono. Possiamo tornare a servire Lordaeron.", "." },
   ["1ff5cac0e08be16f"] = { "Non morirò di nuovo! Non per mano di gente come te!!", "." },
   ["1ff6662dfacdd793"] = { "Ti strapperò gli arti e li userò per pestarti finché non ti arrendi!", "." },
+  ["1ff8b690ae00056a"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata a ⟦Stormwind=Roccavento⟧, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["1ff9509cbf3ce617"] = { "Ottimo lavoro, soldato. Devo tornare al campo base! Mi copri?", "." },
 })

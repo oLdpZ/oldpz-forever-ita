@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["1e7208e4f34a5862"] = { "Mamma, Jesse si è arrampicato di nuovo sulla torre del vento.", "." },
   ["1e763eacdb24ddeb"] = { "Qui a ⟦Thunder Bluff=Picco del Tuono⟧ conosco qualcuno che può aiutarti nel tuo viaggio verso la ⟦Alterac Valley=Valle d'Alterac⟧. Sull'⟦Hunter Rise=Altura dei Cacciatori⟧ cerca ⟦Taim Ragetotem=Taim Totem Rabbioso⟧. Che tu possa trovare ciò che cerchi, {name}.", "." },
   ["1e7a2ecf281ab3f0"] = { "Se stai pensando di fondare una gilda, dovrai passare da ⟦Jondor Steelbrow=Jondor Frontesalda⟧, laggiù nel Visitor's Center di ⟦Ironforge=Forgiardente⟧. Va' a sud-est dalle porte di ⟦Ironforge=Forgiardente⟧ per trovarlo.", "." },
+  ["1e7a9da339efcf3d"] = { "Si chiama ⟦Gordok Shackle Key=Chiave delle Catene di Gordok⟧... beh, almeno così continuano a chiamarla questi «ciccioni allegri». Credo che possa averla uno qualsiasi degli ogre, ma non sono sicuro che ce l'abbia qualcuno in particolare. Forse le guardie hanno più probabilità di averne una...\n\nMa di che parlo? Ce l'hai già, vero?! È quella lì??!", "." },
   ["1e845991dce74d78"] = { "Che vuoi, {class}? Sono in ritardo, e il mio datore di lavoro non vede di buon occhio i ritardi.", "." },
   ["1e892973467b418a"] = { "La flotta è pronta, {name}. Prendi questo segnalatore e piazzalo nel cratere occidentale della zona di battaglia centrale. Difendilo dagli assalitori finché la flotta non riesce ad agganciarne le coordinate!", "." },
   ["1e8ed1a26f9abb0e"] = { "Metto a tua disposizione tutto l'aiuto che posso offrirti.", "." },

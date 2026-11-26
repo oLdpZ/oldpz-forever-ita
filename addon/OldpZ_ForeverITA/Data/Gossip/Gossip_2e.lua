@@ -47,6 +47,7 @@ WFJ.Data.add("gossip", {
   ["2ee833636e6dc77c"] = { "Anthion, mi sa che ho perso lo stendardo che hai creato per me.", "." },
   ["2ee997176af6525d"] = { "Vi prego, sacerdotesse, perdonate la nostra intrusione. Non vogliamo fare alcun male qui.", "." },
   ["2eed5f771553d4b2"] = { "Maestro, continua a darmi colpetti!", "." },
+  ["2ef75b928e6666f8"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata a ⟦Undercity=Sepulcra⟧, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["2efc0d129c420732"] = { "In base al campione di tossina che ci hai fornito, pensiamo che ti servirà quanto segue: un Accelerante Arcano, cinque Intensificatori Somatici e quattro pezzi di telarunica. Con il Focalizzatore Vitreo al seguito, procurati gli intensificatori dai non morti zombi o ghoul qui nelle ⟦Plaguelands=Terre Infette⟧!\n\nQuando avrai questi oggetti, dovresti poter caricare l'antidoto in quel calderone.", "." },
   ["2efc2c08c9c7460b"] = { "Ultimamente i libri stanno sparendo. Lo storico e i suoi assistenti sono in fermento. Sospettano un'azione criminosa all'interno di Eldre'Thalas.", "." },
 })

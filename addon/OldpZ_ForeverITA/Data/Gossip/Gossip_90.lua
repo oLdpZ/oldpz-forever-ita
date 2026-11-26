@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["901fcd8587c0e272"] = { "Mi stai prendendo in giro? Mi devi prendere in giro per forza! O quello, o pensi che io sia un pagliaccio qui per divertirti. È questo che pensi? Che sono un pagliaccio? Eh, è così? Pensi che sia un pagliaccio, vero?!", "." },
   ["902909341515db4b"] = { "Le migliori armi delle ⟦Barrens=Savane⟧, qui!", "." },
   ["902c128ce3997242"] = { "Ho finito i tuoi gambali, {name}.", "." },
+  ["902cbc7eafb96eaa"] = { "È bello rivederti, {name}. Hai finito il tuo lavoro a ⟦Terrordale=Valterrore⟧?", "." },
   ["9035a4e021e3fe7c"] = { "Non ho mai troppo da fare per parlare con <uno/una> <sconosciuto/sconosciuta>! Quasi mai, almeno...", "." },
   ["903a41037df347e6"] = { "Spero che il mio John abbia più fortuna a ⟦Ironforge=Forgiardente⟧. Detesta quei viaggi perché lasciano soli me e i bambini, ma sa che vanno fatti. Ha un cuore d'oro.\n\nCerti anni sono stati più facili di altri, ma questo è stato di gran lunga il più duro. È quasi come se qualcosa nell'aria annunciasse un grande cambiamento. Ma chi può dirlo?", "." },
   ["903c7ab731d4d369"] = { "Pane di ogni tipo! Sfornato oggi. Prendetelo finché dura!", "." },

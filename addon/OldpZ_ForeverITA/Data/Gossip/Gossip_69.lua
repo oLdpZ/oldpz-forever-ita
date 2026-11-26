@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["6903d2b22e0556db"] = { "Impressionante, maestro. La tua inettitudine è impressionante.", "." },
   ["69074cf85d087283"] = { "Gli abitanti delle ⟦Westfall=Marche Occidentali⟧ non perdoneranno l'abbandono di Roccavento.", "." },
+  ["690ecdf1599e443b"] = { "Fantastico: le useremo subito, te lo assicuro. Grazie ancora per il tuo aiuto! Senza di te saremmo davvero perduti.\n\nCon tutte le donazioni che hai fatto, accetterò senz'altro qualsiasi altra donazione di telarunica vorrai fare in futuro. Passa pure da me, e mi assicurerò personalmente che le tue buone azioni non passino inosservate!", "." },
   ["69104cf592eea807"] = { "Tu fregato me per bene, capo! Come tu passato Slip'kik?? Io furbo però, io guardo prossima volta! Har har!\n\nNessuno passa più Slip'kik. Slip'kik promette!", "." },
   ["691b0dc1f683eadc"] = { "Cosa sai dirmi dell'orso Ursangous?", "." },
   ["691fd87b4d9d820d"] = { "Se hai tempo, ⟦Grimclaw=Truceartiglio⟧ e il suo padrone Volcor avrebbero bisogno del tuo aiuto. Se ti interessa, parla ancora con me...", "." },

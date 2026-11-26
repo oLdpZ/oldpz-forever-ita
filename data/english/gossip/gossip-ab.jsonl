@@ -2,6 +2,7 @@
 {"id": "ab0d1379d41e6dab", "field": "text", "en": "I am sorry $c, but you need to be more experienced before you can survive in Alterac Valley.", "hash": "ab0d1379d41e6dab", "src": "vmangos@13b49dc"}
 {"id": "ab0f5c52206084c5", "field": "text", "en": "%s lets out a battlecry!", "hash": "ab0f5c52206084c5", "src": "vmangos@13b49dc"}
 {"id": "ab12068eca1bdd4e", "field": "text", "en": "%s looks very sleepy...", "hash": "ab12068eca1bdd4e", "src": "vmangos@13b49dc"}
+{"id": "ab209f7c6cf31bfb", "field": "text", "en": "Return to Clugfist in Bolder'ok.", "hash": "ab209f7c6cf31bfb", "src": "wdb@1.60.1.70862"}
 {"id": "ab2207a02dc8591d", "field": "text", "en": "You are dutiful to inquire, $c, but all Horde collections have been completed. We now wait for the Alliance hegemony to finish theirs, and then all will be transported to Silithus in the vicinity of Cenarion Hold.", "hash": "ab2207a02dc8591d", "src": "vmangos@13b49dc"}
 {"id": "ab2805a4a48c139c", "field": "text", "en": "What do you ask of me?", "hash": "ab2805a4a48c139c", "src": "vmangos@13b49dc"}
 {"id": "ab3476c7ea4ad99a", "field": "text", "en": "No tampering with the mail!", "hash": "ab3476c7ea4ad99a", "src": "vmangos@13b49dc"}
@@ -11,13 +12,16 @@
 {"id": "ab3c08ab131831c3", "field": "text", "en": "Bat man on upper level of Trade Quarter.", "hash": "ab3c08ab131831c3", "src": "vmangos@13b49dc"}
 {"id": "ab3cf01263278059", "field": "text", "en": "Attack, my sisters! The troll must not escape!", "hash": "ab3cf01263278059", "src": "vmangos@13b49dc"}
 {"id": "ab3ff2b4ad9ebce1", "field": "text", "en": "The Alliance has taken the Coldtooth Mine!", "hash": "ab3ff2b4ad9ebce1", "src": "vmangos@13b49dc"}
+{"id": "ab48915da57c2112", "field": "text", "en": "The $R is motionless, with multiple wounds and discoloration emblematic of suffering from poison.", "hash": "ab48915da57c2112", "src": "collector@1.60.1.70938", "npcs": [268925]}
 {"id": "ab4a926d92c863bd", "field": "text", "en": "Farewell.\n", "hash": "ab4a926d92c863bd", "src": "vmangos@13b49dc"}
+{"id": "ab4b32ac9bbc9549", "field": "text", "en": "As you likely know, the wind pylons gifted to us by the spirits serve as our anchor to the elemental plane of Skywall. They are failing, and our home is in danger.", "hash": "ab4b32ac9bbc9549", "src": "collector@1.60.1.70790"}
 {"id": "ab4baf5863a4a780", "field": "text", "en": "This here is the finest, most state of the art mode of transportation money can build. What? Deeprun Tram? Gnomes? Listen pal, If you believe that garbage then I've got a statue down in Stranglethorn to sell ya. Now, are you walking to Grom'Gol or are you gonna ride in style in this fine flying machine? Your choice.", "hash": "ab4baf5863a4a780", "src": "vmangos@13b49dc"}
 {"id": "ab4ed848ec051906", "field": "text", "en": "There, there, $n, worry not! Which piece of the amulet have you misplaced?$B$BDid you check all of your bags and the bank?", "hash": "ab4ed848ec051906", "src": "vmangos@13b49dc"}
 {"id": "ab579a5fb79734c2", "field": "text", "en": "Ah, so you have. You are most welcome in Ironforge, $c. \r\n\r\nThis city is the seat of the Bronzebeard Clan. We are an ancient and proud people and our craftsmen are second to none. You'll find no finer creations of metal or stonework than dwarven-make.\r\n\r\nWe are also amongst boldest of explorers on Azeroth. If you have a taste for adventure, you will be in good company amongst our people.\r\n\r\nThank you for speaking with me, $N. Go now with the blessings of the Bronzebeard Clan. \r\n\r\nI wish you and your people well.", "hash": "ab579a5fb79734c2", "src": "forever-vo@025070f", "npcs": [2784]}
 {"id": "ab593ca5d68421b4", "field": "text", "en": "You dare set foot upon Hakkari holy ground? Minions of Hakkar, destroy the infidels!\n", "hash": "ab593ca5d68421b4", "src": "vmangos@13b49dc"}
 {"id": "ab6c09722db80914", "field": "text", "en": "Yaaaaawwwwwnnnn...", "hash": "ab6c09722db80914", "src": "vmangos@13b49dc"}
 {"id": "ab732bb5b4c9204e", "field": "text", "en": "Ah, good.  These spores have rendered nicely.  Thank you, $n.", "hash": "ab732bb5b4c9204e", "src": "vmangos@13b49dc"}
+{"id": "ab7c548867b67a8d", "field": "text", "en": "Never better, Relathor. Come, let us return inside.", "hash": "ab7c548867b67a8d", "src": "collector@1.60.1.70959"}
 {"id": "ab80a6a2c601769b", "field": "text", "en": "All right people, look alive!", "hash": "ab80a6a2c601769b", "src": "vmangos@13b49dc"}
 {"id": "ab871658e529b35c", "field": "text", "en": "%s attacks Karang's Banner!", "hash": "ab871658e529b35c", "src": "vmangos@13b49dc"}
 {"id": "ab87313e73085937", "field": "text", "en": "If Gnoarn finds out about this, it'll be my hide!", "hash": "ab87313e73085937", "src": "vmangos@13b49dc"}

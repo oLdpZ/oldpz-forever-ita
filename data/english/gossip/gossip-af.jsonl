@@ -13,6 +13,7 @@
 {"id": "af3a728d034faf2b", "field": "text", "en": "My Zandalar Demoniac's Wraps have gone missing. Can you provide me with another set?", "hash": "af3a728d034faf2b", "src": "vmangos@13b49dc"}
 {"id": "af3f7d9ed4537301", "field": "text", "en": "With your help, I can evaluate these tunnels.", "hash": "af3f7d9ed4537301", "src": "vmangos@13b49dc"}
 {"id": "af40863798ea55e9", "field": "text", "en": "Elune be with us! Let's make haste from this evil fortress.", "hash": "af40863798ea55e9", "src": "vmangos@13b49dc"}
+{"id": "af481a495b0573eb", "field": "text", "en": "Greetings, young $C. Welcome to the hall of the Tradesman's Guild. Resources are tight on Zephras right now, but you should be able to find a variety of materials and wares here to keep you in top adventuring form.$B$BPlease let me know if you have any questions.", "hash": "af481a495b0573eb", "src": "collector@1.60.1.70790", "npcs": [252392]}
 {"id": "af48955a76e2f28b", "field": "text", "en": "Merideth, could I have some more manna-enriched horse feed please?", "hash": "af48955a76e2f28b", "src": "vmangos@13b49dc"}
 {"id": "af4a3af9873348a8", "field": "text", "en": "We have one eye and see better than you!  Bank in center of Undercity!", "hash": "af4a3af9873348a8", "src": "vmangos@13b49dc"}
 {"id": "af5555639fc1f14f", "field": "text", "en": "Good question, $r. In my younger days I was footloose and fancy free without a care in the world. In those days I would sing in a barber shop quartet out of Stormwind known as the Four Dons. That's where I learned how to craft the Bonescythe digs.", "hash": "af5555639fc1f14f", "src": "vmangos@13b49dc"}
@@ -33,6 +34,7 @@
 {"id": "afd035ed7f1342cf", "field": "text", "en": "Ye should check over at Steelgrill's Depot for Bronk.  When he's not tinkering with some odd device, he's usually chatting up the pilots about their steam tanks.", "hash": "afd035ed7f1342cf", "src": "vmangos@13b49dc"}
 {"id": "afd7f15dd04a64fe", "field": "text", "en": "You're sweet for asking, $c, but we have all of the light leather that we need. May be that one of the others in charge of collecting around here is in need of your assistance though?", "hash": "afd7f15dd04a64fe", "src": "vmangos@13b49dc"}
 {"id": "afe2a716f6f7f735", "field": "text", "en": "I would like to train.", "hash": "afe2a716f6f7f735", "src": "vmangos@13b49dc"}
+{"id": "afe88859d85d7bb3", "field": "text", "en": "Sorry, you don't look like you could fully draw a longbow, nor load a musket. I teach real hunters.", "hash": "afe88859d85d7bb3", "src": "collector@1.60.1.70450", "npcs": [251507]}
 {"id": "afea0e83ddbcf9f7", "field": "text", "en": "A defender has fallen!", "hash": "afea0e83ddbcf9f7", "src": "vmangos@13b49dc"}
 {"id": "aff21142e68ee17a", "field": "text", "en": "Look out! We're under attack!", "hash": "aff21142e68ee17a", "src": "vmangos@13b49dc"}
 {"id": "aff619fcbea50f3e", "field": "text", "en": "You should talk to Winstone. I hear he's looking for thieves with your skill.", "hash": "aff619fcbea50f3e", "src": "vmangos@13b49dc"}

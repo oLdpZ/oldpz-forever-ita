@@ -3,7 +3,6 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["0e09682a9d7e0588"] = { "Nei giorni ormai lontani vivevamo per la caccia. Cacciavamo per la gloria, per l'onore...\n\nÈ poi così diverso adesso?", "." },
   ["0e1126b186478fd1"] = { "Il ⟦Stonehearth Graveyard=Cimitero di Cordipietra⟧ è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ lo conquisterà!", "." },
-  ["0e12a96b266f6a1e"] = { "Ah, vedo che hai già padroneggiato la forma d'orso. Bene, bene. Sei sulla buona strada, giovane {class}.", "." },
   ["0e212e971f698feb"] = { "Hai l'aria di chi ha il cuore spezzato. Torna quando non sarai così triste.", "." },
   ["0e21745b22f6d6b9"] = { "Le nostre forze sono pronte e impazienti. Presto Balinda Stonehearth entrerà nel suo avamposto e la battaglia ricomincerà!", "." },
   ["0e23ae1d11138d9b"] = { "Non sbucare dall'ombra in quel modo. La prossima volta dai un po' di preavviso a una ragazza.", "." },

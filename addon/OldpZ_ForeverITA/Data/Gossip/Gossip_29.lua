@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["293e9579059b9247"] = { "Secondo l'ultimo conteggio abbiamo tutti i lingotti di rame che ci serviranno per la guerra. Se fossi in te, chiederei agli altri raccoglitori qui se hanno bisogno del tuo aiuto.", "." },
   ["2945c8980d5e9cd9"] = { "Quel cuore vuol dire che cerchi l'amore?", "." },
   ["2946733894bad4c6"] = { "Notizie da Bolvar?", "." },
+  ["294fb6cac66a8414"] = { "Sei tornat<o/a> con notizie da Arathi, {class}?", "." },
   ["295a9ff295e80c6e"] = { "Attenzione! Sembra che ne arrivino altri!", "." },
   ["295e24cd57e4154b"] = { "Il nostro generale, ⟦Vanndar Stormpike=Vanndar Piccatonante⟧, è caduto in battaglia! La battaglia è perduta!\n\nParla con il nostro intendente e aiutaci a ricostruire le nostre forze.", "." },
   ["296246800b8a70e6"] = { "Ok, voglio un bello scontro pulito. Ricorda di tenere la spada alta e lo scudo pronto.", "." },

@@ -19,10 +19,13 @@
 {"id": "d14900cc98a23317", "field": "text", "en": "Metzen's eyes light up with reindeer joy as you sprinkle the dust on him.  He shakes his antlers at you and breathes out a heavy sigh of what sounds like relief.$B$BAround you, magical energy begins to swell.  It would seem that something's about to happen!", "hash": "d14900cc98a23317", "src": "vmangos@13b49dc"}
 {"id": "d14f2db9464e82e6", "field": "text", "en": "You have not yet learned the basics, wanderer. Have you spoken to my assistant, Lalina Summermoon? Perhaps you should.", "hash": "d14f2db9464e82e6", "src": "vmangos@13b49dc"}
 {"id": "d150dad95418fa96", "field": "text", "en": "Wha... what's happening?", "hash": "d150dad95418fa96", "src": "vmangos@13b49dc"}
+{"id": "d1527109a8a046ce", "field": "text", "en": "A moment, $C.", "hash": "d1527109a8a046ce", "src": "collector@1.60.1.71037"}
+{"id": "d1567b2caa3a977f", "field": "text", "en": "What? Why?", "hash": "d1567b2caa3a977f", "src": "collector@1.60.1.70862"}
 {"id": "d172757d4ea2762d", "field": "text", "en": "Oh well... Maybe next time.", "hash": "d172757d4ea2762d", "src": "vmangos@13b49dc"}
 {"id": "d1732731ef893ccb", "field": "text", "en": "Gales greetings, friend. Is there something I can help you with?", "hash": "d1732731ef893ccb", "src": "forever-vo@025070f", "npcs": [252479, 253004, 257004, 257008, 257019, 257021]}
 {"id": "d1799ec788612e01", "field": "text", "en": "Niby, you are stupid.", "hash": "d1799ec788612e01", "src": "vmangos@13b49dc"}
 {"id": "d17caf7fd12d8c38", "field": "text", "en": "Have you any Darkmoon Faire cards?  Come speak with me to learn more about them if you dare!", "hash": "d17caf7fd12d8c38", "src": "vmangos@13b49dc"}
+{"id": "d18397b09681986a", "field": "text", "en": "I'd like to talk about something else.", "hash": "d18397b09681986a", "src": "collector@1.60.1.70862", "npcs": [3616, 12736]}
 {"id": "d186c8877f9a31ab", "field": "text", "en": "VanCleef pay big for you heads!", "hash": "d186c8877f9a31ab", "src": "vmangos@13b49dc"}
 {"id": "d1927b12932299ea", "field": "text", "en": "Beware!  Beware!  A threat lurks in the wild!  Night Watchers, be on the alert!", "hash": "d1927b12932299ea", "src": "vmangos@13b49dc"}
 {"id": "d197bfa0c3c19deb", "field": "text", "en": "%s runs for their life!", "hash": "d197bfa0c3c19deb", "src": "vmangos@13b49dc"}
@@ -40,9 +43,11 @@
 {"id": "d1d3fed4d2d5c738", "field": "text", "en": "That was not what I would call 'escort friendly'.  I will find a way to go around these things.  Let's move to the south, toward that rock.  Maybe we can wedge through it and still avoid the ogres.", "hash": "d1d3fed4d2d5c738", "src": "vmangos@13b49dc"}
 {"id": "d1d52e793fa1ae39", "field": "text", "en": "All they be doin' is a little huntin' and gatherin'. Where's the harm in that??", "hash": "d1d52e793fa1ae39", "src": "vmangos@13b49dc"}
 {"id": "d1d584f25f1a3a7a", "field": "text", "en": "Hunter", "hash": "d1d584f25f1a3a7a", "src": "vmangos@13b49dc"}
+{"id": "d1dd28cc2e5e3040", "field": "text", "en": "The tiny sprite squeaks fearfully and vanishes!", "hash": "d1dd28cc2e5e3040", "src": "collector@1.60.1.70790"}
 {"id": "d1dfe5265e0061fb", "field": "text", "en": "%s sniffs the air hungrily, smelling fresh lion meat...", "hash": "d1dfe5265e0061fb", "src": "vmangos@13b49dc"}
 {"id": "d1dfe6a3bed6c81c", "field": "text", "en": "Please, a moment, $n. Kindal is down below in the Grimtotem camp trying to free the faerie dragons from captivity. We were just lucky that help came along when it did. Who knows what those foul tauren would have done to them.", "hash": "d1dfe6a3bed6c81c", "src": "vmangos@13b49dc"}
 {"id": "d1ea232b1cf78c39", "field": "text", "en": "The orb's markings match the brand on your hand.", "hash": "d1ea232b1cf78c39", "src": "vmangos@13b49dc"}
 {"id": "d1f22b44c6272598", "field": "text", "en": "%s assembles the runecloth, herbs, and holy water to the barding.", "hash": "d1f22b44c6272598", "src": "vmangos@13b49dc"}
 {"id": "d1f7105421251d0d", "field": "text", "en": "Happy Hallow's End!  How do you like my mask?  Very scary!", "hash": "d1f7105421251d0d", "src": "vmangos@13b49dc"}
 {"id": "d1f9311cc19fda0e", "field": "text", "en": "%s seems oblivious to the nearby commentary.", "hash": "d1f9311cc19fda0e", "src": "vmangos@13b49dc"}
+{"id": "d1fd0cc3611d11ed", "field": "text", "en": "The Al'Aketh cult continues to escalate their violence, and the High Order's magical meddling could hasten our doom if left unchecked.", "hash": "d1fd0cc3611d11ed", "src": "collector@1.60.1.70790"}

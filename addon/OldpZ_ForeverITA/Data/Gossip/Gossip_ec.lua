@@ -29,7 +29,6 @@ WFJ.Data.add("gossip", {
   ["ec96b95bd8459e90"] = { "Vivo solo per servire il nostro re.", "." },
   ["ec9e2f366325bce5"] = { "Non vedo l'ora di sentire cos'ha da dire un orco così arrabbiato...", "." },
   ["eca0c2fd11e71040"] = { "Grazie. Speriamo che non ce ne siano altri.", "." },
-  ["eca326e1e644fc53"] = { "\"E così ha inizio, padre Cenarius. E così ha inizio.\"\n\nDendrite traccia nell'aria sopra di sé un gesto rapido e invisibile. Una lieve aura di potere scende su di lui.\n\n\"La prima prospettiva della natura a cui devi adattarti è quella dell'orso. Ti avvierò sulla strada per comprendere questo aspetto della vita druidica, ma sei tu che devi abbracciarlo e diffonderlo, ora e per sempre!\"", "." },
   ["eca969df24856432"] = { "%s lancia uno strillo acuto, chiedendo aiuto!", "." },
   ["eca969ec2485643f"] = { "%s lancia uno strillo acuto, chiedendo aiuto.", "." },
   ["ecad8b5cf1cceac3"] = { "Cosa sai dirmi della fiera della notte Shadumbra?", "." },

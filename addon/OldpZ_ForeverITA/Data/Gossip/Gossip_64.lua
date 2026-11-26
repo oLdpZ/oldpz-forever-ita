@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["64300cbb01bd848c"] = { "La West Frostwolf Tower è stata presa dall'⟦Horde=Orda⟧!", "." },
   ["6435ce777126fc37"] = { "Va bene, va bene! Tocca a te!", "." },
   ["644efb935249cbff"] = { "C'è mancato poco, {name}! Be', muoviamoci, c'è ancora un bel pezzo di strada fino a ⟦Ratchet=Porto Paranco⟧!", "." },
+  ["6456e4ce328a6ae8"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata ai ⟦Darkspear Trolls=Troll Lanciascura⟧, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["64590542939419e1"] = { "Molte volte le mie lame hanno abbattuto il bersaglio prima ancora che si avvicinasse. Il segreto sta nel colpo di polso.", "." },
   ["64622ca9562238f0"] = { "Ho perso il mio ⟦Drape of Vaulted Secrets=Drappo dei Segreti Ignoti⟧. Puoi sostituirmelo?", "." },
   ["6462db059ab80edb"] = { "A ⟦Nighthaven=Nottequieta⟧! Tieni vicino il tuo esercito, campione.", "." },

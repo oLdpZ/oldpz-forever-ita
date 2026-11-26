@@ -5,6 +5,8 @@ WFJ.Data.add("gossip", {
   ["c507d7bd39cafa50"] = { "Questo luogo è sotto la mia protezione. I misteri dell'arcano resteranno inviolati.", "." },
   ["c509979143fdd777"] = { "Mi rincresce dirti che non posso aiutarti, <nobile/gentile> <signore/dama>, finché non saprai di più sulla conciatura. Parla invece con Faldron o Darianna, qui. Possono insegnarti l'abilità che ti serve.", "." },
   ["c50b4ecf28834662"] = { "Non merito tanto, padrone!", "." },
+  ["c50f9dc01c3976a9"] = { "Voglio cinque di quelle collane tribali che i troll portano addosso. Se ti serve che te lo spieghi meglio, uccidendone uno hai buone probabilità di trovarne una!\n\nDimostra il tuo valore ai Granmartello!", "." },
+  ["c513241d9a379f29"] = { "Il tempo stringe, {name}: sei riuscit<o/a> a fermare la minaccia del cavaliere della morte Razziabuio?", "." },
   ["c51699f55b81a0e3"] = { "Stiamo facendo progressi! Portate altri rifornimenti per riparare Dun Baldar!", "." },
   ["c516c193a3322d0a"] = { "%s allenta la presa sul diario che stringeva.", "." },
   ["c5176ede163455b9"] = { "I bambini saltano su e giù pieni di energia. (PH emote)", "." },

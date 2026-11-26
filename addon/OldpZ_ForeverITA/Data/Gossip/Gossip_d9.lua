@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["d9030dc893b17fb8"] = { "Non ho altro sapere da trasmetterti. Passa sotto l'arco e scendi la rampa verso sud-est, poi parla con il dottor Herbert Halsey. È un Reietto che può insegnarti tecniche più avanzate.", "." },
   ["d90de0ae005f10e0"] = { "Prima di morire lavoravo in una biblioteca; non avevo niente a che fare con guerre e pestilenze. Non ho mai chiesto di diventare così. D'altra parte, ora che la mia mente è di nuovo mia, non ho intenzione di arrendermi senza combattere.", "." },
+  ["d90f59be16576760"] = { "Ah, {class}. Non potrò finire la tua bardatura senza le cose che ti ho detto. Hai messo insieme tutto?", "." },
   ["d9105a64e75cf79e"] = { "Ora, dove ho messo le formule della ⟦Venture Company=S.P.R. & Co.⟧?", "." },
   ["d910ab55575d08d4"] = { "Fatevi avanti, Sognatori, e reclamate la vostra vendetta!", "." },
   ["d91ad167ea7af0ef"] = { "Vai a Orgrimmar, {name}. Saluta Thrall da parte mia!", "." },
@@ -23,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["d980642e88d6dc93"] = { "Comincia a fare freschino qui fuori. Credo che andrò a scaldarmi accanto al fuoco e a farmi una pinta, o dodici.", "." },
   ["d9810225cb2edcef"] = { "Se non fosse per quella maledetta fortuna gnomesca, non vincerebbero mai una corsa!", "." },
   ["d98913db65e641f5"] = { "{name}, {name}, {name}! Dimmi che hai abbastanza ⟦Alterac Granite=Granito d'Alterac⟧ per farmi iniziare il mio capolavoro in onore di Sully Balloo.", "." },
+  ["d98d488707adb789"] = { "Hai recuperato un tomo!", "." },
   ["d990bb297ab8278d"] = { "Litigare di continuo non ci porterà da nessuna parte. Dobbiamo agire.", "." },
   ["d9948d48a39c598b"] = { "Ben fatto! La tua conoscenza delle pozioni sta progredendo bene.", "." },
   ["d99635213fcb0428"] = { "Continua, ti prego, questa storia è intrigante.", "." },

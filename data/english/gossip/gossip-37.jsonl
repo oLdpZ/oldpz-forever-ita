@@ -7,6 +7,7 @@
 {"id": "371abcc187f442f6", "field": "text", "en": "I see the exit! Hurry, hurry!", "hash": "371abcc187f442f6", "src": "vmangos@13b49dc"}
 {"id": "371d7988608d34ff", "field": "text", "en": "Uh oh!  I'm out of here!", "hash": "371d7988608d34ff", "src": "vmangos@13b49dc"}
 {"id": "3720408ad864ac2d", "field": "text", "en": "Tell me more about these hippogryphs.", "hash": "3720408ad864ac2d", "src": "vmangos@13b49dc"}
+{"id": "3731bc58489c5535", "field": "text", "en": "Yes, Vrang, it is true. When Daelin Proudmoore took control of Theramore, he did terrible things. Dishonorable things that I could not be a part of.", "hash": "3731bc58489c5535", "src": "collector@1.60.1.70862"}
 {"id": "3733c2395899e857", "field": "text", "en": "Who dares disturb my meditation?", "hash": "3733c2395899e857", "src": "vmangos@13b49dc"}
 {"id": "373814e9bca34b13", "field": "text", "en": "RUN! RUN FOR HILLS!", "hash": "373814e9bca34b13", "src": "vmangos@13b49dc"}
 {"id": "373c11fe7bd9a723", "field": "text", "en": "You get down from there right now!  I don't want you climbing that thing.  It's not safe.", "hash": "373c11fe7bd9a723", "src": "vmangos@13b49dc"}
@@ -20,6 +21,7 @@
 {"id": "3754a3f5a21c1b3c", "field": "text", "en": "All right, stay close.  These fiends will jump right out of the shadows at you if you let your guard down.", "hash": "3754a3f5a21c1b3c", "src": "vmangos@13b49dc"}
 {"id": "3759afdda241ba5b", "field": "text", "en": "The Kolkar will rule!", "hash": "3759afdda241ba5b", "src": "vmangos@13b49dc"}
 {"id": "3759fb74a489bda2", "field": "text", "en": "Glad to be out of that wretched trench. Not much nicer up here though!", "hash": "3759fb74a489bda2", "src": "vmangos@13b49dc"}
+{"id": "375b939ea8e3e5b7", "field": "text", "en": "<As you near this strider, it fixes you with golden eyes. The long wispy feathers that stretch over its body have an almost misty quality to them, and it seems like little currents of air are trapped within.$B$BThis strider has a few scars on its legs and was likely originally part of the Peacekeepers. It clacks its beak gently at you, curious about you and what lies beyond the bounds of Zephras.$B$BIt would seem this adventurous strider approves of you and would delight in traveling to new worlds with you as its companion and rider.>", "hash": "375b939ea8e3e5b7", "src": "collector@1.60.1.71037", "npcs": [267304]}
 {"id": "3760c4cd6598ccb5", "field": "text", "en": "I require a vial of Aqual Quintessence, Hydraxis, for I go to the Molten Core to extinguish a rune of the Firelords", "hash": "3760c4cd6598ccb5", "src": "vmangos@13b49dc"}
 {"id": "37631c03eccbd320", "field": "text", "en": "Here goes nothing...", "hash": "37631c03eccbd320", "src": "vmangos@13b49dc"}
 {"id": "376e05195608074a", "field": "text", "en": "Greetings, $N. I am Duke Nicholas Zverenhoff of the Argent Dawn.", "hash": "376e05195608074a", "src": "vmangos@13b49dc"}
@@ -31,6 +33,7 @@
 {"id": "37aa2264b4a9c10d", "field": "text", "en": "Do not forget the sacrifices made on this day, night elf. We have all suffered immensely at the hands of these beasts.", "hash": "37aa2264b4a9c10d", "src": "vmangos@13b49dc"}
 {"id": "37af0b57b68b1399", "field": "text", "en": "My business plan never accounted for housing giant kodos... maybe I should have gone into the underwater basket weaving business instead.", "hash": "37af0b57b68b1399", "src": "vmangos@13b49dc"}
 {"id": "37be1f635b44f2b9", "field": "text", "en": "Shal myrinan ishnu daldorah...", "hash": "37be1f635b44f2b9", "src": "vmangos@13b49dc"}
+{"id": "37c0bb88adcd758f", "field": "text", "en": "Liladris has been waiting for me at Maestra's Post. I'll follow you, $N. Where did I put that bag...", "hash": "37c0bb88adcd758f", "src": "collector@1.60.1.70862"}
 {"id": "37c49ad5514c16fd", "field": "text", "en": "Now where did I put that mysterious fossil? Ah, maybe up there...", "hash": "37c49ad5514c16fd", "src": "vmangos@13b49dc"}
 {"id": "37ce0dc9338559a5", "field": "text", "en": "Er... that's how I found them.  I wanted to show the king that they were a threat!  Say Captain... I overheard Guard Fengus calling you a fat, useless gnoll lover!", "hash": "37ce0dc9338559a5", "src": "vmangos@13b49dc"}
 {"id": "37d8f81062bf0933", "field": "text", "en": "Come in, come in. Just don't sit too close to the stove. It hasn't exploded yet today, but just to be safe I think you should sit elsewhere.", "hash": "37d8f81062bf0933", "src": "vmangos@13b49dc"}

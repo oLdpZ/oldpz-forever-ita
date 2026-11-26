@@ -8,6 +8,7 @@ WFJ.Data.add("gossip", {
   ["f8276e75c5531bff"] = { "Posso chiederti cosa ci fai qui? Indossa la tua tenuta da studente e studia!", "." },
   ["f8292503c790f320"] = { "Chi osa provocare il messaggero di Edwin Van Cleef? Muori, {race}!", "." },
   ["f8314c39188f4573"] = { "Sì, sì, sì! Sei proprio <il/la> {race} che cercavo!\n\nSiediti! Abbiamo molto di cui parlare!!", "." },
+  ["f832f61bb589eaa4"] = { "Eccellente! Hai dimostrato il tuo valore difendendo le nostre operazioni nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧! Che la fama del tuo onore si diffonda in lungo e in largo per le nostre terre.", "." },
   ["f855dbdf3bab6b02"] = { "I mortali sono caduti! La nuova era della legione ⟦Blackrock=Roccianera⟧ è vicina!", "." },
   ["f85da2b44f6e9764"] = { "Lava? Non badarci, amico. Guardati intorno. Goditi le gioie che la natura ha da offrire.", "." },
   ["f869d21e57e4296b"] = { "⟦Hegnar Rumbleshot=Hegnar Granzuffa⟧, al tuo servizio!", "." },

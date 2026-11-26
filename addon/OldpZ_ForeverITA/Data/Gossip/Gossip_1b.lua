@@ -16,6 +16,7 @@ WFJ.Data.add("gossip", {
   ["1b32b4bd69271044"] = { "Kazum! Possiedo il tuo scettro! Ti ordino di entrare in questo mondo!", "." },
   ["1b335a0c1d935927"] = { "Porta i miei saluti al comandante Trebor, {race}.", "." },
   ["1b3d62880bece4ba"] = { "La battaglia per la ⟦Warsong Gulch=Forra dei Cantaguerra⟧ è una battaglia che non possiamo perdere. Combattiamo per il nostro onore e per la nostra terra, e nessun orco né alleato traviato ce li porterà via!", "." },
+  ["1b5148382757359d"] = { "Sono esemplari splendidi, {name}: ora gli ultimi pezzi sono al loro posto. Finalmente, il tuo momento è giunto!\n\nNelle profondità del Great Ossuary di Scholomance giacciono i resti scheletrici di molte creature. Tra questi c'è un gran destriero un tempo nobile. L'anima svuotata di questo destriero ora fa da cavalcatura al cavaliere della morte Razziabuio. È lui che dovrai affrontare, ed è su questo destriero che dovrai esprimere il tuo giudizio. Solo tu, {name}, puoi redimere la sua anima e salvarla dal tormento della sua schiavitù.", "." },
   ["1b5261271e50a5c0"] = { "Così si ragiona! Prendi ago e filo e diamoci dentro!", "." },
   ["1b5513f7c6d8ce32"] = { "%s sembra immerso in una profonda contemplazione.", "." },
   ["1b561d1b378f313b"] = { "<Mivin indica la sua merce e poi di nuovo te con un sorriso, ma non dice nulla.>", "." },

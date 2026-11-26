@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["a3b812a174415fb8"] = { "⟦Narain Soothfancy=Narain Veravite⟧, al tuo servizio! Ingegnere in pensione e maestro indovino! So predirti il futuro prima ancora che accada!", "." },
   ["a3c6304e9607d57b"] = { "Che sollievo che tu sia tornata, Shay. Ti prego, non scappare mai più così! Cosa direi ai tuoi genitori se ti perdessi?", "." },
   ["a3c968fa6ddfe32f"] = { "Ma ciao! Sei qui per imparare la giusta tecnica di una nuova arma?", "." },
+  ["a3cbd80c283782bf"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata a ⟦Ironforge=Forgiardente⟧, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["a3cc8f58e2d309ee"] = { "Lo stormo cromatico si occuperà di questi intrusi. Parliamo di questioni più urgenti.", "." },
   ["a3d306d63d7c70e7"] = { "Ecco la classifica finale!\n\nThrall: $2200w\n\nCairne: $2201w\n\nSylvanas: $2202w\n\nTotale ⟦Horde=Orda⟧: $2207w\n\nBolvar: $2203w\n\nMagni: $2204w\n\nTyrande: $2205w\n\nTotale ⟦Alliance=Alleanza⟧: $2206w\n\nL'⟦Horde=Orda⟧ ha l'eroe più popolare!", "." },
   ["a3de7cc6a4b74960"] = { "%s torna in vita con un sussulto!", "." },

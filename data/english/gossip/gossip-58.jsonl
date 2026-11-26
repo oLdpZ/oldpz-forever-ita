@@ -2,6 +2,7 @@
 {"id": "58047f17b13694fa", "field": "text", "en": "Has the sun risen already?  There are just never enough hours in the night!  Well, Saelienne will take good care of you.  You can find her tending to her guests over in the Craftsmen's Terrace in northeastern Darnassus.", "hash": "58047f17b13694fa", "src": "vmangos@13b49dc"}
 {"id": "5806712a1f6bc925", "field": "text", "en": "Caught one! I'll see if any of the guards are hungry. Come on Fang!", "hash": "5806712a1f6bc925", "src": "vmangos@13b49dc"}
 {"id": "5807dccb1af5f3c5", "field": "text", "en": "No more tin bars! Even my arms hurt from stacking them. We have all that we need, so go ask one of the others if they need you to collect anything.", "hash": "5807dccb1af5f3c5", "src": "vmangos@13b49dc"}
+{"id": "58087a20a01cc36e", "field": "text", "en": "Watch yourself, $C. The Windshapers will not tolerate hostility from the High Order.", "hash": "58087a20a01cc36e", "src": "collector@1.60.1.70790"}
 {"id": "580a82b8dd93fc75", "field": "text", "en": "Let's go, goblin!", "hash": "580a82b8dd93fc75", "src": "vmangos@13b49dc"}
 {"id": "580f5a872dba16ec", "field": "text", "en": "That one's empty!!", "hash": "580f5a872dba16ec", "src": "vmangos@13b49dc"}
 {"id": "581aff3669ce4a83", "field": "text", "en": "%s places Marg's head in the cauldron.", "hash": "581aff3669ce4a83", "src": "vmangos@13b49dc"}
@@ -15,6 +16,7 @@
 {"id": "5829558283463b5b", "field": "text", "en": "Hail, traveler.  My eyesight may be poor but I can sense the footsteps of a $c from a mile away.  For years I defended Stormwind with pride but once my eyes failed me, I was forced to retire.", "hash": "5829558283463b5b", "src": "vmangos@13b49dc"}
 {"id": "5831ac24a88a3d36", "field": "text", "en": "Stay back vile creatures!", "hash": "5831ac24a88a3d36", "src": "vmangos@13b49dc"}
 {"id": "5834a2f0832e56f8", "field": "text", "en": "Wanna buy a cockroach?", "hash": "5834a2f0832e56f8", "src": "vmangos@13b49dc"}
+{"id": "58371811e38e6ec5", "field": "text", "en": "How may I help you today?", "hash": "58371811e38e6ec5", "src": "collector@1.60.1.70862", "npcs": [252019]}
 {"id": "584447a109b1b683", "field": "text", "en": "My machines are the future! They'll destroy you all!", "hash": "584447a109b1b683", "src": "vmangos@13b49dc"}
 {"id": "58477f3229ac1906", "field": "text", "en": "Whatever. The revolting, unkempt Horde filth...", "hash": "58477f3229ac1906", "src": "vmangos@13b49dc"}
 {"id": "585665da265a5615", "field": "text", "en": "%s tosses the sword into the shallow pool.", "hash": "585665da265a5615", "src": "vmangos@13b49dc"}
@@ -29,6 +31,7 @@
 {"id": "58879694284c0efd", "field": "text", "en": "If you are one that prefers to hunt in the outdoor world, both Felwood's treants and Un'Goro's lashers are an excellent source of fronds.$B$BIf you are more of a risk-taker, the eastern and western wings of Dire Maul will provide you with a nearly limitless supply of savage fronds.", "hash": "58879694284c0efd", "src": "vmangos@13b49dc"}
 {"id": "588eb0f360330512", "field": "text", "en": "Oh, you must mean the Stormwind Counting House.  It's not far from the gates after you enter Stormwind.", "hash": "588eb0f360330512", "src": "vmangos@13b49dc"}
 {"id": "5890c669deb1ec6b", "field": "text", "en": "Hello, $n! If you don't see it in my shop, chances are good I can get it!", "hash": "5890c669deb1ec6b", "src": "vmangos@13b49dc"}
+{"id": "5891d9d6211aefaa", "field": "text", "en": "The Windshapers possess the gift of skysight, and we are working tirelessly to find our lost elemental benefactors, so that they may guide us once again.", "hash": "5891d9d6211aefaa", "src": "collector@1.60.1.70790"}
 {"id": "58927aae863b0292", "field": "text", "en": "The Lorekeeper is an ancient. He has served under our glorious Queen!", "hash": "58927aae863b0292", "src": "vmangos@13b49dc"}
 {"id": "589c40b0633881c2", "field": "text", "en": "%s gives message to Apothecary Zamah.", "hash": "589c40b0633881c2", "src": "vmangos@13b49dc"}
 {"id": "589f6d9288e318e2", "field": "text", "en": "The King's guards should be along shortly to pick up the Memorial. In the meantime, come join me upstairs and let's finish our little chat, $n.", "hash": "589f6d9288e318e2", "src": "vmangos@13b49dc"}
@@ -44,6 +47,7 @@
 {"id": "58c9f986cbecad8f", "field": "text", "en": "Hi Ho, Hi Ho, and all that... let's get a move on.", "hash": "58c9f986cbecad8f", "src": "vmangos@13b49dc"}
 {"id": "58ce7406d4f88db5", "field": "text", "en": "If you're looking for information that the Cenarion Circle might have archived somewhere, then I'm the one to talk to.  Then again, you need to know what information you're looking for first before I can really help you.$B$BSee how that works?  Brilliant!", "hash": "58ce7406d4f88db5", "src": "vmangos@13b49dc"}
 {"id": "58d22665a1372849", "field": "text", "en": "Your leader takes residence at the doorstep to Naxxramas. Do you think he does not feel the pressure?\n", "hash": "58d22665a1372849", "src": "vmangos@13b49dc"}
+{"id": "58e2b6d802172940", "field": "text", "en": "Oi! You... I need another drink, get yer butt over here!", "hash": "58e2b6d802172940", "src": "collector@1.60.1.70888"}
 {"id": "58e4fb8bcb1c29ef", "field": "text", "en": "I'd love to get one of those written fortunes you mentioned!  I've got the space in my inventory for it.", "hash": "58e4fb8bcb1c29ef", "src": "vmangos@13b49dc"}
 {"id": "58e5d795eafd567b", "field": "text", "en": "I am one of the Seven, and it is our doom to stand sentry.  Forever.", "hash": "58e5d795eafd567b", "src": "vmangos@13b49dc"}
 {"id": "58e6a056dc9d1378", "field": "text", "en": "Warg, are you about ready to eat? I am gonna get it started.", "hash": "58e6a056dc9d1378", "src": "vmangos@13b49dc"}

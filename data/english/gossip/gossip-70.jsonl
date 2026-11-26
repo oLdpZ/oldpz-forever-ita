@@ -4,15 +4,18 @@
 {"id": "702067fce7f05e4d", "field": "text", "en": "You'll find no finer rat kabob this side of Khaz Modan!", "hash": "702067fce7f05e4d", "src": "vmangos@13b49dc"}
 {"id": "7023d96b8aeeee06", "field": "text", "en": "Welcome, and feel free to examine my goods.  Other than the moldy smell, they are in perfect condition.", "hash": "7023d96b8aeeee06", "src": "vmangos@13b49dc"}
 {"id": "702c1efa18126341", "field": "text", "en": "His lieutenant, Ilkrud Magthrull possesses a tome which might indicate the location of the remaining soulgems.", "hash": "702c1efa18126341", "src": "vmangos@13b49dc"}
+{"id": "702ff0b6afc8857f", "field": "text", "en": "What makes you believe this?", "hash": "702ff0b6afc8857f", "src": "collector@1.60.1.70862", "npcs": [221827]}
 {"id": "703258a6fb414410", "field": "text", "en": "Aha!  Good day, good day, Master $C!  Come, sit down and have a drink.  You have an enterprising look in your eye, and I think you'll find speaking to me worth your time...", "hash": "703258a6fb414410", "src": "vmangos@13b49dc"}
 {"id": "7033c496d8c1c374", "field": "text", "en": "Weapons Trainer", "hash": "7033c496d8c1c374", "src": "vmangos@13b49dc"}
 {"id": "703c7cabc54dc8d8", "field": "text", "en": "Uh... the disease is potent.  And it attacks the mind...", "hash": "703c7cabc54dc8d8", "src": "vmangos@13b49dc"}
+{"id": "7040adfcdf2c23d4", "field": "text", "en": "Ko, i waldir Regenthor. A garde lo thor ve borne nud hamerung ador garde bur agol cynegold.", "hash": "7040adfcdf2c23d4", "src": "collector@1.60.1.70938", "npcs": [257018]}
 {"id": "704135b0b52d4a0b", "field": "text", "en": "Doctor Draxlegauge will give you further instructions, $n. Many thanks for your help!", "hash": "704135b0b52d4a0b", "src": "vmangos@13b49dc"}
 {"id": "70440afb06655c64", "field": "text", "en": "I'm Augustus!  You want it, I got it!  You wanna sell it, then I want it!", "hash": "70440afb06655c64", "src": "vmangos@13b49dc"}
 {"id": "704a089f7f482d2e", "field": "text", "en": "The Brotherhood shall prevail!", "hash": "704a089f7f482d2e", "src": "vmangos@13b49dc"}
 {"id": "70516ee8a7796347", "field": "text", "en": "This is unforseen.  The being who enchanted this is known to me...", "hash": "70516ee8a7796347", "src": "vmangos@13b49dc"}
 {"id": "705c13c4629487a3", "field": "text", "en": "You're back already!  What can I do for you now?", "hash": "705c13c4629487a3", "src": "vmangos@13b49dc"}
 {"id": "705da94e11e2095b", "field": "text", "en": "Watch your step in here, $gboy:girl;.  The master sees all...", "hash": "705da94e11e2095b", "src": "vmangos@13b49dc"}
+{"id": "7078bb18a07e71bf", "field": "text", "en": "Ahh I see... uninvited guests. Meddling in our affairs I see.", "hash": "7078bb18a07e71bf", "src": "collector@1.60.1.71037"}
 {"id": "707a451e93b91897", "field": "text", "en": "For the Red!", "hash": "707a451e93b91897", "src": "vmangos@13b49dc"}
 {"id": "707e6c157f87b98d", "field": "text", "en": "The altar is glowing! We have done it!", "hash": "707e6c157f87b98d", "src": "vmangos@13b49dc"}
 {"id": "707f7fd2c89d93a1", "field": "text", "en": "This is a dangerous line of business!$B$BMiran just left with a delivery. He should be back in a few minutes.", "hash": "707f7fd2c89d93a1", "src": "vmangos@13b49dc"}

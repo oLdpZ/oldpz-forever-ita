@@ -1,6 +1,12 @@
 {"id": 476015, "field": "text", "en": "Incense created", "hash": "672265528c660a01", "src": "wdb@1.60.1.70450"}
 {"id": 476016, "field": "text", "en": "Spread incense", "hash": "5dec552487cab90a", "src": "wdb@1.60.1.70450"}
+{"id": 476060, "field": "text", "en": "Experimental Refuse discarded", "hash": "6b8509c400a498ac", "src": "wdb@1.60.1.71037"}
+{"id": 476288, "field": "text", "en": "Small rock rubbing", "hash": "0222e23b1eab63b9", "src": "wdb@1.60.1.71037"}
+{"id": 476289, "field": "text", "en": "Large rock rubbing", "hash": "9f3dc262038136c8", "src": "wdb@1.60.1.71037"}
 {"id": 476295, "field": "text", "en": "Pouch of Tomb Dust thrown into the sea behind Stromgarde", "hash": "9695dacd0b250f12", "src": "wdb@1.60.1.70450"}
+{"id": 476332, "field": "text", "en": "Advice from Lady Prestor", "hash": "740955e34a6db1a1", "src": "wdb@1.60.1.71037"}
+{"id": 476336, "field": "text", "en": "Ragged John's Story", "hash": "6794e29c499c626c", "src": "wdb@1.60.1.71037"}
+{"id": 476346, "field": "text", "en": "Speak with Squire Rowe", "hash": "b056e48243cc663a", "src": "wdb@1.60.1.71037"}
 {"id": 476482, "field": "text", "en": "Raise your alchemy skill to 20", "hash": "4cb1c345838708e2", "src": "wdb@1.60.1.70450"}
 {"id": 476484, "field": "text", "en": "Raise your blacksmithing skill to 20", "hash": "9886bcda6c3987aa", "src": "wdb@1.60.1.70450"}
 {"id": 476486, "field": "text", "en": "Raise your enchanting skill to 20", "hash": "67d7fcad526a75e5", "src": "wdb@1.60.1.70450"}
@@ -77,3 +83,7 @@
 {"id": 476860, "field": "text", "en": "Western vial placed", "hash": "3fd1ac41ee0437fe", "src": "wdb@1.60.1.71139"}
 {"id": 476861, "field": "text", "en": "Northern vial placed", "hash": "bf6465fc79e5fd87", "src": "wdb@1.60.1.71139"}
 {"id": 476862, "field": "text", "en": "Southern vial placed", "hash": "102f0d64a412c83f", "src": "wdb@1.60.1.71139"}
+{"id": 476909, "field": "text", "en": "Pinto Horse", "hash": "ac94d86c8f0bb57a", "src": "wdb@1.60.1.71037"}
+{"id": 476910, "field": "text", "en": "Brown Horse", "hash": "12f16ec353a1472b", "src": "wdb@1.60.1.71037"}
+{"id": 476911, "field": "text", "en": "Chestnut Mare", "hash": "2f021f15596cd92d", "src": "wdb@1.60.1.71037"}
+{"id": 476999, "field": "text", "en": "Witch Doctor Ti'ik's Head", "hash": "273fe68c1d0d8fdf", "src": "wdb@1.60.1.71037"}

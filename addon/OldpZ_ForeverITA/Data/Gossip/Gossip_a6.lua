@@ -19,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["a644eb9a667a329c"] = { "Benvenut<o/a> nelle ⟦Stockade=Segrete di Roccavento⟧!", "." },
   ["a652437ed3555874"] = { "Magari non segui le vie della Luce come un Cavaliere della ⟦Silver Hand=Mano d'Argento⟧, ma puoi sempre chiederci aiuto.", "." },
   ["a657df1b12060948"] = { "Grazie a te. Grazie agli sciamani.\n\nCorruzione si ritira ma vita continua a svanire. Tocca a sciamani proteggere vita.", "." },
+  ["a658e962caed6c97"] = { "Ah, sì. Mux ne sarà molto contento.\n\nQuei bracciali facevano parte di un'armatura completa. Se ti interessa aiutarmi ancora, potrei prendere in considerazione l'idea di cederti il resto.", "." },
   ["a663647c46b679fb"] = { "%s guarda a destra e a sinistra...", "." },
   ["a66bec02a6a19bea"] = { "Se non vuoi servire il mio Padrone con la tua spada e con ciò che sai dei suoi nemici...", "." },
   ["a675cae7c0561162"] = { "Il principe ti ha raccontato la storia di Brandicenere? È la nostra preferita tra le sue storie. La sua preferita è il seguito di Brandicenere. Naturalmente, nessuno è mai riuscito a fargliela raccontare.", "." },

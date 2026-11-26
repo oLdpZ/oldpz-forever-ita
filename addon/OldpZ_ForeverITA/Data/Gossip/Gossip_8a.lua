@@ -36,6 +36,7 @@ WFJ.Data.add("gossip", {
   ["8ac6ded5b124ceb7"] = { "Mi sembra di vedere qualcosa.", "." },
   ["8acd9973891e3199"] = { "Sento odore di ladro.", "." },
   ["8add11d98b1b84e2"] = { "Il compito delle Staffette è garantire la sicurezza di chi viaggia attraverso le pianure di Mulgore. Chi minaccia la sicurezza della patria dei tauren rischia di subire la nostra punizione.", "." },
+  ["8ade345aeb816eb8"] = { "I miei ladri devono affinare l'arte di scassinare, e mi servono serrature abbastanza difficili: la roba che ci fa Zan va bene solo per i novellini più sprovveduti.\n\nFacciamo così: se mi porti 5 Cofanetti Pesanti, ti darò alcuni dei migliori coltelli da lancio che la gente del nostro mestiere conosca.\n\nPuoi aprire i cofanetti e frugarci dentro, ma dovrai lasciarci almeno qualche moneta... anche un ladro in addestramento ha bisogno di motivazione.", "." },
   ["8ae2436743eec2c5"] = { "Che bello vedere una faccia amica. Lo speziale Johaan non mi rivolge molte chiacchiere, a meno che non voglia qualcosa. È uscito dalla tomba da troppo tempo. Un giorno diventerò così anch'io, dicono. Inquietante. Magari a quel punto non me ne importerà più.", "." },
   ["8aea483c819fc34c"] = { "In edificio di ⟦War Quarter=Quartiere della Guerra⟧ su anello esterno di città.", "." },
   ["8af53e6d95121543"] = { "Tre urrà per {name}! Questa terra tornerà a essere nostra!", "." },

@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["1891f964e2b192a6"] = { "Capitolo sui Cristalli Arcani e l'arcanite.", "." },
   ["18a307ae9775aedf"] = { "%s si china per esaminare il suo colpo.", "." },
   ["18b7ed96c13d58c9"] = { "{name}, che bello rivederti! Ti stai divertendo alla Fiera?\n\nVuoi fare a braccio di ferro? No, certo che no... ci tieni al tuo braccio!", "." },
+  ["18bb2fc6d1d7d895"] = { "Arathi è ancora bagnata dal sangue di grandi guerrieri e il cozzare dell'acciaio risuona ancora per tutta Alterac. Non farmi perdere tempo, a meno che tu non porti notizie dal fronte!", "." },
   ["18bc5c8b86bc90dc"] = { "Già... Dammi le notizie.", "." },
   ["18bf4d2f3b414839"] = { "Quelli come te?", "." },
   ["18c13ed80e1ecc8d"] = { "Di nuovo? Sbrigati, Komak, ne ho fin sopra i capelli.", "." },

@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["aa73929badcffc6c"] = { "Certamente!", "." },
   ["aa77950425b9644d"] = { "Dai un pesce a un toro e lo sfamerai per un giorno. Insegna a un toro a pescare e lo sfamerai per tutta la vita. ⟦Uthan Stillwater=Uthan Acqua Ferma⟧ può insegnarti a pescare. Cerca la sua saggezza a ovest del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧, lungo le rive del ⟦Stonebull Lake=Lago Toro di Pietra⟧.", "." },
   ["aa78f17405c37c8f"] = { "Ciao! Che piacere rivederti, {name}. Dimmi, hai completato la prima missione che ti ho dato? Se sì, potrei avere una seconda missione per te...", "." },
+  ["aa7a3b997737bf82"] = { "Soffriamo molto per gli eventi del passato. Grazie per ciò che hai fatto per proteggere i Mordilegno. In segno della nostra crescente amicizia, ti prego di accettare questa umile offerta.", "." },
   ["aa7ae11b5ec90944"] = { "La corruzione si insinua nel boschetto della natura. La foresta va protetta a ogni costo.", "." },
   ["aa7b0486a85c46c7"] = { "Devo tornare al mio mezzo. Cerca e distruggi imminente! Coprimi! Guardami le spalle! VAI VAI VAI!", "." },
   ["aa81707bc4102b7c"] = { "Vuoi imparare la conciatura, eh? Simon Tanner potrebbe insegnartela. Lo trovi nella Città Vecchia, al Protective Hide.", "." },

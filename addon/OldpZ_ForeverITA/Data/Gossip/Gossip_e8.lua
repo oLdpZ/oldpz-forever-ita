@@ -36,6 +36,7 @@ WFJ.Data.add("gossip", {
   ["e892d8f83e954ceb"] = { "Cassetta della posta", "." },
   ["e89586e14a9aabf9"] = { "Mangio... le tue... ossa...", "." },
   ["e8978b0928de1f9a"] = { "Non accalcatevi, gente!", "." },
+  ["e8985a2b7a283730"] = { "Era ora! Ho dei clienti che aspettano.\n\nDammi quella roba e fa' attenzione. Stai per muovere il primo passo nella tua carriera di Fabbro d'Armi.", "." },
   ["e8a7042299228cef"] = { "Interessante, interessante... Conosco una druida che vive in cima alla collina sopra la ⟦Wailing Caverns=Caverna dei Lamenti⟧, {name}. Forse potrà dirti di più su questa scheggia che hai trovato.\n\nOra devo tornare al lavoro!", "." },
   ["e8b52a9013618a5f"] = { "FATEVI AVANTI, MIEI SERVITORI! DIFENDETE IL VOSTRO PADRONE!", "." },
   ["e8b8bcb94581e2e1"] = { "Ma certo! Verso quale professione vuoi che ti indirizzi?\r\n\nSegnerò sulla tua mappa la posizione dell'istruttore locale che preferisci. Ricorda che nelle capitali puoi trovare istruttori per un addestramento più completo.", "." },

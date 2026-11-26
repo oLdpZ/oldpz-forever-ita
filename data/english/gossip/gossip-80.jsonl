@@ -1,7 +1,10 @@
+{"id": "800464b6fbaec75f", "field": "text", "en": "As I said, the creature that attacked us fled when I singed its backside with lightning, but not before biting Banon. On our way back to town, the gnolls surrounded us and took us captive.$B$BIt wasn't until they started to pull us out of the boat on Fenris Isle that... the change started.", "hash": "800464b6fbaec75f", "src": "collector@1.60.1.70888", "npcs": [259620]}
 {"id": "8004836af7028ed9", "field": "text", "en": "Our units are not upgraded, and I don't have enough supplies to upgrade them.", "hash": "8004836af7028ed9", "src": "vmangos@13b49dc"}
 {"id": "800a0e611446178b", "field": "text", "en": "From way downtown!", "hash": "800a0e611446178b", "src": "vmangos@13b49dc"}
+{"id": "800b0ac73a57ce42", "field": "text", "en": "<Pick him up and carry him.>", "hash": "800b0ac73a57ce42", "src": "collector@1.60.1.70790", "npcs": [253002]}
 {"id": "80135bc0cc1c6dbf", "field": "text", "en": "Yes, come. My master and I shall be waiting.", "hash": "80135bc0cc1c6dbf", "src": "vmangos@13b49dc"}
 {"id": "80176c121afced13", "field": "text", "en": "Yes, that is true. Paladins and priests alike train their skills and research great truths behind the walls of the Cathedral.", "hash": "80176c121afced13", "src": "vmangos@13b49dc"}
+{"id": "801833c5671141b9", "field": "text", "en": "The last of the embers are gone.", "hash": "801833c5671141b9", "src": "collector@1.60.1.70959"}
 {"id": "8019d546ce4a4816", "field": "text", "en": "GOSSIP_OPTION_AUCTIONEER", "hash": "8019d546ce4a4816", "src": "vmangos@13b49dc"}
 {"id": "8026003f044a17ba", "field": "text", "en": "How are your travels, $n? $g Sumi and Tumi missed you, you should say hi after your lesson : I have heard tales of your adventures, sounds like you have been busy;. Now let's see what you've learned while you were away.", "hash": "8026003f044a17ba", "src": "vmangos@13b49dc"}
 {"id": "802760c26da61e3e", "field": "text", "en": "The Blackwood tribe must not be permitted to interfere with the progress of nature.", "hash": "802760c26da61e3e", "src": "vmangos@13b49dc"}
@@ -12,6 +15,7 @@
 {"id": "804037ca74ceba91", "field": "text", "en": "<Lady Prestor glares at you.>", "hash": "804037ca74ceba91", "src": "vmangos@13b49dc"}
 {"id": "8048fc36bd40bef0", "field": "text", "en": "You have completed Teronis' mission, and I appreciate all you have done, $n.", "hash": "8048fc36bd40bef0", "src": "vmangos@13b49dc"}
 {"id": "804b9a4563a86be1", "field": "text", "en": "...pan fried, deep fried, and stir fried...", "hash": "804b9a4563a86be1", "src": "vmangos@13b49dc"}
+{"id": "804c61798fa2cf21", "field": "text", "en": "Menethil Harbor enjoys a bit of peace these days, thanks to the mountaineers. But we must be ever watchful of new threats from our enemies.", "hash": "804c61798fa2cf21", "src": "collector@1.60.1.70862", "npcs": [2104]}
 {"id": "80544dd82574afd5", "field": "text", "en": "The mailbox", "hash": "80544dd82574afd5", "src": "vmangos@13b49dc"}
 {"id": "805b501ade850228", "field": "text", "en": "Hey there, Belm!  Give me a mug of Thunder Ale, and one for my good friend $n.", "hash": "805b501ade850228", "src": "vmangos@13b49dc"}
 {"id": "805fe3b2b39ca71a", "field": "text", "en": "How unfortunate; it would appear that we have collected all of the mageweave bandages necessary. Perhaps you can go sell them on the auction house? But before you go, be a good $g boy : girl; and check with the other collectors present. They may have an errand to send you off on.", "hash": "805fe3b2b39ca71a", "src": "vmangos@13b49dc"}
@@ -21,6 +25,7 @@
 {"id": "8079f5031219a006", "field": "text", "en": "FREEEEEEEEEEDDOOOOMM!", "hash": "8079f5031219a006", "src": "vmangos@13b49dc"}
 {"id": "80827c057bff1927", "field": "text", "en": "It's getting away!", "hash": "80827c057bff1927", "src": "vmangos@13b49dc"}
 {"id": "8089ceaaa0eba938", "field": "text", "en": "Ograbisi needs new hat!", "hash": "8089ceaaa0eba938", "src": "vmangos@13b49dc"}
+{"id": "8091575b2f27a78d", "field": "text", "en": "Greetings, $N. You will have to forgive me for not being able to rise and introduce myself properly. I am still recovering from a recent encounter.$B$BI am Mus'hale, an adventurer much like yourself, with a desire to learn of all the various cultures I encounter on my travels.", "hash": "8091575b2f27a78d", "src": "collector@1.60.1.70938", "npcs": [269647]}
 {"id": "8096c9edfa84ac47", "field": "text", "en": "The Nightmare cannot be stopped!", "hash": "8096c9edfa84ac47", "src": "vmangos@13b49dc"}
 {"id": "8099c1545ddded05", "field": "text", "en": "Ow!  OK, I'll get back to work, $n!", "hash": "8099c1545ddded05", "src": "vmangos@13b49dc"}
 {"id": "809e98e4cb6a439e", "field": "text", "en": "Name, rank and serial number, soldier.\n", "hash": "809e98e4cb6a439e", "src": "vmangos@13b49dc"}
@@ -35,8 +40,11 @@
 {"id": "80bfdeee1c000888", "field": "text", "en": "Feel the power of the Blackrock Orcs!", "hash": "80bfdeee1c000888", "src": "vmangos@13b49dc"}
 {"id": "80c1cef56cf3d40c", "field": "text", "en": "%s stares to the northwest and lets out a long, drawn out howl.", "hash": "80c1cef56cf3d40c", "src": "vmangos@13b49dc"}
 {"id": "80cee6b74273ff4d", "field": "text", "en": "I think my necklace fell in the lake.  My daddy got it for me, and he's gonna be mad now.", "hash": "80cee6b74273ff4d", "src": "vmangos@13b49dc"}
+{"id": "80d4b1a81f445a4f", "field": "text", "en": "This year our yield is light and we can't hope to give them what they expect. The best case is that they simply kill us quickly. It's more likely they take everything we have and leave us to starve.", "hash": "80d4b1a81f445a4f", "src": "collector@1.60.1.70790"}
 {"id": "80e66d78b6e35135", "field": "text", "en": "Troggs! I swear the gods put them in this land only to torment me! Four inches deeper into the mines, then two feet back from the troggs!", "hash": "80e66d78b6e35135", "src": "vmangos@13b49dc"}
 {"id": "80e7b1715c8869e2", "field": "text", "en": "Free from this wretched cell at last! Let me show you to the courtyard....", "hash": "80e7b1715c8869e2", "src": "vmangos@13b49dc"}
 {"id": "80e880a103255e38", "field": "text", "en": "My family worked  the Northridge Lumber Mill in what's now Western Plaguelands. They were dedicated to the Dumah family, and now the Scarlet Crusade have taken it over along with all of Hearthglen!$B$BI will not rest until those zealots are wiped from Azeroth.", "hash": "80e880a103255e38", "src": "vmangos@13b49dc"}
 {"id": "80ecde69a0016975", "field": "text", "en": "Your security measures have failed. See to this interruption immediately!", "hash": "80ecde69a0016975", "src": "vmangos@13b49dc"}
 {"id": "80f156489b57ed46", "field": "text", "en": "Marketing - iCoke Redemption Greeting (S.H.E. non-Quest)", "hash": "80f156489b57ed46", "src": "vmangos@13b49dc"}
+{"id": "80f60840075b6047", "field": "text", "en": "Ayessa... my former sister. How far you've fallen, keeping company with this High Order filth.", "hash": "80f60840075b6047", "src": "collector@1.60.1.70790"}
+{"id": "80fbedd350ee22ea", "field": "text", "en": "The Windshapers and the High Order are up to something. There are rumors floating around that both groups plan to get the skycutters running again and use them to leave the Skywall. LEAVE SKYWALL? How ridiculous. Where would they even go?", "hash": "80fbedd350ee22ea", "src": "collector@1.60.1.70790"}

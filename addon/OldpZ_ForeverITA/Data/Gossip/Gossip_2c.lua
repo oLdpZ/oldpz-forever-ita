@@ -48,6 +48,7 @@ WFJ.Data.add("gossip", {
   ["2ce519cc8259a31f"] = { "Rawww! Urok è morto!! Ahah!!", "." },
   ["2cedad5e7a2d93be"] = { "Torna la stella nascente degli eroi! È bello rivederti, {name}. Sei sempre <benvenuto/benvenuta> nel nostro villaggio.", "." },
   ["2cf0167fe11d2f55"] = { "Chi è il prossimo?", "." },
+  ["2cf1dd7a40663f8b"] = { "Mi mancherai, {name}. Ho con te un tale debito di gratitudine che credo non riuscirò mai a ripagarlo.\n\nSpero che la tua nuova armatura per testa e torso ti piaccia, e che ti protegga a lungo.", "." },
   ["2cf418e3e6a6ffd1"] = { "Purtroppo, {class}, Darnassus e gli elfi della notte di Teldrassil non ti contano tra i loro veri amici. Solo quando ci dimostrerai la tua amicizia con le azioni, non con semplici parole, metterò a tua disposizione la mia scelta di cavalcature.", "." },
   ["2cf4253c5738520c"] = { "La prossima covata si schiuderà presto, sire. Saremo pronti a lanciare gli attacchi entro la fine della settimana.", "." },
   ["2cf72490d8304be2"] = { "<Tarsis geme.>\n\nForse c'è ancora tempo... Ascolta bene, mortale.\n\nHo cercato attraverso il tempo e attraverso il Nether. Ho stretto patti con una schiera di malvagi e scellerati così abietti...\n\n<Tarsis tossisce sangue tra le mani.>\n\nCi crederesti... ci crederesti che perfino Elune mi ha voltato le spalle, {race}? Morire qui, in questo modo...", "." },

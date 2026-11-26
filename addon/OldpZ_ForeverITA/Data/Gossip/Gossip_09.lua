@@ -20,6 +20,7 @@ WFJ.Data.add("gossip", {
   ["0939e36c484f268b"] = { "D'oh!", "." },
   ["093af810f377a1fb"] = { "Ciò che Sevine, Allistarj e Grol non avevano capito era che, proprio come i loro servitori erano vincolati alla terra, così lo sarebbero stati anche loro... Vedi, il prezzo della loro immortalità fu anche la prigionia e l'eterna servitù agli ordini di Razelikh. La crudele astuzia di Razelikh aveva trionfato ancora una volta.", "." },
   ["0945ea27c4f4cb21"] = { "Argh, mi serve aiuto qui!", "." },
+  ["0945fff63d19b125"] = { "Hai fatto la tua parte, {name}. L'⟦Alliance=Alleanza⟧ non può lasciare impuniti gli atti incivili dell'Orda!", "." },
   ["094bb50bd00238c1"] = { "Sono Samuel Hawke, il principale fornitore della Lega di Arathor qui al ⟦Arathi Basin=Bacino d'Arathi⟧. Man mano che migliorerai la tua reputazione presso di noi, ti metterò a disposizione una bella scelta di merci che potrebbero tornarti utili. Se ti servisse riparare qualcosa, offro anche quel servizio.", "." },
   ["095125d3d86e7a6d"] = { "Hakkar vivrà di nuovo!", "." },
   ["095ce64236f1cfdd"] = { "Il locandiere Norman, sull'anello superiore del ⟦Trade Quarter=Quartiere del Commercio⟧, è quello con cui parlare.", "." },

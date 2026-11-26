@@ -9,6 +9,7 @@
 {"id": "e435ee5d43176b00", "field": "text", "en": "%s begins countdown.", "hash": "e435ee5d43176b00", "src": "vmangos@13b49dc"}
 {"id": "e447ceb36a00054e", "field": "text", "en": "My son could design a faster car than that clunky goblin junk heap!", "hash": "e447ceb36a00054e", "src": "vmangos@13b49dc"}
 {"id": "e44886f9f676177d", "field": "text", "en": "The gate is in sight! We're going to make it! But first, I need to take a breather.", "hash": "e44886f9f676177d", "src": "vmangos@13b49dc"}
+{"id": "e44cb975b562f91d", "field": "text", "en": "I don't know how it started, but it hardly matters now. We need to extinguish it!", "hash": "e44cb975b562f91d", "src": "collector@1.60.1.70959"}
 {"id": "e44ef0ae88fb7579", "field": "text", "en": "What happens when the Earthen destabilize?", "hash": "e44ef0ae88fb7579", "src": "vmangos@13b49dc"}
 {"id": "e454cb1ea7b3e4eb", "field": "text", "en": "I'm getting ready to travel up the ridge, $n. I could use some help -- would you like to come with me?", "hash": "e454cb1ea7b3e4eb", "src": "vmangos@13b49dc"}
 {"id": "e461be3415be40f2", "field": "text", "en": "For Darrowshire!", "hash": "e461be3415be40f2", "src": "vmangos@13b49dc"}
@@ -18,6 +19,7 @@
 {"id": "e471c2f084a0eb26", "field": "text", "en": "Eh, well you've made it this far... go see Lavinia Crowe by the other bookshelf there. If you don't mess things up with her, maybe you can learn some more.", "hash": "e471c2f084a0eb26", "src": "vmangos@13b49dc"}
 {"id": "e471ce74c22f6efc", "field": "text", "en": "The orders are given!  Move out, and show them what we're made of!", "hash": "e471ce74c22f6efc", "src": "vmangos@13b49dc"}
 {"id": "e473545394e713a5", "field": "text", "en": "Ooo, so strong!  Happy Hallow's End, $n!", "hash": "e473545394e713a5", "src": "vmangos@13b49dc"}
+{"id": "e47581b870ef22a0", "field": "text", "en": "Hello, friend! I would be happy to offer you a riding saber, but first you should train with Jartsam over there. These fearless creatures are not easily ridden, but once you know how to ride one you will not find a better companion.", "hash": "e47581b870ef22a0", "src": "collector@1.60.1.70790", "npcs": [4730]}
 {"id": "e4798e1703e40794", "field": "text", "en": "In the northern part of Darkshore runs the Cliffspring River, flowing down from the lands now known as Felwood.  As the river flows out and empties out into the Mist's Edge, travel north to where the deepest parts of the ocean begin.  A stone formation that some call the Stone Claw due to its shape is where you may find what you seek.$B$BBe warned - threshers gather by the Stone Claw, and will attack those who trespass on their territory.", "hash": "e4798e1703e40794", "src": "vmangos@13b49dc"}
 {"id": "e47c04305d1d5bd4", "field": "text", "en": "This is disturbing. Please continue.", "hash": "e47c04305d1d5bd4", "src": "vmangos@13b49dc"}
 {"id": "e4907b9e67a5bff0", "field": "text", "en": "A thousand years ago, the immortal elves, demigods of the forest and dragons fought against the Legion on the slopes of Hyjal.", "hash": "e4907b9e67a5bff0", "src": "vmangos@13b49dc"}

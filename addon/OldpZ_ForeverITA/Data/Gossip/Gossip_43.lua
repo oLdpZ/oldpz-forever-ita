@@ -20,6 +20,7 @@ WFJ.Data.add("gossip", {
   ["434764915c4df11a"] = { "I nani Granmartello avranno anche destrieri veloci, ma quei grifoni del ⟦Aerie Peak=Picco dell'Aquila⟧ reggerebbero il calore della ⟦Great Forge=Grande Forgia⟧? Non credo proprio!", "." },
   ["4350ef28e07b5d4a"] = { "Benvenut<o/a>, <sacerdote/sacerdotessa>. L'⟦The Eye of Zuldazar=Occhio di Zuldazar⟧ pulsa di energia. Sei pront<o/a> per il passo successivo. Dammi il talismano e compirò l'infusione.", "." },
   ["4352061725627201"] = { "Gli spiriti di ⟦Stonetalon=Petrartiglio⟧ sono ancora in collera, {name}.", "." },
+  ["43526442757873bc"] = { "Ottimo lavoro, soldato! Continua così e faremo correre l'⟦Horde=Orda⟧ fino a Orgrimmar.", "." },
   ["43542d62edf59c2d"] = { "Soldati dei Piccatonante, aiutateci e proteggeteci! Il Signore della Foresta ci ha concesso la sua protezione. Ora il portale deve essere aperto!", "." },
   ["4356812cacf5af2a"] = { "%s russa forte e si accoccola accanto ad ⟦A-Me 01=E-Mi 01⟧.", "." },
   ["4357101097d98707"] = { "Ho troppo da fare per giocare a «indovina l'odore» con te, {race}. Di' cosa vuoi o sparisci dalla mia vista!", "." },

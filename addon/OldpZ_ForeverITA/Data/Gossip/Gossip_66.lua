@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["6606245ecb6f4220"] = { "Quando la S.P.R. & Co. mi ha lasciato in fin di vita nelle ⟦Barrens=Savane⟧, è stato Mathias a trovarmi. Senza di lui, ora sarei cibo per i predatori.", "." },
   ["6607c10dbe4631a9"] = { "Sì, consegnerò gli ordini al maestro di guerra Garrick!", "." },
+  ["6608fbe7a3784aee"] = { "Sei pront<o/a> per lo scambio?", "." },
   ["660fac026228275f"] = { "Cosa hai da vendere?", "." },
   ["660ffc78fa691b37"] = { "<Poso la mano sulla sfera.>", "." },
   ["661333292f23f150"] = { "Ciao. Ti ho già vist<o/a>... vero?", "." },
@@ -16,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["666a6c781bb8fae4"] = { "Direi che avevi fame! Trok avrebbe dovuto darti da mangiare prima... Cosa avrà combinato per tutto questo tempo?", "." },
   ["666c588f8507c742"] = { "Buona fortuna, {name}. E non dimenticare... prendi quel documento prima di cercare Gazin.", "." },
   ["666dcc97c67e3d3e"] = { "Maestro di guerra, ho perso le mie insegne. Potresti darmene di nuove?", "." },
+  ["666fdc38e98c75b3"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata a ⟦Thunder Bluff=Picco del Tuono⟧, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["666ffda18db67ee6"] = { "Hai visto Petra o Dadanga da queste parti?", "." },
   ["667116afb686a9f0"] = { "Il gran signore era il fulcro della Crociata. Sì, Mograine era chiamato il Brandicenere per le sue imprese contro le armate del Re dei Lich. Armato solo della sua lama e della sua fede, Mograine marciava contro interi battaglioni di non morti e ne usciva illeso: le ceneri dei suoi nemici erano l'unico segno del suo passaggio. Non capisci? Il volto stesso della morte lo temeva! Tremava in sua presenza!", "." },
   ["6672b2d113ec6784"] = { "Le rovine di ⟦Zul'Farrak=Zul'farrak⟧ si trovano nell'angolo nord-occidentale del deserto di Tanaris.", "." },
