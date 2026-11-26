@@ -958,7 +958,7 @@ def run_upstream(a: argparse.Namespace) -> int:
         raise ValueError(f"upstream --commit {a.commit!r} must be 7 to 40 hex chars")
     clone = Path(a.clone)
     head = upstream.head_commit(clone)
-    if not head.startswith(a.commit):
+    if not head.startswith(a.commit.lower()):
         raise ValueError(f"upstream clone is at {head}, not --commit {a.commit}")
     root = data_root()
     store = Store(root, english=True)

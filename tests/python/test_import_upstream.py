@@ -54,10 +54,7 @@ def _store(data: Path) -> Store:
 
 
 def _snapshot(data: Path) -> dict[str, bytes]:
-    return {
-        str(p.relative_to(data)): p.read_bytes()
-        for p in sorted((data / "english").rglob("*.jsonl"))
-    }
+    return {str(p.relative_to(data)): p.read_bytes() for p in sorted((data / "english").rglob("*.jsonl"))}
 
 
 def _go(clone: Path, sha: str, *extra: str) -> int:
@@ -132,9 +129,7 @@ def test_upstream_drops_placeholder_quest_whole(tmp_path: Path, monkeypatch):
 
 def test_upstream_gossip_bad_hash_skipped(tmp_path: Path, monkeypatch, capsys):
     data = _data_dir(tmp_path, monkeypatch)
-    good = _up(
-        "gossip", key(normalize_for("gossip", "Hello.")), "text", "Hello.", npcs=[3, 9]
-    )
+    good = _up("gossip", key(normalize_for("gossip", "Hello.")), "text", "Hello.", npcs=[3, 9])
     bad = _up("gossip", "0123456789abcdef", "text", "Bye.")
     clone, sha = _clone(tmp_path, {"gossip": [good, bad]})
     assert _go(clone, sha) == 0
@@ -161,9 +156,7 @@ def test_upstream_idempotent(tmp_path: Path, monkeypatch):
     first = _snapshot(data)
     assert _go(clone, sha) == 0
     assert _snapshot(data) == first
-    assert (
-        len(first) == 4
-    )  # quest shards by id range: two quest shards, one objective, one book
+    assert len(first) == 4  # quest shards by id range: two quest shards, one objective, one book
 
 
 def test_upstream_rejects_wrong_commit(tmp_path: Path, monkeypatch, capsys):
@@ -188,9 +181,7 @@ def test_upstream_writes_stamp(tmp_path: Path, monkeypatch):
     _data_dir(tmp_path, monkeypatch)
     clone, sha = _clone(tmp_path, {"quest": [_up("quest", 90001, "title", "New")]})
     assert _go(clone, sha) == 0
-    assert (
-        tmp_path / "pipeline" / "upstream-source.txt"
-    ).read_text() == f"wfj-upstream {sha}\n"
+    assert (tmp_path / "pipeline" / "upstream-source.txt").read_text() == f"wfj-upstream {sha}\n"
 
 
 def test_add_missing_adds_and_reports():
@@ -222,9 +213,6 @@ def test_upstream_rejects_short_commit(tmp_path: Path, monkeypatch, capsys):
 def test_upstream_rejects_non_repo(tmp_path: Path, monkeypatch, capsys):
     data = _data_dir(tmp_path, monkeypatch)
     (tmp_path / "plain").mkdir()
-    assert (
-        run(["english", "upstream", str(tmp_path / "plain"), "--commit", "abcdef1"])
-        != 0
-    )
+    assert run(["english", "upstream", str(tmp_path / "plain"), "--commit", "abcdef1"]) != 0
     assert "not a readable git repository" in capsys.readouterr().err
     assert _snapshot(data) == {}
