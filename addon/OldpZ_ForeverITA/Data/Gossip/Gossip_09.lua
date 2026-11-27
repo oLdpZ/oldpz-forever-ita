@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["0945fff63d19b125"] = { "Hai fatto la tua parte, {name}. L'⟦Alliance=Alleanza⟧ non può lasciare impuniti gli atti incivili dell'Orda!", "." },
   ["094bb50bd00238c1"] = { "Sono Samuel Hawke, il principale fornitore della Lega di Arathor qui al ⟦Arathi Basin=Bacino d'Arathi⟧. Man mano che migliorerai la tua reputazione presso di noi, ti metterò a disposizione una bella scelta di merci che potrebbero tornarti utili. Se ti servisse riparare qualcosa, offro anche quel servizio.", "." },
   ["095125d3d86e7a6d"] = { "Hakkar vivrà di nuovo!", "." },
+  ["0954211c8e38c34c"] = { "Oh, cielo, questo è davvero storico. Un ritrovamento monumentale. Ma queste bestie maledette! Merrin sembra gestire la situazione piuttosto bene. Ora, se solo riuscissi a ricomporre questo intricato rompicapo...", "." },
   ["095ce64236f1cfdd"] = { "Il locandiere Norman, sull'anello superiore del ⟦Trade Quarter=Quartiere del Commercio⟧, è quello con cui parlare.", "." },
   ["095ecafa44dc21b5"] = { "Ah, «Evocazioni mistiche degli Arcimaghi di Dalaran». Perfetto.", "." },
   ["0963bd1ce1c233e7"] = { "Ha funzionato! Incredibile! A quanto pare non ho perso il tocco...", "." },
@@ -39,6 +40,7 @@ WFJ.Data.add("gossip", {
   ["09a9fd5d45f9cf6a"] = { "Paval Reethe! Finalmente ti ho trovato. E adesso te la fai pure con gli ogre? Non temere, persino ai disertori e ai traditori si concede un po' di pietà.", "." },
   ["09ac3b2ccd14b9dc"] = { "Non è il momento, {name}.\n\nTi ha dato di volta il cervello?!", "." },
   ["09afdccfde65e14a"] = { "<L'abominio resta senza vita, privo di una testa che lo controlli.>", "." },
+  ["09cf060e8eba3622"] = { "<Elaadrin ti osserva con odio a stento trattenuto.>\n\nOsi mettere piede nel nostro santuario dopo aver versato sangue dell'Alto Ordine? O sei molto coraggios<o/a>, o molto stupid<o/a>. L'Alto Ordine non perdona, e noi non dimentichiamo.\n\nUn giorno pagherai i tuoi crimini con il sangue.", "." },
   ["09d50c398109bc27"] = { "Grazie per avermi salvato! La tua impresa non passerà inosservata.", "." },
   ["09dba50c81659f47"] = { "L'equilibrio è stato ristabilito!", "." },
   ["09e5cfbc3192caa8"] = { "Flagello nel ⟦Trade Quarter=Quartiere del Commercio⟧! Distruggere!", "." },
@@ -47,6 +49,7 @@ WFJ.Data.add("gossip", {
   ["09ead41bc6425f82"] = { "Il ⟦Iceblood Graveyard=Cimitero di Brinarossa⟧ è stato conquistato dall'⟦Alliance=Alleanza⟧!", "." },
   ["09ed4169939280af"] = { "⟦Arathi Basin=Bacino d'Arathi⟧ posto dove prendere da umani molli. ⟦Sir Malory Wheeler=Ser Malory Wheeler⟧ manda te là.", "." },
   ["09ef1a9e9bf63a70"] = { "Blu più rosso... prevedo...", "." },
+  ["09f02471968d0677"] = { "Servono braccia forti e cuori coraggiosi per tenere al sicuro la città di Menethil!", "." },
   ["09f26a893906daf0"] = { "Dopo la ferocia che il mio popolo ha visto e subito, ti aspetti che io accetti un altro fardello, drago? Di certo sei pazzo.", "." },
   ["09f7252464bd51f9"] = { "Oh oh! I miei attrezzi sono finiti. Dovremo ricominciare da capo...", "." },
 })

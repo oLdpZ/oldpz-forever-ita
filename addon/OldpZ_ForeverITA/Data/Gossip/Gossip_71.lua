@@ -3,8 +3,10 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["71023fd1785b47b3"] = { "La tua istruzione è quasi completa. Un ultimo compito è tutto ciò che ti separa dal culmine di tutti i tuoi sforzi...", "." },
   ["7103a8535cf7635a"] = { "Non lasciare che il tintinnio delle campanelle ti distragga dal tintinnio delle monete in tasca! Compra le leccornie della Masseria Buongusto per le tue feste del Grande Inverno!", "." },
+  ["710d2fd658538354"] = { "Benvenut<o/a> al registro delle gilde di Valanaar. Come posso aiutarti oggi?", "." },
   ["7111b6893a34384a"] = { "%s comincia a creare una copia di sé!", "." },
   ["711ccad01859ea2d"] = { "Se cuciture logore d'abominio vuoi trovare, a Stratholme ti tocca andare.\n\nUn tempo città natale del Lightbringer in persona, ora è invasa dai servitori di Kel'Thuzad.\n\nSfida i pericoli della città in fiamme e abbatti i carnosi abomini! Prendi da loro il tuo premio: cuciture logore d'abominio!", "." },
+  ["7124d755379331d7"] = { "Salute, <stregone/strega>. Devo ammettere che mi sorprende vedere uno con i tuoi talenti alle mie stalle.\r\n\nSe cerchi una cavalcatura, sei nel posto giusto, anche se potrebbero sfigurare accanto ai destrieri vili che sei abituat<o/a> a evocare.\r\n\nIn ogni caso, ti invito a dare un'occhiata ai nostri destrieri, se ne vuoi uno. I nostri sono tra i migliori della regione e ti porteranno con la stessa fedeltà del tuo destriero vile infernale evocato.\r\n\nTi sconsiglio però di dare fuoco ai cavalli scheletrici. È un'estetica da riservare alle creature empie che tu e il tuo concilio evocate.\r\n\nVai a esaminare i cavalli non morti per vedere se qualcuno ti piace e torna da me quando avrai fatto la tua scelta.", "." },
   ["71279f00bc4dc477"] = { "Come la Dama Oscura comanda.", "." },
   ["7132c400d546429d"] = { "In questo luogo, oscurità e ombre sono strumenti da usare e gettare a piacimento.", "." },
   ["71366d694883fbe3"] = { "Come vanno i tuoi viaggi, {name}? Ho sentito racconti delle tue avventure: a quanto pare hai avuto molto da fare. Ora vediamo cosa hai imparato mentre eri via.", "." },
@@ -16,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["715ce4dcb78c7396"] = { "Sei ancora qui? La tua stoltezza è divertente! La sgualdrina dell'⟦Argent Dawn=Alba d'Argento⟧ non deve soffrire invano. Vattene subito e sarà risparmiata!", "." },
   ["71645909346e1878"] = { "Grazie! Grazie, <sacerdote/sacerdotessa>. Ora posso affrontare quei wendigo con la Luce dalla mia parte!", "." },
   ["7168498b5d84f87b"] = { "%s scompare tra le nebbie.", "." },
+  ["7170264a8d61c641"] = { "Talarian! Oh, per la luce di Elune, sei tornato finalmente! Temevo il peggio.", "." },
   ["71740bed47311160"] = { "Jocaste è stata la più grande cacciatrice del suo tempo. Oggi la trovi all'⟦Cenarion Enclave=Enclave Cenariana⟧, dove insegna a chi muove i primi passi sulla via del cacciatore.", "." },
   ["717b2701aa36cff2"] = { "È ⟦Balthus Stoneflayer=Balthus Sventrapietra⟧ quello da cercare per la Scuoiatura. Se una cosa si può scuoiare, lui può insegnarti come. Fai due passi fino al Finespindle's Leather Goods, sul lato nord della ⟦Great Forge=Grande Forgia⟧.", "." },
   ["718049b28f247d4e"] = { "PERCHÉ si trova nei ⟦Blackrock Depths=Sotterranei di Roccianera⟧?", "." },

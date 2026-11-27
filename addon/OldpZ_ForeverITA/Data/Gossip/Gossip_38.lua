@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["3855296bbae878eb"] = { "La forza di %s si affievolisce mentre se ne staccano pezzi di roccia", "." },
   ["385543de761d16e2"] = { "Tanaris è sotto attacco in questo momento?", "." },
   ["385b413122b3fe6d"] = { "Mi servono indicazioni.", "." },
+  ["3862455c48880fa8"] = { "Dovremo ricominciare da capo, ancora una volta. Almeno potremo forse recuperare quell'enorme cuore elettrico per la prossima abominazione.", "." },
   ["3865634957333e9b"] = { "Che conflitto inutile, ma se gli elfi della ⟦Silverwing Hold=Rocca di Alargentea⟧ non vogliono parlarci in pace, che alternativa ci lasciano? Chiedi l'aiuto di ⟦Kergul Bloodaxe=Kergul Scurerossa⟧ sull'⟦Hunter Rise=Altura dei Cacciatori⟧ per raggiungere la ⟦Warsong Gulch=Forra dei Cantaguerra⟧.", "." },
   ["3872e3b9252b4a75"] = { "La ⟦Stormpike Guard=Guardia dei Piccatonante⟧ deve essere distrutta! Sei <pronto/pronta> per la ⟦Alterac Valley=Valle d'Alterac⟧, {class}?", "." },
   ["387776bd33949a67"] = { "Ci sono cose fondamentali che devi imparare prima che io possa aiutarti. Parla con il mio apprendista, Vhan. È gentile e paziente, e ti insegnerà ciò che devi sapere.", "." },

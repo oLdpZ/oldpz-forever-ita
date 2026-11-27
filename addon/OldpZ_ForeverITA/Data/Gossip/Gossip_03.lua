@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["03c76f322c18817a"] = { "Quella Eunice Burch in ⟦Trade Quarter=Quartiere del Commercio⟧.", "." },
   ["03c8094081cbc743"] = { "⟦Dhugru Gorelust=Dhugru Bramasangue⟧ si nasconde dietro la caserma sul lato est della città. Che non venga a sapere che sei in combutta con la Legione Infuocata!", "." },
   ["03dbbffefebe2ce7"] = { "Bah! Non riconosceresti un grande motore a vapore nemmeno se ti prendesse a sberle!", "." },
+  ["03eb88f440a19ccd"] = { "Processo di archiviazione sospeso. Avvio del protocollo di stabilizzazione.", "." },
   ["03ebf8b83ccdd76c"] = { "Ci siamo...", "." },
   ["03ed6472f71ef725"] = { "E come ha rotto il patto?", "." },
   ["03f20943662a27a9"] = { "Salute, <viaggiatore/viaggiatrice>.", "." },

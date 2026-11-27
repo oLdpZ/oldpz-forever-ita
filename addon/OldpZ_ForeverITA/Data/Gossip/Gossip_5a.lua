@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["5a3851853bf8d3af"] = { "Questo sarà il mio miglior esperimento!", "." },
   ["5a38a1b8ebf0a522"] = { "I miei artigli faranno a brandelli il tuo misero corpo, {race}.", "." },
   ["5a393584a830e52a"] = { "%s quasi va in frantumi!", "." },
+  ["5a3dd5ad992fc604"] = { "Andiamo, prima che i coccodrilli lo prendano.", "." },
   ["5a48dee32e206165"] = { "C'è un tempo e un luogo per ogni cosa, anche per il riposo. Sul lato ovest del ⟦Bloodhoof Village=Villaggio di Zoccolo Sanguinario⟧, il locandiere Kauth gestisce una casa lunga per chi cerca riposo. Lo troverai lì.", "." },
   ["5a4be775c05bcc4f"] = { "Quali scoperte?", "." },
   ["5a4df4e99cdcb522"] = { "Eccone uno! Per l'⟦Horde=Orda⟧!", "." },

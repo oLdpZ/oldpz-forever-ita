@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["0fae1f40f585d017"] = { "Mortali sconsiderati! Nessuno può sfidare i Figli della Fiamma Vivente!", "." },
   ["0fb1cf1d4a2edda3"] = { "La banca", "." },
   ["0fc1fe54c2e3c342"] = { "Fate un banchetto di {name}, mie bellezze!", "." },
+  ["0fcda8aecd3fa678"] = { "Ecco la sintesi...\n\nUn uomo è stato trascinato a riva dalle onde e ha dichiarato di essere nientemeno che il re di ⟦Stormwind=Roccavento⟧, Varian Wrynn. Ha detto al pescatore che l'ha trovato di essere fuggito da una specie di prigione nascosta su un'isola vicina. I marines l'hanno raccolto e portato chissà dove, più in fretta di uno gnoll con il didietro in fiamme.", "." },
   ["0fcef183ed2ad734"] = { "Oh, giusto! Da questa parte, ora...", "." },
   ["0fd4beca03fce3fc"] = { "Uthrok fa bel tiro", "." },
   ["0fd9e3216609181c"] = { "Chi sei? Cosa vuoi da me?", "." },

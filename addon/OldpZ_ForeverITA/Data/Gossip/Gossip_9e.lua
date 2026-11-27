@@ -44,10 +44,12 @@ WFJ.Data.add("gossip", {
   ["9ece08b033ed6461"] = { "<Il gran inquisitore Fierasponda annuisce.>\n\nSì, il Mograine minore, quello noto come il Comandante Scarlatto, tramite (così sospetto) le trame del Gran Crociato. Ha condotto suo padre nell'imboscata come un agnello al macello.", "." },
   ["9ed27eb919146298"] = { "Qualcuno ha visto qualcosa? Che cos'è successo?", "." },
   ["9ed2d4aa4072b44a"] = { "%s solleva la sua enorme ascia sopra Grark.", "." },
+  ["9ed4006839e5a0ef"] = { "Ah beh, bisogna rompere qualche uovo per allentare le viti.", "." },
   ["9eda8579d6317070"] = { "Non ne posso più di queste tasse! F.I.C.A. a me? F.I.C.A. a TE!", "." },
   ["9eda8ab4169c0aed"] = { "Hai dovuto insegnarle a non sporcare in casa, Gerard?", "." },
   ["9eed8e55e53851a7"] = { "Ho seguito le tracce dei vari frammenti del bastone in tutto il mondo e, così facendo, ho scoperto i piani di Kel'Thuzad per ricomporlo. Ha già raccolto diversi frammenti del bastone, custoditi dai suoi luogotenenti più fidati.\n\nNon potrò mai sottolineare abbastanza quanto sia importante tenere il Granbastone del Guardiano lontano dalle grinfie di Kel'Thuzad. Sinceramente non so quale sarebbe il risultato, se non una catastrofe di proporzioni epiche.", "." },
   ["9ef0022309174478"] = { "Guardiani! Difendete Sen'jin!", "." },
+  ["9ef2a488e535746a"] = { "Parlami dei cristalli che ho riparato.", "." },
   ["9ef5491b516ab143"] = { "È questo il posto. Diamogli fuoco.", "." },
   ["9efd8ba135b5f04d"] = { "Milord, il vostro ospite è arrivato. Attende la vostra presenza.", "." },
 })

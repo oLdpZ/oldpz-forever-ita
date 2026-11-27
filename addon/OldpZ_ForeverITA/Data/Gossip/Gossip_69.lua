@@ -35,6 +35,8 @@ WFJ.Data.add("gossip", {
   ["69b31eb4c38a2ba3"] = { "Sono gli spiriti a guidarti da me. Come posso esserti utile?", "." },
   ["69b82965959bb45d"] = { "Smettila di strapparle i capelli!", "." },
   ["69baad7508e8c38a"] = { "Salute, mortali! I Discs of Norgannon mi hanno attivato per assistervi!", "." },
+  ["69bfc4e5dbda0edc"] = { "Alcuni anni fa la nostra fattoria è stata attaccata dai banditi. Hanno preso tutto quello che avevamo e mi hanno lasciato pieno di lividi e sangue. La stagione successiva, più o meno nello stesso periodo, sono tornati.", "." },
+  ["69bfc5ca591ddf9d"] = { "Un momento.", "." },
   ["69cea6b631a1eeaf"] = { "Stavo solo pensando. Fa paura stare qui fuori di questi tempi, sai? Da un momento all'altro questa parte dell'isola potrebbe sprofondare sotto i miei piedi e io finirei a capitombolare... da qualche parte? Dimmi, sai almeno cosa succede a <un/una> {race} che cade dall'isola?", "." },
   ["69cffb7c7f6f5a16"] = { "Guardati dall'inverno, amico.", "." },
   ["69d621fbd758e572"] = { "Salve, {class}. Di solito sarei in giro per le strade a vegliare sulla gente di ⟦Stormwind=Roccavento⟧, ma molte guardie di ⟦Stormwind=Roccavento⟧ stanno combattendo in terre lontane. E così eccomi qui, con un incarico provvisorio a offrire taglie, quando preferirei essere di pattuglia...", "." },
@@ -42,5 +44,6 @@ WFJ.Data.add("gossip", {
   ["69dab2ba8d81d003"] = { "Devi salvarlo!", "." },
   ["69dd347588123d8f"] = { "Chi osa intralciare gli affari della ⟦Defias Brotherhood=Fratellanza dei Defias⟧? Muori, {class}!", "." },
   ["69e336cd9ab172f8"] = { "%s mescola i ⟦Bathran's Hair=Capelli di Bathran⟧...", "." },
+  ["69f27732e8fa6e00"] = { "Se cerchi altro lavoro, sono certo che in città ci sono altre persone che cercano aiuto per questo o quel compito. Chiedi in giro, di sicuro troverai qualcosa.", "." },
   ["69f6f3b316b9a41e"] = { "Ho perso il mio ⟦Drape of Unyielding Strength=Drappo della Forza Inflessibile⟧. Puoi sostituirmelo?", "." },
 })

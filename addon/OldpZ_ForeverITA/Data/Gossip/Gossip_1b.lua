@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["1b5513f7c6d8ce32"] = { "%s sembra immerso in una profonda contemplazione.", "." },
   ["1b561d1b378f313b"] = { "<Mivin indica la sua merce e poi di nuovo te con un sorriso, ma non dice nulla.>", "." },
   ["1b5a78a1042418c6"] = { "Non sentiamo nulla. Le nostre anime restano qui, nel limbo. Non possiamo andarcene finché i nostri resti non saranno ritrovati e i nostri spiriti non avranno trovato pace.", "." },
+  ["1b60508ea6cdcddb"] = { "Osa minacciarci, dopo che i suoi lacchè hanno massacrato la nostra gente sugli altipiani?", "." },
   ["1b61f873e070e0af"] = { "<Il {race} davanti a te ondeggia malfermo, chiaramente molto ubriaco.>\n\nEro un marinaio, sai? Prima che cominciassero i guai. Gli skycutter facevano la spola tra le isole. Ora non è sicuro, o qualcosa del genere, così dicono.\n\nVedo che l'High Order e i Windshapers hanno rimesso in servizio i loro skycutter, ma io sono bloccato qui, a terra!\n\nCosa non ci stanno dicendo?!\n\n<Si volta e urla a gran voce verso il locandiere.>\n\nCOSA NON CI STANNO DICENDO, DONAAL?!", "." },
   ["1b676ced5da7944a"] = { "Prendi il ⟦Symbol of Life=Simbolo della Vita⟧ e usalo per resuscitare il guardiamorte Falgan nella ⟦Venomweb Vale=Valle Tela Venefica⟧.", "." },
   ["1b6e9f605c3bc5bd"] = { "Temo che tu sia fuori dalla mia portata, <amico/amica>! Dovresti andare da Nogg a Orgrimmar, ti porterà al livello successivo!", "." },

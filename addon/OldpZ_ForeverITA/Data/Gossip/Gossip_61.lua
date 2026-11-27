@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["61062abc963f5fd0"] = { "Mi rincresce dirti che non posso aiutarti, <nobile/gentile> <signore/dama>, finché non saprai di più sulla conciatura. Parla invece con Faldron o Darianna, qui. Possono insegnarti l'abilità che ti serve.", "." },
   ["6108fbcddf000598"] = { "Quando incontrò i profughi al Muro dei Mantogrigio, sentì il dovere di soccorrerli, e mandò la sua donna a ⟦Hillsbrad=Colletorto⟧.", "." },
+  ["61102b4a4dbe39ab"] = { "Mi fa piacere che tu l'abbia chiesto! Siamo molto più di un semplice servizio di consegna, {name}. Impieghiamo e ingaggiamo artigiani di svariate specialità e mestieri, e teniamo le orecchie aperte per qualsiasi nuova opportunità che tenga le loro mani occupate e le merci in movimento. Non possiamo certo prevedere le necessità emergenti di ogni potenziale cliente, perciò dipendiamo dall'arrivo dei loro ordini di fabbricazione.\n\nPuoi immaginare che questo canale sia... meno efficace di quanto speriamo. Incoraggiamo ogni artigiano a soddisfare queste richieste e a consegnare le merci direttamente ai clienti, ovunque si trovino. Non preoccuparti, sarai equamente ricompensat<o/a> per il disturbo e guadagnerai rispetto all'interno della nostra organizzazione.", "." },
   ["611e541c424fa71b"] = { "L'anziano Cuornero si trova a ⟦Undercity=Sepulcra⟧.", "." },
   ["612729c279c4216c"] = { "Salvami...", "." },
   ["612c58b691980155"] = { "<Amico/Amica>, ⟦Stormwind=Roccavento⟧ ha bisogno del tuo aiuto e della tua generosità!\n\nLe nostre scorte di tessuti, un tempo abbondanti, sono ormai pericolosamente basse. ⟦Stormwind=Roccavento⟧ è impegnata su più fronti per ricostituire quelle riserve per la produzione di tessuti e bende! Una tua donazione di stoffa aiuterebbe immensamente ⟦Stormwind=Roccavento⟧ e ti farebbe guadagnare il rispetto dei cittadini!", "." },
@@ -16,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["615072776f75f85b"] = { "Quasi a ⟦Ratchet=Porto Paranco⟧! Manteniamo il ritmo...", "." },
   ["6154a76afe4581b5"] = { "%s sbriciola la lacrima in una ciotola di stufato.", "." },
   ["6156703ef38f566d"] = { "Fai un buon lavoro, ma è ancora un po' grezzo. Non preoccuparti, migliorerà con la pratica. A proposito, che ne dici se vediamo a cosa hai lavorato?", "." },
+  ["615e20322160118f"] = { "Salve, alto inventore. Sono un membro dell'Alto Ordine, e mi manda Bolvar Domadraghi per incontrarti.", "." },
   ["615ef8d5d985aed4"] = { "Dimmi di più su queste Carte di Lunacupa.", "." },
   ["616f9e8a344d01db"] = { "Il lamento funebre di %s ha risvegliato il vicino alveare dei silitidi!", "." },
   ["61703eaa11897829"] = { "Salve, {class}. Di certo non serve che ti spieghi la gravità della nostra situazione qui. Dobbiamo raccogliere molti beni e, nella maggior parte dei casi, trasformarli in materiale bellico da trasportare alla ⟦Cenarion Hold=Fortezza Cenariana⟧, a ⟦Silithus=Silitus⟧. Non è un'impresa da poco.\n\nDi recente, nel ⟦Molten Core=Nucleo Ardente⟧, abbiamo scoperto una cosa chiamata Pietra del Nucleo Carbonizzata. I nostri fabbri e ingegneri dicono di poterle usare bene, quindi ne sto supervisionando la raccolta qui. Al momento, su $2110w necessarie, siamo riusciti a raccoglierne $2108w.", "." },
@@ -33,6 +35,7 @@ WFJ.Data.add("gossip", {
   ["61b376694c3080e5"] = { "Cosa sono le professioni?", "." },
   ["61b7b41698bdfdc3"] = { "Ti insegnerò la via del fabbro di martelli. Basta chiedere con gentilezza.", "." },
   ["61d1a8a81fd692f9"] = { "I morti camminano tra noi!", "." },
+  ["61d6123db6191fb8"] = { "Aspetta, sì... questo cristallo! Valennia, è...", "." },
   ["61d8c94fe553b01d"] = { "%s abbocca ed esce allo scoperto!", "." },
   ["61dfc5c2ceb6a69b"] = { "⟦Yaw Sharpmane=Yaw Chioma Rasa⟧ ti aspetta sul margine nord del villaggio. Può insegnarti le vie del Cacciatore.", "." },
   ["61e7b28d9be5da4a"] = { "Sia lodata Elune! Sono passati molti anni dall'ultima volta che ho ricevuto visite.", "." },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["8f01cab29786f703"] = { "La famiglia Carevin combatte per la vittoria sotto la Luce. Il mio dovere sotto la Luce è dare la vita nella loro battaglia contro i non morti. Il maestro Carevin mi ha affidato lo sterminio dei vili worgen di ⟦Duskwood=Boscovespro⟧. Forse vorresti aiutarmi?", "." },
   ["8f0243c434a845f8"] = { "Un esame sommario dei resti scheletrici indica che la carne è stata bruciata via. Uno spettacolo davvero raccapricciante.", "." },
+  ["8f078e32049cc339"] = { "Straniero... ti prego... mettimi giù... sul giaciglio vicino a quell'albero...", "." },
   ["8f086793982122f2"] = { "Ho io la chiave delle terre dei liberi! Inseguimi e vedrai!", "." },
   ["8f0a52b0737d0a68"] = { "Ora credo nelle tue intenzioni, {name}, e ti ringrazio della disponibilità ad aiutare i membri della mia ex compagnia di mercenari, The Veiled Blade.\n\nVediamo, cosa c'è dopo nella nostra lista delle cose da fare?", "." },
   ["8f0e661d27d76e8d"] = { "%s si scheggia e va in frantumi!", "." },
@@ -29,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["8f7db87927cad640"] = { "Oh, che stanchezza...", "." },
   ["8f8b1e880e79a8b2"] = { "Questo è un esemplare esotico di flora, mai visto in altre parti di Teldrassil.", "." },
   ["8f8d67b9dc65ceff"] = { "Ah, non c'è niente come una bella abbronzatura da forgia. Chi ce l'ha davvero bella lo riconosci dai segni del grembiule.", "." },
+  ["8f8f2cd472599bdb"] = { "Ehilà, viandante! Sei nuov<o/a> in città? Beh, quando ti sarai sistemat<o/a> vieni da me se vuoi un po' di lavoro. Faccio gli straordinari per preparare la Festa dei Venti e accetterò ogni aiuto per tenere piene le dispense!", "." },
   ["8f93f0a7bab7e9c8"] = { "È fatto. {name}, la tua armatura è pronta.", "." },
   ["8f9bfd05f2ebaf98"] = { "Hai interferito con i nostri piani per l'ultima volta, <stolto/stolta> {class}!", "." },
   ["8f9d6a7792da8584"] = { "Verrà il momento in cui potrai ricevere ciò che ho da insegnarti, {name}. Fino ad allora, chiedi a Darianna, laggiù, di aiutarti con l'addestramento.", "." },

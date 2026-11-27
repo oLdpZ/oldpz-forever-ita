@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["3002177b15742961"] = { "Ben fatto. Affidami l'orso, così che possa applicare l'incantesimo curativo.", "." },
   ["300527556dcecfdf"] = { "Ecco, così dovrebbe andare...", "." },
+  ["300bc3825dbb02a3"] = { "Salve, {name}! Cosa posso fare per te?", "." },
   ["300cb9ec97d156d4"] = { "Perché andiamo da questa parte?", "." },
   ["300e6de1fa9c8669"] = { "Chi osa rubare la mia preziosa cavalcatura? Pagherai per la tua insolenza, mortale!", "." },
   ["300efbc6080a2a54"] = { "Ora sei tu a comandare! Lunga vita al nuovo re dei Gordok!", "." },

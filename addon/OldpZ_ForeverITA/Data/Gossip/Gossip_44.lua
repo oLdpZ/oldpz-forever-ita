@@ -36,6 +36,8 @@ WFJ.Data.add("gossip", {
   ["44968155d01c9739"] = { "Incredibile. Le tue pozioni rivelano una conoscenza che rivaleggia con la mia. Non posso addestrarti oltre, ma parla con l'orco Rogvar di ⟦Stonard=Pietrachiusa⟧, nella ⟦Swamp of Sorrows=Palude del Dolore⟧. È noto per i suoi esperimenti all'avanguardia.", "." },
   ["44a25594d97e4f11"] = { "La tua istruzione procede bene. Dovresti trarre orgoglio dai tuoi risultati.", "." },
   ["44aa25a6d19877f2"] = { "Bella forma, {name}. Scommetto un boccale pieno al Bruuk's Corner che anche la funzione è altrettanto solida. Sai, potresti parlare con ⟦Myolor Sunderfury=Mastro Mondo Fendifuria⟧. Ti metterà in riga.", "." },
+  ["44ac7705b3e1c3d7"] = { "È ancora in costruzione e si trova a poca distanza a piedi lungo la strada a nordest. Le montagne di Alterac hanno attirato attenzioni indesiderate da parte di alcune creature selvatiche e il nostro recente interesse per la ⟦Silverpine Forest=Selva Pinargento⟧ ha tenuto le nostre pattuglie parecchio impegnate.\n\nSono perfino circolate piccole voci su un giovane drago che sorvola le montagne con un occhio intero.", "." },
+  ["44b496314b539743"] = { "Siamo vicini alla fine: non fermatevi.", "." },
   ["44c3db9dc48cd03e"] = { "Da dove vengo io, se apri la cella di un altro detenuto ti accoltellano!", "." },
   ["44c41fdd6707ef74"] = { "Credi davvero di cavartela bene? Ah! Il nostro numero è illimitato!", "." },
   ["44c8d7c159f24c5e"] = { "Dopo tutto quello che abbiamo passato? Be', tanto non mi stavi simpatic<o/a>!!", "." },

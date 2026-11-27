@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["0806952737e9ac18"] = { "Grazie, <signore/signorina>, per aver trovato la mia collana! Sei <il/la> migliore!", "." },
   ["080875fa6363fa7a"] = { "Ma la tua vera punizione deve ancora venire.", "." },
+  ["0811c7211cc1fd5b"] = { "Sei riuscit<o/a> a recuperare il tomo? Se anche quello è perduto, temo che questa ricerca possa finire qui.", "." },
   ["08228ab9fe3f2bc0"] = { "Sento la presenza del male che se ne va...", "." },
   ["082e4893cac48c98"] = { "Buliwyf, il maestro d'armi nano proprio qui alla Timberline Arms, insegna armi da pugno, armi da fuoco, asce a una e a due mani e mazze a una e a due mani.\n\nWoo Ping, il maestro d'armi umano al Weller's Arsenal di ⟦Stormwind=Roccavento⟧, insegna balestre, pugnali, spade a una e a due mani, armi in asta e bastoni.\n\n⟦Ilyenia Moonfire=Ilyenia Lunardente⟧, la maestra d'armi elfa della notte, risiede alla ⟦Warrior's Terrace=Terrazza dei Guerrieri⟧ di Darnassus, dove insegna archi, pugnali, armi da pugno, bastoni e armi da lancio.", "." },
   ["082ed90eb7e4986d"] = { "I tuoi resti in putrefazione serviranno a ME come monito di cosa succede a chi è tanto folle da violare il mio dominio!", "." },

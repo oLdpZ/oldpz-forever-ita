@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["22031047e11710e0"] = { "È giunto il momento, <fratello/sorella> <mio/mia> d'armi, di strappare la notte al Flagello!", "." },
+  ["2205f04b042d088d"] = { "Maledizione rilevata. Rimozione in corso.", "." },
   ["220f936943e19a5e"] = { "Ben fatto, giovane <ladro/ladra>. Ben fatto davvero....", "." },
   ["2213664152c6b268"] = { "Okothos ti addestrerà, {name}.", "." },
   ["2213d6446a5f348a"] = { "Oh, sei tornat<o/a>, {name}! Hai il samophlange?", "." },
@@ -18,6 +19,7 @@ WFJ.Data.add("gossip", {
   ["225446e72ade1edb"] = { "Che posso fare per te, {name}?", "." },
   ["2255615801ce3085"] = { "Sono nel bel mezzo di un compito molto importante. Affari da cercatore. A meno che tu non abbia qualcosa di altrettanto importante da dire, e ne dubito, dovrai scusarmi.", "." },
   ["225e6b022042c26e"] = { "Bevi questo, ti aiuterà.", "." },
+  ["226324b9e858892c"] = { "Per te è «Gran Scrutacieli», mago. Ora vattene. Torna dal tuo maestro prima che io perda davvero la pazienza.", "." },
   ["2295bc9de950873f"] = { "Lasciami andare e basta! Ne ho abbastanza!", "." },
   ["229748cadbd561d4"] = { "La tua anima ora è legata a me!", "." },
   ["22a16fd9f19b7368"] = { "Maraudon si trova a metà della costa occidentale di ⟦Desolace=Desolanda⟧, nella ⟦Valley of Spears=Valle delle Lance⟧.", "." },
@@ -30,9 +32,12 @@ WFJ.Data.add("gossip", {
   ["22b5d6c11828c714"] = { "Cosa ti ha portato al Circolo della Terra?", "." },
   ["22b67b17851ec7c7"] = { "Abbiamo fame di vendetta.", "." },
   ["22c0cffb3350b748"] = { "%s scuote la testa con delusione.", "." },
+  ["22c64b8d9930cb41"] = { "Ho bisogno di riposare un momento prima di andare a Farholde. Tornerò con le mie gambe. Tu puoi andare da Cornelius e mandare notizia del mio salvataggio.", "." },
+  ["22c6dd33a60368c5"] = { "Sì? Ho parecchio da fare.", "." },
   ["22c7db75d4734b0a"] = { "Il tuo travestimento non mi inganna, tentatrice. È giunta la tua ora.", "." },
   ["22c8c3a1223a4cf0"] = { "Ti prego, abbi pietà di me! Ho informazioni che vanno oltre i confini dell'alleanza. Non sono certo un simpatizzante dell'⟦Horde=Orda⟧, ma è in corso un tradimento politico che deve essere svelato!", "." },
   ["22caaa705eca4eaa"] = { "Silenzio, servo! Avrò la mia vendetta! Morte a ⟦Stormwind=Roccavento⟧! Morte per pollo!", "." },
+  ["22d6f1a626f5c459"] = { "Se vuoi che una cosa sia fatta bene, manda me a farla.", "." },
   ["22e176cf0c106888"] = { "Prendete una corda!", "." },
   ["22e899d1750412b6"] = { "Ehi, salve, signore mie. Avete sentito della nuova piaga?", "." },
   ["22e92603ceeba523"] = { "Ho perso il mio ⟦Kris of Unspoken Names=Kris dei Nomi Innominati⟧. Puoi sostituirmelo?", "." },

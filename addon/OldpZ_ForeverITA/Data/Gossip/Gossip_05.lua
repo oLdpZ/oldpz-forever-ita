@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["058847dfa3bd67cf"] = { "Vuoi imparare l'antica arte? Vuoi fondere il Ferroscuro?\n\nPlacami, {race}. Mostrami un sacrificio e ci penserò!", "." },
   ["058ac63036845401"] = { "Le nostre forze nella ⟦Alterac Valley=Valle d'Alterac⟧ hanno bisogno di saggezza per vincere, {class}. Hai l'aria di chi può guidarle.", "." },
   ["058db46af9f3c19e"] = { "Mia arma avere sete!", "." },
+  ["058ddfe7d8da643a"] = { "Quali pericoli affrontano qui fuori i fratelli e le sorelle del Forte Bandarion, Ander?", "." },
   ["059016173c5e548a"] = { "La vostra base è perduta, miseri mortali!", "." },
   ["059880d0c7a604bc"] = { "Il clan dei Piccatonante non si inchina a nessuno, men che meno all'Orda!", "." },
   ["059d1ee446e3bef0"] = { "Poiché la lama non è mai abbastanza affilata né l'armatura abbastanza robusta, ci sarà sempre bisogno di un incantatore di talento. Un incantatore così è Taladan, che può mostrarti come intessere a dovere gli incantamenti per migliorare armi e armature. Cercalo nella ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧.", "." },

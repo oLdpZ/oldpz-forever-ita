@@ -16,6 +16,7 @@ WFJ.Data.add("gossip", {
   ["6462db059ab80edb"] = { "A ⟦Nighthaven=Nottequieta⟧! Tieni vicino il tuo esercito, campione.", "." },
   ["6468bef4e8768130"] = { "Tesoro, il cibo è pronto. Vieni a lavarti e mangia.", "." },
   ["646e6e58c304a061"] = { "%s inizia a rispondere a ogni attacco contro di lui!", "." },
+  ["6475221c04379d23"] = { "Mi assicurerò che nessuno ti segua. Qualunque cosa si debba fare, hai il sostegno del Kirin Tor.", "." },
   ["6478e7d9fbe4ce57"] = { "Sì, signor sindaco.", "." },
   ["647d266bcaed08e9"] = { "%s viene divorato!", "." },
   ["647f5818e0183cc3"] = { "È proprio Reethe. Andiamo a sentire cos'ha da dire, eh?", "." },

@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["820416bc52658acb"] = { "Dovrò uccidere qualcosa, vero?", "." },
   ["8204cbeafc364eac"] = { "Conosco queste foreste come se fossero parte di me... ma sappi che c'è ancora molto da imparare da loro, e molti pericoli ancora nascosti.", "." },
+  ["820a964421c70800"] = { "Purtroppo siamo qui per occuparci dell'Ancient. Abbassa la barriera.", "." },
   ["821d4c7de8bddf8a"] = { "Salve, Sovik, voglio vedere la tua merce.", "." },
   ["821fc9d6d8ed9b12"] = { "Parlami della fede, padre.", "." },
   ["821ffd56adfef25d"] = { "Voglio combattere!", "." },

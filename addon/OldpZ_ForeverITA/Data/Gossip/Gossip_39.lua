@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["395015aa3a257b9c"] = { "Fatti sotto!", "." },
   ["39501d3095720bd8"] = { "Come fai a sapere tutto questo?", "." },
   ["3954c6570b408f76"] = { "Non posso addestrare <un/una> {class} come te.", "." },
+  ["39569a50f15446fb"] = { "<Ogunaro socchiude gli occhi mentre ti avvicini.>\r\n\nLok'tar, <stregone/strega>. Devo ammettere che sono sorpreso di vedere qui uno con i tuoi... talenti.\r\n\nSe cerchi un lupo da cavalcare, sei nel posto giusto, ma sappi che cavalcare un lupo e farselo amico è molto diverso dai destrieri vili che sei abituat<o/a> a evocare.\r\n\nIl legame tra orco e lupo non nasce per vanità. No, ogni orco e ogni lupo formano un legame speciale che va oltre un semplice acquisto.\r\n\nSe sei qui per legarti a un lupo, ti consiglio di andare da ciascuno ed esaminarlo. Torna da me se senti un'affinità con uno di loro.", "." },
   ["395717e5dc379a81"] = { "Mi piace proprio sedermi qui fuori ad ascoltare i suoni del Grande Mare. Oh, cosa? Sì, c'è una nave che ti porterà a ⟦Menethil Harbor=Porto di Menethil⟧. Attracca qui di tanto in tanto.", "." },
   ["39642dd3a5b0ba9d"] = { "È fatta. Ho la tua arma, {name}.", "." },
   ["39663a88c21400bd"] = { "Quando vidi per la prima volta i non morti piansi, perché non riuscivo a immaginare il loro orrore e la loro solitudine. Fu allora che la Madre Terra mi parlò; cantò nel mio sangue. E mi disse: «Salvali.»", "." },

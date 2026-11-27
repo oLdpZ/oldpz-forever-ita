@@ -32,6 +32,7 @@ WFJ.Data.add("gossip", {
   ["1886c61786c2ce13"] = { "Salve, {class}. Spero che tu sia qui per rinforzare le nostre file. Bestie e ladri stanno invadendo la nostra amata Elwynn, e abbiamo a malapena gli uomini per tenere sicure le strade!\n\nE se non l'hai ancora fatto, leggi quell'avviso su ⟦Hogger=Boccalarga⟧. È una bestia che si aggira in quei boschi laggiù e di cui bisogna occuparsi.", "." },
   ["18890b157610edb1"] = { "Perché scappi da me, ⟦Fluffy=Morbidino⟧!", "." },
   ["188a2dc1369726b4"] = { "Gli Dei Antichi torneranno al potere. Non ti sarà permesso di interferire!", "." },
+  ["188d55c3847a7427"] = { "ssSSMELME!! Rrraagh...", "." },
   ["188e9130c0a2e877"] = { "Anu therador mali {class}. Dove posso guidarti?", "." },
   ["1891f964e2b192a6"] = { "Capitolo sui Cristalli Arcani e l'arcanite.", "." },
   ["18a307ae9775aedf"] = { "%s si china per esaminare il suo colpo.", "." },

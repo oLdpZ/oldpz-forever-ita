@@ -43,6 +43,7 @@ WFJ.Data.add("gossip", {
   ["9ad10c3fe0187b0a"] = { "%s si schiude!", "." },
   ["9ad2ec2ae065d566"] = { "Benvenut<o/a> nella mia bottega. Cosa posso fare per te?", "." },
   ["9ad864a1d74d3d23"] = { "Ti ho dato una Pietra del Giuramento dello Stormo di Ysera, {name}. Quando te la sentirai e potrai aiutarci, usala, e allora potremo cominciare.", "." },
+  ["9adef6c33b24455e"] = { "Senti le voci anche TU?", "." },
   ["9ae4b040d9993ae8"] = { "Non ho tempo da perdere con quelli come te, {class}.", "." },
   ["9ae61f4ffeb52ff1"] = { "Wow, tutto questo per un filtro d'amore. Spero che ne valga la pena.", "." },
   ["9ae8536442f19a09"] = { "Grazie agli sforzi congiunti delle gilde di avventurieri dell'Alleanza, siamo riusciti a raccogliere tutte le pietre del nucleo carbonizzate che pensiamo ci serviranno. Tuttavia, potresti chiedere agli altri raccoglitori qui intorno se hanno ancora bisogno di aiuto per raccogliere risorse vitali.", "." },
@@ -51,4 +52,5 @@ WFJ.Data.add("gossip", {
   ["9af20e90f2d2ee8d"] = { "Ormai è tutto finito, resta solo da piangere. Tutto il materiale bellico viene trasportato alla ⟦Cenarion Hold=Fortezza Cenariana⟧, a ⟦Silithus=Silitus⟧, e l'ultima parte arriverà in meno di un giorno. Non dovrebbe mancare molto prima che lo scettro venga assemblato e la guerra abbia finalmente inizio.", "." },
   ["9af7eb5d3a3d00e8"] = { "La Stormpike Aid Station si trova a Dun Baldar, proprio fuori dalla caserma di Dun Baldar.\n\nAl momento è controllata dall'⟦Alliance=Alleanza⟧.", "." },
   ["9af915dfc93f4262"] = { "Ho finito di esaminare i teschi, {name}, e che sollievo: Yenniku non è tra loro...", "." },
+  ["9aff0430a5aa1656"] = { "C'è perfino un terribile spettro della foresta! Vestito di nero e... dall'aspetto malvagio! Ve lo dico io, è un posto maledetto! *hic*", "." },
 })

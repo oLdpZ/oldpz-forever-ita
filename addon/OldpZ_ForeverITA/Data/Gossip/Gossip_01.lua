@@ -46,6 +46,7 @@ WFJ.Data.add("gossip", {
   ["01b0d33a394dffe3"] = { "Il potere di un oggetto magico disincantato si percepisce dall'essenza che produce. Ho escogitato un modo per trasformare l'essenza grezza usata dagli incantatori in un reagente adatto a creare l'Unguento per Piante Cenariano. Per questo non ti serve un Rilevatore Cenariano: va bene qualsiasi oggetto che, disincantato, dia una Lesser Nether Essence.\n\nMi basta una sola Lesser Nether Essence; in cambio ti darò dell'Unguento per Piante Cenariano. L'essenza è potentissima: ne basta davvero poca!", "." },
   ["01bb3777069c1701"] = { "Se ti serve aiuto per sopravvivere nei boschi, faresti meglio a non allontanarti troppo dalle mura della città. Se invece hai intenzione di allontanarti, è meglio che tu faccia due chiacchiere con Malygen nell'⟦Cenarion Enclave=Enclave Cenariana⟧, così imparerai ad accendere un fuoco da campo come si deve.", "." },
   ["01ce973af48d2c8e"] = { "{name}! QUEST'AREA È INTERDETTA!", "." },
+  ["01cf902a6854347d"] = { "Eh? Mi sembri un po' troppo <nuovo/nuova> per fare affari con me.\n\nTorna quando avrai più familiarità con come si fanno le cose da queste parti. Fidati.", "." },
   ["01d161a9b59a4f04"] = { "Come puoi amarmi, Annalise? Guardami. Non sono più l'uomo che conoscevi.", "." },
   ["01d182790517060e"] = { "No, Longears non è il mio vero nome. E non ti dirò qual è, quindi non chiedermelo.", "." },
   ["01d2b0e56616e6f8"] = { "Ehehe! Le cose fanno bum!", "." },

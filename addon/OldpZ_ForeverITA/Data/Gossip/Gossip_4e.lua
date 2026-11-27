@@ -3,7 +3,9 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["4e1799ef28561854"] = { "I pesci al largo di Teldrassil sono piuttosto grossi e robusti. Si dice che la causa sia la rapida crescita del nostro nuovo albero del mondo.", "." },
   ["4e17c9e69d057d81"] = { "Trovi una cassetta della posta appena fuori dalla banca di ⟦Thunder Bluff=Picco del Tuono⟧, sul ripiano più basso.", "." },
+  ["4e1abff4b350ddfb"] = { "Avanti, avanti! ⟦Red Hot Wings=Alette Piccanti⟧, prendetele qui!", "." },
   ["4e1b76e5f50533af"] = { "Le caverne sono state purificate. Andiamo alla camera di Naralex!", "." },
+  ["4e1c765f5b02ed05"] = { "La mia... testa... ohh, che male! Che... chi sei? Perché... mi stai portando in braccio?", "." },
   ["4e1cc5e4cf6702a6"] = { "Tragico...", "." },
   ["4e1ceceb91630f2d"] = { "È passato troppo tempo. Dobbiamo riprovare più tardi.", "." },
   ["4e21dce54520ce4a"] = { "Salute, {name}. Ci siamo già incontrati? Hai un'aria vagamente familiare.", "." },

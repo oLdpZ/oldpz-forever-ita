@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["0a2cbd474bd157aa"] = { "Uccideteli tutti!", "." },
   ["0a38fb4095f62c9c"] = { "Compio un ultimo servizio. Prego che basti...", "." },
   ["0a4a53045cc73938"] = { "Calma, io sono solo un aiutante. Se vuoi cominciare a imparare le cose difficili, parla col vecchio Stonebrew, laggiù.", "." },
+  ["0a52cc1dc1df3f18"] = { "Siamo usciti dal forte. Ormai siamo quasi liberi!", "." },
   ["0a54ce96c1708ba6"] = { "Non mi pagano abbastanza per questo sterco di toro!", "." },
   ["0a55918bb61ff6fc"] = { "{name}, sotto il muschio, questo cuore sembra un seme!", "." },
   ["0a58d0f142dfd925"] = { "Mi opporrei all'ingresso di mio fratello nell'ordine, a costo di una frattura permanente nel nostro rapporto. Sarebbe un pericolo per sé e per chi gli sta intorno, e sperare che migliori col tempo è un rischio troppo grande.", "." },

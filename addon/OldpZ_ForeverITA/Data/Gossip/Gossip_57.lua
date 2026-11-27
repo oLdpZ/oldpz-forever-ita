@@ -27,6 +27,7 @@ WFJ.Data.add("gossip", {
   ["57561b5ecb530a5f"] = { "Era destino, Windsor? Se sei venuto in cerca di morte, allora la profezia si è compiuta. Che la tua coscienza marcisca nella ⟦Twisting Nether=Distorsione Fatua⟧. Finite il resto di questi insetti impiccioni, figli miei. Bolvar, sei stato un burattino piacevole.", "." },
   ["575ce926b1a7e2a7"] = { "Ce l'abbiamo fatta, {name}!", "." },
   ["57705db0a34cb5f5"] = { "Non riesco proprio a immaginare perché qualcuno voglia rubare questi componenti a questo costrutto. A parte il gyrozephyr, non hanno quasi nessuna utilità pratica. E perfino il gyro sarebbe pressoché inutile fuori dallo scopo per cui è stato creato.", "." },
+  ["577a8e9b32ac9c26"] = { "Muovetevi! Ce ne servono altri!", "." },
   ["577c0fab8faed76f"] = { "Se lo chiedi a me, Grif passa un po' troppo tempo con gli animali. Eppure nessun altro conosce la via del cacciatore come lui. Cercalo fuori dalla fucina di Kharanos.", "." },
   ["577c475f46dc95ae"] = { "... Un messaggio da Banehollow? Che messaggio? Ha bisogno del suo grande consigliere e servitore, Ulathek? Richiede la mia presenza?", "." },
   ["578114aaa1d35b59"] = { "Sono anni che non vedo un'armatura migliore, {name}. Da quando mi addestravo sotto ⟦Grumnus Steelshaper=Grumnus Plasmacciaio⟧ nella ⟦Great Forge=Grande Forgia⟧. Scommetto che potrebbe insegnarti cose sulla fabbricazione delle armature che ti interesserebbero.", "." },
@@ -38,6 +39,7 @@ WFJ.Data.add("gossip", {
   ["57a2e02b459956ab"] = { "Se scopri un modo per migliorare il congegno, fammelo sapere!", "." },
   ["57ad3b36a2e64b72"] = { "Cerca l'assoluzione, Eranikus. Tutto sarà perdonato...", "." },
   ["57b00b9eb596502c"] = { "Ehi, Pratt, puoi insegnarmi di nuovo a fare una ⟦Wild Leather Vest=Veste di Cuoio Selvatico⟧?", "." },
+  ["57b1f92f3824477c"] = { "Ricordami cosa sta succedendo sull'Isola di Zephras?", "." },
   ["57b4ce45306670de"] = { "%s crolla e comincia a fumare lentamente.", "." },
   ["57b8c2b6d8aace1b"] = { "Esigo che tutti i miei allievi dimostrino la loro dedizione. Ora tocca a te...", "." },
   ["57be0104c5bd8382"] = { "Aspetto il cristallo dell'oracolo, {class}. Trovare e distruggere questo sire Azrethoc ci farebbe guadagnare grande favore presso il Capoguerra, a entrambi. Faremmo bene a lavorare insieme, e in fretta, così da perseguire i nostri scopi e ingraziarci il Capoguerra.", "." },
@@ -47,6 +49,7 @@ WFJ.Data.add("gossip", {
   ["57dadc6ab3ba5733"] = { "La mia conoscenza della storia degli elfi della notte è limitata, ma si dice che molto tempo fa, quando gli elfi della notte consideravano ancora sacra l'arte degli incantesimi arcani, Azshara fosse la più grande della loro stirpe. Una donna bellissima, che nominarono regina. Purtroppo, fu la sua dipendenza dall'arcano a diventare un giorno il catalizzatore degli eventi più devastanti della storia di questo mondo.", "." },
   ["57e27109658342e2"] = { "La terra è stata generosa con il nostro popolo, {class}. Dobbiamo essere grati per la nostra fortuna.", "." },
   ["57e3d2c02d95db15"] = { "Una volta ho sentito sussurrare che la storia dei satiri è in qualche modo legata a quella degli Elfi della Notte, ma i miei stimati ospiti si sono mostrati restii a parlarne.", "." },
+  ["57e56f84369b40d6"] = { "Non c'è scampo per voi. La Crociata distruggerà chiunque porti il marchio del flagello.", "." },
   ["57e5a57291a8003b"] = { "<Bentornato/Bentornata>, {name}. Ti ho già detto quanto è bello avere qualcuno con cui parlare?\n\nBene allora, mettiamoci al lavoro. Qual è la prossima cosa da fare?", "." },
   ["57fda7a3bdf933a3"] = { "Il Dun Baldar South Bunker protegge i fianchi sud ed est di Dun Baldar.\n\nNon è controllato da nessuna delle due parti.", "." },
 })

@@ -42,6 +42,7 @@ WFJ.Data.add("gossip", {
   ["6fb0204f82abca49"] = { "Hai un talento eccezionale per l'incantamento. Superi le mie capacità di insegnante, temo. Cerca ⟦Kitta Firewind=Kitta Bruciavento⟧ alla ⟦Tower of Azora=Torre di Azora⟧. Ormai solo lei può essere la tua istruttrice.", "." },
   ["6fdb2afb0570a13c"] = { "OZZIE!!!! OH, NOOO!", "." },
   ["6fe6f97f6b7f2ecd"] = { "Sento odore di {race}", "." },
+  ["6ff28b6d9ebc36ee"] = { "Va' a parlare con i capi dei Plasmatori di Venti e dell'Alto Ordine, rispettivamente. Non vanno d'accordo, ma credo che possano riconoscere che la minaccia più grande sono gli Al'Aketh. Convincili ad approvare il piano e poi torna qui.", "." },
   ["6ff97bee8299db8f"] = { "La gente di ⟦Nighthaven=Nottequieta⟧ sì che sa far festa!", "." },
   ["6ffb04bc0a4f6754"] = { "Gli infedeli saranno costretti a reagire. Orchi, uomini-toro...", "." },
   ["6ffb60a751bf8ad2"] = { "Oh... mi sento svenire...", "." },

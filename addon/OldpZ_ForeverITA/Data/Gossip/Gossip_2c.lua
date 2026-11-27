@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["2c015b70f26a98b3"] = { "Hai dei nuovi tesori da tenere al sicuro? Allora vorrai depositarli a The Vault, dagli Stonemantle.\n\nTroverai The Vault a un tiro di martello a nord-est dall'ingresso di ⟦Ironforge=Forgiardente⟧.", "." },
+  ["2c046b7e92ecb863"] = { "Per essere <un/una> {class} ci vuole più di un braccio grosso e di uno sguardo truce. Servono anche una mente lucida e un occhio acuto, se vuoi restare vivo.\n\nE un alito pesante non guasta.", "." },
   ["2c07051ea2800540"] = { "Finalmente l'agonia cessa....", "." },
   ["2c08fecaa5e59c84"] = { "Salute, {class}. Sono l'ufficiale degli encomi che agisce per conto dei Gnomeregan Exiles. Il mio dovere è assistere gli avventurieri che hanno ricevuto Anelli d'Encomio dell'⟦Alliance=Alleanza⟧.\n\nAccetto anelli in quantità diverse, ma lo scambio più vantaggioso per te è consegnarne un set di dieci in una volta. Quando consegnerai gli anelli, registrerò le tue imprese nei nostri archivi. Di conseguenza, otterrai il riconoscimento dei Gnomeregan Exiles per il tuo impegno e il tuo servizio.", "." },
   ["2c0dbb0375fbeb77"] = { "Accidenti, quella birra scura Black Claw ha proprio un bel calcio!", "." },
@@ -40,6 +41,7 @@ WFJ.Data.add("gossip", {
   ["2cbf13285c184cc4"] = { "{name}, vorrei scambiare due parole con te.", "." },
   ["2cc138008d505fbe"] = { "La battaglia per il ⟦Arathi Basin=Bacino d'Arathi⟧ comincerà tra 30 secondi.", "." },
   ["2ccb7188a6f41d58"] = { "%s si mette all'opera...", "." },
+  ["2cce65b8fdd2847e"] = { "Ti pregooo.... HNNGGHH!!", "." },
   ["2cd1f0d3884b2493"] = { "Che legame potrebbe esserci tra l'altare e le statue?", "." },
   ["2cd81b0a542de7e3"] = { "Ragnaros? Notizie davvero terribili...", "." },
   ["2cda33e9e85dd572"] = { "Da che parte andare? Be', l'unico consiglio che posso darti è di prendere la strada che vuoi!\n\nNon ricordo niente!", "." },

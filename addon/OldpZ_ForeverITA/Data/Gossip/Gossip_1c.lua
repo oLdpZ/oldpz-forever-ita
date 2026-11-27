@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["1c01b077463ceae3"] = { "Ladri! Furfanti! Canaglie! Venite ad affrontare i miei pilastri giganteschi!", "." },
   ["1c1e77ca8c8429a0"] = { "Se solo la giornata avesse qualche ora in più...", "." },
   ["1c2605f960cd96a6"] = { "Morirai qui. <La tua mente si riempie di visioni di caos e distruzione.>", "." },
+  ["1c27936ab7a9c038"] = { "Io ammazzare te!", "." },
   ["1c27d7ef00472bd6"] = { "Ach! Passami una birra gelata, Belm!", "." },
   ["1c29f7441daf01dd"] = { "Uau! Guarda che centro!", "." },
   ["1c2c52d197c7866e"] = { "%s prende la mira con più attenzione...", "." },

@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["923a1e322356c681"] = { "Salute, <cittadino/cittadina>.", "." },
   ["925a6722bd118d98"] = { "Cosa ti porta in questa parte del mondo, {name}?", "." },
   ["925a95d4e38eff3c"] = { "Non allarmarti... anche se i miei grifoni non sono del tutto integri, ti porteranno fedelmente a destinazione. Dimmi... quale torre cerchi?", "." },
+  ["92626d4c2b722209"] = { "<Quest'uomo è in condizioni critiche: è un miracolo che respiri ancora.>", "." },
   ["9265a84de18f2313"] = { "Non riesco a scendere. Ho paura.", "." },
   ["926f4b2f2a1c0752"] = { "Ho... fallito...", "." },
   ["9273f2aa8f79b28c"] = { "Okay, <fratello/sorella>, ora tocca alla sapta... stammi vicino.", "." },

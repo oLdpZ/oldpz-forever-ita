@@ -13,6 +13,7 @@ WFJ.Data.add("gossip", {
   ["7e2227aa1d9fe634"] = { "Io... non riesco nemmeno a immaginarlo, {name}. So solo che non permetterò che accada. Verrà distrutto: se non per la nostra sicurezza dalla contaminazione demoniaca, almeno in memoria di Millicent Serene... Milli...\n\nEd è qui, amico mio, che spero entrerai in gioco tu.", "." },
   ["7e338222cd594944"] = { "I piatti che prepara Alegorn sono da leccarsi i baffi. È sempre indaffarato a preparare nuove prelibatezze nella Craftsman's Terrace. Assaggia la sua ricetta Cenarion Green, se gliene è rimasta.\n\nOra, se non ti dispiace, devo indagare su questa serie di cervi scomparsi.", "." },
   ["7e361bec32b4cf40"] = { "Di sicuro troverò un uso per questa miscela...", "." },
+  ["7e373228b669b142"] = { "Salute, amico! Ti offrirei volentieri un meccatrotto, ma prima dovresti addestrarti con mio fratello Binjy laggiù.\n\nSono molto più affidabili di qualsiasi bestia, ma possono essere difficili da guidare per chi li cavalca per la prima volta; una volta imparato, però, non troverai un compagno migliore!", "." },
   ["7e37548455e297c1"] = { "So molte cose: ascolta e impara, {race}.", "." },
   ["7e37a815658642ee"] = { "Chi controlla il Dun Baldar North Bunker?", "." },
   ["7e38af6f71a16552"] = { "Sono a caccia di tesori, in cerca di potenti manufatti. Dammeli e non ti sarà fatto alcun male.", "." },
@@ -30,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["7e6896cf0a36ec99"] = { "ETCIÙ!", "." },
   ["7e76540e70080d26"] = { "Loro mi consegnano i cadaveri, io li butto nella fossa.", "." },
   ["7e792e4aa9897e95"] = { "Dopotutto vali qualcosa. Lysta, evoca una sorpresa per le nostre giovani reclute.", "." },
+  ["7e7aa75fe890a604"] = { "Fai attenzione a dove metti i piedi mentre sali sul crinale. Può essere molto insidioso.", "." },
   ["7e83949b9ba69e0b"] = { "Vieni, {name}! Andiamo laggiù a prenderlo!", "." },
   ["7e89858489b4476a"] = { "Il miglior minatore ha una presa salda sul piccone, un cuore forte nel petto e una spessa polvere nera tra i capelli.", "." },
   ["7e904f03cd6208b0"] = { "Usiamo l'arco da prima ancora dei tempi di mio padre. È solido e sicuro, e abbatte i nemici in fretta. Non vedo motivo di usare i fucili che piacciono tanto a goblin e tauren.", "." },
@@ -55,5 +57,6 @@ WFJ.Data.add("gossip", {
   ["7ee04716631d742f"] = { "Mmh, niente quassù.", "." },
   ["7ee055f998c7403b"] = { "Chi osa cercarmi?!", "." },
   ["7ee380ec3545855f"] = { "In groppa a una viverna si capisce che la sua fama di forza e velocità è ben meritata.", "." },
+  ["7ee5e3dbbdd4b280"] = { "<Tendi la mano e prendi il biglietto da Trevan.>", "." },
   ["7eef66a56f487164"] = { "Dimmi di più sul muisek.", "." },
 })

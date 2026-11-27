@@ -50,6 +50,8 @@ WFJ.Data.add("gossip", {
   ["0ce4a78cb5d05b41"] = { "Zaldimar potrebbe insegnarti qualche nuovo incantesimo. Ultimamente ha preso l'abitudine di stare alla Locanda del Fiero Leone: potresti controllare una delle stanze e vedere se c'è.", "." },
   ["0ce5be55cf6513ab"] = { "Salute, e <benvenuto/benvenuta>. Sorridere non è il mio forte, ma fidati: sono felice di servirti.", "." },
   ["0cf52af1ece19c39"] = { "%s si mette al lavoro...", "." },
+  ["0cf68231c826de3e"] = { "Lo skycutter diretto a Mulgore è arrivato! Tutti a bordo per Mulgore!", "." },
   ["0cf86ac06770419e"] = { "Non farti prendere!", "." },
   ["0cf87b604bb00f19"] = { "Non posso aiutarti. Di pozioni ne sai più tu di me. E poi ho delle pentole da sorvegliare. Parla con Yelmak, laggiù. Di pozioni se ne intende parecchio.", "." },
+  ["0cff03d7217afbb7"] = { "I seguaci delle antiche vie degli ⟦Highborne=Alti Nobili⟧ non sono mai stati così affamati di conoscenza e di riprendersi ciò che abbiamo perso. Se desideri brandire il potere dell'arcano e ne hai l'attitudine, posso aiutarti a compiere i tuoi prossimi passi.", "." },
 })

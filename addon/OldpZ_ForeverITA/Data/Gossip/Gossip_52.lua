@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["520096fa4f44b190"] = { "%s balza in avanti per difendere il suo alveare!", "." },
   ["520132ac126c66c2"] = { "<Benvenuto/Benvenuta> allo Scarlet Raven. Di questi tempi è meglio restare al chiuso.", "." },
+  ["52023674332e846e"] = { "Ma certo! Una statuetta affascinante che raffigura due elfi della notte a riposo. Cyriden l'ha riportata alla luce dal ⟦Bathran's Haunt=Covo di Bathran⟧, poche ore prima che i Reietti si avvicinassero e lo costringessero ad allontanarsi dalle rovine.\n\nMe l'ha data quando è tornato a casa, e da allora la sto studiando.\n\nÈ stata intagliata in legno originario di ⟦Ashenvale=Valtetra⟧ e risale a migliaia di anni fa, più o meno alla Guerra dei Satiri. Le due figure sono maschili, ma non ho potuto ricavare altre informazioni su chi fossero.", "." },
   ["520a02e2d3718d69"] = { "Come, scusa? La nostra «visita è stata riprogrammata»? Che cosa significa?!", "." },
   ["5213a7ce7ac32eec"] = { "Devi seguire un po' meglio la guida degli spiriti, giovane. La tua strada passa per un altro: ⟦Thrag Stonehoof=Thrag Zoccolo Granitico⟧, a ⟦Thunder Bluff=Picco del Tuono⟧. Forse potrete imparare qualcosa l'uno dall'altro.", "." },
   ["5214288d6f67c0df"] = { "Bene, {name}. Va' a mostrare quel che è a Vosur, laggiù. Risponderà a tutte le tue domande.", "." },

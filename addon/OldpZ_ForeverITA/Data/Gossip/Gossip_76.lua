@@ -49,5 +49,6 @@ WFJ.Data.add("gossip", {
   ["76d79b9c6dee4a33"] = { "Salve, {class}. Se sei qui, allora saprai che ⟦Silverpine=Pinargento⟧ brulica di nostri nemici. Per sopravvivere, i Reietti devono ricacciarli indietro!", "." },
   ["76dcf9595036598a"] = { "Ecco gli ordini, {name}. Portali in fretta al maestro di guerra Garrick!", "." },
   ["76dfa605246d1849"] = { "A dire il vero preferisco i rimedi tradizionali... sanguisughe, vermi, seghe per ossa... cose del genere. Beh, de gustibus. Troverai Faruza, che da noi insegna erbalismo, davanti all'ingresso, vicino alle stalle di Brill.", "." },
+  ["76e41fc77f08eb86"] = { "Vendere la statua? Assolutamente no! Quando Cyriden me l'ha data, mi ha fatto pensare a... sentire... non so.\n\nSembra che io abbia perso le parole.\n\nChiedo scusa. Affezionarsi a una frivola curiosità può sembrare sciocco. In ogni caso, mi dispiace dire che al momento la statua non è in vendita.", "." },
   ["76f46cdab011fd67"] = { "E così ha inizio...", "." },
 })

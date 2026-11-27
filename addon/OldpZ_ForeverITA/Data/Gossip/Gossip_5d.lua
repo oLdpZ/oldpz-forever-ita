@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["5d742ffe6b79a3cb"] = { "Che tu possa sfondare molti crani, {name}!", "." },
   ["5d774c2182a28c39"] = { "Non profanare queste rovine, mortale. <Un lampo di luce accecante ti avvolge. Una creatura fatta interamente di fiamme è l'unica cosa che ricordi di aver visto.>", "." },
   ["5d796deef2659412"] = { "%s sbuffa profondamente mentre si ferma.", "." },
+  ["5d7c45ad83d5c9b6"] = { "Lastricherò le strade con le tue interiora, {race}.", "." },
   ["5d7df209f61631ff"] = { "Questo posto... è maledetto.\n\nCe l'ho fatta a malapena a fuggire, e non sopporto l'idea di scendere di nuovo nei tunnel.\n\nMio fratello e le mie sorelle, però... non hanno avuto la stessa fortuna. Intrappolati là dentro, sono in preda alla febbre per la nebbia corrotta che emana dal giardino maligno che cresce laggiù.\n\nTi prego, devi aiutarli.", "." },
   ["5d83dd8cd9da89e8"] = { "È... la... fine.", "." },
   ["5d8443caa5fe8971"] = { "L'⟦Alliance=Alleanza⟧ vince!", "." },

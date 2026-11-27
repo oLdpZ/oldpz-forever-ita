@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["94003884c4f97bda"] = { "Addestrami.", "." },
+  ["940cde134403d431"] = { "Qualunque sia la causa, dobbiamo trovare presto una soluzione prima che ci laceriamo a vicenda. Dimmi, cosa sai di Kalimdor?", "." },
   ["94166c57c2f0306b"] = { "Quale messaggio?", "." },
   ["941a0a7614778640"] = { "%s fugge nel vuoto!", "." },
   ["941d236fc51dcf4b"] = { "Quando ho trovato per caso le pietre Suntara agli Scavi di Golasporca, il potere di Ragnaros mi ha attraversato da capo a piedi. È stato Ragnaros a darmi uno scopo.", "." },
@@ -44,6 +45,7 @@ WFJ.Data.add("gossip", {
   ["94e3112d2c85f4d6"] = { "Rane e palle di cuoio in vendita!", "." },
   ["94e5c305af97064e"] = { "Mi interessa l'addestramento in alchimia.", "." },
   ["94ea497a80936448"] = { "Grurk aprire presto. Poi noi dividere tesoro.", "." },
+  ["94ebfb2ad43b03ed"] = { "Hai i miei ringraziamenti. A dire il vero, però, sarà un azzardo pericoloso e potremmo non riuscire. È importante che tu capisca che potrebbe essere un viaggio di sola andata.", "." },
   ["94ecbd1964b2872b"] = { "Sì. Certo.", "." },
   ["94f993e0823f4c4f"] = { "Ah, una fiala d'acqua creata e benedetta da Brine, e per giunta raccolta da te.\n\nIl liquido in questa fiala sarà fondamentale per creare un sapta per te, ma servirà anche per un altro compito.\n\nIl sapta che creerò per te dovrà essere usato per vedere gli spiriti dell'acqua al santuario nella ⟦Silverpine Forest=Selva Pinargento⟧, a sud di ⟦Undercity=Sepulcra⟧. Le gocce rimanenti... be', delle gocce rimanenti ti parlerò se ti senti <pronto/pronta>.\n\nSei <preparato/preparata> per un ultimo viaggio, {name}?", "." },
   ["94fd8cfb6c1d3f65"] = { "<Il cadavere davanti a te è coperto di bruciature e segni di fiamme. Sembra stringere qualcosa in mano.>", "." },

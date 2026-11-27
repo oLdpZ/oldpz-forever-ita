@@ -42,6 +42,7 @@ WFJ.Data.add("gossip", {
   ["00b7a8e6815c47cf"] = { "Prima che il tuo apprendimento abbia inizio, devo chiederti un favore...", "." },
   ["00be6edc84f898ef"] = { "Ti prego, insegnami.", "." },
   ["00ca38b984b22972"] = { "Sei qui per l'addestramento, per poi trasmetterlo ai tuoi famigli?", "." },
+  ["00cbac7a2386ac29"] = { "È giunto il momento, straniero. In un modo o nell'altro, chiudiamo questa faccenda.", "." },
   ["00ce5f4ca62a5ef6"] = { "Ti prego, continua, eroe...", "." },
   ["00d0bb2cb05ef87a"] = { "Marketing - Saluto per il riscatto iCoke (S.H.E.)", "." },
   ["00d763c30917b3b0"] = { "Per millenni questo essere è rimasto assopito sotto il mondo, in attesa del suo momento. Dalla sua prigione ha atteso l'istante esatto in cui colpire chi voleva fargli del male.", "." },
