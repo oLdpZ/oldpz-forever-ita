@@ -536,7 +536,11 @@ Data\Unit\Unit_0205.lua
 Data\Unit\Unit_0209.lua
 Data\Unit\Unit_0211.lua
 Data\Unit\Unit_0214.lua
+Data\Unit\Unit_0216.lua
+Data\Unit\Unit_0218.lua
+Data\Unit\Unit_0227.lua
 Data\Unit\Unit_0230.lua
+Data\Unit\Unit_0242.lua
 Data\Unit\Unit_0244.lua
 Data\Unit\Unit_0246.lua
 Data\Unit\Unit_0247.lua
@@ -562,6 +566,7 @@ Data\Unit\Unit_0269.lua
 Data\Unit\Unit_0270.lua
 Data\Unit\Unit_0271.lua
 Data\Unit\Unit_0272.lua
+Data\Unit\Unit_0273.lua
 Data\Unit\Unit_0274.lua
 Data\Unit\Unit_0275.lua
 Data\Unit\Unit_0276.lua

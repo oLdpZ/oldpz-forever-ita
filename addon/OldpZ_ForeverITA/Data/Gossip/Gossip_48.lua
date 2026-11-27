@@ -38,7 +38,7 @@ WFJ.Data.add("gossip", {
   ["4887e75bd19fef0a"] = { "Conosco una druida che vive in cima alla collina sopra la ⟦Wailing Caverns=Caverna dei Lamenti⟧, {name}. Forse potrà dirti di più su questa scheggia che hai trovato.", "." },
   ["48956a7608725614"] = { "Noi pensa che tu serve aiuto.", "." },
   ["489a2ee9eac24910"] = { "I seguaci delle antiche vie degli ⟦Highborne=Alti Nobili⟧ non sono mai stati così affamati di conoscenza e desiderosi di riprendersi ciò che abbiamo perduto. Se cerchi di brandire il potere arcano e ne hai l'attitudine, posso aiutarti a muovere i prossimi passi.", "." },
-  ["489ced027a8b73dc"] = { "Un intero ordine di visionari proprio come i Plasmatori di Venti, chiamato Circolo della Terra. Uno dei loro capi, uno sciamano di nome Muln Terra Furiosa, mi ha mostrato molte cose.", "." },
+  ["489ced027a8b73dc"] = { "Un intero ordine di visionari proprio come i Plasmatori di Venti, chiamato Circolo della Terra. Uno dei loro capi, uno sciamano di nome ⟦Muln Earthfury=Muln Terra Furiosa⟧, mi ha mostrato molte cose.", "." },
   ["489f16c76395a922"] = { "%s si volta verso sud-est e guaisce, prima di tornare a guardarti.", "." },
   ["48a45d344014d505"] = { "<Jim'bek ti fissa negli occhi mentre tira una lunga boccata dal narghilè.>\n\nSalve, amico. Ti serve un tappeto? Una coperta? O solo un po' di stoffa per il tuo prossimo lavoro? Ci penso io.", "." },
   ["48a4897d8da2b215"] = { "Per grazia di Elune, è un piacere per me offrirti il destriero più pregiato di tutta Teldrassil, e forse del mondo: la fiera della notte. Da anni l'Esercito delle Sentinelle fa affidamento sul valore di questi compagni.\n\nPrenditi il tuo tempo, <amico/amica>, ed esamina ciascuna come preferisci. Di certo non resterai <deluso/delusa>.", "." },

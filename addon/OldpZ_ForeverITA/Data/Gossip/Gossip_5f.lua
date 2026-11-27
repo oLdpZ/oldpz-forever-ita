@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["5f2387c0ec711c1d"] = { "Capitano Brightsun, {name} qui presente mi ha liberato! {name}, di certo il capitano premierà il tuo coraggio.", "." },
   ["5f2aa8a646530c7c"] = { "Grazie, Omarion. Oggi hai incassato un colpo fatale per la squadra.", "." },
   ["5f34f50e182aec7a"] = { "L'oscurità non ti accoglie, {class}. Smettila di blaterare e togliti dalla mia vista! Vattene!", "." },
-  ["5f442547ed4da2f1"] = { "Un intero ordine di visionari proprio come i Plasmatori di Venti, chiamato Circolo della Terra. Uno dei loro capi, <un/una> {class} di nome Muln Terra Furiosa, mi ha mostrato molte cose.", "." },
+  ["5f442547ed4da2f1"] = { "Un intero ordine di visionari proprio come i Plasmatori di Venti, chiamato Circolo della Terra. Uno dei loro capi, <un/una> {class} di nome ⟦Muln Earthfury=Muln Terra Furiosa⟧, mi ha mostrato molte cose.", "." },
   ["5f4a67f51705fdff"] = { "Che notizie porti dalle terre dei Lupi Bianchi? Come va la battaglia per la ⟦Alterac Valley=Valle d'Alterac⟧?", "." },
   ["5f4b9c724127e243"] = { "Prendi le tue cose, {name}! Mi è appena arrivata notizia da Nilith Lokrav, nella ⟦Searing Gorge=Gorgia Rovente⟧, che l'Undermarket ha avviato le operazioni nel cuore della Caldera Magmatica. Trova Nilith Lokrav nella ⟦Searing Gorge=Gorgia Rovente⟧ e fatti dare i dettagli!", "." },
   ["5f53f720f190263d"] = { "Imbecille! Non hai imparato il sistema decimale Dewey? Sono passati 3.000 anni da quando hai iniziato a lavorare per noi! Buffone incompetente.", "." },

@@ -778,7 +778,7 @@ WFJ.Data.add("unit", {
   [4950] = { "Fido", nil, 0x0b3cb672, nil, ".m" },
   [4951] = { "Guardia Praticante di Theramore", nil, 0xd0dd3c1e, nil, ".m" },
   [4952] = { "Manichino da Combattimento di Theramore", nil, 0x0dd606bd, nil, ".m" },
-  [4953] = { nil, nil, 0x61b45987, nil, "em" },
+  [4953] = { "Mocassino Acquatico", nil, 0x61b45987, nil, ".m" },
   [4954] = { nil, "Macellaio", 0x86cbe321, 0x8b1eba74, "e." },
   [4955] = { "⟦Archery Target=Bersaglio di Arcieria⟧ di Theramore 1", nil, 0x170472c0, nil, ".m" },
   [4957] = { "⟦Theramore Combat Dummy=Manichino da Combattimento di Theramore⟧ 4", nil, 0x8049d654, nil, ".m" },

@@ -394,6 +394,7 @@ WFJ.Data.add("unit", {
   [6791] = { "Locandiere Stanzalercia", "Locandiere", 0x03a3d927, 0xefa92291, ".." },
   [6806] = { "Tannok Gelmartello", "Aiuto Locandiere", 0xb7df0b93, 0x59c79675, ".." },
   [6807] = { "Locandiere Miramare", "Locandiere", 0xf35bf777, 0xefa92291, ".." },
+  [6826] = { nil, nil, 0xe1058bc7, nil, "em" },
   [6827] = { "Granchio", nil, 0x09185b98, nil, ".m" },
   [6846] = { "Ormeggiatore dei Defias", nil, 0x2e0ef843, nil, ".m" },
   [6866] = { "Guardia del Corpo dei Defias", nil, 0x4e85ae9d, nil, ".m" },

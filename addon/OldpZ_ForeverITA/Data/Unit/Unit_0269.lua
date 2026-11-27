@@ -2,4 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("unit", {
   [269068] = { "Eylah Corno Solare", nil, 0x28273c23, nil, ".m" },
+  [269152] = { "Tylana Zoccolo Nudo", nil, 0x7e6a573c, nil, ".m" },
+  [269175] = { "Erbaccia Carnivora", nil, 0x1f538a78, nil, ".m" },
 })

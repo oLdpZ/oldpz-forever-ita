@@ -1588,7 +1588,6 @@ unit	4942	name	4d716345da743c07	Test Petition Giver
 unit	4942	subname	0b5c24b6f71d2077	Test
 unit	4943	name	52bf4a2b34e7eb3a	Mosarn
 unit	4949	name	b85b0ea0c9d9620c	Thrall
-unit	4953	name	61b4598786c481cc	Moccasin
 unit	4954	name	86cbe321dccb0002	Uttnar
 unit	4959	name	6011a53fcab2f10e	Jorgen
 unit	4963	name	e74726074f1ec932	Mikhail
@@ -1912,6 +1911,7 @@ unit	6783	name	16458bd7f9a5d4a3	[UNUSED] Lorek Belm
 unit	6784	name	ed790f5547df2344	Calvin Montague
 unit	6785	name	c1657c6f51c864b2	Ratslin Maime
 unit	6786	name	0b8002799c562b87	Ukor
+unit	6826	name	e1058bc7296f4a7f	Talvash del Kissel
 unit	6886	name	475182532b0a0cc3	Onin MacHammar
 unit	6887	name	2760455bc0b2d1ee	Yalda
 unit	6906	name	8c72b331f325d501	Baelog
@@ -2828,11 +2828,6 @@ unit	15348	name	ecddfb518904570a	Kurinnaxx
 unit	15349	name	30af1b5b54350ab4	RC Blimp <PH>
 unit	15354	name	be34f5cd8b850ca2	Rachelle Gothena
 unit	15364	name	dcbaa4eef500af64	RC Mortar Tank <PH>
-unit	15373	name	dd4f07828dfa0289	Halloween Pirate Captain
-unit	15374	name	1c0356a58795fd53	Halloween Undead Pirate
-unit	15375	name	3bfca0ca502cd42a	Halloween Pirate Female
-unit	15376	name	f8b4a140b0495465	Halloween Male Ghost
-unit	15377	name	760c4a354786e76d	Halloween Female Ghost
 unit	15379	name	58b20d28b1d856e8	Caelestrasz
 unit	15380	name	be0443f267745fec	Arygos
 unit	15384	name	7b89de35f5e95745	World Trigger
@@ -2865,14 +2860,7 @@ unit	15695	name	4c93c18bd2a09cf3	Vek Twins Trigger
 unit	15717	name	9a87d1f486e57875	Ouro Trigger
 unit	15729	name	dc9d2c3b0ccbb2c0	Father Winter's Helper (BIG) gm
 unit	15730	name	1bdde306b084f6f6	Pat's Snowcloud Guy
-unit	15772	name	ddddebd703936dea	Christmas Darkmaster Gandling
-unit	15773	name	fcfb02a7de966879	Christmas Cannon Master Willey
-unit	15774	name	a8978a9a484d705d	Christmas Prince Tortheldrin
-unit	15775	name	2cee249bde2a3395	Christmas Emperor Dagran Thaurissan
-unit	15776	name	68b46c4af2cbbac0	Christmas Warchief Rend Blackhand
-unit	15777	name	c1a73ffbff39840f	Christmas War Master Voone
 unit	15778	name	b84af3fb8ba588be	Mouth Tentacle Mount Visual
-unit	15796	name	ccfce7c29b00ce1f	Christmas Goraluk Anvilcrack
 unit	15800	name	0d14133ed45ed0b1	Exit Trigger
 unit	15801	name	441279fbf8314ef5	GONG BOY DND DNR
 unit	15801	subname	f0e80acc129cf8ea	HOLDER OF THE GONG
@@ -3030,6 +3018,7 @@ unit	205729	name	76f0cd42ab1ff2d5	Boarton Shadetotem
 unit	209797	name	95ee6f7241451280	Bruuz
 unit	211022	name	218c9203f31f4069	Owen Thadd
 unit	214954	name	6df725eb2095260e	Rix Xizzix
+unit	227853	name	9d8ac1b7e7ea0b92	Pix Xizzix
 unit	230317	name	51b254611d03bbe6	Mokvar
 unit	247226	name	5daf5231c274b308	Kelsey Fargo
 unit	247229	name	84af36b082f6b36e	Daniel
@@ -3041,6 +3030,7 @@ unit	248840	name	501592e4775c6b06	Trevan Rol
 unit	250686	name	d8c74e78086c5de4	Tabitha Heartweaver
 unit	251371	name	a96387125f9f0b6d	Falorne Fallwind
 unit	251487	name	55b612f86655d751	Ventaari Brightwish
+unit	253066	name	09613086558b761c	Umarak
 unit	253139	name	6d850359da0db713	Gorhak
 unit	253140	name	51d1c0997ec0c69a	Molkar
 unit	253163	name	c98047a50469b96f	Grolkar
