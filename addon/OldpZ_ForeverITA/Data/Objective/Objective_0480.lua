@@ -8,7 +8,7 @@ WFJ.Data.add("objective", {
   [480035] = { "⟦Swift Palomino=Palomino Rapido⟧", 0x83ff53d9, "." },
   [480036] = { "⟦Swift White Steed=Destriero Bianco Rapido⟧", 0xbf11e8fa, "." },
   [480147] = { "Kyle nutrito", 0x73cce68d, "." },
-  [480182] = { "La Marcia di Reginald", 0xc7da5dcf, "." },
+  [480182] = { "La marcia di Reginald", 0xc7da5dcf, "." },
   [480284] = { "Valuta la reazione di Neeru Fireblade", 0xd3fe7bc4, "." },
   [480572] = { "Eventi osservati", 0x669061c9, "." },
   [480575] = { "Uccidi i membri del Patto Spinanera", 0x03f4a4b0, "." },
