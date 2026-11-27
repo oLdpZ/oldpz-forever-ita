@@ -282,6 +282,8 @@ def objective_names(repo: Path, list_: str = OBJECTIVE_NAMES) -> dict[int, str]:
 KEEP_ENGLISH = "pipeline/keep_english.tsv"
 KEEP_HEADER = "tipo\tid\tcampo\thash\ten"
 KeepKey = tuple[str, Any, str]  # (data type, id, field)
+# the types whose id is text: a gossip hash, an interface key (`ACCOUNT_QUEST_LABEL`, `CriteriaText:6549`)
+STRING_KEYED = (*HASH_KEYED, "ui")
 
 
 def _keep_table(repo: Path) -> dict[KeepKey, tuple[str, str]]:
@@ -298,7 +300,7 @@ def _keep_table(repo: Path) -> dict[KeepKey, tuple[str, str]]:
         if len(parts) != 5:
             raise SystemExit(f"translate_batch: {KEEP_ENGLISH}:{n}: not `{KEEP_HEADER}`: {raw!r}")
         type_, id_, field, hash_, en = parts
-        out[(type_, id_ if type_ in HASH_KEYED else int(id_), field)] = (hash_, en)
+        out[(type_, id_ if type_ in STRING_KEYED else int(id_), field)] = (hash_, en)
     return out
 
 

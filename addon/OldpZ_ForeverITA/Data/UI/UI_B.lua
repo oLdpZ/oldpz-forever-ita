@@ -283,6 +283,7 @@ WFJ.Data.add("ui", {
   ["BINDING_NAME_OPENCHAT"] = { "Apri la chat", 0x7191aa40, "." },
   ["BINDING_NAME_OPENCHATSLASH"] = { "Apri la chat con barra", 0x21aae949, "." },
   ["BINDING_NAME_PETATTACK"] = { "Fai attaccare il famiglio", 0x6accbc77, "." },
+  ["BINDING_NAME_PINGASSIST"] = { "Attivo", 0xcec4b0c0, "." },
   ["BINDING_NAME_PINGATTACK"] = { "Attacca", 0xe072942b, "." },
   ["BINDING_NAME_PINGONMYWAY"] = { "Arrivo", 0x7806045a, "." },
   ["BINDING_NAME_PINGWARNING"] = { "Attenzione", 0x95cfae04, "." },

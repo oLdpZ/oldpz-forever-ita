@@ -159,3 +159,12 @@ def test_quests_without_a_level_and_partly_translated_quests_are_listed(tmp_path
 def test_ids_are_listed_as_compact_ranges():
     assert coverage.ranges([7, 1, 2, 3, 10, 11, 5]) == "1-3, 5, 7, 10-11"
     assert coverage.ranges([]) == "none"
+
+
+def test_an_interface_line_kept_english_is_read_by_its_key(tmp_path: Path):
+    from wfj.dev import translate_batch as tb
+
+    (tmp_path / "pipeline").mkdir()
+    rows = ["tipo\tid\tcampo\thash\ten", "ui\tCriteriaText:6549\ttext\th1\tLord Godfrey", "ui\tCHAT\ttext\th2\tChat"]
+    (tmp_path / "pipeline" / "keep_english.tsv").write_text("\n".join(rows) + "\n", encoding="utf-8")
+    assert tb.read_kept(tmp_path) == {("ui", "CriteriaText:6549", "text"): "h1", ("ui", "CHAT", "text"): "h2"}

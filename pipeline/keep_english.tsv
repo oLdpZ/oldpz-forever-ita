@@ -264,6 +264,93 @@ spell	1271412	description	84727607c217b635	Bounce Protection
 spell	1271565	description	84727607c217b635	Bounce Protection
 spell	1310655	aura	06420438dc303ea4	Winterspring Shroud
 spell	1324511	aura	45413a35ab5277a2	$@spellaura19410
+ui	NO	text	000028590009b6fd	No
+ui	CHAT	text	0915bd509f1c7960	Chat
+ui	MANA	text	0a6af6b30963c5cf	Mana
+ui	ARENA	text	845c84e322d577b5	Arena
+ui	EMOTE	text	c9ea7b90032b1647	Emote
+ui	GAMMA	text	eb69bb43182f3e25	Gamma
+ui	MACRO	text	54b9657129fc34df	Macro
+ui	IMMUNE	text	40ca18062fe1575d	Immune
+ui	META_GEM	text	0a6c05e919459419	Meta
+ui	PASSWORD	text	ba54dcfd57150ca4	Password
+ui	CHAT_LABEL	text	0915bd509f1c7960	Chat
+ui	SSAO_LABEL	text	0b3506be223a2ecf	SSAO
+ui	AUDIO_LABEL	text	84c3282ac71470ab	Audio
+ui	MOUSE_LABEL	text	569e5b062d2070c2	Mouse
+ui	PVP_ENABLED	text	00152f823da3de67	PvP
+ui	QuestTag:41	text	00152f823da3de67	PvP
+ui	ACCOUNT_QUEST_LABEL	text	fe54aa4e98bf69d7	Account
+ui	ANTIALIASING	text	3386b9c05782390f	Anti-Aliasing
+ui	BASE_SETTINGS_TAB	text	08f1a39df5ece8cc	Base
+ui	BATTLEGROUND_10V10	text	62ad720902d57d08	10v10
+ui	BINDING_HEADER_CHAT	text	0915bd509f1c7960	Chat
+ui	BINDING_HEADER_DEBUG	text	b746f1778565a595	Debug
+ui	BOSS_BANNER_LOOT_SET	text	cd26777775fe95cc	Set: %s
+ui	CAA_VOLUME_LABEL	text	297b0daa844be542	Volume
+ui	CALENDAR_TYPE_PVP	text	00152f823da3de67	PvP
+ui	CDMSND_SHORT_KALIMBA	text	b3728818b3990fad	Kalimba
+ui	CLICK_BINDING_MACRO_TITLE	text	0ba81415c411a5b1	%s (Macro)
+ui	CLUB_FINDER_FOCUS_PVP	text	00152f823da3de67	PvP
+ui	COMBAT_TEXT_IMMUNE	text	40ca18062fe1575d	Immune
+ui	COMMUNITIES_CHAT_TAB_TOOLTIP	text	0915bd509f1c7960	Chat
+ui	COMMUNITIES_MEMBER_LIST_MEMBER_COUNT_FORMAT	text	90acc8c7d5991beb	%s/%s Online
+ui	COMMUNITIES_PRESENCE_OFFLINE	text	06e66a7a007d0582	Offline
+ui	CONTACTS_MENU_NAME	text	0a6c02eb1944d4e7	Menu
+ui	COOLDOWN_VIEWER_SETTINGS_SOUND_ALERT_CATEGORY_WAR2	text	78c4c9cdb8ac50aa	Warcraft 2
+ui	COOLDOWN_VIEWER_SETTINGS_SOUND_ALERT_CATEGORY_WAR3	text	78c4c9ceb8ac50ab	Warcraft 3
+ui	CreatureType:11	text	d17e0d12418feb07	Totem
+ui	CriteriaText:230800	text	af30c26cd41855ec	Sonya Darkhallow
+ui	CriteriaText:230803	text	815e5d9aa52f44bb	Amethrax
+ui	CriteriaText:230805	text	91ea0bab96d661d2	Del'lynar Songwood
+ui	CriteriaText:230806	text	57ca151f661a9e3b	Chillhowl
+ui	CriteriaText:230812	text	3e491077110f0d17	Bandalar
+ui	CriteriaText:230815	text	778caea4d73925b7	Sylvestris Dusksong
+ui	CriteriaText:230819	text	534ee3f1f4714b0d	Anara Chillwind
+ui	CriteriaText:230980	text	57d81cd99297b79a	Nanaya
+ui	CriteriaText:230982	text	b897c3e7892e0750	Blazeroar
+ui	CriteriaText:6549	text	cb9fb48bc9859fe6	Lord Godfrey
+ui	CustomizationChoice:1156	text	7970f5ba909fccf8	Omega
+ui	CustomizationChoice:1425	text	0014e87a39aa9bb7	Oni
+ui	CustomizationChoice:15541	text	4632db2d3efa1095	Raptor
+ui	CustomizationChoice:18706	text	001355c821d8e557	Imp
+ui	CustomizationChoice:1923	text	001249a311f7d652	Emo
+ui	CustomizationChoice:56520	text	8547027e68d9c445	Mithril
+ui	CustomizationChoice:7210	text	0ab3ffe167aecf04	Orca
+ui	DISCORD_GUILD_LINKED_SERVER	text	1c3cdc6953def928	Server: %s
+ui	EMOTE_MESSAGE	text	c9ea7b90032b1647	Emote
+ui	FACTION_STANDING_INCREASED_ACH_PART	text	6f48a1932c62725a	(+%.1f bonus)
+ui	FRAMERATE_LABEL	text	097655e5e80c3cce	FPS:
+ui	FRIENDS_LIST_OFFLINE	text	06e66a7a007d0582	Offline
+ui	GUILD_ONLINE_LABEL	text	374c22103afab226	Online
+ui	GUILD_TOTALONLINE	text	03db7ca401afa37b	(|cffffffff%d|r |cff00ff00Online|r)
+ui	HEIRLOOMS_PVP	text	00152f823da3de67	PvP
+ui	HUD_EDIT_MODE_MICRO_MENU_LABEL	text	0a6c02eb1944d4e7	Menu
+ui	INT_SPELL_DURATION_MIN	text	39e09a403a3fcdbe	%d min
+ui	ITEM_ENCHANT_TIME_LEFT_MIN	text	14df8e78d97a3eec	%s (%d min)
+ui	ITEM_MOD_MANA_SHORT	text	0a6af6b30963c5cf	Mana
+ui	ItemSubClass:4:7	text	eba5fc3a897271a3	Libram
+ui	ItemSubClass:4:9	text	d17e0d12418feb07	Totem
+ui	LOCALE_AUDIO_LABEL	text	84c3282ac71470ab	Audio
+ui	MINUTE_ONELETTER_ABBR	text	050f77b8fd04b931	%d m
+ui	MULTISAMPLE_ALPHA_TEST	text	88886bb7f71bf1a4	Multisample Alpha-Test
+ui	MailBody:165	text	0000006100000061	a
+ui	MailBody:166	text	00003205000c14a3	ab
+ui	PRIMARY_MONITOR	text	0131591dadedfeab	Monitor
+ui	QUEST_CLASSIFICATION_META	text	0a6c05e919459419	Meta
+ui	RADIAL_LABEL_CHAT	text	0915bd509f1c7960	Chat
+ui	RADIAL_LABEL_PVP	text	00152f823da3de67	PvP
+ui	REPORTING_MINOR_CATEGORY_BTAG	text	b2c72ecfe87c9612	Battle Tag
+ui	SECOND_ONELETTER_ABBR	text	050f77befd04b937	%d s
+ui	SOCIAL_QUEUE_FORMAT_ARENA	text	2a02c9b0aaabe4b6	Arena (%1$dv%1$d)
+ui	SOCIAL_UI_BATTLE_NET_FRIEND_TAG_LABEL_PVP	text	00152f823da3de67	PvP
+ui	SPELL_DURATION_MIN	text	e2b39a8023c56ee9	%.1f min
+ui	SPELL_FAILED_IMMUNE	text	40ca18062fe1575d	Immune
+ui	TIMEMANAGER_AM	text	000021900008186e	AM
+ui	TIMEMANAGER_PM	text	0000293d0009f69d	PM
+ui	TRACKER_HEADER_SCENARIO	text	6e1c31cf775a3229	Scenario
+ui	TRANSMOG_SET_PVP	text	00152f823da3de67	PvP
+ui	VIDEO_OPTIONS_MONITOR	text	6691ee94aee52450	Monitor %d
 unit	1	name	1a3650769998e6ac	Waypoint (Only GM can see it)
 unit	1	subname	c118e0df28a31629	Visual
 unit	2	name	80c9db9498a04230	Spawn Point (Only GM can see it)

@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-27 at commit `b1523ce4`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-27 at commit `fd58326c`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -16,9 +16,9 @@
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
 | Item descriptions | 10,603 | 10,588 | 13 | 100.0% | 2 |
 | Spell tooltips + auras | 25,960 | 25,878 | 26 | 99.8% | 56 |
-| Interface strings | 16,417 | 15,271 | 1,029 | 99.3% | 117 |
+| Interface strings | 16,417 | 15,301 | 1,116 | 100.0% | 0 |
 | NPC names | 13,015 | 10,207 | 2,808 | 100.0% | 0 |
-| **All** | **103,850** | | | **99.8%** | **180** |
+| **All** | **103,850** | | | **99.9%** | **63** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139, ui 2.
@@ -41,6 +41,7 @@ professions, internal strings): quest 139, ui 2.
 | Spell tooltips + auras | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 25 |
 | Spell tooltips + auras | a template that prints nothing (`$@null`) | 1 |
 | Interface strings | a client-table row its family's key list leaves out (a name or developer row, ADR-042) | 1,029 |
+| Interface strings | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 87 |
 | NPC names | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 2,808 |
 
 ### What is not done yet
@@ -56,7 +57,6 @@ professions, internal strings): quest 139, ui 2.
 | Spell tooltips + auras | no Italian yet: the template names the aura's caster, which only the game knows | 2 |
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
-| Interface strings | no Italian yet | 117 |
 
 ### Quests without a level
 
