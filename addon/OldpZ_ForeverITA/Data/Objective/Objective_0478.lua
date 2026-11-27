@@ -9,4 +9,6 @@ WFJ.Data.add("objective", {
   [478913] = { "Vinci nelle Isole ⟦Darkspear=Lanciascura⟧", 0x730d9ec8, "." },
   [478914] = { "Vinci nelle Isole ⟦Darkspear=Lanciascura⟧", 0x730d9ec8, "." },
   [478915] = { "Vinci nelle Isole ⟦Darkspear=Lanciascura⟧", 0x730d9ec8, "." },
+  [478960] = { "Vinci alle Isole dei ⟦Darkspear=Lanciascura⟧ controllando almeno tre basi", 0xc3101b1c, "." },
+  [478961] = { "Vinci alle Isole dei ⟦Darkspear=Lanciascura⟧ controllando almeno tre basi", 0xc3101b1c, "." },
 })

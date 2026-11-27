@@ -3,7 +3,13 @@ local _, WFJ = ...
 WFJ.Data.add("objective", {
   [476015] = { "Incenso creato", 0x67226552, "." },
   [476016] = { "Spargi l'incenso", 0x5dec5524, "." },
+  [476060] = { "Rifiuti sperimentali scartati", 0x6b8509c4, "." },
+  [476288] = { "Piccolo ricalco di roccia", 0x0222e23b, "." },
+  [476289] = { "Grande ricalco di roccia", 0x9f3dc262, "." },
   [476295] = { "Sacchetto di ⟦Tomb Dust=Polvere Tombale⟧ gettato in mare dietro Stromgarde", 0x9695dacd, "." },
+  [476332] = { "Consigli di dama Prestor", 0x740955e3, "." },
+  [476336] = { "La storia di John il Malconcio", 0x6794e29c, "." },
+  [476346] = { "Parla con lo ⟦Squire Rowe=Scudiero Rowe⟧", 0xb056e482, "." },
   [476482] = { "Porta la tua abilità di Alchimia a 20", 0x4cb1c345, "." },
   [476484] = { "Porta la tua abilità di Forgiatura a 20", 0x9886bcda, "." },
   [476486] = { "Porta la tua abilità di Incantamento a 20", 0x67d7fcad, "." },
@@ -76,4 +82,8 @@ WFJ.Data.add("objective", {
   [476860] = { "Fiala occidentale piazzata", 0x3fd1ac41, "." },
   [476861] = { "Fiala settentrionale piazzata", 0xbf6465fc, "." },
   [476862] = { "Fiala meridionale piazzata", 0x102f0d64, "." },
+  [476909] = { "Cavallo Pezzato", 0xac94d86c, "." },
+  [476910] = { "⟦Brown Horse=Cavallo Bruno⟧", 0x12f16ec3, "." },
+  [476911] = { "⟦Chestnut Mare=Giumenta Castana⟧", 0x2f021f15, "." },
+  [476999] = { "Testa del santone Ti'ik", 0x273fe68c, "." },
 })
