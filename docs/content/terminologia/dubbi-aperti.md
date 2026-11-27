@@ -88,3 +88,8 @@
 - Lord + nome: `lord` minuscolo nei dialoghi, ma gli oggetti ufficiali dicono `Sire`; da allineare se il client usa Sire anche per i PNG
 - Mailbox / Auction House: g41 usa le forme dell'interfaccia ufficiale (`Cassetta della posta`, `Casa d'aste`, minuscole), non `Cassetta delle lettere` / `Casa d'Aste`
 - Opzioni dei menu: Lockpicking → Scassinare, Guild Master → Maestro di gilda, Weapons Trainer → Istruttore d'armi, Battlemaster → Maestro di guerra scritti senza una forma nel glossario: da verificare
+## missioni dal progetto giapponese (nomi di Forever)
+- Missioni vecchie con i nomi di Forever ancora in inglese, ferme finché non si riscrivono: Ayessa Dawnsinger, High Order, Windshaper, Drowned City, Old Fire-Eye (95140, 95036); intanto lo stesso PNG o luogo ha due forme (Ayessa Cantalba, Alto Ordine, Plasmatori di Venti, Città Sommersa, Vecchio Occhiofuoco) nell'addon
+- 10 righe vecchie dicono ancora "Lady Prestor" invece di "dama Prestor" (lotti m70 m76 m81 g04 g05 g10 r51)
+- Dubbi del proprietario: u53 "sepulcher" = Mausolea?; Springbolt, Eldarth e Strashasz trattati come refusi della fonte; Clubtoe → Ditomazza ma Clugfist tenuto; Caius Blackwood → Selvanera; Mason Connery → Muratore Connery
+- Conflitti da rivedere in `pipeline/upstream-conflicts.tsv`: missioni 545, 937, 1425

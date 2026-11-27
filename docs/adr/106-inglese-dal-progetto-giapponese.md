@@ -41,3 +41,6 @@
 - I conflitti si rivedono a mano in `pipeline/upstream-conflicts.tsv` (file generato, non è una decisione).
 - Le righe importate che nessun Forever serve vengono tolte dal passo served come ogni altra riga.
 - L'inglese è testo Blizzard: non entra mai nell'addon (vedi ATTRIBUTION.md).
+- Le righe importate tengono il `src` di upstream (`wdb@…`, `collector@…`) e da quel momento non si distinguono più dalle nostre; `pipeline/upstream-source.txt` dice solo quale commit è stato letto, non quali righe ne vengono.
+- Alzare `UPSTREAM_SHA` aggiunge soltanto le chiavi che mancano: non corregge mai una riga importata prima. Le correzioni che upstream fa in seguito a righe già importate riappaiono come conflitti in `pipeline/upstream-conflicts.tsv`, da rivedere a mano.
+- `make rebuild-check` tratta le righe `collector@` di upstream come già registrate: `reset_english` le tiene come quelle raccolte da noi, e il passo upstream le ritrova.
