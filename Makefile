@@ -180,6 +180,7 @@ PRODUCT      ?= $($(CLIENT)_PRODUCT)
 import: ## data/english/ from the pinned inputs (one rebuild pass: every client preflighted; pfQuest, VMaNGOS incl. books; then per client in CLIENTS order the quest cache, client tables incl. tooltip text and UI strings; then drop the English for ids Forever does not serve; last, Blizzard's itIT text over that English)
 	@$(ONE_CLIENT_GUARD)
 	@$(MAKE) -s wdb-preflight
+	@$(MAKE) -s upstream-preflight
 	@$(MAKE) -s import-shared-english
 	@for c in $(CLIENTS); do $(MAKE) -s import-client CLIENT=$$c || exit 1; done
 	@$(MAKE) -s import-upstream
@@ -189,6 +190,7 @@ import: ## data/english/ from the pinned inputs (one rebuild pass: every client 
 import-english: ## refresh only data/english/ (keeps data/ lines, rulings and prior hashes → `make check` can derive stale); every client, in CLIENTS order, then the served step
 	@$(ONE_CLIENT_GUARD)
 	@$(MAKE) -s wdb-preflight
+	@$(MAKE) -s upstream-preflight
 	@$(MAKE) -s import-shared-english
 	@for c in $(CLIENTS); do $(MAKE) -s import-client CLIENT=$$c || exit 1; done
 	@$(MAKE) -s import-upstream
@@ -215,6 +217,7 @@ import-served: ## drop the English for ids the Forever tables do not list (ADR-0
 import-forever: ## refresh only Forever's own English (its quest cache and tables at forever_BUILD) over data/english, then the served step
 	@$(ONE_CLIENT_GUARD)
 	@$(MAKE) -s client-preflight CLIENT=forever
+	@$(MAKE) -s upstream-preflight
 	@$(MAKE) -s import-client CLIENT=forever
 	@$(MAKE) -s import-upstream
 	@$(MAKE) -s import-served SERVED_PRESENT=1
@@ -230,7 +233,11 @@ import-shared-english:
 # English for (a different English is reported in pipeline/upstream-conflicts.tsv, never written). Skipped with a notice
 # when the clone is absent, so the other sources never depend on it (ADR-106).
 import-upstream: ## add the English the Japanese project (wfj-upstream clone, pinned UPSTREAM_SHA) has and we lack; conflicts go to pipeline/upstream-conflicts.tsv; skipped if the clone is missing
-	@if [ -e "$(UPSTREAM)/.git" ]; then cd pipeline && $(PY) -m wfj import english upstream "$(UPSTREAM)" --commit $(UPSTREAM_SHA) --report "$(CURDIR)/pipeline/upstream-conflicts.tsv"; else echo "import-upstream: no clone at $(UPSTREAM); skipped (git clone it and check out $(UPSTREAM_SHA))"; fi
+	@if [ -e "$(UPSTREAM)/.git" ]; then cd pipeline && $(PY) -m wfj import english upstream "$(UPSTREAM)" --commit $(UPSTREAM_SHA) --report "$(CURDIR)/pipeline/upstream-conflicts.tsv"; else echo "import-upstream: no clone at $(UPSTREAM); skipped (git clone https://github.com/zyaga/wow-forever-japanese $(UPSTREAM) and check out $(UPSTREAM_SHA))"; fi
+
+# Before any import step writes: a clone that exists must be at UPSTREAM_SHA (an absent one is skipped later, ADR-106).
+upstream-preflight:
+	@if [ -e "$(UPSTREAM)/.git" ]; then head="$$(git -C "$(UPSTREAM)" rev-parse HEAD)" && case "$$head" in $(UPSTREAM_SHA)*) ;; *) echo "import: $(UPSTREAM) is at $$head, not UPSTREAM_SHA $(UPSTREAM_SHA) (git -C $(UPSTREAM) checkout $(UPSTREAM_SHA))"; exit 1;; esac; fi
 
 # One client's English (CLIENT=<client>): its quest cache, then its tables (names, tooltip text, UI strings).
 import-client:
@@ -491,7 +498,7 @@ rebuild-check: ## empty data/english (collector lines kept), run `make data` fro
 	@$(ONE_CLIENT_GUARD)
 	@test -z "$$(git status --porcelain -- data $(ADDON) pipeline Makefile)" || { echo "rebuild-check: data/, $(ADDON), pipeline/ or the Makefile has uncommitted changes; commit or restore them first"; git status --short -- data $(ADDON) pipeline Makefile | head; exit 1; }
 	@$(MAKE) -s wdb-preflight
-	@for f in "$(PFQUEST)" "$(VMANGOS_DB)" "$(FOREVER_VO)" "$(UI_KEYS)"; do test -e "$$f" || { echo "rebuild-check: shared input missing: $$f; nothing deleted"; exit 1; }; done
+	@for f in "$(PFQUEST)" "$(VMANGOS_DB)" "$(FOREVER_VO)" "$(UI_KEYS)" "$(UPSTREAM)"; do test -e "$$f" || { echo "rebuild-check: shared input missing: $$f; nothing deleted"; exit 1; }; done
 	@# the collector's lines (English a client recorded in game) are no pinned input's: kept, ADR-053
 	cd pipeline && $(PY) -m wfj.dev.reset_english ../data/english
 	@# one job, stop at the first error: `data` is import → check → generate over the files just deleted
