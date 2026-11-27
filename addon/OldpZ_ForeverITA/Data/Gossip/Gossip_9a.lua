@@ -24,7 +24,7 @@ WFJ.Data.add("gossip", {
   ["9a595f3bbd129e0f"] = { "Agghhhh! Non... esultate! La vostra vittoria è vana, perché tornerò con poteri che non potete nemmeno immaginare!", "." },
   ["9a5ac926c2e60391"] = { "Salute, {name}. Sono il dottor Gustaf VanHowzen, primario di chirurgia traumatologica del Pronto Soccorso dell'⟦Alliance=Alleanza⟧.", "." },
   ["9a5ebf02511b9c15"] = { "%s scaglia lo Scettro delle Sabbie Mutevoli contro la barriera, mandandola in frantumi.", "." },
-  ["9a72303764054626"] = { "Grazie per il tuo tempo, Lady Prestor.", "." },
+  ["9a72303764054626"] = { "Grazie per il tuo tempo, dama Prestor.", "." },
   ["9a806bd5e521d60f"] = { "Ho sentito che gli ultimi preparativi vengono spediti a ⟦Silithus=Silitus⟧ e dovrebbero arrivare in meno di un giorno. Non voglio vedere uno di quegli insetti scavare fin dentro la mia miniera, quindi spero che qualcuno si stia prendendo il tempo di assemblare lo Scettro delle Sabbie Mutevoli, così che il gong possa suonare, i cancelli si aprano e la guerra abbia finalmente inizio.", "." },
   ["9a843b57cdf9088c"] = { "Il Suo controllo su di te è spezzato. E anche se gli esseri inferiori ti giudicheranno, almeno hai possibilità che il Flagello non ha!", "." },
   ["9a8bf33dc24d684a"] = { "Nemico avvistato! Fuoco!", "." },

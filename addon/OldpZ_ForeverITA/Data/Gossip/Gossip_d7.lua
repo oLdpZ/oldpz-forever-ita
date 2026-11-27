@@ -42,7 +42,7 @@ WFJ.Data.add("gossip", {
   ["d7afb8aaed90a6f4"] = { "Non posso addestrarti.", "." },
   ["d7b1179974d2ed60"] = { "Quando il lavoro di un fabbro raggiunge il tuo livello di maestria, gli offro una scelta.\n\nNon sei obbligat<o/a> a scegliere, ma te lo consiglio: dopotutto, vuoi restare una recluta per sempre? Sono i forgiatori di armature e di armi più esperti a rifornire i nostri eserciti, a vincere le nostre guerre e a guadagnarsi la gloria!\n\nMa attenzione, {name}. Una volta fatta la scelta e completati i compiti richiesti, non si torna indietro. Si può percorrere un solo cammino.", "." },
   ["d7b7e3264977657b"] = { "È giunto il momento, Guse. Volerai di nuovo!", "." },
-  ["d7c326d7a30364ff"] = { "Chiedo scusa, Lady Prestor.", "." },
+  ["d7c326d7a30364ff"] = { "Chiedo scusa, dama Prestor.", "." },
   ["d7c35c0c51c63fad"] = { "Mmm? Oh sì, posso insegnarti qualcosa, se lo desideri. Ma sta' lontano da Sumi e Tumi, non sono per quelli come te. Saru permette solo a chi ha grande abilità di avvicinarsi alle sue figlie.", "." },
   ["d7cafbcaa59714f6"] = { "Ah, temo che tu e io non abbiamo affari da trattare, per ora.\n\nSe finirai per portare a termine qualche contratto con l'autorità commerciale, forse più avanti avremo qualcosa di cui discutere.", "." },
   ["d7cb0690f600b027"] = { "Per evocare un maldestriero, devi prima creare un Circle of Greater Summoning. Un portale per Xoroth può essere aperto solo dall'interno di un simile cerchio.\n\nIl Circle of Greater Summoning richiede tre potenti strumenti: una Bell of Dethmoora, una Wheel of the Black March e una Doomsday Candle.", "." },

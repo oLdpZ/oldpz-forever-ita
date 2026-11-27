@@ -15,7 +15,7 @@ WFJ.Data.add("gossip", {
   ["803e8d9164e10bb7"] = { "Un altro esperto di sopravvivenza, mmh. Dubito che la tua abilità sia grande quanto la mia, quindi forse posso insegnarti qualche tecnica come si deve.", "." },
   ["803ea69cdd41e5bc"] = { "Chi controlla la ⟦Coldtooth Mine=Miniera di Dentefreddo⟧?", "." },
   ["803fb01e6b61a1d0"] = { "Dimmi di più sul Pilastro di Cristallo Orientale.", "." },
-  ["804037ca74ceba91"] = { "<Lady Prestor ti guarda in cagnesco.>", "." },
+  ["804037ca74ceba91"] = { "<Dama Prestor ti guarda in cagnesco.>", "." },
   ["8048fc36bd40bef0"] = { "Hai portato a termine la missione di Teronis, e apprezzo tutto ciò che hai fatto, {name}.", "." },
   ["804b9a4563a86be1"] = { "...in padella, fritto nell'olio bollente e saltato al wok...", "." },
   ["804c61798fa2cf21"] = { "Il ⟦Menethil Harbor=Porto di Menethil⟧ gode di un po' di pace in questi giorni, grazie ai montanari. Ma dobbiamo restare sempre vigili contro le nuove minacce dei nostri nemici.", "." },

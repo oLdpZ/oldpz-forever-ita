@@ -90,6 +90,8 @@
 - Opzioni dei menu: Lockpicking → Scassinare, Guild Master → Maestro di gilda, Weapons Trainer → Istruttore d'armi, Battlemaster → Maestro di guerra scritti senza una forma nel glossario: da verificare
 ## missioni dal progetto giapponese (nomi di Forever)
 - Missioni vecchie con i nomi di Forever ancora in inglese, ferme finché non si riscrivono: Ayessa Dawnsinger, High Order, Windshaper, Drowned City, Old Fire-Eye (95140, 95036); intanto lo stesso PNG o luogo ha due forme (Ayessa Cantalba, Alto Ordine, Plasmatori di Venti, Città Sommersa, Vecchio Occhiofuoco) nell'addon
-- 10 righe vecchie dicono ancora "Lady Prestor" invece di "dama Prestor" (lotti m70 m76 m81 g04 g05 g10 r51)
-- Dubbi del proprietario: u53 "sepulcher" = Mausolea?; Springbolt, Eldarth e Strashasz trattati come refusi della fonte; Clubtoe → Ditomazza ma Clugfist tenuto; Caius Blackwood → Selvanera; Mason Connery → Muratore Connery
-- Conflitti da rivedere in `pipeline/upstream-conflicts.tsv`: missioni 545, 937, 1425
+- Risolto: le 10 righe con "Lady Prestor" ora dicono "dama Prestor", come la creatura ufficiale (Dama Katrana Prestor)
+- Verificati sui nomi ufficiali: "the Sepulcher" = Mausolea (zona ufficiale); Eldarth = Rovine di Eldarath e Strashasz = Strashaz (refusi della fonte); Springbolt = Sussurrafonte (le altre righe di Forever la chiamano Kaylaena Springwhisper); Caius Blackwood → Selvanera (come Lord Blackwood → Conte Selvanera); Clubtoe → Ditomazza (i soprannomi descrittivi si traducono: Hogger → Boccalarga, Grimtooth → Dentetruce)
+- Corretto: Mason Connery è il nome del prigioniero di Alcaz, non un mestiere (prima "muratore Connery")
+- Da decidere: Clugfist resta inglese mentre Clubtoe è tradotto
+- Conflitti con il progetto giapponese (`pipeline/upstream-conflicts.tsv`): in circa 87 righe il nostro inglese viene da Classic, vmangos o pfQuest, mentre il loro viene dal client o dal server di Forever (es. 1425 "Deliver the First Shipment", 545, 937): l'inglese di Forever è quello giusto e quelle righe vanno ritradotte
