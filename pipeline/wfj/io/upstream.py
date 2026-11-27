@@ -14,7 +14,10 @@ from typing import Any
 from wfj.io.wdb import PLACEHOLDER_TITLE
 
 # a stand-in the project left in a quest's text: the whole quest is unusable
-PLACEHOLDER_TEXT = re.compile(r"temp text|<CHANGE TO GOSSIP>|^\s*TEST\b", re.IGNORECASE)
+# (`TEST` alone is case-sensitive: "Test of Faith" and "Test Your Theory" are genuine quest titles)
+PLACEHOLDER_TEXT = re.compile(
+    r"(?i:temp text|<CHANGE TO GOSSIP>|\btest (?:copy )?quest\b|do not use)|^\s*TEST\b"
+)
 
 
 def head_commit(clone: Path) -> str:

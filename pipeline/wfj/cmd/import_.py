@@ -107,7 +107,7 @@ def _add_english(sub: Any) -> None:
     up.add_argument("clone")
     up.add_argument("--commit", required=True)
     up.add_argument("--report", metavar="TSV", help="write the conflicts: type, id, field, ours, theirs")
-    up.add_argument("--dry-run", action="store_true", help="print the report, write nothing")
+    up.add_argument("--dry-run", action="store_true", help="print the summary, write nothing (no report)")
     up.set_defaults(fn=run_upstream)
     served.add_parser(esub)
 

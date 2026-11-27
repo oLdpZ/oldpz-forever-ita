@@ -910,6 +910,13 @@ def _print_questv2(questv2: set[int], unanswered: list[int], cached: set[int], m
 
 
 UPSTREAM_TYPES = ("quest", "objective", "gossip", "book")
+# what a summary line counts per type: (the added rows, the ids that were not there at all)
+UPSTREAM_NOUNS = {
+    "quest": ("lines", "new quests"),
+    "objective": ("lines", "new objectives"),
+    "gossip": ("lines", "new keys"),
+    "book": ("pages", "new ids"),
+}
 
 
 def add_missing(
@@ -976,13 +983,14 @@ def run_upstream(a: argparse.Namespace) -> int:
         merged, added, conflicts = add_missing(existing, new)
         fresh = {ln["id"] for ln in merged[len(existing) :]} - known_ids
         report.extend(_report_row(type_, c) for c in conflicts)
+        noun, fresh_noun = UPSTREAM_NOUNS[type_]
         print(
-            f"english {type_}: +{added} righe ({len(fresh)} missioni nuove), {len(conflicts)} conflitti, "
-            f"{len(dropped)} segnaposto, {bad_hash} hash diversi"
+            f"english {type_}: +{added} {noun} ({len(fresh)} {fresh_noun}), {len(conflicts)} conflicts, "
+            f"{len(dropped)} placeholders, {bad_hash} hash mismatches"
         )
         if added:
             results[type_] = merged
-    if a.report:
+    if a.report and not a.dry_run:
         Path(a.report).write_text("".join(r + "\n" for r in report), encoding="utf-8")
     if a.dry_run:
         return 0

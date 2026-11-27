@@ -135,7 +135,7 @@ def test_upstream_gossip_bad_hash_skipped(tmp_path: Path, monkeypatch, capsys):
     assert _go(clone, sha) == 0
     got = _store(data).load("gossip")
     assert [ln["id"] for ln in got] == [good["id"]] and got[0]["npcs"] == [3, 9]
-    assert "1 hash diversi" in capsys.readouterr().out
+    assert "1 hash mismatches" in capsys.readouterr().out
 
 
 def test_upstream_idempotent(tmp_path: Path, monkeypatch):
@@ -174,7 +174,38 @@ def test_upstream_dry_run_writes_nothing(tmp_path: Path, monkeypatch, capsys):
     assert _go(clone, sha, "--dry-run") == 0
     assert _snapshot(data) == {}
     assert not (tmp_path / "pipeline" / "upstream-source.txt").exists()
-    assert "english quest: +1 righe (1 missioni nuove)" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    assert "english quest: +1 lines (1 new quests), 0 conflicts, 0 placeholders, 0 hash mismatches" in out
+    assert "english book: +0 pages (0 new ids)" in out
+    assert "english gossip: +0 lines (0 new keys)" in out
+    assert "english objective: +0 lines (0 new objectives)" in out
+
+
+def test_upstream_dry_run_does_not_write_report(tmp_path: Path, monkeypatch):
+    data = _data_dir(tmp_path, monkeypatch)
+    _store(data).save("quest", [_ours("quest", 5, "title", "A")])
+    clone, sha = _clone(tmp_path, {"quest": [_up("quest", 5, "title", "B")]})
+    report = tmp_path / "rep.tsv"
+    assert _go(clone, sha, "--dry-run", "--report", str(report)) == 0
+    assert not report.exists()
+
+
+def test_upstream_genuine_test_titles_kept(tmp_path: Path, monkeypatch):
+    data = _data_dir(tmp_path, monkeypatch)
+    clone, sha = _clone(
+        tmp_path,
+        {
+            "quest": [
+                _up("quest", 90010, "title", "Test of Faith"),
+                _up("quest", 90011, "title", "Test Your Theory"),
+                _up("quest", 90012, "title", "TEST quest"),
+                _up("quest", 90013, "title", "Fine"),
+                _up("quest", 90013, "description", "Do not use this one."),
+            ]
+        },
+    )
+    assert _go(clone, sha) == 0
+    assert {ln["id"] for ln in _store(data).load("quest")} == {90010, 90011}
 
 
 def test_upstream_writes_stamp(tmp_path: Path, monkeypatch):
