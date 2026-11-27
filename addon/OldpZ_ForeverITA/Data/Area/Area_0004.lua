@@ -4,7 +4,7 @@ WFJ.Data.add("area", {
   [4001] = { "Informazioni ottenute da Kharan", 0xd5de9aa8, "." },
   [4022] = { "Prove presentate", 0x4962ae07, "." },
   [4121] = { "Trasporto del prigioniero", 0xe21616ed, "." },
-  [4185] = { "Consiglio di lady Prestor", 0x740955e3, "." },
+  [4185] = { "Consiglio di dama Prestor", 0x740955e3, "." },
   [4224] = { "La storia di John il Malconcio", 0x6794e29c, "." },
   [4245] = { "Proteggi ⟦A-Me 01=E-Mi 01⟧ finché non raggiungi ⟦Karna Remtravel=Karna Errasogni⟧", 0x7294d265, "." },
   [4261] = { "Aiuta Arei a mettersi in salvo", 0xc3b035f1, "." },

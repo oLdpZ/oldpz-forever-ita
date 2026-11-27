@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["fa0b8880d050efcb"] = { "I miei esploratori riferiscono che la ⟦Syndicate=Lega dei Tagliagole⟧ si è stabilita in una grotta nascosta sull'altopiano orientale. Sii prudente quando ti avventuri in quella zona.", "." },
   ["fa0bd7d0aed1139c"] = { "Questo lavoro non è per i deboli di cuore. Ho uno zio che ha perso una mano! Povero vecchio Stumpy... comunque, se ti interessa ancora, forse posso mostrarti un paio di cose.", "." },
   ["fa0c05b5c54152c7"] = { "Se cerchi un volo per tornare a ⟦Rut'theran Village=Rut'theran⟧, dovresti parlare con la mia collega elfa della notte, Silva Fil'naveth.", "." },
-  ["fa1615ca7fe13e14"] = { "Se temevi il peggio, non eri lontano dalla verità. Preferirei scorticarmi da solo piuttosto che gravarti con il massacro che ho visto.", "." },
+  ["fa1615ca7fe13e14"] = { "Se temevi il peggio, non eri lontan<o/a> dalla verità. Preferirei scorticarmi da solo piuttosto che gravarti con il massacro che ho visto.", "." },
   ["fa17a08e73d080fd"] = { "Il piccoletto si nasconde in una di quelle casse, compare. Buona fortuna!", "." },
   ["fa1808ece019746d"] = { "Non c'è modo che tu esca da qui sulle tue gambe!", "." },
   ["fa21814ed4946529"] = { "MMmmMMmmm. Ha un profumo delizioso, Khara.", "." },

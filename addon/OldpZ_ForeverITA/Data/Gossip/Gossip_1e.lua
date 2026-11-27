@@ -29,7 +29,7 @@ WFJ.Data.add("gossip", {
   ["1e845991dce74d78"] = { "Che vuoi, {class}? Sono in ritardo, e il mio datore di lavoro non vede di buon occhio i ritardi.", "." },
   ["1e892973467b418a"] = { "La flotta è pronta, {name}. Prendi questo segnalatore e piazzalo nel cratere occidentale della zona di battaglia centrale. Difendilo dagli assalitori finché la flotta non riesce ad agganciarne le coordinate!", "." },
   ["1e8ed1a26f9abb0e"] = { "Metto a tua disposizione tutto l'aiuto che posso offrirti.", "." },
-  ["1e9907eed785b0f8"] = { "Ci è voluto un po' di lavoro per convincere l'Arcimago Rhonin ad aiutarmi ad aprire quel portale transpianare...", "." },
+  ["1e9907eed785b0f8"] = { "Ci è voluto un po' di lavoro per convincere l'arcimago Rhonin ad aiutarmi ad aprire quel portale transpianare...", "." },
   ["1e99e373e0f09817"] = { "Sai dove posso trovare il ⟦Half Pendant of Aquatic Endurance=Mezzo Pendente della Resistenza Acquatica⟧?", "." },
   ["1e9aaf46c26afe6d"] = { "Se cerchi armature a piastre, armature di maglia o scudi, ho i migliori di tutta ⟦Undercity=Sepulcra⟧. La maggior parte di questi pezzi è fatta e riparata qui, anche se alcuni sono di recupero.\n\nDai pure un'occhiata.", "." },
   ["1ea589a5f55114ce"] = { "Sì? Sì? Che c'è?\n\nI Reietti hanno di certo un appetito enorme. Fa' come se fossi a casa tua... sì, riposa quelle ossa stanche. Mi chiamo Renee, se ti serve qualcosa.", "." },

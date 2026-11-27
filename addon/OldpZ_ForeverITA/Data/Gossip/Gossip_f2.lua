@@ -41,7 +41,7 @@ WFJ.Data.add("gossip", {
   ["f2d6eb042f6cc7a3"] = { "Il banditore di ⟦Southshore=Riva del Sud⟧ si porta una mano alla nuca e spalanca gli occhi.", "." },
   ["f2de8f5c37349aad"] = { "E per i nostri dèi?", "." },
   ["f2e24daade4d2295"] = { "Molthor vede tutto, {race}.", "." },
-  ["f2ef6a0c4f5d2929"] = { "Ci hai messo del tempo ad arrivare, {name}. Ma sei scusato dato il tuo dedicato servizio alla Luce. Presta molta attenzione a questa lezione.", "." },
+  ["f2ef6a0c4f5d2929"] = { "Ci hai messo del tempo ad arrivare, {name}. Ma sei scusat<o/a> dato il tuo dedicato servizio alla Luce. Presta molta attenzione a questa lezione.", "." },
   ["f2f72e3b626a61ef"] = { "La ⟦Bluegill Marsh=Palude dei Branchiazzurra⟧, a nord di ⟦Menethil Harbor=Porto di Menethil⟧ nelle ⟦Wetlands=Paludi Grigie⟧, custodisce molti forzieri chiusi a chiave, portati a riva dai relitti al largo.", "." },
   ["f2fdef105d3694ae"] = { "Quant'è stato facile manipolarti perché recuperassi l'ultima pietra di Suntara da quegli imbecilli del ⟦Twilight's Hammer=Martello del Crepuscolo⟧.", "." },
   ["f2fe80590303ab7b"] = { "Grazie a tutti. Tornerò fra una settimana circa.", "." },

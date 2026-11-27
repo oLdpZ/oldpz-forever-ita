@@ -143,7 +143,7 @@ WFJ.Data.add("quest", {
   [4465] = { "Fiorcanto Corrotto", nil, nil, nil, nil, 0x6e0f1fd0, nil, nil, nil, nil, ".mmmm" },
   [4466] = { "Sbocciavento Corrotto", nil, nil, nil, nil, 0xf5c1c790, nil, nil, nil, nil, ".mmmm" },
   [4467] = { "Sbocciavento Corrotto", nil, nil, nil, nil, 0xf5c1c790, nil, nil, nil, nil, ".mmmm" },
-  [4481] = { "Compendio sulle Composizioni", nil, nil, nil, nil, 0xf418b2a2, nil, nil, nil, nil, ".mmmm" },
+  [4481] = { "⟦Libram of Constitution=Compendio sulla Costituzione⟧", nil, nil, nil, nil, 0xf418b2a2, nil, nil, nil, nil, ".mmmm" },
   [4482] = { "⟦Libram of Tenacity=Compendio sulla Tenacia⟧", nil, nil, nil, nil, 0x3366049b, nil, nil, nil, nil, ".mmmm" },
   [4483] = { "⟦Libram of Resilience=Compendio sulla Resilienza⟧", nil, nil, nil, nil, 0x81cd2c29, nil, nil, nil, nil, ".mmmm" },
   [4484] = { "⟦Libram of Voracity=Compendio sulla Voracità⟧", nil, nil, nil, nil, 0x1f5534eb, nil, nil, nil, nil, ".mmmm" },

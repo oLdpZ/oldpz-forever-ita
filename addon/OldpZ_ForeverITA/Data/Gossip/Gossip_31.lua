@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["310d83d617c02a9f"] = { "Che notizie porti del guardiamorte Falgan?", "." },
   ["311b84425729a830"] = { "Prendete la base. Noi la assedieremo da terra.", "." },
   ["311b89d072329065"] = { "Ti rallenterò soltanto, ma nessun umano dalla pelle rosa mi separerà dalla libertà!", "." },
-  ["311bf7c61113a8a7"] = { "La Sala dei Thane è sigillata. Chi non ha udienza presso il ⟦King Magni Bronzebeard=Re Magni Barbabronzea⟧ deve guadagnarsi la sua fiducia e la sua approvazione per avventurarsi nelle profondità della vecchia ⟦Ironforge=Forgiardente⟧.", "." },
+  ["311bf7c61113a8a7"] = { "La Sala dei Thane è sigillata. Chi non ha udienza presso il re Magni Barbabronzea deve guadagnarsi la sua fiducia e la sua approvazione per avventurarsi nelle profondità della vecchia ⟦Ironforge=Forgiardente⟧.", "." },
   ["311c2ba10a02d357"] = { "Liladris mi aspetta all'⟦Maestra's Post=Accampamento di Maestra⟧, quindi dovremmo sbrigarci, {name}.", "." },
   ["311fd46ea2263353"] = { "Ti ho dato tutto il sapere che possiedo, {name}. Che la fortuna sia con te.", "." },
   ["3121a4c3d26a0e1a"] = { "Con piacere. Queste cose puzzano!", "." },

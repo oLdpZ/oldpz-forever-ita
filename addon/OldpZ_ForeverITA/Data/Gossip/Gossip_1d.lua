@@ -53,6 +53,6 @@ WFJ.Data.add("gossip", {
   ["1ddbf80a4e335ac3"] = { "Muovetevi! Continuate ad accatastare.", "." },
   ["1de08fdd54d62f1e"] = { "Vengo dalla terra laggiù... dove le donne appestano e gli uomini squarciano.", "." },
   ["1de2dddb582ecc7b"] = { "Che cos'è questo???", "." },
-  ["1deec6dc64282f28"] = { "Cucinare su Zephras può sembrare difficile a un occhio inesperto, ma io amo creare ogni piatto. Anche se la nostra casa in via di estinzione manca di molti ingredienti tradizionali dei kaldorei, è stato divertente creare nuove varianti delle ricette dei nostri antenati.\n\nSpero che, ovunque i venti ti portino, queste ricette ti ricordino casa.", "." },
+  ["1deec6dc64282f28"] = { "Cucinare su Zephras può sembrare difficile a un occhio inesperto, ma io amo creare ogni piatto. Anche se la nostra casa sempre più piccola manca di molti ingredienti tradizionali dei kaldorei, è stato divertente creare nuove varianti delle ricette dei nostri antenati.\n\nSpero che, ovunque i venti ti portino, queste ricette ti ricordino casa.", "." },
   ["1dfbf58477bed65e"] = { "Salute, {class}. Sono l'ufficiale degli encomi che agisce per conto di ⟦Undercity=Sepulcra⟧. Il mio dovere è assistere gli avventurieri che hanno ricevuto Anelli d'Encomio dell'⟦Horde=Orda⟧.\n\nAccetto anelli in quantità diverse, ma lo scambio più vantaggioso per te è consegnarne un set di dieci in una volta. Quando consegnerai gli anelli, registrerò le tue imprese nei nostri archivi. Di conseguenza, otterrai il riconoscimento di ⟦Undercity=Sepulcra⟧ per il tuo impegno e il tuo servizio.", "." },
 })

@@ -49,7 +49,7 @@ WFJ.Data.add("gossip", {
   ["57dadc6ab3ba5733"] = { "La mia conoscenza della storia degli elfi della notte è limitata, ma si dice che molto tempo fa, quando gli elfi della notte consideravano ancora sacra l'arte degli incantesimi arcani, Azshara fosse la più grande della loro stirpe. Una donna bellissima, che nominarono regina. Purtroppo, fu la sua dipendenza dall'arcano a diventare un giorno il catalizzatore degli eventi più devastanti della storia di questo mondo.", "." },
   ["57e27109658342e2"] = { "La terra è stata generosa con il nostro popolo, {class}. Dobbiamo essere grati per la nostra fortuna.", "." },
   ["57e3d2c02d95db15"] = { "Una volta ho sentito sussurrare che la storia dei satiri è in qualche modo legata a quella degli Elfi della Notte, ma i miei stimati ospiti si sono mostrati restii a parlarne.", "." },
-  ["57e56f84369b40d6"] = { "Non c'è scampo per voi. La Crociata distruggerà chiunque porti il marchio del flagello.", "." },
+  ["57e56f84369b40d6"] = { "Non c'è scampo per te. La Crociata distruggerà chiunque porti il marchio del Flagello.", "." },
   ["57e5a57291a8003b"] = { "<Bentornato/Bentornata>, {name}. Ti ho già detto quanto è bello avere qualcuno con cui parlare?\n\nBene allora, mettiamoci al lavoro. Qual è la prossima cosa da fare?", "." },
   ["57fda7a3bdf933a3"] = { "Il Dun Baldar South Bunker protegge i fianchi sud ed est di Dun Baldar.\n\nNon è controllato da nessuna delle due parti.", "." },
 })
