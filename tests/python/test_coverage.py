@@ -59,6 +59,18 @@ def test_a_stated_reason_is_not_a_gap(tmp_path: Path):
     assert coverage.gaps(coverage.measure(data)) == {}
 
 
+def test_a_line_kept_english_on_purpose_counts_as_done_while_its_english_holds(tmp_path: Path):
+    data, _ = _store(tmp_path)
+    keep = tmp_path / "pipeline" / "keep_english.tsv"
+    keep.write_text("tipo\tid\tcampo\thash\ten\nspell\t7353\taura\tb\tIncreased Spirit.\n", encoding="utf-8")
+    m = coverage.measure(data)
+    assert m["types"]["spell"]["nothing"] == {coverage.KEPT_REASON: 1}
+    assert coverage.gaps(m) == {}
+    # a reworded English (another hash) is not covered by the old decision
+    keep.write_text("tipo\tid\tcampo\thash\ten\nspell\t7353\taura\tz\tIncreased Spirit.\n", encoding="utf-8")
+    assert coverage.gaps(coverage.measure(data)) == {"spell": 1}
+
+
 def test_make_coverage_refuses_an_inventory_from_another_build(capsys):
     assert coverage.main(["--build", "0.0.0.0"]) == 1
     assert "run `make served-columns`" in capsys.readouterr().out

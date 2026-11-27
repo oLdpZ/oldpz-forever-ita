@@ -70,6 +70,8 @@ LABELS = {
     "unit": "NPC names",
 }
 NAMES_LISTS = {"objective": OBJECTIVE_NAMES, "area": AREA_NAMES}
+KEPT_REASON = ("kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian"
+               " client writes the same, a developer or test NPC, a line with nothing to translate)")
 _TAG = re.compile(r"<[^>]*>")
 _WORD = re.compile(r"[A-Za-z]{2,}")
 
@@ -244,6 +246,8 @@ def measure(root: Path) -> dict[str, Any]:
     for kind, type_ in tooltip_kinds:
         for (id_, field), reason in undraftable(root, kind).items():
             blocked[(type_, id_, field)] = reason
+    # a line a drafter decided stays English, while its English is the one the decision was taken on
+    kept_lines = read_kept(repo)
     for type_, fields in SURFACE_FIELDS.items():
         en = [ln for ln in english.load(type_) if ln["field"] in fields]
         names = set(objective_names(repo, NAMES_LISTS[type_])) if type_ in NAMES_LISTS else set()
@@ -259,6 +263,8 @@ def measure(root: Path) -> dict[str, Any]:
                 done += 1
             elif ln["id"] in names:
                 named += 1
+            elif j is None and kept_lines.get((type_, ln["id"], ln["field"])) == ln["hash"]:
+                nothing[KEPT_REASON] += 1
             elif why := (
                 nothing_to_translate(type_, ln["en"], titles.get(ln["id"]), ln["field"])
                 or (type_ == "ui" and ui_left_out(str(ln["id"]), ui_keys, ui_excluded))

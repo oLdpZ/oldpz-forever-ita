@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-27 at commit `2e9110c9`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-27 at commit `b1523ce4`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -9,16 +9,16 @@
 
 | Surface | English lines | Ship Italian | Nothing to translate | Done | Not yet |
 |---|---|---|---|---|---|
-| Quest text | 23,777 | 23,573 | 102 | 99.6% | 102 |
-| NPC dialogue (gossip, speech) | 11,883 | 11,778 | 0 | 99.1% | 105 |
-| Book / letter pages | 1,262 | 1,207 | 54 | 99.9% | 1 |
+| Quest text | 23,777 | 23,573 | 204 | 100.0% | 0 |
+| NPC dialogue (gossip, speech) | 11,883 | 11,778 | 100 | 100.0% | 5 |
+| Book / letter pages | 1,262 | 1,207 | 55 | 100.0% | 0 |
 | Quest objective lines | 710 | 672 | 38 | 100.0% | 0 |
 | Exploration / event objectives | 223 | 221 | 2 | 100.0% | 0 |
-| Item descriptions | 10,603 | 10,588 | 0 | 99.9% | 15 |
-| Spell tooltips + auras | 25,960 | 25,878 | 1 | 99.7% | 81 |
+| Item descriptions | 10,603 | 10,588 | 13 | 100.0% | 2 |
+| Spell tooltips + auras | 25,960 | 25,878 | 26 | 99.8% | 56 |
 | Interface strings | 16,417 | 15,271 | 1,029 | 99.3% | 117 |
-| NPC names | 13,015 | 10,188 | 0 | 78.3% | 2,827 |
-| **All** | **103,850** | | | **96.9%** | **3,248** |
+| NPC names | 13,015 | 10,207 | 2,808 | 100.0% | 0 |
+| **All** | **103,850** | | | **99.8%** | **180** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139, ui 2.
@@ -29,31 +29,34 @@ professions, internal strings): quest 139, ui 2.
 |---|---|---|
 | Quest objective lines | name only (`pipeline/objective_names.txt`) | 38 |
 | Exploration / event objectives | name only (`pipeline/area_names.txt`) | 2 |
+| Quest text | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 102 |
 | Quest text | placeholder quest (never shown) | 93 |
 | Quest text | a bare label: a name or a one-word placeholder (ships as the English) | 9 |
-| Book / letter pages | Missing Text / picture-only page | 49 |
-| Book / letter pages | a bare label: names and numbers only (ships as the English) | 3 |
+| NPC dialogue (gossip, speech) | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 100 |
+| Book / letter pages | Missing Text / picture-only page | 26 |
+| Book / letter pages | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 25 |
+| Book / letter pages | a bare label: names and numbers only (ships as the English) | 2 |
 | Book / letter pages | picture-only or cipher page | 2 |
+| Item descriptions | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 13 |
+| Spell tooltips + auras | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 25 |
 | Spell tooltips + auras | a template that prints nothing (`$@null`) | 1 |
 | Interface strings | a client-table row its family's key list leaves out (a name or developer row, ADR-042) | 1,029 |
+| NPC names | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 2,808 |
 
 ### What is not done yet
 
 | Surface | Why | Lines |
 |---|---|---|
-| Quest text | no Italian yet | 102 |
-| NPC dialogue (gossip, speech) | no Italian yet | 105 |
-| Book / letter pages | no Italian yet | 1 |
-| Item descriptions | no Italian yet | 14 |
+| NPC dialogue (gossip, speech) | no Italian yet | 5 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
-| Spell tooltips + auras | no Italian yet | 34 |
+| Item descriptions | no Italian yet | 1 |
 | Spell tooltips + auras | no Italian yet: the template includes a spell the Forever tables do not hold | 34 |
+| Spell tooltips + auras | no Italian yet | 9 |
 | Spell tooltips + auras | no Italian yet: the template has too many optional parts for one translation | 8 |
 | Spell tooltips + auras | no Italian yet: the template names the aura's caster, which only the game knows | 2 |
 | Spell tooltips + auras | no Italian yet: the template includes an aura without saying which spell's | 2 |
 | Spell tooltips + auras | no Italian yet: the template does not say how many values it prints | 1 |
 | Interface strings | no Italian yet | 117 |
-| NPC names | no Italian yet | 2,827 |
 
 ### Quests without a level
 
