@@ -8,6 +8,7 @@ WFJ.Data.add("objective", {
   [468519] = { "High Order Apprentice sconfitto", 0x4a0b9854, "." },
   [468521] = { "Windshaper Novice Seer sconfitto", 0xa29a5781, "." },
   [468541] = { "Osserva l'Anchor Pylon", 0xc9fec2d6, "." },
+  [468777] = { "Recluta di Rog'mar nutrita", 0xd8ce2487, "." },
   [468803] = { "Trova Jorel Windsinger", 0x5c123983, "." },
   [468865] = { "Trova l'Al'Aketh Turncoat", 0xc1352e97, "." },
   [468886] = { "Injured Druids curati", 0x5a91fc67, "." },

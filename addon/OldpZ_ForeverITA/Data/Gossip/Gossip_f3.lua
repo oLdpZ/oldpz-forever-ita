@@ -7,6 +7,7 @@ WFJ.Data.add("gossip", {
   ["f3142bcd242ba0fe"] = { "Senti la potenza, {name}??? È l'ora del ROCK!", "." },
   ["f31a2ab2697a03fa"] = { "I figli di Sul proteggeranno il loro padrone. Risorgi ancora una volta, Sul'lithuz!", "." },
   ["f31ca8128d4d928d"] = { "Cerchi di allontanarmi dalla mia covata? Pagherai per la tua insolenza!", "." },
+  ["f31d85cdd91b28da"] = { "Il Kirin Tor ha gentilmente accettato di accoglierci come ospiti, e avremo bisogno del loro aiuto se vogliamo riuscire.", "." },
   ["f32d3fcad2bd3036"] = { "Le cose che ti insegnerei ti ridurrebbero il cervello in gelatina! Torna quando avrai imparato abbastanza!", "." },
   ["f33a63e8dfdb15b6"] = { "Non solo ho tutti i lingotti di mithril che mi servono, ma adesso anche tutte le raccolte dell'⟦Horde=Orda⟧ sono finite, mon. Pare che stiamo solo aspettando l'⟦Alliance=Alleanza⟧, e poi si va in guerra!", "." },
   ["f33aa9b86e049dfa"] = { "Non smetterei mai di lodare il tuo lavoro: è straordinario quello che sai fare con martello e incudine. Ora, non andare a dire in giro che ti ho suggerito di cercarti un goblin come maestro, ma è proprio quello che farò. Si chiama ⟦Brikk Keencraft=Brikk Piegaferro⟧ e, per quanto ne so, gestisce una bottega giù alla ⟦Booty Bay=Baia del Bottino⟧.", "." },
@@ -38,4 +39,5 @@ WFJ.Data.add("gossip", {
   ["f3d465de6ab4b307"] = { "Sono buone lame quelle che fai, {name}. Tagliano una pietra e restano abbastanza affilate da squarciare una gola. Ne ho viste di migliori, però: le fa un orco di nome Kelgrum Bloodaxe. Va' da lui e impara tutto ciò che può insegnarti.", "." },
   ["f3d95346a38763af"] = { "Salve, <buon/buona> <signore/signora>. Siediti, e mangia qualcosa se hai fame. Non badare al mio ricamo: ti sto ascoltando...", "." },
   ["f3e4fe170d9e7496"] = { "Ce l'hai fatta?! Mi sorprende che Kinelory non ti abbia rallentato più di così. Kin, ecco i tuoi calzini. Dammi quello che hai trovato den", "." },
+  ["f3fd8f8c0b42e66f"] = { "Brucia nella fiamma della giustizia, vile mostro!", "." },
 })

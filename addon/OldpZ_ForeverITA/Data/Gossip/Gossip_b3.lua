@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["b38f53df7f72a691"] = { "Stalagg uccidere!", "." },
   ["b391a05cb38301ad"] = { "È stato un bel carico, ma ora posso fare scorta di rifornimenti per il viaggio di ritorno nel Cratere. Dovrei anche riuscire a scaricare un po' di questa merce esotica.", "." },
   ["b39d67a2a621fb12"] = { "Pane appena sfornato in vendita!", "." },
+  ["b3a4ccc89a003ec1"] = { "Sì! Sì! È per mia volontà che la strada per Zephras è aperta per te! Portami davanti al tuo Signore del Vento, così che sappia chi è stato l'araldo della sua gloria!", "." },
   ["b3a736fe7a9d92c0"] = { "Diventa il mentore di uno dei nostri orfani durante la Week of the Wardens! Urrà!", "." },
   ["b3a7a9e99d936f73"] = { "Ho già visitato ⟦Ironforge=Forgiardente⟧. C'è un odore strano laggiù.", "." },
   ["b3a86e23d6ab3ccd"] = { "Ti ascolto, Demitrian.", "." },
@@ -40,4 +41,5 @@ WFJ.Data.add("gossip", {
   ["b3e192af0a2a32f8"] = { "Salute, sono Elaadrin Evengale, l'attuale magistro supremo dell'High Order. Come posso aiutarti?", "." },
   ["b3e3d9e84bd033bc"] = { "Tu ci proteggerai dalla malvagia padrona, sì!", "." },
   ["b3e786d0a7b69aaf"] = { "All'inizio ho aperto bottega nel ⟦Magic Quarter=Quartiere della Magia⟧, ma lì c'era parecchio rumore. Qui è decisamente meglio, a parte qualche studente insistente che riesce ancora a scovarmi, nonostante il trasloco.", "." },
+  ["b3f20144398264a3"] = { "Vorrei parlare d'altro.", "." },
 })

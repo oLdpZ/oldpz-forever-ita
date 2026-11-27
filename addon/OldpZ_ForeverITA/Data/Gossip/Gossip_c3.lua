@@ -27,7 +27,9 @@ WFJ.Data.add("gossip", {
   ["c37c49ce85d92fb4"] = { "Come si fonda una gilda?", "." },
   ["c380508e1674aabd"] = { "Devi avere reputazione Amichevole con gli orchi di Orgrimmar prima che ti insegni a cavalcare, {class}.", "." },
   ["c388fe06ab769513"] = { "Sono là fuori! Li sento di notte, che ridono. Oh, la pagheranno! La... pagheranno... cara!!", "." },
+  ["c38b573c4d9f6d49"] = { "In quanto membro dell'Alto Ordine degli shen'dorei, sei <benvenuto/benvenuta> nella nostra città, {class}.\n\nIl tuo capo, Elaadrin Ventoquieto, e io abbiamo avuto un bel carteggio in questi ultimi mesi. Ritengo che il Kirin Tor e l'Alto Ordine siano fatti della stessa pasta, sempre alla ricerca di risposte ai grandi misteri del mondo. Ora più che mai cercare quelle risposte è vitale per la sopravvivenza di tutti noi.\n\nCosì come voi avete subito un'interruzione del vostro modo di vivere a Zephras, anche il flusso della magia su Azeroth è stato caotico. Turbato, in qualche modo... come se un sasso fosse stato gettato in acque ferme, facendo propagare increspature sulla superficie.\n\nAh, ma di simili problemi potremo parlare un'altra volta. Per ora, benvenut<o/a> ad Azeroth.", "." },
   ["c392ca5a312a1f8d"] = { "Naralex dorme di nuovo!\n\nTanto tempo fa, Naralex giunse in questa caverna con il nobile scopo di entrare nel ⟦Emerald Dream=Sogno di Smeraldo⟧ e far rinascere le ⟦Barrens=Savane⟧ come una rigogliosa foresta. Ma la sua concentrazione vacillò e i suoi pensieri furono contaminati da visioni serpentine.\n\nOra, dai suoi sogni, bestie rettili filtrano nel mondo. Bisogna svegliarlo dall'incubo, o sarà perduto per sempre e un grande male verrà scatenato.\n\nSolo dopo che i suoi servitori corrotti, i Fanglord, saranno stati uccisi potrò celebrare il rituale del risveglio.", "." },
+  ["c3950d20c68a5ca2"] = { "Se cerchi armature a piastre, di maglia o scudi, ho il meglio di tutta ⟦Undercity=Sepulcra⟧. La maggior parte di questi pezzi è fabbricata e riparata qui sul posto, anche se alcuni sono recuperati.\n\nDai pure un'occhiata.", "." },
   ["c39768847a3ce90e"] = { "Per la Luce, che fame oggi. Avete visto Darcy oggi? Era splendida.", "." },
   ["c39e136bba5b9ac9"] = { "Comandante, è giunto il momento di caricare la feccia dei Lupi Bianchi! Trafiggeteli!", "." },
   ["c3a64189fe801be0"] = { "%s e l'incursore Kerr lasciano riposare e bere un po' i loro lupi...", "." },
@@ -48,4 +50,5 @@ WFJ.Data.add("gossip", {
   ["c3f3142a693132e9"] = { "Il capofamiglia sono io. Io. IO!!!", "." },
   ["c3f8d5a7f08b707e"] = { "Non sei all'altezza di addestrarti con me, straniero. Passa un po' di tempo con il mio assistente Jhag, laggiù.", "." },
   ["c3f8e2baea461564"] = { "Ah sì, ancora qualcuno che alimenterà i fuochi e forgerà le armi della guerra. Certo che ti insegnerò come si fa.", "." },
+  ["c3ff77c6877398fd"] = { "Qualunque cosa tu voglia, sputala fuori. Ho un lungo turno davanti a me.", "." },
 })

@@ -15,6 +15,8 @@ WFJ.Data.add("gossip", {
   ["ac42f9ab3d424042"] = { "Parlami della capitana Balinda Cordipietra.", "." },
   ["ac45802536c66428"] = { "Sia motivo d'orgoglio per te, {class}, il fatto che l'⟦Alliance=Alleanza⟧ abbia completato tutti i compiti di raccolta che le erano stati assegnati. I prodotti finiti sono immagazzinati e conservati, e i nostri esperti di professioni stanno lavorando sodo per trasformare quelle materie prime in materiale bellico da spedire a ⟦Silithus=Silitus⟧ non appena l'⟦Horde=Orda⟧ finirà le sue raccolte.", "." },
   ["ac46be328eb0b910"] = { "Il tuo talento eccelle! Hai davvero ispirazione. Per proseguire la tua ricerca della conoscenza, parla con Georgio Bolero a ⟦Stormwind=Roccavento⟧. È tenuto in grande considerazione e potrà continuare il tuo addestramento.", "." },
+  ["ac477fdb80e1b159"] = { "Parlami ancora della famiglia Valor.", "." },
+  ["ac4aea9e30a65df2"] = { "<Il montone allunga il collo verso di te, in cerca di grattatine.>", "." },
   ["ac4ba00ab0e6f25b"] = { "L'anziano Malatomba passa il suo tempo vicino a Brill, nelle ⟦Tirisfal Glades=Radure di Tirisfal⟧.", "." },
   ["ac51bc16096c47d1"] = { "È al Godan's Runeworks che devi andare. Lo trovi all'estremità ovest del Varcolargo, proprio accanto alla Valle della Saggezza.", "." },
   ["ac5271e8915937cc"] = { "Costrizioni? Ci sono cose in questo mondo ben più costrittive di sbarre e catene, <signorino/signorina>. I non morti ci circondavano, tormentandoci di continuo con orribili atti di depravazione.\n\nAlla fine arrivò lui. Si presentò come il dottor Theolen Krastinov. Noi imparammo a conoscerlo come «il ⟦The Butcher=Macellaio⟧».", "." },

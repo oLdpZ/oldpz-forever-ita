@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["c903f8b7aa153bd7"] = { "Cerca di mantenere l'equilibrio in ogni cosa, {class}. È lì che si trova la vera armonia.", "." },
   ["c904e35356da9522"] = { "Ok, allora dove diavolo è? Aspetta un attimo! Sei ubriaco?", "." },
+  ["c9067a869417e7cb"] = { "Penso sia ora di lasciare questo posto. Aprirò un portale per Valanaar.", "." },
   ["c90933b74df7316a"] = { "Nessuno lo sa. Perché gli unici che l'hanno fatto non sono mai tornati. Quando gli skycutter facevano ancora la spola tra Valanaar e New Eldranaar o Shen'dramar, a volte un incidente o qualche altra disgrazia faceva cadere qualcuno fuori bordo. Quando succedeva, non rallentavano nemmeno la nave. Non aveva senso.\n\nPer quanto ne sappiamo, chiunque sia caduto è ancora là fuori... a precipitare senza fine, per sempre.", "." },
   ["c90bfffef5e4a6c4"] = { "Il Signore del Fuoco e i suoi simili un tempo dominavano questo mondo intero, mortale. Come servitore degli Dei Antichi, combatté contro i Titani per il dominio di questo pianeta. I Titani vittoriosi esiliarono il mio padrone e i suoi simili nel Piano Elementale, dove resteranno prigionieri fino alla fine dei tempi.", "." },
   ["c90e3cee88f51945"] = { "Non posso permetterti di entrare nel Tempio! Devo distruggerti per il tuo bene!", "." },
@@ -25,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["c961580be5ea4ce2"] = { "Ho qui gli ordini per un attacco alle forze dell'Alleanza nei campi centrali. Mi serve qualcuno che li porti al capo dell'assalto.", "." },
   ["c97cca7b0f11eca2"] = { "La mia morte conta poco... il Martello calerà comunque!", "." },
   ["c97ccc5443452b2e"] = { "Quante barre di metallo ha raccolto finora l'⟦Horde=Orda⟧?", "." },
+  ["c97e2e552115b636"] = { "Ci hanno portato via di nuovo gran parte del raccolto, ma stavolta il capo dei banditi, Ferauu «il Randello» come lo chiamano, ci ha detto che a ogni stagione sarebbero tornati e ne avrebbero preso il doppio dell'anno prima.", "." },
   ["c98275039b07285c"] = { "Posso aiutarti in qualcosa, {name}? Altrimenti ho una spedizione di cui occuparmi.", "." },
   ["c991025571cadb85"] = { "Per il Capoguerra!", "." },
   ["c992028ac5e37915"] = { "Dove cercare una compagnia cupa e tenebrosa, se non nella parte buia di ⟦Ironforge=Forgiardente⟧, che porta il nome quanto mai azzeccato della Caverna degli Inganni? Lì troverai di sicuro ⟦Thistleheart=Cuorcardo⟧, probabilmente intento a evocare qualche creatura immonda ai suoi ordini.", "." },

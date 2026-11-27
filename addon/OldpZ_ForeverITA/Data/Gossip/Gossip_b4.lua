@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["b46c470ba18d1f4a"] = { "<Andorov ti guarda cupo.>\n\nSe sanguina, possiamo ucciderlo.", "." },
   ["b46d06adffb17880"] = { "È ora di prendere in mano la situazione. Vieni. Entra nel mio dominio e sfida la potenza del Flagello!", "." },
   ["b46d79175844e0fe"] = { "I mezzorsi Freddinverno che vivono qui a ⟦Winterspring=Fontefredda⟧ un tempo erano nostri alleati... Ma un giorno tutto cambiò.\n\nSpinti dalle strane pretese del loro gran capo, cominciarono ad attaccare chiunque incontrassero, compresa la nostra tribù. Ora se ne stanno per conto loro...", "." },
+  ["b4745b4b2068203f"] = { "<Avventuriero/Avventuriera>! I combattenti dell'Alto Ordine e dei Plasmatori di Venti hanno appena attraversato il ponte del vento verso l'altra sponda!", "." },
   ["b47df300f859831f"] = { "La fine si avvicina! Proprio mentre parliamo, i nostri rifornimenti vengono spediti a ⟦Silithus=Silitus⟧ e dovrebbero arrivare entro $2113w giorni. Una volta lì, non ho dubbi che verrà tutto assemblato in fretta, e poi aspetteremo che il gong risuoni ai cancelli di ⟦Ahn'Qiraj=Ahn'qiraj⟧ per dare inizio alla guerra. Non vedo l'ora di analizzare se i nostri sforzi preparatori faranno la differenza.", "." },
   ["b483657db02e2621"] = { "Bevi qualcosa, {class}. Potrebbe essere l'ultima volta!", "." },
   ["b486c54b048a318a"] = { "Schiaccia!", "." },

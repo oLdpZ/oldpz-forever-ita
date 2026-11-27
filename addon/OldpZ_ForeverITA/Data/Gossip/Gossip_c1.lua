@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["c1635d2bef75a099"] = { "Ti do il benvenuto nella Lega degli Esploratori. Se ti servono informazioni e si trovano in un libro, forse posso aiutarti.", "." },
   ["c1643adcca256322"] = { "Non mi farò attirare lontano da questo luogo.", "." },
   ["c16baa73f912dc39"] = { "⟦Glacial Gloves=Guanti Glaciali⟧.", "." },
+  ["c170dc2e96b53b1b"] = { "Ho raggiunto la città per assoldare dei combattenti che li scacciassero. Ho trovato un Guerriero che ha accettato di aiutarmi, ma mi ha derubato appena fuori città e mi ha quasi ammazzato di botte.", "." },
   ["c173cf36fbb3a23e"] = { "Troppo facile.", "." },
   ["c173f35f68a64b50"] = { "Che te ne pare del mio famiglio?", "." },
   ["c1776de7d6b3e0e5"] = { "Non voglio tornare al lavoro", "." },

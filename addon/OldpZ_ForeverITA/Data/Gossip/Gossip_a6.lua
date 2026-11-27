@@ -14,6 +14,7 @@ WFJ.Data.add("gossip", {
   ["a62f01073ffc465e"] = { "Con piacere... lasciami solo assaporare questo momento ancora un minuto.", "." },
   ["a6355b9b0d4c61d2"] = { "%s arrossisce.", "." },
   ["a63a645d6e883743"] = { "Abbassa la voce, straniero. Non vorrai disturbare le meditazioni del Maestro.", "." },
+  ["a63f591b94e4a6b5"] = { "Certo, somma sacerdotessa. Siamo gli strumenti della tua volontà. Vorrei solo che tu potessi essere qui ad assistere di persona al nostro trionfo.", "." },
   ["a642f973e2effc3c"] = { "Parla piano e con grande attenzione: da queste parti, una parola sbagliata può costarti la gola tagliata. Allora, cosa ti serve da me?", "." },
   ["a6439ea2e061a8a7"] = { "Grazie, Ironbark. Siamo pronti: puoi aprire la porta.", "." },
   ["a644eb9a667a329c"] = { "Benvenut<o/a> nelle ⟦Stockade=Segrete di Roccavento⟧!", "." },
@@ -37,6 +38,8 @@ WFJ.Data.add("gossip", {
   ["a6a7e05bd62136d9"] = { "Tilloa, sei tu? Ma no! È solo <un/una> lurid<o/a> {race}!", "." },
   ["a6a7ef1da95339ce"] = { "⟦Zul'Farrak=Zul'farrak⟧ - ⟦Weegli Blastfuse=Weegli Bruciamiccia⟧ - Saluto predefinito.", "." },
   ["a6afae77ff7e31e8"] = { "Salute, viaggiatore. Fu qui, quasi 1.000 anni fa, che i Qiraji cominciarono la loro marcia di distruzione attraverso Kalimdor.\n\nMigliaia di vite andarono perdute durante la guerra, per lo più in questo deserto maledetto, durante l'invasione iniziale.\n\nDi noi ne restano pochi, e io sono tra questi, in catene sia al passato sia al presente. Non so perché devo restare di guardia qui, ma so che devo farlo.", "." },
+  ["a6ba2f33e293085d"] = { "Ce ne sono altri, attenti!", "." },
+  ["a6bc5ebd60b63fed"] = { "Ti va di bere qualcosa, <avventuriero/avventuriera>? Ho la migliore selezione da tutto il mondo.", "." },
   ["a6c88e9e8bb44a2a"] = { "Patetico. Il potere dello ⟦Soulflayer=Scortica Anime⟧ scorre in me. Non temo nulla se non l'ira dell'onnipotente Hakkar. Non servo nessuno se non il mio padrone, Jin.", "." },
   ["a6d637c7dfef399e"] = { "La temperatura è di 564 gradi Kraklenheit.", "." },
   ["a6d7cff8711ddda3"] = { "La terra di Azshara.", "." },
@@ -51,4 +54,5 @@ WFJ.Data.add("gossip", {
   ["a6f60c772c0c0b49"] = { "È vero che l'⟦Alliance=Alleanza⟧ ha completato tutti i suoi compiti per lo sforzo bellico, ma non lasciarti scoraggiare, {race}. Il tempo stringe, ma preferiamo di gran lunga che tu aiuti nelle raccolte dell'Orda con cura e attenzione. Mi sembra meglio che commettere un errore che potrebbe costare la vita a qualcuno quando questa guerra comincerà davvero. Non sei d'accordo, {class}?", "." },
   ["a6f6f512eb4bfc7f"] = { "Cosa? Perché mi disturbi? Scommetto che non sai nemmeno creare una veste di alta qualità! Va' a parlare con Snang e torna quando sarai <degno/degna> del mio talento!", "." },
   ["a6f77af0c9b13a07"] = { "Dimmi come si usa il Blastenheimer 5000 Ultra Cannon.", "." },
+  ["a6fb9c648e830c90"] = { "Posso interessarti a un gelato freddissimo?", "." },
 })

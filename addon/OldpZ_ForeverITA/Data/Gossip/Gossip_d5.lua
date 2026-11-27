@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["d5030037f69922c5"] = { "Saremo in debito con te, {class}. Cerca Donal Osgood nel Salone delle Armi. Sarà più che felice di aiutarti nel tuo viaggio verso il ⟦Arathi Basin=Bacino d'Arathi⟧.", "." },
+  ["d503a30f75bbdc47"] = { "Perché sei in questa gabbia?", "." },
   ["d50652079328615e"] = { "Ah, sì. Mux ne sarà molto contento.\n\nQuelle manette facevano parte di un'armatura completa. Se ti interessa aiutarmi ancora, potrei prendere in considerazione l'idea di cederti il resto.", "." },
   ["d50702a3593a5c4d"] = { "Alchimia", "." },
   ["d511ff5173709b3a"] = { "Se hai un po' di abilità, posso insegnarti qualcosa.", "." },
@@ -16,10 +17,12 @@ WFJ.Data.add("gossip", {
   ["d530893c87ca2aca"] = { "Ne trovi una fuori dalla Banca di Orgrimmar, al centro della ⟦Valley of Strength=Valle della Forza⟧.", "." },
   ["d53f4c8980b53861"] = { "Purtroppo la difesa degli elfi della notte era insostenibile, e Rajaxx sapeva che non avrebbero resistito ancora a lungo. La loro tenacia, però, frustrava enormemente Rajaxx e ancora di più il suo re. Aspetta, più re? Incredibile...", "." },
   ["d541bcb5bd4b8fb9"] = { "Maledizione a te!", "." },
+  ["d5423f75fdd4756f"] = { "Se non mi credi, va' a vedere di persona! Terribili spettri trasportati dal vento *hic*... spiriti della foresta che ti rosicchieranno le caviglie!", "." },
   ["d548bc63532124e3"] = { "Sei il massimo, {name}: grazie per aver fatto dolcetto o scherzetto al posto mio!", "." },
   ["d5502c876339ef54"] = { "Non posso darti altre lezioni: le tue abilità hanno superato le mie. Va' dalla tauren ⟦Una=Uma⟧, nelle botteghe a nord-ovest dell'altopiano centrale di Picco del Tuono. Lei offre un addestramento più avanzato.", "." },
   ["d5539af9e0338f55"] = { "Dammi un momento mentre calibro il transponder secondo la tua altezza e il tuo peso, {name}.", "." },
   ["d5564880e765e70a"] = { "Era la terza o la quarta volta che per poco non mi facevi sbudellare con una delle tue trovate folli?", "." },
+  ["d55978f5974f14af"] = { "Credo che con una distrazione adeguata al sacrario, una piccola forza di Pacificatori, Plasmatori di Venti e Alto Ordine dovrebbe riuscire a spingersi su un fianco e irrompere nel santuario interno. Da lì, eliminiamo la somma sacerdotessa in persona e tagliamo la testa al serpente.", "." },
   ["d55a8e926c862403"] = { "Annalise? Annalise! No, non lasciarmi!", "." },
   ["d5721c72c7bb75f6"] = { "Dimmi... dimmi tutto!", "." },
   ["d577ea9a23e2a4d5"] = { "<Il Guerriero novizio deglutisce.>\n\nCe la posso fare.", "." },
@@ -27,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["d5800f7799ffc13a"] = { "NON LASCIATELA SCAPPARE!", "." },
   ["d5815ba064d5a476"] = { "Mennet ha detto che dovevo chiederti un set di Strumenti dei Ladri.", "." },
   ["d583b52c44a6f1d0"] = { "Che c'è? Non vedi che ho da fare?", "." },
+  ["d584b29e5afa1efd"] = { "Le nostre antiche terre si trovano nel nordest dei Regni Orientali. Prendeva il nome da Lordain in persona, ed era un tempo un regno fiero e potente. La sua storia è ricca e offre molte lezioni a nobili e re rampanti. Uno dei suoi momenti determinanti fu l'aiuto alla fondazione dell'⟦Alliance=Alleanza⟧ che conosciamo oggi.\n\nPurtroppo la sua storia è anche oscura, e i suoi attuali abitanti ne profanano le terre giorno dopo giorno. C'è ancora molto di importante nelle rovine che ora si trovano sopra ⟦Undercity=Sepulcra⟧, ma è una follia tentare quel viaggio e aspettarsi di tornare ancora tra i vivi.", "." },
   ["d59bf460d552fa53"] = { "Vendo stoffa, e questo è il mio saluto predefinito.", "." },
   ["d5add6a068b92bf8"] = { "%s sfoglia le pagine del libro.", "." },
   ["d5afcac4eb0e4851"] = { "Gimlok! Gimlok! Vieni qui immediatamente!", "." },

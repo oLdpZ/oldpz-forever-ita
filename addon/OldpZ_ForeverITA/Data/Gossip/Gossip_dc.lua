@@ -5,6 +5,7 @@ WFJ.Data.add("gossip", {
   ["dc067e67c7d32d14"] = { "Mi assicuro che Sen'jin sia rifornita dei materiali ricavati dalle bestie del posto. È un compito onorevole.", "." },
   ["dc10f5e84728daaa"] = { "Ho smarrito la via nel Sogno. Percepisco la sua forza vitale, ma i miei poteri non sono ancora abbastanza forti da stabilire un contatto.", "." },
   ["dc11fd2f5e220f14"] = { "Ricordati le mie parole, imp: ti prenderò. E quando succederà!", "." },
+  ["dc12d3eceb2959a9"] = { "Salve, {class}. Come consigliere di Demar, rispondo volentieri a qualunque domanda tu abbia su Forte Farholde.", "." },
   ["dc149fe8bb7e5ac4"] = { "Salute, {class}. Brutti tempi sono questi, amico mio, perché la nostra città è sotto assedio! Gli orchi ⟦Blackrock=Roccianera⟧ attaccano dal ⟦Stonewatch Keep=Mastio di Guardamasso⟧, i Mantombroso incombono sulla ⟦Tower of Ilgalar=Torre di Ilgalar⟧ e il branco di gnoll di ⟦Redridge=Crestarossa⟧ si fa sempre più forte. Spero che tu non sia qui in vacanza...", "." },
   ["dc196b735d38840f"] = { "Il popolo delle ⟦Westfall=Marche Occidentali⟧ rende omaggio a {name}, che ha difeso la libertà con coraggio e valore.", "." },
   ["dc237f7478039df3"] = { "Un compito mi preme, ma non ho il tempo di occuparmene di persona. Posso affidartelo?", "." },
@@ -49,4 +50,5 @@ WFJ.Data.add("gossip", {
   ["dceb5dacd7127dc0"] = { "Forse questo non era il posto migliore per una bottega, dopotutto...", "." },
   ["dcf0504f0f8eb1cb"] = { "Onori gli spiriti degli animali che devi uccidere non lasciando che vadano sprecati. ⟦Aska Mistrunner=Aska Cavalca Nebbia⟧ ti mostrerà come fare. Ha una cucina sull'altura.", "." },
   ["dcf65d9d24183972"] = { "Cos'è l'E'ko?", "." },
+  ["dcf73905fc7a036f"] = { "Continua i tuoi sforzi; non c'è tempo per fermarsi.", "." },
 })

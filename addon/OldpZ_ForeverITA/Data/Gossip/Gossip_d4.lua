@@ -2,10 +2,12 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["d403eee077aecfb1"] = { "Quale faccenda ti porta davanti alla Corte di ⟦Lakeshire=Borgolago⟧ e all'onorevole magistrato Solomon?", "." },
+  ["d40c60a747d9e972"] = { "Ah! Questo dovrebbe funzionare benissimo!", "." },
   ["d40fcf6a0879b912"] = { "Ben fatto! Senza il tuo aiuto non ce l'avrei mai fatta a respingere quell'ondata di trogg.", "." },
   ["d41020c584b37c15"] = { "Il mio mestiere sono le merci e i beni mistici, <straniero/straniera>.", "." },
   ["d413930889d5fe1d"] = { "Certo, certo. Parla con ⟦Deze Snowbane=Deze Freddaneve⟧ alla Hall of the Brave, nella ⟦Valley of Honor=Valle dell'Onore⟧ di questa città, {class}.", "." },
   ["d418b788dddee012"] = { "Voglio attivare il JcJ.", "." },
+  ["d419d978658ddd23"] = { "Avremo bisogno di esploratori e avventurieri di ogni genere. Rifletti su questo, e quando sarà il momento spero che prenderai in considerazione l'idea di unirti a noi. Fino ad allora, buona fortuna.", "." },
   ["d41e98e95e4a9263"] = { "Narain, se hai abbastanza materiali, mi servirebbe un'altra boa d'arcanite.", "." },
   ["d41edd3d413c5fac"] = { "Puoi parlarmi quando vuoi, {name}. Hai servito bene Magatha. Di sicuro ti chiamerà ancora in futuro.", "." },
   ["d41f70018d367d06"] = { "Difenditi!", "." },
@@ -43,6 +45,7 @@ WFJ.Data.add("gossip", {
   ["d4c44b6d020b02a9"] = { "Voglio azzerare l'addestramento del mio famiglio.", "." },
   ["d4c5a3c23c28c047"] = { "Il capitano Tracciarossa è stato ucciso!", "." },
   ["d4c69a0045d274bc"] = { "BRUCIA! IL DOLORE... STRAZIANTE...", "." },
+  ["d4c991db0cffdd2c"] = { "Aspetta... ne stanno arrivando altri!", "." },
   ["d4d00e5bdd99d209"] = { "Quando avrò gli orecchini, lancerò l'incantesimo per cercare dove si trova il sigillo che mi vincola. Per secoli ho pensato alla libertà che mi darebbe la distruzione del sigillo... Forse quei secoli hanno logorato la mia mente al punto che non potrò mai più riprendermi...", "." },
   ["d4d543a93bc58a09"] = { "Dolce Elune, grazie per avermi tirato fuori da quella... cosa!", "." },
   ["d4d6d5bd69a53d8b"] = { "A Caer Darrow non sono ammessi bighellonaggio, accattonaggio, imprecazioni, risse né qualunque altra cosa tu stia pensando di fare.", "." },

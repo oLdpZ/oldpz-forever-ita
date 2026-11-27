@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["ad435cc2aac8a15c"] = { "%s abbandona il blocco che teneva fermo sulla soglia e guarda verso l'esca.", "." },
   ["ad47805b3ee1306e"] = { "%s entra in trance...", "." },
   ["ad4c630b4f4b3ba9"] = { "Allora, vediamo se ho capito bene. Stavi nuotando, anzi, facendo il dorso nella lava fusa con questa... questa tua tuta da lava? Sì? E dal nulla questa bestia ti ha inghiottito in un boccone?", "." },
+  ["ad4edaa19c984fc5"] = { "Torna da Ardistella e riferiscigli ciò che hai scoperto, piccolo mortale.", "." },
   ["ad581cb551408dc9"] = { "%s scompare nel bosco.", "." },
   ["ad60d6f06b8c8b31"] = { "Battaglia! Sento l'odore della tua paura, {class}!", "." },
   ["ad6697463be099b7"] = { "Il mio signore andrà su tutte le furie quando saprà di questa imboscata. Speriamo che la tua morte lo plachi.", "." },
@@ -43,6 +44,7 @@ WFJ.Data.add("gossip", {
   ["adb35c010871a4ba"] = { "⟦Vanndar Stormpike=Vanndar Piccatonante⟧ è il generale dell'esercito dell'⟦Alliance=Alleanza⟧ ad Alterac e guida le sue forze da Dun Baldar.\n\nSe verrà sconfitto, l'⟦Alliance=Alleanza⟧ perderà di sicuro la battaglia per Alterac.\n\nAl momento Vanndar non si trova nella ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
   ["adb781452801659a"] = { "Il ⟦Stormpike Graveyard=Cimitero dei Piccatonante⟧ è scavato nelle montagne, oltre il ponte a est di Dun Baldar.\n\nAl momento è controllato dall'⟦Horde=Orda⟧.", "." },
   ["adb7d7d82343f5cc"] = { "Ysida è viva grazie al tuo coraggio, {name}. Ho un grande debito con te e ti aiuterò per quanto è in mio potere.", "." },
+  ["adc143944a3d178e"] = { "Ho... fallito...", "." },
   ["adc334ce030b1853"] = { "Oh, <un/una> <sacerdote/sacerdotessa>, eh? Be', il buon vecchio Maxan lo trovi di sicuro a farsi un goccio alla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, se ti serve un po' d'addestramento.", "." },
   ["add5101a48e83ba3"] = { "Fa' ciò che ti chiedo. Dimostrami di essere alleat<o/a> dei Magram!", "." },
   ["addc214cf7e9734d"] = { "Il mondo è in debito con te e con i tuoi alleati, {name}.", "." },
@@ -52,4 +54,5 @@ WFJ.Data.add("gossip", {
   ["adec48ed53a8abd7"] = { "Una piastrella scivolosa ti fa perdere l'equilibrio.", "." },
   ["adf45c92d9ba3ba3"] = { "Questi boschi un tempo meravigliosi soffrono sotto una terribile maledizione! Forze corruttrici deformano la vita di questo luogo in ombre di ciò che era. Se non sei un agente di questa corruzione, forse puoi aiutarmi a riconquistare ⟦Felwood=Vilbosco⟧!", "." },
   ["adf8b400a3dc7c2a"] = { "Direi di sì!", "." },
+  ["adfb5cd498d495d7"] = { "Warug, saresti disposto a separarti da quelle lacrime spezzate che ti ho dato prima?", "." },
 })

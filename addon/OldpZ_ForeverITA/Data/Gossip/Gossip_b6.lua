@@ -54,9 +54,12 @@ WFJ.Data.add("gossip", {
   ["b6d4ebe261cefe29"] = { "Questa spedizione prosciuga terribilmente le scorte militari.", "." },
   ["b6de272a4f8ab8cc"] = { "Preparatevi, perché presto lanceremo un assalto contro coloro che si fanno chiamare «i Reietti».", "." },
   ["b6dee6b37ab8ac75"] = { "<Fa schioccare i denti, mordicchiando il morso.>", "." },
+  ["b6e0eb049aabd386"] = { "Ehi, ehi! Cosa posso fare per te?", "." },
   ["b6e37bf318ac5330"] = { "Ben fatto, ⟦Horde=Orda⟧! Nelle nostre stalle ci sono abbastanza lupi bianchi da dare una cavalcatura a tutti i nostri cavalieri di lupi!", "." },
   ["b6e719b052eb2633"] = { "Wow! Pare che abbiamo già raccolto tutto il cuoio spesso che secondo loro ci serve. È andata proprio in fretta. Sai, qui intorno c'è di sicuro qualcun altro a cui farebbe comodo il tuo aiuto, se vuoi dargli una mano.", "." },
   ["b6ee3be986338545"] = { "Sei qui a prendere servizio, {class}? Tutto il materiale bellico sia dell'⟦Horde=Orda⟧ sia dell'⟦Alliance=Alleanza⟧ è completato e viene spedito a ⟦Silithus=Silitus⟧ proprio ora. Dovrebbe arrivare tutto in meno di $2113w giorni. Spero che qualcuno abbia trovato i vari pezzi dello Scettro delle Sabbie Mutevoli e li abbia rimessi insieme.", "." },
   ["b6f352abd7a54393"] = { "Grazie a te, {name}.", "." },
   ["b6f3b169ff67abf5"] = { "Ecco... Questi sassi dovrebbero bastare per fare una collana. Comunque ora farei meglio a tornare a casa.", "." },
+  ["b6f6a7944c97270f"] = { "Ho raggiunto la città per assoldare dei combattenti che li scacciassero. Ho trovato <un/una> {class} che ha accettato di aiutarmi, ma mi ha derubato appena fuori città e mi ha quasi ammazzato di botte.", "." },
+  ["b6f8032fe31a88f1"] = { "Il grande lavoro è quasi compiuto, sacerdote del cielo Aanders. Il tuo successo qui è fondamentale.", "." },
 })

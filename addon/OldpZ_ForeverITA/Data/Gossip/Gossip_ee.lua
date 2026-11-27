@@ -36,6 +36,7 @@ WFJ.Data.add("gossip", {
   ["eea9435210a288bc"] = { "Un istruttore di classe", "." },
   ["eeb1d09f8a19dc1b"] = { "La risata di %s risuona di nuovo nelle sale di ⟦Blackwing=Ala Nera⟧.", "." },
   ["eeb256eb48b4e7b7"] = { "Di cosa stai parlando, mago?", "." },
+  ["eeb686aa8e7c8dcb"] = { "È una statuetta di noi due, insieme in tempi più pacifici... Vieni e riposa, amore mio. Sei a casa ora.", "." },
   ["eebb4d82be606285"] = { "Se sei qui per salvare il mondo, sei nel posto giusto. Colui che non ha volto, il Dio del Sangue Hakkar, è stato riportato nel nostro mondo!", "." },
   ["eec5ba073b58ce7b"] = { "Il mio grande martello, Ironfel, è passato al nuovo capo architetto, ⟦Fineous Darkvire=Fineous Forgiascura⟧: un uomo dalle intenzioni spregevoli e di scarso talento.\n\nÈ qui che entri in gioco tu, {name}. Voglio che sia fermato. È troppo inetto per sfruttare il vero potere di Ironfel, ma se dopo di lui arrivasse qualcuno con l'abilità di usare Ironfel al massimo delle sue potenzialità, la distruzione che potrebbe causare con le sue creazioni sarebbe disastrosa per questo mondo.", "." },
   ["eec5d52f4de40bf5"] = { "Cos'è Atiesh?", "." },

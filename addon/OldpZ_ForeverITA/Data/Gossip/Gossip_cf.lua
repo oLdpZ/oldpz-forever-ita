@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["cf7ccb06c079c8a7"] = { "E le Spigole Screziate se ne sono andate per questa settimana! Resterò ancora un'ora per permetterti di consegnare i tuoi pesci!", "." },
   ["cf8038c2611a4ff9"] = { "Quale istruttore di professione stai cercando?", "." },
   ["cf82ada229fed3e3"] = { "Resta vicino a me, {name}. Ti proteggerò se qualcosa va storto.", "." },
+  ["cf82cc19356b8666"] = { "Il ponte è instabile e continua a spegnersi a intermittenza. Aspetta qui con me finché non torna.", "." },
   ["cf86d0390c89fa61"] = { "Voglio vedere la tua merce, Calandrath.", "." },
   ["cf8714be8b8313a1"] = { "Dunque... dunque è così che finisce, amore mio...", "." },
   ["cf989895ac6971e5"] = { "Morto? Ti ha dato di volta il cervello, {name}? Pardon, <signor/signora> {name}! Windsor non sarebbe mai morto per una cinquantina di orchi. Com'è vero che il sanguinaccio di Thelsamar è il cibo più gustoso che il mondo conoscerà mai, eccolo lì, in piedi: era coperto di pezzi d'orco dalla testa ai piedi, inzuppato in circa diciotto strati del loro sangue, ma era decisamente vivo... e molto, molto arrabbiato.", "." },

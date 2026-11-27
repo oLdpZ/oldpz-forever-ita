@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["e165e44c6ddfd73c"] = { "Chi è il prevedibile, bestia? Credevi davvero che ti avremmo evocato sopra Malfurion? La tua redenzione è vicina, Eranikus. Sarai purificato da questa follia, da questa corruzione.", "." },
   ["e167d47690d18e3e"] = { "Non evocarmi più a meno che tu non abbia una vera domanda da farmi, d'accordo?", "." },
   ["e16802170d51b483"] = { "Mentre attraversavamo le ⟦Burning Steppes=Steppe Ardenti⟧, siamo caduti in un'imboscata. Dovevano essere un centinaio... Nani ⟦Dark Iron=Ferroscuro⟧! Uscivano dalle pareti, dalle rocce delle Steppe; da ogni crepa, angolo e anfratto in vista. Ci sono piombati addosso, sopraffacendo le guardie e i pochi coraggiosi eroi che avevano accettato di assisterci in questa missione.\n\nUna cosa era chiara: era un'imboscata organizzata con estrema cura. Era come se conoscessero ogni nostra mossa prima che la facessimo...", "." },
+  ["e1719e35a612ab2d"] = { "Puoi. Finora hai dimostrato di avere molte risorse.\n\nSpero che troverai ciò che cerchi, giovane {race}.", "." },
   ["e17f26a539a95572"] = { "E tu hai...", "." },
   ["e17f3edad66ff22d"] = { "La guerra continuò, ma la volontà del grande condottiero era fiaccata. Ben presto tutta ⟦Silithus=Silitus⟧ fu sommersa dai silitidi e dalle loro schiere qiraji.", "." },
   ["e18bcaccfb5876c6"] = { "Aiuto! Ti prego, devi aiutarmi!", "." },

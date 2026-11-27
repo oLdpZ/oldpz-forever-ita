@@ -3,4 +3,12 @@ local _, WFJ = ...
 WFJ.Data.add("objective", {
   [446335] = { "Trova la renna Metzen e salvala", 0xa60c43d1, "." },
   [446337] = { "Trova la renna Metzen e salvala", 0xa60c43d1, "." },
+  [446830] = { "Torna da ⟦Katherine the Pure=Katherine la Pura⟧", 0x8f387dd9, "." },
+  [446848] = { "Parla con Katherine e scopri di più", 0xecdd7040, "." },
+  [446867] = { "Fai rapporto a ⟦Katherine the Pure=Katherine la Pura⟧", 0x25a79fba, "." },
+  [446870] = { "Trova Aeonas nel ⟦Scarlet Monastery=Monastero Scarlatto⟧", 0x1ce66fcf, "." },
+  [446894] = { "Cura Aeonas", 0xc42b2f46, "." },
+  [446927] = { "Ordini dal Gran Crociato", 0xd45bad7f, "." },
+  [446941] = { "Incontra Aeonas alla ⟦Cathedral of Light=Cattedrale della Luce⟧ a ⟦Stormwind=Roccavento⟧", 0x9bfb9295, "." },
+  [446962] = { "Scopri di più su Aeonas da Katherine", 0xd0000aeb, "." },
 })

@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["c2995de73a5cd75d"] = { "Hai già trovato Arra'chea?", "." },
   ["c29acda5be9d3bd4"] = { "Quel parassita è già morto?", "." },
   ["c29e87d4397a3047"] = { "Sì. {name}. Ho localizzato il Signore della Foresta. Dobbiamo raddoppiare gli sforzi! Servono altri cristalli!", "." },
+  ["c29ed9b587951973"] = { "Ugh... fratello... aiuto!", "." },
   ["c2a59804d5332de0"] = { "La tua prigionia è finita, ⟦Doom'rel=Teneb'rel⟧. Ti sfido!", "." },
   ["c2a5bff23f6a6c2a"] = { "<Quel/Quella> {name} vuole la mia morte! Aiuto!", "." },
   ["c2a932e419adfac9"] = { "Hai già imparato tutto ciò che posso insegnarti, {name}. Parla con l'elfa della notte ⟦Lilyssia Nightbreeze=Lilyssia Frescanotte⟧ nel ⟦Mage Quarter=Quartiere dei Maghi⟧ di ⟦Stormwind=Roccavento⟧, se vuoi continuare i tuoi studi. Ho sentito dire che è una brava insegnante.", "." },

@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["fd751c2bf9554986"] = { "È fatta! Il magistrato è morto... nell'ombra, fratelli miei.", "." },
   ["fd774fb02234081d"] = { "In base al campione di tossina che ci hai fornito, pensiamo che ti servirà quanto segue: un Accelerante Arcano, sei Agitatori Ossei e quattro pezzi di Telarunica. Con il Focalizzatore Vitreo al seguito, procurati gli agitatori dai non morti scheletrici qui nelle ⟦Plaguelands=Terre Infette⟧!\n\nQuando avrai questi oggetti, dovresti riuscire a caricare l'antidoto in quel calderone.", "." },
   ["fd80664028c1a960"] = { "Aiuto!", "." },
+  ["fd83256241d3b392"] = { "Di recente abbiamo scoperto un modo per usare la nostra magia per scavare una sorta di «serratura» attraverso cui scrutare i piani e imparare molto su Azeroth.", "." },
   ["fd8dc59ff1b5bb73"] = { "E verso quale campo di battaglia desideri viaggiare?", "." },
   ["fd9302c9d50f70d0"] = { "Ho sofferto, ma ora lo sento svanire piano da me. Sento... la libertà.", "." },
   ["fd95af2efdfcaacd"] = { "10 secondi all'esplosione! State indietro!!!", "." },

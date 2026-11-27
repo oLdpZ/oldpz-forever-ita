@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["a283c2f9db050264"] = { "Un altro sciocco cade per mano della ⟦Defias Brotherhood=Fratellanza dei Defias⟧.", "." },
   ["a288b23380aa2f13"] = { "Salute, {race}. Sono ⟦Franclorn Forgewright=Franclorn Forgiabruna⟧. Sei qui per sapere dei Bastioni e dei ⟦Dark Iron=Ferroscuro⟧?", "." },
   ["a295c6be6af11faf"] = { "sembra sul punto di andare in frantumi!", "." },
+  ["a297597ca03bc644"] = { "Non fallirò di nuovo.", "." },
   ["a29c7dda8a511820"] = { "Quel folle sconsiderato di Mulverick mi ha abbattuto. Temo che, se non riesco a tornare alla base, sarà tutto perduto! Mulverick e la sua squadra di Calcaguerra vanno fermati!", "." },
   ["a29edf868120f52f"] = { "È meglio dei disegni nei tomi di storia.", "." },
   ["a2a01226dfe65ef6"] = { "Va bene, va bene... dammi un minuto per riposare. Me le hai suonate per bene.", "." },
@@ -50,4 +51,5 @@ WFJ.Data.add("gossip", {
   ["a2eb2d0f987f53b9"] = { "Bene! Vedo che i miei sforzi non andranno sprecati!", "." },
   ["a2eb364eb38403b5"] = { "Non c'è nient'altro che posso insegnarti. Ho sentito parlare di un'elfa della notte che forse può farlo, però. Si chiama Ainethil, e vive alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧ di Darnassus.", "." },
   ["a2f585cb399ac6a3"] = { "Neltharion, eh? Una risposta valida come un'altra, no?", "." },
+  ["a2fbcd0eea462394"] = { "Hai per caso delle Carte della ⟦Darkmoon Faire=Fiera di Lunacupa⟧? Vieni a parlarmi per saperne di più, se ne hai il coraggio!", "." },
 })

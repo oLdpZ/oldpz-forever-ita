@@ -46,5 +46,6 @@ WFJ.Data.add("gossip", {
   ["ede734127152b0ab"] = { "Il tessuto magico scarseggia, e il tuo aiuto ci farebbe comodo per rifornire le scorte! Contando sull'intera comunità, da te ci servirebbe solo una donazione di 60 pezze di tessuto magico per raggiungere il nostro obiettivo. Una simile generosità non passerebbe inosservata agli gnomi di Gnomeregan, te lo assicuro!\n\nSe hai con te le sessanta pezze di tessuto magico e sei <pronto/pronta> a donarle, posso prenderle subito.", "." },
   ["ede8bf1873c2c607"] = { "Dov'è l'anziana Totem Rabbioso?", "." },
   ["edf89ec406c054c7"] = { "Il trasporto dell'High Order per Azeroth si trova al molo più lontano, sul margine sud-orientale di Valanaar.", "." },
+  ["edf99242b542a69f"] = { "Se hai parlato con Rathiril e ti ha mandato da me, sarai senza dubbio consapevole del pericolo in cui ci troviamo.", "." },
   ["edfd520624838b79"] = { "Salute, Loramus. Porto notizie dalle ⟦Blasted Lands=Terre Devastate⟧.", "." },
 })

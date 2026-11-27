@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["e71cad732fd10f64"] = { "Sono un uomo semplice che sa qualcosa di sartoria, ma ti serve più aiuto di quanto io possa darti. Ho sentito parlare di un Elfo della Notte che è un sarto molto abile. Vive a ⟦Stormwind=Roccavento⟧, nel Quartiere della Magia.", "." },
   ["e722551b0171fcd0"] = { "Con quella faccia, meglio che tenga d'occhio il borsellino. Posso aiutarti in qualcosa?", "." },
   ["e726247cf416b943"] = { "Marketing - Saluto per il riscatto iCoke (confezione regalo S.H.E.)", "." },
+  ["e734ce4ae78f375a"] = { "Non è la prima volta che devo rimproverarti! Gli impulsi elettrici di questo cuore sono troppo forti. Questo nuovo cuore ha bruciato quasi tutta la carne e i legamenti di questo costrutto!", "." },
   ["e7350f25bc6a8614"] = { "E ora, se aggiungo quelli gialli...", "." },
   ["e7379578ee4c0f51"] = { "E mentre il tuo corpo inerte penzolerà dalle travi, godrò nel sapere che un pazzo è stato messo a morte. Dopotutto, che prove hai? Ti aspettavi di entrare qui, puntare il dito contro la nobiltà e andartene <illeso/illesa>?", "." },
   ["e73acaf106325915"] = { "Stiamo avendo la meglio sul Flagello: gli effetti della peste alterata lo colpiranno ancora per almeno un giorno intero! Però dobbiamo restare all'erta, quindi sabota un calderone appena puoi.", "." },
@@ -38,4 +39,5 @@ WFJ.Data.add("gossip", {
   ["e7d152ae28460455"] = { "Salute! Hai un'aria familiare... ci siamo già visti?\n\nBe', se ci siamo già visti, allora... di sicuro ti hanno dato un codice segreto. Dimmi il tuo codice e ti darò un regalo!", "." },
   ["e7d71cfdd6f877ae"] = { "Porta la Tattered Note a Veyric Thunderhame negli ⟦Arathi Highlands=Altopiani d'Arathi⟧.", "." },
   ["e7e95f422aef9215"] = { "Ci voleva proprio che i nani mandassero da ⟦Ironforge=Forgiardente⟧ un esperto di estrazione a spiegarci come si scava. Quanto sarà difficile prendere un piccone e scalpellare un po' di roccia? Be', visto che è qui, probabilmente è lui che dovresti andare a trovare. Si chiama Gelman e sta nel Distretto dei Nani.", "." },
+  ["e7e9cd7b6a3e1dc4"] = { "Il vecchio regno di Lordaeron è pericoloso. Raccomandiamo prudenza a chiunque osi avventurarsi nelle terre ormai in decomposizione delle ⟦Tirisfal Glades=Radure di Tirisfal⟧. Se proprio devi, trova ⟦Undercity=Sepulcra⟧; i cortili superiori sono ciò che cerchi.", "." },
 })

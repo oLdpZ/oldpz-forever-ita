@@ -2,7 +2,9 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["d20cd47c8400d731"] = { "Mmm, ti ha mandato Narm da me, vero?\n\nBe', di Narm ci si è sempre potuti fidare, quindi vuol dire che sei pront<o/a> a prendere parte alla prossima sapta: la sapta del fuoco.\n\nLo vedo già nei tuoi occhi, l'ardore, il desiderio. Hai assaggiato il potere e ora ne vuoi ancora. Pazienza, {name}. Ricorda ciò che ti ha insegnato la terra. Potere e distruzione arriveranno facilmente, ma devi comunque sapere quando trattenere la mano.", "." },
+  ["d21e71a3e7744c69"] = { "Circolare, {class}. Non c'è nulla di cui dobbiamo parlare.", "." },
   ["d22da951ba64e345"] = { "<Stolto/Stolta> {class}! Non puoi nulla contro la mia potenza!", "." },
+  ["d23aff04bc0ec4e6"] = { "Salve, Stregone. Devo ammettere che mi stupisce vedere uno con i tuoi talenti qui alle mie scuderie.\n\nSe cerchi una cavalcatura, sei nel posto giusto, anche se potrebbero sfigurare rispetto ai destrieri vili che sei abituato a evocare.\n\nIn ogni caso, ti invito a dare un'occhiata ai nostri destrieri, se ne desideri uno. I nostri sono tra i migliori della regione e dovrebbero comunque portarti con la stessa fedeltà del destriero vile infernale che evochi.\n\nVai a esaminare i cavalli per vedere se qualcuno è di tuo gradimento e torna da me quando avrai scelto.", "." },
   ["d2456803cc3849c5"] = { "Il mio popolo non ti conosce. Il kodo è una cavalcatura possente, frutto dell'amore e delle cure del mio popolo; non lo si concede a degli estranei. Finché gli anziani di ⟦Thunder Bluff=Picco del Tuono⟧ non ti considereranno <amico/amica>, non posso venderti un kodo.", "." },
   ["d2512d20b6d23ca5"] = { "Il mio signore, lord Abernathy, ti manda questo.", "." },
   ["d252158535c128e0"] = { "Cerca Austil de Mon nella sala da pranzo principale della Taverna dell'Impiccato. La taverna si trova al margine sud-orientale di Brill.", "." },
@@ -15,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["d27f3e1632e5165b"] = { "MORITE, MORTALI!", "." },
   ["d2834de4f88d416b"] = { "Riesci a vederli, mortale? No... immaginavo di no. Vedente ma cieco: è il tuo dono e la tua maledizione.", "." },
   ["d28f3a18fcff7724"] = { "Già, Clyde Kellen lo trovi sempre a pescare sulla riva del ⟦Brightwater Lake=Lago di Acqualucente⟧, appena a est di Brill. Solo, quando sei là fuori, fa' attenzione agli psicopatici con la maschera. L'anno scorso abbiamo dovuto chiudere il campo estivo dei ragazzi.", "." },
+  ["d29464e669b6ef10"] = { "È fondamentale scoprire di più su ciò che il culto sta pianificando, e con il traditore morto, l'informazione potrebbe essere morta con lui...", "." },
   ["d299426d276a1c64"] = { "Ti serve la ⟦Hall of Legends=Sala delle Leggende⟧. Si trova in alto sopra la ⟦Valley of Strength=Valle della Forza⟧, sul lato ovest. Se non sei un ufficiale non puoi entrare, ma puoi comunque parlare con il sergente Ba'sha, fuori.", "." },
   ["d2a0e6a69382621a"] = { "Quindi... i Terrigeni erano fatti di pietra?", "." },
   ["d2a58e9fb644ea16"] = { "Ehi, Knot, conosco la Sartoria. Pensi di potermi insegnare a fare il completo da ogre?", "." },

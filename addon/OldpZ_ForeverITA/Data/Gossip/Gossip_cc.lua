@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["cc016b46bcc6bc30"] = { "Rappresenti una minaccia!", "." },
+  ["cc02ad65ce4cbcf5"] = { "Preparati a essere <SPEZZATO/SPEZZATA>, infedele!", "." },
   ["cc06541a82100158"] = { "Il totem è pronto, {name}.", "." },
   ["cc080a72347c3391"] = { "%s ha disattivato la regione fantasma.", "." },
   ["cc0b1e141941d771"] = { "Oh, allora cerchi ⟦Springspindle Fizzlegear=Frizzaruota⟧. Ah, quel piccolo gnomo e i suoi aggeggi... Te lo dico io: se vai nella sua bottega a Tinker Town, tieni le mani a posto e non accarezzare nessuna delle sue pecore meccaniche!\n\nPecore che esplodono... ma perché mai uno dovrebbe costruire una cosa del genere!?", "." },
@@ -15,7 +16,9 @@ WFJ.Data.add("gossip", {
   ["cc44319c1fefb4dc"] = { "Un ladro? Non ho l'abitudine di indirizzare la gente verso tipi simili, ma credo che Jannok sia quello che cerchi. Lo troverai alla locanda di Dolanaar.", "." },
   ["cc510942ed0148c3"] = { "Evoca il tuo vile padrone, sciocco! Che venga ad affrontarmi!", "." },
   ["cc5126f85da048b3"] = { "Il Dun Baldar South Bunker è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo distruggerà!", "." },
+  ["cc5da71a897f73ff"] = { "Porti la macchia del Flagello. Preparati a entrare nella Distorsione Fatua.", "." },
   ["cc5e57da6633e521"] = { "Questa marmaglia di non morti, e la loro regina elfa morta, cadranno!", "." },
+  ["cc6546153926753d"] = { "Gli Al'Aketh sono un sintomo di tutto questo. Per molti versi sono uno specchio oscuro dei cuori dei Plasmatori di Venti. Molti di noi credono di essere noi i responsabili dell'abbandono degli spiriti.", "." },
   ["cc6714e6229cdfd6"] = { "La speranza è una MALATTIA dell'anima! Questa terra appassirà e morirà!", "." },
   ["cc72a531f6edb265"] = { "Ah, Ner'zhul. Non è un nome da pronunciare alla leggera, ma ti avevo chiesto una risposta.\n\nE Ner'zhul è quella giusta.", "." },
   ["cc779bdac0bebdf8"] = { "Il tuo acciaio è forte, la tua abilità ancora di più. Porta il tuo acciaio e la tua forza dalla mia compagna ⟦Shayis Steelfury=Shayis Furiaferro⟧: nel forgiare armature nemmeno io sono alla sua altezza.", "." },
