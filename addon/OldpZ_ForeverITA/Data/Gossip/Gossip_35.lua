@@ -28,6 +28,7 @@ WFJ.Data.add("gossip", {
   ["35980b0d41ceb708"] = { "Niente. I miei ordini erano di parlare con te e poi con Thrall. So solo che Thrall vuole salvare la tua principessa.", "." },
   ["359fccba10a0260b"] = { "Uno degli umani ha la chiave di questo congegno infernale. Eston, mi pare che abbiano detto si chiamasse.", "." },
   ["35a3a63144456aee"] = { "Grazie per l'interessamento, {class}, ma come vedi ho già tutte le bende di lino che l'⟦Alliance=Alleanza⟧ ritiene necessarie per prepararsi alla guerra di ⟦Ahn'Qiraj=Ahn'qiraj⟧. Questo però non ti impedisca di aiutare con le altre raccolte in corso qui.", "." },
+  ["35a63f600ffb03ef"] = { "Penso sia superfluo dirlo, ma sarai tu a usare questo fischietto.", "." },
   ["35a9f7a05ce1e03c"] = { "Indosserò la tua pelle come giacca da camera! I sigari? Dovrai strapparmeli dalle mie fredde mani morte... ehm... RAWR!!!!", "." },
   ["35b2567e2d859654"] = { "C'è un potente infernale di nome Kroshius a nord-est di questo accampamento. È per questo che Niby è qui. Kroshius è un infernale superiore: un infernale che è durato più del previsto. Vedi, <pivello/pivella>, un infernale si schianta sulla terra con grande intensità per servire il suo padrone, ma questa intensità svanisce in fretta. Una volta che le fiamme ardenti si sono spente, l'infernale si sbriciola.", "." },
   ["35b50a17ad58bbb2"] = { "A differenza della maggior parte degli ogre, io so a cosa serve un gabinetto: a infilarci la tua testa e tirare lo sciacquone. Ora sparisci.", "." },

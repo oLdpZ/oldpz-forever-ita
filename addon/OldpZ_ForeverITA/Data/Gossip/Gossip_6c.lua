@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["6c0d7199efc8fb26"] = { "Myolor, un tempo forgiavo armature e ora vorrei invece imparare la via del Fabbro d'Armi. Mi insegnerai?", "." },
+  ["6c0def5f6aaa97b8"] = { "Torna a parlare con me quando avrai acquisito un po' di abilità nella tua professione.", "." },
   ["6c0e50032849c1d3"] = { "Non ho più niente da insegnarti! Non a qualcuno che ne sa quanto te, almeno! Voi tipi dell'⟦Horde=Orda⟧ dovete parlare con Nogg a Orgrimmar!", "." },
   ["6c1285a421d5735e"] = { "Il generale Rajaxx è stato asfaltato. Un'altra vittoria per Andorov.", "." },
   ["6c154e0fabd15b30"] = { "Mi occupo del reclutamento per il ⟦Frostwolf Clan=Clan Lupi Bianchi⟧. Come soldato dei Lupi Bianchi, è tua responsabilità presentarti da me man mano che il tuo grado nel clan sale.\n\nOnore e rispetto si guadagnano su questo campo gelido.", "." },
@@ -16,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["6c394d04a02937fe"] = { "La bestia è morta! Tutto bene a ⟦Darkshire=Borgoscuro⟧!", "." },
   ["6c435291354292e2"] = { "È vero, giovane {race}: noi e l'⟦Alliance=Alleanza⟧ abbiamo raccolto e preparato tutto ciò che ci servirà per l'imminente conflitto ad ⟦Ahn'Qiraj=Ahn'qiraj⟧. Proprio ora tutto questo viene spedito alla ⟦Cenarion Hold=Fortezza Cenariana⟧, e dovrebbe arrivare entro $2113w giorni. Quando tutto sarà a posto, qualcuno dovrà suonare il gong sullo Scarab Dais per aprire le porte e dare inizio alla guerra.", "." },
   ["6c4c6418dafc1636"] = { "Il nostro padrone ti vuole!", "." },
+  ["6c553a1f553285a1"] = { "E ora che c'è?", "." },
   ["6c5cf3ed922de201"] = { "Stolto impudente! Ti ucciderò con le mie mani!", "." },
   ["6c6080e15ecf5982"] = { "Salute, viandante, hai la mia eterna gratitudine per averci liberato da quelle orribili creature! Cominciavo a pensare di dovermi nascondere per sempre!", "." },
   ["6c6128e15a0d0edf"] = { "Grazie per gli elmi, {name}. Ridurranno davvero le nostre spese mediche...", "." },

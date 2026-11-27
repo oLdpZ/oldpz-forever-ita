@@ -37,7 +37,6 @@ WFJ.Data.add("gossip", {
   ["65c7f43374bbce7d"] = { "Ed ecco {name} che esce dalla prima curva!", "." },
   ["65ca593ad39c2b19"] = { "Davanti a te c'è un mobiletto estremamente robusto, chiuso saldamente da una serratura incorporata. Il frontale del mobiletto è profondamente graffiato e segnato. Si direbbe il risultato di numerosi e violenti tentativi falliti di svelare i segreti che il mobiletto nasconde alla vista.\n\nSe vuoi aprire questo mobiletto, dovrai trovare la chiave.", "." },
   ["65d0fc419e382601"] = { "Potenziamento a unità campione!", "." },
-  ["65d417aeb47358d6"] = { "Impari in fretta, {name}. Hai fatto un buon lavoro.", "." },
   ["65d6d5c1f91a11e7"] = { "Ma salve, {name}, cosa posso darti oggi?", "." },
   ["65d7094e82e3a089"] = { "Chi controlla la Stormpike Aid Station?", "." },
   ["65d8b0a519fdc9a4"] = { "Per imparare a conciare il cuoio e lavorare le pelli, vai a Orgrimmar, a nord. Uno degli Orgrimmar Grunt saprà indicarti la strada per l'istruttore di Conciatura.", "." },

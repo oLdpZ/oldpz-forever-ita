@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["f40a40e19d8e51f6"] = { "Questo {name} è senza dubbio un servitore dell'incubo di Naralex!", "." },
   ["f40b877b09dad351"] = { "Devi essere in rapporti amichevoli con i Reietti di ⟦Undercity=Sepulcra⟧ prima che io ti insegni a cavalcare, {class}.", "." },
+  ["f40d0e18ffaa5fe8"] = { "Sì, posso insegnarti.", "." },
   ["f415ba3f42680c9e"] = { "Ehi, amico, che posso fare per te?", "." },
   ["f419074ea5490c55"] = { "È semplice, davvero. Priva il lich, ⟦Ras Frostwhisper=Ras Soffiogelo⟧, dei suoi poteri. Riportalo alla sua forma mortale e poi uccidilo, una volta per tutte.", "." },
   ["f41ae68c4a3e3d5a"] = { "La ⟦Irondeep Mine=Miniera di Ferrofondo⟧ è in mano all'⟦Horde=Orda⟧.", "." },
@@ -25,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["f469305efaad3546"] = { "Sciocchi! Queste uova sono più preziose di quanto immaginiate!", "." },
   ["f470fc0654e9af2d"] = { "Questo lascerà il segno!", "." },
   ["f4737aefecc45612"] = { "La guerra è alle porte, {name}. È ora che ogni membro dell'⟦Horde=Orda⟧ risponda alla chiamata e si unisca alla lotta contro la codarda ⟦Alliance=Alleanza⟧.", "." },
+  ["f47800e845326c67"] = { "Continua il tuo servizio alla Luce e diventerai un grande {class}, {name}. Mantieni vigilanza e dedizione!\n\nSei pront<o/a> per la tua prossima lezione di servizio.", "." },
   ["f47a067c99f103e2"] = { "Ben fatto! Hai quella scintilla negli occhi... la conosco bene, è la stessa che avevo io quand'ero solo un cucciolo! Ora vediamo se posso insegnarti qualcosa.", "." },
   ["f47a1635ea331ae3"] = { "Non puoi nasconderti da me, <ladro/ladra>. Sento l'odore della tua paura.", "." },
   ["f47ff9121524700d"] = { "Grazie per aver tolto di mezzo quei senatori sciocchi. Ora preparati ad affrontare la tua fine per mano del più potente servitore di Ragnaros.", "." },

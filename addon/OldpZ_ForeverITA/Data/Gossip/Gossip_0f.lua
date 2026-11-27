@@ -26,6 +26,7 @@ WFJ.Data.add("gossip", {
   ["0f7c5f1d8219b0ec"] = { "%s irrompe nell'incubatoio non appena applichi l'esca al cristallo!", "." },
   ["0f7c71d6d556a7e1"] = { "Staghelm piagnucolerà e implorerà per la sua vita, proprio come fece quel moccioso di suo figlio! Mille anni di ingiustizia finiranno oggi!", "." },
   ["0f7cb30fed405453"] = { "Addio, e che la Luce sia sempre con te.", "." },
+  ["0f91c665aef0bafa"] = { "Portami le dita, *poi* ti mostro il tesoro.", "." },
   ["0f93f67c80f380ce"] = { "Il Pilastro Occidentale accetta cristalli rossi, verdi e blu.\n\nIl Pilastro si concentra sull'energia che si può creare usando i cristalli rossi come fonte principale di potere. Ci sono due effetti possibili: uno aumenta la tua protezione dai danni, l'altro indebolisce le difese di un nemico.\n\nDifesa del Cristallo richiede cristalli rossi e verdi. Ti fornirà un aumento dell'Armatura.\n\nResa del Cristallo richiede cristalli blu e rossi. Può ridurre l'Armatura di un bersaglio specifico.", "." },
   ["0f9a5148bda05fac"] = { "Pochi da queste parti maneggiano la lama come Lyria Du Lac. Cercala dietro la fucina e vedi se è dell'umore giusto per insegnarti qualcosa di nuovo.", "." },
   ["0f9b1075c5784262"] = { "<Benvenuto/Benvenuta> alla ⟦Thunderbrew Distillery=Distilleria Birratuono⟧, fondata dal mio caro vecchio papà, Arkilus Thunderbrew. Mando avanti io il posto da quando mio fratello maggiore, Grimbooze, è sparito in una nebbia alcolica qualche raccolto fa.", "." },

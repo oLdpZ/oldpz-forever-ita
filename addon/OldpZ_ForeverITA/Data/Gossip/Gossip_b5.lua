@@ -22,6 +22,7 @@ WFJ.Data.add("gossip", {
   ["b575f8198261f81f"] = { "Devi avere una reputazione amichevole con i troll della tribù ⟦Darkspear=Lanciascura⟧ prima che io ti insegni a cavalcare, {class}.", "." },
   ["b580b68328f12661"] = { "Prima che arrivasse il Flagello, avevo un grande commercio. Compravo e vendevo di tutto. Di tutto!\n\nE i miei prezzi erano FOLLI!\n\nChiedi pure a chiunque. A chiunque non sia morto.", "." },
   ["b582c73874ee3fc6"] = { "Elfi nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧ fare rumore croccante. Tu farli croccare bene. Parla con ⟦Kurden Bloodclaw=Kurden Graffiasangue⟧ nel Royal Quarter.", "." },
+  ["b584a27067070d8a"] = { "Quella è saliva di gnoll che hai addosso? Non importa. In qualsiasi altra circostanza chiederei da dove viene, ma questo--\n\n<Cedric ti indica con la mano dall'alto in basso.>\n\nÈ quello che facciamo qui fuori.", "." },
   ["b59c2b0cc999b393"] = { "Mostrerei al mio signore l'orecchio della bestia e rivendicherei la sua morte come mia: dopotutto, l'ho uccisa io. Poi offrirei parte della ricompensa al cavaliere caduto in miseria, per aiutare la sua famiglia.", "." },
   ["b59c6af2db2d0e75"] = { "Gli acquisti d'impulso sono i più divertenti!", "." },
   ["b5a255bc0dddc12c"] = { "Eccomi di nuovo al punto di partenza.", "." },

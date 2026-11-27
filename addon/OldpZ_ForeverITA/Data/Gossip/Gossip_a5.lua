@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["a5a8bf8ed8117045"] = { "Mmm... Quella roccia è bella, ma troppo piccola.", "." },
   ["a5a9aded2f30d37b"] = { "Sii <guarito/guarita>, <sacerdote/sacerdotessa>.", "." },
   ["a5b4e45761cacafe"] = { "Fammi sapere se ti serve qualcos'altro!", "." },
+  ["a5b88f2372a308da"] = { "Hmmph... Una cosa è certa. Chiunque abbia scritto questo biglietto ha ragione sul fatto che i suoi preparativi passino inosservati. Siamo stati troppo impegnati a fronteggiare i centauri e le arpie per mandare cavalieri delle viverne a pattugliare i canyon.\n\nHai la nostra gratitudine per averci avvisato di questa minaccia, ma potremmo comunque aver bisogno di ulteriore aiuto.", "." },
   ["a5b8c28b928ca565"] = { "Questo monumento è dedicato a tutti coloro che sono caduti per proteggere ⟦Stormwind=Roccavento⟧. La nostra gente ha sopportato difficoltà incredibili per conservare la propria libertà e decidere del proprio destino. È qui che ricordiamo ogni sacrificio compiuto dai nostri cittadini durante la prima guerra che ha martoriato il nostro popolo.", "." },
   ["a5bbbc8e6a610213"] = { "Che bontà. Adoro lo zampalunga delle pianure arrosto.", "." },
   ["a5c504868cfbb018"] = { "Dimmi di più, Trenton.", "." },

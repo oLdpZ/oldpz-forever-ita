@@ -42,6 +42,7 @@ WFJ.Data.add("gossip", {
   ["0cc22a5d855551e1"] = { "Il mio sogno è servire un giorno ai tuoi ordini, <padrone/padrona> {name}. Sempre che tu mi giudichi mai all'altezza di simili cose...", "." },
   ["0cc503fe1cbc72dc"] = { "Noma dovrebbe avere la cena pronta a momenti. Tanto vale entrare.", "." },
   ["0cc9a0c74ac8dddb"] = { "Hai portato i libri di testo? Posso guardare sui tuoi?", "." },
+  ["0cce01f29c49d9bf"] = { "Sento la loro corruzione da qui. Gli elementali distorti che i verrospini stanno evocando dovrebbero essere attratti dal rito di purificazione.", "." },
   ["0cd755bb93a2a6f2"] = { "È vero che qui si addestrano i paladini?", "." },
   ["0cdb9d7db7f84173"] = { "Perché dici che è una coincidenza, Rabine?", "." },
   ["0ce0cd79712ab35a"] = { "Se posso andare, vorrei controllare come sta Quinn...", "." },

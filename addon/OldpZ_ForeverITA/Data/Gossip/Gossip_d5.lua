@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["d5030037f69922c5"] = { "Saremo in debito con te, {class}. Cerca Donal Osgood nel Salone delle Armi. Sarà più che felice di aiutarti nel tuo viaggio verso il ⟦Arathi Basin=Bacino d'Arathi⟧.", "." },
   ["d50652079328615e"] = { "Ah, sì. Mux ne sarà molto contento.\n\nQuelle manette facevano parte di un'armatura completa. Se ti interessa aiutarmi ancora, potrei prendere in considerazione l'idea di cederti il resto.", "." },
   ["d50702a3593a5c4d"] = { "Alchimia", "." },
+  ["d511ff5173709b3a"] = { "Se hai un po' di abilità, posso insegnarti qualcosa.", "." },
   ["d5130d846bf309f1"] = { "Lo avevo percepito, Malfurion. Giorni bui incombono su di noi.", "." },
   ["d513681e1d5a49f2"] = { "Questa settimana potrebbe essere occhio di tritone, o magari una mappa del tesoro. Non lo saprai mai se non guardi. Cosa avrà Antonio?", "." },
   ["d516fb6e20155982"] = { "Il male in queste pietre è potente, ma è stato dissolto.", "." },
@@ -38,4 +39,5 @@ WFJ.Data.add("gossip", {
   ["d5f38e1c458df1e8"] = { "Accidenti... ogre. Mi erano usciti di mente questi buffoni. Non c'è un modo facile per aggirarli, quindi aspettati parecchi combattimenti. Occhi aperti!", "." },
   ["d5f395931b016b2e"] = { "⟦Zul'Farrak=Zul'farrak⟧, nel Deserto di Tanaris, è la casa dell'anziano Wildmane.", "." },
   ["d5fe54f76002facb"] = { "Unità esperte scendono in campo!", "." },
+  ["d5ff9a49b1fac63f"] = { "Bene, allora. Lasciami solo un momento, così lo intaglio nella forma giusta.", "." },
 })

@@ -2,7 +2,6 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["9504c07d83234d64"] = { "Il maestro Nesingwary ha una grande caccia davanti a sé. Trovo che aiutarlo a prepararsi per una giornata nella giungla sia molto più rilassante che aiutarlo a prepararsi al combattimento. Anche se mi mancano alcuni di quei momenti gloriosi sul campo di battaglia.", "." },
-  ["95051ff3689c321b"] = { "Tanto tempo fa, tutti i clan di centauri di ⟦Desolace=Desolanda⟧ accettarono di commerciare in storie. Più precisamente, in totem intagliati che rappresentano le grandi imprese di un individuo o di un clan. Nonostante il conflitto senza fine, tutti i clan continuano a onorare questa tradizione, anche se le occasioni di scambio tra noi si sono fatte sempre più rare.\n\nSe ne trovi qualcuno, per esempio sui centauri caduti degli altri clan, portamelo. Ai Gelkis farebbe comodo un po' di potere contrattuale in più, e informerò il Khan del tuo aiuto.", "." },
   ["95062a863bb6ca1f"] = { "Ottimo lavoro, tutti quanti! Il Flagello nel castello è stato sconfitto.", "." },
   ["9514cfda25ca2fb3"] = { "Uccidetela! Prendete la fattoria!", "." },
   ["952031770d5eefb4"] = { "Per la Luce! Non va per niente bene. C'è qualcosa che non capisci, {name}.", "." },

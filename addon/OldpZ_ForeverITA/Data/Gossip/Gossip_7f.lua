@@ -4,7 +4,6 @@ WFJ.Data.add("gossip", {
   ["7f025627c56cd4c9"] = { "No! I draghi fatati non ce la fanno, {name}! Devo tornare da Jer'kai per assicurarmi che non l'abbiano trovata. Che Elune sia con te.", "." },
   ["7f040d4a9dcb17e1"] = { "La nostra scorta di equipaggiamento cresce!", "." },
   ["7f1311cecf433070"] = { "Io spacca te!", "." },
-  ["7f1a8496f214abbb"] = { "Eccellente, {name}! Impari davvero in fretta.", "." },
   ["7f1e298d1842ed9a"] = { "{name}, ecco! Finalmente ho capito!", "." },
   ["7f26a1ed5bb71cfa"] = { "Sembri <sperduto/sperduta>. Posso aiutarti.", "." },
   ["7f290c980e4d02bb"] = { "Sembri un po' <sperduto/sperduta>. Chi stai cercando?", "." },
@@ -47,6 +46,5 @@ WFJ.Data.add("gossip", {
   ["7fdc0d057b9e008d"] = { "Che c'è, Tarsis? Non so cosa fare!", "." },
   ["7fdfc75ee6e59938"] = { "Ahh... cibo. Era ora.", "." },
   ["7fe14bc086538afb"] = { "Istruttore dei Sacerdoti? Tu va' all'anello esterno del ⟦War Quarter=Quartiere della Guerra⟧ e cercali là.", "." },
-  ["7fe27a35cb48f16c"] = { "Lo so, lo so: ti stai chiedendo cosa viene dopo, eh?!", "." },
   ["7fe9dec311167360"] = { "Ho perso la mia ⟦Cape of Eternal Justice=Cappa dell'Eterna Giustizia⟧. Puoi sostituirmela?", "." },
 })

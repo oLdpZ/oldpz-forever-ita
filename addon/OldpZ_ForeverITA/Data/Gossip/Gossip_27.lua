@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["27ba0c7a6e45cf07"] = { "Abbiamo pochissimi rifornimenti. Se vogliamo lanciare un assalto via terra nel ⟦Field of Strife=Pian della Discordia⟧, ce ne serviranno molti di più!", "." },
   ["27c1d8ac637f2d42"] = { "Uaaah!", "." },
   ["27c52fdea46652dd"] = { "Quando sei pront<o/a> per la visita, usa /lay, sdraiati a terra e comincerò il salasso.", "." },
+  ["27ccb16ddb832fe0"] = { "Bel ritrovamento il tuo. Vediamo cosa si può fare.", "." },
   ["27d571db9ce4e4ab"] = { "Se Reethe è in qualche modo coinvolto nell'incendio della ⟦Shady Rest Inn=Locanda Ombracalma⟧, dovrai trovarlo e farti dare delle risposte.\n\nHo mandato Ogron sulle sue tracce. Era diretto a sud-est. Raggiungi Ogron e poi va' a cercare Reethe.", "." },
   ["27dde6e80c5d9e3e"] = { "%s emette un ringhio gutturale mentre il suo corpo si accascia. Un ululato terrificante riecheggia nelle sale dei ⟦Blackrock Spire=Bastioni di Roccianera⟧. Qualcosa è molto, molto arrabbiato.", "." },
   ["27e3a9c56492615e"] = { "Eh no.", "." },

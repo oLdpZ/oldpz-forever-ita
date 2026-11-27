@@ -2,6 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["7700dbc07ef4547b"] = { "Pare che Skarr abbia trovato il suo prossimo sfidante! Non vorrei essere nei panni di quel povero sciocco!", "." },
+  ["7702037f4070ebd5"] = { "La minaccia è stata eliminata?", "." },
   ["7705d302cc424b4f"] = { "Non rischierebbe di disfare la trama, se non viene ancorata a dovere prima di iniziare il lancio?", "." },
   ["7705d50c2f6971f5"] = { "Ah, errore mio, {name}. Ti chiedo scusa. Non mi ero accorto che possedessi la Torcia. Sono lieto di fare la tua conoscenza.\n\nMolti avventurieri arrivano fin qui in cerca di tesori perduti o attratti dalla promessa di creature mistiche da uccidere, solo per essere respinti da un santuario apparentemente vuoto. Ma noi conosciamo la verità, non è così, {name}?\n\nQuesto santuario cela un segreto più grande ai membri comuni dell'⟦Horde=Orda⟧. Per noi è sacro.", "." },
   ["77088fb2462aea8f"] = { "Se ti serve tempo per riposare e recuperare le forze, il posto migliore è la locanda di Dolanaar. Il locandiere Keldamyr si prenderà cura di te.", "." },
@@ -30,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["7773ec127574d494"] = { "Farò del mio meglio per tradurre e descrivere ciò che vedo.", "." },
   ["77786960a07dbdf8"] = { "Che storia incredibile. E come è morto?", "." },
   ["77798fe85232ef04"] = { "Sparisci dalla mia vista, mortale. Basta la tua sola presenza a spingermi alla violenza.", "." },
+  ["777d1f1397e8ad0d"] = { "Questo posto non è granché, ma è casa.", "." },
   ["777e4a86e639a13b"] = { "Mostrate ai nemici la vostra risolutezza, soldati! Schiacciateli sotto i piedi! Sotto l'acciaio!", "." },
   ["777f6fbee5184b42"] = { "Il ⟦Frostwolf Graveyard=Cimitero dei Lupi Bianchi⟧ è stato conquistato dall'⟦Horde=Orda⟧!", "." },
   ["7780e28dfa2d3c41"] = { "E cerca di non perderti, stavolta....", "." },

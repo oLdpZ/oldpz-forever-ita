@@ -4,6 +4,7 @@ WFJ.Data.add("gossip", {
   ["7004f61a9980d187"] = { "Ho un sacco di rabbia e ostilità represse. Dammi solo un motivo, pezzente.", "." },
   ["7008516b8b67a67a"] = { "Salute, {class}. Mi occupo degli encomi per conto di ⟦Stormwind=Roccavento⟧. È mio dovere assistere gli avventurieri che hanno ricevuto un Anello d'Encomio dell'⟦Alliance=Alleanza⟧.\n\nAccetto anelli in quantità diverse, ma lo scambio più vantaggioso per te è consegnarne un gruppo di dieci alla volta. Quando consegnerai gli anelli, registrerò le tue gesta nei nostri archivi. Così otterrai il riconoscimento di ⟦Stormwind=Roccavento⟧ per il tuo impegno e il tuo servizio.", "." },
   ["700d37b786a4d43c"] = { "Nessuna contadina può resistere ai Defias!", "." },
+  ["7013c23a5f427f44"] = { "Ah, sei tornat<o/a>. Spero tu abbia portato con te le reliquie?", "." },
   ["702067fce7f05e4d"] = { "Non troverai kebab di ratto migliore da questa parte di Khaz Modan!", "." },
   ["7023d96b8aeeee06"] = { "Ti do il benvenuto: dai pure un'occhiata alla mia merce. A parte l'odore di muffa, è in perfette condizioni.", "." },
   ["702c1efa18126341"] = { "Il suo luogotenente, Ilkrud Magthrull, possiede un tomo che potrebbe indicare dove si trovano le gemme dell'anima rimanenti.", "." },

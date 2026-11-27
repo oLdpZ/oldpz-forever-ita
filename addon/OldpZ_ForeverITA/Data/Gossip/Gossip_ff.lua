@@ -41,6 +41,7 @@ WFJ.Data.add("gossip", {
   ["ffbdacee38d89672"] = { "Mmm, credo di poter prendere un altro allievo. Beh, non startene lì impalat<o/a>. Dimmi cosa vuoi imparare.", "." },
   ["ffbec7606593f345"] = { "Una volta ho conosciuto qualcuno come te... Si chiamava Vol'jin. Sei di una razza rara, amico mio.", "." },
   ["ffc3fb864b8521ce"] = { "YAW! Ehm, in prima linea, tu!", "." },
+  ["ffc99f6cf04e445a"] = { "Ah, è proprio così! In tal caso, ben fatto.\n\nGiusto per essere chiari... siamo d'accordo che questa faccenda non deve arrivare a Demar, giusto? Direi che ce la siamo cavata benissimo da soli.\n\nQuell'uomo mi ha già mandato in questo posto. Non mi serve altra attenzione speciale da parte sua.", "." },
   ["ffd022f8fce0edb0"] = { "Fuggire non vi servirà, mortali!", "." },
   ["ffd17a976d8c15ff"] = { "Rin'ji è sotto attacco!", "." },
   ["ffd919d7efae2fa3"] = { "Grrrr! Idioti!", "." },

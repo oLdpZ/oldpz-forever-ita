@@ -50,6 +50,7 @@ WFJ.Data.add("gossip", {
   ["f7c83a44b7adc2f0"] = { "Incredibile! Conosco colui che ha creato questi incantamenti...", "." },
   ["f7c8d25189d09a3f"] = { "Dai, proviamo da un'altra parte.", "." },
   ["f7d4e53caf0bc67c"] = { "Hai proprio un'abilità notevole, {name}. Le lame e i martelli che fai superano perfino i miei, per quanto mi costi ammetterlo. L'unica persona che abbia mai incontrato con un'abilità ancora maggiore è ⟦Borgus Steelhand=Borgus Mandacciaio⟧: scommetto che potrebbe insegnarti una cosa o tre.", "." },
+  ["f7d7e21e793431a3"] = { "L'arcimago Modera parla molto bene di te. Cosa ti porta a Dalaran?", "." },
   ["f7dbaf60aab1d2e4"] = { "Non ho più le mie ⟦Zandalar Confessor's Bindings=Manette del Confessore degli Zandalari⟧. Puoi darmene di nuove?", "." },
   ["f7dff2b7b9d3c80c"] = { "Tu, lì... è nel tuo interesse aiutare i Reietti in questi tempi difficili. Ascolta bene, perché detesto ripetermi.\n\nAl momento ci troviamo a corto di stoffa. Bende e tessuti semplici scarseggiano, e accettiamo donazioni per rimpinguare le scorte in calo. Anche se non riceverai un compenso in denaro (è questo che significa donazione), il tuo aiuto non passerà inosservato.", "." },
   ["f7e2251b51cdda24"] = { "Che peccato: a quanto pare abbiamo raccolto tutte le bende di telamagica necessarie. Forse puoi andare a venderle alla casa d'aste? Ma prima di andare, fai <il/la> <bravo/brava> <ragazzo/ragazza> e chiedi agli altri raccoglitori presenti. Potrebbero avere una commissione da affidarti.", "." },

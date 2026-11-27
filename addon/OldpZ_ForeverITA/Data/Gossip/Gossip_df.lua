@@ -18,6 +18,7 @@ WFJ.Data.add("gossip", {
   ["df7a540e51403a43"] = { "Subito, Rokar.", "." },
   ["df7eb4a37540795c"] = { "Ahh, eccolo.", "." },
   ["df91c63b1e34615a"] = { "Ora prova tu.", "." },
+  ["df96f53e1b7d9fc4"] = { "I tuoi sforzi a ⟦Stormwind=Roccavento⟧ sono stati fruttuosi?", "." },
   ["df9715e2afa19a7e"] = { "%s barcolla.", "." },
   ["df9b08db03e98620"] = { "Tu! {name}! Che ci fai a girovagare per il villaggio così? Ci sono nemici dell'⟦Alliance=Alleanza⟧ ad Alterac! Dobbiamo cacciarli!\n\nLe nostre scorte sono troppo scarse per lanciare un grande assalto di terra, quindi parla con il nostro quartiermastro. Ti dirà come puoi aumentare le nostre riserve.", "." },
   ["dfab9f344dc84d2f"] = { "Per favore, lancia un incantesimo di POTENZIAMENTO ad alta priorità su tutti i bersagli vicini.", "." },
@@ -39,5 +40,4 @@ WFJ.Data.add("gossip", {
   ["dff92f81e70a838a"] = { "Salute, giovane {class}.", "." },
   ["dff95d62bc69e5d2"] = { "La tua vita è un sacrificio degno del mio padrone, {class}.", "." },
   ["dffabc3924b2b31d"] = { "Il Dun Baldar North Bunker è sotto attacco! Se nessuno interviene, l'⟦Alliance=Alleanza⟧ lo distruggerà!", "." },
-  ["dffc89ab72c3c546"] = { "Sei tornat<o/a> con i totem?", "." },
 })

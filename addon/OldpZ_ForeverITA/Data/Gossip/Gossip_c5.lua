@@ -34,6 +34,7 @@ WFJ.Data.add("gossip", {
   ["c58218b99516e311"] = { "Il nostro oscuro padrone ha notato le tue intromissioni e mi manda a portarti un messaggio... di rovina!", "." },
   ["c582c5979724b7f6"] = { "E ora perché mai ti servirebbero i servigi di uno di quei tipi? Abbiamo già abbastanza guai con quel ladro, ⟦Hulfdan Blackbeard=Hulfdan Barbanera⟧, laggiù nella Caverna degli Inganni; devo cominciare a tenere d'occhio anche te?", "." },
   ["c58aac7d5fba7964"] = { "Il tuo destino è segnato, Mokvar! Pagherai per i tuoi oltraggi contro sire Valthalak!", "." },
+  ["c58d6fd2ae8db694"] = { "Ottimo lavoro, {class}! I tuoi sforzi aiuteranno a fornire all'⟦Alliance=Alleanza⟧ le risorse di cui ha bisogno.", "." },
   ["c58faf96d93d0b13"] = { "Ben <trovato/trovata>, {name}. È bello vedere che <un/una> {class} come te partecipa attivamente alla protezione dei boschetti.", "." },
   ["c5918075f13e22c3"] = { "Coraggio! Il dolore passa, e <le/gli> <donne/uomini> vanno matti per chi ha le cicatrici!", "." },
   ["c59a8937df8f9c49"] = { "Quale bastone?", "." },

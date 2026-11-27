@@ -36,6 +36,7 @@ WFJ.Data.add("gossip", {
   ["6f9b53b47cd502a8"] = { "%s scatena un attacco devastante.", "." },
   ["6f9d017463c27970"] = { "Thuwd ti insegnerà a scuoiare le tue prede. Cercalo alla Kodohide Leatherworkers, nel Varcolargo.", "." },
   ["6f9e2f8c6fa150db"] = { "Rend, figlio di Manonera: capo impotente del clan ⟦Blackrock=Roccianera⟧. Non esiste bastardo più testardo.\n\nAlla fine della Seconda Guerra, Rend e suo fratello Maim fuggirono in cerca di rifugio nella fortezza montana dei ⟦Blackrock Spire=Bastioni di Roccianera⟧. Fu lì che Rend si proclamò Capoguerra del clan ⟦Blackrock=Roccianera⟧ ormai indebolito.", "." },
+  ["6f9fde79d02cf953"] = { "Mmm... forse i travestimenti non sono il tuo forte.", "." },
   ["6fa4caee5a7f7055"] = { "30 secondi all'inizio della battaglia per la ⟦Alterac Valley=Valle d'Alterac⟧.", "." },
   ["6fab26eb50a940c8"] = { "%s tiene davanti a sé la Rune of Escape.", "." },
   ["6fb0204f82abca49"] = { "Hai un talento eccezionale per l'incantamento. Superi le mie capacità di insegnante, temo. Cerca ⟦Kitta Firewind=Kitta Bruciavento⟧ alla ⟦Tower of Azora=Torre di Azora⟧. Ormai solo lei può essere la tua istruttrice.", "." },

@@ -30,6 +30,7 @@ WFJ.Data.add("gossip", {
   ["969b268ca889719c"] = { "Il nostro bisogno di aiuto nel ⟦Arathi Basin=Bacino d'Arathi⟧ è più grande di quanto si possa immaginare, {name}. Ma lo sono anche l'onore e la reputazione che si possono ottenere lì in questo momento di bisogno. Ti imploro di cercare il maestro di battaglia del ⟦Arathi Basin=Bacino d'Arathi⟧ in questa città.", "." },
   ["96a20ec6b4b146e1"] = { "Dammi il contratto.", "." },
   ["96a54621cff021fa"] = { "Sì, signore!", "." },
+  ["96b759832bffb6d6"] = { "Quindi le voci sono vere. Peccato che Warug ti abbia fatto correre in giro con compiti frivoli. Almeno hai dimostrato il tuo valore.\n\nSbircia giù nella valle: cosa vedi? Ossa e cadaveri. Non morti vaganti. E i Golia Gemelli.\n\nQuesto luogo era maledetto molto prima del nostro arrivo, e sospetto che resterà tale per molte generazioni. Il nostro clan è stato il primo ad affrontare gli orrori laggiù, e sarà l'unico a rivendicarne il potere.\n\nHai fame quanto me di dominare tutta ⟦Desolace=Desolanda⟧?", "." },
   ["96b78eb3413f9f4a"] = { "La schiena mi sta uccidendo.", "." },
   ["96b7ade5f54b1d41"] = { "Ucciderti essere facile.", "." },
   ["96c0673ae1b34209"] = { "Di loto purpureo siamo pieni fino all'orlo, {class}. Chiedi a qualcun altro se gli serve il tuo aiuto, e lasciami ai miei studi. Non c'è tempo da perdere!", "." },

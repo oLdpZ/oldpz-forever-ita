@@ -39,6 +39,7 @@ WFJ.Data.add("gossip", {
   ["2eafe641cf4c350a"] = { "Sabbie del deserto, sollevatevi e oscurate il sole!", "." },
   ["2ec46bdb752b60d2"] = { "Queste atrocità non morte saranno distrutte!", "." },
   ["2ec6a705438ec035"] = { "Evvai! È ora di far festa!", "." },
+  ["2ecf2d2065f5253f"] = { "Sì, {class}. Posso insegnarti.", "." },
   ["2ed1a5c352ce6d57"] = { "I druidi sono molto sensibili alle sofferenze di tutte le creature del mondo. Quando si è scoperto che questi uccelli erano in pericolo, abbiamo organizzato un sistema per salvarli dalla corruzione di Feralas.\n\nUna gnoma di nome ⟦Curgle Cranklehop=Curgle Criccaleva⟧ guida l'impresa: raccoglie le uova e le fa spedire qui, dove me ne prendo cura.\n\nCi farebbe sempre comodo altro aiuto per la nostra causa, {name}. Forse dovresti andare a ⟦Gadgetzan=Meccania⟧ e cercare Curgle.", "." },
   ["2edbf7e0dabd0e70"] = { "%s trasforma gli oggetti che {name} gli ha dato in un totem di purificazione...", "." },
   ["2edf96a3f1a0aa31"] = { "<Demitrian cade in ginocchio.>\n\nHai recuperato l'eterna prigione del mio Maestro!\n\nQuanto a lungo ho atteso questo giorno, e finalmente è arrivato.\n\nDeve essere liberato!", "." },

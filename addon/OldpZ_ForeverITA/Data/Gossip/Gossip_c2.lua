@@ -29,6 +29,7 @@ WFJ.Data.add("gossip", {
   ["c292bf0ec4805527"] = { "I trogg stanno riconquistando la ⟦Irondeep Mine=Miniera di Ferrofondo⟧!", "." },
   ["c2956c30fa59f891"] = { "Il ⟦First Aid=Primo Soccorso⟧ è sempre un'abilità utile. In battaglia mi ha salvato la pelle più di una volta. Passa da Spiritual Healing, sull'⟦Spirit Rise=Altura degli Spiriti⟧. ⟦Pand Stonebinder=Pand Lega Pietre⟧ può insegnarti tutto ciò che serve per salvare anche la tua pelle.", "." },
   ["c2995de73a5cd75d"] = { "Hai già trovato Arra'chea?", "." },
+  ["c29acda5be9d3bd4"] = { "Quel parassita è già morto?", "." },
   ["c29e87d4397a3047"] = { "Sì. {name}. Ho localizzato il Signore della Foresta. Dobbiamo raddoppiare gli sforzi! Servono altri cristalli!", "." },
   ["c2a59804d5332de0"] = { "La tua prigionia è finita, ⟦Doom'rel=Teneb'rel⟧. Ti sfido!", "." },
   ["c2a5bff23f6a6c2a"] = { "<Quel/Quella> {name} vuole la mia morte! Aiuto!", "." },

@@ -5,6 +5,7 @@ WFJ.Data.add("gossip", {
   ["530a6e20b8e1287d"] = { "%s va in pezzi e perde forza!", "." },
   ["530cb898c91293c9"] = { "Nella fenditura d'ombra Kor'ghan aspetta con cesoie più affilate della spada di una guardia.", "." },
   ["53113eeb88ce50fe"] = { "Elune, ascolta le mie preghiere. Concedici la serenità! Veglia sui nostri caduti...", "." },
+  ["53198cb8c25be189"] = { "Meraviglioso! Hai fatto un lavoro fantastico. Imparare a cavalcare uno di questi calcaventi richiede spesso pazienza e mano ferma.\n\nNon scappano per natura, ma chissà quali cose tu e la tua cavalcatura affronterete là fuori nel mondo più vasto? Sì, è meglio essere preparati!", "." },
   ["531c28079d2ed2fb"] = { "Nemmeno mio padre avrebbe potuto progettare una simile tragedia... un simile caos. Non ce la farai mai! Il tempo sta per scadere!", "." },
   ["531def31674efdfa"] = { "Risorgo dalla tomba per vendicarmi!", "." },
   ["5328da4adf8bb087"] = { "Salute, {class}. Sono un po' in difficoltà al momento: ho pochissime pelli.", "." },

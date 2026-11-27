@@ -23,6 +23,7 @@ WFJ.Data.add("gossip", {
   ["dda93b5001b331db"] = { "Cercalo in alto, sul lato ovest della ⟦Valley of Strength=Valle della Forza⟧. Ti fanno entrare solo se sei un ufficiale! Altrimenti parla con il sergente Ba'sha, qui fuori.", "." },
   ["ddaaea28a07399c6"] = { "Vuoi addestrarti con Borgus? Sì, posso dirti dove trovarlo. Attraversa la piazza a nord-ovest della mia forgia, poi prendi la strada a ovest. Lo troverai nel secondo edificio sulla destra.", "." },
   ["ddb9d4eda71d319a"] = { "Chi controlla il ⟦Snowfall Graveyard=Cimitero di Nevealta⟧?", "." },
+  ["ddc0204856c2a2bb"] = { "Mi fa piacere che tu sia arrivat<o/a>, {name}. Ci sono molte cose di cui dovremo discutere, ma più importante è il tuo addestramento nelle vie della Luce.\n\nCi sono lezioni che tutti i servitori della Luce devono imparare. Se sei pront<o/a>, inizieremo a parlarne ora.", "." },
   ["ddc9d9bd6a1984fb"] = { "PER MAGNI!", "." },
   ["ddceaa4afea9b1ea"] = { "%s aggiunge la foschia ai germogli di Petalorosso.", "." },
   ["ddd4983e2faf7796"] = { "Salve, {class}. Sono il gran meccanista Meccatork, degli esuli di Gnomeregan.", "." },

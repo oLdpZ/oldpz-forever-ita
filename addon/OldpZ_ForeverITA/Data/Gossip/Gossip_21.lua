@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["21024faa8e63a3bb"] = { "La volontà del padrone è compiuta.", "." },
   ["21070250c4d688af"] = { "Non sembri granché, ma qualcosa mi dice che hai ragione. Credo che resterò qui ancora un po'. Grazie per la chiacchierata, <straniero/straniera>.", "." },
+  ["211371f961b9cb39"] = { "Gran battaglia con gli elementi, eh? Le cose sono andate come dovevano andare.\n\nMa visto che sei qui, cosa porta te dal vecchio Bath'rah?", "." },
   ["2113e0ac81fb4bb1"] = { "Wow! {name}, quella polvere onirica è roba potente!", "." },
   ["211b20db793a7217"] = { "Ci sono branchi di lupi a est, e chiunque vivesse al ⟦Malden's Orchard=Frutteto di Malden⟧ se n'è andato.", "." },
   ["21213745d88169bb"] = { "Faresti meglio a non fare la spia!", "." },

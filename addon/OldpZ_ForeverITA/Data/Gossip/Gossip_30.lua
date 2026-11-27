@@ -10,6 +10,7 @@ WFJ.Data.add("gossip", {
   ["301772277717da56"] = { "Allora, <ispettore/ispettrice> apprendista {name}, il vecchio Pestlezugg ha pronto quel rapporto?", "." },
   ["3021d6081df41e2d"] = { "La ⟦Valley of Trials=Valle delle Sfide⟧ temprerà anche i più deboli fino a farne guerrieri degni di unirsi all'⟦Horde=Orda⟧. Chi non saprà superare le sue prove sarà lasciato a cuocere sotto il sole cocente del deserto.", "." },
   ["3023e2c8cc134c7c"] = { "%s si tira su per il naso un granello di polvere dei sogni...", "." },
+  ["3024b187705f34f6"] = { "Proprio ciò che ci serviva.", "." },
   ["302845bad1443036"] = { "Hai sentito, <viaggiatore/viaggiatrice>. Parlami di nuovo quando sarai <pronto/pronta> a parlare con Belgrum.", "." },
   ["302a471a69278d06"] = { "Una scoperta rara, davvero.\n\n<Mathredis annuisce.>\n\nSe vuoi continuare, mi serviranno i componenti.", "." },
   ["302fd6585f4451d9"] = { "E va bene. Visto che non hai comprato tutta la mia merce, non ho altra scelta che guadagnarmi da vivere nella città dei tuoi nemici.", "." },

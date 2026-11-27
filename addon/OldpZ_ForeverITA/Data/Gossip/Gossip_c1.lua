@@ -3,6 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["c1001c3f5ffa1cd4"] = { "Il ⟦Stonehearth Bunker=Fortilizio di Cordipietra⟧ è sotto attacco! Se nessuno interviene, l'⟦Horde=Orda⟧ lo distruggerà!", "." },
   ["c1038cf54ed7d476"] = { "Il corpo di %s cade a terra, un mucchio senza vita.", "." },
+  ["c1043a95164d10a9"] = { "Ben fatto! Sappi che i totem non sono solo un segno del tuo posto tra gli sciamani. Sono strumenti, un fulcro per incantesimi legati a pietra, terra e altri elementi. Man mano che diventi più saggio, più del potere della montagna si aprirà a te. Gli istruttori sapranno quando sei pront<o/a> per di più. Ma per ora, prendi questo totem e lascia che la terra parli attraverso di te.", "." },
   ["c1063221546e3be3"] = { "Allora devi parlare con Osborne. A ⟦Stormwind=Roccavento⟧ non c'è maestro delle arti furtive migliore di lui. Cercalo nella Città Vecchia.", "." },
   ["c11cfefd5874bcb5"] = { "Sì, subito, mamma!", "." },
   ["c11eacf43d2e2c82"] = { "La mia fede guida le mie azioni, {race}. So che Ivus verrà.", "." },

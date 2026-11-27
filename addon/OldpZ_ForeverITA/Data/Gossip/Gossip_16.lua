@@ -24,6 +24,7 @@ WFJ.Data.add("gossip", {
   ["167019b81b6ba643"] = { "Questa pozione sembra curare sempre meno danni ogni volta che la preparo, anche se uso gli stessi ingredienti. Se ne può trarre una sola conclusione: le piante stanno cambiando. Non so dire perché, né in cosa.", "." },
   ["167ec090f78254c3"] = { "%s lancia un possente ululato.", "." },
   ["16815028fb19ff30"] = { "Il Flagello nel ⟦Trade District=Quartiere del Commercio⟧! Addosso!", "." },
+  ["168876a5fb9a3e04"] = { "Ora tutto dipende da te, {name}.", "." },
   ["1691ba16e688e8a7"] = { "Mmmmm, cibo. Non è troppo lontano, ma devi andare a nord, a Orgrimmar, e chiedere a uno dei grunt.", "." },
   ["1692647f2f858b63"] = { "So che sei lì, <ladro/ladra>. Lascia la mia casa o raggiungi gli altri ai piedi dell'albero del mondo.", "." },
   ["16963d0d82d49253"] = { "Non preoccupare, noi trova te.", "." },

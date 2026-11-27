@@ -43,6 +43,7 @@ WFJ.Data.add("gossip", {
   ["6ebcae1ae7142c2e"] = { "Perché sta succedendo? In poche parole, gli spiriti del vento sono... svaniti. \r\n\nI piccoli folletti e gli elementali minori che probabilmente hai incontrato là fuori sono una pallida imitazione dei veri spiriti del vento. Privi di coscienza, senza meta, e ben lontani dagli spiriti benevoli accanto ai quali abbiamo vissuto in armonia per migliaia di anni.", "." },
   ["6ebdd935772ef37a"] = { "Le tue abilità sono oltre la mia portata. È ora che tu affronti nuove sfide. Taladan ti aiuterà a prepararti. È là, vicino al tavolo.", "." },
   ["6ec6b7fb4926c693"] = { "Se cerchi un'attività davvero gratificante, una vita dedicata all'incantamento fa per te!", "." },
+  ["6ece93c32c278865"] = { "Un trofeo cruento, che presto metteremo a buon uso. Ottimo lavoro.", "." },
   ["6ed8c284491135c1"] = { "Di' al direttore che ora questa prigione è nostra!", "." },
   ["6edb42d5d7a22ac8"] = { "Cyndra non sarà frizzante come le sue pozioni, ma i suoi modi gentili sono adatti a insegnare il mestiere. La trovi appena a est della locanda di Dolanaar.", "." },
   ["6eddabd2707bec3e"] = { "Il mastro artigiano Omarion è svanito una notte. Come un peto al vento... Puf! Sparito! Bah, ora resto solo io a fabbricare la roba per i ragazzi al fronte.", "." },

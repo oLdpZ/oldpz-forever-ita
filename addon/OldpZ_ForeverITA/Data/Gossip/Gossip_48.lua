@@ -17,6 +17,7 @@ WFJ.Data.add("gossip", {
   ["482f9835976dab38"] = { "%s si prepara a pungere la sua vittima, in un ultimo gesto disperato!", "." },
   ["4831641bff523a32"] = { "Niby, sei un idiota.", "." },
   ["4831e05b60f220de"] = { "Salute, Antico. Ho fatto tutto ciò che mi è stato chiesto. Ora ti chiedo di concedermi Lok'delar.", "." },
+  ["483d59b594688c3b"] = { "Hai trovato qualcosa di interessante?", "." },
   ["484682169ba0bfa8"] = { "Resta per il prossimo spettacolo di fuochi d'artificio! A partire dalle sei di sera, ce n'è uno ogni ora allo scoccare dell'ora!", "." },
   ["4847c75ccf98be50"] = { "Vi taglieremo la gola e vi dissangueremo!", "." },
   ["4848fcdd0e3ee432"] = { "Non fai che rimandare l'inevitabile!", "." },

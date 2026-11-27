@@ -12,6 +12,7 @@ WFJ.Data.add("gossip", {
   ["6837982fd13ff221"] = { "Voglio restare qui a riflettere su ciò che abbiamo visto. Ti prego, va' da Erelas e raccontagli ciò che abbiamo scoperto.", "." },
   ["6839e249b6c84a45"] = { "Sarai un sacrificio degno!", "." },
   ["6839e256b6c84a52"] = { "Sarai un sacrificio degno.", "." },
+  ["6840ad2f8e2008cf"] = { "I metodi e i mezzi dei membri del Flagello sono misteriosi ed esoterici, persino per i colti maghi del Kirin Tor. Alcuni ipotizzano che la loro magia sia affine per natura alla magia elementale, forse una forza che agisce come antitesi della luce.\n\nAltri ipotizzano che la loro magia sia attinta dal regno degli spiriti stesso attraverso piccoli squarci nel velo tra la vita e la morte. Più manufatti del Flagello riusciamo a recuperare intatti per lo studio, più completa sarà la nostra comprensione.", "." },
   ["684d8ef7b323ea35"] = { "Oh, cielo! Guarda qui... tutte queste candele. Scommetto che servono per qualche rituale terribile o un'evocazione oscura. Meglio sbrigarci!", "." },
   ["684fab0085b08659"] = { "Questi frammenti mi fanno venire i brividi. Ehi, Greeby, hai trovato altre particelle?", "." },
   ["68532c8a2cc9b371"] = { "C-cosa vuoi? Lasciami in pace...", "." },

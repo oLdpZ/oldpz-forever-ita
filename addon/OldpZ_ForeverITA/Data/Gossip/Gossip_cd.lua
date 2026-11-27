@@ -31,6 +31,7 @@ WFJ.Data.add("gossip", {
   ["cdbb99b39d980e5b"] = { "È ORA DI AGIRE! Fatevi sotto! <da sostituire>", "." },
   ["cdbd32f8b0e6e40d"] = { "Non può essere sconfitto. <La reliquia brucia fino a sparire. I ricordi che conteneva ora sono tuoi. Questa città è stata distrutta da un essere non di questo mondo.>", "." },
   ["cdcb588860b67600"] = { "⟦Trick or Treat=Dolcetto o Scherzetto⟧!", "." },
+  ["cdce97091fee0906"] = { "<Gli occhi di Gorhak si spalancano quando gli offri il fascio di totem intagliati, ma poi corruga la fronte mentre i suoi occhi tornano verso di te.>\n\nNon sono uno sciocco, forestiero. Questa donazione non è senza motivo. Vuoi qualcosa, da me o dal nostro clan. Non so cosa.\n\n<Con un solo gesto della mano, il quartiermastro si impossessa della borsa.>\n\nE oggi non mi importa quale possa essere il tuo secondo fine.\n\nBenvenuto al Magram Village, forestiero.", "." },
   ["cdcee50137b588a3"] = { "Un estraneo così addentro al villaggio? Sarà meglio che tu sia qui per affari.", "." },
   ["cdd0bb3ffd6b2a39"] = { "Voglio altra birra! Datemi altra birra!", "." },
   ["cdd2d3f9e410fe05"] = { "Ecco! Ha funzionato!", "." },

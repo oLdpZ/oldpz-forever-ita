@@ -5,6 +5,7 @@ WFJ.Data.add("gossip", {
   ["8e0d60743656b109"] = { "Puoi anche avere la meglio sul campo di battaglia per un po'... ma non puoi sperare di vincere contro il Flagello!", "." },
   ["8e16f5a2fd90985e"] = { "Forse hai la stoffa giusta. Scopriamolo!", "." },
   ["8e174af782d2c650"] = { "Il maestro dei pipistrelli", "." },
+  ["8e1b1fc518095fc2"] = { "Hai notizie della tempesta?", "." },
   ["8e1b54dea59c512a"] = { "Ringo! Stai bene!", "." },
   ["8e2182bacbec37fe"] = { "Andiamo a giocare! No, raccontami una storia, papà! No... andiamo a raccogliere i fiori! E giochiamo al tè! Ho ritrovato la mia bambolina, te l'ho detto?", "." },
   ["8e24e14fddf22096"] = { "Il ⟦Iceblood Graveyard=Cimitero di Brinarossa⟧ si trova sul lato sud del ⟦Field of Strife=Pian della Discordia⟧, a est della Torre di Brinarossa.\n\nAl momento è controllato dall'⟦Alliance=Alleanza⟧.", "." },

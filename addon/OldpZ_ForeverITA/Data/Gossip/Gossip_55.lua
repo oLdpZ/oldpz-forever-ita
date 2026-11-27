@@ -21,6 +21,7 @@ WFJ.Data.add("gossip", {
   ["5580345ef7f55bd9"] = { "Annalise? Sei tu?", "." },
   ["558474b67fc38e55"] = { "Avanti... MARSC!", "." },
   ["5587c85b9f6ff97f"] = { "Tu capo adesso, sì? Lunga vita a nuovo re!\n\nKreeg ti fa guardare liquore Gordok. Liquore di ogre migliore di tutti liquori, e liquore Gordok migliore di tutti liquori di ogre! Forse tu compra un po' da me, sì capo?!", "." },
+  ["558c53eeedc4369d"] = { "Posso insegnarti quando avrai acquisito un po' di abilità nella tua professione.", "." },
   ["558cdfc772f1b895"] = { "Avete riconquistato qualche misero territorio. Patetico. In breve tempo torneranno a essere nostri!", "." },
   ["558f449a26ee1585"] = { "È meraviglioso, Rimblat! Persino questa terra immonda e spaccata può ancora guarire.", "." },
   ["5596b5611514f7cb"] = { "Allora, {name}, eccomi qui: ti racconto cos'è successo nella ⟦Swamp of Sorrows=Palude del Dolore⟧. Hic!", "." },

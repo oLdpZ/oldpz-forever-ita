@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["9725efc1cd67300d"] = { "Ah, <uno/una> <Stregone/Strega> come me, che ha dato prova del proprio valore, almeno in qualche misura.\n\nÈ un piacere fare la tua conoscenza. Mi chiamo ⟦Menara Voidrender=Menara Squarciavuoto⟧... e non senza una buona ragione.\n\nSembri abbastanza potente ed erudit<o/a> perché altri strumenti... strumenti più potenti... siano ben accetti e non affidati in modo sconsiderato. Se è così, continua a parlare con me. Altrimenti, beh, conosci la strada per tornare al molo e poi giù nell'oceano.", "." },
   ["9726671842ae8465"] = { "Successo! Evviva! La fonte di energia ha ripristinato la collana!", "." },
   ["972b0df0ea5fcd69"] = { "Va bene, {name}. Seguimi fino alla grotta, dove cercherò di imbrigliare il potere della pietra runica in questi occhialoni.", "." },
+  ["97411b98f8e5350c"] = { "Quale rapporto migliore c'è di una vittoria totale?", "." },
   ["974bc49608caa9bd"] = { "Ahah! Che divertente! Divertente umano di legno!", "." },
   ["9753571fd07eaacf"] = { "Sei tornat<o/a> e vedo nei tuoi occhi che hai molto da raccontarmi, {name}. Pensiamo prima alla tua ricompensa.", "." },
   ["9756791b5791af82"] = { "Cho'Rush morire! ORA TU MUORI!", "." },
@@ -44,4 +45,5 @@ WFJ.Data.add("gossip", {
   ["97ef7b982fbb9053"] = { "Salute, {class}! Le nostre scorte sono abbondanti e siamo pronti a lanciare un assalto via terra attraverso il ⟦Field of Strife=Pian della Discordia⟧. Forse, se la tua fama fosse maggiore, ti affiderei gli ordini d'assalto.\n\nQuindi vai là fuori e combatti l'⟦Alliance=Alleanza⟧! Dimostrami che sei un membro fidato e capace dell'⟦Horde=Orda⟧!", "." },
   ["97f376be7e4f6c23"] = { "Conosco solo una persona più esperta di me nell'arte della sartoria. L'ultima volta che ne ho sentito parlare si trovava all'⟦Theramore Isle=Isola di Theramore⟧. È lui che dovresti cercare.", "." },
   ["97f8aa037e28192d"] = { "Il tessuto di cui è intessuto il nostro mondo è delicatissimo. Basta un po' di conoscenza, e l'applicazione di tale conoscenza, per strapparlo. È così che nascono le fratture.", "." },
+  ["97fb27ed9b0002c2"] = { "Fai attenzione con l'unguento quando avrai finito, {class}. Anche il solo contatto con la pelle potrebbe essere piuttosto doloroso.", "." },
 })

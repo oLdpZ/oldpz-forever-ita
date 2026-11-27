@@ -55,6 +55,7 @@ WFJ.Data.add("gossip", {
   ["b4da25df243d924e"] = { "Ehi! Smettila!", "." },
   ["b4dc8bc32bdf1f98"] = { "Ci sono due possibili risultati quando la matrice di sintesi dei Terrigeni si destabilizza. Avvio della rappresentazione visiva numero uno.\n\nLa prima matrice variante è un prodotto degenerativo della sintesi, qui designato con la nomenclatura comune di \"Trogg\". Questa variante mantiene forza e resistenza paragonabili a quelle dei Terrigeni, ma la sua capacità di elaborazione cognitiva è stata quasi del tutto compromessa. La forza di volontà e una spiccata astuzia sono gli unici fattori che guidano la psiche del trogg.", "." },
   ["b4e313d6361f6f3e"] = { "Chi osa sfidarmi nel mio dominio?!", "." },
+  ["b4e3e373a7bf3e13"] = { "Come sospettavo, vincoli magici e un cifrario d'ombra. Potrebbero volerci settimane per comprenderne il contenuto.\n\nCiononostante, il tuo lavoro è stato di un aiuto delizioso, {name}. Comincio subito.", "." },
   ["b4e7f4843c1d8373"] = { "Chi osa?! Ti distruggerò!", "." },
   ["b4edf195d8dbdd2f"] = { "Le nostre unità sono state promosse a campioni, ma posso ancora raccogliere altri rifornimenti.", "." },
   ["b4ef9550c59da1da"] = { "Ogni scarto riutilizzato ci rende meno spreconi e ci avvicina alla Madre Terra. Mooranta può mostrarti la via. Cercala appena fuori dagli armaioli di ⟦Thunder Bluff=Picco del Tuono⟧, sull'altura di mezzo.", "." },

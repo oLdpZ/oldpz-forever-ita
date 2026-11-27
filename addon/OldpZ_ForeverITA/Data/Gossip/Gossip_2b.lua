@@ -16,6 +16,8 @@ WFJ.Data.add("gossip", {
   ["2b52ce4214d7f49a"] = { "Siamo gli unici fornitori di fiori sani in tutta ⟦Stormwind=Roccavento⟧. Offriamo splendidi fiori per ogni occasione.", "." },
   ["2b5371183e3e2aa7"] = { "Eccellente. Il tuo successo dimostra che sei pront<o/a>.\n\nDi tutti gli elementi, la terra rappresenta il fondamento di tutte le cose. È la tua forza, la tua resistenza e la tua pazienza. La terra ti proteggerà, ma solo se le mostrerai il giusto rispetto. Come gli altri elementi, anche la terra può essere volubile. La terra è la base della vita e, osservandone le leggi, otterrai una saggezza più grande. Non dimenticare mai i segreti che la terra condivide con te.\n\nOra preparerò per te una sapta e, accettandola, comprenderai il tuo sentiero.", "." },
   ["2b54644aeea279af"] = { "Lurido drago! Guardie! Guardie! Prendete questo mostro!", "." },
+  ["2b5d9e442afb463a"] = { "Hai raccolto i materiali?", "." },
+  ["2b65e1b1e2d11a8a"] = { "Temo che la nostra situazione sia appena diventata ancora più disperata.", "." },
   ["2b6861fa4f83a9d8"] = { "Tesoran! Mi serve qualcuno, preferibilmente Falgran Hastil, che segua la pista di {name} sulle impronte vicino alla ⟦Shady Rest Inn=Locanda Ombracalma⟧.", "." },
   ["2b70707ef7435e81"] = { "Se solo avessi cinque piedi in più d'altezza, glielo farei vedere io a questi demoni blasfemi! Aiuto!", "." },
   ["2b72d03324436ad6"] = { "Il mio esilio è finito! Che scorra il sangue!", "." },
