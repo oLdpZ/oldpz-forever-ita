@@ -31,7 +31,7 @@ WFJ.Data.add("gossip", {
   ["1478e1889c68a0b0"] = { "Presto! {name} attacca!", "." },
   ["147ccedb9fe21a14"] = { "Sembri molto «pratic<o/a>» a riguardo.", "." },
   ["147d4137ca0b2477"] = { "Che il tuo spirito arda luminoso, {name}.", "." },
-  ["148d2d1534e7dabc"] = { "Cosa sai dirmi della situazione dei Windshapers?", "." },
+  ["148d2d1534e7dabc"] = { "Cosa sai dirmi della situazione dei Plasmatori di Venti?", "." },
   ["14a3bbb65795619a"] = { "Che Cenarius vegli su di te, <fratello/sorella>.\n\nSono Tajarri e ho giurato di proteggere questo santuario. È un onore per me servire il custode Remulos, vegliando su questa terra sacra.", "." },
   ["14acf86805a68210"] = { "E grazie a te, {name}. Senza il tuo aiuto forse non avrei mai trovato la strada per raggiungere i Reietti.", "." },
   ["14b160668350d72d"] = { "Ehi, Bly! Bilgewizzle rivuole la sua bacchetta divino-matica!", "." },

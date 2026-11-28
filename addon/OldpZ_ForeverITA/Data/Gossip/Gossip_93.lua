@@ -9,7 +9,7 @@ WFJ.Data.add("gossip", {
   ["931c01e8cfe1edd5"] = { "Ehm... non ti conosco poi così bene, scusa. Voglio dire, come rivenditore autorizzato di Tecnostruzzi posso vendere le mie cavalcature solo a chi è considerato Osannato presso gli gnomi. Se mai sarai riconosciut<o/a> come Osannat<o/a> da Gnomeregan, sarò felice di mostrarti cosa ho da offrire.", "." },
   ["931ded5dbc315417"] = { "C'è qualcosa in cui posso esserti utile?", "." },
   ["932eae0d5bd22c4b"] = { "Con gli abiti che cuce Me'Lynn, verrebbe da pensare che il suo ago sia stato benedetto da Elune in persona. A meno che il tuo ago non sia altrettanto benedetto, ti conviene farle visita e ascoltare i suoi insegnamenti. La trovi alla ⟦Craftsmen's Terrace=Terrazza degli Artigiani⟧, nella parte nord-orientale di Darnassus.", "." },
-  ["933471fd27088b53"] = { "Sono Belanaa Windveil, agente dell'High Order qui su Azeroth. Se vuoi donare della stoffa alla nostra organizzazione, te ne saremmo molto grati.", "." },
+  ["933471fd27088b53"] = { "Sono Belanaa Windveil, agente dell'Alto Ordine qui su Azeroth. Se vuoi donare della stoffa alla nostra organizzazione, te ne saremmo molto grati.", "." },
   ["933c45a1ea760e7e"] = { "<Indegno/Indegna>.", "." },
   ["93416206db46e535"] = { "Silenzio! Non vedi che il padrone sta parlando?", "." },
   ["934a92695649c7eb"] = { "Ehm... papà...? Ci sei? Ho fame... posso avere un po' di stufato?", "." },

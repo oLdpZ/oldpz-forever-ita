@@ -30,7 +30,7 @@ WFJ.Data.add("gossip", {
   ["56c3b068052780bd"] = { "Ti prego, accendi questo mentre incanalo.", "." },
   ["56c5c9011dcb09d3"] = { "Se devo insegnarti i segreti dell'evocazione di un servitore infernale, devi distruggere Kroshius e portarmi il nucleo infernale dai suoi resti in fiamme. Questo, però, non è facile come sembra. Kroshius si è quasi del tutto consumato. Devi riaccendere il suo cadavere e risollevarlo dalle macerie. Per farlo, però, dovrai raccogliere alcuni componenti da altre entità demoniache.\n\nIl mio imp, Impsy, ti metterà sulla buona strada.", "." },
   ["56c793390354a581"] = { "Sono qui per l'oro.", "." },
-  ["56c8c62713c326bf"] = { "L'istruttore di {class} si trova nella loggia dell'High Order, al margine sud-orientale del paese.", "." },
+  ["56c8c62713c326bf"] = { "L'istruttore di {class} si trova nella loggia dell'Alto Ordine, al margine sud-orientale del paese.", "." },
   ["56d45e9ee58127af"] = { "Lasciami pensare, Zamael.", "." },
   ["56d51b956fb45b5d"] = { "Loro insegnano me a muovermi di soppiatto. Tu trovi loro nel ⟦Rogues' Quarter=Quartiere dei Ladri⟧, sull'anello esterno di ⟦Undercity=Sepulcra⟧.", "." },
   ["56d7c5f37d2d1809"] = { "Non deluderci!", "." },

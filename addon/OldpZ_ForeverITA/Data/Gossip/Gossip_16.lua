@@ -46,7 +46,7 @@ WFJ.Data.add("gossip", {
   ["16d148cfe9a71537"] = { "Sacerdoti! Se continuate a curare così, tanto vale rendere le cose un po' più interessanti!", "." },
   ["16d2b5fda749020c"] = { "Appena fuori dalla porta principale della città c'è un cartello. Ti indicherà la torre degli zeppelin. Parla con il maestro degli zeppelin Frezza in cima alla torre.", "." },
   ["16d4697685c87f26"] = { "Noi vuole tanti famigli. Anya Maulray aiuta te a curarli. Tu trova lei a locanda, anello superiore di ⟦Trade Quarter=Quartiere del Commercio⟧.", "." },
-  ["16d76d118578268e"] = { "A noi shen'dorei serve altra stoffa per rifornire le nostre scorte. Ogni tua donazione sarà messa a buon uso e accrescerà di certo la tua stima presso i Windshapers.", "." },
+  ["16d76d118578268e"] = { "A noi shen'dorei serve altra stoffa per rifornire le nostre scorte. Ogni tua donazione sarà messa a buon uso e accrescerà di certo la tua stima presso i Plasmatori di Venti.", "." },
   ["16ddd301e9f687cd"] = { "Vestiti!? Non ti serviranno a niente contro del buon acciaio! Bah, se sei proprio <sicuro/sicura> di voler fare <il/la> <sarto/sarta>, vai da Magar's Cloth Goods nel Drag.", "." },
   ["16e301eb52e3caa4"] = { "Temo di non avere nulla da insegnare a chi ha la tua esperienza. Ma non sei ancora alla fine della strada. Parla con Lucan Cordell, là dietro il bancone. Ti guiderà nella prossima fase del tuo viaggio.", "." },
   ["16e7d84a2668ddb0"] = { "Ora è il tempo in cui l'anno è nuovo e la luna splende luminosa.\n\nÈ il nostro tempo... quello in cui gli antichi si risvegliano.", "." },

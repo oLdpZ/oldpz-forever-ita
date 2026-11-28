@@ -6,7 +6,7 @@ WFJ.Data.add("gossip", {
   ["7c0635998ff2ce60"] = { "Il prospettore è vivo?", "." },
   ["7c0cc604fd01a113"] = { "Avevi ragione, Fairbanks. È tragico.", "." },
   ["7c10c002093f0a77"] = { "Certamente, <signore/signorina>. Un tempo eravamo servitori della casata Barov: quella che oggi è nota come Scholomance.\n\nIo ero la governante e Lucien era il maggiordomo di padron Barov.\n\nAvevamo lavorato per i Barov per decenni, finché...\n\n<Eva piange.>", "." },
-  ["7c1b6ff4f915b6fc"] = { "Cosa puoi dirmi sulla situazione dell'High Order?", "." },
+  ["7c1b6ff4f915b6fc"] = { "Cosa puoi dirmi sulla situazione dell'Alto Ordine?", "." },
   ["7c1b716564b26b20"] = { "Maywiki, ho perso il mio talismano e me ne serve uno nuovo.", "." },
   ["7c258328e4d48f8e"] = { "Accetto la tua offerta, Eitrigg.", "." },
   ["7c270563535d186e"] = { "Bene, bene... sei pront<o/a> a combattere per l'⟦Horde=Orda⟧ nelle Isole dei ⟦Darkspear=Lanciascura⟧?", "." },

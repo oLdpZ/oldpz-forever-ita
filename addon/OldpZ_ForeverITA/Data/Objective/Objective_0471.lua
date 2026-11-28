@@ -7,7 +7,7 @@ WFJ.Data.add("objective", {
   [471121] = { "Scopri perché gli abitanti di Kul Tiras sono qui", 0x399b6957, "." },
   [471122] = { "Catalizzatore di Cristallo riempito", 0x424e11ad, "." },
   [471216] = { "Raggiungi il Vecchio Totem", 0x96288e38, "." },
-  [471235] = { "Trova l'ingresso della Drowned City", 0xbb71eeb1, "." },
+  [471235] = { "Trova l'ingresso della Città Sommersa", 0xbb71eeb1, "." },
   [471636] = { "Offri il tuo sangue di tua volontà", 0x9fb50498, "." },
   [471637] = { "Libera l'⟦Tortured Soul=Anima Torturata⟧", 0x9cef74cc, "." },
   [471711] = { "Crocolisco d'Acqua Dolce trafitto", 0xd2bd728a, "." },

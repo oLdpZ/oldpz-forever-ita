@@ -23,7 +23,7 @@ WFJ.Data.add("gossip", {
   ["4f7adc392cf21656"] = { "La ⟦Venture Company=S.P.R. & Co.⟧, che opera attorno alla ⟦Windshear Crag=Landa di Tagliavento⟧, a ⟦Stonetalon=Petrartiglio⟧, tiene i suoi rifornimenti in casse chiuse a chiave.", "." },
   ["4f7b14158b41d5bf"] = { "Splendido! Grazie al tuo aiuto, il mio popolo ha una possibilità di riconquistare la nostra amata città. Tre urrà per te!", "." },
   ["4f7b3d6c8c2f7e85"] = { "Alle scale, e difendetele!", "." },
-  ["4f85a2c33280c205"] = { "<Lo Skyborne disteso davanti a te è privo di sensi.>", "." },
+  ["4f85a2c33280c205"] = { "<Il Celeste disteso davanti a te è privo di sensi.>", "." },
   ["4f889d402aa046bb"] = { "Qui le faccende non finiscono mai.", "." },
   ["4f89760f790f3ad5"] = { "Per le stelle! È stato evocato uno spirito!", "." },
   ["4f8dad2d5210553f"] = { "Padre, la ciotola di frutta l'avevi presa tu? Vero?", "." },

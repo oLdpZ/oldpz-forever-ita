@@ -28,7 +28,7 @@ WFJ.Data.add("gossip", {
   ["10897850618475fe"] = { "Tutto il pesce e tutto il resto è in viaggio verso ⟦Silithus=Silitus⟧, e dovrebbe arrivare in meno di $2113w giorni. Dopo, qualcuno dovrà suonare quel gong con lo Scettro delle Sabbie Mutevoli per dare inizio alla guerra.", "." },
   ["108c3abc70bc8cfa"] = { "Se vuoi la chiave, dovrai prendermi!", "." },
   ["109730a11b49ee5b"] = { "James Van Brunt, nel ⟦War Quarter=Quartiere della Guerra⟧, sull'anello interno.", "." },
-  ["10974354a52706e9"] = { "Mmm, capisco. Molto bene, {class}. I Windshaper forniranno aiuto. Per favore, informa Valennia che può contare su di noi in questa battaglia.\r\n\n<Ayessa abbassa la voce con tono minaccioso.> \r\n\nNon scambiare la nostra collaborazione per una qualche forma di perdono. Ai Windshaper devi del sangue, e un giorno lo riscuoteremo.", "." },
+  ["10974354a52706e9"] = { "Mmm, capisco. Molto bene, {class}. I Plasmatori di Venti forniranno aiuto. Per favore, informa Valennia che può contare su di noi in questa battaglia.\r\n\n<Ayessa abbassa la voce con tono minaccioso.> \r\n\nNon scambiare la nostra collaborazione per una qualche forma di perdono. Ai Plasmatori di Venti devi del sangue, e un giorno lo riscuoteremo.", "." },
   ["10978d0669ca8db1"] = { "Quando prepari il pasto del drago, assicurati di torturare il prigioniero davanti al drago. Risponde bene all'intrattenimento prima dei pasti.", "." },
   ["109c9b65c751fc35"] = { "Sei qui per farti istruire nell'arte di preparare pozioni? Ti sbagliavi se pensavi che ti avrei concesso un simile privilegio senza che te lo fossi guadagnato. Vattene, e non tornare da me finché non avrai più abilità.", "." },
   ["109ded22d9d2a5db"] = { "La prossima volta, porta più amici!", "." },

@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["a6049fa8c78fe070"] = { "%s ringhia ferocemente.", "." },
-  ["a6052eb671e0d1db"] = { "Molti non sono d'accordo su questo punto. I Windshaper vorrebbero farti credere che basti tenersi per mano e sperare nel ritorno degli spiriti. Il potere del loro ordine però si è affievolito, e la loro strada si basa sul riportarci nel ciclo di dipendenza che ci ha condotti fin qui. L'High Order invece... noi crediamo in un approccio più diretto.", "." },
+  ["a6052eb671e0d1db"] = { "Molti non sono d'accordo su questo punto. I Plasmatori di Venti vorrebbero farti credere che basti tenersi per mano e sperare nel ritorno degli spiriti. Il potere del loro ordine però si è affievolito, e la loro strada si basa sul riportarci nel ciclo di dipendenza che ci ha condotti fin qui. L'Alto Ordine invece... noi crediamo in un approccio più diretto.", "." },
   ["a6086b824d0de081"] = { "Perché sei qui?", "." },
   ["a609f521cecda1f0"] = { "Grunt! All'attacco!", "." },
   ["a60a4432b367ff3c"] = { "Non promette niente di buono. Mandate degli esploratori a raccogliere altre informazioni, e restate all'erta.", "." },

@@ -34,7 +34,7 @@ WFJ.Data.add("gossip", {
   ["a08339d91e3c25a4"] = { "⟦Deadmines=Miniere della Morte⟧", "." },
   ["a08522b8e20ffd9f"] = { "%s inizia a lanciare un potente incantesimo.", "." },
   ["a0888a9f9d9225b0"] = { "Falthir, ho perso il mio ⟦Zandalar Madcap's Mantle=Coprispalle degli Scriteriati degli Zandalari⟧. Ne hai uno di ricambio?", "." },
-  ["a08ed463765a5d4c"] = { "Ahimè, ho chiacchierato abbastanza. Se dovessi trovarti nel porto di Valanaar, cerca Elaadrin Evengale. Elaadrin un tempo era mio allievo, ma ora serve come magistro capo dell'High Order. È testardo e capace, e ora tocca a lui e ai giovani come te, {race}, portare avanti le speranze del nostro popolo.", "." },
+  ["a08ed463765a5d4c"] = { "Ahimè, ho chiacchierato abbastanza. Se dovessi trovarti nel porto di Valanaar, cerca Elaadrin Evengale. Elaadrin un tempo era mio allievo, ma ora serve come magistro capo dell'Alto Ordine. È testardo e capace, e ora tocca a lui e ai giovani come te, {race}, portare avanti le speranze del nostro popolo.", "." },
   ["a0913ed8dcb298bd"] = { "Sì, ti prego.", "." },
   ["a095b6a6a2e0572b"] = { "Cosa vuoi che faccia, Rabine?", "." },
   ["a097fb0ec77cf499"] = { "Conosci qualcuno... o meglio, qualcosa, che si chiama Eranikus?", "." },

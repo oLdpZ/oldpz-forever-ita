@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-28 at commit `cf854689`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-28 at commit `f6a5b021`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -9,7 +9,7 @@
 
 | Surface | English lines | Ship Italian | Nothing to translate | Done | Not yet |
 |---|---|---|---|---|---|
-| Quest text | 23,777 | 23,570 | 204 | 100.0% | 3 |
+| Quest text | 23,777 | 23,571 | 203 | 100.0% | 3 |
 | NPC dialogue (gossip, speech) | 11,883 | 11,778 | 100 | 100.0% | 5 |
 | Book / letter pages | 1,262 | 1,207 | 55 | 100.0% | 0 |
 | Quest objective lines | 710 | 672 | 38 | 100.0% | 0 |
@@ -29,7 +29,7 @@ professions, internal strings): quest 139, ui 2.
 |---|---|---|
 | Quest objective lines | name only (`pipeline/objective_names.txt`) | 38 |
 | Exploration / event objectives | name only (`pipeline/area_names.txt`) | 2 |
-| Quest text | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 102 |
+| Quest text | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 101 |
 | Quest text | placeholder quest (never shown) | 93 |
 | Quest text | a bare label: a name or a one-word placeholder (ships as the English) | 9 |
 | NPC dialogue (gossip, speech) | kept English by a drafter's decision (`pipeline/keep_english.tsv`: a proper name the Italian client writes the same, a developer or test NPC, a line with nothing to translate) | 100 |

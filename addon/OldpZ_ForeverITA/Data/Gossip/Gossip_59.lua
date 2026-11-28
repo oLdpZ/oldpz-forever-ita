@@ -58,7 +58,7 @@ WFJ.Data.add("gossip", {
   ["59f66e28ec6e1d31"] = { "Piangi la grande perdita.", "." },
   ["59f7f1d98bf4a26c"] = { "Che Cenarius vegli su di te, <fratello/sorella>.\n\nSono Tajarri e ho giurato di proteggere questo santuario. È un onore per me servire il custode Remulos, vegliando su questa terra sacra.", "." },
   ["59f95b751933275e"] = { "È tutta colpa loro, stupido esercito dell'⟦Alliance=Alleanza⟧. Proprio dietro la mia fattoria dovevano costruire le loro torri.", "." },
-  ["59f9a0720ea78ac5"] = { "Puoi dirmi di più sulla situazione dell'isola di Zephras e dell'High Order?", "." },
+  ["59f9a0720ea78ac5"] = { "Puoi dirmi di più sulla situazione dell'isola di Zephras e dell'Alto Ordine?", "." },
   ["59fbe7453bd09613"] = { "Non hai davvero vissuto finché non hai guardato il mondo dall'alto, in groppa a una viverna.", "." },
   ["59ff1479fa492d2b"] = { "Che c'è, {class}? L'⟦Horde=Orda⟧ ha completato tutte le raccolte e si stanno facendo gli ultimi preparativi, mentre l'⟦Alliance=Alleanza⟧ cerca di recuperare. Ti serve altro?", "." },
 })

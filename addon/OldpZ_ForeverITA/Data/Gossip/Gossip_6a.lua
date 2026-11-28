@@ -33,7 +33,7 @@ WFJ.Data.add("gossip", {
   ["6aa2f2b00a3dd64e"] = { "Guarda dietro di te, {race}. L'alveare si agita mentre la terra intorno a noi trema e sussulta.\n\nÈ giunto il momento di mantenere una promessa che feci mille anni fa. Le sabbie si spostano ancora una volta, mentre i Qiraji preparano la guerra.", "." },
   ["6aa41add7fead851"] = { "Salute, {name}, e <benvenuto/benvenuta> a ⟦Camp Narache=Campo Narache⟧. La notizia del tuo arrivo si è sparsa in fretta nella tribù.", "." },
   ["6aa5abfc3294b017"] = { "Salute, {race}. Il materiale bellico viene inviato a poco a poco e dovrebbe essere alla ⟦Cenarion Hold=Fortezza Cenariana⟧ entro $2113w giorni. Possiamo solo sperare che, una volta arrivato, qualcuno che abbia ricomposto lo Scettro delle Sabbie Mutevoli si faccia avanti per suonare il gong e aprire le porte.", "." },
-  ["6aa6ef0879b0c4b0"] = { "Hai fatto bene ad arrivare fin qui. Fai onore ai Windshaper, {name}.", "." },
+  ["6aa6ef0879b0c4b0"] = { "Hai fatto bene ad arrivare fin qui. Fai onore ai Plasmatori di Venti, {name}.", "." },
   ["6abccdeaffcdf54b"] = { "Forse posso esserti d'aiuto. Ti propongo un patto, satiro. Recupererò questo pettorale grezzo e ucciderò la bestia, ⟦Goraluk Anvilcrack=Goraluk Spaccaroccia⟧. In cambio di questo compito, mi insegnerai a creare il pettorale.", "." },
   ["6abdbb975d05a696"] = { "Oggi avete distrutto ciò che mi è costato anni di lavoro! Per questo morirete tutti per mano mia!", "." },
   ["6ac04f21087aaefd"] = { "Dov'è l'istruttore di Alchimia?", "." },

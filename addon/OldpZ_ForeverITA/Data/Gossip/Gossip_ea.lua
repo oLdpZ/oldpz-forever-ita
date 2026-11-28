@@ -31,7 +31,7 @@ WFJ.Data.add("gossip", {
   ["ea4dd879df0a23f0"] = { "Cerca ⟦Turak Runetotem=Turak Totem Runico⟧ nella Hall of Elders, sull'⟦Elder Rise=Altura degli Anziani⟧.", "." },
   ["ea5dcf17dd3eacbe"] = { "Temo il peggio, vecchio amico. Nel Sogno combattiamo un nuovo nemico, nato da un male antico. La nobile progenie di Ysera è caduta vittima degli antichi sussurri. Sembra che l'Incubo abbia sfondato il reame e cerchi un nuovo ospite su Azeroth.", "." },
   ["ea5f18ffeacd0062"] = { "<Il ⟦Theramore Marine=Soldato di Theramore⟧ resta di guardia in stoico silenzio.>", "." },
-  ["ea64223e28dea867"] = { "Quell'istruttore si trova in una casa vicino al molo dell'High Order, sul margine sud-orientale della città.", "." },
+  ["ea64223e28dea867"] = { "Quell'istruttore si trova in una casa vicino al molo dell'Alto Ordine, sul margine sud-orientale della città.", "." },
   ["ea65dafd236b4eca"] = { "Questo cultista è in uno stato di trance profonda...", "." },
   ["ea6809cd554445a1"] = { "State all'erta! I mezzorsi Blackwood sono numerosi in questa zona...", "." },
   ["ea6f3c131e96e1cf"] = { "Osi darmi ordini, mortale? No, non credo. Sparisci, insignificante elfo!", "." },

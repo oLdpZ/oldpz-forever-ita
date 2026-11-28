@@ -5,7 +5,7 @@ WFJ.Data.add("item", {
   [255656] = { "Un grosso frammento di un cristallo ancora più grande. Si sente la magia residua scorrere tra le dita.", 0xccc6e35c, "u" },
   [255657] = { "Un grosso frammento di un cristallo ancora più grande. Si sente la magia residua scorrere tra le dita.", 0xccc6e35c, "u" },
   [255662] = { "Finché lo possiedi, puoi interagire senza pericolo con il mana instabile che si trova in tutta Shen'dralas.", 0xd0cbbe35, "u" },
-  [255663] = { "Rigenera $N1 mana e $N2 salute. Questo oggetto non può essere usato fuori da Skywall.\nUna piccola pietra luminosa, intrisa dell'essenza magica di Skywall. Su Zephras Isle viene usata spesso sia come moneta sia come fonte di energia magica.", 0x976e150f, "u" },
+  [255663] = { "Rigenera $N1 mana e $N2 salute. Questo oggetto non può essere usato fuori da Celaria.\nUna piccola pietra luminosa, intrisa dell'essenza magica di Celaria. Sull'Isola di Zephras viene usata spesso sia come moneta sia come fonte di energia magica.", 0x976e150f, "u" },
   [255715] = { "Cura il bersaglio dai veleni fino al livello $N1.", 0x82ffcc16, "u" },
   [255716] = { "Cura il bersaglio dalle malattie fino al livello $N1. Non utilizzabile in combattimento.", 0x72b1a31e, "u" },
   [255717] = { "Cura il bersaglio dalle malattie fino al livello $N1. Non utilizzabile in combattimento.", 0xb9943eeb, "u" },

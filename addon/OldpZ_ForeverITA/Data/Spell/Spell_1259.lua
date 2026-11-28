@@ -2,7 +2,7 @@
 local _, WFJ = ...
 WFJ.Data.add("spell", {
   [1259093] = { "Tenta di risvegliare dei non morti scagliando magia d'ombra verso ossa sospette.", nil, 0xf184c594, nil, "um" },
-  [1259231] = { "Rigenera $N1 mana e $N2 salute. Questo oggetto non può essere usato fuori da Skywall.", nil, 0x9acbc41c, nil, "um" },
+  [1259231] = { "Rigenera $N1 mana e $N2 salute. Questo oggetto non può essere usato fuori da Celaria.", nil, 0x9acbc41c, nil, "um" },
   [1259243] = { "Subisci danni da arcano pari al $N1% della tua salute massima e perdi il $N2% del tuo mana massimo camminando attraverso il mana instabile.", nil, 0xe42b44db, nil, "um" },
   [1259246] = { "Recupera $N1 di mana massimo e ti permette di raccogliere il mana disperso come oggetto.", nil, 0x62695451, nil, "um" },
   [1259326] = { "Cura il bersaglio dai veleni fino al livello $N1.", nil, 0x82ffcc16, nil, "um" },

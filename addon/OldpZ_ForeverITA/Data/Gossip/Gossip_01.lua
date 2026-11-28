@@ -3,7 +3,7 @@ local _, WFJ = ...
 WFJ.Data.add("gossip", {
   ["01054ee3e7c7dada"] = { "Parla con Ironus, {name}. Sarà lui ad addestrarti nella via del Fabbro d'Armi.", "." },
   ["010a74a8f479f629"] = { "%s riporta in vita un servitore non morto!", "." },
-  ["010cbd3ff9786a32"] = { "<Illaya ti sorride con calore.>\n\nMi rallegra che tu sia <tornato/tornata> a parlarmi, <figlio/figlia> dei venti. L'ho capito fin dal primo istante in cui sei <comparso/comparsa> al mio cospetto: sei forte nella vista celeste. Anche per <uno/una> <Sciamano/Sciamana>, mostri un'attitudine particolare per il nostro dono.\n\nVieni, parliamo del mandato dei Windshapers, della natura delle nostre lotte su Zephras e della triste sorte della nostra gente.", "." },
+  ["010cbd3ff9786a32"] = { "<Illaya ti sorride con calore.>\n\nMi rallegra che tu sia <tornato/tornata> a parlarmi, <figlio/figlia> dei venti. L'ho capito fin dal primo istante in cui sei <comparso/comparsa> al mio cospetto: sei forte nella vista celeste. Anche per <uno/una> <Sciamano/Sciamana>, mostri un'attitudine particolare per il nostro dono.\n\nVieni, parliamo del mandato dei Plasmatori di Venti, della natura delle nostre lotte su Zephras e della triste sorte della nostra gente.", "." },
   ["010d2df78ab0330d"] = { "Ehi, Jangdor, puoi insegnarmi di nuovo a fare una ⟦Wild Leather Vest=Veste di Cuoio Selvatico⟧?", "." },
   ["010f674d09e90c89"] = { "Ogni professione ha qualcosa da offrire al tuo accampamento, perfino i pescatori!", "." },
   ["0110fdc2e812a4b1"] = { "Hai la mia approvazione, {name}: forgi lame meglio di chiunque abbia addestrato da anni. Ma se vuoi fare un'arma vera, devi parlare con ⟦Myolor Sunderfury=Mastro Mondo Fendifuria⟧. Quel Nano ti metterà sulla strada giusta.", "." },

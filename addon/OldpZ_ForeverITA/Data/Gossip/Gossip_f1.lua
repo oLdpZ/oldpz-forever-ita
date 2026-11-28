@@ -40,7 +40,7 @@ WFJ.Data.add("gossip", {
   ["f1b1d22e74c10a5e"] = { "I pugni di un Orco sono già un'arma potente, quindi perché non aggiungervi lame o borchie d'acciaio massiccio? Ora i pugni con cui domo i lupi delle pianure posso usarli anche per frantumare l'armatura dei miei nemici.", "." },
   ["f1b28244009c3c10"] = { "Speriamo bene!", "." },
   ["f1b3ae718a3b8755"] = { "Finalmente libertà! Ora lavoriamo insieme per salvare mio fratello, Sothos!", "." },
-  ["f1b59d1c04023848"] = { "Capisco. Sembra estremamente pericoloso, ma la situazione sembra richiedere che si corrano dei rischi.\n\nMolto bene, l'High Order fornirà aiuto. Ti prego, informa Valennia che può contare su di noi per questa battaglia.", "." },
+  ["f1b59d1c04023848"] = { "Capisco. Sembra estremamente pericoloso, ma la situazione sembra richiedere che si corrano dei rischi.\n\nMolto bene, l'Alto Ordine fornirà aiuto. Ti prego, informa Valennia che può contare su di noi per questa battaglia.", "." },
   ["f1bff04f1da10f46"] = { "Fatti sotto e combatti, mezza calzetta!", "." },
   ["f1cec9dc096fa99a"] = { "Una saggia decisione, forestiero. La tua generosità non passerà inosservata.", "." },
   ["f1d1bbe13e9b9733"] = { "No, no! Lorthuna, non capisci! Questo Plasmatore di Venti sta solo passando. Non è venuto qui con me!", "." },

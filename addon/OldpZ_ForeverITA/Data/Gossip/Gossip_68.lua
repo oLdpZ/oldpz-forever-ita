@@ -43,6 +43,6 @@ WFJ.Data.add("gossip", {
   ["68d40a299d86fc1a"] = { "Sei qui per combattere per noi nella ⟦Warsong Gulch=Forra dei Cantaguerra⟧? Lok'tar Ogar, {class}!", "." },
   ["68f0f3f1112e24e5"] = { "Quell'infiltrato a ⟦Stonard=Pietrachiusa⟧ di sicuro... si aprirà... dopo aver bevuto il mio siero speciale. Ah ah!\n\nGli ingredienti necessari non sono affatto facili da procurare. Le pantere dell'ombra sono comuni nella palude, ma raccogliere abbastanza cuori per il nostro scopo può essere un'impresa. E il ⟦Mire Lord=Signore del Brago⟧ sa essere una bestia così difficile.\n\nQuanto al tumore di Deepstrider, è terribilmente difficile da trovare. Ma la reazione chimica che ne posso ricavare non ha eguali.", "." },
   ["68f11a01cd5edd2f"] = { "Puoi dirlo! Quegli alveari brulicavano di silitidi di ogni tipo, per niente felici di vederci.\n\nAndava tutto bene finché non abbiamo trovato un cristallo coperto di glifi nell'⟦Hive'Regal=Alveare Regal⟧. Ne era attratta come una falena dalla fiamma! Ha appoggiato la sua bella guanciotta contro il cristallo ed è caduta all'istante in una specie di trance. Naturalmente la mia squadra si è preoccupata. L'abbiamo presa di peso e portata fuori di lì in tutta fretta!", "." },
-  ["68fd9ff7db0c8c21"] = { "Per l'High Order!", "." },
+  ["68fd9ff7db0c8c21"] = { "Per l'Alto Ordine!", "." },
   ["68ff7d461d5f5fce"] = { "Lizzarik ha lame. Lizzarik ha mazze. Lizzarik ha tutte le armi che ti servono, proprio qui!", "." },
 })
