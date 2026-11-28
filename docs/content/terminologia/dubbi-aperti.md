@@ -93,5 +93,5 @@
 - Risolto: le 10 righe con "Lady Prestor" ora dicono "dama Prestor", come la creatura ufficiale (Dama Katrana Prestor)
 - Verificati sui nomi ufficiali: "the Sepulcher" = Mausolea (zona ufficiale); Eldarth = Rovine di Eldarath e Strashasz = Strashaz (refusi della fonte); Springbolt = Sussurrafonte (le altre righe di Forever la chiamano Kaylaena Springwhisper); Caius Blackwood → Selvanera (come Lord Blackwood → Conte Selvanera); Clubtoe → Ditomazza (i soprannomi descrittivi si traducono: Hogger → Boccalarga, Grimtooth → Dentetruce)
 - Corretto: Mason Connery è il nome del prigioniero di Alcaz, non un mestiere (prima "muratore Connery")
-- Da decidere: Clugfist resta inglese mentre Clubtoe è tradotto
-- Conflitti con il progetto giapponese (`pipeline/upstream-conflicts.tsv`): in circa 87 righe il nostro inglese viene da Classic, vmangos o pfQuest, mentre il loro viene dal client o dal server di Forever (es. 1425 "Deliver the First Shipment", 545, 937): l'inglese di Forever è quello giusto e quelle righe vanno ritradotte
+- Deciso: Clugfist resta inglese. Si traduce un soprannome fatto di parole vere (Clubtoe → Ditomazza); quello con una radice inventata ("Clug", come Klunk o Mug'thol) resta com'è
+- Risolto: nei conflitti con il progetto giapponese, quando il loro inglese viene da Forever e il nostro da Classic, VMaNGOS, pfQuest o forever-vo, ora vince il loro (ADR-106). 122 righe sostituite e ritradotte nel lotto u68 (es. 1425 "Deliver the First Shipment", 545, 937); in `pipeline/upstream-conflicts.tsv` restano 3 conflitti tra due testi di Forever

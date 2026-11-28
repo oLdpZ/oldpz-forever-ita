@@ -10,7 +10,7 @@ WFJ.Data.add("objective", {
   [381143] = { "Libera l'anima degli ⟦Highborne=Alti Nobili⟧ a ⟦Satyrnaar=Satirnaar⟧", 0x5813f300, "." },
   [381177] = { "Salva Drull", 0x6d39f825, "." },
   [381178] = { "Salva Tog'thar", 0x64af34f4, "." },
-  [381321] = { "Ysida liberata", 0x19481639, "." },
+  [381321] = { "Ysida liberata", 0x4afee063, "." },
   [381589] = { "Trova la renna Metzen e salvala", 0xa60c43d1, "." },
   [381845] = { "Riporta il Silithyst", 0x99f2356d, "." },
   [381874] = { "⟦Rabid Thistle Bear=Orsocardo Rabbioso⟧ catturato", 0xb4020a0e, "." },

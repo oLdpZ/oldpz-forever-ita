@@ -20,9 +20,14 @@
 1. **Nuova fonte `import english upstream`**, da un clone del progetto giapponese fissato a un commit
    (`UPSTREAM_SHA`, release 0.15.0 = `065ac52d`). L'importatore rifiuta un clone il cui `HEAD` non inizia con
    `--commit`. Lo SHA del clone va in `pipeline/upstream-source.txt` (`wfj-upstream <sha>`).
-2. **Solo additivo.** Non sostituisce né cancella mai una riga esistente. Una chiave (tipo, id, campo) che
+2. **Additivo, salvo l'inglese di Forever.** Non cancella mai una riga. Una chiave (tipo, id, campo) che
    abbiamo già con un inglese diverso si **riporta** in `pipeline/upstream-conflicts.tsv`
-   (`tipo`, `id`, `campo`, `nostro`, `loro`) e non si scrive.
+   (`tipo`, `id`, `campo`, `nostro`, `loro`) e non si scrive. Unica eccezione (2026-11-28): se la loro riga
+   viene da Forever (`wdb@1.60.…` o `collector@1.60.…`) e la nostra da un sostituto (un client più vecchio,
+   VMaNGOS, pfQuest, forever-vo), la loro **sostituisce** la nostra, e il riepilogo la conta come `replaced`.
+   Il gioco mostra il testo di Forever: una traduzione dell'inglese di Classic racconta un'altra cosa (per
+   esempio la missione 1425, dove gli attacchi sono dei Lost Ones e non degli ogre). Su 124 conflitti, 122 erano
+   di questo tipo.
 3. **`src` originale.** La riga importata conserva il `src` upstream (`wdb@…`, `collector@…`, `vmangos@…`): è
    la vera origine, e il passo served la tratta come le righe nostre.
 4. **Solo quest, gossip, obiettivi e libri.** Unit e aree non si importano. **La traduzione giapponese non si
@@ -42,5 +47,5 @@
 - Le righe importate che nessun Forever serve vengono tolte dal passo served come ogni altra riga.
 - L'inglese è testo Blizzard: non entra mai nell'addon (vedi ATTRIBUTION.md).
 - Le righe importate tengono il `src` di upstream (`wdb@…`, `collector@…`) e da quel momento non si distinguono più dalle nostre; `pipeline/upstream-source.txt` dice solo quale commit è stato letto, non quali righe ne vengono.
-- Alzare `UPSTREAM_SHA` aggiunge soltanto le chiavi che mancano: non corregge mai una riga importata prima. Le correzioni che upstream fa in seguito a righe già importate riappaiono come conflitti in `pipeline/upstream-conflicts.tsv`, da rivedere a mano.
+- Alzare `UPSTREAM_SHA` aggiunge soltanto le chiavi che mancano: non corregge mai una riga importata prima (salvo il caso Forever su un sostituto, punto 2). Le correzioni che upstream fa in seguito a righe già importate riappaiono come conflitti in `pipeline/upstream-conflicts.tsv`, da rivedere a mano.
 - `make rebuild-check` tratta le righe `collector@` di upstream come già registrate: `reset_english` le tiene come quelle raccolte da noi, e il passo upstream le ritrova.

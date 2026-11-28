@@ -11,6 +11,7 @@ WFJ.Data.add("gossip", {
   ["9a1ae9538ed50f60"] = { "Buongiorno, <cittadino/cittadina>. Come posso aiutarti?", "." },
   ["9a214499f6f537a9"] = { "I maghi si riuniscono nel Wizard's Sanctum, nel ⟦Mage Quarter=Quartiere dei Maghi⟧. Gran bella torre hanno lì. Al confronto le nostre caserme sembrano tuguri di contadini.", "." },
   ["9a22f6e6dad98dd1"] = { "Come procede la ricerca delle vesti, {name}? Le hai create da te? Trovo che un tocco personale renda ancora più dolce infondere la magia. Ti dà un maggior senso di soddisfazione. Ma capisco se scegli la via più rapida e te le fai fare da altri: c'è del merito anche in una simile... ambizione.", "." },
+  ["9a2396be99c84700"] = { "Lo spirito di Kuramaa è eterno, e si manifesterà di nuovo quando ce ne sarà bisogno. La sua maschera è una fonte di grande potere e si rivelerà preziosissima per il rituale che dobbiamo compiere.", "." },
   ["9a24dca6f0bcdc8f"] = { "Parlami delle spedizioni che potrei esplorare.", "." },
   ["9a3af1f39dc2f106"] = { "Informazioni sulle Pezze Consumate dell'Abominio.", "." },
   ["9a3ca8befb323216"] = { "Ora posizionerò la ruota... per proteggerti dal male.", "." },

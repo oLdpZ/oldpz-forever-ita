@@ -47,5 +47,6 @@ WFJ.Data.add("gossip", {
   ["0ee6d6682fe61ba1"] = { "Se il tuo forte è la sartoria, Vizzklick avrà di sicuro quello che ti serve. Dai un'occhiata in giro, {name}, e fammi sapere se vuoi comprare qualcosa!", "." },
   ["0ee740c901b3eed8"] = { "Aiutatemi a uccidere {name}!", "." },
   ["0ee8a9b28be7e2a5"] = { "Dobbiamo muoverci in fretta. Auberdine non è troppo lontana, ma nella foresta si annidano molti nemici.", "." },
+  ["0eed165b5188148b"] = { "Non preoccuparti, <ragazzo/ragazza>! Potrai provarne qualcuno prima di doverne scegliere uno solo.", "." },
   ["0efb602a50dc5880"] = { "È giunta la tua ora, {name}. Il maestro Kang ti aspetta...", "." },
 })

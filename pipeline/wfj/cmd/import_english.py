@@ -919,14 +919,27 @@ UPSTREAM_NOUNS = {
 }
 
 
+def served_by_forever(src: str) -> bool:
+    """True for English Forever itself served: its quest cache or the collector, game line 1.60."""
+    name, _, build = src.partition("@")
+    return name in ("wdb", "collector") and build.startswith("1.60.")
+
+
+Change = tuple[Any, str, str, str]  # (id, field, ours_en, theirs_en)
+
+
 def add_missing(
     existing: list[dict[str, Any]], new: list[dict[str, Any]]
-) -> tuple[list[dict[str, Any]], int, list[tuple[Any, str, str, str]]]:
-    """Additive merge by (id, field): our line always stays; a key we lack is added; a key holding other
-    English is reported, never written. → (lines, added, [(id, field, ours_en, theirs_en)])"""
+) -> tuple[list[dict[str, Any]], int, list[Change], list[Change]]:
+    """Merge by (id, field): a key we lack is added. A key holding other English keeps our line, and is
+    reported, unless ours came from a stand-in (an older client, VMaNGOS, pfQuest, the voice-over) and theirs
+    is what Forever served: then theirs replaces it (ADR-106).
+    → (lines, added, conflicts, replaced)"""
     present = {(ln["id"], ln["field"]): ln for ln in existing}
     added: list[dict[str, Any]] = []
-    conflicts: list[tuple[Any, str, str, str]] = []
+    conflicts: list[Change] = []
+    replaced: list[Change] = []
+    swap: dict[tuple[Any, str], dict[str, Any]] = {}
     for ln in new:
         k = (ln["id"], ln["field"])
         cur = present.get(k)
@@ -934,8 +947,14 @@ def add_missing(
             present[k] = ln
             added.append(ln)
         elif normalize_v1(cur["en"]) != normalize_v1(ln["en"]):
-            conflicts.append((ln["id"], ln["field"], cur["en"], ln["en"]))
-    return existing + added, len(added), conflicts
+            change = (ln["id"], ln["field"], cur["en"], ln["en"])
+            if served_by_forever(str(ln["src"])) and not served_by_forever(str(cur["src"])):
+                swap[k] = ln
+                replaced.append(change)
+            else:
+                conflicts.append(change)
+    kept = [swap.get((ln["id"], ln["field"]), ln) for ln in existing]
+    return kept + added, len(added), conflicts, replaced
 
 
 def _upstream_lines(type_: str, raw: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
@@ -980,15 +999,15 @@ def run_upstream(a: argparse.Namespace) -> int:
         new, bad_hash = _upstream_lines(type_, raw)
         existing = store.load(type_)
         known_ids = {ln["id"] for ln in existing}
-        merged, added, conflicts = add_missing(existing, new)
+        merged, added, conflicts, replaced = add_missing(existing, new)
         fresh = {ln["id"] for ln in merged[len(existing) :]} - known_ids
         report.extend(_report_row(type_, c) for c in conflicts)
         noun, fresh_noun = UPSTREAM_NOUNS[type_]
         print(
-            f"english {type_}: +{added} {noun} ({len(fresh)} {fresh_noun}), {len(conflicts)} conflicts, "
-            f"{len(dropped)} placeholders, {bad_hash} hash mismatches"
+            f"english {type_}: +{added} {noun} ({len(fresh)} {fresh_noun}), {len(replaced)} replaced, "
+            f"{len(conflicts)} conflicts, {len(dropped)} placeholders, {bad_hash} hash mismatches"
         )
-        if added:
+        if added or replaced:
             results[type_] = merged
     if a.report and not a.dry_run:
         Path(a.report).write_text("".join(r + "\n" for r in report), encoding="utf-8")

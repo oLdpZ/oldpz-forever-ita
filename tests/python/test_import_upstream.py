@@ -82,7 +82,7 @@ def test_upstream_adds_missing_quest(tmp_path: Path, monkeypatch):
 
 def test_upstream_keeps_ours_and_reports_conflict(tmp_path: Path, monkeypatch):
     data = _data_dir(tmp_path, monkeypatch)
-    _store(data).save("quest", [_ours("quest", 5, "title", "A")])
+    _store(data).save("quest", [_ours("quest", 5, "title", "A", src=UP_SRC)])
     clone, sha = _clone(tmp_path, {"quest": [_up("quest", 5, "title", "B")]})
     report = tmp_path / "rep.tsv"
     assert _go(clone, sha, "--report", str(report)) == 0
@@ -140,7 +140,7 @@ def test_upstream_gossip_bad_hash_skipped(tmp_path: Path, monkeypatch, capsys):
 
 def test_upstream_idempotent(tmp_path: Path, monkeypatch):
     data = _data_dir(tmp_path, monkeypatch)
-    _store(data).save("quest", [_ours("quest", 5, "title", "A")])
+    _store(data).save("quest", [_ours("quest", 5, "title", "A", src=UP_SRC)])
     clone, sha = _clone(
         tmp_path,
         {
@@ -175,7 +175,7 @@ def test_upstream_dry_run_writes_nothing(tmp_path: Path, monkeypatch, capsys):
     assert _snapshot(data) == {}
     assert not (tmp_path / "pipeline" / "upstream-source.txt").exists()
     out = capsys.readouterr().out
-    assert "english quest: +1 lines (1 new quests), 0 conflicts, 0 placeholders, 0 hash mismatches" in out
+    assert "english quest: +1 lines (1 new quests), 0 replaced, 0 conflicts, 0 placeholders, 0 hash mismatches" in out
     assert "english book: +0 pages (0 new ids)" in out
     assert "english gossip: +0 lines (0 new keys)" in out
     assert "english objective: +0 lines (0 new objectives)" in out
@@ -183,7 +183,7 @@ def test_upstream_dry_run_writes_nothing(tmp_path: Path, monkeypatch, capsys):
 
 def test_upstream_dry_run_does_not_write_report(tmp_path: Path, monkeypatch):
     data = _data_dir(tmp_path, monkeypatch)
-    _store(data).save("quest", [_ours("quest", 5, "title", "A")])
+    _store(data).save("quest", [_ours("quest", 5, "title", "A", src=UP_SRC)])
     clone, sha = _clone(tmp_path, {"quest": [_up("quest", 5, "title", "B")]})
     report = tmp_path / "rep.tsv"
     assert _go(clone, sha, "--dry-run", "--report", str(report)) == 0
@@ -216,16 +216,44 @@ def test_upstream_writes_stamp(tmp_path: Path, monkeypatch):
 
 
 def test_add_missing_adds_and_reports():
-    ours = [_ours("quest", 1, "title", "A")]
+    ours = [_ours("quest", 1, "title", "A", src=UP_SRC)]
     new = [
         _up("quest", 1, "title", "A"),
         _up("quest", 1, "description", "D"),
         _up("quest", 1, "completion", "Z"),
     ]
-    merged, added, conflicts = add_missing(ours, new)
-    assert added == 2 and not conflicts and len(merged) == 3
-    _, _, conflicts = add_missing(ours, [_up("quest", 1, "title", "B")])
-    assert conflicts == [(1, "title", "A", "B")]
+    merged, added, conflicts, replaced = add_missing(ours, new)
+    assert added == 2 and not conflicts and not replaced and len(merged) == 3
+    _, _, conflicts, replaced = add_missing(ours, [_up("quest", 1, "title", "B")])
+    assert conflicts == [(1, "title", "A", "B")] and not replaced
+
+
+def test_forever_english_replaces_a_stand_in():
+    """Our line from a stand-in (an older client's cache, VMaNGOS, pfQuest, the voice-over) loses to theirs
+    when theirs is what Forever served (its quest cache or the collector, game line 1.60); two Forever lines
+    that differ stay a conflict."""
+    ours = [
+        {**_ours("quest", 1425, "title", "Deliver the Shipment"), "src": "wdb@1.15.9.69722"},
+        {**_ours("quest", 545, "completion", "Very good."), "src": "vmangos@13b49dc"},
+        {**_ours("quest", 9, "title", "Ours"), "src": "wdb@1.60.1.71037"},
+    ]
+    new = [
+        _up("quest", 1425, "title", "Deliver the First Shipment"),
+        _up("quest", 545, "completion", "Very good. Now Dalaran.", src="collector@1.60.1.70938"),
+        _up("quest", 9, "title", "Theirs"),
+    ]
+    merged, added, conflicts, replaced = add_missing(ours, new)
+    assert added == 0 and len(merged) == 3
+    assert replaced == [(1425, "title", "Deliver the Shipment", "Deliver the First Shipment"),
+                        (545, "completion", "Very good.", "Very good. Now Dalaran.")]
+    assert conflicts == [(9, "title", "Ours", "Theirs")]
+    by_key = {(ln["id"], ln["field"]): ln for ln in merged}
+    assert by_key[(1425, "title")]["src"] == UP_SRC
+    assert by_key[(1425, "title")]["hash"] == key(normalize_for("quest", "Deliver the First Shipment"))
+    # a stand-in that already says what Forever says is neither replaced nor reported
+    same = [{**_ours("quest", 7, "title", "Same"), "src": "pfquest@7786596"}]
+    _, _, conflicts, replaced = add_missing(same, [_up("quest", 7, "title", "Same")])
+    assert not conflicts and not replaced
 
 
 def test_placeholder_quest_ids():

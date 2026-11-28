@@ -43,6 +43,5 @@ WFJ.Data.add("gossip", {
   ["b1e239feb6d1bafd"] = { "Sono caduti in troppi, <sacerdote/sacerdotessa>. Devi concentrarti!", "." },
   ["b1e28e10f0881e99"] = { "Il mondo patirà crudeltà indicibili sotto il mio regno.", "." },
   ["b1f0521b99619c59"] = { "Le unità veterane stanno entrando in battaglia!", "." },
-  ["b1f39df1781f704a"] = { "Ben fatto, <ragazzo/ragazza>. Hai dimostrato di essere <pronto/pronta>. La terra è il fondamento di tutte le cose. Forza, resistenza, pazienza. Ti farà da scudo, ma solo se le porterai il rispetto che merita. Anche la pietra può muoversi se viene offesa. Impara le sue vie e diventerai più saggi<o/a> della maggior parte della gente. Non dimenticare mai i segreti che condivide.\n\nOra ti preparerò un sapta: accettalo e percorrerai il vero sentiero.", "." },
   ["b1f40739e16079b4"] = { "%s esala l'ultimo respiro.", "." },
 })

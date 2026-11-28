@@ -14,7 +14,7 @@ WFJ.Data.add("objective", {
   [382264] = { "Torre orientale in fiamme", 0x2f086c21, "." },
   [382265] = { "Torre settentrionale in fiamme", 0xcd4a93b9, "." },
   [382333] = { "⟦Writ of Safe Passage=Decreto del Passaggio Sicuro⟧ firmato", 0xcba91114, "." },
-  [382468] = { "Screecher Spirits raccolti", 0x78b47ec6, "." },
+  [382468] = { "Spirito Stridente raccolti", 0x5b719c9a, "." },
   [382531] = { "Brucia gli archivi di Highvale", 0xc4907fd5, "." },
   [382532] = { "Brucia gli appunti di Highvale", 0x85b4752a, "." },
   [382533] = { "Brucia il rapporto di Highvale", 0xa9596d02, "." },

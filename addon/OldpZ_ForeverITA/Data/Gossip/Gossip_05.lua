@@ -41,6 +41,7 @@ WFJ.Data.add("gossip", {
   ["05b18b4e7c5122a8"] = { "Sarà per la prossima volta, {name}.", "." },
   ["05ba76ca917d1353"] = { "Lee ha pescato roba piuttosto strana su al ⟦Crystal Lake=Lago di Cristallo⟧. Mi ha raccontato di una maschera bizzarra che ha tirato su qualche mese fa. Se vuoi il mio parere, quella sera al Lion's Pride ha alzato un po' troppo il gomito.", "." },
   ["05bc3297103a996c"] = { "Mettiamoci al lavoro, {name}!", "." },
+  ["05c036cc38d1a8a9"] = { "Ah, sei tornat<o/a> giusto in tempo.\n\nChe succede, ragazz<o/a>? Sembra che tu abbia visto un fantasma.", "." },
   ["05c080b6a0ef9606"] = { "Forse dovrei dirti perché sono qui.\n\nConosci l'Aspetto Alamorte? O la sua progenie, Nefarian e Onyxia?", "." },
   ["05c67f80fbb215f3"] = { "La tua abilità non è da poco. Visto che sembri avere abbastanza esperienza, c'è una faccenda per cui mi serve il tuo aiuto.", "." },
   ["05cf2f558b1e4000"] = { "Il Signore delle Acque Idraxis si nasconde ad Azshara, su un'isola nella ⟦Bay of Storms=Baia delle Tempeste⟧. Che razza di minaccia può mai radunare quello sciocco da laggiù?", "." },

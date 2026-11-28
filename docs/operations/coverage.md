@@ -1,6 +1,6 @@
 # Coverage: how much of the game ships in Italian
 
-> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-27 at commit `e9a0a27d`.
+> **Generated** by `make coverage` (`pipeline/wfj/dev/coverage.py`) on 2026-11-28 at commit `cf854689`.
 > Do not edit by hand: every pull request that changes `data/` re-runs it. Measured from
 > the English the Forever client serves, every line of it; a line that is only a
 > name, a placeholder quest or a picture-only page counts as done (nothing to translate).
@@ -9,7 +9,7 @@
 
 | Surface | English lines | Ship Italian | Nothing to translate | Done | Not yet |
 |---|---|---|---|---|---|
-| Quest text | 23,777 | 23,573 | 204 | 100.0% | 0 |
+| Quest text | 23,777 | 23,570 | 204 | 100.0% | 3 |
 | NPC dialogue (gossip, speech) | 11,883 | 11,778 | 100 | 100.0% | 5 |
 | Book / letter pages | 1,262 | 1,207 | 55 | 100.0% | 0 |
 | Quest objective lines | 710 | 672 | 38 | 100.0% | 0 |
@@ -18,7 +18,7 @@
 | Spell tooltips + auras | 25,960 | 25,878 | 26 | 99.8% | 56 |
 | Interface strings | 16,417 | 15,301 | 1,116 | 100.0% | 0 |
 | NPC names | 13,015 | 10,207 | 2,808 | 100.0% | 0 |
-| **All** | **103,850** | | | **99.9%** | **63** |
+| **All** | **103,850** | | | **99.9%** | **66** |
 
 Lines shipped as their English under a maintainer ruling (`ruling: accept`, for names, classes,
 professions, internal strings): quest 139, ui 2.
@@ -48,6 +48,9 @@ professions, internal strings): quest 139, ui 2.
 
 | Surface | Why | Lines |
 |---|---|---|
+| Quest text | rejected: numbers_changed:10 | 1 |
+| Quest text | rejected: numbers_changed:20 | 1 |
+| Quest text | rejected: numbers_changed:8 | 1 |
 | NPC dialogue (gossip, speech) | no Italian yet | 5 |
 | Item descriptions | no Italian yet: the template has too many optional parts for one translation | 1 |
 | Item descriptions | no Italian yet | 1 |
@@ -72,9 +75,9 @@ much of them ships Italian.
 ### Partly translated quests
 
 Quests with some fields in Italian and others still in English (a field kept English on purpose
-or with nothing to translate aside): 0.
+or with nothing to translate aside): 3.
 
-none
+3505, 7724, 8464
 
 ### Interface lines left English, by reason
 

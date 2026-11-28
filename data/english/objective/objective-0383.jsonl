@@ -36,11 +36,11 @@
 {"id": 383504, "field": "text", "en": "Stable Assaulted", "hash": "dddd467d4ac4e86d", "src": "wdb@1.15.9.69722"}
 {"id": 383547, "field": "text", "en": "Do the \"train\" for Talvash", "hash": "a1f625e1f840fc08", "src": "wdb@1.60.1.70532"}
 {"id": 383583, "field": "text", "en": "Flex for Innkeeper Gryshka", "hash": "b7a6cfa6d15ba110", "src": "wdb@1.60.1.70532"}
-{"id": 383741, "field": "text", "en": "Tower Captured", "hash": "d4f9231f481bd8c5", "src": "wdb@1.15.9.69722"}
+{"id": 383741, "field": "text", "en": "Tower captured", "hash": "c3297b4af53c9713", "src": "wdb@1.60.1.71037"}
 {"id": 383758, "field": "text", "en": "Dance for Innkeeper Pala", "hash": "fd8278e369458d4c", "src": "wdb@1.60.1.70532"}
-{"id": 383775, "field": "text", "en": "Mine Captured", "hash": "43fe8fc93e069e19", "src": "wdb@1.15.9.69722"}
+{"id": 383775, "field": "text", "en": "Mine captured", "hash": "322ee7f4eb275c67", "src": "wdb@1.60.1.71037"}
 {"id": 383788, "field": "text", "en": "Banner Destroyed", "hash": "7f0c27c2d9ef5ab1", "src": "wdb@1.15.9.69722"}
-{"id": 383816, "field": "text", "en": "Mine Captured", "hash": "43fe8fc93e069e19", "src": "wdb@1.15.9.69722"}
+{"id": 383816, "field": "text", "en": "Mine captured", "hash": "322ee7f4eb275c67", "src": "wdb@1.60.1.71037"}
 {"id": 383833, "field": "text", "en": "Graveyard Assaulted", "hash": "fb8a5fa9dcad2a8a", "src": "wdb@1.15.9.69722"}
 {"id": 383835, "field": "text", "en": "Vylestem Vines healed", "hash": "beffcf76797b25ba", "src": "wdb@1.15.9.69722"}
 {"id": 383871, "field": "text", "en": "Accept Redpath's Forgiveness", "hash": "060c5aa05a83d027", "src": "wdb@1.15.9.69722"}

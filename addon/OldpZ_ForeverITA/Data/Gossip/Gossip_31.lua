@@ -33,6 +33,7 @@ WFJ.Data.add("gossip", {
   ["317d71a214ca81f7"] = { "Non c'è nessun livello delle MUCCHE... davvero! Ripeto: non c'è nessun livello delle MUCCHE. Beh, forse c'è...", "." },
   ["318fd1ff545da903"] = { "Ho perso il mio ⟦Ring of Infinite Wisdom=Anello della Saggezza Infinita⟧. Puoi sostituirmelo?", "." },
   ["31911266e9ba7570"] = { "Ti prego, aiutami, <fratello/sorella>...\n\nPresto lascerò questo mondo, e anche se soffro, so che dopo il trapasso non soffrirò più. Ma la fauna, <fratello/sorella> <mio/mia>... anche la fauna soffre, e non conosce sollievo. Ti chiedo aiuto con gli ultimi respiri della mia vita.", "." },
+  ["3191159fe00319f6"] = { "Sì?\n\nMmm. Ho la sensazione di sapere cosa stai per chiedermi: cosa spinge qualcuno a vivere qui fuori, nella parte più remota delle ⟦Barrens=Savane⟧, con la minaccia dei verrospini tutt'intorno e senza alcuna protezione? Be', abbiamo tutti le nostre ragioni per giustificare il nostro modo di agire. La vera domanda è: cosa porta <un/una> semplice {race} nelle zone più remote delle ⟦Barrens=Savane⟧ a parlare con una donna che chiaramente non si cura della propria incolumità?\n\nScommetto che la risposta la conosciamo entrambi.", "." },
   ["31972d22271f37b1"] = { "Cosa possono insegnare gli altri maestri d'armi?", "." },
   ["319b0eeaf2135cea"] = { "Brzt... clic... wirr...", "." },
   ["31a12e86f3b52449"] = { "La paura è per il nemico! Paura e morte!", "." },

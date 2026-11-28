@@ -23,7 +23,7 @@
 {"id": 382421, "field": "text", "en": "Flame of Orgrimmar", "hash": "4dd0bca19a304f97", "src": "wdb@1.60.1.70450"}
 {"id": 382422, "field": "text", "en": "Flame of Thunder Bluff", "hash": "090fa96d4be8232d", "src": "wdb@1.60.1.70450"}
 {"id": 382423, "field": "text", "en": "Flame of the Undercity", "hash": "488b0f14e917d4db", "src": "wdb@1.60.1.70450"}
-{"id": 382468, "field": "text", "en": "Screecher Spirits Collected", "hash": "78b47ec61e1ff87e", "src": "wdb@1.15.9.69722"}
+{"id": 382468, "field": "text", "en": "Screecher Spirits collected", "hash": "5b719c9a3ef41b8b", "src": "wdb@1.60.1.71037"}
 {"id": 382531, "field": "text", "en": "Burn the Highvale Records", "hash": "c4907fd59248f49d", "src": "wdb@1.15.9.69722"}
 {"id": 382532, "field": "text", "en": "Burn the Highvale Notes", "hash": "85b4752ab33a36f9", "src": "wdb@1.15.9.69722"}
 {"id": 382533, "field": "text", "en": "Burn the Highvale Report", "hash": "a9596d0215e456ce", "src": "wdb@1.15.9.69722"}
